@@ -1,0 +1,22 @@
+/* 포켓 스터디 전역 스타일 — 프로토타입 GlobalStyle 포팅 */
+@font-face {
+  font-family: "DGM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/DungGeunMo.woff") format("woff");
+  font-display: swap;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+@keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@keyframes wiggle { 0%,100%{transform:rotate(0)} 15%{transform:rotate(-20deg)} 30%{transform:rotate(18deg)} 45%{transform:rotate(0)} 60%{transform:rotate(-20deg)} 75%{transform:rotate(18deg)} 90%{transform:rotate(0)} }
+@keyframes pop { 0%{transform:scale(0.4);opacity:0} 100%{transform:scale(1);opacity:1} }
+@keyframes proj { 0% { left: 22%; top: 58%; opacity: 1; transform: scale(0.6); } 70% { opacity: 1; } 100% { left: 68%; top: 24%; opacity: 0; transform: scale(1.2); } }
+@keyframes projBack { 0% { left: 68%; top: 26%; opacity: 1; transform: scale(0.6); } 70% { opacity: 1; } 100% { left: 24%; top: 56%; opacity: 0; transform: scale(1.2); } }
+@keyframes flash { 0%,100% { opacity: 0; } 30%,60% { opacity: 0.75; } }
+@keyframes pulse { 0% { transform: scale(0.3); opacity: 0.9; } 100% { transform: scale(2.4); opacity: 0; } }
+@keyframes shakeit { 0%,100% { transform: translateX(0); } 20% { transform: translateX(-9px); } 40% { transform: translateX(9px); } 60% { transform: translateX(-6px); } 80% { transform: translateX(6px); } }
+@keyframes ballArc { 0% { left: 22%; top: 62%; transform: rotate(0deg); } 50% { top: 10%; } 100% { left: 66%; top: 22%; transform: rotate(720deg); } }
+
+button:active { transform: scale(0.97); }
+button { touch-action: manipulation; }
