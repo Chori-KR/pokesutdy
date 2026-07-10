@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# env — 비밀 키는 절대 커밋 금지
+.env
+.env.*
+!.env.local.example
+
+# misc
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
