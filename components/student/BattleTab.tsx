@@ -3,10 +3,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { S } from "@/lib/styles";
 import {
-  BALLS, BallKind, DIFF, Difficulty, MY, RARITY, TIME_LIMIT, TYPE_COLORS,
-  TYPE_MOVE, POOL, Pokemon, captureRate, josa, shuffle, sleep,
+  BALLS, BallKind, DIFF, Difficulty, RARITY, TIME_LIMIT, TYPE_COLORS,
+  TYPE_MOVE, POOL, Pokemon, Move, MAX_HP, MAX_BALLS_PER_THROW,
+  EVOLVES_TO, evoWinsNeeded, myPokemonOf, multiCaptureRate, josa, shuffle, sleep,
 } from "@/lib/game";
-import { ApiQuestion, StudentData } from "@/lib/types";
+import { ApiQuestion, StudentData, DayInfo, GameInfo } from "@/lib/types";
 import Sprite from "@/components/Sprite";
 import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
@@ -17,18 +18,21 @@ interface Props {
   moveDiff: boolean; // 교사 설정: 기술 선택 = 난이도 선택
   caught: number[];
   setCaught: (ids: number[]) => void;
+  day: DayInfo;
+  setDay: (d: DayInfo) => void;
+  game: GameInfo;
+  setGame: (g: GameInfo) => void;
   showToast: (t: string) => void;
 }
 
 type BattlePhase = "idle" | "intro" | "select" | "question" | "busy" | "capture" | "throwing" | "done";
 interface ShuffledOption { t: string; ok: boolean; idx: number }
 interface ActiveQuestion extends ApiQuestion { sOpts: ShuffledOption[] }
-type Move = (typeof MY.moves)[number];
 type Fx = { kind: string; key: number } | null;
 
 const BALL_KINDS: BallKind[] = ["poke", "superb", "hyper", "master"];
 
-export default function BattleTab({ student, setStudent, moveDiff, caught, setCaught, showToast }: Props) {
+export default function BattleTab({ student, setStudent, moveDiff, caught, setCaught, day, setDay, game, setGame, showToast }: Props) {
   const [phase, setPhase] = useState<BattlePhase>("idle");
   const [bank, setBank] = useState<ApiQuestion[] | null>(null);
   const [wild, setWild] = useState<(Pokemon & { token: string }) | null>(null);
@@ -42,10 +46,26 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
   const [myHit, setMyHit] = useState(false);
   const [fails, setFails] = useState(0);
   const [usedQ, setUsedQ] = useState<string[]>([]);
+  const [ballCount, setBallCount] = useState(1); // M4: 동시에 던질 볼 개수
+  const [picker, setPicker] = useState(false);   // 포켓몬 선택 패널
+  const [busyAction, setBusyAction] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const wildHpRef = useRef(0);
   const studentRef = useRef(student);
   studentRef.current = student;
+
+  // 내 배틀 포켓몬 (M4: 선택 가능, 타입별 기술 자동 배치)
+  const mine = myPokemonOf(game.battlePid);
+  const myWins = Number(game.wins?.[String(mine.id)] ?? 0);
+  const evoTargets = EVOLVES_TO[mine.id] ?? [];
+  const winsNeeded = evoWinsNeeded(mine.id);
+  const canEvolve = evoTargets.length > 0 && myWins >= winsNeeded;
+  const battlesLeft = Math.max(0, day.battleLimit - day.battleUsed);
+  const ownedIds = useMemo(() => {
+    const set = new Set<number>(caught);
+    if (game.starter) set.add(game.starter);
+    return [...set].sort((a, b) => a - b);
+  }, [caught, game.starter]);
 
   // 배틀 진입 시 출제 중 문제 프리로드 (즉답 UX, 명세 §7)
   useEffect(() => {
@@ -62,6 +82,48 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
   }, [bank]);
   const activeCount = bank?.length ?? 0;
 
+  async function selectPokemon(pid: number) {
+    if (busyAction || pid === game.battlePid) { setPicker(false); return; }
+    setBusyAction(true);
+    try {
+      const res = await fetch("/api/pokemon/select", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ pokemon_id: pid }),
+      });
+      const data = await res.json();
+      if (!res.ok) { showToast(data.error ?? "선택에 실패했어요."); return; }
+      setGame({ ...game, battlePid: data.battlePid });
+      setPicker(false);
+      showToast(`가라, ${data.name}!`);
+    } catch {
+      showToast("연결에 실패했어요.");
+    } finally {
+      setBusyAction(false);
+    }
+  }
+
+  async function evolve(to: number) {
+    if (busyAction) return;
+    setBusyAction(true);
+    try {
+      const res = await fetch("/api/pokemon/evolve", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ to }),
+      });
+      const data = await res.json();
+      if (!res.ok) { showToast(data.error ?? "진화에 실패했어요."); return; }
+      setGame({ ...game, battlePid: data.battlePid, wins: data.wins });
+      if (data.newlyCaught && !caught.includes(to)) setCaught([...caught, to]);
+      showToast(`축하해! ${data.from.name}${josa(data.from.name, "이", "가").slice(-1)} ${data.to.name}(으)로 진화했다! ✨`);
+    } catch {
+      showToast("연결에 실패했어요.");
+    } finally {
+      setBusyAction(false);
+    }
+  }
+
   async function start() {
     setMsg("풀숲을 뒤지는 중...");
     setPhase("busy");
@@ -69,6 +131,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       const res = await fetch("/api/battle/start", { method: "POST" });
       const data = await res.json();
       if (!res.ok) { setMsg(data.error ?? "배틀을 시작할 수 없어요."); setPhase("idle"); return; }
+      setDay({ ...day, battleUsed: data.battleUsed, battleLimit: data.battleLimit });
       const meta = POOL.find((p) => p.id === data.pokemon.id)!;
       const hp = RARITY[meta.rarity].hp;
       setWild({ ...meta, token: data.token });
@@ -77,6 +140,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       setWildState("idle");
       setFails(0);
       setUsedQ([]);
+      setBallCount(1);
       setPhase("intro");
       setMsg(`앗! 야생의 ${josa(meta.name, "이", "가")} 나타났다!`);
     } catch {
@@ -121,6 +185,14 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase, q]);
 
+  // 내 공격 이펙트: 타입별 (불꽃/전기/에스퍼는 전용, 나머지는 타입색 투사체)
+  function attackFx(): string {
+    if (mine.type === "fire") return "fire";
+    if (mine.type === "electric") return "electric";
+    if (mine.type === "psychic") return "psychic";
+    return "proj";
+  }
+
   async function answer(opt: ShuffledOption | null, remain: number) {
     if (phase !== "question" || !move || !q || !wild) return;
     if (timerRef.current) clearInterval(timerRef.current);
@@ -145,8 +217,8 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       record.then((res) => {
         if (res) setStudent({ ...studentRef.current, xp: res.xp, level: res.level });
       });
-      setMsg(`${MY.name}의 ${move.name}!`);
-      setFx({ kind: "fire", key: Date.now() });
+      setMsg(`${mine.name}의 ${move.name}!`);
+      setFx({ kind: attackFx(), key: Date.now() });
       await sleep(900);
       setWildState("hit");
       setFx({ kind: "shake", key: Date.now() });
@@ -158,6 +230,19 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       await sleep(650);
       setWildState("idle");
       if (nh <= 0) {
+        // M4: 배틀 승리 → 진화 승수 기록 (서버 권위, 토큰당 1회)
+        fetch("/api/battle/win", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ token: wild.token }),
+        })
+          .then((r) => (r.ok ? r.json() : null))
+          .then((res) => {
+            if (!res) return;
+            setGame({ ...game, wins: res.allWins });
+            if (res.canEvolveTo.length > 0) showToast(`${mine.name} ${res.wins}승! 진화할 수 있어요! ✨`);
+          })
+          .catch(() => {});
         setMsg(`야생 ${josa(wild.name, "이", "가")} 쓰러졌다! 볼을 골라 던지자!`);
         setPhase("capture");
       } else {
@@ -170,7 +255,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
         ? `시간 초과! ${move.name}은(는) 빗나갔다!`
         : `${move.name}! ...그러나 빗나갔다! (정답: ${answerText})`);
       await sleep(1200);
-      // 오답 → 야생의 반격 (반격 데미지는 희귀도로 결정, 명세 §10)
+      // 오답 → 야생의 반격 (반격 데미지는 희귀도로 결정)
       setMsg(`야생 ${wild.name}의 ${TYPE_MOVE[wild.type]}!`);
       setFx({ kind: wild.type === "electric" ? "electric" : wild.type === "psychic" ? "psychic" : "projBack", key: Date.now() });
       await sleep(900);
@@ -186,7 +271,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       await sleep(650);
       setMyHit(false);
       if (nh <= 0) {
-        setMsg(`${MY.name}은(는) 쓰러졌다... 내일 아침이면 회복돼요.`);
+        setMsg(`${mine.name}은(는) 쓰러졌다... 회복약을 쓰거나 내일까지 기다리자.`);
         setPhase("done");
       } else {
         setPhase("select");
@@ -195,9 +280,11 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
   }
 
   async function throwBall(kind: BallKind) {
-    if (!wild || studentRef.current.inventory[kind] <= 0) return;
+    if (!wild) return;
+    const n = kind === "master" ? 1 : ballCount;
+    if (studentRef.current.inventory[kind] < n) return;
     setPhase("throwing");
-    setMsg(`${BALLS[kind].name}을(를) 던졌다! · · ·`);
+    setMsg(`${BALLS[kind].name} ${n > 1 ? `${n}개를` : "을(를)"} 던졌다! · · ·`);
     setFx({ kind: "ball", key: Date.now() });
 
     // 서버 권위 판정 (볼 차감 + RNG). 연출과 병렬로 요청.
@@ -205,13 +292,13 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
     let result: {
       success: boolean; newlyCaught?: boolean; inventory: StudentData["inventory"];
       points?: number; xp?: number; level?: number; reward?: { pts: number; xp: number };
-      error?: string;
+      used?: number; error?: string;
     } | null = null;
     try {
       const res = await fetch("/api/battle/capture", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token: wild.token, ball: kind }),
+        body: JSON.stringify({ token: wild.token, ball: kind, count: n }),
       });
       result = await res.json();
       if (!res.ok) {
@@ -261,7 +348,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
         setMsg(`아앗! 야생 ${josa(wild.name, "이", "가")} 도망쳐 버렸다!`);
         setPhase("done");
       } else {
-        setMsg("아... 아깝다! (기회 1번 남음)");
+        setMsg(`볼 ${n}개가 모두 튕겨 나왔다... 아깝다! (기회 1번 남음)`);
         setPhase("capture");
       }
     }
@@ -270,18 +357,17 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
   if (bank === null)
     return <div style={{ ...S.panel, textAlign: "center", padding: 30, fontSize: 13, color: "#9fd8ff" }}>문제를 불러오는 중...</div>;
 
-  // 기절 상태 — 회복약 상점은 M2, M1은 다음 날 자동 회복
   if (student.hp <= 0 && phase !== "busy")
     return (
       <div style={{ ...S.panel, textAlign: "center", padding: 30 }}>
-        <div style={{ fontSize: 15, marginBottom: 8 }}>{MY.name}이(가) 기절했어요...</div>
-        <div style={{ fontSize: 12, color: "#9fd8ff" }}>내일 아침이 되면 저절로 기운을 차려요. 도감을 구경하며 기다리자!</div>
+        <div style={{ fontSize: 15, marginBottom: 8 }}>{mine.name}이(가) 기절했어요...</div>
+        <div style={{ fontSize: 12, color: "#9fd8ff" }}>상점의 회복약을 쓰거나, 내일 아침이 되면 저절로 기운을 차려요.</div>
       </div>
     );
 
   const moves = moveDiff
-    ? MY.moves
-    : [{ name: "공격", diff: "medium" as Difficulty, dmg: 20, label: "보통" }];
+    ? mine.moves
+    : [{ name: mine.moves[1].name, diff: "medium" as Difficulty, dmg: 20, label: "보통" }];
 
   return (
     <div>
@@ -297,7 +383,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
               </div>
             )}
             <div style={{ position: "absolute", left: "10%", top: "42%", width: "34%", animation: myHit ? "shakeit 0.5s" : "none", filter: myHit ? "brightness(2.2) saturate(0.3)" : "none" }}>
-              <Sprite id={MY.id} color={MY.color} back pixelated size="100%" style={{ width: "100%", height: "auto" }} />
+              <Sprite id={mine.id} color={mine.color} back pixelated size="100%" style={{ width: "100%", height: "auto" }} />
             </div>
             {/* 이름 플레이트 */}
             <div style={{ position: "absolute", left: "3%", top: "4%", background: "#f8f0dc", border: "3px solid #2c2c34", borderRadius: 10, padding: "6px 10px", color: "#2c2c34" }}>
@@ -308,14 +394,17 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
               <HpBar cur={wildHp} max={RARITY[wild.rarity].hp} />
             </div>
             <div style={{ position: "absolute", right: "3%", bottom: "4%", background: "#f8f0dc", border: "3px solid #2c2c34", borderRadius: 10, padding: "6px 10px", color: "#2c2c34" }}>
-              <div style={{ fontSize: 13 }}>{MY.name} <span style={{ fontSize: 10, color: "#666" }}>Lv.{student.level}</span></div>
-              <HpBar cur={student.hp} max={MY.maxHp} />
-              <div style={{ fontSize: 10, textAlign: "right", marginTop: 2 }}>{student.hp}/{MY.maxHp}</div>
+              <div style={{ fontSize: 13 }}>{mine.name} <span style={{ fontSize: 10, color: "#666" }}>Lv.{student.level}</span></div>
+              <HpBar cur={student.hp} max={MAX_HP} />
+              <div style={{ fontSize: 10, textAlign: "right", marginTop: 2 }}>{student.hp}/{MAX_HP}</div>
             </div>
             {/* 기술 이펙트 */}
             {fx?.kind === "fire" && [0, 1, 2].map((i) => (
               <div key={fx.key + "-" + i} style={{ position: "absolute", width: 18, height: 18, borderRadius: "50%", background: i === 1 ? "#ffd23f" : "#ff6b35", boxShadow: "0 0 14px #ff6b35", animation: `proj 0.85s ease-in ${i * 0.12}s forwards`, opacity: 0 }} />
             ))}
+            {fx?.kind === "proj" && (
+              <div key={fx.key} style={{ position: "absolute", width: 20, height: 20, borderRadius: "50%", background: mine.color, boxShadow: `0 0 14px ${mine.color}`, animation: "proj 0.85s ease-in forwards" }} />
+            )}
             {fx?.kind === "projBack" && <div key={fx.key} style={{ position: "absolute", width: 20, height: 20, borderRadius: "50%", background: TYPE_COLORS[wild.type], boxShadow: `0 0 14px ${TYPE_COLORS[wild.type]}`, animation: "projBack 0.85s ease-in forwards" }} />}
             {fx?.kind === "electric" && <div key={fx.key} style={{ position: "absolute", inset: 0, background: "#ffe94a", animation: "flash 0.8s ease forwards", pointerEvents: "none" }} />}
             {fx?.kind === "psychic" && <div key={fx.key} style={{ position: "absolute", left: "20%", top: "48%", width: 80, height: 80, borderRadius: "50%", border: "5px solid #c77dff", animation: "pulse 0.9s ease-out forwards", pointerEvents: "none" }} />}
@@ -327,26 +416,90 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       )}
 
       {/* 메시지 박스 */}
-      <div style={{ background: "#f8f0dc", color: "#2c2c34", border: "3px solid #2c2c34", borderRadius: 10, padding: "12px 14px", minHeight: 46, fontSize: 14, lineHeight: 1.5, marginBottom: 8 }}>
-        {phase === "idle" ? "풀숲에서 야생 포켓몬을 찾아 배틀로 잡아보자! (선생님이 낸 문제가 출제됩니다)" : msg}
-      </div>
+      {phase !== "idle" && (
+        <div style={{ background: "#f8f0dc", color: "#2c2c34", border: "3px solid #2c2c34", borderRadius: 10, padding: "12px 14px", minHeight: 46, fontSize: 14, lineHeight: 1.5, marginBottom: 8 }}>
+          {msg}
+        </div>
+      )}
 
-      {/* 조작 영역 */}
+      {/* 대기 화면: 내 포켓몬 카드 + 선택 + 진화 (M4) */}
       {phase === "idle" && (
         <div>
-          <button onClick={start} disabled={activeCount === 0} style={{ ...S.primaryBtn, width: "100%", opacity: activeCount === 0 ? 0.4 : 1 }}>
-            야생 포켓몬을 찾는다!
+          <div style={{ ...S.panel, display: "flex", gap: 12, alignItems: "center", marginBottom: 8 }}>
+            <div style={{ animation: "floaty 2.4s ease-in-out infinite" }}>
+              <Sprite id={mine.id} color={mine.color} size={72} />
+            </div>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: 14 }}>
+                {mine.name} <span style={{ fontSize: 10, color: "#9fd8ff" }}>Lv.{student.level}</span>
+              </div>
+              <div style={{ fontSize: 10, color: TYPE_COLORS[mine.type], marginTop: 3 }}>
+                {mine.moves.map((m) => m.name).join(" · ")}
+              </div>
+              {evoTargets.length > 0 ? (
+                <div style={{ fontSize: 10, color: "#9fd8ff", marginTop: 4 }}>
+                  진화까지 배틀 승수 {Math.min(myWins, winsNeeded)}/{winsNeeded}
+                  <span style={{ display: "inline-block", width: 60, height: 5, background: "#1a1c2c", borderRadius: 3, marginLeft: 6, verticalAlign: "middle", overflow: "hidden" }}>
+                    <span style={{ display: "block", width: `${Math.min(100, (myWins / winsNeeded) * 100)}%`, height: "100%", background: "#7ef29a" }} />
+                  </span>
+                </div>
+              ) : (
+                <div style={{ fontSize: 10, color: "#777", marginTop: 4 }}>최종 형태 (승수 {myWins})</div>
+              )}
+            </div>
+            <button onClick={() => setPicker(!picker)} style={{ ...S.ghostBtn, flexShrink: 0 }}>바꾸기</button>
+          </div>
+
+          {canEvolve && (
+            <div style={{ ...S.panel, marginBottom: 8, textAlign: "center", border: "3px solid #ffd54a" }}>
+              <div style={{ fontSize: 13, marginBottom: 8 }}>✨ {mine.name}{josa(mine.name, "이", "가").slice(-1)} 진화하고 싶어한다!</div>
+              <div style={{ display: "flex", gap: 6, justifyContent: "center", flexWrap: "wrap" }}>
+                {evoTargets.map((to) => (
+                  <button key={to} onClick={() => evolve(to)} disabled={busyAction} style={{ ...S.primaryBtn, padding: "8px 14px", fontSize: 13, background: "#e0a63a" }}>
+                    <Sprite id={to} silhouette size={22} style={{ verticalAlign: "middle", marginRight: 4 }} />
+                    {evoTargets.length > 1 ? `${POOL[to - 1].name}(으)로!` : "진화한다!"}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {picker && (
+            <div style={{ ...S.panel, marginBottom: 8 }}>
+              <div style={{ fontSize: 11, color: "#9fd8ff", marginBottom: 8 }}>배틀에 데려갈 포켓몬을 고르자 ({ownedIds.length}마리 보유)</div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(64px, 1fr))", gap: 6 }}>
+                {ownedIds.map((id) => {
+                  const p = POOL[id - 1];
+                  const on = id === game.battlePid;
+                  return (
+                    <button key={id} onClick={() => selectPokemon(id)} disabled={busyAction} style={{ background: on ? "#2c2f44" : "transparent", border: on ? `2px solid ${TYPE_COLORS[p.type]}` : "2px solid #f8f0dc22", borderRadius: 8, padding: 6, cursor: "pointer", fontFamily: "inherit", color: "#f8f0dc" }}>
+                      <Sprite id={id} color={p.color} size={40} />
+                      <div style={{ fontSize: 9, marginTop: 2 }}>{p.name}</div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          <button onClick={start} disabled={activeCount === 0 || battlesLeft <= 0} style={{ ...S.primaryBtn, width: "100%", opacity: activeCount === 0 || battlesLeft <= 0 ? 0.4 : 1 }}>
+            야생 포켓몬을 찾는다! (오늘 {battlesLeft}번 남음)
           </button>
           {activeCount === 0 && (
             <div style={{ fontSize: 12, color: "#ff9d9d", marginTop: 8, textAlign: "center" }}>
               출제 중인 문제가 없어요. 선생님이 문제를 등록해야 배틀할 수 있어요.
             </div>
           )}
+          {battlesLeft <= 0 && activeCount > 0 && (
+            <div style={{ fontSize: 12, color: "#9fd8ff", marginTop: 8, textAlign: "center" }}>
+              오늘의 배틀을 모두 마쳤어요. 문제풀이·퀴즈·탐색은 계속할 수 있어요!
+            </div>
+          )}
         </div>
       )}
 
       {phase === "intro" && (
-        <button onClick={() => { setPhase("select"); setMsg(`가라! ${MY.name}! 기술을 고르자.`); }} style={{ ...S.primaryBtn, width: "100%" }}>
+        <button onClick={() => { setPhase("select"); setMsg(`가라! ${mine.name}! 기술을 고르자.`); }} style={{ ...S.primaryBtn, width: "100%" }}>
           배틀 시작!
         </button>
       )}
@@ -386,25 +539,41 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       )}
 
       {(phase === "capture" || phase === "throwing") && wild && (
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 6 }}>
-          {BALL_KINDS.map((k) => {
-            const rate = captureRate(wild.rarity, k);
-            const disabled = student.inventory[k] <= 0 || phase === "throwing";
-            return (
-              <button key={k} onClick={() => throwBall(k)} disabled={disabled} style={{ ...S.choiceBtn, opacity: student.inventory[k] <= 0 ? 0.35 : 1 }}>
-                <BallIcon kind={k} size={15} /> {BALLS[k].name} ×{student.inventory[k]}
-                <div style={{ fontSize: 10, color: "#9fd8ff", marginTop: 2 }}>성공률 {Math.round(rate * 100)}%</div>
-              </button>
-            );
-          })}
-          <button onClick={() => { setPhase("done"); setMsg("다음에 다시 만나자..."); }} disabled={phase === "throwing"} style={{ ...S.ghostBtn, gridColumn: "1 / -1" }}>
-            포기하고 떠난다
-          </button>
+        <div>
+          {/* M4: 볼 개수 선택 — 여러 개 던지면 확률 상승, 전부 소모 */}
+          <div style={{ ...S.panel, display: "flex", gap: 8, alignItems: "center", justifyContent: "center", marginBottom: 6, padding: "8px 10px" }}>
+            <span style={{ fontSize: 11, color: "#9fd8ff" }}>한 번에 던질 개수</span>
+            <button onClick={() => setBallCount(Math.max(1, ballCount - 1))} disabled={phase === "throwing"} style={{ ...S.ghostBtn, padding: "4px 12px", fontSize: 14 }}>−</button>
+            <span style={{ fontSize: 16, minWidth: 28, textAlign: "center", color: "#ffd54a" }}>{ballCount}</span>
+            <button onClick={() => setBallCount(Math.min(MAX_BALLS_PER_THROW, ballCount + 1))} disabled={phase === "throwing"} style={{ ...S.ghostBtn, padding: "4px 12px", fontSize: 14 }}>＋</button>
+            <span style={{ fontSize: 10, color: "#777" }}>(최대 {MAX_BALLS_PER_THROW}개 · 마스터볼은 1개)</span>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 6 }}>
+            {BALL_KINDS.map((k) => {
+              const n = k === "master" ? 1 : ballCount;
+              const owned = student.inventory[k];
+              const rate = multiCaptureRate(wild.rarity, k, n);
+              const disabled = owned < n || phase === "throwing";
+              return (
+                <button key={k} onClick={() => throwBall(k)} disabled={disabled} style={{ ...S.choiceBtn, opacity: owned < n ? 0.35 : 1 }}>
+                  <BallIcon kind={k} size={15} /> {BALLS[k].name} {n > 1 ? `×${n}개` : ""} <span style={{ fontSize: 10, color: "#9fb0d8" }}>(보유 {owned})</span>
+                  <div style={{ fontSize: 10, color: "#9fd8ff", marginTop: 2 }}>성공률 {Math.round(rate * 100)}%</div>
+                </button>
+              );
+            })}
+            <button onClick={() => { setPhase("done"); setMsg("다음에 다시 만나자..."); }} disabled={phase === "throwing"} style={{ ...S.ghostBtn, gridColumn: "1 / -1" }}>
+              포기하고 떠난다
+            </button>
+          </div>
         </div>
       )}
 
       {phase === "done" && (
-        <button onClick={start} style={{ ...S.primaryBtn, width: "100%" }}>다시 풀숲을 탐색한다</button>
+        battlesLeft > 0 ? (
+          <button onClick={start} style={{ ...S.primaryBtn, width: "100%" }}>다시 풀숲을 탐색한다 (오늘 {battlesLeft}번 남음)</button>
+        ) : (
+          <button onClick={() => setPhase("idle")} style={{ ...S.primaryBtn, width: "100%" }}>오늘의 배틀 끝! 돌아가기</button>
+        )
       )}
     </div>
   );

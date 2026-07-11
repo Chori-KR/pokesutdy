@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { S } from "@/lib/styles";
-import { MY } from "@/lib/game";
-import { StudentData, ClassInfo, DayInfo } from "@/lib/types";
+import { MAX_HP, myPokemonOf } from "@/lib/game";
+import { StudentData, ClassInfo, DayInfo, GameInfo } from "@/lib/types";
 import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
 import BattleTab from "@/components/student/BattleTab";
@@ -21,13 +21,15 @@ interface Props {
   setCaught: (ids: number[]) => void;
   day: DayInfo;
   setDay: (d: DayInfo) => void;
+  game: GameInfo;
+  setGame: (g: GameInfo) => void;
   onLogout: () => void;
 }
 
 const BALL_KINDS = ["poke", "superb", "hyper", "master"] as const;
 type Tab = "battle" | "solve" | "quiz" | "explore" | "shop" | "dex";
 
-export default function StudentHome({ student, setStudent, cls, caught, setCaught, day, setDay, onLogout }: Props) {
+export default function StudentHome({ student, setStudent, cls, caught, setCaught, day, setDay, game, setGame, onLogout }: Props) {
   const [tab, setTab] = useState<Tab>("battle");
   const [toast, setToast] = useState("");
 
@@ -36,9 +38,11 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
     setTimeout(() => setToast(""), 2600);
   };
 
+  const mine = myPokemonOf(game.battlePid);
+
   // 탭 순서는 명세 §3: 배틀 / 문제풀이 / 오늘의 퀴즈 / 야생 탐색 / 상점 / 도감
   const tabs: [Tab, string][] = [
-    ["battle", "배틀"],
+    ["battle", `배틀 ${Math.max(0, day.battleLimit - day.battleUsed)}`],
     ["solve", "문제풀이"],
     ["quiz", day.quizDone ? "퀴즈 ✓" : "퀴즈"],
     ["explore", `탐색 ${Math.max(0, day.exploreLimit - day.encUsed)}`],
@@ -54,9 +58,9 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
             {student.nickname} <span style={{ fontSize: 11, opacity: 0.7 }}>{cls.name}</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 5, fontSize: 11 }}>
-            <span>{MY.name} Lv.{student.level}</span>
-            <HpBar cur={student.hp} max={MY.maxHp} width={80} />
-            <span style={{ opacity: 0.8 }}>{student.hp}/{MY.maxHp}</span>
+            <span>{mine.name} Lv.{student.level}</span>
+            <HpBar cur={student.hp} max={MAX_HP} width={80} />
+            <span style={{ opacity: 0.8 }}>{student.hp}/{MAX_HP}</span>
           </div>
         </div>
         <div style={{ textAlign: "right" }}>
@@ -87,6 +91,10 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
           moveDiff={cls.settings?.moveDiff !== false}
           caught={caught}
           setCaught={setCaught}
+          day={day}
+          setDay={setDay}
+          game={game}
+          setGame={setGame}
           showToast={showToast}
         />
       )}

@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { SupabaseClient } from "@supabase/supabase-js";
 import { supabaseAdmin } from "@/lib/supabase/admin";
 import { getStudentSession, StudentSession } from "@/lib/studentSession";
-import { Inventory, DEFAULT_EXPLORE_LIMIT, DEFAULT_SOLVE_LIMIT } from "@/lib/game";
+import { Inventory, DEFAULT_EXPLORE_LIMIT, DEFAULT_SOLVE_LIMIT, DEFAULT_BATTLE_LIMIT } from "@/lib/game";
 
 // 일일 상태 (day_state jsonb) — 자정(Asia/Seoul) 지나면 통째로 리셋 (명세 §4.7)
 export interface DayState {
@@ -12,6 +12,15 @@ export interface DayState {
   encUsed?: number;                                  // 오늘 사용한 야생 탐색 횟수
   solveCount?: number;                               // 오늘 푼 문제풀이 수
   solveQ?: string | null;                            // 지금 출제된 문제풀이 문제 id
+  battleUsed?: number;                               // 오늘 시작한 배틀(조우) 수
+  winTokens?: string[];                              // 승수 처리된 배틀 토큰 (중복 승수 방지)
+}
+
+// 영구 게임 상태 (game_state jsonb, 0003 마이그레이션) — 배틀 포켓몬 시스템
+export interface GameState {
+  starter?: number;                 // 스타팅 포켓몬 id (미선택이면 없음)
+  battlePid?: number;               // 현재 배틀 포켓몬 id
+  wins?: Record<string, number>;    // 포켓몬 id별 배틀 승수 (진화 조건)
 }
 
 export interface StudentRow {
@@ -25,7 +34,15 @@ export interface StudentRow {
   level: number;
   xp: number;
   day_state: DayState;
+  game_state?: GameState | null; // 0003 이전 DB에는 컬럼이 없을 수 있음
 }
+
+// game_state 컬럼이 아직 없는 DB(0003 미실행)에서 나는 오류를 친절한 안내로 변환
+export function isMissingGameState(error: { message?: string } | null): boolean {
+  return !!error?.message && /game_state/.test(error.message);
+}
+export const GAME_STATE_HINT =
+  "게임 업데이트에 필요한 DB 작업이 아직 안 됐어요. 선생님께 'supabase/migrations/0003_battle_pokemon.sql 실행'을 요청해주세요!";
 
 export function jsonError(status: number, message: string) {
   return NextResponse.json({ error: message }, { status });
@@ -48,25 +65,33 @@ export async function requireStudent(req: NextRequest): Promise<
   return { session, supa, student: student as StudentRow };
 }
 
-// 학급 설정 로드 (탐색/문제풀이 일일 한도 포함)
+// 학급 설정 로드 (탐색/문제풀이/배틀 일일 한도 포함)
 export async function getClassSettings(supa: SupabaseClient, classId: string) {
   const { data } = await supa.from("classes").select("settings").eq("id", classId).single();
-  const s = (data?.settings ?? {}) as { moveDiff?: boolean; exploreLimit?: number; solveLimit?: number };
+  const s = (data?.settings ?? {}) as {
+    moveDiff?: boolean; exploreLimit?: number; solveLimit?: number; battleLimit?: number;
+  };
   return {
     moveDiff: s.moveDiff !== false,
     exploreLimit: Math.max(0, Number(s.exploreLimit ?? DEFAULT_EXPLORE_LIMIT)),
     solveLimit: Math.max(0, Number(s.solveLimit ?? DEFAULT_SOLVE_LIMIT)),
+    battleLimit: Math.max(0, Number(s.battleLimit ?? DEFAULT_BATTLE_LIMIT)),
   };
 }
 
 // 클라이언트에 내려보낼 일일 카운터 스냅샷
-export function daySnapshot(s: StudentRow, limits: { exploreLimit: number; solveLimit: number }) {
+export function daySnapshot(
+  s: StudentRow,
+  limits: { exploreLimit: number; solveLimit: number; battleLimit: number }
+) {
   return {
     quizDone: s.day_state?.quizDone === true,
     encUsed: Number(s.day_state?.encUsed ?? 0),
     solveCount: Number(s.day_state?.solveCount ?? 0),
+    battleUsed: Number(s.day_state?.battleUsed ?? 0),
     exploreLimit: limits.exploreLimit,
     solveLimit: limits.solveLimit,
+    battleLimit: limits.battleLimit,
   };
 }
 

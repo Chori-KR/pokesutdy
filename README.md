@@ -4,7 +4,7 @@
 
 > 설계 근거: [`pokestudy-dev-spec.md`](./pokestudy-dev-spec.md) · UI/게임 로직 원본: 루트의 `*-prototype.jsx` 4종
 
-## 현재 구현 범위: M1 (코어) + M2 (경제) + M3 (AI·관리)
+## 현재 구현 범위: M1 (코어) + M2 (경제) + M3 (AI·관리) + M4 (배틀 확장)
 
 | 기능 | 상태 |
 |---|---|
@@ -28,6 +28,12 @@
 | 학생·통계 탭 (정답률·오늘/누적 풀이·도감·오답률 TOP10) | ✅ |
 | 학생 선물(포인트·아이템)·비밀번호 초기화 | ✅ |
 | AI 키 발급 가이드 페이지 (`/guide/ai-key`) | ✅ |
+| 스타팅 포켓몬 선택 (이상해씨·파이리·꼬부기·피카츄) | ✅ |
+| 배틀 포켓몬 선택 (잡은 포켓몬 사용) + 타입별 기술 자동 배치 | ✅ |
+| 진화: 배틀 승수(1→2단계 5승, 2→3단계 10승), 이브이 3갈래 분기 | ✅ |
+| 볼 여러 개 던지기 (1~10개, 개수만큼 확률 상승, 마스터볼 1개 고정) | ✅ |
+| 배틀 일일 제한 (기본 2회, 교사 설정) | ✅ |
+| 희귀 등급 재분류 (최종 진화체·상징 포켓몬 = 희귀 68종) | ✅ |
 
 ## 처음 설정 (선생님용, 약 10분)
 
@@ -44,6 +50,8 @@
 2. [`supabase/migrations/0001_init.sql`](./supabase/migrations/0001_init.sql) 내용 전체를 붙여넣고 **Run**
 3. 같은 방법으로 [`supabase/migrations/0002_seed_pokemon.sql`](./supabase/migrations/0002_seed_pokemon.sql)도 **Run**
    (성공하면 `pokemon_meta` 테이블에 151마리가 들어갑니다)
+4. 같은 방법으로 [`supabase/migrations/0003_battle_pokemon.sql`](./supabase/migrations/0003_battle_pokemon.sql)도 **Run**
+   (배틀 포켓몬 시스템용 — 이미 0001~0002만 실행한 기존 설치도 이것만 추가로 Run 하면 됩니다)
 
 ### 3. (권장) 이메일 확인 끄기
 Supabase 대시보드 → **Authentication → Sign In / Up → Email** 에서 **Confirm email을 OFF**

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { S } from "@/lib/styles";
-import { BALLS, RARITY, TYPE_COLORS, captureRate, josa, sleep, BallKind, Rarity } from "@/lib/game";
+import { BALLS, RARITY, TYPE_COLORS, multiCaptureRate, josa, sleep, BallKind, Rarity, MAX_BALLS_PER_THROW } from "@/lib/game";
 import { StudentData, DayInfo } from "@/lib/types";
 import BallIcon from "@/components/BallIcon";
 import Sprite from "@/components/Sprite";
@@ -30,6 +30,7 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
   const [fails, setFails] = useState(0);
   const [msg, setMsg] = useState("");
   const [busy, setBusy] = useState(false);
+  const [ballCount, setBallCount] = useState(1); // M4: 동시에 던질 볼 개수
 
   const left = Math.max(0, day.exploreLimit - day.encUsed);
 
@@ -43,6 +44,7 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
       setWild(data.pokemon);
       setToken(data.token);
       setFails(0);
+      setBallCount(1);
       setState("active");
       setMsg(`앗! 야생의 ${josa(data.pokemon.name, "이", "가")} 나타났다!`);
       setDay({ ...day, encUsed: data.encUsed });
@@ -54,16 +56,17 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
   }
 
   async function throwBall(kind: BallKind) {
-    if (!wild || state !== "active" || student.inventory[kind] <= 0 || busy) return;
+    const n = kind === "master" ? 1 : ballCount;
+    if (!wild || state !== "active" || student.inventory[kind] < n || busy) return;
     setBusy(true);
     setState("throwing");
-    setMsg(`${BALLS[kind].name}을(를) 던졌다! · · ·`);
+    setMsg(`${BALLS[kind].name} ${n > 1 ? `${n}개를` : "을(를)"} 던졌다! · · ·`);
     try {
       const [res] = await Promise.all([
         fetch("/api/battle/capture", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ ball: kind, token }),
+          body: JSON.stringify({ ball: kind, token, count: n }),
         }),
         sleep(1500), // 몬스터볼 흔들림 연출 시간
       ]);
@@ -149,17 +152,25 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
             )}
           </div>
           <div style={{ fontSize: 12, margin: "10px 0 12px", minHeight: 18 }}>{msg}</div>
+          <div style={{ display: "flex", gap: 8, alignItems: "center", justifyContent: "center", marginBottom: 8 }}>
+            <span style={{ fontSize: 11, color: "#9fd8ff" }}>한 번에 던질 개수</span>
+            <button onClick={() => setBallCount(Math.max(1, ballCount - 1))} disabled={state === "throwing"} style={{ ...S.ghostBtn, padding: "4px 12px", fontSize: 14 }}>−</button>
+            <span style={{ fontSize: 16, minWidth: 28, textAlign: "center", color: "#ffd54a" }}>{ballCount}</span>
+            <button onClick={() => setBallCount(Math.min(MAX_BALLS_PER_THROW, ballCount + 1))} disabled={state === "throwing"} style={{ ...S.ghostBtn, padding: "4px 12px", fontSize: 14 }}>＋</button>
+          </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
             {BALL_KINDS.map((k) => {
-              const rate = captureRate(wild.rarity, k);
+              const n = k === "master" ? 1 : ballCount;
+              const owned = student.inventory[k];
+              const rate = multiCaptureRate(wild.rarity, k, n);
               return (
                 <button
                   key={k}
                   onClick={() => throwBall(k)}
-                  disabled={student.inventory[k] <= 0 || state === "throwing" || busy}
-                  style={{ ...S.choiceBtn, opacity: student.inventory[k] <= 0 ? 0.35 : 1, fontSize: 12 }}
+                  disabled={owned < n || state === "throwing" || busy}
+                  style={{ ...S.choiceBtn, opacity: owned < n ? 0.35 : 1, fontSize: 12 }}
                 >
-                  <BallIcon kind={k} size={15} /> {BALLS[k].name} ×{student.inventory[k]}
+                  <BallIcon kind={k} size={15} /> {BALLS[k].name} {n > 1 ? `×${n}개` : ""} <span style={{ fontSize: 10, color: "#9fb0d8" }}>(보유 {owned})</span>
                   <div style={{ fontSize: 10, color: "#9fd8ff", marginTop: 3 }}>성공률 {Math.round(rate * 100)}%</div>
                 </button>
               );
