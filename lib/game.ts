@@ -97,6 +97,26 @@ export const BALLS: Record<BallKind, { name: string; price: number; bonus: numbe
   master: { name: "마스터볼", price: 5000, bonus: 1, top: "#9b59b6" },
 };
 
+// 소모품 (명세 §4.6): 상처약은 기절 상태 사용 불가, 회복약은 기절 회복 + 완전 회복
+export type MedKind = "potion" | "revive";
+export const MEDS: Record<MedKind, { name: string; price: number; desc: string }> = {
+  potion: { name: "상처약", price: 100, desc: "내 포켓몬 HP +50 (기절엔 사용 불가)" },
+  revive: { name: "회복약", price: 250, desc: "기절 회복 + HP 전부 회복" },
+};
+export type ShopItem = BallKind | MedKind;
+
+// 경제 수치 (명세 §4.4~4.6)
+export const DAILY_QUIZ_REWARD = 100;
+export const SOLVE_REWARD = 20;
+export const DEFAULT_EXPLORE_LIMIT = 3;
+export const DEFAULT_SOLVE_LIMIT = 10;
+
+// 데일리 퀴즈 정답 보상 볼: 몬스터볼 60% / 슈퍼볼 30% / 하이퍼볼 10%
+export const rollQuizBall = (): BallKind => {
+  const r = Math.random();
+  return r < 0.6 ? "poke" : r < 0.9 ? "superb" : "hyper";
+};
+
 // 내 포켓몬: MVP는 리자몽 고정 (명세 §4.2)
 export const MY = {
   id: 6, name: "리자몽", color: "#F08030", maxHp: 100,

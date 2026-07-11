@@ -1,17 +1,27 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { StudentData, ClassInfo } from "@/lib/types";
+import { StudentData, ClassInfo, DayInfo } from "@/lib/types";
+import { DEFAULT_EXPLORE_LIMIT, DEFAULT_SOLVE_LIMIT } from "@/lib/game";
 import LoginView from "@/components/student/LoginView";
 import StudentHome from "@/components/student/StudentHome";
 
 type Phase = "loading" | "login" | "home";
+
+const EMPTY_DAY: DayInfo = {
+  quizDone: false,
+  encUsed: 0,
+  solveCount: 0,
+  exploreLimit: DEFAULT_EXPLORE_LIMIT,
+  solveLimit: DEFAULT_SOLVE_LIMIT,
+};
 
 export default function StudentPage() {
   const [phase, setPhase] = useState<Phase>("loading");
   const [student, setStudent] = useState<StudentData | null>(null);
   const [cls, setCls] = useState<ClassInfo | null>(null);
   const [caught, setCaught] = useState<number[]>([]);
+  const [day, setDay] = useState<DayInfo>(EMPTY_DAY);
 
   const loadMe = useCallback(async () => {
     try {
@@ -21,6 +31,7 @@ export default function StudentPage() {
       setStudent(data.student);
       setCls(data.class);
       setCaught(data.caught);
+      setDay(data.day ?? EMPTY_DAY);
       setPhase("home");
     } catch {
       setPhase("login");
@@ -52,6 +63,8 @@ export default function StudentPage() {
       cls={cls}
       caught={caught}
       setCaught={setCaught}
+      day={day}
+      setDay={setDay}
       onLogout={logout}
     />
   );
