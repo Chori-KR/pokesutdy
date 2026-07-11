@@ -9,10 +9,14 @@ import type { Difficulty } from "@/lib/game";
 export type AiProvider = "gemini" | "openai" | "claude";
 
 export const AI_PROVIDERS: Record<AiProvider, { name: string; model: string; keyHelp: string }> = {
-  gemini: { name: "Google Gemini", model: "gemini-2.5-flash", keyHelp: "https://aistudio.google.com/apikey 에서 무료 발급 (권장)" },
+  gemini: { name: "Google Gemini", model: "flash(자동 선택)", keyHelp: "https://aistudio.google.com/apikey 에서 무료 발급 (권장)" },
   openai: { name: "OpenAI (ChatGPT)", model: "gpt-4o-mini", keyHelp: "https://platform.openai.com/api-keys 에서 발급 (유료 크레딧 필요)" },
   claude: { name: "Anthropic (Claude)", model: "claude-haiku-4-5", keyHelp: "https://console.anthropic.com 에서 발급 (유료 크레딧 필요)" },
 };
+
+// Gemini는 모델 세대 교체가 잦아(구모델이 신규 사용자에게 404) 후보를 순서대로 시도한다.
+// gemini-flash-latest는 항상 최신 flash를 가리키는 공식 별칭.
+const GEMINI_MODELS = ["gemini-flash-latest", "gemini-3-flash", "gemini-2.5-flash"];
 
 export const AI_DAILY_LIMIT = 20; // 교사당 일일 생성 호출 제한 (명세 §5.3 남용 방지)
 
@@ -47,18 +51,69 @@ answer는 정답 보기의 인덱스(0~3), d는 easy/medium/hard 중 하나입�
 
 // ── 제공사별 어댑터: 프롬프트 → 응답 텍스트 ─────────────────────────────
 async function callGemini(key: string, prompt: string): Promise<string> {
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${AI_PROVIDERS.gemini.model}:generateContent`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+  let lastErr = "";
+  for (const model of GEMINI_MODELS) {
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-goog-api-key": key },
+        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+      }
+    );
+    if (res.status === 404) {
+      // 이 모델이 폐기/미지원 — 다음 후보 시도
+      lastErr = `Gemini 404 (${model})`;
+      continue;
     }
-  );
-  if (!res.ok) throw new Error(`Gemini ${res.status}: ${await safeErr(res)}`);
-  const data = await res.json();
-  const parts = data?.candidates?.[0]?.content?.parts ?? [];
-  return parts.map((p: { text?: string }) => p.text ?? "").join("");
+    if (!res.ok) throw new Error(`Gemini ${res.status}: ${await safeErr(res)}`);
+    const data = await res.json();
+    const parts = data?.candidates?.[0]?.content?.parts ?? [];
+    return parts.map((p: { text?: string }) => p.text ?? "").join("");
+  }
+
+  // 후보가 전부 404 — 계정에서 실제 쓸 수 있는 flash 모델을 조회해 마지막으로 시도
+  const discovered = await discoverGeminiModel(key);
+  if (discovered) {
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${discovered}:generateContent`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-goog-api-key": key },
+        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+      }
+    );
+    if (res.ok) {
+      const data = await res.json();
+      const parts = data?.candidates?.[0]?.content?.parts ?? [];
+      return parts.map((p: { text?: string }) => p.text ?? "").join("");
+    }
+    lastErr = `Gemini ${res.status} (${discovered}): ${await safeErr(res)}`;
+  }
+  throw new Error(lastErr || "Gemini: 사용 가능한 모델을 찾지 못했어요.");
+}
+
+// 계정별 사용 가능 모델 목록에서 generateContent 지원 flash 모델을 고른다 (최신 우선).
+async function discoverGeminiModel(key: string): Promise<string | null> {
+  try {
+    const res = await fetch(
+      "https://generativelanguage.googleapis.com/v1beta/models?pageSize=1000",
+      { headers: { "x-goog-api-key": key } }
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    const names: string[] = (data?.models ?? [])
+      .filter((m: { name?: string; supportedGenerationMethods?: string[] }) =>
+        m.supportedGenerationMethods?.includes("generateContent") &&
+        /flash/i.test(m.name ?? "") &&
+        !/(embedding|image|tts|audio|live|thinking)/i.test(m.name ?? "")
+      )
+      .map((m: { name: string }) => m.name.replace(/^models\//, ""));
+    if (names.length === 0) return null;
+    return names.sort().reverse()[0]; // 버전 문자열 내림차순 → 대체로 최신
+  } catch {
+    return null;
+  }
 }
 
 async function callOpenai(key: string, prompt: string): Promise<string> {
