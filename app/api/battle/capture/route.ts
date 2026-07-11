@@ -1,10 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError } from "@/lib/api";
 import { verifyBattleToken } from "@/lib/studentSession";
-import { BALLS, RARITY, captureRate, gainXpCalc, BallKind, Rarity } from "@/lib/game";
+import {
+  BALLS, POOL, RARITY, multiCaptureRate, gainXpCalc,
+  BallKind, MAX_BALLS_PER_THROW,
+} from "@/lib/game";
 
-// 포획 판정은 전부 서버 권위 (명세 §7):
-// 볼 재고 확인 → 차감 → 서버 RNG → 성공 시 도감 등록 + 승리 포인트/XP 지급.
+// 포획 판정은 전부 서버 권위 (명세 §7).
+// M4: 볼을 1~10개 동시 사용 가능 — 성공률 1-(1-p)^n, 성공/실패와 무관하게 n개 소모.
+// 마스터볼은 항상 1개(100%). 등급은 게임 데이터(POOL) 기준으로 판정(재분류 반영).
 export async function POST(req: NextRequest) {
   const auth = await requireStudent(req);
   if (auth instanceof NextResponse) return auth;
@@ -14,23 +18,23 @@ export async function POST(req: NextRequest) {
   const ball = String(body?.ball ?? "") as BallKind;
   const token = String(body?.token ?? "");
   if (!(ball in BALLS)) return jsonError(400, "볼 종류가 잘못됐어요.");
+  const count = ball === "master"
+    ? 1
+    : Math.max(1, Math.min(MAX_BALLS_PER_THROW, Math.round(Number(body?.count) || 1)));
 
   const battle = await verifyBattleToken(token, student.id);
   if (!battle) return jsonError(401, "배틀 정보가 유효하지 않아요. 배틀을 다시 시작해주세요.");
 
-  const { data: meta } = await supa
-    .from("pokemon_meta")
-    .select("id, name_ko, rarity")
-    .eq("id", battle.pokemonId)
-    .single();
+  const meta = POOL[battle.pokemonId - 1];
   if (!meta) return jsonError(404, "포켓몬 정보를 찾을 수 없어요.");
-  const rarity = meta.rarity as Rarity;
+  const rarity = meta.rarity;
 
   const inventory = { ...student.inventory };
-  if ((inventory[ball] ?? 0) <= 0) return jsonError(409, `${BALLS[ball].name}이(가) 없어요.`);
-  inventory[ball] -= 1;
+  if ((inventory[ball] ?? 0) < count)
+    return jsonError(409, `${BALLS[ball].name}이(가) ${count}개나 없어요. (보유 ${inventory[ball] ?? 0}개)`);
+  inventory[ball] -= count;
 
-  const success = Math.random() < captureRate(rarity, ball);
+  const success = Math.random() < multiCaptureRate(rarity, ball, count);
 
   if (!success) {
     const { error } = await supa
@@ -38,7 +42,7 @@ export async function POST(req: NextRequest) {
       .update({ inventory })
       .eq("id", student.id);
     if (error) return jsonError(500, "저장에 실패했어요.");
-    return NextResponse.json({ success: false, inventory });
+    return NextResponse.json({ success: false, inventory, used: count });
   }
 
   // 도감 등록 (이미 잡은 포켓몬이면 중복 등록 안 됨 — unique 제약)
@@ -56,7 +60,7 @@ export async function POST(req: NextRequest) {
       .update({ inventory })
       .eq("id", student.id);
     if (error) return jsonError(500, "저장에 실패했어요.");
-    return NextResponse.json({ success: true, newlyCaught, inventory });
+    return NextResponse.json({ success: true, newlyCaught, inventory, used: count });
   }
 
   const reward = RARITY[rarity];
@@ -75,6 +79,7 @@ export async function POST(req: NextRequest) {
     points,
     xp: g.xp,
     level: g.level,
+    used: count,
     reward: { pts: reward.pts, xp: reward.xp },
   });
 }

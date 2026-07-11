@@ -1,20 +1,24 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { StudentData, ClassInfo, DayInfo } from "@/lib/types";
-import { DEFAULT_EXPLORE_LIMIT, DEFAULT_SOLVE_LIMIT } from "@/lib/game";
+import { StudentData, ClassInfo, DayInfo, GameInfo } from "@/lib/types";
+import { DEFAULT_EXPLORE_LIMIT, DEFAULT_SOLVE_LIMIT, DEFAULT_BATTLE_LIMIT, DEFAULT_BATTLE_PID } from "@/lib/game";
 import LoginView from "@/components/student/LoginView";
 import StudentHome from "@/components/student/StudentHome";
+import StarterSelect from "@/components/student/StarterSelect";
 
-type Phase = "loading" | "login" | "home";
+type Phase = "loading" | "login" | "starter" | "home";
 
 const EMPTY_DAY: DayInfo = {
   quizDone: false,
   encUsed: 0,
   solveCount: 0,
+  battleUsed: 0,
   exploreLimit: DEFAULT_EXPLORE_LIMIT,
   solveLimit: DEFAULT_SOLVE_LIMIT,
+  battleLimit: DEFAULT_BATTLE_LIMIT,
 };
+const EMPTY_GAME: GameInfo = { starter: null, battlePid: DEFAULT_BATTLE_PID, wins: {} };
 
 export default function StudentPage() {
   const [phase, setPhase] = useState<Phase>("loading");
@@ -22,6 +26,7 @@ export default function StudentPage() {
   const [cls, setCls] = useState<ClassInfo | null>(null);
   const [caught, setCaught] = useState<number[]>([]);
   const [day, setDay] = useState<DayInfo>(EMPTY_DAY);
+  const [game, setGame] = useState<GameInfo>(EMPTY_GAME);
 
   const loadMe = useCallback(async () => {
     try {
@@ -32,7 +37,9 @@ export default function StudentPage() {
       setCls(data.class);
       setCaught(data.caught);
       setDay(data.day ?? EMPTY_DAY);
-      setPhase("home");
+      setGame(data.game ?? EMPTY_GAME);
+      // 스타팅 미선택(신규 가입 또는 기존 학생 첫 접속) → 선택 화면 먼저
+      setPhase(data.game?.starter ? "home" : "starter");
     } catch {
       setPhase("login");
     }
@@ -56,6 +63,9 @@ export default function StudentPage() {
   if (phase === "login" || !student || !cls)
     return <LoginView onSuccess={loadMe} />;
 
+  if (phase === "starter")
+    return <StarterSelect nickname={student.nickname} onDone={loadMe} />;
+
   return (
     <StudentHome
       student={student}
@@ -65,6 +75,8 @@ export default function StudentPage() {
       setCaught={setCaught}
       day={day}
       setDay={setDay}
+      game={game}
+      setGame={setGame}
       onLogout={logout}
     />
   );

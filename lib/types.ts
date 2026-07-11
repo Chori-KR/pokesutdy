@@ -16,14 +16,24 @@ export interface DayInfo {
   quizDone: boolean;
   encUsed: number;
   solveCount: number;
+  battleUsed: number;
   exploreLimit: number;
   solveLimit: number;
+  battleLimit: number;
+}
+
+// 배틀 포켓몬 시스템 (M4)
+export interface GameInfo {
+  starter: number | null;
+  battlePid: number;
+  wins: Record<string, number>;
 }
 
 export interface ClassSettings {
   moveDiff: boolean;
   exploreLimit?: number;
   solveLimit?: number;
+  battleLimit?: number;
 }
 
 export interface ClassInfo {

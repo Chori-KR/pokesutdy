@@ -59,10 +59,51 @@ export const GEN1: [string, string][] = [
 ];
 
 export const LEGENDARY_IDS = new Set([144, 145, 146, 150, 151]);
+
+// 등급 규칙(재분류): 최종 진화체 + 상징적 단일 포켓몬 = 희귀 / 미진화·중간 = 흔함
+// (니드퀸·투구푸스 같은 진화체가 '흔함'이던 문제 수정)
 export const RARE_IDS = new Set([
-  3, 6, 9, 25, 26, 38, 45, 59, 65, 68, 94, 113, 115, 123, 127, 130, 131,
-  133, 134, 135, 136, 142, 143, 147, 148, 149,
+  // 각 진화 라인의 최종 진화체
+  3, 6, 9, 12, 15, 18, 20, 22, 24, 26, 28, 31, 34, 36, 38, 40, 42, 45, 47,
+  49, 51, 53, 55, 57, 59, 62, 65, 68, 71, 73, 76, 78, 80, 82, 85, 87, 89,
+  91, 94, 97, 99, 101, 103, 105, 110, 112, 117, 119, 121, 130, 134, 135,
+  136, 139, 141, 149,
+  // 상징적 단일/특수 포켓몬
+  25, 113, 115, 123, 127, 131, 132, 133, 142, 143, 147, 148,
 ]);
+
+// 1세대 진화 체인: 진화 전 → 진화 후 후보들 (이브이는 3갈래 분기)
+export const EVOLVES_TO: Record<number, number[]> = {
+  1: [2], 2: [3], 4: [5], 5: [6], 7: [8], 8: [9], 10: [11], 11: [12],
+  13: [14], 14: [15], 16: [17], 17: [18], 19: [20], 21: [22], 23: [24],
+  25: [26], 27: [28], 29: [30], 30: [31], 32: [33], 33: [34], 35: [36],
+  37: [38], 39: [40], 41: [42], 43: [44], 44: [45], 46: [47], 48: [49],
+  50: [51], 52: [53], 54: [55], 56: [57], 58: [59], 60: [61], 61: [62],
+  63: [64], 64: [65], 66: [67], 67: [68], 69: [70], 70: [71], 72: [73],
+  74: [75], 75: [76], 77: [78], 79: [80], 81: [82], 84: [85], 86: [87],
+  88: [89], 90: [91], 92: [93], 93: [94], 96: [97], 98: [99], 100: [101],
+  102: [103], 104: [105], 109: [110], 111: [112], 116: [117], 118: [119],
+  120: [121], 129: [130], 133: [134, 135, 136], 138: [139], 140: [141],
+  147: [148], 148: [149],
+};
+
+// 진화 단계 (1=기본, 2=중간, 3=최종): 3단 라인의 중간 단계에서만 2가 나온다
+const EVO_TARGETS = new Set(Object.values(EVOLVES_TO).flat());
+export const stageOf = (id: number): number => {
+  if (!EVO_TARGETS.has(id)) return 1;
+  // 나를 진화시키는 부모를 찾고, 그 부모가 또 누군가의 진화체면 나는 3단계
+  const parent = Number(Object.keys(EVOLVES_TO).find((k) => EVOLVES_TO[Number(k)].includes(id)));
+  return EVO_TARGETS.has(parent) ? 3 : 2;
+};
+
+// 진화 필요 배틀 승수: 1→2단계 5승, 2→3단계 10승 (그 포켓몬으로 이긴 횟수)
+export const evoWinsNeeded = (fromId: number): number => (stageOf(fromId) >= 2 ? 10 : 5);
+
+// 스타팅 포켓몬 (가입 시 선택): 이상해씨 / 파이리 / 꼬부기 / 피카츄
+export const STARTER_IDS = [1, 4, 7, 25] as const;
+
+export const DEFAULT_BATTLE_LIMIT = 2; // 하루 배틀(조우) 횟수 기본값 — 교사 설정 가능
+export const MAX_BALLS_PER_THROW = 10;
 
 export interface Pokemon {
   id: number;
@@ -117,15 +158,46 @@ export const rollQuizBall = (): BallKind => {
   return r < 0.6 ? "poke" : r < 0.9 ? "superb" : "hyper";
 };
 
-// 내 포켓몬: MVP는 리자몽 고정 (명세 §4.2)
-export const MY = {
-  id: 6, name: "리자몽", color: "#F08030", maxHp: 100,
-  moves: [
-    { name: "불꽃세례", diff: "easy" as Difficulty, dmg: 10, label: "쉬움" },
-    { name: "화염방사", diff: "medium" as Difficulty, dmg: 20, label: "보통" },
-    { name: "오버히트", diff: "hard" as Difficulty, dmg: 35, label: "어려움" },
-  ],
+// 타입별 기술 세트 (쉬움/보통/어려움 = 위력 10/20/35, 기술=난이도 규칙 유지)
+export const TYPE_MOVES: Record<string, [string, string, string]> = {
+  normal: ["몸통박치기", "베어가르기", "파괴광선"],
+  fire: ["불꽃세례", "화염방사", "오버히트"],
+  water: ["물대포", "파도타기", "하이드로펌프"],
+  electric: ["전기쇼크", "10만볼트", "번개"],
+  grass: ["덩굴채찍", "잎날가르기", "솔라빔"],
+  ice: ["얼음뭉치", "냉동빔", "눈보라"],
+  fighting: ["태권당수", "깨트리기", "인파이트"],
+  poison: ["독침", "오물공격", "오물폭탄"],
+  ground: ["모래뿌리기", "구멍파기", "지진"],
+  psychic: ["염동력", "사이코빔", "사이코키네시스"],
+  bug: ["실뿜기", "시저크로스", "메가폰"],
+  rock: ["돌떨구기", "암석봉인", "스톤에지"],
+  ghost: ["핥기", "나이트헤드", "섀도볼"],
+  dragon: ["용의숨결", "드래곤크루", "역린"],
+  fairy: ["요정의바람", "매지컬샤인", "문포스"],
 };
+
+export interface Move { name: string; diff: Difficulty; dmg: number; label: string }
+
+export const MAX_HP = 100; // 내 포켓몬 최대 HP (계정 공용)
+
+// 포켓몬 id → 배틀용 정보 (타입에 맞는 기술 3종 자동 배치)
+export function myPokemonOf(id: number) {
+  const p = POOL[id - 1] ?? POOL[5];
+  const [e, m, h] = TYPE_MOVES[p.type] ?? TYPE_MOVES.normal;
+  return {
+    id: p.id, name: p.name, type: p.type, color: p.color, maxHp: MAX_HP,
+    moves: [
+      { name: e, diff: "easy", dmg: 10, label: "쉬움" },
+      { name: m, diff: "medium", dmg: 20, label: "보통" },
+      { name: h, diff: "hard", dmg: 35, label: "어려움" },
+    ] as Move[],
+  };
+}
+
+// 하위 호환: 스타팅 미선택(구 데이터) 기본값은 리자몽
+export const DEFAULT_BATTLE_PID = 6;
+export const MY = myPokemonOf(DEFAULT_BATTLE_PID);
 
 export const TIME_LIMIT: Record<Difficulty, number> = { easy: 15, medium: 25, hard: 40 };
 export const DIFF: Record<Difficulty, { label: string; bg: string; fg: string }> = {
@@ -164,6 +236,14 @@ export const gainXpCalc = (cur: { xp: number; level: number }, n: number) => {
 
 export const captureRate = (rarity: Rarity, ball: BallKind) =>
   Math.min(1, RARITY[rarity].catch + BALLS[ball].bonus);
+
+// 볼 n개 동시 사용 시 성공률: n번 연속 던진 것과 동일 = 1-(1-p)^n
+// (마스터볼은 항상 1개, 100%)
+export const multiCaptureRate = (rarity: Rarity, ball: BallKind, count: number) => {
+  const p = captureRate(rarity, ball);
+  const n = ball === "master" ? 1 : Math.max(1, Math.min(MAX_BALLS_PER_THROW, count));
+  return 1 - Math.pow(1 - p, n);
+};
 
 // Asia/Seoul 기준 오늘 날짜 문자열 (일일 리셋 판정용)
 export const seoulToday = () =>

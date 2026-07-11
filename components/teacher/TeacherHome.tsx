@@ -17,6 +17,7 @@ export interface ClassRow {
     moveDiff: boolean;
     exploreLimit?: number;
     solveLimit?: number;
+    battleLimit?: number;
     aiProvider?: string;
     aiKeyEnc?: string;
     aiKeyHint?: string;
@@ -190,6 +191,7 @@ export default function TeacherHome({ session }: { session: Session }) {
           </div>
           <div style={T.card}>
             {([
+              ["battleLimit", "하루 배틀 횟수", 2, "야생 포켓몬과 조우하는 횟수. 배틀 승리 포인트의 하루 상한 역할도 해요."],
               ["exploreLimit", "하루 야생 탐색 횟수", 3, "배틀 없이 볼만 던져 잡는 찬스. 0이면 탐색 탭이 잠깁니다."],
               ["solveLimit", "문제풀이 일일 한도", 10, "정답 1개당 +20P. 한도 × 20P가 하루 최대 수입이에요."],
             ] as const).map(([key, label, def, desc]) => (
