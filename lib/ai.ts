@@ -1,0 +1,155 @@
+// AI 문제 생성 — BYOK 어댑터 (명세 §5.2/5.3)
+// 교사 API 키는 서버에서만 복호화·사용. 호출은 전부 서버 경유(키 브라우저 비노출).
+// 어댑터 패턴: 제공사별 호출 모듈 분리. 응답은 공통 파서로 정규화.
+
+// (주의) 이 파일은 클라이언트에서도 임포트됨 — Node 전용 모듈 금지.
+// 키 암호화는 서버 전용 lib/aiCrypto.ts에 분리.
+import type { Difficulty } from "@/lib/game";
+
+export type AiProvider = "gemini" | "openai" | "claude";
+
+export const AI_PROVIDERS: Record<AiProvider, { name: string; model: string; keyHelp: string }> = {
+  gemini: { name: "Google Gemini", model: "gemini-2.5-flash", keyHelp: "https://aistudio.google.com/apikey 에서 무료 발급 (권장)" },
+  openai: { name: "OpenAI (ChatGPT)", model: "gpt-4o-mini", keyHelp: "https://platform.openai.com/api-keys 에서 발급 (유료 크레딧 필요)" },
+  claude: { name: "Anthropic (Claude)", model: "claude-haiku-4-5", keyHelp: "https://console.anthropic.com 에서 발급 (유료 크레딧 필요)" },
+};
+
+export const AI_DAILY_LIMIT = 20; // 교사당 일일 생성 호출 제한 (명세 §5.3 남용 방지)
+
+// ── 프롬프트 (프로토타입 teacher-menu의 출제 규칙 포팅, 명세 §5.2) ─────────
+export interface GenRequest {
+  subject: string;
+  topic: string;
+  grade: string;
+  counts: { easy: number; medium: number; hard: number };
+  extra?: string;
+}
+
+export function buildPrompt(r: GenRequest): string {
+  return `당신은 학교 교사를 돕는 시험 문제 출제 도우미입니다. 다음 조건으로 4지선다 문제를 만들어주세요.
+
+과목: ${r.subject}
+단원·주제: ${r.topic}
+학년 수준: ${r.grade}
+난이도별 개수: 쉬움 ${r.counts.easy}개, 보통 ${r.counts.medium}개, 어려움 ${r.counts.hard}개
+${r.extra?.trim() ? `추가 지시: ${r.extra.trim()}` : ""}
+
+출제 규칙:
+- 오답 보기는 학생들이 실제로 저지르는 흔한 실수나 오개념에서 만들 것
+- 난이도를 명확히 구분할 것: 쉬움=기본 개념 확인, 보통=개념 적용, 어려움=응용·복합·문장제
+- 문제와 보기는 해당 학년이 이해할 수 있는 어휘로 쓸 것
+- 정답이 특정 번호에 몰리지 않게 answer 인덱스를 골고루 분배할 것
+
+반드시 아래 형식의 JSON 배열만 출력하세요. 마크다운 코드블록, 설명, 인사말을 절대 붙이지 마세요.
+[{"q":"문제 내용","opts":["보기1","보기2","보기3","보기4"],"answer":0,"d":"easy","why":"정답 해설 한 줄"}]
+answer는 정답 보기의 인덱스(0~3), d는 easy/medium/hard 중 하나입니다.`;
+}
+
+// ── 제공사별 어댑터: 프롬프트 → 응답 텍스트 ─────────────────────────────
+async function callGemini(key: string, prompt: string): Promise<string> {
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${AI_PROVIDERS.gemini.model}:generateContent`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-goog-api-key": key },
+      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+    }
+  );
+  if (!res.ok) throw new Error(`Gemini ${res.status}: ${await safeErr(res)}`);
+  const data = await res.json();
+  const parts = data?.candidates?.[0]?.content?.parts ?? [];
+  return parts.map((p: { text?: string }) => p.text ?? "").join("");
+}
+
+async function callOpenai(key: string, prompt: string): Promise<string> {
+  const res = await fetch("https://api.openai.com/v1/chat/completions", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
+    body: JSON.stringify({
+      model: AI_PROVIDERS.openai.model,
+      max_tokens: 4096,
+      messages: [{ role: "user", content: prompt }],
+    }),
+  });
+  if (!res.ok) throw new Error(`OpenAI ${res.status}: ${await safeErr(res)}`);
+  const data = await res.json();
+  return data?.choices?.[0]?.message?.content ?? "";
+}
+
+async function callClaude(key: string, prompt: string): Promise<string> {
+  const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "x-api-key": key,
+      "anthropic-version": "2023-06-01",
+    },
+    body: JSON.stringify({
+      model: AI_PROVIDERS.claude.model,
+      max_tokens: 4096,
+      messages: [{ role: "user", content: prompt }],
+    }),
+  });
+  if (!res.ok) throw new Error(`Claude ${res.status}: ${await safeErr(res)}`);
+  const data = await res.json();
+  if (data?.stop_reason === "refusal") throw new Error("Claude가 요청을 거절했어요.");
+  return (data?.content ?? [])
+    .map((b: { type: string; text?: string }) => (b.type === "text" ? b.text ?? "" : ""))
+    .join("");
+}
+
+async function safeErr(res: Response): Promise<string> {
+  try {
+    const t = await res.text();
+    return t.slice(0, 300);
+  } catch {
+    return "(응답 본문 없음)";
+  }
+}
+
+export async function callAi(provider: AiProvider, key: string, prompt: string): Promise<string> {
+  if (provider === "gemini") return callGemini(key, prompt);
+  if (provider === "openai") return callOpenai(key, prompt);
+  return callClaude(key, prompt);
+}
+
+// ── 공통 파서: 텍스트 → 검증된 문제 배열 ─────────────────────────────────
+export interface GeneratedQuestion {
+  q: string;
+  opts: [string, string, string, string];
+  answer: number;
+  d: Difficulty;
+  why: string;
+}
+
+export function parseQuestions(text: string): GeneratedQuestion[] {
+  const cleaned = text.replace(/```json|```/g, "").trim();
+  const start = cleaned.indexOf("[");
+  const end = cleaned.lastIndexOf("]");
+  if (start < 0 || end <= start) throw new Error("AI 응답에서 JSON을 찾지 못했어요.");
+  const parsed = JSON.parse(cleaned.slice(start, end + 1));
+  if (!Array.isArray(parsed)) throw new Error("AI 응답이 배열이 아니에요.");
+
+  const clean = parsed
+    .filter(
+      (p) =>
+        p &&
+        typeof p.q === "string" &&
+        p.q.trim() &&
+        Array.isArray(p.opts) &&
+        p.opts.length === 4 &&
+        p.opts.every((o: unknown) => typeof o === "string" && String(o).trim()) &&
+        Number.isInteger(p.answer) &&
+        p.answer >= 0 &&
+        p.answer <= 3
+    )
+    .map((p) => ({
+      q: String(p.q).trim(),
+      opts: p.opts.map((o: string) => String(o).trim()) as [string, string, string, string],
+      answer: Number(p.answer),
+      d: (["easy", "medium", "hard"].includes(p.d) ? p.d : "medium") as Difficulty,
+      why: typeof p.why === "string" ? p.why.trim() : "",
+    }));
+  if (clean.length === 0) throw new Error("사용할 수 있는 문제가 없었어요. 다시 시도해주세요.");
+  return clean;
+}

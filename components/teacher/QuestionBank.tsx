@@ -4,6 +4,8 @@ import { useMemo, useState } from "react";
 import { T } from "@/lib/styles";
 import { DIFF, Difficulty } from "@/lib/game";
 import { supabaseBrowser } from "@/lib/supabase/browser";
+import AiGenerate from "@/components/teacher/AiGenerate";
+import BulkImport from "@/components/teacher/BulkImport";
 
 export interface QuestionRow {
   id: string;
@@ -25,6 +27,7 @@ interface Props {
   questions: QuestionRow[];
   setQuestions: (qs: QuestionRow[]) => void;
   showToast: (t: string) => void;
+  hasAiKey: boolean;
 }
 
 const CIRCLED = ["①", "②", "③", "④"];
@@ -42,11 +45,12 @@ const EMPTY_FORM: FormState = {
   id: null, body: "", options: ["", "", "", ""], answer_idx: 0, difficulty: "easy", tag: "",
 };
 
-export default function QuestionBank({ classId, questions, setQuestions, showToast }: Props) {
+export default function QuestionBank({ classId, questions, setQuestions, showToast, hasAiKey }: Props) {
   const [search, setSearch] = useState("");
   const [filterTag, setFilterTag] = useState<string | null>(null);
   const [form, setForm] = useState<FormState | null>(null);
   const [formErr, setFormErr] = useState("");
+  const [panel, setPanel] = useState<"ai" | "bulk" | null>(null);
 
   const tags = useMemo(() => [...new Set(questions.map((q) => q.tag))], [questions]);
   const visible = questions.filter(
@@ -121,10 +125,30 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
 
   return (
     <div>
-      <div style={{ display: "flex", gap: 8, marginBottom: 8 }}>
-        <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="문제 검색" style={{ ...T.input, flex: 1 }} />
-        <button onClick={() => { setForm({ ...EMPTY_FORM }); setFormErr(""); }} style={T.primaryBtn}>+ 새 문제</button>
+      <div style={{ display: "flex", gap: 8, marginBottom: 8, flexWrap: "wrap" }}>
+        <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="문제 검색" style={{ ...T.input, flex: 1, minWidth: 140 }} />
+        <button onClick={() => { setForm({ ...EMPTY_FORM }); setFormErr(""); setPanel(null); }} style={T.primaryBtn}>+ 새 문제</button>
+        <button onClick={() => { setPanel(panel === "ai" ? null : "ai"); setForm(null); }} style={{ ...T.primaryBtn, background: "#7c5cd9" }}>🤖 AI 생성</button>
+        <button onClick={() => { setPanel(panel === "bulk" ? null : "bulk"); setForm(null); }} style={{ ...T.primaryBtn, background: "#2e8b57" }}>📥 대량 등록</button>
       </div>
+
+      {panel === "ai" && (
+        <AiGenerate
+          classId={classId}
+          hasAiKey={hasAiKey}
+          onRegistered={(rows) => setQuestions([...rows, ...questions])}
+          onClose={() => setPanel(null)}
+          showToast={showToast}
+        />
+      )}
+      {panel === "bulk" && (
+        <BulkImport
+          classId={classId}
+          onRegistered={(rows) => setQuestions([...rows, ...questions])}
+          onClose={() => setPanel(null)}
+          showToast={showToast}
+        />
+      )}
 
       <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 10, alignItems: "center" }}>
         <button onClick={() => setFilterTag(null)} style={{ ...T.chip, ...(filterTag ? {} : T.chipOn) }}>전체</button>
