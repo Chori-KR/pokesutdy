@@ -44,10 +44,20 @@ export async function POST(req: NextRequest) {
   // 도감 등록 (이미 잡은 포켓몬이면 중복 등록 안 됨 — unique 제약)
   const { error: catchErr } = await supa
     .from("catches")
-    .insert({ student_id: student.id, pokemon_id: meta.id, method: "battle" });
+    .insert({ student_id: student.id, pokemon_id: meta.id, method: battle.source });
   const newlyCaught = !catchErr; // 23505(중복)면 이미 도감에 있음
   if (catchErr && catchErr.code !== "23505")
     return jsonError(500, "도감 기록에 실패했어요.");
+
+  // 배틀 승리 포인트/XP는 배틀 포획에만 — 야생 탐색은 포획 자체가 보상 (명세 §4.3)
+  if (battle.source === "explore") {
+    const { error } = await supa
+      .from("students")
+      .update({ inventory })
+      .eq("id", student.id);
+    if (error) return jsonError(500, "저장에 실패했어요.");
+    return NextResponse.json({ success: true, newlyCaught, inventory });
+  }
 
   const reward = RARITY[rarity];
   const g = gainXpCalc(student, reward.xp);

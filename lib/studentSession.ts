@@ -54,8 +54,13 @@ export async function getStudentSession(req: NextRequest): Promise<StudentSessio
 
 // 배틀 토큰: 서버가 고른 야생 포켓몬을 서명해 내려보내고,
 // 포획 시 검증한다 → 클라이언트가 임의의 포켓몬(전설 등)을 포획 요청하는 것 방지.
-export async function signBattleToken(sid: string, pokemonId: number): Promise<string> {
-  return new SignJWT({ sid, pid: pokemonId, kind: "battle" })
+// source: "battle"(배틀 승리 보상 있음) | "explore"(야생 탐색 — 포획만, 보상 없음)
+export type EncounterSource = "battle" | "explore";
+
+export async function signBattleToken(
+  sid: string, pokemonId: number, source: EncounterSource = "battle"
+): Promise<string> {
+  return new SignJWT({ sid, pid: pokemonId, kind: "battle", src: source })
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
     .setExpirationTime("2h")
@@ -64,12 +69,12 @@ export async function signBattleToken(sid: string, pokemonId: number): Promise<s
 
 export async function verifyBattleToken(
   token: string, sid: string
-): Promise<{ pokemonId: number } | null> {
+): Promise<{ pokemonId: number; source: EncounterSource } | null> {
   try {
     const { payload } = await jwtVerify(token, secret());
     if (payload.kind !== "battle" || payload.sid !== sid) return null;
     if (typeof payload.pid !== "number") return null;
-    return { pokemonId: payload.pid };
+    return { pokemonId: payload.pid, source: payload.src === "explore" ? "explore" : "battle" };
   } catch {
     return null;
   }

@@ -3,10 +3,14 @@
 import { useState } from "react";
 import { S } from "@/lib/styles";
 import { MY } from "@/lib/game";
-import { StudentData, ClassInfo } from "@/lib/types";
+import { StudentData, ClassInfo, DayInfo } from "@/lib/types";
 import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
 import BattleTab from "@/components/student/BattleTab";
+import SolveTab from "@/components/student/SolveTab";
+import DailyTab from "@/components/student/DailyTab";
+import ExploreTab from "@/components/student/ExploreTab";
+import ShopTab from "@/components/student/ShopTab";
 import DexTab from "@/components/student/DexTab";
 
 interface Props {
@@ -15,19 +19,32 @@ interface Props {
   cls: ClassInfo;
   caught: number[];
   setCaught: (ids: number[]) => void;
+  day: DayInfo;
+  setDay: (d: DayInfo) => void;
   onLogout: () => void;
 }
 
 const BALL_KINDS = ["poke", "superb", "hyper", "master"] as const;
+type Tab = "battle" | "solve" | "quiz" | "explore" | "shop" | "dex";
 
-export default function StudentHome({ student, setStudent, cls, caught, setCaught, onLogout }: Props) {
-  const [tab, setTab] = useState<"battle" | "dex">("battle");
+export default function StudentHome({ student, setStudent, cls, caught, setCaught, day, setDay, onLogout }: Props) {
+  const [tab, setTab] = useState<Tab>("battle");
   const [toast, setToast] = useState("");
 
   const showToast = (t: string) => {
     setToast(t);
     setTimeout(() => setToast(""), 2600);
   };
+
+  // 탭 순서는 명세 §3: 배틀 / 문제풀이 / 오늘의 퀴즈 / 야생 탐색 / 상점 / 도감
+  const tabs: [Tab, string][] = [
+    ["battle", "배틀"],
+    ["solve", "문제풀이"],
+    ["quiz", day.quizDone ? "퀴즈 ✓" : "퀴즈"],
+    ["explore", `탐색 ${Math.max(0, day.exploreLimit - day.encUsed)}`],
+    ["shop", "상점"],
+    ["dex", `도감 ${caught.length}`],
+  ];
 
   return (
     <div style={S.page}>
@@ -58,7 +75,7 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
       </div>
 
       <div style={{ display: "flex", gap: 5, margin: "10px 0", flexWrap: "wrap" }}>
-        {([["battle", "배틀"], ["dex", `도감 ${caught.length}/151`]] as const).map(([k, label]) => (
+        {tabs.map(([k, label]) => (
           <button key={k} onClick={() => setTab(k)} style={{ ...S.tabBtn, ...(tab === k ? S.tabOn : {}) }}>{label}</button>
         ))}
       </div>
@@ -73,6 +90,20 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
           showToast={showToast}
         />
       )}
+      {tab === "solve" && <SolveTab student={student} setStudent={setStudent} day={day} setDay={setDay} />}
+      {tab === "quiz" && <DailyTab student={student} setStudent={setStudent} day={day} setDay={setDay} />}
+      {tab === "explore" && (
+        <ExploreTab
+          student={student}
+          setStudent={setStudent}
+          day={day}
+          setDay={setDay}
+          caught={caught}
+          setCaught={setCaught}
+          showToast={showToast}
+        />
+      )}
+      {tab === "shop" && <ShopTab student={student} setStudent={setStudent} showToast={showToast} />}
       {tab === "dex" && <DexTab caught={caught} />}
 
       {toast && <div style={S.toast}>{toast}</div>}

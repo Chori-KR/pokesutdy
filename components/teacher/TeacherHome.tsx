@@ -11,7 +11,7 @@ export interface ClassRow {
   id: string;
   name: string;
   class_code: string;
-  settings: { moveDiff: boolean };
+  settings: { moveDiff: boolean; exploreLimit?: number; solveLimit?: number };
 }
 
 export default function TeacherHome({ session }: { session: Session }) {
@@ -82,12 +82,17 @@ export default function TeacherHome({ session }: { session: Session }) {
     setErr("학급 코드 발급에 실패했어요. 다시 시도해주세요.");
   }
 
-  async function toggleMoveDiff() {
+  async function updateSettings(patch: Partial<ClassRow["settings"]>) {
     if (!cls) return;
-    const settings = { ...cls.settings, moveDiff: !cls.settings?.moveDiff };
+    const settings = { ...cls.settings, ...patch };
     const supa = supabaseBrowser();
     const { error } = await supa.from("classes").update({ settings }).eq("id", cls.id);
     if (!error) setCls({ ...cls, settings });
+    else showToast("설정 저장에 실패했어요.");
+  }
+
+  function toggleMoveDiff() {
+    updateSettings({ moveDiff: !(cls?.settings?.moveDiff !== false) });
   }
 
   async function logout() {
@@ -170,8 +175,32 @@ export default function TeacherHome({ session }: { session: Session }) {
                 <span style={{ position: "absolute", top: 2, left: cls.settings?.moveDiff !== false ? 21 : 2, width: 17, height: 17, background: "#fff", borderRadius: "50%", transition: "left 0.2s" }} />
               </span>
             </label>
-            <div style={{ fontSize: 11, color: "#999", marginTop: 16, lineHeight: 1.7 }}>
-              M2~M3에서 추가될 설정: 하루 야생 탐색 횟수, 문제풀이 일일 한도, 학생 선물, 비밀번호 초기화, AI 키(BYOK) 등록
+          </div>
+          <div style={T.card}>
+            {([
+              ["exploreLimit", "하루 야생 탐색 횟수", 3, "배틀 없이 볼만 던져 잡는 찬스. 0이면 탐색 탭이 잠깁니다."],
+              ["solveLimit", "문제풀이 일일 한도", 10, "정답 1개당 +20P. 한도 × 20P가 하루 최대 수입이에요."],
+            ] as const).map(([key, label, def, desc]) => (
+              <div key={key} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 13, marginBottom: 10 }}>
+                <div>
+                  {label}
+                  <div style={{ fontSize: 11, color: "#888", marginTop: 3 }}>{desc}</div>
+                </div>
+                <input
+                  type="number"
+                  min={0}
+                  max={99}
+                  value={cls.settings?.[key] ?? def}
+                  onChange={(e) => {
+                    const v = Math.max(0, Math.min(99, Number(e.target.value)));
+                    updateSettings({ [key]: v });
+                  }}
+                  style={{ ...T.input, width: 64, textAlign: "center", flexShrink: 0 }}
+                />
+              </div>
+            ))}
+            <div style={{ fontSize: 11, color: "#999", marginTop: 12, lineHeight: 1.7 }}>
+              변경은 저장 즉시 적용돼요 (학생은 화면 새로고침 후). M3에서 추가될 설정: 학생 선물, 비밀번호 초기화, AI 키(BYOK) 등록
             </div>
           </div>
         </div>
