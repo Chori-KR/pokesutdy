@@ -6,12 +6,21 @@ import { T } from "@/lib/styles";
 import { supabaseBrowser } from "@/lib/supabase/browser";
 import { SEED_QUESTIONS, generateClassCode } from "@/lib/seedQuestions";
 import QuestionBank, { QuestionRow } from "@/components/teacher/QuestionBank";
+import StatsTab from "@/components/teacher/StatsTab";
+import AiKeySettings from "@/components/teacher/AiKeySettings";
 
 export interface ClassRow {
   id: string;
   name: string;
   class_code: string;
-  settings: { moveDiff: boolean; exploreLimit?: number; solveLimit?: number };
+  settings: {
+    moveDiff: boolean;
+    exploreLimit?: number;
+    solveLimit?: number;
+    aiProvider?: string;
+    aiKeyEnc?: string;
+    aiKeyHint?: string;
+  };
 }
 
 export default function TeacherHome({ session }: { session: Session }) {
@@ -19,7 +28,7 @@ export default function TeacherHome({ session }: { session: Session }) {
   const [needsClass, setNeedsClass] = useState(false);
   const [className, setClassName] = useState("");
   const [questions, setQuestions] = useState<QuestionRow[]>([]);
-  const [tab, setTab] = useState<"bank" | "settings">("bank");
+  const [tab, setTab] = useState<"bank" | "stats" | "settings">("bank");
   const [toast, setToast] = useState("");
   const [err, setErr] = useState("");
 
@@ -144,7 +153,7 @@ export default function TeacherHome({ session }: { session: Session }) {
       </div>
 
       <div style={{ display: "flex", gap: 6, margin: "12px 0" }}>
-        {([["bank", "문제 은행"], ["settings", "게임 설정"]] as const).map(([k, label]) => (
+        {([["bank", "문제 은행"], ["stats", "학생·통계"], ["settings", "게임 설정"]] as const).map(([k, label]) => (
           <button key={k} onClick={() => setTab(k)} style={{ ...T.tabBtn, ...(tab === k ? T.tabOn : {}) }}>{label}</button>
         ))}
       </div>
@@ -155,8 +164,11 @@ export default function TeacherHome({ session }: { session: Session }) {
           questions={questions}
           setQuestions={setQuestions}
           showToast={showToast}
+          hasAiKey={!!cls.settings?.aiKeyEnc}
         />
       )}
+
+      {tab === "stats" && <StatsTab questions={questions} showToast={showToast} />}
 
       {tab === "settings" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
@@ -200,9 +212,10 @@ export default function TeacherHome({ session }: { session: Session }) {
               </div>
             ))}
             <div style={{ fontSize: 11, color: "#999", marginTop: 12, lineHeight: 1.7 }}>
-              변경은 저장 즉시 적용돼요 (학생은 화면 새로고침 후). M3에서 추가될 설정: 학생 선물, 비밀번호 초기화, AI 키(BYOK) 등록
+              변경은 저장 즉시 적용돼요 (학생은 화면 새로고침 후). 학생 선물·비밀번호 초기화는 <b>학생·통계</b> 탭에 있어요.
             </div>
           </div>
+          <AiKeySettings cls={cls} setCls={setCls} showToast={showToast} />
         </div>
       )}
 
