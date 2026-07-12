@@ -21,6 +21,7 @@ export interface GameState {
   starter?: number;                 // 스타팅 포켓몬 id (미선택이면 없음)
   battlePid?: number;               // 현재 배틀 포켓몬 id
   wins?: Record<string, number>;    // 포켓몬 id별 배틀 승수 (진화 조건)
+  evoCount?: number;                // 누적 진화 횟수 (포인트 진화 비용 계산용, M5)
 }
 
 export interface StudentRow {

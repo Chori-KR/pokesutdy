@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { T } from "@/lib/styles";
-import { BALLS, MEDS, BallKind, MedKind } from "@/lib/game";
+import { BALLS, MEDS, SNACKS, EVO_STONE } from "@/lib/game";
 import { teacherFetch } from "@/lib/teacherClient";
 import type { QuestionRow } from "@/components/teacher/QuestionBank";
 
@@ -30,6 +30,8 @@ const GIFT_ITEMS: [string, string][] = [
   ["", "아이템 없음"],
   ...Object.entries(BALLS).map(([k, v]) => [k, v.name] as [string, string]),
   ...Object.entries(MEDS).map(([k, v]) => [k, v.name] as [string, string]),
+  ["stone", EVO_STONE.name],
+  ...Object.entries(SNACKS).map(([k, v]) => [k, v.name] as [string, string]),
 ];
 
 // 통계 + 학생 관리 (명세 §5.4/5.5): 오답률 TOP10, 학생별 현황, 선물, 비밀번호 초기화.
