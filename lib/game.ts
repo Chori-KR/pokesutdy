@@ -60,7 +60,7 @@ export const GEN1: [string, string][] = [
 
 export const LEGENDARY_IDS = new Set([144, 145, 146, 150, 151]);
 
-// 등급 규칙(재분류): 최종 진화체 + 상징적 단일 포켓몬 = 희귀 / 미진화·중간 = 흔함
+// 등급 규칙(재분류): 최종 진화체 + 상징적 단일 포켓몬 + 스타팅 = 희귀 / 나머지 = 흔함
 // (니드퀸·투구푸스 같은 진화체가 '흔함'이던 문제 수정)
 export const RARE_IDS = new Set([
   // 각 진화 라인의 최종 진화체
@@ -69,7 +69,9 @@ export const RARE_IDS = new Set([
   91, 94, 97, 99, 101, 103, 105, 110, 112, 117, 119, 121, 130, 134, 135,
   136, 139, 141, 149,
   // 상징적 단일/특수 포켓몬
-  25, 113, 115, 123, 127, 131, 132, 133, 142, 143, 147, 148,
+  113, 115, 123, 127, 131, 132, 133, 142, 143, 147, 148,
+  // 스타팅 포켓몬 (야생에서도 귀하게)
+  1, 4, 7, 25,
 ]);
 
 // 1세대 진화 체인: 진화 전 → 진화 후 후보들 (이브이는 3갈래 분기)
@@ -99,11 +101,37 @@ export const stageOf = (id: number): number => {
 // 진화 필요 배틀 승수: 1→2단계 5승, 2→3단계 10승 (그 포켓몬으로 이긴 횟수)
 export const evoWinsNeeded = (fromId: number): number => (stageOf(fromId) >= 2 ? 10 : 5);
 
+// M5: 포인트 진화 비용 — 학생의 누적 진화 횟수 기준 (1번째 1000P, 2번째 2000P, 3번째~ 2500P)
+export const EVO_POINT_COSTS = [1000, 2000, 2500] as const;
+export const evoPointCost = (evoCount: number): number =>
+  EVO_POINT_COSTS[Math.min(Math.max(0, evoCount), EVO_POINT_COSTS.length - 1)];
+
+// M5: 진화의돌로만 진화하는 페어 (1세대 돌 진화 — 승수/포인트 진화 불가)
+const STONE_PAIRS: [number, number][] = [
+  [25, 26],   // 피카츄 → 라이츄 (천둥의돌)
+  [30, 31],   // 니드리나 → 니드퀸 (달의돌)
+  [33, 34],   // 니드리노 → 니드킹 (달의돌)
+  [35, 36],   // 삐삐 → 픽시 (달의돌)
+  [37, 38],   // 식스테일 → 나인테일 (불꽃의돌)
+  [39, 40],   // 푸린 → 푸크린 (달의돌)
+  [44, 45],   // 냄새꼬 → 라플레시아 (리프의돌)
+  [58, 59],   // 가디 → 윈디 (불꽃의돌)
+  [61, 62],   // 슈륙챙이 → 강챙이 (물의돌)
+  [70, 71],   // 우츠동 → 우츠보트 (리프의돌)
+  [90, 91],   // 셀러 → 파르셀 (물의돌)
+  [102, 103], // 아라리 → 나시 (리프의돌)
+  [120, 121], // 별가사리 → 아쿠스타 (물의돌)
+  [133, 134], // 이브이 → 샤미드 (물의돌)
+  [133, 135], // 이브이 → 쥬피썬더 (천둥의돌)
+  [133, 136], // 이브이 → 부스터 (불꽃의돌)
+];
+export const STONE_EVOS = new Set(STONE_PAIRS.map(([a, b]) => `${a}-${b}`));
+export const isStoneEvo = (from: number, to: number) => STONE_EVOS.has(`${from}-${to}`);
+
 // 스타팅 포켓몬 (가입 시 선택): 이상해씨 / 파이리 / 꼬부기 / 피카츄
 export const STARTER_IDS = [1, 4, 7, 25] as const;
 
 export const DEFAULT_BATTLE_LIMIT = 2; // 하루 배틀(조우) 횟수 기본값 — 교사 설정 가능
-export const MAX_BALLS_PER_THROW = 10;
 
 export interface Pokemon {
   id: number;
@@ -131,31 +159,43 @@ export const RARITY: Record<Rarity, {
   legendary: { label: "전설", color: "#c77dff", catch: 0.3, hp: 120, atk: 25, pts: 300, xp: 100, lv: 30 },
 };
 
+// M5: 몬스터볼 살짝 너프 (bonus -0.1 → 흔함 80% / 희귀 50% / 전설 20%)
 export const BALLS: Record<BallKind, { name: string; price: number; bonus: number; top: string }> = {
-  poke: { name: "몬스터볼", price: 100, bonus: 0, top: "#e84545" },
+  poke: { name: "몬스터볼", price: 100, bonus: -0.1, top: "#e84545" },
   superb: { name: "슈퍼볼", price: 300, bonus: 0.15, top: "#4a90d9" },
   hyper: { name: "하이퍼볼", price: 800, bonus: 0.3, top: "#f2c94c" },
   master: { name: "마스터볼", price: 5000, bonus: 1, top: "#9b59b6" },
 };
 
-// 소모품 (명세 §4.6): 상처약은 기절 상태 사용 불가, 회복약은 기절 회복 + 완전 회복
-export type MedKind = "potion" | "revive";
+// 소모품: M5에서 상처약 판매 종료 — 회복약(기절 회복 + 완전 회복)만 판매
+export type MedKind = "revive";
 export const MEDS: Record<MedKind, { name: string; price: number; desc: string }> = {
-  potion: { name: "상처약", price: 100, desc: "내 포켓몬 HP +50 (기절엔 사용 불가)" },
   revive: { name: "회복약", price: 250, desc: "기절 회복 + HP 전부 회복" },
 };
-export type ShopItem = BallKind | MedKind;
 
-// 경제 수치 (명세 §4.4~4.6)
-export const DAILY_QUIZ_REWARD = 100;
-export const SOLVE_REWARD = 20;
+// M5: 간식 — 추가 배틀 1회 + 등급 확정 출현 (일일 배틀 제한과 무관)
+export type SnackKind = "snack" | "snack2" | "snack3";
+export const SNACKS: Record<SnackKind, { name: string; price: number; rarity: Rarity; emoji: string; desc: string }> = {
+  snack: { name: "일반 간식", price: 500, rarity: "common", emoji: "🍪", desc: "추가 배틀 1회! 흔함 포켓몬이 랜덤으로 나와요" },
+  snack2: { name: "고급 간식", price: 2000, rarity: "rare", emoji: "🍰", desc: "추가 배틀 1회! 희귀 포켓몬이 랜덤으로 나와요" },
+  snack3: { name: "최고급 간식", price: 6000, rarity: "legendary", emoji: "🎂", desc: "추가 배틀 1회! 전설 포켓몬이 확정으로 나와요!" },
+};
+
+// M5: 진화의돌 — 돌 진화 포켓몬(피카츄→라이츄 등)은 이것으로만 진화
+export const EVO_STONE = { name: "진화의돌", price: 1500, emoji: "💎", desc: "돌로 진화하는 포켓몬(피카츄·이브이 등)의 진화에 필요" };
+
+export type ShopItem = BallKind | MedKind | SnackKind | "stone";
+
+// 경제 수치 (M5 정비 — 하루 성실 플레이 수입 ≈ 500P 기준)
+export const DAILY_QUIZ_REWARD = 150; // 퀴즈 정답: +150P + 랜덤 볼
+export const SOLVE_REWARD = 20;       // 문제풀이 정답당 (기본 10문제 = 최대 200P)
 export const DEFAULT_EXPLORE_LIMIT = 3;
 export const DEFAULT_SOLVE_LIMIT = 10;
 
-// 데일리 퀴즈 정답 보상 볼: 몬스터볼 60% / 슈퍼볼 30% / 하이퍼볼 10%
+// 데일리 퀴즈 정답 보상 볼: 몬스터볼 50% / 슈퍼볼 30% / 하이퍼볼 20%
 export const rollQuizBall = (): BallKind => {
   const r = Math.random();
-  return r < 0.6 ? "poke" : r < 0.9 ? "superb" : "hyper";
+  return r < 0.5 ? "poke" : r < 0.8 ? "superb" : "hyper";
 };
 
 // 타입별 기술 세트 (쉬움/보통/어려움 = 위력 10/20/35, 기술=난이도 규칙 유지)
@@ -207,7 +247,11 @@ export const DIFF: Record<Difficulty, { label: string; bg: string; fg: string }>
 };
 export const DIFF_FROM_LABEL: Record<string, Difficulty> = { 쉬움: "easy", 보통: "medium", 어려움: "hard" };
 
-export const INITIAL_INVENTORY = { poke: 3, superb: 0, hyper: 0, master: 0, potion: 0, revive: 0 };
+export const INITIAL_INVENTORY = {
+  poke: 3, superb: 0, hyper: 0, master: 0,
+  potion: 0, revive: 0,
+  stone: 0, snack: 0, snack2: 0, snack3: 0,
+};
 export type Inventory = typeof INITIAL_INVENTORY;
 
 export const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -223,6 +267,11 @@ export const josa = (n: string, a: string, b: string) => {
 export const pickWild = (): Pokemon => {
   const r = Math.random();
   const rarity: Rarity = r < 0.65 ? "common" : r < 0.95 ? "rare" : "legendary";
+  return pickWildOf(rarity);
+};
+
+// 등급 지정 출현 (M5 간식 배틀용)
+export const pickWildOf = (rarity: Rarity): Pokemon => {
   const pool = POOL.filter((p) => p.rarity === rarity);
   return pool[Math.floor(Math.random() * pool.length)];
 };
@@ -235,15 +284,7 @@ export const gainXpCalc = (cur: { xp: number; level: number }, n: number) => {
 };
 
 export const captureRate = (rarity: Rarity, ball: BallKind) =>
-  Math.min(1, RARITY[rarity].catch + BALLS[ball].bonus);
-
-// 볼 n개 동시 사용 시 성공률: n번 연속 던진 것과 동일 = 1-(1-p)^n
-// (마스터볼은 항상 1개, 100%)
-export const multiCaptureRate = (rarity: Rarity, ball: BallKind, count: number) => {
-  const p = captureRate(rarity, ball);
-  const n = ball === "master" ? 1 : Math.max(1, Math.min(MAX_BALLS_PER_THROW, count));
-  return 1 - Math.pow(1 - p, n);
-};
+  Math.max(0.05, Math.min(1, RARITY[rarity].catch + BALLS[ball].bonus));
 
 // Asia/Seoul 기준 오늘 날짜 문자열 (일일 리셋 판정용)
 export const seoulToday = () =>

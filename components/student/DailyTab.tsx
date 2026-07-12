@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { S } from "@/lib/styles";
-import { BALLS, BallKind } from "@/lib/game";
+import { BALLS, BallKind, DAILY_QUIZ_REWARD } from "@/lib/game";
 import { StudentData, DayInfo } from "@/lib/types";
 import BallIcon from "@/components/BallIcon";
 import Sprite from "@/components/Sprite";
@@ -78,7 +78,7 @@ export default function DailyTab({ student, setStudent, day, setDay }: Props) {
       <div style={{ ...S.panel, textAlign: "center", padding: 32 }}>
         <div style={{ fontSize: 15, marginBottom: 4 }}>이 포켓몬은 누구일까?</div>
         <div style={{ fontSize: 11, color: "#9fd8ff", marginBottom: 14 }}>
-          맞히면 +100P + 랜덤 볼! 틀려도 몬스터볼 1개!
+          맞히면 +{DAILY_QUIZ_REWARD}P + 랜덤 볼(몬스터/슈퍼/하이퍼)! 틀려도 몬스터볼 1개!
         </div>
         {err && <div style={{ ...S.warn, textAlign: "left" }}>{err}</div>}
         <button onClick={start} disabled={busy} style={S.primaryBtn}>
@@ -111,7 +111,7 @@ export default function DailyTab({ student, setStudent, day, setDay }: Props) {
           </div>
           <div style={{ fontSize: 12, marginTop: 6 }}>
             {result.correct ? (
-              <>+100P, <BallIcon kind={result.ball} size={15} /> {BALLS[result.ball].name} 획득!</>
+              <>+{DAILY_QUIZ_REWARD}P, <BallIcon kind={result.ball} size={15} /> {BALLS[result.ball].name} 획득!</>
             ) : (
               <>위로 선물: <BallIcon kind="poke" size={15} /> 몬스터볼 1개</>
             )}

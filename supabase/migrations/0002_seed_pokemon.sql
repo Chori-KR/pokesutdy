@@ -2,13 +2,13 @@
 -- 희귀도(M4 재분류): 전설 5 / 희귀(최종 진화체+상징 포켓몬) 68 / 흔함 78
 
 insert into public.pokemon_meta (id, name_ko, type, rarity) values
-  (1, '이상해씨', 'grass', 'common'),
+  (1, '이상해씨', 'grass', 'rare'),
   (2, '이상해풀', 'grass', 'common'),
   (3, '이상해꽃', 'grass', 'rare'),
-  (4, '파이리', 'fire', 'common'),
+  (4, '파이리', 'fire', 'rare'),
   (5, '리자드', 'fire', 'common'),
   (6, '리자몽', 'fire', 'rare'),
-  (7, '꼬부기', 'water', 'common'),
+  (7, '꼬부기', 'water', 'rare'),
   (8, '어니부기', 'water', 'common'),
   (9, '거북왕', 'water', 'rare'),
   (10, '캐터피', 'bug', 'common'),

@@ -22,11 +22,12 @@ export interface DayInfo {
   battleLimit: number;
 }
 
-// 배틀 포켓몬 시스템 (M4)
+// 배틀 포켓몬 시스템 (M4/M5)
 export interface GameInfo {
   starter: number | null;
   battlePid: number;
   wins: Record<string, number>;
+  evoCount: number;
 }
 
 export interface ClassSettings {

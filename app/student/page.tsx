@@ -18,7 +18,7 @@ const EMPTY_DAY: DayInfo = {
   solveLimit: DEFAULT_SOLVE_LIMIT,
   battleLimit: DEFAULT_BATTLE_LIMIT,
 };
-const EMPTY_GAME: GameInfo = { starter: null, battlePid: DEFAULT_BATTLE_PID, wins: {} };
+const EMPTY_GAME: GameInfo = { starter: null, battlePid: DEFAULT_BATTLE_PID, wins: {}, evoCount: 0 };
 
 export default function StudentPage() {
   const [phase, setPhase] = useState<Phase>("loading");

@@ -34,6 +34,7 @@ export async function GET(req: NextRequest) {
     starter: gs.starter ?? null,
     battlePid: gs.battlePid ?? gs.starter ?? DEFAULT_BATTLE_PID,
     wins: gs.wins ?? {},
+    evoCount: gs.evoCount ?? 0,
   };
 
   return NextResponse.json({
