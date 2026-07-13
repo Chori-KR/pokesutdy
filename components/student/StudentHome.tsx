@@ -42,12 +42,12 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
 
   // 탭 순서는 명세 §3: 배틀 / 문제풀이 / 오늘의 퀴즈 / 야생 탐색 / 상점 / 도감
   const tabs: [Tab, string][] = [
-    ["battle", `배틀 ${Math.max(0, day.battleLimit - day.battleUsed)}`],
+    ["battle", `배틀(${Math.max(0, day.battleLimit - day.battleUsed)})`],
     ["solve", "문제풀이"],
     ["quiz", day.quizDone ? "퀴즈 ✓" : "퀴즈"],
-    ["explore", `탐색 ${Math.max(0, day.exploreLimit - day.encUsed)}`],
+    ["explore", `탐색(${Math.max(0, day.exploreLimit - day.encUsed)})`],
     ["shop", "상점"],
-    ["dex", `도감 ${caught.length}`],
+    ["dex", `도감(${caught.length})`],
   ];
 
   return (

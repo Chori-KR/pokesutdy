@@ -49,6 +49,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
   const [fails, setFails] = useState(0);
   const [usedQ, setUsedQ] = useState<string[]>([]);
   const [picker, setPicker] = useState(false);   // 포켓몬 선택 패널
+  const [subject, setSubject] = useState("");    // M7: 배틀 출제 과목 ("" = 전체)
   const [busyAction, setBusyAction] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const wildHpRef = useRef(0);
@@ -77,12 +78,23 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       .catch(() => setBank([]));
   }, []);
 
+  // M7: 한 배틀은 한 과목 안에서만 출제 — 태그의 "과목·단원"에서 과목 부분으로 묶는다
+  const subjectOf = (tag: string) => (tag.split("·")[0] ?? "").trim() || "미분류";
+  const subjects = useMemo(
+    () => [...new Set((bank ?? []).map((q) => subjectOf(q.tag)))].sort((a, b) => a.localeCompare(b, "ko")),
+    [bank]
+  );
+  const activeBank = useMemo(
+    () => (subject ? (bank ?? []).filter((q) => subjectOf(q.tag) === subject) : (bank ?? [])),
+    [bank, subject]
+  );
+
   const countByDiff = useMemo(() => {
     const c: Record<Difficulty, number> = { easy: 0, medium: 0, hard: 0 };
-    (bank ?? []).forEach((x) => c[x.difficulty]++);
+    activeBank.forEach((x) => c[x.difficulty]++);
     return c;
-  }, [bank]);
-  const activeCount = bank?.length ?? 0;
+  }, [activeBank]);
+  const activeCount = activeBank.length;
 
   async function selectPokemon(pid: number) {
     if (busyAction || pid === game.battlePid) { setPicker(false); return; }
@@ -169,7 +181,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
   }
 
   function pickQuestion(diff: Difficulty): ApiQuestion | undefined {
-    const all = bank ?? [];
+    const all = activeBank; // M7: 선택한 과목 안에서만 출제
     // 같은 배틀 내 중복 출제 방지, 소진 시 재사용 (명세 §4.2)
     let pool = all.filter((x) => x.difficulty === diff && !usedQ.includes(x.id));
     if (pool.length === 0) pool = all.filter((x) => x.difficulty === diff);
@@ -570,6 +582,23 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
                   );
                 })}
               </div>
+            </div>
+          )}
+
+          {/* M7: 출제 과목 선택 — 한 배틀은 한 과목 안에서만 */}
+          {subjects.length > 1 && (
+            <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 8 }}>
+              <span style={{ fontSize: 11, color: "#9fd8ff", flexShrink: 0 }}>출제 과목</span>
+              <select
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                style={{ ...S.input, marginBottom: 0, flex: 1, padding: "8px 10px", fontSize: 12 }}
+              >
+                <option value="">전체 과목 섞어서</option>
+                {subjects.map((s) => (
+                  <option key={s} value={s}>{s}만 나오게</option>
+                ))}
+              </select>
             </div>
           )}
 

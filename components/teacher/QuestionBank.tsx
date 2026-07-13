@@ -51,6 +51,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
   const [form, setForm] = useState<FormState | null>(null);
   const [formErr, setFormErr] = useState("");
   const [panel, setPanel] = useState<"ai" | "bulk" | null>(null);
+  const [selected, setSelected] = useState<Set<string>>(new Set()); // M7: 체크된 문제 id
 
   const tags = useMemo(() => [...new Set(questions.map((q) => q.tag))], [questions]);
   const visible = questions.filter(
@@ -72,6 +73,27 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
       showToast(`'${tag}' 문제를 모두 ${active ? "출제" : "숨김"} 처리했어요.`);
     }
   }
+
+  // M7: 체크한 문제만 한 번에 출제/숨김
+  function toggleSelect(id: string) {
+    const next = new Set(selected);
+    if (next.has(id)) next.delete(id);
+    else next.add(id);
+    setSelected(next);
+  }
+
+  async function bulkSetSelected(active: boolean) {
+    const ids = [...selected];
+    if (ids.length === 0) return;
+    const supa = supabaseBrowser();
+    const { error } = await supa.from("questions").update({ active }).in("id", ids);
+    if (error) { showToast("일괄 변경에 실패했어요."); return; }
+    setQuestions(questions.map((x) => (selected.has(x.id) ? { ...x, active } : x)));
+    showToast(`선택한 ${ids.length}개 문제를 ${active ? "출제" : "숨김"} 처리했어요.`);
+    setSelected(new Set());
+  }
+
+  const allVisibleSelected = visible.length > 0 && visible.every((q) => selected.has(q.id));
 
   async function remove(q: QuestionRow) {
     if (!window.confirm("이 문제를 삭제할까요? 되돌릴 수 없어요.")) return;
@@ -211,6 +233,35 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
         </div>
       )}
 
+      {/* M7: 선택 일괄 관리 바 — 체크한 문제만 한 번에 출제/숨김 */}
+      {visible.length > 0 && (
+        <div style={{ ...T.card, display: "flex", alignItems: "center", gap: 10, marginBottom: 8, padding: "8px 12px", flexWrap: "wrap" }}>
+          <label style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12, cursor: "pointer" }}>
+            <input
+              type="checkbox"
+              checked={allVisibleSelected}
+              onChange={(e) => {
+                const next = new Set(selected);
+                if (e.target.checked) visible.forEach((q) => next.add(q.id));
+                else visible.forEach((q) => next.delete(q.id));
+                setSelected(next);
+              }}
+            />
+            전체 선택
+          </label>
+          <span style={{ fontSize: 12, color: selected.size > 0 ? "#3d6fd9" : "#999", fontWeight: 600 }}>
+            {selected.size}개 선택됨
+          </span>
+          <span style={{ display: "flex", gap: 6, marginLeft: "auto" }}>
+            <button onClick={() => bulkSetSelected(true)} disabled={selected.size === 0} style={{ ...T.chip, color: selected.size ? "#0f6e56" : "#ccc", borderColor: selected.size ? "#0f6e56" : "#eee", cursor: selected.size ? "pointer" : "default" }}>선택 출제</button>
+            <button onClick={() => bulkSetSelected(false)} disabled={selected.size === 0} style={{ ...T.chip, color: selected.size ? "#a32d2d" : "#ccc", borderColor: selected.size ? "#a32d2d" : "#eee", cursor: selected.size ? "pointer" : "default" }}>선택 숨김</button>
+            {selected.size > 0 && (
+              <button onClick={() => setSelected(new Set())} style={{ ...T.chip, color: "#888" }}>선택 해제</button>
+            )}
+          </span>
+        </div>
+      )}
+
       <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
         {visible.length === 0 && (
           <div style={{ ...T.card, textAlign: "center", color: "#888", fontSize: 13, padding: 24 }}>
@@ -220,8 +271,15 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
         {visible.map((q) => {
           const wrongRate = q.tries > 0 ? Math.round((q.wrong / q.tries) * 100) : null;
           return (
-            <div key={q.id} style={{ ...T.card, opacity: q.active ? 1 : 0.55 }}>
+            <div key={q.id} style={{ ...T.card, opacity: q.active ? 1 : 0.55, border: selected.has(q.id) ? "2px solid #3d6fd9" : T.card.border }}>
               <div style={{ display: "flex", justifyContent: "space-between", gap: 10 }}>
+                <input
+                  type="checkbox"
+                  checked={selected.has(q.id)}
+                  onChange={() => toggleSelect(q.id)}
+                  style={{ marginTop: 2, flexShrink: 0 }}
+                  title="선택"
+                />
                 <div style={{ flex: 1 }}>
                   <div style={{ fontSize: 13, lineHeight: 1.5, marginBottom: 5 }}>{q.body}</div>
                   <div style={{ fontSize: 11, color: "#666" }}>
