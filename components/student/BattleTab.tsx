@@ -6,7 +6,7 @@ import {
   BALLS, BallKind, DIFF, Difficulty, RARITY, TIME_LIMIT, TYPE_COLORS,
   TYPE_MOVE, POOL, Pokemon, Move, MAX_HP, SNACKS, SnackKind,
   EVOLVES_TO, evoWinsNeeded, evoPointCost, isStoneEvo,
-  myPokemonOf, captureRate, josa, shuffle, sleep,
+  myPokemonOf, captureRate, wildLevelFor, josa, shuffle, sleep,
 } from "@/lib/game";
 import { ApiQuestion, StudentData, DayInfo, GameInfo } from "@/lib/types";
 import Sprite from "@/components/Sprite";
@@ -36,7 +36,8 @@ const BALL_KINDS: BallKind[] = ["poke", "superb", "hyper", "master"];
 export default function BattleTab({ student, setStudent, moveDiff, caught, setCaught, day, setDay, game, setGame, showToast }: Props) {
   const [phase, setPhase] = useState<BattlePhase>("idle");
   const [bank, setBank] = useState<ApiQuestion[] | null>(null);
-  const [wild, setWild] = useState<(Pokemon & { token: string }) | null>(null);
+  const [wild, setWild] = useState<(Pokemon & { token: string; lv: number }) | null>(null);
+  const [evoAnim, setEvoAnim] = useState<{ fromId: number; toId: number; toName: string; step: number } | null>(null);
   const [wildHp, setWildHp] = useState(0);
   const [msg, setMsg] = useState("");
   const [move, setMove] = useState<Move | null>(null);
@@ -119,7 +120,12 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       setGame({ ...game, battlePid: data.battlePid, wins: data.wins, evoCount: data.evoCount });
       setStudent({ ...studentRef.current, points: data.points, inventory: data.inventory });
       if (data.newlyCaught && !caught.includes(to)) setCaught([...caught, to]);
-      showToast(`축하해! ${data.from.name}${josa(data.from.name, "이", "가").slice(-1)} ${data.to.name}(으)로 진화했다! ✨ (${data.used} 사용)`);
+      // M6: 원작풍 진화 연출 — 하얗게 빛나며 변신
+      setEvoAnim({ fromId: data.from.id, toId: data.to.id, toName: data.to.name, step: 0 });
+      await sleep(1400);
+      setEvoAnim((a) => (a ? { ...a, step: 1 } : a));
+      await sleep(2400);
+      setEvoAnim((a) => (a ? { ...a, step: 2 } : a));
     } catch {
       showToast("연결에 실패했어요.");
     } finally {
@@ -140,10 +146,11 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       const data = await res.json();
       if (!res.ok) { setMsg(data.error ?? "배틀을 시작할 수 없어요."); setPhase("idle"); return; }
       setDay({ ...day, battleUsed: data.battleUsed, battleLimit: data.battleLimit });
-      if (data.inventory) setStudent({ ...studentRef.current, inventory: data.inventory });
+      // M6: 배틀은 풀 HP로 시작 (서버도 동일하게 초기화)
+      setStudent({ ...studentRef.current, hp: MAX_HP, ...(data.inventory ? { inventory: data.inventory } : {}) });
       const meta = POOL.find((p) => p.id === data.pokemon.id)!;
       const hp = RARITY[meta.rarity].hp;
-      setWild({ ...meta, token: data.token });
+      setWild({ ...meta, token: data.token, lv: wildLevelFor(meta.rarity, studentRef.current.level) });
       setWildHp(hp);
       wildHpRef.current = hp;
       setWildState("idle");
@@ -180,6 +187,20 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
     setPhase("question");
     setMsg(`문제를 맞히면 ${m.name} 발동!`);
   }
+
+  // M6: 배틀 종료 시 자동 완전 회복 (약 시스템 폐지)
+  useEffect(() => {
+    if (phase !== "done") return;
+    if (studentRef.current.hp < MAX_HP) {
+      setStudent({ ...studentRef.current, hp: MAX_HP });
+      fetch("/api/student/state", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ hp: MAX_HP }),
+      }).catch(() => {});
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase]);
 
   useEffect(() => {
     if (phase !== "question") return;
@@ -227,7 +248,9 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
 
     if (correct) {
       record.then((res) => {
-        if (res) setStudent({ ...studentRef.current, xp: res.xp, level: res.level });
+        if (!res) return;
+        setStudent({ ...studentRef.current, xp: res.xp, level: res.level, points: res.points ?? studentRef.current.points });
+        if (res.levelBonus > 0) showToast(`🎉 레벨 업! Lv.${res.level} — 보상 +${res.levelBonus}P`);
       });
       setMsg(`${mine.name}의 ${move.name}!`);
       setFx({ kind: attackFx(), key: Date.now() });
@@ -283,7 +306,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       await sleep(650);
       setMyHit(false);
       if (nh <= 0) {
-        setMsg(`${mine.name}은(는) 쓰러졌다... 회복약을 쓰거나 내일까지 기다리자.`);
+        setMsg(`${mine.name}은(는) 쓰러졌다... 배틀이 끝나고 기운을 차렸다! (HP 회복)`);
         setPhase("done");
       } else {
         setPhase("select");
@@ -301,8 +324,8 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
     const reqStart = Date.now();
     let result: {
       success: boolean; newlyCaught?: boolean; inventory: StudentData["inventory"];
-      points?: number; xp?: number; level?: number; reward?: { pts: number; xp: number };
-      used?: number; error?: string;
+      points?: number; xp?: number; level?: number; levelBonus?: number;
+      reward?: { pts: number; xp: number }; error?: string;
     } | null = null;
     try {
       const res = await fetch("/api/battle/capture", {
@@ -344,6 +367,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
         setCaught([...caught, wild.id]);
         showToast("도감에 새로운 포켓몬이 기록되었다!");
       }
+      if ((result!.levelBonus ?? 0) > 0) showToast(`🎉 레벨 업! Lv.${result!.level} — 보상 +${result!.levelBonus}P`);
       setMsg(`신난다! ${josa(wild.name, "을", "를")} 잡았다! +${result!.reward!.pts}P +${result!.reward!.xp}XP`);
       setPhase("done");
     } else {
@@ -367,20 +391,53 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
   if (bank === null)
     return <div style={{ ...S.panel, textAlign: "center", padding: 30, fontSize: 13, color: "#9fd8ff" }}>문제를 불러오는 중...</div>;
 
-  if (student.hp <= 0 && phase !== "busy")
-    return (
-      <div style={{ ...S.panel, textAlign: "center", padding: 30 }}>
-        <div style={{ fontSize: 15, marginBottom: 8 }}>{mine.name}이(가) 기절했어요...</div>
-        <div style={{ fontSize: 12, color: "#9fd8ff" }}>상점의 회복약을 쓰거나, 내일 아침이 되면 저절로 기운을 차려요.</div>
-      </div>
-    );
-
   const moves = moveDiff
     ? mine.moves
     : [{ name: mine.moves[1].name, diff: "medium" as Difficulty, dmg: 20, label: "보통" }];
 
   return (
     <div>
+      {/* M6: 진화 연출 오버레이 — 원작처럼 하얗게 빛나며 변신 */}
+      {evoAnim && (
+        <div style={{ position: "fixed", inset: 0, background: "rgba(8,10,22,0.94)", zIndex: 60, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 20, fontFamily: "inherit" }}>
+          {evoAnim.step === 2 && (
+            <div style={{ position: "absolute", inset: 0, background: "#fff", animation: "flash 0.9s ease forwards", pointerEvents: "none" }} />
+          )}
+          <div style={{ position: "relative" }}>
+            {evoAnim.step < 2 ? (
+              <Sprite
+                id={evoAnim.fromId}
+                size={150}
+                style={
+                  evoAnim.step === 1
+                    ? { filter: "brightness(0) invert(1)", animation: "evoPulse 0.45s ease-in-out infinite" }
+                    : { animation: "floaty 1.8s ease-in-out infinite" }
+                }
+              />
+            ) : (
+              <Sprite id={evoAnim.toId} size={180} style={{ animation: "pop 0.6s ease-out" }} />
+            )}
+          </div>
+          <div style={{ color: "#f8f0dc", fontSize: 15, textAlign: "center", lineHeight: 1.8, padding: "0 20px" }}>
+            {evoAnim.step === 0 && <>어...? {POOL[evoAnim.fromId - 1].name}의 상태가...!</>}
+            {evoAnim.step === 1 && <>{POOL[evoAnim.fromId - 1].name}의 모습이 변하고 있다!</>}
+            {evoAnim.step === 2 && (
+              <>
+                🎉 축하합니다! <br />
+                <b style={{ color: "#ffd54a", fontSize: 18 }}>{POOL[evoAnim.fromId - 1].name}</b>
+                {josa(POOL[evoAnim.fromId - 1].name, "은", "는")}{" "}
+                <b style={{ color: "#7ef29a", fontSize: 18 }}>{evoAnim.toName}</b>(으)로 진화했다!
+              </>
+            )}
+          </div>
+          {evoAnim.step === 2 && (
+            <button onClick={() => setEvoAnim(null)} style={{ ...S.primaryBtn, marginTop: 4 }}>
+              최고야!
+            </button>
+          )}
+        </div>
+      )}
+
       {/* 배틀 필드 */}
       {phase !== "idle" && wild && (
         <div style={{ position: "relative", borderRadius: 14, overflow: "hidden", border: "4px solid #2c2c34", marginBottom: 8 }}>
@@ -398,7 +455,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
             {/* 이름 플레이트 */}
             <div style={{ position: "absolute", left: "3%", top: "4%", background: "#f8f0dc", border: "3px solid #2c2c34", borderRadius: 10, padding: "6px 10px", color: "#2c2c34" }}>
               <div style={{ fontSize: 13, display: "flex", gap: 6, alignItems: "center" }}>
-                {wild.name} <span style={{ fontSize: 10, color: "#666" }}>Lv.{RARITY[wild.rarity].lv}</span>
+                {wild.name} <span style={{ fontSize: 10, color: "#666" }}>Lv.{wild.lv}</span>
                 <span style={{ fontSize: 9, padding: "1px 6px", borderRadius: 8, background: RARITY[wild.rarity].color }}>{RARITY[wild.rarity].label}</span>
               </div>
               <HpBar cur={wildHp} max={RARITY[wild.rarity].hp} />

@@ -167,11 +167,7 @@ export const BALLS: Record<BallKind, { name: string; price: number; bonus: numbe
   master: { name: "마스터볼", price: 5000, bonus: 1, top: "#9b59b6" },
 };
 
-// 소모품: M5에서 상처약 판매 종료 — 회복약(기절 회복 + 완전 회복)만 판매
-export type MedKind = "revive";
-export const MEDS: Record<MedKind, { name: string; price: number; desc: string }> = {
-  revive: { name: "회복약", price: 250, desc: "기절 회복 + HP 전부 회복" },
-};
+// M6: 약 판매 전면 종료 — 배틀이 끝나면 자동으로 완전 회복된다.
 
 // M5: 간식 — 추가 배틀 1회 + 등급 확정 출현 (일일 배틀 제한과 무관)
 export type SnackKind = "snack" | "snack2" | "snack3";
@@ -184,7 +180,7 @@ export const SNACKS: Record<SnackKind, { name: string; price: number; rarity: Ra
 // M5: 진화의돌 — 돌 진화 포켓몬(피카츄→라이츄 등)은 이것으로만 진화
 export const EVO_STONE = { name: "진화의돌", price: 1500, emoji: "💎", desc: "돌로 진화하는 포켓몬(피카츄·이브이 등)의 진화에 필요" };
 
-export type ShopItem = BallKind | MedKind | SnackKind | "stone";
+export type ShopItem = BallKind | SnackKind | "stone";
 
 // 경제 수치 (M5 정비 — 하루 성실 플레이 수입 ≈ 500P 기준)
 export const DAILY_QUIZ_REWARD = 150; // 퀴즈 정답: +150P + 랜덤 볼
@@ -281,6 +277,29 @@ export const gainXpCalc = (cur: { xp: number; level: number }, n: number) => {
   let xp = cur.xp + n, level = cur.level;
   while (xp >= 100) { xp -= 100; level++; }
   return { xp, level };
+};
+
+// M6: 레벨업 보상 — 레벨업마다 +100P, 5의 배수 레벨 도달 시 +500P (100+400)
+export const levelUpBonus = (fromLevel: number, toLevel: number): number => {
+  let bonus = 0;
+  for (let l = fromLevel + 1; l <= toLevel; l++) {
+    bonus += 100;
+    if (l % 5 === 0) bonus += 400;
+  }
+  return bonus;
+};
+
+// XP 적용 + 레벨업 보상 계산 (서버 공용)
+export const applyXp = (cur: { xp: number; level: number }, n: number) => {
+  const g = gainXpCalc(cur, n);
+  return { xp: g.xp, level: g.level, levelBonus: levelUpBonus(cur.level, g.level) };
+};
+
+// M6: 야생 포켓몬 레벨 표시 — 내 레벨 연동 (흔함 -10±2 / 희귀 -4±2 / 전설 +4±2, 최소 2)
+export const wildLevelFor = (rarity: Rarity, myLevel: number): number => {
+  const base = rarity === "common" ? -10 : rarity === "rare" ? -4 : 4;
+  const jitter = Math.floor(Math.random() * 5) - 2; // -2..+2
+  return Math.max(2, myLevel + base + jitter);
 };
 
 export const captureRate = (rarity: Rarity, ball: BallKind) =>

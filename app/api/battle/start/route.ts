@@ -12,9 +12,6 @@ export async function POST(req: NextRequest) {
   if (auth instanceof NextResponse) return auth;
   const { supa, student } = auth;
 
-  if (student.hp <= 0)
-    return jsonError(409, "내 포켓몬이 기절 상태예요. 회복약을 쓰거나 내일까지 기다려야 해요.");
-
   const body = await req.json().catch(() => null);
   const snack = body?.snack ? (String(body.snack) as SnackKind) : null;
   if (snack && !(snack in SNACKS)) return jsonError(400, "그런 간식은 없어요.");
@@ -29,7 +26,8 @@ export async function POST(req: NextRequest) {
     if ((inventory[snack] ?? 0) < 1)
       return jsonError(409, `${SNACKS[snack].name}이 없어요. 상점에서 살 수 있어요!`);
     inventory[snack] -= 1;
-    const { error } = await supa.from("students").update({ inventory }).eq("id", student.id);
+    // M6: 배틀은 항상 풀 HP로 시작 (약 시스템 폐지)
+    const { error } = await supa.from("students").update({ inventory, hp: 100 }).eq("id", student.id);
     if (error) return jsonError(500, "저장에 실패했어요.");
     wildPokemon = pickWildOf(SNACKS[snack].rarity);
     const token = await signBattleToken(student.id, wildPokemon.id, "battle");
@@ -46,8 +44,9 @@ export async function POST(req: NextRequest) {
   if (battleUsed >= battleLimit)
     return jsonError(409, `오늘의 배틀 ${battleLimit}회를 모두 사용했어요. 상점의 간식으로 추가 배틀을 할 수 있어요!`);
 
+  // M6: 배틀은 항상 풀 HP로 시작 (약 시스템 폐지)
   const day_state = { ...student.day_state, battleUsed: battleUsed + 1 };
-  const { error } = await supa.from("students").update({ day_state }).eq("id", student.id);
+  const { error } = await supa.from("students").update({ day_state, hp: 100 }).eq("id", student.id);
   if (error) return jsonError(500, "저장에 실패했어요.");
 
   wildPokemon = pickWild();

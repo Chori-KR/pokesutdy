@@ -1,12 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError } from "@/lib/api";
-import { BALLS, MEDS, SNACKS, EVO_STONE, BallKind, MedKind, SnackKind } from "@/lib/game";
+import { BALLS, SNACKS, EVO_STONE, BallKind, SnackKind } from "@/lib/game";
 
 // 상점 구매 — 가격표는 서버 상수, 포인트 차감·재고 증가 전부 서버 판정.
-// M5 상품: 볼 4종 / 회복약 / 진화의돌 / 간식 3종 (상처약 판매 종료)
+// M6 상품: 볼 4종 / 진화의돌 / 간식 3종 (약 판매 종료 — 배틀 후 자동 회복)
 function priceOf(item: string): { price: number; name: string } | null {
   if (item in BALLS) return BALLS[item as BallKind];
-  if (item in MEDS) return MEDS[item as MedKind];
   if (item in SNACKS) return SNACKS[item as SnackKind];
   if (item === "stone") return EVO_STONE;
   return null;

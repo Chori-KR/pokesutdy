@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { T } from "@/lib/styles";
-import { BALLS, MEDS, SNACKS, EVO_STONE } from "@/lib/game";
+import { BALLS, SNACKS, EVO_STONE } from "@/lib/game";
 import { teacherFetch } from "@/lib/teacherClient";
 import type { QuestionRow } from "@/components/teacher/QuestionBank";
 
@@ -29,7 +29,6 @@ interface Props {
 const GIFT_ITEMS: [string, string][] = [
   ["", "아이템 없음"],
   ...Object.entries(BALLS).map(([k, v]) => [k, v.name] as [string, string]),
-  ...Object.entries(MEDS).map(([k, v]) => [k, v.name] as [string, string]),
   ["stone", EVO_STONE.name],
   ...Object.entries(SNACKS).map(([k, v]) => [k, v.name] as [string, string]),
 ];

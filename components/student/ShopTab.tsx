@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { S } from "@/lib/styles";
-import { BALLS, MEDS, SNACKS, EVO_STONE, BallKind, MedKind, SnackKind, ShopItem, MAX_HP } from "@/lib/game";
+import { BALLS, SNACKS, EVO_STONE, BallKind, SnackKind, ShopItem } from "@/lib/game";
 import { StudentData } from "@/lib/types";
 import BallIcon from "@/components/BallIcon";
 
@@ -36,26 +36,6 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
       if (!res.ok) { showToast(data.error ?? "구매에 실패했어요."); return; }
       setStudent({ ...student, points: data.points, inventory: data.inventory });
       showToast(`${data.bought.name}을(를) 구매했어요!`);
-    } catch {
-      showToast("연결에 실패했어요. 다시 시도해주세요.");
-    } finally {
-      setBusy(false);
-    }
-  }
-
-  async function useMed(item: MedKind) {
-    if (busy) return;
-    setBusy(true);
-    try {
-      const res = await fetch("/api/shop/use", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ item }),
-      });
-      const data = await res.json();
-      if (!res.ok) { showToast(data.error ?? "사용에 실패했어요."); return; }
-      setStudent({ ...student, hp: data.hp, inventory: data.inventory });
-      showToast(`${data.used.name} 사용! HP ${data.hp}/${MAX_HP}`);
     } catch {
       showToast("연결에 실패했어요. 다시 시도해주세요.");
     } finally {
@@ -103,21 +83,6 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
       )}
 
       <div style={{ fontSize: 11, color: "#9fd8ff", textAlign: "center", marginTop: 4 }}>— 도구 —</div>
-      {row({
-        key: "revive",
-        icon: <span style={{ fontSize: 22 }}>💊</span>,
-        name: MEDS.revive.name,
-        owned: student.inventory.revive,
-        desc: MEDS.revive.desc,
-        price: MEDS.revive.price,
-        onBuy: () => buy("revive"),
-        extra:
-          student.inventory.revive > 0 ? (
-            <button onClick={() => useMed("revive")} disabled={busy} style={{ ...S.ghostBtn, padding: "8px 10px", flexShrink: 0 }}>
-              사용
-            </button>
-          ) : undefined,
-      })}
       {row({
         key: "stone",
         icon: <span style={{ fontSize: 22 }}>{EVO_STONE.emoji}</span>,
