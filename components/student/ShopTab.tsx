@@ -23,8 +23,21 @@ const BALL_DESC: Record<BallKind, string> = {
 export default function ShopTab({ student, setStudent, showToast }: Props) {
   const [busy, setBusy] = useState(false);
 
+  // M7: 실수 구매 방지 확인창 — priceOf로 이름·가격을 찾아 안내
+  function priceName(item: ShopItem): { name: string; price: number } | null {
+    if (item in BALLS) return BALLS[item as BallKind];
+    if (item in SNACKS) return SNACKS[item as SnackKind];
+    if (item === "stone") return EVO_STONE;
+    return null;
+  }
+
   async function buy(item: ShopItem) {
     if (busy) return;
+    const info = priceName(item);
+    if (info) {
+      const after = student.points - info.price;
+      if (!window.confirm(`${info.name}을(를) ${info.price.toLocaleString()}P에 살까요?\n(남은 포인트: ${after.toLocaleString()}P)`)) return;
+    }
     setBusy(true);
     try {
       const res = await fetch("/api/shop/buy", {

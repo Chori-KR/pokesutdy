@@ -154,7 +154,7 @@ export default function StatsTab({ questions, showToast }: Props) {
                     <td style={{ padding: "7px 8px" }}>{s.dexCount}/151</td>
                     <td style={{ padding: "7px 8px" }}>{fmtDate(s.lastActive)}</td>
                     <td style={{ padding: "7px 8px", whiteSpace: "nowrap" }}>
-                      <button onClick={() => { setGiftFor(giftFor === s.id ? null : s.id); setPwFor(null); }} style={{ ...T.smallBtn, border: "1px solid #b4c4e0", color: "#3a5", marginRight: 4 }}>🎁 선물</button>
+                      <button onClick={() => { const open = giftFor !== s.id; setGiftFor(open ? s.id : null); setPwFor(null); if (open) { setGiftPoints(100); setGiftItem(""); setGiftCount(1); } }} style={{ ...T.smallBtn, border: "1px solid #b4c4e0", color: "#3a5", marginRight: 4 }}>🎁 선물</button>
                       <button onClick={() => { setPwFor(pwFor === s.id ? null : s.id); setGiftFor(null); setNewPw(""); }} style={T.smallBtn}>🔑 비번</button>
                     </td>
                   </tr>
