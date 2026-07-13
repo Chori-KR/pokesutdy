@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireTeacher } from "@/lib/teacherApi";
 import { jsonError } from "@/lib/api";
-import { BALLS, MEDS, SNACKS, ShopItem } from "@/lib/game";
+import { BALLS, SNACKS, ShopItem } from "@/lib/game";
 
 // 학생 선물 (명세 §5.5): 포인트 또는 아이템을 수업 보상으로 지급. 서버 권위.
 export async function POST(req: NextRequest) {
@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
 
   if (!studentId) return jsonError(400, "학생을 선택해주세요.");
   if (points === 0 && (!item || count === 0)) return jsonError(400, "지급할 포인트나 아이템을 정해주세요.");
-  if (item && !(item in BALLS) && !(item in MEDS) && !(item in SNACKS) && item !== "stone")
+  if (item && !(item in BALLS) && !(item in SNACKS) && item !== "stone")
     return jsonError(400, "그런 아이템은 없어요.");
 
   const { data: student } = await supa

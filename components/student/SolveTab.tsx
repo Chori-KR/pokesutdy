@@ -12,7 +12,7 @@ interface Props {
   setDay: (d: DayInfo) => void;
 }
 
-interface Result { correct: boolean; answer_idx: number; reward: number }
+interface Result { correct: boolean; answer_idx: number; reward: number; level: number; levelBonus: number }
 
 // 문제풀이 (명세 §4.5): 정답 +20P, 하루 한도까지. 출제·채점은 전부 서버.
 export default function SolveTab({ student, setStudent, day, setDay }: Props) {
@@ -55,7 +55,7 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
       const data = await res.json();
       if (!res.ok) { setErr(data.error ?? "채점에 실패했어요."); setPicked(null); return; }
       setResult(data);
-      setStudent({ ...student, points: data.points });
+      setStudent({ ...student, points: data.points, xp: data.xp, level: data.level });
       setDay({ ...day, solveCount: data.solveCount });
     } catch {
       setErr("연결에 실패했어요. 다시 시도해주세요.");
@@ -121,8 +121,13 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
       {result && (
         <div style={{ textAlign: "center", marginTop: 12, animation: "pop 0.3s ease-out" }}>
           <div style={{ fontSize: 14, color: result.correct ? "#7ef29a" : "#ff9d9d" }}>
-            {result.correct ? `정답! +${result.reward}P` : "아쉬워요! 정답을 확인하세요."}
+            {result.correct ? `정답! +${result.reward}P +2XP` : "아쉬워요! 정답을 확인하세요."}
           </div>
+          {result.levelBonus > 0 && (
+            <div style={{ fontSize: 13, color: "#ffd54a", marginTop: 4 }}>
+              🎉 레벨 업! Lv.{result.level} — 보상 +{result.levelBonus}P
+            </div>
+          )}
           {left > 0 ? (
             <button onClick={next} disabled={busy} style={{ ...S.primaryBtn, marginTop: 10, padding: "9px 18px", fontSize: 13 }}>
               다음 문제 ({left}문제 남음)

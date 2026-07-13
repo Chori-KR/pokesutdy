@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError, getClassSettings } from "@/lib/api";
-import { SOLVE_REWARD } from "@/lib/game";
+import { SOLVE_REWARD, applyXp } from "@/lib/game";
 
-// 문제풀이 채점 (명세 §4.5): 정답 +20P, 하루 한도까지. 통계·풀이 로그 집계.
+// 문제풀이 채점 (명세 §4.5): 정답 +20P +2XP, 하루 한도까지. 통계·풀이 로그 집계.
+// M6: 레벨업 시 보상 포인트도 함께 지급.
 export async function POST(req: NextRequest) {
   const auth = await requireStudent(req);
   if (auth instanceof NextResponse) return auth;
@@ -32,11 +33,12 @@ export async function POST(req: NextRequest) {
   if (!q) return jsonError(404, "문제를 찾을 수 없어요.");
 
   const correct = chosenIdx === q.answer_idx;
-  const points = student.points + (correct ? SOLVE_REWARD : 0);
+  const g = correct ? applyXp(student, 2) : { xp: student.xp, level: student.level, levelBonus: 0 };
+  const points = student.points + (correct ? SOLVE_REWARD : 0) + g.levelBonus;
   const day_state = { ...student.day_state, solveCount: solveCount + 1, solveQ: null };
 
   const [{ error }] = await Promise.all([
-    supa.from("students").update({ points, day_state }).eq("id", student.id),
+    supa.from("students").update({ points, day_state, xp: g.xp, level: g.level }).eq("id", student.id),
     supa
       .from("questions")
       .update({ tries: q.tries + 1, wrong: q.wrong + (correct ? 0 : 1) })
@@ -54,6 +56,9 @@ export async function POST(req: NextRequest) {
     correct,
     answer_idx: q.answer_idx,
     points,
+    xp: g.xp,
+    level: g.level,
+    levelBonus: g.levelBonus,
     solveCount: solveCount + 1,
     solveLimit,
     reward: correct ? SOLVE_REWARD : 0,

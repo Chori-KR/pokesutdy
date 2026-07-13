@@ -1,9 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError } from "@/lib/api";
-import { gainXpCalc } from "@/lib/game";
+import { applyXp } from "@/lib/game";
 
 // 배틀 답안 기록 — 서버가 정답을 대조해 통계(tries/wrong)와
-// 정답당 +2XP(승패 무관, 명세 §4.2)를 권위 있게 반영한다.
+// 정답당 +2XP(승패 무관)를 권위 있게 반영한다.
+// M6: 레벨업 시 보상 포인트(+100P, 5의 배수 레벨 +500P)도 함께 지급.
 // chosen_idx: 0~3, 시간 초과는 null.
 export async function POST(req: NextRequest) {
   const auth = await requireStudent(req);
@@ -47,15 +48,19 @@ export async function POST(req: NextRequest) {
 
   let xp = student.xp;
   let level = student.level;
+  let points = student.points;
+  let levelBonus = 0;
   if (correct) {
-    const g = gainXpCalc(student, 2);
+    const g = applyXp(student, 2);
     xp = g.xp;
     level = g.level;
+    levelBonus = g.levelBonus;
+    points = student.points + levelBonus;
     updates.push(
-      Promise.resolve(supa.from("students").update({ xp, level }).eq("id", student.id))
+      Promise.resolve(supa.from("students").update({ xp, level, points }).eq("id", student.id))
     );
   }
   await Promise.all(updates);
 
-  return NextResponse.json({ correct, answer_idx: q.answer_idx, xp, level });
+  return NextResponse.json({ correct, answer_idx: q.answer_idx, xp, level, points, levelBonus });
 }
