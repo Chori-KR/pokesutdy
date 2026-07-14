@@ -11,6 +11,7 @@ import {
 import { ApiQuestion, StudentData, DayInfo, GameInfo } from "@/lib/types";
 import Sprite from "@/components/Sprite";
 import ShinyFx from "@/components/student/ShinyFx";
+import BattleFx, { isTypeFx } from "@/components/student/BattleFx";
 import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
 
@@ -36,7 +37,7 @@ interface Props {
 type BattlePhase = "idle" | "intro" | "select" | "question" | "busy" | "capture" | "throwing" | "done";
 interface ShuffledOption { t: string; ok: boolean; idx: number }
 interface ActiveQuestion extends ApiQuestion { sOpts: ShuffledOption[] }
-type Fx = { kind: string; key: number } | null;
+type Fx = { kind: string; key: number; dir?: "fwd" | "back" } | null;
 
 const BALL_KINDS: BallKind[] = ["poke", "superb", "hyper", "master"];
 
@@ -55,6 +56,8 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const selectedRef = useRef<number | null>(null);
   selectedRef.current = selected;
   const [fx, setFx] = useState<Fx>(null);
+  const [throwKind, setThrowKind] = useState<BallKind>("poke"); // 애니메이션에 쓸 볼 종류
+  const [capFx, setCapFx] = useState<"success" | "fail" | null>(null); // 포획 결과 연출
   const [wildState, setWildState] = useState<"idle" | "hit" | "captured" | "gone">("idle");
   const [myHit, setMyHit] = useState(false);
   const [fails, setFails] = useState(0);
@@ -189,6 +192,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       setWildHp(hp);
       wildHpRef.current = hp;
       setWildState("idle");
+      setCapFx(null);
       setFails(0);
       setUsedQ([]);
       setPhase("intro");
@@ -258,13 +262,6 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   }, [phase, q]);
 
   // 내 공격 이펙트: 타입별 (불꽃/전기/에스퍼는 전용, 나머지는 타입색 투사체)
-  function attackFx(): string {
-    if (mine.type === "fire") return "fire";
-    if (mine.type === "electric") return "electric";
-    if (mine.type === "psychic") return "psychic";
-    return "proj";
-  }
-
   async function answer(opt: ShuffledOption | null, remain: number) {
     if (phase !== "question" || !move || !q || !wild) return;
     if (timerRef.current) clearInterval(timerRef.current);
@@ -292,7 +289,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
         if (res.levelBonus > 0) showToast(`🎉 레벨 업! Lv.${res.level} — 보상 +${res.levelBonus}P`);
       });
       setMsg(`${mine.name}의 ${move.name}!`);
-      setFx({ kind: attackFx(), key: Date.now() });
+      setFx({ kind: mine.type, key: Date.now(), dir: "fwd" });
       await sleep(900);
       setWildState("hit");
       setFx({ kind: "shake", key: Date.now() });
@@ -331,7 +328,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       await sleep(1200);
       // 오답 → 야생의 반격 (반격 데미지는 희귀도로 결정)
       setMsg(`야생 ${wild.name}의 ${TYPE_MOVE[wild.type]}!`);
-      setFx({ kind: wild.type === "electric" ? "electric" : wild.type === "psychic" ? "psychic" : "projBack", key: Date.now() });
+      setFx({ kind: wild.type, key: Date.now(), dir: "back" });
       await sleep(900);
       setMyHit(true);
       setFx({ kind: "shake", key: Date.now() });
@@ -356,6 +353,8 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   async function throwBall(kind: BallKind) {
     if (!wild || studentRef.current.inventory[kind] <= 0) return;
     setPhase("throwing");
+    setThrowKind(kind);
+    setCapFx(null);
     setMsg(`${BALLS[kind].name}을(를) 던졌다! · · ·`);
     setFx({ kind: "ball", key: Date.now() });
 
@@ -394,6 +393,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
 
     if (result!.success) {
       setFx(null);
+      setCapFx("success");
       setWildState("gone");
       setStudent({
         ...studentRef.current,
@@ -418,8 +418,10 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       setPhase("done");
     } else {
       setFx(null);
+      setCapFx("fail");
       setWildState("idle");
       setStudent({ ...studentRef.current, inventory: result!.inventory });
+      setTimeout(() => setCapFx(null), 700); // 브레이크아웃 연출 후 정리
       const f = fails + 1;
       setFails(f);
       if (f >= 2) {
@@ -491,7 +493,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             <div style={{ position: "absolute", left: "56%", top: "34%", width: "34%", height: "9%", background: "#6aab4d", borderRadius: "50%", opacity: 0.7 }} />
             <div style={{ position: "absolute", left: "6%", top: "72%", width: "42%", height: "11%", background: "#6aab4d", borderRadius: "50%", opacity: 0.7 }} />
             {wildState !== "gone" && (
-              <div style={{ position: "absolute", left: "60%", top: "6%", width: "26%", transition: "transform 0.3s, opacity 0.3s", transform: wildState === "captured" ? "scale(0)" : "scale(1)", opacity: wildState === "captured" ? 0 : 1, animation: wildState === "hit" ? "shakeit 0.5s" : phase === "select" || phase === "intro" ? "floaty 2.4s ease-in-out infinite" : "none", filter: wildState === "hit" ? "brightness(2.2) saturate(0.3)" : "none" }}>
+              <div style={{ position: "absolute", left: "60%", top: "6%", width: "26%", transition: "transform 0.3s, opacity 0.3s", transform: wildState === "captured" ? "scale(0)" : "scale(1)", opacity: wildState === "captured" ? 0 : 1, animation: capFx === "fail" ? "breakout 0.6s ease-out" : wildState === "hit" ? "shakeit 0.5s" : phase === "select" || phase === "intro" ? "floaty 2.4s ease-in-out infinite" : "none", filter: wildState === "hit" ? "brightness(2.2) saturate(0.3)" : "none" }}>
                 <Sprite id={wild.id} color={wild.color} pixel shiny={wild.shiny} size="100%" style={{ width: "100%", height: "auto" }} />
                 {wild.shiny && <ShinyFx />}
               </div>
@@ -512,18 +514,32 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
               <HpBar cur={student.hp} max={MAX_HP} />
               <div style={{ fontSize: 10, textAlign: "right", marginTop: 2 }}>{student.hp}/{MAX_HP}</div>
             </div>
-            {/* 기술 이펙트 */}
-            {fx?.kind === "fire" && [0, 1, 2].map((i) => (
-              <div key={fx.key + "-" + i} style={{ position: "absolute", width: 18, height: 18, borderRadius: "50%", background: i === 1 ? "#ffd23f" : "#ff6b35", boxShadow: "0 0 14px #ff6b35", animation: `proj 0.85s ease-in ${i * 0.12}s forwards`, opacity: 0 }} />
-            ))}
-            {fx?.kind === "proj" && (
-              <div key={fx.key} style={{ position: "absolute", width: 20, height: 20, borderRadius: "50%", background: mine.color, boxShadow: `0 0 14px ${mine.color}`, animation: "proj 0.85s ease-in forwards" }} />
+            {/* 타입별 기술 이펙트 (15종) */}
+            {fx && isTypeFx(fx.kind) && <BattleFx key={fx.key} type={fx.kind} dir={fx.dir} />}
+            {/* 흡수 빔 (포켓몬이 볼로 빨려 들어감) */}
+            {fx?.kind === "wiggle" && wildState === "captured" && (
+              <div key={fx.key + "-beam"} style={{ position: "absolute", left: "63%", top: "18%", width: 90, height: 14, marginLeft: -45, marginTop: -7, background: `linear-gradient(90deg, transparent, ${BALLS[throwKind].top ?? "#e84545"})`, borderRadius: 8, animation: "captureBeam 0.5s ease-out forwards", pointerEvents: "none", zIndex: 5 }} />
             )}
-            {fx?.kind === "projBack" && <div key={fx.key} style={{ position: "absolute", width: 20, height: 20, borderRadius: "50%", background: TYPE_COLORS[wild.type], boxShadow: `0 0 14px ${TYPE_COLORS[wild.type]}`, animation: "projBack 0.85s ease-in forwards" }} />}
-            {fx?.kind === "electric" && <div key={fx.key} style={{ position: "absolute", inset: 0, background: "#ffe94a", animation: "flash 0.8s ease forwards", pointerEvents: "none" }} />}
-            {fx?.kind === "psychic" && <div key={fx.key} style={{ position: "absolute", left: "20%", top: "48%", width: 80, height: 80, borderRadius: "50%", border: "5px solid #c77dff", animation: "pulse 0.9s ease-out forwards", pointerEvents: "none" }} />}
+            {/* 던진 볼 (볼 종류별 아이콘) */}
             {(fx?.kind === "ball" || fx?.kind === "wiggle") && wildState !== "gone" && (
-              <div key={fx.key} style={{ position: "absolute", width: 28, height: 28, borderRadius: "50%", background: "linear-gradient(#e84545 46%, #2c2c34 46%, #2c2c34 56%, #ffffff 56%)", border: "3px solid #2c2c34", animation: fx.kind === "ball" ? "ballArc 0.72s ease-out forwards" : "wiggle 1.6s ease-in-out", left: fx.kind === "wiggle" ? "66%" : undefined, top: fx.kind === "wiggle" ? "20%" : undefined, zIndex: 5 }} />
+              <div key={fx.key} style={{ position: "absolute", width: 30, height: 30, animation: fx.kind === "ball" ? "ballArc 0.72s ease-out forwards" : "ballShake3 1.6s ease-in-out", left: fx.kind === "wiggle" ? "63%" : undefined, top: fx.kind === "wiggle" ? "16%" : undefined, transformOrigin: "bottom center", zIndex: 6 }}>
+                <BallIcon kind={throwKind} size={30} />
+              </div>
+            )}
+            {/* 포획 성공: 별 터짐 + GET! */}
+            {capFx === "success" && (
+              <>
+                {Array.from({ length: 8 }, (_, i) => {
+                  const ang = (i / 8) * Math.PI * 2;
+                  const st = { position: "absolute", left: "63%", top: "20%", fontSize: 18, animation: `starPop 0.9s ease-out ${i * 0.03}s forwards`, ["--dx"]: `${Math.cos(ang) * 46}px`, ["--dy"]: `${Math.sin(ang) * 46}px`, pointerEvents: "none", zIndex: 7 } as React.CSSProperties;
+                  return <div key={i} style={st}>⭐</div>;
+                })}
+                <div style={{ position: "absolute", left: "50%", top: "42%", transform: "translate(-50%,-50%)", fontSize: 30, fontWeight: 800, color: "#ffd54a", textShadow: "0 2px 6px #000", animation: "pop 0.4s ease-out", zIndex: 8 }}>GET!</div>
+              </>
+            )}
+            {/* 포획 실패: 볼에서 튀어나오는 펑! */}
+            {capFx === "fail" && (
+              <div style={{ position: "absolute", left: "63%", top: "18%", transform: "translate(-50%,-50%)", fontSize: 28, animation: "pop 0.4s ease-out", zIndex: 7 }}>💥</div>
             )}
           </div>
         </div>
