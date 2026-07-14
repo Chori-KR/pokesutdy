@@ -20,9 +20,9 @@ export default function Brand({
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="https://i.imgur.com/VDF0R1R.png"
+        src="/brand.png"
         alt="초리쌤 교수학습콘텐츠"
-        style={{ height, width: "auto", display: "block", borderRadius: 8 }}
+        style={{ height, width: "auto", display: "block" }}
       />
       <span style={{ fontSize: Math.round(height * 0.4), fontWeight: 700, color, letterSpacing: -0.3 }}>
         초리쌤 교수학습콘텐츠
