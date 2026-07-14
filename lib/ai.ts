@@ -27,6 +27,8 @@ export interface GenRequest {
   grade: string;
   counts: { easy: number; medium: number; hard: number };
   extra?: string;
+  special?: boolean;   // 특수교육 기본교육과정 모드
+  curriculum?: string; // 근거 성취기준 목록(특수 모드)
 }
 
 export function buildPrompt(r: GenRequest): string {
@@ -37,12 +39,19 @@ export function buildPrompt(r: GenRequest): string {
 학년 수준: ${r.grade}
 난이도별 개수: 쉬움 ${r.counts.easy}개, 보통 ${r.counts.medium}개, 어려움 ${r.counts.hard}개
 ${r.extra?.trim() ? `추가 지시: ${r.extra.trim()}` : ""}
+${r.special && r.curriculum ? `
+[근거 교육과정] 아래는 2022 개정 특수교육 기본 교육과정의 성취기준입니다. 반드시 이 성취기준에 근거해서 문제를 만드세요.
+${r.curriculum}
+` : ""}
 
 출제 규칙:
 - 오답 보기는 학생들이 실제로 저지르는 흔한 실수나 오개념에서 만들 것
 - 난이도를 명확히 구분할 것: 쉬움=기본 개념 확인, 보통=개념 적용, 어려움=응용·복합·문장제
 - 문제와 보기는 해당 학년이 이해할 수 있는 어휘로 쓸 것
-- 정답이 특정 번호에 몰리지 않게 answer 인덱스를 골고루 분배할 것
+- 정답이 특정 번호에 몰리지 않게 answer 인덱스를 골고루 분배할 것${r.special ? `
+- [특수교육] 대상은 특수교육 기본교육과정 학생입니다. 문장은 짧고 쉽고 구체적으로, 일상생활 맥락으로 쓸 것
+- [특수교육] 추상적·복합적 사고를 최소화하고, 그림 없이 글만으로 풀 수 있게 할 것
+- [특수교육] 성취기준이 태도·실천형이면 생활 속 상황을 고르는 문제로 재구성할 것` : ""}
 
 반드시 아래 형식의 JSON 배열만 출력하세요. 마크다운 코드블록, 설명, 인사말을 절대 붙이지 마세요.
 [{"q":"문제 내용","opts":["보기1","보기2","보기3","보기4"],"answer":0,"d":"easy","why":"정답 해설 한 줄"}]

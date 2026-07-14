@@ -7,6 +7,7 @@ import {
   buildPrompt, callAi, parseQuestions,
 } from "@/lib/ai";
 import { decryptApiKey } from "@/lib/aiCrypto";
+import { standardsFor, standardsByCodes } from "@/lib/curriculum";
 
 // AI 문제 생성 (명세 §5.2): 입력 → 프롬프트 조립 → AI 호출 → 파싱·검증 → 검토용 초안 반환.
 // 등록은 하지 않는다 — 반드시 교사 검토 화면을 거쳐 승인분만 클라이언트가 등록.
@@ -34,17 +35,36 @@ export async function POST(req: NextRequest) {
     hard: clampCount(body?.counts?.hard),
   };
   const total = counts.easy + counts.medium + counts.hard;
-  const topic = String(body?.topic ?? "").trim();
-  if (!topic) return jsonError(400, "단원·주제를 입력해주세요 (예: 조선의 건국, 분수의 덧셈)");
   if (total < 1 || total > 10) return jsonError(400, "난이도별 개수 합계는 1~10개로 해주세요.");
+  const extra = typeof body?.extra === "string" ? body.extra : "";
 
-  const prompt = buildPrompt({
-    subject: String(body?.subject ?? "기타"),
-    topic,
-    grade: String(body?.grade ?? "초등 5학년"),
-    counts,
-    extra: typeof body?.extra === "string" ? body.extra : "",
-  });
+  let prompt: string;
+  if (body?.mode === "special") {
+    // 특수교육 기본교육과정 근거 생성: 과목·학년군(또는 선택한 성취기준)으로 근거 조립
+    const subject = String(body?.subject ?? "").trim();
+    const gradeBand = String(body?.gradeBand ?? "").trim();
+    const codes: string[] = Array.isArray(body?.codes) ? body.codes.map(String) : [];
+    let stds = codes.length ? standardsByCodes(codes) : standardsFor(subject, gradeBand);
+    if (!stds.length)
+      return jsonError(400, "선택한 과목·학년군의 성취기준을 찾지 못했어요. 다시 선택해주세요.");
+    stds = stds.slice(0, 40); // 토큰 절약: 최대 40개 근거
+    const curriculum = stds.map((s) => `- ${s.code} ${s.text}${s.note ? ` (참고: ${s.note})` : ""}`).join("\n");
+    prompt = buildPrompt({
+      subject: subject || "기본교육과정",
+      topic: `${gradeBand} ${subject} 성취기준 기반`,
+      grade: gradeBand || "특수교육 기본교육과정",
+      counts, extra, special: true, curriculum,
+    });
+  } else {
+    const topic = String(body?.topic ?? "").trim();
+    if (!topic) return jsonError(400, "단원·주제를 입력해주세요 (예: 조선의 건국, 분수의 덧셈)");
+    prompt = buildPrompt({
+      subject: String(body?.subject ?? "기타"),
+      topic,
+      grade: String(body?.grade ?? "초등 5학년"),
+      counts, extra,
+    });
+  }
 
   let questions;
   try {

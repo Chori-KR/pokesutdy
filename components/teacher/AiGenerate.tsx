@@ -26,12 +26,18 @@ interface Draft {
 
 const SUBJECTS = ["국어", "수학", "사회", "과학", "영어", "도덕", "실과", "체육", "음악", "미술", "진로와직업", "기타"];
 const GRADES = ["초등 3학년", "초등 4학년", "초등 5학년", "초등 6학년", "중학 1학년", "중학 2학년", "중학 3학년"];
+// 특수교육 기본교육과정(data/curriculum.json)의 과목·학년군 (JSON은 서버에서만 사용)
+const SP_SUBJECTS = ["바른 생활", "슬기로운 생활", "즐거운 생활", "국어", "사회", "수학", "과학", "실과", "진로와 직업", "체육", "음악", "미술", "정보통신활용", "생활영어", "보건"];
+const SP_BANDS = ["초등 1~2학년", "초등 3~4학년", "초등 5~6학년", "중학교", "고등학교"];
 
 // AI 문제 생성 (명세 §5.2): 생성 → 검토(수정·정답/난이도 변경·선택) → 승인분만 등록.
 // 검토 단계는 절대 생략하지 않는다 — "AI 초안 + 교사 최종 결재".
 export default function AiGenerate({ classId, hasAiKey, onRegistered, onClose, showToast }: Props) {
+  const [mode, setMode] = useState<"general" | "special">("general");
   const [subject, setSubject] = useState("수학");
   const [grade, setGrade] = useState("초등 5학년");
+  const [spSubject, setSpSubject] = useState("국어");
+  const [spBand, setSpBand] = useState("초등 1~2학년");
   const [topic, setTopic] = useState("");
   const [tag, setTag] = useState("");
   const [counts, setCounts] = useState({ easy: 2, medium: 2, hard: 1 });
@@ -44,15 +50,18 @@ export default function AiGenerate({ classId, hasAiKey, onRegistered, onClose, s
   const total = counts.easy + counts.medium + counts.hard;
 
   async function generate() {
-    if (!topic.trim()) { setErr("단원·주제를 입력해주세요 (예: 조선의 건국, 분수의 덧셈)"); return; }
+    if (mode === "general" && !topic.trim()) { setErr("단원·주제를 입력해주세요 (예: 조선의 건국, 분수의 덧셈)"); return; }
     if (total < 1 || total > 10) { setErr("난이도별 개수 합계는 1~10개로 해주세요."); return; }
     setErr("");
     setLoading(true);
     setDrafts([]);
     try {
+      const payload = mode === "special"
+        ? { mode: "special", subject: spSubject, gradeBand: spBand, counts, extra }
+        : { subject, topic, grade, counts, extra };
       const res = await teacherFetch("/api/teacher/ai-generate", {
         method: "POST",
-        body: JSON.stringify({ subject, topic, grade, counts, extra }),
+        body: JSON.stringify(payload),
       });
       const data = await res.json();
       if (!res.ok) { setErr(data.error ?? "생성에 실패했어요."); return; }
@@ -79,8 +88,8 @@ export default function AiGenerate({ classId, hasAiKey, onRegistered, onClose, s
       options: d.opts,
       answer_idx: d.answer,
       difficulty: d.d,
-      tag: tag.trim() || `${subject}·${topic.trim()}`,
-      source: "AI",
+      tag: tag.trim() || (mode === "special" ? `특수·${spSubject}·${spBand}` : `${subject}·${topic.trim()}`),
+      source: mode === "special" ? "AI(특수)" : "AI",
     }));
     const { data, error } = await supa.from("questions").insert(payload).select("*");
     if (error || !data) { setErr(`등록 실패: ${error?.message}`); return; }
@@ -111,15 +120,35 @@ export default function AiGenerate({ classId, hasAiKey, onRegistered, onClose, s
 
       {drafts.length === 0 ? (
         <>
-          <div style={{ display: "flex", gap: 8, marginBottom: 8, flexWrap: "wrap" }}>
-            <select value={subject} onChange={(e) => setSubject(e.target.value)} style={T.input}>
-              {SUBJECTS.map((s) => <option key={s}>{s}</option>)}
-            </select>
-            <select value={grade} onChange={(e) => setGrade(e.target.value)} style={T.input}>
-              {GRADES.map((g) => <option key={g}>{g}</option>)}
-            </select>
-            <input value={topic} onChange={(e) => setTopic(e.target.value)} placeholder="단원·주제 (예: 분수의 덧셈)" style={{ ...T.input, flex: 1, minWidth: 160 }} />
+          <div style={{ display: "flex", gap: 6, marginBottom: 10 }}>
+            <button onClick={() => setMode("general")} style={{ ...(mode === "general" ? T.primaryBtn : T.secondaryBtn), padding: "7px 14px", fontSize: 13 }}>일반</button>
+            <button onClick={() => setMode("special")} style={{ ...(mode === "special" ? T.primaryBtn : T.secondaryBtn), padding: "7px 14px", fontSize: 13 }}>특수 (기본교육과정)</button>
           </div>
+          {mode === "special" ? (
+            <>
+              <div style={{ fontSize: 11, color: "#666", marginBottom: 6, lineHeight: 1.6 }}>
+                2022 개정 특수교육 기본 교육과정 성취기준에 근거해 생성합니다. 과목·학년군을 고르세요.
+              </div>
+              <div style={{ display: "flex", gap: 8, marginBottom: 8, flexWrap: "wrap" }}>
+                <select value={spSubject} onChange={(e) => setSpSubject(e.target.value)} style={{ ...T.input, flex: 1, minWidth: 140 }}>
+                  {SP_SUBJECTS.map((s) => <option key={s}>{s}</option>)}
+                </select>
+                <select value={spBand} onChange={(e) => setSpBand(e.target.value)} style={{ ...T.input, flex: 1, minWidth: 120 }}>
+                  {SP_BANDS.map((b) => <option key={b}>{b}</option>)}
+                </select>
+              </div>
+            </>
+          ) : (
+            <div style={{ display: "flex", gap: 8, marginBottom: 8, flexWrap: "wrap" }}>
+              <select value={subject} onChange={(e) => setSubject(e.target.value)} style={T.input}>
+                {SUBJECTS.map((s) => <option key={s}>{s}</option>)}
+              </select>
+              <select value={grade} onChange={(e) => setGrade(e.target.value)} style={T.input}>
+                {GRADES.map((g) => <option key={g}>{g}</option>)}
+              </select>
+              <input value={topic} onChange={(e) => setTopic(e.target.value)} placeholder="단원·주제 (예: 분수의 덧셈)" style={{ ...T.input, flex: 1, minWidth: 160 }} />
+            </div>
+          )}
           <div style={{ display: "flex", gap: 10, alignItems: "center", marginBottom: 8, fontSize: 12, flexWrap: "wrap" }}>
             {(["easy", "medium", "hard"] as const).map((d) => (
               <label key={d} style={{ display: "flex", alignItems: "center", gap: 4 }}>
