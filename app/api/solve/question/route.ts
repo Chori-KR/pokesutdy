@@ -16,13 +16,17 @@ export async function POST(req: NextRequest) {
 
   const { data: qs } = await supa
     .from("questions")
-    .select("id, body, options, difficulty, tag")
+    .select("id, body, options, difficulty, tag, type")
     .eq("class_id", student.class_id)
     .eq("active", true);
   if (!qs || qs.length === 0)
     return jsonError(404, "출제 중인 문제가 없어요. 선생님께 알려주세요!");
 
-  const q = qs[Math.floor(Math.random() * qs.length)];
+  const picked = qs[Math.floor(Math.random() * qs.length)];
+  // 단답형은 정답(options)을 절대 내려보내지 않는다
+  const q = picked.type === "short"
+    ? { id: picked.id, body: picked.body, difficulty: picked.difficulty, tag: picked.tag, type: "short", options: [] }
+    : picked;
 
   const day_state = { ...student.day_state, solveQ: q.id };
   const { error } = await supa

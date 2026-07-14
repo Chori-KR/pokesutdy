@@ -17,6 +17,7 @@ export interface QuestionRow {
   tag: string;
   active: boolean;
   source: string;
+  type?: string; // "multiple"(기본) | "short"(단답형)
   tries: number;
   wrong: number;
   created_at: string;
@@ -39,10 +40,13 @@ interface FormState {
   answer_idx: number;
   difficulty: Difficulty;
   tag: string;
+  qtype: "multiple" | "short";
+  shortAnswers: string; // 단답형 허용 정답(쉼표로 구분)
 }
 
 const EMPTY_FORM: FormState = {
   id: null, body: "", options: ["", "", "", ""], answer_idx: 0, difficulty: "easy", tag: "",
+  qtype: "multiple", shortAnswers: "",
 };
 
 export default function QuestionBank({ classId, questions, setQuestions, showToast, hasAiKey }: Props) {
@@ -106,10 +110,13 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
   }
 
   function openEdit(q: QuestionRow) {
+    const isShort = q.type === "short";
     setForm({
       id: q.id, body: q.body,
       options: [q.options[0] ?? "", q.options[1] ?? "", q.options[2] ?? "", q.options[3] ?? ""],
       answer_idx: q.answer_idx, difficulty: q.difficulty, tag: q.tag,
+      qtype: isShort ? "short" : "multiple",
+      shortAnswers: isShort ? (q.options ?? []).join(", ") : "",
     });
     setFormErr("");
   }
@@ -118,14 +125,29 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
     if (!form) return;
     setFormErr("");
     if (!form.body.trim()) { setFormErr("문제 내용을 입력해주세요."); return; }
-    if (form.options.some((o) => !o.trim())) { setFormErr("보기 4개를 모두 입력해주세요."); return; }
-    const payload = {
-      body: form.body.trim(),
-      options: form.options.map((o) => o.trim()),
-      answer_idx: form.answer_idx,
-      difficulty: form.difficulty,
-      tag: form.tag.trim() || "미분류",
-    };
+    let payload;
+    if (form.qtype === "short") {
+      const answers = form.shortAnswers.split(",").map((s) => s.trim()).filter(Boolean);
+      if (answers.length === 0) { setFormErr("허용할 정답을 1개 이상 입력해주세요 (여러 개는 쉼표로 구분)."); return; }
+      payload = {
+        body: form.body.trim(),
+        options: answers,          // 단답형: options에 허용 정답 저장
+        answer_idx: 0,
+        difficulty: form.difficulty,
+        tag: form.tag.trim() || "미분류",
+        type: "short",
+      };
+    } else {
+      if (form.options.some((o) => !o.trim())) { setFormErr("보기 4개를 모두 입력해주세요."); return; }
+      payload = {
+        body: form.body.trim(),
+        options: form.options.map((o) => o.trim()),
+        answer_idx: form.answer_idx,
+        difficulty: form.difficulty,
+        tag: form.tag.trim() || "미분류",
+        type: "multiple",
+      };
+    }
     const supa = supabaseBrowser();
     if (form.id) {
       const { error } = await supa.from("questions").update(payload).eq("id", form.id);
@@ -189,33 +211,46 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
       {form && (
         <div style={{ ...T.card, marginBottom: 10, border: "2px solid #3d6fd9" }}>
           <div style={{ fontSize: 14, fontWeight: 600, marginBottom: 10 }}>{form.id ? "문제 수정" : "새 문제 등록"}</div>
+          <div style={{ display: "flex", gap: 6, marginBottom: 8 }}>
+            <button onClick={() => setForm({ ...form, qtype: "multiple" })} style={{ ...(form.qtype === "multiple" ? T.primaryBtn : T.secondaryBtn), padding: "6px 12px", fontSize: 12 }}>4지선다</button>
+            <button onClick={() => setForm({ ...form, qtype: "short" })} style={{ ...(form.qtype === "short" ? T.primaryBtn : T.secondaryBtn), padding: "6px 12px", fontSize: 12 }}>단답형</button>
+          </div>
           <textarea
             value={form.body}
             onChange={(e) => setForm({ ...form, body: e.target.value })}
             placeholder="문제 내용"
             style={{ ...T.input, width: "100%", minHeight: 60, resize: "vertical", marginBottom: 8, fontFamily: "inherit" }}
           />
-          {form.options.map((o, i) => (
-            <div key={i} style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 6 }}>
-              <input
-                type="radio"
-                name="answer"
-                checked={form.answer_idx === i}
-                onChange={() => setForm({ ...form, answer_idx: i })}
-                title="정답으로 지정"
-              />
-              <input
-                value={o}
-                onChange={(e) => {
-                  const options = [...form.options] as FormState["options"];
-                  options[i] = e.target.value;
-                  setForm({ ...form, options });
-                }}
-                placeholder={`보기 ${i + 1}${form.answer_idx === i ? " (정답)" : ""}`}
-                style={{ ...T.input, flex: 1, borderColor: form.answer_idx === i ? "#0f6e56" : "#ddd" }}
-              />
-            </div>
-          ))}
+          {form.qtype === "short" ? (
+            <input
+              value={form.shortAnswers}
+              onChange={(e) => setForm({ ...form, shortAnswers: e.target.value })}
+              placeholder="정답 (여러 개 허용 시 쉼표로 구분 — 예: 세종, 세종대왕)"
+              style={{ ...T.input, width: "100%", marginBottom: 8 }}
+            />
+          ) : (
+            form.options.map((o, i) => (
+              <div key={i} style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 6 }}>
+                <input
+                  type="radio"
+                  name="answer"
+                  checked={form.answer_idx === i}
+                  onChange={() => setForm({ ...form, answer_idx: i })}
+                  title="정답으로 지정"
+                />
+                <input
+                  value={o}
+                  onChange={(e) => {
+                    const options = [...form.options] as FormState["options"];
+                    options[i] = e.target.value;
+                    setForm({ ...form, options });
+                  }}
+                  placeholder={`보기 ${i + 1}${form.answer_idx === i ? " (정답)" : ""}`}
+                  style={{ ...T.input, flex: 1, borderColor: form.answer_idx === i ? "#0f6e56" : "#ddd" }}
+                />
+              </div>
+            ))
+          )}
           <div style={{ display: "flex", gap: 8, marginBottom: 10 }}>
             <select value={form.difficulty} onChange={(e) => setForm({ ...form, difficulty: e.target.value as Difficulty })} style={T.input}>
               <option value="easy">쉬움</option>

@@ -22,6 +22,8 @@ interface Props {
   setCaught: (ids: number[]) => void;
   counts: Record<number, number>;
   setCounts: (c: Record<number, number>) => void;
+  shinies: number[];
+  setShinies: (s: number[]) => void;
   day: DayInfo;
   setDay: (d: DayInfo) => void;
   game: GameInfo;
@@ -32,7 +34,7 @@ interface Props {
 const BALL_KINDS = ["poke", "superb", "hyper", "master"] as const;
 type Tab = "battle" | "solve" | "quiz" | "explore" | "shop" | "dex" | "trade";
 
-export default function StudentHome({ student, setStudent, cls, caught, setCaught, counts, setCounts, day, setDay, game, setGame, onLogout }: Props) {
+export default function StudentHome({ student, setStudent, cls, caught, setCaught, counts, setCounts, shinies, setShinies, day, setDay, game, setGame, onLogout }: Props) {
   const [tab, setTab] = useState<Tab>("battle");
   const [toast, setToast] = useState("");
 
@@ -93,10 +95,14 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
           student={student}
           setStudent={setStudent}
           moveDiff={cls.settings?.moveDiff !== false}
+          timerOn={cls.settings?.timerOn !== false}
+          timeScale={cls.settings?.timeScale ?? 1.5}
           caught={caught}
           setCaught={setCaught}
           counts={counts}
           setCounts={setCounts}
+          shinies={shinies}
+          setShinies={setShinies}
           day={day}
           setDay={setDay}
           game={game}
@@ -116,11 +122,13 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
           setCaught={setCaught}
           counts={counts}
           setCounts={setCounts}
+          shinies={shinies}
+          setShinies={setShinies}
           showToast={showToast}
         />
       )}
       {tab === "shop" && <ShopTab student={student} setStudent={setStudent} showToast={showToast} />}
-      {tab === "dex" && <DexTab caught={caught} counts={counts} />}
+      {tab === "dex" && <DexTab caught={caught} counts={counts} shinies={shinies} />}
       {tab === "trade" && (
         <TradeTab caught={caught} setCaught={setCaught} counts={counts} setCounts={setCounts} showToast={showToast} />
       )}

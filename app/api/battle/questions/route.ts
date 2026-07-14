@@ -13,7 +13,8 @@ export async function GET(req: NextRequest) {
     .from("questions")
     .select("id, body, options, answer_idx, difficulty, tag")
     .eq("class_id", student.class_id)
-    .eq("active", true);
+    .eq("active", true)
+    .neq("type", "short"); // 배틀은 4지선다만 (단답형은 문제풀이 탭에서)
 
   return NextResponse.json({ questions: data ?? [] });
 }

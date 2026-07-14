@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError, getClassSettings } from "@/lib/api";
-import { pickWild, pickWildOf, SNACKS, SnackKind } from "@/lib/game";
+import { pickWild, pickWildOf, SNACKS, SnackKind, rollShiny } from "@/lib/game";
 import { signBattleToken } from "@/lib/studentSession";
 
 // 야생 포켓몬 출현은 서버가 뽑고 서명해서 내려보낸다.
@@ -30,9 +30,10 @@ export async function POST(req: NextRequest) {
     const { error } = await supa.from("students").update({ inventory, hp: 100 }).eq("id", student.id);
     if (error) return jsonError(500, "저장에 실패했어요.");
     wildPokemon = pickWildOf(SNACKS[snack].rarity);
-    const token = await signBattleToken(student.id, wildPokemon.id, "battle");
+    const shiny = rollShiny();
+    const token = await signBattleToken(student.id, wildPokemon.id, "battle", shiny);
     return NextResponse.json({
-      pokemon: { id: wildPokemon.id, name: wildPokemon.name, type: wildPokemon.type, rarity: wildPokemon.rarity },
+      pokemon: { id: wildPokemon.id, name: wildPokemon.name, type: wildPokemon.type, rarity: wildPokemon.rarity, shiny },
       token,
       battleUsed,
       battleLimit,
@@ -50,9 +51,10 @@ export async function POST(req: NextRequest) {
   if (error) return jsonError(500, "저장에 실패했어요.");
 
   wildPokemon = pickWild();
-  const token = await signBattleToken(student.id, wildPokemon.id, "battle");
+  const shiny = rollShiny();
+  const token = await signBattleToken(student.id, wildPokemon.id, "battle", shiny);
   return NextResponse.json({
-    pokemon: { id: wildPokemon.id, name: wildPokemon.name, type: wildPokemon.type, rarity: wildPokemon.rarity },
+    pokemon: { id: wildPokemon.id, name: wildPokemon.name, type: wildPokemon.type, rarity: wildPokemon.rarity, shiny },
     token,
     battleUsed: battleUsed + 1,
     battleLimit,

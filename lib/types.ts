@@ -35,6 +35,8 @@ export interface ClassSettings {
   exploreLimit?: number;
   solveLimit?: number;
   battleLimit?: number;
+  timerOn?: boolean;
+  timeScale?: number;
 }
 
 export interface ClassInfo {
@@ -59,4 +61,5 @@ export interface SolveQuestion {
   options: string[];
   difficulty: Difficulty;
   tag: string;
+  type?: string; // "multiple"(기본) | "short"(단답형)
 }

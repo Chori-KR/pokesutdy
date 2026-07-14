@@ -26,6 +26,7 @@ export default function StudentPage() {
   const [cls, setCls] = useState<ClassInfo | null>(null);
   const [caught, setCaught] = useState<number[]>([]);
   const [counts, setCounts] = useState<Record<number, number>>({}); // M8: 종별 마리 수
+  const [shinies, setShinies] = useState<number[]>([]); // M11: 이로치 보유 종
   const [day, setDay] = useState<DayInfo>(EMPTY_DAY);
   const [game, setGame] = useState<GameInfo>(EMPTY_GAME);
 
@@ -38,6 +39,7 @@ export default function StudentPage() {
       setCls(data.class);
       setCaught(data.caught);
       setCounts(data.counts ?? {});
+      setShinies(data.shinies ?? []);
       setDay(data.day ?? EMPTY_DAY);
       setGame(data.game ?? EMPTY_GAME);
       // 스타팅 미선택(신규 가입 또는 기존 학생 첫 접속) → 선택 화면 먼저
@@ -77,6 +79,8 @@ export default function StudentPage() {
       setCaught={setCaught}
       counts={counts}
       setCounts={setCounts}
+      shinies={shinies}
+      setShinies={setShinies}
       day={day}
       setDay={setDay}
       game={game}

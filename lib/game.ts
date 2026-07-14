@@ -5,10 +5,15 @@ export type Rarity = "common" | "rare" | "legendary";
 export type Difficulty = "easy" | "medium" | "hard";
 export type BallKind = "poke" | "superb" | "hyper" | "master";
 
-export const SPRITE = (id: number) =>
-  `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
-export const BACK_SPRITE = (id: number) =>
-  `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${id}.png`;
+const SPR = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon";
+// 도감·기본: 깔끔한 공식 일러스트
+export const SPRITE = (id: number, shiny = false) =>
+  `${SPR}/other/official-artwork${shiny ? "/shiny" : ""}/${id}.png`;
+// 배틀: 도트(픽셀) 통일 — 앞모습/뒷모습 모두 클래식 픽셀 스프라이트
+export const FRONT_PIXEL = (id: number, shiny = false) =>
+  `${SPR}${shiny ? "/shiny" : ""}/${id}.png`;
+export const BACK_SPRITE = (id: number, shiny = false) =>
+  `${SPR}/back${shiny ? "/shiny" : ""}/${id}.png`;
 
 export const TYPE_COLORS: Record<string, string> = {
   normal: "#A8A878", fire: "#F08030", water: "#6890F0", electric: "#F8D030",
@@ -129,6 +134,17 @@ export const STONE_EVOS = new Set(STONE_PAIRS.map(([a, b]) => `${a}-${b}`));
 export const isStoneEvo = (from: number, to: number) => STONE_EVOS.has(`${from}-${to}`);
 
 // 스타팅 포켓몬 (가입 시 선택): 이상해씨 / 파이리 / 꼬부기 / 피카츄
+// 단답형 채점: 공백·대소문자 무시하고 허용 정답 목록과 비교
+export const normalizeAnswer = (s: string) =>
+  String(s ?? "").trim().toLowerCase().replace(/\s+/g, "");
+export const gradeShort = (text: string, accepted: string[]): boolean => {
+  const t = normalizeAnswer(text);
+  return !!t && accepted.some((a) => normalizeAnswer(a) === t);
+};
+
+export const SHINY_RATE = 1 / 40; // 야생 조우 시 이로치(색違) 확률
+export const rollShiny = () => Math.random() < SHINY_RATE;
+
 export const STARTER_IDS = [1, 4, 7, 25] as const;
 
 export const DEFAULT_BATTLE_LIMIT = 2; // 하루 배틀(조우) 횟수 기본값 — 교사 설정 가능

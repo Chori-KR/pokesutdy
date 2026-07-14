@@ -58,9 +58,9 @@ export async function getStudentSession(req: NextRequest): Promise<StudentSessio
 export type EncounterSource = "battle" | "explore";
 
 export async function signBattleToken(
-  sid: string, pokemonId: number, source: EncounterSource = "battle"
+  sid: string, pokemonId: number, source: EncounterSource = "battle", shiny = false
 ): Promise<string> {
-  return new SignJWT({ sid, pid: pokemonId, kind: "battle", src: source })
+  return new SignJWT({ sid, pid: pokemonId, kind: "battle", src: source, shy: shiny })
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
     .setExpirationTime("2h")
@@ -69,12 +69,16 @@ export async function signBattleToken(
 
 export async function verifyBattleToken(
   token: string, sid: string
-): Promise<{ pokemonId: number; source: EncounterSource } | null> {
+): Promise<{ pokemonId: number; source: EncounterSource; shiny: boolean } | null> {
   try {
     const { payload } = await jwtVerify(token, secret());
     if (payload.kind !== "battle" || payload.sid !== sid) return null;
     if (typeof payload.pid !== "number") return null;
-    return { pokemonId: payload.pid, source: payload.src === "explore" ? "explore" : "battle" };
+    return {
+      pokemonId: payload.pid,
+      source: payload.src === "explore" ? "explore" : "battle",
+      shiny: payload.shy === true,
+    };
   } catch {
     return null;
   }

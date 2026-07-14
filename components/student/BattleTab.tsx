@@ -17,10 +17,14 @@ interface Props {
   student: StudentData;
   setStudent: (s: StudentData) => void;
   moveDiff: boolean; // 교사 설정: 기술 선택 = 난이도 선택
+  timerOn: boolean;  // 교사 설정: 배틀 타이머 On/Off
+  timeScale: number; // 교사 설정: 제한 시간 배수(넉넉하게)
   caught: number[];
   setCaught: (ids: number[]) => void;
   counts: Record<number, number>;
   setCounts: (c: Record<number, number>) => void;
+  shinies: number[];
+  setShinies: (s: number[]) => void;
   day: DayInfo;
   setDay: (d: DayInfo) => void;
   game: GameInfo;
@@ -35,16 +39,20 @@ type Fx = { kind: string; key: number } | null;
 
 const BALL_KINDS: BallKind[] = ["poke", "superb", "hyper", "master"];
 
-export default function BattleTab({ student, setStudent, moveDiff, caught, setCaught, counts, setCounts, day, setDay, game, setGame, showToast }: Props) {
+export default function BattleTab({ student, setStudent, moveDiff, timerOn, timeScale, caught, setCaught, counts, setCounts, shinies, setShinies, day, setDay, game, setGame, showToast }: Props) {
   const [phase, setPhase] = useState<BattlePhase>("idle");
+  const timeLimitFor = (diff: Difficulty) => Math.round(TIME_LIMIT[diff] * timeScale);
   const [bank, setBank] = useState<ApiQuestion[] | null>(null);
-  const [wild, setWild] = useState<(Pokemon & { token: string; lv: number }) | null>(null);
+  const [wild, setWild] = useState<(Pokemon & { token: string; lv: number; shiny?: boolean }) | null>(null);
   const [evoAnim, setEvoAnim] = useState<{ fromId: number; toId: number; toName: string; step: number } | null>(null);
   const [wildHp, setWildHp] = useState(0);
   const [msg, setMsg] = useState("");
   const [move, setMove] = useState<Move | null>(null);
   const [q, setQ] = useState<ActiveQuestion | null>(null);
   const [timeLeft, setTimeLeft] = useState(0);
+  const [selected, setSelected] = useState<number | null>(null); // 선택→제출 2단계
+  const selectedRef = useRef<number | null>(null);
+  selectedRef.current = selected;
   const [fx, setFx] = useState<Fx>(null);
   const [wildState, setWildState] = useState<"idle" | "hit" | "captured" | "gone">("idle");
   const [myHit, setMyHit] = useState(false);
@@ -166,7 +174,8 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       setStudent({ ...studentRef.current, hp: MAX_HP, ...(data.inventory ? { inventory: data.inventory } : {}) });
       const meta = POOL.find((p) => p.id === data.pokemon.id)!;
       const hp = RARITY[meta.rarity].hp;
-      setWild({ ...meta, token: data.token, lv: wildLevelFor(meta.rarity, studentRef.current.level) });
+      setWild({ ...meta, token: data.token, lv: wildLevelFor(meta.rarity, studentRef.current.level), shiny: data.pokemon.shiny });
+      if (data.pokemon.shiny) showToast(`✨ 이로치 ${meta.name}이(가) 나타났다!`);
       setWildHp(hp);
       wildHpRef.current = hp;
       setWildState("idle");
@@ -199,7 +208,8 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
     const sOpts = shuffle(raw.options.map((t, i) => ({ t, ok: i === raw.answer_idx, idx: i })));
     setMove(m);
     setQ({ ...raw, sOpts });
-    setTimeLeft(TIME_LIMIT[m.diff]);
+    setSelected(null);
+    setTimeLeft(timeLimitFor(m.diff));
     setPhase("question");
     setMsg(`문제를 맞히면 ${m.name} 발동!`);
   }
@@ -220,11 +230,14 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
 
   useEffect(() => {
     if (phase !== "question") return;
+    if (!timerOn) return; // 타이머 끄면 시간 제한 없음
     timerRef.current = setInterval(() => {
       setTimeLeft((t) => {
         if (t <= 0.1) {
           if (timerRef.current) clearInterval(timerRef.current);
-          answer(null, 0);
+          const sel = selectedRef.current;
+          const opt = sel != null && q ? q.sOpts[sel] : null; // 고른 게 있으면 제출, 없으면 시간초과 오답
+          answer(opt, 0);
           return 0;
         }
         return t - 0.1;
@@ -246,10 +259,10 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
     if (phase !== "question" || !move || !q || !wild) return;
     if (timerRef.current) clearInterval(timerRef.current);
     setPhase("busy");
-    const total = TIME_LIMIT[move.diff];
+    const total = timeLimitFor(move.diff);
     const correct = !!opt?.ok;
-    // 급소: 제한시간 앞 1/3 안에 정답 (명세 §4.2)
-    const crit = correct && remain > (total * 2) / 3;
+    // 급소: 제한시간 앞 1/3 안에 정답 (명세 §4.2). 타이머 꺼짐이면 급소 없음.
+    const crit = correct && timerOn && remain > (total * 2) / 3;
 
     // 서버 권위 기록: 통계 + 정답당 +2XP (응답으로 xp/level 동기화)
     const record = fetch("/api/battle/answer", {
@@ -339,7 +352,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
     // 서버 권위 판정 (볼 차감 + RNG). 연출과 병렬로 요청.
     const reqStart = Date.now();
     let result: {
-      success: boolean; newlyCaught?: boolean; caughtCount?: number; inventory: StudentData["inventory"];
+      success: boolean; newlyCaught?: boolean; caughtCount?: number; shiny?: boolean; inventory: StudentData["inventory"];
       points?: number; xp?: number; level?: number; levelBonus?: number;
       reward?: { pts: number; xp: number }; error?: string;
     } | null = null;
@@ -380,6 +393,10 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
         level: result!.level!,
       });
       if (result!.caughtCount != null) setCounts({ ...counts, [wild.id]: result!.caughtCount });
+      if (result!.shiny && !shinies.includes(wild.id)) {
+        setShinies([...shinies, wild.id]);
+        showToast(`✨ 이로치 ${wild.name}을(를) 도감에 기록했다!`);
+      }
       if (result!.newlyCaught && !caught.includes(wild.id)) {
         setCaught([...caught, wild.id]);
         showToast("도감에 새로운 포켓몬이 기록되었다!");
@@ -465,7 +482,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
             <div style={{ position: "absolute", left: "6%", top: "72%", width: "42%", height: "11%", background: "#6aab4d", borderRadius: "50%", opacity: 0.7 }} />
             {wildState !== "gone" && (
               <div style={{ position: "absolute", left: "60%", top: "6%", width: "26%", transition: "transform 0.3s, opacity 0.3s", transform: wildState === "captured" ? "scale(0)" : "scale(1)", opacity: wildState === "captured" ? 0 : 1, animation: wildState === "hit" ? "shakeit 0.5s" : phase === "select" || phase === "intro" ? "floaty 2.4s ease-in-out infinite" : "none", filter: wildState === "hit" ? "brightness(2.2) saturate(0.3)" : "none" }}>
-                <Sprite id={wild.id} color={wild.color} size="100%" style={{ width: "100%", height: "auto" }} />
+                <Sprite id={wild.id} color={wild.color} pixel size="100%" style={{ width: "100%", height: "auto" }} />
               </div>
             )}
             <div style={{ position: "absolute", left: "10%", top: "42%", width: "34%", animation: myHit ? "shakeit 0.5s" : "none", filter: myHit ? "brightness(2.2) saturate(0.3)" : "none" }}>
@@ -663,18 +680,40 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
         <div style={{ ...S.panel, padding: 12 }}>
           <div style={{ display: "flex", justifyContent: "space-between", fontSize: 11, marginBottom: 6 }}>
             <span style={{ color: "#9fd8ff" }}>{move.label} 문제 · {q.tag}</span>
-            <span style={{ color: timeLeft < TIME_LIMIT[move.diff] / 3 ? "#ff8a8a" : "#f8f0dc" }}>⏱ {Math.ceil(timeLeft)}초</span>
+            {timerOn && (
+              <span style={{ color: timeLeft < timeLimitFor(move.diff) / 3 ? "#ff8a8a" : "#f8f0dc" }}>⏱ {Math.ceil(timeLeft)}초</span>
+            )}
           </div>
-          <div style={{ height: 7, background: "#1a1c2c", borderRadius: 4, overflow: "hidden", marginBottom: 10 }}>
-            <div style={{ width: `${(timeLeft / TIME_LIMIT[move.diff]) * 100}%`, height: "100%", background: timeLeft > (TIME_LIMIT[move.diff] * 2) / 3 ? "#ffd23f" : "#4a90d9", transition: "width 0.1s linear" }} />
-          </div>
+          {timerOn && (
+            <div style={{ height: 7, background: "#1a1c2c", borderRadius: 4, overflow: "hidden", marginBottom: 10 }}>
+              <div style={{ width: `${(timeLeft / timeLimitFor(move.diff)) * 100}%`, height: "100%", background: timeLeft > (timeLimitFor(move.diff) * 2) / 3 ? "#ffd23f" : "#4a90d9", transition: "width 0.1s linear" }} />
+            </div>
+          )}
           <div style={{ fontSize: 15, marginBottom: 10, lineHeight: 1.6 }}>{q.body}</div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 6 }}>
-            {q.sOpts.map((o, i) => (
-              <button key={i} onClick={() => answer(o, timeLeft)} style={S.choiceBtn}>{["①", "②", "③", "④"][i]} {o.t}</button>
-            ))}
+            {q.sOpts.map((o, i) => {
+              const on = selected === i;
+              return (
+                <button
+                  key={i}
+                  onClick={() => setSelected(i)}
+                  style={{ ...S.choiceBtn, border: on ? "2px solid #ff9a52" : S.choiceBtn.border, background: on ? "#5a4a3a" : S.choiceBtn.background, fontWeight: on ? 700 : 600 }}
+                >
+                  {["①", "②", "③", "④"][i]} {o.t}
+                </button>
+              );
+            })}
           </div>
-          <div style={{ fontSize: 10, color: "#9fd8ff", marginTop: 6, textAlign: "center" }}>노란 타이머일 때 맞히면 급소(1.5배)!</div>
+          <button
+            onClick={() => selected != null && answer(q.sOpts[selected], timeLeft)}
+            disabled={selected == null}
+            style={{ ...S.primaryBtn, width: "100%", marginTop: 10, opacity: selected == null ? 0.45 : 1 }}
+          >
+            {selected == null ? "답을 골라주세요" : "정답 제출"}
+          </button>
+          {timerOn && (
+            <div style={{ fontSize: 10, color: "#9fd8ff", marginTop: 6, textAlign: "center" }}>노란 타이머일 때 제출하면 급소(1.5배)!</div>
+          )}
         </div>
       )}
 
