@@ -196,7 +196,10 @@ export const SNACKS: Record<SnackKind, { name: string; price: number; rarity: Ra
 // M5: 진화의돌 — 돌 진화 포켓몬(피카츄→라이츄 등)은 이것으로만 진화
 export const EVO_STONE = { name: "진화의돌", price: 1500, emoji: "💎", desc: "돌로 진화하는 포켓몬(피카츄·이브이 등)의 진화에 필요" };
 
-export type ShopItem = BallKind | SnackKind | "stone";
+// M11: 빛나는 스프레이 — 다음 야생 1마리를 이로치로 확정(배틀·탐색 시작 전 사용, 간식과 중복 가능)
+export const SPRAY = { name: "빛나는 스프레이", price: 3000, emoji: "✨", desc: "다음 야생 1마리를 이로치로 확정! 배틀·탐색 시작 전에 사용하세요 (간식과 함께 사용 가능)" };
+
+export type ShopItem = BallKind | SnackKind | "stone" | "spray";
 
 // 경제 수치 (M5 정비 — 하루 성실 플레이 수입 ≈ 500P 기준)
 export const DAILY_QUIZ_REWARD = 150; // 퀴즈 정답: +150P + 랜덤 볼
@@ -262,7 +265,7 @@ export const DIFF_FROM_LABEL: Record<string, Difficulty> = { 쉬움: "easy", 보
 export const INITIAL_INVENTORY = {
   poke: 3, superb: 0, hyper: 0, master: 0,
   potion: 0, revive: 0,
-  stone: 0, snack: 0, snack2: 0, snack3: 0,
+  stone: 0, snack: 0, snack2: 0, snack3: 0, spray: 0,
 };
 export type Inventory = typeof INITIAL_INVENTORY;
 

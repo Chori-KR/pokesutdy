@@ -59,6 +59,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const [fails, setFails] = useState(0);
   const [usedQ, setUsedQ] = useState<string[]>([]);
   const [picker, setPicker] = useState(false);   // 포켓몬 선택 패널
+  const [useSpray, setUseSpray] = useState(false); // 빛나는 스프레이 사용 토글
   const [subject, setSubject] = useState("");    // M7: 배틀 출제 과목 ("" = 전체)
   const [busyAction, setBusyAction] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -162,13 +163,15 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     setMsg(snack ? `${SNACKS[snack].name}을(를) 풀숲에 놓아두었다...` : "풀숲을 뒤지는 중...");
     setPhase("busy");
     try {
+      const spray = useSpray && (studentRef.current.inventory.spray ?? 0) > 0;
       const res = await fetch("/api/battle/start", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(snack ? { snack } : {}),
+        body: JSON.stringify({ ...(snack ? { snack } : {}), ...(spray ? { useSpray: true } : {}) }),
       });
       const data = await res.json();
       if (!res.ok) { setMsg(data.error ?? "배틀을 시작할 수 없어요."); setPhase("idle"); return; }
+      setUseSpray(false); // 사용했으면 토글 리셋
       setDay({ ...day, battleUsed: data.battleUsed, battleLimit: data.battleLimit });
       // M6: 배틀은 풀 HP로 시작 (서버도 동일하게 초기화)
       setStudent({ ...studentRef.current, hp: MAX_HP, ...(data.inventory ? { inventory: data.inventory } : {}) });
@@ -628,6 +631,14 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             </div>
           )}
 
+          {(student.inventory.spray ?? 0) > 0 && (
+            <button
+              onClick={() => setUseSpray((v) => !v)}
+              style={{ ...S.choiceBtn, width: "100%", marginBottom: 8, border: useSpray ? "2px solid #ffd54a" : (S.choiceBtn.border as string), background: useSpray ? "#4a4326" : (S.choiceBtn.background as string) }}
+            >
+              {useSpray ? "✨ 빛나는 스프레이 켜짐 — 이로치 확정!" : `✨ 빛나는 스프레이 사용 (보유 ${student.inventory.spray})`}
+            </button>
+          )}
           <button onClick={() => start()} disabled={activeCount === 0 || battlesLeft <= 0} style={{ ...S.primaryBtn, width: "100%", opacity: activeCount === 0 || battlesLeft <= 0 ? 0.4 : 1 }}>
             야생 포켓몬을 찾는다! (오늘 {battlesLeft}번 남음)
           </button>

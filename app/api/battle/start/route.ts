@@ -16,6 +16,9 @@ export async function POST(req: NextRequest) {
   const snack = body?.snack ? (String(body.snack) as SnackKind) : null;
   if (snack && !(snack in SNACKS)) return jsonError(400, "그런 간식은 없어요.");
 
+  // 빛나는 스프레이: 켜고 시작하면 이로치 확정(+ 소모). 간식과 중복 가능.
+  const useSpray = body?.useSpray === true && (student.inventory.spray ?? 0) > 0;
+
   const { battleLimit } = await getClassSettings(supa, student.class_id);
   const battleUsed = Number(student.day_state?.battleUsed ?? 0);
 
@@ -26,11 +29,12 @@ export async function POST(req: NextRequest) {
     if ((inventory[snack] ?? 0) < 1)
       return jsonError(409, `${SNACKS[snack].name}이 없어요. 상점에서 살 수 있어요!`);
     inventory[snack] -= 1;
+    if (useSpray) inventory.spray -= 1;
     // M6: 배틀은 항상 풀 HP로 시작 (약 시스템 폐지)
     const { error } = await supa.from("students").update({ inventory, hp: 100 }).eq("id", student.id);
     if (error) return jsonError(500, "저장에 실패했어요.");
     wildPokemon = pickWildOf(SNACKS[snack].rarity);
-    const shiny = rollShiny();
+    const shiny = useSpray || rollShiny();
     const token = await signBattleToken(student.id, wildPokemon.id, "battle", shiny);
     return NextResponse.json({
       pokemon: { id: wildPokemon.id, name: wildPokemon.name, type: wildPokemon.type, rarity: wildPokemon.rarity, shiny },
@@ -46,17 +50,23 @@ export async function POST(req: NextRequest) {
     return jsonError(409, `오늘의 배틀 ${battleLimit}회를 모두 사용했어요. 상점의 간식으로 추가 배틀을 할 수 있어요!`);
 
   // M6: 배틀은 항상 풀 HP로 시작 (약 시스템 폐지)
+  const inventory = { ...student.inventory };
+  if (useSpray) inventory.spray -= 1;
   const day_state = { ...student.day_state, battleUsed: battleUsed + 1 };
-  const { error } = await supa.from("students").update({ day_state, hp: 100 }).eq("id", student.id);
+  const { error } = await supa
+    .from("students")
+    .update({ day_state, hp: 100, ...(useSpray ? { inventory } : {}) })
+    .eq("id", student.id);
   if (error) return jsonError(500, "저장에 실패했어요.");
 
   wildPokemon = pickWild();
-  const shiny = rollShiny();
+  const shiny = useSpray || rollShiny();
   const token = await signBattleToken(student.id, wildPokemon.id, "battle", shiny);
   return NextResponse.json({
     pokemon: { id: wildPokemon.id, name: wildPokemon.name, type: wildPokemon.type, rarity: wildPokemon.rarity, shiny },
     token,
     battleUsed: battleUsed + 1,
     battleLimit,
+    ...(useSpray ? { inventory } : {}),
   });
 }
