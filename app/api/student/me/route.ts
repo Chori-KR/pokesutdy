@@ -21,7 +21,8 @@ export async function GET(req: NextRequest) {
 
   const [settings, { data: catches }] = await Promise.all([
     getClassSettings(supa, student.class_id),
-    supa.from("catches").select("pokemon_id").eq("student_id", student.id),
+    // select("*")로 읽어 count 컬럼이 없어도(0004 미실행) 안전
+    supa.from("catches").select("*").eq("student_id", student.id),
   ]);
   const { data: cls } = await supa
     .from("classes")
@@ -29,10 +30,20 @@ export async function GET(req: NextRequest) {
     .eq("id", student.class_id)
     .single();
 
+  // M8: 도감 = 마리 수 맵. caught = 보유(1마리 이상) 종 목록 (배틀 선택용)
+  const counts: Record<number, number> = {};
+  (catches ?? []).forEach((c: { pokemon_id: number; count?: number }) => {
+    counts[c.pokemon_id] = c.count ?? 1;
+  });
+  const caught = Object.keys(counts).map(Number);
+
   const gs = student.game_state ?? {};
+  // 배틀 포켓몬이 보유하지 않은 종이면(예: 스타팅을 진화로 소모) 보유 종 중 하나로 보정
+  let battlePid = gs.battlePid ?? gs.starter ?? DEFAULT_BATTLE_PID;
+  if (!counts[battlePid]) battlePid = caught[0] ?? battlePid;
   const game = {
     starter: gs.starter ?? null,
-    battlePid: gs.battlePid ?? gs.starter ?? DEFAULT_BATTLE_PID,
+    battlePid,
     wins: gs.wins ?? {},
     evoCount: gs.evoCount ?? 0,
   };
@@ -40,7 +51,8 @@ export async function GET(req: NextRequest) {
   return NextResponse.json({
     student: studentSnapshot(student),
     class: { name: cls?.name ?? "", class_code: cls?.class_code ?? "", settings },
-    caught: (catches ?? []).map((c) => c.pokemon_id),
+    caught,
+    counts,
     day: daySnapshot(student, settings),
     game,
   });

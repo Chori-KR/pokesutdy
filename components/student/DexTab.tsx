@@ -7,11 +7,11 @@ import Sprite from "@/components/Sprite";
 
 interface Member { id: string; nickname: string; dexCount: number; me: boolean }
 
-// 도감 (M5 확장): 내 도감 + 친구들의 수집 현황·도감 구경 (건강한 경쟁!)
-export default function DexTab({ caught }: { caught: number[] }) {
+// 도감 (M8 확장): 내 도감(마리 수 표시) + 친구들의 수집 현황·도감 구경 (건강한 경쟁!)
+export default function DexTab({ caught, counts }: { caught: number[]; counts: Record<number, number> }) {
   const [view, setView] = useState<"mine" | "friends">("mine");
   const [members, setMembers] = useState<Member[] | null>(null);
-  const [friend, setFriend] = useState<{ nickname: string; caught: number[] } | null>(null);
+  const [friend, setFriend] = useState<{ nickname: string; caught: number[]; counts?: Record<number, number> } | null>(null);
   const [err, setErr] = useState("");
 
   useEffect(() => {
@@ -34,14 +34,18 @@ export default function DexTab({ caught }: { caught: number[] }) {
     }
   }
 
-  const grid = (ids: number[]) => {
+  const grid = (ids: number[], cnts?: Record<number, number>) => {
     const got = new Set(ids);
     return (
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(84px, 1fr))", gap: 6 }}>
         {POOL.map((p) => {
           const has = got.has(p.id);
+          const n = cnts?.[p.id] ?? 0;
           return (
-            <div key={p.id} style={{ ...S.panel, padding: "8px 4px", textAlign: "center", opacity: has ? 1 : 0.5 }}>
+            <div key={p.id} style={{ position: "relative", ...S.panel, padding: "8px 4px", textAlign: "center", opacity: has ? 1 : 0.5 }}>
+              {has && n > 1 && (
+                <span style={{ position: "absolute", top: 4, right: 4, fontSize: 9, background: "#e07b39", color: "#fff", borderRadius: 8, padding: "0 5px" }}>×{n}</span>
+              )}
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <Sprite id={p.id} color={p.color} size={50} silhouette={!has} />
               </div>
@@ -70,9 +74,9 @@ export default function DexTab({ caught }: { caught: number[] }) {
       {view === "mine" && (
         <>
           <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 8, textAlign: "center" }}>
-            1세대 도감 완성까지 {POOL.length - caught.length}마리!
+            1세대 도감 완성까지 {POOL.length - caught.length}종! (오른쪽 위 ×숫자 = 잡은 마리 수)
           </div>
-          {grid(caught)}
+          {grid(caught, counts)}
         </>
       )}
 
@@ -111,7 +115,7 @@ export default function DexTab({ caught }: { caught: number[] }) {
               {friend.nickname}의 도감 <span style={{ color: "#ffd54a" }}>{friend.caught.length}/151</span>
             </span>
           </div>
-          {grid(friend.caught)}
+          {grid(friend.caught, friend.counts)}
         </>
       )}
     </div>

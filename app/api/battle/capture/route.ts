@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { requireStudent, jsonError } from "@/lib/api";
+import { requireStudent, jsonError, bumpCatch, isMissingCount, CATCH_COUNT_HINT } from "@/lib/api";
 import { verifyBattleToken } from "@/lib/studentSession";
 import { BALLS, POOL, RARITY, captureRate, applyXp, BallKind } from "@/lib/game";
 
@@ -38,13 +38,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: false, inventory });
   }
 
-  // 도감 등록 (이미 잡은 포켓몬이면 중복 등록 안 됨 — unique 제약)
-  const { error: catchErr } = await supa
-    .from("catches")
-    .insert({ student_id: student.id, pokemon_id: meta.id, method: battle.source });
-  const newlyCaught = !catchErr; // 23505(중복)면 이미 도감에 있음
-  if (catchErr && catchErr.code !== "23505")
-    return jsonError(500, "도감 기록에 실패했어요.");
+  // M8: 마리 수 +1 (같은 종을 여러 마리 잡을 수 있음). created=이번에 처음 잡은 종
+  const bump = await bumpCatch(supa, student.id, meta.id, battle.source, 1);
+  if (bump.error)
+    return jsonError(500, isMissingCount(bump.error) ? CATCH_COUNT_HINT : "도감 기록에 실패했어요.");
+  const newlyCaught = bump.created;
+  const caughtCount = bump.count;
 
   // 배틀 승리 포인트/XP는 배틀 포획에만 — 야생 탐색은 포획 자체가 보상 (명세 §4.3)
   if (battle.source === "explore") {
@@ -53,7 +52,7 @@ export async function POST(req: NextRequest) {
       .update({ inventory })
       .eq("id", student.id);
     if (error) return jsonError(500, "저장에 실패했어요.");
-    return NextResponse.json({ success: true, newlyCaught, inventory });
+    return NextResponse.json({ success: true, newlyCaught, caughtCount, inventory });
   }
 
   const reward = RARITY[rarity];
@@ -68,6 +67,7 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({
     success: true,
     newlyCaught,
+    caughtCount,
     inventory,
     points,
     xp: g.xp,

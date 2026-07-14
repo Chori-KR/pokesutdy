@@ -45,6 +45,42 @@ export function isMissingGameState(error: { message?: string } | null): boolean 
 export const GAME_STATE_HINT =
   "게임 업데이트에 필요한 DB 작업이 아직 안 됐어요. 선생님께 'supabase/migrations/0003_battle_pokemon.sql 실행'을 요청해주세요!";
 
+// catches.count 컬럼이 아직 없는 DB(0004 미실행) 안내
+export const isMissingCount = (error: { message?: string } | null): boolean =>
+  !!error?.message && /count/.test(error.message);
+export const CATCH_COUNT_HINT =
+  "게임 업데이트에 필요한 DB 작업이 아직 안 됐어요. 선생님께 'supabase/migrations/0004_catch_count.sql 실행'을 요청해주세요!";
+
+// 잡은 마리 수 증감 (M8). delta>0 증가, delta<0 감소(0이 되면 행 삭제).
+// select("*")로 읽어 count 컬럼이 없어도 읽기는 안전, 쓰기 오류만 상위에서 안내.
+// 반환: { count, created, error } — created=이번에 처음 잡은 종
+export async function bumpCatch(
+  supa: SupabaseClient, studentId: string, pid: number, method: string, delta = 1
+): Promise<{ count: number; created: boolean; error: { message?: string } | null }> {
+  const { data: rows } = await supa
+    .from("catches")
+    .select("*")
+    .eq("student_id", studentId)
+    .eq("pokemon_id", pid)
+    .limit(1);
+  const existing = rows?.[0] as { id: string; count?: number } | undefined;
+
+  if (!existing) {
+    if (delta <= 0) return { count: 0, created: false, error: null };
+    const { error } = await supa
+      .from("catches")
+      .insert({ student_id: studentId, pokemon_id: pid, method, count: delta });
+    return { count: delta, created: !error, error };
+  }
+  const next = (existing.count ?? 1) + delta;
+  if (next <= 0) {
+    const { error } = await supa.from("catches").delete().eq("id", existing.id);
+    return { count: 0, created: false, error };
+  }
+  const { error } = await supa.from("catches").update({ count: next }).eq("id", existing.id);
+  return { count: next, created: false, error };
+}
+
 export function jsonError(status: number, message: string) {
   return NextResponse.json({ error: message }, { status });
 }

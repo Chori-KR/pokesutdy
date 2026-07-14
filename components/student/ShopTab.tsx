@@ -19,11 +19,11 @@ const BALL_DESC: Record<BallKind, string> = {
   master: "무조건 잡힌다. 1인 1개, 한 학기의 꿈.",
 };
 
-// 상점 (M5): 볼 4종 / 회복약 / 진화의돌 / 간식 3종. 가격·판정은 전부 서버.
+// 상점 (M8): 볼 4종 / 진화의돌 / 간식 3종. 구매 시 게임풍 확인 모달.
 export default function ShopTab({ student, setStudent, showToast }: Props) {
   const [busy, setBusy] = useState(false);
+  const [confirmItem, setConfirmItem] = useState<ShopItem | null>(null); // M8: 구매 확인 모달
 
-  // M7: 실수 구매 방지 확인창 — priceOf로 이름·가격을 찾아 안내
   function priceName(item: ShopItem): { name: string; price: number } | null {
     if (item in BALLS) return BALLS[item as BallKind];
     if (item in SNACKS) return SNACKS[item as SnackKind];
@@ -31,13 +31,24 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
     return null;
   }
 
-  async function buy(item: ShopItem) {
+  // 구매 버튼 → 확인 모달 열기
+  function askBuy(item: ShopItem) {
     if (busy) return;
-    const info = priceName(item);
-    if (info) {
-      const after = student.points - info.price;
-      if (!window.confirm(`${info.name}을(를) ${info.price.toLocaleString()}P에 살까요?\n(남은 포인트: ${after.toLocaleString()}P)`)) return;
-    }
+    setConfirmItem(item);
+  }
+
+  // 아이템 종류로 아이콘 렌더
+  function iconOf(item: ShopItem, size = 30): React.ReactNode {
+    if (item in BALLS) return <BallIcon kind={item as BallKind} size={size} />;
+    if (item === "stone") return <span style={{ fontSize: size - 6 }}>{EVO_STONE.emoji}</span>;
+    if (item in SNACKS) return <span style={{ fontSize: size - 6 }}>{SNACKS[item as SnackKind].emoji}</span>;
+    return null;
+  }
+
+  // 모달에서 확정 → 실제 구매
+  async function doBuy() {
+    if (!confirmItem || busy) return;
+    const item = confirmItem;
     setBusy(true);
     try {
       const res = await fetch("/api/shop/buy", {
@@ -53,6 +64,7 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
       showToast("연결에 실패했어요. 다시 시도해주세요.");
     } finally {
       setBusy(false);
+      setConfirmItem(null);
     }
   }
 
@@ -91,7 +103,7 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
           owned: student.inventory[k],
           desc: BALL_DESC[k],
           price: BALLS[k].price,
-          onBuy: () => buy(k),
+          onBuy: () => askBuy(k),
         })
       )}
 
@@ -103,7 +115,7 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
         owned: student.inventory.stone,
         desc: `${EVO_STONE.desc} — 배틀 탭의 진화 메뉴에서 사용`,
         price: EVO_STONE.price,
-        onBuy: () => buy("stone"),
+        onBuy: () => askBuy("stone"),
       })}
 
       <div style={{ fontSize: 11, color: "#9fd8ff", textAlign: "center", marginTop: 4 }}>— 간식 (추가 배틀!) —</div>
@@ -115,13 +127,46 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
           owned: student.inventory[k],
           desc: `${SNACKS[k].desc} — 배틀 탭에서 사용`,
           price: SNACKS[k].price,
-          onBuy: () => buy(k),
+          onBuy: () => askBuy(k),
         })
       )}
 
       <div style={{ fontSize: 10, color: "#9fd8ff", textAlign: "center", marginTop: 4, lineHeight: 1.7 }}>
         포인트는 오늘의 퀴즈(+150P + 랜덤 볼)·문제풀이(정답 +20P)·배틀 승리로 모아요.
       </div>
+
+      {/* M8: 게임풍 구매 확인 모달 */}
+      {confirmItem && (() => {
+        const info = priceName(confirmItem)!;
+        const after = student.points - info.price;
+        const short = after < 0;
+        return (
+          <div
+            onClick={() => !busy && setConfirmItem(null)}
+            style={{ position: "fixed", inset: 0, background: "rgba(8,10,22,0.82)", zIndex: 60, display: "flex", alignItems: "center", justifyContent: "center", padding: 20 }}
+          >
+            <div
+              onClick={(e) => e.stopPropagation()}
+              style={{ ...S.panel, width: "100%", maxWidth: 300, textAlign: "center", padding: 20, animation: "pop 0.25s ease-out" }}
+            >
+              <div style={{ display: "flex", justifyContent: "center", marginBottom: 8 }}>{iconOf(confirmItem, 46)}</div>
+              <div style={{ fontSize: 16, marginBottom: 4 }}>{info.name}</div>
+              <div style={{ fontSize: 13, color: "#ffd54a", marginBottom: 10 }}>{info.price.toLocaleString()} P</div>
+              <div style={{ fontSize: 12, color: short ? "#ff9d9d" : "#9fd8ff", marginBottom: 16, lineHeight: 1.6 }}>
+                {short
+                  ? "포인트가 부족해요!"
+                  : <>구매 후 남는 포인트: <b style={{ color: "#f8f0dc" }}>{after.toLocaleString()} P</b></>}
+              </div>
+              <div style={{ display: "flex", gap: 8 }}>
+                <button onClick={() => setConfirmItem(null)} disabled={busy} style={{ ...S.ghostBtn, flex: 1, padding: "10px 0", fontSize: 13 }}>취소</button>
+                <button onClick={doBuy} disabled={busy || short} style={{ ...S.primaryBtn, flex: 1, padding: "10px 0", fontSize: 13, opacity: short ? 0.5 : 1 }}>
+                  {busy ? "구매 중..." : "구매하기"}
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      })()}
     </div>
   );
 }

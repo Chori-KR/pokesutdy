@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { requireStudent, jsonError, isMissingGameState, GAME_STATE_HINT } from "@/lib/api";
+import { requireStudent, jsonError, isMissingGameState, GAME_STATE_HINT, bumpCatch, isMissingCount, CATCH_COUNT_HINT } from "@/lib/api";
 import { STARTER_IDS, POOL } from "@/lib/game";
 
 // 스타팅 포켓몬 선택 (M4): 이상해씨/파이리/꼬부기/피카츄 중 1회 선택.
@@ -22,17 +22,15 @@ export async function POST(req: NextRequest) {
   if (error)
     return jsonError(500, isMissingGameState(error) ? GAME_STATE_HINT : "저장에 실패했어요.");
 
-  // 도감 등록 (이미 있으면 무시)
-  const { error: catchErr } = await supa
-    .from("catches")
-    .insert({ student_id: student.id, pokemon_id: pid, method: "starter" });
-  if (catchErr && catchErr.code !== "23505")
-    return jsonError(500, "도감 기록에 실패했어요.");
+  // 도감 등록 (마리 수 1)
+  const bump = await bumpCatch(supa, student.id, pid, "starter", 1);
+  if (bump.error)
+    return jsonError(500, isMissingCount(bump.error) ? CATCH_COUNT_HINT : "도감 기록에 실패했어요.");
 
   return NextResponse.json({
     starter: pid,
     battlePid: pid,
     name: POOL[pid - 1].name,
-    newlyCaught: !catchErr,
+    newlyCaught: bump.created,
   });
 }
