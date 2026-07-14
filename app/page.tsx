@@ -1,9 +1,13 @@
 import Link from "next/link";
 import { S } from "@/lib/styles";
+import Brand from "@/components/Brand";
 
 export default function Landing() {
   return (
     <div style={{ ...S.page, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "100vh" }}>
+      <div style={{ marginBottom: 22 }}>
+        <Brand height={52} color="#f4f6ff" />
+      </div>
       <div style={{ fontSize: 26, marginBottom: 4 }}>포켓 스터디</div>
       <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 26 }}>공부하고, 배틀하고, 도감을 완성하자!</div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, width: "100%", maxWidth: 420 }}>
