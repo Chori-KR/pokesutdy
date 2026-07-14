@@ -12,15 +12,17 @@ interface Props {
   setDay: (d: DayInfo) => void;
 }
 
-interface Result { correct: boolean; answer_idx: number; reward: number; level: number; levelBonus: number }
+interface Result { correct: boolean; answer_idx: number; answerText?: string; reward: number; level: number; levelBonus: number }
 
-// 문제풀이 (명세 §4.5): 정답 +20P, 하루 한도까지. 출제·채점은 전부 서버.
+// 문제풀이 (명세 §4.5): 정답 +20P, 하루 한도까지. 출제·채점은 전부 서버. (단답형 지원)
 export default function SolveTab({ student, setStudent, day, setDay }: Props) {
   const [q, setQ] = useState<SolveQuestion | null>(null);
   const [picked, setPicked] = useState<number | null>(null);
+  const [input, setInput] = useState("");   // 단답형 입력
   const [result, setResult] = useState<Result | null>(null);
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
+  const isShort = q?.type === "short";
 
   const left = Math.max(0, day.solveLimit - day.solveCount);
 
@@ -34,6 +36,7 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
       if (!res.ok) { setErr(data.error ?? "문제를 받지 못했어요."); return; }
       setQ(data.question);
       setPicked(null);
+      setInput("");
       setResult(null);
     } catch {
       setErr("연결에 실패했어요. 다시 시도해주세요.");
@@ -42,15 +45,15 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
     }
   }
 
-  async function answer(idx: number) {
-    if (!q || picked !== null || busy) return;
+  async function submit(payload: { chosen_idx?: number; text?: string }) {
+    if (!q || result || busy) return;
     setBusy(true);
-    setPicked(idx);
+    if (payload.chosen_idx != null) setPicked(payload.chosen_idx);
     try {
       const res = await fetch("/api/solve/answer", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question_id: q.id, chosen_idx: idx }),
+        body: JSON.stringify({ question_id: q.id, ...payload }),
       });
       const data = await res.json();
       if (!res.ok) { setErr(data.error ?? "채점에 실패했어요."); setPicked(null); return; }
@@ -96,32 +99,50 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
 
       <div style={{ fontSize: 14, lineHeight: 1.6, marginBottom: 14 }}>{q.body}</div>
 
-      <div style={{ display: "grid", gap: 8 }}>
-        {q.options.map((opt, i) => {
-          const isAns = result && i === result.answer_idx;
-          const isWrongPick = result && picked === i && !isAns;
-          return (
-            <button
-              key={i}
-              onClick={() => answer(i)}
-              disabled={busy || picked !== null}
-              style={{
-                ...S.choiceBtn,
-                textAlign: "left",
-                background: isAns ? "#2e5d43" : isWrongPick ? "#6b3030" : (S.choiceBtn.background as string),
-                borderColor: isAns ? "#7ef29a" : isWrongPick ? "#ff9d9d" : "#f8f0dc33",
-              }}
-            >
-              {i + 1}. {opt}
+      {isShort ? (
+        <div>
+          <input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => { if (e.key === "Enter" && input.trim() && !result) submit({ text: input }); }}
+            disabled={!!result || busy}
+            placeholder="정답을 입력하세요"
+            style={{ ...S.input, marginBottom: 8, textAlign: "center" }}
+          />
+          {!result && (
+            <button onClick={() => input.trim() && submit({ text: input })} disabled={busy || !input.trim()} style={{ ...S.primaryBtn, width: "100%", opacity: input.trim() ? 1 : 0.5 }}>
+              정답 제출
             </button>
-          );
-        })}
-      </div>
+          )}
+        </div>
+      ) : (
+        <div style={{ display: "grid", gap: 8 }}>
+          {q.options.map((opt, i) => {
+            const isAns = result && i === result.answer_idx;
+            const isWrongPick = result && picked === i && !isAns;
+            return (
+              <button
+                key={i}
+                onClick={() => submit({ chosen_idx: i })}
+                disabled={busy || picked !== null}
+                style={{
+                  ...S.choiceBtn,
+                  textAlign: "left",
+                  background: isAns ? "#2e5d43" : isWrongPick ? "#6b3030" : (S.choiceBtn.background as string),
+                  borderColor: isAns ? "#7ef29a" : isWrongPick ? "#ff9d9d" : "#f8f0dc33",
+                }}
+              >
+                {i + 1}. {opt}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       {result && (
         <div style={{ textAlign: "center", marginTop: 12, animation: "pop 0.3s ease-out" }}>
           <div style={{ fontSize: 14, color: result.correct ? "#7ef29a" : "#ff9d9d" }}>
-            {result.correct ? `정답! +${result.reward}P +2XP` : "아쉬워요! 정답을 확인하세요."}
+            {result.correct ? `정답! +${result.reward}P +2XP` : isShort ? `아쉬워요! 정답: ${result.answerText}` : "아쉬워요! 정답을 확인하세요."}
           </div>
           {result.levelBonus > 0 && (
             <div style={{ fontSize: 13, color: "#ffd54a", marginTop: 4 }}>

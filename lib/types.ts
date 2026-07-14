@@ -61,4 +61,5 @@ export interface SolveQuestion {
   options: string[];
   difficulty: Difficulty;
   tag: string;
+  type?: string; // "multiple"(기본) | "short"(단답형)
 }

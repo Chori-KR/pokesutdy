@@ -134,6 +134,14 @@ export const STONE_EVOS = new Set(STONE_PAIRS.map(([a, b]) => `${a}-${b}`));
 export const isStoneEvo = (from: number, to: number) => STONE_EVOS.has(`${from}-${to}`);
 
 // 스타팅 포켓몬 (가입 시 선택): 이상해씨 / 파이리 / 꼬부기 / 피카츄
+// 단답형 채점: 공백·대소문자 무시하고 허용 정답 목록과 비교
+export const normalizeAnswer = (s: string) =>
+  String(s ?? "").trim().toLowerCase().replace(/\s+/g, "");
+export const gradeShort = (text: string, accepted: string[]): boolean => {
+  const t = normalizeAnswer(text);
+  return !!t && accepted.some((a) => normalizeAnswer(a) === t);
+};
+
 export const SHINY_RATE = 1 / 40; // 야생 조우 시 이로치(색違) 확률
 export const rollShiny = () => Math.random() < SHINY_RATE;
 
