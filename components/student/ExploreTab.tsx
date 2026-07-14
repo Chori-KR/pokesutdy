@@ -6,6 +6,7 @@ import { BALLS, RARITY, TYPE_COLORS, captureRate, josa, sleep, BallKind, Rarity 
 import { StudentData, DayInfo } from "@/lib/types";
 import BallIcon from "@/components/BallIcon";
 import Sprite from "@/components/Sprite";
+import ShinyFx from "@/components/student/ShinyFx";
 
 interface Props {
   student: StudentData;
@@ -34,15 +35,23 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
   const [fails, setFails] = useState(0);
   const [msg, setMsg] = useState("");
   const [busy, setBusy] = useState(false);
-  const [useSpray, setUseSpray] = useState(false); // 빛나는 스프레이
+  const [sprayAsk, setSprayAsk] = useState(false); // 빛나는 스프레이 사용 여부 모달
 
   const left = Math.max(0, day.exploreLimit - day.encUsed);
 
-  async function explore() {
+  // 탐색 진입: 스프레이 보유 시 사용 여부를 먼저 묻고, 아니면 바로 시작
+  function beginExplore() {
     if (busy || left <= 0) return;
+    if ((student.inventory.spray ?? 0) > 0) setSprayAsk(true);
+    else explore(false);
+  }
+
+  async function explore(withSpray = false) {
+    if (busy || left <= 0) return;
+    setSprayAsk(false);
     setBusy(true);
     try {
-      const spray = useSpray && (student.inventory.spray ?? 0) > 0;
+      const spray = withSpray && (student.inventory.spray ?? 0) > 0;
       const res = await fetch("/api/explore/start", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -50,7 +59,6 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
       });
       const data = await res.json();
       if (!res.ok) { showToast(data.error ?? "탐색에 실패했어요."); return; }
-      setUseSpray(false);
       if (data.inventory) setStudent({ ...student, inventory: data.inventory });
       setWild(data.pokemon);
       setToken(data.token);
@@ -128,7 +136,10 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
           {wild && (
             <div style={{ marginBottom: 12 }}>
               <div style={{ display: "flex", justifyContent: "center", opacity: state === "fled" ? 0.4 : 1 }}>
-                <Sprite id={wild.id} color={TYPE_COLORS[wild.type]} pixel shiny={wild.shiny} size={110} />
+                <span style={{ position: "relative", display: "inline-block" }}>
+                  <Sprite id={wild.id} color={TYPE_COLORS[wild.type]} pixel shiny={wild.shiny} size={110} />
+                  {wild.shiny && <ShinyFx />}
+                </span>
               </div>
               <div style={{ fontSize: 13, marginTop: 8 }}>{msg}</div>
             </div>
@@ -138,15 +149,7 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
               <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 10 }}>
                 오늘 남은 탐색: {left}번 · 배틀 없이 볼만 던져서 잡는 찬스!
               </div>
-              {(student.inventory.spray ?? 0) > 0 && (
-                <button
-                  onClick={() => setUseSpray((v) => !v)}
-                  style={{ ...S.choiceBtn, width: "100%", maxWidth: 280, margin: "0 auto 8px", display: "block", border: useSpray ? "2px solid #ffd54a" : (S.choiceBtn.border as string), background: useSpray ? "#4a4326" : (S.choiceBtn.background as string) }}
-                >
-                  {useSpray ? "✨ 빛나는 스프레이 켜짐 — 이로치 확정!" : `✨ 빛나는 스프레이 사용 (보유 ${student.inventory.spray})`}
-                </button>
-              )}
-              <button onClick={explore} disabled={busy} style={S.primaryBtn}>
+              <button onClick={beginExplore} disabled={busy} style={S.primaryBtn}>
                 {busy ? "탐색 중..." : "풀숲을 탐색한다"}
               </button>
             </>
@@ -198,6 +201,26 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
           >
             포기하고 떠난다
           </button>
+        </div>
+      )}
+
+      {/* 빛나는 스프레이 사용 여부 모달 */}
+      {sprayAsk && (
+        <div
+          onClick={() => explore(false)}
+          style={{ position: "fixed", inset: 0, background: "rgba(8,10,22,0.82)", zIndex: 70, display: "flex", alignItems: "center", justifyContent: "center", padding: 20 }}
+        >
+          <div onClick={(e) => e.stopPropagation()} style={{ ...S.panel, width: "100%", maxWidth: 300, textAlign: "center", padding: 20, animation: "pop 0.25s ease-out" }}>
+            <div style={{ fontSize: 34, marginBottom: 4 }}>✨</div>
+            <div style={{ fontSize: 15, marginBottom: 4 }}>빛나는 스프레이 (보유 {student.inventory.spray})</div>
+            <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 16, lineHeight: 1.6 }}>
+              사용하면 이번 야생을 <b style={{ color: "#ffd54a" }}>이로치로 확정</b>해요! (1개 소모)
+            </div>
+            <div style={{ display: "flex", gap: 8 }}>
+              <button onClick={() => explore(false)} style={{ ...S.ghostBtn, flex: 1, padding: "10px 0", fontSize: 13 }}>그냥 탐색</button>
+              <button onClick={() => explore(true)} style={{ ...S.primaryBtn, flex: 1, padding: "10px 0", fontSize: 13 }}>✨ 사용하기</button>
+            </div>
+          </div>
         </div>
       )}
     </div>
