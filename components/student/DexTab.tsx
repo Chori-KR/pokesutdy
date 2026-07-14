@@ -46,6 +46,9 @@ export default function DexTab({ caught, counts }: { caught: number[]; counts: R
               {has && n > 1 && (
                 <span style={{ position: "absolute", top: 4, right: 4, fontSize: 9, background: "#e07b39", color: "#fff", borderRadius: 8, padding: "0 5px" }}>×{n}</span>
               )}
+              {has && n === 0 && (
+                <span style={{ position: "absolute", top: 4, right: 4, fontSize: 8, background: "#555", color: "#ddd", borderRadius: 8, padding: "0 4px" }}>보유0</span>
+              )}
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <Sprite id={p.id} color={p.color} size={50} silhouette={!has} />
               </div>
@@ -74,7 +77,7 @@ export default function DexTab({ caught, counts }: { caught: number[]; counts: R
       {view === "mine" && (
         <>
           <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 8, textAlign: "center" }}>
-            1세대 도감 완성까지 {POOL.length - caught.length}종! (오른쪽 위 ×숫자 = 잡은 마리 수)
+            1세대 도감 완성까지 {POOL.length - caught.length}종! (×숫자=마리 수, 보유0=진화로 떠나보냄·도감엔 영구 기록)
           </div>
           {grid(caught, counts)}
         </>

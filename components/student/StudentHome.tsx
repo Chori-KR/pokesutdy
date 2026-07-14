@@ -12,6 +12,7 @@ import DailyTab from "@/components/student/DailyTab";
 import ExploreTab from "@/components/student/ExploreTab";
 import ShopTab from "@/components/student/ShopTab";
 import DexTab from "@/components/student/DexTab";
+import TradeTab from "@/components/student/TradeTab";
 
 interface Props {
   student: StudentData;
@@ -29,7 +30,7 @@ interface Props {
 }
 
 const BALL_KINDS = ["poke", "superb", "hyper", "master"] as const;
-type Tab = "battle" | "solve" | "quiz" | "explore" | "shop" | "dex";
+type Tab = "battle" | "solve" | "quiz" | "explore" | "shop" | "dex" | "trade";
 
 export default function StudentHome({ student, setStudent, cls, caught, setCaught, counts, setCounts, day, setDay, game, setGame, onLogout }: Props) {
   const [tab, setTab] = useState<Tab>("battle");
@@ -50,6 +51,7 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
     ["explore", `탐색(${Math.max(0, day.exploreLimit - day.encUsed)})`],
     ["shop", "상점"],
     ["dex", `도감(${caught.length})`],
+    ["trade", "교환"],
   ];
 
   return (
@@ -119,6 +121,9 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
       )}
       {tab === "shop" && <ShopTab student={student} setStudent={setStudent} showToast={showToast} />}
       {tab === "dex" && <DexTab caught={caught} counts={counts} />}
+      {tab === "trade" && (
+        <TradeTab caught={caught} setCaught={setCaught} counts={counts} setCounts={setCounts} showToast={showToast} />
+      )}
 
       {toast && <div style={S.toast}>{toast}</div>}
     </div>
