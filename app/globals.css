@@ -27,3 +27,17 @@ button { touch-action: manipulation; }
 @keyframes evoPulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.32); } }
 @keyframes sparkle { 0%,100% { opacity: 0; transform: scale(0.3) rotate(0deg); } 50% { opacity: 1; transform: scale(1) rotate(20deg); } }
 @keyframes shinyGlow { 0%,100% { filter: drop-shadow(0 0 2px #fff6a8); } 50% { filter: drop-shadow(0 0 10px #ffe14d) drop-shadow(0 0 4px #fff); } }
+
+/* 타입별 기술 이펙트 */
+@keyframes fxBurst { from { transform: translate(-50%,-50%) scale(0.3); opacity: 1; } to { transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1.1); opacity: 0; } }
+@keyframes fxRise { 0% { transform: translateY(10px) scale(0.5); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(-48px) scale(1.05); opacity: 0; } }
+@keyframes fxFall { 0% { transform: translateY(-40px) scale(0.5) rotate(0deg); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(26px) scale(1) rotate(55deg); opacity: 0; } }
+@keyframes fxRing { from { transform: translate(-50%,-50%) scale(0.2); opacity: 0.9; } to { transform: translate(-50%,-50%) scale(2.8); opacity: 0; } }
+@keyframes fxFlash { 0%,100% { opacity: 0; } 35%,55% { opacity: 0.55; } }
+@keyframes fxSpin { from { transform: translate(-50%,-50%) rotate(0deg) scale(0.4); opacity: 1; } to { transform: translate(-50%,-50%) rotate(380deg) scale(1.25); opacity: 0; } }
+
+/* 포획 연출 */
+@keyframes ballShake3 { 0%,100%{transform:rotate(0)} 8%{transform:rotate(-22deg)} 16%{transform:rotate(20deg)} 24%{transform:rotate(0)} 40%{transform:rotate(-22deg)} 48%{transform:rotate(20deg)} 56%{transform:rotate(0)} 72%{transform:rotate(-22deg)} 80%{transform:rotate(20deg)} 88%{transform:rotate(0)} }
+@keyframes captureBeam { 0% { opacity: 0; transform: translate(-50%,-50%) scaleX(0.2); } 40% { opacity: 0.85; } 100% { opacity: 0; transform: translate(-50%,-50%) scaleX(1.1); } }
+@keyframes starPop { 0% { transform: translate(-50%,-50%) scale(0) rotate(0); opacity: 0; } 40% { opacity: 1; } 100% { transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1.35) rotate(50deg); opacity: 0; } }
+@keyframes breakout { 0% { transform: scale(0.1); opacity: 0; } 45% { transform: scale(1.28); opacity: 1; } 70% { transform: scale(0.9); } 100% { transform: scale(1); opacity: 1; } }
