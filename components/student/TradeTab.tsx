@@ -1,9 +1,11 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { S } from "@/lib/styles";
 import { POOL, RARITY } from "@/lib/game";
 import Sprite from "@/components/Sprite";
+import QrCode from "@/components/student/QrCode";
+import QrScanner from "@/components/student/QrScanner";
 
 interface Props {
   caught: number[];
@@ -20,7 +22,7 @@ interface HistItem {
 }
 interface Offer { id: number; name: string; color: string; rarity: keyof typeof RARITY }
 
-// 학생 간 교환 (M9): 내 포켓몬을 걸고 코드 발급 → 친구가 코드로 자기 포켓몬과 맞바꿈.
+// 학생 간 교환 (M9/M10): 내 포켓몬을 걸고 6자리 숫자 코드/QR 발급 → 친구가 코드·QR로 맞바꿈.
 export default function TradeTab({ caught, setCaught, counts, setCounts, showToast }: Props) {
   const [mode, setMode] = useState<"create" | "receive">("create");
   const [open, setOpen] = useState<OpenTrade[]>([]);
@@ -28,11 +30,15 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
   const [pickOffer, setPickOffer] = useState<number | null>(null);
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
+  const [qrFor, setQrFor] = useState<string | null>(null);      // QR로 크게 보여줄 코드
+  const [result, setResult] = useState<HistItem | null>(null);  // 교환 완료 모달
+  const histLen = useRef<number | null>(null);                  // 완료 감지용
 
   // 받기 화면
   const [code, setCode] = useState("");
   const [found, setFound] = useState<{ code: string; from_nickname: string; offer: Offer } | null>(null);
   const [pickGive, setPickGive] = useState<number | null>(null);
+  const [scanning, setScanning] = useState(false);
 
   // 지금 보유(1마리 이상)한 포켓몬 = 교환에 걸 수 있는 종
   const ownedIds = useMemo(
@@ -40,17 +46,31 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
     [caught, counts]
   );
 
-  const loadMine = () => {
+  const loadMine = (detectGrow = false) => {
     fetch("/api/trade/mine")
       .then((r) => r.json())
       .then((d) => {
         if (d.error) { setErr(d.error); return; }
         setOpen(d.open ?? []);
-        setHistory(d.history ?? []);
+        const hist: HistItem[] = d.history ?? [];
+        // 내가 연 교환을 친구가 완료 → 새 내역이 생기면 완료 모달
+        if (detectGrow && histLen.current != null && hist.length > histLen.current && hist[0]) {
+          setResult(hist[0]);
+          applySwap(hist[0].received.id, hist[0].gave.id);
+        }
+        histLen.current = hist.length;
+        setHistory(hist);
       })
       .catch(() => setErr("교환 현황을 불러오지 못했어요."));
   };
-  useEffect(loadMine, []);
+  useEffect(() => loadMine(false), []);
+
+  // 내가 연 교환이 있을 때만 5초마다 완료 여부 확인 (배틀 중이 아니어도 알림)
+  useEffect(() => {
+    if (!(mode === "create" && open.length > 0)) return;
+    const t = setInterval(() => loadMine(true), 5000);
+    return () => clearInterval(t);
+  }, [mode, open.length]);
 
   // 교환 후 도감 마리 수 로컬 반영
   const applySwap = (recv: number, gave: number) => {
@@ -71,9 +91,9 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
       });
       const d = await res.json();
       if (!res.ok) { setErr(d.error ?? "교환 등록에 실패했어요."); return; }
-      showToast(d.reused ? `이미 만든 코드예요: ${d.code}` : `교환 코드 ${d.code} 발급! 친구에게 알려주세요`);
+      showToast(d.reused ? `이미 만든 코드예요: ${d.code}` : `교환 코드 ${d.code} 발급!`);
       setPickOffer(null);
-      loadMine();
+      loadMine(false);
     } finally { setBusy(false); }
   }
 
@@ -85,15 +105,16 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
     });
     const d = await res.json();
     if (!res.ok) { setErr(d.error ?? "취소에 실패했어요."); return; }
+    if (qrFor === id) setQrFor(null);
     showToast("교환을 취소했어요.");
-    loadMine();
+    loadMine(false);
   }
 
-  async function lookup() {
-    const c = code.trim().toUpperCase();
-    if (c.length !== 6) { setErr("6자리 코드를 입력해주세요."); return; }
+  async function lookup(raw?: string) {
+    const c = (raw ?? code).replace(/\D/g, "");
+    if (c.length !== 6) { setErr("6자리 숫자 코드를 입력해주세요."); return; }
     setErr(""); setFound(null); setPickGive(null);
-    const res = await fetch(`/api/trade/lookup?code=${encodeURIComponent(c)}`);
+    const res = await fetch(`/api/trade/lookup?code=${c}`);
     const d = await res.json();
     if (!res.ok) { setErr(d.error ?? "코드를 찾지 못했어요."); return; }
     setFound(d);
@@ -110,11 +131,25 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
       const d = await res.json();
       if (!res.ok) { setErr(d.error ?? "교환에 실패했어요."); return; }
       applySwap(d.received.id, d.gave.id);
-      showToast(`${d.gave.name} ↔ ${d.received.name} 교환 완료!`);
+      setResult({
+        received: { id: d.received.id, name: d.received.name, color: POOL[d.received.id - 1].color },
+        gave: { id: d.gave.id, name: d.gave.name, color: POOL[d.gave.id - 1].color },
+      });
       setFound(null); setCode(""); setPickGive(null);
-      loadMine();
+      loadMine(false);
     } finally { setBusy(false); }
   }
+
+  const copyCode = async (c: string) => {
+    try { await navigator.clipboard.writeText(c); showToast(`코드 ${c} 복사됨!`); }
+    catch { showToast("복사가 안 돼요. 코드를 눌러 직접 입력해주세요."); }
+  };
+
+  const onScan = (c: string) => {
+    setScanning(false);
+    setCode(c);
+    lookup(c);
+  };
 
   const picker = (selected: number | null, onPick: (id: number) => void) => (
     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(72px, 1fr))", gap: 6, marginTop: 8 }}>
@@ -134,9 +169,7 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
               <Sprite id={p.id} color={p.color} size={42} />
             </div>
             <div style={{ fontSize: 9, marginTop: 3 }}>{p.name}</div>
-            {(counts[id] ?? 1) > 1 && (
-              <div style={{ fontSize: 8, color: "#e07b39" }}>×{counts[id]}</div>
-            )}
+            {(counts[id] ?? 1) > 1 && <div style={{ fontSize: 8, color: "#e07b39" }}>×{counts[id]}</div>}
           </button>
         );
       })}
@@ -159,7 +192,7 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
       {mode === "create" && (
         <>
           <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 6, textAlign: "center" }}>
-            교환할 포켓몬을 고르면 6자리 코드가 나와요. 친구에게 코드를 알려주세요!
+            교환할 포켓몬을 고르면 6자리 코드·QR이 나와요. 친구에게 보여주세요!
           </div>
           {ownedIds.length === 0 ? (
             <div style={{ ...S.panel, textAlign: "center", fontSize: 12, color: "#9fd8ff" }}>
@@ -180,13 +213,26 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
 
           {open.length > 0 && (
             <div style={{ marginTop: 16 }}>
-              <div style={{ fontSize: 12, color: "#ffd54a", marginBottom: 6 }}>내가 연 교환</div>
+              <div style={{ fontSize: 12, color: "#ffd54a", marginBottom: 6 }}>내가 연 교환 (친구가 수락하면 알려드려요)</div>
               {open.map((t) => (
-                <div key={t.id} style={{ ...S.panel, display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
-                  <Sprite id={t.offer.id} color={t.offer.color} size={36} />
-                  <span style={{ flex: 1, fontSize: 12 }}>{t.offer.name}</span>
-                  <span style={{ fontSize: 15, letterSpacing: 2, color: "#ffd54a" }}>{t.code}</span>
-                  <button onClick={() => cancelTrade(t.id)} style={S.ghostBtn}>취소</button>
+                <div key={t.id} style={{ ...S.panel, marginBottom: 6 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                    <Sprite id={t.offer.id} color={t.offer.color} size={36} />
+                    <span style={{ flex: 1, fontSize: 12 }}>{t.offer.name}</span>
+                    <button onClick={() => copyCode(t.code)} title="복사"
+                      style={{ ...S.ghostBtn, fontSize: 16, letterSpacing: 3, color: "#ffd54a", padding: "4px 10px" }}>
+                      {t.code} 📋
+                    </button>
+                    <button onClick={() => setQrFor(qrFor === t.id ? null : t.id)} style={S.ghostBtn}>
+                      {qrFor === t.id ? "QR닫기" : "QR"}
+                    </button>
+                    <button onClick={() => cancelTrade(t.id)} style={S.ghostBtn}>취소</button>
+                  </div>
+                  {qrFor === t.id && (
+                    <div style={{ display: "flex", justifyContent: "center", padding: "10px 0 2px" }}>
+                      <QrCode text={t.code} size={150} />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -199,13 +245,17 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
           <div style={{ display: "flex", gap: 6 }}>
             <input
               value={code}
-              onChange={(e) => setCode(e.target.value.toUpperCase())}
+              onChange={(e) => setCode(e.target.value.replace(/\D/g, "").slice(0, 6))}
+              inputMode="numeric"
               maxLength={6}
               placeholder="교환 코드 6자리"
               style={{ ...S.input, marginBottom: 0, letterSpacing: 3, textAlign: "center" }}
             />
-            <button onClick={lookup} style={{ ...S.primaryBtn, flexShrink: 0 }}>찾기</button>
+            <button onClick={() => lookup()} style={{ ...S.primaryBtn, flexShrink: 0 }}>찾기</button>
           </div>
+          <button onClick={() => setScanning(true)} style={{ ...S.choiceBtn, width: "100%", marginTop: 8 }}>
+            📷 QR 스캔으로 찾기
+          </button>
 
           {found && (
             <div style={{ marginTop: 12 }}>
@@ -254,6 +304,32 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
               <span style={{ color: "#7ec8a8" }}>{h.received.name}</span>
             </div>
           ))}
+        </div>
+      )}
+
+      {scanning && <QrScanner onDetect={onScan} onClose={() => setScanning(false)} />}
+
+      {result && (
+        <div
+          onClick={() => setResult(null)}
+          style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.7)", zIndex: 90, display: "flex", alignItems: "center", justifyContent: "center", padding: 20 }}
+        >
+          <div onClick={(e) => e.stopPropagation()} style={{ ...S.panel, maxWidth: 320, width: "100%", textAlign: "center" }}>
+            <div style={{ fontSize: 18, color: "#ffd54a", marginBottom: 4 }}>🔁 교환 완료!</div>
+            <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 12 }}>친구와 포켓몬을 맞바꿨어요</div>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginBottom: 12 }}>
+              <div>
+                <Sprite id={result.gave.id} color={result.gave.color} size={54} />
+                <div style={{ fontSize: 10, marginTop: 3 }}>보냄: {result.gave.name}</div>
+              </div>
+              <span style={{ fontSize: 22, color: "#e07b39" }}>↔</span>
+              <div>
+                <Sprite id={result.received.id} color={result.received.color} size={54} />
+                <div style={{ fontSize: 10, marginTop: 3, color: "#7ec8a8" }}>받음: {result.received.name}</div>
+              </div>
+            </div>
+            <button onClick={() => setResult(null)} style={{ ...S.primaryBtn, width: "100%" }}>확인</button>
+          </div>
         </div>
       )}
     </div>
