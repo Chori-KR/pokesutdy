@@ -25,3 +25,5 @@ html, body {
 button:active { transform: scale(0.97); }
 button { touch-action: manipulation; }
 @keyframes evoPulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.32); } }
+@keyframes sparkle { 0%,100% { opacity: 0; transform: scale(0.3) rotate(0deg); } 50% { opacity: 1; transform: scale(1) rotate(20deg); } }
+@keyframes shinyGlow { 0%,100% { filter: drop-shadow(0 0 2px #fff6a8); } 50% { filter: drop-shadow(0 0 10px #ffe14d) drop-shadow(0 0 4px #fff); } }

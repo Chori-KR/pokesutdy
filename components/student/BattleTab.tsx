@@ -10,6 +10,7 @@ import {
 } from "@/lib/game";
 import { ApiQuestion, StudentData, DayInfo, GameInfo } from "@/lib/types";
 import Sprite from "@/components/Sprite";
+import ShinyFx from "@/components/student/ShinyFx";
 import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
 
@@ -59,7 +60,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const [fails, setFails] = useState(0);
   const [usedQ, setUsedQ] = useState<string[]>([]);
   const [picker, setPicker] = useState(false);   // 포켓몬 선택 패널
-  const [useSpray, setUseSpray] = useState(false); // 빛나는 스프레이 사용 토글
+  const [sprayAsk, setSprayAsk] = useState<{ snack?: SnackKind } | null>(null); // 스프레이 사용 여부 모달
   const [subject, setSubject] = useState("");    // M7: 배틀 출제 과목 ("" = 전체)
   const [busyAction, setBusyAction] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -158,12 +159,19 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     }
   }
 
+  // 배틀 진입: 스프레이 보유 시 사용 여부를 먼저 모달로 묻고, 아니면 바로 시작
+  function beginBattle(snack?: SnackKind) {
+    if ((studentRef.current.inventory.spray ?? 0) > 0) setSprayAsk({ snack });
+    else start(snack, false);
+  }
+
   // M5: snack을 주면 일일 제한과 무관한 추가 배틀 (등급 확정 출현)
-  async function start(snack?: SnackKind) {
+  async function start(snack?: SnackKind, withSpray = false) {
+    setSprayAsk(null);
     setMsg(snack ? `${SNACKS[snack].name}을(를) 풀숲에 놓아두었다...` : "풀숲을 뒤지는 중...");
     setPhase("busy");
     try {
-      const spray = useSpray && (studentRef.current.inventory.spray ?? 0) > 0;
+      const spray = withSpray && (studentRef.current.inventory.spray ?? 0) > 0;
       const res = await fetch("/api/battle/start", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -171,7 +179,6 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       });
       const data = await res.json();
       if (!res.ok) { setMsg(data.error ?? "배틀을 시작할 수 없어요."); setPhase("idle"); return; }
-      setUseSpray(false); // 사용했으면 토글 리셋
       setDay({ ...day, battleUsed: data.battleUsed, battleLimit: data.battleLimit });
       // M6: 배틀은 풀 HP로 시작 (서버도 동일하게 초기화)
       setStudent({ ...studentRef.current, hp: MAX_HP, ...(data.inventory ? { inventory: data.inventory } : {}) });
@@ -485,7 +492,8 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             <div style={{ position: "absolute", left: "6%", top: "72%", width: "42%", height: "11%", background: "#6aab4d", borderRadius: "50%", opacity: 0.7 }} />
             {wildState !== "gone" && (
               <div style={{ position: "absolute", left: "60%", top: "6%", width: "26%", transition: "transform 0.3s, opacity 0.3s", transform: wildState === "captured" ? "scale(0)" : "scale(1)", opacity: wildState === "captured" ? 0 : 1, animation: wildState === "hit" ? "shakeit 0.5s" : phase === "select" || phase === "intro" ? "floaty 2.4s ease-in-out infinite" : "none", filter: wildState === "hit" ? "brightness(2.2) saturate(0.3)" : "none" }}>
-                <Sprite id={wild.id} color={wild.color} pixel size="100%" style={{ width: "100%", height: "auto" }} />
+                <Sprite id={wild.id} color={wild.color} pixel shiny={wild.shiny} size="100%" style={{ width: "100%", height: "auto" }} />
+                {wild.shiny && <ShinyFx />}
               </div>
             )}
             <div style={{ position: "absolute", left: "10%", top: "42%", width: "34%", animation: myHit ? "shakeit 0.5s" : "none", filter: myHit ? "brightness(2.2) saturate(0.3)" : "none" }}>
@@ -631,22 +639,14 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             </div>
           )}
 
-          {(student.inventory.spray ?? 0) > 0 && (
-            <button
-              onClick={() => setUseSpray((v) => !v)}
-              style={{ ...S.choiceBtn, width: "100%", marginBottom: 8, border: useSpray ? "2px solid #ffd54a" : (S.choiceBtn.border as string), background: useSpray ? "#4a4326" : (S.choiceBtn.background as string) }}
-            >
-              {useSpray ? "✨ 빛나는 스프레이 켜짐 — 이로치 확정!" : `✨ 빛나는 스프레이 사용 (보유 ${student.inventory.spray})`}
-            </button>
-          )}
-          <button onClick={() => start()} disabled={activeCount === 0 || battlesLeft <= 0} style={{ ...S.primaryBtn, width: "100%", opacity: activeCount === 0 || battlesLeft <= 0 ? 0.4 : 1 }}>
+          <button onClick={() => beginBattle()} disabled={activeCount === 0 || battlesLeft <= 0} style={{ ...S.primaryBtn, width: "100%", opacity: activeCount === 0 || battlesLeft <= 0 ? 0.4 : 1 }}>
             야생 포켓몬을 찾는다! (오늘 {battlesLeft}번 남음)
           </button>
           {/* M5: 간식 배틀 — 일일 제한과 무관한 추가 배틀, 등급 확정 출현 */}
           {SNACK_KINDS.some((k) => student.inventory[k] > 0) && activeCount > 0 && (
             <div style={{ display: "flex", gap: 6, marginTop: 8 }}>
               {SNACK_KINDS.filter((k) => student.inventory[k] > 0).map((k) => (
-                <button key={k} onClick={() => start(k)} style={{ ...S.choiceBtn, flex: 1, fontSize: 11 }}>
+                <button key={k} onClick={() => beginBattle(k)} style={{ ...S.choiceBtn, flex: 1, fontSize: 11 }}>
                   {SNACKS[k].emoji} {SNACKS[k].name} 주기 ×{student.inventory[k]}
                   <div style={{ fontSize: 9, color: "#9fd8ff", marginTop: 2 }}>{RARITY[SNACKS[k].rarity].label} 확정 배틀!</div>
                 </button>
@@ -748,10 +748,30 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
 
       {phase === "done" && (
         battlesLeft > 0 ? (
-          <button onClick={() => start()} style={{ ...S.primaryBtn, width: "100%" }}>다시 풀숲을 탐색한다 (오늘 {battlesLeft}번 남음)</button>
+          <button onClick={() => beginBattle()} style={{ ...S.primaryBtn, width: "100%" }}>다시 풀숲을 탐색한다 (오늘 {battlesLeft}번 남음)</button>
         ) : (
           <button onClick={() => setPhase("idle")} style={{ ...S.primaryBtn, width: "100%" }}>돌아가기 (간식으로 추가 배틀 가능!)</button>
         )
+      )}
+
+      {/* 빛나는 스프레이 사용 여부 모달 */}
+      {sprayAsk && (
+        <div
+          onClick={() => start(sprayAsk.snack, false)}
+          style={{ position: "fixed", inset: 0, background: "rgba(8,10,22,0.82)", zIndex: 70, display: "flex", alignItems: "center", justifyContent: "center", padding: 20 }}
+        >
+          <div onClick={(e) => e.stopPropagation()} style={{ ...S.panel, width: "100%", maxWidth: 300, textAlign: "center", padding: 20, animation: "pop 0.25s ease-out" }}>
+            <div style={{ fontSize: 34, marginBottom: 4 }}>✨</div>
+            <div style={{ fontSize: 15, marginBottom: 4 }}>빛나는 스프레이 (보유 {student.inventory.spray})</div>
+            <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 16, lineHeight: 1.6 }}>
+              사용하면 이번 야생을 <b style={{ color: "#ffd54a" }}>이로치로 확정</b>해요! (1개 소모)
+            </div>
+            <div style={{ display: "flex", gap: 8 }}>
+              <button onClick={() => start(sprayAsk.snack, false)} style={{ ...S.ghostBtn, flex: 1, padding: "10px 0", fontSize: 13 }}>그냥 시작</button>
+              <button onClick={() => start(sprayAsk.snack, true)} style={{ ...S.primaryBtn, flex: 1, padding: "10px 0", fontSize: 13 }}>✨ 사용하기</button>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );
