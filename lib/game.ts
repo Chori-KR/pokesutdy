@@ -5,10 +5,15 @@ export type Rarity = "common" | "rare" | "legendary";
 export type Difficulty = "easy" | "medium" | "hard";
 export type BallKind = "poke" | "superb" | "hyper" | "master";
 
-export const SPRITE = (id: number) =>
-  `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
-export const BACK_SPRITE = (id: number) =>
-  `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${id}.png`;
+const SPR = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon";
+// 도감·기본: 깔끔한 공식 일러스트
+export const SPRITE = (id: number, shiny = false) =>
+  `${SPR}/other/official-artwork${shiny ? "/shiny" : ""}/${id}.png`;
+// 배틀: 도트(픽셀) 통일 — 앞모습/뒷모습 모두 클래식 픽셀 스프라이트
+export const FRONT_PIXEL = (id: number, shiny = false) =>
+  `${SPR}${shiny ? "/shiny" : ""}/${id}.png`;
+export const BACK_SPRITE = (id: number, shiny = false) =>
+  `${SPR}/back${shiny ? "/shiny" : ""}/${id}.png`;
 
 export const TYPE_COLORS: Record<string, string> = {
   normal: "#A8A878", fire: "#F08030", water: "#6890F0", electric: "#F8D030",

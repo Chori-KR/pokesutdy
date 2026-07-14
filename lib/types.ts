@@ -35,6 +35,8 @@ export interface ClassSettings {
   exploreLimit?: number;
   solveLimit?: number;
   battleLimit?: number;
+  timerOn?: boolean;
+  timeScale?: number;
 }
 
 export interface ClassInfo {

@@ -111,12 +111,15 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
   const { data } = await supa.from("classes").select("settings").eq("id", classId).single();
   const s = (data?.settings ?? {}) as {
     moveDiff?: boolean; exploreLimit?: number; solveLimit?: number; battleLimit?: number;
+    timerOn?: boolean; timeScale?: number;
   };
   return {
     moveDiff: s.moveDiff !== false,
     exploreLimit: Math.max(0, Number(s.exploreLimit ?? DEFAULT_EXPLORE_LIMIT)),
     solveLimit: Math.max(0, Number(s.solveLimit ?? DEFAULT_SOLVE_LIMIT)),
     battleLimit: Math.max(0, Number(s.battleLimit ?? DEFAULT_BATTLE_LIMIT)),
+    timerOn: s.timerOn !== false,                                   // 기본 켜짐
+    timeScale: Math.min(3, Math.max(1, Number(s.timeScale ?? 1.5))), // 기본 1.5배(넉넉)
   };
 }
 

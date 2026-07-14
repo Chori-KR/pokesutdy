@@ -19,6 +19,8 @@ export interface ClassRow {
     exploreLimit?: number;
     solveLimit?: number;
     battleLimit?: number;
+    timerOn?: boolean;
+    timeScale?: number;
     aiProvider?: string;
     aiKeyEnc?: string;
     aiKeyHint?: string;
@@ -192,6 +194,34 @@ export default function TeacherHome({ session }: { session: Session }) {
                 <span style={{ position: "absolute", top: 2, left: cls.settings?.moveDiff !== false ? 21 : 2, width: 17, height: 17, background: "#fff", borderRadius: "50%", transition: "left 0.2s" }} />
               </span>
             </label>
+          </div>
+          <div style={T.card}>
+            <label style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 13, cursor: "pointer" }}>
+              <div>
+                배틀 제한 시간
+                <div style={{ fontSize: 11, color: "#888", marginTop: 3 }}>끄면 시간 제한 없이 천천히 풀 수 있어요(그림·자료 문제에 적합). 켜면 아래 배수로 시간을 넉넉히 조절.</div>
+              </div>
+              <span
+                onClick={() => updateSettings({ timerOn: !(cls?.settings?.timerOn !== false) })}
+                style={{ position: "relative", width: 40, height: 21, background: cls.settings?.timerOn !== false ? "#3d6fd9" : "#ccc", borderRadius: 11, cursor: "pointer", flexShrink: 0 }}
+              >
+                <span style={{ position: "absolute", top: 2, left: cls.settings?.timerOn !== false ? 21 : 2, width: 17, height: 17, background: "#fff", borderRadius: "50%", transition: "left 0.2s" }} />
+              </span>
+            </label>
+            {cls.settings?.timerOn !== false && (
+              <div style={{ display: "flex", gap: 6, marginTop: 10, flexWrap: "wrap" }}>
+                {[[1, "기본"], [1.5, "1.5배"], [2, "2배"], [3, "3배"]].map(([v, lab]) => {
+                  const cur = cls.settings?.timeScale ?? 1.5;
+                  const on = cur === v;
+                  return (
+                    <button key={String(v)} onClick={() => updateSettings({ timeScale: v as number })}
+                      style={{ ...(on ? T.primaryBtn : T.secondaryBtn), padding: "6px 12px", fontSize: 12 }}>
+                      {lab as string}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
           <div style={T.card}>
             {([
