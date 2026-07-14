@@ -16,16 +16,18 @@ interface Props {
   setCaught: (ids: number[]) => void;
   counts: Record<number, number>;
   setCounts: (c: Record<number, number>) => void;
+  shinies: number[];
+  setShinies: (s: number[]) => void;
   showToast: (t: string) => void;
 }
 
-interface Wild { id: number; name: string; type: string; rarity: Rarity }
+interface Wild { id: number; name: string; type: string; rarity: Rarity; shiny?: boolean }
 type EncState = "idle" | "active" | "throwing" | "caught" | "fled";
 
 const BALL_KINDS = ["poke", "superb", "hyper", "master"] as const;
 
 // 야생 탐색 (명세 §4.3): 배틀 없이 볼만 던져 포획. 출현·판정은 전부 서버.
-export default function ExploreTab({ student, setStudent, day, setDay, caught, setCaught, counts, setCounts, showToast }: Props) {
+export default function ExploreTab({ student, setStudent, day, setDay, caught, setCaught, counts, setCounts, shinies, setShinies, showToast }: Props) {
   const [wild, setWild] = useState<Wild | null>(null);
   const [token, setToken] = useState("");
   const [state, setState] = useState<EncState>("idle");
@@ -46,7 +48,7 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
       setToken(data.token);
       setFails(0);
       setState("active");
-      setMsg(`앗! 야생의 ${josa(data.pokemon.name, "이", "가")} 나타났다!`);
+      setMsg(data.pokemon.shiny ? `✨ 이로치 야생의 ${josa(data.pokemon.name, "이", "가")} 나타났다!` : `앗! 야생의 ${josa(data.pokemon.name, "이", "가")} 나타났다!`);
       setDay({ ...day, encUsed: data.encUsed });
     } catch {
       showToast("연결에 실패했어요. 다시 시도해주세요.");
@@ -80,6 +82,10 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
         setState("caught");
         setMsg(`신난다! ${josa(wild.name, "을", "를")} 잡았다!`);
         if (data.caughtCount != null) setCounts({ ...counts, [wild.id]: data.caughtCount });
+        if (data.shiny && !shinies.includes(wild.id)) {
+          setShinies([...shinies, wild.id]);
+          showToast(`✨ 이로치 ${wild.name}을(를) 도감에 기록했다!`);
+        }
         if (data.newlyCaught) {
           setCaught([...caught, wild.id]);
           showToast("도감에 새로운 포켓몬이 기록되었다!");
@@ -114,7 +120,7 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
           {wild && (
             <div style={{ marginBottom: 12 }}>
               <div style={{ display: "flex", justifyContent: "center", opacity: state === "fled" ? 0.4 : 1 }}>
-                <Sprite id={wild.id} color={TYPE_COLORS[wild.type]} size={110} />
+                <Sprite id={wild.id} color={TYPE_COLORS[wild.type]} pixel shiny={wild.shiny} size={110} />
               </div>
               <div style={{ fontSize: 13, marginTop: 8 }}>{msg}</div>
             </div>
@@ -150,7 +156,7 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
                 </div>
               </div>
             ) : (
-              <Sprite id={wild.id} color={TYPE_COLORS[wild.type]} size={110} />
+              <Sprite id={wild.id} color={TYPE_COLORS[wild.type]} pixel shiny={wild.shiny} size={110} />
             )}
           </div>
           <div style={{ fontSize: 12, margin: "10px 0 12px", minHeight: 18 }}>{msg}</div>

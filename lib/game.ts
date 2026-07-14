@@ -134,6 +134,9 @@ export const STONE_EVOS = new Set(STONE_PAIRS.map(([a, b]) => `${a}-${b}`));
 export const isStoneEvo = (from: number, to: number) => STONE_EVOS.has(`${from}-${to}`);
 
 // 스타팅 포켓몬 (가입 시 선택): 이상해씨 / 파이리 / 꼬부기 / 피카츄
+export const SHINY_RATE = 1 / 40; // 야생 조우 시 이로치(색違) 확률
+export const rollShiny = () => Math.random() < SHINY_RATE;
+
 export const STARTER_IDS = [1, 4, 7, 25] as const;
 
 export const DEFAULT_BATTLE_LIMIT = 2; // 하루 배틀(조우) 횟수 기본값 — 교사 설정 가능

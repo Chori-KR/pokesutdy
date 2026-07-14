@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError, getClassSettings } from "@/lib/api";
-import { pickWild } from "@/lib/game";
+import { pickWild, rollShiny } from "@/lib/game";
 import { signBattleToken } from "@/lib/studentSession";
 
 // 야생 탐색 (트랙 A, 명세 §4.3): 하루 N회(기본 3), 배틀 없이 볼만 던져 포획.
@@ -23,9 +23,10 @@ export async function POST(req: NextRequest) {
   if (error) return jsonError(500, "저장에 실패했어요.");
 
   const wild = pickWild();
-  const token = await signBattleToken(student.id, wild.id, "explore");
+  const shiny = rollShiny();
+  const token = await signBattleToken(student.id, wild.id, "explore", shiny);
   return NextResponse.json({
-    pokemon: { id: wild.id, name: wild.name, type: wild.type, rarity: wild.rarity },
+    pokemon: { id: wild.id, name: wild.name, type: wild.type, rarity: wild.rarity, shiny },
     token,
     encUsed: encUsed + 1,
     exploreLimit,

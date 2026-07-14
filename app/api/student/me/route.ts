@@ -32,8 +32,10 @@ export async function GET(req: NextRequest) {
 
   // M9: 도감 = 한 번이라도 잡은/진화시킨/교환받은 종(마리 수 0 포함). counts = 마리 수 맵.
   const counts: Record<number, number> = {};
-  (catches ?? []).forEach((c: { pokemon_id: number; count?: number }) => {
+  const shinies: number[] = [];
+  (catches ?? []).forEach((c: { pokemon_id: number; count?: number; shiny?: boolean }) => {
     counts[c.pokemon_id] = c.count ?? 1;
+    if (c.shiny) shinies.push(c.pokemon_id);
   });
   const caught = Object.keys(counts).map(Number); // 도감(보유 0 포함)
   const ownedIds = caught.filter((id) => counts[id] >= 1); // 배틀 선택 가능(보유 1↑)
@@ -54,6 +56,7 @@ export async function GET(req: NextRequest) {
     class: { name: cls?.name ?? "", class_code: cls?.class_code ?? "", settings },
     caught,
     counts,
+    shinies,
     day: daySnapshot(student, settings),
     game,
   });

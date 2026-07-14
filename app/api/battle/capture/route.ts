@@ -45,6 +45,12 @@ export async function POST(req: NextRequest) {
   const newlyCaught = bump.created;
   const caughtCount = bump.count;
 
+  // 이로치 포획 시 도감에 영구 표시 (한 번이라도 이로치를 잡으면 true 유지)
+  if (battle.shiny) {
+    await supa.from("catches").update({ shiny: true })
+      .eq("student_id", student.id).eq("pokemon_id", meta.id);
+  }
+
   // 배틀 승리 포인트/XP는 배틀 포획에만 — 야생 탐색은 포획 자체가 보상 (명세 §4.3)
   if (battle.source === "explore") {
     const { error } = await supa
@@ -52,7 +58,7 @@ export async function POST(req: NextRequest) {
       .update({ inventory })
       .eq("id", student.id);
     if (error) return jsonError(500, "저장에 실패했어요.");
-    return NextResponse.json({ success: true, newlyCaught, caughtCount, inventory });
+    return NextResponse.json({ success: true, newlyCaught, caughtCount, shiny: battle.shiny, inventory });
   }
 
   const reward = RARITY[rarity];
@@ -68,6 +74,7 @@ export async function POST(req: NextRequest) {
     success: true,
     newlyCaught,
     caughtCount,
+    shiny: battle.shiny,
     inventory,
     points,
     xp: g.xp,

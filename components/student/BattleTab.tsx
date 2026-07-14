@@ -23,6 +23,8 @@ interface Props {
   setCaught: (ids: number[]) => void;
   counts: Record<number, number>;
   setCounts: (c: Record<number, number>) => void;
+  shinies: number[];
+  setShinies: (s: number[]) => void;
   day: DayInfo;
   setDay: (d: DayInfo) => void;
   game: GameInfo;
@@ -37,11 +39,11 @@ type Fx = { kind: string; key: number } | null;
 
 const BALL_KINDS: BallKind[] = ["poke", "superb", "hyper", "master"];
 
-export default function BattleTab({ student, setStudent, moveDiff, timerOn, timeScale, caught, setCaught, counts, setCounts, day, setDay, game, setGame, showToast }: Props) {
+export default function BattleTab({ student, setStudent, moveDiff, timerOn, timeScale, caught, setCaught, counts, setCounts, shinies, setShinies, day, setDay, game, setGame, showToast }: Props) {
   const [phase, setPhase] = useState<BattlePhase>("idle");
   const timeLimitFor = (diff: Difficulty) => Math.round(TIME_LIMIT[diff] * timeScale);
   const [bank, setBank] = useState<ApiQuestion[] | null>(null);
-  const [wild, setWild] = useState<(Pokemon & { token: string; lv: number }) | null>(null);
+  const [wild, setWild] = useState<(Pokemon & { token: string; lv: number; shiny?: boolean }) | null>(null);
   const [evoAnim, setEvoAnim] = useState<{ fromId: number; toId: number; toName: string; step: number } | null>(null);
   const [wildHp, setWildHp] = useState(0);
   const [msg, setMsg] = useState("");
@@ -172,7 +174,8 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       setStudent({ ...studentRef.current, hp: MAX_HP, ...(data.inventory ? { inventory: data.inventory } : {}) });
       const meta = POOL.find((p) => p.id === data.pokemon.id)!;
       const hp = RARITY[meta.rarity].hp;
-      setWild({ ...meta, token: data.token, lv: wildLevelFor(meta.rarity, studentRef.current.level) });
+      setWild({ ...meta, token: data.token, lv: wildLevelFor(meta.rarity, studentRef.current.level), shiny: data.pokemon.shiny });
+      if (data.pokemon.shiny) showToast(`✨ 이로치 ${meta.name}이(가) 나타났다!`);
       setWildHp(hp);
       wildHpRef.current = hp;
       setWildState("idle");
@@ -349,7 +352,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     // 서버 권위 판정 (볼 차감 + RNG). 연출과 병렬로 요청.
     const reqStart = Date.now();
     let result: {
-      success: boolean; newlyCaught?: boolean; caughtCount?: number; inventory: StudentData["inventory"];
+      success: boolean; newlyCaught?: boolean; caughtCount?: number; shiny?: boolean; inventory: StudentData["inventory"];
       points?: number; xp?: number; level?: number; levelBonus?: number;
       reward?: { pts: number; xp: number }; error?: string;
     } | null = null;
@@ -390,6 +393,10 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
         level: result!.level!,
       });
       if (result!.caughtCount != null) setCounts({ ...counts, [wild.id]: result!.caughtCount });
+      if (result!.shiny && !shinies.includes(wild.id)) {
+        setShinies([...shinies, wild.id]);
+        showToast(`✨ 이로치 ${wild.name}을(를) 도감에 기록했다!`);
+      }
       if (result!.newlyCaught && !caught.includes(wild.id)) {
         setCaught([...caught, wild.id]);
         showToast("도감에 새로운 포켓몬이 기록되었다!");

@@ -4,12 +4,15 @@ import { useEffect, useState } from "react";
 import { S } from "@/lib/styles";
 import { POOL, RARITY } from "@/lib/game";
 import Sprite from "@/components/Sprite";
+import PokedexInfo from "@/components/student/PokedexInfo";
 
 interface Member { id: string; nickname: string; dexCount: number; me: boolean }
 
-// 도감 (M8 확장): 내 도감(마리 수 표시) + 친구들의 수집 현황·도감 구경 (건강한 경쟁!)
-export default function DexTab({ caught, counts }: { caught: number[]; counts: Record<number, number> }) {
+// 도감 (M8/M11): 내 도감(마리 수·이로치·정보카드) + 친구 도감 구경
+export default function DexTab({ caught, counts, shinies = [] }: { caught: number[]; counts: Record<number, number>; shinies?: number[] }) {
   const [view, setView] = useState<"mine" | "friends">("mine");
+  const [info, setInfo] = useState<number | null>(null); // 정보 카드 열린 포켓몬 id
+  const shinySet = new Set(shinies);
   const [members, setMembers] = useState<Member[] | null>(null);
   const [friend, setFriend] = useState<{ nickname: string; caught: number[]; counts?: Record<number, number> } | null>(null);
   const [err, setErr] = useState("");
@@ -34,27 +37,36 @@ export default function DexTab({ caught, counts }: { caught: number[]; counts: R
     }
   }
 
-  const grid = (ids: number[], cnts?: Record<number, number>) => {
+  const grid = (ids: number[], cnts?: Record<number, number>, shins?: Set<number>) => {
     const got = new Set(ids);
     return (
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(84px, 1fr))", gap: 6 }}>
         {POOL.map((p) => {
           const has = got.has(p.id);
           const n = cnts?.[p.id] ?? 0;
+          const isShiny = !!shins?.has(p.id);
           return (
-            <div key={p.id} style={{ position: "relative", ...S.panel, padding: "8px 4px", textAlign: "center", opacity: has ? 1 : 0.5 }}>
+            <button
+              key={p.id}
+              onClick={() => has && setInfo(p.id)}
+              disabled={!has}
+              style={{ position: "relative", ...S.panel, padding: "8px 4px", textAlign: "center", opacity: has ? 1 : 0.5, cursor: has ? "pointer" : "default", fontFamily: "inherit", color: "inherit" }}
+            >
               {has && n > 1 && (
                 <span style={{ position: "absolute", top: 4, right: 4, fontSize: 9, background: "#e07b39", color: "#fff", borderRadius: 8, padding: "0 5px" }}>×{n}</span>
               )}
               {has && n === 0 && (
                 <span style={{ position: "absolute", top: 4, right: 4, fontSize: 8, background: "#555", color: "#ddd", borderRadius: 8, padding: "0 4px" }}>보유0</span>
               )}
+              {isShiny && (
+                <span style={{ position: "absolute", top: 4, left: 4, fontSize: 11 }}>✨</span>
+              )}
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <Sprite id={p.id} color={p.color} size={50} silhouette={!has} />
+                <Sprite id={p.id} color={p.color} size={50} silhouette={!has} shiny={isShiny} />
               </div>
-              <div style={{ fontSize: 10, marginTop: 4, color: has ? "#f8f0dc" : "#777" }}>{has ? p.name : "???"}</div>
+              <div style={{ fontSize: 10, marginTop: 4, color: has ? "#f4f6ff" : "#8791b0" }}>{has ? p.name : "???"}</div>
               <div style={{ fontSize: 8, marginTop: 1, color: RARITY[p.rarity].color }}>No.{String(p.id).padStart(3, "0")}</div>
-            </div>
+            </button>
           );
         })}
       </div>
@@ -79,7 +91,7 @@ export default function DexTab({ caught, counts }: { caught: number[]; counts: R
           <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 8, textAlign: "center" }}>
             1세대 도감 완성까지 {POOL.length - caught.length}종! (×숫자=마리 수, 보유0=진화로 떠나보냄·도감엔 영구 기록)
           </div>
-          {grid(caught, counts)}
+          {grid(caught, counts, shinySet)}
         </>
       )}
 
@@ -120,6 +132,10 @@ export default function DexTab({ caught, counts }: { caught: number[]; counts: R
           </div>
           {grid(friend.caught, friend.counts)}
         </>
+      )}
+
+      {info != null && (
+        <PokedexInfo id={info} shiny={shinySet.has(info)} onClose={() => setInfo(null)} />
       )}
     </div>
   );
