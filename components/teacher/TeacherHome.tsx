@@ -8,6 +8,7 @@ import { SEED_QUESTIONS, generateClassCode } from "@/lib/seedQuestions";
 import QuestionBank, { QuestionRow } from "@/components/teacher/QuestionBank";
 import StatsTab from "@/components/teacher/StatsTab";
 import AiKeySettings from "@/components/teacher/AiKeySettings";
+import Brand from "@/components/Brand";
 
 export interface ClassRow {
   id: string;
@@ -133,6 +134,9 @@ export default function TeacherHome({ session }: { session: Session }) {
 
   return (
     <div style={T.page}>
+      <div style={{ marginBottom: 10 }}>
+        <Brand height={34} color="#2c2c34" align="left" />
+      </div>
       <div style={T.header}>
         <div>
           <div style={{ fontSize: 18, fontWeight: 600 }}>포켓 스터디 · 교사 메뉴</div>
