@@ -30,17 +30,18 @@ export async function GET(req: NextRequest) {
     .eq("id", student.class_id)
     .single();
 
-  // M8: 도감 = 마리 수 맵. caught = 보유(1마리 이상) 종 목록 (배틀 선택용)
+  // M9: 도감 = 한 번이라도 잡은/진화시킨/교환받은 종(마리 수 0 포함). counts = 마리 수 맵.
   const counts: Record<number, number> = {};
   (catches ?? []).forEach((c: { pokemon_id: number; count?: number }) => {
     counts[c.pokemon_id] = c.count ?? 1;
   });
-  const caught = Object.keys(counts).map(Number);
+  const caught = Object.keys(counts).map(Number); // 도감(보유 0 포함)
+  const ownedIds = caught.filter((id) => counts[id] >= 1); // 배틀 선택 가능(보유 1↑)
 
   const gs = student.game_state ?? {};
-  // 배틀 포켓몬이 보유하지 않은 종이면(예: 스타팅을 진화로 소모) 보유 종 중 하나로 보정
+  // 배틀 포켓몬이 지금 보유(1↑)하지 않는 종이면(진화·교환으로 소모) 보유 종으로 보정
   let battlePid = gs.battlePid ?? gs.starter ?? DEFAULT_BATTLE_PID;
-  if (!counts[battlePid]) battlePid = caught[0] ?? battlePid;
+  if (!(counts[battlePid] >= 1)) battlePid = ownedIds[0] ?? battlePid;
   const game = {
     starter: gs.starter ?? null,
     battlePid,

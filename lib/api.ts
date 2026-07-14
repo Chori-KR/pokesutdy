@@ -51,9 +51,17 @@ export const isMissingCount = (error: { message?: string } | null): boolean =>
 export const CATCH_COUNT_HINT =
   "게임 업데이트에 필요한 DB 작업이 아직 안 됐어요. 선생님께 'supabase/migrations/0004_catch_count.sql 실행'을 요청해주세요!";
 
-// 잡은 마리 수 증감 (M8). delta>0 증가, delta<0 감소(0이 되면 행 삭제).
+// trades 테이블이 아직 없는 DB(0005 미실행) 안내
+export const isMissingTrades = (error: { message?: string } | null): boolean =>
+  !!error?.message && /trades/.test(error.message);
+export const TRADES_HINT =
+  "교환 기능에 필요한 DB 작업이 아직 안 됐어요. 선생님께 'supabase/migrations/0005_trades.sql 실행'을 요청해주세요!";
+
+// 잡은 마리 수 증감 (M8/M9). delta>0 증가, delta<0 감소.
+// M9: 0마리가 돼도 행을 남긴다 — 한 번이라도 잡거나 진화시킨 종은 도감에 영구 기록.
+//     (교환으로 받은 종만 그 종의 행이 새로 생겨 도감에 추가 — 진화 전 종은 안 남음)
 // select("*")로 읽어 count 컬럼이 없어도 읽기는 안전, 쓰기 오류만 상위에서 안내.
-// 반환: { count, created, error } — created=이번에 처음 잡은 종
+// 반환: { count, created, error } — created=이번에 처음 도감에 추가된 종
 export async function bumpCatch(
   supa: SupabaseClient, studentId: string, pid: number, method: string, delta = 1
 ): Promise<{ count: number; created: boolean; error: { message?: string } | null }> {
@@ -72,11 +80,7 @@ export async function bumpCatch(
       .insert({ student_id: studentId, pokemon_id: pid, method, count: delta });
     return { count: delta, created: !error, error };
   }
-  const next = (existing.count ?? 1) + delta;
-  if (next <= 0) {
-    const { error } = await supa.from("catches").delete().eq("id", existing.id);
-    return { count: 0, created: false, error };
-  }
+  const next = Math.max(0, (existing.count ?? 1) + delta); // 0으로 내려가도 행 유지(도감 기록)
   const { error } = await supa.from("catches").update({ count: next }).eq("id", existing.id);
   return { count: next, created: false, error };
 }

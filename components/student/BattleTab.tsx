@@ -66,11 +66,11 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
   const pointCost = evoPointCost(game.evoCount); // M5: 누적 진화 횟수별 1000/2000/2500P
   const battlesLeft = Math.max(0, day.battleLimit - day.battleUsed);
   const SNACK_KINDS: SnackKind[] = ["snack", "snack2", "snack3"];
-  // M8: 보유(1마리 이상) 종만 배틀에 데려갈 수 있음 (caught가 곧 보유 목록)
-  const ownedIds = useMemo(() => {
-    const set = new Set<number>(caught);
-    return [...set].sort((a, b) => a - b);
-  }, [caught, game.starter]);
+  // M9: 도감(caught)엔 있어도 보유 0마리면 배틀에 못 데려감 — count≥1만 선택 가능
+  const ownedIds = useMemo(
+    () => caught.filter((id) => (counts[id] ?? 0) >= 1).sort((a, b) => a - b),
+    [caught, counts]
+  );
 
   // 배틀 진입 시 출제 중 문제 프리로드 (즉답 UX, 명세 §7)
   useEffect(() => {
@@ -133,14 +133,9 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       if (!res.ok) { showToast(data.error ?? "진화에 실패했어요."); return; }
       setGame({ ...game, battlePid: data.battlePid, wins: data.wins, evoCount: data.evoCount });
       setStudent({ ...studentRef.current, points: data.points, inventory: data.inventory });
-      // M8: 마리 수 갱신 — 진화 전 -1(0이면 도감·선택에서 제거), 진화체 +1
-      const nextCounts = { ...counts, [data.from.id]: data.from.count, [to]: data.to.count };
-      if (data.from.count <= 0) delete nextCounts[data.from.id];
-      setCounts(nextCounts);
-      let nextCaught = caught;
-      if (data.to.count >= 1 && !nextCaught.includes(to)) nextCaught = [...nextCaught, to];
-      if (data.from.count <= 0) nextCaught = nextCaught.filter((id) => id !== data.from.id);
-      setCaught(nextCaught);
+      // M9: 마리 수 갱신 — 진화 전 -1(0이 돼도 도감엔 남음), 진화체 +1
+      setCounts({ ...counts, [data.from.id]: data.from.count, [to]: data.to.count });
+      if (!caught.includes(to)) setCaught([...caught, to]); // 진화체를 도감에 추가(진화 전은 유지)
       // M6: 원작풍 진화 연출 — 하얗게 빛나며 변신
       setEvoAnim({ fromId: data.from.id, toId: data.to.id, toName: data.to.name, step: 0 });
       await sleep(1400);
