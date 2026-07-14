@@ -14,9 +14,9 @@ export async function POST(req: NextRequest) {
   const { supa, student } = auth;
 
   const body = await req.json().catch(() => null);
-  const code = String(body?.code ?? "").trim().toUpperCase();
+  const code = String(body?.code ?? "").replace(/\D/g, "");
   const give = Number(body?.pokemon_id); // 내가 상대에게 줄 포켓몬
-  if (code.length !== 6) return jsonError(400, "6자리 교환 코드를 입력해주세요.");
+  if (code.length !== 6) return jsonError(400, "6자리 숫자 교환 코드를 입력해주세요.");
   if (!(give >= 1 && give <= 151)) return jsonError(400, "줄 포켓몬이 올바르지 않아요.");
 
   // 교환 조회

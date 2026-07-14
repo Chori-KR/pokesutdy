@@ -63,6 +63,8 @@
    (잡은 마리 수 기록용 — 기존 설치도 이것만 추가로 Run 하면 됩니다)
 6. 같은 방법으로 [`supabase/migrations/0005_trades.sql`](./supabase/migrations/0005_trades.sql)도 **Run**
    (학생 간 교환 기능용 — 기존 설치도 이것만 추가로 Run 하면 됩니다)
+7. 같은 방법으로 [`supabase/migrations/0006_trade_numeric_code.sql`](./supabase/migrations/0006_trade_numeric_code.sql)도 **Run**
+   (교환 코드를 6자리 숫자·재사용 가능하게 — 0005를 이미 실행했어도 이것만 추가로 Run)
 
 ### 3. (권장) 이메일 확인 끄기
 Supabase 대시보드 → **Authentication → Sign In / Up → Email** 에서 **Confirm email을 OFF**

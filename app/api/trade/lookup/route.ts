@@ -9,8 +9,8 @@ export async function GET(req: NextRequest) {
   if (auth instanceof NextResponse) return auth;
   const { supa, student } = auth;
 
-  const code = String(new URL(req.url).searchParams.get("code") ?? "").trim().toUpperCase();
-  if (code.length !== 6) return jsonError(400, "6자리 교환 코드를 입력해주세요.");
+  const code = String(new URL(req.url).searchParams.get("code") ?? "").replace(/\D/g, "");
+  if (code.length !== 6) return jsonError(400, "6자리 숫자 교환 코드를 입력해주세요.");
 
   const { data: rows, error } = await supa
     .from("trades")

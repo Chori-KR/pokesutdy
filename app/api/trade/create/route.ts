@@ -2,14 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError, isMissingTrades, TRADES_HINT } from "@/lib/api";
 import { POOL } from "@/lib/game";
 
-// 교환 등록 (M9): 내가 보유(1마리 이상)한 포켓몬을 걸고 6자리 코드를 만든다.
+// 교환 등록 (M9/M10): 내가 보유(1마리 이상)한 포켓몬을 걸고 6자리 숫자 코드를 만든다.
 // 실제 맞바꿈은 상대가 수락할 때 서버가 원자적으로 처리(여기선 포켓몬을 잡아두지 않음).
 // 같은 포켓몬을 이미 교환에 걸어둔 게 있으면 재사용(중복 방지).
+// 코드는 '열린 교환'끼리만 유일 → 완료·취소된 숫자는 나중에 다시 나올 수 있음.
 function genTradeCode(): string {
-  const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; // 헷갈리는 0/O/1/I 제외
-  let s = "";
-  for (let i = 0; i < 6; i++) s += chars[Math.floor(Math.random() * chars.length)];
-  return s;
+  return String(Math.floor(Math.random() * 1_000_000)).padStart(6, "0");
 }
 
 export async function POST(req: NextRequest) {
