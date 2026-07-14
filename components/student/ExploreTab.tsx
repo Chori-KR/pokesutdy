@@ -34,6 +34,7 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
   const [fails, setFails] = useState(0);
   const [msg, setMsg] = useState("");
   const [busy, setBusy] = useState(false);
+  const [useSpray, setUseSpray] = useState(false); // 빛나는 스프레이
 
   const left = Math.max(0, day.exploreLimit - day.encUsed);
 
@@ -41,9 +42,16 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
     if (busy || left <= 0) return;
     setBusy(true);
     try {
-      const res = await fetch("/api/explore/start", { method: "POST" });
+      const spray = useSpray && (student.inventory.spray ?? 0) > 0;
+      const res = await fetch("/api/explore/start", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(spray ? { useSpray: true } : {}),
+      });
       const data = await res.json();
       if (!res.ok) { showToast(data.error ?? "탐색에 실패했어요."); return; }
+      setUseSpray(false);
+      if (data.inventory) setStudent({ ...student, inventory: data.inventory });
       setWild(data.pokemon);
       setToken(data.token);
       setFails(0);
@@ -130,6 +138,14 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
               <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 10 }}>
                 오늘 남은 탐색: {left}번 · 배틀 없이 볼만 던져서 잡는 찬스!
               </div>
+              {(student.inventory.spray ?? 0) > 0 && (
+                <button
+                  onClick={() => setUseSpray((v) => !v)}
+                  style={{ ...S.choiceBtn, width: "100%", maxWidth: 280, margin: "0 auto 8px", display: "block", border: useSpray ? "2px solid #ffd54a" : (S.choiceBtn.border as string), background: useSpray ? "#4a4326" : (S.choiceBtn.background as string) }}
+                >
+                  {useSpray ? "✨ 빛나는 스프레이 켜짐 — 이로치 확정!" : `✨ 빛나는 스프레이 사용 (보유 ${student.inventory.spray})`}
+                </button>
+              )}
               <button onClick={explore} disabled={busy} style={S.primaryBtn}>
                 {busy ? "탐색 중..." : "풀숲을 탐색한다"}
               </button>
