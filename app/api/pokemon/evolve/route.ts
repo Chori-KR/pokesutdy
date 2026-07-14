@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { requireStudent, jsonError, isMissingGameState, GAME_STATE_HINT } from "@/lib/api";
+import { requireStudent, jsonError, isMissingGameState, GAME_STATE_HINT, bumpCatch, isMissingCount, CATCH_COUNT_HINT } from "@/lib/api";
 import { EVOLVES_TO, evoWinsNeeded, evoPointCost, isStoneEvo, POOL } from "@/lib/game";
 
 // 포켓몬 진화 (M5, 3방식):
@@ -49,12 +49,13 @@ export async function POST(req: NextRequest) {
     usedDesc = `배틀 ${needed}승`;
   }
 
-  // 진화체 도감 등록 (이미 잡은 적 있으면 무시)
-  const { error: catchErr } = await supa
-    .from("catches")
-    .insert({ student_id: student.id, pokemon_id: to, method: "evolve" });
-  if (catchErr && catchErr.code !== "23505")
-    return jsonError(500, "도감 기록에 실패했어요.");
+  // M8: 진화 전 포켓몬 1마리 소모(0이 되면 사라짐) + 진화체 1마리 추가
+  const down = await bumpCatch(supa, student.id, from, "evolve", -1);
+  if (down.error)
+    return jsonError(500, isMissingCount(down.error) ? CATCH_COUNT_HINT : "도감 기록에 실패했어요.");
+  const up = await bumpCatch(supa, student.id, to, "evolve", 1);
+  if (up.error)
+    return jsonError(500, isMissingCount(up.error) ? CATCH_COUNT_HINT : "도감 기록에 실패했어요.");
 
   const game_state = { ...gs, battlePid: to, wins, evoCount: evoCount + 1 };
   const { error } = await supa
@@ -65,14 +66,14 @@ export async function POST(req: NextRequest) {
     return jsonError(500, isMissingGameState(error) ? GAME_STATE_HINT : "저장에 실패했어요.");
 
   return NextResponse.json({
-    from: { id: from, name: POOL[from - 1].name },
-    to: { id: to, name: POOL[to - 1].name },
+    from: { id: from, name: POOL[from - 1].name, count: down.count },
+    to: { id: to, name: POOL[to - 1].name, count: up.count },
     battlePid: to,
     wins,
     evoCount: evoCount + 1,
     points,
     inventory,
     used: usedDesc,
-    newlyCaught: !catchErr,
+    newlyCaught: up.created,
   });
 }

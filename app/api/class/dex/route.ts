@@ -21,11 +21,16 @@ export async function GET(req: NextRequest) {
     if (!target) return jsonError(404, "그 친구를 찾을 수 없어요.");
     const { data: catches } = await supa
       .from("catches")
-      .select("pokemon_id")
+      .select("*")
       .eq("student_id", target.id);
+    const counts: Record<number, number> = {};
+    (catches ?? []).forEach((c: { pokemon_id: number; count?: number }) => {
+      counts[c.pokemon_id] = c.count ?? 1;
+    });
     return NextResponse.json({
       nickname: target.nickname,
-      caught: (catches ?? []).map((c) => c.pokemon_id),
+      caught: Object.keys(counts).map(Number),
+      counts,
     });
   }
 

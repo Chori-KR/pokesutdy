@@ -35,6 +35,8 @@
 | 배틀 일일 제한 (기본 2회, 교사 설정) | ✅ |
 | 희귀 등급 재분류 (최종 진화체·상징·스타팅 = 희귀 71종) + 몬스터볼 확률 소폭 하향 | ✅ |
 | 친구 도감 구경 + 학급 수집 랭킹 | ✅ |
+| 잡은 마리 수 기록(도감 ×N 표시) + 진화 시 진화 전 포켓몬 1마리 소모 | ✅ |
+| 상점 구매 확인 모달 · 문제 체크박스 일괄 출제/숨김 · 엑셀 양식 다운로드/업로드 | ✅ |
 | 레벨 시스템: 배틀·문제풀이 정답 +2XP, 포획 XP, 레벨업 +100P (5의 배수 레벨 +500P) | ✅ |
 | 야생 레벨 연동 (내 레벨 기준 흔함 -10 / 희귀 -4 / 전설 +4) + 진화 연출 애니메이션 | ✅ |
 
@@ -55,6 +57,8 @@
    (성공하면 `pokemon_meta` 테이블에 151마리가 들어갑니다)
 4. 같은 방법으로 [`supabase/migrations/0003_battle_pokemon.sql`](./supabase/migrations/0003_battle_pokemon.sql)도 **Run**
    (배틀 포켓몬 시스템용 — 이미 0001~0002만 실행한 기존 설치도 이것만 추가로 Run 하면 됩니다)
+5. 같은 방법으로 [`supabase/migrations/0004_catch_count.sql`](./supabase/migrations/0004_catch_count.sql)도 **Run**
+   (잡은 마리 수 기록용 — 기존 설치도 이것만 추가로 Run 하면 됩니다)
 
 ### 3. (권장) 이메일 확인 끄기
 Supabase 대시보드 → **Authentication → Sign In / Up → Email** 에서 **Confirm email을 OFF**

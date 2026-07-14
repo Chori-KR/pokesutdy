@@ -19,6 +19,8 @@ interface Props {
   cls: ClassInfo;
   caught: number[];
   setCaught: (ids: number[]) => void;
+  counts: Record<number, number>;
+  setCounts: (c: Record<number, number>) => void;
   day: DayInfo;
   setDay: (d: DayInfo) => void;
   game: GameInfo;
@@ -29,7 +31,7 @@ interface Props {
 const BALL_KINDS = ["poke", "superb", "hyper", "master"] as const;
 type Tab = "battle" | "solve" | "quiz" | "explore" | "shop" | "dex";
 
-export default function StudentHome({ student, setStudent, cls, caught, setCaught, day, setDay, game, setGame, onLogout }: Props) {
+export default function StudentHome({ student, setStudent, cls, caught, setCaught, counts, setCounts, day, setDay, game, setGame, onLogout }: Props) {
   const [tab, setTab] = useState<Tab>("battle");
   const [toast, setToast] = useState("");
 
@@ -91,6 +93,8 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
           moveDiff={cls.settings?.moveDiff !== false}
           caught={caught}
           setCaught={setCaught}
+          counts={counts}
+          setCounts={setCounts}
           day={day}
           setDay={setDay}
           game={game}
@@ -108,11 +112,13 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
           setDay={setDay}
           caught={caught}
           setCaught={setCaught}
+          counts={counts}
+          setCounts={setCounts}
           showToast={showToast}
         />
       )}
       {tab === "shop" && <ShopTab student={student} setStudent={setStudent} showToast={showToast} />}
-      {tab === "dex" && <DexTab caught={caught} />}
+      {tab === "dex" && <DexTab caught={caught} counts={counts} />}
 
       {toast && <div style={S.toast}>{toast}</div>}
     </div>

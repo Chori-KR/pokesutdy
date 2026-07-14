@@ -14,6 +14,8 @@ interface Props {
   setDay: (d: DayInfo) => void;
   caught: number[];
   setCaught: (ids: number[]) => void;
+  counts: Record<number, number>;
+  setCounts: (c: Record<number, number>) => void;
   showToast: (t: string) => void;
 }
 
@@ -23,7 +25,7 @@ type EncState = "idle" | "active" | "throwing" | "caught" | "fled";
 const BALL_KINDS = ["poke", "superb", "hyper", "master"] as const;
 
 // 야생 탐색 (명세 §4.3): 배틀 없이 볼만 던져 포획. 출현·판정은 전부 서버.
-export default function ExploreTab({ student, setStudent, day, setDay, caught, setCaught, showToast }: Props) {
+export default function ExploreTab({ student, setStudent, day, setDay, caught, setCaught, counts, setCounts, showToast }: Props) {
   const [wild, setWild] = useState<Wild | null>(null);
   const [token, setToken] = useState("");
   const [state, setState] = useState<EncState>("idle");
@@ -77,9 +79,12 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
       if (data.success) {
         setState("caught");
         setMsg(`신난다! ${josa(wild.name, "을", "를")} 잡았다!`);
+        if (data.caughtCount != null) setCounts({ ...counts, [wild.id]: data.caughtCount });
         if (data.newlyCaught) {
           setCaught([...caught, wild.id]);
           showToast("도감에 새로운 포켓몬이 기록되었다!");
+        } else if ((data.caughtCount ?? 0) > 1) {
+          showToast(`또 잡았다! (보유 ${data.caughtCount}마리)`);
         }
       } else {
         const f = fails + 1;

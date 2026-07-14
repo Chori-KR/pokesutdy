@@ -19,6 +19,8 @@ interface Props {
   moveDiff: boolean; // 교사 설정: 기술 선택 = 난이도 선택
   caught: number[];
   setCaught: (ids: number[]) => void;
+  counts: Record<number, number>;
+  setCounts: (c: Record<number, number>) => void;
   day: DayInfo;
   setDay: (d: DayInfo) => void;
   game: GameInfo;
@@ -33,7 +35,7 @@ type Fx = { kind: string; key: number } | null;
 
 const BALL_KINDS: BallKind[] = ["poke", "superb", "hyper", "master"];
 
-export default function BattleTab({ student, setStudent, moveDiff, caught, setCaught, day, setDay, game, setGame, showToast }: Props) {
+export default function BattleTab({ student, setStudent, moveDiff, caught, setCaught, counts, setCounts, day, setDay, game, setGame, showToast }: Props) {
   const [phase, setPhase] = useState<BattlePhase>("idle");
   const [bank, setBank] = useState<ApiQuestion[] | null>(null);
   const [wild, setWild] = useState<(Pokemon & { token: string; lv: number }) | null>(null);
@@ -64,9 +66,9 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
   const pointCost = evoPointCost(game.evoCount); // M5: 누적 진화 횟수별 1000/2000/2500P
   const battlesLeft = Math.max(0, day.battleLimit - day.battleUsed);
   const SNACK_KINDS: SnackKind[] = ["snack", "snack2", "snack3"];
+  // M8: 보유(1마리 이상) 종만 배틀에 데려갈 수 있음 (caught가 곧 보유 목록)
   const ownedIds = useMemo(() => {
     const set = new Set<number>(caught);
-    if (game.starter) set.add(game.starter);
     return [...set].sort((a, b) => a - b);
   }, [caught, game.starter]);
 
@@ -131,7 +133,14 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
       if (!res.ok) { showToast(data.error ?? "진화에 실패했어요."); return; }
       setGame({ ...game, battlePid: data.battlePid, wins: data.wins, evoCount: data.evoCount });
       setStudent({ ...studentRef.current, points: data.points, inventory: data.inventory });
-      if (data.newlyCaught && !caught.includes(to)) setCaught([...caught, to]);
+      // M8: 마리 수 갱신 — 진화 전 -1(0이면 도감·선택에서 제거), 진화체 +1
+      const nextCounts = { ...counts, [data.from.id]: data.from.count, [to]: data.to.count };
+      if (data.from.count <= 0) delete nextCounts[data.from.id];
+      setCounts(nextCounts);
+      let nextCaught = caught;
+      if (data.to.count >= 1 && !nextCaught.includes(to)) nextCaught = [...nextCaught, to];
+      if (data.from.count <= 0) nextCaught = nextCaught.filter((id) => id !== data.from.id);
+      setCaught(nextCaught);
       // M6: 원작풍 진화 연출 — 하얗게 빛나며 변신
       setEvoAnim({ fromId: data.from.id, toId: data.to.id, toName: data.to.name, step: 0 });
       await sleep(1400);
@@ -335,7 +344,7 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
     // 서버 권위 판정 (볼 차감 + RNG). 연출과 병렬로 요청.
     const reqStart = Date.now();
     let result: {
-      success: boolean; newlyCaught?: boolean; inventory: StudentData["inventory"];
+      success: boolean; newlyCaught?: boolean; caughtCount?: number; inventory: StudentData["inventory"];
       points?: number; xp?: number; level?: number; levelBonus?: number;
       reward?: { pts: number; xp: number }; error?: string;
     } | null = null;
@@ -375,9 +384,12 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
         xp: result!.xp!,
         level: result!.level!,
       });
+      if (result!.caughtCount != null) setCounts({ ...counts, [wild.id]: result!.caughtCount });
       if (result!.newlyCaught && !caught.includes(wild.id)) {
         setCaught([...caught, wild.id]);
         showToast("도감에 새로운 포켓몬이 기록되었다!");
+      } else if ((result!.caughtCount ?? 0) > 1) {
+        showToast(`${wild.name}을(를) 또 잡았다! (보유 ${result!.caughtCount}마리)`);
       }
       if ((result!.levelBonus ?? 0) > 0) showToast(`🎉 레벨 업! Lv.${result!.level} — 보상 +${result!.levelBonus}P`);
       setMsg(`신난다! ${josa(wild.name, "을", "를")} 잡았다! +${result!.reward!.pts}P +${result!.reward!.xp}XP`);
@@ -569,13 +581,15 @@ export default function BattleTab({ student, setStudent, moveDiff, caught, setCa
 
           {picker && (
             <div style={{ ...S.panel, marginBottom: 8 }}>
-              <div style={{ fontSize: 11, color: "#9fd8ff", marginBottom: 8 }}>배틀에 데려갈 포켓몬을 고르자 ({ownedIds.length}마리 보유)</div>
+              <div style={{ fontSize: 11, color: "#9fd8ff", marginBottom: 8 }}>배틀에 데려갈 포켓몬을 고르자 ({ownedIds.length}종 보유)</div>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(64px, 1fr))", gap: 6 }}>
                 {ownedIds.map((id) => {
                   const p = POOL[id - 1];
                   const on = id === game.battlePid;
+                  const n = counts[id] ?? 1;
                   return (
-                    <button key={id} onClick={() => selectPokemon(id)} disabled={busyAction} style={{ background: on ? "#2c2f44" : "transparent", border: on ? `2px solid ${TYPE_COLORS[p.type]}` : "2px solid #f8f0dc22", borderRadius: 8, padding: 6, cursor: "pointer", fontFamily: "inherit", color: "#f8f0dc" }}>
+                    <button key={id} onClick={() => selectPokemon(id)} disabled={busyAction} style={{ position: "relative", background: on ? "#2c2f44" : "transparent", border: on ? `2px solid ${TYPE_COLORS[p.type]}` : "2px solid #f8f0dc22", borderRadius: 8, padding: 6, cursor: "pointer", fontFamily: "inherit", color: "#f8f0dc" }}>
+                      {n > 1 && <span style={{ position: "absolute", top: 2, right: 2, fontSize: 9, background: "#e07b39", borderRadius: 8, padding: "0 5px" }}>×{n}</span>}
                       <Sprite id={id} color={p.color} size={40} />
                       <div style={{ fontSize: 9, marginTop: 2 }}>{p.name}</div>
                     </button>
