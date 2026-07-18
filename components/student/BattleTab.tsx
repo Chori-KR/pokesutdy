@@ -401,10 +401,10 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     }
 
     // 볼 포물선 + 흔들림 연출 시간 확보 (속도 업)
-    await sleep(Math.max(0, 430 - (Date.now() - reqStart)));
+    await sleep(Math.max(0, 380 - (Date.now() - reqStart)));
     setWildState("captured");
     setFx({ kind: "wiggle", key: Date.now() });
-    await sleep(1080);
+    await sleep(880);
 
     if (result!.success) {
       setFx(null);
@@ -536,11 +536,11 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             <CanvasFx trigger={fx && isTypeFx(fx.kind) ? { type: fx.kind, dir: fx.dir ?? "fwd", diff: fx.diff ?? "medium", key: fx.key } : null} />
             {/* 흡수 빔 (포켓몬이 볼로 빨려 들어감) */}
             {fx?.kind === "wiggle" && wildState === "captured" && (
-              <div key={fx.key + "-beam"} style={{ position: "absolute", left: "63%", top: "18%", width: 90, height: 14, marginLeft: -45, marginTop: -7, background: `linear-gradient(90deg, transparent, ${BALLS[throwKind].top ?? "#e84545"})`, borderRadius: 8, animation: "captureBeam 0.5s ease-out forwards", pointerEvents: "none", zIndex: 5 }} />
+              <div key={fx.key + "-beam"} style={{ position: "absolute", left: "63%", top: "18%", width: 84, height: 12, marginLeft: -42, marginTop: -6, background: BALLS[throwKind].top ?? "#e84545", borderRadius: 8, animation: "captureBeam 0.28s ease-out forwards", pointerEvents: "none", zIndex: 5 }} />
             )}
             {/* 던진 볼 (볼 종류별 아이콘) */}
             {(fx?.kind === "ball" || fx?.kind === "wiggle") && wildState !== "gone" && (
-              <div key={fx.key} style={{ position: "absolute", width: 30, height: 30, animation: fx.kind === "ball" ? "ballArc 0.42s ease-out forwards" : "ballShake3 1.05s ease-in-out", left: fx.kind === "wiggle" ? "63%" : undefined, top: fx.kind === "wiggle" ? "16%" : undefined, transformOrigin: "bottom center", zIndex: 6 }}>
+              <div key={fx.key} style={{ position: "absolute", width: 30, height: 30, animation: fx.kind === "ball" ? "ballArc 0.38s ease-out forwards" : "ballShake3 0.85s ease-in-out", left: fx.kind === "wiggle" ? "63%" : undefined, top: fx.kind === "wiggle" ? "16%" : undefined, transformOrigin: "bottom center", zIndex: 6 }}>
                 <BallIcon kind={throwKind} size={30} />
               </div>
             )}
