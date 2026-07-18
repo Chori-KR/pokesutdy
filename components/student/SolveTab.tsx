@@ -18,6 +18,7 @@ interface Result { correct: boolean; answer_idx: number; answerText?: string; re
 export default function SolveTab({ student, setStudent, day, setDay }: Props) {
   const [q, setQ] = useState<SolveQuestion | null>(null);
   const [picked, setPicked] = useState<number | null>(null);
+  const [sel, setSel] = useState<number | null>(null); // 선택→제출 2단계(제출 전 선택)
   const [input, setInput] = useState("");   // 단답형 입력
   const [result, setResult] = useState<Result | null>(null);
   const [busy, setBusy] = useState(false);
@@ -36,6 +37,7 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
       if (!res.ok) { setErr(data.error ?? "문제를 받지 못했어요."); return; }
       setQ(data.question);
       setPicked(null);
+      setSel(null);
       setInput("");
       setResult(null);
     } catch {
@@ -116,27 +118,40 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
           )}
         </div>
       ) : (
-        <div style={{ display: "grid", gap: 8 }}>
-          {q.options.map((opt, i) => {
-            const isAns = result && i === result.answer_idx;
-            const isWrongPick = result && picked === i && !isAns;
-            return (
-              <button
-                key={i}
-                onClick={() => submit({ chosen_idx: i })}
-                disabled={busy || picked !== null}
-                style={{
-                  ...S.choiceBtn,
-                  textAlign: "left",
-                  background: isAns ? "#2e5d43" : isWrongPick ? "#6b3030" : (S.choiceBtn.background as string),
-                  borderColor: isAns ? "#7ef29a" : isWrongPick ? "#ff9d9d" : "#f8f0dc33",
-                }}
-              >
-                {i + 1}. {opt}
-              </button>
-            );
-          })}
-        </div>
+        <>
+          <div style={{ display: "grid", gap: 8 }}>
+            {q.options.map((opt, i) => {
+              const isAns = result && i === result.answer_idx;
+              const isWrongPick = result && picked === i && !isAns;
+              const on = !result && sel === i;
+              return (
+                <button
+                  key={i}
+                  onClick={() => !result && setSel(i)}
+                  disabled={busy || !!result}
+                  style={{
+                    ...S.choiceBtn,
+                    textAlign: "left",
+                    background: isAns ? "#2e5d43" : isWrongPick ? "#6b3030" : on ? "#5a4a3a" : (S.choiceBtn.background as string),
+                    borderColor: isAns ? "#7ef29a" : isWrongPick ? "#ff9d9d" : on ? "#ff9a52" : "#f8f0dc33",
+                    fontWeight: on ? 700 : 600,
+                  }}
+                >
+                  {i + 1}. {opt}
+                </button>
+              );
+            })}
+          </div>
+          {!result && (
+            <button
+              onClick={() => sel != null && submit({ chosen_idx: sel })}
+              disabled={busy || sel == null}
+              style={{ ...S.primaryBtn, width: "100%", marginTop: 10, opacity: sel == null ? 0.45 : 1 }}
+            >
+              {sel == null ? "답을 골라주세요" : "정답 제출"}
+            </button>
+          )}
+        </>
       )}
 
       {result && (
