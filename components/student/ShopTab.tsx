@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { S } from "@/lib/styles";
 import { BALLS, SNACKS, EVO_STONE, SPRAY, BallKind, SnackKind, ShopItem } from "@/lib/game";
+import { SFX } from "@/lib/sound";
 import { StudentData } from "@/lib/types";
 import BallIcon from "@/components/BallIcon";
 
@@ -63,6 +64,7 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
       const data = await res.json();
       if (!res.ok) { showToast(data.error ?? "구매에 실패했어요."); return; }
       setStudent({ ...student, points: data.points, inventory: data.inventory });
+      SFX.buy();
       showToast(`${data.bought.name}${data.bought.qty > 1 ? ` ${data.bought.qty}개` : ""}을(를) 구매했어요!`);
     } catch {
       showToast("연결에 실패했어요. 다시 시도해주세요.");

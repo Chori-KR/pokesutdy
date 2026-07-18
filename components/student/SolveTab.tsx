@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { S } from "@/lib/styles";
 import { DIFF, SOLVE_REWARD } from "@/lib/game";
+import { SFX } from "@/lib/sound";
 import { StudentData, DayInfo, SolveQuestion } from "@/lib/types";
 
 interface Props {
@@ -60,6 +61,7 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
       const data = await res.json();
       if (!res.ok) { setErr(data.error ?? "채점에 실패했어요."); setPicked(null); return; }
       setResult(data);
+      if (data.correct) SFX.correct(); else SFX.wrong();
       setStudent({ ...student, points: data.points, xp: data.xp, level: data.level });
       setDay({ ...day, solveCount: data.solveCount });
     } catch {

@@ -12,6 +12,7 @@ import { ApiQuestion, StudentData, DayInfo, GameInfo } from "@/lib/types";
 import Sprite from "@/components/Sprite";
 import ShinyFx from "@/components/student/ShinyFx";
 import CanvasFx, { isTypeFx } from "@/components/student/CanvasFx";
+import { SFX, playCry, startBattleBgm, stopBattleBgm } from "@/lib/sound";
 import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
 
@@ -188,6 +189,8 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       const meta = POOL.find((p) => p.id === data.pokemon.id)!;
       const hp = RARITY[meta.rarity].hp;
       setWild({ ...meta, token: data.token, lv: wildLevelFor(meta.rarity, studentRef.current.level), shiny: data.pokemon.shiny });
+      startBattleBgm();
+      playCry(meta.id);
       if (data.pokemon.shiny) showToast(`✨ 이로치 ${meta.name}이(가) 나타났다!`);
       setWildHp(hp);
       wildHpRef.current = hp;
@@ -227,6 +230,14 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     setPhase("question");
     setMsg(`문제를 맞히면 ${m.name} 발동!`);
   }
+
+  // 배틀 종료/대기 시 BGM 정지
+  useEffect(() => {
+    if (phase === "done" || phase === "idle") stopBattleBgm();
+  }, [phase]);
+
+  // 탭을 떠날 때(언마운트) BGM 확실히 정지
+  useEffect(() => () => stopBattleBgm(), []);
 
   // M6: 배틀 종료 시 자동 완전 회복 (약 시스템 폐지)
   useEffect(() => {
@@ -290,9 +301,11 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       });
       setMsg(`${mine.name}의 ${move.name}!`);
       setFx({ kind: mine.type, key: Date.now(), dir: "fwd", diff: move.diff });
+      SFX.attack();
       await sleep(900);
       setWildState("hit");
       setFx({ kind: "shake", key: Date.now() });
+      SFX.hit();
       const dmg = Math.round(move.dmg * (crit ? 1.5 : 1));
       const nh = Math.max(0, wildHpRef.current - dmg);
       wildHpRef.current = nh;
@@ -327,6 +340,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
         : `${move.name}! ...그러나 빗나갔다! (정답: ${answerText})`);
       await sleep(1200);
       // 오답 → 야생의 반격 (반격 데미지는 희귀도로 결정)
+      SFX.wrong();
       setMsg(`야생 ${wild.name}의 ${TYPE_MOVE[wild.type]}!`);
       setFx({ kind: wild.type, key: Date.now(), dir: "back", diff: wild.rarity === "legendary" ? "hard" : wild.rarity === "rare" ? "medium" : "easy" });
       await sleep(900);
@@ -357,6 +371,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     setCapFx(null);
     setMsg(`${BALLS[kind].name}을(를) 던졌다! · · ·`);
     setFx({ kind: "ball", key: Date.now() });
+    SFX.throwBall();
 
     // 서버 권위 판정 (볼 차감 + RNG). 연출과 병렬로 요청.
     const reqStart = Date.now();
@@ -394,6 +409,8 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     if (result!.success) {
       setFx(null);
       setCapFx("success");
+      SFX.catchOk();
+      stopBattleBgm();
       setWildState("gone");
       setStudent({
         ...studentRef.current,
@@ -419,6 +436,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     } else {
       setFx(null);
       setCapFx("fail");
+      SFX.catchFail();
       setWildState("idle");
       setStudent({ ...studentRef.current, inventory: result!.inventory });
       setTimeout(() => setCapFx(null), 700); // 브레이크아웃 연출 후 정리
