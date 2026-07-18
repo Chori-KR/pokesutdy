@@ -12,6 +12,7 @@ import { ApiQuestion, StudentData, DayInfo, GameInfo } from "@/lib/types";
 import Sprite from "@/components/Sprite";
 import ShinyFx from "@/components/student/ShinyFx";
 import SpriteAnim, { Sheet } from "@/components/student/SpriteAnim";
+import ElectricFx from "@/components/student/ElectricFx";
 import { SFX, playCry, startBattleBgm, stopBattleBgm } from "@/lib/sound";
 import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
@@ -45,7 +46,6 @@ const SHEET: Record<string, Sheet> = {
   normal: { src: "4_casting_spritesheet.png", cols: 9, rows: 9, frames: 72 },
   fire: { src: "9_brightfire_spritesheet.png", cols: 8, rows: 8, frames: 61 },
   water: { src: "3_bluefire_spritesheet.png", cols: 8, rows: 8, frames: 61 },
-  electric: { src: "5_magickahit_spritesheet.png", cols: 7, rows: 7, frames: 40 },
   grass: { src: "17_felspell_spritesheet.png", cols: 10, rows: 10, frames: 91 },
   ice: { src: "19_freezing_spritesheet.png", cols: 10, rows: 10, frames: 86 },
   fighting: { src: "13_vortex_spritesheet.png", cols: 8, rows: 8, frames: 61 },
@@ -553,16 +553,30 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
               <HpBar cur={student.hp} max={MAX_HP} />
               <div style={{ fontSize: 10, textAlign: "right", marginTop: 2 }}>{student.hp}/{MAX_HP}</div>
             </div>
-            {/* 타입별 CC0 스프라이트 이펙트 */}
+            {/* 전기: 이전 스타일(노란 번쩍임+스파크) */}
+            {fx && fx.kind === "electric" && <ElectricFx key={fx.key} dir={fx.dir} diff={fx.diff} />}
+            {/* 그 외 타입: CC0 스프라이트 */}
             {fx && SHEET[fx.kind] && (
               <SpriteAnim
                 key={fx.key}
                 sheet={SHEET[fx.kind]}
                 left={FX_POS[fx.dir ?? "fwd"].left}
                 top={FX_POS[fx.dir ?? "fwd"].top}
-                size={fx.diff === "hard" ? 220 : fx.diff === "easy" ? 140 : 175}
+                size={fx.diff === "hard" ? 230 : fx.diff === "easy" ? 130 : 175}
               />
             )}
+            {/* 난이도 임팩트: 보통↑ 충격파 링, 어려움엔 화면 섬광까지 (모든 타입 공통) */}
+            {fx && (SHEET[fx.kind] || fx.kind === "electric") && fx.diff !== "easy" && (() => {
+              const col = TYPE_COLORS[fx.kind] ?? "#ffffff";
+              const p = FX_POS[fx.dir ?? "fwd"];
+              const hard = fx.diff === "hard";
+              return (
+                <div key={fx.key + "-imp"}>
+                  <div style={{ position: "absolute", left: p.left, top: p.top, width: hard ? 42 : 28, height: hard ? 42 : 28, borderRadius: "50%", border: `${hard ? 6 : 4}px solid ${col}`, animation: "fxRing 0.7s ease-out forwards", pointerEvents: "none", zIndex: 5 }} />
+                  {hard && <div style={{ position: "absolute", inset: 0, background: col, animation: "fxFlash 0.5s ease forwards", pointerEvents: "none", zIndex: 4 }} />}
+                </div>
+              );
+            })()}
             {/* 흡수 빔 (포켓몬이 볼로 빨려 들어감) */}
             {fx?.kind === "wiggle" && wildState === "captured" && (
               <div key={fx.key + "-beam"} style={{ position: "absolute", left: "63%", top: "18%", width: 84, height: 12, marginLeft: -42, marginTop: -6, background: BALLS[throwKind].top ?? "#e84545", borderRadius: 8, animation: "captureBeam 0.28s ease-out forwards", pointerEvents: "none", zIndex: 5 }} />
