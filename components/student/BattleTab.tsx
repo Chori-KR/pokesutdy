@@ -11,7 +11,7 @@ import {
 import { ApiQuestion, StudentData, DayInfo, GameInfo } from "@/lib/types";
 import Sprite from "@/components/Sprite";
 import ShinyFx from "@/components/student/ShinyFx";
-import CanvasFx, { isTypeFx } from "@/components/student/CanvasFx";
+import SpriteAnim, { Sheet } from "@/components/student/SpriteAnim";
 import { SFX, playCry, startBattleBgm, stopBattleBgm } from "@/lib/sound";
 import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
@@ -39,6 +39,27 @@ type BattlePhase = "idle" | "intro" | "select" | "question" | "busy" | "capture"
 interface ShuffledOption { t: string; ok: boolean; idx: number }
 interface ActiveQuestion extends ApiQuestion { sOpts: ShuffledOption[] }
 type Fx = { kind: string; key: number; dir?: "fwd" | "back"; diff?: string } | null;
+
+// 타입별 CC0 이펙트 시트 매핑 (public/fx, 100px 그리드). 색·이름으로 배정.
+const SHEET: Record<string, Sheet> = {
+  normal: { src: "4_casting_spritesheet.png", cols: 9, rows: 9, frames: 72 },
+  fire: { src: "9_brightfire_spritesheet.png", cols: 8, rows: 8, frames: 61 },
+  water: { src: "3_bluefire_spritesheet.png", cols: 8, rows: 8, frames: 61 },
+  electric: { src: "5_magickahit_spritesheet.png", cols: 7, rows: 7, frames: 40 },
+  grass: { src: "17_felspell_spritesheet.png", cols: 10, rows: 10, frames: 91 },
+  ice: { src: "19_freezing_spritesheet.png", cols: 10, rows: 10, frames: 86 },
+  fighting: { src: "13_vortex_spritesheet.png", cols: 8, rows: 8, frames: 61 },
+  poison: { src: "18_midnight_spritesheet.png", cols: 8, rows: 8, frames: 61 },
+  ground: { src: "16_sunburn_spritesheet.png", cols: 8, rows: 8, frames: 61 },
+  psychic: { src: "2_magic8_spritesheet.png", cols: 8, rows: 8, frames: 61 },
+  bug: { src: "8_protectioncircle_spritesheet.png", cols: 8, rows: 8, frames: 61 },
+  rock: { src: "6_flamelash_spritesheet.png", cols: 7, rows: 7, frames: 45 },
+  ghost: { src: "14_phantom_spritesheet.png", cols: 8, rows: 8, frames: 61 },
+  dragon: { src: "12_nebula_spritesheet.png", cols: 8, rows: 8, frames: 61 },
+  fairy: { src: "1_magicspell_spritesheet.png", cols: 9, rows: 9, frames: 74 },
+};
+const CAPTURE_SHEET: Sheet = { src: "10.png", cols: 6, rows: 6, frames: 30 };
+const FX_POS = { fwd: { left: "62%", top: "24%" }, back: { left: "18%", top: "50%" } };
 
 const BALL_KINDS: BallKind[] = ["poke", "superb", "hyper", "master"];
 
@@ -532,8 +553,16 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
               <HpBar cur={student.hp} max={MAX_HP} />
               <div style={{ fontSize: 10, textAlign: "right", marginTop: 2 }}>{student.hp}/{MAX_HP}</div>
             </div>
-            {/* 타입별 기술 이펙트 (캔버스 파티클) */}
-            <CanvasFx trigger={fx && isTypeFx(fx.kind) ? { type: fx.kind, dir: fx.dir ?? "fwd", diff: fx.diff ?? "medium", key: fx.key } : null} />
+            {/* 타입별 CC0 스프라이트 이펙트 */}
+            {fx && SHEET[fx.kind] && (
+              <SpriteAnim
+                key={fx.key}
+                sheet={SHEET[fx.kind]}
+                left={FX_POS[fx.dir ?? "fwd"].left}
+                top={FX_POS[fx.dir ?? "fwd"].top}
+                size={fx.diff === "hard" ? 220 : fx.diff === "easy" ? 140 : 175}
+              />
+            )}
             {/* 흡수 빔 (포켓몬이 볼로 빨려 들어감) */}
             {fx?.kind === "wiggle" && wildState === "captured" && (
               <div key={fx.key + "-beam"} style={{ position: "absolute", left: "63%", top: "18%", width: 84, height: 12, marginLeft: -42, marginTop: -6, background: BALLS[throwKind].top ?? "#e84545", borderRadius: 8, animation: "captureBeam 0.28s ease-out forwards", pointerEvents: "none", zIndex: 5 }} />
@@ -544,9 +573,10 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
                 <BallIcon kind={throwKind} size={30} />
               </div>
             )}
-            {/* 포획 성공: 별 터짐 + GET! */}
+            {/* 포획 성공: CC0 임팩트 + 별 터짐 + GET! */}
             {capFx === "success" && (
               <>
+                <SpriteAnim key="cap" sheet={CAPTURE_SHEET} left="63%" top="20%" size={170} fps={38} />
                 {Array.from({ length: 8 }, (_, i) => {
                   const ang = (i / 8) * Math.PI * 2;
                   const st = { position: "absolute", left: "63%", top: "20%", fontSize: 18, animation: `starPop 0.9s ease-out ${i * 0.03}s forwards`, ["--dx"]: `${Math.cos(ang) * 46}px`, ["--dy"]: `${Math.sin(ang) * 46}px`, pointerEvents: "none", zIndex: 7 } as React.CSSProperties;
