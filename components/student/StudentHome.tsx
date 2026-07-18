@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { S } from "@/lib/styles";
 import { MAX_HP, myPokemonOf } from "@/lib/game";
+import { initAudio, isMuted, setMuted, SFX, stopBattleBgm } from "@/lib/sound";
 import { StudentData, ClassInfo, DayInfo, GameInfo } from "@/lib/types";
 import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
@@ -37,10 +38,28 @@ type Tab = "battle" | "solve" | "quiz" | "explore" | "shop" | "dex" | "trade";
 export default function StudentHome({ student, setStudent, cls, caught, setCaught, counts, setCounts, shinies, setShinies, day, setDay, game, setGame, onLogout }: Props) {
   const [tab, setTab] = useState<Tab>("battle");
   const [toast, setToast] = useState("");
+  const [muted, setMutedState] = useState(false);
+
+  useEffect(() => { setMutedState(isMuted()); }, []);
 
   const showToast = (t: string) => {
     setToast(t);
     setTimeout(() => setToast(""), 2600);
+  };
+
+  // 탭 이동 시 클릭음. 배틀 탭을 벗어나면 BGM 정지.
+  const goTab = (k: Tab) => {
+    initAudio();
+    SFX.click();
+    if (k !== "battle") stopBattleBgm();
+    setTab(k);
+  };
+  const toggleMute = () => {
+    initAudio();
+    const next = !isMuted();
+    setMuted(next);
+    setMutedState(next);
+    if (!next) SFX.click();
   };
 
   const mine = myPokemonOf(game.battlePid);
@@ -80,13 +99,16 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
               ) : null
             )}
           </div>
-          <button onClick={onLogout} style={{ ...S.ghostBtn, marginTop: 4, padding: "2px 8px", fontSize: 10 }}>로그아웃</button>
+          <div style={{ marginTop: 4, display: "flex", gap: 4, justifyContent: "flex-end" }}>
+            <button onClick={toggleMute} title="소리 켜기/끄기" style={{ ...S.ghostBtn, padding: "2px 8px", fontSize: 12 }}>{muted ? "🔇" : "🔊"}</button>
+            <button onClick={onLogout} style={{ ...S.ghostBtn, padding: "2px 8px", fontSize: 10 }}>로그아웃</button>
+          </div>
         </div>
       </div>
 
       <div style={{ display: "flex", gap: 5, margin: "10px 0", flexWrap: "wrap" }}>
         {tabs.map(([k, label]) => (
-          <button key={k} onClick={() => setTab(k)} style={{ ...S.tabBtn, ...(tab === k ? S.tabOn : {}) }}>{label}</button>
+          <button key={k} onClick={() => goTab(k)} style={{ ...S.tabBtn, ...(tab === k ? S.tabOn : {}) }}>{label}</button>
         ))}
       </div>
 
