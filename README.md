@@ -119,3 +119,7 @@ supabase/migrations  스키마 + RLS + 시드 SQL
 ## 저작권 유의
 포켓몬 IP는 The Pokémon Company 소유입니다. **교육용·비상업·학급 내부 사용 범위**를 유지하세요.
 (자세한 내용: 명세서 §8)
+
+### 에셋 출처
+- 배틀 기술·포획 이펙트(`public/fx/*.png`): OpenGameArt **"cc0 special effects"** 모음(Ragnar Random, **CC0**)에서 가져온 스프라이트 시트.
+- 효과음·BGM: 코드로 합성(Web Audio) — 자체 제작. 포켓몬 울음소리는 PokeAPI cries.
