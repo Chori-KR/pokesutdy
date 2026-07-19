@@ -20,12 +20,15 @@ export const TYPE_COLORS: Record<string, string> = {
   grass: "#78C850", ice: "#98D8D8", fighting: "#C03028", poison: "#A040A0",
   ground: "#E0C068", psychic: "#F85888", bug: "#A8B820", rock: "#B8A038",
   ghost: "#705898", dragon: "#7038F8", fairy: "#EE99AC",
+  // 아래 3종은 현재 등장 포켓몬은 없지만, 추후 타입 추가에 대비해 미리 준비
+  flying: "#A890F0", dark: "#705848", steel: "#B8B8D0",
 };
 export const TYPE_MOVE: Record<string, string> = {
   normal: "몸통박치기", fire: "불꽃세례", water: "물대포", electric: "전기쇼크",
   grass: "덩굴채찍", ice: "눈보라", fighting: "태권당수", poison: "독침",
   ground: "모래뿌리기", psychic: "염동력", bug: "실뿜기", rock: "돌떨구기",
   ghost: "핥기", dragon: "용의숨결", fairy: "박치기",
+  flying: "공기베기", dark: "속임수", steel: "강철날개",
 };
 
 // 1세대 151마리 [한국어 이름, 타입]
