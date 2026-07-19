@@ -22,6 +22,7 @@ export interface GameState {
   battlePid?: number;               // 현재 배틀 포켓몬 id
   wins?: Record<string, number>;    // 포켓몬 id별 배틀 승수 (진화 조건)
   evoCount?: number;                // 누적 진화 횟수 (포인트 진화 비용 계산용, M5)
+  raidReq?: { pid: number; round: number }; // 레이드 신청(현재 라운드에 원하는 포켓몬)
 }
 
 export interface StudentRow {
@@ -112,6 +113,7 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
   const s = (data?.settings ?? {}) as {
     moveDiff?: boolean; exploreLimit?: number; solveLimit?: number; battleLimit?: number;
     timerOn?: boolean; timeScale?: number; rareRate?: number; legendRate?: number; shinyRate?: number;
+    raid?: { on?: boolean; pid?: number; shiny?: boolean; round?: number };
   };
   const rareRate = Math.min(1, Math.max(0, Number(s.rareRate ?? DEFAULT_RARE_RATE)));
   const legendRate = Math.min(1, Math.max(0, Number(s.legendRate ?? DEFAULT_LEGEND_RATE)));
@@ -125,6 +127,12 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
     rareRate,                                                        // 희귀 확률
     legendRate: Math.min(legendRate, 1 - rareRate),                 // 전설 확률(합 1 이하 보장)
     shinyRate: Math.min(1, Math.max(0, Number(s.shinyRate ?? DEFAULT_SHINY_RATE))), // 이로치 확률
+    raid: {                                                          // 레이드(형성평가)
+      on: s.raid?.on === true,
+      pid: Math.min(151, Math.max(1, Number(s.raid?.pid ?? 1))),
+      shiny: s.raid?.shiny === true,
+      round: Math.max(0, Number(s.raid?.round ?? 0)),
+    },
   };
 }
 

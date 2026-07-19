@@ -242,6 +242,10 @@ export interface Move { name: string; diff: Difficulty; dmg: number; label: stri
 
 export const MAX_HP = 100; // 내 포켓몬 최대 HP (계정 공용)
 
+// 레이드(형성평가): 강력한 보스 — 정답 N개를 맞혀야 승리(HP N칸). 포획 보너스로 잘 잡히게.
+export const RAID_HITS = 10;
+export const RAID_CAPTURE_BONUS = 0.35;
+
 // 포켓몬 id → 배틀용 정보 (타입에 맞는 기술 3종 자동 배치)
 export function myPokemonOf(id: number) {
   const p = POOL[id - 1] ?? POOL[5];

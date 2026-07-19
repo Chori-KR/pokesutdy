@@ -8,6 +8,7 @@ import { StudentData, ClassInfo, DayInfo, GameInfo } from "@/lib/types";
 import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
 import BattleTab from "@/components/student/BattleTab";
+import RaidTab from "@/components/student/RaidTab";
 import SolveTab from "@/components/student/SolveTab";
 import DailyTab from "@/components/student/DailyTab";
 import ExploreTab from "@/components/student/ExploreTab";
@@ -33,7 +34,7 @@ interface Props {
 }
 
 const BALL_KINDS = ["poke", "superb", "hyper", "master"] as const;
-type Tab = "battle" | "solve" | "quiz" | "explore" | "shop" | "dex" | "trade";
+type Tab = "battle" | "raid" | "solve" | "quiz" | "explore" | "shop" | "dex" | "trade";
 
 export default function StudentHome({ student, setStudent, cls, caught, setCaught, counts, setCounts, shinies, setShinies, day, setDay, game, setGame, onLogout }: Props) {
   const [tab, setTab] = useState<Tab>("battle");
@@ -67,6 +68,7 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
   // 탭 순서는 명세 §3: 배틀 / 문제풀이 / 오늘의 퀴즈 / 야생 탐색 / 상점 / 도감
   const tabs: [Tab, string][] = [
     ["battle", `배틀(${Math.max(0, day.battleLimit - day.battleUsed)})`],
+    ["raid", "레이드"],
     ["solve", "문제풀이"],
     ["quiz", day.quizDone ? "퀴즈 ✓" : "퀴즈"],
     ["explore", `탐색(${Math.max(0, day.exploreLimit - day.encUsed)})`],
@@ -129,6 +131,22 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
           setDay={setDay}
           game={game}
           setGame={setGame}
+          showToast={showToast}
+        />
+      )}
+      {tab === "raid" && (
+        <RaidTab
+          student={student}
+          setStudent={setStudent}
+          game={game}
+          timerOn={cls.settings?.timerOn !== false}
+          timeScale={cls.settings?.timeScale ?? 1.5}
+          caught={caught}
+          setCaught={setCaught}
+          counts={counts}
+          setCounts={setCounts}
+          shinies={shinies}
+          setShinies={setShinies}
           showToast={showToast}
         />
       )}

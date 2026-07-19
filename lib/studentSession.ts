@@ -55,7 +55,8 @@ export async function getStudentSession(req: NextRequest): Promise<StudentSessio
 // 배틀 토큰: 서버가 고른 야생 포켓몬을 서명해 내려보내고,
 // 포획 시 검증한다 → 클라이언트가 임의의 포켓몬(전설 등)을 포획 요청하는 것 방지.
 // source: "battle"(배틀 승리 보상 있음) | "explore"(야생 탐색 — 포획만, 보상 없음)
-export type EncounterSource = "battle" | "explore";
+//       | "raid"(레이드 — 보상 있음, 이로치는 교사 설정)
+export type EncounterSource = "battle" | "explore" | "raid";
 
 export async function signBattleToken(
   sid: string, pokemonId: number, source: EncounterSource = "battle", shiny = false
@@ -76,7 +77,7 @@ export async function verifyBattleToken(
     if (typeof payload.pid !== "number") return null;
     return {
       pokemonId: payload.pid,
-      source: payload.src === "explore" ? "explore" : "battle",
+      source: payload.src === "explore" ? "explore" : payload.src === "raid" ? "raid" : "battle",
       shiny: payload.shy === true,
     };
   } catch {
