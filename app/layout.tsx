@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "포켓 스터디",
-  description: "공부하고, 배틀하고, 도감을 완성하자! 학급용 학습 게임",
+  title: "잡으면서 배우자!",
+  description: "포켓몬 기반 학습 플랫폼 · 공부하고, 배틀하고, 도감을 완성하자!",
 };
 
 export const viewport: Viewport = {

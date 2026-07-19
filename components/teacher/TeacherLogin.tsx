@@ -44,7 +44,7 @@ export default function TeacherLogin() {
 
   return (
     <div style={{ ...T.page, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "100vh" }}>
-      <div style={{ fontSize: 24, fontWeight: 700, marginBottom: 4 }}>포켓 스터디 · 교사</div>
+      <div style={{ fontSize: 24, fontWeight: 700, marginBottom: 4 }}>잡으면서 배우자! · 교사</div>
       <div style={{ fontSize: 13, color: "#888", marginBottom: 20 }}>
         {mode === "login" ? "다시 오신 것을 환영해요!" : "가입하면 학급과 학급 코드가 만들어져요."}
       </div>

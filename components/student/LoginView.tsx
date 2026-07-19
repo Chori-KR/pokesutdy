@@ -36,7 +36,8 @@ export default function LoginView({ onSuccess }: { onSuccess: () => void }) {
 
   return (
     <div style={{ ...S.page, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "100vh" }}>
-      <div style={{ fontSize: 24, marginBottom: 4 }}>포켓 스터디</div>
+      <div style={{ fontSize: 11, color: "#9fd8ff", marginBottom: 2, letterSpacing: 1 }}>포켓몬 기반 학습 플랫폼</div>
+      <div style={{ fontSize: 26, fontWeight: 800, marginBottom: 4 }}>잡으면서 배우자!</div>
       <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 20 }}>
         {mode === "login" ? "다시 만나서 반가워요!" : "새로운 트레이너의 등장!"}
       </div>

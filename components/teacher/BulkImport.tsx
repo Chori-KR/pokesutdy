@@ -65,7 +65,7 @@ export default function BulkImport({ classId, onRegistered, onClose, showToast }
     ws["!cols"] = [{ wch: 28 }, { wch: 12 }, { wch: 12 }, { wch: 12 }, { wch: 12 }, { wch: 14 }, { wch: 22 }, { wch: 18 }];
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, "문제");
-    XLSX.writeFile(wb, "포켓스터디_문제양식.xlsx");
+    XLSX.writeFile(wb, "잡으면서배우자_문제양식.xlsx");
   }
 
   // M8: 엑셀 업로드 → 파이프(|) 형식 텍스트로 변환해 기존 검증 파이프라인 재사용

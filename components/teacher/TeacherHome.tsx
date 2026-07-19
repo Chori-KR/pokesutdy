@@ -144,7 +144,7 @@ export default function TeacherHome({ session }: { session: Session }) {
       </div>
       <div style={T.header}>
         <div>
-          <div style={{ fontSize: 18, fontWeight: 600 }}>포켓 스터디 · 교사 메뉴</div>
+          <div style={{ fontSize: 18, fontWeight: 600 }}>잡으면서 배우자! · 교사 메뉴</div>
           <div style={{ fontSize: 12, opacity: 0.75, marginTop: 2 }}>
             {cls.name} · 학급 코드 <b style={{ color: "#ffd54a" }}>{cls.class_code}</b>
           </div>
