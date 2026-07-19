@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError, bumpCatch, isMissingCount, CATCH_COUNT_HINT } from "@/lib/api";
 import { verifyBattleToken } from "@/lib/studentSession";
-import { BALLS, POOL, RARITY, captureRate, applyXp, BallKind } from "@/lib/game";
+import { BALLS, POOL, RARITY, captureRate, applyXp, BallKind, RAID_CAPTURE_BONUS } from "@/lib/game";
 
 // 포획 판정은 전부 서버 권위 (명세 §7).
 // M5: 던지기 1회 = 볼 1개 (멀티볼 롤백). 등급은 게임 데이터(POOL) 기준.
@@ -27,7 +27,10 @@ export async function POST(req: NextRequest) {
     return jsonError(409, `${BALLS[ball].name}이(가) 없어요.`);
   inventory[ball] -= 1;
 
-  const success = Math.random() < captureRate(rarity, ball);
+  // 레이드 보스는 10문제나 풀었으니 잘 잡히도록 포획률 보너스 (상한 95%)
+  const baseRate = captureRate(rarity, ball);
+  const rate = battle.source === "raid" ? Math.min(0.95, baseRate + RAID_CAPTURE_BONUS) : baseRate;
+  const success = Math.random() < rate;
 
   if (!success) {
     const { error } = await supa

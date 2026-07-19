@@ -8,6 +8,7 @@ import { SEED_QUESTIONS, generateClassCode } from "@/lib/seedQuestions";
 import QuestionBank, { QuestionRow } from "@/components/teacher/QuestionBank";
 import StatsTab from "@/components/teacher/StatsTab";
 import AiKeySettings from "@/components/teacher/AiKeySettings";
+import RaidSettings from "@/components/teacher/RaidSettings";
 import Brand from "@/components/Brand";
 
 export interface ClassRow {
@@ -24,6 +25,7 @@ export interface ClassRow {
     rareRate?: number;
     legendRate?: number;
     shinyRate?: number;
+    raid?: { on?: boolean; pid?: number; shiny?: boolean; round?: number };
     aiProvider?: string;
     aiKeyEnc?: string;
     aiKeyHint?: string;
@@ -296,6 +298,7 @@ export default function TeacherHome({ session }: { session: Session }) {
               변경은 저장 즉시 적용돼요 (학생은 화면 새로고침 후). 학생 선물·비밀번호 초기화는 <b>학생·통계</b> 탭에 있어요.
             </div>
           </div>
+          <RaidSettings cls={cls} setCls={setCls} showToast={showToast} />
           <AiKeySettings cls={cls} setCls={setCls} showToast={showToast} />
         </div>
       )}
