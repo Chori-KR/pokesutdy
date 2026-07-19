@@ -242,9 +242,13 @@ export interface Move { name: string; diff: Difficulty; dmg: number; label: stri
 
 export const MAX_HP = 100; // 내 포켓몬 최대 HP (계정 공용)
 
-// 레이드(형성평가): 강력한 보스 — 정답 N개를 맞혀야 승리(HP N칸). 포획 보너스로 잘 잡히게.
+// 레이드(형성평가): 강력한 보스 — 난이도 무관 정답 N번을 맞혀야 체력이 다 닳아 승리.
 export const RAID_HITS = 10;
-export const RAID_CAPTURE_BONUS = 0.35;
+export const RAID_BOSS_HP = 100;
+export const RAID_HIT_DMG = RAID_BOSS_HP / RAID_HITS; // 정답 1회 = 10 데미지
+// 협동 보상 기본값
+export const DEFAULT_RAID_THRESHOLD = 5;   // 이 인원 이상 성공하면 반 전체에게 지급
+export const DEFAULT_RAID_REWARD_PTS = 200; // 승리자 추가 포인트
 
 // 포켓몬 id → 배틀용 정보 (타입에 맞는 기술 3종 자동 배치)
 export function myPokemonOf(id: number) {

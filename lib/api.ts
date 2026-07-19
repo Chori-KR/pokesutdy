@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { SupabaseClient } from "@supabase/supabase-js";
 import { supabaseAdmin } from "@/lib/supabase/admin";
 import { getStudentSession, StudentSession } from "@/lib/studentSession";
-import { Inventory, DEFAULT_EXPLORE_LIMIT, DEFAULT_SOLVE_LIMIT, DEFAULT_BATTLE_LIMIT, DEFAULT_RARE_RATE, DEFAULT_LEGEND_RATE, DEFAULT_SHINY_RATE } from "@/lib/game";
+import { Inventory, DEFAULT_EXPLORE_LIMIT, DEFAULT_SOLVE_LIMIT, DEFAULT_BATTLE_LIMIT, DEFAULT_RARE_RATE, DEFAULT_LEGEND_RATE, DEFAULT_SHINY_RATE, DEFAULT_RAID_THRESHOLD, DEFAULT_RAID_REWARD_PTS } from "@/lib/game";
 
 // 일일 상태 (day_state jsonb) — 자정(Asia/Seoul) 지나면 통째로 리셋 (명세 §4.7)
 export interface DayState {
@@ -23,6 +23,8 @@ export interface GameState {
   wins?: Record<string, number>;    // 포켓몬 id별 배틀 승수 (진화 조건)
   evoCount?: number;                // 누적 진화 횟수 (포인트 진화 비용 계산용, M5)
   raidReq?: { pid: number; round: number }; // 레이드 신청(현재 라운드에 원하는 포켓몬)
+  raidWin?: number;                          // 이 라운드에 레이드 승리(보상 수령)한 round 번호
+  raidGrant?: number;                        // 협동 달성으로 포켓몬을 지급받은 round 번호
 }
 
 export interface StudentRow {
@@ -113,7 +115,10 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
   const s = (data?.settings ?? {}) as {
     moveDiff?: boolean; exploreLimit?: number; solveLimit?: number; battleLimit?: number;
     timerOn?: boolean; timeScale?: number; rareRate?: number; legendRate?: number; shinyRate?: number;
-    raid?: { on?: boolean; pid?: number; shiny?: boolean; round?: number };
+    raid?: {
+      on?: boolean; pid?: number; shiny?: boolean; round?: number;
+      threshold?: number; rewardPts?: number; rewardItem?: string; rewardCount?: number;
+    };
   };
   const rareRate = Math.min(1, Math.max(0, Number(s.rareRate ?? DEFAULT_RARE_RATE)));
   const legendRate = Math.min(1, Math.max(0, Number(s.legendRate ?? DEFAULT_LEGEND_RATE)));
@@ -132,6 +137,10 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
       pid: Math.min(151, Math.max(1, Number(s.raid?.pid ?? 1))),
       shiny: s.raid?.shiny === true,
       round: Math.max(0, Number(s.raid?.round ?? 0)),
+      threshold: Math.max(1, Number(s.raid?.threshold ?? DEFAULT_RAID_THRESHOLD)),
+      rewardPts: Math.max(0, Number(s.raid?.rewardPts ?? DEFAULT_RAID_REWARD_PTS)),
+      rewardItem: typeof s.raid?.rewardItem === "string" ? s.raid.rewardItem : "",
+      rewardCount: Math.max(0, Math.min(99, Number(s.raid?.rewardCount ?? 0))),
     },
   };
 }

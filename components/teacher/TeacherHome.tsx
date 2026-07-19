@@ -25,7 +25,10 @@ export interface ClassRow {
     rareRate?: number;
     legendRate?: number;
     shinyRate?: number;
-    raid?: { on?: boolean; pid?: number; shiny?: boolean; round?: number };
+    raid?: {
+      on?: boolean; pid?: number; shiny?: boolean; round?: number;
+      threshold?: number; rewardPts?: number; rewardItem?: string; rewardCount?: number;
+    };
     aiProvider?: string;
     aiKeyEnc?: string;
     aiKeyHint?: string;
