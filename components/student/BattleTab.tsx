@@ -168,7 +168,17 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   }
 
   // 배틀 진입: 스프레이 보유 시 사용 여부를 먼저 모달로 묻고, 아니면 바로 시작
+  // 이전 배틀의 잔상(포켓몬 스프라이트·포획/실패 연출)을 깨끗이 초기화
+  function resetScene() {
+    setWild(null);
+    setWildState("idle");
+    setCapFx(null);
+    setFx(null);
+    setMyHit(false);
+  }
+
   function beginBattle(snack?: SnackKind) {
+    resetScene();
     if ((studentRef.current.inventory.spray ?? 0) > 0) setSprayAsk({ snack });
     else start(snack, false);
   }
@@ -176,7 +186,8 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   // M5: snack을 주면 일일 제한과 무관한 추가 배틀 (등급 확정 출현)
   async function start(snack?: SnackKind, withSpray = false) {
     setSprayAsk(null);
-    setMsg(snack ? `${SNACKS[snack].name}을(를) 풀숲에 놓아두었다...` : "풀숲을 뒤지는 중...");
+    resetScene();
+    setMsg("야생 포켓몬을 찾는 중...");
     setPhase("busy");
     try {
       const spray = withSpray && (studentRef.current.inventory.spray ?? 0) > 0;
@@ -203,11 +214,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       setFails(0);
       setUsedQ([]);
       setPhase("intro");
-      setMsg(
-        snack
-          ? `간식 냄새를 맡고 야생의 ${josa(meta.name, "이", "가")} 나타났다!`
-          : `앗! 야생의 ${josa(meta.name, "이", "가")} 나타났다!`
-      );
+      setMsg(`앗! 야생의 ${josa(meta.name, "이", "가")} 나타났다!`);
     } catch {
       setMsg("서버에 연결할 수 없어요. 잠시 후 다시 시도해주세요.");
       setPhase("idle");

@@ -28,7 +28,7 @@ export const TYPE_MOVE: Record<string, string> = {
   grass: "덩굴채찍", ice: "눈보라", fighting: "태권당수", poison: "독침",
   ground: "모래뿌리기", psychic: "염동력", bug: "실뿜기", rock: "돌떨구기",
   ghost: "핥기", dragon: "용의숨결", fairy: "박치기",
-  flying: "공기베기", dark: "속임수", steel: "강철날개",
+  flying: "바람일으키기", dark: "속임수", steel: "강철날개",
 };
 
 // 1세대 151마리 [한국어 이름, 타입]
@@ -36,8 +36,8 @@ export const GEN1: [string, string][] = [
   ["이상해씨","grass"],["이상해풀","grass"],["이상해꽃","grass"],["파이리","fire"],["리자드","fire"],
   ["리자몽","fire"],["꼬부기","water"],["어니부기","water"],["거북왕","water"],["캐터피","bug"],
   ["단데기","bug"],["버터플","bug"],["뿔충이","bug"],["딱충이","bug"],["독침붕","bug"],
-  ["구구","normal"],["피죤","normal"],["피죤투","normal"],["꼬렛","normal"],["레트라","normal"],
-  ["깨비참","normal"],["깨비드릴조","normal"],["아보","poison"],["아보크","poison"],["피카츄","electric"],
+  ["구구","flying"],["피죤","flying"],["피죤투","flying"],["꼬렛","normal"],["레트라","normal"],
+  ["깨비참","flying"],["깨비드릴조","flying"],["아보","poison"],["아보크","poison"],["피카츄","electric"],
   ["라이츄","electric"],["모래두지","ground"],["고지","ground"],["니드런♀","poison"],["니드리나","poison"],
   ["니드퀸","poison"],["니드런♂","poison"],["니드리노","poison"],["니드킹","poison"],["삐삐","fairy"],
   ["픽시","fairy"],["식스테일","fire"],["나인테일","fire"],["푸린","fairy"],["푸크린","fairy"],
@@ -49,7 +49,7 @@ export const GEN1: [string, string][] = [
   ["알통몬","fighting"],["근육몬","fighting"],["괴력몬","fighting"],["모다피","grass"],["우츠동","grass"],
   ["우츠보트","grass"],["왕눈해","water"],["독파리","water"],["꼬마돌","rock"],["데구리","rock"],
   ["딱구리","rock"],["포니타","fire"],["날쌩마","fire"],["야돈","water"],["야도란","water"],
-  ["코일","electric"],["레어코일","electric"],["파오리","normal"],["두두","normal"],["두트리오","normal"],
+  ["코일","electric"],["레어코일","electric"],["파오리","flying"],["두두","flying"],["두트리오","flying"],
   ["쥬쥬","water"],["쥬레곤","water"],["질퍽이","poison"],["질뻐기","poison"],["셀러","water"],
   ["파르셀","water"],["고오스","ghost"],["고우스트","ghost"],["팬텀","ghost"],["롱스톤","rock"],
   ["슬리프","psychic"],["슬리퍼","psychic"],["크랩","water"],["킹크랩","water"],["찌리리공","electric"],
@@ -233,6 +233,9 @@ export const TYPE_MOVES: Record<string, [string, string, string]> = {
   ghost: ["핥기", "나이트헤드", "섀도볼"],
   dragon: ["용의숨결", "드래곤크루", "역린"],
   fairy: ["요정의바람", "매지컬샤인", "문포스"],
+  flying: ["바람일으키기", "날개치기", "폭풍"],
+  dark: ["속임수", "깨물어부수기", "나이트버스트"],
+  steel: ["금속음", "강철날개", "러스터캐논"],
 };
 
 export interface Move { name: string; diff: Difficulty; dmg: number; label: string }
@@ -284,14 +287,14 @@ export const josa = (n: string, a: string, b: string) => {
 // 배경(바이옴) — 배경마다 잘 나오는 타입이 다르고, 랜덤으로 걸린다.
 export interface Biome { name: string; types: string[]; grad: string }
 export const BIOMES: Record<string, Biome> = {
-  grassland: { name: "초원", types: ["grass", "normal", "bug"], grad: "linear-gradient(#9adcf0 0%,#9adcf0 45%,#8fce6e 45%,#7bbf5c 100%)" },
+  grassland: { name: "초원", types: ["grass", "normal", "bug", "flying"], grad: "linear-gradient(#9adcf0 0%,#9adcf0 45%,#8fce6e 45%,#7bbf5c 100%)" },
   jungle: { name: "정글", types: ["grass", "bug", "poison"], grad: "linear-gradient(#63a9c0 0%,#63a9c0 40%,#3f7d54 40%,#265536 100%)" },
   snow: { name: "설원", types: ["ice", "water"], grad: "linear-gradient(#cfeaf5 0%,#cfeaf5 45%,#eaf6fb 45%,#cfe3ee 100%)" },
   swamp: { name: "늪지", types: ["poison", "water", "ground", "bug"], grad: "linear-gradient(#8a9a7a 0%,#8a9a7a 45%,#5c6b4a 45%,#41502f 100%)" },
   desert: { name: "사막", types: ["ground", "rock", "fire"], grad: "linear-gradient(#f6e5a8 0%,#f6e5a8 45%,#e8c878 45%,#d6ad55 100%)" },
   gym: { name: "체육관", types: ["fighting", "normal"], grad: "linear-gradient(#e2e7f0 0%,#e2e7f0 45%,#b9c0d0 45%,#9aa2b6 100%)" },
   sea: { name: "바다", types: ["water", "ice"], grad: "linear-gradient(#8ed7f2 0%,#8ed7f2 42%,#3d95cf 42%,#245f92 100%)" },
-  city: { name: "도시", types: ["normal", "electric", "poison"], grad: "linear-gradient(#cdd6e8 0%,#cdd6e8 45%,#9aa6bf 45%,#79859f 100%)" },
+  city: { name: "도시", types: ["normal", "electric", "poison", "flying"], grad: "linear-gradient(#cdd6e8 0%,#cdd6e8 45%,#9aa6bf 45%,#79859f 100%)" },
   volcano: { name: "화산", types: ["fire", "rock", "ground"], grad: "linear-gradient(#f0a878 0%,#f0a878 42%,#b0442e 42%,#7a2a1e 100%)" },
   lab: { name: "연구소", types: ["electric", "psychic"], grad: "linear-gradient(#e4eef3 0%,#e4eef3 45%,#c2d0da 45%,#a9bac6 100%)" },
 };
