@@ -41,3 +41,5 @@ button { touch-action: manipulation; }
 @keyframes captureBeam { 0% { opacity: 0; transform: translate(-50%,-50%) scaleX(0.25); } 35% { opacity: 0.9; } 100% { opacity: 0; transform: translate(-50%,-50%) scaleX(1.1); } }
 @keyframes starPop { 0% { transform: translate(-50%,-50%) scale(0) rotate(0); opacity: 0; } 40% { opacity: 1; } 100% { transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1.35) rotate(50deg); opacity: 0; } }
 @keyframes breakout { 0% { transform: scale(0.1); opacity: 0; } 45% { transform: scale(1.28); opacity: 1; } 70% { transform: scale(0.9); } 100% { transform: scale(1); opacity: 1; } }
+@keyframes glyphHit { 0% { transform: translate(-50%,-50%) scale(0.5) rotate(-8deg); opacity: 0; } 22% { opacity: 1; } 100% { transform: translate(-50%,-50%) scale(1.6) rotate(8deg); opacity: 0; } }
+@keyframes glyphSpin { from { transform: rotate(0deg); } to { transform: rotate(300deg); } }
