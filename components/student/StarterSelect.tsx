@@ -41,7 +41,8 @@ export default function StarterSelect({ nickname, onDone }: Props) {
       {/* 오박사 인트로: 몰입감 있는 스타팅 안내 */}
       <div style={{ display: "flex", alignItems: "flex-end", gap: 10, marginBottom: 14 }}>
         <div style={{ flexShrink: 0, animation: "floaty 3s ease-in-out infinite" }}>
-          <ProfessorOak size={78} />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/okid.png" alt="오박사" style={{ width: 96, height: "auto", display: "block", filter: "drop-shadow(0 3px 5px rgba(0,0,0,0.3))" }} />
         </div>
         <div
           style={{
@@ -101,34 +102,5 @@ export default function StarterSelect({ nickname, onDone }: Props) {
             : "포켓몬을 골라주세요"}
       </button>
     </div>
-  );
-}
-
-// 오박사 캐릭터(저작권 무관 오리지널 SVG): 흰 가운·회색 머리·따뜻한 표정
-function ProfessorOak({ size = 78 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 100 100" style={{ display: "block", filter: "drop-shadow(0 3px 4px rgba(0,0,0,0.35))" }}>
-      {/* 흰 가운 어깨 */}
-      <path d="M20 100 C20 78 34 70 50 70 C66 70 80 78 80 100 Z" fill="#f4f6fb" stroke="#c3c9d6" strokeWidth="1.5" />
-      <path d="M50 70 L44 100 M50 70 L56 100" stroke="#d5dae6" strokeWidth="1.5" fill="none" />
-      {/* 넥타이 */}
-      <path d="M50 70 L46 76 L50 92 L54 76 Z" fill="#c0392b" />
-      {/* 목 */}
-      <rect x="44" y="60" width="12" height="12" rx="4" fill="#e8b48c" />
-      {/* 얼굴 */}
-      <circle cx="50" cy="44" r="22" fill="#f2c39c" />
-      {/* 귀 */}
-      <circle cx="28" cy="46" r="4.5" fill="#e8b48c" /><circle cx="72" cy="46" r="4.5" fill="#e8b48c" />
-      {/* 회색 머리(뒤로 넘김) */}
-      <path d="M28 40 C26 22 40 14 50 14 C60 14 74 22 72 40 C68 30 60 26 50 26 C40 26 32 30 28 40 Z" fill="#d7d7db" stroke="#b9b9bf" strokeWidth="1" />
-      <path d="M27 42 C24 34 27 28 31 26 C29 33 30 39 33 44 Z" fill="#d7d7db" />
-      {/* 눈썹 */}
-      <path d="M38 38 C41 36 45 36 47 38" stroke="#8a8a90" strokeWidth="2" fill="none" strokeLinecap="round" />
-      <path d="M53 38 C55 36 59 36 62 38" stroke="#8a8a90" strokeWidth="2" fill="none" strokeLinecap="round" />
-      {/* 눈 */}
-      <circle cx="42" cy="44" r="2.6" fill="#3a2a1c" /><circle cx="58" cy="44" r="2.6" fill="#3a2a1c" />
-      {/* 미소 */}
-      <path d="M42 53 C46 58 54 58 58 53" stroke="#a05a34" strokeWidth="2.2" fill="none" strokeLinecap="round" />
-    </svg>
   );
 }

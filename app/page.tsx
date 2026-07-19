@@ -6,7 +6,8 @@ export default function Landing() {
   return (
     <div style={{ ...S.page, display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-        <div style={{ fontSize: 26, marginBottom: 4 }}>포켓 스터디</div>
+        <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 2, letterSpacing: 1 }}>포켓몬 기반 학습 플랫폼</div>
+        <div style={{ fontSize: 30, fontWeight: 800, marginBottom: 8 }}>잡으면서 배우자!</div>
         <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 26 }}>공부하고, 배틀하고, 도감을 완성하자!</div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, width: "100%", maxWidth: 420 }}>
           <Link href="/student" style={{ ...S.primaryBtn, padding: "26px 10px", fontSize: 17, textAlign: "center", textDecoration: "none", display: "block" }}>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const metadata = { title: "AI 키 발급 가이드 · 포켓 스터디" };
+export const metadata = { title: "AI 키 발급 가이드 · 잡으면서 배우자!" };
 
 const box: React.CSSProperties = {
   background: "#fff", border: "1px solid #e5e5e5", borderRadius: 10,
@@ -35,9 +35,9 @@ export default function AiKeyGuide() {
       </div>
 
       <div style={box}>
-        <b>3단계 — 포켓 스터디에 등록</b>
+        <b>3단계 — 잡으면서 배우자!에 등록</b>
         <div style={{ fontSize: 13, color: "#444" }}>
-          포켓 스터디 <b>교사 메뉴 → 게임 설정 → AI 문제 생성</b> 섹션에서 제공사를
+          잡으면서 배우자! <b>교사 메뉴 → 게임 설정 → AI 문제 생성</b> 섹션에서 제공사를
           <b> Google Gemini</b>로 두고, 복사한 키를 붙여넣은 뒤 <b>“저장 + 연결 테스트”</b>를 누르세요.
           “연결 테스트 성공!”이 뜨면 끝 — 이제 문제 은행에서 <b>🤖 AI 생성</b> 버튼을 쓸 수 있어요.
         </div>
