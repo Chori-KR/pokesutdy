@@ -115,6 +115,14 @@ export default function RaidTab({
   }, []);
   useEffect(() => () => stopBattleBgm(), []);
 
+  // 대기·종료 화면에서는 반 협동 진행도를 15초마다 자동 갱신(실시간 모니터링)
+  useEffect(() => {
+    if (phase !== "idle" && phase !== "done") return;
+    const t = setInterval(() => { loadStatus(); }, 15000);
+    return () => clearInterval(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase]);
+
   // ── 신청 ─────────────────────────────
   async function request(pid: number) {
     setPicker(false);

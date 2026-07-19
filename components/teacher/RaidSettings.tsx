@@ -42,6 +42,13 @@ export default function RaidSettings({ cls, setCls, showToast }: Props) {
     try { const res = await teacherFetch("/api/teacher/raid-requests"); if (res.ok) setReqs(await res.json()); } catch { /* 무시 */ }
   };
   useEffect(() => { loadReqs(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [round]);
+  // 레이드 진행 중이면 성공 인원·신청 현황을 15초마다 자동 갱신
+  useEffect(() => {
+    if (!on) return;
+    const t = setInterval(() => { loadReqs(); }, 15000);
+    return () => clearInterval(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [on]);
 
   async function save(next: Record<string, unknown>) {
     setBusy(true);
