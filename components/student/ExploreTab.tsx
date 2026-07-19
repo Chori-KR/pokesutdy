@@ -150,7 +150,7 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
                 오늘 남은 탐색: {left}번 · 배틀 없이 볼만 던져서 잡는 찬스!
               </div>
               <button onClick={beginExplore} disabled={busy} style={S.primaryBtn}>
-                {busy ? "탐색 중..." : "풀숲을 탐색한다"}
+                {busy ? "탐색 중..." : "야생 포켓몬을 찾아나선다"}
               </button>
             </>
           ) : (
