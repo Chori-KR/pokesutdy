@@ -602,4 +602,165 @@ const REGISTRY: Record<string, R> = {
       <circle cx="50" cy="50" r="9" fill="#7a6141" stroke="#4f3d28" strokeWidth="1.5" />
     </>
   ),
+
+  // ── 고스트 ─────────────────────────────
+  "ghost-easy": () => (
+    <g>
+      {[[50, 50, 1], [30, 44, 0.7], [70, 46, 0.7]].map(([x, y, s], i) => (
+        <g key={i} transform={`translate(${x},${y}) scale(${s})`}>
+          <path d="M0 -20 C14 -20 16 -4 16 8 C16 16 10 12 6 18 C2 12 -2 18 -6 12 C-10 18 -16 14 -16 8 C-16 -4 -14 -20 0 -20 Z" fill="#7a4fb0" opacity="0.8" />
+          <g fill="#1a0b2e"><circle cx="-5" cy="-4" r="2.5" /><circle cx="5" cy="-4" r="2.5" /></g>
+        </g>
+      ))}
+    </g>
+  ),
+  "ghost-medium": (id) => (
+    <>
+      <defs>
+        <linearGradient id={`${id}g`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#b98cf0" />
+          <stop offset="1" stopColor="#4a2778" stopOpacity="0.5" />
+        </linearGradient>
+      </defs>
+      <path d="M50 8 C74 8 78 32 78 52 C78 70 68 62 60 74 C54 64 50 76 44 68 C38 78 30 64 24 74 C20 60 22 32 30 20 C36 12 42 8 50 8 Z" fill={`url(#${id}g)`} />
+      <g fill="#1a0b2e"><ellipse cx="41" cy="38" rx="4" ry="6" /><ellipse cx="59" cy="38" rx="4" ry="6" /></g>
+      <path d="M42 54 C46 60 54 60 58 54" stroke="#1a0b2e" strokeWidth="2.5" fill="none" />
+      <g fill="#e0c6ff" opacity="0.7"><circle cx="20" cy="26" r="3" /><circle cx="82" cy="30" r="2.5" /></g>
+    </>
+  ),
+  "ghost-hard": (id) => (
+    <>
+      <defs>
+        <radialGradient id={`${id}bg`} cx="0.5" cy="0.5" r="0.6">
+          <stop offset="0" stopColor="#5b2a8c" stopOpacity="0.75" />
+          <stop offset="1" stopColor="#160726" stopOpacity="0" />
+        </radialGradient>
+        <filter id={`${id}gl`} x="-40%" y="-40%" width="180%" height="180%">
+          <feDropShadow dx="0" dy="0" stdDeviation="3.5" floodColor="#c39bff" floodOpacity="0.9" />
+        </filter>
+      </defs>
+      <circle cx="50" cy="50" r="48" fill={`url(#${id}bg)`} />
+      <g filter={`url(#${id}gl)`}>
+        <path d="M50 6 C78 6 82 34 82 56 C82 76 70 66 62 80 C55 68 50 82 44 72 C37 84 28 68 20 80 C14 62 18 32 28 18 C34 10 42 6 50 6 Z" fill="#8a52c8" opacity="0.92" />
+        <g fill="#faf0ff"><ellipse cx="40" cy="40" rx="5" ry="8" /><ellipse cx="60" cy="40" rx="5" ry="8" /></g>
+        <g fill="#1a0b2e"><circle cx="40" cy="42" r="2.5" /><circle cx="60" cy="42" r="2.5" /></g>
+        <path d="M40 58 C46 68 54 68 60 58" stroke="#faf0ff" strokeWidth="3" fill="none" />
+      </g>
+      <g fill="#e0c6ff"><circle cx="16" cy="34" r="3" /><circle cx="86" cy="42" r="3" /><circle cx="50" cy="94" r="2.5" /></g>
+    </>
+  ),
+
+  // ── 드래곤 ─────────────────────────────
+  "dragon-easy": () => (
+    <g>
+      <g fill="none" stroke="#5a63c8" strokeWidth="6" strokeLinecap="round">
+        <path d="M10 78 C34 66 40 40 66 26" opacity="0.9" />
+        <path d="M18 86 C42 74 54 48 84 36" opacity="0.6" />
+      </g>
+      <g fill="#aeb6ff"><circle cx="66" cy="26" r="6" /><circle cx="52" cy="42" r="4" /><circle cx="40" cy="56" r="3" /></g>
+      <path d="M66 26 L74 18 L72 28 L82 26 L72 34 Z" fill="#c6cbff" />
+    </g>
+  ),
+  "dragon-medium": (id) => (
+    <>
+      <defs>
+        <linearGradient id={`${id}d`} x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0" stopColor="#3f47a8" />
+          <stop offset="0.5" stopColor="#7d86e6" />
+          <stop offset="1" stopColor="#d0d5ff" />
+        </linearGradient>
+      </defs>
+      <path d="M8 90 C30 72 30 50 52 40 C74 30 74 14 68 4 C82 16 82 38 60 50 C40 60 40 78 24 92 Z" fill={`url(#${id}d)`} />
+      <path d="M14 86 C34 70 36 50 56 42" stroke="#eef0ff" strokeWidth="2.5" fill="none" opacity="0.8" />
+      <g fill="#c6cbff"><circle cx="68" cy="8" r="5" /><circle cx="30" cy="70" r="4" /></g>
+    </>
+  ),
+  "dragon-hard": (id) => (
+    <>
+      <defs>
+        <radialGradient id={`${id}c`} cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stopColor="#ffffff" />
+          <stop offset="0.4" stopColor="#9aa2ff" />
+          <stop offset="1" stopColor="#2a2f7a" stopOpacity="0" />
+        </radialGradient>
+        <filter id={`${id}gl`} x="-30%" y="-30%" width="160%" height="160%">
+          <feDropShadow dx="0" dy="0" stdDeviation="3" floodColor="#aeb6ff" floodOpacity="0.9" />
+        </filter>
+      </defs>
+      <circle cx="50" cy="50" r="40" fill={`url(#${id}c)`} />
+      <g filter={`url(#${id}gl)`} fill="#7d86e6">
+        {[0, 60, 120, 180, 240, 300].map((r, i) => (
+          <g key={i} transform={`translate(50,50) rotate(${r})`}>
+            <path d="M0 -12 C6 -30 4 -48 0 -58 C-4 -48 -6 -30 0 -12 Z" opacity="0.9" />
+          </g>
+        ))}
+      </g>
+      <circle cx="50" cy="50" r="13" fill="#eef0ff" filter={`url(#${id}gl)`} />
+      <circle cx="50" cy="50" r="6" fill="#3f47a8" />
+    </>
+  ),
+
+  // ── 페어리 ─────────────────────────────
+  "fairy-easy": () => (
+    <g>
+      {[[50, 50, 1], [28, 38, 0.7], [72, 40, 0.7], [40, 70, 0.6], [64, 68, 0.6]].map(([x, y, s], i) => (
+        <g key={i} transform={`translate(${x},${y}) scale(${s})`}>
+          <path d="M0 -12 L3 -3 L12 0 L3 3 L0 12 L-3 3 L-12 0 L-3 -3 Z" fill="#ff9ed6" />
+          <circle cx="0" cy="0" r="2.5" fill="#fff" />
+        </g>
+      ))}
+    </g>
+  ),
+  "fairy-medium": (id) => (
+    <>
+      <defs>
+        <radialGradient id={`${id}f`} cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stopColor="#ffffff" />
+          <stop offset="0.5" stopColor="#ffc4e8" />
+          <stop offset="1" stopColor="#ff7ec4" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <circle cx="50" cy="50" r="30" fill={`url(#${id}f)`} />
+      <g fill="#ff88cc">
+        {[0, 72, 144, 216, 288].map((r, i) => (
+          <g key={i} transform={`translate(50,50) rotate(${r})`}>
+            <path d="M0 -8 C8 -22 -8 -22 0 -8 Z" transform="translate(0,-14)" />
+            <path d="M0 -34 C6 -30 6 -22 0 -18 C-6 -22 -6 -30 0 -34 Z" />
+          </g>
+        ))}
+      </g>
+      <circle cx="50" cy="50" r="8" fill="#fff" />
+      <g fill="#ffd6ef"><circle cx="80" cy="30" r="3" /><circle cx="22" cy="66" r="2.5" /></g>
+    </>
+  ),
+  "fairy-hard": (id) => (
+    <>
+      <defs>
+        <radialGradient id={`${id}bg`} cx="0.5" cy="0.5" r="0.6">
+          <stop offset="0" stopColor="#ffe0f2" stopOpacity="0.9" />
+          <stop offset="0.6" stopColor="#ff9ed6" stopOpacity="0.5" />
+          <stop offset="1" stopColor="#c23a8a" stopOpacity="0" />
+        </radialGradient>
+        <filter id={`${id}gl`} x="-40%" y="-40%" width="180%" height="180%">
+          <feDropShadow dx="0" dy="0" stdDeviation="3" floodColor="#ffb3e0" floodOpacity="0.9" />
+        </filter>
+      </defs>
+      <circle cx="50" cy="50" r="48" fill={`url(#${id}bg)`} />
+      <g filter={`url(#${id}gl)`}>
+        <g fill="#ff8ecb">
+          {[0, 45, 90, 135, 180, 225, 270, 315].map((r, i) => (
+            <g key={i} transform={`translate(50,50) rotate(${r})`}>
+              <path d={i % 2 === 0 ? "M0 -14 L4 -32 L0 -44 L-4 -32 Z" : "M0 -12 L2 -22 L0 -28 L-2 -22 Z"} opacity="0.9" />
+            </g>
+          ))}
+        </g>
+        <circle cx="50" cy="50" r="12" fill="#fff" />
+      </g>
+      <g fill="#ffffff">
+        {[[50, 50, 1], [78, 30, 0.5], [22, 34, 0.5], [30, 74, 0.45], [72, 72, 0.45]].map(([x, y, s], i) => (
+          <path key={i} d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" transform={`translate(${x},${y}) scale(${s})`} />
+        ))}
+      </g>
+    </>
+  ),
 };
