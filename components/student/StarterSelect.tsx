@@ -51,7 +51,7 @@ export default function StarterSelect({ nickname, onDone }: Props) {
             fontSize: 13, lineHeight: 1.6,
           }}
         >
-          오, {nickname} 트레이너!<br />
+          <b style={{ color: "#c0392b" }}>초리박사</b>: 오, {nickname} 트레이너!<br />
           함께 모험을 떠날 <b style={{ color: "#d9641e" }}>파트너 포켓몬</b>을 골라보거라.
           <span style={{ color: "#888" }}> 딱 한 번만 고를 수 있으니 신중하게!</span>
           {/* 말풍선 꼬리 */}
