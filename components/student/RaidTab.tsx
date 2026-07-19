@@ -34,7 +34,9 @@ interface ActiveQuestion extends ApiQuestion { sOpts: ShuffledOption[] }
 type Phase = "idle" | "busy" | "select" | "question" | "done";
 type RaidStatus = {
   on: boolean; pid: number; shiny: boolean; round: number; myReqPid: number | null;
-  iWon: boolean; winCount: number; threshold: number; unlocked: boolean; justGranted: boolean;
+  iWon: boolean; winCount: number; threshold: number; unlocked: boolean;
+  justGranted: boolean; justRewarded: boolean;
+  points: number; inventory: StudentData["inventory"];
   reward: { pts: number; item: string; count: number };
 };
 const COUNTER_DMG = 20; // 오답 시 보스의 반격 데미지
@@ -93,6 +95,12 @@ export default function RaidTab({
         setCounts({ ...counts, [st.pid]: Math.max(1, counts[st.pid] ?? 0) });
         if (st.shiny && !shinies.includes(st.pid)) setShinies([...shinies, st.pid]);
         showToast(`🎉 반 전체 달성! ${POOL[st.pid - 1].name}을(를) 받았어요!`);
+      }
+      // 협동 달성 후 성공자 보상(포인트/아이템)
+      if (st.justRewarded) {
+        setStudent({ ...studentRef.current, points: st.points, inventory: st.inventory });
+        const bits = [st.reward.pts > 0 ? `+${st.reward.pts}P` : "", st.reward.item && st.reward.count > 0 ? `${itemName(st.reward.item)} ×${st.reward.count}` : ""].filter(Boolean);
+        if (bits.length) showToast(`🏆 레이드 성공 보상 ${bits.join(" · ")}`);
       }
       return st;
     } catch { return null; }
@@ -169,24 +177,15 @@ export default function RaidTab({
 
   async function win() {
     setPhase("busy");
-    let reward: { pts: number; item: string; count: number } | null = null;
-    try {
-      const res = await fetch("/api/raid/win", { method: "POST" });
-      const data = await res.json();
-      if (res.ok && !data.already) {
-        reward = data.reward;
-        setStudent({ ...studentRef.current, points: data.points, inventory: data.inventory });
-      }
-    } catch { /* 보상 실패해도 승리는 유지 */ }
+    try { await fetch("/api/raid/win", { method: "POST" }); } catch { /* 실패해도 성공 자체는 유지 */ }
     stopBattleBgm();
     SFX.catchOk();
-    const st = await loadStatus(); // 승리 인원/협동 달성 갱신
+    const st = await loadStatus(); // 성공 기록 → 협동 인원/달성 여부 갱신(달성 시 보상·지급 처리)
     let m = `🎉 ${boss?.name} 레이드 성공!`;
-    if (reward) {
-      const bits = [reward.pts > 0 ? `+${reward.pts}P` : "", reward.item && reward.count > 0 ? `${itemName(reward.item)} ×${reward.count}` : ""].filter(Boolean);
-      if (bits.length) m += ` 보상 ${bits.join(" · ")}`;
+    if (st) {
+      if (st.unlocked) m += " 반 협동 달성! 🎉";
+      else m += ` · 반 협동 ${st.winCount}/${st.threshold}명 (기준 달성 시 보상·지급!)`;
     }
-    if (st && !st.unlocked) m += ` · 반 협동 ${st.winCount}/${st.threshold}명`;
     setMsg(m);
     setPhase("done");
   }

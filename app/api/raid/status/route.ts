@@ -24,18 +24,39 @@ export async function GET(req: NextRequest) {
   });
   const unlocked = raid.on && winCount >= raid.threshold;
 
-  // 협동 달성 → 아직 못 받았으면 포켓몬 지급(라운드당 1회)
-  let justGranted = false;
-  if (unlocked && Number(gs.raidGrant ?? -1) !== raid.round) {
-    const bump = await bumpCatch(supa, student.id, raid.pid, "raid", 1);
-    if (!bump.error) {
-      if (raid.shiny) {
-        await supa.from("catches").update({ shiny: true })
-          .eq("student_id", student.id).eq("pokemon_id", raid.pid);
+  // 협동 달성 시에만 지급 — 포켓몬은 전원에게, 포인트/아이템 보상은 성공자에게만. (라운드당 1회)
+  let justGranted = false;   // 포켓몬 지급됨
+  let justRewarded = false;  // 성공자 보상 지급됨
+  let points = student.points;
+  let inventory = student.inventory;
+  const nextGs = { ...gs };
+
+  if (unlocked) {
+    // 포켓몬 지급(전원)
+    if (Number(gs.raidGrant ?? -1) !== raid.round) {
+      const bump = await bumpCatch(supa, student.id, raid.pid, "raid", 1);
+      if (!bump.error) {
+        if (raid.shiny) {
+          await supa.from("catches").update({ shiny: true })
+            .eq("student_id", student.id).eq("pokemon_id", raid.pid);
+        }
+        nextGs.raidGrant = raid.round;
+        justGranted = true;
       }
-      const game_state = { ...gs, raidGrant: raid.round };
-      await supa.from("students").update({ game_state }).eq("id", student.id);
-      justGranted = true;
+    }
+    // 성공자 보상(포인트/아이템)
+    if (iWon && Number(gs.raidReward ?? -1) !== raid.round) {
+      points = student.points + raid.rewardPts;
+      inventory = { ...student.inventory };
+      if (raid.rewardItem && raid.rewardCount > 0) {
+        const key = raid.rewardItem as keyof typeof inventory;
+        inventory[key] = (inventory[key] ?? 0) + raid.rewardCount;
+      }
+      nextGs.raidReward = raid.round;
+      justRewarded = true;
+    }
+    if (justGranted || justRewarded) {
+      await supa.from("students").update({ points, inventory, game_state: nextGs }).eq("id", student.id);
     }
   }
 
@@ -50,6 +71,9 @@ export async function GET(req: NextRequest) {
     threshold: raid.threshold,
     unlocked,
     justGranted,
+    justRewarded,
+    points,
+    inventory,
     reward: { pts: raid.rewardPts, item: raid.rewardItem, count: raid.rewardCount },
   });
 }

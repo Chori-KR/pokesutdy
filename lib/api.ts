@@ -23,8 +23,9 @@ export interface GameState {
   wins?: Record<string, number>;    // 포켓몬 id별 배틀 승수 (진화 조건)
   evoCount?: number;                // 누적 진화 횟수 (포인트 진화 비용 계산용, M5)
   raidReq?: { pid: number; round: number }; // 레이드 신청(현재 라운드에 원하는 포켓몬)
-  raidWin?: number;                          // 이 라운드에 레이드 승리(보상 수령)한 round 번호
+  raidWin?: number;                          // 이 라운드에 레이드 성공(보스 격파)한 round 번호
   raidGrant?: number;                        // 협동 달성으로 포켓몬을 지급받은 round 번호
+  raidReward?: number;                       // 협동 달성 후 성공자 보상(포인트/아이템)을 받은 round 번호
 }
 
 export interface StudentRow {

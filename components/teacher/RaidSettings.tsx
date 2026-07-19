@@ -116,7 +116,8 @@ export default function RaidSettings({ cls, setCls, showToast }: Props) {
 
       {/* 협동 인원 + 보상 */}
       <div style={{ borderTop: "1px solid #eee", paddingTop: 10, marginBottom: 12 }}>
-        <div style={{ fontSize: 12, fontWeight: 600, marginBottom: 8 }}>협동 목표 & 승리 보상</div>
+        <div style={{ fontSize: 12, fontWeight: 600, marginBottom: 2 }}>협동 목표 & 승리 보상</div>
+        <div style={{ fontSize: 11, color: "#888", marginBottom: 8 }}>기준 인원을 채워야 포켓몬 지급 + 성공자 보상이 나가요. (기준 미달이면 성공해도 보상 없음)</div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 13, marginBottom: 8 }}>
           <span>지급 인원 기준(명) <span style={{ fontSize: 11, color: "#888" }}>이 인원 성공 시 모두에게 지급</span></span>
           <input type="number" min={1} max={99} value={threshold} onChange={(e) => setThreshold(Math.max(1, Math.min(99, Number(e.target.value) || 1)))} style={{ ...T.input, width: 64, textAlign: "center", flexShrink: 0 }} />
