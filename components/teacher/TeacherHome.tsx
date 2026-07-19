@@ -23,6 +23,7 @@ export interface ClassRow {
     timeScale?: number;
     rareRate?: number;
     legendRate?: number;
+    shinyRate?: number;
     aiProvider?: string;
     aiKeyEnc?: string;
     aiKeyHint?: string;
@@ -225,32 +226,48 @@ export default function TeacherHome({ session }: { session: Session }) {
               </div>
             )}
           </div>
-          <div style={T.card}>
-            <div style={{ fontSize: 13, fontWeight: 600 }}>야생 출현 등급 확률 <span style={{ fontSize: 11, color: "#888", fontWeight: 400 }}>(이벤트 주간에 조정!)</span></div>
-            <div style={{ fontSize: 11, color: "#888", margin: "4px 0 10px" }}>
-              배틀·탐색에서 만나는 포켓몬 등급 확률이에요. 나머지는 흔함이 됩니다. (기본: 희귀 30% · 전설 5% · 흔함 65%)
-            </div>
-            {([
-              ["rareRate", "희귀 확률(%)", 30, 90],
-              ["legendRate", "전설 확률(%)", 5, 50],
-            ] as const).map(([key, label, def, max]) => (
-              <div key={key} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 13, marginBottom: 8 }}>
-                <span>{label}</span>
-                <input
-                  type="number" min={0} max={max}
-                  value={Math.round((cls.settings?.[key] ?? def / 100) * 100)}
-                  onChange={(e) => {
-                    const pct = Math.max(0, Math.min(max, Number(e.target.value) || 0));
-                    updateSettings({ [key]: pct / 100 });
-                  }}
-                  style={{ ...T.input, width: 64, textAlign: "center", flexShrink: 0 }}
-                />
+          {(() => {
+            const r0 = Math.round((cls.settings?.rareRate ?? 0.3) * 100);
+            const l0 = Math.round((cls.settings?.legendRate ?? 0.05) * 100);
+            const c0 = Math.max(0, 100 - r0 - l0);
+            const cur: Record<string, number> = { common: c0, rare: r0, legend: l0 };
+            const setRarity = (which: "common" | "rare" | "legend", vRaw: number) => {
+              const v = Math.max(0, Math.min(100, Math.round(vRaw) || 0));
+              const others = (["common", "rare", "legend"] as const).filter((k) => k !== which);
+              const remain = 100 - v;
+              const sumO = cur[others[0]] + cur[others[1]];
+              const a = sumO <= 0 ? Math.round(remain / 2) : Math.round((remain * cur[others[0]]) / sumO);
+              const b = remain - a;
+              const vals: Record<string, number> = { [which]: v, [others[0]]: a, [others[1]]: b };
+              updateSettings({ rareRate: vals.rare / 100, legendRate: vals.legend / 100 });
+            };
+            const shinyPct = Math.round((cls.settings?.shinyRate ?? 0.025) * 1000) / 10;
+            return (
+              <div style={T.card}>
+                <div style={{ fontSize: 13, fontWeight: 600 }}>야생 출현 확률 <span style={{ fontSize: 11, color: "#888", fontWeight: 400 }}>(이벤트 주간에 조정!)</span></div>
+                <div style={{ fontSize: 11, color: "#888", margin: "4px 0 10px" }}>
+                  세 등급의 합은 항상 100%로 자동 맞춰져요. (기본: 흔함 65 · 희귀 30 · 전설 5)
+                </div>
+                {([["common", "흔함"], ["rare", "희귀"], ["legend", "전설"]] as const).map(([key, label]) => (
+                  <div key={key} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 13, marginBottom: 8 }}>
+                    <span>{label} 확률(%)</span>
+                    <input type="number" min={0} max={100} value={cur[key]}
+                      onChange={(e) => setRarity(key, Number(e.target.value))}
+                      style={{ ...T.input, width: 70, textAlign: "center", flexShrink: 0 }} />
+                  </div>
+                ))}
+                <div style={{ fontSize: 11, color: c0 + r0 + l0 === 100 ? "#3a7" : "#a33", marginTop: 2, marginBottom: 12 }}>
+                  합계 {c0 + r0 + l0}% (흔함 {c0} · 희귀 {r0} · 전설 {l0})
+                </div>
+                <div style={{ borderTop: "1px solid #eee", paddingTop: 10, display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 13 }}>
+                  <span>✨ 이로치 확률(%) <span style={{ fontSize: 11, color: "#888" }}>(기본 2.5%)</span></span>
+                  <input type="number" min={0} max={100} step={0.5} value={shinyPct}
+                    onChange={(e) => updateSettings({ shinyRate: Math.max(0, Math.min(100, Number(e.target.value) || 0)) / 100 })}
+                    style={{ ...T.input, width: 70, textAlign: "center", flexShrink: 0 }} />
+                </div>
               </div>
-            ))}
-            <div style={{ fontSize: 11, color: "#999", marginTop: 4 }}>
-              현재: 흔함 {Math.max(0, 100 - Math.round((cls.settings?.rareRate ?? 0.3) * 100) - Math.round((cls.settings?.legendRate ?? 0.05) * 100))}% · 희귀 {Math.round((cls.settings?.rareRate ?? 0.3) * 100)}% · 전설 {Math.round((cls.settings?.legendRate ?? 0.05) * 100)}%
-            </div>
-          </div>
+            );
+          })()}
           <div style={T.card}>
             {([
               ["battleLimit", "하루 배틀 횟수", 2, "야생 포켓몬과 조우하는 횟수. 배틀 승리 포인트의 하루 상한 역할도 해요."],

@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
   // 빛나는 스프레이: 켜고 시작하면 이로치 확정(+ 소모). 간식과 중복 가능.
   const useSpray = body?.useSpray === true && (student.inventory.spray ?? 0) > 0;
 
-  const { battleLimit, rareRate, legendRate } = await getClassSettings(supa, student.class_id);
+  const { battleLimit, rareRate, legendRate, shinyRate } = await getClassSettings(supa, student.class_id);
   const battleUsed = Number(student.day_state?.battleUsed ?? 0);
   const biome = pickBiome();
   const biomeTypes = BIOMES[biome].types;
@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
     const { error } = await supa.from("students").update({ inventory, hp: 100 }).eq("id", student.id);
     if (error) return jsonError(500, "저장에 실패했어요.");
     wildPokemon = pickWildOf(SNACKS[snack].rarity, biomeTypes);
-    const shiny = useSpray || rollShiny();
+    const shiny = useSpray || rollShiny(shinyRate);
     const token = await signBattleToken(student.id, wildPokemon.id, "battle", shiny);
     return NextResponse.json({
       pokemon: { id: wildPokemon.id, name: wildPokemon.name, type: wildPokemon.type, rarity: wildPokemon.rarity, shiny },
@@ -63,7 +63,7 @@ export async function POST(req: NextRequest) {
   if (error) return jsonError(500, "저장에 실패했어요.");
 
   wildPokemon = pickWild(rareRate, legendRate, biomeTypes);
-  const shiny = useSpray || rollShiny();
+  const shiny = useSpray || rollShiny(shinyRate);
   const token = await signBattleToken(student.id, wildPokemon.id, "battle", shiny);
   return NextResponse.json({
     pokemon: { id: wildPokemon.id, name: wildPokemon.name, type: wildPokemon.type, rarity: wildPokemon.rarity, shiny },

@@ -45,6 +45,8 @@ export default function StatsTab({ questions, showToast }: Props) {
   const [pwFor, setPwFor] = useState<string | null>(null);
   const [newPw, setNewPw] = useState("");
   const [busy, setBusy] = useState(false);
+  const [selected, setSelected] = useState<Set<string>>(new Set()); // 다중 선물 선택
+  const toggleSel = (id: string) => setSelected((prev) => { const n = new Set(prev); n.has(id) ? n.delete(id) : n.add(id); return n; });
 
   const load = useCallback(async () => {
     setErr("");
@@ -61,17 +63,18 @@ export default function StatsTab({ questions, showToast }: Props) {
 
   useEffect(() => { load(); }, [load]);
 
-  async function sendGift(studentId: string) {
+  async function sendGift(ids: string[]) {
+    if (ids.length === 0) return;
     setBusy(true);
     try {
       const res = await teacherFetch("/api/teacher/gift", {
         method: "POST",
-        body: JSON.stringify({ student_id: studentId, points: giftPoints, item: giftItem || null, count: giftCount }),
+        body: JSON.stringify({ student_ids: ids, points: giftPoints, item: giftItem || null, count: giftCount }),
       });
       const data = await res.json();
       if (!res.ok) { showToast(data.error ?? "지급에 실패했어요."); return; }
       showToast(`${data.nickname}에게 선물을 보냈어요! 🎁`);
-      setGiftFor(null);
+      setGiftFor(null); setSelected(new Set());
       load();
     } finally {
       setBusy(false);
@@ -136,6 +139,12 @@ export default function StatsTab({ questions, showToast }: Props) {
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
               <thead>
                 <tr style={{ color: "#888", textAlign: "left" }}>
+                  <th style={{ padding: "6px 8px", borderBottom: "1px solid #eee" }}>
+                    <input type="checkbox"
+                      checked={students.length > 0 && selected.size === students.length}
+                      onChange={(e) => setSelected(e.target.checked ? new Set(students.map((s) => s.id)) : new Set())}
+                      title="전체 선택" />
+                  </th>
                   {["닉네임", "포인트", "Lv", "정답률", "오늘/누적", "도감", "최근", ""].map((h) => (
                     <th key={h} style={{ padding: "6px 8px", borderBottom: "1px solid #eee", whiteSpace: "nowrap" }}>{h}</th>
                   ))}
@@ -143,7 +152,10 @@ export default function StatsTab({ questions, showToast }: Props) {
               </thead>
               <tbody>
                 {students.map((s) => (
-                  <tr key={s.id} style={{ borderBottom: "1px solid #f3f3f3" }}>
+                  <tr key={s.id} style={{ borderBottom: "1px solid #f3f3f3", background: selected.has(s.id) ? "#eef5ff" : undefined }}>
+                    <td style={{ padding: "7px 8px" }}>
+                      <input type="checkbox" checked={selected.has(s.id)} onChange={() => toggleSel(s.id)} />
+                    </td>
                     <td style={{ padding: "7px 8px", fontWeight: 600 }}>{s.nickname}</td>
                     <td style={{ padding: "7px 8px" }}>{s.points.toLocaleString()}P</td>
                     <td style={{ padding: "7px 8px" }}>{s.level}</td>
@@ -172,8 +184,21 @@ export default function StatsTab({ questions, showToast }: Props) {
               {GIFT_ITEMS.map(([k, name]) => <option key={k} value={k}>{name}</option>)}
             </select>
             {giftItem && <input type="number" min={1} max={99} value={giftCount} onChange={(e) => setGiftCount(Math.max(1, Number(e.target.value) || 1))} style={{ ...T.input, width: 56 }} />}
-            <button onClick={() => sendGift(giftFor)} disabled={busy} style={{ ...T.primaryBtn, padding: "6px 12px", fontSize: 12 }}>보내기</button>
+            <button onClick={() => sendGift([giftFor])} disabled={busy} style={{ ...T.primaryBtn, padding: "6px 12px", fontSize: 12 }}>보내기</button>
             <button onClick={() => setGiftFor(null)} style={{ ...T.secondaryBtn, padding: "6px 12px", fontSize: 12 }}>취소</button>
+          </div>
+        )}
+
+        {selected.size > 0 && (
+          <div style={{ marginTop: 10, padding: 10, background: "#eef5ff", borderRadius: 8, display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap", fontSize: 12, border: "1px solid #b4c4e0" }}>
+            <b>🎁 선택한 {selected.size}명에게 한꺼번에:</b>
+            <label>포인트 <input type="number" min={0} max={100000} step={50} value={giftPoints} onChange={(e) => setGiftPoints(Math.max(0, Number(e.target.value) || 0))} style={{ ...T.input, width: 80 }} /></label>
+            <select value={giftItem} onChange={(e) => setGiftItem(e.target.value)} style={T.input}>
+              {GIFT_ITEMS.map(([k, name]) => <option key={k} value={k}>{name}</option>)}
+            </select>
+            {giftItem && <input type="number" min={1} max={99} value={giftCount} onChange={(e) => setGiftCount(Math.max(1, Number(e.target.value) || 1))} style={{ ...T.input, width: 56 }} />}
+            <button onClick={() => sendGift([...selected])} disabled={busy} style={{ ...T.primaryBtn, padding: "6px 12px", fontSize: 12 }}>{selected.size}명에게 보내기</button>
+            <button onClick={() => setSelected(new Set())} style={{ ...T.secondaryBtn, padding: "6px 12px", fontSize: 12 }}>선택 해제</button>
           </div>
         )}
 

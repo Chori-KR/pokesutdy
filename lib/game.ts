@@ -142,8 +142,8 @@ export const gradeShort = (text: string, accepted: string[]): boolean => {
   return !!t && accepted.some((a) => normalizeAnswer(a) === t);
 };
 
-export const SHINY_RATE = 1 / 40; // 야생 조우 시 이로치(색違) 확률
-export const rollShiny = () => Math.random() < SHINY_RATE;
+export const DEFAULT_SHINY_RATE = 1 / 40; // 야생 조우 시 이로치(색違) 기본 확률 (2.5%)
+export const rollShiny = (rate = DEFAULT_SHINY_RATE) => Math.random() < rate;
 
 export const STARTER_IDS = [1, 4, 7, 25] as const;
 
