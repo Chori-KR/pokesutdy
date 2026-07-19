@@ -3,6 +3,7 @@
 import { CSSProperties } from "react";
 import { TYPE_COLORS } from "@/lib/game";
 import TypeGlyph from "@/components/student/TypeGlyph";
+import SkillSvg, { hasSkill } from "@/components/student/SkillSvg";
 
 // 타입별 공격 이펙트 — 타입 고유 실루엣(글리프)이 공격자→피격자로 날아가 타격 지점에서 터진다.
 // 색=타입색, 규모·파편·화면섬광=난이도(쉬움/보통/어려움).
@@ -17,6 +18,8 @@ export default function TypeFx({ type, dir = "fwd", diff = "medium" }: { type: s
   const n = hard ? 20 : easy ? 6 : 12;
   const projSize = hard ? 40 : easy ? 22 : 30;
   const hitSize = hard ? 78 : easy ? 42 : 58;
+  const skill = hasSkill(type, diff);
+  const skillSize = hard ? 150 : easy ? 96 : 122;
 
   return (
     <div style={{ color }}>
@@ -27,9 +30,9 @@ export default function TypeFx({ type, dir = "fwd", diff = "medium" }: { type: s
         </div>
       </div>
 
-      {/* 타격 지점: 글리프가 크게 터짐 */}
-      <div style={{ position: "absolute", left: at.left, top: at.top, opacity: 0, animation: `glyphHit 0.55s ease-out ${HIT_DELAY}s forwards`, zIndex: 7, pointerEvents: "none" }}>
-        <TypeGlyph type={type} size={hitSize} />
+      {/* 타격 지점: 정교한 스킬 SVG(있으면) 또는 타입 글리프가 크게 터짐 */}
+      <div style={{ position: "absolute", left: at.left, top: at.top, transform: "translate(-50%,-50%)", opacity: 0, animation: `glyphHit 0.55s ease-out ${HIT_DELAY}s forwards`, zIndex: 7, pointerEvents: "none" }}>
+        {skill ? <SkillSvg type={type} diff={diff} size={skillSize} /> : <TypeGlyph type={type} size={hitSize} />}
       </div>
 
       {/* 파편 (타입색) */}
