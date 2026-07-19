@@ -21,6 +21,8 @@ export interface ClassRow {
     battleLimit?: number;
     timerOn?: boolean;
     timeScale?: number;
+    rareRate?: number;
+    legendRate?: number;
     aiProvider?: string;
     aiKeyEnc?: string;
     aiKeyHint?: string;
@@ -222,6 +224,32 @@ export default function TeacherHome({ session }: { session: Session }) {
                 })}
               </div>
             )}
+          </div>
+          <div style={T.card}>
+            <div style={{ fontSize: 13, fontWeight: 600 }}>야생 출현 등급 확률 <span style={{ fontSize: 11, color: "#888", fontWeight: 400 }}>(이벤트 주간에 조정!)</span></div>
+            <div style={{ fontSize: 11, color: "#888", margin: "4px 0 10px" }}>
+              배틀·탐색에서 만나는 포켓몬 등급 확률이에요. 나머지는 흔함이 됩니다. (기본: 희귀 30% · 전설 5% · 흔함 65%)
+            </div>
+            {([
+              ["rareRate", "희귀 확률(%)", 30, 90],
+              ["legendRate", "전설 확률(%)", 5, 50],
+            ] as const).map(([key, label, def, max]) => (
+              <div key={key} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 13, marginBottom: 8 }}>
+                <span>{label}</span>
+                <input
+                  type="number" min={0} max={max}
+                  value={Math.round((cls.settings?.[key] ?? def / 100) * 100)}
+                  onChange={(e) => {
+                    const pct = Math.max(0, Math.min(max, Number(e.target.value) || 0));
+                    updateSettings({ [key]: pct / 100 });
+                  }}
+                  style={{ ...T.input, width: 64, textAlign: "center", flexShrink: 0 }}
+                />
+              </div>
+            ))}
+            <div style={{ fontSize: 11, color: "#999", marginTop: 4 }}>
+              현재: 흔함 {Math.max(0, 100 - Math.round((cls.settings?.rareRate ?? 0.3) * 100) - Math.round((cls.settings?.legendRate ?? 0.05) * 100))}% · 희귀 {Math.round((cls.settings?.rareRate ?? 0.3) * 100)}% · 전설 {Math.round((cls.settings?.legendRate ?? 0.05) * 100)}%
+            </div>
           </div>
           <div style={T.card}>
             {([
