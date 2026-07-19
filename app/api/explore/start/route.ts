@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError, getClassSettings } from "@/lib/api";
-import { pickWild, rollShiny } from "@/lib/game";
+import { pickWild, rollShiny, pickBiome, BIOMES } from "@/lib/game";
 import { signBattleToken } from "@/lib/studentSession";
 
 // 야생 탐색 (트랙 A, 명세 §4.3): 하루 N회(기본 3), 배틀 없이 볼만 던져 포획.
@@ -10,7 +10,8 @@ export async function POST(req: NextRequest) {
   if (auth instanceof NextResponse) return auth;
   const { supa, student } = auth;
 
-  const { exploreLimit } = await getClassSettings(supa, student.class_id);
+  const { exploreLimit, rareRate, legendRate } = await getClassSettings(supa, student.class_id);
+  const biome = pickBiome();
   const encUsed = Number(student.day_state?.encUsed ?? 0);
   if (encUsed >= exploreLimit)
     return jsonError(409, "오늘의 탐색을 모두 사용했어요. 내일 다시 만나요!");
@@ -28,11 +29,12 @@ export async function POST(req: NextRequest) {
     .eq("id", student.id);
   if (error) return jsonError(500, "저장에 실패했어요.");
 
-  const wild = pickWild();
+  const wild = pickWild(rareRate, legendRate, BIOMES[biome].types);
   const shiny = useSpray || rollShiny();
   const token = await signBattleToken(student.id, wild.id, "explore", shiny);
   return NextResponse.json({
     pokemon: { id: wild.id, name: wild.name, type: wild.type, rarity: wild.rarity, shiny },
+    biome,
     token,
     encUsed: encUsed + 1,
     exploreLimit,

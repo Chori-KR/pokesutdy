@@ -278,18 +278,44 @@ export const josa = (n: string, a: string, b: string) => {
   return n + (c >= 44032 && c <= 55203 && (c - 44032) % 28 > 0 ? a : b);
 };
 
-// 희귀도 가중 랜덤 출현: 흔함 65% / 희귀 30% / 전설 5%
-export const pickWild = (): Pokemon => {
+// 배경(바이옴) — 배경마다 잘 나오는 타입이 다르고, 랜덤으로 걸린다.
+export interface Biome { name: string; types: string[]; grad: string }
+export const BIOMES: Record<string, Biome> = {
+  grassland: { name: "초원", types: ["grass", "normal", "bug"], grad: "linear-gradient(#9adcf0 0%,#9adcf0 45%,#8fce6e 45%,#7bbf5c 100%)" },
+  jungle: { name: "정글", types: ["grass", "bug", "poison"], grad: "linear-gradient(#63a9c0 0%,#63a9c0 40%,#3f7d54 40%,#265536 100%)" },
+  snow: { name: "설원", types: ["ice", "water"], grad: "linear-gradient(#cfeaf5 0%,#cfeaf5 45%,#eaf6fb 45%,#cfe3ee 100%)" },
+  swamp: { name: "늪지", types: ["poison", "water", "ground", "bug"], grad: "linear-gradient(#8a9a7a 0%,#8a9a7a 45%,#5c6b4a 45%,#41502f 100%)" },
+  desert: { name: "사막", types: ["ground", "rock", "fire"], grad: "linear-gradient(#f6e5a8 0%,#f6e5a8 45%,#e8c878 45%,#d6ad55 100%)" },
+  gym: { name: "체육관", types: ["fighting", "normal"], grad: "linear-gradient(#e2e7f0 0%,#e2e7f0 45%,#b9c0d0 45%,#9aa2b6 100%)" },
+  sea: { name: "바다", types: ["water", "ice"], grad: "linear-gradient(#8ed7f2 0%,#8ed7f2 42%,#3d95cf 42%,#245f92 100%)" },
+  city: { name: "도시", types: ["normal", "electric", "poison"], grad: "linear-gradient(#cdd6e8 0%,#cdd6e8 45%,#9aa6bf 45%,#79859f 100%)" },
+  volcano: { name: "화산", types: ["fire", "rock", "ground"], grad: "linear-gradient(#f0a878 0%,#f0a878 42%,#b0442e 42%,#7a2a1e 100%)" },
+  lab: { name: "연구소", types: ["electric", "psychic"], grad: "linear-gradient(#e4eef3 0%,#e4eef3 45%,#c2d0da 45%,#a9bac6 100%)" },
+};
+export const BIOME_KEYS = Object.keys(BIOMES);
+export const pickBiome = (): string => BIOME_KEYS[Math.floor(Math.random() * BIOME_KEYS.length)];
+
+// 등급 확률: legendRate(전설), rareRate(희귀), 나머지=흔함. 교사 설정으로 조정.
+export const DEFAULT_RARE_RATE = 0.30;
+export const DEFAULT_LEGEND_RATE = 0.05;
+export const rollRarity = (rareRate = DEFAULT_RARE_RATE, legendRate = DEFAULT_LEGEND_RATE): Rarity => {
   const r = Math.random();
-  const rarity: Rarity = r < 0.65 ? "common" : r < 0.95 ? "rare" : "legendary";
-  return pickWildOf(rarity);
+  if (r < legendRate) return "legendary";
+  if (r < legendRate + rareRate) return "rare";
+  return "common";
 };
 
-// 등급 지정 출현 (M5 간식 배틀용)
-export const pickWildOf = (rarity: Rarity): Pokemon => {
+// 등급 내에서 바이옴 선호 타입을 70% 확률로 우선
+export const pickWildOf = (rarity: Rarity, biomeTypes?: string[]): Pokemon => {
   const pool = POOL.filter((p) => p.rarity === rarity);
+  if (biomeTypes && biomeTypes.length && Math.random() < 0.7) {
+    const fav = pool.filter((p) => biomeTypes.includes(p.type));
+    if (fav.length) return fav[Math.floor(Math.random() * fav.length)];
+  }
   return pool[Math.floor(Math.random() * pool.length)];
 };
+export const pickWild = (rareRate = DEFAULT_RARE_RATE, legendRate = DEFAULT_LEGEND_RATE, biomeTypes?: string[]): Pokemon =>
+  pickWildOf(rollRarity(rareRate, legendRate), biomeTypes);
 
 // 100XP당 1레벨
 export const gainXpCalc = (cur: { xp: number; level: number }, n: number) => {

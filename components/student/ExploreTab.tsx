@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { S } from "@/lib/styles";
-import { BALLS, RARITY, TYPE_COLORS, captureRate, josa, sleep, BallKind, Rarity } from "@/lib/game";
+import { BALLS, RARITY, TYPE_COLORS, captureRate, josa, sleep, BallKind, Rarity, BIOMES } from "@/lib/game";
 import { StudentData, DayInfo } from "@/lib/types";
 import BallIcon from "@/components/BallIcon";
 import Sprite from "@/components/Sprite";
@@ -64,7 +64,7 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
       setToken(data.token);
       setFails(0);
       setState("active");
-      setMsg(data.pokemon.shiny ? `✨ 이로치 야생의 ${josa(data.pokemon.name, "이", "가")} 나타났다!` : `앗! 야생의 ${josa(data.pokemon.name, "이", "가")} 나타났다!`);
+      { const bio = BIOMES[data.biome ?? ""]?.name; const where = bio ? `${bio}에서 ` : ""; setMsg(data.pokemon.shiny ? `✨ ${where}이로치 야생의 ${josa(data.pokemon.name, "이", "가")} 나타났다!` : `앗! ${where}야생의 ${josa(data.pokemon.name, "이", "가")} 나타났다!`); }
       setDay({ ...day, encUsed: data.encUsed });
     } catch {
       showToast("연결에 실패했어요. 다시 시도해주세요.");

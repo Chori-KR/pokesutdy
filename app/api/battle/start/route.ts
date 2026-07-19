@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError, getClassSettings } from "@/lib/api";
-import { pickWild, pickWildOf, SNACKS, SnackKind, rollShiny } from "@/lib/game";
+import { pickWild, pickWildOf, SNACKS, SnackKind, rollShiny, pickBiome, BIOMES } from "@/lib/game";
 import { signBattleToken } from "@/lib/studentSession";
 
 // 야생 포켓몬 출현은 서버가 뽑고 서명해서 내려보낸다.
@@ -19,8 +19,10 @@ export async function POST(req: NextRequest) {
   // 빛나는 스프레이: 켜고 시작하면 이로치 확정(+ 소모). 간식과 중복 가능.
   const useSpray = body?.useSpray === true && (student.inventory.spray ?? 0) > 0;
 
-  const { battleLimit } = await getClassSettings(supa, student.class_id);
+  const { battleLimit, rareRate, legendRate } = await getClassSettings(supa, student.class_id);
   const battleUsed = Number(student.day_state?.battleUsed ?? 0);
+  const biome = pickBiome();
+  const biomeTypes = BIOMES[biome].types;
 
   let wildPokemon;
   if (snack) {
@@ -33,11 +35,12 @@ export async function POST(req: NextRequest) {
     // M6: 배틀은 항상 풀 HP로 시작 (약 시스템 폐지)
     const { error } = await supa.from("students").update({ inventory, hp: 100 }).eq("id", student.id);
     if (error) return jsonError(500, "저장에 실패했어요.");
-    wildPokemon = pickWildOf(SNACKS[snack].rarity);
+    wildPokemon = pickWildOf(SNACKS[snack].rarity, biomeTypes);
     const shiny = useSpray || rollShiny();
     const token = await signBattleToken(student.id, wildPokemon.id, "battle", shiny);
     return NextResponse.json({
       pokemon: { id: wildPokemon.id, name: wildPokemon.name, type: wildPokemon.type, rarity: wildPokemon.rarity, shiny },
+      biome,
       token,
       battleUsed,
       battleLimit,
@@ -59,11 +62,12 @@ export async function POST(req: NextRequest) {
     .eq("id", student.id);
   if (error) return jsonError(500, "저장에 실패했어요.");
 
-  wildPokemon = pickWild();
+  wildPokemon = pickWild(rareRate, legendRate, biomeTypes);
   const shiny = useSpray || rollShiny();
   const token = await signBattleToken(student.id, wildPokemon.id, "battle", shiny);
   return NextResponse.json({
     pokemon: { id: wildPokemon.id, name: wildPokemon.name, type: wildPokemon.type, rarity: wildPokemon.rarity, shiny },
+    biome,
     token,
     battleUsed: battleUsed + 1,
     battleLimit,

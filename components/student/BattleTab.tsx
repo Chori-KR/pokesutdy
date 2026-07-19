@@ -6,7 +6,7 @@ import {
   BALLS, BallKind, DIFF, Difficulty, RARITY, TIME_LIMIT, TYPE_COLORS,
   TYPE_MOVE, POOL, Pokemon, Move, MAX_HP, SNACKS, SnackKind,
   EVOLVES_TO, evoWinsNeeded, evoPointCost, isStoneEvo,
-  myPokemonOf, captureRate, wildLevelFor, josa, shuffle, sleep,
+  myPokemonOf, captureRate, wildLevelFor, josa, shuffle, sleep, BIOMES,
 } from "@/lib/game";
 import { ApiQuestion, StudentData, DayInfo, GameInfo } from "@/lib/types";
 import Sprite from "@/components/Sprite";
@@ -50,7 +50,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const [phase, setPhase] = useState<BattlePhase>("idle");
   const timeLimitFor = (diff: Difficulty) => Math.round(TIME_LIMIT[diff] * timeScale);
   const [bank, setBank] = useState<ApiQuestion[] | null>(null);
-  const [wild, setWild] = useState<(Pokemon & { token: string; lv: number; shiny?: boolean }) | null>(null);
+  const [wild, setWild] = useState<(Pokemon & { token: string; lv: number; shiny?: boolean; biome?: string }) | null>(null);
   const [evoAnim, setEvoAnim] = useState<{ fromId: number; toId: number; toName: string; step: number } | null>(null);
   const [wildHp, setWildHp] = useState(0);
   const [msg, setMsg] = useState("");
@@ -192,7 +192,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       setStudent({ ...studentRef.current, hp: MAX_HP, ...(data.inventory ? { inventory: data.inventory } : {}) });
       const meta = POOL.find((p) => p.id === data.pokemon.id)!;
       const hp = RARITY[meta.rarity].hp;
-      setWild({ ...meta, token: data.token, lv: wildLevelFor(meta.rarity, studentRef.current.level), shiny: data.pokemon.shiny });
+      setWild({ ...meta, token: data.token, lv: wildLevelFor(meta.rarity, studentRef.current.level), shiny: data.pokemon.shiny, biome: data.biome });
       startBattleBgm();
       playCry(meta.id);
       if (data.pokemon.shiny) showToast(`✨ 이로치 ${meta.name}이(가) 나타났다!`);
@@ -511,7 +511,12 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       {/* 배틀 필드 */}
       {phase !== "idle" && wild && (
         <div style={{ position: "relative", borderRadius: 14, overflow: "hidden", border: "4px solid #2c2c34", marginBottom: 8 }}>
-          <div style={{ position: "relative", width: "100%", paddingTop: "58%", background: "linear-gradient(#9adcf0 0%, #9adcf0 45%, #8fce6e 45%, #7bbf5c 100%)" }}>
+          <div style={{ position: "relative", width: "100%", paddingTop: "58%", background: BIOMES[wild.biome ?? ""]?.grad ?? "linear-gradient(#9adcf0 0%, #9adcf0 45%, #8fce6e 45%, #7bbf5c 100%)" }}>
+            {wild.biome && BIOMES[wild.biome] && (
+              <div style={{ position: "absolute", left: "50%", top: 4, transform: "translateX(-50%)", fontSize: 10, background: "rgba(0,0,0,0.35)", color: "#fff", borderRadius: 8, padding: "1px 8px", zIndex: 3 }}>
+                {BIOMES[wild.biome].name}
+              </div>
+            )}
             <div style={{ position: "absolute", left: "56%", top: "34%", width: "34%", height: "9%", background: "#6aab4d", borderRadius: "50%", opacity: 0.7 }} />
             <div style={{ position: "absolute", left: "6%", top: "72%", width: "42%", height: "11%", background: "#6aab4d", borderRadius: "50%", opacity: 0.7 }} />
             {wildState !== "gone" && (
@@ -788,11 +793,17 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       )}
 
       {phase === "done" && (
-        battlesLeft > 0 ? (
-          <button onClick={() => beginBattle()} style={{ ...S.primaryBtn, width: "100%" }}>다시 풀숲을 탐색한다 (오늘 {battlesLeft}번 남음)</button>
-        ) : (
-          <button onClick={() => setPhase("idle")} style={{ ...S.primaryBtn, width: "100%" }}>돌아가기 (간식으로 추가 배틀 가능!)</button>
-        )
+        <div style={{ ...S.panel, textAlign: "center" }}>
+          <div style={{ fontSize: 13, marginBottom: 10 }}>
+            {battlesLeft > 0 ? "다음 배틀을 진행할까요?" : "오늘의 기본 배틀을 다 썼어요. 간식으로 추가 배틀을 할 수 있어요!"}
+          </div>
+          <div style={{ display: "flex", gap: 8 }}>
+            {battlesLeft > 0 && (
+              <button onClick={() => beginBattle()} style={{ ...S.primaryBtn, flex: 1 }}>예, 다음 배틀! ({battlesLeft}번)</button>
+            )}
+            <button onClick={() => setPhase("idle")} style={{ ...(battlesLeft > 0 ? S.ghostBtn : S.primaryBtn), flex: 1 }}>그만하기</button>
+          </div>
+        </div>
       )}
 
       {/* 빛나는 스프레이 사용 여부 모달 */}
