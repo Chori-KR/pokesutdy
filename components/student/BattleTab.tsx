@@ -13,6 +13,7 @@ import Sprite from "@/components/Sprite";
 import ShinyFx from "@/components/student/ShinyFx";
 import SpriteAnim, { Sheet } from "@/components/student/SpriteAnim";
 import TypeFx from "@/components/student/TypeFx";
+import TimerBar from "@/components/student/TimerBar";
 import { SFX, playCry, startBattleBgm, stopBattleBgm } from "@/lib/sound";
 import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
@@ -56,7 +57,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const [msg, setMsg] = useState("");
   const [move, setMove] = useState<Move | null>(null);
   const [q, setQ] = useState<ActiveQuestion | null>(null);
-  const [timeLeft, setTimeLeft] = useState(0);
+  const timeLeftRef = useRef(0); // 남은 시간(급소 판정용) — 표시는 TimerBar가 담당
   const [selected, setSelected] = useState<number | null>(null); // 선택→제출 2단계
   const selectedRef = useRef<number | null>(null);
   selectedRef.current = selected;
@@ -71,7 +72,6 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const [sprayAsk, setSprayAsk] = useState<{ snack?: SnackKind } | null>(null); // 스프레이 사용 여부 모달
   const [subject, setSubject] = useState("");    // M7: 배틀 출제 과목 ("" = 전체)
   const [busyAction, setBusyAction] = useState(false);
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const wildHpRef = useRef(0);
   const studentRef = useRef(student);
   studentRef.current = student;
@@ -230,7 +230,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     setMove(m);
     setQ({ ...raw, sOpts });
     setSelected(null);
-    setTimeLeft(timeLimitFor(m.diff));
+    timeLeftRef.current = timeLimitFor(m.diff);
     setPhase("question");
     setMsg(`문제를 맞히면 ${m.name} 발동!`);
   }
@@ -257,29 +257,16 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase]);
 
-  useEffect(() => {
-    if (phase !== "question") return;
-    if (!timerOn) return; // 타이머 끄면 시간 제한 없음
-    timerRef.current = setInterval(() => {
-      setTimeLeft((t) => {
-        if (t <= 0.1) {
-          if (timerRef.current) clearInterval(timerRef.current);
-          const sel = selectedRef.current;
-          const opt = sel != null && q ? q.sOpts[sel] : null; // 고른 게 있으면 제출, 없으면 시간초과 오답
-          answer(opt, 0);
-          return 0;
-        }
-        return t - 0.1;
-      });
-    }, 100);
-    return () => { if (timerRef.current) clearInterval(timerRef.current); };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase, q]);
+  // 타이머 만료: 고른 게 있으면 제출, 없으면 시간초과 오답 (TimerBar가 호출)
+  function onTimeUp() {
+    const sel = selectedRef.current;
+    const opt = sel != null && q ? q.sOpts[sel] : null;
+    answer(opt, 0);
+  }
 
   // 내 공격 이펙트: 타입별 (불꽃/전기/에스퍼는 전용, 나머지는 타입색 투사체)
   async function answer(opt: ShuffledOption | null, remain: number) {
     if (phase !== "question" || !move || !q || !wild) return;
-    if (timerRef.current) clearInterval(timerRef.current);
     setPhase("busy");
     const total = timeLimitFor(move.diff);
     const correct = !!opt?.ok;
@@ -735,15 +722,17 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
 
       {phase === "question" && q && move && (
         <div style={{ ...S.panel, padding: 12 }}>
-          <div style={{ display: "flex", justifyContent: "space-between", fontSize: 11, marginBottom: 6 }}>
-            <span style={{ color: "#9fd8ff" }}>{move.label} 문제 · {q.tag}</span>
-            {timerOn && (
-              <span style={{ color: timeLeft < timeLimitFor(move.diff) / 3 ? "#ff8a8a" : "#f8f0dc" }}>⏱ {Math.ceil(timeLeft)}초</span>
-            )}
-          </div>
-          {timerOn && (
-            <div style={{ height: 7, background: "#1a1c2c", borderRadius: 4, overflow: "hidden", marginBottom: 10 }}>
-              <div style={{ width: `${(timeLeft / timeLimitFor(move.diff)) * 100}%`, height: "100%", background: timeLeft > (timeLimitFor(move.diff) * 2) / 3 ? "#ffd23f" : "#4a90d9", transition: "width 0.1s linear" }} />
+          {timerOn ? (
+            <TimerBar
+              key={q.id}
+              total={timeLimitFor(move.diff)}
+              timeRef={timeLeftRef}
+              onExpire={onTimeUp}
+              label={<span style={{ color: "#9fd8ff" }}>{move.label} 문제 · {q.tag}</span>}
+            />
+          ) : (
+            <div style={{ fontSize: 11, marginBottom: 10 }}>
+              <span style={{ color: "#9fd8ff" }}>{move.label} 문제 · {q.tag}</span>
             </div>
           )}
           <div style={{ fontSize: 15, marginBottom: 10, lineHeight: 1.6 }}>{q.body}</div>
@@ -762,7 +751,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             })}
           </div>
           <button
-            onClick={() => selected != null && answer(q.sOpts[selected], timeLeft)}
+            onClick={() => selected != null && answer(q.sOpts[selected], timeLeftRef.current)}
             disabled={selected == null}
             style={{ ...S.primaryBtn, width: "100%", marginTop: 10, opacity: selected == null ? 0.45 : 1 }}
           >
