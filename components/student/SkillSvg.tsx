@@ -404,4 +404,202 @@ const REGISTRY: Record<string, R> = {
       </g>
     </>
   ),
+
+  // ── 땅 ─────────────────────────────
+  "ground-easy": () => (
+    <g>
+      <g fill="#b98a4a">
+        <polygon points="24,64 34,44 44,64" /><polygon points="42,68 54,40 66,68" /><polygon points="62,64 72,46 82,64" />
+      </g>
+      <g fill="#8a6231"><polygon points="30,64 34,52 38,64" /><polygon points="50,68 54,50 58,68" /><polygon points="68,64 72,52 76,64" /></g>
+      <g fill="#d9b877" opacity="0.8"><circle cx="30" cy="40" r="3" /><circle cx="58" cy="34" r="4" /><circle cx="74" cy="42" r="2.5" /><circle cx="46" cy="30" r="2.5" /></g>
+      <rect x="16" y="64" width="70" height="6" rx="3" fill="#8a6231" />
+    </g>
+  ),
+  "ground-medium": (id) => (
+    <>
+      <defs>
+        <linearGradient id={`${id}r`} x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stopColor="#7a5427" />
+          <stop offset="1" stopColor="#d3a45c" />
+        </linearGradient>
+      </defs>
+      <g fill={`url(#${id}r)`} stroke="#5e3f1c" strokeWidth="1">
+        <polygon points="20,80 30,40 40,80" />
+        <polygon points="38,84 52,26 66,84" />
+        <polygon points="62,80 74,44 84,80" />
+      </g>
+      <g fill="#e6c485" opacity="0.7"><polygon points="30,40 34,54 26,54" /><polygon points="52,26 58,44 46,44" /><polygon points="74,44 78,56 70,56" /></g>
+      <g fill="#c9a05a" opacity="0.8"><circle cx="26" cy="30" r="3" /><circle cx="50" cy="18" r="3.5" /><circle cx="80" cy="34" r="3" /></g>
+    </>
+  ),
+  "ground-hard": (id) => (
+    <>
+      <defs>
+        <radialGradient id={`${id}q`} cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stopColor="#f0d49a" />
+          <stop offset="0.6" stopColor="#b07a34" stopOpacity="0.7" />
+          <stop offset="1" stopColor="#5e3f1c" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <circle cx="50" cy="52" r="42" fill={`url(#${id}q)`} />
+      <g fill="#9c6b30" stroke="#5e3f1c" strokeWidth="1">
+        <polygon points="50,52 20,72 26,40" /><polygon points="50,52 80,74 74,40" /><polygon points="50,52 40,20 62,22" />
+        <polygon points="50,52 14,50 30,34" /><polygon points="50,52 86,48 70,32" />
+      </g>
+      <g stroke="#3f2a12" strokeWidth="2" fill="none" opacity="0.7"><path d="M50 52 L38 88" /><path d="M50 52 L66 90" /><path d="M50 52 L8 66" /></g>
+    </>
+  ),
+
+  // ── 에스퍼 ─────────────────────────────
+  "psychic-easy": () => (
+    <g fill="none" stroke="#e05aa8" strokeWidth="3" opacity="0.85">
+      <circle cx="50" cy="50" r="14" />
+      <ellipse cx="50" cy="50" rx="30" ry="12" transform="rotate(30 50 50)" />
+      <ellipse cx="50" cy="50" rx="30" ry="12" transform="rotate(-30 50 50)" />
+      <g fill="#ffb3e0" stroke="none"><circle cx="50" cy="50" r="6" /><circle cx="80" cy="35" r="3" /><circle cx="22" cy="63" r="3" /></g>
+    </g>
+  ),
+  "psychic-medium": (id) => (
+    <>
+      <defs>
+        <radialGradient id={`${id}p`} cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stopColor="#ffd6f2" />
+          <stop offset="1" stopColor="#c2379a" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <circle cx="50" cy="50" r="34" fill={`url(#${id}p)`} />
+      <g fill="none" stroke="#e05aa8" strokeWidth="2.5" opacity="0.9">
+        <ellipse cx="50" cy="50" rx="34" ry="13" transform="rotate(0 50 50)" />
+        <ellipse cx="50" cy="50" rx="34" ry="13" transform="rotate(60 50 50)" />
+        <ellipse cx="50" cy="50" rx="34" ry="13" transform="rotate(120 50 50)" />
+      </g>
+      <circle cx="50" cy="50" r="8" fill="#fff" opacity="0.9" />
+    </>
+  ),
+  "psychic-hard": (id) => (
+    <>
+      <defs>
+        <radialGradient id={`${id}bg`} cx="0.5" cy="0.5" r="0.6">
+          <stop offset="0" stopColor="#8e2f6f" stopOpacity="0.75" />
+          <stop offset="1" stopColor="#2a0d24" stopOpacity="0" />
+        </radialGradient>
+        <filter id={`${id}gl`} x="-40%" y="-40%" width="180%" height="180%">
+          <feDropShadow dx="0" dy="0" stdDeviation="3" floodColor="#ff9ede" floodOpacity="0.9" />
+        </filter>
+      </defs>
+      <circle cx="50" cy="50" r="48" fill={`url(#${id}bg)`} />
+      <g filter={`url(#${id}gl)`}>
+        <g fill="none" stroke="#ffc6ee" strokeWidth="2.5">
+          <ellipse cx="50" cy="50" rx="42" ry="15" transform="rotate(20 50 50)" />
+          <ellipse cx="50" cy="50" rx="42" ry="15" transform="rotate(80 50 50)" />
+          <ellipse cx="50" cy="50" rx="42" ry="15" transform="rotate(140 50 50)" />
+          <circle cx="50" cy="50" r="20" />
+        </g>
+        <circle cx="50" cy="50" r="9" fill="#fff" />
+      </g>
+      <g fill="#ffd6f2"><circle cx="86" cy="38" r="3" /><circle cx="18" cy="60" r="3" /><circle cx="60" cy="14" r="2.5" /><circle cx="40" cy="86" r="2.5" /></g>
+    </>
+  ),
+
+  // ── 벌레 ─────────────────────────────
+  "bug-easy": () => (
+    <g>
+      <g fill="#a6c33a">
+        <ellipse cx="50" cy="54" rx="10" ry="16" />
+        <circle cx="50" cy="34" r="9" />
+      </g>
+      <g stroke="#5f7a1e" strokeWidth="2" strokeLinecap="round">
+        <line x1="45" y1="28" x2="38" y2="18" /><line x1="55" y1="28" x2="62" y2="18" />
+      </g>
+      <g fill="#dff08a" opacity="0.85"><ellipse cx="34" cy="46" rx="10" ry="6" transform="rotate(-30 34 46)" /><ellipse cx="66" cy="46" rx="10" ry="6" transform="rotate(30 66 46)" /></g>
+      <g fill="#3f5214"><circle cx="46" cy="33" r="2" /><circle cx="54" cy="33" r="2" /></g>
+    </g>
+  ),
+  "bug-medium": (id) => (
+    <>
+      <defs>
+        <linearGradient id={`${id}g`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#c3e05a" />
+          <stop offset="1" stopColor="#6f8f26" />
+        </linearGradient>
+      </defs>
+      {[[24, 34, 0.9], [46, 58, 1], [66, 30, 0.8], [78, 64, 0.85]].map(([x, y, s], i) => (
+        <g key={i} transform={`translate(${x},${y}) scale(${s})`}>
+          <ellipse cx="0" cy="0" rx="4" ry="9" fill={`url(#${id}g)`} />
+          <path d="M-3 -3 C-14 -10 -14 4 -3 3 Z" fill="#dff08a" opacity="0.8" />
+          <path d="M3 -3 C14 -10 14 4 3 3 Z" fill="#dff08a" opacity="0.8" />
+          <circle cx="0" cy="-11" r="3.5" fill="#6f8f26" />
+        </g>
+      ))}
+    </>
+  ),
+  "bug-hard": (id) => (
+    <>
+      <defs>
+        <radialGradient id={`${id}c`} cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stopColor="#eaffb0" />
+          <stop offset="0.6" stopColor="#8fb52e" stopOpacity="0.7" />
+          <stop offset="1" stopColor="#3f5214" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <circle cx="50" cy="50" r="42" fill={`url(#${id}c)`} />
+      <g fill="#7fa028" stroke="#3f5214" strokeWidth="0.8">
+        {[0, 51, 102, 153, 204, 255, 306].map((r, i) => (
+          <g key={i} transform={`translate(50,50) rotate(${r})`}>
+            <ellipse cx="0" cy="-30" rx="7" ry="16" />
+          </g>
+        ))}
+      </g>
+      <circle cx="50" cy="50" r="12" fill="#c3e05a" />
+      <circle cx="50" cy="50" r="5" fill="#3f5214" />
+    </>
+  ),
+
+  // ── 바위 ─────────────────────────────
+  "rock-easy": () => (
+    <g stroke="#5e4a34" strokeWidth="1.5">
+      <polygon points="28,44 40,30 52,42 44,58 30,58" fill="#9c8163" />
+      <polygon points="52,40 66,32 76,46 68,60 54,56" fill="#b39a78" />
+      <polygon points="40,58 54,56 60,70 44,74 34,66" fill="#87704f" />
+      <g stroke="none" fill="#c9b896" opacity="0.7"><polygon points="34,40 40,34 42,42" /><polygon points="58,40 64,36 66,44" /></g>
+    </g>
+  ),
+  "rock-medium": (id) => (
+    <>
+      <defs>
+        <linearGradient id={`${id}s`} x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#c2ad8b" />
+          <stop offset="1" stopColor="#6e5637" />
+        </linearGradient>
+      </defs>
+      <g fill={`url(#${id}s)`} stroke="#4f3d28" strokeWidth="1.5">
+        <polygon points="18,50 34,28 48,48 38,66 20,64" />
+        <polygon points="46,42 66,24 82,44 72,64 50,62" />
+        <polygon points="34,64 56,60 70,74 48,86 30,78" />
+      </g>
+      <g stroke="none" fill="#e0d0af" opacity="0.6"><polygon points="24,44 32,32 36,46" /><polygon points="54,38 64,28 68,44" /></g>
+      <g fill="#8a7150"><circle cx="80" cy="70" r="4" /><circle cx="14" cy="40" r="3" /></g>
+    </>
+  ),
+  "rock-hard": (id) => (
+    <>
+      <defs>
+        <radialGradient id={`${id}c`} cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stopColor="#f0e2c2" stopOpacity="0.8" />
+          <stop offset="1" stopColor="#f0e2c2" stopOpacity="0" />
+        </radialGradient>
+        <filter id={`${id}d`}><feDropShadow dx="1" dy="2" stdDeviation="1.5" floodColor="#3f2f1c" floodOpacity="0.5" /></filter>
+      </defs>
+      <circle cx="50" cy="50" r="46" fill={`url(#${id}c)`} />
+      <g fill="#a88b63" stroke="#4f3d28" strokeWidth="1.5" filter={`url(#${id}d)`}>
+        <polygon points="50,50 22,34 30,10 52,20" />
+        <polygon points="50,50 78,32 90,54 68,64" />
+        <polygon points="50,50 74,78 48,90 32,68" />
+        <polygon points="50,50 18,58 12,84 40,82" />
+      </g>
+      <g stroke="none" fill="#e6d6b0" opacity="0.6"><polygon points="34,20 44,16 42,28" /><polygon points="80,42 88,50 78,54" /></g>
+      <circle cx="50" cy="50" r="9" fill="#7a6141" stroke="#4f3d28" strokeWidth="1.5" />
+    </>
+  ),
 };
