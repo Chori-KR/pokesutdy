@@ -28,6 +28,7 @@ export interface GameInfo {
   battlePid: number;
   wins: Record<string, number>;
   evoCount: number;
+  dexRewards: number[]; // 수령한 도감 달성 보상 임계값 목록
 }
 
 export interface ClassSettings {

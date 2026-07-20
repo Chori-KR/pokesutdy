@@ -168,7 +168,19 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
         />
       )}
       {tab === "shop" && <ShopTab student={student} setStudent={setStudent} showToast={showToast} />}
-      {tab === "dex" && <DexTab caught={caught} counts={counts} shinies={shinies} />}
+      {tab === "dex" && (
+        <DexTab
+          caught={caught}
+          counts={counts}
+          setCounts={setCounts}
+          shinies={shinies}
+          student={student}
+          setStudent={setStudent}
+          game={game}
+          setGame={setGame}
+          showToast={showToast}
+        />
+      )}
       {tab === "trade" && (
         <TradeTab caught={caught} setCaught={setCaught} counts={counts} setCounts={setCounts} showToast={showToast} />
       )}

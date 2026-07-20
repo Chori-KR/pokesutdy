@@ -22,6 +22,7 @@ export interface GameState {
   battlePid?: number;               // 현재 배틀 포켓몬 id
   wins?: Record<string, number>;    // 포켓몬 id별 배틀 승수 (진화 조건)
   evoCount?: number;                // 누적 진화 횟수 (포인트 진화 비용 계산용, M5)
+  dexRewards?: number[];             // 수령한 도감 달성 보상 임계값
   raidReq?: { pid: number; round: number }; // 레이드 신청(현재 라운드에 원하는 포켓몬)
   raidWin?: number;                          // 이 라운드에 레이드 성공(보스 격파)한 round 번호
   raidGrant?: number;                        // 협동 달성으로 포켓몬을 지급받은 round 번호

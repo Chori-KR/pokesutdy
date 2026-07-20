@@ -50,6 +50,8 @@ export default function Sprite({ id, color, size, silhouette, back, pixel, shiny
     <img
       src={src}
       alt=""
+      loading="lazy"
+      decoding="async"
       onError={() => setErr(true)}
       draggable={false}
       style={{
