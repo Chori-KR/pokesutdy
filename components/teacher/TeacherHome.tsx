@@ -9,7 +9,12 @@ import QuestionBank, { QuestionRow } from "@/components/teacher/QuestionBank";
 import StatsTab from "@/components/teacher/StatsTab";
 import AiKeySettings from "@/components/teacher/AiKeySettings";
 import RaidSettings from "@/components/teacher/RaidSettings";
+import AdminStats from "@/components/teacher/AdminStats";
 import Brand from "@/components/Brand";
+
+// 관리자(앱 제작자) 이메일 — 이 계정으로 로그인했을 때만 '가입 현황' 탭이 보인다.
+// 실제 권한 검증은 서버(/api/admin/stats)에서 다시 하므로 여기선 표시 여부만 결정.
+const ADMIN_EMAIL = (process.env.NEXT_PUBLIC_ADMIN_EMAIL || "").trim().toLowerCase();
 
 export interface ClassRow {
   id: string;
@@ -41,7 +46,8 @@ export default function TeacherHome({ session }: { session: Session }) {
   const [needsClass, setNeedsClass] = useState(false);
   const [className, setClassName] = useState("");
   const [questions, setQuestions] = useState<QuestionRow[]>([]);
-  const [tab, setTab] = useState<"bank" | "stats" | "settings">("bank");
+  const [tab, setTab] = useState<"bank" | "stats" | "settings" | "admin">("bank");
+  const isAdmin = !!ADMIN_EMAIL && (session.user.email ?? "").trim().toLowerCase() === ADMIN_EMAIL;
   const [toast, setToast] = useState("");
   const [err, setErr] = useState("");
 
@@ -169,7 +175,7 @@ export default function TeacherHome({ session }: { session: Session }) {
       </div>
 
       <div style={{ display: "flex", gap: 6, margin: "12px 0" }}>
-        {([["bank", "문제 은행"], ["stats", "학생·통계"], ["settings", "시스템 설정"]] as const).map(([k, label]) => (
+        {([["bank", "문제 은행"], ["stats", "학생·통계"], ["settings", "시스템 설정"], ...(isAdmin ? [["admin", "가입 현황"]] as const : [])] as const).map(([k, label]) => (
           <button key={k} onClick={() => setTab(k)} style={{ ...T.tabBtn, ...(tab === k ? T.tabOn : {}) }}>{label}</button>
         ))}
       </div>
@@ -312,6 +318,8 @@ export default function TeacherHome({ session }: { session: Session }) {
           <AiKeySettings cls={cls} setCls={setCls} showToast={showToast} />
         </div>
       )}
+
+      {tab === "admin" && isAdmin && <AdminStats />}
 
       {toast && <div style={{ position: "sticky", bottom: 14, margin: "12px auto 0", width: "fit-content", maxWidth: "90%", background: "#1a1c2c", color: "#f8f0dc", padding: "9px 16px", borderRadius: 10, fontSize: 12, boxShadow: "0 4px 12px rgba(0,0,0,0.4)", textAlign: "center" }}>{toast}</div>}
     </div>
