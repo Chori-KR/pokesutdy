@@ -70,9 +70,9 @@ export default function StarterSelect({ nickname, onDone }: Props) {
               onClick={() => setPicked(id)}
               style={{
                 ...S.panel, cursor: "pointer", textAlign: "center", fontFamily: "inherit",
-                color: "#f8f0dc",
-                border: on ? `3px solid ${TYPE_COLORS[p.type]}` : "3px solid #2c2c34",
-                background: on ? "#2c2f44" : "#252840",
+                color: "#1c1c1e",
+                border: on ? `2.5px solid ${TYPE_COLORS[p.type]}` : "2.5px solid transparent",
+                background: on ? "#eef3ff" : "#fff",
                 transform: on ? "scale(1.03)" : "none", transition: "all 0.15s",
               }}
             >

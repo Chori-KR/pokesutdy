@@ -36,9 +36,9 @@ export default function LoginView({ onSuccess }: { onSuccess: () => void }) {
 
   return (
     <div style={{ ...S.page, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "100vh" }}>
-      <div style={{ fontSize: 11, color: "#9fd8ff", marginBottom: 2, letterSpacing: 1 }}>포켓몬 기반 학습 플랫폼</div>
+      <div style={{ fontSize: 11, color: "#5b7a99", marginBottom: 2, letterSpacing: 1 }}>포켓몬 기반 학습 플랫폼</div>
       <div style={{ fontSize: 26, fontWeight: 800, marginBottom: 4 }}>잡으면서 배우자!</div>
-      <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 20 }}>
+      <div style={{ fontSize: 12, color: "#5b7a99", marginBottom: 20 }}>
         {mode === "login" ? "다시 만나서 반가워요!" : "새로운 트레이너의 등장!"}
       </div>
       <div style={{ ...S.panel, width: "100%", maxWidth: 360 }}>
@@ -49,12 +49,12 @@ export default function LoginView({ onSuccess }: { onSuccess: () => void }) {
         <input value={code} onChange={(e) => setCode(e.target.value)} placeholder="학급 코드 (선생님께 받으세요)" style={S.input} />
         <input value={nick} onChange={(e) => setNick(e.target.value)} placeholder="닉네임" style={S.input} />
         <input type="password" value={pw} onChange={(e) => setPw(e.target.value)} onKeyDown={(e) => e.key === "Enter" && submit()} placeholder="비밀번호 (4자 이상)" style={S.input} />
-        {err && <div style={{ fontSize: 12, color: "#ff9d9d", marginBottom: 10 }}>{err}</div>}
+        {err && <div style={{ fontSize: 12, color: "#e0342a", marginBottom: 10 }}>{err}</div>}
         <button onClick={submit} disabled={busy} style={{ ...S.primaryBtn, width: "100%", fontSize: 13, opacity: busy ? 0.6 : 1 }}>
           {busy ? "잠깐만요..." : mode === "login" ? "모험 시작!" : "가입하기 (500P + 몬스터볼 3개 지급!)"}
         </button>
         {mode === "signup" && (
-          <div style={{ fontSize: 10, color: "#9fb0d8", marginTop: 10, lineHeight: 1.7, textAlign: "center" }}>
+          <div style={{ fontSize: 10, color: "#8a8f9a", marginTop: 10, lineHeight: 1.7, textAlign: "center" }}>
             개인정보 없이 학급 코드 + 닉네임만으로 가입해요.
           </div>
         )}

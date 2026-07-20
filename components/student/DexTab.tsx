@@ -88,7 +88,7 @@ export default function DexTab({ caught, counts, shinies = [] }: { caught: numbe
 
       {view === "mine" && (
         <>
-          <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 8, textAlign: "center" }}>
+          <div style={{ fontSize: 12, color: "#5b7a99", marginBottom: 8, textAlign: "center" }}>
             1세대 도감 완성까지 {POOL.length - caught.length}종! (×숫자=마리 수, 보유0=진화로 떠나보냄·도감엔 영구 기록)
           </div>
           {grid(caught, counts, shinySet)}
@@ -97,7 +97,7 @@ export default function DexTab({ caught, counts, shinies = [] }: { caught: numbe
 
       {view === "friends" && !friend && (
         <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-          {!members && <div style={{ ...S.panel, textAlign: "center", fontSize: 12, color: "#9fd8ff" }}>불러오는 중...</div>}
+          {!members && <div style={{ ...S.panel, textAlign: "center", fontSize: 12, color: "#5b7a99" }}>불러오는 중...</div>}
           {members?.map((m, i) => (
             <button
               key={m.id}
@@ -110,14 +110,14 @@ export default function DexTab({ caught, counts, shinies = [] }: { caught: numbe
               <span style={{ flex: 1, fontSize: 13 }}>
                 {m.nickname} {m.me && <span style={{ fontSize: 10, color: "#e07b39" }}>(나)</span>}
               </span>
-              <span style={{ fontSize: 12, color: "#ffd54a", flexShrink: 0 }}>{m.dexCount}/151</span>
+              <span style={{ fontSize: 12, color: "#eaa300", flexShrink: 0 }}>{m.dexCount}/151</span>
               <span style={{ display: "inline-block", width: 64, height: 6, background: "#1a1c2c", borderRadius: 3, overflow: "hidden", flexShrink: 0 }}>
                 <span style={{ display: "block", width: `${Math.round((m.dexCount / 151) * 100)}%`, height: "100%", background: "#7ec8a8" }} />
               </span>
             </button>
           ))}
           {members && members.length <= 1 && (
-            <div style={{ fontSize: 12, color: "#9fd8ff", textAlign: "center", padding: 10 }}>아직 친구들이 없어요. 학급 코드를 알려주자!</div>
+            <div style={{ fontSize: 12, color: "#5b7a99", textAlign: "center", padding: 10 }}>아직 친구들이 없어요. 학급 코드를 알려주자!</div>
           )}
         </div>
       )}
@@ -127,7 +127,7 @@ export default function DexTab({ caught, counts, shinies = [] }: { caught: numbe
           <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 10 }}>
             <button onClick={() => setFriend(null)} style={S.ghostBtn}>← 목록</button>
             <span style={{ fontSize: 13 }}>
-              {friend.nickname}의 도감 <span style={{ color: "#ffd54a" }}>{friend.caught.length}/151</span>
+              {friend.nickname}의 도감 <span style={{ color: "#eaa300" }}>{friend.caught.length}/151</span>
             </span>
           </div>
           {grid(friend.caught, friend.counts)}

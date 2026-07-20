@@ -453,7 +453,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   }
 
   if (bank === null)
-    return <div style={{ ...S.panel, textAlign: "center", padding: 30, fontSize: 13, color: "#9fd8ff" }}>문제를 불러오는 중...</div>;
+    return <div style={{ ...S.panel, textAlign: "center", padding: 30, fontSize: 13, color: "#5b7a99" }}>문제를 불러오는 중...</div>;
 
   const moves = moveDiff
     ? mine.moves
@@ -488,7 +488,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             {evoAnim.step === 2 && (
               <>
                 🎉 축하합니다! <br />
-                <b style={{ color: "#ffd54a", fontSize: 18 }}>{POOL[evoAnim.fromId - 1].name}</b>
+                <b style={{ color: "#eaa300", fontSize: 18 }}>{POOL[evoAnim.fromId - 1].name}</b>
                 {josa(POOL[evoAnim.fromId - 1].name, "은", "는")}{" "}
                 <b style={{ color: "#7ef29a", fontSize: 18 }}>{evoAnim.toName}</b>(으)로 진화했다!
               </>
@@ -558,7 +558,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
                   const st = { position: "absolute", left: "63%", top: "20%", fontSize: 18, animation: `starPop 0.9s ease-out ${i * 0.03}s forwards`, ["--dx"]: `${Math.cos(ang) * 46}px`, ["--dy"]: `${Math.sin(ang) * 46}px`, pointerEvents: "none", zIndex: 7 } as React.CSSProperties;
                   return <div key={i} style={st}>⭐</div>;
                 })}
-                <div style={{ position: "absolute", left: "50%", top: "42%", transform: "translate(-50%,-50%)", fontSize: 30, fontWeight: 800, color: "#ffd54a", textShadow: "0 2px 6px #000", animation: "pop 0.4s ease-out", zIndex: 8 }}>GET!</div>
+                <div style={{ position: "absolute", left: "50%", top: "42%", transform: "translate(-50%,-50%)", fontSize: 30, fontWeight: 800, color: "#eaa300", textShadow: "0 2px 6px #000", animation: "pop 0.4s ease-out", zIndex: 8 }}>GET!</div>
               </>
             )}
             {/* 포획 실패: 볼에서 튀어나오는 펑! */}
@@ -571,7 +571,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
 
       {/* 메시지 박스 */}
       {phase !== "idle" && (
-        <div style={{ background: "#f8f0dc", color: "#2c2c34", border: "3px solid #2c2c34", borderRadius: 10, padding: "12px 14px", minHeight: 46, fontSize: 14, lineHeight: 1.5, marginBottom: 8 }}>
+        <div style={{ ...S.panel, padding: "12px 14px", minHeight: 46, fontSize: 14, lineHeight: 1.5, marginBottom: 8, textAlign: "center" }}>
           {msg}
         </div>
       )}
@@ -585,13 +585,13 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             </div>
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 14 }}>
-                {mine.name} <span style={{ fontSize: 10, color: "#9fd8ff" }}>Lv.{student.level}</span>
+                {mine.name} <span style={{ fontSize: 10, color: "#5b7a99" }}>Lv.{student.level}</span>
               </div>
               <div style={{ fontSize: 10, color: TYPE_COLORS[mine.type], marginTop: 3 }}>
                 {mine.moves.map((m) => m.name).join(" · ")}
               </div>
               {evoTargets.length > 0 ? (
-                <div style={{ fontSize: 10, color: "#9fd8ff", marginTop: 4 }}>
+                <div style={{ fontSize: 10, color: "#5b7a99", marginTop: 4 }}>
                   진화까지 배틀 승수 {Math.min(myWins, winsNeeded)}/{winsNeeded}
                   <span style={{ display: "inline-block", width: 60, height: 5, background: "#1a1c2c", borderRadius: 3, marginLeft: 6, verticalAlign: "middle", overflow: "hidden" }}>
                     <span style={{ display: "block", width: `${Math.min(100, (myWins / winsNeeded) * 100)}%`, height: "100%", background: "#7ef29a" }} />
@@ -607,7 +607,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
           {evoTargets.length > 0 && (
             <div style={{ ...S.panel, marginBottom: 8, border: "3px solid #ffd54a" }}>
               <div style={{ fontSize: 12, marginBottom: 8, textAlign: "center" }}>
-                ✨ 진화 — 방법을 골라 진화시키자! <span style={{ fontSize: 10, color: "#9fd8ff" }}>(내 {game.evoCount + 1}번째 진화)</span>
+                ✨ 진화 — 방법을 골라 진화시키자! <span style={{ fontSize: 10, color: "#5b7a99" }}>(내 {game.evoCount + 1}번째 진화)</span>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
                 {evoTargets.map((to) => {
@@ -637,21 +637,21 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
                 })}
               </div>
               {evoTargets.some((to) => isStoneEvo(mine.id, to)) && student.inventory.stone < 1 && (
-                <div style={{ fontSize: 10, color: "#9fd8ff", marginTop: 6, textAlign: "center" }}>진화의돌은 상점에서 1,500P에 살 수 있어요</div>
+                <div style={{ fontSize: 10, color: "#5b7a99", marginTop: 6, textAlign: "center" }}>진화의돌은 상점에서 1,500P에 살 수 있어요</div>
               )}
             </div>
           )}
 
           {picker && (
             <div style={{ ...S.panel, marginBottom: 8 }}>
-              <div style={{ fontSize: 11, color: "#9fd8ff", marginBottom: 8 }}>배틀에 데려갈 포켓몬을 고르자 ({ownedIds.length}종 보유)</div>
+              <div style={{ fontSize: 11, color: "#5b7a99", marginBottom: 8 }}>배틀에 데려갈 포켓몬을 고르자 ({ownedIds.length}종 보유)</div>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(64px, 1fr))", gap: 6 }}>
                 {ownedIds.map((id) => {
                   const p = POOL[id - 1];
                   const on = id === game.battlePid;
                   const n = counts[id] ?? 1;
                   return (
-                    <button key={id} onClick={() => selectPokemon(id)} disabled={busyAction} style={{ position: "relative", background: on ? "#2c2f44" : "transparent", border: on ? `2px solid ${TYPE_COLORS[p.type]}` : "2px solid #f8f0dc22", borderRadius: 8, padding: 6, cursor: "pointer", fontFamily: "inherit", color: "#f8f0dc" }}>
+                    <button key={id} onClick={() => selectPokemon(id)} disabled={busyAction} style={{ position: "relative", background: on ? "#eaf0ff" : "#fff", border: on ? `2px solid ${TYPE_COLORS[p.type]}` : "1px solid #e4e6ee", borderRadius: 8, padding: 6, cursor: "pointer", fontFamily: "inherit", color: "#1c1c1e" }}>
                       {n > 1 && <span style={{ position: "absolute", top: 2, right: 2, fontSize: 9, background: "#e07b39", borderRadius: 8, padding: "0 5px" }}>×{n}</span>}
                       <Sprite id={id} color={p.color} size={40} />
                       <div style={{ fontSize: 9, marginTop: 2 }}>{p.name}</div>
@@ -665,7 +665,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
           {/* M7: 출제 과목 선택 — 한 배틀은 한 과목 안에서만 */}
           {subjects.length > 1 && (
             <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 8 }}>
-              <span style={{ fontSize: 11, color: "#9fd8ff", flexShrink: 0 }}>출제 과목</span>
+              <span style={{ fontSize: 11, color: "#5b7a99", flexShrink: 0 }}>출제 과목</span>
               <select
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
@@ -688,7 +688,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
               {SNACK_KINDS.filter((k) => student.inventory[k] > 0).map((k) => (
                 <button key={k} onClick={() => beginBattle(k)} style={{ ...S.choiceBtn, flex: 1, fontSize: 11 }}>
                   {SNACKS[k].emoji} {SNACKS[k].name} 주기 ×{student.inventory[k]}
-                  <div style={{ fontSize: 9, color: "#9fd8ff", marginTop: 2 }}>{RARITY[SNACKS[k].rarity].label} 확정 배틀!</div>
+                  <div style={{ fontSize: 9, color: "#5b7a99", marginTop: 2 }}>{RARITY[SNACKS[k].rarity].label} 확정 배틀!</div>
                 </button>
               ))}
             </div>
@@ -699,7 +699,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             </div>
           )}
           {battlesLeft <= 0 && activeCount > 0 && (
-            <div style={{ fontSize: 12, color: "#9fd8ff", marginTop: 8, textAlign: "center" }}>
+            <div style={{ fontSize: 12, color: "#5b7a99", marginTop: 8, textAlign: "center" }}>
               오늘의 배틀을 모두 마쳤어요. 상점의 간식🍪으로 추가 배틀을 할 수 있어요!
             </div>
           )}
@@ -735,11 +735,11 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
               total={timeLimitFor(move.diff)}
               timeRef={timeLeftRef}
               onExpire={onTimeUp}
-              label={<span style={{ color: "#9fd8ff" }}>{move.label} 문제 · {q.tag}</span>}
+              label={<span style={{ color: "#5b7a99" }}>{move.label} 문제 · {q.tag}</span>}
             />
           ) : (
             <div style={{ fontSize: 11, marginBottom: 10 }}>
-              <span style={{ color: "#9fd8ff" }}>{move.label} 문제 · {q.tag}</span>
+              <span style={{ color: "#5b7a99" }}>{move.label} 문제 · {q.tag}</span>
             </div>
           )}
           <div style={{ fontSize: 15, marginBottom: 10, lineHeight: 1.6 }}>{q.body}</div>
@@ -750,7 +750,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
                 <button
                   key={i}
                   onClick={() => setSelected(i)}
-                  style={{ ...S.choiceBtn, border: on ? "2px solid #ff9a52" : S.choiceBtn.border, background: on ? "#5a4a3a" : S.choiceBtn.background, fontWeight: on ? 700 : 600 }}
+                  style={{ ...S.choiceBtn, border: on ? "2px solid #4b7bec" : S.choiceBtn.border, background: on ? "#eaf0ff" : S.choiceBtn.background, fontWeight: on ? 700 : 600 }}
                 >
                   {["①", "②", "③", "④"][i]} {o.t}
                 </button>
@@ -765,7 +765,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             {selected == null ? "답을 골라주세요" : "정답 제출"}
           </button>
           {timerOn && (
-            <div style={{ fontSize: 10, color: "#9fd8ff", marginTop: 6, textAlign: "center" }}>노란 타이머일 때 제출하면 급소(1.5배)!</div>
+            <div style={{ fontSize: 10, color: "#5b7a99", marginTop: 6, textAlign: "center" }}>노란 타이머일 때 제출하면 급소(1.5배)!</div>
           )}
         </div>
       )}
@@ -778,7 +778,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             return (
               <button key={k} onClick={() => throwBall(k)} disabled={disabled} style={{ ...S.choiceBtn, opacity: student.inventory[k] <= 0 ? 0.35 : 1 }}>
                 <BallIcon kind={k} size={15} /> {BALLS[k].name} ×{student.inventory[k]}
-                <div style={{ fontSize: 10, color: "#9fd8ff", marginTop: 2 }}>성공률 {Math.round(rate * 100)}%</div>
+                <div style={{ fontSize: 10, color: "#5b7a99", marginTop: 2 }}>성공률 {Math.round(rate * 100)}%</div>
               </button>
             );
           })}
@@ -811,8 +811,8 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
           <div onClick={(e) => e.stopPropagation()} style={{ ...S.panel, width: "100%", maxWidth: 300, textAlign: "center", padding: 20, animation: "pop 0.25s ease-out" }}>
             <div style={{ fontSize: 34, marginBottom: 4 }}>✨</div>
             <div style={{ fontSize: 15, marginBottom: 4 }}>빛나는 스프레이 (보유 {student.inventory.spray})</div>
-            <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 16, lineHeight: 1.6 }}>
-              사용하면 이번 야생을 <b style={{ color: "#ffd54a" }}>이로치로 확정</b>해요! (1개 소모)
+            <div style={{ fontSize: 12, color: "#5b7a99", marginBottom: 16, lineHeight: 1.6 }}>
+              사용하면 이번 야생을 <b style={{ color: "#eaa300" }}>이로치로 확정</b>해요! (1개 소모)
             </div>
             <div style={{ display: "flex", gap: 8 }}>
               <button onClick={() => start(sprayAsk.snack, false)} style={{ ...S.ghostBtn, flex: 1, padding: "10px 0", fontSize: 13 }}>그냥 시작</button>

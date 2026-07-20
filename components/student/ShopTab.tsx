@@ -83,7 +83,7 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
       <div style={{ flex: 1 }}>
         <div style={{ fontSize: 13 }}>
           {opts.name}
-          <span style={{ fontSize: 10, color: "#9fd8ff", marginLeft: 6 }}>보유 ×{opts.owned}</span>
+          <span style={{ fontSize: 10, color: "#5b7a99", marginLeft: 6 }}>보유 ×{opts.owned}</span>
         </div>
         <div style={{ fontSize: 10, color: "#bbb", marginTop: 3 }}>{opts.desc}</div>
       </div>
@@ -100,7 +100,7 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-      <div style={{ fontSize: 11, color: "#9fd8ff", textAlign: "center" }}>— 몬스터볼 —</div>
+      <div style={{ fontSize: 11, color: "#5b7a99", textAlign: "center" }}>— 몬스터볼 —</div>
       {(Object.keys(BALLS) as BallKind[]).map((k) =>
         row({
           key: k,
@@ -113,7 +113,7 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
         })
       )}
 
-      <div style={{ fontSize: 11, color: "#9fd8ff", textAlign: "center", marginTop: 4 }}>— 도구 —</div>
+      <div style={{ fontSize: 11, color: "#5b7a99", textAlign: "center", marginTop: 4 }}>— 도구 —</div>
       {row({
         key: "stone",
         icon: <span style={{ fontSize: 22 }}>{EVO_STONE.emoji}</span>,
@@ -133,7 +133,7 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
         onBuy: () => askBuy("spray"),
       })}
 
-      <div style={{ fontSize: 11, color: "#9fd8ff", textAlign: "center", marginTop: 4 }}>— 간식 (추가 배틀!) —</div>
+      <div style={{ fontSize: 11, color: "#5b7a99", textAlign: "center", marginTop: 4 }}>— 간식 (추가 배틀!) —</div>
       {(Object.keys(SNACKS) as SnackKind[]).map((k) =>
         row({
           key: k,
@@ -146,7 +146,7 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
         })
       )}
 
-      <div style={{ fontSize: 10, color: "#9fd8ff", textAlign: "center", marginTop: 4, lineHeight: 1.7 }}>
+      <div style={{ fontSize: 10, color: "#5b7a99", textAlign: "center", marginTop: 4, lineHeight: 1.7 }}>
         포인트는 오늘의 퀴즈(+150P + 랜덤 볼)·문제풀이(정답 +20P)·배틀 승리로 모아요.
       </div>
 
@@ -168,7 +168,7 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
             >
               <div style={{ display: "flex", justifyContent: "center", marginBottom: 8 }}>{iconOf(confirmItem, 46)}</div>
               <div style={{ fontSize: 16, marginBottom: 4 }}>{info.name}</div>
-              <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 10 }}>단가 {info.price.toLocaleString()} P</div>
+              <div style={{ fontSize: 12, color: "#5b7a99", marginBottom: 10 }}>단가 {info.price.toLocaleString()} P</div>
               {canQty && (
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginBottom: 10 }}>
                   <button onClick={() => setQty((n) => Math.max(1, n - 1))} disabled={qty <= 1} style={{ ...S.ghostBtn, width: 38, padding: "6px 0", fontSize: 18, opacity: qty <= 1 ? 0.4 : 1 }}>−</button>
@@ -176,11 +176,11 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
                   <button onClick={() => setQty((n) => Math.min(99, n + 1))} disabled={qty >= 99} style={{ ...S.ghostBtn, width: 38, padding: "6px 0", fontSize: 18, opacity: qty >= 99 ? 0.4 : 1 }}>+</button>
                 </div>
               )}
-              <div style={{ fontSize: 14, color: "#ffd54a", marginBottom: 8 }}>합계 {total.toLocaleString()} P</div>
-              <div style={{ fontSize: 12, color: short ? "#ff9d9d" : "#9fd8ff", marginBottom: 16, lineHeight: 1.6 }}>
+              <div style={{ fontSize: 14, color: "#eaa300", marginBottom: 8 }}>합계 {total.toLocaleString()} P</div>
+              <div style={{ fontSize: 12, color: short ? "#ff9d9d" : "#5b7a99", marginBottom: 16, lineHeight: 1.6 }}>
                 {short
                   ? "포인트가 부족해요!"
-                  : <>구매 후 남는 포인트: <b style={{ color: "#f8f0dc" }}>{after.toLocaleString()} P</b></>}
+                  : <>구매 후 남는 포인트: <b style={{ color: "#1c1c1e" }}>{after.toLocaleString()} P</b></>}
               </div>
               <div style={{ display: "flex", gap: 8 }}>
                 <button onClick={() => setConfirmItem(null)} disabled={busy} style={{ ...S.ghostBtn, flex: 1, padding: "10px 0", fontSize: 13 }}>취소</button>

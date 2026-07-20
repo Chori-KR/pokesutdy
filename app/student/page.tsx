@@ -59,7 +59,7 @@ export default function StudentPage() {
 
   if (phase === "loading")
     return (
-      <div style={{ minHeight: "100vh", background: "#1a1c2c", color: "#9fd8ff", display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <div style={{ minHeight: "100vh", background: "#f4f5fa", color: "#8a8f9a", display: "flex", alignItems: "center", justifyContent: "center" }}>
         불러오는 중...
       </div>
     );
