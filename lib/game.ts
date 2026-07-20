@@ -210,6 +210,23 @@ export const SOLVE_REWARD = 20;       // 문제풀이 정답당 (기본 10문제
 export const DEFAULT_EXPLORE_LIMIT = 3;
 export const DEFAULT_SOLVE_LIMIT = 10;
 
+// 도감 달성 보상 — 도감 종수(caught.length)가 n에 도달하면 아이템 지급(1회 수령).
+export const DEX_MILESTONES: { n: number; item: ShopItem; count: number; label: string }[] = [
+  { n: 15, item: "poke", count: 3, label: "몬스터볼 ×3" },
+  { n: 30, item: "superb", count: 3, label: "슈퍼볼 ×3" },
+  { n: 45, item: "hyper", count: 3, label: "하이퍼볼 ×3" },
+  { n: 60, item: "snack", count: 1, label: "일반 간식 ×1" },
+  { n: 75, item: "snack2", count: 1, label: "고급 간식 ×1" },
+  { n: 90, item: "snack3", count: 1, label: "최고급 간식 ×1" },
+  { n: 105, item: "master", count: 1, label: "마스터볼 ×1" },
+  { n: 120, item: "spray", count: 1, label: "빛나는 스프레이 ×1" },
+  { n: 135, item: "master", count: 1, label: "마스터볼 ×1" },
+  { n: 150, item: "spray", count: 1, label: "빛나는 스프레이 ×1" },
+];
+
+// 중복 포켓몬 환전 — 여분(count-1) 1마리당 포인트(등급별).
+export const DUPE_CONVERT: Record<Rarity, number> = { common: 30, rare: 70, legendary: 150 };
+
 // 데일리 퀴즈 정답 보상 볼: 몬스터볼 50% / 슈퍼볼 30% / 하이퍼볼 20%
 export const rollQuizBall = (): BallKind => {
   const r = Math.random();

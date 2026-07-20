@@ -49,6 +49,7 @@ export async function GET(req: NextRequest) {
     battlePid,
     wins: gs.wins ?? {},
     evoCount: gs.evoCount ?? 0,
+    dexRewards: gs.dexRewards ?? [],
   };
 
   return NextResponse.json({

@@ -140,6 +140,9 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   // M5: 진화 3방식 — 승수(wins) / 포인트(points) / 진화의돌(stone, 서버가 페어로 강제)
   async function evolve(to: number, method: "wins" | "points" | "stone") {
     if (busyAction) return;
+    // 오조작 방지: 진화는 되돌릴 수 없고 자원을 소모하므로 한 번 확인
+    const cost = method === "points" ? `포인트 ${pointCost.toLocaleString()}P` : method === "stone" ? "진화의돌 1개" : `${winsNeeded}승`;
+    if (!window.confirm(`${mine.name}을(를) ${POOL[to - 1].name}(으)로 진화시킬까요?\n(${cost} 소모 · 되돌릴 수 없어요)`)) return;
     setBusyAction(true);
     try {
       const res = await fetch("/api/pokemon/evolve", {
