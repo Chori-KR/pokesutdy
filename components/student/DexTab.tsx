@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { S } from "@/lib/styles";
-import { POOL, RARITY, DEX_MILESTONES, Rarity } from "@/lib/game";
+import { POOL, RARITY, DEX_MILESTONES, DUPE_CONVERT, Rarity } from "@/lib/game";
 import { StudentData, GameInfo } from "@/lib/types";
 import Sprite from "@/components/Sprite";
 import PokedexInfo from "@/components/student/PokedexInfo";
@@ -43,11 +43,37 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
     return { total, got };
   }, [caught]);
 
-  // 중복(여분) 마리 수
+  // 중복(여분) 마리 수 + 종별 목록
   const dupeCount = useMemo(
     () => Object.values(counts).reduce((s, c) => s + Math.max(0, (c ?? 0) - 1), 0),
     [counts]
   );
+  const dupeList = useMemo(
+    () => Object.entries(counts)
+      .map(([k, c]) => ({ pid: Number(k), count: c ?? 0, extra: Math.max(0, (c ?? 0) - 1) }))
+      .filter((d) => d.extra > 0)
+      .sort((a, b) => a.pid - b.pid),
+    [counts]
+  );
+
+  const [convertOpen, setConvertOpen] = useState(false);
+  const [sel, setSel] = useState<Record<number, number>>({}); // pid → 환전할 마리 수
+  const selTotal = useMemo(
+    () => Object.entries(sel).reduce((s, [pid, q]) => s + q * DUPE_CONVERT[POOL[Number(pid) - 1].rarity], 0),
+    [sel]
+  );
+  const selCount = useMemo(() => Object.values(sel).reduce((s, q) => s + q, 0), [sel]);
+
+  function openConvert() {
+    // 기본값: 모든 여분 선택(원하면 줄이면 됨)
+    const init: Record<number, number> = {};
+    dupeList.forEach((d) => { init[d.pid] = d.extra; });
+    setSel(init);
+    setConvertOpen(true);
+  }
+  function setQty(pid: number, q: number, max: number) {
+    setSel((s) => ({ ...s, [pid]: Math.max(0, Math.min(max, q)) }));
+  }
 
   async function claimReward(n: number) {
     if (busy) return;
@@ -66,19 +92,23 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
     finally { setBusy(false); }
   }
 
-  async function convertDupes() {
-    if (busy || dupeCount === 0) return;
-    if (!window.confirm(`중복 포켓몬 ${dupeCount}마리를 포인트로 환전할까요? (각 종 1마리는 도감에 남겨요)`)) return;
+  async function doConvert() {
+    if (busy || selCount === 0) return;
+    const items = Object.entries(sel).map(([pid, qty]) => ({ pokemon_id: Number(pid), qty })).filter((i) => i.qty > 0);
     setBusy(true);
     try {
-      const res = await fetch("/api/student/convert-dupes", { method: "POST" });
+      const res = await fetch("/api/student/convert-dupes", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ items }),
+      });
       const data = await res.json();
       if (!res.ok) { showToast(data.error ?? "환전에 실패했어요."); return; }
       setStudent({ ...student, points: data.points });
       const nc = { ...counts };
-      Object.keys(nc).forEach((k) => { if (nc[+k] > 1) nc[+k] = 1; });
+      Object.entries(data.newCounts as Record<string, number>).forEach(([k, v]) => { nc[+k] = v; });
       setCounts(nc);
       showToast(`💰 ${data.converted}마리 환전! +${data.gained.toLocaleString()}P`);
+      setConvertOpen(false);
     } catch { showToast("서버에 연결할 수 없어요."); }
     finally { setBusy(false); }
   }
@@ -214,9 +244,9 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
           {/* 중복 환전 */}
           <div style={{ ...S.panel, padding: "10px 14px", marginBottom: 8, display: "flex", alignItems: "center", gap: 10 }}>
             <div style={{ flex: 1, fontSize: 12, color: "#5b6272" }}>
-              중복 포켓몬 <b style={{ color: "#1c1c1e" }}>{dupeCount}</b>마리 있어요. 포인트로 바꿀 수 있어요!
+              중복 포켓몬 <b style={{ color: "#1c1c1e" }}>{dupeCount}</b>마리 있어요. 골라서 포인트로 바꿀 수 있어요!
             </div>
-            <button onClick={convertDupes} disabled={busy || dupeCount === 0} style={{ ...S.primaryBtn, padding: "8px 14px", fontSize: 12, opacity: dupeCount === 0 ? 0.4 : 1 }}>💰 환전</button>
+            <button onClick={openConvert} disabled={busy || dupeCount === 0} style={{ ...S.primaryBtn, padding: "8px 14px", fontSize: 12, opacity: dupeCount === 0 ? 0.4 : 1 }}>💰 환전</button>
           </div>
 
           <div style={{ fontSize: 11, color: "#8a8f9a", marginBottom: 8, textAlign: "center" }}>
@@ -267,6 +297,53 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
 
       {info != null && (
         <PokedexInfo id={info} shiny={shinySet.has(info)} onClose={() => setInfo(null)} />
+      )}
+
+      {/* 중복 환전 선택 모달 */}
+      {convertOpen && (
+        <div
+          onClick={() => !busy && setConvertOpen(false)}
+          style={{ position: "fixed", inset: 0, background: "rgba(20,22,34,0.55)", zIndex: 80, display: "flex", alignItems: "flex-end", justifyContent: "center", padding: 0 }}
+        >
+          <div onClick={(e) => e.stopPropagation()} style={{ ...S.panel, width: "100%", maxWidth: 560, borderRadius: "20px 20px 0 0", maxHeight: "82vh", display: "flex", flexDirection: "column", padding: 0 }}>
+            <div style={{ padding: "14px 16px 8px" }}>
+              <div style={{ fontSize: 15, fontWeight: 700 }}>💰 중복 포켓몬 환전</div>
+              <div style={{ fontSize: 11, color: "#8a8f9a", marginTop: 3 }}>환전할 마리 수를 고르세요. 각 종 1마리는 도감에 남아요. (교환용으로 남겨둬도 OK)</div>
+            </div>
+            <div style={{ overflowY: "auto", padding: "0 12px", flex: 1 }}>
+              {dupeList.map((d) => {
+                const p = POOL[d.pid - 1];
+                const unit = DUPE_CONVERT[p.rarity];
+                const q = sel[d.pid] ?? 0;
+                return (
+                  <div key={d.pid} style={{ display: "flex", alignItems: "center", gap: 8, padding: "8px 4px", borderBottom: "1px solid #f0f1f6" }}>
+                    <Sprite id={d.pid} color={p.color} size={38} />
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <div style={{ fontSize: 13, fontWeight: 600 }}>{p.name} <span style={{ fontSize: 10, color: RARITY[p.rarity].color }}>{RARITY[p.rarity].label}</span></div>
+                      <div style={{ fontSize: 10, color: "#8a8f9a" }}>보유 {d.count}마리 · 여분 {d.extra} · 마리당 <b style={{ color: "#eaa300" }}>{unit}P</b></div>
+                    </div>
+                    <div style={{ display: "flex", alignItems: "center", gap: 4, flexShrink: 0 }}>
+                      <button onClick={() => setQty(d.pid, q - 1, d.extra)} disabled={q <= 0} style={{ ...S.ghostBtn, width: 28, padding: "4px 0", fontSize: 15, opacity: q <= 0 ? 0.4 : 1 }}>−</button>
+                      <span style={{ width: 26, textAlign: "center", fontSize: 14, fontWeight: 700 }}>{q}</span>
+                      <button onClick={() => setQty(d.pid, q + 1, d.extra)} disabled={q >= d.extra} style={{ ...S.ghostBtn, width: 28, padding: "4px 0", fontSize: 15, opacity: q >= d.extra ? 0.4 : 1 }}>+</button>
+                    </div>
+                    <div style={{ width: 54, textAlign: "right", fontSize: 12, fontWeight: 700, color: q > 0 ? "#4b7bec" : "#c3c8d6", flexShrink: 0 }}>{(q * unit).toLocaleString()}P</div>
+                  </div>
+                );
+              })}
+            </div>
+            <div style={{ padding: "10px 16px 16px", borderTop: "1px solid #eef0f5" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, marginBottom: 10 }}>
+                <span style={{ color: "#5b6272" }}>{selCount}마리 선택 · 합계</span>
+                <b style={{ color: "#4b7bec" }}>+{selTotal.toLocaleString()}P</b>
+              </div>
+              <div style={{ display: "flex", gap: 8 }}>
+                <button onClick={() => setConvertOpen(false)} disabled={busy} style={{ ...S.ghostBtn, flex: 1, padding: "11px 0" }}>취소</button>
+                <button onClick={doConvert} disabled={busy || selCount === 0} style={{ ...S.primaryBtn, flex: 2, opacity: selCount === 0 ? 0.4 : 1 }}>{selCount}마리 환전하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );
