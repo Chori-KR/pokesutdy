@@ -81,7 +81,6 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const myWins = Number(game.wins?.[String(mine.id)] ?? 0);
   const evoTargets = EVOLVES_TO[mine.id] ?? [];
   const winsNeeded = evoWinsNeeded(mine.id);
-  const pointCost = evoPointCost(game.evoCount); // M5: 누적 진화 횟수별 1000/2000/2500P
   const battlesLeft = Math.max(0, day.battleLimit - day.battleUsed);
   const SNACK_KINDS: SnackKind[] = ["snack", "snack2", "snack3", "snack4"];
   // M9: 도감(caught)엔 있어도 보유 0마리면 배틀에 못 데려감 — count≥1만 선택 가능
@@ -141,7 +140,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   async function evolve(to: number, method: "wins" | "points" | "stone") {
     if (busyAction) return;
     // 오조작 방지: 진화는 되돌릴 수 없고 자원을 소모하므로 한 번 확인
-    const cost = method === "points" ? `포인트 ${pointCost.toLocaleString()}P` : method === "stone" ? "진화의돌 1개" : `${winsNeeded}승`;
+    const cost = method === "points" ? `포인트 ${evoPointCost(mine.id, to).toLocaleString()}P` : method === "stone" ? "진화의돌 1개" : `${winsNeeded}승`;
     if (!window.confirm(`${mine.name}을(를) ${POOL[to - 1].name}(으)로 진화시킬까요?\n(${cost} 소모 · 되돌릴 수 없어요)`)) return;
     setBusyAction(true);
     try {
@@ -615,6 +614,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
               <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
                 {evoTargets.map((to) => {
                   const stone = isStoneEvo(mine.id, to);
+                  const pc = evoPointCost(mine.id, to);
                   return (
                     <div key={to} style={{ display: "flex", gap: 6, alignItems: "center", flexWrap: "wrap" }}>
                       <span style={{ fontSize: 11, minWidth: 86 }}>
@@ -630,8 +630,8 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
                           <button onClick={() => evolve(to, "wins")} disabled={busyAction || myWins < winsNeeded} style={{ ...S.primaryBtn, padding: "7px 10px", fontSize: 11, background: "#3d9970", opacity: myWins < winsNeeded ? 0.45 : 1 }}>
                             ⚔ 배틀 승수 ({Math.min(myWins, winsNeeded)}/{winsNeeded})
                           </button>
-                          <button onClick={() => evolve(to, "points")} disabled={busyAction || student.points < pointCost} style={{ ...S.primaryBtn, padding: "7px 10px", fontSize: 11, background: "#e0a63a", opacity: student.points < pointCost ? 0.45 : 1 }}>
-                            💰 {pointCost.toLocaleString()}P 사용
+                          <button onClick={() => evolve(to, "points")} disabled={busyAction || student.points < pc} style={{ ...S.primaryBtn, padding: "7px 10px", fontSize: 11, background: "#e0a63a", opacity: student.points < pc ? 0.45 : 1 }}>
+                            💰 {pc.toLocaleString()}P 사용
                           </button>
                         </>
                       )}

@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
     inventory.stone -= 1;
     usedDesc = "진화의돌";
   } else if (method === "points") {
-    const cost = evoPointCost(evoCount);
+    const cost = evoPointCost(from, to);
     if (points < cost)
       return jsonError(409, `포인트가 부족해요. 이번 진화 비용은 ${cost.toLocaleString()}P예요.`);
     points -= cost;
@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
     const winCount = Number(wins[String(from)] ?? 0);
     const needed = evoWinsNeeded(from);
     if (winCount < needed)
-      return jsonError(409, `아직 승수가 부족해요! (${winCount}/${needed}승) 포인트 진화(${evoPointCost(evoCount).toLocaleString()}P)도 가능해요.`);
+      return jsonError(409, `아직 승수가 부족해요! (${winCount}/${needed}승) 포인트 진화(${evoPointCost(from, to).toLocaleString()}P)도 가능해요.`);
     wins[String(from)] = winCount - needed;
     usedDesc = `배틀 ${needed}승`;
   }

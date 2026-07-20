@@ -108,10 +108,13 @@ export const stageOf = (id: number): number => {
 // 진화 필요 배틀 승수: 1→2단계 5승, 2→3단계 10승 (그 포켓몬으로 이긴 횟수)
 export const evoWinsNeeded = (fromId: number): number => (stageOf(fromId) >= 2 ? 10 : 5);
 
-// M5: 포인트 진화 비용 — 학생의 누적 진화 횟수 기준 (1번째 1000P, 2번째 2000P, 3번째~ 2500P)
-export const EVO_POINT_COSTS = [1000, 2000, 2500] as const;
-export const evoPointCost = (evoCount: number): number =>
-  EVO_POINT_COSTS[Math.min(Math.max(0, evoCount), EVO_POINT_COSTS.length - 1)];
+// 포인트 진화 비용 — 각 포켓몬의 진화 단계 기준
+//  - 3단 라인: 1단계→2단계 1,000P, 2단계→3단계 2,000P
+//  - 2단 라인(한 번만 진화하는 포켓몬): 1,500P
+export const evoPointCost = (fromId: number, toId: number): number => {
+  if (stageOf(fromId) >= 2) return 2000;      // 2단계 → 3단계 (두 번째 진화)
+  return EVOLVES_TO[toId] ? 1000 : 1500;      // 1단계: 진화체가 또 진화하면(3단 라인) 1,000, 최종이면(2단 라인) 1,500
+};
 
 // M5: 진화의돌로만 진화하는 페어 (1세대 돌 진화 — 승수/포인트 진화 불가)
 const STONE_PAIRS: [number, number][] = [
