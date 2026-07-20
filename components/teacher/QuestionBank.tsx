@@ -97,6 +97,32 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
     setSelected(new Set());
   }
 
+  // 선택(부분) 삭제 — 체크한 문제만 삭제
+  async function bulkDeleteSelected() {
+    const ids = [...selected];
+    if (ids.length === 0) return;
+    if (!window.confirm(`선택한 ${ids.length}개 문제를 삭제할까요? 되돌릴 수 없어요.`)) return;
+    const supa = supabaseBrowser();
+    const { error } = await supa.from("questions").delete().in("id", ids);
+    if (error) { showToast("삭제에 실패했어요."); return; }
+    setQuestions(questions.filter((x) => !selected.has(x.id)));
+    showToast(`선택한 ${ids.length}개 문제를 삭제했어요.`);
+    setSelected(new Set());
+  }
+
+  // 전체 삭제 — 이 학급의 모든 문제 삭제(2단계 확인)
+  async function deleteAll() {
+    if (questions.length === 0) return;
+    if (!window.confirm(`정말 전체 문제 ${questions.length}개를 모두 삭제할까요? 되돌릴 수 없어요.`)) return;
+    if (!window.confirm("한 번 더 확인합니다. 문제 은행이 완전히 비워집니다. 계속할까요?")) return;
+    const supa = supabaseBrowser();
+    const { error } = await supa.from("questions").delete().eq("class_id", classId);
+    if (error) { showToast("전체 삭제에 실패했어요."); return; }
+    setQuestions([]);
+    setSelected(new Set());
+    showToast("모든 문제를 삭제했어요.");
+  }
+
   const allVisibleSelected = visible.length > 0 && visible.every((q) => selected.has(q.id));
 
   async function remove(q: QuestionRow) {
@@ -287,12 +313,14 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
           <span style={{ fontSize: 12, color: selected.size > 0 ? "#3d6fd9" : "#999", fontWeight: 600 }}>
             {selected.size}개 선택됨
           </span>
-          <span style={{ display: "flex", gap: 6, marginLeft: "auto" }}>
+          <span style={{ display: "flex", gap: 6, marginLeft: "auto", flexWrap: "wrap", justifyContent: "flex-end" }}>
             <button onClick={() => bulkSetSelected(true)} disabled={selected.size === 0} style={{ ...T.chip, color: selected.size ? "#0f6e56" : "#ccc", borderColor: selected.size ? "#0f6e56" : "#eee", cursor: selected.size ? "pointer" : "default" }}>선택 출제</button>
             <button onClick={() => bulkSetSelected(false)} disabled={selected.size === 0} style={{ ...T.chip, color: selected.size ? "#a32d2d" : "#ccc", borderColor: selected.size ? "#a32d2d" : "#eee", cursor: selected.size ? "pointer" : "default" }}>선택 숨김</button>
+            <button onClick={bulkDeleteSelected} disabled={selected.size === 0} style={{ ...T.chip, background: selected.size ? "#fdecec" : "#fff", color: selected.size ? "#c0392b" : "#ccc", borderColor: selected.size ? "#f0b4b4" : "#eee", cursor: selected.size ? "pointer" : "default", fontWeight: 600 }}>🗑 선택 삭제</button>
             {selected.size > 0 && (
               <button onClick={() => setSelected(new Set())} style={{ ...T.chip, color: "#888" }}>선택 해제</button>
             )}
+            <button onClick={deleteAll} style={{ ...T.chip, background: "#c0392b", color: "#fff", borderColor: "#c0392b", fontWeight: 600 }}>전체 삭제</button>
           </span>
         </div>
       )}
