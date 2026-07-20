@@ -29,10 +29,26 @@ export interface GenRequest {
   extra?: string;
   special?: boolean;   // 특수교육 기본교육과정 모드
   curriculum?: string; // 근거 성취기준 목록(특수 모드)
+  qtype?: "multiple" | "short"; // 문제 유형(기본 객관식)
 }
 
 export function buildPrompt(r: GenRequest): string {
-  return `당신은 학교 교사를 돕는 시험 문제 출제 도우미입니다. 다음 조건으로 4지선다 문제를 만들어주세요.
+  const isShort = r.qtype === "short";
+  const formatBlock = isShort
+    ? `반드시 아래 형식의 JSON 배열만 출력하세요. 마크다운 코드블록, 설명, 인사말을 절대 붙이지 마세요.
+[{"q":"문제 내용","answers":["정답","허용 정답2"],"d":"easy","why":"정답 해설 한 줄"}]
+answers는 정답으로 인정할 표현들의 배열입니다. 학생이 타이핑할 때를 대비해 동의어·축약·띄어쓰기 변형을 함께 넣으세요(예: ["세종","세종대왕"]). d는 easy/medium/hard 중 하나입니다.`
+    : `반드시 아래 형식의 JSON 배열만 출력하세요. 마크다운 코드블록, 설명, 인사말을 절대 붙이지 마세요.
+[{"q":"문제 내용","opts":["보기1","보기2","보기3","보기4"],"answer":0,"d":"easy","why":"정답 해설 한 줄"}]
+answer는 정답 보기의 인덱스(0~3), d는 easy/medium/hard 중 하나입니다.`;
+  const typeRules = isShort
+    ? `
+- [단답형] 정답은 한 단어~짧은 구로, 학생이 직접 타이핑해 맞힐 수 있게 명확하고 짧게 낼 것
+- [단답형] 정답이 여러 표현으로 쓰일 수 있으면 answers에 허용 표현을 모두 넣을 것`
+    : `
+- 오답 보기는 학생들이 실제로 저지르는 흔한 실수나 오개념에서 만들 것
+- 정답이 특정 번호에 몰리지 않게 answer 인덱스를 골고루 분배할 것`;
+  return `당신은 학교 교사를 돕는 시험 문제 출제 도우미입니다. 다음 조건으로 ${isShort ? "단답형(주관식)" : "4지선다"} 문제를 만들어주세요.
 
 과목: ${r.subject}
 단원·주제: ${r.topic}
@@ -45,17 +61,13 @@ ${r.curriculum}
 ` : ""}
 
 출제 규칙:
-- 오답 보기는 학생들이 실제로 저지르는 흔한 실수나 오개념에서 만들 것
 - 난이도를 명확히 구분할 것: 쉬움=기본 개념 확인, 보통=개념 적용, 어려움=응용·복합·문장제
-- 문제와 보기는 해당 학년이 이해할 수 있는 어휘로 쓸 것
-- 정답이 특정 번호에 몰리지 않게 answer 인덱스를 골고루 분배할 것${r.special ? `
+- 문제는 해당 학년이 이해할 수 있는 어휘로 쓸 것${typeRules}${r.special ? `
 - [특수교육] 대상은 특수교육 기본교육과정 학생입니다. 문장은 짧고 쉽고 구체적으로, 일상생활 맥락으로 쓸 것
 - [특수교육] 추상적·복합적 사고를 최소화하고, 그림 없이 글만으로 풀 수 있게 할 것
 - [특수교육] 성취기준이 태도·실천형이면 생활 속 상황을 고르는 문제로 재구성할 것` : ""}
 
-반드시 아래 형식의 JSON 배열만 출력하세요. 마크다운 코드블록, 설명, 인사말을 절대 붙이지 마세요.
-[{"q":"문제 내용","opts":["보기1","보기2","보기3","보기4"],"answer":0,"d":"easy","why":"정답 해설 한 줄"}]
-answer는 정답 보기의 인덱스(0~3), d는 easy/medium/hard 중 하나입니다.`;
+${formatBlock}`;
 }
 
 // ── 제공사별 어댑터: 프롬프트 → 응답 텍스트 ─────────────────────────────
@@ -180,8 +192,9 @@ export async function callAi(provider: AiProvider, key: string, prompt: string):
 // ── 공통 파서: 텍스트 → 검증된 문제 배열 ─────────────────────────────────
 export interface GeneratedQuestion {
   q: string;
-  opts: [string, string, string, string];
-  answer: number;
+  type: "multiple" | "short";
+  opts: string[];   // 객관식: 보기 4개 / 단답형: 허용 정답 목록
+  answer: number;   // 객관식: 0~3 / 단답형: 0
   d: Difficulty;
   why: string;
 }
@@ -194,26 +207,25 @@ export function parseQuestions(text: string): GeneratedQuestion[] {
   const parsed = JSON.parse(cleaned.slice(start, end + 1));
   if (!Array.isArray(parsed)) throw new Error("AI 응답이 배열이 아니에요.");
 
-  const clean = parsed
-    .filter(
-      (p) =>
-        p &&
-        typeof p.q === "string" &&
-        p.q.trim() &&
-        Array.isArray(p.opts) &&
-        p.opts.length === 4 &&
-        p.opts.every((o: unknown) => typeof o === "string" && String(o).trim()) &&
-        Number.isInteger(p.answer) &&
-        p.answer >= 0 &&
-        p.answer <= 3
-    )
-    .map((p) => ({
-      q: String(p.q).trim(),
-      opts: p.opts.map((o: string) => String(o).trim()) as [string, string, string, string],
-      answer: Number(p.answer),
-      d: (["easy", "medium", "hard"].includes(p.d) ? p.d : "medium") as Difficulty,
-      why: typeof p.why === "string" ? p.why.trim() : "",
-    }));
+  const strList = (a: unknown): string[] | null =>
+    Array.isArray(a) && a.length > 0 && a.every((o) => typeof o === "string" && String(o).trim())
+      ? a.map((o) => String(o).trim()) : null;
+
+  const clean: GeneratedQuestion[] = [];
+  for (const p of parsed) {
+    if (!p || typeof p.q !== "string" || !p.q.trim()) continue;
+    const d = (["easy", "medium", "hard"].includes(p.d) ? p.d : "medium") as Difficulty;
+    const why = typeof p.why === "string" ? p.why.trim() : "";
+    const answers = strList(p.answers);
+    const opts = strList(p.opts);
+    if (answers) {
+      // 단답형
+      clean.push({ q: String(p.q).trim(), type: "short", opts: answers, answer: 0, d, why });
+    } else if (opts && opts.length === 4 && Number.isInteger(p.answer) && p.answer >= 0 && p.answer <= 3) {
+      // 객관식
+      clean.push({ q: String(p.q).trim(), type: "multiple", opts, answer: Number(p.answer), d, why });
+    }
+  }
   if (clean.length === 0) throw new Error("사용할 수 있는 문제가 없었어요. 다시 시도해주세요.");
   return clean;
 }

@@ -37,6 +37,7 @@ export async function POST(req: NextRequest) {
   const total = counts.easy + counts.medium + counts.hard;
   if (total < 1 || total > 10) return jsonError(400, "난이도별 개수 합계는 1~10개로 해주세요.");
   const extra = typeof body?.extra === "string" ? body.extra : "";
+  const qtype = body?.qtype === "short" ? "short" : "multiple";
 
   let prompt: string;
   if (body?.mode === "special") {
@@ -53,7 +54,7 @@ export async function POST(req: NextRequest) {
       subject: subject || "기본교육과정",
       topic: `${gradeBand} ${subject} 성취기준 기반`,
       grade: gradeBand || "특수교육 기본교육과정",
-      counts, extra, special: true, curriculum,
+      counts, extra, special: true, curriculum, qtype,
     });
   } else {
     const topic = String(body?.topic ?? "").trim();
@@ -62,7 +63,7 @@ export async function POST(req: NextRequest) {
       subject: String(body?.subject ?? "기타"),
       topic,
       grade: String(body?.grade ?? "초등 5학년"),
-      counts, extra,
+      counts, extra, qtype,
     });
   }
 
