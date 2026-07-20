@@ -17,7 +17,8 @@ interface Props {
 
 interface Draft {
   q: string;
-  opts: [string, string, string, string];
+  type: "multiple" | "short";
+  opts: string[];
   answer: number;
   d: Difficulty;
   why: string;
@@ -34,6 +35,7 @@ const SP_BANDS = ["초등 1~2학년", "초등 3~4학년", "초등 5~6학년", "�
 // 검토 단계는 절대 생략하지 않는다 — "AI 초안 + 교사 최종 결재".
 export default function AiGenerate({ classId, hasAiKey, onRegistered, onClose, showToast }: Props) {
   const [mode, setMode] = useState<"general" | "special">("general");
+  const [qtype, setQtype] = useState<"multiple" | "short">("multiple");
   const [subject, setSubject] = useState("수학");
   const [grade, setGrade] = useState("초등 5학년");
   const [spSubject, setSpSubject] = useState("국어");
@@ -57,8 +59,8 @@ export default function AiGenerate({ classId, hasAiKey, onRegistered, onClose, s
     setDrafts([]);
     try {
       const payload = mode === "special"
-        ? { mode: "special", subject: spSubject, gradeBand: spBand, counts, extra }
-        : { subject, topic, grade, counts, extra };
+        ? { mode: "special", subject: spSubject, gradeBand: spBand, counts, extra, qtype }
+        : { subject, topic, grade, counts, extra, qtype };
       const res = await teacherFetch("/api/teacher/ai-generate", {
         method: "POST",
         body: JSON.stringify(payload),
@@ -85,9 +87,10 @@ export default function AiGenerate({ classId, hasAiKey, onRegistered, onClose, s
     const payload = approved.map((d) => ({
       class_id: classId,
       body: d.q,
-      options: d.opts,
-      answer_idx: d.answer,
+      options: d.type === "short" ? d.opts.map((o) => o.trim()).filter(Boolean) : d.opts,
+      answer_idx: d.type === "short" ? 0 : d.answer,
       difficulty: d.d,
+      type: d.type,
       tag: tag.trim() || (mode === "special" ? `특수·${spSubject}·${spBand}` : `${subject}·${topic.trim()}`),
       source: mode === "special" ? "AI(특수)" : "AI",
     }));
@@ -120,9 +123,14 @@ export default function AiGenerate({ classId, hasAiKey, onRegistered, onClose, s
 
       {drafts.length === 0 ? (
         <>
-          <div style={{ display: "flex", gap: 6, marginBottom: 10 }}>
+          <div style={{ display: "flex", gap: 6, marginBottom: 8 }}>
             <button onClick={() => setMode("general")} style={{ ...(mode === "general" ? T.primaryBtn : T.secondaryBtn), padding: "7px 14px", fontSize: 13 }}>일반</button>
             <button onClick={() => setMode("special")} style={{ ...(mode === "special" ? T.primaryBtn : T.secondaryBtn), padding: "7px 14px", fontSize: 13 }}>특수 (기본교육과정)</button>
+          </div>
+          <div style={{ display: "flex", gap: 6, marginBottom: 10, alignItems: "center" }}>
+            <span style={{ fontSize: 12, color: "#666" }}>유형</span>
+            <button onClick={() => setQtype("multiple")} style={{ ...(qtype === "multiple" ? T.primaryBtn : T.secondaryBtn), padding: "6px 12px", fontSize: 12 }}>객관식</button>
+            <button onClick={() => setQtype("short")} style={{ ...(qtype === "short" ? T.primaryBtn : T.secondaryBtn), padding: "6px 12px", fontSize: 12 }}>단답형</button>
           </div>
           {mode === "special" ? (
             <>
@@ -189,20 +197,32 @@ export default function AiGenerate({ classId, hasAiKey, onRegistered, onClose, s
                     <option value="hard">어려움</option>
                   </select>
                 </div>
-                {d.opts.map((o, j) => (
-                  <div key={j} style={{ display: "flex", gap: 6, alignItems: "center", marginBottom: 4, marginLeft: 24 }}>
-                    <input type="radio" checked={d.answer === j} onChange={() => update(i, { answer: j })} title="정답으로 지정" />
+                {d.type === "short" ? (
+                  <div style={{ marginLeft: 24, marginBottom: 4 }}>
+                    <div style={{ fontSize: 11, color: "#888", marginBottom: 3 }}>정답 (여러 개 허용 — 쉼표로 구분)</div>
                     <input
-                      value={o}
-                      onChange={(e) => {
-                        const opts = [...d.opts] as Draft["opts"];
-                        opts[j] = e.target.value;
-                        update(i, { opts });
-                      }}
-                      style={{ ...T.input, flex: 1, borderColor: d.answer === j ? "#0f6e56" : "#ddd" }}
+                      value={d.opts.join(", ")}
+                      onChange={(e) => update(i, { opts: e.target.value.split(",").map((s) => s.trim()) })}
+                      placeholder="예: 세종, 세종대왕"
+                      style={{ ...T.input, width: "100%", borderColor: "#0f6e56" }}
                     />
                   </div>
-                ))}
+                ) : (
+                  d.opts.map((o, j) => (
+                    <div key={j} style={{ display: "flex", gap: 6, alignItems: "center", marginBottom: 4, marginLeft: 24 }}>
+                      <input type="radio" checked={d.answer === j} onChange={() => update(i, { answer: j })} title="정답으로 지정" />
+                      <input
+                        value={o}
+                        onChange={(e) => {
+                          const opts = [...d.opts];
+                          opts[j] = e.target.value;
+                          update(i, { opts });
+                        }}
+                        style={{ ...T.input, flex: 1, borderColor: d.answer === j ? "#0f6e56" : "#ddd" }}
+                      />
+                    </div>
+                  ))
+                )}
                 {d.why && <div style={{ fontSize: 11, color: "#888", marginLeft: 24, marginTop: 4 }}>💡 {d.why}</div>}
               </div>
             ))}
