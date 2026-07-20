@@ -16,7 +16,7 @@ export default function Landing() {
           </Link>
           <Link href="/teacher" style={{ ...S.primaryBtn, background: "#3d6fd9", padding: "26px 10px", fontSize: 17, textAlign: "center", textDecoration: "none", display: "block" }}>
             교사로 입장
-            <div style={{ fontSize: 11, marginTop: 6, opacity: 0.85 }}>문제 은행 관리</div>
+            <div style={{ fontSize: 11, marginTop: 6, opacity: 0.85, lineHeight: 1.5 }}>문제 및 학생관리<br />시스템 설정</div>
           </Link>
         </div>
         <div style={{ fontSize: 11, color: "#8a8f9a", marginTop: 22, textAlign: "center", lineHeight: 1.7 }}>

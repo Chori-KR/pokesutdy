@@ -168,7 +168,7 @@ export default function TeacherHome({ session }: { session: Session }) {
       </div>
 
       <div style={{ display: "flex", gap: 6, margin: "12px 0" }}>
-        {([["bank", "문제 은행"], ["stats", "학생·통계"], ["settings", "게임 설정"]] as const).map(([k, label]) => (
+        {([["bank", "문제 은행"], ["stats", "학생·통계"], ["settings", "시스템 설정"]] as const).map(([k, label]) => (
           <button key={k} onClick={() => setTab(k)} style={{ ...T.tabBtn, ...(tab === k ? T.tabOn : {}) }}>{label}</button>
         ))}
       </div>
