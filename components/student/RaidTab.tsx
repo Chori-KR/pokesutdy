@@ -12,7 +12,7 @@ import HpBar from "@/components/HpBar";
 import ShinyFx from "@/components/student/ShinyFx";
 import TypeFx from "@/components/student/TypeFx";
 import TimerBar from "@/components/student/TimerBar";
-import { SFX, playCry, startBattleBgm, stopBattleBgm } from "@/lib/sound";
+import { SFX, playCry, startRaidBgm, stopBattleBgm } from "@/lib/sound";
 
 interface Props {
   student: StudentData;
@@ -152,7 +152,7 @@ export default function RaidTab({
       setStudent({ ...studentRef.current, hp: MAX_HP });
       setBossHp(RAID_BOSS_HP);
       setUsedQ([]);
-      startBattleBgm();
+      startRaidBgm();
       if (boss) playCry(boss.id);
       setPhase("select");
       setMsg(`강력한 ${boss?.name} 레이드! 문제를 맞혀 체력을 깎자!`);

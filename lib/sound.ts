@@ -100,17 +100,46 @@ const BASS: [number, number][] = [
   [131, 0.32], [165, 0.32], [147, 0.32], [131, 0.32],
 ];
 
+// 레이드(보스전) BGM — 단조·저음역의 웅장하고 어두운 루프.
+// 느린 템포 + 깊은 베이스 드론 + 사우투스 멜로디로 긴장감을 준다.
+const MEL_RAID: [number, number][] = [
+  [220, 0.22], [262, 0.22], [330, 0.22], [294, 0.22],   // A C E D
+  [262, 0.22], [247, 0.22], [220, 0.44],                // C B A(길게)
+  [220, 0.22], [330, 0.22], [392, 0.22], [349, 0.22],   // A E G F
+  [330, 0.22], [294, 0.22], [262, 0.44],                // E D C(길게)
+];
+const BASS_RAID: [number, number][] = [
+  [55, 0.44], [55, 0.44], [73, 0.44], [49, 0.44],       // A1 A1 D2 G1
+  [55, 0.44], [87, 0.44], [65, 0.44], [55, 0.44],       // A1 F2 C2 A1
+];
+// 낮게 깔리는 드론(장중함)
+const DRONE_RAID: [number, number][] = [[110, 1.76], [110, 1.76]]; // A2 지속
+
+
+function loopBgm(loopLen: number, play: () => void) {
+  bgmOn = true;
+  play();
+  bgmTimer = setTimeout(function next() {
+    if (!bgmOn || muted) return;
+    play();
+    bgmTimer = setTimeout(next, loopLen * 1000 - 30);
+  }, loopLen * 1000 - 30);
+}
+
 export function startBattleBgm() {
   const a = ac(); if (!a || muted || bgmOn) return;
-  bgmOn = true;
   const loopLen = MEL.reduce((s, [, d]) => s + d, 0);
-  const play = () => {
-    if (!bgmOn || muted) return;
-    seq(MEL, "square", 0.07);
-    seq(BASS, "triangle", 0.09);
-    bgmTimer = setTimeout(play, loopLen * 1000 - 30);
-  };
-  play();
+  loopBgm(loopLen, () => { seq(MEL, "square", 0.07); seq(BASS, "triangle", 0.09); });
+}
+
+export function startRaidBgm() {
+  const a = ac(); if (!a || muted || bgmOn) return;
+  const loopLen = MEL_RAID.reduce((s, [, d]) => s + d, 0);
+  loopBgm(loopLen, () => {
+    seq(MEL_RAID, "sawtooth", 0.055);   // 어두운 멜로디
+    seq(BASS_RAID, "triangle", 0.13);   // 깊고 묵직한 베이스
+    seq(DRONE_RAID, "sine", 0.07);      // 저음 드론(웅장함)
+  });
 }
 
 export function stopBattleBgm() {
