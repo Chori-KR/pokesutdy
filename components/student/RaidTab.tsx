@@ -58,6 +58,7 @@ export default function RaidTab({
   const [loading, setLoading] = useState(true);
   const [raid, setRaid] = useState<RaidStatus | null>(null);
   const [bank, setBank] = useState<ApiQuestion[]>([]);
+  const [needsMig, setNeedsMig] = useState(false); // raid_only 컬럼 미생성(0008 미실행)
   const [picker, setPicker] = useState(false);
 
   const [phase, setPhase] = useState<Phase>("idle");
@@ -109,8 +110,8 @@ export default function RaidTab({
   useEffect(() => {
     Promise.all([
       loadStatus(),
-      fetch("/api/battle/questions").then((r) => r.json()).catch(() => ({ questions: [] })),
-    ]).then(([, qb]) => { setBank(qb?.questions ?? []); setLoading(false); });
+      fetch("/api/raid/questions").then((r) => r.json()).catch(() => ({ questions: [] })),
+    ]).then(([, qb]) => { setBank(qb?.questions ?? []); setNeedsMig(!!qb?.needsMigration); setLoading(false); });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => () => stopBattleBgm(), []);
@@ -323,7 +324,14 @@ export default function RaidTab({
             강력한 보스! <b style={{ color: "#eaa300" }}>문제 10개</b>를 맞혀 쓰러뜨리자. (재도전 가능)
             {raid!.iWon && <span style={{ color: "#4caf3f" }}> · 이미 성공! ✓</span>}
           </div>
-          <button onClick={start} style={{ ...S.primaryBtn, width: "100%", background: "#d9641e", fontSize: 16, padding: "14px 0" }}>레이드 도전!</button>
+          <button onClick={start} disabled={bank.length === 0} style={{ ...S.primaryBtn, width: "100%", background: "#d9641e", fontSize: 16, padding: "14px 0", opacity: bank.length === 0 ? 0.45 : 1 }}>레이드 도전!</button>
+          {bank.length === 0 && (
+            <div style={{ fontSize: 11.5, color: "#b45", marginTop: 10, lineHeight: 1.6 }}>
+              {needsMig
+                ? "레이드 전용 문제 기능 준비 중이에요. 선생님께 문의해주세요."
+                : "아직 레이드 전용 문제가 없어요. 선생님이 '레이드 전용' 문제를 등록하면 도전할 수 있어요!"}
+            </div>
+          )}
         </div>
         {coop}
         {requestCard}

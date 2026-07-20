@@ -9,12 +9,18 @@ export async function GET(req: NextRequest) {
   if (auth instanceof NextResponse) return auth;
   const { supa, student } = auth;
 
-  const { data } = await supa
-    .from("questions")
-    .select("id, body, options, answer_idx, difficulty, tag")
-    .eq("class_id", student.class_id)
-    .eq("active", true)
-    .neq("type", "short"); // 배틀은 4지선다만 (단답형은 문제풀이 탭에서)
+  // 배틀은 4지선다만(단답형은 문제풀이 탭), 그리고 레이드 전용 문제는 제외한다.
+  const base = () =>
+    supa
+      .from("questions")
+      .select("id, body, options, answer_idx, difficulty, tag")
+      .eq("class_id", student.class_id)
+      .eq("active", true)
+      .neq("type", "short");
+
+  let { data, error } = await base().eq("raid_only", false);
+  // raid_only 컬럼이 아직 없는 DB(0008 미실행)에서도 배틀이 멈추지 않도록 폴백
+  if (error) ({ data } = await base());
 
   return NextResponse.json({ questions: data ?? [] });
 }

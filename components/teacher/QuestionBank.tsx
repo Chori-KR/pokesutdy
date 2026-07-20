@@ -18,6 +18,7 @@ export interface QuestionRow {
   active: boolean;
   source: string;
   type?: string; // "multiple"(기본) | "short"(단답형)
+  raid_only?: boolean; // true면 평소 배틀엔 안 나오고 레이드에서만 출제
   tries: number;
   wrong: number;
   created_at: string;
@@ -42,12 +43,17 @@ interface FormState {
   tag: string;
   qtype: "multiple" | "short";
   shortAnswers: string; // 단답형 허용 정답(쉼표로 구분)
+  raidOnly: boolean;    // 레이드 전용 문제 여부
 }
 
 const EMPTY_FORM: FormState = {
   id: null, body: "", options: ["", "", "", ""], answer_idx: 0, difficulty: "easy", tag: "",
-  qtype: "multiple", shortAnswers: "",
+  qtype: "multiple", shortAnswers: "", raidOnly: false,
 };
+
+// 0008 미실행 DB 안내 (client 번들에 서버 모듈 import 방지 위해 문구를 인라인)
+const RAID_ONLY_HINT =
+  "레이드 전용 문제 기능에 필요한 DB 작업이 아직 안 됐어요. 'supabase/migrations/0008_raid_only.sql' 실행이 필요해요.";
 
 export default function QuestionBank({ classId, questions, setQuestions, showToast, hasAiKey }: Props) {
   const [search, setSearch] = useState("");
@@ -66,6 +72,28 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
     const supa = supabaseBrowser();
     const { error } = await supa.from("questions").update({ active: !q.active }).eq("id", q.id);
     if (!error) setQuestions(questions.map((x) => (x.id === q.id ? { ...x, active: !q.active } : x)));
+  }
+
+  // 레이드 전용 지정/해제 — true면 평소 배틀엔 안 나오고 레이드에서만 출제
+  async function toggleRaidOnly(q: QuestionRow) {
+    const next = !q.raid_only;
+    const supa = supabaseBrowser();
+    const { error } = await supa.from("questions").update({ raid_only: next }).eq("id", q.id);
+    if (error) { showToast(/raid_only/.test(error.message) ? RAID_ONLY_HINT : "변경에 실패했어요."); return; }
+    setQuestions(questions.map((x) => (x.id === q.id ? { ...x, raid_only: next } : x)));
+    showToast(next ? "레이드 전용으로 지정했어요. (평소 배틀엔 안 나와요)" : "레이드 전용을 해제했어요.");
+  }
+
+  // 선택 일괄: 레이드 전용 지정/해제
+  async function bulkSetRaidOnly(raid_only: boolean) {
+    const ids = [...selected];
+    if (ids.length === 0) return;
+    const supa = supabaseBrowser();
+    const { error } = await supa.from("questions").update({ raid_only }).in("id", ids);
+    if (error) { showToast(/raid_only/.test(error.message) ? RAID_ONLY_HINT : "일괄 변경에 실패했어요."); return; }
+    setQuestions(questions.map((x) => (selected.has(x.id) ? { ...x, raid_only } : x)));
+    showToast(`선택한 ${ids.length}개를 레이드 전용 ${raid_only ? "지정" : "해제"}했어요.`);
+    setSelected(new Set());
   }
 
   // 태그 단위 일괄 출제 켜기/끄기 (명세 §5.1)
@@ -143,6 +171,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
       answer_idx: q.answer_idx, difficulty: q.difficulty, tag: q.tag,
       qtype: isShort ? "short" : "multiple",
       shortAnswers: isShort ? (q.options ?? []).join(", ") : "",
+      raidOnly: !!q.raid_only,
     });
     setFormErr("");
   }
@@ -162,6 +191,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
         difficulty: form.difficulty,
         tag: form.tag.trim() || "미분류",
         type: "short",
+        raid_only: form.raidOnly,
       };
     } else {
       if (form.options.some((o) => !o.trim())) { setFormErr("보기 4개를 모두 입력해주세요."); return; }
@@ -172,22 +202,29 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
         difficulty: form.difficulty,
         tag: form.tag.trim() || "미분류",
         type: "multiple",
+        raid_only: form.raidOnly,
       };
     }
     const supa = supabaseBrowser();
+    // raid_only 컬럼이 없는 DB(0008 미실행)에서도 저장은 되게 폴백
+    const stripRaid = (p: typeof payload) => { const { raid_only, ...rest } = p as typeof payload & { raid_only?: boolean }; return rest; };
     if (form.id) {
-      const { error } = await supa.from("questions").update(payload).eq("id", form.id);
+      let { error } = await supa.from("questions").update(payload).eq("id", form.id);
+      if (error && /raid_only/.test(error.message)) {
+        ({ error } = await supa.from("questions").update(stripRaid(payload)).eq("id", form.id));
+        if (!error) showToast(RAID_ONLY_HINT);
+      }
       if (error) { setFormErr(`저장 실패: ${error.message}`); return; }
       setQuestions(questions.map((x) => (x.id === form.id ? { ...x, ...payload } : x)));
       showToast("문제를 수정했어요.");
     } else {
-      const { data, error } = await supa
-        .from("questions")
-        .insert({ ...payload, class_id: classId, source: "수동" })
-        .select("*")
-        .single();
-      if (error || !data) { setFormErr(`등록 실패: ${error?.message}`); return; }
-      setQuestions([data as QuestionRow, ...questions]);
+      let res = await supa.from("questions").insert({ ...payload, class_id: classId, source: "수동" }).select("*").single();
+      if (res.error && /raid_only/.test(res.error.message)) {
+        res = await supa.from("questions").insert({ ...stripRaid(payload), class_id: classId, source: "수동" }).select("*").single();
+        if (!res.error) showToast(RAID_ONLY_HINT);
+      }
+      if (res.error || !res.data) { setFormErr(`등록 실패: ${res.error?.message}`); return; }
+      setQuestions([res.data as QuestionRow, ...questions]);
       showToast("문제를 등록했어요.");
     }
     setForm(null);
@@ -285,6 +322,10 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
             </select>
             <input value={form.tag} onChange={(e) => setForm({ ...form, tag: e.target.value })} placeholder="단원 태그 (예: 수학·분수의 덧셈)" style={{ ...T.input, flex: 1 }} />
           </div>
+          <label style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 10, fontSize: 12.5, cursor: "pointer" }}>
+            <input type="checkbox" checked={form.raidOnly} onChange={(e) => setForm({ ...form, raidOnly: e.target.checked })} />
+            🛡️ 레이드 전용 <span style={{ color: "#888", fontSize: 11 }}>(체크하면 평소 배틀엔 안 나오고 레이드에서만 출제 — 형성평가용)</span>
+          </label>
           {formErr && <div style={{ fontSize: 12, color: "#a32d2d", marginBottom: 8 }}>{formErr}</div>}
           <div style={{ display: "flex", gap: 8 }}>
             <button onClick={saveForm} style={T.primaryBtn}>{form.id ? "수정 저장" : "등록"}</button>
@@ -316,6 +357,8 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
           <span style={{ display: "flex", gap: 6, marginLeft: "auto", flexWrap: "wrap", justifyContent: "flex-end" }}>
             <button onClick={() => bulkSetSelected(true)} disabled={selected.size === 0} style={{ ...T.chip, color: selected.size ? "#0f6e56" : "#ccc", borderColor: selected.size ? "#0f6e56" : "#eee", cursor: selected.size ? "pointer" : "default" }}>선택 출제</button>
             <button onClick={() => bulkSetSelected(false)} disabled={selected.size === 0} style={{ ...T.chip, color: selected.size ? "#a32d2d" : "#ccc", borderColor: selected.size ? "#a32d2d" : "#eee", cursor: selected.size ? "pointer" : "default" }}>선택 숨김</button>
+            <button onClick={() => bulkSetRaidOnly(true)} disabled={selected.size === 0} style={{ ...T.chip, color: selected.size ? "#c0651e" : "#ccc", borderColor: selected.size ? "#e0a06a" : "#eee", cursor: selected.size ? "pointer" : "default" }}>🛡️ 레이드 지정</button>
+            <button onClick={() => bulkSetRaidOnly(false)} disabled={selected.size === 0} style={{ ...T.chip, color: selected.size ? "#8890a0" : "#ccc", borderColor: selected.size ? "#c9cfda" : "#eee", cursor: selected.size ? "pointer" : "default" }}>레이드 해제</button>
             <button onClick={bulkDeleteSelected} disabled={selected.size === 0} style={{ ...T.chip, background: selected.size ? "#fdecec" : "#fff", color: selected.size ? "#c0392b" : "#ccc", borderColor: selected.size ? "#f0b4b4" : "#eee", cursor: selected.size ? "pointer" : "default", fontWeight: 600 }}>🗑 선택 삭제</button>
             {selected.size > 0 && (
               <button onClick={() => setSelected(new Set())} style={{ ...T.chip, color: "#888" }}>선택 해제</button>
@@ -355,6 +398,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
                   <div style={{ display: "flex", gap: 6, marginTop: 6, alignItems: "center", fontSize: 10 }}>
                     <span style={{ padding: "2px 7px", borderRadius: 9, background: DIFF[q.difficulty].bg, color: DIFF[q.difficulty].fg }}>{DIFF[q.difficulty].label}</span>
                     <span style={{ padding: "2px 7px", borderRadius: 9, background: "#eef1f8", color: "#3a4a7a" }}>{q.tag}</span>
+                    {q.raid_only && <span style={{ padding: "2px 7px", borderRadius: 9, background: "#fdeee0", color: "#c0651e", fontWeight: 700 }}>🛡️ 레이드 전용</span>}
                     {wrongRate !== null && (
                       <span style={{ color: wrongRate >= 50 ? "#a32d2d" : "#888" }}>오답률 {wrongRate}% ({q.tries}회 풀림)</span>
                     )}
@@ -364,6 +408,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
                   <span onClick={() => toggleActive(q)} title={q.active ? "출제 중 (클릭해서 숨김)" : "숨김 (클릭해서 출제)"} style={{ position: "relative", width: 32, height: 17, background: q.active ? "#3d6fd9" : "#ccc", borderRadius: 9, cursor: "pointer" }}>
                     <span style={{ position: "absolute", top: 2, left: q.active ? 17 : 2, width: 13, height: 13, background: "#fff", borderRadius: "50%", transition: "left 0.2s" }} />
                   </span>
+                  <button onClick={() => toggleRaidOnly(q)} title="레이드 전용 지정/해제" style={{ ...T.smallBtn, border: q.raid_only ? "1px solid #e0a06a" : "1px solid #d9dde6", color: q.raid_only ? "#c0651e" : "#8890a0", background: q.raid_only ? "#fdf3ea" : "#fff" }}>🛡️ 레이드{q.raid_only ? " ✓" : ""}</button>
                   <button onClick={() => openEdit(q)} style={{ ...T.smallBtn, border: "1px solid #b4c4e0", color: "#3a5" }}>수정</button>
                   <button onClick={() => remove(q)} style={T.smallBtn}>삭제</button>
                 </div>

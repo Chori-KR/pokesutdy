@@ -86,6 +86,9 @@ export default function RaidSettings({ cls, setCls, showToast }: Props) {
       <div style={{ fontSize: 11, color: "#888", marginBottom: 10, lineHeight: 1.6 }}>
         보스의 <b>체력을 문제 10개</b>로 깎으면 성공. 반에서 기준 인원 이상 성공하면 그 포켓몬이 <b>모두에게 지급</b>돼요. 재도전 가능.
       </div>
+      <div style={{ fontSize: 11, color: "#c0651e", background: "#fdf3ea", border: "1px solid #f0d5bd", borderRadius: 8, padding: "8px 10px", marginBottom: 12, lineHeight: 1.6 }}>
+        🛡️ 레이드에는 <b>‘레이드 전용’으로 지정한 문제만</b> 출제돼요(평소 배틀엔 안 나옴). <b>문제 은행</b> 탭에서 문제의 <b>🛡️ 레이드</b> 버튼으로 지정하세요. 전용 문제가 없으면 학생이 도전할 수 없어요.
+      </div>
 
       {/* 현재 상태 */}
       <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "8px 10px", borderRadius: 10, background: on ? "#eef6ee" : "#f4f4f4", marginBottom: 12 }}>
