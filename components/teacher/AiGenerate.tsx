@@ -103,7 +103,7 @@ export default function AiGenerate({ classId, hasAiKey, onRegistered, onClose, s
       <div style={{ ...T.card, marginBottom: 10, border: "2px solid #e0a63a" }}>
         <div style={{ fontSize: 14, fontWeight: 600, marginBottom: 6 }}>🤖 AI 문제 생성</div>
         <div style={{ fontSize: 13, color: "#666", lineHeight: 1.7 }}>
-          AI 생성을 쓰려면 <b>게임 설정 탭</b>에서 AI 제공사와 API 키를 먼저 등록해주세요.
+          AI 생성을 쓰려면 <b>시스템 설정 탭</b>에서 AI 제공사와 API 키를 먼저 등록해주세요.
           Google Gemini는 무료로 키를 만들 수 있어요 —{" "}
           <a href="/guide/ai-key" target="_blank" style={{ color: "#3d6fd9" }}>5분 키 발급 가이드</a>
         </div>
