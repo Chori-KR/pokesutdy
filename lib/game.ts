@@ -1,7 +1,7 @@
 // 게임 상수 — 프로토타입(pokestudy-integrated-prototype.jsx)에서 포팅.
 // 수치 근거: pokestudy-dev-spec.md §4
 
-export type Rarity = "common" | "rare" | "legendary";
+export type Rarity = "common" | "special" | "rare" | "legendary";
 export type Difficulty = "easy" | "medium" | "hard";
 export type BallKind = "poke" | "superb" | "hyper" | "master";
 
@@ -68,18 +68,17 @@ export const GEN1: [string, string][] = [
 
 export const LEGENDARY_IDS = new Set([144, 145, 146, 150, 151]);
 
-// 등급 규칙(재분류): 최종 진화체 + 상징적 단일 포켓몬 + 스타팅 = 희귀 / 나머지 = 흔함
-// (니드퀸·투구푸스 같은 진화체가 '흔함'이던 문제 수정)
+// 등급 4체계(교사 지정): 흔함 / 특별 / 희귀 / 전설. 아래 집합에 없으면 흔함.
+export const SPECIAL_IDS = new Set([
+  2, 5, 8, 11, 14, 17, 20, 22, 24, 28, 30, 33, 36, 40, 42, 44, 47, 49, 51,
+  53, 59, 61, 64, 67, 70, 73, 75, 80, 82, 83, 85, 87, 89, 91, 93, 95, 97,
+  99, 101, 105, 108, 110, 111, 114, 117, 119, 120, 122, 124, 127, 128, 132,
+  133, 138, 140, 147, 148,
+]);
 export const RARE_IDS = new Set([
-  // 각 진화 라인의 최종 진화체
-  3, 6, 9, 12, 15, 18, 20, 22, 24, 26, 28, 31, 34, 36, 38, 40, 42, 45, 47,
-  49, 51, 53, 55, 57, 59, 62, 65, 68, 71, 73, 76, 78, 80, 82, 85, 87, 89,
-  91, 94, 97, 99, 101, 103, 105, 110, 112, 117, 119, 121, 130, 134, 135,
-  136, 139, 141, 149,
-  // 상징적 단일/특수 포켓몬
-  113, 115, 123, 127, 131, 132, 133, 142, 143, 147, 148,
-  // 스타팅 포켓몬 (야생에서도 귀하게)
-  1, 4, 7, 25,
+  3, 6, 9, 12, 15, 18, 26, 31, 34, 38, 45, 55, 57, 62, 65, 68, 71, 76, 78,
+  94, 103, 106, 107, 112, 113, 115, 121, 123, 125, 126, 130, 131, 134, 135,
+  136, 137, 139, 141, 142, 143, 149,
 ]);
 
 // 1세대 진화 체인: 진화 전 → 진화 후 후보들 (이브이는 3갈래 분기)
@@ -165,7 +164,7 @@ export const POOL: Pokemon[] = GEN1.map(([name, type], i) => {
   return {
     id, name, type,
     color: TYPE_COLORS[type],
-    rarity: LEGENDARY_IDS.has(id) ? "legendary" : RARE_IDS.has(id) ? "rare" : "common",
+    rarity: LEGENDARY_IDS.has(id) ? "legendary" : RARE_IDS.has(id) ? "rare" : SPECIAL_IDS.has(id) ? "special" : "common",
   };
 });
 
@@ -174,6 +173,7 @@ export const RARITY: Record<Rarity, {
   pts: number; xp: number; lv: number;
 }> = {
   common: { label: "흔함", color: "#7ec8a8", catch: 0.9, hp: 40, atk: 10, pts: 50, xp: 20, lv: 5 },
+  special: { label: "특별", color: "#5aa9e8", catch: 0.75, hp: 55, atk: 13, pts: 75, xp: 30, lv: 8 },
   rare: { label: "희귀", color: "#f2b04c", catch: 0.6, hp: 70, atk: 15, pts: 100, xp: 40, lv: 12 },
   legendary: { label: "전설", color: "#c77dff", catch: 0.3, hp: 120, atk: 25, pts: 300, xp: 100, lv: 30 },
 };
@@ -189,12 +189,20 @@ export const BALLS: Record<BallKind, { name: string; price: number; bonus: numbe
 // M6: 약 판매 전면 종료 — 배틀이 끝나면 자동으로 완전 회복된다.
 
 // M5: 간식 — 추가 배틀 1회 + 등급 확정 출현 (일일 배틀 제한과 무관)
-export type SnackKind = "snack" | "snack2" | "snack3";
-export const SNACKS: Record<SnackKind, { name: string; price: number; rarity: Rarity; emoji: string; desc: string }> = {
-  snack: { name: "일반 간식", price: 500, rarity: "common", emoji: "🍪", desc: "추가 배틀 1회! 흔함 포켓몬이 랜덤으로 나와요" },
-  snack2: { name: "고급 간식", price: 2000, rarity: "rare", emoji: "🍰", desc: "추가 배틀 1회! 희귀 포켓몬이 랜덤으로 나와요" },
-  snack3: { name: "최고급 간식", price: 6000, rarity: "legendary", emoji: "🎂", desc: "추가 배틀 1회! 전설 포켓몬이 확정으로 나와요!" },
+export type SnackKind = "snack" | "snack2" | "snack3" | "snack4";
+// 간식: 추가 배틀 1회 + 등급 분포(dist)에 따라 야생 등장. rarity는 대표 표시용.
+export const SNACKS: Record<SnackKind, { name: string; price: number; rarity: Rarity; emoji: string; desc: string; dist: [Rarity, number][] }> = {
+  snack:  { name: "일반 간식", price: 500, rarity: "special", emoji: "🍪", desc: "추가 배틀 1회! 흔함~특별 포켓몬이 랜덤으로 나와요 — 배틀 탭에서 사용", dist: [["common", 0.7], ["special", 0.3]] },
+  snack2: { name: "고급 간식", price: 2000, rarity: "rare", emoji: "🍰", desc: "추가 배틀 1회! 특별~희귀 포켓몬이 랜덤으로 나와요 — 배틀 탭에서 사용", dist: [["special", 0.6], ["rare", 0.4]] },
+  snack3: { name: "최고급 간식", price: 4000, rarity: "rare", emoji: "🎂", desc: "추가 배틀 1회! 희귀 포켓몬이 랜덤 나와요! — 가끔 전설 포켓몬이 나오기도 합니다. 배틀 탭에서 사용", dist: [["rare", 0.9], ["legendary", 0.1]] },
+  snack4: { name: "전설의 간식", price: 6000, rarity: "legendary", emoji: "🍱", desc: "추가 배틀 1회! 전설 포켓몬이 확정으로 나와요! — 배틀 탭에서 사용", dist: [["legendary", 1]] },
 };
+// 간식별 등급 분포에서 실제 출현 등급을 뽑는다.
+export function rollSnackRarity(k: SnackKind): Rarity {
+  const r = Math.random(); let acc = 0;
+  for (const [rar, p] of SNACKS[k].dist) { acc += p; if (r < acc) return rar; }
+  return SNACKS[k].dist[SNACKS[k].dist.length - 1][0];
+}
 
 // M5: 진화의돌 — 돌 진화 포켓몬(피카츄→라이츄 등)은 이것으로만 진화
 export const EVO_STONE = { name: "진화의돌", price: 1500, emoji: "💎", desc: "돌로 진화하는 포켓몬(피카츄·이브이 등)의 진화에 필요" };
@@ -225,7 +233,7 @@ export const DEX_MILESTONES: { n: number; item: ShopItem; count: number; label: 
 ];
 
 // 중복 포켓몬 환전 — 여분(count-1) 1마리당 포인트(등급별).
-export const DUPE_CONVERT: Record<Rarity, number> = { common: 30, rare: 70, legendary: 150 };
+export const DUPE_CONVERT: Record<Rarity, number> = { common: 30, special: 50, rare: 70, legendary: 150 };
 
 // 데일리 퀴즈 정답 보상 볼: 몬스터볼 50% / 슈퍼볼 30% / 하이퍼볼 20%
 export const rollQuizBall = (): BallKind => {
@@ -296,7 +304,7 @@ export const DIFF_FROM_LABEL: Record<string, Difficulty> = { 쉬움: "easy", 보
 export const INITIAL_INVENTORY = {
   poke: 3, superb: 0, hyper: 0, master: 0,
   potion: 0, revive: 0,
-  stone: 0, snack: 0, snack2: 0, snack3: 0, spray: 0,
+  stone: 0, snack: 0, snack2: 0, snack3: 0, snack4: 0, spray: 0,
 };
 export type Inventory = typeof INITIAL_INVENTORY;
 
@@ -326,13 +334,17 @@ export const BIOMES: Record<string, Biome> = {
 export const BIOME_KEYS = Object.keys(BIOMES);
 export const pickBiome = (): string => BIOME_KEYS[Math.floor(Math.random() * BIOME_KEYS.length)];
 
-// 등급 확률: legendRate(전설), rareRate(희귀), 나머지=흔함. 교사 설정으로 조정.
-export const DEFAULT_RARE_RATE = 0.30;
+// 등급 확률(4체계): 전설/희귀/특별, 나머지=흔함. 교사 설정으로 조정.
+export const DEFAULT_SPECIAL_RATE = 0.25;
+export const DEFAULT_RARE_RATE = 0.15;
 export const DEFAULT_LEGEND_RATE = 0.05;
-export const rollRarity = (rareRate = DEFAULT_RARE_RATE, legendRate = DEFAULT_LEGEND_RATE): Rarity => {
+export const rollRarity = (
+  rareRate = DEFAULT_RARE_RATE, specialRate = DEFAULT_SPECIAL_RATE, legendRate = DEFAULT_LEGEND_RATE
+): Rarity => {
   const r = Math.random();
   if (r < legendRate) return "legendary";
   if (r < legendRate + rareRate) return "rare";
+  if (r < legendRate + rareRate + specialRate) return "special";
   return "common";
 };
 
@@ -345,8 +357,9 @@ export const pickWildOf = (rarity: Rarity, biomeTypes?: string[]): Pokemon => {
   }
   return pool[Math.floor(Math.random() * pool.length)];
 };
-export const pickWild = (rareRate = DEFAULT_RARE_RATE, legendRate = DEFAULT_LEGEND_RATE, biomeTypes?: string[]): Pokemon =>
-  pickWildOf(rollRarity(rareRate, legendRate), biomeTypes);
+export const pickWild = (
+  rareRate = DEFAULT_RARE_RATE, specialRate = DEFAULT_SPECIAL_RATE, legendRate = DEFAULT_LEGEND_RATE, biomeTypes?: string[]
+): Pokemon => pickWildOf(rollRarity(rareRate, specialRate, legendRate), biomeTypes);
 
 // 100XP당 1레벨
 export const gainXpCalc = (cur: { xp: number; level: number }, n: number) => {

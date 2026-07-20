@@ -23,6 +23,7 @@ export interface ClassRow {
     timerOn?: boolean;
     timeScale?: number;
     rareRate?: number;
+    specialRate?: number;
     legendRate?: number;
     shinyRate?: number;
     raid?: {
@@ -232,28 +233,34 @@ export default function TeacherHome({ session }: { session: Session }) {
             )}
           </div>
           {(() => {
-            const r0 = Math.round((cls.settings?.rareRate ?? 0.3) * 100);
+            const r0 = Math.round((cls.settings?.rareRate ?? 0.15) * 100);
+            const sp0 = Math.round((cls.settings?.specialRate ?? 0.25) * 100);
             const l0 = Math.round((cls.settings?.legendRate ?? 0.05) * 100);
-            const c0 = Math.max(0, 100 - r0 - l0);
-            const cur: Record<string, number> = { common: c0, rare: r0, legend: l0 };
-            const setRarity = (which: "common" | "rare" | "legend", vRaw: number) => {
+            const c0 = Math.max(0, 100 - r0 - sp0 - l0);
+            const cur: Record<string, number> = { common: c0, special: sp0, rare: r0, legend: l0 };
+            const KEYS = ["common", "special", "rare", "legend"] as const;
+            const setRarity = (which: (typeof KEYS)[number], vRaw: number) => {
               const v = Math.max(0, Math.min(100, Math.round(vRaw) || 0));
-              const others = (["common", "rare", "legend"] as const).filter((k) => k !== which);
+              const others = KEYS.filter((k) => k !== which);
               const remain = 100 - v;
-              const sumO = cur[others[0]] + cur[others[1]];
-              const a = sumO <= 0 ? Math.round(remain / 2) : Math.round((remain * cur[others[0]]) / sumO);
-              const b = remain - a;
-              const vals: Record<string, number> = { [which]: v, [others[0]]: a, [others[1]]: b };
-              updateSettings({ rareRate: vals.rare / 100, legendRate: vals.legend / 100 });
+              const sumO = others.reduce((s, k) => s + cur[k], 0);
+              const vals: Record<string, number> = { [which]: v };
+              let acc = 0;
+              others.forEach((k, i) => {
+                if (i === others.length - 1) { vals[k] = Math.max(0, remain - acc); }
+                else { const a = sumO <= 0 ? Math.round(remain / others.length) : Math.round((remain * cur[k]) / sumO); vals[k] = a; acc += a; }
+              });
+              updateSettings({ rareRate: vals.rare / 100, specialRate: vals.special / 100, legendRate: vals.legend / 100 });
             };
             const shinyPct = Math.round((cls.settings?.shinyRate ?? 0.025) * 1000) / 10;
+            const sum = c0 + sp0 + r0 + l0;
             return (
               <div style={T.card}>
                 <div style={{ fontSize: 13, fontWeight: 600 }}>야생 출현 확률 <span style={{ fontSize: 11, color: "#888", fontWeight: 400 }}>(이벤트 주간에 조정!)</span></div>
                 <div style={{ fontSize: 11, color: "#888", margin: "4px 0 10px" }}>
-                  세 등급의 합은 항상 100%로 자동 맞춰져요. (기본: 흔함 65 · 희귀 30 · 전설 5)
+                  네 등급의 합은 항상 100%로 자동 맞춰져요. (기본: 흔함 55 · 특별 25 · 희귀 15 · 전설 5)
                 </div>
-                {([["common", "흔함"], ["rare", "희귀"], ["legend", "전설"]] as const).map(([key, label]) => (
+                {([["common", "흔함"], ["special", "특별"], ["rare", "희귀"], ["legend", "전설"]] as const).map(([key, label]) => (
                   <div key={key} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 13, marginBottom: 8 }}>
                     <span>{label} 확률(%)</span>
                     <input type="number" min={0} max={100} value={cur[key]}
@@ -261,8 +268,8 @@ export default function TeacherHome({ session }: { session: Session }) {
                       style={{ ...T.input, width: 70, textAlign: "center", flexShrink: 0 }} />
                   </div>
                 ))}
-                <div style={{ fontSize: 11, color: c0 + r0 + l0 === 100 ? "#3a7" : "#a33", marginTop: 2, marginBottom: 12 }}>
-                  합계 {c0 + r0 + l0}% (흔함 {c0} · 희귀 {r0} · 전설 {l0})
+                <div style={{ fontSize: 11, color: sum === 100 ? "#3a7" : "#a33", marginTop: 2, marginBottom: 12 }}>
+                  합계 {sum}% (흔함 {c0} · 특별 {sp0} · 희귀 {r0} · 전설 {l0})
                 </div>
                 <div style={{ borderTop: "1px solid #eee", paddingTop: 10, display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 13 }}>
                   <span>✨ 이로치 확률(%) <span style={{ fontSize: 11, color: "#888" }}>(기본 2.5%)</span></span>

@@ -83,7 +83,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const winsNeeded = evoWinsNeeded(mine.id);
   const pointCost = evoPointCost(game.evoCount); // M5: 누적 진화 횟수별 1000/2000/2500P
   const battlesLeft = Math.max(0, day.battleLimit - day.battleUsed);
-  const SNACK_KINDS: SnackKind[] = ["snack", "snack2", "snack3"];
+  const SNACK_KINDS: SnackKind[] = ["snack", "snack2", "snack3", "snack4"];
   // M9: 도감(caught)엔 있어도 보유 0마리면 배틀에 못 데려감 — count≥1만 선택 가능
   const ownedIds = useMemo(
     () => caught.filter((id) => (counts[id] ?? 0) >= 1).sort((a, b) => a - b),
@@ -691,7 +691,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
               {SNACK_KINDS.filter((k) => student.inventory[k] > 0).map((k) => (
                 <button key={k} onClick={() => beginBattle(k)} style={{ ...S.choiceBtn, flex: 1, fontSize: 11 }}>
                   {SNACKS[k].emoji} {SNACKS[k].name} 주기 ×{student.inventory[k]}
-                  <div style={{ fontSize: 9, color: "#5b7a99", marginTop: 2 }}>{RARITY[SNACKS[k].rarity].label} 확정 배틀!</div>
+                  <div style={{ fontSize: 9, color: "#5b7a99", marginTop: 2 }}>{k === "snack4" ? "전설 확정 배틀!" : "추가 배틀 · 랜덤 등장!"}</div>
                 </button>
               ))}
             </div>

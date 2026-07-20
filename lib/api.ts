@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { SupabaseClient } from "@supabase/supabase-js";
 import { supabaseAdmin } from "@/lib/supabase/admin";
 import { getStudentSession, StudentSession } from "@/lib/studentSession";
-import { Inventory, DEFAULT_EXPLORE_LIMIT, DEFAULT_SOLVE_LIMIT, DEFAULT_BATTLE_LIMIT, DEFAULT_RARE_RATE, DEFAULT_LEGEND_RATE, DEFAULT_SHINY_RATE, DEFAULT_RAID_THRESHOLD, DEFAULT_RAID_REWARD_PTS } from "@/lib/game";
+import { Inventory, DEFAULT_EXPLORE_LIMIT, DEFAULT_SOLVE_LIMIT, DEFAULT_BATTLE_LIMIT, DEFAULT_RARE_RATE, DEFAULT_SPECIAL_RATE, DEFAULT_LEGEND_RATE, DEFAULT_SHINY_RATE, DEFAULT_RAID_THRESHOLD, DEFAULT_RAID_REWARD_PTS } from "@/lib/game";
 
 // 일일 상태 (day_state jsonb) — 자정(Asia/Seoul) 지나면 통째로 리셋 (명세 §4.7)
 export interface DayState {
@@ -116,14 +116,16 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
   const { data } = await supa.from("classes").select("settings").eq("id", classId).single();
   const s = (data?.settings ?? {}) as {
     moveDiff?: boolean; exploreLimit?: number; solveLimit?: number; battleLimit?: number;
-    timerOn?: boolean; timeScale?: number; rareRate?: number; legendRate?: number; shinyRate?: number;
+    timerOn?: boolean; timeScale?: number; rareRate?: number; specialRate?: number; legendRate?: number; shinyRate?: number;
     raid?: {
       on?: boolean; pid?: number; shiny?: boolean; round?: number;
       threshold?: number; rewardPts?: number; rewardItem?: string; rewardCount?: number;
     };
   };
-  const rareRate = Math.min(1, Math.max(0, Number(s.rareRate ?? DEFAULT_RARE_RATE)));
+  // 4체계 확률(전설→희귀→특별 순으로 상한 클램프, 합 1 이하 보장; 흔함=나머지)
   const legendRate = Math.min(1, Math.max(0, Number(s.legendRate ?? DEFAULT_LEGEND_RATE)));
+  const rareRate = Math.min(1 - legendRate, Math.max(0, Number(s.rareRate ?? DEFAULT_RARE_RATE)));
+  const specialRate = Math.min(1 - legendRate - rareRate, Math.max(0, Number(s.specialRate ?? DEFAULT_SPECIAL_RATE)));
   return {
     moveDiff: s.moveDiff !== false,
     exploreLimit: Math.max(0, Number(s.exploreLimit ?? DEFAULT_EXPLORE_LIMIT)),
@@ -132,7 +134,8 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
     timerOn: s.timerOn !== false,                                   // 기본 켜짐
     timeScale: Math.min(3, Math.max(1, Number(s.timeScale ?? 1.5))), // 기본 1.5배(넉넉)
     rareRate,                                                        // 희귀 확률
-    legendRate: Math.min(legendRate, 1 - rareRate),                 // 전설 확률(합 1 이하 보장)
+    specialRate,                                                     // 특별 확률
+    legendRate,                                                      // 전설 확률
     shinyRate: Math.min(1, Math.max(0, Number(s.shinyRate ?? DEFAULT_SHINY_RATE))), // 이로치 확률
     raid: {                                                          // 레이드(형성평가)
       on: s.raid?.on === true,
