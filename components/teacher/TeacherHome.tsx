@@ -14,7 +14,7 @@ import Brand from "@/components/Brand";
 
 // 관리자(앱 제작자) 이메일 — 이 계정으로 로그인했을 때만 '가입 현황' 탭이 보인다.
 // 실제 권한 검증은 서버(/api/admin/stats)에서 다시 하므로 여기선 표시 여부만 결정.
-const ADMIN_EMAIL = (process.env.NEXT_PUBLIC_ADMIN_EMAIL || "").trim().toLowerCase();
+const ADMIN_EMAIL = (process.env.NEXT_PUBLIC_ADMIN_EMAIL || "duscjf5866@gmail.com").trim().toLowerCase();
 
 export interface ClassRow {
   id: string;

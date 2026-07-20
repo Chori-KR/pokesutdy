@@ -20,7 +20,7 @@ export default function Brand({
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/brand.png"
+        src="/okid.png"
         alt="초리쌤 교수학습콘텐츠"
         style={{ height, width: "auto", display: "block" }}
       />

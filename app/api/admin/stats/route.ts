@@ -7,7 +7,7 @@ import { jsonError } from "@/lib/api";
 //   - 토큰은 service-role로 검증하므로 이메일 위조 불가.
 //   - ADMIN_EMAIL(=NEXT_PUBLIC_ADMIN_EMAIL) 미설정 시 전원 차단(기능 off).
 // 반환: 교사 수 / 학급 수 / 학생 수 + 최근 가입 교사 목록.
-const ADMIN_EMAIL = (process.env.ADMIN_EMAIL || process.env.NEXT_PUBLIC_ADMIN_EMAIL || "")
+const ADMIN_EMAIL = (process.env.ADMIN_EMAIL || process.env.NEXT_PUBLIC_ADMIN_EMAIL || "duscjf5866@gmail.com")
   .trim()
   .toLowerCase();
 
