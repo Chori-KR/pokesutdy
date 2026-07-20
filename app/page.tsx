@@ -6,9 +6,9 @@ export default function Landing() {
   return (
     <div style={{ ...S.page, display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-        <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 2, letterSpacing: 1 }}>포켓몬 기반 학습 플랫폼</div>
+        <div style={{ fontSize: 12, color: "#5b7a99", marginBottom: 2, letterSpacing: 1 }}>포켓몬 기반 학습 플랫폼</div>
         <div style={{ fontSize: 30, fontWeight: 800, marginBottom: 8 }}>잡으면서 배우자!</div>
-        <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 26 }}>공부하고, 배틀하고, 도감을 완성하자!</div>
+        <div style={{ fontSize: 12, color: "#5b7a99", marginBottom: 26 }}>공부하고, 배틀하고, 도감을 완성하자!</div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, width: "100%", maxWidth: 420 }}>
           <Link href="/student" style={{ ...S.primaryBtn, padding: "26px 10px", fontSize: 17, textAlign: "center", textDecoration: "none", display: "block" }}>
             학생으로 입장
@@ -19,12 +19,12 @@ export default function Landing() {
             <div style={{ fontSize: 11, marginTop: 6, opacity: 0.85 }}>문제 은행 관리</div>
           </Link>
         </div>
-        <div style={{ fontSize: 11, color: "#9fb0d8", marginTop: 22, textAlign: "center", lineHeight: 1.7 }}>
+        <div style={{ fontSize: 11, color: "#8a8f9a", marginTop: 22, textAlign: "center", lineHeight: 1.7 }}>
           학생은 선생님께 받은 학급 코드 + 닉네임만으로 가입해요.<br />개인정보는 수집하지 않아요.
         </div>
       </div>
       <div style={{ padding: "12px 0 20px", textAlign: "center" }}>
-        <Brand height={30} color="#c7cdf0" />
+        <Brand height={30} color="#6b7280" />
       </div>
     </div>
   );

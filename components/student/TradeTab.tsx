@@ -191,11 +191,11 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
 
       {mode === "create" && (
         <>
-          <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 6, textAlign: "center" }}>
+          <div style={{ fontSize: 12, color: "#5b7a99", marginBottom: 6, textAlign: "center" }}>
             교환할 포켓몬을 고르면 6자리 코드·QR이 나와요. 친구에게 보여주세요!
           </div>
           {ownedIds.length === 0 ? (
-            <div style={{ ...S.panel, textAlign: "center", fontSize: 12, color: "#9fd8ff" }}>
+            <div style={{ ...S.panel, textAlign: "center", fontSize: 12, color: "#5b7a99" }}>
               아직 교환할 포켓몬이 없어요. 먼저 포켓몬을 잡아보자!
             </div>
           ) : (
@@ -213,14 +213,14 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
 
           {open.length > 0 && (
             <div style={{ marginTop: 16 }}>
-              <div style={{ fontSize: 12, color: "#ffd54a", marginBottom: 6 }}>내가 연 교환 (친구가 수락하면 알려드려요)</div>
+              <div style={{ fontSize: 12, color: "#eaa300", marginBottom: 6 }}>내가 연 교환 (친구가 수락하면 알려드려요)</div>
               {open.map((t) => (
                 <div key={t.id} style={{ ...S.panel, marginBottom: 6 }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                     <Sprite id={t.offer.id} color={t.offer.color} size={36} />
                     <span style={{ flex: 1, fontSize: 12 }}>{t.offer.name}</span>
                     <button onClick={() => copyCode(t.code)} title="복사"
-                      style={{ ...S.ghostBtn, fontSize: 16, letterSpacing: 3, color: "#ffd54a", padding: "4px 10px" }}>
+                      style={{ ...S.ghostBtn, fontSize: 16, letterSpacing: 3, color: "#eaa300", padding: "4px 10px" }}>
                       {t.code} 📋
                     </button>
                     <button onClick={() => setQrFor(qrFor === t.id ? null : t.id)} style={S.ghostBtn}>
@@ -266,11 +266,11 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
                   <div style={{ fontSize: 14, color: RARITY[found.offer.rarity].color }}>{found.offer.name}</div>
                 </div>
               </div>
-              <div style={{ fontSize: 12, color: "#9fd8ff", margin: "10px 0 2px", textAlign: "center" }}>
+              <div style={{ fontSize: 12, color: "#5b7a99", margin: "10px 0 2px", textAlign: "center" }}>
                 내가 줄 포켓몬을 골라주세요 (돌려받을 수 없어요!)
               </div>
               {ownedIds.length === 0 ? (
-                <div style={{ ...S.panel, textAlign: "center", fontSize: 12, color: "#9fd8ff" }}>
+                <div style={{ ...S.panel, textAlign: "center", fontSize: 12, color: "#5b7a99" }}>
                   줄 수 있는 포켓몬이 없어요.
                 </div>
               ) : (
@@ -294,7 +294,7 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
 
       {history.length > 0 && (
         <div style={{ marginTop: 18 }}>
-          <div style={{ fontSize: 12, color: "#9fb0d8", marginBottom: 6 }}>최근 교환 내역</div>
+          <div style={{ fontSize: 12, color: "#8a8f9a", marginBottom: 6 }}>최근 교환 내역</div>
           {history.map((h, i) => (
             <div key={i} style={{ ...S.panel, display: "flex", alignItems: "center", gap: 8, marginBottom: 6, fontSize: 11 }}>
               <Sprite id={h.gave.id} color={h.gave.color} size={30} />
@@ -315,8 +315,8 @@ export default function TradeTab({ caught, setCaught, counts, setCounts, showToa
           style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.7)", zIndex: 90, display: "flex", alignItems: "center", justifyContent: "center", padding: 20 }}
         >
           <div onClick={(e) => e.stopPropagation()} style={{ ...S.panel, maxWidth: 320, width: "100%", textAlign: "center" }}>
-            <div style={{ fontSize: 18, color: "#ffd54a", marginBottom: 4 }}>🔁 교환 완료!</div>
-            <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 12 }}>친구와 포켓몬을 맞바꿨어요</div>
+            <div style={{ fontSize: 18, color: "#eaa300", marginBottom: 4 }}>🔁 교환 완료!</div>
+            <div style={{ fontSize: 12, color: "#5b7a99", marginBottom: 12 }}>친구와 포켓몬을 맞바꿨어요</div>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginBottom: 12 }}>
               <div>
                 <Sprite id={result.gave.id} color={result.gave.color} size={54} />

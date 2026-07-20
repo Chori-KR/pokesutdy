@@ -146,7 +146,7 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
           )}
           {left > 0 ? (
             <>
-              <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 10 }}>
+              <div style={{ fontSize: 12, color: "#5b7a99", marginBottom: 10 }}>
                 오늘 남은 탐색: {left}번 · 배틀 없이 볼만 던져서 잡는 찬스!
               </div>
               <button onClick={beginExplore} disabled={busy} style={S.primaryBtn}>
@@ -154,7 +154,7 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
               </button>
             </>
           ) : (
-            <div style={{ fontSize: 12, color: "#9fd8ff", padding: 8 }}>
+            <div style={{ fontSize: 12, color: "#5b7a99", padding: 8 }}>
               오늘의 탐색을 모두 사용했어요. 내일 다시 만나요! (배틀로 잡는 건 배틀 탭에서 계속!)
             </div>
           )}
@@ -190,7 +190,7 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
                   style={{ ...S.choiceBtn, opacity: student.inventory[k] <= 0 ? 0.35 : 1, fontSize: 12 }}
                 >
                   <BallIcon kind={k} size={15} /> {BALLS[k].name} ×{student.inventory[k]}
-                  <div style={{ fontSize: 10, color: "#9fd8ff", marginTop: 3 }}>성공률 {Math.round(rate * 100)}%</div>
+                  <div style={{ fontSize: 10, color: "#5b7a99", marginTop: 3 }}>성공률 {Math.round(rate * 100)}%</div>
                 </button>
               );
             })}
@@ -213,8 +213,8 @@ export default function ExploreTab({ student, setStudent, day, setDay, caught, s
           <div onClick={(e) => e.stopPropagation()} style={{ ...S.panel, width: "100%", maxWidth: 300, textAlign: "center", padding: 20, animation: "pop 0.25s ease-out" }}>
             <div style={{ fontSize: 34, marginBottom: 4 }}>✨</div>
             <div style={{ fontSize: 15, marginBottom: 4 }}>빛나는 스프레이 (보유 {student.inventory.spray})</div>
-            <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 16, lineHeight: 1.6 }}>
-              사용하면 이번 야생을 <b style={{ color: "#ffd54a" }}>이로치로 확정</b>해요! (1개 소모)
+            <div style={{ fontSize: 12, color: "#5b7a99", marginBottom: 16, lineHeight: 1.6 }}>
+              사용하면 이번 야생을 <b style={{ color: "#eaa300" }}>이로치로 확정</b>해요! (1개 소모)
             </div>
             <div style={{ display: "flex", gap: 8 }}>
               <button onClick={() => explore(false)} style={{ ...S.ghostBtn, flex: 1, padding: "10px 0", fontSize: 13 }}>그냥 탐색</button>

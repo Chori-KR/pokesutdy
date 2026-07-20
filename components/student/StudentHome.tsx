@@ -91,7 +91,7 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
           </div>
         </div>
         <div style={{ textAlign: "right" }}>
-          <div style={{ fontSize: 17, color: "#ffd54a" }}>{student.points.toLocaleString()} P</div>
+          <div style={{ fontSize: 17, color: "#eaa300" }}>{student.points.toLocaleString()} P</div>
           <div style={{ fontSize: 10, opacity: 0.85, marginTop: 3 }}>
             {BALL_KINDS.map((k) =>
               student.inventory[k] > 0 ? (
@@ -108,7 +108,7 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
         </div>
       </div>
 
-      <div style={{ display: "flex", gap: 5, margin: "10px 0", flexWrap: "wrap" }}>
+      <div style={{ display: "flex", gap: 3, margin: "10px 0", flexWrap: "wrap", background: "#e9e9ee", padding: 3, borderRadius: 12 }}>
         {tabs.map(([k, label]) => (
           <button key={k} onClick={() => goTab(k)} style={{ ...S.tabBtn, ...(tab === k ? S.tabOn : {}) }}>{label}</button>
         ))}

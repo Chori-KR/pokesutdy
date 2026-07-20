@@ -69,7 +69,7 @@ export default function DailyTab({ student, setStudent, day, setDay }: Props) {
     return (
       <div style={{ ...S.panel, textAlign: "center", padding: 36 }}>
         <div style={{ fontSize: 14, marginBottom: 6 }}>오늘의 퀴즈를 이미 풀었어요!</div>
-        <div style={{ fontSize: 11, color: "#9fd8ff" }}>내일 새로운 포켓몬이 기다리고 있어요.</div>
+        <div style={{ fontSize: 11, color: "#5b7a99" }}>내일 새로운 포켓몬이 기다리고 있어요.</div>
       </div>
     );
 
@@ -77,7 +77,7 @@ export default function DailyTab({ student, setStudent, day, setDay }: Props) {
     return (
       <div style={{ ...S.panel, textAlign: "center", padding: 32 }}>
         <div style={{ fontSize: 15, marginBottom: 4 }}>이 포켓몬은 누구일까?</div>
-        <div style={{ fontSize: 11, color: "#9fd8ff", marginBottom: 14 }}>
+        <div style={{ fontSize: 11, color: "#5b7a99", marginBottom: 14 }}>
           맞히면 +{DAILY_QUIZ_REWARD}P + 랜덤 볼(몬스터/슈퍼/하이퍼)! 틀려도 몬스터볼 1개!
         </div>
         {err && <div style={{ ...S.warn, textAlign: "left" }}>{err}</div>}
@@ -106,7 +106,7 @@ export default function DailyTab({ student, setStudent, day, setDay }: Props) {
 
       {result && (
         <div style={{ margin: "10px 0", animation: "pop 0.3s ease-out" }}>
-          <div style={{ fontSize: 14, color: result.correct ? "#7ef29a" : "#ff9d9d" }}>
+          <div style={{ fontSize: 14, color: result.correct ? "#34c759" : "#ff3b30" }}>
             {result.correct ? `정답! ${result.target.name}!` : `아쉬워요, 정답은 ${result.target.name}!`}
           </div>
           <div style={{ fontSize: 12, marginTop: 6 }}>
@@ -131,8 +131,8 @@ export default function DailyTab({ student, setStudent, day, setDay }: Props) {
               disabled={busy || picked !== null}
               style={{
                 ...S.choiceBtn,
-                background: isAns ? "#2e5d43" : isWrongPick ? "#6b3030" : (S.choiceBtn.background as string),
-                borderColor: isAns ? "#7ef29a" : isWrongPick ? "#ff9d9d" : "#f8f0dc33",
+                background: isAns ? "#dbf6e3" : isWrongPick ? "#fddede" : (S.choiceBtn.background as string),
+                borderColor: isAns ? "#34c759" : isWrongPick ? "#ff3b30" : "#e4e6ee",
               }}
             >
               {o.name}

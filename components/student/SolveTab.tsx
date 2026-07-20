@@ -76,7 +76,7 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
     return (
       <div style={{ ...S.panel, textAlign: "center", padding: 32 }}>
         <div style={{ fontSize: 15, marginBottom: 4 }}>문제풀이</div>
-        <div style={{ fontSize: 11, color: "#9fd8ff", marginBottom: 6 }}>
+        <div style={{ fontSize: 11, color: "#5b7a99", marginBottom: 6 }}>
           정답 1개당 +{SOLVE_REWARD}P · 오늘 {day.solveCount}/{day.solveLimit} 문제
         </div>
         {err && <div style={{ ...S.warn, textAlign: "left" }}>{err}</div>}
@@ -85,7 +85,7 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
             {busy ? "출제 중..." : "문제 받기"}
           </button>
         ) : (
-          <div style={{ fontSize: 12, color: "#9fd8ff", padding: 8 }}>
+          <div style={{ fontSize: 12, color: "#5b7a99", padding: 8 }}>
             오늘의 문제풀이를 모두 마쳤어요! 내일 또 만나요.
           </div>
         )}
@@ -98,7 +98,7 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
         <span style={{ fontSize: 10, padding: "2px 9px", borderRadius: 8, background: DIFF[q.difficulty].bg, color: DIFF[q.difficulty].fg }}>
           {DIFF[q.difficulty].label} · {q.tag}
         </span>
-        <span style={{ fontSize: 11, color: "#9fd8ff" }}>{day.solveCount}/{day.solveLimit} 문제</span>
+        <span style={{ fontSize: 11, color: "#5b7a99" }}>{day.solveCount}/{day.solveLimit} 문제</span>
       </div>
 
       <div style={{ fontSize: 14, lineHeight: 1.6, marginBottom: 14 }}>{q.body}</div>
@@ -134,8 +134,8 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
                   style={{
                     ...S.choiceBtn,
                     textAlign: "left",
-                    background: isAns ? "#2e5d43" : isWrongPick ? "#6b3030" : on ? "#5a4a3a" : (S.choiceBtn.background as string),
-                    borderColor: isAns ? "#7ef29a" : isWrongPick ? "#ff9d9d" : on ? "#ff9a52" : "#f8f0dc33",
+                    background: isAns ? "#dbf6e3" : isWrongPick ? "#fddede" : on ? "#eaf0ff" : (S.choiceBtn.background as string),
+                    borderColor: isAns ? "#34c759" : isWrongPick ? "#ff3b30" : on ? "#4b7bec" : "#e4e6ee",
                     fontWeight: on ? 700 : 600,
                   }}
                 >
@@ -158,11 +158,11 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
 
       {result && (
         <div style={{ textAlign: "center", marginTop: 12, animation: "pop 0.3s ease-out" }}>
-          <div style={{ fontSize: 14, color: result.correct ? "#7ef29a" : "#ff9d9d" }}>
+          <div style={{ fontSize: 14, color: result.correct ? "#34c759" : "#ff3b30" }}>
             {result.correct ? `정답! +${result.reward}P +2XP` : isShort ? `아쉬워요! 정답: ${result.answerText}` : "아쉬워요! 정답을 확인하세요."}
           </div>
           {result.levelBonus > 0 && (
-            <div style={{ fontSize: 13, color: "#ffd54a", marginTop: 4 }}>
+            <div style={{ fontSize: 13, color: "#eaa300", marginTop: 4 }}>
               🎉 레벨 업! Lv.{result.level} — 보상 +{result.levelBonus}P
             </div>
           )}
@@ -171,7 +171,7 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
               다음 문제 ({left}문제 남음)
             </button>
           ) : (
-            <div style={{ fontSize: 11, color: "#9fd8ff", marginTop: 8 }}>
+            <div style={{ fontSize: 11, color: "#5b7a99", marginTop: 8 }}>
               오늘의 문제풀이 완료! 내일 또 만나요.
             </div>
           )}

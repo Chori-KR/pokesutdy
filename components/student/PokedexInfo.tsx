@@ -39,12 +39,12 @@ export default function PokedexInfo({ id, shiny, onClose }: { id: number; shiny:
         <div style={{ display: "flex", justifyContent: "center", marginBottom: 6 }}>
           <Sprite id={id} color={p.color} shiny={shiny} size={120} />
         </div>
-        <div style={{ fontSize: 12, color: "#9fb0d8" }}>No.{String(id).padStart(3, "0")}</div>
+        <div style={{ fontSize: 12, color: "#8a8f9a" }}>No.{String(id).padStart(3, "0")}</div>
         <div style={{ fontSize: 19, fontWeight: 700, marginTop: 2 }}>
-          {p.name} {shiny && <span style={{ color: "#ffd54a" }}>✨이로치</span>}
+          {p.name} {shiny && <span style={{ color: "#eaa300" }}>✨이로치</span>}
         </div>
-        {genus && <div style={{ fontSize: 12, color: "#9fd8ff", marginTop: 2 }}>{genus}</div>}
-        <div style={{ fontSize: 13.5, lineHeight: 1.7, marginTop: 12, minHeight: 40, color: "#f4f6ff" }}>
+        {genus && <div style={{ fontSize: 12, color: "#5b7a99", marginTop: 2 }}>{genus}</div>}
+        <div style={{ fontSize: 13.5, lineHeight: 1.7, marginTop: 12, minHeight: 40, color: "#1c1c1e" }}>
           {loading ? "불러오는 중..." : flavor || "도감 설명이 없어요."}
         </div>
         <button onClick={onClose} style={{ ...S.primaryBtn, width: "100%", marginTop: 14 }}>닫기</button>

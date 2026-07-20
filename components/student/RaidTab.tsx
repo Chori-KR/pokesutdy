@@ -235,7 +235,7 @@ export default function RaidTab({
   }
 
   // ── 렌더 ─────────────────────────────
-  if (loading) return <div style={{ ...S.panel, textAlign: "center", padding: 30, color: "#9fd8ff" }}>불러오는 중...</div>;
+  if (loading) return <div style={{ ...S.panel, textAlign: "center", padding: 30, color: "#5b7a99" }}>불러오는 중...</div>;
 
   if (picker) {
     return (
@@ -244,13 +244,13 @@ export default function RaidTab({
           <div style={{ fontSize: 14, fontWeight: 700 }}>원하는 레이드 포켓몬을 골라줘!</div>
           <button onClick={() => setPicker(false)} style={{ ...S.ghostBtn, padding: "4px 10px", fontSize: 12 }}>닫기</button>
         </div>
-        <div style={{ fontSize: 11, color: "#9fd8ff", marginBottom: 10 }}>선택하면 선생님께 전달돼요. (레이드당 1번 신청)</div>
+        <div style={{ fontSize: 11, color: "#5b7a99", marginBottom: 10 }}>선택하면 선생님께 전달돼요. (레이드당 1번 신청)</div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(64px, 1fr))", gap: 6, maxHeight: "60vh", overflowY: "auto" }}>
           {POOL.map((p) => (
             <button key={p.id} onClick={() => request(p.id)}
-              style={{ ...S.panel, padding: 4, cursor: "pointer", border: "2px solid #2c2c34", background: "#252840", display: "flex", flexDirection: "column", alignItems: "center" }}>
+              style={{ ...S.panel, padding: 4, cursor: "pointer", border: "1px solid #e4e6ee", background: "#fff", display: "flex", flexDirection: "column", alignItems: "center" }}>
               <Sprite id={p.id} color={TYPE_COLORS[p.type]} pixel size={44} />
-              <div style={{ fontSize: 9, color: "#c7cdf0", marginTop: 2 }}>{p.name}</div>
+              <div style={{ fontSize: 9, color: "#6b7280", marginTop: 2 }}>{p.name}</div>
             </button>
           ))}
         </div>
@@ -265,7 +265,7 @@ export default function RaidTab({
         {raid.unlocked ? "🎉 반 협동 달성! 모두 포켓몬을 받았어요!" : `🤝 반 협동: ${raid.winCount} / ${raid.threshold}명 성공`}
       </div>
       {!raid.unlocked && (
-        <div style={{ fontSize: 11, color: "#9fb0d8", marginTop: 4 }}>
+        <div style={{ fontSize: 11, color: "#8a8f9a", marginTop: 4 }}>
           {raid.threshold}명이 성공하면 <b>{boss?.name}</b>이(가) 반 전체에게 지급돼요!
         </div>
       )}
@@ -276,16 +276,16 @@ export default function RaidTab({
     <div style={{ ...S.panel, marginTop: 10, textAlign: "center" }}>
       {raid.myReqPid ? (
         <>
-          <div style={{ fontSize: 12, color: "#9fd8ff", marginBottom: 8 }}>이번 레이드에 신청한 포켓몬</div>
+          <div style={{ fontSize: 12, color: "#5b7a99", marginBottom: 8 }}>이번 레이드에 신청한 포켓몬</div>
           <div style={{ display: "flex", justifyContent: "center", marginBottom: 6 }}>
             <Sprite id={raid.myReqPid} color={TYPE_COLORS[POOL[raid.myReqPid - 1].type]} pixel size={64} />
           </div>
           <div style={{ fontSize: 13, marginBottom: 4 }}>{POOL[raid.myReqPid - 1].name}</div>
-          <div style={{ fontSize: 11, color: "#9fb0d8" }}>다음 레이드가 실시되면 다시 신청할 수 있어요.</div>
+          <div style={{ fontSize: 11, color: "#8a8f9a" }}>다음 레이드가 실시되면 다시 신청할 수 있어요.</div>
         </>
       ) : (
         <>
-          <div style={{ fontSize: 12, color: "#c7cdf0", marginBottom: 10, lineHeight: 1.6 }}>
+          <div style={{ fontSize: 12, color: "#6b7280", marginBottom: 10, lineHeight: 1.6 }}>
             다음 레이드에 나왔으면 하는 포켓몬이 있나요?<br />신청하면 선생님이 참고해요!
           </div>
           <button onClick={() => setPicker(true)} style={{ ...S.primaryBtn, width: "100%" }}>⭐ 레이드 포켓몬 신청하기</button>
@@ -301,7 +301,7 @@ export default function RaidTab({
         <div style={{ ...S.panel, textAlign: "center", padding: "24px 16px" }}>
           <div style={{ fontSize: 34, marginBottom: 6 }}>🛡️</div>
           <div style={{ fontSize: 15, fontWeight: 700, marginBottom: 4 }}>오늘은 레이드가 없습니다.</div>
-          <div style={{ fontSize: 12, color: "#9fd8ff" }}>선생님이 레이드를 열면 강력한 포켓몬과 배틀할 수 있어요!</div>
+          <div style={{ fontSize: 12, color: "#5b7a99" }}>선생님이 레이드를 열면 강력한 포켓몬과 배틀할 수 있어요!</div>
         </div>
         {requestCard}
       </div>
@@ -312,15 +312,15 @@ export default function RaidTab({
   if (phase === "idle") {
     return (
       <div>
-        <div style={{ ...S.panel, textAlign: "center", padding: "20px 16px", border: "3px solid #d9641e", background: "linear-gradient(160deg,#3a2a44,#2c2f44)" }}>
-          <div style={{ fontSize: 12, color: "#ffb37a", fontWeight: 700, letterSpacing: 1, marginBottom: 6 }}>⚔️ 레이드 배틀</div>
+        <div style={{ ...S.panel, textAlign: "center", padding: "20px 16px", border: "2px solid #f0b48a", background: "linear-gradient(180deg,#ffffff,#fff6ef)" }}>
+          <div style={{ fontSize: 12, color: "#d9641e", fontWeight: 700, letterSpacing: 1, marginBottom: 6 }}>⚔️ 레이드 배틀</div>
           <div style={{ display: "flex", justifyContent: "center", marginBottom: 8, position: "relative", animation: "floaty 2.4s ease-in-out infinite" }}>
             <Sprite id={boss!.id} color={TYPE_COLORS[boss!.type]} pixel shiny={raid!.shiny} size={130} />
             {raid!.shiny && <ShinyFx />}
           </div>
           <div style={{ fontSize: 17, fontWeight: 800, marginBottom: 2 }}>{boss!.name}{raid!.shiny && " ✨"}</div>
-          <div style={{ fontSize: 11, color: "#c7cdf0", marginBottom: 14 }}>
-            강력한 보스! <b style={{ color: "#ffd54a" }}>문제 10개</b>를 맞혀 쓰러뜨리자. (재도전 가능)
+          <div style={{ fontSize: 11, color: "#6b7280", marginBottom: 14 }}>
+            강력한 보스! <b style={{ color: "#eaa300" }}>문제 10개</b>를 맞혀 쓰러뜨리자. (재도전 가능)
             {raid!.iWon && <span style={{ color: "#4caf3f" }}> · 이미 성공! ✓</span>}
           </div>
           <button onClick={start} style={{ ...S.primaryBtn, width: "100%", background: "#d9641e", fontSize: 16, padding: "14px 0" }}>레이드 도전!</button>
@@ -386,9 +386,9 @@ export default function RaidTab({
         <div style={{ ...S.panel, padding: 12 }}>
           {timerOn ? (
             <TimerBar key={q.id} total={timeLimitFor(move.diff)} timeRef={timeLeftRef} onExpire={onTimeUp}
-              label={<span style={{ color: "#9fd8ff" }}>{move.label} 문제 · {q.tag}</span>} />
+              label={<span style={{ color: "#5b7a99" }}>{move.label} 문제 · {q.tag}</span>} />
           ) : (
-            <div style={{ fontSize: 11, marginBottom: 10 }}><span style={{ color: "#9fd8ff" }}>{move.label} 문제 · {q.tag}</span></div>
+            <div style={{ fontSize: 11, marginBottom: 10 }}><span style={{ color: "#5b7a99" }}>{move.label} 문제 · {q.tag}</span></div>
           )}
           <div style={{ fontSize: 15, marginBottom: 10, lineHeight: 1.6 }}>{q.body}</div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 6 }}>
@@ -396,7 +396,7 @@ export default function RaidTab({
               const on = selected === i;
               return (
                 <button key={i} onClick={() => setSelected(i)}
-                  style={{ ...S.choiceBtn, border: on ? "2px solid #ff9a52" : S.choiceBtn.border, background: on ? "#5a4a3a" : S.choiceBtn.background, fontWeight: on ? 700 : 600 }}>
+                  style={{ ...S.choiceBtn, border: on ? "2px solid #4b7bec" : S.choiceBtn.border, background: on ? "#eaf0ff" : S.choiceBtn.background, fontWeight: on ? 700 : 600 }}>
                   {["①", "②", "③", "④"][i]} {o.t}
                 </button>
               );
