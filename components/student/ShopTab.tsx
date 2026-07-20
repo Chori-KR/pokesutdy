@@ -140,7 +140,7 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
           icon: <span style={{ fontSize: 22 }}>{SNACKS[k].emoji}</span>,
           name: SNACKS[k].name,
           owned: student.inventory[k],
-          desc: `${SNACKS[k].desc} — 배틀 탭에서 사용`,
+          desc: SNACKS[k].desc,
           price: SNACKS[k].price,
           onBuy: () => askBuy(k),
         })

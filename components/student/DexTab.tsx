@@ -36,8 +36,8 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
 
   // 등급별 달성률
   const rarityStats = useMemo(() => {
-    const total: Record<Rarity, number> = { common: 0, rare: 0, legendary: 0 };
-    const got: Record<Rarity, number> = { common: 0, rare: 0, legendary: 0 };
+    const total: Record<Rarity, number> = { common: 0, special: 0, rare: 0, legendary: 0 };
+    const got: Record<Rarity, number> = { common: 0, special: 0, rare: 0, legendary: 0 };
     const gotSet = new Set(caught);
     POOL.forEach((p) => { total[p.rarity]++; if (gotSet.has(p.id)) got[p.rarity]++; });
     return { total, got };
@@ -193,8 +193,8 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
             <div style={{ height: 8, background: "#e6e8f0", borderRadius: 4, overflow: "hidden", marginBottom: 8 }}>
               <div style={{ width: `${Math.round((dexCount / 151) * 100)}%`, height: "100%", background: "linear-gradient(90deg,#7ec8a8,#4b7bec)", transition: "width 0.4s" }} />
             </div>
-            <div style={{ display: "flex", gap: 8, fontSize: 11 }}>
-              {(["common", "rare", "legendary"] as Rarity[]).map((r) => (
+            <div style={{ display: "flex", gap: 6, fontSize: 11 }}>
+              {(["common", "special", "rare", "legendary"] as Rarity[]).map((r) => (
                 <span key={r} style={{ flex: 1, textAlign: "center", padding: "4px 0", borderRadius: 8, background: "#f5f6fb" }}>
                   <span style={{ color: RARITY[r].color, fontWeight: 700 }}>{RARITY[r].label}</span><br />
                   {rarityStats.got[r]}/{rarityStats.total[r]}
