@@ -62,6 +62,12 @@ export const isMissingTrades = (error: { message?: string } | null): boolean =>
 export const TRADES_HINT =
   "교환 기능에 필요한 DB 작업이 아직 안 됐어요. 선생님께 'supabase/migrations/0005_trades.sql 실행'을 요청해주세요!";
 
+// questions.raid_only 컬럼이 아직 없는 DB(0008 미실행) 안내
+export const isMissingRaidOnly = (error: { message?: string } | null): boolean =>
+  !!error?.message && /raid_only/.test(error.message);
+export const RAID_ONLY_HINT =
+  "레이드 전용 문제 기능에 필요한 DB 작업이 아직 안 됐어요. 선생님께 'supabase/migrations/0008_raid_only.sql 실행'을 요청해주세요!";
+
 // 잡은 마리 수 증감 (M8/M9). delta>0 증가, delta<0 감소.
 // M9: 0마리가 돼도 행을 남긴다 — 한 번이라도 잡거나 진화시킨 종은 도감에 영구 기록.
 //     (교환으로 받은 종만 그 종의 행이 새로 생겨 도감에 추가 — 진화 전 종은 안 남음)
