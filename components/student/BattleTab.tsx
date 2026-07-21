@@ -674,12 +674,12 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
                         key={to}
                         onClick={() => { setStonePick(false); evolve(to, "stone", true); }}
                         disabled={busyAction}
-                        style={{ background: "#fff", border: `2px solid ${TYPE_COLORS[p.type] ?? "#e4e6ee"}`, borderRadius: 16, padding: "14px 6px 10px", cursor: "pointer", fontFamily: "inherit", display: "flex", flexDirection: "column", alignItems: "center", gap: 6, transition: "transform 0.12s" }}
+                        style={{ background: "var(--card)", border: `2px solid ${TYPE_COLORS[p.type] ?? "var(--line)"}`, borderRadius: 16, padding: "14px 6px 10px", cursor: "pointer", fontFamily: "inherit", display: "flex", flexDirection: "column", alignItems: "center", gap: 6, transition: "transform 0.12s" }}
                         onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-3px)")}
                         onMouseLeave={(e) => (e.currentTarget.style.transform = "none")}
                       >
                         <Sprite id={to} color={p.color} size={78} style={{ animation: "floaty 2.6s ease-in-out infinite" }} />
-                        <div style={{ fontSize: 13, fontWeight: 700, color: "#1c1c1e" }}>{p.name}</div>
+                        <div style={{ fontSize: 13, fontWeight: 700, color: "var(--ink)" }}>{p.name}</div>
                         <div style={{ fontSize: 10, color: "#8a8f9a" }}>No.{String(to).padStart(3, "0")}</div>
                       </button>
                     );
@@ -700,7 +700,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
                   const on = id === game.battlePid;
                   const n = counts[id] ?? 1;
                   return (
-                    <button key={id} onClick={() => selectPokemon(id)} disabled={busyAction} style={{ position: "relative", background: on ? "#eaf0ff" : "#fff", border: on ? `2px solid ${TYPE_COLORS[p.type]}` : "1px solid #e4e6ee", borderRadius: 8, padding: 6, cursor: "pointer", fontFamily: "inherit", color: "#1c1c1e" }}>
+                    <button key={id} onClick={() => selectPokemon(id)} disabled={busyAction} style={{ position: "relative", background: on ? "var(--chipon-bg)" : "var(--card)", border: on ? `2px solid ${TYPE_COLORS[p.type]}` : "1px solid var(--line)", borderRadius: 8, padding: 6, cursor: "pointer", fontFamily: "inherit", color: "var(--ink)" }}>
                       {n > 1 && <span style={{ position: "absolute", top: 2, right: 2, fontSize: 9, background: "#e07b39", borderRadius: 8, padding: "0 5px" }}>×{n}</span>}
                       <Sprite id={id} color={p.color} size={40} />
                       <div style={{ fontSize: 9, marginTop: 2 }}>{p.name}</div>

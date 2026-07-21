@@ -160,7 +160,7 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <Sprite id={p.id} color={p.color} size={50} silhouette={!has} shiny={isShiny} />
               </div>
-              <div style={{ fontSize: 10, marginTop: 4, color: has ? "#1c1c1e" : "#8791b0" }}>{has ? p.name : "???"}</div>
+              <div style={{ fontSize: 10, marginTop: 4, color: has ? "var(--ink)" : "#8791b0" }}>{has ? p.name : "???"}</div>
               <div style={{ fontSize: 8, marginTop: 1, color: RARITY[p.rarity].color }}>No.{String(p.id).padStart(3, "0")}</div>
             </button>
           );
@@ -220,7 +220,7 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
                     style={{
                       flexShrink: 0, width: 78, padding: "8px 4px", borderRadius: 12, textAlign: "center",
                       cursor: claimable ? "pointer" : "default", fontFamily: "inherit",
-                      border: claimable ? "2px solid #eaa300" : isClaimed ? "1px solid #cfe6d8" : "1px solid #e4e6ee",
+                      border: claimable ? "2px solid #eaa300" : isClaimed ? "1px solid #cfe6d8" : "1px solid var(--line)",
                       background: claimable ? "#fff8e8" : isClaimed ? "#eef8f1" : "#fafbfe",
                       opacity: reached ? 1 : 0.6,
                       animation: claimable ? "pop 0.3s ease-out" : "none",
@@ -244,7 +244,7 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
           {/* 중복 환전 */}
           <div style={{ ...S.panel, padding: "10px 14px", marginBottom: 8, display: "flex", alignItems: "center", gap: 10 }}>
             <div style={{ flex: 1, fontSize: 12, color: "#5b6272" }}>
-              중복 포켓몬 <b style={{ color: "#1c1c1e" }}>{dupeCount}</b>마리 있어요. 골라서 포인트로 바꿀 수 있어요!
+              중복 포켓몬 <b style={{ color: "var(--ink)" }}>{dupeCount}</b>마리 있어요. 골라서 포인트로 바꿀 수 있어요!
             </div>
             <button onClick={openConvert} disabled={busy || dupeCount === 0} style={{ ...S.primaryBtn, padding: "8px 14px", fontSize: 12, opacity: dupeCount === 0 ? 0.4 : 1 }}>💰 환전</button>
           </div>
@@ -263,7 +263,7 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
             <button
               key={m.id}
               onClick={() => (m.me ? setView("mine") : openFriend(m))}
-              style={{ ...S.panel, display: "flex", alignItems: "center", gap: 10, cursor: "pointer", fontFamily: "inherit", color: "#1c1c1e", border: m.me ? "2px solid #e07b39" : "1px solid #e4e6ee", textAlign: "left" }}
+              style={{ ...S.panel, display: "flex", alignItems: "center", gap: 10, cursor: "pointer", fontFamily: "inherit", color: "var(--ink)", border: m.me ? "2px solid #e07b39" : "1px solid var(--line)", textAlign: "left" }}
             >
               <span style={{ fontSize: 15, width: 30, textAlign: "center", flexShrink: 0 }}>
                 {i === 0 ? "🥇" : i === 1 ? "🥈" : i === 2 ? "🥉" : `${i + 1}`}

@@ -135,7 +135,7 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
                     ...S.choiceBtn,
                     textAlign: "left",
                     background: isAns ? "#dbf6e3" : isWrongPick ? "#fddede" : on ? "#eaf0ff" : (S.choiceBtn.background as string),
-                    borderColor: isAns ? "#34c759" : isWrongPick ? "#ff3b30" : on ? "#4b7bec" : "#e4e6ee",
+                    borderColor: isAns ? "#34c759" : isWrongPick ? "#ff3b30" : on ? "#4b7bec" : "var(--line)",
                     fontWeight: on ? 700 : 600,
                   }}
                 >

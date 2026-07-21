@@ -180,7 +180,7 @@ export default function ShopTab({ student, setStudent, showToast }: Props) {
               <div style={{ fontSize: 12, color: short ? "#ff9d9d" : "#5b7a99", marginBottom: 16, lineHeight: 1.6 }}>
                 {short
                   ? "포인트가 부족해요!"
-                  : <>구매 후 남는 포인트: <b style={{ color: "#1c1c1e" }}>{after.toLocaleString()} P</b></>}
+                  : <>구매 후 남는 포인트: <b style={{ color: "var(--ink)" }}>{after.toLocaleString()} P</b></>}
               </div>
               <div style={{ display: "flex", gap: 8 }}>
                 <button onClick={() => setConfirmItem(null)} disabled={busy} style={{ ...S.ghostBtn, flex: 1, padding: "10px 0", fontSize: 13 }}>취소</button>

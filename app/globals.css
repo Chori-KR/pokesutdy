@@ -38,3 +38,46 @@ button { touch-action: manipulation; }
 @keyframes breakout { 0% { transform: scale(0.1); opacity: 0; } 45% { transform: scale(1.28); opacity: 1; } 70% { transform: scale(0.9); } 100% { transform: scale(1); opacity: 1; } }
 @keyframes glyphHit { 0% { transform: translate(-50%,-50%) scale(0.5) rotate(-8deg); opacity: 0; } 22% { opacity: 1; } 100% { transform: translate(-50%,-50%) scale(1.6) rotate(8deg); opacity: 0; } }
 @keyframes glyphSpin { from { transform: rotate(0deg); } to { transform: rotate(300deg); } }
+
+/* ── 다크모드 (CSS 변수) ─────────────────────────────────────────
+   기본(라이트) 값 + html.dark 오버라이드. styles.ts와 인라인 카드/텍스트가
+   이 변수를 참조한다. 스프라이트(img)는 그대로 렌더. */
+:root {
+  --app-bg: linear-gradient(180deg,#f5f6fb 0%,#edeff6 100%);
+  --t-bg: #f2f2f7;
+  --card: #ffffff;
+  --ink: #1c1c1e;
+  --ink-2: #8a8f9a;
+  --line: #e4e6ee;
+  --line-2: #d9dbe4;
+  --input-bg: #ffffff;
+  --warn-bg: #fff4f4;
+  --chipon-bg: #eaf0ff;
+  --chipon-ink: #2a4fa0;
+}
+html.dark {
+  --app-bg: linear-gradient(180deg,#15161f 0%,#0e0f16 100%);
+  --t-bg: #0e0f16;
+  --card: #1c1e2b;
+  --ink: #e9ebf5;
+  --ink-2: #9aa0bd;
+  --line: #2c2f45;
+  --line-2: #363a52;
+  --input-bg: #23263a;
+  --warn-bg: #2e1c20;
+  --chipon-bg: #22294a;
+  --chipon-ink: #b9c6ff;
+}
+html.dark body { background: #0e0f16; }
+body { transition: background 0.2s ease, color 0.2s ease; }
+
+/* 우측 상단 고정 테마 토글 */
+.theme-toggle {
+  position: fixed; top: 14px; right: 14px; z-index: 200;
+  width: 40px; height: 40px; border-radius: 12px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  font-size: 18px; display: grid; place-items: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.14); transition: transform .15s, background .2s;
+}
+.theme-toggle:hover { transform: translateY(-2px); }
+.theme-toggle:active { transform: scale(0.95); }

@@ -44,7 +44,7 @@ export default function PokedexInfo({ id, shiny, onClose }: { id: number; shiny:
           {p.name} {shiny && <span style={{ color: "#eaa300" }}>✨이로치</span>}
         </div>
         {genus && <div style={{ fontSize: 12, color: "#5b7a99", marginTop: 2 }}>{genus}</div>}
-        <div style={{ fontSize: 13.5, lineHeight: 1.7, marginTop: 12, minHeight: 40, color: "#1c1c1e" }}>
+        <div style={{ fontSize: 13.5, lineHeight: 1.7, marginTop: 12, minHeight: 40, color: "var(--ink)" }}>
           {loading ? "불러오는 중..." : flavor || "도감 설명이 없어요."}
         </div>
         <button onClick={onClose} style={{ ...S.primaryBtn, width: "100%", marginTop: 14 }}>닫기</button>

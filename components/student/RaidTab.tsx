@@ -249,7 +249,7 @@ export default function RaidTab({
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(64px, 1fr))", gap: 6, maxHeight: "60vh", overflowY: "auto" }}>
           {POOL.map((p) => (
             <button key={p.id} onClick={() => request(p.id)}
-              style={{ ...S.panel, padding: 4, cursor: "pointer", border: "1px solid #e4e6ee", background: "#fff", display: "flex", flexDirection: "column", alignItems: "center" }}>
+              style={{ ...S.panel, padding: 4, cursor: "pointer", border: "1px solid var(--line)", background: "var(--card)", display: "flex", flexDirection: "column", alignItems: "center" }}>
               <Sprite id={p.id} color={TYPE_COLORS[p.type]} pixel size={44} />
               <div style={{ fontSize: 9, color: "#6b7280", marginTop: 2 }}>{p.name}</div>
             </button>

@@ -132,7 +132,7 @@ export default function DailyTab({ student, setStudent, day, setDay }: Props) {
               style={{
                 ...S.choiceBtn,
                 background: isAns ? "#dbf6e3" : isWrongPick ? "#fddede" : (S.choiceBtn.background as string),
-                borderColor: isAns ? "#34c759" : isWrongPick ? "#ff3b30" : "#e4e6ee",
+                borderColor: isAns ? "#34c759" : isWrongPick ? "#ff3b30" : "var(--line)",
               }}
             >
               {o.name}
