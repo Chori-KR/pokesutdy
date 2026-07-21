@@ -90,8 +90,8 @@ export default function TeacherHome({ session }: { session: Session }) {
     setErr("");
     const name = className.trim() || "우리 반";
     const supa = supabaseBrowser();
-    // 학급 코드 충돌 시 재시도 (unique 제약)
-    for (let i = 0; i < 5; i++) {
+    // 학급 코드 충돌 시 재시도 (unique 제약) — 숫자 4자리라 충돌 대비 넉넉히
+    for (let i = 0; i < 15; i++) {
       const class_code = generateClassCode();
       const { data, error } = await supa
         .from("classes")

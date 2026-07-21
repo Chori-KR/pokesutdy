@@ -9,14 +9,9 @@ export const SEED_QUESTIONS = [
   { body: "자석에서 클립이 가장 많이 붙는 곳은 어디일까요?", options: ["양쪽 끝(극)", "한가운데", "아무 곳이나 같다", "붙지 않는다"], answer_idx: 0, difficulty: "easy", tag: "과학·자석" },
 ] as const;
 
-// 학급 코드: 동물 영단어 + 숫자 2자리 (예: TIGER24)
-const CODE_WORDS = [
-  "TIGER", "EAGLE", "SHARK", "PANDA", "KOALA", "ZEBRA", "WHALE", "OTTER",
-  "ROBIN", "GECKO", "BISON", "CAMEL", "DINGO", "FALCO", "HIPPO", "LEMUR",
-];
-
+// 학급 코드: 숫자 4자리 (예: 0472). 특수교육 대상 학생도 숫자만으로 쉽게 입력.
+// 0000은 관리자용으로 예약 → 무작위 생성에서는 0001~9999만 발급.
+// 중복은 classes.class_code의 UNIQUE 제약 + 생성부의 재시도로 방지.
 export function generateClassCode(): string {
-  const word = CODE_WORDS[Math.floor(Math.random() * CODE_WORDS.length)];
-  const num = String(Math.floor(Math.random() * 90) + 10);
-  return `${word}${num}`;
+  return String(Math.floor(Math.random() * 9999) + 1).padStart(4, "0");
 }
