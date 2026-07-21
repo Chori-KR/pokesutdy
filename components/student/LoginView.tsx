@@ -46,7 +46,15 @@ export default function LoginView({ onSuccess }: { onSuccess: () => void }) {
           <button onClick={() => { setMode("login"); setErr(""); }} style={{ ...S.tabBtn, ...(mode === "login" ? S.tabOn : {}) }}>로그인</button>
           <button onClick={() => { setMode("signup"); setErr(""); }} style={{ ...S.tabBtn, ...(mode === "signup" ? S.tabOn : {}) }}>회원가입</button>
         </div>
-        <input value={code} onChange={(e) => setCode(e.target.value)} placeholder="학급 코드 (선생님께 받으세요)" style={S.input} />
+        <input
+          value={code}
+          onChange={(e) => setCode(e.target.value.replace(/\D/g, "").slice(0, 4))}
+          inputMode="numeric"
+          pattern="[0-9]*"
+          maxLength={4}
+          placeholder="학급 코드 (숫자 4자리)"
+          style={S.input}
+        />
         <input value={nick} onChange={(e) => setNick(e.target.value)} placeholder="닉네임" style={S.input} />
         <input type="password" value={pw} onChange={(e) => setPw(e.target.value)} onKeyDown={(e) => e.key === "Enter" && submit()} placeholder="비밀번호 (4자 이상)" style={S.input} />
         {err && <div style={{ fontSize: 12, color: "#e0342a", marginBottom: 10 }}>{err}</div>}
