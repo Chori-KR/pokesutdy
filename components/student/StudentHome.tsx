@@ -15,6 +15,7 @@ import ExploreTab from "@/components/student/ExploreTab";
 import ShopTab from "@/components/student/ShopTab";
 import DexTab from "@/components/student/DexTab";
 import TradeTab from "@/components/student/TradeTab";
+import ThemeToggle from "@/components/ThemeToggle";
 
 interface Props {
   student: StudentData;
@@ -42,6 +43,11 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
   const [muted, setMutedState] = useState(false);
 
   useEffect(() => { setMutedState(isMuted()); }, []);
+  // 홈은 헤더 안 토글을 쓰므로 고정 토글 숨김
+  useEffect(() => {
+    document.body.classList.add("app-has-header");
+    return () => document.body.classList.remove("app-has-header");
+  }, []);
 
   const showToast = (t: string) => {
     setToast(t);
@@ -102,6 +108,7 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
             )}
           </div>
           <div style={{ marginTop: 4, display: "flex", gap: 4, justifyContent: "flex-end" }}>
+            <ThemeToggle variant="header" />
             <button onClick={toggleMute} title="소리 켜기/끄기" style={{ ...S.ghostBtn, padding: "2px 8px", fontSize: 12 }}>{muted ? "🔇" : "🔊"}</button>
             <button onClick={onLogout} style={{ ...S.ghostBtn, padding: "2px 8px", fontSize: 10 }}>로그아웃</button>
           </div>

@@ -11,6 +11,7 @@ import AiKeySettings from "@/components/teacher/AiKeySettings";
 import RaidSettings from "@/components/teacher/RaidSettings";
 import AdminStats from "@/components/teacher/AdminStats";
 import Brand from "@/components/Brand";
+import ThemeToggle from "@/components/ThemeToggle";
 
 // 관리자(앱 제작자) 이메일 — 이 계정으로 로그인했을 때만 '가입 현황' 탭이 보인다.
 // 실제 권한 검증은 서버(/api/admin/stats)에서 다시 하므로 여기선 표시 여부만 결정.
@@ -64,6 +65,12 @@ export default function TeacherHome({ session }: { session: Session }) {
       .eq("class_id", classId)
       .order("created_at", { ascending: false });
     setQuestions((data as QuestionRow[]) ?? []);
+  }, []);
+
+  // 교사 화면은 헤더 안 토글을 쓰므로 고정 토글 숨김
+  useEffect(() => {
+    document.body.classList.add("app-has-header");
+    return () => document.body.classList.remove("app-has-header");
   }, []);
 
   useEffect(() => {
@@ -168,6 +175,7 @@ export default function TeacherHome({ session }: { session: Session }) {
           <div style={{ textAlign: "center", fontSize: 12 }}>
             <div style={{ fontSize: 18, fontWeight: 600 }}>{questions.filter((q) => q.active).length}</div>출제 중
           </div>
+          <ThemeToggle variant="header" />
           <button onClick={logout} style={{ padding: "5px 12px", fontSize: 12, borderRadius: 6, cursor: "pointer", border: "2px solid #f8f0dc66", background: "transparent", color: "#f8f0dc" }}>
             로그아웃
           </button>
