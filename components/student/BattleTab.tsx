@@ -17,6 +17,7 @@ import TimerBar from "@/components/student/TimerBar";
 import { SFX, playCry, startBattleBgm, stopBattleBgm } from "@/lib/sound";
 import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
+import MathText from "@/components/MathText";
 
 interface Props {
   student: StudentData;
@@ -791,7 +792,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
               <span style={{ color: "#5b7a99" }}>{move.label} 문제 · {q.tag}</span>
             </div>
           )}
-          <div style={{ fontSize: 15, marginBottom: 10, lineHeight: 1.6 }}>{q.body}</div>
+          <div style={{ fontSize: 15, marginBottom: 10, lineHeight: 1.6 }}><MathText>{q.body}</MathText></div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 6 }}>
             {q.sOpts.map((o, i) => {
               const on = selected === i;
@@ -801,7 +802,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
                   onClick={() => setSelected(i)}
                   style={{ ...S.choiceBtn, border: on ? "2px solid #4b7bec" : S.choiceBtn.border, background: on ? "#eaf0ff" : S.choiceBtn.background, fontWeight: on ? 700 : 600 }}
                 >
-                  {["①", "②", "③", "④"][i]} {o.t}
+                  {["①", "②", "③", "④"][i]} <MathText>{o.t}</MathText>
                 </button>
               );
             })}

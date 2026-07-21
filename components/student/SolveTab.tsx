@@ -5,6 +5,7 @@ import { S } from "@/lib/styles";
 import { DIFF, SOLVE_REWARD } from "@/lib/game";
 import { SFX } from "@/lib/sound";
 import { StudentData, DayInfo, SolveQuestion } from "@/lib/types";
+import MathText from "@/components/MathText";
 
 interface Props {
   student: StudentData;
@@ -101,7 +102,7 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
         <span style={{ fontSize: 11, color: "#5b7a99" }}>{day.solveCount}/{day.solveLimit} 문제</span>
       </div>
 
-      <div style={{ fontSize: 14, lineHeight: 1.6, marginBottom: 14 }}>{q.body}</div>
+      <div style={{ fontSize: 14, lineHeight: 1.6, marginBottom: 14 }}><MathText>{q.body}</MathText></div>
 
       {isShort ? (
         <div>
@@ -139,7 +140,7 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
                     fontWeight: on ? 700 : 600,
                   }}
                 >
-                  {i + 1}. {opt}
+                  {i + 1}. <MathText>{opt}</MathText>
                 </button>
               );
             })}
