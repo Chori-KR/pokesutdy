@@ -6,6 +6,7 @@ import { DIFF, Difficulty } from "@/lib/game";
 import { supabaseBrowser } from "@/lib/supabase/browser";
 import AiGenerate from "@/components/teacher/AiGenerate";
 import BulkImport from "@/components/teacher/BulkImport";
+import MathText from "@/components/MathText";
 
 export interface QuestionRow {
   id: string;
@@ -387,11 +388,11 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
                   title="선택"
                 />
                 <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: 13, lineHeight: 1.5, marginBottom: 5 }}>{q.body}</div>
+                  <div style={{ fontSize: 13, lineHeight: 1.5, marginBottom: 5 }}><MathText>{q.body}</MathText></div>
                   <div style={{ fontSize: 11, color: "#666" }}>
                     {q.options.map((o, i) => (
                       <span key={i} style={{ marginRight: 8, color: i === q.answer_idx ? "#0f6e56" : "#999", fontWeight: i === q.answer_idx ? 600 : 400 }}>
-                        {CIRCLED[i]} {o}
+                        {CIRCLED[i]} <MathText>{o}</MathText>
                       </span>
                     ))}
                   </div>

@@ -12,6 +12,7 @@ import HpBar from "@/components/HpBar";
 import ShinyFx from "@/components/student/ShinyFx";
 import TypeFx from "@/components/student/TypeFx";
 import TimerBar from "@/components/student/TimerBar";
+import MathText from "@/components/MathText";
 import { SFX, playCry, startRaidBgm, stopBattleBgm } from "@/lib/sound";
 
 interface Props {
@@ -398,14 +399,14 @@ export default function RaidTab({
           ) : (
             <div style={{ fontSize: 11, marginBottom: 10 }}><span style={{ color: "#5b7a99" }}>{move.label} 문제 · {q.tag}</span></div>
           )}
-          <div style={{ fontSize: 15, marginBottom: 10, lineHeight: 1.6 }}>{q.body}</div>
+          <div style={{ fontSize: 15, marginBottom: 10, lineHeight: 1.6 }}><MathText>{q.body}</MathText></div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 6 }}>
             {q.sOpts.map((o, i) => {
               const on = selected === i;
               return (
                 <button key={i} onClick={() => setSelected(i)}
                   style={{ ...S.choiceBtn, border: on ? "2px solid #4b7bec" : S.choiceBtn.border, background: on ? "#eaf0ff" : S.choiceBtn.background, fontWeight: on ? 700 : 600 }}>
-                  {["①", "②", "③", "④"][i]} {o.t}
+                  {["①", "②", "③", "④"][i]} <MathText>{o.t}</MathText>
                 </button>
               );
             })}

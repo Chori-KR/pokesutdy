@@ -62,7 +62,8 @@ ${r.curriculum}
 
 출제 규칙:
 - 난이도를 명확히 구분할 것: 쉬움=기본 개념 확인, 보통=개념 적용, 어려움=응용·복합·문장제
-- 문제는 해당 학년이 이해할 수 있는 어휘로 쓸 것${typeRules}${r.special ? `
+- 문제는 해당 학년이 이해할 수 있는 어휘로 쓸 것
+- 수학·과학 수식과 기호는 반드시 LaTeX로 $...$(문장 속) 안에 쓸 것. 예: 지수 $2^{3}$, 분수 $\\frac{1}{2}$, 루트 $\\sqrt{b^2-4ac}$, 근의 공식 $x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$, 삼각함수 $\\sin\\theta$·$\\cos x$, 극한 $\\lim_{x \\to 0}$, 화학식 $\\mathrm{H_2O}$·$\\mathrm{CO_2}$, 물리 $E=mc^{2}$. (2^3, H2O처럼 밋밋하게 쓰지 말고 위처럼 LaTeX로 감쌀 것)${typeRules}${r.special ? `
 - [특수교육] 대상은 특수교육 기본교육과정 학생입니다. 문장은 짧고 쉽고 구체적으로, 일상생활 맥락으로 쓸 것
 - [특수교육] 추상적·복합적 사고를 최소화하고, 그림 없이 글만으로 풀 수 있게 할 것
 - [특수교육] 성취기준이 태도·실천형이면 생활 속 상황을 고르는 문제로 재구성할 것` : ""}
@@ -204,7 +205,14 @@ export function parseQuestions(text: string): GeneratedQuestion[] {
   const start = cleaned.indexOf("[");
   const end = cleaned.lastIndexOf("]");
   if (start < 0 || end <= start) throw new Error("AI 응답에서 JSON을 찾지 못했어요.");
-  const parsed = JSON.parse(cleaned.slice(start, end + 1));
+  const slice = cleaned.slice(start, end + 1);
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(slice);
+  } catch {
+    // LaTeX 백슬래시(\frac, \sqrt 등)가 JSON 이스케이프를 깨는 경우 → 모든 \를 이스케이프해 재시도
+    parsed = JSON.parse(slice.replace(/\\/g, "\\\\"));
+  }
   if (!Array.isArray(parsed)) throw new Error("AI 응답이 배열이 아니에요.");
 
   const strList = (a: unknown): string[] | null =>
