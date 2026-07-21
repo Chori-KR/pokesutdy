@@ -70,6 +70,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const [usedQ, setUsedQ] = useState<string[]>([]);
   const [picker, setPicker] = useState(false);   // 포켓몬 선택 패널
   const [sprayAsk, setSprayAsk] = useState<{ snack?: SnackKind } | null>(null); // 스프레이 사용 여부 모달
+  const [stonePick, setStonePick] = useState(false); // 이브이형 돌 진화 갈래 선택 모달
   const [subject, setSubject] = useState("");    // M7: 배틀 출제 과목 ("" = 전체)
   const [busyAction, setBusyAction] = useState(false);
   const wildHpRef = useRef(0);
@@ -80,6 +81,8 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const mine = myPokemonOf(game.battlePid);
   const myWins = Number(game.wins?.[String(mine.id)] ?? 0);
   const evoTargets = EVOLVES_TO[mine.id] ?? [];
+  const stoneTargets = evoTargets.filter((to) => isStoneEvo(mine.id, to)); // 이브이 등: 돌로 갈라지는 진화체
+  const multiStone = stoneTargets.length > 1; // 이브이(부스터/쥬피썬더/샤미드)처럼 여러 갈래
   const winsNeeded = evoWinsNeeded(mine.id);
   const battlesLeft = Math.max(0, day.battleLimit - day.battleUsed);
   const SNACK_KINDS: SnackKind[] = ["snack", "snack2", "snack3", "snack4"];
@@ -137,11 +140,11 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   }
 
   // M5: 진화 3방식 — 승수(wins) / 포인트(points) / 진화의돌(stone, 서버가 페어로 강제)
-  async function evolve(to: number, method: "wins" | "points" | "stone") {
+  async function evolve(to: number, method: "wins" | "points" | "stone", skipConfirm = false) {
     if (busyAction) return;
-    // 오조작 방지: 진화는 되돌릴 수 없고 자원을 소모하므로 한 번 확인
+    // 오조작 방지: 진화는 되돌릴 수 없고 자원을 소모하므로 한 번 확인 (모달로 이미 고른 경우는 생략)
     const cost = method === "points" ? `포인트 ${evoPointCost(mine.id, to).toLocaleString()}P` : method === "stone" ? "진화의돌 1개" : `${winsNeeded}승`;
-    if (!window.confirm(`${mine.name}을(를) ${POOL[to - 1].name}(으)로 진화시킬까요?\n(${cost} 소모 · 되돌릴 수 없어요)`)) return;
+    if (!skipConfirm && !window.confirm(`${mine.name}을(를) ${POOL[to - 1].name}(으)로 진화시킬까요?\n(${cost} 소모 · 되돌릴 수 없어요)`)) return;
     setBusyAction(true);
     try {
       const res = await fetch("/api/pokemon/evolve", {
@@ -611,6 +614,15 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
               <div style={{ fontSize: 12, marginBottom: 8, textAlign: "center" }}>
                 ✨ 진화 — 방법을 골라 진화시키자! <span style={{ fontSize: 10, color: "#5b7a99" }}>(내 {game.evoCount + 1}번째 진화)</span>
               </div>
+              {multiStone ? (
+                <button
+                  onClick={() => setStonePick(true)}
+                  disabled={busyAction || student.inventory.stone < 1}
+                  style={{ ...S.primaryBtn, width: "100%", background: "#7c5cd9", opacity: student.inventory.stone < 1 ? 0.45 : 1 }}
+                >
+                  💎 진화의돌로 진화하기 <span style={{ fontSize: 11, opacity: 0.9 }}>({stoneTargets.length}가지 중 선택 · 보유 {student.inventory.stone})</span>
+                </button>
+              ) : (
               <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
                 {evoTargets.map((to) => {
                   const stone = isStoneEvo(mine.id, to);
@@ -639,9 +651,43 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
                   );
                 })}
               </div>
-              {evoTargets.some((to) => isStoneEvo(mine.id, to)) && student.inventory.stone < 1 && (
+              )}
+              {stoneTargets.length > 0 && student.inventory.stone < 1 && (
                 <div style={{ fontSize: 10, color: "#5b7a99", marginTop: 6, textAlign: "center" }}>진화의돌은 상점에서 1,500P에 살 수 있어요</div>
               )}
+            </div>
+          )}
+
+          {/* 이브이형 돌 진화 — 도감 이미지로 갈래 선택 (예쁜 모달) */}
+          {stonePick && (
+            <div onClick={() => setStonePick(false)} style={{ position: "fixed", inset: 0, background: "rgba(8,10,22,0.72)", zIndex: 70, display: "flex", alignItems: "center", justifyContent: "center", padding: 20, fontFamily: "inherit" }}>
+              <div onClick={(e) => e.stopPropagation()} style={{ ...S.panel, maxWidth: 400, width: "100%", textAlign: "center" }}>
+                <div style={{ fontSize: 15, fontWeight: 700, marginBottom: 2 }}>💎 어떤 모습으로 진화할까?</div>
+                <div style={{ fontSize: 11, color: "#5b7a99", marginBottom: 14 }}>
+                  {mine.name}은(는) 진화의돌로 아래 중 <b>하나</b>로 진화해요. 골라주세요! <span style={{ color: "#a86" }}>(되돌릴 수 없어요)</span>
+                </div>
+                <div style={{ display: "grid", gridTemplateColumns: `repeat(${stoneTargets.length}, 1fr)`, gap: 10 }}>
+                  {stoneTargets.map((to) => {
+                    const p = POOL[to - 1];
+                    return (
+                      <button
+                        key={to}
+                        onClick={() => { setStonePick(false); evolve(to, "stone", true); }}
+                        disabled={busyAction}
+                        style={{ background: "#fff", border: `2px solid ${TYPE_COLORS[p.type] ?? "#e4e6ee"}`, borderRadius: 16, padding: "14px 6px 10px", cursor: "pointer", fontFamily: "inherit", display: "flex", flexDirection: "column", alignItems: "center", gap: 6, transition: "transform 0.12s" }}
+                        onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-3px)")}
+                        onMouseLeave={(e) => (e.currentTarget.style.transform = "none")}
+                      >
+                        <Sprite id={to} color={p.color} size={78} style={{ animation: "floaty 2.6s ease-in-out infinite" }} />
+                        <div style={{ fontSize: 13, fontWeight: 700, color: "#1c1c1e" }}>{p.name}</div>
+                        <div style={{ fontSize: 10, color: "#8a8f9a" }}>No.{String(to).padStart(3, "0")}</div>
+                      </button>
+                    );
+                  })}
+                </div>
+                <div style={{ fontSize: 11, color: "#5b7a99", marginTop: 12 }}>진화의돌 1개를 사용해요 (보유 {student.inventory.stone})</div>
+                <button onClick={() => setStonePick(false)} style={{ ...S.ghostBtn, marginTop: 10 }}>취소</button>
+              </div>
             </div>
           )}
 
