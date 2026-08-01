@@ -429,16 +429,36 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
   );
 }
 
-// 수식(LaTeX) 입력 방법 안내 — 접었다 폈다 하는 도움말
-const MATH_EXAMPLES: { label: string; input: string }[] = [
-  { label: "지수 (제곱)", input: "$2^{3}$" },
-  { label: "아래첨자·화학식", input: "$\\mathrm{H_2O}$" },
-  { label: "분수", input: "$\\frac{1}{2}$" },
-  { label: "제곱근", input: "$\\sqrt{b^2-4ac}$" },
-  { label: "삼각함수", input: "$\\sin\\theta$" },
-  { label: "극한", input: "$\\lim_{x\\to 0}$" },
-  { label: "물리 공식", input: "$E=mc^2$" },
-  { label: "곱하기·나누기", input: "$3 \\times 4 \\div 2$" },
+// 수식(LaTeX) 입력 방법 안내 — 접었다 폈다 하는 도움말 (과목별 그룹)
+const MATH_GROUPS: { title: string; items: { label: string; input: string }[] }[] = [
+  {
+    title: "📐 수학 기본",
+    items: [
+      { label: "지수 (제곱)", input: "$2^{3}$" },
+      { label: "분수", input: "$\\frac{1}{2}$" },
+      { label: "제곱근", input: "$\\sqrt{b^2-4ac}$" },
+      { label: "삼각함수", input: "$\\sin\\theta$" },
+      { label: "극한", input: "$\\lim_{x\\to 0}$" },
+      { label: "곱하기·나누기", input: "$3 \\times 4 \\div 2$" },
+      { label: "부등호·같지 않음", input: "$a \\leq b \\neq c$" },
+      { label: "집합 기호", input: "$x \\in A \\cup B$" },
+    ],
+  },
+  {
+    title: "🧪 과학·기타 기호",
+    items: [
+      { label: "화학식 (아래첨자)", input: "$\\mathrm{H_2O}$" },
+      { label: "물리 공식", input: "$E=mc^2$" },
+      { label: "반응 화살표", input: "$A \\rightarrow B$" },
+      { label: "화학 평형", input: "$aA \\rightleftharpoons bB$" },
+      { label: "그리스 문자", input: "$\\alpha, \\beta, \\pi, \\theta, \\Omega$" },
+      { label: "단위 (가속도)", input: "$9.8\\ \\mathrm{m/s^2}$" },
+      { label: "섭씨온도", input: "$25^\\circ\\mathrm{C}$" },
+      { label: "벡터", input: "$\\vec{F} = m\\vec{a}$" },
+      { label: "근사·비례", input: "$\\pi \\approx 3.14,\\ y \\propto x$" },
+      { label: "이온 (위첨자)", input: "$\\mathrm{Na^{+}},\\ \\mathrm{SO_4^{2-}}$" },
+    ],
+  },
 ];
 
 function MathHelp() {
@@ -450,26 +470,32 @@ function MathHelp() {
         onClick={() => setOpen((v) => !v)}
         style={{ ...T.chip, fontSize: 11.5, color: "#5a3ea8", borderColor: "#d5c9f0", background: "#f6f2ff", cursor: "pointer" }}
       >
-        🧮 수식(지수·분수·화학식) 입력 방법 {open ? "▲" : "▼"}
+        🧮 수식·기호(지수·분수·화학식·그리스문자…) 입력 방법 {open ? "▲" : "▼"}
       </button>
       {open && (
         <div style={{ ...T.card, background: "#faf8ff", border: "1px solid #e2d9f5", padding: "10px 12px", marginTop: 6, fontSize: 12, lineHeight: 1.6 }}>
           <div style={{ marginBottom: 8, color: "#444" }}>
-            수식은 <b>달러 기호 <code style={{ background: "#efe8fb", padding: "1px 5px", borderRadius: 4 }}>$ … $</code></b> 사이에 넣으면 교과서처럼 예쁘게 나와요.
+            수식·기호는 <b>달러 기호 <code style={{ background: "#efe8fb", padding: "1px 5px", borderRadius: 4 }}>$ … $</code></b> 사이에 넣으면 교과서처럼 예쁘게 나와요.
             지수만 필요하면 <code style={{ background: "#efe8fb", padding: "1px 5px", borderRadius: 4 }}>2^3</code>처럼 <b>그냥 써도</b> 자동으로 <MathText>{"$2^{3}$"}</MathText>가 돼요.
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 6 }}>
-            {MATH_EXAMPLES.map((ex) => (
-              <div key={ex.input} style={{ display: "flex", alignItems: "center", gap: 8, background: "#fff", border: "1px solid #ece5f7", borderRadius: 8, padding: "6px 8px" }}>
-                <code style={{ fontSize: 11, color: "#7a5", flexShrink: 0 }}>{ex.input}</code>
-                <span style={{ color: "#bbb" }}>→</span>
-                <span style={{ fontSize: 13 }}><MathText>{ex.input}</MathText></span>
-                <span style={{ marginLeft: "auto", fontSize: 10, color: "#999", flexShrink: 0 }}>{ex.label}</span>
+          {MATH_GROUPS.map((group) => (
+            <div key={group.title} style={{ marginBottom: 10 }}>
+              <div style={{ fontSize: 11.5, fontWeight: 700, color: "#5a3ea8", margin: "2px 0 6px" }}>{group.title}</div>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 6 }}>
+                {group.items.map((ex) => (
+                  <div key={ex.input} style={{ display: "flex", alignItems: "center", gap: 8, background: "#fff", border: "1px solid #ece5f7", borderRadius: 8, padding: "6px 8px" }}>
+                    <code style={{ fontSize: 11, color: "#7a5", flexShrink: 0 }}>{ex.input}</code>
+                    <span style={{ color: "#bbb" }}>→</span>
+                    <span style={{ fontSize: 13 }}><MathText>{ex.input}</MathText></span>
+                    <span style={{ marginLeft: "auto", fontSize: 10, color: "#999", flexShrink: 0 }}>{ex.label}</span>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <div style={{ marginTop: 8, color: "#888", fontSize: 11 }}>
-            💡 보기 칸에도 똑같이 쓸 수 있어요. AI 생성·대량 등록으로 만든 문제도 자동으로 적용돼요.
+            </div>
+          ))}
+          <div style={{ marginTop: 4, color: "#888", fontSize: 11 }}>
+            💡 보기 칸에도 똑같이 쓸 수 있어요. AI 생성·대량 등록으로 만든 문제도 자동으로 적용돼요.<br />
+            💡 화살표·부등호·그리스문자 같은 <b>기호 하나</b>도 <code style={{ background: "#efe8fb", padding: "1px 4px", borderRadius: 4 }}>$\rightarrow$</code>처럼 달러 기호로 감싸면 돼요. (사회·기술·가정 등에서도 사용)
           </div>
         </div>
       )}
