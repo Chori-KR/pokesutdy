@@ -72,6 +72,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const [picker, setPicker] = useState(false);   // 포켓몬 선택 패널
   const [sprayAsk, setSprayAsk] = useState<{ snack?: SnackKind } | null>(null); // 스프레이 사용 여부 모달
   const [stonePick, setStonePick] = useState(false); // 이브이형 돌 진화 갈래 선택 모달
+  const [confirmEvo, setConfirmEvo] = useState<{ to: number; method: "wins" | "points" } | null>(null); // 승수/포인트 진화 확인 모달
   const [subject, setSubject] = useState("");    // M7: 배틀 출제 과목 ("" = 전체)
   const [busyAction, setBusyAction] = useState(false);
   const wildHpRef = useRef(0);
@@ -578,7 +579,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       {/* 메시지 박스 */}
       {phase !== "idle" && (
         <div style={{ ...S.panel, padding: "12px 14px", minHeight: 46, fontSize: 14, lineHeight: 1.5, marginBottom: 8, textAlign: "center" }}>
-          {msg}
+          <MathText>{msg}</MathText>
         </div>
       )}
 
@@ -640,10 +641,10 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
                         </button>
                       ) : (
                         <>
-                          <button onClick={() => evolve(to, "wins")} disabled={busyAction || myWins < winsNeeded} style={{ ...S.primaryBtn, padding: "7px 10px", fontSize: 11, background: "#3d9970", opacity: myWins < winsNeeded ? 0.45 : 1 }}>
+                          <button onClick={() => setConfirmEvo({ to, method: "wins" })} disabled={busyAction || myWins < winsNeeded} style={{ ...S.primaryBtn, padding: "7px 10px", fontSize: 11, background: "#3d9970", opacity: myWins < winsNeeded ? 0.45 : 1 }}>
                             ⚔ 배틀 승수 ({Math.min(myWins, winsNeeded)}/{winsNeeded})
                           </button>
-                          <button onClick={() => evolve(to, "points")} disabled={busyAction || student.points < pc} style={{ ...S.primaryBtn, padding: "7px 10px", fontSize: 11, background: "#e0a63a", opacity: student.points < pc ? 0.45 : 1 }}>
+                          <button onClick={() => setConfirmEvo({ to, method: "points" })} disabled={busyAction || student.points < pc} style={{ ...S.primaryBtn, padding: "7px 10px", fontSize: 11, background: "#e0a63a", opacity: student.points < pc ? 0.45 : 1 }}>
                             💰 {pc.toLocaleString()}P 사용
                           </button>
                         </>
@@ -691,6 +692,52 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
               </div>
             </div>
           )}
+
+          {/* 승수/포인트 진화 확인 — 도감 이미지로 진화체를 보여주며 확인 (예쁜 모달) */}
+          {confirmEvo && (() => {
+            const to = confirmEvo.to;
+            const p = POOL[to - 1];
+            const cost = confirmEvo.method === "points"
+              ? `포인트 ${evoPointCost(mine.id, to).toLocaleString()}P`
+              : `배틀 ${winsNeeded}승`;
+            return (
+              <div onClick={() => setConfirmEvo(null)} style={{ position: "fixed", inset: 0, background: "rgba(8,10,22,0.72)", zIndex: 70, display: "flex", alignItems: "center", justifyContent: "center", padding: 20, fontFamily: "inherit" }}>
+                <div onClick={(e) => e.stopPropagation()} style={{ ...S.panel, maxWidth: 340, width: "100%", textAlign: "center" }}>
+                  <div style={{ fontSize: 15, fontWeight: 700, marginBottom: 2 }}>
+                    {confirmEvo.method === "points" ? "💰 포인트로 진화" : "⚔ 배틀 승수로 진화"}
+                  </div>
+                  <div style={{ fontSize: 11, color: "#5b7a99", marginBottom: 14 }}>
+                    아래 모습으로 진화해요. <span style={{ color: "#a86" }}>(되돌릴 수 없어요)</span>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8, marginBottom: 12 }}>
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4, opacity: 0.7 }}>
+                      <Sprite id={mine.id} color={mine.color} size={56} />
+                      <div style={{ fontSize: 11, color: "var(--ink-2)" }}>{mine.name}</div>
+                    </div>
+                    <div style={{ fontSize: 22, color: "#eaa300" }}>→</div>
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
+                      <Sprite id={to} color={p.color} size={78} style={{ animation: "floaty 2.6s ease-in-out infinite" }} />
+                      <div style={{ fontSize: 13, fontWeight: 700, color: "var(--ink)" }}>{p.name}</div>
+                      <div style={{ fontSize: 10, color: "#8a8f9a" }}>No.{String(to).padStart(3, "0")}</div>
+                    </div>
+                  </div>
+                  <div style={{ fontSize: 12, color: "var(--ink-2)", marginBottom: 12 }}>
+                    <b style={{ color: confirmEvo.method === "points" ? "#e0a63a" : "#3d9970" }}>{cost}</b>을(를) 사용해요
+                  </div>
+                  <div style={{ display: "flex", gap: 8 }}>
+                    <button onClick={() => setConfirmEvo(null)} disabled={busyAction} style={{ ...S.ghostBtn, flex: 1 }}>취소</button>
+                    <button
+                      onClick={() => { const c = confirmEvo; setConfirmEvo(null); evolve(c.to, c.method, true); }}
+                      disabled={busyAction}
+                      style={{ ...S.primaryBtn, flex: 1, background: confirmEvo.method === "points" ? "#e0a63a" : "#3d9970" }}
+                    >
+                      진화하기!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
 
           {picker && (
             <div style={{ ...S.panel, marginBottom: 8 }}>
