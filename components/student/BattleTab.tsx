@@ -228,16 +228,19 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     }
   }
 
-  function pickQuestion(diff: Difficulty): ApiQuestion | undefined {
+  // anyDiff=true면 난이도를 가리지 않고 전체에서 출제 (기술=난이도 설정 OFF일 때)
+  function pickQuestion(diff: Difficulty, anyDiff = false): ApiQuestion | undefined {
     const all = activeBank; // M7: 선택한 과목 안에서만 출제
+    const match = (x: ApiQuestion) => anyDiff || x.difficulty === diff;
     // 같은 배틀 내 중복 출제 방지, 소진 시 재사용 (명세 §4.2)
-    let pool = all.filter((x) => x.difficulty === diff && !usedQ.includes(x.id));
-    if (pool.length === 0) pool = all.filter((x) => x.difficulty === diff);
+    let pool = all.filter((x) => match(x) && !usedQ.includes(x.id));
+    if (pool.length === 0) pool = all.filter(match);
     return pool[Math.floor(Math.random() * pool.length)];
   }
 
   function chooseMove(m: Move) {
-    const raw = pickQuestion(m.diff);
+    // 기술=난이도 OFF: 기술이 하나뿐이므로 난이도 상관없이 아무 문제나 출제
+    const raw = pickQuestion(m.diff, !moveDiff);
     if (!raw) return;
     setUsedQ((u) => [...u, raw.id]);
     const sOpts = shuffle(raw.options.map((t, i) => ({ t, ok: i === raw.answer_idx, idx: i })));
@@ -791,8 +794,9 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             </div>
           )}
           {activeCount === 0 && (
-            <div style={{ fontSize: 12, color: "#ff9d9d", marginTop: 8, textAlign: "center" }}>
-              출제 중인 문제가 없어요. 선생님이 문제를 등록해야 배틀할 수 있어요.
+            <div style={{ fontSize: 12, color: "#ff9d9d", marginTop: 8, textAlign: "center", lineHeight: 1.6 }}>
+              배틀에 쓸 문제가 없어요. 배틀은 <b>4지선다 · 일반 문제</b>를 사용해요.<br />
+              <span style={{ color: "#5b7a99" }}>(단답형은 &lsquo;문제풀이&rsquo; 탭, 레이드 전용은 &lsquo;레이드&rsquo;에서 나와요. 선생님이 문제를 등록·출제하면 배틀할 수 있어요.)</span>
             </div>
           )}
           {battlesLeft <= 0 && activeCount > 0 && (
@@ -812,11 +816,12 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       {phase === "select" && (
         <div style={{ display: "grid", gridTemplateColumns: `repeat(${moves.length}, 1fr)`, gap: 6 }}>
           {moves.map((m) => {
-            const none = countByDiff[m.diff] === 0;
+            // 기술=난이도 OFF면 난이도 무관 — 활성 문제가 하나라도 있으면 사용 가능
+            const none = moveDiff ? countByDiff[m.diff] === 0 : activeCount === 0;
             return (
               <button key={m.name} onClick={() => !none && chooseMove(m)} disabled={none} style={{ ...S.moveBtn(m.diff), opacity: none ? 0.35 : 1 }}>
                 <div style={{ fontSize: 14 }}>{m.name}</div>
-                <div style={{ fontSize: 10, opacity: 0.9, marginTop: 2 }}>{none ? "문제 없음" : `${m.label} 문제 · 위력 ${m.dmg}`}</div>
+                <div style={{ fontSize: 10, opacity: 0.9, marginTop: 2 }}>{none ? "문제 없음" : moveDiff ? `${m.label} 문제 · 위력 ${m.dmg}` : `문제 풀기 · 위력 ${m.dmg}`}</div>
               </button>
             );
           })}
