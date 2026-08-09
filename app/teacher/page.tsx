@@ -12,12 +12,16 @@ export default function TeacherPage() {
 
   useEffect(() => {
     const supa = supabaseBrowser();
-    supa.auth.getSession().then(({ data }) => {
-      setSession(data.session);
-      setLoading(false);
-    });
+    // 세션 확인이 오래 걸려도(예: Supabase 도달 지연) 최대 6초 뒤엔 화면을 띄운다.
+    // 세션이 없으면 로그인 화면으로 빠지고, 늦게라도 세션이 오면 아래에서 반영된다.
+    const stop = setTimeout(() => setLoading(false), 6000);
+    supa.auth
+      .getSession()
+      .then(({ data }) => setSession(data.session))
+      .catch(() => {})
+      .finally(() => { clearTimeout(stop); setLoading(false); });
     const { data: sub } = supa.auth.onAuthStateChange((_e, s) => setSession(s));
-    return () => sub.subscription.unsubscribe();
+    return () => { clearTimeout(stop); sub.subscription.unsubscribe(); };
   }, []);
 
   if (loading)
