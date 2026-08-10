@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { T } from "@/lib/styles";
 import { DIFF, Difficulty } from "@/lib/game";
 import { supabaseBrowser } from "@/lib/supabase/browser";
@@ -63,6 +63,13 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
   const [formErr, setFormErr] = useState("");
   const [panel, setPanel] = useState<"ai" | "bulk" | null>(null);
   const [selected, setSelected] = useState<Set<string>>(new Set()); // M7: 체크된 문제 id
+
+  // 수정/새 문제 폼을 열면 상단 폼으로 자동 스크롤 (열림 순간에만 — 입력 중 재스크롤 방지)
+  const formRef = useRef<HTMLDivElement>(null);
+  const [formOpenSeq, setFormOpenSeq] = useState(0);
+  useEffect(() => {
+    if (formOpenSeq > 0) formRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [formOpenSeq]);
 
   const tags = useMemo(() => [...new Set(questions.map((q) => q.tag))], [questions]);
   const visible = questions.filter(
@@ -179,6 +186,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
       raidOnly: !!q.raid_only,
     });
     setFormErr("");
+    setFormOpenSeq((s) => s + 1);
   }
 
   async function saveForm() {
@@ -239,7 +247,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
     <div>
       <div style={{ display: "flex", gap: 8, marginBottom: 8, flexWrap: "wrap" }}>
         <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="문제 검색" style={{ ...T.input, flex: 1, minWidth: 140 }} />
-        <button onClick={() => { setForm({ ...EMPTY_FORM }); setFormErr(""); setPanel(null); }} style={T.primaryBtn}>+ 새 문제</button>
+        <button onClick={() => { setForm({ ...EMPTY_FORM }); setFormErr(""); setPanel(null); setFormOpenSeq((s) => s + 1); }} style={T.primaryBtn}>+ 새 문제</button>
         <button onClick={() => { setPanel(panel === "ai" ? null : "ai"); setForm(null); }} style={{ ...T.primaryBtn, background: "#7c5cd9" }}>🤖 AI 생성</button>
         <button onClick={() => { setPanel(panel === "bulk" ? null : "bulk"); setForm(null); }} style={{ ...T.primaryBtn, background: "#2e8b57" }}>📥 대량 등록</button>
       </div>
@@ -286,8 +294,8 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
 
       {/* 추가/수정 폼 */}
       {form && (
-        <div style={{ ...T.card, marginBottom: 10, border: "2px solid #3d6fd9" }}>
-          <div style={{ fontSize: 14, fontWeight: 600, marginBottom: 10 }}>{form.id ? "문제 수정" : "새 문제 등록"}</div>
+        <div ref={formRef} style={{ ...T.card, marginBottom: 10, border: "2px solid #3d6fd9", scrollMarginTop: 12 }}>
+          <div style={{ fontSize: 14, fontWeight: 600, marginBottom: 10 }}>{form.id ? "✏️ 문제 수정" : "새 문제 등록"}</div>
           <div style={{ display: "flex", gap: 6, marginBottom: 8 }}>
             <button onClick={() => setForm({ ...form, qtype: "multiple" })} style={{ ...(form.qtype === "multiple" ? T.primaryBtn : T.secondaryBtn), padding: "6px 12px", fontSize: 12 }}>4지선다</button>
             <button onClick={() => setForm({ ...form, qtype: "short" })} style={{ ...(form.qtype === "short" ? T.primaryBtn : T.secondaryBtn), padding: "6px 12px", fontSize: 12 }}>단답형</button>
@@ -410,13 +418,29 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
                 <div style={{ flex: 1 }}>
                   <div style={{ fontSize: 13, lineHeight: 1.5, marginBottom: 5 }}><MathText>{q.body}</MathText></div>
                   <div style={{ fontSize: 11, color: "#666" }}>
-                    {q.options.map((o, i) => (
-                      <span key={i} style={{ marginRight: 8, color: i === q.answer_idx ? "#0f6e56" : "#999", fontWeight: i === q.answer_idx ? 600 : 400 }}>
-                        {CIRCLED[i]} <MathText>{o}</MathText>
+                    {q.type === "short" ? (
+                      <span style={{ color: "#0f6e56", fontWeight: 600 }}>
+                        정답:{" "}
+                        {q.options.map((o, i) => (
+                          <span key={i} style={{ marginRight: 6 }}>
+                            <MathText>{o}</MathText>{i < q.options.length - 1 ? " /" : ""}
+                          </span>
+                        ))}
                       </span>
-                    ))}
+                    ) : (
+                      q.options.map((o, i) => (
+                        <span key={i} style={{ marginRight: 8, color: i === q.answer_idx ? "#0f6e56" : "#999", fontWeight: i === q.answer_idx ? 600 : 400 }}>
+                          {CIRCLED[i]} <MathText>{o}</MathText>
+                        </span>
+                      ))
+                    )}
                   </div>
-                  <div style={{ display: "flex", gap: 6, marginTop: 6, alignItems: "center", fontSize: 10 }}>
+                  <div style={{ display: "flex", gap: 6, marginTop: 6, alignItems: "center", fontSize: 10, flexWrap: "wrap" }}>
+                    {q.type === "short" ? (
+                      <span style={{ padding: "2px 7px", borderRadius: 9, background: "#fff3e0", color: "#b26a00", fontWeight: 700 }}>✏️ 단답형</span>
+                    ) : (
+                      <span style={{ padding: "2px 7px", borderRadius: 9, background: "#e8f0ff", color: "#3d6fd9", fontWeight: 700 }}>🔘 4지선다</span>
+                    )}
                     <span style={{ padding: "2px 7px", borderRadius: 9, background: DIFF[q.difficulty].bg, color: DIFF[q.difficulty].fg }}>{DIFF[q.difficulty].label}</span>
                     <span style={{ padding: "2px 7px", borderRadius: 9, background: "#eef1f8", color: "#3a4a7a" }}>{q.tag}</span>
                     {q.raid_only && <span style={{ padding: "2px 7px", borderRadius: 9, background: "#fdeee0", color: "#c0651e", fontWeight: 700 }}>🛡️ 레이드 전용</span>}
