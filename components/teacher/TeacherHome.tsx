@@ -199,7 +199,7 @@ export default function TeacherHome({ session }: { session: Session }) {
         />
       )}
 
-      {tab === "stats" && <StatsTab questions={questions} showToast={showToast} />}
+      {tab === "stats" && <StatsTab showToast={showToast} />}
 
       {tab === "settings" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
