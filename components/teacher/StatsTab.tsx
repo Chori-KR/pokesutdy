@@ -22,8 +22,12 @@ interface StudentStat {
 interface Summary { avgCorrectRate: number | null; totalSolved: number; activeToday: number }
 interface WeakQ { id: string; body: string; tag: string; tries: number; wrong: number; rate: number }
 
-type Period = "today" | "7d" | "30d" | "all";
-const PERIODS: [Period, string][] = [["today", "오늘"], ["7d", "최근 7일"], ["30d", "최근 30일"], ["all", "전체"]];
+// 로컬 날짜 → YYYY-MM-DD
+const isoDate = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+const daysAgoISO = (n: number) => { const d = new Date(); d.setDate(d.getDate() - n); return isoDate(d); };
+const TODAY_ISO = isoDate(new Date());
+// 달력 날짜(YYYY-MM-DD) → M/D 짧은 표기
+const shortDate = (s: string) => { const p = s.split("-"); return p.length === 3 ? `${Number(p[1])}/${Number(p[2])}` : s; };
 
 interface Props {
   showToast: (t: string) => void;
@@ -41,7 +45,8 @@ export default function StatsTab({ showToast }: Props) {
   const [students, setStudents] = useState<StudentStat[] | null>(null);
   const [summary, setSummary] = useState<Summary | null>(null);
   const [weakQuestions, setWeakQuestions] = useState<WeakQ[]>([]);
-  const [period, setPeriod] = useState<Period>("30d");
+  const [from, setFrom] = useState<string>(daysAgoISO(29)); // 기본 최근 30일
+  const [to, setTo] = useState<string>(TODAY_ISO);
   const [err, setErr] = useState("");
   const [giftFor, setGiftFor] = useState<string | null>(null);
   const [giftPoints, setGiftPoints] = useState(100);
@@ -57,7 +62,7 @@ export default function StatsTab({ showToast }: Props) {
   const load = useCallback(async () => {
     setErr("");
     try {
-      const res = await teacherFetch(`/api/teacher/stats?period=${period}`);
+      const res = await teacherFetch(`/api/teacher/stats?from=${from}&to=${to}`);
       const data = await res.json();
       if (!res.ok) { setErr(data.error ?? "통계를 불러오지 못했어요."); return; }
       setStudents(data.students);
@@ -66,7 +71,7 @@ export default function StatsTab({ showToast }: Props) {
     } catch {
       setErr("연결에 실패했어요.");
     }
-  }, [period]);
+  }, [from, to]);
 
   useEffect(() => { load(); }, [load]);
 
@@ -107,7 +112,8 @@ export default function StatsTab({ showToast }: Props) {
 
   // 오답률 TOP 10 — 선택한 기간 내 answer_logs 기준(서버 계산). "다음 수업에서 다시 다룰 것" 신호.
   const top10 = weakQuestions;
-  const periodLabel = PERIODS.find(([p]) => p === period)?.[1] ?? "전체";
+  const periodLabel = !from && !to ? "전체" : `${from ? shortDate(from) : "처음"} ~ ${to ? shortDate(to) : "오늘"}`;
+  const setRange = (f: string, t: string) => { setFrom(f); setTo(t); };
 
   const fmtDate = (iso: string | null) =>
     iso ? new Intl.DateTimeFormat("ko-KR", { month: "numeric", day: "numeric", timeZone: "Asia/Seoul" }).format(new Date(iso)) : "—";
@@ -116,13 +122,18 @@ export default function StatsTab({ showToast }: Props) {
     <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
       {err && <div style={{ ...T.card, color: "#a32d2d", fontSize: 13 }}>{err} <button onClick={load} style={T.smallBtn}>다시 시도</button></div>}
 
-      {/* 기간 필터 — 정답률·오답률·단원 통계를 이 기간 기준으로 계산 */}
-      <div style={{ display: "flex", gap: 6, alignItems: "center", flexWrap: "wrap" }}>
-        <span style={{ fontSize: 12, color: "#888" }}>기간</span>
-        {PERIODS.map(([p, label]) => (
-          <button key={p} onClick={() => setPeriod(p)} style={{ ...T.chip, ...(period === p ? T.chipOn : {}) }}>{label}</button>
-        ))}
-        <span style={{ fontSize: 11, color: "#aaa", marginLeft: 4 }}>정답률·오답률·단원 통계가 선택한 기간 기준으로 바뀌어요</span>
+      {/* 기간 필터 — 달력으로 시작일·종료일 지정. 정답률·오답률·단원 통계가 그 기간 기준으로 계산됨 */}
+      <div style={{ ...T.card, display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap", fontSize: 12 }}>
+        <span style={{ color: "#888", fontWeight: 600 }}>📅 기간</span>
+        <input type="date" value={from} max={to || TODAY_ISO} onChange={(e) => setFrom(e.target.value)} style={{ ...T.input, width: 150, padding: "6px 8px" }} />
+        <span style={{ color: "#888" }}>~</span>
+        <input type="date" value={to} min={from} max={TODAY_ISO} onChange={(e) => setTo(e.target.value)} style={{ ...T.input, width: 150, padding: "6px 8px" }} />
+        <span style={{ display: "inline-flex", gap: 4, flexWrap: "wrap" }}>
+          <button onClick={() => setRange(TODAY_ISO, TODAY_ISO)} style={T.chip}>오늘</button>
+          <button onClick={() => setRange(daysAgoISO(6), TODAY_ISO)} style={T.chip}>최근 7일</button>
+          <button onClick={() => setRange(daysAgoISO(29), TODAY_ISO)} style={T.chip}>최근 30일</button>
+          <button onClick={() => setRange("", "")} style={{ ...T.chip, ...(!from && !to ? T.chipOn : {}) }}>전체</button>
+        </span>
       </div>
 
       {summary && students && (
