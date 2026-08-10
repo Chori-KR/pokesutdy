@@ -4,7 +4,6 @@ import { Fragment, useCallback, useEffect, useState } from "react";
 import { T } from "@/lib/styles";
 import { BALLS, SNACKS, EVO_STONE } from "@/lib/game";
 import { teacherFetch } from "@/lib/teacherClient";
-import type { QuestionRow } from "@/components/teacher/QuestionBank";
 
 interface StudentStat {
   id: string;
@@ -21,9 +20,12 @@ interface StudentStat {
 }
 
 interface Summary { avgCorrectRate: number | null; totalSolved: number; activeToday: number }
+interface WeakQ { id: string; body: string; tag: string; tries: number; wrong: number; rate: number }
+
+type Period = "today" | "7d" | "30d" | "all";
+const PERIODS: [Period, string][] = [["today", "오늘"], ["7d", "최근 7일"], ["30d", "최근 30일"], ["all", "전체"]];
 
 interface Props {
-  questions: QuestionRow[];
   showToast: (t: string) => void;
 }
 
@@ -35,9 +37,11 @@ const GIFT_ITEMS: [string, string][] = [
 ];
 
 // 통계 + 학생 관리 (명세 §5.4/5.5): 오답률 TOP10, 학생별 현황, 선물, 비밀번호 초기화.
-export default function StatsTab({ questions, showToast }: Props) {
+export default function StatsTab({ showToast }: Props) {
   const [students, setStudents] = useState<StudentStat[] | null>(null);
   const [summary, setSummary] = useState<Summary | null>(null);
+  const [weakQuestions, setWeakQuestions] = useState<WeakQ[]>([]);
+  const [period, setPeriod] = useState<Period>("30d");
   const [err, setErr] = useState("");
   const [giftFor, setGiftFor] = useState<string | null>(null);
   const [giftPoints, setGiftPoints] = useState(100);
@@ -53,15 +57,16 @@ export default function StatsTab({ questions, showToast }: Props) {
   const load = useCallback(async () => {
     setErr("");
     try {
-      const res = await teacherFetch("/api/teacher/stats");
+      const res = await teacherFetch(`/api/teacher/stats?period=${period}`);
       const data = await res.json();
       if (!res.ok) { setErr(data.error ?? "통계를 불러오지 못했어요."); return; }
       setStudents(data.students);
       setSummary(data.summary);
+      setWeakQuestions(data.weakQuestions ?? []);
     } catch {
       setErr("연결에 실패했어요.");
     }
-  }, []);
+  }, [period]);
 
   useEffect(() => { load(); }, [load]);
 
@@ -100,12 +105,9 @@ export default function StatsTab({ questions, showToast }: Props) {
     }
   }
 
-  // 오답률 TOP 10 — "다음 수업에서 다시 다룰 것" 신호 (명세 §5.4)
-  const top10 = questions
-    .filter((q) => q.tries >= 3)
-    .map((q) => ({ ...q, rate: Math.round((q.wrong / q.tries) * 100) }))
-    .sort((a, b) => b.rate - a.rate)
-    .slice(0, 10);
+  // 오답률 TOP 10 — 선택한 기간 내 answer_logs 기준(서버 계산). "다음 수업에서 다시 다룰 것" 신호.
+  const top10 = weakQuestions;
+  const periodLabel = PERIODS.find(([p]) => p === period)?.[1] ?? "전체";
 
   const fmtDate = (iso: string | null) =>
     iso ? new Intl.DateTimeFormat("ko-KR", { month: "numeric", day: "numeric", timeZone: "Asia/Seoul" }).format(new Date(iso)) : "—";
@@ -114,13 +116,22 @@ export default function StatsTab({ questions, showToast }: Props) {
     <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
       {err && <div style={{ ...T.card, color: "#a32d2d", fontSize: 13 }}>{err} <button onClick={load} style={T.smallBtn}>다시 시도</button></div>}
 
+      {/* 기간 필터 — 정답률·오답률·단원 통계를 이 기간 기준으로 계산 */}
+      <div style={{ display: "flex", gap: 6, alignItems: "center", flexWrap: "wrap" }}>
+        <span style={{ fontSize: 12, color: "#888" }}>기간</span>
+        {PERIODS.map(([p, label]) => (
+          <button key={p} onClick={() => setPeriod(p)} style={{ ...T.chip, ...(period === p ? T.chipOn : {}) }}>{label}</button>
+        ))}
+        <span style={{ fontSize: 11, color: "#aaa", marginLeft: 4 }}>정답률·오답률·단원 통계가 선택한 기간 기준으로 바뀌어요</span>
+      </div>
+
       {summary && students && (
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
           {([
             ["학생 수", `${students.length}명`],
             ["오늘 참여", `${summary.activeToday}명`],
-            ["학급 평균 정답률", summary.avgCorrectRate !== null ? `${summary.avgCorrectRate}%` : "—"],
-            ["누적 풀이", `${summary.totalSolved}회`],
+            [`평균 정답률 (${periodLabel})`, summary.avgCorrectRate !== null ? `${summary.avgCorrectRate}%` : "—"],
+            [`풀이 수 (${periodLabel})`, `${summary.totalSolved}회`],
           ] as const).map(([label, value]) => (
             <div key={label} style={{ ...T.card, flex: 1, minWidth: 110, textAlign: "center" }}>
               <div style={{ fontSize: 20, fontWeight: 700 }}>{value}</div>
@@ -173,6 +184,7 @@ export default function StatsTab({ questions, showToast }: Props) {
                     <td style={{ padding: "7px 8px" }}>{s.dexCount}/151</td>
                     <td style={{ padding: "7px 8px" }}>{fmtDate(s.lastActive)}</td>
                     <td style={{ padding: "7px 8px", whiteSpace: "nowrap" }}>
+                      <button onClick={() => setTagsFor(tagsFor === s.id ? null : s.id)} style={{ ...T.smallBtn, border: "1px solid #cdbdf0", color: "#6b46c1", marginRight: 4 }}>📊 단원</button>
                       <button onClick={() => { const open = giftFor !== s.id; setGiftFor(open ? s.id : null); setPwFor(null); if (open) { setGiftPoints(100); setGiftItem(""); setGiftCount(1); } }} style={{ ...T.smallBtn, border: "1px solid #b4c4e0", color: "#3a5", marginRight: 4 }}>🎁 선물</button>
                       <button onClick={() => { setPwFor(pwFor === s.id ? null : s.id); setGiftFor(null); setNewPw(""); }} style={T.smallBtn}>🔑 비번</button>
                     </td>
@@ -180,9 +192,9 @@ export default function StatsTab({ questions, showToast }: Props) {
                   {tagsFor === s.id && (
                     <tr>
                       <td colSpan={9} style={{ padding: "4px 8px 12px 34px", background: "#fafbfe" }}>
-                        <div style={{ fontSize: 11, color: "#888", margin: "4px 0 8px" }}>단원별 정답률 (낮은 순 — 취약 단원 먼저)</div>
+                        <div style={{ fontSize: 11, color: "#888", margin: "4px 0 8px" }}>단원별 정답률 · {periodLabel} (낮은 순 — 취약 단원 먼저)</div>
                         {(!s.byTag || s.byTag.length === 0) ? (
-                          <div style={{ fontSize: 12, color: "#aaa" }}>아직 푼 문제가 없어요.</div>
+                          <div style={{ fontSize: 12, color: "#aaa" }}>이 기간엔 푼 문제가 없어요.</div>
                         ) : (
                           <div style={{ display: "flex", flexDirection: "column", gap: 5, maxWidth: 460 }}>
                             {s.byTag.map((t) => {
@@ -247,10 +259,10 @@ export default function StatsTab({ questions, showToast }: Props) {
       </div>
 
       <div style={T.card}>
-        <div style={{ fontSize: 14, fontWeight: 600, marginBottom: 4 }}>오답률 TOP 10</div>
-        <div style={{ fontSize: 11, color: "#888", marginBottom: 8 }}>3회 이상 풀린 문제 기준 — 다음 수업에서 다시 다뤄볼 만한 내용이에요.</div>
+        <div style={{ fontSize: 14, fontWeight: 600, marginBottom: 4 }}>오답률 TOP 10 <span style={{ fontSize: 11, color: "#3d6fd9" }}>· {periodLabel}</span></div>
+        <div style={{ fontSize: 11, color: "#888", marginBottom: 8 }}>선택한 기간에 3회 이상 풀린 문제 기준 — 다음 수업에서 다시 다뤄볼 만한 내용이에요.</div>
         {top10.length === 0 ? (
-          <div style={{ fontSize: 13, color: "#888", padding: 6 }}>아직 데이터가 부족해요. 학생들이 문제를 풀면 채워집니다.</div>
+          <div style={{ fontSize: 13, color: "#888", padding: 6 }}>이 기간엔 3회 이상 풀린 문제가 아직 없어요.</div>
         ) : (
           top10.map((q, i) => (
             <div key={q.id} style={{ display: "flex", gap: 8, alignItems: "center", padding: "6px 0", borderBottom: "1px solid #f3f3f3", fontSize: 12 }}>
