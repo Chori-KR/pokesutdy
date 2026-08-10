@@ -33,6 +33,7 @@ export interface GameInfo {
 
 export interface ClassSettings {
   moveDiff: boolean;
+  allowStudentSubject?: boolean; // 학생이 배틀 출제 과목/단원을 고를 수 있는지 (기본 false)
   exploreLimit?: number;
   solveLimit?: number;
   battleLimit?: number;

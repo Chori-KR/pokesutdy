@@ -23,6 +23,7 @@ export interface ClassRow {
   class_code: string;
   settings: {
     moveDiff: boolean;
+    allowStudentSubject?: boolean;
     exploreLimit?: number;
     solveLimit?: number;
     battleLimit?: number;
@@ -215,6 +216,20 @@ export default function TeacherHome({ session }: { session: Session }) {
               </div>
               <span onClick={toggleMoveDiff} style={{ position: "relative", width: 40, height: 21, background: cls.settings?.moveDiff !== false ? "#3d6fd9" : "#ccc", borderRadius: 11, cursor: "pointer", flexShrink: 0 }}>
                 <span style={{ position: "absolute", top: 2, left: cls.settings?.moveDiff !== false ? 21 : 2, width: 17, height: 17, background: "#fff", borderRadius: "50%", transition: "left 0.2s" }} />
+              </span>
+            </label>
+          </div>
+          <div style={T.card}>
+            <label style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 13, cursor: "pointer" }}>
+              <div>
+                학생이 출제 과목·단원 선택 허용
+                <div style={{ fontSize: 11, color: "#888", marginTop: 3 }}>끄면(기본) 출제된 문제 전체에서 약점·안 푼 문제 위주로 자동 출제돼 편식을 막아요. 켜면 학생이 배틀에서 과목/단원을 골라 집중 학습할 수 있어요.</div>
+              </div>
+              <span
+                onClick={() => updateSettings({ allowStudentSubject: !(cls?.settings?.allowStudentSubject === true) })}
+                style={{ position: "relative", width: 40, height: 21, background: cls.settings?.allowStudentSubject === true ? "#3d6fd9" : "#ccc", borderRadius: 11, cursor: "pointer", flexShrink: 0 }}
+              >
+                <span style={{ position: "absolute", top: 2, left: cls.settings?.allowStudentSubject === true ? 21 : 2, width: 17, height: 17, background: "#fff", borderRadius: "50%", transition: "left 0.2s" }} />
               </span>
             </label>
           </div>
