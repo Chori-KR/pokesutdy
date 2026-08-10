@@ -12,6 +12,7 @@ export interface DayState {
   encUsed?: number;                                  // 오늘 사용한 야생 탐색 횟수
   solveCount?: number;                               // 오늘 푼 문제풀이 수
   solveQ?: string | null;                            // 지금 출제된 문제풀이 문제 id
+  solveOrder?: number[] | null;                      // 문제풀이 4지선다 보기 셔플 순서(표시→원본 인덱스)
   battleUsed?: number;                               // 오늘 시작한 배틀(조우) 수
   winTokens?: string[];                              // 승수 처리된 배틀 토큰 (중복 승수 방지)
 }
