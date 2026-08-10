@@ -35,12 +35,17 @@ export async function POST(req: NextRequest) {
     .single();
   if (!q) return jsonError(404, "문제를 찾을 수 없어요.");
 
+  // 출제 때 보기를 셔플했다면(day_state.solveOrder) 표시 인덱스를 원래 인덱스로 원복해 채점
+  const order = student.day_state?.solveOrder as number[] | null | undefined;
+  const chosenOriginal = Array.isArray(order) && chosenIdx >= 0 && chosenIdx < order.length ? order[chosenIdx] : chosenIdx;
   const correct = q.type === "short"
     ? gradeShort(text, (q.options as string[]) ?? [])
-    : chosenIdx === q.answer_idx;
+    : chosenOriginal === q.answer_idx;
+  // 학생에게 정답 위치를 알려줄 땐(하이라이트) 셔플된 표시 순서 기준으로 변환
+  const displayAnswerIdx = Array.isArray(order) ? order.indexOf(q.answer_idx) : q.answer_idx;
   const g = correct ? applyXp(student, 2) : { xp: student.xp, level: student.level, levelBonus: 0 };
   const points = student.points + (correct ? SOLVE_REWARD : 0) + g.levelBonus;
-  const day_state = { ...student.day_state, solveCount: solveCount + 1, solveQ: null };
+  const day_state = { ...student.day_state, solveCount: solveCount + 1, solveQ: null, solveOrder: null };
 
   const [{ error }] = await Promise.all([
     supa.from("students").update({ points, day_state, xp: g.xp, level: g.level }).eq("id", student.id),
@@ -59,7 +64,7 @@ export async function POST(req: NextRequest) {
 
   return NextResponse.json({
     correct,
-    answer_idx: q.answer_idx,
+    answer_idx: displayAnswerIdx,
     answerText: q.type === "short" ? ((q.options as string[]) ?? [])[0] ?? "" : undefined,
     points,
     xp: g.xp,
