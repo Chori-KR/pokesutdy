@@ -93,6 +93,26 @@ export default function StatsTab({ showToast }: Props) {
     }
   }
 
+  async function deleteStudent(studentId: string, nickname: string) {
+    if (!window.confirm(`'${nickname}' 학생 계정을 삭제하시겠습니까?\n포인트·도감·풀이 기록이 모두 사라지고 되돌릴 수 없어요.`)) return;
+    setBusy(true);
+    try {
+      const res = await teacherFetch("/api/teacher/delete-student", {
+        method: "POST",
+        body: JSON.stringify({ student_id: studentId }),
+      });
+      const data = await res.json();
+      if (!res.ok) { showToast(data.error ?? "삭제에 실패했어요."); return; }
+      showToast(`${data.nickname} 학생을 삭제했어요.`);
+      setStudents((prev) => (prev ? prev.filter((s) => s.id !== studentId) : prev));
+      setSelected((prev) => { const n = new Set(prev); n.delete(studentId); return n; });
+    } catch {
+      showToast("연결에 실패했어요.");
+    } finally {
+      setBusy(false);
+    }
+  }
+
   async function resetPw(studentId: string) {
     setBusy(true);
     try {
@@ -197,7 +217,8 @@ export default function StatsTab({ showToast }: Props) {
                     <td style={{ padding: "7px 8px", whiteSpace: "nowrap" }}>
                       <button onClick={() => setTagsFor(tagsFor === s.id ? null : s.id)} style={{ ...T.smallBtn, border: "1px solid #cdbdf0", color: "#6b46c1", marginRight: 4 }}>📊 단원</button>
                       <button onClick={() => { const open = giftFor !== s.id; setGiftFor(open ? s.id : null); setPwFor(null); if (open) { setGiftPoints(100); setGiftItem(""); setGiftCount(1); } }} style={{ ...T.smallBtn, border: "1px solid #b4c4e0", color: "#3a5", marginRight: 4 }}>🎁 선물</button>
-                      <button onClick={() => { setPwFor(pwFor === s.id ? null : s.id); setGiftFor(null); setNewPw(""); }} style={T.smallBtn}>🔑 비번</button>
+                      <button onClick={() => { setPwFor(pwFor === s.id ? null : s.id); setGiftFor(null); setNewPw(""); }} style={{ ...T.smallBtn, marginRight: 4 }}>🔑 비번</button>
+                      <button onClick={() => deleteStudent(s.id, s.nickname)} disabled={busy} title="학생 계정 삭제" style={{ ...T.smallBtn, border: "1px solid #f0b4b4", color: "#c0392b" }}>🗑 삭제</button>
                     </td>
                   </tr>
                   {tagsFor === s.id && (
