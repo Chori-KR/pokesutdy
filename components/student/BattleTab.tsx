@@ -69,6 +69,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const [myHit, setMyHit] = useState(false);
   const [fails, setFails] = useState(0);
   const [usedQ, setUsedQ] = useState<string[]>([]);
+  const [servedToday, setServedToday] = useState<Set<string>>(new Set()); // 오늘 배틀에서 나온 문제(기술별 남은 문제 수 = PP, 하루 누적)
   const [picker, setPicker] = useState(false);   // 포켓몬 선택 패널
   const [sprayAsk, setSprayAsk] = useState<{ snack?: SnackKind } | null>(null); // 스프레이 사용 여부 모달
   const [stonePick, setStonePick] = useState(false); // 이브이형 돌 진화 갈래 선택 모달
@@ -95,10 +96,14 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   );
 
   // 배틀 진입 시 출제 중 문제 프리로드 (즉답 UX, 명세 §7)
+  // + 오늘 이미 나온 문제(seenTodayIds)로 기술별 남은 문제 수(PP)를 이어받음 (하루 누적)
   useEffect(() => {
     fetch("/api/battle/questions")
       .then((r) => r.json())
-      .then((data) => setBank(data.questions ?? []))
+      .then((data) => {
+        setBank(data.questions ?? []);
+        setServedToday(new Set<string>(data.seenTodayIds ?? []));
+      })
       .catch(() => setBank([]));
   }, []);
 
@@ -113,11 +118,6 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     [bank, subject]
   );
 
-  const countByDiff = useMemo(() => {
-    const c: Record<Difficulty, number> = { easy: 0, medium: 0, hard: 0 };
-    activeBank.forEach((x) => c[x.difficulty]++);
-    return c;
-  }, [activeBank]);
   const activeCount = activeBank.length;
 
   async function selectPokemon(pid: number) {
@@ -228,6 +228,12 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     }
   }
 
+  // M11: 똑똑한 출제 — 안 푼 문제 > 최근 틀린 문제 > 최근 맞힌 문제, 오늘 이미 나온 문제는 덜.
+  function weightOf(x: ApiQuestion): number {
+    let w = x.last === "none" ? 6 : x.last === "wrong" ? 4 : 1;
+    if (servedToday.has(x.id)) w *= 0.2; // 오늘 이미 나온 문제는 되도록 나중에
+    return w;
+  }
   // anyDiff=true면 난이도를 가리지 않고 전체에서 출제 (기술=난이도 설정 OFF일 때)
   function pickQuestion(diff: Difficulty, anyDiff = false): ApiQuestion | undefined {
     const all = activeBank; // M7: 선택한 과목 안에서만 출제
@@ -235,7 +241,18 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     // 같은 배틀 내 중복 출제 방지, 소진 시 재사용 (명세 §4.2)
     let pool = all.filter((x) => match(x) && !usedQ.includes(x.id));
     if (pool.length === 0) pool = all.filter(match);
-    return pool[Math.floor(Math.random() * pool.length)];
+    if (pool.length === 0) return undefined;
+    // 가중 랜덤 선택
+    const weights = pool.map(weightOf);
+    const total = weights.reduce((a, b) => a + b, 0);
+    let roll = Math.random() * total;
+    let picked = pool[0];
+    for (let i = 0; i < pool.length; i++) {
+      roll -= weights[i];
+      picked = pool[i];
+      if (roll <= 0) break;
+    }
+    return picked;
   }
 
   function chooseMove(m: Move) {
@@ -243,6 +260,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     const raw = pickQuestion(m.diff, !moveDiff);
     if (!raw) return;
     setUsedQ((u) => [...u, raw.id]);
+    setServedToday((s) => new Set(s).add(raw.id)); // PP 차감(하루 누적)
     const sOpts = shuffle(raw.options.map((t, i) => ({ t, ok: i === raw.answer_idx, idx: i })));
     setMove(m);
     setQ({ ...raw, sOpts });
@@ -817,10 +835,20 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
         <div style={{ display: "grid", gridTemplateColumns: `repeat(${moves.length}, 1fr)`, gap: 6 }}>
           {moves.map((m) => {
             // 기술=난이도 OFF면 난이도 무관 — 활성 문제가 하나라도 있으면 사용 가능
-            const none = moveDiff ? countByDiff[m.diff] === 0 : activeCount === 0;
+            const scope = moveDiff ? activeBank.filter((x) => x.difficulty === m.diff) : activeBank;
+            const none = scope.length === 0;
+            // 기술별 남은 문제 수(PP) — 오늘 아직 안 나온 문제. 0이면 복습(반복)으로 전환.
+            const remain = scope.filter((x) => !servedToday.has(x.id)).length;
             return (
               <button key={m.name} onClick={() => !none && chooseMove(m)} disabled={none} style={{ ...S.moveBtn(m.diff), opacity: none ? 0.35 : 1 }}>
-                <div style={{ fontSize: 14 }}>{m.name}</div>
+                <div style={{ fontSize: 14, display: "flex", alignItems: "center", justifyContent: "center", gap: 5 }}>
+                  {m.name}
+                  {!none && (
+                    <span style={{ fontSize: 9, fontWeight: 700, padding: "1px 6px", borderRadius: 8, background: remain > 0 ? "rgba(255,255,255,0.28)" : "rgba(0,0,0,0.22)" }} title="오늘 남은 새 문제 수(기술 포인트)">
+                      {remain > 0 ? `PP ${remain}/${scope.length}` : "복습"}
+                    </span>
+                  )}
+                </div>
                 <div style={{ fontSize: 10, opacity: 0.9, marginTop: 2 }}>{none ? "문제 없음" : moveDiff ? `${m.label} 문제 · 위력 ${m.dmg}` : `문제 풀기 · 위력 ${m.dmg}`}</div>
               </button>
             );

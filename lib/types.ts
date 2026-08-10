@@ -53,6 +53,7 @@ export interface ApiQuestion {
   answer_idx: number;
   difficulty: Difficulty;
   tag: string;
+  last?: "none" | "wrong" | "correct"; // 이 학생의 최신 결과(똑똑한 출제 가중치용)
 }
 
 // 문제풀이 탭용: 정답 인덱스를 클라이언트에 노출하지 않는다 (포인트가 걸려 있어서)
