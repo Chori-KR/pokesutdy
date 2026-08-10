@@ -4,13 +4,17 @@ import { seoulToday } from "@/lib/game";
 
 // 학생별 통계 (명세 §5.4): 정답률, 오늘/누적 풀이 수, 도감 진행도, 최근 활동, 단원별 정답률.
 // students 테이블은 anon 정책이 없어 서버 경유로만 조회 가능.
-// M11: 기간 필터(period=today|7d|30d|all)로 정답률·오답률·단원 통계를 그 기간 기준으로 계산.
+// M11: 기간 필터(from~to, YYYY-MM-DD Asia/Seoul)로 정답률·오답률·단원 통계를 그 기간 기준으로 계산.
 export async function GET(req: NextRequest) {
   const auth = await requireTeacher(req);
   if (auth instanceof NextResponse) return auth;
   const { supa, cls } = auth;
 
-  const period = new URL(req.url).searchParams.get("period") ?? "all"; // today | 7d | 30d | all
+  // 기간: from~to (YYYY-MM-DD, Asia/Seoul 날짜). 둘 다 없으면 전체.
+  const sp = new URL(req.url).searchParams;
+  const from = sp.get("from") || "";
+  const to = sp.get("to") || "";
+  const range = { from, to };
 
   const { data: students } = await supa
     .from("students")
@@ -18,7 +22,7 @@ export async function GET(req: NextRequest) {
     .eq("class_id", cls.id)
     .order("nickname");
   if (!students || students.length === 0)
-    return NextResponse.json({ students: [], summary: { avgCorrectRate: null, totalSolved: 0, activeToday: 0 }, weakQuestions: [], period });
+    return NextResponse.json({ students: [], summary: { avgCorrectRate: null, totalSolved: 0, activeToday: 0 }, weakQuestions: [], range });
 
   const ids = students.map((s) => s.id);
   const [{ data: logs }, { data: catches }, { data: qRows }] = await Promise.all([
@@ -40,12 +44,12 @@ export async function GET(req: NextRequest) {
   const today = seoulToday();
   const seoulDay = (iso: string) =>
     new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Seoul" }).format(new Date(iso));
-  const now = Date.now();
+  // Asia/Seoul 날짜 문자열(YYYY-MM-DD) 비교로 from~to 안에 드는지 판정 (ISO 날짜라 문자열 비교 가능)
   const inPeriod = (iso: string) => {
-    if (period === "all") return true;
-    if (period === "today") return seoulDay(iso) === today;
-    const days = period === "7d" ? 7 : 30;
-    return new Date(iso).getTime() >= now - days * 86400000;
+    const d = seoulDay(iso);
+    if (from && d < from) return false;
+    if (to && d > to) return false;
+    return true;
   };
 
   const allLogs = logs ?? [];
@@ -112,5 +116,5 @@ export async function GET(req: NextRequest) {
     activeToday: byStudent.filter((s) => s.todayCount > 0).length,
   };
 
-  return NextResponse.json({ students: byStudent, summary, weakQuestions, period });
+  return NextResponse.json({ students: byStudent, summary, weakQuestions, range });
 }
