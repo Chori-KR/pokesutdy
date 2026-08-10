@@ -25,6 +25,7 @@ interface Props {
   moveDiff: boolean; // 교사 설정: 기술 선택 = 난이도 선택
   timerOn: boolean;  // 교사 설정: 배틀 타이머 On/Off
   timeScale: number; // 교사 설정: 제한 시간 배수(넉넉하게)
+  allowSubject: boolean; // 교사 설정: 학생이 출제 과목/단원을 고를 수 있는지 (기본 false)
   caught: number[];
   setCaught: (ids: number[]) => void;
   counts: Record<number, number>;
@@ -48,7 +49,7 @@ const CAPTURE_SHEET: Sheet = { src: "10.png", cols: 6, rows: 6, frames: 30 };
 
 const BALL_KINDS: BallKind[] = ["poke", "superb", "hyper", "master"];
 
-export default function BattleTab({ student, setStudent, moveDiff, timerOn, timeScale, caught, setCaught, counts, setCounts, shinies, setShinies, day, setDay, game, setGame, showToast }: Props) {
+export default function BattleTab({ student, setStudent, moveDiff, timerOn, timeScale, allowSubject, caught, setCaught, counts, setCounts, shinies, setShinies, day, setDay, game, setGame, showToast }: Props) {
   const [phase, setPhase] = useState<BattlePhase>("idle");
   const timeLimitFor = (diff: Difficulty) => Math.round(TIME_LIMIT[diff] * timeScale);
   const [bank, setBank] = useState<ApiQuestion[] | null>(null);
@@ -780,8 +781,8 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             </div>
           )}
 
-          {/* M7: 출제 과목 선택 — 한 배틀은 한 과목 안에서만 */}
-          {subjects.length > 1 && (
+          {/* M7: 출제 과목 선택 — 교사가 허용(allowSubject)한 경우에만 노출 */}
+          {allowSubject && subjects.length > 1 && (
             <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 8 }}>
               <span style={{ fontSize: 11, color: "#5b7a99", flexShrink: 0 }}>출제 과목</span>
               <select

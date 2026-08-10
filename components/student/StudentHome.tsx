@@ -128,6 +128,7 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
           moveDiff={cls.settings?.moveDiff !== false}
           timerOn={cls.settings?.timerOn !== false}
           timeScale={cls.settings?.timeScale ?? 1.5}
+          allowSubject={cls.settings?.allowStudentSubject === true}
           caught={caught}
           setCaught={setCaught}
           counts={counts}
