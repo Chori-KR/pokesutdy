@@ -69,6 +69,10 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
     (q) => (!filterTag || q.tag === filterTag) && (!search || q.body.includes(search))
   );
 
+  // 배틀에 실제로 나올 문제 = 출제(ON) + 4지선다 + 레이드전용 아님. 0개면 배틀이 안 돼서 경고.
+  const battleReady = questions.filter((q) => q.active && q.type !== "short" && !q.raid_only).length;
+  const shortActive = questions.filter((q) => q.active && q.type === "short").length;
+
   async function toggleActive(q: QuestionRow) {
     const supa = supabaseBrowser();
     const { error } = await supa.from("questions").update({ active: !q.active }).eq("id", q.id);
@@ -238,6 +242,15 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
         <button onClick={() => { setForm({ ...EMPTY_FORM }); setFormErr(""); setPanel(null); }} style={T.primaryBtn}>+ 새 문제</button>
         <button onClick={() => { setPanel(panel === "ai" ? null : "ai"); setForm(null); }} style={{ ...T.primaryBtn, background: "#7c5cd9" }}>🤖 AI 생성</button>
         <button onClick={() => { setPanel(panel === "bulk" ? null : "bulk"); setForm(null); }} style={{ ...T.primaryBtn, background: "#2e8b57" }}>📥 대량 등록</button>
+      </div>
+
+      {/* 배틀 출제 현황 — 배틀은 4지선다만 쓰므로, 출제된 4지선다가 0이면 경고 */}
+      <div style={{ ...T.card, padding: "8px 12px", marginBottom: 8, fontSize: 12, display: "flex", gap: 14, flexWrap: "wrap", alignItems: "center", background: battleReady === 0 ? "#fff5f5" : "#f2f8f4", border: battleReady === 0 ? "1px solid #f0b4b4" : "1px solid #cfe6d8" }}>
+        <span>⚔️ 배틀에 나올 문제(4지선다·출제 중): <b style={{ color: battleReady === 0 ? "#c0392b" : "#0f6e56" }}>{battleReady}개</b></span>
+        <span style={{ color: "#888" }}>✏️ 문제풀이용 단답형(출제 중): {shortActive}개</span>
+        {battleReady === 0 && (
+          <span style={{ color: "#c0392b", fontWeight: 600 }}>← 배틀을 하려면 4지선다 문제의 토글을 켜서 <b>출제(ON)</b> 하세요.</span>
+        )}
       </div>
 
       {panel === "ai" && (
