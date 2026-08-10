@@ -72,9 +72,10 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
   }, [formOpenSeq]);
 
   const tags = useMemo(() => [...new Set(questions.map((q) => q.tag))], [questions]);
-  const visible = questions.filter(
-    (q) => (!filterTag || q.tag === filterTag) && (!search || q.body.includes(search))
-  );
+  const visible = questions
+    .filter((q) => (!filterTag || q.tag === filterTag) && (!search || q.body.includes(search)))
+    // 출제(활성) 문제를 위로. 같은 활성 상태 안에서는 기존 순서(최신순) 유지 — stable sort
+    .sort((a, b) => Number(b.active) - Number(a.active));
 
   // 배틀에 실제로 나올 문제 = 출제(ON) + 4지선다 + 레이드전용 아님. 0개면 배틀이 안 돼서 경고.
   const battleReady = questions.filter((q) => q.active && q.type !== "short" && !q.raid_only).length;
