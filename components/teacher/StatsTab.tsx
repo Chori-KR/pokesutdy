@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { Fragment, useCallback, useEffect, useState } from "react";
 import { T } from "@/lib/styles";
 import { BALLS, SNACKS, EVO_STONE } from "@/lib/game";
 import { teacherFetch } from "@/lib/teacherClient";
@@ -17,6 +17,7 @@ interface StudentStat {
   todayCount: number;
   dexCount: number;
   lastActive: string | null;
+  byTag?: { tag: string; total: number; correct: number; rate: number }[];
 }
 
 interface Summary { avgCorrectRate: number | null; totalSolved: number; activeToday: number }
@@ -43,6 +44,7 @@ export default function StatsTab({ questions, showToast }: Props) {
   const [giftItem, setGiftItem] = useState("");
   const [giftCount, setGiftCount] = useState(1);
   const [pwFor, setPwFor] = useState<string | null>(null);
+  const [tagsFor, setTagsFor] = useState<string | null>(null); // 단원별 정답률 펼친 학생
   const [newPw, setNewPw] = useState("");
   const [busy, setBusy] = useState(false);
   const [selected, setSelected] = useState<Set<string>>(new Set()); // 다중 선물 선택
@@ -152,11 +154,16 @@ export default function StatsTab({ questions, showToast }: Props) {
               </thead>
               <tbody>
                 {students.map((s) => (
-                  <tr key={s.id} style={{ borderBottom: "1px solid #f3f3f3", background: selected.has(s.id) ? "#eef5ff" : undefined }}>
+                  <Fragment key={s.id}>
+                  <tr style={{ borderBottom: "1px solid #f3f3f3", background: selected.has(s.id) ? "#eef5ff" : undefined }}>
                     <td style={{ padding: "7px 8px" }}>
                       <input type="checkbox" checked={selected.has(s.id)} onChange={() => toggleSel(s.id)} />
                     </td>
-                    <td style={{ padding: "7px 8px", fontWeight: 600 }}>{s.nickname}</td>
+                    <td style={{ padding: "7px 8px", fontWeight: 600 }}>
+                      <button onClick={() => setTagsFor(tagsFor === s.id ? null : s.id)} title="단원별 정답률 보기" style={{ background: "none", border: "none", padding: 0, font: "inherit", fontWeight: 600, color: "#3d6fd9", cursor: "pointer" }}>
+                        {tagsFor === s.id ? "▾ " : "▸ "}{s.nickname}
+                      </button>
+                    </td>
                     <td style={{ padding: "7px 8px" }}>{s.points.toLocaleString()}P</td>
                     <td style={{ padding: "7px 8px" }}>{s.level}</td>
                     <td style={{ padding: "7px 8px", color: s.correctRate !== null && s.correctRate < 50 ? "#a32d2d" : "#333" }}>
@@ -170,6 +177,33 @@ export default function StatsTab({ questions, showToast }: Props) {
                       <button onClick={() => { setPwFor(pwFor === s.id ? null : s.id); setGiftFor(null); setNewPw(""); }} style={T.smallBtn}>🔑 비번</button>
                     </td>
                   </tr>
+                  {tagsFor === s.id && (
+                    <tr>
+                      <td colSpan={9} style={{ padding: "4px 8px 12px 34px", background: "#fafbfe" }}>
+                        <div style={{ fontSize: 11, color: "#888", margin: "4px 0 8px" }}>단원별 정답률 (낮은 순 — 취약 단원 먼저)</div>
+                        {(!s.byTag || s.byTag.length === 0) ? (
+                          <div style={{ fontSize: 12, color: "#aaa" }}>아직 푼 문제가 없어요.</div>
+                        ) : (
+                          <div style={{ display: "flex", flexDirection: "column", gap: 5, maxWidth: 460 }}>
+                            {s.byTag.map((t) => {
+                              const weak = t.rate < 60;
+                              return (
+                                <div key={t.tag} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 12 }}>
+                                  <span style={{ width: 150, flexShrink: 0, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }} title={t.tag}>{weak ? "🔴 " : ""}{t.tag}</span>
+                                  <span style={{ flex: 1, height: 8, background: "#eceff5", borderRadius: 5, overflow: "hidden" }}>
+                                    <span style={{ display: "block", width: `${t.rate}%`, height: "100%", background: weak ? "#e0563f" : "#3d9970" }} />
+                                  </span>
+                                  <b style={{ width: 38, textAlign: "right", color: weak ? "#a32d2d" : "#333", flexShrink: 0 }}>{t.rate}%</b>
+                                  <span style={{ color: "#aaa", width: 58, flexShrink: 0 }}>({t.correct}/{t.total})</span>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        )}
+                      </td>
+                    </tr>
+                  )}
+                  </Fragment>
                 ))}
               </tbody>
             </table>
