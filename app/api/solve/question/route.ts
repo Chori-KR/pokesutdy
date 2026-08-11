@@ -32,11 +32,14 @@ export async function POST(req: NextRequest) {
   if (!qs || qs.length === 0)
     return jsonError(404, "출제 중인 문제가 없어요. 선생님께 알려주세요!");
 
-  // 똑똑한 출제: 이 학생의 기록으로 문제별 최신 결과를 구해 가중치 부여
+  // 똑똑한 출제: 이 학생의 기록으로 문제별 최신 결과를 구해 가중치 부여.
+  // 최신 400개만 조회해 기록이 쌓여도 느려지지 않게 함(전체 스캔 방지).
   const { data: logs } = await supa
     .from("answer_logs")
     .select("question_id, correct, created_at")
-    .eq("student_id", student.id);
+    .eq("student_id", student.id)
+    .order("created_at", { ascending: false })
+    .limit(400);
   const lastResult = new Map<string, { correct: boolean; at: string }>();
   for (const l of logs ?? []) {
     if (!l.question_id) continue;
