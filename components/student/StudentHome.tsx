@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { S } from "@/lib/styles";
 import { MAX_HP, myPokemonOf } from "@/lib/game";
 import { initAudio, isMuted, setMuted, SFX, stopBattleBgm } from "@/lib/sound";
@@ -35,14 +35,21 @@ interface Props {
 }
 
 const BALL_KINDS = ["poke", "superb", "hyper", "master"] as const;
-type Tab = "battle" | "raid" | "solve" | "quiz" | "explore" | "shop" | "dex" | "trade";
+type Tab = "battle" | "raid" | "solve" | "explore" | "shop" | "dex" | "trade";
 
 export default function StudentHome({ student, setStudent, cls, caught, setCaught, counts, setCounts, shinies, setShinies, day, setDay, game, setGame, onLogout }: Props) {
   const [tab, setTab] = useState<Tab>("battle");
   const [toast, setToast] = useState("");
   const [muted, setMutedState] = useState(false);
+  const [quizOpen, setQuizOpen] = useState(false);
+  const quizAutoRef = useRef(false);
 
   useEffect(() => { setMutedState(isMuted()); }, []);
+  // 로그인 직후: 오늘의 퀴즈를 아직 안 풀었으면 첫 팝업으로 자동 표시 (하루 1번)
+  useEffect(() => {
+    if (!quizAutoRef.current && !day.quizDone) { quizAutoRef.current = true; setQuizOpen(true); }
+  }, [day.quizDone]);
+  const openQuiz = () => { initAudio(); SFX.click(); setQuizOpen(true); };
   // 홈은 헤더 안 토글을 쓰므로 고정 토글 숨김
   useEffect(() => {
     document.body.classList.add("app-has-header");
@@ -71,12 +78,11 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
 
   const mine = myPokemonOf(game.battlePid);
 
-  // 탭 순서는 명세 §3: 배틀 / 문제풀이 / 오늘의 퀴즈 / 야생 탐색 / 상점 / 도감
+  // 오늘의 퀴즈는 탭이 아니라 로그인 팝업 + 상단 띠로 제공(모바일 탭 수 절감)
   const tabs: [Tab, string][] = [
     ["battle", `배틀(${Math.max(0, day.battleLimit - day.battleUsed)})`],
     ["raid", "레이드"],
     ["solve", "문제풀이"],
-    ["quiz", day.quizDone ? "퀴즈 ✓" : "퀴즈"],
     ["explore", `탐색(${Math.max(0, day.exploreLimit - day.encUsed)})`],
     ["shop", "상점"],
     ["dex", `도감(${caught.length})`],
@@ -114,6 +120,22 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
           </div>
         </div>
       </div>
+
+      {/* 오늘의 퀴즈 상태 띠 — 안 풀었으면 눌러서 팝업 열기, 풀었으면 완료 표시 */}
+      {!day.quizDone ? (
+        <button
+          onClick={openQuiz}
+          style={{ ...S.panel, width: "100%", margin: "10px 0 0", padding: "11px 14px", display: "flex", alignItems: "center", gap: 8, cursor: "pointer", border: "1px solid #e0b84a", fontSize: 13, fontWeight: 600, fontFamily: "inherit", color: "var(--ink)", textAlign: "left" }}
+        >
+          <span style={{ fontSize: 18 }}>🧠</span>
+          <span style={{ flex: 1 }}>오늘의 퀴즈가 기다려요!</span>
+          <span style={{ color: "#e0a63a", fontWeight: 700 }}>눌러서 풀기 →</span>
+        </button>
+      ) : (
+        <div style={{ margin: "10px 0 0", padding: "7px 14px", fontSize: 12, color: "var(--ink-2)", textAlign: "center" }}>
+          ✓ 오늘의 퀴즈 완료 — 내일 또 만나요
+        </div>
+      )}
 
       <div style={{ display: "flex", gap: 3, margin: "10px 0", flexWrap: "wrap", background: "#e9e9ee", padding: 3, borderRadius: 12 }}>
         {tabs.map(([k, label]) => (
@@ -159,7 +181,6 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
         />
       )}
       {tab === "solve" && <SolveTab student={student} setStudent={setStudent} day={day} setDay={setDay} />}
-      {tab === "quiz" && <DailyTab student={student} setStudent={setStudent} day={day} setDay={setDay} />}
       {tab === "explore" && (
         <ExploreTab
           student={student}
@@ -191,6 +212,22 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
       )}
       {tab === "trade" && (
         <TradeTab caught={caught} setCaught={setCaught} counts={counts} setCounts={setCounts} showToast={showToast} />
+      )}
+
+      {/* 오늘의 퀴즈 팝업 (로그인 자동 + 상단 띠로 재열기). 하루 1번은 서버가 관리. */}
+      {quizOpen && (
+        <div
+          onClick={() => setQuizOpen(false)}
+          style={{ position: "fixed", inset: 0, background: "rgba(8,10,22,0.72)", zIndex: 80, display: "flex", alignItems: "center", justifyContent: "center", padding: 16, fontFamily: "inherit" }}
+        >
+          <div onClick={(e) => e.stopPropagation()} style={{ width: "100%", maxWidth: 420 }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
+              <div style={{ fontSize: 15, fontWeight: 800, color: "#fff" }}>🧠 오늘의 퀴즈</div>
+              <button onClick={() => setQuizOpen(false)} style={{ ...S.ghostBtn, padding: "4px 12px", fontSize: 13 }}>✕ 닫기</button>
+            </div>
+            <DailyTab student={student} setStudent={setStudent} day={day} setDay={setDay} />
+          </div>
+        </div>
       )}
 
       {toast && <div style={S.toast}>{toast}</div>}
