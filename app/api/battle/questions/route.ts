@@ -26,11 +26,15 @@ export async function GET(req: NextRequest) {
   if (error) ({ data } = await base());
   const questions = data ?? [];
 
-  // 학생 기록으로 (1) 문제별 최신 결과(가중치) (2) 오늘 배틀에서 이미 나온 문제(PP) 계산
+  // 학생 기록으로 (1) 문제별 최신 결과(가중치) (2) 오늘 배틀에서 이미 나온 문제(PP) 계산.
+  // 최근 기록만 봐도 충분(오래된 건 '안 푼 것'처럼 다시 나오는 게 오히려 복습에 좋음).
+  // 전체 스캔을 막아 기록이 쌓여도 느려지지 않게 최신 400개로 제한.
   const { data: logs } = await supa
     .from("answer_logs")
     .select("question_id, correct, created_at, context")
-    .eq("student_id", student.id);
+    .eq("student_id", student.id)
+    .order("created_at", { ascending: false })
+    .limit(400);
   const seoulFmt = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Seoul" });
   const today = seoulToday();
   const lastResult = new Map<string, { correct: boolean; at: string }>();

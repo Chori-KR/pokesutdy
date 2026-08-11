@@ -25,11 +25,16 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ students: [], summary: { avgCorrectRate: null, totalSolved: 0, activeToday: 0 }, weakQuestions: [], range });
 
   const ids = students.map((s) => s.id);
+  // 기간 시작일이 있으면 DB에서 미리 잘라 가져와 전체 스캔을 피함(기본 최근 30일).
+  // from(YYYY-MM-DD, KST) 00:00 = UTC 기준 경계.
+  const fromBoundary = from ? new Date(`${from}T00:00:00+09:00`).toISOString() : null;
+  let logsQuery = supa
+    .from("answer_logs")
+    .select("student_id, question_id, correct, created_at")
+    .in("student_id", ids);
+  if (fromBoundary) logsQuery = logsQuery.gte("created_at", fromBoundary);
   const [{ data: logs }, { data: catches }, { data: qRows }] = await Promise.all([
-    supa
-      .from("answer_logs")
-      .select("student_id, question_id, correct, created_at")
-      .in("student_id", ids),
+    logsQuery,
     supa.from("catches").select("student_id").in("student_id", ids),
     supa.from("questions").select("id, tag, body").eq("class_id", cls.id),
   ]);
