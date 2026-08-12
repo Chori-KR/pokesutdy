@@ -1,11 +1,16 @@
-// 학급 생성 직후 넣어주는 샘플 문제 — 교사가 바로 배틀을 시연해볼 수 있게.
-// 프로토타입 SEED_BANK 포팅.
+// 학급 생성 직후 넣어주는 기본 문제 — 새 교사가 바로 배틀을 시연해볼 수 있게.
+// 간단한 곱셈 4지선다 6개(난이도별 2개씩) + 과학(자석) 1개. 3가지 기술이 모두 나오도록.
 export const SEED_QUESTIONS = [
-  { body: "1/5 + 2/5 = ?", options: ["3/5", "3/10", "2/25", "4/5"], answer_idx: 0, difficulty: "easy", tag: "수학·분수의 덧셈" },
-  { body: "3/7 + 2/7 = ?", options: ["5/7", "5/14", "6/7", "5/49"], answer_idx: 0, difficulty: "easy", tag: "수학·분수의 덧셈" },
-  { body: "1/2 + 1/3 = ?", options: ["5/6", "2/5", "2/6", "1/6"], answer_idx: 0, difficulty: "medium", tag: "수학·분수의 덧셈" },
-  { body: "2/5 + 3/10 = ?", options: ["7/10", "5/15", "5/10", "6/15"], answer_idx: 0, difficulty: "medium", tag: "수학·분수의 덧셈" },
-  { body: "철수는 피자의 1/4을, 영희는 3/8을 먹었습니다. 두 사람이 먹은 피자는 전체의 얼마일까요?", options: ["5/8", "4/12", "1/2", "7/8"], answer_idx: 0, difficulty: "hard", tag: "수학·분수의 덧셈" },
+  // 쉬움 — 한 자리 × 한 자리
+  { body: "3 × 4 = ?", options: ["12", "7", "9", "15"], answer_idx: 0, difficulty: "easy", tag: "수학·곱셈" },
+  { body: "6 × 7 = ?", options: ["42", "36", "48", "13"], answer_idx: 0, difficulty: "easy", tag: "수학·곱셈" },
+  // 보통 — 두 자리 × 한 자리
+  { body: "12 × 5 = ?", options: ["60", "55", "65", "50"], answer_idx: 0, difficulty: "medium", tag: "수학·곱셈" },
+  { body: "14 × 6 = ?", options: ["84", "74", "96", "78"], answer_idx: 0, difficulty: "medium", tag: "수학·곱셈" },
+  // 어려움 — 두 자리 × 두 자리 / 문장제
+  { body: "23 × 12 = ?", options: ["276", "266", "246", "286"], answer_idx: 0, difficulty: "hard", tag: "수학·곱셈" },
+  { body: "한 상자에 사과가 15개씩 들어 있어요. 8상자에는 사과가 모두 몇 개일까요?", options: ["120개", "105개", "130개", "115개"], answer_idx: 0, difficulty: "hard", tag: "수학·곱셈" },
+  // 과학 — 기본 유지(태그 필터·과목 구분 시연용)
   { body: "자석에서 클립이 가장 많이 붙는 곳은 어디일까요?", options: ["양쪽 끝(극)", "한가운데", "아무 곳이나 같다", "붙지 않는다"], answer_idx: 0, difficulty: "easy", tag: "과학·자석" },
 ] as const;
 
