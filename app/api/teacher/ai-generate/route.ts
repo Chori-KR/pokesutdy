@@ -9,6 +9,11 @@ import {
 import { decryptApiKey } from "@/lib/aiCrypto";
 import { standardsFor, standardsByCodes } from "@/lib/curriculum";
 
+// AI 생성은 문제 5~10개라 응답이 10~30초 걸린다. Vercel 기본 제한(Hobby 10초)에
+// 걸려 함수가 잘리면 생성이 실패하므로, 라우트 실행 제한을 최대치로 늘린다.
+// (연결 테스트는 짧아 통과하지만 실제 생성은 넘겨 실패하던 원인)
+export const maxDuration = 60;
+
 // AI 문제 생성 (명세 §5.2): 입력 → 프롬프트 조립 → AI 호출 → 파싱·검증 → 검토용 초안 반환.
 // 등록은 하지 않는다 — 반드시 교사 검토 화면을 거쳐 승인분만 클라이언트가 등록.
 // 남용 방지: 교사당 하루 AI_DAILY_LIMIT회 (settings.aiDay에 날짜별 카운트).

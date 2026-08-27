@@ -4,6 +4,10 @@ import { jsonError } from "@/lib/api";
 import { AI_PROVIDERS, AiProvider, callAi } from "@/lib/ai";
 import { encryptApiKey } from "@/lib/aiCrypto";
 
+// 연결 테스트에서 Gemini 모델 탐색(후보 404 → 목록 조회)이 돌면 10초를 넘길 수 있어
+// 라우트 실행 제한을 늘려 둔다. (기본 Hobby 10초 제한 회피)
+export const maxDuration = 60;
+
 // AI 키 등록 + 연결 테스트 (명세 §5.3).
 // 키는 저장 전에 실제 호출로 검증하고, AES-GCM으로 암호화해 학급 설정에 저장.
 // 클라이언트에는 암호문과 힌트(끝 4자)만 존재 — 원문 키는 서버에서만 복호화.
