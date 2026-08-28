@@ -80,7 +80,11 @@ async function callGemini(key: string, prompt: string): Promise<string> {
       {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          // 순수 JSON만 받도록 강제 → 파싱 실패 감소 + 응답 지연 완화
+          generationConfig: { responseMimeType: "application/json", temperature: 0.7, maxOutputTokens: 4096 },
+        }),
       }
     );
     if (res.status === 404) {
@@ -102,7 +106,11 @@ async function callGemini(key: string, prompt: string): Promise<string> {
       {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          // 순수 JSON만 받도록 강제 → 파싱 실패 감소 + 응답 지연 완화
+          generationConfig: { responseMimeType: "application/json", temperature: 0.7, maxOutputTokens: 4096 },
+        }),
       }
     );
     if (res.ok) {
