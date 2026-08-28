@@ -65,12 +65,26 @@ export default function AiGenerate({ classId, hasAiKey, onRegistered, onClose, s
         method: "POST",
         body: JSON.stringify(payload),
       });
-      const data = await res.json();
-      if (!res.ok) { setErr(data.error ?? "생성에 실패했어요."); return; }
-      setDrafts(data.questions.map((q: Omit<Draft, "approved">) => ({ ...q, approved: true })));
-      setUsage({ used: data.used, limit: data.limit });
-    } catch {
-      setErr("연결에 실패했어요. 다시 시도해주세요.");
+      // 서버가 함수 타임아웃 등으로 죽으면 JSON이 아닌 응답(504 HTML)이 온다.
+      // 그럴 때 res.json()이 던지지 않게 텍스트로 먼저 받아 파싱한다.
+      const raw = await res.text();
+      let data: { error?: string; questions?: unknown; used?: number; limit?: number } | null = null;
+      try { data = JSON.parse(raw); } catch { /* JSON 아님 */ }
+      if (!res.ok) {
+        const timeout = res.status === 504 || res.status === 408 || res.status === 502;
+        setErr(
+          data?.error ??
+          (timeout
+            ? `시간이 초과됐어요 (HTTP ${res.status}). 문제 개수를 줄이거나 잠시 후 다시 시도해주세요.`
+            : `생성에 실패했어요 (HTTP ${res.status}).`)
+        );
+        return;
+      }
+      if (!data?.questions) { setErr("서버 응답을 해석하지 못했어요. 잠시 후 다시 시도해주세요."); return; }
+      setDrafts((data.questions as Omit<Draft, "approved">[]).map((q) => ({ ...q, approved: true })));
+      setUsage({ used: data.used ?? 0, limit: data.limit ?? 0 });
+    } catch (e) {
+      setErr(`연결에 실패했어요 (${e instanceof Error ? e.message.slice(0, 100) : "네트워크 오류"}). 다시 시도해주세요.`);
     } finally {
       setLoading(false);
     }
