@@ -31,6 +31,7 @@ interface Props {
   setQuestions: (qs: QuestionRow[]) => void;
   showToast: (t: string) => void;
   hasAiKey: boolean;
+  aiProvider?: string;
 }
 
 const CIRCLED = ["①", "②", "③", "④"];
@@ -56,7 +57,7 @@ const EMPTY_FORM: FormState = {
 const RAID_ONLY_HINT =
   "레이드 전용 문제 기능에 필요한 DB 작업이 아직 안 됐어요. 'supabase/migrations/0008_raid_only.sql' 실행이 필요해요.";
 
-export default function QuestionBank({ classId, questions, setQuestions, showToast, hasAiKey }: Props) {
+export default function QuestionBank({ classId, questions, setQuestions, showToast, hasAiKey, aiProvider }: Props) {
   const [search, setSearch] = useState("");
   const [filterTag, setFilterTag] = useState<string | null>(null);
   const [form, setForm] = useState<FormState | null>(null);
@@ -266,6 +267,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
         <AiGenerate
           classId={classId}
           hasAiKey={hasAiKey}
+          aiProvider={aiProvider}
           onRegistered={(rows) => setQuestions([...rows, ...questions])}
           onClose={() => setPanel(null)}
           showToast={showToast}

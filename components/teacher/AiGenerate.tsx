@@ -10,6 +10,7 @@ import type { QuestionRow } from "@/components/teacher/QuestionBank";
 interface Props {
   classId: string;
   hasAiKey: boolean;
+  aiProvider?: string;
   onRegistered: (rows: QuestionRow[]) => void;
   onClose: () => void;
   showToast: (t: string) => void;
@@ -33,7 +34,7 @@ const SP_BANDS = ["초등 1~2학년", "초등 3~4학년", "초등 5~6학년", "�
 
 // AI 문제 생성 (명세 §5.2): 생성 → 검토(수정·정답/난이도 변경·선택) → 승인분만 등록.
 // 검토 단계는 절대 생략하지 않는다 — "AI 초안 + 교사 최종 결재".
-export default function AiGenerate({ classId, hasAiKey, onRegistered, onClose, showToast }: Props) {
+export default function AiGenerate({ classId, hasAiKey, aiProvider, onRegistered, onClose, showToast }: Props) {
   const [mode, setMode] = useState<"general" | "special">("general");
   const [qtype, setQtype] = useState<"multiple" | "short">("multiple");
   const [subject, setSubject] = useState("수학");
@@ -184,6 +185,11 @@ export default function AiGenerate({ classId, hasAiKey, onRegistered, onClose, s
             ))}
             <span style={{ color: "#888" }}>합계 {total}개 (최대 10)</span>
           </div>
+          {aiProvider === "gemini" && (
+            <div style={{ fontSize: 11, color: "#8a5a00", background: "#fdf3df", border: "1px solid #f0d9a8", borderRadius: 8, padding: "7px 10px", marginBottom: 8, lineHeight: 1.6 }}>
+              💡 <b>무료 Gemini</b>는 한 번에 <b>3~5개</b>가 가장 안정적이에요. 개수가 많으면 응답이 느려 실패할 수 있어요 — 실패하면 개수를 줄여 다시 시도해주세요.
+            </div>
+          )}
           <input value={tag} onChange={(e) => setTag(e.target.value)} placeholder="단원 태그 (비우면 '과목·주제'로 자동)" style={{ ...T.input, width: "100%", marginBottom: 8 }} />
           <textarea value={extra} onChange={(e) => setExtra(e.target.value)} placeholder="추가 지시 (선택 — 예: 계산 과정이 2단계인 문장제로)" style={{ ...T.input, width: "100%", minHeight: 44, resize: "vertical", marginBottom: 8, fontFamily: "inherit" }} />
           {err && <div style={{ fontSize: 12, color: "#a32d2d", marginBottom: 8 }}>{err}</div>}

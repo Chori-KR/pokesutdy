@@ -196,6 +196,7 @@ export default function TeacherHome({ session }: { session: Session }) {
           setQuestions={setQuestions}
           showToast={showToast}
           hasAiKey={!!cls.settings?.aiKeyEnc}
+          aiProvider={cls.settings?.aiProvider}
         />
       )}
 
