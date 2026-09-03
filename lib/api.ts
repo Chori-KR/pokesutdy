@@ -21,6 +21,8 @@ export interface DayState {
 export interface GameState {
   starter?: number;                 // 스타팅 포켓몬 id (미선택이면 없음)
   battlePid?: number;               // 현재 배틀 포켓몬 id
+  battleShiny?: boolean;            // M12: 배틀 포켓몬을 이로치 모습으로 출전시킬지
+                                    // (이로치를 보유한 종일 때만 true — 서버에서 검증)
   wins?: Record<string, number>;    // 포켓몬 id별 배틀 승수 (진화 조건)
   evoCount?: number;                // 누적 진화 횟수 (포인트 진화 비용 계산용, M5)
   dexRewards?: number[];             // 수령한 도감 달성 보상 임계값
@@ -75,7 +77,7 @@ export const RAID_ONLY_HINT =
 // select("*")로 읽어 count 컬럼이 없어도 읽기는 안전, 쓰기 오류만 상위에서 안내.
 // 반환: { count, created, error } — created=이번에 처음 도감에 추가된 종
 export async function bumpCatch(
-  supa: SupabaseClient, studentId: string, pid: number, method: string, delta = 1
+  supa: SupabaseClient, studentId: string, pid: number, method: string, delta = 1, shiny = false
 ): Promise<{ count: number; created: boolean; error: { message?: string } | null }> {
   const { data: rows } = await supa
     .from("catches")
@@ -83,17 +85,20 @@ export async function bumpCatch(
     .eq("student_id", studentId)
     .eq("pokemon_id", pid)
     .limit(1);
-  const existing = rows?.[0] as { id: string; count?: number } | undefined;
+  const existing = rows?.[0] as { id: string; count?: number; shiny?: boolean } | undefined;
 
   if (!existing) {
     if (delta <= 0) return { count: 0, created: false, error: null };
     const { error } = await supa
       .from("catches")
-      .insert({ student_id: studentId, pokemon_id: pid, method, count: delta });
+      .insert({ student_id: studentId, pokemon_id: pid, method, count: delta, ...(shiny ? { shiny: true } : {}) });
     return { count: delta, created: !error, error };
   }
   const next = Math.max(0, (existing.count ?? 1) + delta); // 0으로 내려가도 행 유지(도감 기록)
-  const { error } = await supa.from("catches").update({ count: next }).eq("id", existing.id);
+  // shiny는 한 번 true면 유지(도감 ✨ 기록) — 진화 시 이로치 승계에 사용
+  const patch: { count: number; shiny?: boolean } = { count: next };
+  if (shiny && !existing.shiny) patch.shiny = true;
+  const { error } = await supa.from("catches").update(patch).eq("id", existing.id);
   return { count: next, created: false, error };
 }
 

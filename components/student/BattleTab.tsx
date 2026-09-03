@@ -121,20 +121,21 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
 
   const activeCount = activeBank.length;
 
-  async function selectPokemon(pid: number) {
-    if (busyAction || pid === game.battlePid) { setPicker(false); return; }
+  // M12: shiny=true면 이로치 모습으로 출전 (이로치 보유 종만 — 서버에서도 검증)
+  async function selectPokemon(pid: number, shiny = false) {
+    if (busyAction || (pid === game.battlePid && shiny === !!game.battleShiny)) { setPicker(false); return; }
     setBusyAction(true);
     try {
       const res = await fetch("/api/pokemon/select", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ pokemon_id: pid }),
+        body: JSON.stringify({ pokemon_id: pid, shiny }),
       });
       const data = await res.json();
       if (!res.ok) { showToast(data.error ?? "선택에 실패했어요."); return; }
-      setGame({ ...game, battlePid: data.battlePid });
+      setGame({ ...game, battlePid: data.battlePid, battleShiny: data.battleShiny });
       setPicker(false);
-      showToast(`가라, ${data.name}!`);
+      showToast(data.battleShiny ? `가라, ✨이로치 ${data.name}!` : `가라, ${data.name}!`);
     } catch {
       showToast("연결에 실패했어요.");
     } finally {
@@ -157,7 +158,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       });
       const data = await res.json();
       if (!res.ok) { showToast(data.error ?? "진화에 실패했어요."); return; }
-      setGame({ ...game, battlePid: data.battlePid, wins: data.wins, evoCount: data.evoCount });
+      setGame({ ...game, battlePid: data.battlePid, battleShiny: data.battleShiny, wins: data.wins, evoCount: data.evoCount });
       setStudent({ ...studentRef.current, points: data.points, inventory: data.inventory });
       // M9: 마리 수 갱신 — 진화 전 -1(0이 돼도 도감엔 남음), 진화체 +1
       setCounts({ ...counts, [data.from.id]: data.from.count, [to]: data.to.count });
@@ -549,7 +550,8 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
               </div>
             )}
             <div style={{ position: "absolute", left: "10%", top: "42%", width: "34%", animation: myHit ? "shakeit 0.5s" : "none", filter: myHit ? "brightness(2.2) saturate(0.3)" : "none" }}>
-              <Sprite id={mine.id} color={mine.color} back pixelated size="100%" style={{ width: "100%", height: "auto" }} />
+              <Sprite id={mine.id} color={mine.color} back pixelated size="100%" shiny={game.battleShiny} style={{ width: "100%", height: "auto" }} />
+              {game.battleShiny && <ShinyFx />}
             </div>
             {/* 이름 플레이트 */}
             <div style={{ position: "absolute", left: "3%", top: "4%", background: "#f8f0dc", border: "3px solid #2c2c34", borderRadius: 10, padding: "6px 10px", color: "#2c2c34" }}>
@@ -765,17 +767,27 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
             <div style={{ ...S.panel, marginBottom: 8 }}>
               <div style={{ fontSize: 11, color: "#5b7a99", marginBottom: 8 }}>배틀에 데려갈 포켓몬을 고르자 ({ownedIds.length}종 보유)</div>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(64px, 1fr))", gap: 6 }}>
-                {ownedIds.map((id) => {
+                {ownedIds.flatMap((id) => {
                   const p = POOL[id - 1];
-                  const on = id === game.battlePid;
                   const n = counts[id] ?? 1;
-                  return (
-                    <button key={id} onClick={() => selectPokemon(id)} disabled={busyAction} style={{ position: "relative", background: on ? "var(--chipon-bg)" : "var(--card)", border: on ? `2px solid ${TYPE_COLORS[p.type]}` : "1px solid var(--line)", borderRadius: 8, padding: 6, cursor: "pointer", fontFamily: "inherit", color: "var(--ink)" }}>
-                      {n > 1 && <span style={{ position: "absolute", top: 2, right: 2, fontSize: 9, background: "#e07b39", borderRadius: 8, padding: "0 5px" }}>×{n}</span>}
-                      <Sprite id={id} color={p.color} size={40} />
-                      <div style={{ fontSize: 9, marginTop: 2 }}>{p.name}</div>
-                    </button>
-                  );
+                  // M12: 이로치를 잡은 종은 [일반] + [✨이로치] 두 칸으로 나눠 고를 수 있게
+                  const variants: boolean[] = shinies.includes(id) ? [false, true] : [false];
+                  return variants.map((sh) => {
+                    const on = id === game.battlePid && sh === !!game.battleShiny;
+                    return (
+                      <button
+                        key={`${id}-${sh ? "s" : "n"}`}
+                        onClick={() => selectPokemon(id, sh)}
+                        disabled={busyAction}
+                        style={{ position: "relative", background: on ? "var(--chipon-bg)" : "var(--card)", border: on ? `2px solid ${sh ? "#eaa300" : TYPE_COLORS[p.type]}` : `1px solid ${sh ? "#f0d9a8" : "var(--line)"}`, borderRadius: 8, padding: 6, cursor: "pointer", fontFamily: "inherit", color: "var(--ink)" }}
+                      >
+                        {n > 1 && !sh && <span style={{ position: "absolute", top: 2, right: 2, fontSize: 9, background: "#e07b39", borderRadius: 8, padding: "0 5px" }}>×{n}</span>}
+                        {sh && <span style={{ position: "absolute", top: 2, right: 2, fontSize: 9 }}>✨</span>}
+                        <Sprite id={id} color={p.color} size={40} shiny={sh} />
+                        <div style={{ fontSize: 9, marginTop: 2, color: sh ? "#c98600" : undefined }}>{p.name}</div>
+                      </button>
+                    );
+                  });
                 })}
               </div>
             </div>

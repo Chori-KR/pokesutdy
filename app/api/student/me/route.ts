@@ -43,10 +43,14 @@ export async function GET(req: NextRequest) {
   const gs = student.game_state ?? {};
   // 배틀 포켓몬이 지금 보유(1↑)하지 않는 종이면(진화·교환으로 소모) 보유 종으로 보정
   let battlePid = gs.battlePid ?? gs.starter ?? DEFAULT_BATTLE_PID;
-  if (!(counts[battlePid] >= 1)) battlePid = ownedIds[0] ?? battlePid;
+  const pidKept = counts[battlePid] >= 1;
+  if (!pidKept) battlePid = ownedIds[0] ?? battlePid;
+  // M12: 이로치 출전은 그 종의 이로치를 보유 중일 때만 유지 (교체·교환 시 자동 해제)
+  const battleShiny = gs.battleShiny === true && pidKept && shinies.includes(battlePid);
   const game = {
     starter: gs.starter ?? null,
     battlePid,
+    battleShiny,
     wins: gs.wins ?? {},
     evoCount: gs.evoCount ?? 0,
     dexRewards: gs.dexRewards ?? [],

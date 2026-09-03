@@ -26,6 +26,7 @@ export interface DayInfo {
 export interface GameInfo {
   starter: number | null;
   battlePid: number;
+  battleShiny?: boolean; // M12: 배틀 포켓몬을 이로치 모습으로 출전
   wins: Record<string, number>;
   evoCount: number;
   dexRewards: number[]; // 수령한 도감 달성 보상 임계값 목록

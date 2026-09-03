@@ -20,13 +20,18 @@ export async function POST(req: NextRequest) {
     .eq("student_id", student.id)
     .eq("pokemon_id", pid)
     .limit(1);
-  const owned = rows?.[0] as { count?: number } | undefined;
+  const owned = rows?.[0] as { count?: number; shiny?: boolean } | undefined;
   if (!owned || (owned.count ?? 1) < 1) return jsonError(409, "지금 보유하지 않은 포켓몬이에요.");
 
-  const game_state = { ...(student.game_state ?? {}), battlePid: pid };
+  // M12: 이로치 출전 — 그 종의 이로치를 실제로 보유한 경우에만 허용(서버 검증)
+  const wantShiny = body?.shiny === true;
+  if (wantShiny && !owned.shiny)
+    return jsonError(409, "아직 이로치를 잡지 못한 포켓몬이에요.");
+
+  const game_state = { ...(student.game_state ?? {}), battlePid: pid, battleShiny: wantShiny };
   const { error } = await supa.from("students").update({ game_state }).eq("id", student.id);
   if (error)
     return jsonError(500, isMissingGameState(error) ? GAME_STATE_HINT : "저장에 실패했어요.");
 
-  return NextResponse.json({ battlePid: pid, name: POOL[pid - 1].name });
+  return NextResponse.json({ battlePid: pid, battleShiny: wantShiny, name: POOL[pid - 1].name });
 }
