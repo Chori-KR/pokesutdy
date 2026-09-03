@@ -355,7 +355,7 @@ export default function RaidTab({
               {raid!.shiny && <ShinyFx />}
             </div>
             <div style={{ position: "absolute", left: "10%", top: "44%", width: "34%", animation: myHit ? "shakeit 0.5s" : "none", filter: myHit ? "brightness(2.2) saturate(0.3)" : "none" }}>
-              <Sprite id={mine.id} color={mine.color} back pixelated size="100%" style={{ width: "100%", height: "auto" }} />
+              <Sprite id={mine.id} color={mine.color} back pixelated size="100%" shiny={game.battleShiny} style={{ width: "100%", height: "auto" }} />
             </div>
             <div style={{ position: "absolute", left: "3%", top: "4%", background: "#f8f0dc", border: "3px solid #2c2c34", borderRadius: 10, padding: "6px 10px", color: "#2c2c34" }}>
               <div style={{ fontSize: 13, display: "flex", gap: 6, alignItems: "center" }}>

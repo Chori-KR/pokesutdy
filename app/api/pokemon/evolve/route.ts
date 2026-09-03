@@ -49,15 +49,18 @@ export async function POST(req: NextRequest) {
     usedDesc = `배틀 ${needed}승`;
   }
 
+  // M12: 이로치로 출전 중이었다면 진화체도 이로치로 승계 (이로치 이상해씨 → 이로치 이상해풀)
+  const inheritShiny = gs.battleShiny === true;
+
   // M8: 진화 전 포켓몬 1마리 소모(0이 되면 사라짐) + 진화체 1마리 추가
   const down = await bumpCatch(supa, student.id, from, "evolve", -1);
   if (down.error)
     return jsonError(500, isMissingCount(down.error) ? CATCH_COUNT_HINT : "도감 기록에 실패했어요.");
-  const up = await bumpCatch(supa, student.id, to, "evolve", 1);
+  const up = await bumpCatch(supa, student.id, to, "evolve", 1, inheritShiny);
   if (up.error)
     return jsonError(500, isMissingCount(up.error) ? CATCH_COUNT_HINT : "도감 기록에 실패했어요.");
 
-  const game_state = { ...gs, battlePid: to, wins, evoCount: evoCount + 1 };
+  const game_state = { ...gs, battlePid: to, battleShiny: inheritShiny, wins, evoCount: evoCount + 1 };
   const { error } = await supa
     .from("students")
     .update({ game_state, points, inventory })
@@ -69,6 +72,7 @@ export async function POST(req: NextRequest) {
     from: { id: from, name: POOL[from - 1].name, count: down.count },
     to: { id: to, name: POOL[to - 1].name, count: up.count },
     battlePid: to,
+    battleShiny: inheritShiny,
     wins,
     evoCount: evoCount + 1,
     points,

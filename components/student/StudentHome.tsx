@@ -97,7 +97,7 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
             {student.nickname} <span style={{ fontSize: 11, opacity: 0.7 }}>{cls.name}</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 5, fontSize: 11 }}>
-            <span>{mine.name} Lv.{student.level}</span>
+            <span>{game.battleShiny && <span title="이로치로 출전 중">✨</span>}{mine.name} Lv.{student.level}</span>
             <HpBar cur={student.hp} max={MAX_HP} width={80} />
             <span style={{ opacity: 0.8 }}>{student.hp}/{MAX_HP}</span>
           </div>
