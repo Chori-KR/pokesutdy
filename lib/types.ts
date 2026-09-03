@@ -34,6 +34,7 @@ export interface GameInfo {
 
 export interface ClassSettings {
   moveDiff: boolean;
+  gens?: number[]; // 등장 포켓몬 세대(1~9). 없으면 1세대만
   allowStudentSubject?: boolean; // 학생이 배틀 출제 과목/단원을 고를 수 있는지 (기본 false)
   exploreLimit?: number;
   solveLimit?: number;

@@ -3,7 +3,7 @@ import {
   requireStudent, jsonError, bumpCatch,
   isMissingTrades, TRADES_HINT, isMissingCount, CATCH_COUNT_HINT,
 } from "@/lib/api";
-import { POOL } from "@/lib/game";
+import { POOL, MAX_DEX_ID } from "@/lib/game";
 
 // 교환 수락 (M9): 내가 걸 포켓몬(pokemon_id)을 정해 코드의 교환을 완료한다.
 // 서버가 교환 행을 먼저 원자적으로 선점(status open→done)해 중복 수락을 막고,
@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
   const code = String(body?.code ?? "").replace(/\D/g, "");
   const give = Number(body?.pokemon_id); // 내가 상대에게 줄 포켓몬
   if (code.length !== 6) return jsonError(400, "6자리 숫자 교환 코드를 입력해주세요.");
-  if (!(give >= 1 && give <= 151)) return jsonError(400, "줄 포켓몬이 올바르지 않아요.");
+  if (!(give >= 1 && give <= MAX_DEX_ID)) return jsonError(400, "줄 포켓몬이 올바르지 않아요.");
 
   // 교환 조회
   const { data: rows, error: qErr } = await supa

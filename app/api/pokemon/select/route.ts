@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError, isMissingGameState, GAME_STATE_HINT } from "@/lib/api";
-import { POOL } from "@/lib/game";
+import { POOL, MAX_DEX_ID } from "@/lib/game";
 
 // 배틀 포켓몬 선택 (M9): 지금 보유(1마리 이상)한 포켓몬만 선택 가능 (서버 검증).
 // 진화·교환으로 0마리가 된 종은 도감엔 남지만 count<1이라 선택 불가.
@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
 
   const body = await req.json().catch(() => null);
   const pid = Number(body?.pokemon_id);
-  if (!(pid >= 1 && pid <= 151)) return jsonError(400, "포켓몬이 올바르지 않아요.");
+  if (!(pid >= 1 && pid <= MAX_DEX_ID)) return jsonError(400, "포켓몬이 올바르지 않아요.");
 
   // M9: 도감엔 있어도 보유 0마리면 선택 불가 — count≥1 확인
   const { data: rows } = await supa

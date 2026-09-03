@@ -2,16 +2,18 @@
 
 import { useState } from "react";
 import { S } from "@/lib/styles";
-import { STARTER_IDS, POOL, TYPE_COLORS, TYPE_MOVES, josa } from "@/lib/game";
+import { startersOf, POOL, TYPE_COLORS, TYPE_MOVES, josa } from "@/lib/game";
 import Sprite from "@/components/Sprite";
 
 interface Props {
   nickname: string;
+  gens?: number[];    // 학급이 켠 세대 (없으면 1세대)
   onDone: () => void; // 선택 완료 → me 재로드
 }
 
 // 스타팅 포켓몬 선택 (M4): 가입 직후(또는 기존 학생 첫 접속 시) 1회.
-export default function StarterSelect({ nickname, onDone }: Props) {
+export default function StarterSelect({ nickname, gens, onDone }: Props) {
+  const starters = startersOf(gens?.length ? gens : [1]);
   const [picked, setPicked] = useState<number | null>(null);
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
@@ -61,7 +63,7 @@ export default function StarterSelect({ nickname, onDone }: Props) {
       </div>
 
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
-        {STARTER_IDS.map((id) => {
+        {starters.map((id) => {
           const p = POOL[id - 1];
           const on = picked === id;
           return (
@@ -81,7 +83,7 @@ export default function StarterSelect({ nickname, onDone }: Props) {
               </div>
               <div style={{ fontSize: 14, marginTop: 6 }}>{p.name}</div>
               <div style={{ fontSize: 10, marginTop: 3, color: TYPE_COLORS[p.type] }}>
-                {TYPE_MOVES[p.type][0]} · {TYPE_MOVES[p.type][1]} · {TYPE_MOVES[p.type][2]}
+                {(TYPE_MOVES[p.type] ?? TYPE_MOVES.normal)[0]} · {(TYPE_MOVES[p.type] ?? TYPE_MOVES.normal)[1]} · {(TYPE_MOVES[p.type] ?? TYPE_MOVES.normal)[2]}
               </div>
             </button>
           );

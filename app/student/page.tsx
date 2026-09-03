@@ -68,7 +68,7 @@ export default function StudentPage() {
     return <LoginView onSuccess={loadMe} />;
 
   if (phase === "starter")
-    return <StarterSelect nickname={student.nickname} onDone={loadMe} />;
+    return <StarterSelect nickname={student.nickname} gens={cls.settings?.gens} onDone={loadMe} />;
 
   return (
     <StudentHome

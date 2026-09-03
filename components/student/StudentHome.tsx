@@ -177,6 +177,7 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
           setCounts={setCounts}
           shinies={shinies}
           setShinies={setShinies}
+          gens={cls.settings?.gens}
           showToast={showToast}
         />
       )}
@@ -203,6 +204,7 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
           counts={counts}
           setCounts={setCounts}
           shinies={shinies}
+          gens={cls.settings?.gens}
           student={student}
           setStudent={setStudent}
           game={game}

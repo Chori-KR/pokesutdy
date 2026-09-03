@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { requireStudent, jsonError, isMissingGameState, GAME_STATE_HINT, bumpCatch, isMissingCount, CATCH_COUNT_HINT } from "@/lib/api";
-import { STARTER_IDS, POOL } from "@/lib/game";
+import { requireStudent, jsonError, isMissingGameState, GAME_STATE_HINT, bumpCatch, isMissingCount, CATCH_COUNT_HINT, getClassSettings } from "@/lib/api";
+import { startersOf, POOL } from "@/lib/game";
 
-// 스타팅 포켓몬 선택 (M4): 이상해씨/파이리/꼬부기/피카츄 중 1회 선택.
+// 스타팅 포켓몬 선택 (M4): 학급이 켠 세대의 스타팅 포켓몬 중 1회 선택.
 // 선택한 포켓몬은 배틀 포켓몬이 되고 도감에도 등록된다.
 export async function POST(req: NextRequest) {
   const auth = await requireStudent(req);
@@ -14,8 +14,10 @@ export async function POST(req: NextRequest) {
 
   const body = await req.json().catch(() => null);
   const pid = Number(body?.pokemon_id);
-  if (!(STARTER_IDS as readonly number[]).includes(pid))
-    return jsonError(400, "스타팅은 이상해씨·파이리·꼬부기·피카츄 중에서 골라주세요.");
+  const { gens } = await getClassSettings(supa, student.class_id);
+  const allowed = startersOf(gens);
+  if (!allowed.includes(pid))
+    return jsonError(400, `스타팅은 ${allowed.map((i) => POOL[i - 1].name).join("·")} 중에서 골라주세요.`);
 
   const game_state = { ...(student.game_state ?? {}), starter: pid, battlePid: pid, wins: student.game_state?.wins ?? {} };
   const { error } = await supa.from("students").update({ game_state }).eq("id", student.id);

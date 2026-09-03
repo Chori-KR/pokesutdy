@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { S } from "@/lib/styles";
-import { POOL, RARITY, DEX_MILESTONES, DUPE_CONVERT, Rarity } from "@/lib/game";
+import { POOL, RARITY, DEX_MILESTONES, DUPE_CONVERT, Rarity, normalizeGens, dexTotal, GEN_RANGES } from "@/lib/game";
 import { StudentData, GameInfo } from "@/lib/types";
 import Sprite from "@/components/Sprite";
 import PokedexInfo from "@/components/student/PokedexInfo";
@@ -14,6 +14,7 @@ interface Props {
   counts: Record<number, number>;
   setCounts: (c: Record<number, number>) => void;
   shinies?: number[];
+  gens?: number[];            // 학급이 켠 세대 (없으면 1세대)
   student: StudentData;
   setStudent: (s: StudentData) => void;
   game: GameInfo;
@@ -22,7 +23,7 @@ interface Props {
 }
 
 // 도감 (M8/M11): 내 도감(마리 수·이로치·정보카드) + 달성 보상 + 중복 환전 + 친구 도감
-export default function DexTab({ caught, counts, setCounts, shinies = [], student, setStudent, game, setGame, showToast }: Props) {
+export default function DexTab({ caught, counts, setCounts, shinies = [], gens, student, setStudent, game, setGame, showToast }: Props) {
   const [view, setView] = useState<"mine" | "friends">("mine");
   const [info, setInfo] = useState<number | null>(null); // 정보 카드 열린 포켓몬 id
   const shinySet = new Set(shinies);
@@ -31,17 +32,43 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
   const [err, setErr] = useState("");
   const [busy, setBusy] = useState(false);
 
-  const dexCount = caught.length;
+  const activeGens = useMemo(() => normalizeGens(gens), [gens]);
+  const total = dexTotal(activeGens);
+  // 진행률은 활성 세대 기준 — 세대를 끄면 그 세대 포켓몬은 분모·분자에서 함께 빠진다
+  const dexCount = useMemo(
+    () => caught.filter((id) => activeGens.includes(POOL[id - 1]?.gen)).length,
+    [caught, activeGens]
+  );
+  // 비활성 세대인데 이미 잡은 포켓몬 (삭제하지 않고 따로 보관해 보여준다)
+  const archived = useMemo(
+    () => caught.filter((id) => !activeGens.includes(POOL[id - 1]?.gen)).sort((a, b) => a - b),
+    [caught, activeGens]
+  );
   const claimed = new Set(game?.dexRewards ?? []);
 
-  // 등급별 달성률
+  // 세대별 진행률 — 세대를 추가해도 "1세대 완성" 성취가 유지되도록 따로 보여준다
+  const genStats = useMemo(() => {
+    const gotSet = new Set(caught);
+    return activeGens.map((g) => {
+      const [lo, hi] = GEN_RANGES[g - 1];
+      let got = 0;
+      for (let id = lo; id <= hi; id++) if (gotSet.has(id)) got++;
+      return { gen: g, got, total: hi - lo + 1 };
+    });
+  }, [caught, activeGens]);
+
+  // 등급별 달성률 (활성 세대 안에서만)
   const rarityStats = useMemo(() => {
     const total: Record<Rarity, number> = { common: 0, special: 0, rare: 0, legendary: 0 };
     const got: Record<Rarity, number> = { common: 0, special: 0, rare: 0, legendary: 0 };
     const gotSet = new Set(caught);
-    POOL.forEach((p) => { total[p.rarity]++; if (gotSet.has(p.id)) got[p.rarity]++; });
+    POOL.forEach((p) => {
+      if (!activeGens.includes(p.gen)) return;
+      total[p.rarity]++;
+      if (gotSet.has(p.id)) got[p.rarity]++;
+    });
     return { total, got };
-  }, [caught]);
+  }, [caught, activeGens]);
 
   // 중복(여분) 마리 수 + 종별 목록
   const dupeCount = useMemo(
@@ -133,11 +160,12 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
     }
   }
 
-  const grid = (ids: number[], cnts?: Record<number, number>, shins?: Set<number>) => {
+  const grid = (ids: number[], cnts?: Record<number, number>, shins?: Set<number>, showIds?: number[]) => {
     const got = new Set(ids);
+    const list = showIds ? showIds.map((i) => POOL[i - 1]).filter(Boolean) : POOL.filter((p) => activeGens.includes(p.gen));
     return (
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(84px, 1fr))", gap: 6 }}>
-        {POOL.map((p) => {
+        {list.map((p) => {
           const has = got.has(p.id);
           const n = cnts?.[p.id] ?? 0;
           const isShiny = !!shins?.has(p.id);
@@ -169,11 +197,35 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
     );
   };
 
+  // 세대별 구역으로 나눠 보여준다 (전국도감 번호는 그대로, 구역만 나뉨)
+  const gridByGen = (ids: number[], cnts?: Record<number, number>, shins?: Set<number>) => (
+    <>
+      {activeGens.map((g) => {
+        const [lo, hi] = GEN_RANGES[g - 1];
+        const stat = genStats.find((x) => x.gen === g);
+        return (
+          <div key={g} style={{ marginBottom: 12 }}>
+            <div style={{ display: "flex", alignItems: "baseline", gap: 8, margin: "0 2px 6px" }}>
+              <span style={{ fontSize: 12, fontWeight: 700 }}>{g}세대</span>
+              <span style={{ fontSize: 10, color: "#8791b0" }}>No.{lo}~{hi}</span>
+              {stat && (
+                <span style={{ fontSize: 11, marginLeft: "auto", color: stat.got === stat.total ? "#eaa300" : "#5b7a99" }}>
+                  {stat.got === stat.total ? "🏆 완성! " : ""}{stat.got}/{stat.total}
+                </span>
+              )}
+            </div>
+            {grid(ids, cnts, shins, Array.from({ length: hi - lo + 1 }, (_, k) => lo + k))}
+          </div>
+        );
+      })}
+    </>
+  );
+
   return (
     <div>
       <div style={{ display: "flex", gap: 5, marginBottom: 10 }}>
         <button onClick={() => { setView("mine"); setFriend(null); }} style={{ ...S.tabBtn, ...(view === "mine" ? S.tabOn : {}) }}>
-          내 도감 {caught.length}/151
+          내 도감 {dexCount}/{total}
         </button>
         <button onClick={() => setView("friends")} style={{ ...S.tabBtn, ...(view === "friends" ? S.tabOn : {}) }}>
           친구들 도감 👀
@@ -188,10 +240,10 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
           <div style={{ ...S.panel, padding: "12px 14px", marginBottom: 8 }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
               <span style={{ fontSize: 13, fontWeight: 700 }}>내 도감</span>
-              <span style={{ fontSize: 13 }}><b style={{ color: "#4b7bec" }}>{dexCount}</b> / 151</span>
+              <span style={{ fontSize: 13 }}><b style={{ color: "#4b7bec" }}>{dexCount}</b> / {total}</span>
             </div>
             <div style={{ height: 8, background: "#e6e8f0", borderRadius: 4, overflow: "hidden", marginBottom: 8 }}>
-              <div style={{ width: `${Math.round((dexCount / 151) * 100)}%`, height: "100%", background: "linear-gradient(90deg,#7ec8a8,#4b7bec)", transition: "width 0.4s" }} />
+              <div style={{ width: `${total ? Math.round((dexCount / total) * 100) : 0}%`, height: "100%", background: "linear-gradient(90deg,#7ec8a8,#4b7bec)", transition: "width 0.4s" }} />
             </div>
             <div style={{ display: "flex", gap: 6, fontSize: 11 }}>
               {(["common", "special", "rare", "legendary"] as Rarity[]).map((r) => (
@@ -252,7 +304,19 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
           <div style={{ fontSize: 11, color: "#8a8f9a", marginBottom: 8, textAlign: "center" }}>
             (×숫자=마리 수, 보유0=진화로 떠나보냄·도감엔 영구 기록)
           </div>
-          {grid(caught, counts, shinySet)}
+          {gridByGen(caught, counts, shinySet)}
+
+          {/* 세대를 끈 뒤에도 이미 잡은 포켓몬은 사라지지 않고 여기에 보관된다 */}
+          {archived.length > 0 && (
+            <div style={{ marginTop: 6 }}>
+              <div style={{ display: "flex", alignItems: "baseline", gap: 8, margin: "0 2px 6px" }}>
+                <span style={{ fontSize: 12, fontWeight: 700, color: "#8791b0" }}>다른 세대 (보관)</span>
+                <span style={{ fontSize: 10, color: "#8791b0" }}>지금 학급에서는 등장하지 않아요 · 진행률에 미포함</span>
+                <span style={{ fontSize: 11, marginLeft: "auto", color: "#8791b0" }}>{archived.length}마리</span>
+              </div>
+              {grid(caught, counts, shinySet, archived)}
+            </div>
+          )}
         </>
       )}
 
@@ -271,9 +335,9 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
               <span style={{ flex: 1, fontSize: 13 }}>
                 {m.nickname} {m.me && <span style={{ fontSize: 10, color: "#e07b39" }}>(나)</span>}
               </span>
-              <span style={{ fontSize: 12, color: "#eaa300", flexShrink: 0 }}>{m.dexCount}/151</span>
+              <span style={{ fontSize: 12, color: "#eaa300", flexShrink: 0 }}>{m.dexCount}/{total}</span>
               <span style={{ display: "inline-block", width: 64, height: 6, background: "#e6e8f0", borderRadius: 3, overflow: "hidden", flexShrink: 0 }}>
-                <span style={{ display: "block", width: `${Math.round((m.dexCount / 151) * 100)}%`, height: "100%", background: "#7ec8a8" }} />
+                <span style={{ display: "block", width: `${total ? Math.round((m.dexCount / total) * 100) : 0}%`, height: "100%", background: "#7ec8a8" }} />
               </span>
             </button>
           ))}
@@ -288,10 +352,10 @@ export default function DexTab({ caught, counts, setCounts, shinies = [], studen
           <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 10 }}>
             <button onClick={() => setFriend(null)} style={S.ghostBtn}>← 목록</button>
             <span style={{ fontSize: 13 }}>
-              {friend.nickname}의 도감 <span style={{ color: "#eaa300" }}>{friend.caught.length}/151</span>
+              {friend.nickname}의 도감 <span style={{ color: "#eaa300" }}>{friend.caught.length}/{total}</span>
             </span>
           </div>
-          {grid(friend.caught, friend.counts)}
+          {gridByGen(friend.caught, friend.counts)}
         </>
       )}
 

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { T } from "@/lib/styles";
-import { POOL, TYPE_COLORS, BALLS, SNACKS, EVO_STONE, SPRAY, DEFAULT_RAID_THRESHOLD, DEFAULT_RAID_REWARD_PTS } from "@/lib/game";
+import { POOL, TYPE_COLORS, BALLS, SNACKS, EVO_STONE, SPRAY, DEFAULT_RAID_THRESHOLD, DEFAULT_RAID_REWARD_PTS, normalizeGens } from "@/lib/game";
 import { supabaseBrowser } from "@/lib/supabase/browser";
 import { teacherFetch } from "@/lib/teacherClient";
 import Sprite from "@/components/Sprite";
@@ -76,7 +76,7 @@ export default function RaidSettings({ cls, setCls, showToast }: Props) {
   }
 
   const filtered = search.trim()
-    ? POOL.filter((p) => p.name.includes(search.trim()) || String(p.id) === search.trim())
+    ? POOL.filter((p) => normalizeGens(cls.settings?.gens).includes(p.gen) && (p.name.includes(search.trim()) || String(p.id) === search.trim()))
     : POOL;
   const bossPid = on ? Number(raid.pid ?? 1) : pid;
 

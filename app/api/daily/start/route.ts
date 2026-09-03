@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { requireStudent, jsonError } from "@/lib/api";
+import { requireStudent, jsonError, getClassSettings } from "@/lib/api";
 import { POOL, shuffle } from "@/lib/game";
 
 // 오늘의 실루엣 퀴즈 시작 (하루 1회, 명세 §4.4).
@@ -16,8 +16,11 @@ export async function POST(req: NextRequest) {
 
   let quiz = student.day_state?.quiz;
   if (!quiz) {
-    const target = POOL[Math.floor(Math.random() * POOL.length)];
-    const wrong = shuffle(POOL.filter((p) => p.id !== target.id)).slice(0, 3);
+    // 학급이 켠 세대 안에서만 출제 (학급 도감에 없는 포켓몬이 나오면 맞힐 수 없다)
+    const { gens } = await getClassSettings(supa, student.class_id);
+    const pool = POOL.filter((p) => gens.includes(p.gen));
+    const target = pool[Math.floor(Math.random() * pool.length)];
+    const wrong = shuffle(pool.filter((p) => p.id !== target.id)).slice(0, 3);
     quiz = { target: target.id, opts: shuffle([target, ...wrong]).map((p) => p.id) };
     const day_state = { ...student.day_state, quiz };
     const { error } = await supa
