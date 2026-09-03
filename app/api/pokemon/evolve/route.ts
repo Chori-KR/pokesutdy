@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { requireStudent, jsonError, isMissingGameState, GAME_STATE_HINT, bumpCatch, isMissingCount, CATCH_COUNT_HINT } from "@/lib/api";
-import { EVOLVES_TO, evoWinsNeeded, evoPointCost, isStoneEvo, POOL } from "@/lib/game";
+import { requireStudent, jsonError, isMissingGameState, GAME_STATE_HINT, bumpCatch, isMissingCount, CATCH_COUNT_HINT, getClassSettings } from "@/lib/api";
+import { evoTargetsIn, evoWinsNeeded, evoPointCost, isStoneEvo, POOL } from "@/lib/game";
 
 // 포켓몬 진화 (M5, 3방식):
 //  - 돌 진화 페어(피카츄→라이츄 등): 진화의돌 1개 소모 (승수/포인트 불가)
@@ -19,7 +19,9 @@ export async function POST(req: NextRequest) {
   const body = await req.json().catch(() => null);
   const to = Number(body?.to);
   const method = String(body?.method ?? "wins"); // wins | points | stone
-  const targets = EVOLVES_TO[from] ?? [];
+  // 진화 대상도 학급이 켠 세대 안에 있어야 한다 (예: 1세대만이면 롱스톤→강철톤 불가)
+  const { gens } = await getClassSettings(supa, student.class_id);
+  const targets = evoTargetsIn(from, gens);
   if (!targets.includes(to)) return jsonError(400, "그 포켓몬으로는 진화할 수 없어요.");
 
   const inventory = { ...student.inventory };

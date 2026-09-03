@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError } from "@/lib/api";
-import { POOL, DUPE_CONVERT } from "@/lib/game";
+import { POOL, DUPE_CONVERT, MAX_DEX_ID } from "@/lib/game";
 
 // 중복 포켓몬 환전(선택형): 학생이 고른 종·마리 수만큼만 포인트로 바꾼다.
 // body: { items: [{ pokemon_id, qty }] } — qty는 여분(count-1) 이하로 클램프.
@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
   if (items.length === 0) return jsonError(400, "환전할 포켓몬을 선택해주세요.");
 
   // 요청한 종만 조회
-  const wantIds = items.map((it: { pokemon_id: number }) => Math.round(Number(it.pokemon_id))).filter((n: number) => n >= 1 && n <= 151);
+  const wantIds = items.map((it: { pokemon_id: number }) => Math.round(Number(it.pokemon_id))).filter((n: number) => n >= 1 && n <= MAX_DEX_ID);
   const { data: rows } = await supa
     .from("catches")
     .select("id, pokemon_id, count")

@@ -4,8 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { S } from "@/lib/styles";
 import {
   POOL, TYPE_COLORS, BALLS, SNACKS, EVO_STONE, SPRAY,
-  myPokemonOf, Move, Difficulty, TIME_LIMIT, RAID_BOSS_HP, RAID_HIT_DMG, MAX_HP, josa, shuffle, sleep,
-} from "@/lib/game";
+  myPokemonOf, Move, Difficulty, TIME_LIMIT, RAID_BOSS_HP, RAID_HIT_DMG, MAX_HP, josa, shuffle, sleep, normalizeGens } from "@/lib/game";
 import { ApiQuestion, StudentData, GameInfo } from "@/lib/types";
 import Sprite from "@/components/Sprite";
 import HpBar from "@/components/HpBar";
@@ -27,6 +26,7 @@ interface Props {
   setCounts: (v: Record<number, number>) => void;
   shinies: number[];
   setShinies: (v: number[]) => void;
+  gens?: number[];   // 학급이 켠 세대
   showToast: (m: string) => void;
 }
 
@@ -54,7 +54,7 @@ function itemName(k: string): string {
 
 export default function RaidTab({
   student, setStudent, game, timerOn, timeScale,
-  caught, setCaught, counts, setCounts, shinies, setShinies, showToast,
+  caught, setCaught, counts, setCounts, shinies, setShinies, gens, showToast,
 }: Props) {
   const [loading, setLoading] = useState(true);
   const [raid, setRaid] = useState<RaidStatus | null>(null);
@@ -248,7 +248,7 @@ export default function RaidTab({
         </div>
         <div style={{ fontSize: 11, color: "#5b7a99", marginBottom: 10 }}>선택하면 선생님께 전달돼요. (레이드당 1번 신청)</div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(64px, 1fr))", gap: 6, maxHeight: "60vh", overflowY: "auto" }}>
-          {POOL.map((p) => (
+          {POOL.filter((p) => normalizeGens(gens).includes(p.gen)).map((p) => (
             <button key={p.id} onClick={() => request(p.id)}
               style={{ ...S.panel, padding: 4, cursor: "pointer", border: "1px solid var(--line)", background: "var(--card)", display: "flex", flexDirection: "column", alignItems: "center" }}>
               <Sprite id={p.id} color={TYPE_COLORS[p.type]} pixel size={44} />

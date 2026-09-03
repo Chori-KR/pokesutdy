@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
   if (auth instanceof NextResponse) return auth;
   const { supa, student } = auth;
 
-  const { exploreLimit, rareRate, specialRate, legendRate, shinyRate } = await getClassSettings(supa, student.class_id);
+  const { exploreLimit, rareRate, specialRate, legendRate, shinyRate, gens } = await getClassSettings(supa, student.class_id);
   const biome = pickBiome();
   const encUsed = Number(student.day_state?.encUsed ?? 0);
   if (encUsed >= exploreLimit)
@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
     .eq("id", student.id);
   if (error) return jsonError(500, "저장에 실패했어요.");
 
-  const wild = pickWild(rareRate, specialRate, legendRate, BIOMES[biome].types);
+  const wild = pickWild(rareRate, specialRate, legendRate, BIOMES[biome].types, gens);
   const shiny = useSpray || rollShiny(shinyRate);
   const token = await signBattleToken(student.id, wild.id, "explore", shiny);
   return NextResponse.json({

@@ -1,6 +1,8 @@
 // 게임 상수 — 프로토타입(pokestudy-integrated-prototype.jsx)에서 포팅.
 // 수치 근거: pokestudy-dev-spec.md §4
 
+import { DEX, EVO, STONE } from "@/lib/pokedexData";
+
 export type Rarity = "common" | "special" | "rare" | "legendary";
 export type Difficulty = "easy" | "medium" | "hard";
 export type BallKind = "poke" | "superb" | "hyper" | "master";
@@ -31,70 +33,45 @@ export const TYPE_MOVE: Record<string, string> = {
   flying: "바람일으키기", dark: "속임수", steel: "강철날개",
 };
 
-// 1세대 151마리 [한국어 이름, 타입]
-export const GEN1: [string, string][] = [
-  ["이상해씨","grass"],["이상해풀","grass"],["이상해꽃","grass"],["파이리","fire"],["리자드","fire"],
-  ["리자몽","fire"],["꼬부기","water"],["어니부기","water"],["거북왕","water"],["캐터피","bug"],
-  ["단데기","bug"],["버터플","bug"],["뿔충이","bug"],["딱충이","bug"],["독침붕","bug"],
-  ["구구","flying"],["피죤","flying"],["피죤투","flying"],["꼬렛","normal"],["레트라","normal"],
-  ["깨비참","flying"],["깨비드릴조","flying"],["아보","poison"],["아보크","poison"],["피카츄","electric"],
-  ["라이츄","electric"],["모래두지","ground"],["고지","ground"],["니드런♀","poison"],["니드리나","poison"],
-  ["니드퀸","poison"],["니드런♂","poison"],["니드리노","poison"],["니드킹","poison"],["삐삐","fairy"],
-  ["픽시","fairy"],["식스테일","fire"],["나인테일","fire"],["푸린","fairy"],["푸크린","fairy"],
-  ["주뱃","poison"],["골뱃","poison"],["뚜벅쵸","grass"],["냄새꼬","grass"],["라플레시아","grass"],
-  ["파라스","bug"],["파라섹트","bug"],["콘팡","bug"],["도나리","bug"],["디그다","ground"],
-  ["닥트리오","ground"],["나옹","normal"],["페르시온","normal"],["고라파덕","water"],["골덕","water"],
-  ["망키","fighting"],["성원숭","fighting"],["가디","fire"],["윈디","fire"],["발챙이","water"],
-  ["슈륙챙이","water"],["강챙이","water"],["캐이시","psychic"],["윤겔라","psychic"],["후딘","psychic"],
-  ["알통몬","fighting"],["근육몬","fighting"],["괴력몬","fighting"],["모다피","grass"],["우츠동","grass"],
-  ["우츠보트","grass"],["왕눈해","water"],["독파리","water"],["꼬마돌","rock"],["데구리","rock"],
-  ["딱구리","rock"],["포니타","fire"],["날쌩마","fire"],["야돈","water"],["야도란","water"],
-  ["코일","electric"],["레어코일","electric"],["파오리","flying"],["두두","flying"],["두트리오","flying"],
-  ["쥬쥬","water"],["쥬레곤","water"],["질퍽이","poison"],["질뻐기","poison"],["셀러","water"],
-  ["파르셀","water"],["고오스","ghost"],["고우스트","ghost"],["팬텀","ghost"],["롱스톤","rock"],
-  ["슬리프","psychic"],["슬리퍼","psychic"],["크랩","water"],["킹크랩","water"],["찌리리공","electric"],
-  ["붐볼","electric"],["아라리","grass"],["나시","grass"],["탕구리","ground"],["텅구리","ground"],
-  ["시라소몬","fighting"],["홍수몬","fighting"],["내루미","normal"],["또가스","poison"],["또도가스","poison"],
-  ["뿔카노","rock"],["코뿌리","rock"],["럭키","normal"],["덩쿠리","grass"],["캥카","normal"],
-  ["쏘드라","water"],["시드라","water"],["콘치","water"],["왕콘치","water"],["별가사리","water"],
-  ["아쿠스타","water"],["마임맨","psychic"],["스라크","bug"],["루주라","ice"],["에레브","electric"],
-  ["마그마","fire"],["쁘사이저","bug"],["켄타로스","normal"],["잉어킹","water"],["갸라도스","water"],
-  ["라프라스","water"],["메타몽","normal"],["이브이","normal"],["샤미드","water"],["쥬피썬더","electric"],
-  ["부스터","fire"],["폴리곤","normal"],["암나이트","rock"],["암스타","rock"],["투구","rock"],
-  ["투구푸스","rock"],["프테라","rock"],["잠만보","normal"],["프리져","ice"],["썬더","electric"],
-  ["파이어","fire"],["미뇽","dragon"],["신뇽","dragon"],["망나뇽","dragon"],["뮤츠","psychic"],
-  ["뮤","psychic"],
+
+// 전 세대 도감(1~9세대, 1025종)은 lib/pokedexData.ts에 자동 생성되어 있다.
+// 1세대(1~151)는 기존 이름·타입·등급·진화를 그대로 보존한다 — 운영 중인 학급 밸런스 유지.
+const RARITY_BY_CODE: Rarity[] = ["common", "special", "rare", "legendary"];
+
+// 세대별 전국도감 번호 구간 (연속 구간이라 번호만 보면 세대를 알 수 있다)
+export const GEN_RANGES: [number, number][] = [
+  [1, 151], [152, 251], [252, 386], [387, 493], [494, 649],
+  [650, 721], [722, 809], [810, 905], [906, 1025],
 ];
+export const ALL_GENS = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+export const MAX_DEX_ID = 1025;
+// 기존 학급(설정 없음)은 1세대만 — 지금까지와 완전히 동일하게 동작
+export const DEFAULT_GENS = [1];
+// 새로 만드는 학급 기본값: 1세대 + 최신(9세대)
+export const NEW_CLASS_GENS = [1, 9];
 
-export const LEGENDARY_IDS = new Set([144, 145, 146, 150, 151]);
-
-// 등급 4체계(교사 지정): 흔함 / 특별 / 희귀 / 전설. 아래 집합에 없으면 흔함.
-export const SPECIAL_IDS = new Set([
-  2, 5, 8, 11, 14, 17, 20, 22, 24, 28, 30, 33, 36, 40, 42, 44, 47, 49, 51,
-  53, 59, 61, 64, 67, 70, 73, 75, 80, 82, 83, 85, 87, 89, 91, 93, 95, 97,
-  99, 101, 105, 108, 110, 111, 114, 117, 119, 120, 122, 124, 127, 128, 132,
-  133, 138, 140, 147, 148,
-]);
-export const RARE_IDS = new Set([
-  3, 6, 9, 12, 15, 18, 26, 31, 34, 38, 45, 55, 57, 62, 65, 68, 71, 76, 78,
-  94, 103, 106, 107, 112, 113, 115, 121, 123, 125, 126, 130, 131, 134, 135,
-  136, 137, 139, 141, 142, 143, 149,
-]);
-
-// 1세대 진화 체인: 진화 전 → 진화 후 후보들 (이브이는 3갈래 분기)
-export const EVOLVES_TO: Record<number, number[]> = {
-  1: [2], 2: [3], 4: [5], 5: [6], 7: [8], 8: [9], 10: [11], 11: [12],
-  13: [14], 14: [15], 16: [17], 17: [18], 19: [20], 21: [22], 23: [24],
-  25: [26], 27: [28], 29: [30], 30: [31], 32: [33], 33: [34], 35: [36],
-  37: [38], 39: [40], 41: [42], 43: [44], 44: [45], 46: [47], 48: [49],
-  50: [51], 52: [53], 54: [55], 56: [57], 58: [59], 60: [61], 61: [62],
-  63: [64], 64: [65], 66: [67], 67: [68], 69: [70], 70: [71], 72: [73],
-  74: [75], 75: [76], 77: [78], 79: [80], 81: [82], 84: [85], 86: [87],
-  88: [89], 90: [91], 92: [93], 93: [94], 96: [97], 98: [99], 100: [101],
-  102: [103], 104: [105], 109: [110], 111: [112], 116: [117], 118: [119],
-  120: [121], 129: [130], 133: [134, 135, 136], 138: [139], 140: [141],
-  147: [148], 148: [149],
+export const genOf = (id: number): number => {
+  for (let g = 0; g < GEN_RANGES.length; g++) {
+    if (id >= GEN_RANGES[g][0] && id <= GEN_RANGES[g][1]) return g + 1;
+  }
+  return 1;
 };
+// 선택한 세대만 남기기 (빈 배열·잘못된 값이면 1세대로 안전 복귀)
+export const normalizeGens = (gens?: unknown): number[] => {
+  const list = Array.isArray(gens) ? gens.map(Number).filter((g) => ALL_GENS.includes(g)) : [];
+  const uniq = [...new Set(list)].sort((a, b) => a - b);
+  return uniq.length ? uniq : DEFAULT_GENS;
+};
+export const inGens = (id: number, gens: number[]): boolean => gens.includes(genOf(id));
+// 활성 세대의 총 종 수 (도감 분모)
+export const dexTotal = (gens: number[]): number =>
+  gens.reduce((n, g) => n + (GEN_RANGES[g - 1] ? GEN_RANGES[g - 1][1] - GEN_RANGES[g - 1][0] + 1 : 0), 0);
+// 1세대 진화 체인: 진화 전 → 진화 후 후보들 (이브이는 3갈래 분기)
+// 진화 체인 (전 세대). 세대를 끈 학급에서는 활성 세대 안의 진화체만 노출한다.
+export const EVOLVES_TO: Record<number, number[]> = EVO;
+// 활성 세대 안에서 실제로 진화 가능한 대상만
+export const evoTargetsIn = (id: number, gens: number[]): number[] =>
+  (EVOLVES_TO[id] ?? []).filter((to) => inGens(to, gens));
 
 // 진화 단계 (1=기본, 2=중간, 3=최종): 3단 라인의 중간 단계에서만 2가 나온다
 const EVO_TARGETS = new Set(Object.values(EVOLVES_TO).flat());
@@ -117,24 +94,7 @@ export const evoPointCost = (fromId: number, toId: number): number => {
 };
 
 // M5: 진화의돌로만 진화하는 페어 (1세대 돌 진화 — 승수/포인트 진화 불가)
-const STONE_PAIRS: [number, number][] = [
-  [25, 26],   // 피카츄 → 라이츄 (천둥의돌)
-  [30, 31],   // 니드리나 → 니드퀸 (달의돌)
-  [33, 34],   // 니드리노 → 니드킹 (달의돌)
-  [35, 36],   // 삐삐 → 픽시 (달의돌)
-  [37, 38],   // 식스테일 → 나인테일 (불꽃의돌)
-  [39, 40],   // 푸린 → 푸크린 (달의돌)
-  [44, 45],   // 냄새꼬 → 라플레시아 (리프의돌)
-  [58, 59],   // 가디 → 윈디 (불꽃의돌)
-  [61, 62],   // 슈륙챙이 → 강챙이 (물의돌)
-  [70, 71],   // 우츠동 → 우츠보트 (리프의돌)
-  [90, 91],   // 셀러 → 파르셀 (물의돌)
-  [102, 103], // 아라리 → 나시 (리프의돌)
-  [120, 121], // 별가사리 → 아쿠스타 (물의돌)
-  [133, 134], // 이브이 → 샤미드 (물의돌)
-  [133, 135], // 이브이 → 쥬피썬더 (천둥의돌)
-  [133, 136], // 이브이 → 부스터 (불꽃의돌)
-];
+const STONE_PAIRS: [number, number][] = STONE;
 export const STONE_EVOS = new Set(STONE_PAIRS.map(([a, b]) => `${a}-${b}`));
 export const isStoneEvo = (from: number, to: number) => STONE_EVOS.has(`${from}-${to}`);
 
@@ -150,7 +110,16 @@ export const gradeShort = (text: string, accepted: string[]): boolean => {
 export const DEFAULT_SHINY_RATE = 1 / 40; // 야생 조우 시 이로치(색違) 기본 확률 (2.5%)
 export const rollShiny = (rate = DEFAULT_SHINY_RATE) => Math.random() < rate;
 
-export const STARTER_IDS = [1, 4, 7, 25] as const;
+// 세대별 스타팅 포켓몬 3종 (1세대는 피카츄를 더해 기존과 동일한 4종)
+const STARTERS_BY_GEN: Record<number, number[]> = {
+  1: [1, 4, 7, 25], 2: [152, 155, 158], 3: [252, 255, 258],
+  4: [387, 390, 393], 5: [495, 498, 501], 6: [650, 653, 656],
+  7: [722, 725, 728], 8: [810, 813, 816], 9: [906, 909, 912],
+};
+export const STARTER_IDS = STARTERS_BY_GEN[1];
+// 활성 세대의 스타팅 후보 (1세대만 켜면 기존과 완전히 동일)
+export const startersOf = (gens: number[]): number[] =>
+  gens.flatMap((g) => STARTERS_BY_GEN[g] ?? []).sort((a, b) => a - b);
 
 export const DEFAULT_BATTLE_LIMIT = 2; // 하루 배틀(조우) 횟수 기본값 — 교사 설정 가능
 
@@ -158,18 +127,16 @@ export interface Pokemon {
   id: number;
   name: string;
   type: string;
+  gen: number;      // 세대 (1~9)
   color: string;
   rarity: Rarity;
 }
 
-export const POOL: Pokemon[] = GEN1.map(([name, type], i) => {
-  const id = i + 1;
-  return {
-    id, name, type,
-    color: TYPE_COLORS[type],
-    rarity: LEGENDARY_IDS.has(id) ? "legendary" : RARE_IDS.has(id) ? "rare" : SPECIAL_IDS.has(id) ? "special" : "common",
-  };
-});
+export const POOL: Pokemon[] = DEX.map(([name, type, gen, rar], i) => ({
+  id: i + 1, name, type, gen,
+  color: TYPE_COLORS[type] ?? TYPE_COLORS.normal,
+  rarity: RARITY_BY_CODE[rar] ?? "common",
+}));
 
 export const RARITY: Record<Rarity, {
   label: string; color: string; catch: number; hp: number; atk: number;
@@ -351,18 +318,23 @@ export const rollRarity = (
   return "common";
 };
 
-// 등급 내에서 바이옴 선호 타입을 70% 확률로 우선
-export const pickWildOf = (rarity: Rarity, biomeTypes?: string[]): Pokemon => {
-  const pool = POOL.filter((p) => p.rarity === rarity);
+// 등급 내에서 바이옴 선호 타입을 70% 확률로 우선.
+// gens를 주면 그 세대 안에서만 출현한다(교사가 학급 설정에서 고른 세대).
+export const pickWildOf = (rarity: Rarity, biomeTypes?: string[], gens?: number[]): Pokemon => {
+  const active = gens?.length ? POOL.filter((p) => gens.includes(p.gen)) : POOL;
+  // 활성 세대에 해당 등급이 하나도 없으면(예: 전설 없는 세대만 선택) 등급을 풀어 안전하게 뽑는다
+  const pool = active.filter((p) => p.rarity === rarity);
+  const base = pool.length ? pool : active.length ? active : POOL;
   if (biomeTypes && biomeTypes.length && Math.random() < 0.7) {
-    const fav = pool.filter((p) => biomeTypes.includes(p.type));
+    const fav = base.filter((p) => biomeTypes.includes(p.type));
     if (fav.length) return fav[Math.floor(Math.random() * fav.length)];
   }
-  return pool[Math.floor(Math.random() * pool.length)];
+  return base[Math.floor(Math.random() * base.length)];
 };
 export const pickWild = (
-  rareRate = DEFAULT_RARE_RATE, specialRate = DEFAULT_SPECIAL_RATE, legendRate = DEFAULT_LEGEND_RATE, biomeTypes?: string[]
-): Pokemon => pickWildOf(rollRarity(rareRate, specialRate, legendRate), biomeTypes);
+  rareRate = DEFAULT_RARE_RATE, specialRate = DEFAULT_SPECIAL_RATE, legendRate = DEFAULT_LEGEND_RATE,
+  biomeTypes?: string[], gens?: number[]
+): Pokemon => pickWildOf(rollRarity(rareRate, specialRate, legendRate), biomeTypes, gens);
 
 // 100XP당 1레벨
 export const gainXpCalc = (cur: { xp: number; level: number }, n: number) => {

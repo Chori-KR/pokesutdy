@@ -2,7 +2,7 @@
 
 import { Fragment, useCallback, useEffect, useState } from "react";
 import { T } from "@/lib/styles";
-import { BALLS, SNACKS, EVO_STONE } from "@/lib/game";
+import { BALLS, SNACKS, EVO_STONE, dexTotal, normalizeGens } from "@/lib/game";
 import { teacherFetch } from "@/lib/teacherClient";
 
 interface StudentStat {
@@ -31,6 +31,7 @@ const shortDate = (s: string) => { const p = s.split("-"); return p.length === 3
 
 interface Props {
   showToast: (t: string) => void;
+  gens?: number[]; // 학급이 켠 세대 — 도감 분모 계산용
 }
 
 const GIFT_ITEMS: [string, string][] = [
@@ -41,7 +42,8 @@ const GIFT_ITEMS: [string, string][] = [
 ];
 
 // 통계 + 학생 관리 (명세 §5.4/5.5): 오답률 TOP10, 학생별 현황, 선물, 비밀번호 초기화.
-export default function StatsTab({ showToast }: Props) {
+export default function StatsTab({ showToast, gens }: Props) {
+  const dexTotalActive = dexTotal(normalizeGens(gens));
   const [students, setStudents] = useState<StudentStat[] | null>(null);
   const [summary, setSummary] = useState<Summary | null>(null);
   const [weakQuestions, setWeakQuestions] = useState<WeakQ[]>([]);
@@ -212,7 +214,7 @@ export default function StatsTab({ showToast }: Props) {
                       {s.correctRate !== null ? `${s.correctRate}%` : "—"}
                     </td>
                     <td style={{ padding: "7px 8px" }}>{s.todayCount}/{s.total}</td>
-                    <td style={{ padding: "7px 8px" }}>{s.dexCount}/151</td>
+                    <td style={{ padding: "7px 8px" }}>{s.dexCount}/{dexTotalActive}</td>
                     <td style={{ padding: "7px 8px" }}>{fmtDate(s.lastActive)}</td>
                     <td style={{ padding: "7px 8px", whiteSpace: "nowrap" }}>
                       <button onClick={() => setTagsFor(tagsFor === s.id ? null : s.id)} style={{ ...T.smallBtn, border: "1px solid #cdbdf0", color: "#6b46c1", marginRight: 4 }}>📊 단원</button>

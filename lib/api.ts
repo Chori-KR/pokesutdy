@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { SupabaseClient } from "@supabase/supabase-js";
 import { supabaseAdmin } from "@/lib/supabase/admin";
 import { getStudentSession, StudentSession } from "@/lib/studentSession";
-import { Inventory, DEFAULT_EXPLORE_LIMIT, DEFAULT_SOLVE_LIMIT, DEFAULT_BATTLE_LIMIT, DEFAULT_RARE_RATE, DEFAULT_SPECIAL_RATE, DEFAULT_LEGEND_RATE, DEFAULT_SHINY_RATE, DEFAULT_RAID_THRESHOLD, DEFAULT_RAID_REWARD_PTS } from "@/lib/game";
+import { Inventory, DEFAULT_EXPLORE_LIMIT, DEFAULT_SOLVE_LIMIT, DEFAULT_BATTLE_LIMIT, DEFAULT_RARE_RATE, DEFAULT_SPECIAL_RATE, DEFAULT_LEGEND_RATE, DEFAULT_SHINY_RATE, DEFAULT_RAID_THRESHOLD, DEFAULT_RAID_REWARD_PTS, MAX_DEX_ID, normalizeGens } from "@/lib/game";
 
 // 일일 상태 (day_state jsonb) — 자정(Asia/Seoul) 지나면 통째로 리셋 (명세 §4.7)
 export interface DayState {
@@ -129,6 +129,7 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
   const s = (data?.settings ?? {}) as {
     moveDiff?: boolean; exploreLimit?: number; solveLimit?: number; battleLimit?: number;
     timerOn?: boolean; timeScale?: number; rareRate?: number; specialRate?: number; legendRate?: number; shinyRate?: number;
+    gens?: number[]; // 등장 세대(1~9). 없으면 1세대만 — 기존 학급은 지금과 동일
     raid?: {
       on?: boolean; pid?: number; shiny?: boolean; round?: number;
       threshold?: number; rewardPts?: number; rewardItem?: string; rewardCount?: number;
@@ -138,7 +139,10 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
   const legendRate = Math.min(1, Math.max(0, Number(s.legendRate ?? DEFAULT_LEGEND_RATE)));
   const rareRate = Math.min(1 - legendRate, Math.max(0, Number(s.rareRate ?? DEFAULT_RARE_RATE)));
   const specialRate = Math.min(1 - legendRate - rareRate, Math.max(0, Number(s.specialRate ?? DEFAULT_SPECIAL_RATE)));
+  // 등장 세대: 잘못된 값·빈 배열이면 1세대로 안전 복귀
+  const gens = normalizeGens(s.gens);
   return {
+    gens,
     moveDiff: s.moveDiff !== false,
     exploreLimit: Math.max(0, Number(s.exploreLimit ?? DEFAULT_EXPLORE_LIMIT)),
     solveLimit: Math.max(0, Number(s.solveLimit ?? DEFAULT_SOLVE_LIMIT)),
@@ -151,7 +155,7 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
     shinyRate: Math.min(1, Math.max(0, Number(s.shinyRate ?? DEFAULT_SHINY_RATE))), // 이로치 확률
     raid: {                                                          // 레이드(형성평가)
       on: s.raid?.on === true,
-      pid: Math.min(151, Math.max(1, Number(s.raid?.pid ?? 1))),
+      pid: Math.min(MAX_DEX_ID, Math.max(1, Number(s.raid?.pid ?? 1))),
       shiny: s.raid?.shiny === true,
       round: Math.max(0, Number(s.raid?.round ?? 0)),
       threshold: Math.max(1, Number(s.raid?.threshold ?? DEFAULT_RAID_THRESHOLD)),

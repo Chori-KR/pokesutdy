@@ -12,6 +12,7 @@ import RaidSettings from "@/components/teacher/RaidSettings";
 import AdminStats from "@/components/teacher/AdminStats";
 import Brand from "@/components/Brand";
 import ThemeToggle from "@/components/ThemeToggle";
+import { ALL_GENS, GEN_RANGES, dexTotal, normalizeGens, NEW_CLASS_GENS } from "@/lib/game";
 
 // 관리자(앱 제작자) 이메일 — 이 계정으로 로그인했을 때만 '가입 현황' 탭이 보인다.
 // 실제 권한 검증은 서버(/api/admin/stats)에서 다시 하므로 여기선 표시 여부만 결정.
@@ -29,6 +30,7 @@ export interface ClassRow {
     battleLimit?: number;
     timerOn?: boolean;
     timeScale?: number;
+    gens?: number[];   // 등장 포켓몬 세대(1~9)
     rareRate?: number;
     specialRate?: number;
     legendRate?: number;
@@ -96,7 +98,8 @@ export default function TeacherHome({ session }: { session: Session }) {
       const class_code = generateClassCode();
       const { data, error } = await supa
         .from("classes")
-        .insert({ teacher_id: session.user.id, name, class_code })
+        // 새 학급 기본값: 1세대 + 최신(9세대) — 기존 학급은 설정이 없어 1세대만 유지된다
+        .insert({ teacher_id: session.user.id, name, class_code, settings: { gens: NEW_CLASS_GENS } })
         .select("*")
         .single();
       if (!error && data) {
@@ -116,6 +119,14 @@ export default function TeacherHome({ session }: { session: Session }) {
       }
     }
     setErr("학급 코드 발급에 실패했어요. 다시 시도해주세요.");
+  }
+
+  // 등장 세대 토글 — 최소 1개는 남겨야 한다(전부 끄면 출현할 포켓몬이 없음)
+  function toggleGen(g: number) {
+    const cur = normalizeGens(cls?.settings?.gens);
+    const next = cur.includes(g) ? cur.filter((x) => x !== g) : [...cur, g].sort((a, b) => a - b);
+    if (next.length === 0) { showToast("세대는 최소 1개는 켜져 있어야 해요."); return; }
+    updateSettings({ gens: next });
   }
 
   async function updateSettings(patch: Partial<ClassRow["settings"]>) {
@@ -200,7 +211,7 @@ export default function TeacherHome({ session }: { session: Session }) {
         />
       )}
 
-      {tab === "stats" && <StatsTab showToast={showToast} />}
+      {tab === "stats" && <StatsTab showToast={showToast} gens={cls.settings?.gens} />}
 
       {tab === "settings" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
@@ -208,6 +219,38 @@ export default function TeacherHome({ session }: { session: Session }) {
             <div style={{ fontSize: 14, fontWeight: 600, marginBottom: 6 }}>학급 코드</div>
             <div style={{ fontSize: 26, fontWeight: 700, letterSpacing: 2, color: "#3d6fd9" }}>{cls.class_code}</div>
             <div style={{ fontSize: 12, color: "#888", marginTop: 6 }}>학생들에게 이 코드를 알려주세요. 학생은 코드 + 닉네임 + 비밀번호만으로 가입해요.</div>
+          </div>
+          <div style={T.card}>
+            <div style={{ fontSize: 14, fontWeight: 600, marginBottom: 4 }}>등장 포켓몬 세대</div>
+            <div style={{ fontSize: 11, color: "#888", marginBottom: 8, lineHeight: 1.6 }}>
+              체크한 세대의 포켓몬만 야생에 등장하고 도감·오늘의 퀴즈에 나와요. 도감 번호는 전국도감 기준이라 바뀌지 않아요.<br />
+              세대를 꺼도 <b>이미 잡은 포켓몬은 사라지지 않아요</b> — 도감에 그대로 보관됩니다.
+            </div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+              {ALL_GENS.map((g) => {
+                const on = normalizeGens(cls.settings?.gens).includes(g);
+                const [lo, hi] = GEN_RANGES[g - 1];
+                return (
+                  <button
+                    key={g}
+                    onClick={() => toggleGen(g)}
+                    title={`${lo}~${hi}번`}
+                    style={{
+                      padding: "7px 11px", borderRadius: 9, cursor: "pointer", fontFamily: "inherit",
+                      border: on ? "2px solid #3d6fd9" : "1px solid #ddd",
+                      background: on ? "#eaf0ff" : "#fff", color: on ? "#2f4bc0" : "#666",
+                      fontWeight: on ? 700 : 500, fontSize: 12, lineHeight: 1.35,
+                    }}
+                  >
+                    {on ? "✓ " : ""}{g}세대
+                    <div style={{ fontSize: 10, opacity: 0.75 }}>{hi - lo + 1}마리</div>
+                  </button>
+                );
+              })}
+            </div>
+            <div style={{ fontSize: 12, color: "#3d6fd9", fontWeight: 600, marginTop: 8 }}>
+              선택한 도감 크기: {dexTotal(normalizeGens(cls.settings?.gens)).toLocaleString()}마리
+            </div>
           </div>
           <div style={T.card}>
             <label style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 13, cursor: "pointer" }}>

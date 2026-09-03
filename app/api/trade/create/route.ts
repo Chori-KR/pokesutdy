@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError, isMissingTrades, TRADES_HINT } from "@/lib/api";
-import { POOL } from "@/lib/game";
+import { POOL, MAX_DEX_ID } from "@/lib/game";
 
 // 교환 등록 (M9/M10): 내가 보유(1마리 이상)한 포켓몬을 걸고 6자리 숫자 코드를 만든다.
 // 실제 맞바꿈은 상대가 수락할 때 서버가 원자적으로 처리(여기선 포켓몬을 잡아두지 않음).
@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
 
   const body = await req.json().catch(() => null);
   const pid = Number(body?.pokemon_id);
-  if (!(pid >= 1 && pid <= 151)) return jsonError(400, "포켓몬이 올바르지 않아요.");
+  if (!(pid >= 1 && pid <= MAX_DEX_ID)) return jsonError(400, "포켓몬이 올바르지 않아요.");
 
   // 보유(1마리 이상) 확인
   const { data: rows } = await supa
