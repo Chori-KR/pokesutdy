@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireTeacher } from "@/lib/teacherApi";
 import { jsonError } from "@/lib/api";
-import { AI_PROVIDERS, AiProvider, callAi } from "@/lib/ai";
+import { AI_PROVIDERS, AiProvider, AiUserError, callAi } from "@/lib/ai";
 import { encryptApiKey } from "@/lib/aiCrypto";
 
 // 연결 테스트에서 Gemini 모델 탐색(후보 404 → 목록 조회)이 돌면 10초를 넘길 수 있어
@@ -26,6 +26,8 @@ export async function POST(req: NextRequest) {
   try {
     await callAi(provider, key, '연결 테스트입니다. JSON 배열 ["ok"] 만 출력하세요.');
   } catch (e) {
+    // 서버 혼잡은 키 문제가 아니므로 "키를 확인하라"고 하지 않는다
+    if (e instanceof AiUserError) return jsonError(503, e.message);
     return jsonError(400, `연결 테스트 실패 — 키를 다시 확인해주세요. (${e instanceof Error ? e.message.slice(0, 160) : "알 수 없는 오류"})`);
   }
 

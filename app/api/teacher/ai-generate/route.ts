@@ -3,7 +3,7 @@ import { requireTeacher } from "@/lib/teacherApi";
 import { jsonError } from "@/lib/api";
 import { seoulToday } from "@/lib/game";
 import {
-  AI_DAILY_LIMIT, AI_PROVIDERS, AiProvider,
+  AI_DAILY_LIMIT, AI_PROVIDERS, AiProvider, AiUserError,
   buildPrompt, callAi, parseQuestions,
 } from "@/lib/ai";
 import { decryptApiKey } from "@/lib/aiCrypto";
@@ -77,6 +77,8 @@ export async function POST(req: NextRequest) {
     const text = await callAi(provider, decryptApiKey(keyEnc), prompt);
     questions = parseQuestions(text);
   } catch (e) {
+    // 과부하·사용량 한도처럼 원인이 분명한 건 안내문만 그대로 보여준다
+    if (e instanceof AiUserError) return jsonError(503, e.message);
     return jsonError(502, `문제 생성에 실패했어요. 잠시 후 다시 시도하거나 개수를 줄여보세요. (${e instanceof Error ? e.message.slice(0, 160) : "알 수 없는 오류"})`);
   }
 
