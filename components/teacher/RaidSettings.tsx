@@ -38,6 +38,16 @@ export default function RaidSettings({ cls, setCls, showToast }: Props) {
   const on = raid.on === true;
   const round = Number(raid.round ?? 0);
 
+  // 보스 후보는 항상 학급이 켠 세대 안에서만 — 학생 신청 목록과 범위를 맞춘다.
+  // (세대 밖 포켓몬을 보스로 주면 지급받아도 학생 도감 진행률에 안 잡혀 혼란스럽다)
+  const activeGens = normalizeGens(cls.settings?.gens);
+  const inClassGens = POOL.filter((p) => activeGens.includes(p.gen));
+  // 고른 보스가 활성 세대 밖이면(기본값 1번이거나, 교사가 세대를 바꾼 경우) 첫 후보로 보정
+  useEffect(() => {
+    if (inClassGens.length && !inClassGens.some((p) => p.id === pid)) setPid(inClassGens[0].id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeGens.join(","), pid]);
+
   const loadReqs = async () => {
     try { const res = await teacherFetch("/api/teacher/raid-requests"); if (res.ok) setReqs(await res.json()); } catch { /* 무시 */ }
   };
@@ -76,8 +86,8 @@ export default function RaidSettings({ cls, setCls, showToast }: Props) {
   }
 
   const filtered = search.trim()
-    ? POOL.filter((p) => normalizeGens(cls.settings?.gens).includes(p.gen) && (p.name.includes(search.trim()) || String(p.id) === search.trim()))
-    : POOL;
+    ? inClassGens.filter((p) => p.name.includes(search.trim()) || String(p.id) === search.trim())
+    : inClassGens;
   const bossPid = on ? Number(raid.pid ?? 1) : pid;
 
   return (
