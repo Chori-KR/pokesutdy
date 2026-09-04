@@ -8,6 +8,10 @@ import type { Difficulty } from "@/lib/game";
 
 export type AiProvider = "gemini" | "openai" | "claude";
 
+// 교사에게 그대로 보여줘도 되는(원인·대처가 분명한) 오류.
+// 제공사 원문 대신 이 메시지를 그대로 노출한다.
+export class AiUserError extends Error {}
+
 export const AI_PROVIDERS: Record<AiProvider, { name: string; model: string; keyHelp: string }> = {
   gemini: { name: "Google Gemini", model: "flash(자동 선택)", keyHelp: "https://aistudio.google.com/apikey 에서 무료 발급 (권장)" },
   openai: { name: "OpenAI (ChatGPT)", model: "gpt-4o-mini", keyHelp: "https://platform.openai.com/api-keys 에서 발급 (유료 크레딧 필요)" },
@@ -72,54 +76,81 @@ ${formatBlock}`;
 }
 
 // ── 제공사별 어댑터: 프롬프트 → 응답 텍스트 ─────────────────────────────
-async function callGemini(key: string, prompt: string): Promise<string> {
-  let lastErr = "";
-  for (const model of GEMINI_MODELS) {
-    const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          // 순수 JSON만 받도록 강제 → 파싱 실패 감소 + 응답 지연 완화
-          generationConfig: { responseMimeType: "application/json", temperature: 0.7, maxOutputTokens: 4096 },
-        }),
-      }
-    );
-    if (res.status === 404) {
-      // 이 모델이 폐기/미지원 — 다음 후보 시도
-      lastErr = `Gemini 404 (${model})`;
-      continue;
-    }
-    if (!res.ok) throw new Error(`Gemini ${res.status}: ${await safeErr(res)}`);
-    const data = await res.json();
-    const parts = data?.candidates?.[0]?.content?.parts ?? [];
-    return parts.map((p: { text?: string }) => p.text ?? "").join("");
-  }
+// 일시적 장애(모델 과부하·속도 제한)는 조금 기다렸다 다시 부르면 대개 성공한다.
+// 503 = 모델 혼잡, 429 = 속도 제한, 500/502/504 = 일시적 서버 오류.
+const TRANSIENT = new Set([429, 500, 502, 503, 504]);
+const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
+// 라우트 실행 제한이 60초다. 재시도 자체는 30초 안에서만 시작한다 —
+// 마지막 시도가 20~25초 걸려도 60초 안에 끝나 제대로 된 오류를 돌려줄 수 있게.
+const RETRY_BUDGET_MS = 30_000;
 
-  // 후보가 전부 404 — 계정에서 실제 쓸 수 있는 flash 모델을 조회해 마지막으로 시도
-  const discovered = await discoverGeminiModel(key);
-  if (discovered) {
-    const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${discovered}:generateContent`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          // 순수 JSON만 받도록 강제 → 파싱 실패 감소 + 응답 지연 완화
-          generationConfig: { responseMimeType: "application/json", temperature: 0.7, maxOutputTokens: 4096 },
-        }),
-      }
-    );
+const geminiBody = (prompt: string) =>
+  JSON.stringify({
+    contents: [{ parts: [{ text: prompt }] }],
+    // 순수 JSON만 받도록 강제 → 파싱 실패 감소 + 응답 지연 완화
+    generationConfig: { responseMimeType: "application/json", temperature: 0.7, maxOutputTokens: 4096 },
+  });
+
+// 모델 하나를 호출한다. 일시적 장애면 짧게 기다렸다 한 번 더 시도.
+// 반환: 성공하면 텍스트, 실패하면 {status, err} — 호출부가 다음 후보로 넘길지 판단.
+async function geminiTry(
+  key: string, model: string, prompt: string, deadline: number
+): Promise<{ text: string } | { status: number; err: string }> {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
+  const delays = [0, 1500, 4000]; // 최초 + 재시도 2회
+  let last = { status: 0, err: "" };
+  for (const d of delays) {
+    if (d) {
+      if (Date.now() + d > deadline) break; // 시간이 없으면 재시도 포기
+      await wait(d);
+    }
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-goog-api-key": key },
+      body: geminiBody(prompt),
+    });
     if (res.ok) {
       const data = await res.json();
       const parts = data?.candidates?.[0]?.content?.parts ?? [];
-      return parts.map((p: { text?: string }) => p.text ?? "").join("");
+      return { text: parts.map((p: { text?: string }) => p.text ?? "").join("") };
     }
-    lastErr = `Gemini ${res.status} (${discovered}): ${await safeErr(res)}`;
+    last = { status: res.status, err: await safeErr(res) };
+    if (!TRANSIENT.has(res.status)) break; // 404·400 등은 재시도해도 소용없다
   }
+  return last;
+}
+
+async function callGemini(key: string, prompt: string): Promise<string> {
+  const deadline = Date.now() + RETRY_BUDGET_MS;
+  let lastErr = "";
+  let lastStatus = 0;
+  for (const model of GEMINI_MODELS) {
+    if (Date.now() > deadline) break;
+    const r = await geminiTry(key, model, prompt, deadline);
+    if ("text" in r) return r.text;
+    lastStatus = r.status;
+    lastErr = `Gemini ${r.status} (${model}): ${r.err}`;
+    // 404(폐기 모델)·일시적 혼잡 모두 다음 후보 모델로 넘어가 본다.
+    // 키/요청 자체가 잘못된 경우(400·401·403)는 다른 모델도 마찬가지라 즉시 중단.
+    if (r.status !== 404 && !TRANSIENT.has(r.status)) break;
+  }
+
+  // 후보가 전부 실패 — 계정에서 실제 쓸 수 있는 flash 모델을 조회해 마지막으로 시도
+  if ((lastStatus === 404 || TRANSIENT.has(lastStatus)) && Date.now() < deadline) {
+    const discovered = await discoverGeminiModel(key);
+    if (discovered) {
+      const r = await geminiTry(key, discovered, prompt, deadline);
+      if ("text" in r) return r.text;
+      lastErr = `Gemini ${r.status} (${discovered}): ${r.err}`;
+      lastStatus = r.status;
+    }
+  }
+
+  // 과부하는 교사 잘못이 아니므로 원인과 대처를 분명히 알려준다
+  if (lastStatus === 503)
+    throw new AiUserError("지금 구글 AI 서버가 붐벼요(503). 30초쯤 뒤에 다시 눌러주세요. 문제 개수를 줄이면 더 잘 됩니다.");
+  if (lastStatus === 429)
+    throw new AiUserError("무료 사용량 한도에 걸렸어요(429). 1분쯤 뒤에 다시 시도해주세요.");
   throw new Error(lastErr || "Gemini: 사용 가능한 모델을 찾지 못했어요.");
 }
 
@@ -146,8 +177,27 @@ async function discoverGeminiModel(key: string): Promise<string | null> {
   }
 }
 
+// 일시적 장애면 짧게 기다렸다 다시 시도하는 공통 래퍼
+async function fetchRetry(url: string, init: RequestInit, label: string): Promise<Response> {
+  const deadline = Date.now() + RETRY_BUDGET_MS;
+  const delays = [0, 1500, 4000];
+  let res: Response | null = null;
+  for (const d of delays) {
+    if (d) {
+      if (Date.now() + d > deadline) break;
+      await wait(d);
+    }
+    res = await fetch(url, init);
+    if (res.ok || !(TRANSIENT.has(res.status) || res.status === 529)) return res;
+  }
+  const r = res!;
+  if (r.status === 429)
+    throw new AiUserError(`${label} 사용량 한도에 걸렸어요(429). 1분쯤 뒤에 다시 시도해주세요.`);
+  throw new AiUserError(`지금 ${label} 서버가 붐벼요(${r.status}). 30초쯤 뒤에 다시 눌러주세요.`);
+}
+
 async function callOpenai(key: string, prompt: string): Promise<string> {
-  const res = await fetch("https://api.openai.com/v1/chat/completions", {
+  const res = await fetchRetry("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
     body: JSON.stringify({
@@ -155,14 +205,14 @@ async function callOpenai(key: string, prompt: string): Promise<string> {
       max_tokens: 4096,
       messages: [{ role: "user", content: prompt }],
     }),
-  });
+  }, "OpenAI");
   if (!res.ok) throw new Error(`OpenAI ${res.status}: ${await safeErr(res)}`);
   const data = await res.json();
   return data?.choices?.[0]?.message?.content ?? "";
 }
 
 async function callClaude(key: string, prompt: string): Promise<string> {
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
+  const res = await fetchRetry("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -174,7 +224,7 @@ async function callClaude(key: string, prompt: string): Promise<string> {
       max_tokens: 4096,
       messages: [{ role: "user", content: prompt }],
     }),
-  });
+  }, "Claude");
   if (!res.ok) throw new Error(`Claude ${res.status}: ${await safeErr(res)}`);
   const data = await res.json();
   if (data?.stop_reason === "refusal") throw new Error("Claude가 요청을 거절했어요.");

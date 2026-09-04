@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { T } from "@/lib/styles";
 import { DIFF, Difficulty } from "@/lib/game";
 import { supabaseBrowser } from "@/lib/supabase/browser";
@@ -46,6 +46,9 @@ export default function AiGenerate({ classId, hasAiKey, aiProvider, onRegistered
   const [counts, setCounts] = useState({ easy: 2, medium: 2, hard: 1 });
   const [extra, setExtra] = useState("");
   const [loading, setLoading] = useState(false);
+  const [elapsed, setElapsed] = useState(0); // 생성 경과 초 — 고정 안내 대신 실제 시간을 보여준다
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  useEffect(() => () => { if (timerRef.current) clearInterval(timerRef.current); }, []);
   const [err, setErr] = useState("");
   const [drafts, setDrafts] = useState<Draft[]>([]);
   const [usage, setUsage] = useState<{ used: number; limit: number } | null>(null);
@@ -58,6 +61,9 @@ export default function AiGenerate({ classId, hasAiKey, aiProvider, onRegistered
     setErr("");
     setLoading(true);
     setDrafts([]);
+    setElapsed(0);
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => setElapsed((n) => n + 1), 1000);
     try {
       const payload = mode === "special"
         ? { mode: "special", subject: spSubject, gradeBand: spBand, counts, extra, qtype }
@@ -87,6 +93,7 @@ export default function AiGenerate({ classId, hasAiKey, aiProvider, onRegistered
     } catch (e) {
       setErr(`연결에 실패했어요 (${e instanceof Error ? e.message.slice(0, 100) : "네트워크 오류"}). 다시 시도해주세요.`);
     } finally {
+      if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; }
       setLoading(false);
     }
   }
@@ -195,10 +202,17 @@ export default function AiGenerate({ classId, hasAiKey, aiProvider, onRegistered
           {err && <div style={{ fontSize: 12, color: "#a32d2d", marginBottom: 8 }}>{err}</div>}
           <div style={{ display: "flex", gap: 8 }}>
             <button onClick={generate} disabled={loading} style={{ ...T.primaryBtn, background: "#7c5cd9" }}>
-              {loading ? "생성 중... (10~30초)" : `문제 ${total}개 생성`}
+              {loading ? `생성 중... ${elapsed}초` : `문제 ${total}개 생성`}
             </button>
             <button onClick={onClose} style={T.secondaryBtn}>닫기</button>
           </div>
+          {loading && (
+            <div style={{ fontSize: 11, color: "#888", marginTop: 8, lineHeight: 1.6 }}>
+              {elapsed < 30
+                ? "AI가 문제를 만드는 중이에요. 창을 닫지 말고 기다려주세요."
+                : "조금 더 걸리고 있어요. 최대 1분까지 기다려요 — 실패하면 개수를 줄여서 다시 시도해주세요."}
+            </div>
+          )}
         </>
       ) : (
         <>
@@ -255,6 +269,13 @@ export default function AiGenerate({ classId, hasAiKey, aiProvider, onRegistered
             <button onClick={() => setDrafts([])} style={T.secondaryBtn}>다시 생성</button>
             <button onClick={onClose} style={T.secondaryBtn}>닫기</button>
           </div>
+          {loading && (
+            <div style={{ fontSize: 11, color: "#888", marginTop: 8, lineHeight: 1.6 }}>
+              {elapsed < 30
+                ? "AI가 문제를 만드는 중이에요. 창을 닫지 말고 기다려주세요."
+                : "조금 더 걸리고 있어요. 최대 1분까지 기다려요 — 실패하면 개수를 줄여서 다시 시도해주세요."}
+            </div>
+          )}
         </>
       )}
     </div>
