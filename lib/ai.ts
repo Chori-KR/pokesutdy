@@ -22,7 +22,11 @@ export const AI_PROVIDERS: Record<AiProvider, { name: string; model: string; key
 // gemini-flash-latest는 항상 최신 flash를 가리키는 공식 별칭.
 const GEMINI_MODELS = ["gemini-flash-latest", "gemini-3-flash", "gemini-2.5-flash"];
 
-export const AI_DAILY_LIMIT = 20; // 교사당 일일 생성 호출 제한 (명세 §5.3 남용 방지)
+// 교사당 일일 생성 한도 (명세 §5.3 남용 방지).
+// 호출 횟수가 아니라 "만든 문제 수"로 센다 — 요청을 작게 쪼개 보내도 손해가 없도록.
+export const AI_DAILY_QUESTIONS = 120;
+// 한 번의 호출로 만들 문제 수. 작게 잡아야 응답이 짧아 타임아웃·과부하에 안전하다.
+export const AI_BATCH_SIZE = 3;
 
 // ── 프롬프트 (프로토타입 teacher-menu의 출제 규칙 포팅, 명세 §5.2) ─────────
 export interface GenRequest {
