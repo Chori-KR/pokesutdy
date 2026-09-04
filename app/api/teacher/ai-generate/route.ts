@@ -3,7 +3,7 @@ import { requireTeacher } from "@/lib/teacherApi";
 import { jsonError } from "@/lib/api";
 import { seoulToday } from "@/lib/game";
 import {
-  AI_DAILY_LIMIT, AI_PROVIDERS, AiProvider, AiUserError,
+  AI_DAILY_QUESTIONS, AI_PROVIDERS, AiProvider, AiUserError,
   buildPrompt, callAi, parseQuestions,
 } from "@/lib/ai";
 import { decryptApiKey } from "@/lib/aiCrypto";
@@ -16,7 +16,8 @@ export const maxDuration = 60;
 
 // AI 문제 생성 (명세 §5.2): 입력 → 프롬프트 조립 → AI 호출 → 파싱·검증 → 검토용 초안 반환.
 // 등록은 하지 않는다 — 반드시 교사 검토 화면을 거쳐 승인분만 클라이언트가 등록.
-// 남용 방지: 교사당 하루 AI_DAILY_LIMIT회 (settings.aiDay에 날짜별 카운트).
+// 남용 방지: 교사당 하루 AI_DAILY_QUESTIONS문제 (settings.aiDay에 날짜별 누적 문제 수).
+// 클라이언트가 요청을 작게 쪼개 여러 번 부르므로, 호출 수가 아니라 문제 수로 센다.
 export async function POST(req: NextRequest) {
   const auth = await requireTeacher(req);
   if (auth instanceof NextResponse) return auth;
@@ -30,8 +31,8 @@ export async function POST(req: NextRequest) {
   const today = seoulToday();
   const aiDay = (cls.settings.aiDay ?? {}) as { date?: string; count?: number };
   const used = aiDay.date === today ? Number(aiDay.count ?? 0) : 0;
-  if (used >= AI_DAILY_LIMIT)
-    return jsonError(429, `오늘의 AI 생성 한도(${AI_DAILY_LIMIT}회)를 모두 썼어요. 내일 다시!`);
+  if (used >= AI_DAILY_QUESTIONS)
+    return jsonError(429, `오늘의 AI 생성 한도(${AI_DAILY_QUESTIONS}문제)를 모두 썼어요. 내일 다시!`);
 
   const body = await req.json().catch(() => null);
   const counts = {
@@ -82,11 +83,12 @@ export async function POST(req: NextRequest) {
     return jsonError(502, `문제 생성에 실패했어요. 잠시 후 다시 시도하거나 개수를 줄여보세요. (${e instanceof Error ? e.message.slice(0, 160) : "알 수 없는 오류"})`);
   }
 
-  // 성공 시에만 횟수 차감
-  const settings = { ...cls.settings, aiDay: { date: today, count: used + 1 } };
+  // 성공 시에만 차감 — 실제로 만들어진 문제 수만큼
+  const nextUsed = used + questions.length;
+  const settings = { ...cls.settings, aiDay: { date: today, count: nextUsed } };
   await supa.from("classes").update({ settings }).eq("id", cls.id);
 
-  return NextResponse.json({ questions, used: used + 1, limit: AI_DAILY_LIMIT });
+  return NextResponse.json({ questions, used: nextUsed, limit: AI_DAILY_QUESTIONS });
 }
 
 const clampCount = (v: unknown) => Math.max(0, Math.min(10, Number(v) || 0));

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { T } from "@/lib/styles";
 import { DIFF, Difficulty } from "@/lib/game";
+import { AI_BATCH_SIZE } from "@/lib/ai";
 import { supabaseBrowser } from "@/lib/supabase/browser";
 import { teacherFetch } from "@/lib/teacherClient";
 import type { QuestionRow } from "@/components/teacher/QuestionBank";
@@ -47,6 +48,7 @@ export default function AiGenerate({ classId, hasAiKey, aiProvider, onRegistered
   const [extra, setExtra] = useState("");
   const [loading, setLoading] = useState(false);
   const [elapsed, setElapsed] = useState(0); // 생성 경과 초 — 고정 안내 대신 실제 시간을 보여준다
+  const [made, setMade] = useState(0);       // 지금까지 만들어진 문제 수 (쪼갠 요청의 진행 상황)
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   useEffect(() => () => { if (timerRef.current) clearInterval(timerRef.current); }, []);
   const [err, setErr] = useState("");
@@ -55,6 +57,21 @@ export default function AiGenerate({ classId, hasAiKey, aiProvider, onRegistered
 
   const total = counts.easy + counts.medium + counts.hard;
 
+  // 한 번에 많이 요청하면 응답이 길어져 타임아웃·과부하에 걸리기 쉽다.
+  // 난이도 목록으로 펼친 뒤 AI_BATCH_SIZE개씩 잘라 여러 번 나눠 부른다.
+  function makeBatches(c: typeof counts): (typeof counts)[] {
+    const flat: Difficulty[] = [
+      ...Array(c.easy).fill("easy"), ...Array(c.medium).fill("medium"), ...Array(c.hard).fill("hard"),
+    ];
+    const out: (typeof counts)[] = [];
+    for (let i = 0; i < flat.length; i += AI_BATCH_SIZE) {
+      const part = { easy: 0, medium: 0, hard: 0 };
+      for (const d of flat.slice(i, i + AI_BATCH_SIZE)) part[d]++;
+      out.push(part);
+    }
+    return out;
+  }
+
   async function generate() {
     if (mode === "general" && !topic.trim()) { setErr("단원·주제를 입력해주세요 (예: 조선의 건국, 분수의 덧셈)"); return; }
     if (total < 1 || total > 10) { setErr("난이도별 개수 합계는 1~10개로 해주세요."); return; }
@@ -62,34 +79,44 @@ export default function AiGenerate({ classId, hasAiKey, aiProvider, onRegistered
     setLoading(true);
     setDrafts([]);
     setElapsed(0);
+    setMade(0);
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => setElapsed((n) => n + 1), 1000);
     try {
-      const payload = mode === "special"
-        ? { mode: "special", subject: spSubject, gradeBand: spBand, counts, extra, qtype }
-        : { subject, topic, grade, counts, extra, qtype };
-      const res = await teacherFetch("/api/teacher/ai-generate", {
-        method: "POST",
-        body: JSON.stringify(payload),
-      });
-      // 서버가 함수 타임아웃 등으로 죽으면 JSON이 아닌 응답(504 HTML)이 온다.
-      // 그럴 때 res.json()이 던지지 않게 텍스트로 먼저 받아 파싱한다.
-      const raw = await res.text();
-      let data: { error?: string; questions?: unknown; used?: number; limit?: number } | null = null;
-      try { data = JSON.parse(raw); } catch { /* JSON 아님 */ }
-      if (!res.ok) {
-        const timeout = res.status === 504 || res.status === 408 || res.status === 502;
-        setErr(
-          data?.error ??
-          (timeout
-            ? `시간이 초과됐어요 (HTTP ${res.status}). 문제 개수를 줄이거나 잠시 후 다시 시도해주세요.`
-            : `생성에 실패했어요 (HTTP ${res.status}).`)
-        );
-        return;
+      const batches = makeBatches(counts);
+      const all: Omit<Draft, "approved">[] = [];
+      for (let i = 0; i < batches.length; i++) {
+        const payload = mode === "special"
+          ? { mode: "special", subject: spSubject, gradeBand: spBand, counts: batches[i], extra, qtype }
+          : { subject, topic, grade, counts: batches[i], extra, qtype };
+        const res = await teacherFetch("/api/teacher/ai-generate", {
+          method: "POST",
+          body: JSON.stringify(payload),
+        });
+        // 서버가 함수 타임아웃 등으로 죽으면 JSON이 아닌 응답(504 HTML)이 온다.
+        // 그럴 때 res.json()이 던지지 않게 텍스트로 먼저 받아 파싱한다.
+        const raw = await res.text();
+        let data: { error?: string; questions?: unknown; used?: number; limit?: number } | null = null;
+        try { data = JSON.parse(raw); } catch { /* JSON 아님 */ }
+
+        if (!res.ok || !data?.questions) {
+          const timeout = res.status === 504 || res.status === 408;
+          const why = data?.error ?? (timeout
+            ? `시간이 초과됐어요 (HTTP ${res.status}).`
+            : `생성에 실패했어요 (HTTP ${res.status}).`);
+          // 앞 묶음에서 만든 문제는 살려두고, 못 만든 만큼만 알려준다
+          setErr(all.length
+            ? `${why} ${all.length}개까지는 만들었어요 — 아래에서 확인하고 등록하거나, 다시 생성해주세요.`
+            : why);
+          break;
+        }
+        const got = data.questions as Omit<Draft, "approved">[];
+        all.push(...got);
+        setMade(all.length);
+        setDrafts(all.map((q) => ({ ...q, approved: true }))); // 만들어지는 대로 바로 보여준다
+        setUsage({ used: data.used ?? 0, limit: data.limit ?? 0 });
       }
-      if (!data?.questions) { setErr("서버 응답을 해석하지 못했어요. 잠시 후 다시 시도해주세요."); return; }
-      setDrafts((data.questions as Omit<Draft, "approved">[]).map((q) => ({ ...q, approved: true })));
-      setUsage({ used: data.used ?? 0, limit: data.limit ?? 0 });
+      if (all.length === 0 && !err) setErr("문제를 만들지 못했어요. 잠시 후 다시 시도해주세요.");
     } catch (e) {
       setErr(`연결에 실패했어요 (${e instanceof Error ? e.message.slice(0, 100) : "네트워크 오류"}). 다시 시도해주세요.`);
     } finally {
@@ -140,7 +167,7 @@ export default function AiGenerate({ classId, hasAiKey, aiProvider, onRegistered
     <div style={{ ...T.card, marginBottom: 10, border: "2px solid #7c5cd9" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
         <div style={{ fontSize: 14, fontWeight: 600 }}>🤖 AI 문제 생성</div>
-        {usage && <span style={{ fontSize: 11, color: "#888" }}>오늘 {usage.used}/{usage.limit}회</span>}
+        {usage && <span style={{ fontSize: 11, color: "#888" }}>오늘 {usage.used}/{usage.limit}문제</span>}
       </div>
 
       {drafts.length === 0 ? (
@@ -194,7 +221,7 @@ export default function AiGenerate({ classId, hasAiKey, aiProvider, onRegistered
           </div>
           {aiProvider === "gemini" && (
             <div style={{ fontSize: 11, color: "#8a5a00", background: "#fdf3df", border: "1px solid #f0d9a8", borderRadius: 8, padding: "7px 10px", marginBottom: 8, lineHeight: 1.6 }}>
-              💡 <b>무료 Gemini</b>는 한 번에 <b>3~5개</b>가 가장 안정적이에요. 개수가 많으면 응답이 느려 실패할 수 있어요 — 실패하면 개수를 줄여 다시 시도해주세요.
+              💡 <b>무료 Gemini</b>도 걱정 마세요 — 요청을 <b>{AI_BATCH_SIZE}개씩 나눠서</b> 보내기 때문에 개수가 많아도 안전해요. 중간에 하나가 실패해도 그때까지 만든 문제는 그대로 남습니다.
             </div>
           )}
           <input value={tag} onChange={(e) => setTag(e.target.value)} placeholder="단원 태그 (비우면 '과목·주제'로 자동)" style={{ ...T.input, width: "100%", marginBottom: 8 }} />
@@ -202,15 +229,13 @@ export default function AiGenerate({ classId, hasAiKey, aiProvider, onRegistered
           {err && <div style={{ fontSize: 12, color: "#a32d2d", marginBottom: 8 }}>{err}</div>}
           <div style={{ display: "flex", gap: 8 }}>
             <button onClick={generate} disabled={loading} style={{ ...T.primaryBtn, background: "#7c5cd9" }}>
-              {loading ? `생성 중... ${elapsed}초` : `문제 ${total}개 생성`}
+              {loading ? `생성 중... ${made}/${total}개 · ${elapsed}초` : `문제 ${total}개 생성`}
             </button>
             <button onClick={onClose} style={T.secondaryBtn}>닫기</button>
           </div>
           {loading && (
             <div style={{ fontSize: 11, color: "#888", marginTop: 8, lineHeight: 1.6 }}>
-              {elapsed < 30
-                ? "AI가 문제를 만드는 중이에요. 창을 닫지 말고 기다려주세요."
-                : "조금 더 걸리고 있어요. 최대 1분까지 기다려요 — 실패하면 개수를 줄여서 다시 시도해주세요."}
+              {`${AI_BATCH_SIZE}개씩 나눠서 만들고 있어요. 만들어지는 대로 아래에 바로 나타나요 — 창을 닫지 말고 기다려주세요.`}
             </div>
           )}
         </>
@@ -271,9 +296,7 @@ export default function AiGenerate({ classId, hasAiKey, aiProvider, onRegistered
           </div>
           {loading && (
             <div style={{ fontSize: 11, color: "#888", marginTop: 8, lineHeight: 1.6 }}>
-              {elapsed < 30
-                ? "AI가 문제를 만드는 중이에요. 창을 닫지 말고 기다려주세요."
-                : "조금 더 걸리고 있어요. 최대 1분까지 기다려요 — 실패하면 개수를 줄여서 다시 시도해주세요."}
+              {`${AI_BATCH_SIZE}개씩 나눠서 만들고 있어요. 만들어지는 대로 아래에 바로 나타나요 — 창을 닫지 말고 기다려주세요.`}
             </div>
           )}
         </>
