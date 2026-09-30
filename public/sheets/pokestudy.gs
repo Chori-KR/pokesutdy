@@ -22,7 +22,12 @@ const SH = { status: '학생현황', log: '문제기록', all: '반 전체', tpl
 const STUDENT_PREFIX = '👤 ';
 const LOG_HEAD = ['날짜시각', '이름', '상황', '과목', '단원', '난이도', '정답', '문항', '정답 보기', '기록ID'];
 const STATUS_HEAD = ['이름', '레벨', '포인트', '도감', '가입일', '푼 문항', '정답률', '오늘 푼 문항', '최근 활동'];
-const PROP = { url: 'EXPORT_URL', owner: 'EXPORT_SHEET_ID', cursor: 'EXPORT_CURSOR', cls: 'EXPORT_CLASS' };
+const PROP = { url: 'EXPORT_URL', owner: 'EXPORT_SHEET_ID', cursor: 'EXPORT_CURSOR', cls: 'EXPORT_CLASS', layout: 'LAYOUT_VERSION', autoHidden: 'AUTO_HIDDEN' };
+
+// 대시보드 모양 버전 — 모양을 바꿀 때 올린다. 시트의 버전이 이보다 낮으면
+// 다음 가져오기 때 반 전체·학생 탭을 자동으로 새 모양으로 다시 그린다(기록은 그대로).
+const LAYOUT_VERSION = 2;
+const SCRIPT_VERSION = '2026-09-30';
 const PERIODS = ['이번 주', '지난 주', '이번 달', '지난 달', '최근 30일', '전체', '직접 입력'];
 const LOG = "'" + SH.log + "'!A2:J";
 
@@ -43,7 +48,6 @@ function onOpen() {
     .addItem('⏸ 자동 가져오기 끄기', 'disableAutoSync')
     .addSeparator()
     .addItem('🔁 기록 전부 다시 받기', 'resyncAll')
-    .addItem('🎨 대시보드 모양 새로 고치기', 'rebuildDashboards')
     .addItem('🧹 배포용으로 비우기 (템플릿 만드는 분만)', 'clearForTemplate')
     .addToUi();
 }
@@ -53,7 +57,7 @@ function onOpen() {
 function setupSheets() {
   const ss = SpreadsheetApp.getActive();
   ss.setSpreadsheetTimeZone('Asia/Seoul');
-  ensureSheets_(ss, true);
+  rebuildAll_(ss);
   SpreadsheetApp.getUi().alert(
     '✅ 시트 준비 완료',
     '학생현황 · 문제기록 · 반 전체 탭을 만들었어요.\n\n' +
@@ -85,7 +89,8 @@ function ensureSheets_(ss, rebuild) {
     st.getRange(1, 1, 1, STATUS_HEAD.length).setValues([STATUS_HEAD]).setFontWeight('bold').setBackground('#eef1f8');
     st.setFrozenRows(1);
     [90, 50, 70, 50, 90, 65, 65, 85, 125].forEach((w, i) => st.setColumnWidth(i + 1, w));
-    st.getRange('K1:K3').setValues([['마지막 가져오기'], [''], ['']]);
+    st.getRange('K1:K5').setValues([['마지막 가져오기'], [''], [''], ['스크립트 버전'], ['']]);
+    st.getRange('K4').setFontWeight('bold');
     st.getRange('K1').setFontWeight('bold');
     st.setColumnWidth(11, 170);
   }
@@ -329,6 +334,8 @@ function sync_() {
     const ss = SpreadsheetApp.getActive();
     const p = PropertiesService.getDocumentProperties();
     ensureSheets_(ss, false);
+    // 새 코드를 붙여넣은 뒤 첫 가져오기: 모든 대시보드를 새 모양으로
+    if (Number(p.getProperty(PROP.layout) || 0) < LAYOUT_VERSION) rebuildAll_(ss);
 
     let cursor = cfg.cursor, students = null, cls = null, added = 0, more = false;
     const started = Date.now();
@@ -389,6 +396,10 @@ function ensureStudentTabs_(ss, students) {
   const alive = {};
   let created = 0, hidden = 0, shown = 0;
   const tpl = ss.getSheetByName(SH.tpl);
+  // 스크립트가 숨긴 탭(=앱에서 삭제된 학생) 목록. 선생님이 직접 숨긴 탭과 구분하려고 기억해 둔다.
+  const p = PropertiesService.getDocumentProperties();
+  let auto = {};
+  try { auto = JSON.parse(p.getProperty(PROP.autoHidden) || '{}'); } catch (e) { auto = {}; }
   (students || []).forEach(function (s) {
     const name = tabName_(s.nickname);
     alive[name] = true;
@@ -398,8 +409,9 @@ function ensureStudentTabs_(ss, students) {
       sh.getRange('B3').setNumberFormat('@').setValue(String(s.nickname));
       sh.showSheet();
       created++;
-    } else if (sh.isSheetHidden()) {
-      sh.showSheet(); // 숨겨졌던 학생이 다시 가입한 경우
+    } else if (sh.isSheetHidden() && auto[name]) {
+      sh.showSheet(); // 삭제돼서 숨겼던 학생이 다시 가입한 경우 (선생님이 숨긴 탭은 그대로 둔다)
+      delete auto[name];
       shown++;
     }
     gid[s.nickname] = sh.getSheetId();
@@ -409,9 +421,10 @@ function ensureStudentTabs_(ss, students) {
   safe_('삭제된 학생 탭 숨기기', function () {
     ss.getSheets().forEach(function (sh) {
       const n = sh.getName();
-      if (n.indexOf(STUDENT_PREFIX) === 0 && !alive[n] && !sh.isSheetHidden()) { sh.hideSheet(); hidden++; }
+      if (n.indexOf(STUDENT_PREFIX) === 0 && !alive[n] && !sh.isSheetHidden()) { sh.hideSheet(); auto[n] = true; hidden++; }
     });
   });
+  p.setProperty(PROP.autoHidden, JSON.stringify(auto));
   // 대시보드가 중심이 되도록 학생 탭을 앞에 두고, 원본 기록(문제기록)은 맨 뒤로 보낸다
   if (created) safe_('탭 순서', function () {
     const cur = ss.getActiveSheet();
@@ -450,6 +463,8 @@ function updateStatus_(ss, students, gid, cls) {
   }
   sh.getRange('K2').setValue(new Date()).setNumberFormat('yyyy-mm-dd hh:mm');
   if (cls) sh.getRange('K3').setValue(cls.name + ' (' + cls.code + ')');
+  sh.getRange('K4:K5').setValues([['스크립트 버전'], [SCRIPT_VERSION + ' · 모양 ' + LAYOUT_VERSION]]);
+  sh.getRange('K4').setFontWeight('bold');
 }
 
 // ── 자동 가져오기 ────────────────────────────────────────────
@@ -497,15 +512,9 @@ function resyncAll() {
   syncNow();
 }
 
-// 대시보드(반 전체·학생 탭)를 최신 모양으로 다시 그린다. 기록(문제기록)은 건드리지 않는다.
-// 탭 자체는 그대로 두고 안을 다시 그리므로 학생현황의 이름 링크도 그대로 유지된다.
-function rebuildDashboards() {
-  const ui = SpreadsheetApp.getUi();
-  if (ui.alert('대시보드 모양 새로 고치기',
-    '반 전체와 모든 학생 탭을 최신 모양으로 다시 그려요.\n기록은 그대로예요.\n\n' +
-    '(학생 탭에 직접 적어 두신 메모나 바꾼 색이 있다면 사라져요)\n\n계속할까요?',
-    ui.ButtonSet.YES_NO) !== ui.Button.YES) return;
-  const ss = SpreadsheetApp.getActive();
+// 대시보드(반 전체·학생템플릿·학생 탭)를 최신 모양으로 다시 그린다. 기록(문제기록)은 건드리지 않는다.
+// 탭은 그대로 두고 안만 다시 그리므로 학생현황의 이름 링크와 숨김 상태도 유지된다.
+function rebuildAll_(ss) {
   ensureSheets_(ss, true); // 반 전체 + 학생템플릿
   let n = 0;
   ss.getSheets().forEach(function (sh) {
@@ -517,7 +526,8 @@ function rebuildDashboards() {
     if (wasHidden) sh.hideSheet();
     n++;
   });
-  ui.alert('🎨 반 전체와 학생 탭 ' + n + '개를 새 모양으로 바꿨어요.');
+  PropertiesService.getDocumentProperties().setProperty(PROP.layout, String(LAYOUT_VERSION));
+  return n;
 }
 
 // 템플릿을 다른 선생님께 나눠 드리기 전에: 기록·학생 탭·연동 주소를 모두 지운다.
