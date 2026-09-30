@@ -102,7 +102,7 @@ export default function SheetsGuide() {
       <div style={box}>
         <b>6단계 — 자동 가져오기 켜기</b>
         <div style={sub}>
-          <span style={menu}>⏱ 자동 가져오기 켜기</span>를 누르면 <b>30분마다</b> 새 기록이 저절로 쌓여요.
+          <span style={menu}>⏱ 자동 가져오기 켜기</span>를 누르면 <b>5분마다</b> 새 기록이 저절로 쌓여요. 바로 보고 싶을 땐 <span style={menu}>③ 지금 가져오기</span>를 누르면 돼요.
           시트를 닫아 두어도 됩니다. 이제 끝! 🎉
         </div>
       </div>
