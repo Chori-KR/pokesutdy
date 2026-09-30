@@ -9,6 +9,7 @@ import QuestionBank, { QuestionRow } from "@/components/teacher/QuestionBank";
 import StatsTab from "@/components/teacher/StatsTab";
 import AiKeySettings from "@/components/teacher/AiKeySettings";
 import RaidSettings from "@/components/teacher/RaidSettings";
+import SheetExportSettings from "@/components/teacher/SheetExportSettings";
 import AdminStats from "@/components/teacher/AdminStats";
 import Brand from "@/components/Brand";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -42,6 +43,7 @@ export interface ClassRow {
     aiProvider?: string;
     aiKeyEnc?: string;
     aiKeyHint?: string;
+    exportToken?: string; // 구글 시트 연동 토큰 (학생에게는 내보내지 않음)
   };
 }
 
@@ -383,6 +385,7 @@ export default function TeacherHome({ session }: { session: Session }) {
           </div>
           <RaidSettings cls={cls} setCls={setCls} showToast={showToast} />
           <AiKeySettings cls={cls} setCls={setCls} showToast={showToast} />
+          <SheetExportSettings cls={cls} setCls={setCls} showToast={showToast} />
         </div>
       )}
 
