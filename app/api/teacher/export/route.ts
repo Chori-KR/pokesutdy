@@ -38,7 +38,7 @@ export async function GET(req: NextRequest) {
     return jsonError(500, "기록을 불러오지 못했어요.");
   }
 
-  const head = ["날짜시각", "닉네임", "상황", "과목", "단원", "난이도", "정답", "문항", "정답 보기"];
+  const head = ["날짜시각", "이름", "상황", "과목", "단원", "난이도", "정답", "문항", "정답 보기"];
   const lines = [head.join(",")];
   for (const [, at, nick, ctx, subj, unit, diff, ok, body, ans] of rows)
     lines.push([seoulTime(at), nick, ctx, subj, unit, diff, ok ? "O" : "X", body, ans].map(cell).join(","));
