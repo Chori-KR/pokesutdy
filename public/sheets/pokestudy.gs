@@ -20,8 +20,8 @@
 
 const SH = { status: '학생현황', log: '문제기록', all: '반 전체', tpl: '_학생템플릿' };
 const STUDENT_PREFIX = '👤 ';
-const LOG_HEAD = ['날짜시각', '닉네임', '상황', '과목', '단원', '난이도', '정답', '문항', '정답 보기', '기록ID'];
-const STATUS_HEAD = ['닉네임', '레벨', '포인트', '도감', '가입일', '푼 문항', '정답률', '오늘 푼 문항', '최근 활동'];
+const LOG_HEAD = ['날짜시각', '이름', '상황', '과목', '단원', '난이도', '정답', '문항', '정답 보기', '기록ID'];
+const STATUS_HEAD = ['이름', '레벨', '포인트', '도감', '가입일', '푼 문항', '정답률', '오늘 푼 문항', '최근 활동'];
 const PROP = { url: 'EXPORT_URL', owner: 'EXPORT_SHEET_ID', cursor: 'EXPORT_CURSOR', cls: 'EXPORT_CLASS' };
 const PERIODS = ['이번 주', '지난 주', '이번 달', '지난 달', '최근 30일', '전체', '직접 입력'];
 const LOG = "'" + SH.log + "'!A2:J";
@@ -63,6 +63,7 @@ function setupSheets() {
 // rebuild=true 이면 반 전체·학생템플릿 대시보드를 새로 그린다(문제기록은 건드리지 않음)
 function ensureSheets_(ss, rebuild) {
   let log = ss.getSheetByName(SH.log);
+  if (log) log.getRange(1, 1, 1, LOG_HEAD.length).setValues([LOG_HEAD]); // 이미 있는 시트도 제목 줄 최신화
   if (!log) {
     log = ss.insertSheet(SH.log);
     log.getRange(1, 1, 1, LOG_HEAD.length).setValues([LOG_HEAD]).setFontWeight('bold').setBackground('#eef1f8');
@@ -77,6 +78,7 @@ function ensureSheets_(ss, rebuild) {
   }
 
   let st = ss.getSheetByName(SH.status);
+  if (st) st.getRange(1, 1, 1, STATUS_HEAD.length).setValues([STATUS_HEAD]); // 이미 있는 시트도 제목 줄 최신화
   if (!st) {
     st = ss.insertSheet(SH.status, 0);
     st.getRange(1, 1, 1, STATUS_HEAD.length).setValues([STATUS_HEAD]).setFontWeight('bold').setBackground('#eef1f8');
@@ -360,7 +362,7 @@ function appendLogs_(ss, logs) {
   }
   const rows = [];
   logs.forEach(function (l) {
-    // l = [기록ID, 시각, 닉네임, 상황, 과목, 단원, 난이도, 정답(1/0), 문항, 정답 보기]
+    // l = [기록ID, 시각, 이름(앱의 닉네임), 상황, 과목, 단원, 난이도, 정답(1/0), 문항, 정답 보기]
     if (seen[String(l[0])]) return;
     rows.push([new Date(l[1]), l[2], l[3], l[4], l[5], l[6], Number(l[7]), l[8], l[9], String(l[0])]);
   });
