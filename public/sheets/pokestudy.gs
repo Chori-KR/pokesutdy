@@ -301,7 +301,9 @@ function syncNow() {
     ui.alert('✅ 가져오기 완료',
       '새 기록 ' + r.added + '개를 가져왔어요.' +
       (r.more ? '\n\n아직 남은 기록이 있어요. 한 번 더 눌러 주세요.' : '') +
-      (r.newTabs ? '\n새 학생 탭 ' + r.newTabs + '개를 만들었어요.' : ''),
+      (r.newTabs ? '\n새 학생 탭 ' + r.newTabs + '개를 만들었어요.' : '') +
+      (r.hiddenTabs ? '\n앱에서 삭제된 학생 탭 ' + r.hiddenTabs + '개를 숨겼어요. (아래 ☰ 버튼에서 다시 볼 수 있어요)' : '') +
+      (r.shownTabs ? '\n다시 가입한 학생 탭 ' + r.shownTabs + '개를 다시 보이게 했어요.' : ''),
       ui.ButtonSet.OK);
   } catch (e) {
     ui.alert('가져오지 못했어요', e.message, ui.ButtonSet.OK);
@@ -337,7 +339,7 @@ function sync_() {
 
     const tabs = ensureStudentTabs_(ss, students);
     updateStatus_(ss, students, tabs.gid, cls);
-    return { added: added, more: more, newTabs: tabs.created };
+    return { added: added, more: more, newTabs: tabs.created, hiddenTabs: tabs.hidden, shownTabs: tabs.shown };
   } finally {
     lock.releaseLock();
   }
@@ -379,18 +381,31 @@ function tabName_(nickname) {
 
 function ensureStudentTabs_(ss, students) {
   const gid = {};
-  let created = 0;
+  const alive = {};
+  let created = 0, hidden = 0, shown = 0;
   const tpl = ss.getSheetByName(SH.tpl);
   (students || []).forEach(function (s) {
     const name = tabName_(s.nickname);
+    alive[name] = true;
     let sh = ss.getSheetByName(name);
     if (!sh) {
       sh = tpl.copyTo(ss).setName(name);
       sh.getRange('B3').setNumberFormat('@').setValue(String(s.nickname));
       sh.showSheet();
       created++;
+    } else if (sh.isSheetHidden()) {
+      sh.showSheet(); // 숨겨졌던 학생이 다시 가입한 경우
+      shown++;
     }
     gid[s.nickname] = sh.getSheetId();
+  });
+  // 앱에서 삭제된 학생의 탭은 지우지 않고 숨긴다 — 받아 둔 기록과 대시보드는 그대로 보존.
+  // 다시 보려면 시트 아래쪽 [☰ 모든 시트] 버튼에서 숨긴 탭을 누르면 된다.
+  safe_('삭제된 학생 탭 숨기기', function () {
+    ss.getSheets().forEach(function (sh) {
+      const n = sh.getName();
+      if (n.indexOf(STUDENT_PREFIX) === 0 && !alive[n] && !sh.isSheetHidden()) { sh.hideSheet(); hidden++; }
+    });
   });
   // 대시보드가 중심이 되도록 학생 탭을 앞에 두고, 원본 기록(문제기록)은 맨 뒤로 보낸다
   if (created) safe_('탭 순서', function () {
@@ -399,7 +414,7 @@ function ensureStudentTabs_(ss, students) {
     ss.moveActiveSheet(ss.getNumSheets());
     if (cur) ss.setActiveSheet(cur);
   });
-  return { gid: gid, created: created };
+  return { gid: gid, created: created, hidden: hidden, shown: shown };
 }
 
 function updateStatus_(ss, students, gid, cls) {
