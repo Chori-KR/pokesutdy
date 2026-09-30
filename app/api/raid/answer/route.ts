@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { requireStudent, jsonError } from "@/lib/api";
+import { requireStudent, jsonError, insertAnswerLog } from "@/lib/api";
 
 // 레이드 답안 기록 — 배틀(/api/battle/answer)과 같이 서버가 정답을 대조해
 // 풀이 기록(answer_logs, context='raid')과 문항 통계(tries/wrong)를 남긴다.
@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
 
   const { data: q } = await supa
     .from("questions")
-    .select("id, answer_idx, tries, wrong")
+    .select("id, answer_idx, tries, wrong, tag, difficulty, body, options, type")
     .eq("id", questionId)
     .eq("class_id", student.class_id)
     .single();
@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
   const correct = chosenIdx !== null && chosenIdx === q.answer_idx;
   await Promise.all([
     supa.from("questions").update({ tries: q.tries + 1, wrong: q.wrong + (correct ? 0 : 1) }).eq("id", q.id),
-    supa.from("answer_logs").insert({ student_id: student.id, question_id: q.id, correct, context: "raid" }),
+    insertAnswerLog(supa, { student_id: student.id, question_id: q.id, correct, context: "raid" }, q),
   ]);
   return NextResponse.json({ ok: true, correct });
 }

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { requireStudent, jsonError } from "@/lib/api";
+import { requireStudent, jsonError, insertAnswerLog } from "@/lib/api";
 import { applyXp } from "@/lib/game";
 
 // 배틀 답안 기록 — 서버가 정답을 대조해 통계(tries/wrong)와
@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
 
   const { data: q } = await supa
     .from("questions")
-    .select("id, answer_idx, tries, wrong, class_id")
+    .select("id, answer_idx, tries, wrong, class_id, tag, difficulty, body, options, type")
     .eq("id", questionId)
     .eq("class_id", student.class_id)
     .single();
@@ -36,14 +36,7 @@ export async function POST(req: NextRequest) {
         .update({ tries: q.tries + 1, wrong: q.wrong + (correct ? 0 : 1) })
         .eq("id", q.id)
     ),
-    Promise.resolve(
-      supa.from("answer_logs").insert({
-        student_id: student.id,
-        question_id: q.id,
-        correct,
-        context: "battle",
-      })
-    ),
+    insertAnswerLog(supa, { student_id: student.id, question_id: q.id, correct, context: "battle" }, q),
   ];
 
   let xp = student.xp;
