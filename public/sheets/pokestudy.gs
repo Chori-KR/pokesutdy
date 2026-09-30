@@ -5,7 +5,7 @@
  *   1) 이 코드를 구글 시트의 [확장 프로그램 → Apps Script]에 통째로 붙여넣고 저장
  *   2) 시트를 새로고침하면 위쪽에 [🎮 잡으면서 배우자] 메뉴가 생깁니다
  *   3) 메뉴 순서대로 ① 처음 설정하기 → ② 연동 주소 넣기 → ③ 지금 가져오기
- *   4) [자동 가져오기 켜기]를 누르면 30분마다 새 기록이 저절로 쌓입니다
+ *   4) [자동 가져오기 켜기]를 누르면 5분마다 새 기록이 저절로 쌓입니다
  *
  * 만들어지는 탭
  *   학생현황     — 학생별 요약 (가져올 때마다 새로 씀)
@@ -39,7 +39,7 @@ function onOpen() {
     .addItem('② 연동 주소 넣기', 'setExportUrl')
     .addItem('③ 지금 가져오기', 'syncNow')
     .addSeparator()
-    .addItem('⏱ 자동 가져오기 켜기 (30분마다)', 'enableAutoSync')
+    .addItem('⏱ 자동 가져오기 켜기 (5분마다)', 'enableAutoSync')
     .addItem('⏸ 자동 가져오기 끄기', 'disableAutoSync')
     .addSeparator()
     .addItem('🔁 기록 전부 다시 받기', 'resyncAll')
@@ -431,9 +431,11 @@ function enableAutoSync() {
     return;
   }
   removeTriggers_();
-  ScriptApp.newTrigger('autoSync').timeBased().everyMinutes(30).create();
+  // 구글이 허용하는 간격은 1·5·10·15·30분. 5분이면 수업 중에도 거의 바로 보이고,
+  // 하루 실행 시간 한도(개인 계정 90분)에도 넉넉하다(1회 몇 초 × 하루 288회).
+  ScriptApp.newTrigger('autoSync').timeBased().everyMinutes(5).create();
   SpreadsheetApp.getUi().alert('⏱ 자동 가져오기를 켰어요',
-    '이제 30분마다 새 기록이 저절로 쌓여요.\n시트를 닫아 두어도 괜찮아요.',
+    '이제 5분마다 새 기록이 저절로 쌓여요.\n시트를 닫아 두어도 괜찮아요.\n바로 보고 싶을 땐 [③ 지금 가져오기]를 누르세요.',
     SpreadsheetApp.getUi().ButtonSet.OK);
 }
 
