@@ -43,6 +43,7 @@ function onOpen() {
     .addItem('⏸ 자동 가져오기 끄기', 'disableAutoSync')
     .addSeparator()
     .addItem('🔁 기록 전부 다시 받기', 'resyncAll')
+    .addItem('🎨 대시보드 모양 새로 고치기', 'rebuildDashboards')
     .addItem('🧹 배포용으로 비우기 (템플릿 만드는 분만)', 'clearForTemplate')
     .addToUi();
 }
@@ -140,7 +141,7 @@ function buildDashboard_(sh, who) {
   sh.getRange('B5:B6').setNumberFormat('yyyy-mm-dd');
   sh.getRange('C5:C6').setValues([['직접 입력 →'], ['직접 입력 →']]).setFontColor('#999999');
   sh.getRange('D5:D6').setNumberFormat('yyyy-mm-dd').setBackground('#fff8e1');
-  sh.getRange('E4').setValue('← 기간을 고르면 아래 표·그래프가 모두 바뀌어요').setFontColor('#999999');
+  sh.getRange('C4').setValue('← 고르면 아래가 모두 바뀌어요').setFontColor('#999999');
 
   // 모든 표가 함께 쓰는 조건(기간 + 학생) — Z열에 두고 숨긴다
   sh.getRange('Z1').setFormula(
@@ -224,8 +225,12 @@ function buildDashboard_(sh, who) {
       .addRange(sh.getRange('M26:N300'))
       .setNumHeaders(1)
       .setOption('title', '날짜별 정답률')
-      .setOption('legend', { position: 'none' })
-      .setOption('vAxis', { format: 'percent', viewWindow: { min: 0, max: 1 } })
+      .setOption('legend.position', 'none')
+      .setOption('vAxis.format', 'percent')
+      .setOption('vAxis.viewWindow.min', 0) // 세로축을 항상 0~100%로 고정
+      .setOption('vAxis.viewWindow.max', 1)
+      .setOption('vAxis.minValue', 0)
+      .setOption('vAxis.maxValue', 1)
       .setOption('pointSize', 5)
       .setOption('width', 520).setOption('height', 195)
       .setPosition(1, 7, 0, 0) // 위쪽 빈 자리(G1~N10). 표 제목은 11행부터라 겹치지 않는다
@@ -490,6 +495,29 @@ function resyncAll() {
   p.deleteProperty(PROP.cursor);
   p.deleteProperty(PROP.cls);
   syncNow();
+}
+
+// 대시보드(반 전체·학생 탭)를 최신 모양으로 다시 그린다. 기록(문제기록)은 건드리지 않는다.
+// 탭 자체는 그대로 두고 안을 다시 그리므로 학생현황의 이름 링크도 그대로 유지된다.
+function rebuildDashboards() {
+  const ui = SpreadsheetApp.getUi();
+  if (ui.alert('대시보드 모양 새로 고치기',
+    '반 전체와 모든 학생 탭을 최신 모양으로 다시 그려요.\n기록은 그대로예요.\n\n' +
+    '(학생 탭에 직접 적어 두신 메모나 바꾼 색이 있다면 사라져요)\n\n계속할까요?',
+    ui.ButtonSet.YES_NO) !== ui.Button.YES) return;
+  const ss = SpreadsheetApp.getActive();
+  ensureSheets_(ss, true); // 반 전체 + 학생템플릿
+  let n = 0;
+  ss.getSheets().forEach(function (sh) {
+    const name = sh.getName();
+    if (name.indexOf(STUDENT_PREFIX) !== 0) return;
+    const who = String(sh.getRange('B3').getValue() || name.slice(STUDENT_PREFIX.length));
+    const wasHidden = sh.isSheetHidden();
+    buildDashboard_(sh, who);
+    if (wasHidden) sh.hideSheet();
+    n++;
+  });
+  ui.alert('🎨 반 전체와 학생 탭 ' + n + '개를 새 모양으로 바꿨어요.');
 }
 
 // 템플릿을 다른 선생님께 나눠 드리기 전에: 기록·학생 탭·연동 주소를 모두 지운다.
