@@ -1,5 +1,6 @@
 import { randomBytes } from "crypto";
 import { SupabaseClient } from "@supabase/supabase-js";
+import { isMissingColumn } from "@/lib/api";
 
 // 구글 시트 연동 — 학급의 풀이 기록을 시트(Apps Script)가 가져갈 수 있게 내보낸다.
 //
@@ -93,6 +94,11 @@ export async function exportStudents(supa: SupabaseClient, classId: string): Pro
   }));
 }
 
+interface LogRow {
+  id: string; student_id: string; question_id: string | null; correct: boolean; context: string; created_at: string;
+  q_tag?: string | null; q_difficulty?: string | null; q_body?: string | null; q_answer?: string | null;
+}
+
 // cursor = "created_at|id" — 마지막으로 받은 행. 비어 있으면 처음부터.
 export async function exportLogs(supa: SupabaseClient, classId: string, cursor: string) {
   const { data: studs } = await supa.from("students").select("id, nickname").eq("class_id", classId);
@@ -100,39 +106,50 @@ export async function exportLogs(supa: SupabaseClient, classId: string, cursor: 
   if (nick.size === 0) return { rows: [] as ExportLogRow[], cursor, done: true };
 
   const [curTs, curId] = cursor ? cursor.split("|") : ["", ""];
-  let q = supa.from("answer_logs")
-    .select("id, student_id, question_id, correct, context, created_at")
-    .in("student_id", [...nick.keys()])
-    .order("created_at", { ascending: true })
-    .order("id", { ascending: true })
-    .limit(EXPORT_PAGE);
-  // 같은 시각의 기록이 경계에 걸려도 빠지거나 겹치지 않도록 gte로 받고 아래에서 걸러낸다
-  if (curTs) q = q.gte("created_at", curTs);
-  const { data: raw, error } = await q;
+  // 풀 당시 적어 둔 문제 내용(q_*)도 함께 받는다. 0009 전 DB면 그 칸 없이 다시 받는다.
+  const BASE_COLS = "id, student_id, question_id, correct, context, created_at";
+  const page = (cols: string) => {
+    let q = supa.from("answer_logs")
+      .select(cols)
+      .in("student_id", [...nick.keys()])
+      .order("created_at", { ascending: true })
+      .order("id", { ascending: true })
+      .limit(EXPORT_PAGE);
+    // 같은 시각의 기록이 경계에 걸려도 빠지거나 겹치지 않도록 gte로 받고 아래에서 걸러낸다
+    if (curTs) q = q.gte("created_at", curTs);
+    return q;
+  };
+  let { data: raw, error } = await page(BASE_COLS + ", q_tag, q_difficulty, q_body, q_answer");
+  if (error && isMissingColumn(error)) ({ data: raw, error } = await page(BASE_COLS));
   if (error) throw error;
-  const fetched = raw ?? [];
+  const fetched = (raw ?? []) as unknown as LogRow[];
   const logs = fetched.filter((l) =>
     !curTs || l.created_at !== curTs || (curId !== "" && String(l.id) > curId));
 
   const qids = [...new Set(logs.map((l) => l.question_id).filter(Boolean))] as string[];
-  const qmap = new Map<string, { tag: string; difficulty: string; body: string; options: unknown; answer_idx: number }>();
+  const qmap = new Map<string, { tag: string; difficulty: string; body: string; options: unknown; answer_idx: number; type?: string }>();
   for (let i = 0; i < qids.length; i += 200) {
     const { data: qs } = await supa.from("questions")
-      .select("id, tag, difficulty, body, options, answer_idx").in("id", qids.slice(i, i + 200));
+      .select("id, tag, difficulty, body, options, answer_idx, type").in("id", qids.slice(i, i + 200));
     for (const x of qs ?? []) qmap.set(x.id as string, x as never);
   }
 
   const rows: ExportLogRow[] = logs.map((l) => {
     const qq = l.question_id ? qmap.get(l.question_id as string) : undefined;
-    const [subject, unit] = qq ? splitTag(qq.tag) : ["기타", "(삭제된 문제)"];
+    // 문제가 남아 있으면 지금의 문제(교사가 고친 단원 태그 반영), 지워졌으면 풀 당시 적어 둔 내용
+    const snap = !qq && (l.q_tag || l.q_body);
+    const tag = qq ? qq.tag : snap ? l.q_tag : null;
+    const [subject, unit] = qq || snap ? splitTag(tag) : ["기타", "(삭제된 문제)"];
+    const diff = qq ? qq.difficulty : snap ? l.q_difficulty : "";
     const opts = Array.isArray(qq?.options) ? (qq!.options as unknown[]) : [];
+    const ans = qq ? String((qq.type === "short" ? opts[0] : opts[qq.answer_idx]) ?? "") : snap ? l.q_answer : "";
     return [
       // 시각은 밀리초까지로 정리해 보낸다(시트 쪽 날짜 변환이 확실하도록). cursor는 원본 그대로.
       String(l.id), new Date(l.created_at as string).toISOString(), nick.get(l.student_id as string) ?? "?",
       CONTEXT_KO[l.context as string] ?? String(l.context ?? ""),
-      subject, unit, qq ? DIFF_KO[qq.difficulty] ?? qq.difficulty : "",
+      subject, unit, diff ? DIFF_KO[diff] ?? diff : "",
       l.correct ? 1 : 0,
-      plainMath(qq?.body), plainMath(qq ? String(opts[qq.answer_idx] ?? "") : ""),
+      plainMath(qq ? qq.body : snap ? l.q_body : ""), plainMath(ans),
     ];
   });
 

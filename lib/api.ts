@@ -59,6 +59,37 @@ export const isMissingCount = (error: { message?: string } | null): boolean =>
 export const CATCH_COUNT_HINT =
   "게임 업데이트에 필요한 DB 작업이 아직 안 됐어요. 선생님께 'supabase/migrations/0004_catch_count.sql 실행'을 요청해주세요!";
 
+// 풀이 기록(answer_logs) 저장 — 풀 당시의 문제 내용(단원 태그·난이도·본문·정답)도 함께 적어 둔다.
+// 교사가 나중에 문제를 지워도 시트·통계에서 무엇을 풀었는지 남도록. (0009 마이그레이션)
+// 아직 0009를 실행하지 않은 DB면 예전처럼 기본 칸만 저장해 기록 자체는 절대 잃지 않는다.
+export interface AnswerLogQuestion {
+  tag?: string | null; difficulty?: string | null; body?: string | null;
+  options?: unknown; answer_idx?: number | null; type?: string | null;
+}
+export const isMissingColumn = (error: { code?: string; message?: string } | null): boolean =>
+  !!error && (error.code === "PGRST204" || error.code === "42703" || /column/i.test(error.message ?? ""));
+
+export function answerSnapshot(q: AnswerLogQuestion) {
+  const opts = Array.isArray(q.options) ? (q.options as unknown[]) : [];
+  const ans = q.type === "short" ? opts[0] : q.answer_idx != null ? opts[q.answer_idx] : undefined;
+  return {
+    q_tag: q.tag ?? null,
+    q_difficulty: q.difficulty ?? null,
+    q_body: q.body ?? null,
+    q_answer: ans == null ? null : String(ans),
+  };
+}
+
+export async function insertAnswerLog(
+  supa: SupabaseClient,
+  row: { student_id: string; question_id: string; correct: boolean; context: string },
+  q: AnswerLogQuestion,
+) {
+  const res = await supa.from("answer_logs").insert({ ...row, ...answerSnapshot(q) });
+  if (res.error && isMissingColumn(res.error)) return supa.from("answer_logs").insert(row);
+  return res;
+}
+
 // trades 테이블이 아직 없는 DB(0005 미실행) 안내
 export const isMissingTrades = (error: { message?: string } | null): boolean =>
   !!error?.message && /trades/.test(error.message);

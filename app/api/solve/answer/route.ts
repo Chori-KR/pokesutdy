@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { requireStudent, jsonError, getClassSettings } from "@/lib/api";
+import { requireStudent, jsonError, getClassSettings, insertAnswerLog } from "@/lib/api";
 import { SOLVE_REWARD, applyXp, gradeShort } from "@/lib/game";
 
 // 문제풀이 채점 (명세 §4.5): 정답 +20P +2XP, 하루 한도까지. 통계·풀이 로그 집계.
@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
 
   const { data: q } = await supa
     .from("questions")
-    .select("id, answer_idx, tries, wrong, type, options")
+    .select("id, answer_idx, tries, wrong, type, options, tag, difficulty, body")
     .eq("id", questionId)
     .eq("class_id", student.class_id)
     .single();
@@ -53,12 +53,7 @@ export async function POST(req: NextRequest) {
       .from("questions")
       .update({ tries: q.tries + 1, wrong: q.wrong + (correct ? 0 : 1) })
       .eq("id", q.id),
-    supa.from("answer_logs").insert({
-      student_id: student.id,
-      question_id: q.id,
-      correct,
-      context: "solve",
-    }),
+    insertAnswerLog(supa, { student_id: student.id, question_id: q.id, correct, context: "solve" }, q),
   ]);
   if (error) return jsonError(500, "저장에 실패했어요.");
 
