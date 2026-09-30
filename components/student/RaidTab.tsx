@@ -204,6 +204,11 @@ export default function RaidTab({
     if (phase !== "question" || !move || !q || !boss) return;
     setPhase("busy");
     const correct = !!opt?.ok;
+    // 풀이 기록(시트 연동·통계용) — 서버가 다시 채점해 저장. 실패해도 레이드 진행은 그대로.
+    fetch("/api/raid/answer", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question_id: q.id, chosen_idx: opt ? opt.idx : null }),
+    }).catch(() => {});
 
     if (correct) {
       setMsg(`정답! ${mine.name}의 ${move.name}!`);
