@@ -390,6 +390,13 @@ function ensureStudentTabs_(ss, students) {
     }
     gid[s.nickname] = sh.getSheetId();
   });
+  // 대시보드가 중심이 되도록 학생 탭을 앞에 두고, 원본 기록(문제기록)은 맨 뒤로 보낸다
+  if (created) safe_('탭 순서', function () {
+    const cur = ss.getActiveSheet();
+    ss.setActiveSheet(ss.getSheetByName(SH.log));
+    ss.moveActiveSheet(ss.getNumSheets());
+    if (cur) ss.setActiveSheet(cur);
+  });
   return { gid: gid, created: created };
 }
 
