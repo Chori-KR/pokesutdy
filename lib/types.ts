@@ -57,7 +57,14 @@ export interface ApiQuestion {
   difficulty: Difficulty;
   tag: string;
   last?: "none" | "wrong" | "correct"; // 이 학생의 최신 결과(똑똑한 출제 가중치용)
+  passage_id?: string | null;          // 딸린 지문 (내용은 /api/question/media 로 따로 받음)
+  has_svg?: boolean;                   // 문제 그림이 있는지
+  read_len?: number;                   // 읽을 글 길이(지문+문제)
 }
+
+// 지문 (출처 포함) — 학생 화면용
+export interface PassageData { id: string; title: string; body: string; source: string; svg: string | null }
+export interface QuestionMediaData { svg: string | null; passage: PassageData | null }
 
 // 문제풀이 탭용: 정답 인덱스를 클라이언트에 노출하지 않는다 (포인트가 걸려 있어서)
 export interface SolveQuestion {
@@ -67,4 +74,6 @@ export interface SolveQuestion {
   difficulty: Difficulty;
   tag: string;
   type?: string; // "multiple"(기본) | "short"(단답형)
+  svg?: string | null;            // 문제 그림
+  passage?: PassageData | null;   // 딸린 지문
 }

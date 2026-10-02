@@ -14,6 +14,7 @@ import AdminStats from "@/components/teacher/AdminStats";
 import Brand from "@/components/Brand";
 import ThemeToggle from "@/components/ThemeToggle";
 import { ALL_GENS, GEN_RANGES, dexTotal, normalizeGens, NEW_CLASS_GENS } from "@/lib/game";
+import { fetchAll } from "@/lib/fetchAll";
 
 // 관리자(앱 제작자) 이메일 — 이 계정으로 로그인했을 때만 '가입 현황' 탭이 보인다.
 // 실제 권한 검증은 서버(/api/admin/stats)에서 다시 하므로 여기선 표시 여부만 결정.
@@ -31,6 +32,7 @@ export interface ClassRow {
     battleLimit?: number;
     timerOn?: boolean;
     timeScale?: number;
+    battleReadMax?: number; // 배틀에 낼 지문 문제의 '읽을 글'(지문+문제) 최대 글자 수. 0 = 제한 없음
     gens?: number[];   // 등장 포켓몬 세대(1~9)
     rareRate?: number;
     specialRate?: number;
@@ -64,12 +66,11 @@ export default function TeacherHome({ session }: { session: Session }) {
 
   const loadQuestions = useCallback(async (classId: string) => {
     const supa = supabaseBrowser();
-    const { data } = await supa
-      .from("questions")
-      .select("*")
-      .eq("class_id", classId)
-      .order("created_at", { ascending: false });
-    setQuestions((data as QuestionRow[]) ?? []);
+    // 1000개가 넘어도 전부 (같은 시각에 넣은 문제가 많아 id로 순서를 한 번 더 고정)
+    const { data } = await fetchAll<QuestionRow>((from, to) =>
+      supa.from("questions").select("*").eq("class_id", classId)
+        .order("created_at", { ascending: false }).order("id").range(from, to));
+    setQuestions(data ?? []);
   }, []);
 
   // 교사 화면은 헤더 안 토글을 쓰므로 고정 토글 숨김
@@ -306,6 +307,26 @@ export default function TeacherHome({ session }: { session: Session }) {
                 })}
               </div>
             )}
+          </div>
+          <div style={T.card}>
+            <div style={{ fontSize: 13 }}>
+              배틀 지문 길이
+              <div style={{ fontSize: 11, color: "#888", marginTop: 3 }}>
+                지문(글)이 딸린 문제를 배틀에 낼 때 읽을 글(지문+문제)의 최대 글자 수예요. 이보다 긴 글은 배틀에는 안 나오고 <b>문제풀이</b>에서만 나와요.
+                지문을 읽는 동안에는 타이머가 멈춰요. (참고: 교과서 한 쪽 ≈ 600~800자)
+              </div>
+            </div>
+            <div style={{ display: "flex", gap: 6, marginTop: 10, flexWrap: "wrap" }}>
+              {[[500, "500자"], [800, "800자 (기본)"], [1200, "1200자"], [0, "제한 없음"]].map(([v, lab]) => {
+                const on = (cls.settings?.battleReadMax ?? 800) === v;
+                return (
+                  <button key={String(v)} onClick={() => updateSettings({ battleReadMax: v as number })}
+                    style={{ ...(on ? T.primaryBtn : T.secondaryBtn), padding: "6px 12px", fontSize: 12 }}>
+                    {lab as string}
+                  </button>
+                );
+              })}
+            </div>
           </div>
           {(() => {
             const r0 = Math.round((cls.settings?.rareRate ?? 0.15) * 100);

@@ -13,6 +13,7 @@ export interface DayState {
   solveCount?: number;                               // 오늘 푼 문제풀이 수
   solveQ?: string | null;                            // 지금 출제된 문제풀이 문제 id
   solveOrder?: number[] | null;                      // 문제풀이 4지선다 보기 셔플 순서(표시→원본 인덱스)
+  solvePassage?: { id: string; done: string[] } | null; // 지금 이어서 풀고 있는 지문과 이미 낸 문제들
   battleUsed?: number;                               // 오늘 시작한 배틀(조우) 수
   winTokens?: string[];                              // 승수 처리된 배틀 토큰 (중복 승수 방지)
 }
@@ -154,6 +155,9 @@ export async function requireStudent(req: NextRequest): Promise<
   return { session, supa, student: student as StudentRow };
 }
 
+// 배틀에 낼 '읽을 글'(지문 + 문제 본문) 기본 상한. 이보다 길면 문제풀이에서만 나온다.
+export const DEFAULT_BATTLE_READ_MAX = 800;
+
 // 학급 설정 로드 (탐색/문제풀이/배틀 일일 한도 포함)
 export async function getClassSettings(supa: SupabaseClient, classId: string) {
   const { data } = await supa.from("classes").select("settings").eq("id", classId).single();
@@ -161,6 +165,7 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
     moveDiff?: boolean; exploreLimit?: number; solveLimit?: number; battleLimit?: number;
     timerOn?: boolean; timeScale?: number; rareRate?: number; specialRate?: number; legendRate?: number; shinyRate?: number;
     gens?: number[]; // 등장 세대(1~9). 없으면 1세대만 — 기존 학급은 지금과 동일
+    battleReadMax?: number; // 배틀에 낼 '읽을 글'(지문+문제) 최대 글자 수. 0 = 제한 없음
     raid?: {
       on?: boolean; pid?: number; shiny?: boolean; round?: number;
       threshold?: number; rewardPts?: number; rewardItem?: string; rewardCount?: number;
@@ -184,6 +189,7 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
     specialRate,                                                     // 특별 확률
     legendRate,                                                      // 전설 확률
     shinyRate: Math.min(1, Math.max(0, Number(s.shinyRate ?? DEFAULT_SHINY_RATE))), // 이로치 확률
+    battleReadMax: Math.max(0, Number(s.battleReadMax ?? DEFAULT_BATTLE_READ_MAX)),  // 배틀 지문 길이 상한(0=무제한)
     raid: {                                                          // 레이드(형성평가)
       on: s.raid?.on === true,
       pid: Math.min(MAX_DEX_ID, Math.max(1, Number(s.raid?.pid ?? 1))),

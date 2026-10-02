@@ -6,6 +6,7 @@ import { DIFF, SOLVE_REWARD } from "@/lib/game";
 import { SFX } from "@/lib/sound";
 import { StudentData, DayInfo, SolveQuestion } from "@/lib/types";
 import MathText from "@/components/MathText";
+import { PassageBox, SvgImage } from "@/components/student/QuestionMedia";
 
 interface Props {
   student: StudentData;
@@ -102,7 +103,9 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
         <span style={{ fontSize: 11, color: "#5b7a99" }}>{day.solveCount}/{day.solveLimit} 문제</span>
       </div>
 
-      <div style={{ fontSize: 14, lineHeight: 1.6, marginBottom: 14 }}><MathText>{q.body}</MathText></div>
+      {q.passage && <PassageBox passage={q.passage} />}
+      {q.svg && <SvgImage svg={q.svg} />}
+      <div style={{ fontSize: 14, lineHeight: 1.6, marginBottom: 14, whiteSpace: "pre-wrap" }}><MathText>{q.body}</MathText></div>
 
       {isShort ? (
         <div>

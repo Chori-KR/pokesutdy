@@ -13,6 +13,7 @@ import TypeFx from "@/components/student/TypeFx";
 import TimerBar from "@/components/student/TimerBar";
 import MathText from "@/components/MathText";
 import { revealEl } from "@/lib/scroll";
+import { PassageBox, SvgImage, useQuestionMedia, needsMedia } from "@/components/student/QuestionMedia";
 import { SFX, playCry, startRaidBgm, stopBattleBgm } from "@/lib/sound";
 
 interface Props {
@@ -33,7 +34,7 @@ interface Props {
 
 type ShuffledOption = { t: string; ok: boolean; idx: number };
 interface ActiveQuestion extends ApiQuestion { sOpts: ShuffledOption[] }
-type Phase = "idle" | "busy" | "select" | "question" | "done";
+type Phase = "idle" | "busy" | "select" | "reading" | "question" | "done";
 type RaidStatus = {
   on: boolean; pid: number; shiny: boolean; round: number; myReqPid: number | null;
   iWon: boolean; winCount: number; threshold: number; unlocked: boolean;
@@ -79,6 +80,9 @@ export default function RaidTab({
   const [bossState, setBossState] = useState<"idle" | "hit" | "gone">("idle");
   const [myHit, setMyHit] = useState(false);
   const [usedQ, setUsedQ] = useState<string[]>([]);
+  // 지문: 이번 레이드에서 이미 읽은 지문 / 직전 문제의 지문(같은 지문 이어서 출제)
+  const readPassages = useRef<Set<string>>(new Set());
+  const lastPassage = useRef<string | null>(null);
   const studentRef = useRef(student);
   studentRef.current = student;
 
@@ -158,6 +162,8 @@ export default function RaidTab({
       setStudent({ ...studentRef.current, hp: MAX_HP });
       setBossHp(RAID_BOSS_HP);
       setUsedQ([]);
+      readPassages.current = new Set();
+      lastPassage.current = null;
       startRaidBgm();
       if (boss) playCry(boss.id);
       setPhase("select");
@@ -167,17 +173,29 @@ export default function RaidTab({
 
   function pickQuestion(diff: Difficulty): ApiQuestion | undefined {
     let pool = bank.filter((x) => x.difficulty === diff && !usedQ.includes(x.id));
+    // 방금 지문 문제를 냈다면 같은 지문의 남은 문제를 이어서
+    const chain = lastPassage.current ? pool.filter((x) => x.passage_id === lastPassage.current) : [];
+    if (chain.length > 0) pool = chain;
     if (pool.length === 0) pool = bank.filter((x) => x.difficulty === diff);
     if (pool.length === 0) pool = bank;
     return pool[Math.floor(Math.random() * pool.length)];
   }
 
-  // 문제가 뜨면(지문·그림이 길어도) 문제 칸이 보이게
+  // 문제의 지문·그림 (나올 때 받아옴, 받는 중이면 null)
+  const media = useQuestionMedia(q);
+  const mediaReady = !q || !needsMedia(q) || media != null;
+
+  // 문제·지문이 뜨면(지문·그림이 길어도) 그 칸이 보이게
   useEffect(() => {
-    if (phase !== "question") return;
+    if (phase !== "question" && phase !== "reading") return;
     const id = requestAnimationFrame(() => revealEl(questionRef.current));
     return () => cancelAnimationFrame(id);
-  }, [phase, q?.id]);
+  }, [phase, q?.id, mediaReady]);
+
+  function doneReading() {
+    if (q?.passage_id) readPassages.current.add(q.passage_id);
+    setPhase("question");
+  }
 
   function chooseMove(m: Move) {
     const raw = pickQuestion(m.diff);
@@ -188,7 +206,9 @@ export default function RaidTab({
     setQ({ ...raw, sOpts });
     setSelected(null);
     timeLeftRef.current = timeLimitFor(m.diff);
-    setPhase("question");
+    lastPassage.current = raw.passage_id ?? null;
+    // 처음 보는 지문이면 먼저 읽기(타이머 멈춤)
+    setPhase(raw.passage_id && !readPassages.current.has(raw.passage_id) ? "reading" : "question");
   }
 
   function onTimeUp() {
@@ -408,7 +428,23 @@ export default function RaidTab({
       )}
 
       {/* 문제 (배틀과 동일 UI) */}
-      {phase === "question" && q && move && (
+      {phase === "reading" && q && move && (
+        <div ref={questionRef} style={{ ...S.panel, padding: 12 }}>
+          <div style={{ fontSize: 11, color: "#5b7a99", marginBottom: 8 }}>
+            {move.label} 문제 · {q.tag} — 먼저 지문을 읽어요. 읽는 동안 시간은 흐르지 않아요.
+          </div>
+          {media?.passage ? <PassageBox passage={media.passage} /> : <div style={{ fontSize: 13, padding: "16px 0", textAlign: "center", color: "var(--ink-2)" }}>지문을 불러오는 중…</div>}
+          <button onClick={doneReading} disabled={!mediaReady} style={{ ...S.primaryBtn, width: "100%", opacity: mediaReady ? 1 : 0.45 }}>
+            다 읽었어요! 문제 보기
+          </button>
+        </div>
+      )}
+
+      {phase === "question" && q && move && !mediaReady && (
+        <div ref={questionRef} style={{ ...S.panel, padding: 12, fontSize: 13, textAlign: "center", color: "var(--ink-2)" }}>문제 그림을 불러오는 중…</div>
+      )}
+
+      {phase === "question" && q && move && mediaReady && (
         <div ref={questionRef} style={{ ...S.panel, padding: 12 }}>
           {timerOn ? (
             <TimerBar key={q.id} total={timeLimitFor(move.diff)} timeRef={timeLeftRef} onExpire={onTimeUp}
@@ -416,7 +452,9 @@ export default function RaidTab({
           ) : (
             <div style={{ fontSize: 11, marginBottom: 10 }}><span style={{ color: "#5b7a99" }}>{move.label} 문제 · {q.tag}</span></div>
           )}
-          <div style={{ fontSize: 15, marginBottom: 10, lineHeight: 1.6 }}><MathText>{q.body}</MathText></div>
+          {media?.passage && <PassageBox passage={media.passage} maxHeight="34vh" />}
+          {media?.svg && <SvgImage svg={media.svg} />}
+          <div style={{ fontSize: 15, marginBottom: 10, lineHeight: 1.6, whiteSpace: "pre-wrap" }}><MathText>{q.body}</MathText></div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 6 }}>
             {q.sOpts.map((o, i) => {
               const on = selected === i;

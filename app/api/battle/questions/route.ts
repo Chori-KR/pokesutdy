@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { requireStudent } from "@/lib/api";
+import { requireStudent, getClassSettings } from "@/lib/api";
+import { loadServeQuestions } from "@/lib/questionServe";
 import { seoulToday } from "@/lib/game";
 
 // 배틀 시작 전에 출제 중(active) 문제를 전부 프리로드 (명세 §7: 즉답 UX).
@@ -13,18 +14,9 @@ export async function GET(req: NextRequest) {
   const { supa, student } = auth;
 
   // 배틀은 4지선다만(단답형은 문제풀이 탭), 그리고 레이드 전용 문제는 제외한다.
-  const base = () =>
-    supa
-      .from("questions")
-      .select("id, body, options, answer_idx, difficulty, tag")
-      .eq("class_id", student.class_id)
-      .eq("active", true)
-      .neq("type", "short");
-
-  let { data, error } = await base().eq("raid_only", false);
-  // raid_only 컬럼이 아직 없는 DB(0008 미실행)에서도 배틀이 멈추지 않도록 폴백
-  if (error) ({ data } = await base());
-  const questions = data ?? [];
+  // 지문이 딸린 문제는 '읽을 글'이 선생님이 정한 길이(battleReadMax) 이하인 것만 — 긴 글은 문제풀이에서.
+  const { battleReadMax } = await getClassSettings(supa, student.class_id);
+  const { questions, passages } = await loadServeQuestions(supa, student.class_id, { raid: false, readMax: battleReadMax });
 
   // 학생 기록으로 (1) 문제별 최신 결과(가중치) (2) 오늘 배틀에서 이미 나온 문제(PP) 계산.
   // 최근 기록만 봐도 충분(오래된 건 '안 푼 것'처럼 다시 나오는 게 오히려 복습에 좋음).
@@ -53,5 +45,5 @@ export async function GET(req: NextRequest) {
     return { ...q, last: !r ? "none" : r.correct ? "correct" : "wrong" };
   });
 
-  return NextResponse.json({ questions: withStats, seenTodayIds: [...seenToday] });
+  return NextResponse.json({ questions: withStats, passages, seenTodayIds: [...seenToday] });
 }

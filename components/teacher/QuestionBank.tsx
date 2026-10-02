@@ -6,6 +6,8 @@ import { DIFF, Difficulty } from "@/lib/game";
 import { supabaseBrowser } from "@/lib/supabase/browser";
 import AiGenerate from "@/components/teacher/AiGenerate";
 import BulkImport from "@/components/teacher/BulkImport";
+import JsonImport, { loadPassages } from "@/components/teacher/JsonImport";
+import { PassageBox, SvgImage } from "@/components/student/QuestionMedia";
 import MathText from "@/components/MathText";
 
 export interface QuestionRow {
@@ -20,10 +22,17 @@ export interface QuestionRow {
   source: string;
   type?: string; // "multiple"(기본) | "short"(단답형)
   raid_only?: boolean; // true면 평소 배틀엔 안 나오고 레이드에서만 출제
+  svg?: string | null;         // 문제 그림 (0011)
+  passage_id?: string | null;  // 딸린 지문 (0011)
   tries: number;
   wrong: number;
   created_at: string;
 }
+
+// 지문 (0011) — 지문 하나에 문제 여러 개
+export interface PassageRow { id: string; title: string; body: string; source: string; svg: string | null }
+
+const PAGE = 200; // 문제가 많아도 화면이 느려지지 않게 200개씩 보여줌
 
 interface Props {
   classId: string;
@@ -62,7 +71,13 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
   const [filterTag, setFilterTag] = useState<string | null>(null);
   const [form, setForm] = useState<FormState | null>(null);
   const [formErr, setFormErr] = useState("");
-  const [panel, setPanel] = useState<"ai" | "bulk" | null>(null);
+  const [panel, setPanel] = useState<"ai" | "bulk" | "json" | null>(null);
+  const [passages, setPassages] = useState<PassageRow[]>([]);
+  const [openMedia, setOpenMedia] = useState<string | null>(null); // 그림·지문 미리보기를 펼친 문제
+  const [limit, setLimit] = useState(PAGE);
+  useEffect(() => { loadPassages(classId).then(setPassages); }, [classId]);
+  const passageById = useMemo(() => new Map(passages.map((p) => [p.id, p])), [passages]);
+  useEffect(() => { setLimit(PAGE); }, [filterTag, search]);
   const [selected, setSelected] = useState<Set<string>>(new Set()); // M7: 체크된 문제 id
 
   // 수정/새 문제 폼을 열면 상단 폼으로 자동 스크롤 (열림 순간에만 — 입력 중 재스크롤 방지)
@@ -252,6 +267,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
         <button onClick={() => { setForm({ ...EMPTY_FORM }); setFormErr(""); setPanel(null); setFormOpenSeq((s) => s + 1); }} style={T.primaryBtn}>+ 새 문제</button>
         <button onClick={() => { setPanel(panel === "ai" ? null : "ai"); setForm(null); }} style={{ ...T.primaryBtn, background: "#7c5cd9" }}>🤖 AI 생성</button>
         <button onClick={() => { setPanel(panel === "bulk" ? null : "bulk"); setForm(null); }} style={{ ...T.primaryBtn, background: "#2e8b57" }}>📥 대량 등록</button>
+        <button onClick={() => { setPanel(panel === "json" ? null : "json"); setForm(null); }} style={{ ...T.primaryBtn, background: "#c07a1e" }}>🗂️ JSON 가져오기</button>
       </div>
 
       {/* 배틀 출제 현황 — 배틀은 4지선다만 쓰므로, 출제된 4지선다가 0이면 경고 */}
@@ -269,6 +285,16 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
           hasAiKey={hasAiKey}
           aiProvider={aiProvider}
           onRegistered={(rows) => setQuestions([...rows, ...questions])}
+          onClose={() => setPanel(null)}
+          showToast={showToast}
+        />
+      )}
+      {panel === "json" && (
+        <JsonImport
+          classId={classId}
+          questions={questions}
+          passages={passages}
+          onRegistered={(rows, ps) => { setQuestions([...rows, ...questions]); if (ps.length) setPassages([...passages, ...ps]); }}
           onClose={() => setPanel(null)}
           showToast={showToast}
         />
@@ -406,7 +432,9 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
             {questions.length === 0 ? "아직 문제가 없어요. '+ 새 문제'로 첫 문제를 등록해보세요!" : "검색 결과가 없어요."}
           </div>
         )}
-        {visible.map((q) => {
+        {visible.slice(0, limit).map((q) => {
+          const passage = q.passage_id ? passageById.get(q.passage_id) : undefined;
+          const hasMedia = !!q.svg || !!passage;
           const wrongRate = q.tries > 0 ? Math.round((q.wrong / q.tries) * 100) : null;
           return (
             <div key={q.id} style={{ ...T.card, opacity: q.active ? 1 : 0.55, border: selected.has(q.id) ? "2px solid #3d6fd9" : T.card.border }}>
@@ -419,7 +447,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
                   title="선택"
                 />
                 <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: 13, lineHeight: 1.5, marginBottom: 5 }}><MathText>{q.body}</MathText></div>
+                  <div style={{ fontSize: 13, lineHeight: 1.5, marginBottom: 5, whiteSpace: "pre-wrap" }}><MathText>{q.body}</MathText></div>
                   <div style={{ fontSize: 11, color: "#666" }}>
                     {q.type === "short" ? (
                       <span style={{ color: "#0f6e56", fontWeight: 600 }}>
@@ -447,10 +475,28 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
                     <span style={{ padding: "2px 7px", borderRadius: 9, background: DIFF[q.difficulty].bg, color: DIFF[q.difficulty].fg }}>{DIFF[q.difficulty].label}</span>
                     <span style={{ padding: "2px 7px", borderRadius: 9, background: "#eef1f8", color: "#3a4a7a" }}>{q.tag}</span>
                     {q.raid_only && <span style={{ padding: "2px 7px", borderRadius: 9, background: "#fdeee0", color: "#c0651e", fontWeight: 700 }}>🛡️ 레이드 전용</span>}
+                    {passage && (
+                      <span onClick={() => setOpenMedia(openMedia === q.id ? null : q.id)} title="지문 보기"
+                        style={{ padding: "2px 7px", borderRadius: 9, background: "#f3ecff", color: "#6a45c2", fontWeight: 700, cursor: "pointer" }}>
+                        📖 지문{passage.title ? `: ${passage.title}` : ""} ({passage.body.length}자)
+                      </span>
+                    )}
+                    {q.svg && (
+                      <span onClick={() => setOpenMedia(openMedia === q.id ? null : q.id)} title="그림 보기"
+                        style={{ padding: "2px 7px", borderRadius: 9, background: "#e9f6f6", color: "#1f7a7a", fontWeight: 700, cursor: "pointer" }}>
+                        🖼️ 그림
+                      </span>
+                    )}
                     {wrongRate !== null && (
                       <span style={{ color: wrongRate >= 50 ? "#a32d2d" : "#888" }}>오답률 {wrongRate}% ({q.tries}회 풀림)</span>
                     )}
                   </div>
+                  {hasMedia && openMedia === q.id && (
+                    <div style={{ marginTop: 8, maxWidth: 520 }}>
+                      {passage && <PassageBox passage={passage} maxHeight="320px" />}
+                      {q.svg && <SvgImage svg={q.svg} />}
+                    </div>
+                  )}
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 6, alignItems: "flex-end" }}>
                   <span onClick={() => toggleActive(q)} title={q.active ? "출제 중 (클릭해서 숨김)" : "숨김 (클릭해서 출제)"} style={{ position: "relative", width: 32, height: 17, background: q.active ? "#3d6fd9" : "#ccc", borderRadius: 9, cursor: "pointer" }}>
@@ -464,6 +510,11 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
             </div>
           );
         })}
+        {visible.length > limit && (
+          <button onClick={() => setLimit(limit + PAGE)} style={{ ...T.secondaryBtn, alignSelf: "center", marginTop: 4 }}>
+            더 보기 ({limit}/{visible.length})
+          </button>
+        )}
       </div>
     </div>
   );

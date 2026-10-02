@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireTeacher } from "@/lib/teacherApi";
 import { seoulToday } from "@/lib/game";
+import { fetchAll } from "@/lib/fetchAll";
 
 // 학생별 통계 (명세 §5.4): 정답률, 오늘/누적 풀이 수, 도감 진행도, 최근 활동, 단원별 정답률.
 // students 테이블은 anon 정책이 없어 서버 경유로만 조회 가능.
@@ -28,15 +29,19 @@ export async function GET(req: NextRequest) {
   // 기간 시작일이 있으면 DB에서 미리 잘라 가져와 전체 스캔을 피함(기본 최근 30일).
   // from(YYYY-MM-DD, KST) 00:00 = UTC 기준 경계.
   const fromBoundary = from ? new Date(`${from}T00:00:00+09:00`).toISOString() : null;
-  let logsQuery = supa
-    .from("answer_logs")
-    .select("student_id, question_id, correct, created_at")
-    .in("student_id", ids);
-  if (fromBoundary) logsQuery = logsQuery.gte("created_at", fromBoundary);
+  // Supabase는 한 번에 1000줄까지만 주므로 끝까지 나눠 받는다(기록이 많은 반도 통계가 잘리지 않게).
+  type LogRow = { student_id: string; question_id: string | null; correct: boolean; created_at: string };
+  type Pg = PromiseLike<{ data: unknown[] | null; error: { message?: string } | null }>;
   const [{ data: logs }, { data: catches }, { data: qRows }] = await Promise.all([
-    logsQuery,
-    supa.from("catches").select("student_id").in("student_id", ids),
-    supa.from("questions").select("id, tag, body").eq("class_id", cls.id),
+    fetchAll<LogRow>((a, b) => {
+      let q = supa.from("answer_logs").select("student_id, question_id, correct, created_at").in("student_id", ids);
+      if (fromBoundary) q = q.gte("created_at", fromBoundary);
+      return q.order("created_at").order("id").range(a, b) as unknown as Pg;
+    }),
+    fetchAll<{ student_id: string }>((a, b) =>
+      supa.from("catches").select("student_id").in("student_id", ids).order("id").range(a, b) as unknown as Pg),
+    fetchAll<{ id: string; tag: string; body: string }>((a, b) =>
+      supa.from("questions").select("id, tag, body").eq("class_id", cls.id).order("id").range(a, b) as unknown as Pg),
   ]);
   // 문제 id → 단원(태그)/본문 매핑
   const tagOf = new Map<string, string>();

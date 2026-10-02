@@ -19,6 +19,7 @@ import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
 import MathText from "@/components/MathText";
 import { revealEl } from "@/lib/scroll";
+import { PassageBox, SvgImage, useQuestionMedia, needsMedia } from "@/components/student/QuestionMedia";
 
 interface Props {
   student: StudentData;
@@ -40,7 +41,7 @@ interface Props {
   showToast: (t: string) => void;
 }
 
-type BattlePhase = "idle" | "intro" | "select" | "question" | "busy" | "capture" | "throwing" | "done";
+type BattlePhase = "idle" | "intro" | "select" | "reading" | "question" | "busy" | "capture" | "throwing" | "done";
 interface ShuffledOption { t: string; ok: boolean; idx: number }
 interface ActiveQuestion extends ApiQuestion { sOpts: ShuffledOption[] }
 type Fx = { kind: string; key: number; dir?: "fwd" | "back"; diff?: string } | null;
@@ -74,6 +75,9 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const [myHit, setMyHit] = useState(false);
   const [fails, setFails] = useState(0);
   const [usedQ, setUsedQ] = useState<string[]>([]);
+  // 지문: 이번 배틀에서 이미 읽은 지문(다시 읽기 단계 생략)과 직전 문제의 지문(같은 지문 이어서 출제)
+  const readPassages = useRef<Set<string>>(new Set());
+  const lastPassage = useRef<string | null>(null);
   const [servedToday, setServedToday] = useState<Set<string>>(new Set()); // 오늘 배틀에서 나온 문제(기술별 남은 문제 수 = PP, 하루 누적)
   const [picker, setPicker] = useState(false);   // 포켓몬 선택 패널
   const [sprayAsk, setSprayAsk] = useState<{ snack?: SnackKind } | null>(null); // 스프레이 사용 여부 모달
@@ -226,6 +230,8 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       setCapFx(null);
       setFails(0);
       setUsedQ([]);
+      readPassages.current = new Set();
+      lastPassage.current = null;
       setPhase("intro");
       setMsg(`앗! 야생의 ${josa(meta.name, "이", "가")} 나타났다!`);
     } catch {
@@ -246,6 +252,9 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     const match = (x: ApiQuestion) => anyDiff || x.difficulty === diff;
     // 같은 배틀 내 중복 출제 방지, 소진 시 재사용 (명세 §4.2)
     let pool = all.filter((x) => match(x) && !usedQ.includes(x.id));
+    // 방금 지문 문제를 냈다면 같은 지문의 남은 문제를 이어서 (지문을 다시 읽지 않게)
+    const chain = lastPassage.current ? pool.filter((x) => x.passage_id === lastPassage.current) : [];
+    if (chain.length > 0) pool = chain;
     if (pool.length === 0) pool = all.filter(match);
     if (pool.length === 0) return undefined;
     // 가중 랜덤 선택
@@ -272,16 +281,27 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     setQ({ ...raw, sOpts });
     setSelected(null);
     timeLeftRef.current = timeLimitFor(m.diff);
-    setPhase("question");
+    lastPassage.current = raw.passage_id ?? null;
+    // 처음 보는 지문이면 먼저 읽기(타이머 멈춤) → '다 읽었어요'를 누르면 문제와 타이머 시작
+    setPhase(raw.passage_id && !readPassages.current.has(raw.passage_id) ? "reading" : "question");
     setMsg(`문제를 맞히면 ${m.name} 발동!`);
   }
 
-  // 문제가 뜨면(지문·그림이 길어도) 문제 칸이 보이게
+  // 문제의 지문·그림 (나올 때 받아옴, 받는 중이면 null)
+  const media = useQuestionMedia(q);
+  const mediaReady = !q || !needsMedia(q) || media != null;
+
+  // 문제·지문이 뜨면(지문·그림이 길어도) 그 칸이 보이게
   useEffect(() => {
-    if (phase !== "question") return;
+    if (phase !== "question" && phase !== "reading") return;
     const id = requestAnimationFrame(() => revealEl(questionRef.current));
     return () => cancelAnimationFrame(id);
-  }, [phase, q?.id]);
+  }, [phase, q?.id, mediaReady]);
+
+  function doneReading() {
+    if (q?.passage_id) readPassages.current.add(q.passage_id);
+    setPhase("question");
+  }
 
   // 배틀 종료/대기 시 BGM 정지
   useEffect(() => {
@@ -882,7 +902,23 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
         </div>
       )}
 
-      {phase === "question" && q && move && (
+      {phase === "reading" && q && move && (
+        <div ref={questionRef} style={{ ...S.panel, padding: 12 }}>
+          <div style={{ fontSize: 11, color: "#5b7a99", marginBottom: 8 }}>
+            {move.label} 문제 · {q.tag} — 먼저 지문을 읽어요. 읽는 동안 시간은 흐르지 않아요.
+          </div>
+          {media?.passage ? <PassageBox passage={media.passage} /> : <div style={{ fontSize: 13, padding: "16px 0", textAlign: "center", color: "var(--ink-2)" }}>지문을 불러오는 중…</div>}
+          <button onClick={doneReading} disabled={!mediaReady} style={{ ...S.primaryBtn, width: "100%", opacity: mediaReady ? 1 : 0.45 }}>
+            다 읽었어요! 문제 보기
+          </button>
+        </div>
+      )}
+
+      {phase === "question" && q && move && !mediaReady && (
+        <div ref={questionRef} style={{ ...S.panel, padding: 12, fontSize: 13, textAlign: "center", color: "var(--ink-2)" }}>문제 그림을 불러오는 중…</div>
+      )}
+
+      {phase === "question" && q && move && mediaReady && (
         <div ref={questionRef} style={{ ...S.panel, padding: 12 }}>
           {timerOn ? (
             <TimerBar
@@ -897,7 +933,9 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
               <span style={{ color: "#5b7a99" }}>{move.label} 문제 · {q.tag}</span>
             </div>
           )}
-          <div style={{ fontSize: 15, marginBottom: 10, lineHeight: 1.6 }}><MathText>{q.body}</MathText></div>
+          {media?.passage && <PassageBox passage={media.passage} maxHeight="34vh" />}
+          {media?.svg && <SvgImage svg={media.svg} />}
+          <div style={{ fontSize: 15, marginBottom: 10, lineHeight: 1.6, whiteSpace: "pre-wrap" }}><MathText>{q.body}</MathText></div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 6 }}>
             {q.sOpts.map((o, i) => {
               const on = selected === i;
