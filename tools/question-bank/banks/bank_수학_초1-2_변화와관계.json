@@ -1,0 +1,352 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "초",
+  "course": "수학",
+  "gradeBand": "초1-2",
+  "unit": "변화와 관계",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-초1-2-2수02-01-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "규칙에 따라 모양을 늘어놓았습니다. ? 자리에 알맞은 모양은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 264 50\" font-family=\"sans-serif\"><circle cx=\"27\" cy=\"25\" r=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"69,10 84,37 54,37\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"111\" cy=\"25\" r=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"153,10 168,37 138,37\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"195\" cy=\"25\" r=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"222\" y=\"10\" width=\"30\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><text x=\"237\" y=\"31\" font-size=\"18\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text></svg>",
+   "options": [
+    "동그라미",
+    "네모",
+    "별",
+    "세모"
+   ],
+   "answer": 3,
+   "why": "동그라미, 세모가 번갈아 놓이므로 동그라미 다음에는 세모가 옵니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-01-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "규칙을 찾아 빈칸에 알맞은 수를 고르세요.\n2, 4, 6, 8, □",
+   "options": [
+    "10",
+    "11",
+    "12",
+    "14"
+   ],
+   "answer": 0,
+   "why": "2씩 커지는 규칙이므로 8 다음은 10입니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-01-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "규칙에 따라 과일을 늘어놓았습니다. □에 알맞은 과일은 무엇인가요?\n사과, 사과, 귤, 사과, 사과, 귤, 사과, □",
+   "answers": [
+    "사과"
+   ],
+   "why": "사과, 사과, 귤이 되풀이됩니다. 일곱 번째 사과 다음은 여덟 번째로 사과입니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-01-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "바둑돌을 규칙에 따라 늘어놓았습니다. 규칙을 바르게 말한 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 314 46\" font-family=\"sans-serif\"><circle cx=\"21\" cy=\"23\" r=\"13\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"55\" cy=\"23\" r=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"89\" cy=\"23\" r=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"123\" cy=\"23\" r=\"13\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"157\" cy=\"23\" r=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"191\" cy=\"23\" r=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"225\" cy=\"23\" r=\"13\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"259\" cy=\"23\" r=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"293\" cy=\"23\" r=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "검은 바둑돌과 흰 바둑돌이 1개씩 되풀이된다",
+    "검은 바둑돌 2개, 흰 바둑돌 1개가 되풀이된다",
+    "검은 바둑돌 1개, 흰 바둑돌 2개가 되풀이된다",
+    "흰 바둑돌만 계속 놓인다"
+   ],
+   "answer": 2,
+   "why": "검은 돌 1개 다음에 흰 돌 2개가 오는 것이 되풀이됩니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-01-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "수 배열표에서 동그라미를 그린 수에는 어떤 규칙이 있나요?",
+   "svg": "<svg viewBox=\"0 0 326 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"320\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"35\" y1=\"3\" x2=\"35\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.5\"/><line x1=\"67\" y1=\"3\" x2=\"67\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.5\"/><line x1=\"99\" y1=\"3\" x2=\"99\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.5\"/><line x1=\"131\" y1=\"3\" x2=\"131\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.5\"/><line x1=\"163\" y1=\"3\" x2=\"163\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.5\"/><line x1=\"195\" y1=\"3\" x2=\"195\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.5\"/><line x1=\"227\" y1=\"3\" x2=\"227\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.5\"/><line x1=\"259\" y1=\"3\" x2=\"259\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.5\"/><line x1=\"291\" y1=\"3\" x2=\"291\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.5\"/><line x1=\"3\" y1=\"33\" x2=\"323\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.5\"/><line x1=\"3\" y1=\"63\" x2=\"323\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.5\"/><text x=\"19\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"51\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><circle cx=\"83.0\" cy=\"18.0\" r=\"12\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"83\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"115\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"147\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><circle cx=\"179.0\" cy=\"18.0\" r=\"12\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"179\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><text x=\"211\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">7</text><text x=\"243\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">8</text><circle cx=\"275.0\" cy=\"18.0\" r=\"12\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"275\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">9</text><text x=\"307\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">10</text><text x=\"19\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">11</text><circle cx=\"51.0\" cy=\"48.0\" r=\"12\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"51\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12</text><text x=\"83\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">13</text><text x=\"115\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">14</text><circle cx=\"147.0\" cy=\"48.0\" r=\"12\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"147\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">15</text><text x=\"179\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">16</text><text x=\"211\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">17</text><circle cx=\"243.0\" cy=\"48.0\" r=\"12\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"243\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">18</text><text x=\"275\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">19</text><text x=\"307\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">20</text><circle cx=\"19.0\" cy=\"78.0\" r=\"12\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"19\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">21</text><text x=\"51\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">22</text><text x=\"83\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">23</text><circle cx=\"115.0\" cy=\"78.0\" r=\"12\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"115\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">24</text><text x=\"147\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">25</text><text x=\"179\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">26</text><circle cx=\"211.0\" cy=\"78.0\" r=\"12\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"211\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">27</text><text x=\"243\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">28</text><text x=\"275\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">29</text><circle cx=\"307.0\" cy=\"78.0\" r=\"12\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"307\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30</text></svg>",
+   "options": [
+    "2씩 커진다",
+    "3씩 커진다",
+    "5씩 커진다",
+    "10씩 커진다"
+   ],
+   "answer": 1,
+   "why": "3, 6, 9, 12, …로 3씩 커집니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-01-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "모양을 수로 나타내려고 합니다. 동그라미는 1, 세모는 2로 나타내면 1, 2, 2, 1, 2, 2, …가 됩니다. 일곱 번째에 올 수는 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 264 72\" font-family=\"sans-serif\"><circle cx=\"27\" cy=\"25\" r=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"27\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><polygon points=\"69,10 84,37 54,37\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"69\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><polygon points=\"111,10 126,37 96,37\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"111\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><circle cx=\"153\" cy=\"25\" r=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"153\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><polygon points=\"195,10 210,37 180,37\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"195\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><polygon points=\"237,10 252,37 222,37\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"237\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text></svg>",
+   "answers": [
+    "1"
+   ],
+   "why": "1, 2, 2가 되풀이되므로 일곱 번째는 다시 처음인 1입니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-01-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "규칙에 따라 쌓기나무를 놓았습니다. 넷째 모양에 놓을 쌓기나무는 모두 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 224 88\" font-family=\"sans-serif\"><rect x=\"10\" y=\"44\" width=\"16\" height=\"16\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"18\" y=\"80\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1째</text><rect x=\"52\" y=\"44\" width=\"16\" height=\"16\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"52\" y=\"28\" width=\"16\" height=\"16\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"68\" y=\"44\" width=\"16\" height=\"16\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"68\" y=\"80\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2째</text><rect x=\"110\" y=\"44\" width=\"16\" height=\"16\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"110\" y=\"28\" width=\"16\" height=\"16\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"110\" y=\"12\" width=\"16\" height=\"16\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"126\" y=\"44\" width=\"16\" height=\"16\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"142\" y=\"44\" width=\"16\" height=\"16\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"134\" y=\"80\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3째</text><rect x=\"184\" y=\"20\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><text x=\"200\" y=\"42\" font-size=\"18\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><text x=\"200\" y=\"80\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4째</text></svg>",
+   "options": [
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "answer": 0,
+   "why": "쌓기나무가 1개, 3개, 5개로 2개씩 늘어나므로 넷째는 7개입니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-01-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "덧셈표에서 동그라미를 그린 수들을 ↘ 방향으로 따라가면 수가 어떻게 변하나요?",
+   "svg": "<svg viewBox=\"0 0 206 206\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"200\" height=\"200\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"43\" y1=\"3\" x2=\"43\" y2=\"203\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"43\" x2=\"203\" y2=\"43\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"203\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"3\" y1=\"83\" x2=\"203\" y2=\"83\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"123\" y1=\"3\" x2=\"123\" y2=\"203\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"3\" y1=\"123\" x2=\"203\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"163\" y1=\"3\" x2=\"163\" y2=\"203\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"3\" y1=\"163\" x2=\"203\" y2=\"163\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"23\" y=\"29\" font-size=\"16\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">+</text><text x=\"63\" y=\"28\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"23\" y=\"68\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"103\" y=\"28\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"23\" y=\"108\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"143\" y=\"28\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"23\" y=\"148\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"183\" y=\"28\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"23\" y=\"188\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><circle cx=\"63.0\" cy=\"63.0\" r=\"14\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"63\" y=\"68\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"103\" y=\"68\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"143\" y=\"68\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"183\" y=\"68\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"63\" y=\"108\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">3</text><circle cx=\"103.0\" cy=\"103.0\" r=\"14\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"103\" y=\"108\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"143\" y=\"108\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"183\" y=\"108\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"63\" y=\"148\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"103\" y=\"148\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">5</text><circle cx=\"143.0\" cy=\"143.0\" r=\"14\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"143\" y=\"148\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"183\" y=\"148\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">7</text><text x=\"63\" y=\"188\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"103\" y=\"188\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"143\" y=\"188\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">7</text><circle cx=\"183.0\" cy=\"183.0\" r=\"14\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"183\" y=\"188\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\">8</text></svg>",
+   "options": [
+    "1씩 커진다",
+    "2씩 커진다",
+    "변하지 않는다",
+    "2씩 작아진다"
+   ],
+   "answer": 1,
+   "why": "2, 4, 6, 8로 2씩 커집니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-01-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "어느 달의 달력에서 화요일인 날짜는 2일, 9일, 16일, …입니다. 16일 다음 화요일은 며칠인가요?",
+   "answers": [
+    "23",
+    "23일"
+   ],
+   "why": "달력에서 같은 요일은 7일마다 돌아오므로 16+7=23(일)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-02-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "‘세모, 동그라미’가 되풀이되도록 모양을 놓으려고 했는데 한 곳을 잘못 놓았습니다. 잘못 놓은 것은 몇 번째인가요?",
+   "svg": "<svg viewBox=\"0 0 264 72\" font-family=\"sans-serif\"><polygon points=\"27,10 42,37 12,37\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"27\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><circle cx=\"69\" cy=\"25\" r=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"69\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><polygon points=\"111,10 126,37 96,37\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"111\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><circle cx=\"153\" cy=\"25\" r=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"153\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><polygon points=\"195,10 210,37 180,37\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"195\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><polygon points=\"237,10 252,37 222,37\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"237\" y=\"66\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text></svg>",
+   "options": [
+    "세 번째",
+    "네 번째",
+    "다섯 번째",
+    "여섯 번째"
+   ],
+   "answer": 3,
+   "why": "다섯 번째 세모 다음에는 동그라미가 와야 하는데 여섯 번째에 세모를 놓았습니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-02-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "‘2부터 시작하여 5씩 커지는’ 규칙으로 수를 늘어놓습니다. 세 번째 수는 무엇인가요?",
+   "options": [
+    "7",
+    "10",
+    "12",
+    "17"
+   ],
+   "answer": 2,
+   "why": "2, 7, 12이므로 세 번째 수는 12입니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-02-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "‘큰 구슬 1개, 작은 구슬 2개’가 되풀이되도록 구슬을 꿰고 있습니다. 10번째 구슬은 큰 구슬과 작은 구슬 중 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 210 48\" font-family=\"sans-serif\"><circle cx=\"20\" cy=\"24\" r=\"14\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"54\" cy=\"24\" r=\"7.7\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"88\" cy=\"24\" r=\"7.7\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"122\" cy=\"24\" r=\"14\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"156\" cy=\"24\" r=\"7.7\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"190\" cy=\"24\" r=\"7.7\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "answers": [
+    "큰 구슬",
+    "큰구슬",
+    "큰 것",
+    "큰"
+   ],
+   "why": "1, 4, 7, 10번째가 큰 구슬입니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-02-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "‘사과 2개, 배 1개’가 되풀이되도록 과일 9개를 늘어놓으려고 합니다. 배는 모두 몇 개를 놓게 되나요?",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "6"
+   ],
+   "answer": 1,
+   "why": "사과, 사과, 배 3개가 한 묶음이고 9개는 3묶음이므로 배는 3개입니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-02-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 ‘10씩 작아지는’ 규칙으로 수를 늘어놓은 것은 무엇인가요?",
+   "options": [
+    "50, 40, 30, 20",
+    "50, 45, 40, 35",
+    "20, 30, 40, 50",
+    "50, 49, 48, 47"
+   ],
+   "answer": 0,
+   "why": "50, 40, 30, 20은 10씩 작아집니다. 20, 30, 40, 50은 10씩 커집니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-02-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "‘1부터 시작하여 3씩 커지는’ 규칙으로 수를 늘어놓습니다. 다섯 번째 수는 무엇인가요?",
+   "options": [
+    "10",
+    "12",
+    "13",
+    "16"
+   ],
+   "answer": 2,
+   "why": "1, 4, 7, 10, 13이므로 다섯 번째 수는 13입니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-02-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "모양은 동그라미와 네모가 번갈아 놓이고, 모양 안의 수는 1부터 2씩 커지는 규칙으로 늘어놓았습니다. 다섯 번째에 올 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 242 54\" font-family=\"sans-serif\"><circle cx=\"29\" cy=\"27\" r=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"29\" y=\"32\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"58\" y=\"10\" width=\"34\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"75\" y=\"32\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><circle cx=\"121\" cy=\"27\" r=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"121\" y=\"32\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><rect x=\"150\" y=\"10\" width=\"34\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"167\" y=\"32\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><rect x=\"196\" y=\"10\" width=\"34\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><text x=\"213\" y=\"33\" font-size=\"18\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text></svg>",
+   "options": [
+    "네모 안에 9",
+    "동그라미 안에 8",
+    "네모 안에 10",
+    "동그라미 안에 9"
+   ],
+   "answer": 3,
+   "why": "네모 다음은 동그라미이고, 7 다음 수는 9이므로 동그라미 안에 9입니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-02-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "화살표를 규칙에 따라 늘어놓았습니다. 아홉 번째에 올 화살표는 어느 쪽을 가리키나요?",
+   "svg": "<svg viewBox=\"0 0 332 70\" font-family=\"sans-serif\"><g transform=\"rotate(0 22 24)\"><line x1=\"22\" y1=\"38\" x2=\"22\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"3\"/><polyline points=\"14,20 22,12 30,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"22\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><g transform=\"rotate(90 58 24)\"><line x1=\"58\" y1=\"38\" x2=\"58\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"3\"/><polyline points=\"50,20 58,12 66,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"58\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><g transform=\"rotate(180 94 24)\"><line x1=\"94\" y1=\"38\" x2=\"94\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"3\"/><polyline points=\"86,20 94,12 102,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"94\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><g transform=\"rotate(270 130 24)\"><line x1=\"130\" y1=\"38\" x2=\"130\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"3\"/><polyline points=\"122,20 130,12 138,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"130\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><g transform=\"rotate(0 166 24)\"><line x1=\"166\" y1=\"38\" x2=\"166\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"3\"/><polyline points=\"158,20 166,12 174,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"166\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><g transform=\"rotate(90 202 24)\"><line x1=\"202\" y1=\"38\" x2=\"202\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"3\"/><polyline points=\"194,20 202,12 210,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"202\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><g transform=\"rotate(180 238 24)\"><line x1=\"238\" y1=\"38\" x2=\"238\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"3\"/><polyline points=\"230,20 238,12 246,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"238\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">7</text><g transform=\"rotate(270 274 24)\"><line x1=\"274\" y1=\"38\" x2=\"274\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"3\"/><polyline points=\"266,20 274,12 282,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"274\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">8</text><rect x=\"296\" y=\"10\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><text x=\"310\" y=\"30\" font-size=\"18\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><text x=\"310\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">9</text></svg>",
+   "options": [
+    "↑ 위쪽",
+    "→ 오른쪽",
+    "↓ 아래쪽",
+    "← 왼쪽"
+   ],
+   "answer": 0,
+   "why": "위, 오른쪽, 아래, 왼쪽 4개가 되풀이되므로 아홉 번째는 첫 번째와 같은 위쪽입니다."
+  },
+  {
+   "id": "수학-초1-2-2수02-02-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "변화와 관계",
+   "standard": "2수02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "규칙을 찾아 □에 알맞은 수를 구하세요.\n1, 2, 4, 7, 11, □",
+   "answers": [
+    "16"
+   ],
+   "why": "커지는 수가 1, 2, 3, 4로 1씩 늘어나므로 11 다음은 11+5=16입니다."
+  }
+ ],
+ "skipped": []
+}
