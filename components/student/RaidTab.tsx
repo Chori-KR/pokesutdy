@@ -12,6 +12,7 @@ import ShinyFx from "@/components/student/ShinyFx";
 import TypeFx from "@/components/student/TypeFx";
 import TimerBar from "@/components/student/TimerBar";
 import MathText from "@/components/MathText";
+import { revealEl } from "@/lib/scroll";
 import { SFX, playCry, startRaidBgm, stopBattleBgm } from "@/lib/sound";
 
 interface Props {
@@ -69,6 +70,9 @@ export default function RaidTab({
   const [q, setQ] = useState<ActiveQuestion | null>(null);
   const [selected, setSelected] = useState<number | null>(null);
   const selectedRef = useRef<number | null>(null);
+  // 긴 문제·그림·지문이 있어도 화면이 따라가도록: 문제가 뜨면 문제로, 답하면 배틀 장면으로
+  const arenaRef = useRef<HTMLDivElement>(null);
+  const questionRef = useRef<HTMLDivElement>(null);
   selectedRef.current = selected;
   const timeLeftRef = useRef(0);
   const [fx, setFx] = useState<{ kind: string; key: number; dir?: "fwd" | "back"; diff?: string } | null>(null);
@@ -168,6 +172,13 @@ export default function RaidTab({
     return pool[Math.floor(Math.random() * pool.length)];
   }
 
+  // 문제가 뜨면(지문·그림이 길어도) 문제 칸이 보이게
+  useEffect(() => {
+    if (phase !== "question") return;
+    const id = requestAnimationFrame(() => revealEl(questionRef.current));
+    return () => cancelAnimationFrame(id);
+  }, [phase, q?.id]);
+
   function chooseMove(m: Move) {
     const raw = pickQuestion(m.diff);
     if (!raw) { showToast("출제할 문제가 없어요. 선생님께 문의해주세요."); return; }
@@ -203,6 +214,7 @@ export default function RaidTab({
   async function answer(opt: ShuffledOption | null) {
     if (phase !== "question" || !move || !q || !boss) return;
     setPhase("busy");
+    revealEl(arenaRef.current);
     const correct = !!opt?.ok;
     // 풀이 기록(시트 연동·통계용) — 서버가 다시 채점해 저장. 실패해도 레이드 진행은 그대로.
     fetch("/api/raid/answer", {
@@ -351,7 +363,7 @@ export default function RaidTab({
       <div style={{ ...S.panel, textAlign: "center", padding: 10, marginBottom: 8, minHeight: 40, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13 }}>{msg}</div>
 
       {boss && bossState !== "gone" && (
-        <div style={{ position: "relative", borderRadius: 14, overflow: "hidden", border: "4px solid #2c2c34", marginBottom: 8 }}>
+        <div ref={arenaRef} style={{ position: "relative", borderRadius: 14, overflow: "hidden", border: "4px solid #2c2c34", marginBottom: 8 }}>
           <div style={{ position: "relative", width: "100%", paddingTop: "58%", background: "linear-gradient(#5b3a6e 0%,#5b3a6e 45%,#3a2540 45%,#2a1a30 100%)" }}>
             <div style={{ position: "absolute", left: "56%", top: "34%", width: "34%", height: "9%", background: "#7a4d8f", borderRadius: "50%", opacity: 0.6 }} />
             <div style={{ position: "absolute", left: "6%", top: "72%", width: "42%", height: "11%", background: "#7a4d8f", borderRadius: "50%", opacity: 0.6 }} />
@@ -397,7 +409,7 @@ export default function RaidTab({
 
       {/* 문제 (배틀과 동일 UI) */}
       {phase === "question" && q && move && (
-        <div style={{ ...S.panel, padding: 12 }}>
+        <div ref={questionRef} style={{ ...S.panel, padding: 12 }}>
           {timerOn ? (
             <TimerBar key={q.id} total={timeLimitFor(move.diff)} timeRef={timeLeftRef} onExpire={onTimeUp}
               label={<span style={{ color: "#5b7a99" }}>{move.label} 문제 · {q.tag}</span>} />

@@ -18,6 +18,7 @@ import { SFX, playCry, startBattleBgm, stopBattleBgm } from "@/lib/sound";
 import BallIcon from "@/components/BallIcon";
 import HpBar from "@/components/HpBar";
 import MathText from "@/components/MathText";
+import { revealEl } from "@/lib/scroll";
 
 interface Props {
   student: StudentData;
@@ -62,6 +63,9 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   const timeLeftRef = useRef(0); // 남은 시간(급소 판정용) — 표시는 TimerBar가 담당
   const [selected, setSelected] = useState<number | null>(null); // 선택→제출 2단계
   const selectedRef = useRef<number | null>(null);
+  // 긴 문제·그림·지문이 있어도 화면이 따라가도록: 문제가 뜨면 문제로, 답하면 배틀 장면으로
+  const arenaRef = useRef<HTMLDivElement>(null);
+  const questionRef = useRef<HTMLDivElement>(null);
   selectedRef.current = selected;
   const [fx, setFx] = useState<Fx>(null);
   const [throwKind, setThrowKind] = useState<BallKind>("poke"); // 애니메이션에 쓸 볼 종류
@@ -272,6 +276,13 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
     setMsg(`문제를 맞히면 ${m.name} 발동!`);
   }
 
+  // 문제가 뜨면(지문·그림이 길어도) 문제 칸이 보이게
+  useEffect(() => {
+    if (phase !== "question") return;
+    const id = requestAnimationFrame(() => revealEl(questionRef.current));
+    return () => cancelAnimationFrame(id);
+  }, [phase, q?.id]);
+
   // 배틀 종료/대기 시 BGM 정지
   useEffect(() => {
     if (phase === "done" || phase === "idle") stopBattleBgm();
@@ -305,6 +316,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
   async function answer(opt: ShuffledOption | null, remain: number) {
     if (phase !== "question" || !move || !q || !wild) return;
     setPhase("busy");
+    revealEl(arenaRef.current);
     const total = timeLimitFor(move.diff);
     const correct = !!opt?.ok;
     // 급소: 제한시간 앞 1/3 안에 정답 (명세 §4.2). 타이머 꺼짐이면 급소 없음.
@@ -534,7 +546,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
 
       {/* 배틀 필드 */}
       {phase !== "idle" && wild && (
-        <div style={{ position: "relative", borderRadius: 14, overflow: "hidden", border: "4px solid #2c2c34", marginBottom: 8 }}>
+        <div ref={arenaRef} style={{ position: "relative", borderRadius: 14, overflow: "hidden", border: "4px solid #2c2c34", marginBottom: 8 }}>
           <div style={{ position: "relative", width: "100%", paddingTop: "58%", background: BIOMES[wild.biome ?? ""]?.grad ?? "linear-gradient(#9adcf0 0%, #9adcf0 45%, #8fce6e 45%, #7bbf5c 100%)" }}>
             {wild.biome && BIOMES[wild.biome] && (
               <div style={{ position: "absolute", left: "50%", top: 4, transform: "translateX(-50%)", fontSize: 10, background: "rgba(0,0,0,0.35)", color: "#fff", borderRadius: 8, padding: "1px 8px", zIndex: 3 }}>
@@ -871,7 +883,7 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       )}
 
       {phase === "question" && q && move && (
-        <div style={{ ...S.panel, padding: 12 }}>
+        <div ref={questionRef} style={{ ...S.panel, padding: 12 }}>
           {timerOn ? (
             <TimerBar
               key={q.id}
