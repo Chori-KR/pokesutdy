@@ -13,7 +13,7 @@ import { sanitizeSvg } from "@/lib/svg";
 //   ]
 // }
 //  - passages / passage / svg 는 없어도 된다 (예전 형식 그대로 읽힘)
-//  - 태그 = "과목·단원" (배틀은 과목별로 묶어 출제)
+//  - 태그 = "과목·학년군 단원" (배틀은 과목별로 묶어 출제)
 //  - 문제마다 passage 칸에 지문 객체를 바로 넣어도 된다 ({ "title", "text", "source" })
 
 export type Difficulty = "easy" | "medium" | "hard";
@@ -117,8 +117,10 @@ export function parseBank(file: string, text: string): ParsedBank {
       answer_idx = a;
     }
 
+    // 태그 = "과목·학년군 단원" (예: 수학·초3-4 자료와 가능성) — 여러 학년을 넣어도 학년별로 켜고 끌 수 있게
     const subject = str(q.subject ?? meta.subject);
-    const unit = str(q.unit ?? meta.unit);
+    const band = str(q.gradeBand ?? meta.gradeBand);
+    const unit = [band, str(q.unit ?? meta.unit)].filter(Boolean).join(" ");
     const tag = (str(q.tag) || [subject, unit].filter(Boolean).join("·") || "미분류").slice(0, 60);
 
     let svg: string | null = null;

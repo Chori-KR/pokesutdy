@@ -117,7 +117,7 @@ export default function JsonImport({ classId, questions, passages, onRegistered,
       <div style={{ fontSize: 11.5, color: "#666", lineHeight: 1.7, marginBottom: 10 }}>
         Codex로 만든 <b>bank_….json</b> 파일을 골라요. <b>여러 개를 한꺼번에</b> 골라도 돼요.<br />
         지문(긴 글)·그림(SVG)·출처도 함께 들어오고, 이미 있는 똑같은 문제는 건너뛰어요.
-        태그는 <b>과목·단원</b>으로 붙어요.
+        태그는 <b>과목·학년군 단원</b>(예: 수학·초3-4 자료와 가능성)으로 붙어요.
       </div>
       <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center", marginBottom: 10 }}>
         <label style={{ ...T.primaryBtn, background: "#c07a1e", fontSize: 12, cursor: "pointer", display: "inline-flex", alignItems: "center" }}>
