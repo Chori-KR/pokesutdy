@@ -1,0 +1,678 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "초",
+  "course": "수학",
+  "gradeBand": "초1-2",
+  "unit": "수와 연산",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-초1-2-2수01-08-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "3+4+2는 얼마인가요?",
+   "options": [
+    "7",
+    "9",
+    "10",
+    "8"
+   ],
+   "answer": 1,
+   "why": "앞에서부터 차례로 계산합니다. 3+4=7, 7+2=9입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-08-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "9-3-2는 얼마인가요?",
+   "options": [
+    "4",
+    "8",
+    "6",
+    "2"
+   ],
+   "answer": 0,
+   "why": "앞에서부터 차례로 계산합니다. 9-3=6, 6-2=4입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-08-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "세 바구니에 든 귤을 모두 모으면 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 306 46\" font-family=\"sans-serif\"><rect x=\"8\" y=\"6\" width=\"126\" height=\"34\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"23\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"47\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"71\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"95\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"119\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"150\" y=\"6\" width=\"78\" height=\"34\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"165\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"189\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"213\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"244\" y=\"6\" width=\"54\" height=\"34\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"259\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"283\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "answers": [
+    "10",
+    "10개",
+    "열 개"
+   ],
+   "why": "5+3+2=10(개)입니다. 3과 2를 먼저 더해도 5+5=10으로 같습니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-08-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "25+13+30은 얼마인가요?",
+   "options": [
+    "58",
+    "68",
+    "78",
+    "38"
+   ],
+   "answer": 1,
+   "why": "25+13=38, 38+30=68입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-08-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "48-15-21은 얼마인가요?",
+   "options": [
+    "12",
+    "22",
+    "54",
+    "2"
+   ],
+   "answer": 0,
+   "why": "48-15=33, 33-21=12입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-08-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "36+17-25는 얼마인가요?",
+   "options": [
+    "28",
+    "38",
+    "78",
+    "18"
+   ],
+   "answer": 0,
+   "why": "앞에서부터 계산합니다. 36+17=53, 53-25=28입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-08-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "40-15+5를 바르게 계산한 값은 얼마인가요?",
+   "options": [
+    "30",
+    "20",
+    "50",
+    "60"
+   ],
+   "answer": 0,
+   "why": "덧셈과 뺄셈이 섞인 세 수의 계산은 앞에서부터 합니다. 40-15=25, 25+5=30입니다. 15+5를 먼저 하면 틀립니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-08-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "버스에 23명이 타고 있었습니다. 첫째 정류장에서 8명이 내리고 12명이 탔습니다. 지금 버스에 탄 사람은 몇 명인가요?",
+   "options": [
+    "19",
+    "3",
+    "43",
+    "27"
+   ],
+   "answer": 3,
+   "why": "23-8+12로 계산합니다. 23-8=15, 15+12=27(명)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-08-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "세 수 18, 26, 12를 모두 더하면 얼마인가요? (더해서 30이 되는 두 수를 먼저 더해 보세요.)",
+   "answers": [
+    "56"
+   ],
+   "why": "18+12=30을 먼저 하고 30+26=56으로 계산하면 쉽습니다. 더하는 순서를 바꾸어도 합은 같습니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-09-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "□에 알맞은 수는 무엇인가요?\n3 + □ = 8",
+   "options": [
+    "11",
+    "4",
+    "6",
+    "5"
+   ],
+   "answer": 3,
+   "why": "3에 5를 더하면 8이 됩니다. 8-3=5로 구할 수 있습니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-09-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "□에 알맞은 수는 무엇인가요?\n□ - 4 = 6",
+   "options": [
+    "2",
+    "10",
+    "6",
+    "4"
+   ],
+   "answer": 1,
+   "why": "어떤 수에서 4를 빼서 6이 되었으므로 처음 수는 6+4=10입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-09-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "구슬이 모두 9개 있습니다. 상자 밖에 4개가 있다면 상자 속에는 몇 개가 있나요?",
+   "svg": "<svg viewBox=\"0 0 250 108\" font-family=\"sans-serif\"><rect x=\"10\" y=\"10\" width=\"90\" height=\"70\" rx=\"8\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"55\" y=\"52\" font-size=\"18\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?개</text><text x=\"55\" y=\"100\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상자 속</text><circle cx=\"130\" cy=\"30\" r=\"11\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"158\" cy=\"30\" r=\"11\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"186\" cy=\"30\" r=\"11\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"214\" cy=\"30\" r=\"11\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"172\" y=\"100\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상자 밖</text></svg>",
+   "answers": [
+    "5",
+    "5개",
+    "다섯 개"
+   ],
+   "why": "□+4=9이므로 □=9-4=5(개)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-09-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "사탕이 15개 있었는데 몇 개를 먹었더니 9개가 남았습니다. 먹은 사탕의 수를 □로 하여 바르게 나타낸 식은 무엇인가요?",
+   "options": [
+    "15+□=9",
+    "15-□=9",
+    "□-9=15",
+    "9-□=15"
+   ],
+   "answer": 1,
+   "why": "15개에서 먹은 □개를 빼서 9개가 남았으므로 15-□=9입니다. □=6입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-09-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "어떤 수에 17을 더했더니 42가 되었습니다. 어떤 수는 얼마인가요?",
+   "options": [
+    "25",
+    "59",
+    "35",
+    "15"
+   ],
+   "answer": 0,
+   "why": "□+17=42이므로 □=42-17=25입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-09-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림을 보고 □에 알맞은 수를 구하세요. □ - 28 = 16",
+   "svg": "<svg viewBox=\"0 0 284 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"168\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"94\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">28</text><rect x=\"178\" y=\"14\" width=\"96\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"226\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">16</text><path d=\"M10,54 q0,10 10,10 L134,64 l8,8 l8,-8 L264,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"142\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">□</text></svg>",
+   "options": [
+    "12",
+    "34",
+    "54",
+    "44"
+   ],
+   "answer": 3,
+   "why": "□는 28과 16을 합한 수입니다. 28+16=44입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-09-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "52-□=27에서 □를 구하는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "52+27로 구한다",
+    "27-52로 구한다",
+    "52-27로 구한다",
+    "27+27로 구한다"
+   ],
+   "answer": 2,
+   "why": "52에서 □를 빼서 27이 되었으므로 □는 52와 27의 차입니다. 52-27=25입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-09-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "줄넘기를 어제 몇 번 하고, 오늘 35번 하여 모두 81번 했습니다. 어제 한 줄넘기는 몇 번인가요?",
+   "options": [
+    "46번",
+    "116번",
+    "56번",
+    "54번"
+   ],
+   "answer": 0,
+   "why": "□+35=81이므로 □=81-35=46(번)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-09-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "주차장에 차가 몇 대 있었습니다. 14대가 나가고 9대가 들어왔더니 30대가 되었습니다. 처음에 있던 차는 몇 대인가요?",
+   "answers": [
+    "35",
+    "35대"
+   ],
+   "why": "□-14+9=30입니다. 거꾸로 생각하면 30-9=21, 21+14=35(대)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-10-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "딸기를 묶음으로 나누었습니다. 바르게 말한 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 376 46\" font-family=\"sans-serif\"><rect x=\"8\" y=\"6\" width=\"78\" height=\"34\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"23\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"47\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"71\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"6\" width=\"78\" height=\"34\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"117\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"141\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"165\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"196\" y=\"6\" width=\"78\" height=\"34\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"211\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"235\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"259\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"290\" y=\"6\" width=\"78\" height=\"34\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"305\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"329\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"353\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "4씩 3묶음",
+    "3씩 3묶음",
+    "3씩 4묶음",
+    "4씩 4묶음"
+   ],
+   "answer": 2,
+   "why": "한 묶음에 3개씩, 묶음이 4개이므로 3씩 4묶음입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-10-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림은 2씩 5묶음입니다. 곱셈식으로 바르게 나타낸 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 350 46\" font-family=\"sans-serif\"><rect x=\"8\" y=\"6\" width=\"54\" height=\"34\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"23\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"47\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"78\" y=\"6\" width=\"54\" height=\"34\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"93\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"117\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"148\" y=\"6\" width=\"54\" height=\"34\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"163\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"187\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"218\" y=\"6\" width=\"54\" height=\"34\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"233\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"257\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"288\" y=\"6\" width=\"54\" height=\"34\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"303\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"327\" cy=\"23\" r=\"9\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "$2 + 5 = 7$",
+    "$2 \\times 5 = 10$",
+    "$5 \\times 5 = 25$",
+    "$2 \\times 2 = 4$"
+   ],
+   "answer": 1,
+   "why": "2씩 5묶음은 2의 5배이고, 곱셈식으로 $2 \\times 5 = 10$입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-10-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "4+4+4를 곱셈식 $4 \\times □$로 나타낼 때, □에 알맞은 수를 쓰세요.",
+   "answers": [
+    "3"
+   ],
+   "why": "4를 3번 더했으므로 4의 3배, 곧 $4 \\times 3$입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-10-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "상자 하나에 사과가 6개씩 들어 있습니다. 상자 3개에 들어 있는 사과의 수를 나타내는 곱셈식은 무엇인가요?",
+   "options": [
+    "$3 \\times 3 = 9$",
+    "$6 + 3 = 9$",
+    "$6 \\times 6 = 36$",
+    "$6 \\times 3 = 18$"
+   ],
+   "answer": 3,
+   "why": "6개씩 3상자이므로 6의 3배, $6 \\times 3 = 18$입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-10-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "바둑돌의 수를 ‘몇의 몇 배’로 바르게 나타낸 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 158 130\" font-family=\"sans-serif\"><circle cx=\"22\" cy=\"22\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"22\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"78\" cy=\"22\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"106\" cy=\"22\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"134\" cy=\"22\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"22\" cy=\"50\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"50\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"78\" cy=\"50\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"106\" cy=\"50\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"134\" cy=\"50\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"22\" cy=\"78\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"78\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"78\" cy=\"78\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"106\" cy=\"78\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"134\" cy=\"78\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"22\" cy=\"106\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"106\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"78\" cy=\"106\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"106\" cy=\"106\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"134\" cy=\"106\" r=\"10\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "5의 4배",
+    "5의 5배",
+    "4의 4배",
+    "9의 2배"
+   ],
+   "answer": 0,
+   "why": "한 줄에 5개씩 4줄이므로 5의 4배입니다. 4의 5배로도 나타낼 수 있습니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-10-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "수직선에서 3씩 5번 뛰어 세었습니다. 도착한 수를 쓰세요.",
+   "svg": "<svg viewBox=\"0 0 338 90\" font-family=\"sans-serif\"><line x1=\"10\" y1=\"50\" x2=\"328\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"24\" y1=\"42\" x2=\"24\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"24\" y=\"78\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"82\" y1=\"42\" x2=\"82\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"82\" y=\"78\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><path d=\"M28,40 Q53,8 78,40\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><polyline points=\"70,34 78,40 76,31\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"53\" y=\"20\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">+3</text><line x1=\"140\" y1=\"42\" x2=\"140\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140\" y=\"78\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><path d=\"M86,40 Q111,8 136,40\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><polyline points=\"128,34 136,40 134,31\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"111\" y=\"20\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">+3</text><line x1=\"198\" y1=\"42\" x2=\"198\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"198\" y=\"78\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">9</text><path d=\"M144,40 Q169,8 194,40\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><polyline points=\"186,34 194,40 192,31\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"169\" y=\"20\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">+3</text><line x1=\"256\" y1=\"42\" x2=\"256\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"256\" y=\"78\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12</text><path d=\"M202,40 Q227,8 252,40\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><polyline points=\"244,34 252,40 250,31\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"227\" y=\"20\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">+3</text><line x1=\"314\" y1=\"42\" x2=\"314\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"294\" y=\"62\" width=\"40\" height=\"22\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><text x=\"314\" y=\"79\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><path d=\"M260,40 Q285,8 310,40\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><polyline points=\"302,34 310,40 308,31\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><text x=\"285\" y=\"20\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">+3</text></svg>",
+   "answers": [
+    "15"
+   ],
+   "why": "3씩 5번 뛰어 세면 3, 6, 9, 12, 15입니다. $3 \\times 5 = 15$입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-10-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$4 \\times 3$에 대해 바르게 말한 것은 무엇인가요?",
+   "options": [
+    "4와 3을 더한 것과 같다",
+    "4를 4번 더한 것과 같다",
+    "4를 3번 더한 것과 같다",
+    "4에서 3을 뺀 것과 같다"
+   ],
+   "answer": 2,
+   "why": "$4 \\times 3$은 4의 3배이므로 4+4+4와 같습니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-10-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "곱셈식 $5 \\times 3$으로 나타낼 수 없는 상황은 무엇인가요?",
+   "options": [
+    "꽃병 3개에 꽃이 5송이씩 꽂혀 있다",
+    "한 봉지에 사탕이 5개씩 3봉지 있다",
+    "5명이 있었는데 3명이 더 왔다",
+    "5씩 3번 뛰어 세었다"
+   ],
+   "answer": 2,
+   "why": "5명에 3명이 더 온 것은 덧셈 5+3으로 나타냅니다. 나머지는 5씩 3묶음인 상황입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-10-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "세발자전거 4대가 있습니다. 바퀴는 모두 몇 개인가요?",
+   "options": [
+    "7",
+    "8",
+    "16",
+    "12"
+   ],
+   "answer": 3,
+   "why": "세발자전거 한 대의 바퀴는 3개이므로 3의 4배, $3 \\times 4 = 12$(개)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-11-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$2 \\times 6$은 얼마인가요?",
+   "options": [
+    "8",
+    "12",
+    "26",
+    "10"
+   ],
+   "answer": 1,
+   "why": "2단 곱셈구구에서 2, 4, 6, 8, 10, 12이므로 $2 \\times 6$은 12입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-11-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$5 \\times 7$은 얼마인가요?",
+   "options": [
+    "30",
+    "12",
+    "35",
+    "40"
+   ],
+   "answer": 2,
+   "why": "5단 곱셈구구는 5씩 커집니다. 5, 10, 15, 20, 25, 30, 35이므로 35입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-11-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "3단 곱셈구구의 곱을 차례로 썼습니다. □에 알맞은 수를 쓰세요.\n3, 6, 9, 12, □",
+   "answers": [
+    "15"
+   ],
+   "why": "3단 곱셈구구는 3씩 커지므로 12 다음은 15입니다. $3 \\times 5 = 15$입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-11-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$4 \\times 6 = 24$입니다. $4 \\times 7$의 곱은 24보다 얼마만큼 더 큰가요?",
+   "options": [
+    "1",
+    "6",
+    "7",
+    "4"
+   ],
+   "answer": 3,
+   "why": "4단 곱셈구구에서 곱하는 수가 1 커지면 곱은 4만큼 커집니다. $4 \\times 7 = 28$입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-11-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "곱이 나머지와 다른 하나는 무엇인가요?",
+   "options": [
+    "$2 \\times 6$",
+    "$5 \\times 2$",
+    "$3 \\times 4$",
+    "$4 \\times 3$"
+   ],
+   "answer": 1,
+   "why": "$2 \\times 6$, $3 \\times 4$, $4 \\times 3$은 모두 12이고, $5 \\times 2$는 10입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-11-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "곱셈표의 일부입니다. ? 에 알맞은 수를 쓰세요.",
+   "svg": "<svg viewBox=\"0 0 230 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"224\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"59\" y1=\"3\" x2=\"59\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"115\" y1=\"3\" x2=\"115\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"171\" y1=\"3\" x2=\"171\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"227\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"227\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"227\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"31\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">×</text><text x=\"87\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><text x=\"143\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><text x=\"199\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8</text><text x=\"31\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><text x=\"87\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">36</text><text x=\"143\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">42</text><text x=\"199\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">48</text><text x=\"31\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><text x=\"87\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">42</text><text x=\"143\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">49</text><text x=\"199\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">?</text><text x=\"31\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8</text><text x=\"87\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">48</text><text x=\"143\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">56</text><text x=\"199\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">64</text></svg>",
+   "answers": [
+    "56"
+   ],
+   "why": "? 는 7단의 8번째 곱이므로 $7 \\times 8 = 56$입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-11-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "□에 알맞은 수는 무엇인가요?\n$□ \\times 6 = 0$",
+   "options": [
+    "1",
+    "6",
+    "0",
+    "60"
+   ],
+   "answer": 2,
+   "why": "0에 어떤 수를 곱해도 0이므로 □는 0입니다. $0 \\times 6 = 0$입니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-11-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$8 \\times 7$을 계산하는 방법으로 알맞지 않은 것은 무엇인가요?",
+   "options": [
+    "$8 \\times 6$에 8을 더한다",
+    "$7 \\times 8$의 곱을 이용한다",
+    "8을 7번 더한다",
+    "$8 \\times 5$에 8을 더한다"
+   ],
+   "answer": 3,
+   "why": "$8 \\times 5$에 8을 더하면 $8 \\times 6$이 됩니다. $8 \\times 7$은 $8 \\times 6$에 8을 더하거나 $7 \\times 8$로 구할 수 있습니다."
+  },
+  {
+   "id": "수학-초1-2-2수01-11-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "수와 연산",
+   "standard": "2수01-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "곱셈구구(2단~9단) 중에서 곱이 24인 곱셈식은 모두 몇 개인가요?",
+   "answers": [
+    "4",
+    "4개"
+   ],
+   "why": "$3 \\times 8$, $8 \\times 3$, $4 \\times 6$, $6 \\times 4$로 모두 4개입니다."
+  }
+ ],
+ "skipped": []
+}
