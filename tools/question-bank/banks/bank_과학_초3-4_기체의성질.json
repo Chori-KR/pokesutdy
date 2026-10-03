@@ -1,0 +1,472 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초3-4",
+  "unit": "기체의 성질",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "서진이의 기체 조사",
+   "text": "서진이는 우리 생활에서 쓰이는 기체를 조사했습니다. 우리가 숨을 쉴 때 필요한 산소는 숨쉬기 힘든 환자를 돕는 데에도 쓰입니다. 탄산음료의 뚜껑을 열면 올라오는 기포는 이산화탄소이고, 소화기에도 이산화탄소가 들어 있어 불을 끌 때 쓰입니다. 헬륨은 공기보다 가벼워서 풍선에 넣으면 풍선이 하늘로 떠오릅니다. 과자 봉지 속에는 질소가 채워져 있어 과자가 부서지지 않게 하고 쉽게 상하는 것을 막아 줍니다. 서진이는 기체마다 성질이 달라 쓰임도 다르다는 것을 알게 되었습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "과학-초3-4-4과15-01-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "공기와 같은 기체에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "무게가 있는 것은 고체뿐이다",
+    "눈에 보이지 않으면 무게가 없다",
+    "눈에 보이지 않아도 무게가 있다",
+    "공간을 차지하지 않는다"
+   ],
+   "answer": 2,
+   "why": "기체는 눈에 보이지 않아도 무게가 있고 공간을 차지합니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-01-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "공기 같은 기체에도 있는, 저울로 잴 수 있는 것을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "무게"
+   ],
+   "why": "기체도 무게가 있어서 저울로 잴 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-01-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "공기를 가득 넣은 공과 공기를 뺀 공의 무게를 재려고 합니다. 이 실험에서 같게 해야 할 것은 무엇인가요?",
+   "options": [
+    "같은 공과 같은 저울을 사용한다",
+    "공의 크기를 다르게 한다",
+    "저울을 바꿔 가며 잰다",
+    "공기의 양을 마음대로 정한다"
+   ],
+   "answer": 0,
+   "why": "공기의 양만 다르게 하고 공과 저울은 같게 해야 공정하게 비교할 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-01-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 같은 공에 공기를 넣기 전과 넣은 뒤의 무게를 잰 결과입니다. 결과로 알 수 있는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 316 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"310\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"313\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><text x=\"133\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공기 넣기 전</text><text x=\"253\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공기 넣은 뒤</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">무게(g)</text><text x=\"133\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">410</text><text x=\"253\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">416</text></svg>",
+   "options": [
+    "공기는 저울로 잴 수 없다",
+    "공기는 무게가 없다",
+    "공기를 넣으면 공이 가벼워진다",
+    "공기에도 무게가 있다"
+   ],
+   "answer": 3,
+   "why": "공기를 넣은 뒤 무게가 늘었으므로 공기에도 무게가 있음을 알 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-01-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "표는 같은 공에 공기를 넣기 전과 넣은 뒤의 무게입니다. 공기를 넣은 뒤 늘어난 무게는 무엇의 무게인가요?",
+   "svg": "<svg viewBox=\"0 0 316 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"310\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"313\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><text x=\"133\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공기 넣기 전</text><text x=\"253\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공기 넣은 뒤</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">무게(g)</text><text x=\"133\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">408</text><text x=\"253\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">414</text></svg>",
+   "options": [
+    "공의 껍질이 두꺼워진 무게",
+    "공 안에 들어간 공기의 무게",
+    "저울 위 먼지의 무게",
+    "알 수 없다"
+   ],
+   "answer": 1,
+   "why": "공과 저울은 그대로이고 공기만 늘었으므로 늘어난 무게는 공기의 무게입니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-01-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "공기를 가득 넣은 풍선이 빈 풍선보다 조금 더 무겁습니다. 풍선 안에 들어간 무엇에 무게가 있기 때문인가요? (두 글자)",
+   "answers": [
+    "공기"
+   ],
+   "why": "풍선 안에 들어간 공기에 무게가 있기 때문에 더 무겁습니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-02-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "온도가 높아지면 기체의 부피는 어떻게 되나요?",
+   "options": [
+    "작아진다",
+    "커진다",
+    "변하지 않는다",
+    "사라진다"
+   ],
+   "answer": 1,
+   "why": "기체는 온도가 높아지면 부피가 커집니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-02-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "주사기 속 공기를 피스톤으로 세게 누르면 공기의 부피는 어떻게 되나요? (두 글자)",
+   "answers": [
+    "작아진다",
+    "줄어든다",
+    "줄어든다.",
+    "작아짐",
+    "줄어듦"
+   ],
+   "why": "공기를 누르면 압력이 높아져 부피가 작아집니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-02-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 삼각 플라스크 입구에 풍선을 씌운 모습입니다. 처음 상태(가)의 플라스크를 따뜻한 물에 넣었을 때의 모습은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 406 148\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><path d=\"M52,56 L52,78 L26,116 L94,116 L68,78 L68,56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><ellipse cx=\"60\" cy=\"38\" rx=\"16\" ry=\"18\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"52\" y1=\"56\" x2=\"68\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"69\" y=\"142\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가(처음)</text><g transform=\"translate(138 0)\"><path d=\"M52,56 L52,78 L26,116 L94,116 L68,78 L68,56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><ellipse cx=\"60\" cy=\"28\" rx=\"26\" ry=\"28\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"52\" y1=\"56\" x2=\"68\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"203\" y=\"142\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(272 0)\"><path d=\"M52,56 L52,78 L26,116 L94,116 L68,78 L68,56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><ellipse cx=\"60\" cy=\"46\" rx=\"8\" ry=\"10\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"52\" y1=\"56\" x2=\"68\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"337\" y=\"142\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text></svg>",
+   "options": [
+    "알 수 없다",
+    "다",
+    "가",
+    "나"
+   ],
+   "answer": 3,
+   "why": "따뜻한 물에서는 플라스크 속 공기의 부피가 커져 풍선이 부풀어 오릅니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-02-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 주사기 속 공기의 피스톤 위치입니다. 가에서 나로 피스톤을 밀 때 공기의 부피가 줄어드는 까닭은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 178 168\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"44\" y=\"18\" width=\"80\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"64\" y=\"20\" width=\"60\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.25\"/><line x1=\"64\" y1=\"16\" x2=\"64\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"5\"/><line x1=\"36\" y1=\"33\" x2=\"64\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"36\" y1=\"22\" x2=\"36\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"124\" y1=\"33\" x2=\"140\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"4\"/><text x=\"94\" y=\"37\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공기</text></g><text x=\"89\" y=\"76\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(4 86)\"><rect x=\"44\" y=\"18\" width=\"80\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"104\" y=\"20\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.25\"/><line x1=\"104\" y1=\"16\" x2=\"104\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"5\"/><line x1=\"76\" y1=\"33\" x2=\"104\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"76\" y1=\"22\" x2=\"76\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"124\" y1=\"33\" x2=\"140\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"4\"/></g><text x=\"89\" y=\"162\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "options": [
+    "눌러서 공기에 가해지는 압력이 높아졌기 때문이다",
+    "공기의 무게가 사라졌기 때문이다",
+    "공기가 주사기 밖으로 모두 나갔기 때문이다",
+    "온도가 낮아졌기 때문이다"
+   ],
+   "answer": 0,
+   "why": "피스톤을 누르면 압력이 높아져 기체의 부피가 줄어듭니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-02-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "높은 산에 올라갔더니 닫아 둔 과자 봉지가 빵빵하게 부풀었습니다. 그 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "봉지 속 공기가 늘어났기 때문이다",
+    "과자가 커졌기 때문이다",
+    "높은 곳은 누르는 압력이 낮아져 봉지 속 공기의 부피가 커지기 때문이다",
+    "산의 온도가 항상 더 높기 때문이다"
+   ],
+   "answer": 2,
+   "why": "높은 곳은 압력이 낮아 봉지 속 공기의 부피가 커집니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-02-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "찌그러진 탁구공을 뜨거운 물에 넣었더니 공이 다시 펴졌습니다. 그 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "뜨거운 물이 공 안으로 들어갔기 때문이다",
+    "공 속 공기가 모두 사라졌기 때문이다",
+    "공 속 공기의 무게가 없어졌기 때문이다",
+    "공 속 공기가 따뜻해져 부피가 커졌기 때문이다"
+   ],
+   "answer": 3,
+   "why": "온도가 높아지면 기체의 부피가 커져 찌그러진 부분이 펴집니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-03-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 풍선에 넣으면 풍선이 하늘로 떠오르는 기체는 무엇인가요?",
+   "options": [
+    "산소",
+    "헬륨",
+    "이산화탄소",
+    "질소"
+   ],
+   "answer": 1,
+   "why": "헬륨은 공기보다 가벼워 풍선이 떠오릅니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-03-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "우리가 숨을 쉴 때 꼭 필요한 기체는 무엇인가요? (두 글자)",
+   "answers": [
+    "산소"
+   ],
+   "why": "우리는 숨을 쉬며 공기 중의 산소를 이용합니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-03-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "서진이의 글에서 이산화탄소가 쓰이는 곳을 모두 포함한 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "소화기, 풍선",
+    "풍선, 과자 봉지",
+    "탄산음료, 소화기",
+    "과자 봉지, 환자용 호흡"
+   ],
+   "answer": 2,
+   "why": "탄산음료의 기포와 소화기에 이산화탄소가 쓰인다고 했습니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-03-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표를 보고 과자가 부서지거나 상하는 것을 막기 위해 봉지에 넣는 기체를 고르세요.",
+   "svg": "<svg viewBox=\"0 0 266 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"260\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"263\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"263\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"263\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"263\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">기체</text><text x=\"183\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">쓰임</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">산소</text><text x=\"183\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">숨쉬기, 응급 치료</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">이산화탄소</text><text x=\"183\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">소화기, 탄산음료</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">헬륨</text><text x=\"183\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">풍선 띄우기</text><text x=\"53\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">질소</text><text x=\"183\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">과자 봉지 채우기</text></svg>",
+   "options": [
+    "질소",
+    "산소",
+    "헬륨",
+    "이산화탄소"
+   ],
+   "answer": 0,
+   "why": "표에서 과자 봉지를 채우는 데 쓰이는 기체는 질소입니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-03-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "글에서 헬륨 풍선이 하늘로 떠오르는 까닭으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "풍선이 차갑기 때문이다",
+    "헬륨이 공기보다 무겁기 때문이다",
+    "헬륨이 공기보다 가볍기 때문이다",
+    "헬륨이 불에 타기 때문이다"
+   ],
+   "answer": 2,
+   "why": "공기보다 가벼운 기체는 위로 떠오릅니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-03-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "소화기에 이산화탄소를 이용하는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "이산화탄소는 불이 타는 것을 막는 성질이 있기 때문이다",
+    "이산화탄소는 불을 더 크게 하기 때문이다",
+    "이산화탄소는 색이 예쁘기 때문이다",
+    "이산화탄소는 숨쉬기에 꼭 필요하기 때문이다"
+   ],
+   "answer": 0,
+   "why": "이산화탄소는 물질이 타는 것을 돕지 않아 불을 끄는 데 쓰입니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-04-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 공기가 눌리는 성질을 이용한 물건은 무엇인가요?",
+   "options": [
+    "유리 컵",
+    "나무 의자",
+    "쇠 숟가락",
+    "물건을 감싸는 에어캡(뽁뽁이) 포장재"
+   ],
+   "answer": 3,
+   "why": "공기가 든 포장재는 눌렸다가 펴지며 충격을 줄여 줍니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-04-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "자전거 바퀴에 공기를 넣을 때 쓰는 도구를 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "공기주입기",
+    "공기 주입기",
+    "펌프",
+    "공기펌프"
+   ],
+   "why": "펌프(공기 주입기)로 바퀴 속에 공기를 밀어 넣습니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-04-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "깨지기 쉬운 물건을 보호하는 포장재 안에 공기를 넣는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "공기가 무거워 물건을 눌러 주기 때문이다",
+    "공기가 눌렸다가 되돌아오는 성질로 충격을 줄여 주기 때문이다",
+    "공기가 물건을 녹이기 때문이다",
+    "공기가 없으면 포장이 어렵기 때문이다"
+   ],
+   "answer": 1,
+   "why": "공기는 눌리면 부피가 줄고 힘이 사라지면 되돌아오므로 충격을 줄일 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-04-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 호스로 연결한 두 주사기입니다. 가의 피스톤을 누르면 나의 피스톤은 어떻게 될까요?",
+   "svg": "<svg viewBox=\"0 0 178 168\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"44\" y=\"18\" width=\"80\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"68\" y=\"20\" width=\"56\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.25\"/><line x1=\"68\" y1=\"16\" x2=\"68\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"5\"/><line x1=\"40\" y1=\"33\" x2=\"68\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"40\" y1=\"22\" x2=\"40\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"124\" y1=\"33\" x2=\"140\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"4\"/><text x=\"96\" y=\"37\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공기</text></g><text x=\"89\" y=\"76\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가(누름)</text><g transform=\"translate(4 86)\"><rect x=\"44\" y=\"18\" width=\"80\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"68\" y=\"20\" width=\"56\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.25\"/><line x1=\"68\" y1=\"16\" x2=\"68\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"5\"/><line x1=\"40\" y1=\"33\" x2=\"68\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"40\" y1=\"22\" x2=\"40\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"124\" y1=\"33\" x2=\"140\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"4\"/><text x=\"96\" y=\"37\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공기</text></g><text x=\"89\" y=\"162\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나(연결됨)</text></svg>",
+   "options": [
+    "안쪽으로 더 들어간다",
+    "공기가 밀려와 바깥쪽으로 밀려 나온다",
+    "움직이지 않는다",
+    "부서진다"
+   ],
+   "answer": 1,
+   "why": "가의 공기가 눌려 호스를 지나 나로 가면서 나의 피스톤을 밀어냅니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-04-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "공기의 성질을 이용해 주사기와 호스로 움직이는 장치를 만들려고 합니다. 장치가 잘 움직이도록 가장 먼저 확인할 것은 무엇인가요?",
+   "options": [
+    "주사기를 무겁게 만들었는지",
+    "주사기의 색깔이 예쁜지",
+    "호스가 최대한 긴지",
+    "호스와 주사기 연결 부분에서 공기가 새지 않는지"
+   ],
+   "answer": 3,
+   "why": "공기가 새면 압력이 전달되지 않아 장치가 잘 움직이지 않습니다."
+  },
+  {
+   "id": "과학-초3-4-4과15-04-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기체의 성질",
+   "standard": "4과15-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "풍선 자동차에서 풍선 속 공기가 뒤로 빠져나가면 자동차는 어느 쪽으로 나아가나요? (앞 / 뒤)",
+   "answers": [
+    "앞",
+    "앞쪽",
+    "앞으로"
+   ],
+   "why": "공기가 뒤로 빠져나가면서 자동차를 앞으로 밀어 주어 자동차가 앞으로 나아갑니다."
+  }
+ ],
+ "skipped": []
+}
