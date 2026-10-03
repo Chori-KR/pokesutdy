@@ -1,0 +1,254 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "사회",
+  "school": "초",
+  "course": "사회",
+  "gradeBand": "초3-4",
+  "unit": "생활 속 문제 해결",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "학교 앞 길 위험 문제",
+   "text": "민준이네 모둠은 학교 앞 길이 위험하다는 문제를 찾았습니다. 등하교 시간에 자동차가 빠르게 지나가 깜짝 놀란 적이 많았기 때문입니다. 모둠은 먼저 학교 친구 50명에게 물어보는 설문 조사를 했고, 30명이 학교 앞에서 위험했던 적이 있다고 답했습니다. 모둠은 원인을 ‘자동차가 속도를 줄이지 않는다’는 것으로 정리하고, 해결 방안으로 ‘속도를 줄이는 표지판과 횡단보도 앞 안전 지킴이’를 제안했습니다. 조사 결과를 근거로 제시해 학교에 발표했습니다.",
+   "source": ""
+  },
+  {
+   "id": "p2",
+   "title": "우리 고장을 알리는 사람들",
+   "text": "○○ 고장에서는 해마다 가을에 ‘사과 축제’를 엽니다. 축제에서는 이 고장에서 키운 사과를 맛보고 살 수 있고, 사과 따기 체험도 할 수 있습니다. 고장의 누리집에는 축제 일정과 고장에서 볼 수 있는 아름다운 산과 옛 유적 사진이 올라 있습니다. 주민들은 안내 책자를 만들어 나누어 주고, 학생들은 고장을 소개하는 영상을 만들어 누리집에 올렸습니다. 이러한 활동으로 다른 지역 사람들도 이 고장에 관심을 갖고 찾아오게 되었습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "사회-초3-4-4사09-01-c1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "생활 속 문제 해결",
+   "standard": "4사09-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 우리 생활 주변에서 찾을 수 있는 문제로 알맞은 것은 무엇인가요?",
+   "options": [
+    "책가방이 가볍다",
+    "하늘에 구름이 떠 있다",
+    "길에 쓰레기가 많이 버려져 있다",
+    "교실 칠판이 초록색이다"
+   ],
+   "answer": 2,
+   "why": "모두가 불편하거나 위험을 느끼는 일이 생활 속 문제입니다."
+  },
+  {
+   "id": "사회-초3-4-4사09-01-c2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "생활 속 문제 해결",
+   "standard": "4사09-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "생활 속 문제를 해결하려면 먼저 문제가 무엇인지 어떻게 해야 하나요? (두 글자)",
+   "answers": [
+    "파악",
+    "찾기",
+    "찾아"
+   ],
+   "why": "문제를 해결하려면 먼저 문제가 무엇인지 파악해야 합니다."
+  },
+  {
+   "id": "사회-초3-4-4사09-01-b1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "생활 속 문제 해결",
+   "standard": "4사09-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "민준이네 모둠이 찾은 문제의 원인으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "자동차가 속도를 줄이지 않는다",
+    "학교가 너무 크다",
+    "횡단보도가 너무 많다",
+    "학생이 너무 적다"
+   ],
+   "answer": 0,
+   "why": "모둠은 원인을 ‘자동차가 속도를 줄이지 않는다’는 것으로 정리했습니다."
+  },
+  {
+   "id": "사회-초3-4-4사09-01-b2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "생활 속 문제 해결",
+   "standard": "4사09-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 문제 해결 과정을 순서대로 나타낸 것입니다. ㉠에 들어갈 알맞은 말은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 344 96\" font-family=\"sans-serif\"><line x1=\"16\" y1=\"52\" x2=\"314\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"320,52 310,46 310,58\" fill=\"currentColor\"/><circle cx=\"24\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"24\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">문제 파악</text><circle cx=\"118\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"118\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"118\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">㉠</text><circle cx=\"212\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"212\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"212\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">방안 탐색</text><circle cx=\"306\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"306\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"306\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">실천</text></svg>",
+   "options": [
+    "마무리 청소",
+    "시험 보기",
+    "그림 그리기",
+    "원인 찾기"
+   ],
+   "answer": 3,
+   "why": "문제를 파악한 다음에는 문제가 생긴 원인을 찾고, 그 원인에 맞는 방안을 탐색합니다."
+  },
+  {
+   "id": "사회-초3-4-4사09-01-a1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "생활 속 문제 해결",
+   "standard": "4사09-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "민준이네 모둠이 제안한 해결 방안의 근거로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "한 친구가 위험하다고 말한 것",
+    "친구 50명 중 30명이 학교 앞에서 위험했던 적이 있다고 답한 설문 결과",
+    "다른 학교의 이야기",
+    "모둠원 한 명의 기분"
+   ],
+   "answer": 1,
+   "why": "방안을 제안할 때는 조사한 결과 같은 근거를 들어야 설득력이 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사09-01-a2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "생활 속 문제 해결",
+   "standard": "4사09-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "공원에 쓰레기가 많은 문제를 해결하려는 방안으로 가장 합리적인 것은 무엇인가요?",
+   "options": [
+    "공원 문을 닫는다",
+    "쓰레기통을 늘리고 쓰레기를 버리지 않도록 알리는 안내판을 세운다",
+    "쓰레기를 그대로 둔다",
+    "쓰레기를 모두 땅에 묻는다"
+   ],
+   "answer": 1,
+   "why": "원인에 맞고 실천할 수 있으며 다른 사람에게 피해가 적은 방안이 합리적입니다."
+  },
+  {
+   "id": "사회-초3-4-4사09-02-c1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "생활 속 문제 해결",
+   "standard": "4사09-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "지역의 생산물을 알리는 활동으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "누리집을 모두 닫는다",
+    "지역의 쓰레기를 버린다",
+    "집에서 아무에게도 말하지 않는다",
+    "축제에서 지역에서 키운 사과를 맛보게 한다"
+   ],
+   "answer": 3,
+   "why": "축제는 지역의 생산물을 직접 맛보고 알 수 있게 하는 활동입니다."
+  },
+  {
+   "id": "사회-초3-4-4사09-02-c2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "생활 속 문제 해결",
+   "standard": "4사09-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "지역의 축제 일정이나 소개 글을 인터넷에서 볼 수 있도록 올려 놓은 곳을 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "누리집",
+    "홈페이지",
+    "웹사이트"
+   ],
+   "why": "지역의 소식과 소개를 올려 두는 곳이 누리집(홈페이지)입니다."
+  },
+  {
+   "id": "사회-초3-4-4사09-02-b1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "생활 속 문제 해결",
+   "standard": "4사09-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "글에서 지역을 알리기 위해 한 활동이 아닌 것은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "축제 때 다른 지역 사람이 오지 못하게 막았다",
+    "안내 책자를 만들어 나누어 주었다",
+    "고장을 소개하는 영상을 누리집에 올렸다",
+    "사과 따기 체험을 열었다"
+   ],
+   "answer": 0,
+   "why": "글에는 사람이 오지 못하게 막았다는 내용이 없고, 오히려 찾아오게 하려는 노력이 나와 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사09-02-b2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "생활 속 문제 해결",
+   "standard": "4사09-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "지역의 생산물이나 문화를 알리려고 해마다 사람들을 초대해 여는 큰 행사를 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "축제"
+   ],
+   "why": "축제는 지역의 생산물과 문화를 알리고 사람들이 함께 즐기는 행사입니다."
+  },
+  {
+   "id": "사회-초3-4-4사09-02-a1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "생활 속 문제 해결",
+   "standard": "4사09-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "이 고장의 알리기 활동이 효과가 있었음을 알려 주는 내용은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "누리집이 사라졌다",
+    "축제가 없어졌다",
+    "다른 지역 사람들도 이 고장에 관심을 갖고 찾아오게 되었다",
+    "주민들이 이사를 갔다"
+   ],
+   "answer": 2,
+   "why": "활동의 결과로 다른 지역 사람들이 찾아오게 되었다는 점이 효과를 보여 줍니다."
+  },
+  {
+   "id": "사회-초3-4-4사09-02-a2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "생활 속 문제 해결",
+   "standard": "4사09-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "우리 고장을 알리는 일에 학생인 내가 참여할 수 있는 방법으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "다른 고장을 알리는 일만 한다",
+    "고장 이름을 숨긴다",
+    "아무것도 하지 않는다",
+    "고장의 자랑거리를 조사해 소개 영상이나 그림 자료로 만든다"
+   ],
+   "answer": 3,
+   "why": "학생도 조사하고 소개 자료를 만들어 지역을 알리는 일에 참여할 수 있습니다."
+  }
+ ],
+ "skipped": []
+}

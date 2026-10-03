@@ -1,0 +1,254 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "사회",
+  "school": "초",
+  "course": "사회",
+  "gradeBand": "초3-4",
+  "unit": "사회 변화와 생활",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "할아버지와 나의 생활",
+   "text": "지우의 할아버지는 어렸을 때 편지를 써서 우체통에 넣어야 소식을 전할 수 있었다고 하십니다. 물건을 사려면 시장이나 가게에 직접 가야 했고, 먼 곳에 있는 사람과는 자주 만나기도 어려웠습니다. 지금 지우는 휴대 전화로 멀리 있는 친구와 얼굴을 보며 이야기하고, 컴퓨터로 책을 찾아보고, 집에서 인터넷으로 물건을 주문하면 며칠 안에 택배로 받습니다. 교통과 통신이 발달하고 정보를 빠르게 주고받을 수 있게 되면서 사람들의 생활모습이 많이 달라졌습니다.",
+   "source": ""
+  },
+  {
+   "id": "p2",
+   "title": "세계 음식 나눔 날",
+   "text": "소윤이네 반에는 다른 나라에서 온 친구 아나가 있습니다. 학급에서 ‘세계 음식 나눔 날’을 열어 아나는 고향의 빵을 가져왔고, 다른 친구들도 우리나라 음식과 여러 나라 음식을 나누어 먹었습니다. 처음 보는 음식이라 낯설어하는 친구도 있었지만, 아나가 음식에 얽힌 이야기를 들려주자 서로 궁금한 것을 물어보았습니다. 선생님께서 “다른 나라의 문화를 알게 되어 즐겁고 배울 점도 많지만, 서로 다름을 놀리지 않고 존중해야 해요.”라고 말씀하셨습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "사회-초3-4-4사03-01-c1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "사회 변화와 생활",
+   "standard": "4사03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "컴퓨터와 휴대 전화를 이용해 정보를 빠르고 쉽게 주고받는 사회를 무엇 사회라고 하나요? (세 글자 + 사회)",
+   "answers": [
+    "정보화",
+    "정보화 사회",
+    "정보화사회"
+   ],
+   "why": "정보를 빠르게 주고받고 활용하는 사회를 정보화 사회라고 합니다."
+  },
+  {
+   "id": "사회-초3-4-4사03-01-c2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "사회 변화와 생활",
+   "standard": "4사03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 통신이 발달하면서 달라진 생활모습으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "소식을 들으려고 한 달을 기다린다",
+    "편지를 쓰려고 며칠을 걸어간다",
+    "멀리 있는 사람과 휴대 전화로 얼굴을 보며 이야기한다",
+    "물건을 사려면 반드시 먼 곳까지 가야 한다"
+   ],
+   "answer": 2,
+   "why": "통신이 발달하여 멀리 있는 사람과도 바로 이야기할 수 있게 되었습니다."
+  },
+  {
+   "id": "사회-초3-4-4사03-01-b1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "사회 변화와 생활",
+   "standard": "4사03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "지우의 글에서 예전과 달라진 생활모습으로 알맞지 않은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "편지를 써서 우체통에 넣어야만 소식을 전한다",
+    "인터넷으로 물건을 주문하고 택배로 받는다",
+    "컴퓨터로 책을 찾아본다",
+    "휴대 전화로 얼굴을 보며 이야기한다"
+   ],
+   "answer": 0,
+   "why": "예전에는 편지를 써서 우체통에 넣어야 했지만, 지금은 여러 가지 방법으로 소식을 전합니다."
+  },
+  {
+   "id": "사회-초3-4-4사03-01-b2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "사회 변화와 생활",
+   "standard": "4사03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 예전과 요즘의 생활모습을 비교한 것입니다. ㉠에 들어갈 알맞은 말은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 316 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"310\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"93\" y1=\"3\" x2=\"93\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"203\" y1=\"3\" x2=\"203\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"313\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"313\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"48\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><text x=\"148\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">예전</text><text x=\"258\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">요즘</text><text x=\"48\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">물건 사기</text><text x=\"148\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">가게에 직접 감</text><text x=\"258\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">㉠</text><text x=\"48\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">소식 전하기</text><text x=\"148\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">편지</text><text x=\"258\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">문자, 영상 통화</text></svg>",
+   "options": [
+    "먼 곳까지 걸어서 감",
+    "손으로 직접 만듦",
+    "물건을 사지 않음",
+    "인터넷으로 주문해서 받음"
+   ],
+   "answer": 3,
+   "why": "요즘에는 인터넷으로 물건을 주문하고 택배로 받는 모습이 늘었습니다."
+  },
+  {
+   "id": "사회-초3-4-4사03-01-a1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "사회 변화와 생활",
+   "standard": "4사03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "지우의 글을 읽고 알 수 있는 사회 변화의 특징으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "사람들이 서로 소식을 전하지 않게 되었다",
+    "교통과 통신이 발달하여 사람과 정보가 더 빠르게 오가게 되었다",
+    "물건을 사고파는 일이 없어졌다",
+    "예전과 생활모습이 똑같다"
+   ],
+   "answer": 1,
+   "why": "교통·통신 발달로 정보와 물건, 사람이 빠르게 오가며 생활모습이 달라졌습니다."
+  },
+  {
+   "id": "사회-초3-4-4사03-01-a2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "사회 변화와 생활",
+   "standard": "4사03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "정보 통신이 발달하면서 생긴 문제와 그 해결 방법을 바르게 짝지은 것은 무엇인가요?",
+   "options": [
+    "스마트폰을 지나치게 오래 사용함 – 더 오래 사용한다",
+    "스마트폰을 지나치게 오래 사용함 – 사용 시간을 정해 지킨다",
+    "잘못된 정보가 퍼짐 – 확인하지 않고 전달한다",
+    "개인 정보가 알려짐 – 아무에게나 알려 준다"
+   ],
+   "answer": 1,
+   "why": "변화에는 편리함과 함께 문제도 따르므로, 사용 시간을 정하는 등 해결 방법을 실천해야 합니다."
+  },
+  {
+   "id": "사회-초3-4-4사03-02-c1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "사회 변화와 생활",
+   "standard": "4사03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "서로 다른 문화를 가진 사람들이 함께 어울려 사는 사회를 무엇 사회라고 하나요? (세 글자 + 사회)",
+   "answers": [
+    "다문화",
+    "다문화 사회",
+    "다문화사회"
+   ],
+   "why": "여러 나라의 문화를 가진 사람들이 함께 사는 사회를 다문화 사회라고 합니다."
+  },
+  {
+   "id": "사회-초3-4-4사03-02-c2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "사회 변화와 생활",
+   "standard": "4사03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다른 나라의 문화를 알게 되었을 때 생기는 좋은 점으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "친구와 대화하기 어려워진다",
+    "서로를 놀리게 된다",
+    "우리 문화를 모두 버리게 된다",
+    "새로운 음식과 놀이를 알게 되어 생활이 풍부해진다"
+   ],
+   "answer": 3,
+   "why": "다양한 문화를 접하면 새로운 것을 배우고 생활이 풍부해집니다."
+  },
+  {
+   "id": "사회-초3-4-4사03-02-b1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "사회 변화와 생활",
+   "standard": "4사03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "세계 음식 나눔 날에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "여러 나라의 음식을 나누며 서로의 문화를 알게 되었다",
+    "한 나라 음식만 먹었다",
+    "낯선 음식은 먹지 못하게 했다",
+    "아나의 음식만 먹지 않았다"
+   ],
+   "answer": 0,
+   "why": "친구들은 여러 나라 음식을 나누며 서로의 문화에 대해 이야기했습니다."
+  },
+  {
+   "id": "사회-초3-4-4사03-02-b2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "사회 변화와 생활",
+   "standard": "4사03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "다른 사람의 문화를 대하는 자세를 두 글자로 나타내면 무엇인가요? (선생님 말씀에서 찾기)",
+   "answers": [
+    "존중"
+   ],
+   "why": "서로 다른 문화를 놀리지 않고 존중하는 태도가 필요합니다."
+  },
+  {
+   "id": "사회-초3-4-4사03-02-a1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "사회 변화와 생활",
+   "standard": "4사03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "아나가 가져온 빵을 처음 보고 낯설어하는 친구에게 해 줄 말로 가장 알맞은 것은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "우리 음식이 훨씬 낫다",
+    "이상하게 생겼으니 먹지 마",
+    "다른 나라의 음식이니 어떤 이야기가 있는지 먼저 들어 보자",
+    "다른 문화는 알 필요가 없다"
+   ],
+   "answer": 2,
+   "why": "서로 다른 문화에 호기심을 갖고 이해하려고 하며 존중하는 태도가 중요합니다."
+  },
+  {
+   "id": "사회-초3-4-4사03-02-a2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "사회 변화와 생활",
+   "standard": "4사03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "여러 문화가 어울려 살 때 생길 수 있는 문제와 알맞은 해결 방법을 짝지은 것은 무엇인가요?",
+   "options": [
+    "다른 점이 불편함 – 모두 똑같이 하라고 한다",
+    "서로의 말과 습관을 몰라 오해가 생김 – 서로 만나지 않는다",
+    "다른 점을 놀림 – 더 많이 놀린다",
+    "서로의 말과 습관을 몰라 오해가 생김 – 서로 설명하고 이해하려고 노력한다"
+   ],
+   "answer": 3,
+   "why": "오해가 생기면 서로 설명하고 이해하려는 노력으로 문제를 풀 수 있습니다."
+  }
+ ],
+ "skipped": []
+}
