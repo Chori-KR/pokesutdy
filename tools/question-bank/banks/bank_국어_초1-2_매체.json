@@ -1,0 +1,259 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "국어",
+  "school": "초",
+  "course": "국어",
+  "gradeBand": "초1-2",
+  "unit": "매체",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "매체 이야기",
+   "text": "책, 신문, 텔레비전, 라디오, 스마트폰은 모두 매체예요. 매체는 우리에게 소식과 이야기를 전해 줘요. 책은 글과 그림으로 이야기를 전하고, 라디오는 소리로 소식을 전해요. 텔레비전은 소리와 영상을 함께 보여 줘요.",
+   "source": "직접 지음"
+  },
+  {
+   "id": "p2",
+   "title": "연날리기 그림일기",
+   "text": "5월 5일 일요일, 날씨는 맑음. 오늘은 가족과 함께 공원에 갔어요. 아빠와 함께 연을 만들었고, 나는 연을 날렸어요. 연이 하늘 높이 올라가서 정말 신났어요. 집에 와서 일기를 썼어요. 그림에는 노란 연과 웃고 있는 내 얼굴을 그렸어요.",
+   "source": "직접 지음"
+  }
+ ],
+ "questions": [
+  {
+   "id": "국어-초1-2-2국06-01-c1",
+   "subject": "국어",
+   "gradeBand": "초1-2",
+   "unit": "매체",
+   "standard": "2국06-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "이 글에서 라디오는 무엇으로 소식을 전한다고 했나요?",
+   "passage": "p1",
+   "answers": [
+    "소리",
+    "소리로"
+   ],
+   "why": "‘라디오는 소리로 소식을 전해요.’라고 했습니다."
+  },
+  {
+   "id": "국어-초1-2-2국06-01-b1",
+   "subject": "국어",
+   "gradeBand": "초1-2",
+   "unit": "매체",
+   "standard": "2국06-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "이 글에서 소리와 영상을 함께 보여 준다고 한 매체는 무엇인가요?",
+   "passage": "p1",
+   "answers": [
+    "텔레비전",
+    "티브이",
+    "TV",
+    "tv"
+   ],
+   "why": "‘텔레비전은 소리와 영상을 함께 보여 줘요.’라고 했습니다."
+  },
+  {
+   "id": "국어-초1-2-2국06-01-a1",
+   "subject": "국어",
+   "gradeBand": "초1-2",
+   "unit": "매체",
+   "standard": "2국06-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "이 글을 읽고 알 수 있는 책과 라디오의 다른 점은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "책과 라디오는 모두 영상으로 전한다",
+    "책은 소리로, 라디오는 글로 전한다",
+    "책은 글과 그림으로, 라디오는 소리로 전한다",
+    "책과 라디오는 전하는 방법이 같다"
+   ],
+   "answer": 2,
+   "why": "책은 글과 그림, 라디오는 소리로 이야기와 소식을 전합니다."
+  },
+  {
+   "id": "국어-초1-2-2국06-01-c2",
+   "subject": "국어",
+   "gradeBand": "초1-2",
+   "unit": "매체",
+   "standard": "2국06-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 매체가 아닌 것은 무엇인가요?",
+   "options": [
+    "연필",
+    "신문",
+    "라디오",
+    "책"
+   ],
+   "answer": 0,
+   "why": "책, 신문, 라디오는 소식과 이야기를 전하는 매체이고, 연필은 쓰는 도구입니다."
+  },
+  {
+   "id": "국어-초1-2-2국06-01-b2",
+   "subject": "국어",
+   "gradeBand": "초1-2",
+   "unit": "매체",
+   "standard": "2국06-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림이 많은 이야기를 읽고 싶을 때 가장 알맞은 매체는 무엇인가요?",
+   "options": [
+    "라디오",
+    "시계",
+    "전화기",
+    "그림책"
+   ],
+   "answer": 3,
+   "why": "그림책은 그림과 글로 이야기를 전하는 매체입니다."
+  },
+  {
+   "id": "국어-초1-2-2국06-01-a2",
+   "subject": "국어",
+   "gradeBand": "초1-2",
+   "unit": "매체",
+   "standard": "2국06-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "아래 스마트폰 화면의 문자 메시지에서 알 수 있는 내용은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 230 204\" font-family=\"sans-serif\"><rect x=\"40\" y=\"6\" width=\"150\" height=\"190\" rx=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"54\" y=\"26\" width=\"122\" height=\"146\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"60\" y=\"36\" width=\"110\" height=\"56\" rx=\"10\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"115\" y=\"58\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">내일 소풍이에요.</text><text x=\"115\" y=\"78\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">도시락을 챙겨요!</text><rect x=\"60\" y=\"104\" width=\"80\" height=\"34\" rx=\"10\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"100\" y=\"126\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">알겠어요!</text><circle cx=\"115\" cy=\"186\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "오늘 소풍을 갔다",
+    "내일 소풍에 도시락을 챙겨 가야 한다",
+    "내일 비가 올 것이다",
+    "소풍을 취소한다"
+   ],
+   "answer": 1,
+   "why": "메시지에 ‘내일 소풍이에요. 도시락을 챙겨요!’라고 쓰여 있습니다."
+  },
+  {
+   "id": "국어-초1-2-2국06-02-c1",
+   "subject": "국어",
+   "gradeBand": "초1-2",
+   "unit": "매체",
+   "standard": "2국06-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "글쓴이가 하늘 높이 날린 것은 무엇인가요?",
+   "passage": "p2",
+   "answers": [
+    "연",
+    "연을",
+    "노란 연"
+   ],
+   "why": "‘나는 연을 날렸어요. 연이 하늘 높이 올라가서’라고 했습니다."
+  },
+  {
+   "id": "국어-초1-2-2국06-02-b1",
+   "subject": "국어",
+   "gradeBand": "초1-2",
+   "unit": "매체",
+   "standard": "2국06-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "글쓴이가 그림에 그린 것은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "빨간 풍선과 우는 얼굴",
+    "노란 연과 웃고 있는 얼굴",
+    "푸른 바다와 배",
+    "공원 벤치와 강아지"
+   ],
+   "answer": 1,
+   "why": "그림에는 노란 연과 웃고 있는 내 얼굴을 그렸다고 했습니다."
+  },
+  {
+   "id": "국어-초1-2-2국06-02-a1",
+   "subject": "국어",
+   "gradeBand": "초1-2",
+   "unit": "매체",
+   "standard": "2국06-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "글쓴이의 마음이 더 잘 드러나도록 그림에 더하면 좋은 것은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "빈 의자",
+    "비가 오는 어두운 하늘",
+    "화가 난 얼굴",
+    "하늘 높이 올라간 연과 기뻐하는 가족의 모습"
+   ],
+   "answer": 3,
+   "why": "신나는 마음이 드러나려면 연이 높이 올라간 모습과 즐거워하는 얼굴을 그리면 좋습니다."
+  },
+  {
+   "id": "국어-초1-2-2국06-02-c2",
+   "subject": "국어",
+   "gradeBand": "초1-2",
+   "unit": "매체",
+   "standard": "2국06-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림일기는 무엇으로 나타내는 글인가요?",
+   "options": [
+    "글과 그림",
+    "소리와 노래",
+    "냄새와 맛",
+    "춤과 연극"
+   ],
+   "answer": 0,
+   "why": "그림일기는 있었던 일을 글과 그림으로 나타냅니다."
+  },
+  {
+   "id": "국어-초1-2-2국06-02-b2",
+   "subject": "국어",
+   "gradeBand": "초1-2",
+   "unit": "매체",
+   "standard": "2국06-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "아래 그림에 어울리는 문장을 고르세요.",
+   "svg": "<svg viewBox=\"0 0 200 210\" font-family=\"sans-serif\"><path d=\"M40,70 Q100,-14 160,70 Z\" fill=\"#4b7bec\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"100\" y1=\"70\" x2=\"100\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"26\" y1=\"30\" x2=\"21\" y2=\"44\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><line x1=\"52\" y1=\"50\" x2=\"47\" y2=\"64\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><line x1=\"156\" y1=\"44\" x2=\"151\" y2=\"58\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><line x1=\"178\" y1=\"66\" x2=\"173\" y2=\"80\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><line x1=\"22\" y1=\"90\" x2=\"17\" y2=\"104\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><line x1=\"176\" y1=\"104\" x2=\"171\" y2=\"118\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><circle cx=\"100\" cy=\"132\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"100\" y1=\"143\" x2=\"100\" y2=\"178\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"100\" y1=\"152\" x2=\"88\" y2=\"164\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"100\" y1=\"152\" x2=\"108\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"100\" y1=\"178\" x2=\"90\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"100\" y1=\"178\" x2=\"110\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "더워서 부채질을 했어요.",
+    "눈이 와서 눈사람을 만들었어요.",
+    "비가 와서 우산을 썼어요.",
+    "바람이 불어 연을 날렸어요."
+   ],
+   "answer": 2,
+   "why": "그림에는 비가 내리고 우산을 쓴 아이가 있으므로 ‘비가 와서 우산을 썼어요.’가 어울립니다."
+  },
+  {
+   "id": "국어-초1-2-2국06-02-a2",
+   "subject": "국어",
+   "gradeBand": "초1-2",
+   "unit": "매체",
+   "standard": "2국06-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "있었던 일과 내 생각을 그림일기로 잘 나타내는 방법은 무엇인가요?",
+   "options": [
+    "남이 쓴 글을 그대로 베낀다",
+    "그림만 그리고 글은 쓰지 않는다",
+    "글자만 쓰고 그림은 그리지 않는다",
+    "글과 그림에 내 경험과 마음을 담는다"
+   ],
+   "answer": 3,
+   "why": "글과 그림을 함께 쓰고 내 경험과 마음을 담으면 더 잘 표현할 수 있습니다."
+  }
+ ],
+ "skipped": []
+}
