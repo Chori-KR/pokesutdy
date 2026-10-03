@@ -1,0 +1,253 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "사회",
+  "school": "초",
+  "course": "사회",
+  "gradeBand": "초3-4",
+  "unit": "경제활동과 선택",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "학급 장터 준비",
+   "text": "3학년 2반은 학급 장터를 열기로 했습니다. 학급 회의에서 쓸 수 있는 돈은 모두 10000원이라고 정했습니다. 친구들은 풍선, 색종이, 게임 상품, 간식을 사고 싶다고 말했습니다. 그런데 이것을 모두 사려면 15000원이 필요했습니다. 그래서 모둠별로 무엇을 먼저 살지 이야기했습니다. 한 모둠은 ‘장터에 오는 사람들이 가장 좋아할 것인가’, ‘값이 적당한가’, ‘꼭 필요한가’를 기준으로 비교하기로 했습니다. 비교한 결과, 풍선과 게임 상품을 사기로 하고 간식은 다음 기회로 미루었습니다.",
+   "source": ""
+  },
+  {
+   "id": "p2",
+   "title": "바다 마을과 들 마을",
+   "text": "바다 마을 사람들은 배를 타고 나가 고기를 잡아 시장에 팝니다. 들 마을 사람들은 논과 밭에서 쌀과 채소를 키웁니다. 두 마을은 기차와 트럭으로 연결되어 있어, 바다 마을의 생선은 들 마을로 가고 들 마을의 쌀과 채소는 바다 마을로 옵니다. 또 들 마을 사람들은 바다 마을의 항구 시장을 구경하러 가고, 바다 마을 사람들은 들 마을의 장터에 일하러 가기도 합니다. 이렇게 두 마을은 서로에게 필요한 것을 주고받으며 도움을 얻고 있습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "사회-초3-4-4사07-01-c1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "경제활동과 선택",
+   "standard": "4사07-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "물건을 사고 싶은 마음은 많지만 쓸 수 있는 돈이 부족해서 무엇을 살지 골라야 하는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "물건 값이 항상 똑같기 때문이다",
+    "가게에 물건이 하나도 없기 때문이다",
+    "갖고 싶은 것에 비해 쓸 수 있는 돈이 한정되어 있기 때문이다",
+    "돈은 쓸수록 계속 늘어나기 때문이다"
+   ],
+   "answer": 2,
+   "why": "사고 싶은 것은 많은데 쓸 수 있는 돈은 한정되어 있어 선택해야 합니다."
+  },
+  {
+   "id": "사회-초3-4-4사07-01-c2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "경제활동과 선택",
+   "standard": "4사07-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "사람들이 원하는 것에 비해 돈, 물건, 시간 같은 자원이 부족한 성질을 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "희소성"
+   ],
+   "why": "원하는 것에 비해 자원이 부족한 성질을 희소성이라고 합니다."
+  },
+  {
+   "id": "사회-초3-4-4사07-01-b1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "경제활동과 선택",
+   "standard": "4사07-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "3학년 2반 학급 회의에서 모든 물건을 살 수 없었던 까닭으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "사려는 물건에 필요한 돈 15000원이 쓸 수 있는 돈 10000원보다 많았기 때문이다",
+    "사려는 물건이 한 가지뿐이었기 때문이다",
+    "쓸 수 있는 돈이 20000원이었기 때문이다",
+    "학급 장터를 열지 않기로 했기 때문이다"
+   ],
+   "answer": 0,
+   "why": "필요한 돈이 쓸 수 있는 돈보다 많아 모두 살 수 없었고, 그래서 선택이 필요했습니다."
+  },
+  {
+   "id": "사회-초3-4-4사07-01-b2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "경제활동과 선택",
+   "standard": "4사07-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 혜진이가 가진 용돈 3000원으로 살 수 있는 물건의 값입니다. 3000원으로 두 가지를 골라 모두 사려고 할 때 살 수 있는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 216 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"210\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"213\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"213\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"213\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"213\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">물건</text><text x=\"158\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">값(원)</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공책</text><text x=\"158\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1500</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">색연필</text><text x=\"158\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2000</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">지우개</text><text x=\"158\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1000</text><text x=\"53\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">자</text><text x=\"158\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1500</text></svg>",
+   "options": [
+    "색연필과 지우개와 자",
+    "색연필과 공책",
+    "색연필과 자",
+    "공책과 자"
+   ],
+   "answer": 3,
+   "why": "공책 1500원과 자 1500원을 합하면 3000원으로 살 수 있습니다. 색연필이 들어가면 3000원을 넘습니다."
+  },
+  {
+   "id": "사회-초3-4-4사07-01-a1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "경제활동과 선택",
+   "standard": "4사07-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "학급 회의에서 한 모둠이 사용한 합리적인 선택 방법으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "가장 비싼 것부터 산다",
+    "여러 기준을 정해 비교한 뒤 가장 알맞은 것을 고른다",
+    "친구의 의견은 듣지 않고 혼자 정한다",
+    "제비뽑기로만 정한다"
+   ],
+   "answer": 1,
+   "why": "‘좋아할 것인가, 값이 적당한가, 꼭 필요한가’와 같은 기준을 정해 비교하여 선택했습니다."
+  },
+  {
+   "id": "사회-초3-4-4사07-01-a2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "경제활동과 선택",
+   "standard": "4사07-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다음 중 합리적으로 선택하기 위해 하는 행동으로 알맞지 않은 것은 무엇인가요?",
+   "options": [
+    "꼭 필요한 것인지 생각해 본다",
+    "남이 산다고 해서 나도 따라서 산다",
+    "여러 가게의 값을 비교해 본다",
+    "쓸 수 있는 돈이 얼마인지 확인한다"
+   ],
+   "answer": 1,
+   "why": "합리적인 선택은 필요, 값, 가진 돈 같은 기준을 따져 보고 하는 것입니다."
+  },
+  {
+   "id": "사회-초3-4-4사07-02-c1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "경제활동과 선택",
+   "standard": "4사07-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 생산 활동에 해당하는 것은 무엇인가요?",
+   "options": [
+    "손님이 식당에서 밥을 사 먹는다",
+    "가족이 시장에서 쌀을 산다",
+    "학생이 문구점에서 공책을 산다",
+    "농부가 논에서 벼를 키운다"
+   ],
+   "answer": 3,
+   "why": "물건을 만들거나 서비스를 제공하는 활동이 생산 활동입니다. 나머지는 물건을 사서 쓰는 소비 활동입니다."
+  },
+  {
+   "id": "사회-초3-4-4사07-02-c2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "경제활동과 선택",
+   "standard": "4사07-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "필요한 물건이나 서비스를 사서 쓰는 경제활동을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "소비"
+   ],
+   "why": "물건이나 서비스를 사서 쓰는 활동을 소비 활동이라고 합니다."
+  },
+  {
+   "id": "사회-초3-4-4사07-02-b1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "경제활동과 선택",
+   "standard": "4사07-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "글에서 바다 마을과 들 마을이 서로 주고받는 물건을 바르게 짝지은 것은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "바다 마을의 생선과 들 마을의 쌀·채소",
+    "바다 마을의 쌀과 들 마을의 생선",
+    "바다 마을의 채소와 들 마을의 소금",
+    "바다 마을의 배와 들 마을의 논"
+   ],
+   "answer": 0,
+   "why": "바다 마을의 생선은 들 마을로, 들 마을의 쌀과 채소는 바다 마을로 옵니다."
+  },
+  {
+   "id": "사회-초3-4-4사07-02-b2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "경제활동과 선택",
+   "standard": "4사07-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "한 지역에서 만든 물건이 다른 지역으로 오가는 교류를 무엇 교류라고 하나요? (두 글자 + 교류)",
+   "answers": [
+    "물적",
+    "물적 교류",
+    "물적교류"
+   ],
+   "why": "물건이 오가는 교류를 물적 교류, 사람이 오가는 교류를 인적 교류라고 합니다."
+  },
+  {
+   "id": "사회-초3-4-4사07-02-a1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "경제활동과 선택",
+   "standard": "4사07-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "글을 읽고 알 수 있는 두 마을의 관계로 알맞은 것은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "서로 아무 관계가 없다",
+    "한 마을만 일방적으로 도움을 받는다",
+    "서로 필요한 것을 주고받으며 도움을 주는 상호 의존 관계이다",
+    "서로 같은 물건만 만들어 판다"
+   ],
+   "answer": 2,
+   "why": "두 마을은 서로에게 필요한 물건과 사람을 주고받으며 의존하고 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사07-02-a2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "경제활동과 선택",
+   "standard": "4사07-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "표는 빵집에서 일어난 일을 정리한 것입니다. 생산 활동과 소비 활동을 바르게 나눈 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 286 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"280\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"93\" y1=\"3\" x2=\"93\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"283\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"48\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">누가</text><text x=\"188\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">한 일</text><text x=\"48\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">빵집 주인</text><text x=\"188\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">밀가루로 빵을 만듦</text><text x=\"48\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">손님</text><text x=\"188\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">빵을 사서 먹음</text></svg>",
+   "options": [
+    "둘 다 소비",
+    "빵집 주인은 소비, 손님은 생산",
+    "둘 다 생산",
+    "빵집 주인은 생산, 손님은 소비"
+   ],
+   "answer": 3,
+   "why": "빵을 만드는 일은 생산 활동이고, 빵을 사서 먹는 일은 소비 활동입니다."
+  }
+ ],
+ "skipped": []
+}
