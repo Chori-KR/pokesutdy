@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초3-4",
+  "unit": "식물의 생활",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "환경에 알맞은 식물",
+   "text": "사막에 사는 선인장은 줄기가 통통하고 두꺼워서 비가 올 때 물을 저장합니다. 잎은 가시 모양으로 변해 물이 날아가는 것을 줄이고 동물에게 먹히는 것을 막아 줍니다. 연못에 사는 부레옥잠은 잎자루가 공기주머니처럼 부풀어 있어 물 위에 둥둥 뜰 수 있고, 뿌리는 물속으로 늘어져 있습니다. 높은 산에 사는 식물 가운데에는 땅 가까이에 바짝 붙어 작게 자라는 것이 많은데, 센 바람과 추위를 견디기 위해서입니다. 이처럼 식물의 생김새는 사는 환경과 관련이 있습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "과학-초3-4-4과03-01-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 줄기가 굵고 단단하며 여러 해 동안 사는 식물은 무엇인가요?",
+   "options": [
+    "토끼풀",
+    "강아지풀",
+    "소나무",
+    "민들레"
+   ],
+   "answer": 2,
+   "why": "소나무는 줄기가 굵고 단단한 나무입니다. 나머지는 풀입니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-01-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "줄기가 굵고 단단하며 오래 사는 식물을 풀과 구분하여 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "나무"
+   ],
+   "why": "줄기가 굵고 단단하며 오래 사는 식물을 나무라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-01-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표를 보고 소나무와 은행나무의 공통점으로 알맞은 것을 고르세요.",
+   "svg": "<svg viewBox=\"0 0 326 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"320\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"163\" y1=\"3\" x2=\"163\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"243\" y1=\"3\" x2=\"243\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"323\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"323\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"323\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">식물</text><text x=\"123\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">줄기</text><text x=\"203\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">잎 모양</text><text x=\"283\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">꽃</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">소나무</text><text x=\"123\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">나무</text><text x=\"203\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">바늘 모양</text><text x=\"283\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">있음</text><text x=\"43\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">은행나무</text><text x=\"123\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">나무</text><text x=\"203\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">부채 모양</text><text x=\"283\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">있음</text><text x=\"43\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">토끼풀</text><text x=\"123\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">풀</text><text x=\"203\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">동그란 모양</text><text x=\"283\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">있음</text></svg>",
+   "options": [
+    "둘 다 줄기가 나무이다",
+    "둘 다 잎이 바늘 모양이다",
+    "둘 다 풀이다",
+    "둘 다 꽃이 없다"
+   ],
+   "answer": 0,
+   "why": "표에서 소나무와 은행나무는 모두 줄기가 나무입니다. 잎 모양은 서로 다릅니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-01-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "소나무와 은행나무가 서로 구별되는 특징으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "둘 다 줄기가 없다",
+    "둘 다 풀이다",
+    "둘 다 바늘 모양 잎이다",
+    "잎의 모양이 다르다"
+   ],
+   "answer": 3,
+   "why": "소나무는 바늘 모양 잎, 은행나무는 부채 모양 잎으로 잎의 모양이 다릅니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-01-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "‘줄기가 나무인가?’를 기준으로 식물을 분류하려고 합니다. 강아지풀은 어느 쪽에 속하나요?",
+   "svg": "<svg viewBox=\"0 0 346 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"340\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"173\" y1=\"3\" x2=\"173\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"343\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"88\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">줄기가 나무인 식물</text><text x=\"258\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">줄기가 나무가 아닌 식물</text><text x=\"88\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">소나무, 벚나무</text><text x=\"258\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">토끼풀, 민들레</text></svg>",
+   "options": [
+    "줄기가 나무인 식물",
+    "줄기가 나무가 아닌 식물",
+    "둘 다 속한다",
+    "분류할 수 없다"
+   ],
+   "answer": 1,
+   "why": "강아지풀은 풀이므로 ‘줄기가 나무가 아닌 식물’에 속합니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-01-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "식물을 분류하는 기준으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "꽃이 예쁜가",
+    "잎이 바늘 모양인가",
+    "내가 좋아하는가",
+    "이름이 외우기 쉬운가"
+   ],
+   "answer": 1,
+   "why": "분류 기준은 누가 보아도 같은 결과가 나오는 분명한 특징이어야 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-02-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "사막에 사는 선인장의 줄기는 어떤 모양인가요?",
+   "options": [
+    "땅 위를 기어간다",
+    "가늘고 길다",
+    "물 위에 둥둥 뜬다",
+    "통통하고 두껍다"
+   ],
+   "answer": 3,
+   "why": "선인장은 통통한 줄기에 물을 저장합니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-02-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "연못이나 강처럼 물에서 사는 식물을 무엇이라고 하나요? (네 글자)",
+   "answers": [
+    "수생 식물",
+    "수생식물",
+    "물풀"
+   ],
+   "why": "물에서 사는 식물을 수생 식물이라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-02-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "선인장의 잎이 가시 모양인 까닭으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "물이 날아가는 것을 줄이고 동물에게 먹히는 것을 막기 위해서이다",
+    "물속에서 헤엄치기 위해서이다",
+    "햇빛을 많이 받기 위해서이다",
+    "눈에 잘 띄기 위해서이다"
+   ],
+   "answer": 0,
+   "why": "글에서 가시 모양 잎은 물이 날아가는 것을 줄이고 동물에게 먹히는 것을 막아 준다고 했습니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-02-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "부레옥잠이 물 위에 뜰 수 있는 까닭은 무엇인가요?",
+   "options": [
+    "뿌리가 땅속 깊이 뻗기 때문이다",
+    "줄기가 가시로 되어 있기 때문이다",
+    "잎자루가 공기주머니처럼 부풀어 있기 때문이다",
+    "잎이 바늘 모양이기 때문이다"
+   ],
+   "answer": 2,
+   "why": "부레옥잠의 부푼 잎자루에 공기가 있어 물 위에 뜰 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-02-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "글을 바탕으로 식물의 생김새와 사는 환경의 관계를 바르게 설명한 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "환경이 달라져도 식물은 변하지 않는다",
+    "식물의 생김새는 환경과 관계가 없다",
+    "모든 식물의 생김새는 같다",
+    "식물의 생김새는 사는 환경에서 살아가기에 알맞게 되어 있다"
+   ],
+   "answer": 3,
+   "why": "선인장, 부레옥잠, 고산 식물 모두 사는 환경에 알맞은 생김새를 가지고 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-02-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "높은 산에 사는 식물이 땅 가까이에 바짝 붙어 작게 자라는 까닭은 센 무엇을 견디기 위해서일까요? (두 글자)",
+   "answers": [
+    "바람"
+   ],
+   "why": "높은 산은 바람이 세고 추워서 작고 낮게 자라는 것이 유리합니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-03-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "연잎 위에서 물방울이 또르르 굴러떨어지는 특징을 이용해 만든 물건은 무엇인가요?",
+   "options": [
+    "불을 끄는 소화기",
+    "물에 젖지 않는 우산과 옷",
+    "소리를 내는 호루라기",
+    "자석 필통"
+   ],
+   "answer": 1,
+   "why": "연잎 표면의 방수 특징을 본떠 물에 젖지 않는 소재를 만들었습니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-03-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "날씨가 습하면 비늘이 닫히고 건조하면 열리는 소나무의 열매는 무엇인가요? (세 글자)",
+   "answers": [
+    "솔방울"
+   ],
+   "why": "솔방울은 습도에 따라 비늘이 닫히거나 열립니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-03-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표를 보고 민들레 씨의 특징을 이용해 만든 생활용품을 고르세요.",
+   "svg": "<svg viewBox=\"0 0 326 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"320\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"213\" y1=\"3\" x2=\"213\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"323\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"323\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"323\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">식물</text><text x=\"158\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">특징</text><text x=\"268\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">생활용품</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연잎</text><text x=\"158\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물에 젖지 않음</text><text x=\"268\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">방수 옷</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">민들레 씨</text><text x=\"158\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">털이 달림</text><text x=\"268\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">낙하산</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">단풍나무 씨</text><text x=\"158\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">날개가 달림</text><text x=\"268\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">회전 장난감</text></svg>",
+   "options": [
+    "회전 장난감",
+    "방수 옷",
+    "낙하산",
+    "우산"
+   ],
+   "answer": 2,
+   "why": "민들레 씨는 털이 있어 천천히 떨어지는 특징이 있어 낙하산에 이용되었습니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-03-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "식물의 특징을 이용한 생활용품을 설계하고 발표할 때 꼭 필요한 내용으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "어떤 식물의 어떤 특징을 이용했는지와 쓰임새",
+    "만든 사람의 나이",
+    "식물의 이름만 적기",
+    "아무 설명도 하지 않기"
+   ],
+   "answer": 0,
+   "why": "설계한 용품이 식물의 어떤 특징을 이용했고 어디에 쓰이는지 설명해야 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-03-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "단풍나무 씨의 날개가 빙글빙글 돌며 천천히 떨어지는 특징을 이용한 독창적인 아이디어로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "열을 막는 냄비 손잡이",
+    "물에 젖지 않는 신발",
+    "천천히 내려오는 택배 물건용 소형 낙하 장치",
+    "소리를 크게 하는 확성기"
+   ],
+   "answer": 2,
+   "why": "날개가 돌면서 천천히 떨어지는 특징을 이용해 물건이 천천히 내려오는 장치를 생각할 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과03-03-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "식물의 생활",
+   "standard": "4과03-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "모둠에서 식물의 특징을 이용한 용품을 함께 설계할 때 알맞은 태도는 무엇인가요?",
+   "options": [
+    "서로의 아이디어를 존중하며 의견을 모아 정리한다",
+    "내 의견만 말한다",
+    "친구 의견은 듣지 않는다",
+    "아무 의견도 내지 않는다"
+   ],
+   "answer": 0,
+   "why": "협력적으로 소통하려면 서로의 의견을 듣고 존중하며 정리해야 합니다."
+  }
+ ],
+ "skipped": []
+}
