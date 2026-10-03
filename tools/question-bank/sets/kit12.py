@@ -280,9 +280,8 @@ def base10(hund=0, tens=0, ones=0, thou=0, s=8):
         x += 10 * s * 0.8 + 22
     for _ in range(hund):
         out.append(f'<rect x="{x}" y="{yb - 10*s}" width="{10*s}" height="{10*s}" fill="{BLUE}" fill-opacity="0.3" stroke="{C}" stroke-width="2"/>')
-        for k in range(1, 10):
-            out.append(line(x + k * s, yb - 10 * s, x + k * s, yb, 2, 0.25))
-            out.append(line(x, yb - k * s, x + 10 * s, yb - k * s, 2, 0.25))
+        d = "".join(f"M{x + k * s},{yb - 10 * s}V{yb}M{x},{yb - k * s}H{x + 10 * s}" for k in range(1, 10))
+        out.append(f'<path d="{d}" stroke="{C}" stroke-width="2" stroke-opacity="0.25"/>')
         x += 10 * s + 8
     for _ in range(tens):
         out.append(f'<rect x="{x}" y="{yb - 10*s}" width="{s}" height="{10*s}" fill="{BLUE}" fill-opacity="0.3" stroke="{C}" stroke-width="2"/>')
@@ -440,3 +439,95 @@ def seg_bars(parts, total=None, u=1.0, gap_label="?"):
         out.append(text(W / 2, 92, total, 13, weight="bold"))
         H = 100
     return svg(_n(W), H, "".join(out))
+
+
+# ── 수와 연산 그림 ─────────────────────────────────────
+def numline(vals, hide=None, step_label=None):
+    """수직선: vals 위치에 눈금과 수, hide 번호는 ?로. 사이마다 뛰어 세기 화살"""
+    n = len(vals)
+    x0, w = 24, 290
+    u = w / (n - 1)
+    out = [line(x0 - 14, 50, x0 + w + 14, 50, 2.5)]
+    for i, v in enumerate(vals):
+        x = x0 + i * u
+        out.append(line(x, 42, x, 58, 2.5))
+        if hide is not None and i == hide:
+            out.append(f'<rect x="{_n(x - 20)}" y="62" width="40" height="22" rx="4" fill="none" stroke="{C}" stroke-width="2" stroke-dasharray="4 3"/>')
+            out.append(text(x, 79, "?", 15, weight="bold"))
+        else:
+            out.append(text(x, 78, v, 13, weight="bold"))
+        if i:
+            px = x - u
+            out.append(f'<path d="M{_n(px + 4)},40 Q{_n(px + u / 2)},8 {_n(x - 4)},40" fill="none" stroke="{BLUE}" stroke-width="2.5"/>')
+            out.append(f'<polyline points="{_n(x - 12)},34 {_n(x - 4)},40 {_n(x - 6)},31" fill="none" stroke="{BLUE}" stroke-width="2.5"/>')
+            if step_label:
+                out.append(text(px + u / 2, 20, step_label, 12))
+    return svg(w + 48, 90, "".join(out))
+
+
+def split_tree(top, left, right, mode="split"):
+    """가르기(split: 위가 전체) / 모으기(join: 아래가 전체) 그림. 값이 None이면 □"""
+    def box(cx, cy, v):
+        s = (f'<rect x="{cx - 24}" y="{cy - 18}" width="48" height="36" rx="6" fill="none" stroke="{C}" stroke-width="2.5"'
+             + (' stroke-dasharray="5 4"/>' if v is None else "/>"))
+        return s + text(cx, cy + 6, "?" if v is None else v, 17, weight="bold")
+    if mode == "split":
+        out = [box(110, 24, top), box(50, 104, left), box(170, 104, right),
+               line(98, 42, 60, 86, 2.5), line(122, 42, 160, 86, 2.5)]
+    else:
+        out = [box(50, 24, left), box(170, 24, right), box(110, 104, top),
+               line(60, 42, 98, 86, 2.5), line(160, 42, 122, 86, 2.5)]
+    return svg(220, 128, "".join(out))
+
+
+def cards(vals, hide=None, w=46):
+    out = []
+    for i, v in enumerate(vals):
+        x = 8 + i * (w + 10)
+        q = hide is not None and i == hide
+        out.append(f'<rect x="{x}" y="6" width="{w}" height="56" rx="7" fill="{"none" if q else BLUE}" fill-opacity="0.25" stroke="{C}" stroke-width="2.5"'
+                   + (' stroke-dasharray="5 4"/>' if q else "/>"))
+        out.append(text(x + w / 2, 42, "?" if q else v, 20, weight="bold"))
+    return svg(len(vals) * (w + 10) + 6, 68, "".join(out))
+
+
+def column(a, b_, op, result=None, carry=None, crossed=None):
+    """세로셈. carry: {자리(0=일,1=십): 작은 글자} 윗줄 작은 숫자, crossed: 지운 자리(윗수)"""
+    cw = 34
+    sa, sb = str(a), str(b_)
+    nd = max(len(sa), len(sb), len(str(result)) if result is not None else 0)
+    W = cw * (nd + 1) + 30
+    xr = W - 16   # 일의 자리 오른쪽 끝
+    out = []
+    top = 40
+    for k, ch in enumerate(reversed(sa)):
+        x = xr - cw * (k + 0.5)
+        out.append(text(x, top + 22, ch, 24, weight="bold"))
+        if crossed and k in crossed:
+            out.append(line(x - 10, top + 18, x + 10, top + 4, 2.5, color=ORANGE))
+    if carry:
+        for k, v in carry.items():
+            out.append(text(xr - cw * (k + 0.5), top - 8, v, 15, weight="bold", fill=ORANGE))
+    out.append(text(xr - cw * (nd + 0.5), top + 58, op, 24, weight="bold"))
+    for k, ch in enumerate(reversed(sb)):
+        out.append(text(xr - cw * (k + 0.5), top + 58, ch, 24, weight="bold"))
+    out.append(line(10, top + 70, W - 6, top + 70, 3))
+    if result is not None:
+        for k, ch in enumerate(reversed(str(result))):
+            out.append(text(xr - cw * (k + 0.5), top + 102, ch, 24, weight="bold"))
+    return svg(W, top + 112 if result is not None else top + 80, "".join(out))
+
+
+def crossed_items(n, crossed, kind="circle", r=12):
+    """물건 n개 중 crossed개에 /표 (먹었거나 없어진 것)"""
+    per = 5
+    cs = 2 * r + 12
+    rows = (n - 1) // per + 1
+    out = []
+    for i in range(n):
+        c, rr = i % per, i // per
+        cx, cy = 10 + r + c * cs, 10 + r + rr * cs
+        out.append(shape(kind, cx, cy, r, fill=BLUE))
+        if i >= n - crossed:
+            out.append(line(cx - r - 3, cy + r + 3, cx + r + 3, cy - r - 3, 3, color=ORANGE))
+    return svg(per * cs + 14, rows * cs + 12, "".join(out))
