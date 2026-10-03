@@ -1,0 +1,706 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "초",
+  "course": "수학",
+  "gradeBand": "초3-4",
+  "unit": "도형과 측정",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-초3-4-4수03-22-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-22",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "1 t은 몇 kg인가요?",
+   "options": [
+    "10 kg",
+    "100 kg",
+    "1000 kg",
+    "10000 kg"
+   ],
+   "answer": 2,
+   "why": "1 t은 1000 kg입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-22-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-22",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "3 t은 몇 kg인가요?",
+   "svg": "<svg viewBox=\"0 0 290 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"90\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"55\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 t</text><rect x=\"100\" y=\"14\" width=\"90\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"145\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 t</text><rect x=\"190\" y=\"14\" width=\"90\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"235\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 t</text><path d=\"M10,54 q0,10 10,10 L137,64 l8,8 l8,-8 L270,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"145\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3 t = ? kg</text></svg>",
+   "options": [
+    "3000 kg",
+    "300 kg",
+    "30 kg",
+    "30000 kg"
+   ],
+   "answer": 0,
+   "why": "1 t이 1000 kg이므로 3 t은 3000 kg입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-22-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-22",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "5000 kg은 몇 t인가요?",
+   "answers": [
+    "5",
+    "5 t",
+    "5t",
+    "5톤"
+   ],
+   "why": "1000 kg이 1 t이므로 5000 kg은 5 t입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-22-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-22",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "2 t 500 kg은 몇 kg인가요?",
+   "svg": "<svg viewBox=\"0 0 230 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"140\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"80\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2 t</text><rect x=\"150\" y=\"14\" width=\"70\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"185\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">500 kg</text><path d=\"M10,54 q0,10 10,10 L107,64 l8,8 l8,-8 L210,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"115\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? kg</text></svg>",
+   "options": [
+    "25000 kg",
+    "250 kg",
+    "2050 kg",
+    "2500 kg"
+   ],
+   "answer": 3,
+   "why": "2 t은 2000 kg이므로 2 t 500 kg은 2000+500=2500(kg)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-22-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-22",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "7300 kg은 몇 t 몇 kg인가요?",
+   "svg": "<svg viewBox=\"0 0 270 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"250\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"135\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7300 kg</text><path d=\"M10,54 q0,10 10,10 L127,64 l8,8 l8,-8 L250,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"135\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? t ? kg</text></svg>",
+   "options": [
+    "73 t",
+    "7 t 300 kg",
+    "7 t 30 kg",
+    "7 t 3 kg"
+   ],
+   "answer": 1,
+   "why": "7300 kg은 7000 kg과 300 kg이고, 7000 kg은 7 t이므로 7 t 300 kg입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-22-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-22",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "4 t 20 kg은 몇 kg인가요?",
+   "answers": [
+    "4020",
+    "4020 kg",
+    "4020kg"
+   ],
+   "why": "4 t은 4000 kg이므로 4 t 20 kg은 4000+20=4020(kg)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-22-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-22",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "무게를 t으로 나타내는 것이 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "달걀 한 개의 무게",
+    "화물 트럭이 싣는 짐의 무게",
+    "필통의 무게",
+    "사과 한 개의 무게"
+   ],
+   "answer": 1,
+   "why": "아주 무거운 물건의 무게는 t으로 나타내는 것이 알맞습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-22-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-22",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한 대가 1 t 500 kg인 트럭이 3대 있습니다. 트럭 3대의 무게는 모두 몇 kg인가요?",
+   "svg": "<svg viewBox=\"0 0 320 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"100\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"60\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 t 500 kg</text><rect x=\"110\" y=\"14\" width=\"100\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 t 500 kg</text><rect x=\"210\" y=\"14\" width=\"100\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"260\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 t 500 kg</text><path d=\"M10,54 q0,10 10,10 L152,64 l8,8 l8,-8 L300,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? kg</text></svg>",
+   "options": [
+    "5500 kg",
+    "3500 kg",
+    "4050 kg",
+    "4500 kg"
+   ],
+   "answer": 3,
+   "why": "1 t 500 kg은 1500 kg이므로 1500×3=4500(kg)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-22-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-22",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "1 t과 1 kg의 관계를 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "1 t은 1 kg을 1000번 더한 무게와 같다",
+    "1 t은 1 kg을 100번 더한 무게와 같다",
+    "1 kg은 1 t의 1000배이다",
+    "1 t과 1 kg은 같은 무게이다"
+   ],
+   "answer": 0,
+   "why": "1 t=1000 kg이므로 1 t은 1 kg을 1000번 더한 무게와 같습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-23-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-23",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "2 kg 300 g + 1 kg 400 g은 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 170 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"80\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"50\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2 kg 300 g</text><rect x=\"90\" y=\"14\" width=\"70\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"125\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 kg 400 g</text><path d=\"M10,54 q0,10 10,10 L77,64 l8,8 l8,-8 L150,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"85\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? kg ? g</text></svg>",
+   "options": [
+    "2 kg 700 g",
+    "3 kg 100 g",
+    "3 kg 700 g",
+    "4 kg 700 g"
+   ],
+   "answer": 2,
+   "why": "kg끼리 2+1=3, g끼리 300+400=700이므로 3 kg 700 g입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-23-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-23",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "5 kg 800 g - 2 kg 500 g은 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 220 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"90\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"55\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2 kg 500 g</text><rect x=\"100\" y=\"14\" width=\"110\" height=\"30\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"155\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><path d=\"M10,54 q0,10 10,10 L102,64 l8,8 l8,-8 L200,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"110\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5 kg 800 g</text></svg>",
+   "options": [
+    "2 kg 300 g",
+    "3 kg 100 g",
+    "7 kg 300 g",
+    "3 kg 300 g"
+   ],
+   "answer": 3,
+   "why": "kg끼리 5-2=3, g끼리 800-500=300이므로 3 kg 300 g입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-23-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-23",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "700 g + 600 g은 몇 kg 몇 g인가요?",
+   "answers": [
+    "1 kg 300 g",
+    "1kg 300g",
+    "1kg300g"
+   ],
+   "why": "700+600=1300(g)이고 1300 g은 1 kg 300 g입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-23-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-23",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "배 한 상자의 무게는 3 kg 700 g이고 빈 상자의 무게는 600 g입니다. 배만의 무게는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 230 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"60\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상자 600 g</text><rect x=\"70\" y=\"14\" width=\"150\" height=\"30\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"145\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">배 ?</text><path d=\"M10,54 q0,10 10,10 L107,64 l8,8 l8,-8 L210,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"115\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3 kg 700 g</text></svg>",
+   "options": [
+    "4 kg 300 g",
+    "3 kg 100 g",
+    "3 kg 700 g",
+    "2 kg 900 g"
+   ],
+   "answer": 1,
+   "why": "3 kg 700 g-600 g=3 kg 100 g입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-23-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-23",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "두 저울에 올린 물건 가와 나의 무게를 합하면 모두 몇 g인가요? (눈금 한 칸은 50 g입니다.)",
+   "svg": "<svg viewBox=\"0 0 378 208\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><circle cx=\"92\" cy=\"92\" r=\"76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"92\" y1=\"27\" x2=\"92\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"113.6\" y1=\"25.4\" x2=\"115.2\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"39.4\" x2=\"136.1\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">100</text><line x1=\"148.6\" y1=\"50.9\" x2=\"152.7\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"71.9\" x2=\"163.3\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">200</text><line x1=\"162\" y1=\"92\" x2=\"167\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"112.1\" x2=\"163.3\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">300</text><line x1=\"148.6\" y1=\"133.1\" x2=\"152.7\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"144.6\" x2=\"136.1\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">400</text><line x1=\"113.6\" y1=\"158.6\" x2=\"115.2\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"157\" x2=\"92\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"147\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">500</text><line x1=\"70.4\" y1=\"158.6\" x2=\"68.8\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"144.6\" x2=\"47.9\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">600</text><line x1=\"35.4\" y1=\"133.1\" x2=\"31.3\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"112.1\" x2=\"20.7\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">700</text><line x1=\"22\" y1=\"92\" x2=\"17\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"71.9\" x2=\"20.7\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">800</text><line x1=\"35.4\" y1=\"50.9\" x2=\"31.3\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"39.4\" x2=\"47.9\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">900</text><line x1=\"70.4\" y1=\"25.4\" x2=\"68.8\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"92\" x2=\"142.2\" y2=\"128.4\" stroke=\"#e07b39\" stroke-width=\"3.5\"/><circle cx=\"92\" cy=\"92\" r=\"5\" fill=\"currentColor\"/><text x=\"92\" y=\"114\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">g</text></g><text x=\"96\" y=\"202\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(190 0)\"><circle cx=\"92\" cy=\"92\" r=\"76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"92\" y1=\"27\" x2=\"92\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"113.6\" y1=\"25.4\" x2=\"115.2\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"39.4\" x2=\"136.1\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">100</text><line x1=\"148.6\" y1=\"50.9\" x2=\"152.7\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"71.9\" x2=\"163.3\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">200</text><line x1=\"162\" y1=\"92\" x2=\"167\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"112.1\" x2=\"163.3\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">300</text><line x1=\"148.6\" y1=\"133.1\" x2=\"152.7\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"144.6\" x2=\"136.1\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">400</text><line x1=\"113.6\" y1=\"158.6\" x2=\"115.2\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"157\" x2=\"92\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"147\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">500</text><line x1=\"70.4\" y1=\"158.6\" x2=\"68.8\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"144.6\" x2=\"47.9\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">600</text><line x1=\"35.4\" y1=\"133.1\" x2=\"31.3\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"112.1\" x2=\"20.7\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">700</text><line x1=\"22\" y1=\"92\" x2=\"17\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"71.9\" x2=\"20.7\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">800</text><line x1=\"35.4\" y1=\"50.9\" x2=\"31.3\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"39.4\" x2=\"47.9\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">900</text><line x1=\"70.4\" y1=\"25.4\" x2=\"68.8\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"92\" x2=\"72.8\" y2=\"151\" stroke=\"#e07b39\" stroke-width=\"3.5\"/><circle cx=\"92\" cy=\"92\" r=\"5\" fill=\"currentColor\"/><text x=\"92\" y=\"114\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">g</text></g><text x=\"282\" y=\"202\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "options": [
+    "1 kg 100 g",
+    "800 g",
+    "900 g",
+    "200 g"
+   ],
+   "answer": 2,
+   "why": "가는 350 g, 나는 550 g이므로 350+550=900(g)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-23-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-23",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "4 kg - 1 kg 700 g은 몇 kg 몇 g인가요?",
+   "answers": [
+    "2 kg 300 g",
+    "2kg 300g",
+    "2kg300g"
+   ],
+   "why": "4 kg을 3 kg 1000 g으로 바꾸어 계산합니다. 3 kg 1000 g-1 kg 700 g=2 kg 300 g입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-23-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-23",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "고구마가 1 kg 250 g, 감자가 2 kg 900 g, 양파가 800 g 있습니다. 세 가지의 무게는 모두 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 265 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"85\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"52.5\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 kg 250 g</text><rect x=\"95\" y=\"14\" width=\"100\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"145\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2 kg 900 g</text><rect x=\"195\" y=\"14\" width=\"60\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"225\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">800 g</text><path d=\"M10,54 q0,10 10,10 L124.5,64 l8,8 l8,-8 L245,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"132.5\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? kg ? g</text></svg>",
+   "options": [
+    "4 kg 950 g",
+    "4 kg 850 g",
+    "3 kg 950 g",
+    "4 kg 50 g"
+   ],
+   "answer": 0,
+   "why": "1 kg 250 g+2 kg 900 g=4 kg 150 g이고, 여기에 800 g을 더하면 4 kg 950 g입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-23-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-23",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "무게가 5 kg인 가방에 책을 넣었더니 8 kg 400 g이 되었습니다. 그중 2 kg 100 g은 공책의 무게입니다. 책의 무게는 얼마인가요?",
+   "options": [
+    "1 kg 700 g",
+    "3 kg 400 g",
+    "1 kg 300 g",
+    "2 kg 100 g"
+   ],
+   "answer": 2,
+   "why": "넣은 것의 무게는 8 kg 400 g-5 kg=3 kg 400 g이고, 이 중 공책이 2 kg 100 g이므로 책은 3 kg 400 g-2 kg 100 g=1 kg 300 g입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-23-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-23",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "쌀 3 kg 200 g 중에서 오늘 900 g을 먹었습니다. 남은 쌀의 무게를 구하는 과정으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "3 kg 200 g-900 g = 2 kg 1200 g-900 g = 2 kg 300 g",
+    "3 kg 200 g+900 g = 4 kg 100 g",
+    "3 kg 200 g-900 g = 3 kg-700 g",
+    "3 kg 200 g-900 g = 2 kg 900 g"
+   ],
+   "answer": 0,
+   "why": "g끼리 뺄 수 없을 때는 1 kg을 1000 g으로 바꾸어 계산합니다. 3 kg 200 g=2 kg 1200 g이므로 2 kg 300 g이 남습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-24-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-24",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "한 변을 각도기의 밑금(0°)에 맞추었습니다. 각의 크기는 몇 도인가요?",
+   "svg": "<svg viewBox=\"0 0 300 152\" font-family=\"sans-serif\"><g transform=\"translate(15 0)\"><path d=\"M17.0,132 A118,118 0 0 1 253.0,132 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"7\" y1=\"132\" x2=\"263\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"239\" y1=\"132\" x2=\"253\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"232\" y=\"123\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"243.3\" y1=\"112.9\" x2=\"251.2\" y2=\"111.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"238.4\" y1=\"94.4\" x2=\"245.9\" y2=\"91.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"225.1\" y1=\"80\" x2=\"237.2\" y2=\"73\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"213.8\" y=\"90.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30</text><text x=\"193.9\" y=\"102\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">150</text><line x1=\"219.3\" y1=\"61.3\" x2=\"225.4\" y2=\"56.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"205.7\" y1=\"47.7\" x2=\"210.8\" y2=\"41.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"187\" y1=\"41.9\" x2=\"194\" y2=\"29.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"180.5\" y=\"57.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">60</text><text x=\"169\" y=\"77.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">120</text><line x1=\"172.6\" y1=\"28.6\" x2=\"175.4\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"154.1\" y1=\"23.7\" x2=\"155.5\" y2=\"15.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"135\" y1=\"28\" x2=\"135\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"135\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">90</text><text x=\"135\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">90</text><line x1=\"115.9\" y1=\"23.7\" x2=\"114.5\" y2=\"15.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"97.4\" y1=\"28.6\" x2=\"94.6\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"41.9\" x2=\"76\" y2=\"29.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"89.5\" y=\"57.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">120</text><text x=\"101\" y=\"77.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">60</text><line x1=\"64.3\" y1=\"47.7\" x2=\"59.2\" y2=\"41.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"50.7\" y1=\"61.3\" x2=\"44.6\" y2=\"56.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44.9\" y1=\"80\" x2=\"32.8\" y2=\"73\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"56.2\" y=\"90.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">150</text><text x=\"76.1\" y=\"102\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">30</text><line x1=\"31.6\" y1=\"94.4\" x2=\"24.1\" y2=\"91.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"26.7\" y1=\"112.9\" x2=\"18.8\" y2=\"111.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"31\" y1=\"132\" x2=\"17\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"38\" y=\"123\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">180</text><circle cx=\"135\" cy=\"132\" r=\"4\" fill=\"currentColor\"/><line x1=\"135\" y1=\"132\" x2=\"277\" y2=\"132\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><line x1=\"135\" y1=\"132\" x2=\"243.8\" y2=\"40.7\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/></g></svg>",
+   "options": [
+    "50°",
+    "140°",
+    "30°",
+    "40°"
+   ],
+   "answer": 3,
+   "why": "오른쪽 밑금이 0°이므로 바깥쪽 눈금을 읽으면 40°입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-24-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-24",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "각의 크기의 단위인 1도를 나타내는 기호는 무엇인가요?",
+   "options": [
+    "cm",
+    "°",
+    "kg",
+    "L"
+   ],
+   "answer": 1,
+   "why": "각의 크기를 나타내는 단위인 도는 ‘°’로 씁니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-24-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-24",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "한 변을 각도기의 오른쪽 밑금(0°)에 맞추었습니다. 각의 크기는 몇 도인가요?",
+   "svg": "<svg viewBox=\"0 0 300 152\" font-family=\"sans-serif\"><g transform=\"translate(15 0)\"><path d=\"M17.0,132 A118,118 0 0 1 253.0,132 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"7\" y1=\"132\" x2=\"263\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"239\" y1=\"132\" x2=\"253\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"232\" y=\"123\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"243.3\" y1=\"112.9\" x2=\"251.2\" y2=\"111.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"238.4\" y1=\"94.4\" x2=\"245.9\" y2=\"91.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"225.1\" y1=\"80\" x2=\"237.2\" y2=\"73\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"213.8\" y=\"90.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30</text><text x=\"193.9\" y=\"102\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">150</text><line x1=\"219.3\" y1=\"61.3\" x2=\"225.4\" y2=\"56.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"205.7\" y1=\"47.7\" x2=\"210.8\" y2=\"41.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"187\" y1=\"41.9\" x2=\"194\" y2=\"29.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"180.5\" y=\"57.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">60</text><text x=\"169\" y=\"77.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">120</text><line x1=\"172.6\" y1=\"28.6\" x2=\"175.4\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"154.1\" y1=\"23.7\" x2=\"155.5\" y2=\"15.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"135\" y1=\"28\" x2=\"135\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"135\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">90</text><text x=\"135\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">90</text><line x1=\"115.9\" y1=\"23.7\" x2=\"114.5\" y2=\"15.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"97.4\" y1=\"28.6\" x2=\"94.6\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"41.9\" x2=\"76\" y2=\"29.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"89.5\" y=\"57.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">120</text><text x=\"101\" y=\"77.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">60</text><line x1=\"64.3\" y1=\"47.7\" x2=\"59.2\" y2=\"41.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"50.7\" y1=\"61.3\" x2=\"44.6\" y2=\"56.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44.9\" y1=\"80\" x2=\"32.8\" y2=\"73\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"56.2\" y=\"90.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">150</text><text x=\"76.1\" y=\"102\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">30</text><line x1=\"31.6\" y1=\"94.4\" x2=\"24.1\" y2=\"91.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"26.7\" y1=\"112.9\" x2=\"18.8\" y2=\"111.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"31\" y1=\"132\" x2=\"17\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"38\" y=\"123\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">180</text><circle cx=\"135\" cy=\"132\" r=\"4\" fill=\"currentColor\"/><line x1=\"135\" y1=\"132\" x2=\"277\" y2=\"132\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><line x1=\"135\" y1=\"132\" x2=\"183.6\" y2=\"-1.4\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/></g></svg>",
+   "answers": [
+    "70",
+    "70°",
+    "70도"
+   ],
+   "why": "바깥쪽 눈금으로 70°입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-24-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-24",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "각도기로 잰 각의 크기는 몇 도인가요?",
+   "svg": "<svg viewBox=\"0 0 300 152\" font-family=\"sans-serif\"><g transform=\"translate(15 0)\"><path d=\"M17.0,132 A118,118 0 0 1 253.0,132 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"7\" y1=\"132\" x2=\"263\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"239\" y1=\"132\" x2=\"253\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"232\" y=\"123\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"243.3\" y1=\"112.9\" x2=\"251.2\" y2=\"111.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"238.4\" y1=\"94.4\" x2=\"245.9\" y2=\"91.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"225.1\" y1=\"80\" x2=\"237.2\" y2=\"73\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"213.8\" y=\"90.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30</text><text x=\"193.9\" y=\"102\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">150</text><line x1=\"219.3\" y1=\"61.3\" x2=\"225.4\" y2=\"56.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"205.7\" y1=\"47.7\" x2=\"210.8\" y2=\"41.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"187\" y1=\"41.9\" x2=\"194\" y2=\"29.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"180.5\" y=\"57.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">60</text><text x=\"169\" y=\"77.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">120</text><line x1=\"172.6\" y1=\"28.6\" x2=\"175.4\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"154.1\" y1=\"23.7\" x2=\"155.5\" y2=\"15.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"135\" y1=\"28\" x2=\"135\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"135\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">90</text><text x=\"135\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">90</text><line x1=\"115.9\" y1=\"23.7\" x2=\"114.5\" y2=\"15.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"97.4\" y1=\"28.6\" x2=\"94.6\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"41.9\" x2=\"76\" y2=\"29.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"89.5\" y=\"57.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">120</text><text x=\"101\" y=\"77.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">60</text><line x1=\"64.3\" y1=\"47.7\" x2=\"59.2\" y2=\"41.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"50.7\" y1=\"61.3\" x2=\"44.6\" y2=\"56.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44.9\" y1=\"80\" x2=\"32.8\" y2=\"73\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"56.2\" y=\"90.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">150</text><text x=\"76.1\" y=\"102\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">30</text><line x1=\"31.6\" y1=\"94.4\" x2=\"24.1\" y2=\"91.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"26.7\" y1=\"112.9\" x2=\"18.8\" y2=\"111.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"31\" y1=\"132\" x2=\"17\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"38\" y=\"123\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">180</text><circle cx=\"135\" cy=\"132\" r=\"4\" fill=\"currentColor\"/><line x1=\"135\" y1=\"132\" x2=\"277\" y2=\"132\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><line x1=\"135\" y1=\"132\" x2=\"43.7\" y2=\"23.2\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/></g></svg>",
+   "options": [
+    "50°",
+    "130°",
+    "120°",
+    "140°"
+   ],
+   "answer": 1,
+   "why": "오른쪽 밑금에서 시작해 바깥쪽 눈금으로 읽으면 130°입니다. 안쪽 눈금의 50°와 헷갈리지 않아야 합니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-24-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-24",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "한 변이 각도기의 왼쪽 밑금에 맞추어져 있습니다. 각의 크기는 몇 도인가요? (안쪽 눈금으로 읽습니다.)",
+   "svg": "<svg viewBox=\"0 0 300 152\" font-family=\"sans-serif\"><g transform=\"translate(15 0)\"><path d=\"M17.0,132 A118,118 0 0 1 253.0,132 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"7\" y1=\"132\" x2=\"263\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"239\" y1=\"132\" x2=\"253\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"232\" y=\"123\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"243.3\" y1=\"112.9\" x2=\"251.2\" y2=\"111.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"238.4\" y1=\"94.4\" x2=\"245.9\" y2=\"91.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"225.1\" y1=\"80\" x2=\"237.2\" y2=\"73\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"213.8\" y=\"90.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30</text><text x=\"193.9\" y=\"102\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">150</text><line x1=\"219.3\" y1=\"61.3\" x2=\"225.4\" y2=\"56.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"205.7\" y1=\"47.7\" x2=\"210.8\" y2=\"41.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"187\" y1=\"41.9\" x2=\"194\" y2=\"29.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"180.5\" y=\"57.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">60</text><text x=\"169\" y=\"77.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">120</text><line x1=\"172.6\" y1=\"28.6\" x2=\"175.4\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"154.1\" y1=\"23.7\" x2=\"155.5\" y2=\"15.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"135\" y1=\"28\" x2=\"135\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"135\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">90</text><text x=\"135\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">90</text><line x1=\"115.9\" y1=\"23.7\" x2=\"114.5\" y2=\"15.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"97.4\" y1=\"28.6\" x2=\"94.6\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"41.9\" x2=\"76\" y2=\"29.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"89.5\" y=\"57.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">120</text><text x=\"101\" y=\"77.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">60</text><line x1=\"64.3\" y1=\"47.7\" x2=\"59.2\" y2=\"41.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"50.7\" y1=\"61.3\" x2=\"44.6\" y2=\"56.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44.9\" y1=\"80\" x2=\"32.8\" y2=\"73\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"56.2\" y=\"90.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">150</text><text x=\"76.1\" y=\"102\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">30</text><line x1=\"31.6\" y1=\"94.4\" x2=\"24.1\" y2=\"91.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"26.7\" y1=\"112.9\" x2=\"18.8\" y2=\"111.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"31\" y1=\"132\" x2=\"17\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"38\" y=\"123\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">180</text><circle cx=\"135\" cy=\"132\" r=\"4\" fill=\"currentColor\"/><line x1=\"135\" y1=\"132\" x2=\"-7\" y2=\"132\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><line x1=\"135\" y1=\"132\" x2=\"43.7\" y2=\"23.2\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/></g></svg>",
+   "options": [
+    "60°",
+    "130°",
+    "40°",
+    "50°"
+   ],
+   "answer": 3,
+   "why": "왼쪽 밑금이 0°인 안쪽 눈금으로 읽으면 50°입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-24-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-24",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "직각은 몇 도인가요?",
+   "answers": [
+    "90",
+    "90°",
+    "90도"
+   ],
+   "why": "직각의 크기는 90°입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-24-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-24",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "각을 보고 크기를 가장 알맞게 어림한 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 150 110\" font-family=\"sans-serif\"><line x1=\"33\" y1=\"85.8\" x2=\"111.8\" y2=\"71.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"33\" y1=\"85.8\" x2=\"5.6\" y2=\"10.6\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"33\" cy=\"85.8\" r=\"4\" fill=\"currentColor\"/><path d=\"M56.6,81.6 A24,24 0 0 0 24.8,63.2\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "약 100°",
+    "약 30°",
+    "약 60°",
+    "약 170°"
+   ],
+   "answer": 0,
+   "why": "직각(90°)보다 조금 큰 각이므로 약 100°라고 어림할 수 있습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-24-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-24",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "각도기로 각의 크기를 재는 순서를 바르게 나열한 것은 무엇인가요?\n㉠ 각의 한 변이 가리키는 눈금을 읽는다\n㉡ 각도기의 중심을 각의 꼭짓점에 맞춘다\n㉢ 각도기의 밑금을 각의 한 변에 맞춘다",
+   "options": [
+    "㉢ → ㉠ → ㉡",
+    "㉠ → ㉡ → ㉢",
+    "㉡ → ㉢ → ㉠",
+    "㉡ → ㉠ → ㉢"
+   ],
+   "answer": 2,
+   "why": "중심을 꼭짓점에 맞추고, 밑금을 한 변에 맞춘 다음, 다른 변이 가리키는 눈금을 읽습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-24-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-24",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "아래 각을 큰 것부터 차례로 늘어놓은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 416 244\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"79.6\" y2=\"39.3\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><path d=\"M52.8,74.9 A24,24 0 0 0 48.5,61.1\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></g><text x=\"72\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(140 0)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"18\" y2=\"13.8\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><path d=\"M52.8,74.9 A24,24 0 0 0 24.6,51.2\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></g><text x=\"208\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(276 0)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"50\" y2=\"16.6\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><path d=\"M52.8,74.9 A24,24 0 0 0 37,52.3\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></g><text x=\"344\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(140 124)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"-24.9\" y2=\"43.9\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><path d=\"M52.8,74.9 A24,24 0 0 0 8,62.9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></g><text x=\"208\" y=\"238\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
+   "options": [
+    "다, 나, 가, 라",
+    "가, 다, 나, 라",
+    "나, 라, 다, 가",
+    "라, 나, 다, 가"
+   ],
+   "answer": 3,
+   "why": "150°(라) > 100°(나) > 70°(다) > 35°(가) 순서입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-25-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-25",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "삼각형의 세 각의 크기의 합은 몇 도인가요?",
+   "options": [
+    "90°",
+    "180°",
+    "360°",
+    "270°"
+   ],
+   "answer": 1,
+   "why": "삼각형의 세 각의 크기의 합은 180°입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-25-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-25",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "사각형의 네 각의 크기의 합은 몇 도인가요?",
+   "options": [
+    "270°",
+    "180°",
+    "360°",
+    "540°"
+   ],
+   "answer": 2,
+   "why": "사각형의 네 각의 크기의 합은 360°입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-25-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-25",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "삼각형의 두 각이 70°, 60°입니다. 나머지 한 각은 몇 도인가요?",
+   "svg": "<svg viewBox=\"0 0 202 210.1\" font-family=\"sans-serif\"><polygon points=\"36,174.1 166,174.1 86.3,36\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"18.5\" y=\"192.5\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">70°</text><text x=\"184.4\" y=\"191.2\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">60°</text><text x=\"83.9\" y=\"19.1\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text></svg>",
+   "answers": [
+    "50",
+    "50°",
+    "50도"
+   ],
+   "why": "삼각형의 세 각의 합이 180°이므로 180°-70°-60°=50°입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-25-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-25",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "삼각형의 세 각을 오려서 한 꼭짓점에 모았더니 일직선이 되었습니다. 이 그림에서 삼각형의 세 각의 합은 몇 도인지 알 수 있나요?",
+   "svg": "<svg viewBox=\"0 0 300 118\" font-family=\"sans-serif\"><line x1=\"40\" y1=\"96\" x2=\"260\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"150\" cy=\"96\" r=\"4\" fill=\"currentColor\"/><line x1=\"150\" y1=\"96\" x2=\"190\" y2=\"26.7\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"182.9\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><line x1=\"150\" y1=\"96\" x2=\"98.6\" y2=\"34.7\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"146.7\" y=\"63.1\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><line x1=\"150\" y1=\"96\" x2=\"70\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"115.6\" y=\"84.9\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text></svg>",
+   "options": [
+    "일직선은 180°이므로 세 각의 합은 180°이다",
+    "일직선은 90°이므로 세 각의 합은 90°이다",
+    "세 각의 합은 360°이다",
+    "알 수 없다"
+   ],
+   "answer": 0,
+   "why": "세 각을 모아 일직선이 되었고 일직선이 이루는 각은 180°이므로 삼각형의 세 각의 합은 180°입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-25-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-25",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "사각형을 한 대각선으로 잘라 삼각형 2개로 나누었습니다. 이것으로 사각형의 네 각의 합을 어떻게 알 수 있나요?",
+   "svg": "<svg viewBox=\"0 0 180 130\" font-family=\"sans-serif\"><polygon points=\"20,110 150,110 168,24 44,24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"20\" y1=\"110\" x2=\"168\" y2=\"24\" stroke=\"#e07b39\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/><text x=\"100\" y=\"70\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">삼각형 2개</text></svg>",
+   "options": [
+    "삼각형 3개의 각의 합인 540°이다",
+    "삼각형 1개의 각의 합인 180°이다",
+    "삼각형 2개의 각의 합인 180°+180°=360°이다",
+    "알 수 없다"
+   ],
+   "answer": 2,
+   "why": "사각형은 삼각형 2개로 나누어지므로 네 각의 합은 180°×2=360°입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-25-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-25",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "사각형의 세 각이 90°, 80°, 100°입니다. 나머지 한 각은 몇 도인가요? (그림은 실제 크기와 다를 수 있습니다.)",
+   "svg": "<svg viewBox=\"0 0 218 158\" font-family=\"sans-serif\"><polygon points=\"34,124 164,124 184,34 58,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"58.1\" y=\"114.7\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">90°</text><text x=\"142.5\" y=\"111.1\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">80°</text><text x=\"160.1\" y=\"53.5\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">100°</text><text x=\"79.2\" y=\"57.3\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text></svg>",
+   "answers": [
+    "90",
+    "90°",
+    "90도"
+   ],
+   "why": "사각형의 네 각의 합은 360°이므로 360°-90°-80°-100°=90°입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-25-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-25",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한 삼각형에서 두 각의 크기가 같은 이등변삼각형이 있습니다. 같은 두 각이 각각 55°일 때 나머지 한 각은 몇 도인가요?",
+   "svg": "<svg viewBox=\"0 0 202 164.8\" font-family=\"sans-serif\"><polygon points=\"36,128.8 166,128.8 101,36\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"16.1\" y=\"143.3\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">55°</text><text x=\"185.9\" y=\"143.3\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">55°</text><text x=\"101\" y=\"19\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text></svg>",
+   "options": [
+    "70°",
+    "55°",
+    "110°",
+    "35°"
+   ],
+   "answer": 0,
+   "why": "세 각의 합이 180°이므로 180°-55°-55°=70°입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-25-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-25",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "사각형 ㄱㄴㄷㄹ에서 각 ㄱ=70°, 각 ㄴ=110°, 각 ㄹ=90°입니다. 각 ㄷ은 몇 도인가요? (그림은 실제 크기와 다를 수 있습니다.)",
+   "svg": "<svg viewBox=\"0 0 230 170\" font-family=\"sans-serif\"><polygon points=\"40,130 170,130 190,40 64,40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"64.1\" y=\"120.7\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄴ 110°</text><text x=\"148.5\" y=\"117.1\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄷ ?</text><text x=\"166.1\" y=\"59.5\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄹ 90°</text><text x=\"85.2\" y=\"63.3\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ 70°</text></svg>",
+   "options": [
+    "100°",
+    "70°",
+    "110°",
+    "90°"
+   ],
+   "answer": 3,
+   "why": "네 각의 합이 360°이므로 각 ㄷ은 360°-70°-110°-90°=90°입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-25-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-25",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "삼각형의 세 각의 합이 180°인 것을 이용하여 사각형의 네 각의 합이 360°임을 설명한 것으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "사각형은 직각이 4개이므로 항상 360°이다",
+    "사각형을 대각선으로 삼각형 2개로 나누면 180°×2=360°이다",
+    "사각형은 삼각형보다 각이 2배 크기 때문이다",
+    "사각형은 삼각형에 직각을 더하면 된다"
+   ],
+   "answer": 1,
+   "why": "사각형은 한 대각선으로 삼각형 2개로 나누어지므로 네 각의 합은 삼각형 2개의 각의 합과 같습니다."
+  }
+ ],
+ "skipped": []
+}

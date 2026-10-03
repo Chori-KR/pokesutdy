@@ -569,3 +569,19 @@ def angle_split(angs, labels):
         out.append(text(cx + 38 * math.cos(mid), cy - 38 * math.sin(mid) + 5, lb, 14, weight="bold"))
         cur += a
     return svg(300, 118, "".join(out))
+
+
+def tri_angles(angs, base=130, pad=36):
+    """세 각(도)으로 삼각형을 정확히 그리고 각 꼭짓점 바깥에 각도를 쓴다. '?'도 쓸 수 있다(숫자만 계산에 사용)"""
+    nums = [a for a in angs if isinstance(a, (int, float))]
+    A = angs[0] if isinstance(angs[0], (int, float)) else 180 - sum(nums)
+    B_ = angs[1] if isinstance(angs[1], (int, float)) else 180 - sum(nums)
+    ra, rb = math.radians(A), math.radians(B_)
+    gamma = math.pi - ra - rb
+    bside = base * math.sin(rb) / math.sin(gamma)
+    P2 = (bside * math.cos(ra), -bside * math.sin(ra))
+    P = [(0, 0), (base, 0), P2]
+    ys = [p[1] for p in P]
+    P = [(x, y - min(ys)) for x, y in P]
+    txt = {i: (f"{a}°" if isinstance(a, (int, float)) else str(a)) for i, a in enumerate(angs)}
+    return tri_fig(P, ang_txt=txt, pad=pad, ang_out=True)
