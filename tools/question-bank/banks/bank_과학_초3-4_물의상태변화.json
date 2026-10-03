@@ -1,0 +1,348 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초3-4",
+  "unit": "물의 상태 변화",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "과학-초3-4-4과10-01-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "물이 얼음, 물, 수증기의 세 가지 상태로 있을 때 고체 상태인 것은 무엇인가요?",
+   "options": [
+    "수증기",
+    "물",
+    "얼음",
+    "구름 속 물방울"
+   ],
+   "answer": 2,
+   "why": "얼음은 모양이 일정한 고체 상태이고, 물은 액체, 수증기는 기체 상태입니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-01-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "물이 끓거나 증발하여 기체 상태가 된 것을 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "수증기"
+   ],
+   "why": "기체 상태의 물을 수증기라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-01-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 물의 상태가 변하는 순서를 나타낸 것입니다. ㉠에 들어갈 알맞은 말은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 300 70\" font-family=\"sans-serif\"><rect x=\"4\" y=\"6\" width=\"88\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"48\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">얼음</text><text x=\"48\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">(고체)</text><line x1=\"94\" y1=\"35\" x2=\"104\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"107,35.0 101,31.0 101,39.0\" fill=\"currentColor\"/><rect x=\"106\" y=\"6\" width=\"88\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"150\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">물</text><text x=\"150\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">(액체)</text><line x1=\"196\" y1=\"35\" x2=\"206\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"209,35.0 203,31.0 203,39.0\" fill=\"currentColor\"/><rect x=\"208\" y=\"6\" width=\"88\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"252\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><text x=\"252\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">(기체)</text></svg>",
+   "options": [
+    "수증기",
+    "눈",
+    "서리",
+    "안개 속 물방울"
+   ],
+   "answer": 0,
+   "why": "물을 가열하면 수증기가 되고, 수증기는 기체 상태입니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-01-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "냉동실에서 꺼낸 얼음 조각이 시간이 지나자 물이 되었습니다. 이때 물은 어떤 상태에서 어떤 상태로 변한 것인가요?",
+   "options": [
+    "기체에서 액체",
+    "액체에서 고체",
+    "액체에서 기체",
+    "고체에서 액체"
+   ],
+   "answer": 3,
+   "why": "얼음(고체)이 녹아 물(액체)이 되었습니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-01-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "젖은 빨래가 시간이 지나면 마르는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "빨래 속의 물이 얼음으로 변하기 때문이다",
+    "빨래 속의 물이 수증기로 변해 공기 중으로 날아가기 때문이다",
+    "빨래 속의 물이 사라지기 때문이다",
+    "빨래가 물을 만들기 때문이다"
+   ],
+   "answer": 1,
+   "why": "빨래 속의 물이 증발하여 수증기가 되어 공기 중으로 날아갑니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-01-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다음 중 물이 얼음으로 변하는 예를 고르세요.",
+   "options": [
+    "더운 날 아이스크림이 녹는 것",
+    "추운 겨울에 호수의 물이 어는 것",
+    "냄비의 물이 끓는 것",
+    "아침에 풀잎에 이슬이 맺히는 것"
+   ],
+   "answer": 1,
+   "why": "겨울에 호수의 물이 어는 것은 액체인 물이 고체인 얼음으로 변하는 예입니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-02-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "얼음을 따뜻한 곳에 두면 어떻게 되나요?",
+   "options": [
+    "변하지 않는다",
+    "더 단단해진다",
+    "수증기가 된다",
+    "녹아서 물이 된다"
+   ],
+   "answer": 3,
+   "why": "얼음은 따뜻한 곳에서 녹아 물이 됩니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-02-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "물이 얼음으로 얼면 부피는 어떻게 되나요? (커진다 / 작아진다)",
+   "answers": [
+    "커진다",
+    "커짐",
+    "늘어난다"
+   ],
+   "why": "물이 얼면 부피가 커집니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-02-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 같은 컵에 물과 얼음이 든 모습을 나타낸 것입니다. 이 그림으로 알 수 있는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 198 136\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"15\" y=\"43.5\" width=\"62\" height=\"38.5\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,43.5 77,43.5\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">물</text></g><text x=\"50\" y=\"130\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">얼기 전</text><g transform=\"translate(102 0)\"><rect x=\"15\" y=\"38.6\" width=\"62\" height=\"43.4\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,38.6 77,38.6\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">얼음</text></g><text x=\"148\" y=\"130\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">언 뒤</text></svg>",
+   "options": [
+    "물이 얼면 부피가 커진다",
+    "물이 얼면 부피가 작아진다",
+    "물이 얼어도 부피는 같다",
+    "물이 얼면 사라진다"
+   ],
+   "answer": 0,
+   "why": "언 뒤의 높이가 더 높으므로 물이 얼면 부피가 커집니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-02-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "물이 끓을 때의 모습으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "물 표면에 얼음이 생긴다",
+    "물 표면에서만 아주 천천히 수증기가 된다",
+    "물속에서도 기포가 생기며 수증기가 많이 나온다",
+    "물이 점점 차가워진다"
+   ],
+   "answer": 2,
+   "why": "물이 끓을 때에는 물속에서도 수증기로 변해 기포가 생깁니다. 증발은 표면에서만 천천히 일어납니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-02-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "차가운 음료가 든 컵의 바깥 면에 물방울이 맺히는 까닭은 무엇인가요?",
+   "options": [
+    "컵 속의 물이 끓기 때문이다",
+    "컵 속의 음료가 컵을 통과하기 때문이다",
+    "컵이 물을 만들기 때문이다",
+    "공기 중의 수증기가 차가운 컵 표면에서 물로 변하기 때문이다"
+   ],
+   "answer": 3,
+   "why": "수증기가 차가운 곳에서 물방울로 변하는 것을 응결이라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-02-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "그림과 같이 물이 같은 양 든 두 컵 중 가는 뚜껑이 없고 나는 뚜껑을 닫아 5일 동안 두었더니 가의 물이 더 많이 줄었습니다. 물의 높이가 줄어든 까닭을 한 단어로 쓰세요. (두 글자)",
+   "svg": "<svg viewBox=\"0 0 198 136\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"15\" y=\"61\" width=\"62\" height=\"21\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,61 77,61\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text></g><text x=\"50\" y=\"130\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">뚜껑 없음</text><g transform=\"translate(102 0)\"><rect x=\"15\" y=\"43.5\" width=\"62\" height=\"38.5\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,43.5 77,43.5\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"><line x1=\"-4\" y1=\"-3\" x2=\"68\" y2=\"-3\" stroke=\"currentColor\" stroke-width=\"4\"/></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></g><text x=\"148\" y=\"130\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">뚜껑 닫음</text></svg>",
+   "answers": [
+    "증발"
+   ],
+   "why": "물이 수증기로 변해 공기 중으로 날아가는 현상을 증발이라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-03-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "물이 우리 생활에 꼭 필요한 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "물은 없어도 되기 때문이다",
+    "마시고, 씻고, 농사를 짓는 데 모두 필요하기 때문이다",
+    "물은 먹을 수 없기 때문이다",
+    "물은 모양이 변하지 않기 때문이다"
+   ],
+   "answer": 1,
+   "why": "물은 사람과 동식물이 살아가는 데 꼭 필요합니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-03-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "공기 중의 수증기가 차가운 곳에서 물방울로 변하는 현상을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "응결"
+   ],
+   "why": "수증기가 물로 변하는 현상을 응결이라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-03-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "안개가 자주 끼는 곳에 그물을 세워 물을 얻는 장치가 있습니다. 이 장치에서 일어나는 물의 상태 변화로 알맞은 것은 무엇인가요?",
+   "options": [
+    "그물에서 물이 수증기로 변한다",
+    "그물에서 물이 얼음으로 변한다",
+    "안개 속 수증기가 그물에서 물방울로 변한다",
+    "그물이 물을 만든다"
+   ],
+   "answer": 2,
+   "why": "안개의 작은 물방울과 수증기가 그물에 맺혀 물이 모이는 것은 응결과 관련이 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-03-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 바닷물에서 마실 물을 얻는 장치의 원리입니다. ㉠에 들어갈 알맞은 변화는 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 330 70\" font-family=\"sans-serif\"><rect x=\"4\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"39\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">바닷물을</text><text x=\"39\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">데움</text><line x1=\"76\" y1=\"35\" x2=\"86\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"89,35.0 83,31.0 83,39.0\" fill=\"currentColor\"/><rect x=\"88\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"123\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">수증기가</text><text x=\"123\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">됨</text><line x1=\"160\" y1=\"35\" x2=\"170\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"173,35.0 167,31.0 167,39.0\" fill=\"currentColor\"/><rect x=\"172\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"207\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><line x1=\"244\" y1=\"35\" x2=\"254\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"257,35.0 251,31.0 251,39.0\" fill=\"currentColor\"/><rect x=\"256\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"291\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">물을</text><text x=\"291\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">모음</text></svg>",
+   "options": [
+    "수증기가 차가운 덮개에서 물방울로 변함",
+    "수증기가 얼음으로 변함",
+    "물이 바닥에 스며듦",
+    "수증기가 소금으로 변함"
+   ],
+   "answer": 0,
+   "why": "수증기가 차가운 덮개에서 물방울로 변해(응결) 모인 물을 마실 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-03-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "바닷물을 증발시켜 얻은 물이 마실 수 있는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "바닷물이 얼기 때문이다",
+    "소금도 함께 수증기가 되기 때문이다",
+    "물만 수증기로 변하고 소금은 남기 때문이다",
+    "물이 사라지기 때문이다"
+   ],
+   "answer": 2,
+   "why": "바닷물을 가열하면 물만 수증기로 변하고 소금은 그대로 남습니다."
+  },
+  {
+   "id": "과학-초3-4-4과10-03-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "물의 상태 변화",
+   "standard": "4과10-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "물이 부족한 곳에서 물을 얻는 장치를 설계할 때 가장 잘 이용할 수 있는 물의 상태 변화를 고르세요.",
+   "options": [
+    "수증기가 물로 변하는 응결",
+    "물이 얼음으로 변하는 것만",
+    "얼음이 수증기로 변하는 것만",
+    "물이 모두 사라지는 것"
+   ],
+   "answer": 0,
+   "why": "공기 중의 수증기를 차갑게 하여 물로 모으는 응결을 이용하면 물을 얻을 수 있습니다."
+  }
+ ],
+ "skipped": []
+}
