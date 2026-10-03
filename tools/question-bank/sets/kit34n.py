@@ -202,7 +202,7 @@ def decimal_bar(tenths, label=None, w=240, h=30):
 def place_table(headers, digits, first="자리", unit_row=None):
     """자릿값 표. headers: ['만','천','백','십','일'], digits: ['4','0',…]"""
     rows = [[first] + list(headers), ["숫자"] + [str(d) for d in digits]]
-    return table(rows[0], [rows[1]], col_w=max(40, min(56, 300 // (len(headers)))), first_w=50)
+    return table(rows[0], [rows[1]], col_w=max(40, min(84, 300 // (len(headers)))), first_w=50)
 
 
 def mult_box(a, b, hide=None):
