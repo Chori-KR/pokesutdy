@@ -1,0 +1,10 @@
+import os, sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, os.path.dirname(__file__))
+from common import Bank
+from svgkit import svg, text, line, table, BLUE, ORANGE, C
+from kit_ko import KoBank, report
+from kit_soc import compare_table
+from kit34 import hold
+from kit12 import clock
+from kit_en import letters, syllables, weather, face
