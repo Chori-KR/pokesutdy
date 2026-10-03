@@ -42,7 +42,7 @@ def compass(cx, cy, r=22):
             + text(cx + r + 10, cy + 5, "동", 13, weight="bold") + text(cx - r - 10, cy + 5, "서", 13, weight="bold"))
 
 
-def map_fig(places, roads=(), legend=True, with_compass=True, scale=None, W=300, H=220, labels=False, river=None):
+def map_fig(places, roads=(), legend=True, with_compass=True, scale=None, W=320, H=220, labels=False, river=None):
     """places: [(종류, x, y)] 0~1 비율 좌표. roads: [((x1,y1),(x2,y2))]. legend: 기호 설명 상자 표시.
     labels=True면 기호 옆에 이름을 직접 적는다."""
     mw, mh = 214, H - 12
@@ -51,6 +51,8 @@ def map_fig(places, roads=(), legend=True, with_compass=True, scale=None, W=300,
     if river:
         pts = " ".join(f"{_n(ox + x * mw)},{_n(oy + y * mh)}" for x, y in river)
         out.append(f'<polyline points="{pts}" fill="none" stroke="{BLUE}" stroke-width="7" stroke-opacity="0.55" stroke-linecap="round"/>')
+        mx, my = river[len(river) // 2]
+        out.append(text(ox + mx * mw + 14, oy + my * mh - 8, "강", 13, "start", "bold"))
     for (a, b_) in roads:
         out.append(line(ox + a[0] * mw, oy + a[1] * mh, ox + b_[0] * mw, oy + b_[1] * mh, 4, 0.45))
     kinds = []
@@ -62,7 +64,7 @@ def map_fig(places, roads=(), legend=True, with_compass=True, scale=None, W=300,
         if kind not in kinds:
             kinds.append(kind)
     if with_compass:
-        out.append(compass(ox + mw - 30, oy + 40, 18))
+        out.append(compass(ox + mw - 38, oy + mh - 34, 16))
     if scale:
         out.append(line(ox + 12, oy + mh - 14, ox + 12 + scale[0], oy + mh - 14, 3.5) + text(ox + 12 + scale[0] / 2, oy + mh - 20, scale[1], 12, weight="bold"))
     if legend:
