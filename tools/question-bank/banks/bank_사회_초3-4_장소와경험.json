@@ -1,0 +1,250 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "사회",
+  "school": "초",
+  "course": "사회",
+  "gradeBand": "초3-4",
+  "unit": "장소와 경험",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "운동장에 대한 느낌",
+   "text": "하늘이와 민재의 반 친구들은 ‘학교 운동장’에 대한 느낌을 이야기했습니다. 하늘이는 친구들과 마음껏 뛰어놀 수 있어서 운동장이 가장 신나는 곳이라고 말하며 운동장에서 달리는 모습을 그림으로 그렸습니다. 민재는 운동장 구석 나무 그늘에서 조용히 책을 읽는 것이 좋다며, 운동장이 편안하게 쉬는 곳이라고 시로 표현했습니다. 같은 운동장이지만 두 친구의 느낌은 달랐습니다. 선생님께서는 “사람마다 장소에서 한 경험이 달라 느낌도 다를 수 있어요. 서로의 느낌을 존중해 주세요.”라고 말씀하셨습니다.",
+   "source": ""
+  },
+  {
+   "id": "p2",
+   "title": "우리 동네 살펴보기",
+   "text": "서아네 모둠은 학교 근처 동네의 장소를 살펴보고 좋은 점과 불편한 점을 정리했습니다. 도서관은 책이 많고 조용해서 좋았습니다. 공원은 나무가 많고 산책로가 있어 좋았습니다. 하지만 놀이터의 그네가 부서져 있어 위험했고, 횡단보도 앞에는 신호등이 없어서 건너기 불안했습니다. 모둠은 ‘놀이터 그네를 고치고, 횡단보도에 신호등을 달아 달라고 요청하자.’는 방법을 제안했습니다. 또 안전하고 깨끗하며 편리하게 이용할 수 있는 곳이 살기 좋은 곳이라고 정리했습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "사회-초3-4-4사01-01-c1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "장소와 경험",
+   "standard": "4사01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "내가 좋아하는 장소에 대한 느낌을 표현하는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "다른 사람이 말한 것만 따라 한다",
+    "아무에게도 보여 주지 않는다",
+    "그림, 글, 시, 노래 등으로 나타낸다",
+    "표현하지 않는다"
+   ],
+   "answer": 2,
+   "why": "장소에 대한 느낌은 그림, 글, 시, 노래 등 여러 방법으로 표현할 수 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사01-01-c2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "장소와 경험",
+   "standard": "4사01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "어떤 장소에서 겪은 경험을 통해 그 장소에 대해 가지게 된 느낌이나 생각을 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "장소감"
+   ],
+   "why": "장소에서의 경험으로 생긴 느낌을 장소감이라고 합니다."
+  },
+  {
+   "id": "사회-초3-4-4사01-01-b1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "장소와 경험",
+   "standard": "4사01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "하늘이와 민재가 운동장에서 느낀 점을 바르게 짝지은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "하늘이: 신나는 곳 / 민재: 편안하게 쉬는 곳",
+    "하늘이: 편안하게 쉬는 곳 / 민재: 신나는 곳",
+    "둘 다 무서운 곳",
+    "둘 다 지루한 곳"
+   ],
+   "answer": 0,
+   "why": "하늘이는 뛰어놀 수 있어 신나는 곳, 민재는 조용히 책을 읽는 편안한 곳이라고 했습니다."
+  },
+  {
+   "id": "사회-초3-4-4사01-01-b2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "장소와 경험",
+   "standard": "4사01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "친구와 나의 장소감이 다를 때 가져야 할 태도를 두 글자로 나타내면 무엇인가요? (다른 사람의 생각을 소중히 여긴다는 뜻)",
+   "answers": [
+    "존중"
+   ],
+   "why": "서로 다른 장소감도 존중해야 합니다."
+  },
+  {
+   "id": "사회-초3-4-4사01-01-a1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "장소와 경험",
+   "standard": "4사01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "두 친구의 장소감이 다른 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "운동장에 가 본 적이 없기 때문이다",
+    "운동장이 서로 다른 곳이기 때문이다",
+    "한 친구가 틀리게 생각했기 때문이다",
+    "운동장에서 한 경험이 서로 달랐기 때문이다"
+   ],
+   "answer": 3,
+   "why": "같은 장소라도 경험에 따라 느낌이 다를 수 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사01-01-a2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "장소와 경험",
+   "standard": "4사01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "친구가 학교 도서관을 ‘조용해서 답답한 곳’이라고 말했을 때 알맞은 반응은 무엇인가요?",
+   "options": [
+    "그렇게 생각하면 안 돼",
+    "나는 편안한 곳이라고 느끼지만, 너는 그렇게 느낄 수 있겠구나",
+    "도서관은 무조건 좋은 곳이야",
+    "너와는 이야기하지 않을래"
+   ],
+   "answer": 1,
+   "why": "나와 다른 장소감도 틀린 것이 아니라 다른 것이므로 존중해야 합니다."
+  },
+  {
+   "id": "사회-초3-4-4사01-02-c1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "장소와 경험",
+   "standard": "4사01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "표에서 ‘불편한 점’에 해당하는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 256 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"250\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"253\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"253\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"253\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">장소</text><text x=\"168\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">모습</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">도서관</text><text x=\"168\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">책이 많고 조용함</text><text x=\"43\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공원</text><text x=\"168\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">산책로가 있음</text><text x=\"43\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">놀이터</text><text x=\"168\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">그네가 부서져 있음</text></svg>",
+   "options": [
+    "도서관의 많은 책",
+    "놀이터의 부서진 그네",
+    "공원의 산책로",
+    "도서관의 조용함"
+   ],
+   "answer": 1,
+   "why": "부서진 그네는 다칠 수 있는 불편하고 위험한 점입니다."
+  },
+  {
+   "id": "사회-초3-4-4사01-02-c2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "장소와 경험",
+   "standard": "4사01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 우리 동네 장소의 좋은 점으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "길에 쓰레기가 쌓여 있다",
+    "횡단보도에 신호등이 없다",
+    "놀이터 그네가 부서져 있다",
+    "공원에 나무가 많고 산책로가 있다"
+   ],
+   "answer": 3,
+   "why": "나무가 많고 산책로가 있는 것은 좋은 점입니다."
+  },
+  {
+   "id": "사회-초3-4-4사01-02-b1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "장소와 경험",
+   "standard": "4사01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "서아네 모둠이 제안한 해결 방법으로 알맞은 것은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "놀이터 그네를 고치고 횡단보도에 신호등을 달아 달라고 요청한다",
+    "공원을 없앤다",
+    "도서관 문을 닫는다",
+    "횡단보도를 건너지 않는다"
+   ],
+   "answer": 0,
+   "why": "불편한 점을 해결하는 방법으로 그네 수리와 신호등 설치를 제안했습니다."
+  },
+  {
+   "id": "사회-초3-4-4사01-02-b2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "장소와 경험",
+   "standard": "4사01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "우리 동네를 더 살기 좋게 만들기 위한 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "아무도 모르게 둔다",
+    "불편한 점이 있어도 참는다",
+    "불편한 점을 조사해 필요한 방법을 제안하고 함께 실천한다",
+    "좋은 점만 말한다"
+   ],
+   "answer": 2,
+   "why": "문제를 조사하고 해결 방법을 제안하고 실천하면 동네를 더 살기 좋게 만들 수 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사01-02-a1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "장소와 경험",
+   "standard": "4사01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "서아네 모둠이 정리한 ‘살기 좋은 곳’의 조건으로 알맞은 것은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "위험해도 넓은 곳",
+    "사람이 아주 적은 곳",
+    "시끄럽고 복잡한 곳",
+    "안전하고 깨끗하며 편리하게 이용할 수 있는 곳"
+   ],
+   "answer": 3,
+   "why": "모둠은 안전, 청결, 편리함을 살기 좋은 곳의 조건으로 정리했습니다."
+  },
+  {
+   "id": "사회-초3-4-4사01-02-a2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "장소와 경험",
+   "standard": "4사01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "살기 좋은 곳의 조건 중, 사고나 위험 걱정 없이 지낼 수 있는 것을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "안전"
+   ],
+   "why": "사고나 위험 걱정 없이 지내는 것을 안전이라고 합니다."
+  }
+ ],
+ "skipped": []
+}
