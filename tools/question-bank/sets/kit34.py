@@ -300,7 +300,7 @@ def tick(p, q, n=1, size=6):
     return s
 
 
-def tri_fig(P, ticks=(), side_txt=None, ang_txt=None, right=None, fill=None, W=None, H=None, pad=30, vnames=None):
+def tri_fig(P, ticks=(), side_txt=None, ang_txt=None, right=None, fill=None, W=None, H=None, pad=30, vnames=None, ang_out=False):
     """P: 세 꼭짓점. ticks: [(i, 개수)] 변 i(=P[i]→P[i+1])에 같은 길이 표시.
     side_txt: {i: '5 cm'}, ang_txt: {꼭짓점 i: '60°'}, right: 직각 표시할 꼭짓점 i"""
     xs, ys = [p[0] for p in P], [p[1] for p in P]
@@ -324,7 +324,8 @@ def tri_fig(P, ticks=(), side_txt=None, ang_txt=None, right=None, fill=None, W=N
         x, y = Q[i]
         dx, dy = cxm - x, cym - y
         L = math.hypot(dx, dy) or 1
-        out.append(text(x + dx / L * 30, y + dy / L * 30 + 5, t, 13, weight="bold", fill=C))
+        k = -22 if ang_out else 30
+        out.append(text(x + dx / L * k, y + dy / L * k + 5, t, 13, weight="bold", fill=C))
     for i, nm in enumerate(vnames or []):
         x, y = Q[i]
         dx, dy = x - cxm, y - cym
