@@ -1,0 +1,350 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "초",
+  "course": "수학",
+  "gradeBand": "초3-4",
+  "unit": "수와 연산",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-초3-4-4수01-15-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$\\frac{2}{7}$ + $\\frac{3}{7}$은 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 266 72\" font-family=\"sans-serif\"><text x=\"50\" y=\"22\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">2/7</text><rect x=\"58\" y=\"4\" width=\"28.6\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"61\" y1=\"27\" x2=\"83.6\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"86.6\" y=\"4\" width=\"28.6\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"89.6\" y1=\"27\" x2=\"112.1\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"115.1\" y=\"4\" width=\"28.6\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"143.7\" y=\"4\" width=\"28.6\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"172.3\" y=\"4\" width=\"28.6\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"200.9\" y=\"4\" width=\"28.6\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"229.4\" y=\"4\" width=\"28.6\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"50\" y=\"56\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">3/7</text><rect x=\"58\" y=\"38\" width=\"28.6\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"61\" y1=\"61\" x2=\"83.6\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"86.6\" y=\"38\" width=\"28.6\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"89.6\" y1=\"61\" x2=\"112.1\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"115.1\" y=\"38\" width=\"28.6\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"118.1\" y1=\"61\" x2=\"140.7\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"143.7\" y=\"38\" width=\"28.6\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"172.3\" y=\"38\" width=\"28.6\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"200.9\" y=\"38\" width=\"28.6\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"229.4\" y=\"38\" width=\"28.6\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "$\\frac{6}{7}$",
+    "$\\frac{5}{14}$",
+    "$\\frac{5}{7}$",
+    "$\\frac{1}{7}$"
+   ],
+   "answer": 2,
+   "why": "분모가 같은 분수의 덧셈은 분모는 그대로 두고 분자끼리 더합니다. 2+3=5이므로 5/7입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-15-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$\\frac{5}{8}$ - $\\frac{2}{8}$은 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 266 72\" font-family=\"sans-serif\"><text x=\"50\" y=\"22\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">5/8</text><rect x=\"58\" y=\"4\" width=\"25\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"61\" y1=\"27\" x2=\"80\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"83\" y=\"4\" width=\"25\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"86\" y1=\"27\" x2=\"105\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"108\" y=\"4\" width=\"25\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"111\" y1=\"27\" x2=\"130\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"133\" y=\"4\" width=\"25\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"136\" y1=\"27\" x2=\"155\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"158\" y=\"4\" width=\"25\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"161\" y1=\"27\" x2=\"180\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"183\" y=\"4\" width=\"25\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"208\" y=\"4\" width=\"25\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"233\" y=\"4\" width=\"25\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"50\" y=\"56\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">2/8</text><rect x=\"58\" y=\"38\" width=\"25\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"61\" y1=\"61\" x2=\"80\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"83\" y=\"38\" width=\"25\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"86\" y1=\"61\" x2=\"105\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"108\" y=\"38\" width=\"25\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"133\" y=\"38\" width=\"25\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"158\" y=\"38\" width=\"25\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"183\" y=\"38\" width=\"25\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"208\" y=\"38\" width=\"25\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"233\" y=\"38\" width=\"25\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "$\\frac{3}{8}$",
+    "$\\frac{10}{8}$",
+    "$\\frac{7}{8}$",
+    "$\\frac{3}{16}$"
+   ],
+   "answer": 0,
+   "why": "분모가 같은 분수의 뺄셈은 분모는 그대로 두고 분자끼리 뺍니다. 5-2=3이므로 3/8입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-15-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "$\\frac{3}{10}$ + $\\frac{4}{10}$을 계산하여 분수로 쓰세요.",
+   "answers": [
+    "7/10",
+    "10분의 7",
+    "십분의 칠",
+    "10분의7"
+   ],
+   "why": "분자끼리 더하면 3+4=7이므로 7/10입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-15-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$1\\frac{2}{5}$ + $2\\frac{1}{5}$는 얼마인가요?",
+   "options": [
+    "$4\\frac{3}{5}$",
+    "$3\\frac{3}{10}$",
+    "$2\\frac{3}{5}$",
+    "$3\\frac{3}{5}$"
+   ],
+   "answer": 3,
+   "why": "자연수끼리 1+2=3, 분수끼리 2/5+1/5=3/5이므로 3과 3/5입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-15-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "주스가 $\\frac{5}{6}$ L 있었습니다. 그중 $\\frac{2}{6}$ L를 마셨습니다. 남은 주스는 몇 L인가요?",
+   "svg": "<svg viewBox=\"0 0 88 88\" font-family=\"sans-serif\"><circle cx=\"44\" cy=\"44\" r=\"38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M44,44 L44,6 A38,38 0 0 1 76.9,25 Z\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44\" y1=\"44\" x2=\"44\" y2=\"6\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M44,44 L76.9,25 A38,38 0 0 1 76.9,63 Z\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44\" y1=\"44\" x2=\"76.9\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M44,44 L76.9,63 A38,38 0 0 1 44,82 Z\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44\" y1=\"44\" x2=\"76.9\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"44\" y1=\"44\" x2=\"44\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"44\" y1=\"44\" x2=\"11.1\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"44\" y1=\"44\" x2=\"11.1\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "$\\frac{7}{6}$ L",
+    "$\\frac{3}{6}$ L",
+    "$\\frac{7}{12}$ L",
+    "$\\frac{2}{6}$ L"
+   ],
+   "answer": 1,
+   "why": "5/6-2/6=3/6(L)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-15-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "$3\\frac{1}{4}$ - $1\\frac{3}{4}$를 계산하여 대분수로 쓰세요.",
+   "answers": [
+    "1 2/4",
+    "1과 2/4",
+    "1과 4분의 2",
+    "1 와 2/4"
+   ],
+   "why": "3과 1/4=13/4, 1과 3/4=7/4이므로 13/4-7/4=6/4=1과 2/4입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-15-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$2\\frac{3}{5}$ + $1\\frac{4}{5}$를 바르게 계산한 값은 얼마인가요?",
+   "options": [
+    "$3\\frac{7}{5}$",
+    "$4\\frac{2}{5}$",
+    "$3\\frac{2}{5}$",
+    "$4\\frac{7}{10}$"
+   ],
+   "answer": 1,
+   "why": "자연수끼리 2+1=3, 분수끼리 3/5+4/5=7/5=1과 2/5이므로 3+1과 2/5=4와 2/5입니다. 가분수로 13/5+9/5=22/5=4와 2/5로도 구할 수 있습니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-15-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "분모가 같은 분수의 덧셈 계산 원리를 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "분자는 그대로 두고 분모끼리 더한다",
+    "분모끼리 더하고 분자끼리 더한다",
+    "분모와 분자를 모두 곱한다",
+    "단위분수가 몇 개인지를 세므로 분모는 그대로 두고 분자끼리 더한다"
+   ],
+   "answer": 3,
+   "why": "2/7는 1/7이 2개, 3/7은 1/7이 3개이므로 합은 1/7이 5개인 5/7입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-15-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "□ 안에 알맞은 분수를 쓰세요. (분수로 쓰세요.)\n□ + $\\frac{3}{9}$ = $\\frac{8}{9}$",
+   "answers": [
+    "5/9",
+    "9분의 5",
+    "구분의 오",
+    "9분의5"
+   ],
+   "why": "8/9에서 3/9를 빼면 5/9이므로 □=5/9입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-16-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "0.4 + 0.3은 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 266 72\" font-family=\"sans-serif\"><text x=\"50\" y=\"22\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">0.4</text><rect x=\"58\" y=\"4\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"61\" y1=\"27\" x2=\"75\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"78\" y=\"4\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"81\" y1=\"27\" x2=\"95\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"98\" y=\"4\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"101\" y1=\"27\" x2=\"115\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"118\" y=\"4\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"121\" y1=\"27\" x2=\"135\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"138\" y=\"4\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"158\" y=\"4\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"178\" y=\"4\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"198\" y=\"4\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"218\" y=\"4\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"238\" y=\"4\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"50\" y=\"56\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">0.3</text><rect x=\"58\" y=\"38\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"61\" y1=\"61\" x2=\"75\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"78\" y=\"38\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"81\" y1=\"61\" x2=\"95\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"98\" y=\"38\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"101\" y1=\"61\" x2=\"115\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"118\" y=\"38\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"138\" y=\"38\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"158\" y=\"38\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"178\" y=\"38\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"198\" y=\"38\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"218\" y=\"38\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"238\" y=\"38\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "0.7",
+    "0.07",
+    "7",
+    "0.12"
+   ],
+   "answer": 0,
+   "why": "0.1이 4개와 3개를 더하면 0.1이 7개이므로 0.7입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-16-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "0.9 - 0.5는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 266 72\" font-family=\"sans-serif\"><text x=\"50\" y=\"22\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">0.9</text><rect x=\"58\" y=\"4\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"61\" y1=\"27\" x2=\"75\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"78\" y=\"4\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"81\" y1=\"27\" x2=\"95\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"98\" y=\"4\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"101\" y1=\"27\" x2=\"115\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"118\" y=\"4\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"121\" y1=\"27\" x2=\"135\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"138\" y=\"4\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"141\" y1=\"27\" x2=\"155\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"158\" y=\"4\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"161\" y1=\"27\" x2=\"175\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"178\" y=\"4\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"181\" y1=\"27\" x2=\"195\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"198\" y=\"4\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"201\" y1=\"27\" x2=\"215\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"218\" y=\"4\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"221\" y1=\"27\" x2=\"235\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"238\" y=\"4\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"50\" y=\"56\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">0.5</text><rect x=\"58\" y=\"38\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"61\" y1=\"61\" x2=\"75\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"78\" y=\"38\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"81\" y1=\"61\" x2=\"95\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"98\" y=\"38\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"101\" y1=\"61\" x2=\"115\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"118\" y=\"38\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"121\" y1=\"61\" x2=\"135\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"138\" y=\"38\" width=\"20\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"141\" y1=\"61\" x2=\"155\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"158\" y=\"38\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"178\" y=\"38\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"198\" y=\"38\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"218\" y=\"38\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"238\" y=\"38\" width=\"20\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "4",
+    "0.04",
+    "0.4",
+    "1.4"
+   ],
+   "answer": 2,
+   "why": "0.1이 9개에서 5개를 빼면 0.1이 4개이므로 0.4입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-16-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "0.25 + 0.31을 계산하세요.",
+   "answers": [
+    "0.56"
+   ],
+   "why": "소수점의 자리를 맞추어 같은 자리끼리 더하면 0.25+0.31=0.56입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-16-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "1.27 + 2.35는 얼마인가요?",
+   "options": [
+    "3.72",
+    "3.52",
+    "4.62",
+    "3.62"
+   ],
+   "answer": 3,
+   "why": "소수점의 자리를 맞추어 계산합니다. 소수 둘째 자리 7+5=12에서 1을 받아올림하고, 첫째 자리 2+3+1=6, 일의 자리 1+2=3이므로 3.62입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-16-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "4.5 - 1.78은 얼마인가요?",
+   "options": [
+    "3.28",
+    "2.72",
+    "2.82",
+    "3.72"
+   ],
+   "answer": 1,
+   "why": "4.5=4.50으로 생각하고 소수점의 자리를 맞추어 뺍니다. 4.50-1.78=2.72입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-16-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "리본 1.35 m와 0.8 m를 겹치지 않게 이어 붙였습니다. 이어 붙인 리본의 길이는 몇 m인가요?",
+   "answers": [
+    "2.15",
+    "2.15 m",
+    "2.15m"
+   ],
+   "why": "1.35+0.8=1.35+0.80=2.15(m)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-16-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "소수의 덧셈과 뺄셈을 세로로 계산할 때 가장 중요한 것은 무엇인가요?",
+   "options": [
+    "자리 수가 다르면 계산할 수 없다",
+    "소수점을 빼고 자연수처럼 계산해도 된다",
+    "소수점의 위치를 맞추어 같은 자리끼리 계산한다",
+    "소수점의 위치는 서로 달라도 상관없다"
+   ],
+   "answer": 2,
+   "why": "소수의 덧셈과 뺄셈은 소수점을 맞추어 같은 자릿값끼리 계산합니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-16-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "3.4 + 1.26을 계산하다가 3.4+1.26=1.6이라고 했습니다. 잘못된 까닭은 무엇인가요?",
+   "options": [
+    "3.4와 1.26의 소수점 위치를 맞추지 않고 자릿값이 다른 수끼리 더했기 때문이다",
+    "3.4가 1.26보다 작기 때문이다",
+    "소수는 더할 수 없기 때문이다",
+    "소수점을 너무 많이 찍었기 때문이다"
+   ],
+   "answer": 0,
+   "why": "3.40+1.26=4.66이어야 합니다. 소수점의 위치를 맞추어 같은 자리끼리 계산해야 합니다."
+  },
+  {
+   "id": "수학-초3-4-4수01-16-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "수와 연산",
+   "standard": "4수01-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "어떤 수에 1.25를 더했더니 3.4가 되었습니다. 어떤 수를 구하세요.",
+   "answers": [
+    "2.15"
+   ],
+   "why": "(어떤 수)=3.4-1.25=3.40-1.25=2.15입니다."
+  }
+ ],
+ "skipped": []
+}
