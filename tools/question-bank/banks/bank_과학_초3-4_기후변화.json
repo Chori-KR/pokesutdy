@@ -1,0 +1,358 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초3-4",
+  "unit": "기후변화",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "바닷가 마을의 걱정",
+   "text": "바다와 가까운 작은 마을에 사는 하준이는 요즘 할머니께 걱정스러운 이야기를 자주 듣습니다. 예전에는 물이 들어오지 않던 길이 태풍이 올 때마다 바닷물에 잠긴다는 것입니다. 과학 선생님께서는 지구의 기온이 오르면서 땅 위의 빙하가 녹아 바다로 흘러들고, 바닷물의 높이인 해수면이 높아지고 있다고 설명하셨습니다. 해수면이 높아지면 바닷가 낮은 땅이 물에 잠기고, 집과 논밭이 피해를 입을 수 있습니다. 하준이는 마을을 지키려면 지구의 기온이 더 오르지 않도록 우리 모두가 노력해야 한다고 생각했습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "과학-초3-4-4과16-01-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 기후변화에 따라 나타나는 현상으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "낮과 밤이 생긴다",
+    "달의 모양이 바뀐다",
+    "극지방의 빙하가 녹는다",
+    "씨앗이 싹 튼다"
+   ],
+   "answer": 2,
+   "why": "지구의 기온이 오르는 기후변화로 빙하가 녹고 폭염, 폭우 같은 현상이 늘어납니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-01-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "지구의 평균 기온이 점점 높아지는 현상을 무엇이라고 하나요? (다섯 글자)",
+   "answers": [
+    "지구온난화",
+    "지구 온난화"
+   ],
+   "why": "지구의 평균 기온이 오르는 현상을 지구온난화라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-01-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "석탄, 석유 같은 연료를 태우면 기후변화에 영향을 주는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "이산화탄소가 많이 나와 지구의 기온을 높이기 때문이다",
+    "산소가 모두 사라지기 때문이다",
+    "바닷물이 차가워지기 때문이다",
+    "비가 전혀 내리지 않기 때문이다"
+   ],
+   "answer": 0,
+   "why": "연료를 태울 때 나오는 이산화탄소가 늘면 지구의 기온이 오르는 데 영향을 줍니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-01-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 어느 지역에서 잰 공기 중 이산화탄소 양의 변화를 나타낸 예시 자료입니다. 그래프에서 알 수 있는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 330 240\" font-family=\"sans-serif\"><text x=\"46\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(ppm)</text><line x1=\"52\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"36\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">330</text><line x1=\"52\" y1=\"168.2\" x2=\"304\" y2=\"168.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><line x1=\"52\" y1=\"150.4\" x2=\"304\" y2=\"150.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><line x1=\"52\" y1=\"132.7\" x2=\"304\" y2=\"132.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"136.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">360</text><line x1=\"52\" y1=\"114.9\" x2=\"304\" y2=\"114.9\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><line x1=\"52\" y1=\"97.1\" x2=\"304\" y2=\"97.1\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><line x1=\"52\" y1=\"79.3\" x2=\"304\" y2=\"79.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"83.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">390</text><line x1=\"52\" y1=\"61.6\" x2=\"304\" y2=\"61.6\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><line x1=\"52\" y1=\"43.8\" x2=\"304\" y2=\"43.8\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><line x1=\"52\" y1=\"26\" x2=\"304\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">420</text><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M44,196 q4,-6 8,0 t8,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"212\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"77.2\" y1=\"26\" x2=\"77.2\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"77.2\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1980</text><line x1=\"127.6\" y1=\"26\" x2=\"127.6\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"127.6\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1990</text><line x1=\"178\" y1=\"26\" x2=\"178\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"178\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2000</text><line x1=\"228.4\" y1=\"26\" x2=\"228.4\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"228.4\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2010</text><line x1=\"278.8\" y1=\"26\" x2=\"278.8\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"278.8\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2020</text><polyline points=\"77.2,168.2 127.6,143.3 178,116.7 228.4,79.3 278.8,36.7\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"77.2\" cy=\"168.2\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"127.6\" cy=\"143.3\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"178\" cy=\"116.7\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"228.4\" cy=\"79.3\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"278.8\" cy=\"36.7\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "2000년에 가장 많았다",
+    "시간이 지날수록 이산화탄소 양이 줄어들었다",
+    "이산화탄소 양은 항상 같았다",
+    "시간이 지날수록 이산화탄소 양이 늘어났다"
+   ],
+   "answer": 3,
+   "why": "그래프의 선이 오른쪽으로 갈수록 올라가므로 이산화탄소 양이 늘어났습니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-01-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "표를 보고 이산화탄소 양과 평균 기온의 관계를 바르게 설명한 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 306 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"300\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"183\" y1=\"3\" x2=\"183\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"303\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"303\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"303\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연도</text><text x=\"123\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">이산화탄소(ppm)</text><text x=\"243\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">평균 기온(℃)</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1980</text><text x=\"123\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">340</text><text x=\"243\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">14.0</text><text x=\"33\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2000</text><text x=\"123\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">369</text><text x=\"243\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">14.4</text><text x=\"33\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2020</text><text x=\"123\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">414</text><text x=\"243\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">14.9</text></svg>",
+   "options": [
+    "이산화탄소 양이 늘 때 평균 기온은 내려갔다",
+    "이산화탄소 양이 늘 때 평균 기온도 함께 올라갔다",
+    "이산화탄소 양과 평균 기온은 서로 관계가 없다",
+    "평균 기온은 항상 14.0이었다"
+   ],
+   "answer": 1,
+   "why": "표에서 이산화탄소 양이 늘어난 해에 평균 기온도 함께 올라간 것을 알 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-01-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "기후변화에 가장 큰 영향을 주는 것으로 알려진, 연료를 태울 때 많이 나오는 기체는 무엇인가요?",
+   "answers": [
+    "이산화탄소",
+    "이산화 탄소",
+    "CO2"
+   ],
+   "why": "연료를 태울 때 나오는 이산화탄소가 기후변화에 큰 영향을 줍니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-02-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "지구의 기온이 올라 땅 위의 빙하가 녹아 바다로 흘러들면 바닷물의 높이는 어떻게 되나요?",
+   "options": [
+    "낮아진다",
+    "높아진다",
+    "변하지 않는다",
+    "바닷물이 사라진다"
+   ],
+   "answer": 1,
+   "why": "빙하가 녹은 물이 바다로 들어가면 해수면이 높아집니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-02-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "바닷물의 높이를 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "해수면"
+   ],
+   "why": "바닷물의 높이를 해수면이라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-02-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "글에서 해수면이 높아지면 생길 수 있는 일로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "비가 전혀 오지 않는다",
+    "바다가 모두 마른다",
+    "바닷가 마을이 더 넓어진다",
+    "바닷가 낮은 땅이 물에 잠기고 집과 논밭이 피해를 입는다"
+   ],
+   "answer": 3,
+   "why": "해수면이 높아지면 바닷가 낮은 땅이 물에 잠겨 피해가 생깁니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-02-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "해수면 상승으로 가장 큰 피해를 입을 수 있는 곳은 어디인가요?",
+   "options": [
+    "바다와 가까운 낮은 땅의 마을",
+    "높은 산꼭대기의 마을",
+    "바다에서 먼 높은 지대",
+    "사막 한가운데"
+   ],
+   "answer": 0,
+   "why": "바다와 가깝고 낮은 땅은 해수면이 높아지면 물에 잠기기 쉽습니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-02-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "모형실험에서 육지 위의 얼음이 녹은 뒤 물의 높이가 높아졌습니다. 이 결과로 알 수 있는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 198 136\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"15\" y=\"54\" width=\"62\" height=\"28\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,54 77,54\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"><rect x=\"18\" y=\"30\" width=\"38\" height=\"40\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"37\" y=\"56\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">땅</text><rect x=\"22\" y=\"14\" width=\"14\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"38\" y=\"14\" width=\"14\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">녹기 전</text></g><text x=\"50\" y=\"130\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">땅 위에 얼음</text><g transform=\"translate(102 0)\"><rect x=\"15\" y=\"47\" width=\"62\" height=\"35\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,47 77,47\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"><rect x=\"18\" y=\"30\" width=\"38\" height=\"40\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"37\" y=\"56\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">땅</text></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">녹은 뒤</text></g><text x=\"148\" y=\"130\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">얼음이 녹음</text></svg>",
+   "options": [
+    "얼음은 녹아도 물의 높이에 영향이 없다",
+    "얼음이 녹으면 물의 높이는 낮아진다",
+    "육지의 얼음이 녹으면 바다로 흘러가 해수면이 높아질 수 있다",
+    "얼음은 물에 녹지 않는다"
+   ],
+   "answer": 2,
+   "why": "육지의 얼음이 녹아 바다로 들어가면 물의 양이 늘어 해수면이 높아집니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-02-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "해수면이 올라 바닷가 마을이 물에 잠기는 일이 늘어나면 우리 생활에 생길 수 있는 변화로 가장 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "농사가 더 잘된다",
+    "바닷가에서 더 많은 땅을 얻는다",
+    "모든 마을이 더 안전해진다",
+    "살던 곳을 떠나야 하는 사람이 생기고 논밭이 줄어 식량 문제가 생길 수 있다"
+   ],
+   "answer": 3,
+   "why": "땅이 물에 잠기면 집과 논밭이 줄어 살 곳과 먹을거리에 문제가 생길 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-03-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "기후변화를 줄이기 위해 생활에서 실천할 수 있는 일로 알맞은 것은 무엇인가요?",
+   "options": [
+    "쓰지 않는 전등을 켜 둔다",
+    "일회용품을 줄이고 텀블러를 사용한다",
+    "가까운 거리도 자동차로 이동한다",
+    "물건을 쓰고 바로 버린다"
+   ],
+   "answer": 1,
+   "why": "일회용품을 줄이면 쓰레기와 에너지 사용이 줄어 기후변화를 줄이는 데 도움이 됩니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-03-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "다 쓴 종이나 병 같은 물건을 모아 다시 쓸 수 있게 만드는 일을 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "재활용"
+   ],
+   "why": "쓰고 난 물건을 다시 쓸 수 있게 만드는 일이 재활용입니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-03-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "가까운 거리는 걷거나 대중교통을 이용하는 것이 기후변화 대응에 도움이 되는 까닭은 무엇인가요?",
+   "options": [
+    "걷는 것이 더 빠르기 때문이다",
+    "자동차가 더 비싸기 때문이다",
+    "자동차에서 나오는 이산화탄소를 줄일 수 있기 때문이다",
+    "길이 항상 막히기 때문이다"
+   ],
+   "answer": 2,
+   "why": "자동차 이용이 줄면 연료를 덜 태워 이산화탄소가 적게 나옵니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-03-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표를 보고 기후변화 대응에 도움이 되지 않는 행동을 고르세요.",
+   "svg": "<svg viewBox=\"0 0 296 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"290\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"293\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"293\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"293\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"293\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">기호</text><text x=\"178\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">행동</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"178\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">가까운 거리는 걸어가기</text><text x=\"33\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"178\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">쓰지 않는 전등 끄기</text><text x=\"33\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><text x=\"178\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">에어컨을 켜고 창문 열어 두기</text><text x=\"33\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text><text x=\"178\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">텀블러 사용하기</text></svg>",
+   "options": [
+    "가",
+    "나",
+    "다",
+    "라"
+   ],
+   "answer": 2,
+   "why": "에어컨을 켠 채 창문을 열어 두면 에너지가 낭비되어 기후변화 대응에 도움이 되지 않습니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-03-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "‘지속가능한 사회’의 뜻으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "지금 사는 사람과 미래 세대가 모두 환경을 누릴 수 있도록 자원을 아껴 쓰는 사회",
+    "자원을 마음껏 쓰고 버리는 사회",
+    "새로운 물건만 계속 사는 사회",
+    "쓰레기를 늘리는 사회"
+   ],
+   "answer": 0,
+   "why": "지속가능한 사회는 앞으로도 오래 환경을 누릴 수 있도록 자원을 아끼고 환경을 지키는 사회입니다."
+  },
+  {
+   "id": "과학-초3-4-4과16-03-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "기후변화",
+   "standard": "4과16-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "기후변화를 줄이기 위한 이번 주 실천 계획으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "남이 하면 따라서 한다",
+    "계획 없이 마음 내키는 대로 한다",
+    "양치할 때 컵을 쓰고, 안 쓰는 전기 제품의 플러그를 뽑는다",
+    "실천은 어른들만 한다"
+   ],
+   "answer": 2,
+   "why": "생활에서 바로 실천할 수 있는 구체적인 계획을 세우고 지키는 것이 중요합니다."
+  }
+ ],
+ "skipped": []
+}
