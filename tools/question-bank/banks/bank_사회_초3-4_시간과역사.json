@@ -1,0 +1,371 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "사회",
+  "school": "초",
+  "course": "사회",
+  "gradeBand": "초3-4",
+  "unit": "시간과 역사",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "서연이의 성장 앨범",
+   "text": "서연이는 열 살 생일을 맞아 성장 앨범을 펼쳐 보았습니다. 첫 번째 쪽에는 갓 태어난 아기 때의 사진이 있었고, 다음 쪽에는 걸음마를 배우던 두 살 때의 사진이 있었습니다. 여덟 살 때의 사진에는 초등학교 입학식 날 큰 가방을 멘 모습이 담겨 있었습니다. 마지막 쪽에는 오늘 찍은 생일 사진이 붙어 있었습니다. 서연이는 사진을 차례로 넘겨 보며 시간이 지나면서 자신의 키와 모습이 달라졌다는 것을 알았습니다. 어머니께서는 “지나간 일은 과거, 지금은 현재, 앞으로 올 시간은 미래라고 한단다.”라고 말씀하셨습니다.",
+   "source": ""
+  },
+  {
+   "id": "p2",
+   "title": "할머니 댁 다락방",
+   "text": "도현이는 할머니 댁 다락방에서 낡은 상자를 발견했습니다. 상자에는 빛바랜 흑백 사진 한 장, 손으로 쓴 편지, 그리고 오래된 놋그릇이 들어 있었습니다. 사진 속에는 지금과 다른 옷을 입은 사람들이 초가집 앞에 서 있었습니다. 편지의 맨 아래에는 ‘오십 년 전 봄’이라고 적혀 있었습니다. 도현이가 보여 드리자 할머니께서는 “그때는 이런 그릇으로 밥을 먹었단다.”라고 말씀하셨습니다. 도현이는 이 물건들을 보니 옛날 사람들이 어떻게 살았는지 조금 알 것 같았습니다.",
+   "source": ""
+  },
+  {
+   "id": "p3",
+   "title": "시장의 옛 모습과 오늘 모습",
+   "text": "어느 고장의 시장에는 오십 년 전에 찍은 사진과 오늘 찍은 사진이 함께 전시되어 있습니다. 옛날 사진에는 흙길 양옆으로 낮은 초가집과 나무 가게가 늘어서 있고, 사람들이 소달구지에 짐을 싣고 다니는 모습이 있었습니다. 오늘의 사진에는 포장된 도로와 높은 건물이 서 있고, 자동차와 택배 트럭이 지나다니며 사람들이 카드로 물건 값을 내는 모습이 있었습니다. 학생들은 두 사진을 나란히 놓고 달라진 점을 찾아 기록했습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "사회-초3-4-4사02-01-c1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 시간의 흐름을 경험할 수 있는 사례로 알맞은 것은 무엇인가요?",
+   "options": [
+    "연필이 필통에 들어 있다",
+    "책상이 그대로 놓여 있다",
+    "씨앗이 싹이 트고 자라 꽃이 핀다",
+    "돌멩이가 길에 놓여 있다"
+   ],
+   "answer": 2,
+   "why": "식물이 자라 변하는 모습에서 시간이 흐르고 있음을 알 수 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-01-c2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "날짜와 요일을 알려 주어 하루, 한 달, 일 년의 시간을 셀 때 쓰는 것은 무엇인가요? (두 글자)",
+   "answers": [
+    "달력"
+   ],
+   "why": "달력을 보면 날짜와 요일을 알 수 있어 시간의 흐름을 셀 수 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-01-b1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "서연이의 성장 앨범에서 가장 먼저 일어난 일은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "갓 태어난 아기 때",
+    "초등학교 입학식",
+    "걸음마를 배우던 때",
+    "열 살 생일"
+   ],
+   "answer": 0,
+   "why": "앨범은 시간 순서대로 붙어 있어, 갓 태어난 아기 때의 사진이 가장 먼저입니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-01-b2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "어제 일어난 일, 지금 하고 있는 일, 앞으로 할 일을 순서대로 말한 것은 무엇인가요?",
+   "options": [
+    "과거 – 미래 – 현재",
+    "미래 – 현재 – 과거",
+    "현재 – 미래 – 과거",
+    "과거 – 현재 – 미래"
+   ],
+   "answer": 3,
+   "why": "이미 지나간 시간은 과거, 지금은 현재, 앞으로 올 시간은 미래입니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-01-a1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "서연이가 앨범을 통해 알게 된 시간의 흐름의 특징으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "시간이 지나도 모든 것이 그대로이다",
+    "시간이 지나면서 자신의 모습이 달라졌다",
+    "지나간 시간은 다시 돌아온다",
+    "시간은 거꾸로 흐른다"
+   ],
+   "answer": 1,
+   "why": "사진을 차례로 보면 시간이 흐르면서 모습이 달라졌음을 알 수 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-01-a2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림은 하준이의 지난 일을 시간 순서대로 나타낸 것입니다. 하준이는 초등학교 입학 후 몇 년이 지났나요?",
+   "svg": "<svg viewBox=\"0 0 344 96\" font-family=\"sans-serif\"><line x1=\"16\" y1=\"52\" x2=\"314\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"320,52 310,46 310,58\" fill=\"currentColor\"/><circle cx=\"24\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0세</text><text x=\"24\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">태어남</text><circle cx=\"118\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"118\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5세</text><text x=\"118\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">유치원</text><circle cx=\"212\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"212\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8세</text><text x=\"212\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">초등학교 입학</text><circle cx=\"306\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"306\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10세</text><text x=\"306\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">지금</text></svg>",
+   "options": [
+    "5년",
+    "2년",
+    "8년",
+    "10년"
+   ],
+   "answer": 1,
+   "why": "8세에 입학했고 지금은 10세이므로 입학 후 2년이 지났습니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-02-c1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 과거의 모습을 알려 주는 오래된 물건이나 자료로 알맞은 것은 무엇인가요?",
+   "options": [
+    "새로 나온 장난감",
+    "어제 산 새 공책",
+    "방금 구운 빵",
+    "빛바랜 옛 사진"
+   ],
+   "answer": 3,
+   "why": "옛 사진은 그때의 사람들과 생활 모습을 알려 주는 오래된 자료입니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-02-c2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "오래된 물건이나 자료를 살펴보면 알 수 있는 시간의 모습은 무엇인가요? (두 글자)",
+   "answers": [
+    "과거",
+    "옛날"
+   ],
+   "why": "오래된 물건을 보면 이미 지나간 시간인 과거의 모습을 알 수 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-02-b1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "도현이가 다락방의 사진에서 알 수 있는 것은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "옛날 사람들이 지금과 다른 옷을 입고 초가집 앞에 서 있었다",
+    "사람들이 아파트에 살았다",
+    "모든 사람이 같은 옷을 입었다",
+    "사진이 어제 찍혔다"
+   ],
+   "answer": 0,
+   "why": "사진 속 옷차림과 집의 모양을 보고 옛날 생활 모습을 알 수 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-02-b2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "할머니의 놋그릇이 과거의 모습을 알려 주는 증거인 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "반짝거려서 예쁘기 때문이다",
+    "새로 만든 물건이기 때문이다",
+    "옛날 사람들이 실제로 쓰던 물건이기 때문이다",
+    "가격이 비싸기 때문이다"
+   ],
+   "answer": 2,
+   "why": "옛날에 실제로 쓰이던 물건은 그때 사람들의 생활을 알려 주는 증거입니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-02-a1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "편지 아래에 ‘오십 년 전 봄’이라고 적힌 것에서 알 수 있는 것은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "편지는 내일 쓴 것이다",
+    "편지는 가짜이다",
+    "편지를 쓴 사람의 이름을 알 수 있다",
+    "편지를 쓴 때가 언제인지 짐작할 수 있다"
+   ],
+   "answer": 3,
+   "why": "날짜가 적혀 있으면 그 자료가 만들어진 때를 짐작할 수 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-02-a2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "역사는 사진, 편지, 물건처럼 남아 있는 무엇을 바탕으로 알아낼 수 있나요? (두 글자)",
+   "answers": [
+    "증거",
+    "자료",
+    "기록"
+   ],
+   "why": "역사는 과거에 남은 증거(자료)를 바탕으로 알아내고 구성합니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-03-c1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "표에서 시장의 ‘옛날’ 모습에 해당하는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 306 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"300\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"303\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"303\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"303\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><text x=\"138\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><text x=\"248\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">길</text><text x=\"138\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">흙길</text><text x=\"248\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">포장된 도로</text><text x=\"43\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">집</text><text x=\"138\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">초가집</text><text x=\"248\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">높은 건물</text><text x=\"43\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">짐 나르기</text><text x=\"138\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">소달구지</text><text x=\"248\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">트럭</text></svg>",
+   "options": [
+    "B",
+    "A",
+    "둘 다",
+    "알 수 없다"
+   ],
+   "answer": 1,
+   "why": "흙길, 초가집, 소달구지는 옛날 시장의 모습이고 B는 오늘의 모습입니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-03-c2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "시장에서 옛날 사진에는 있고 오늘 사진에는 보이지 않는 것은 무엇인가요?",
+   "passage": "p3",
+   "options": [
+    "자동차",
+    "높은 건물",
+    "소달구지",
+    "택배 트럭"
+   ],
+   "answer": 2,
+   "why": "소달구지는 옛날 사진에 나오고, 오늘 사진에는 자동차와 트럭이 나옵니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-03-b1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "옛날과 오늘의 사진을 비교하여 알 수 있는 달라진 생활 모습으로 알맞은 것은 무엇인가요?",
+   "passage": "p3",
+   "options": [
+    "흙길이 포장도로로 바뀌고 물건 값도 카드로 낼 수 있게 되었다",
+    "시장이 옛날과 똑같다",
+    "집이 모두 초가집이 되었다",
+    "사람이 하나도 없다"
+   ],
+   "answer": 0,
+   "why": "두 사진을 비교하면 길, 건물, 이동 수단, 물건 값을 내는 방법이 달라졌음을 알 수 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-03-b2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "고장의 옛 모습과 오늘 모습의 변화를 알려 주는 사진, 옛 지도, 신문 기사 같은 것을 통틀어 무엇이라고 하나요? (두 글자 + 자료)",
+   "answers": [
+    "역사 자료",
+    "역사자료",
+    "자료"
+   ],
+   "why": "과거와 현재의 모습을 알려 주는 사진, 옛 지도 등을 역사 자료라고 합니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-03-a1",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "고장 사람들의 생활이 달라진 까닭을 추측할 수 있는 근거로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "사람들이 모두 이사했다",
+    "시장이 문을 닫았다",
+    "소달구지에서 트럭으로 바뀌는 등 교통과 물건 나르는 방법이 발달했다",
+    "사진기가 새로 생겼다"
+   ],
+   "answer": 2,
+   "why": "자료를 종합해 보면 교통과 기술이 발달하면서 생활 모습이 달라졌음을 짐작할 수 있습니다."
+  },
+  {
+   "id": "사회-초3-4-4사02-03-a2",
+   "subject": "사회",
+   "gradeBand": "초3-4",
+   "unit": "시간과 역사",
+   "standard": "4사02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "고장의 달라진 모습을 알아보려고 옛날과 오늘의 두 사진을 견주어 살펴보는 방법을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "비교",
+    "비교하기"
+   ],
+   "why": "두 시기의 자료를 견주어 달라진 점을 찾는 방법이 비교입니다."
+  }
+ ],
+ "skipped": []
+}
