@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초3-4",
+  "unit": "달의 관찰",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "과학-초3-4-4과13-01-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "달에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "표면이 매끄러운 공 모양이다",
+    "스스로 빛을 내는 별이다",
+    "스스로 빛을 내지 못하고 태양 빛을 반사해 밝게 보인다",
+    "항상 같은 모양으로만 보인다"
+   ],
+   "answer": 2,
+   "why": "달은 스스로 빛을 내지 못하고 태양 빛을 반사해서 밝게 보입니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-01-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "달 표면에서 볼 수 있는, 운석이 부딪혀 둥글게 움푹 파인 곳을 무엇이라고 하나요? (네 글자)",
+   "answers": [
+    "크레이터",
+    "충돌구"
+   ],
+   "why": "달 표면의 둥글게 파인 곳을 크레이터라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-01-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 여러 날 동안 관찰한 달의 모양입니다. 둥글게 꽉 찬 보름달을 고르세요.",
+   "svg": "<svg viewBox=\"0 0 286 92\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><circle cx=\"34\" cy=\"34\" r=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M34,8 A26,26 0 0 1 34,60 A19.8,26 0 0 0 34,8 Z\" fill=\"#e07b39\" fill-opacity=\"0.55\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"38\" y=\"86\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(74 0)\"><circle cx=\"34\" cy=\"34\" r=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M34,8 A26,26 0 0 1 34,60 A0,26 0 0 1 34,8 Z\" fill=\"#e07b39\" fill-opacity=\"0.55\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"108\" y=\"86\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(144 0)\"><circle cx=\"34\" cy=\"34\" r=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"34\" cy=\"34\" r=\"26\" fill=\"#e07b39\" fill-opacity=\"0.55\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"178\" y=\"86\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(214 0)\"><circle cx=\"34\" cy=\"34\" r=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M34,8 A26,26 0 0 1 34,60 A0,26 0 0 1 34,8 Z\" fill=\"#e07b39\" fill-opacity=\"0.55\" stroke=\"currentColor\" stroke-width=\"2\" transform=\"translate(68,0) scale(-1,1)\"/></g><text x=\"248\" y=\"86\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
+   "options": [
+    "다",
+    "가",
+    "나",
+    "라"
+   ],
+   "answer": 0,
+   "why": "전체가 밝게 보이는 둥근 모양인 다가 보름달입니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-01-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "달의 모양을 며칠 동안 계속 관찰했더니 달의 모양이 매일 조금씩 달라졌습니다. 알맞은 설명은 무엇인가요?",
+   "options": [
+    "구름이 달을 만든다",
+    "달이 날마다 새로 생겨난다",
+    "달의 크기가 실제로 변한다",
+    "달의 밝게 보이는 부분이 날마다 조금씩 변한다"
+   ],
+   "answer": 3,
+   "why": "달이 태양과 지구 사이의 위치가 달라지면서 우리 눈에 밝게 보이는 부분이 날마다 달라집니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-01-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림은 오른쪽이 밝은 달이 점점 커지는 모습입니다. 나 다음에 볼 수 있는 모양은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 216 92\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><circle cx=\"34\" cy=\"34\" r=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M34,8 A26,26 0 0 1 34,60 A19.8,26 0 0 0 34,8 Z\" fill=\"#e07b39\" fill-opacity=\"0.55\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"38\" y=\"86\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가(초승달)</text><g transform=\"translate(74 0)\"><circle cx=\"34\" cy=\"34\" r=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M34,8 A26,26 0 0 1 34,60 A0,26 0 0 1 34,8 Z\" fill=\"#e07b39\" fill-opacity=\"0.55\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"108\" y=\"86\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나(상현달)</text><g transform=\"translate(144 0)\"><circle cx=\"34\" cy=\"34\" r=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"34\" cy=\"34\" r=\"26\" fill=\"#e07b39\" fill-opacity=\"0.55\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"178\" y=\"86\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text></svg>",
+   "options": [
+    "그믐달",
+    "보름달",
+    "하현달",
+    "초승달"
+   ],
+   "answer": 1,
+   "why": "초승달, 상현달 다음에는 점점 커져서 보름달이 됩니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-01-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "달의 모양이 한 번 바뀌어 처음 모양으로 돌아오는 데 걸리는 시간은 약 몇 일일까요? (숫자로 쓰세요)",
+   "answers": [
+    "30",
+    "30일",
+    "약 30일",
+    "29",
+    "29일",
+    "29.5",
+    "29.5일",
+    "약 29.5일"
+   ],
+   "why": "달의 모양은 약 29.5일(약 한 달)을 주기로 반복해서 바뀝니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-02-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "태양계에서 중심에 있으며 스스로 빛을 내는 것은 무엇인가요?",
+   "options": [
+    "달",
+    "태양",
+    "지구",
+    "목성"
+   ],
+   "answer": 1,
+   "why": "태양계의 중심에는 스스로 빛을 내는 태양이 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-02-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "지구처럼 태양 주위를 도는 큰 천체를 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "행성"
+   ],
+   "why": "태양 주위를 도는 지구, 화성, 목성 등을 행성이라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-02-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표를 보고 고리가 있는 행성을 고르세요.",
+   "svg": "<svg viewBox=\"0 0 266 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"260\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"263\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"263\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"263\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"263\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">행성</text><text x=\"168\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">특징</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수성</text><text x=\"168\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">태양에 가장 가까움</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">화성</text><text x=\"168\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">붉은빛을 띰</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">목성</text><text x=\"168\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">행성 중 가장 큼</text><text x=\"38\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">토성</text><text x=\"168\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">아름다운 고리가 있음</text></svg>",
+   "options": [
+    "목성",
+    "수성",
+    "화성",
+    "토성"
+   ],
+   "answer": 3,
+   "why": "표에서 고리가 있다고 한 행성은 토성입니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-02-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "태양계 행성 중 가장 큰 행성은 무엇인가요?",
+   "options": [
+    "목성",
+    "지구",
+    "수성",
+    "화성"
+   ],
+   "answer": 0,
+   "why": "목성은 태양계에서 가장 큰 행성입니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-02-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그래프는 지구의 지름을 1로 했을 때 여러 행성의 상대적인 크기입니다. 행성 모형을 만들 때 가장 큰 구슬이 필요한 행성은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 330 230\" font-family=\"sans-serif\"><text x=\"46\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(배)</text><line x1=\"52\" y1=\"186\" x2=\"314\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"52\" y1=\"159.3\" x2=\"314\" y2=\"159.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"163.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"52\" y1=\"132.7\" x2=\"314\" y2=\"132.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"136.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"52\" y1=\"106\" x2=\"314\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"110\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"52\" y1=\"79.3\" x2=\"314\" y2=\"79.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"83.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">8</text><line x1=\"52\" y1=\"52.7\" x2=\"314\" y2=\"52.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"56.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">10</text><line x1=\"52\" y1=\"26\" x2=\"314\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">12</text><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"62.9\" y=\"180.7\" width=\"21.8\" height=\"5.3\" fill=\"#4b7bec\"/><text x=\"73.8\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">수성</text><rect x=\"106.6\" y=\"174\" width=\"21.8\" height=\"12\" fill=\"#4b7bec\"/><text x=\"117.5\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">금성</text><rect x=\"150.2\" y=\"172.7\" width=\"21.8\" height=\"13.3\" fill=\"#4b7bec\"/><text x=\"161.2\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">지구</text><rect x=\"193.9\" y=\"179.3\" width=\"21.8\" height=\"6.7\" fill=\"#4b7bec\"/><text x=\"204.8\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">화성</text><rect x=\"237.6\" y=\"39.3\" width=\"21.8\" height=\"146.7\" fill=\"#4b7bec\"/><text x=\"248.5\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">목성</text><rect x=\"281.2\" y=\"66\" width=\"21.8\" height=\"120\" fill=\"#4b7bec\"/><text x=\"292.2\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">토성</text></svg>",
+   "options": [
+    "지구",
+    "토성",
+    "목성",
+    "금성"
+   ],
+   "answer": 2,
+   "why": "그래프에서 가장 막대가 긴 목성이 가장 큽니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-02-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "태양에서 가까운 순서대로 행성을 바르게 나열한 것은 무엇인가요?",
+   "options": [
+    "수성 – 금성 – 지구 – 화성",
+    "금성 – 수성 – 지구 – 화성",
+    "수성 – 지구 – 금성 – 화성",
+    "지구 – 수성 – 금성 – 화성"
+   ],
+   "answer": 0,
+   "why": "태양에서 가까운 순서는 수성, 금성, 지구, 화성, 목성, 토성, 천왕성, 해왕성입니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-03-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 별에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "항상 낮에만 보인다",
+    "태양 빛을 반사해서만 빛난다",
+    "지구 주위를 도는 위성이다",
+    "스스로 빛을 내는 천체이다"
+   ],
+   "answer": 3,
+   "why": "별은 스스로 빛을 내고, 행성은 태양 빛을 반사해서 빛납니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-03-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "북쪽 하늘에서 거의 움직이지 않고 늘 같은 자리에 보여 방향을 찾는 데 쓰이는 별은 무엇인가요? (세 글자)",
+   "answers": [
+    "북극성"
+   ],
+   "why": "북극성은 북쪽 하늘에서 거의 움직이지 않아 북쪽을 찾는 데 이용됩니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-03-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 북쪽 하늘에서 볼 수 있는 별자리 모양입니다. W 모양의 카시오페이아자리를 고르세요.",
+   "svg": "<svg viewBox=\"0 0 332 134\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><line x1=\"8\" y1=\"68.2\" x2=\"32\" y2=\"60.5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"32\" y1=\"60.5\" x2=\"54.4\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"54.4\" y1=\"55\" x2=\"73.6\" y2=\"52.8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"73.6\" y1=\"52.8\" x2=\"80\" y2=\"85.8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"80\" y1=\"85.8\" x2=\"118.4\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"118.4\" y1=\"88\" x2=\"115.2\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"115.2\" y1=\"55\" x2=\"73.6\" y2=\"52.8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><circle cx=\"8\" cy=\"68.2\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"60.5\" r=\"4\" fill=\"currentColor\"/><circle cx=\"54.4\" cy=\"55\" r=\"4\" fill=\"currentColor\"/><circle cx=\"73.6\" cy=\"52.8\" r=\"4\" fill=\"currentColor\"/><circle cx=\"80\" cy=\"85.8\" r=\"4\" fill=\"currentColor\"/><circle cx=\"118.4\" cy=\"88\" r=\"4\" fill=\"currentColor\"/><circle cx=\"115.2\" cy=\"55\" r=\"4\" fill=\"currentColor\"/></g><text x=\"84\" y=\"128\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(168 0)\"><line x1=\"8\" y1=\"44\" x2=\"40\" y2=\"82.5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"40\" y1=\"82.5\" x2=\"80\" y2=\"49.5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"80\" y1=\"49.5\" x2=\"120\" y2=\"85.8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"120\" y1=\"85.8\" x2=\"152\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><circle cx=\"8\" cy=\"44\" r=\"4\" fill=\"currentColor\"/><circle cx=\"40\" cy=\"82.5\" r=\"4\" fill=\"currentColor\"/><circle cx=\"80\" cy=\"49.5\" r=\"4\" fill=\"currentColor\"/><circle cx=\"120\" cy=\"85.8\" r=\"4\" fill=\"currentColor\"/><circle cx=\"152\" cy=\"44\" r=\"4\" fill=\"currentColor\"/></g><text x=\"248\" y=\"128\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "options": [
+    "가",
+    "나",
+    "둘 다",
+    "둘 다 아니다"
+   ],
+   "answer": 1,
+   "why": "나는 W 모양의 카시오페이아자리이고, 가는 국자 모양의 북두칠성입니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-03-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "별의 정의로 알맞은 것은 무엇인가요?",
+   "options": [
+    "지구 주위를 도는 천체",
+    "태양 주위를 도는 천체",
+    "스스로 빛을 내는 천체",
+    "빛을 반사하는 천체"
+   ],
+   "answer": 2,
+   "why": "별은 스스로 빛을 내는 천체입니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-03-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림의 ㉠은 북두칠성과 카시오페이아자리를 이용해 찾는 별입니다. ㉠ 별의 이름은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 330 150\" font-family=\"sans-serif\"><line x1=\"13.9\" y1=\"101.4\" x2=\"35.6\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"35.6\" y1=\"93\" x2=\"56\" y2=\"87\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"56\" y1=\"87\" x2=\"73.4\" y2=\"84.6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"73.4\" y1=\"84.6\" x2=\"79.2\" y2=\"120.6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"79.2\" y1=\"120.6\" x2=\"114\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"114\" y1=\"123\" x2=\"111.1\" y2=\"87\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"111.1\" y1=\"87\" x2=\"73.4\" y2=\"84.6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"191.7\" y1=\"78\" x2=\"219.5\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"219.5\" y1=\"120\" x2=\"254.1\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"254.1\" y1=\"84\" x2=\"288.8\" y2=\"123.6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"288.8\" y1=\"123.6\" x2=\"316.5\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><circle cx=\"13.9\" cy=\"101.4\" r=\"4\" fill=\"currentColor\"/><circle cx=\"35.6\" cy=\"93\" r=\"4\" fill=\"currentColor\"/><circle cx=\"56\" cy=\"87\" r=\"4\" fill=\"currentColor\"/><circle cx=\"73.4\" cy=\"84.6\" r=\"4\" fill=\"currentColor\"/><circle cx=\"79.2\" cy=\"120.6\" r=\"4\" fill=\"currentColor\"/><circle cx=\"114\" cy=\"123\" r=\"4\" fill=\"currentColor\"/><circle cx=\"111.1\" cy=\"87\" r=\"4\" fill=\"currentColor\"/><circle cx=\"191.7\" cy=\"78\" r=\"4\" fill=\"currentColor\"/><circle cx=\"219.5\" cy=\"120\" r=\"4\" fill=\"currentColor\"/><circle cx=\"254.1\" cy=\"84\" r=\"4\" fill=\"currentColor\"/><circle cx=\"288.8\" cy=\"123.6\" r=\"4\" fill=\"currentColor\"/><circle cx=\"316.5\" cy=\"78\" r=\"4\" fill=\"currentColor\"/><polygon points=\"165,12 168,18 174,21 168,24 165,30 162,24 156,21 162,18\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"165\" y=\"9\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text></svg>",
+   "options": [
+    "북극성",
+    "금성",
+    "태양",
+    "보름달"
+   ],
+   "answer": 0,
+   "why": "북두칠성과 카시오페이아자리를 이용해 찾는 별은 북극성입니다."
+  },
+  {
+   "id": "과학-초3-4-4과13-03-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "달의 관찰",
+   "standard": "4과13-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "별과 행성을 비교한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "별과 행성은 모두 빛을 반사한다",
+    "별과 행성은 모두 스스로 빛을 낸다",
+    "별은 스스로 빛을 내고, 행성은 태양 빛을 반사해 빛난다",
+    "행성은 스스로 빛을 내고 별은 반사한다"
+   ],
+   "answer": 2,
+   "why": "태양과 같은 별은 스스로 빛을 내고, 지구 같은 행성은 태양 빛을 반사합니다."
+  }
+ ],
+ "skipped": []
+}
