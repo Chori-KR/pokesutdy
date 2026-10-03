@@ -1,0 +1,467 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초3-4",
+  "unit": "힘과 우리 생활",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "도구 사용 조사",
+   "text": "시율이는 일상생활에서 쓰이는 도구를 조사해 친구들에게 소개했습니다. 병따개는 지레의 한 예로, 받침점을 중심으로 손으로 힘을 주면 작은 힘으로 병뚜껑을 딸 수 있습니다. 지레에서 힘을 주는 곳은 힘점이고, 물체에 힘이 작용하는 곳은 작용점입니다. 또 화물차에 짐을 실을 때 쓰는 경사로는 빗면의 한 예입니다. 같은 높이라면 빗면이 길고 완만할수록 물체를 올리는 데 드는 힘이 적습니다. 시율이는 이런 도구가 힘을 덜 들게 해 준다는 점을 발표했습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "과학-초3-4-4과01-01-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 물체를 미는 힘이 작용하는 상황은 무엇인가요?",
+   "options": [
+    "의자를 쳐다본다",
+    "의자에 앉아 있다",
+    "손으로 의자를 앞으로 민다",
+    "의자 옆에 서 있다"
+   ],
+   "answer": 2,
+   "why": "물체를 앞으로 보내는 것은 미는 힘이 작용하는 상황입니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-01-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "물체를 밀거나 당길 때 나타나는, 물체의 모양이나 움직임을 변하게 하는 것을 무엇이라고 하나요? (한 글자)",
+   "answers": [
+    "힘"
+   ],
+   "why": "물체를 밀거나 당기는 작용이 힘입니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-01-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "정지해 있던 공을 발로 차면 공이 굴러갑니다. 이 현상에서 알 수 있는 것은 무엇인가요?",
+   "options": [
+    "힘이 작용하면 물체의 움직임이 달라진다",
+    "공은 힘을 받아도 변하지 않는다",
+    "공이 스스로 움직였다",
+    "힘은 보이지 않아서 없다"
+   ],
+   "answer": 0,
+   "why": "발로 차는 힘이 작용하여 정지한 공이 움직이게 되었습니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-01-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "문을 열고 닫을 때 문에 작용하는 힘에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "당기기만 할 수 있다",
+    "힘이 필요하지 않다",
+    "밀기만 할 수 있다",
+    "밀어서 열거나 당겨서 열 수 있다"
+   ],
+   "answer": 3,
+   "why": "문은 밀거나 당겨서 열 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-01-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "빈 상자와 책이 가득 든 상자를 같은 바닥에서 밀 때 힘의 크기를 비교한 것으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "빈 상자를 밀 때 더 큰 힘이 든다",
+    "책이 가득 든 상자를 밀 때 더 큰 힘이 든다",
+    "두 경우 힘이 같다",
+    "힘이 들지 않는다"
+   ],
+   "answer": 1,
+   "why": "무거운 물체를 밀수록 더 큰 힘이 필요합니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-01-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "표는 상자를 같은 속도로 미는 데 든 힘을 비교한 것입니다. 표에서 알 수 있는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 266 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"260\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"163\" y1=\"3\" x2=\"163\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"263\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"263\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"263\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상자</text><text x=\"113\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">무게</text><text x=\"213\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">미는 데 든 힘</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"113\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">가벼움</text><text x=\"213\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">작음</text><text x=\"33\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"113\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">보통</text><text x=\"213\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">보통</text><text x=\"33\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><text x=\"113\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">무거움</text><text x=\"213\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">큼</text></svg>",
+   "options": [
+    "상자가 무거울수록 힘이 적게 든다",
+    "상자가 무거울수록 미는 데 더 큰 힘이 든다",
+    "무게와 힘은 관계가 없다",
+    "가장 가벼운 상자가 힘이 가장 크다"
+   ],
+   "answer": 1,
+   "why": "표에서 무게가 클수록 미는 데 드는 힘도 커집니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-02-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "물체마다 무게가 다르다는 것을 바르게 말한 것은 무엇인가요?",
+   "options": [
+    "물체는 무게가 없다",
+    "풍선은 벽돌보다 무겁다",
+    "모든 물체의 무게는 같다",
+    "벽돌은 풍선보다 무겁다"
+   ],
+   "answer": 3,
+   "why": "물체마다 무게가 서로 다르며, 벽돌이 풍선보다 무겁습니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-02-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "지구가 물체를 당기는 힘 때문에 생기는, 물체의 무거운 정도를 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "무게"
+   ],
+   "why": "물체의 무거운 정도를 무게라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-02-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 수평잡기 막대의 양쪽에 두 물체를 올려놓은 모습입니다. 더 무거운 물체는 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 250 118\" font-family=\"sans-serif\"><polygon points=\"125.0,82 109.0,110 141.0,110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"42.8\" y1=\"95.5\" x2=\"207.2\" y2=\"60.5\" stroke=\"currentColor\" stroke-width=\"5\"/><rect x=\"14.8\" y=\"63.5\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"42.8\" y=\"81.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수박</text><rect x=\"179.2\" y=\"28.5\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"207.2\" y=\"46.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">귤</text></svg>",
+   "options": [
+    "수박",
+    "귤",
+    "둘이 같다",
+    "알 수 없다"
+   ],
+   "answer": 0,
+   "why": "수평잡기에서 아래로 내려간 쪽의 물체가 더 무겁습니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-02-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림처럼 수평잡기 막대가 수평이 되었습니다. 두 물체의 무게는 어떤가요?",
+   "svg": "<svg viewBox=\"0 0 250 118\" font-family=\"sans-serif\"><polygon points=\"125.0,82 109.0,110 141.0,110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"41\" y1=\"78\" x2=\"209\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"5\"/><rect x=\"13\" y=\"46\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"41\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">사과</text><rect x=\"181\" y=\"46\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"209\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">배</text></svg>",
+   "options": [
+    "배가 더 무겁다",
+    "사과가 더 무겁다",
+    "같다",
+    "알 수 없다"
+   ],
+   "answer": 2,
+   "why": "막대가 수평이면 양쪽 물체의 무게가 같습니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-02-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "수평잡기로 사과는 귤보다 무겁고, 귤은 포도보다 무겁다는 것을 알았습니다. 세 과일 중 가장 가벼운 것은 무엇인가요?",
+   "options": [
+    "모두 같다",
+    "귤",
+    "사과",
+    "포도"
+   ],
+   "answer": 3,
+   "why": "사과 > 귤 > 포도의 순서이므로 포도가 가장 가볍습니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-02-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "수평잡기 막대의 한쪽에 클립 10개, 다른 쪽에 지우개를 올렸더니 수평이 되었습니다. 이 결과로 알 수 있는 것은 무엇인가요?",
+   "options": [
+    "지우개가 클립 10개보다 무겁다",
+    "지우개의 무게는 클립 10개의 무게와 같다",
+    "클립 10개가 지우개보다 무겁다",
+    "무게를 비교할 수 없다"
+   ],
+   "answer": 1,
+   "why": "막대가 수평이면 양쪽 무게가 같습니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-03-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 저울을 사용하는 상황으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "방의 온도를 잴 때",
+    "교실 벽의 길이를 잴 때",
+    "시장에서 과일의 무게를 잴 때",
+    "하늘의 높이를 잴 때"
+   ],
+   "answer": 2,
+   "why": "물체의 무게를 재는 데 저울을 사용합니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-03-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "무게를 나타내는 단위 ‘g’은 무엇이라고 읽나요? (세 글자)",
+   "answers": [
+    "그램"
+   ],
+   "why": "g은 그램이라고 읽는 무게의 단위입니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-03-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 주방 저울의 눈금판입니다. 주황색 바늘이 가리키는 무게는 몇 g인가요?",
+   "svg": "<svg viewBox=\"0 0 184 184\" font-family=\"sans-serif\"><circle cx=\"92\" cy=\"92\" r=\"76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"92\" y1=\"27\" x2=\"92\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"113.6\" y1=\"25.4\" x2=\"115.2\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"39.4\" x2=\"136.1\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">100</text><line x1=\"148.6\" y1=\"50.9\" x2=\"152.7\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"71.9\" x2=\"163.3\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">200</text><line x1=\"162\" y1=\"92\" x2=\"167\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"112.1\" x2=\"163.3\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">300</text><line x1=\"148.6\" y1=\"133.1\" x2=\"152.7\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"144.6\" x2=\"136.1\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">400</text><line x1=\"113.6\" y1=\"158.6\" x2=\"115.2\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"157\" x2=\"92\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"147\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">500</text><line x1=\"70.4\" y1=\"158.6\" x2=\"68.8\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"144.6\" x2=\"47.9\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">600</text><line x1=\"35.4\" y1=\"133.1\" x2=\"31.3\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"112.1\" x2=\"20.7\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">700</text><line x1=\"22\" y1=\"92\" x2=\"17\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"71.9\" x2=\"20.7\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">800</text><line x1=\"35.4\" y1=\"50.9\" x2=\"31.3\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"39.4\" x2=\"47.9\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">900</text><line x1=\"70.4\" y1=\"25.4\" x2=\"68.8\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"92\" x2=\"111.2\" y2=\"151\" stroke=\"#e07b39\" stroke-width=\"3.5\"/><circle cx=\"92\" cy=\"92\" r=\"5\" fill=\"currentColor\"/><text x=\"92\" y=\"114\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">g</text></svg>",
+   "options": [
+    "450 g",
+    "400 g",
+    "500 g",
+    "350 g"
+   ],
+   "answer": 0,
+   "why": "바늘이 400과 500의 가운데를 가리키므로 450 g입니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-03-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "저울로 물체의 무게를 재기 전에 먼저 확인해야 하는 것은 무엇인가요?",
+   "options": [
+    "저울의 모양",
+    "물체의 색깔",
+    "아무것도 올리지 않았을 때 눈금이 0을 가리키는지",
+    "물체의 가격"
+   ],
+   "answer": 2,
+   "why": "저울의 영점이 맞아야 정확한 무게를 잴 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-03-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "표는 세 과일의 무게를 저울로 잰 결과입니다. 가장 무거운 과일은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 216 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"210\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"213\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"213\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"213\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">과일</text><text x=\"158\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">무게(g)</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">사과</text><text x=\"158\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">220</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">귤</text><text x=\"158\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">95</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">배</text><text x=\"158\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">560</text></svg>",
+   "options": [
+    "배",
+    "사과",
+    "귤",
+    "모두 같다"
+   ],
+   "answer": 0,
+   "why": "560 g으로 가장 큰 배가 가장 무겁습니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-03-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "눈으로 보고 어느 것이 더 무거운지 구별하기 어려울 때 저울이 필요한 까닭은 무엇인가요?",
+   "options": [
+    "물체의 크기를 줄여 주기 때문이다",
+    "저울이 물체를 가볍게 만들기 때문이다",
+    "물체의 색깔을 알 수 있기 때문이다",
+    "무게를 정확한 숫자로 비교할 수 있기 때문이다"
+   ],
+   "answer": 3,
+   "why": "저울을 사용하면 무게를 정확하게 재서 비교할 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-04-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 빗면을 이용한 것은 무엇인가요?",
+   "options": [
+    "가위",
+    "휠체어가 오르는 경사로",
+    "시계",
+    "자전거 벨"
+   ],
+   "answer": 1,
+   "why": "경사로는 빗면을 이용해 물체를 쉽게 올리게 한 것입니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-04-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "비스듬하게 기울어진 면을 이용해 물체를 낮은 곳에서 높은 곳으로 올릴 때 쓰는 도구를 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "빗면"
+   ],
+   "why": "기울어진 면을 이용한 도구를 빗면이라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-04-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "시율이가 조사한 병따개에서 지레의 힘점은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "병뚜껑에 힘이 작용하는 곳",
+    "손으로 힘을 주는 곳",
+    "받침점",
+    "병의 아랫부분"
+   ],
+   "answer": 1,
+   "why": "글에서 지레에서 힘을 주는 곳을 힘점이라고 했습니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-04-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 같은 높이로 물체를 올리는 두 빗면입니다. 물체를 올리는 데 힘이 더 적게 드는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 206 296\" font-family=\"sans-serif\"><g transform=\"translate(49 0)\"><polygon points=\"14,100 94,100 94,30\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"76\" y=\"16\" width=\"18\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"103\" y=\"140\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가(짧고 가파름)</text><g transform=\"translate(4 150)\"><polygon points=\"14,100 184,100 184,30\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"166\" y=\"16\" width=\"18\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"103\" y=\"290\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나(길고 완만함)</text></svg>",
+   "options": [
+    "알 수 없다",
+    "가",
+    "둘이 같다",
+    "나"
+   ],
+   "answer": 3,
+   "why": "같은 높이라면 빗면이 길고 완만할수록 힘이 적게 듭니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-04-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "시율이의 글에서 화물차 경사로가 도움이 되는 까닭은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "길고 완만한 빗면이 물체를 올리는 데 드는 힘을 줄여 주기 때문이다",
+    "짐이 가벼워지기 때문이다",
+    "화물차가 낮아지기 때문이다",
+    "짐이 저절로 올라가기 때문이다"
+   ],
+   "answer": 0,
+   "why": "빗면은 길고 완만할수록 물체를 올리는 데 드는 힘이 적어집니다."
+  },
+  {
+   "id": "과학-초3-4-4과01-04-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "힘과 우리 생활",
+   "standard": "4과01-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "지레에서 힘을 주는 곳을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "힘점"
+   ],
+   "why": "지레에서 힘을 주는 곳이 힘점이고, 물체에 힘이 작용하는 곳이 작용점입니다."
+  }
+ ],
+ "skipped": []
+}

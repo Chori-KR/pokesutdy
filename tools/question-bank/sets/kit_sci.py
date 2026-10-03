@@ -163,7 +163,7 @@ def magnet_pair(a, b_, gap=34, label=None):
 def seesaw(left, right, tilt=0, W=250):
     """수평잡기: left/right 물체 이름. tilt<0이면 왼쪽이 내려감, >0이면 오른쪽이 내려감, 0이면 수평."""
     cx, cy = W / 2, 92
-    L = 100
+    L = 84
     ang = math.radians(tilt * 12)
     dy = math.sin(ang) * L
     dx = math.cos(ang) * L

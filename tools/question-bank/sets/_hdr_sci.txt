@@ -8,3 +8,4 @@ from kit_soc import compare_table
 from kit34 import hold
 from kit_sci import flow, cup, moon, stars, syringe, flask_balloon, web, magnet_pair, seesaw
 from kit34n import pie
+from kit34 import dial
