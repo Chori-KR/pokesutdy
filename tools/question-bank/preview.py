@@ -69,7 +69,12 @@ h1{{font-size:20px}} h2{{font-size:16px;margin:28px 0 10px}} h2 small{{color:var
 @media (max-width:480px){{.opts{{grid-template-columns:1fr}}}}
 </style></head><body><main><h1>{html.escape(title)}</h1>
 <p style="color:var(--ink2);font-size:13px">총 {total}문제 · 초록 테두리가 정답입니다. 그림은 앱과 같은 방식으로 그렸습니다.</p>
-{"".join(cards)}</main></body></html>"""
+{"".join(cards)}</main>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<script>window.renderMathInElement&&renderMathInElement(document.body,{{delimiters:[{{left:"$$",right:"$$",display:true}},{{left:"$",right:"$",display:false}}],throwOnError:false}})</script>
+</body></html>"""
 
 
 if __name__ == "__main__":
