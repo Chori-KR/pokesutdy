@@ -1,0 +1,353 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초3-4",
+  "unit": "다양한 생물",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "다은이의 조사 발표",
+   "text": "다은이는 ‘우리 생활과 작은 생물’을 주제로 조사 발표를 했습니다. 빵을 만들 때 쓰는 효모는 균류의 한 종류로, 빵 반죽을 부풀게 합니다. 김치나 요구르트에는 젖산균이라는 세균이 들어 있어 음식이 알맞게 익도록 도와줍니다. 하지만 습한 곳에 오래 둔 빵에는 곰팡이가 피어 음식을 상하게 하고, 상한 음식 속의 어떤 세균은 식중독을 일으킵니다. 다은이는 작은 생물이 우리에게 도움을 주기도 하고 피해를 주기도 하므로, 음식은 깨끗이 보관하고 손을 씻어야 한다고 발표를 마무리했습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "과학-초3-4-4과12-01-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 균류에 해당하는 것은 무엇인가요?",
+   "options": [
+    "개구리",
+    "짚신벌레",
+    "버섯",
+    "소나무"
+   ],
+   "answer": 2,
+   "why": "버섯과 곰팡이, 효모는 균류입니다. 짚신벌레는 원생생물입니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-01-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "짚신벌레나 아메바처럼 물속에서 사는 아주 작은 한 개의 세포로 된 생물 무리를 무엇이라고 하나요? (다섯 글자)",
+   "answers": [
+    "원생생물"
+   ],
+   "why": "짚신벌레, 아메바 등은 원생생물입니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-01-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "균류의 특징으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "스스로 양분을 만들지 못하고 다른 생물이나 죽은 생물에서 양분을 얻는다",
+    "광합성으로 양분을 만든다",
+    "몸에 뼈가 있다",
+    "항상 물속에서만 산다"
+   ],
+   "answer": 0,
+   "why": "균류는 광합성을 하지 못하고 다른 생물이나 죽은 생물에서 양분을 얻습니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-01-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 현미경으로 본 세 가지 작은 생물의 모습입니다. 막대나 공 모양으로 아주 작은 세균을 나타낸 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 376 108\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><ellipse cx=\"60\" cy=\"42\" rx=\"40\" ry=\"18\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"28\" y1=\"24\" x2=\"26\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"28\" y1=\"60\" x2=\"26\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"35\" y1=\"24\" x2=\"33\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"35\" y1=\"60\" x2=\"33\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"42\" y1=\"24\" x2=\"40\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"42\" y1=\"60\" x2=\"40\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"49\" y1=\"24\" x2=\"47\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"49\" y1=\"60\" x2=\"47\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"56\" y1=\"24\" x2=\"54\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"56\" y1=\"60\" x2=\"54\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"24\" x2=\"61\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"60\" x2=\"61\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"24\" x2=\"68\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"60\" x2=\"68\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"77\" y1=\"24\" x2=\"75\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"77\" y1=\"60\" x2=\"75\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"84\" y1=\"24\" x2=\"82\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"84\" y1=\"60\" x2=\"82\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"91\" y1=\"24\" x2=\"89\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"91\" y1=\"60\" x2=\"89\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"52\" cy=\"42\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"64\" y=\"102\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(128 0)\"><rect x=\"21\" y=\"24\" width=\"18\" height=\"8\" rx=\"4\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2\" transform=\"rotate(20 30 28)\"/><rect x=\"53\" y=\"18\" width=\"18\" height=\"8\" rx=\"4\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2\" transform=\"rotate(-30 62 22)\"/><rect x=\"79\" y=\"36\" width=\"18\" height=\"8\" rx=\"4\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2\" transform=\"rotate(60 88 40)\"/><rect x=\"35\" y=\"52\" width=\"18\" height=\"8\" rx=\"4\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2\" transform=\"rotate(-10 44 56)\"/><rect x=\"65\" y=\"58\" width=\"18\" height=\"8\" rx=\"4\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2\" transform=\"rotate(35 74 62)\"/><circle cx=\"18\" cy=\"50\" r=\"5\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"100\" cy=\"22\" r=\"5\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"96\" cy=\"64\" r=\"5\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"188\" y=\"102\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(252 0)\"><line x1=\"60\" y1=\"74\" x2=\"60\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"60\" y1=\"56\" x2=\"36\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"60\" y1=\"56\" x2=\"86\" y2=\"42\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"36\" y1=\"40\" x2=\"26\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"86\" y1=\"42\" x2=\"98\" y2=\"28\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"60\" y1=\"40\" x2=\"60\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"60\" cy=\"24\" r=\"7\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"24\" cy=\"22\" r=\"7\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"100\" cy=\"24\" r=\"7\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"312\" y=\"102\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text></svg>",
+   "options": [
+    "모두 세균이 아니다",
+    "가",
+    "다",
+    "나"
+   ],
+   "answer": 3,
+   "why": "나는 막대와 공 모양의 아주 작은 세균입니다. 가는 짚신벌레, 다는 곰팡이입니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-01-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "생물과 사는 곳을 바르게 짝지은 것은 무엇인가요?",
+   "options": [
+    "곰팡이 – 햇빛이 센 건조한 사막 한가운데",
+    "짚신벌레 – 연못이나 논의 물속",
+    "버섯 – 깨끗한 물속 바닥",
+    "짚신벌레 – 마른 나뭇잎 위"
+   ],
+   "answer": 1,
+   "why": "짚신벌레는 연못이나 논 같은 물속에서 삽니다. 곰팡이와 버섯은 주로 습하고 따뜻한 곳에서 삽니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-01-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "곰팡이가 작은 알갱이를 퍼뜨려 새로 퍼지는데, 이 작은 알갱이를 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "포자"
+   ],
+   "why": "곰팡이와 버섯은 포자로 번식합니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-02-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 우리 생활에 도움을 주는 작은 생물의 예로 알맞은 것은 무엇인가요?",
+   "options": [
+    "음식을 상하게 하는 곰팡이",
+    "김치와 요구르트를 익게 하는 젖산균",
+    "식중독을 일으키는 세균",
+    "발에 생기는 무좀균"
+   ],
+   "answer": 1,
+   "why": "젖산균은 김치와 요구르트를 만드는 데 도움을 줍니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-02-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "빵 반죽을 부풀게 하는 데 쓰이는 균류는 무엇인가요? (두 글자)",
+   "answers": [
+    "효모"
+   ],
+   "why": "효모는 빵 반죽을 부풀게 하는 균류입니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-02-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "작은 생물이 우리 생활에 주는 해로운 영향으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "메주 곰팡이가 된장을 만든다",
+    "효모가 빵을 부풀게 한다",
+    "젖산균이 김치를 익게 한다",
+    "곰팡이가 음식을 상하게 한다"
+   ],
+   "answer": 3,
+   "why": "곰팡이가 피면 음식이 상해서 먹을 수 없게 됩니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-02-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표를 보고 우리 생활에서 음식을 상하게 하는 생물을 고르세요.",
+   "svg": "<svg viewBox=\"0 0 296 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"290\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"293\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"293\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"293\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">생물</text><text x=\"188\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">우리 생활에 미치는 영향</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">효모</text><text x=\"188\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">빵을 부풀게 함</text><text x=\"43\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">곰팡이</text><text x=\"188\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">습한 곳의 음식을 상하게 함</text><text x=\"43\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">젖산균</text><text x=\"188\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">김치, 요구르트를 만듦</text></svg>",
+   "options": [
+    "곰팡이",
+    "효모",
+    "젖산균",
+    "모두 해당 없음"
+   ],
+   "answer": 0,
+   "why": "표에서 음식을 상하게 한다고 한 생물은 곰팡이입니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-02-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다은이의 발표 내용에서 작은 생물이 주는 도움의 예로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "세균이 식중독을 일으킨다",
+    "곰팡이가 음식을 상하게 한다",
+    "효모가 빵을 부풀게 하고 젖산균이 음식이 익도록 돕는다",
+    "모든 작은 생물은 해롭다"
+   ],
+   "answer": 2,
+   "why": "글에서 효모와 젖산균은 우리에게 도움을 주는 예로 나옵니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-02-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다은이의 발표 내용을 바탕으로, 작은 생물에 의한 피해를 줄이는 방법으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "음식을 씻지 않고 보관한다",
+    "빵을 습한 곳에 오래 둔다",
+    "상한 음식도 그냥 먹는다",
+    "음식을 깨끗이 보관하고 손을 씻는다"
+   ],
+   "answer": 3,
+   "why": "글에서 음식을 깨끗이 보관하고 손을 씻는 것으로 피해를 줄일 수 있다고 했습니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-03-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 생명과학이 우리 생활에 이용된 사례로 알맞은 것은 무엇인가요?",
+   "options": [
+    "연필 깎기",
+    "병을 예방하는 백신 만들기",
+    "공 던지기",
+    "계단 오르기"
+   ],
+   "answer": 1,
+   "why": "백신은 생명과학을 이용해 만든 것입니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-03-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "감염병에 걸리지 않도록 미리 몸에 넣어 주는 약을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "백신"
+   ],
+   "why": "백신은 감염병을 예방하는 약입니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-03-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "생명과학이 이용되는 사례를 소개하는 자료에 꼭 들어가야 할 내용으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "내 생각과 다른 자료는 지우기",
+    "관련 없는 연예인 이야기",
+    "사례의 이름과 어떻게 쓰이는지에 대한 설명",
+    "출처 없는 그림"
+   ],
+   "answer": 2,
+   "why": "소개 자료에는 사례와 그것이 어떻게 쓰이는지를 알기 쉽게 넣어야 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-03-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "김치, 된장, 요구르트가 생명과학과 관련 있는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "작은 생물의 작용을 이용해 만들기 때문이다",
+    "기계로만 만들기 때문이다",
+    "얼려서 만들기 때문이다",
+    "불로 태워서 만들기 때문이다"
+   ],
+   "answer": 0,
+   "why": "김치, 된장, 요구르트는 젖산균이나 곰팡이 같은 작은 생물의 작용으로 만들어집니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-03-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "조사한 내용을 친구들과 공유할 때의 방법으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "친구의 자료를 허락 없이 가져다 쓴다",
+    "인터넷에서 본 내용을 그대로 쓴다",
+    "자료의 출처를 밝히고 과학적으로 맞는 내용인지 확인한다",
+    "내가 만든 것이라고 말한다"
+   ],
+   "answer": 2,
+   "why": "자료를 공유할 때는 출처를 밝히고 내용이 맞는지 확인해야 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과12-03-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "다양한 생물",
+   "standard": "4과12-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "생명과학의 유용성을 보여 주는 예로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "새로운 약과 백신을 만들어 질병을 예방하고 치료한다",
+    "아무 도움이 되지 않는다",
+    "생물을 모두 없앤다",
+    "질병을 더 퍼뜨린다"
+   ],
+   "answer": 0,
+   "why": "생명과학은 약, 백신, 식품 등 우리 생활을 이롭게 하는 데 쓰입니다."
+  }
+ ],
+ "skipped": []
+}
