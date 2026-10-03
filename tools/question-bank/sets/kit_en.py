@@ -68,3 +68,58 @@ def face(kind, label=None):
     if label:
         out.append(text(40, 88, label, 14, weight="bold"))
     return svg(80, 94 if label else 76, "".join(out))
+
+
+def icon(kind, cx=36, cy=36, s=1.0):
+    """간단한 물건 그림. kind: apple ball book star heart house flower tree fish"""
+    f = 'fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"'
+    t = f'<g transform="translate({cx},{cy}) scale({s})">'
+    if kind == "apple":
+        t += f'<path d="M0,-14 C-24,-24 -30,10 -12,22 C-6,27 6,27 12,22 C30,10 24,-24 0,-14 Z" fill="{ORANGE}" fill-opacity="0.45" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M0,-14 q0,-10 6,-14" {f}/>'
+    elif kind == "ball":
+        t += f'<circle r="24" {f}/><path d="M-24,0 q24,-16 48,0 M-24,0 q24,16 48,0 M0,-24 q-12,24 0,48" {f}/>'
+    elif kind == "book":
+        t += f'<rect x="-22" y="-26" width="44" height="52" rx="3" fill="{BLUE}" fill-opacity="0.3" stroke="currentColor" stroke-width="2.5"/><path d="M-14,-26 v52 M-6,-12 h20 M-6,-2 h20" {f}/>'
+    elif kind == "star":
+        pts = []
+        for k in range(10):
+            r = 26 if k % 2 == 0 else 11
+            a = math.radians(-90 + k * 36)
+            pts.append(f"{r * math.cos(a):.1f},{r * math.sin(a):.1f}")
+        t += f'<polygon points="{" ".join(pts)}" fill="{ORANGE}" fill-opacity="0.45" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>'
+    elif kind == "heart":
+        t += f'<path d="M0,22 C-34,0 -22,-26 0,-10 C22,-26 34,0 0,22 Z" fill="{ORANGE}" fill-opacity="0.45" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>'
+    elif kind == "house":
+        t += f'<polygon points="-26,-4 0,-28 26,-4" {f}/><rect x="-20" y="-4" width="40" height="30" {f}/><rect x="-5" y="8" width="10" height="18" {f}/>'
+    elif kind == "flower":
+        for k in range(5):
+            a = math.radians(k * 72 - 90)
+            t += f'<circle cx="{12 * math.cos(a):.1f}" cy="{-6 + 12 * math.sin(a):.1f}" r="8" fill="{ORANGE}" fill-opacity="0.35" stroke="currentColor" stroke-width="2"/>'
+        t += f'<circle cy="-6" r="5" {f}/><path d="M0,6 v22" {f}/>'
+    elif kind == "tree":
+        t += f'<rect x="-5" y="6" width="10" height="22" {f}/><circle cy="-8" r="20" fill="{BLUE}" fill-opacity="0.3" stroke="currentColor" stroke-width="2.5"/>'
+    elif kind == "fish":
+        t += f'<ellipse rx="22" ry="13" fill="{BLUE}" fill-opacity="0.3" stroke="currentColor" stroke-width="2.5"/><polygon points="20,0 34,-12 34,12" {f}/><circle cx="-12" cy="-3" r="2.5" fill="currentColor"/>'
+    return t + "</g>"
+
+
+def icons_row(items, W=None, gap=70):
+    """items: [(kind, 개수)] 가로로 개수만큼 그림"""
+    out = []
+    x = 36
+    for kind, n in items:
+        for k in range(n):
+            out.append(icon(kind, x, 40, 0.9))
+            x += 58
+        x += 12
+    return svg(max(x, 120), 82, "".join(out))
+
+
+def in_box(inside=True):
+    """상자와 공: inside=True면 상자 안, False면 상자 위"""
+    out = [f'<rect x="20" y="40" width="80" height="44" fill="none" stroke="{C}" stroke-width="3"/>']
+    if inside:
+        out.append(f'<circle cx="60" cy="62" r="12" fill="{ORANGE}" fill-opacity="0.5" stroke="{C}" stroke-width="2.5"/>')
+    else:
+        out.append(f'<circle cx="60" cy="26" r="12" fill="{ORANGE}" fill-opacity="0.5" stroke="{C}" stroke-width="2.5"/>')
+    return svg(120, 92, "".join(out))

@@ -7,4 +7,4 @@ from kit_ko import KoBank, report
 from kit_soc import compare_table
 from kit34 import hold
 from kit12 import clock
-from kit_en import letters, syllables, weather, face
+from kit_en import letters, syllables, weather, face, icon, icons_row, in_box
