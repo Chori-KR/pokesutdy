@@ -1,0 +1,24 @@
+import os, sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, os.path.dirname(__file__))
+from common import Bank
+from svgkit import svg, text, line, table, BLUE, ORANGE, C, _n
+from kit_ko import KoBank, report
+from kit34 import hold
+from kit56 import *
+
+def cm(n):
+    return f"${n}\\,\\mathrm{{cm}}$"
+
+def cm2(n):
+    return f"${n}\\,\\mathrm{{cm^2}}$"
+
+def cm3(n):
+    return f"${n}\\,\\mathrm{{cm^3}}$"
+
+def ans(n, unit=""):
+    """단답형 허용 답: 숫자만, 단위 붙임"""
+    a = [str(n)]
+    if unit:
+        a += [f"{n}{unit}", f"{n} {unit}"]
+    return a
