@@ -1,0 +1,355 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초3-4",
+  "unit": "동물의 생활",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "사막여우와 북극여우",
+   "text": "사막여우는 몸집이 작고 귀가 매우 큽니다. 큰 귀로 몸의 열을 밖으로 내보내 더위를 식히고, 발바닥에 털이 있어 뜨거운 모래 위를 걸어도 덜 뜨겁습니다. 북극여우는 귀가 작고 둥글며 온몸이 두껍고 하얀 털로 덮여 있습니다. 귀가 작으면 열을 덜 빼앗기고, 두꺼운 털은 추위를 막아 줍니다. 겨울에는 털이 하얗게 변해 눈 속에서 눈에 잘 띄지 않습니다. 이처럼 같은 여우라도 사는 환경이 다르면 몸의 생김새가 서로 다릅니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "과학-초3-4-4과02-01-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 날개가 있어서 하늘을 날 수 있는 동물은 무엇인가요?",
+   "options": [
+    "금붕어",
+    "토끼",
+    "참새",
+    "개구리"
+   ],
+   "answer": 2,
+   "why": "참새는 날개가 있어 하늘을 날 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-01-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "나비, 잠자리, 개미처럼 다리가 여섯 개인 동물 무리를 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "곤충"
+   ],
+   "why": "다리가 여섯 개이고 몸이 머리, 가슴, 배로 나뉘는 동물이 곤충입니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-01-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표를 보고 다리가 4개이면서 알을 낳는 동물을 고르세요.",
+   "svg": "<svg viewBox=\"0 0 316 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"310\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"313\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"313\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"313\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"313\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">동물</text><text x=\"133\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다리 수</text><text x=\"253\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">새끼를 낳는 방법</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">참새</text><text x=\"133\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2개</text><text x=\"253\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">알을 낳음</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">토끼</text><text x=\"133\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4개</text><text x=\"253\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">새끼를 낳음</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">개구리</text><text x=\"133\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4개</text><text x=\"253\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">알을 낳음</text><text x=\"38\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">금붕어</text><text x=\"133\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">없음</text><text x=\"253\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">알을 낳음</text></svg>",
+   "options": [
+    "개구리",
+    "참새",
+    "토끼",
+    "금붕어"
+   ],
+   "answer": 0,
+   "why": "다리가 4개인 동물은 토끼와 개구리인데, 알을 낳는 동물은 개구리입니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-01-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "개구리와 금붕어의 구별되는 특징으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "금붕어는 새끼를 낳고 개구리는 알을 낳는다",
+    "둘 다 다리가 4개이다",
+    "둘 다 날개가 있다",
+    "개구리는 다리가 있고 금붕어는 다리가 없다"
+   ],
+   "answer": 3,
+   "why": "개구리는 다리가 4개이고 금붕어는 지느러미로 헤엄치며 다리가 없습니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-01-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "동물을 분류하는 기준으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "귀여운가",
+    "다리가 있는가",
+    "내가 좋아하는가",
+    "이름이 짧은가"
+   ],
+   "answer": 1,
+   "why": "분류 기준은 누가 보아도 같은 결과가 나오는 분명한 특징이어야 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-01-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "‘날개가 있는가?’를 기준으로 동물을 분류하려고 합니다. 잠자리는 어느 쪽에 속하나요?",
+   "svg": "<svg viewBox=\"0 0 346 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"340\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"173\" y1=\"3\" x2=\"173\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"343\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"88\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">날개가 있는 동물</text><text x=\"258\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">날개가 없는 동물</text><text x=\"88\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">참새, 나비</text><text x=\"258\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">토끼, 금붕어, 개구리</text></svg>",
+   "options": [
+    "날개가 없는 동물",
+    "날개가 있는 동물",
+    "둘 다 속한다",
+    "분류할 수 없다"
+   ],
+   "answer": 1,
+   "why": "잠자리는 날개가 있어 날 수 있으므로 ‘날개가 있는 동물’에 속합니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-02-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "사막에 사는 낙타의 등에는 무엇이 있나요?",
+   "options": [
+    "물갈퀴",
+    "날개",
+    "지느러미",
+    "양분을 저장하는 혹"
+   ],
+   "answer": 3,
+   "why": "낙타의 혹에는 양분이 저장되어 있어 먹이가 적은 사막에서 견딜 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-02-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "물고기가 물속에서 헤엄칠 때 몸의 방향을 잡고 움직이는 데 쓰는 부분을 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "지느러미"
+   ],
+   "why": "물고기는 지느러미로 헤엄치고 방향을 바꿉니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-02-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "사막여우의 큰 귀는 어떤 일을 하나요?",
+   "passage": "p1",
+   "options": [
+    "몸의 열을 밖으로 내보내 더위를 식힌다",
+    "눈 속에서 몸을 숨긴다",
+    "물속에서 헤엄치게 한다",
+    "나무를 타게 한다"
+   ],
+   "answer": 0,
+   "why": "사막여우는 큰 귀로 열을 밖으로 내보내 더위를 식힙니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-02-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "북극곰의 두껍고 빽빽한 털은 어떤 환경에서 사는 데 알맞은가요?",
+   "options": [
+    "깊은 바닷속",
+    "뜨거운 사막",
+    "매우 추운 극지방",
+    "건조한 초원"
+   ],
+   "answer": 2,
+   "why": "두꺼운 털은 몸의 열을 빼앗기지 않게 하여 추운 곳에서 살기에 알맞습니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-02-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "글을 바탕으로 사막여우와 북극여우의 귀가 서로 다른 까닭을 바르게 설명한 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "귀 크기는 환경과 관계가 없다",
+    "여우의 종류가 같아서이다",
+    "먹이가 같아서이다",
+    "사는 곳의 기온이 달라 몸의 열을 내보내거나 지키는 데 알맞게 달라졌다"
+   ],
+   "answer": 3,
+   "why": "더운 곳의 사막여우는 열을 내보내기 쉽게, 추운 곳의 북극여우는 열을 덜 빼앗기게 귀 모양이 달라졌습니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-02-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "땅속에서 굴을 파며 사는 두더지는 땅을 파기에 알맞게 넓고 튼튼한 몸의 어떤 부분을 가지고 있나요? (두 글자)",
+   "answers": [
+    "앞발",
+    "발"
+   ],
+   "why": "두더지는 넓고 힘센 앞발로 땅속에 굴을 팝니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-03-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "도꼬마리 열매의 가시가 옷에 잘 붙는 특징을 본떠 만든 물건은 무엇인가요?",
+   "options": [
+    "우산",
+    "찍찍이(벨크로)",
+    "수영복",
+    "냄비"
+   ],
+   "answer": 1,
+   "why": "벨크로는 갈고리 모양의 가시가 붙는 특징을 본떠 만들었습니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-03-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "오리의 물갈퀴를 본떠 만든, 수영할 때 발에 신는 물건은 무엇인가요? (세 글자)",
+   "answers": [
+    "오리발"
+   ],
+   "why": "오리발은 오리의 물갈퀴를 본떠 만든 물건입니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-03-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표를 보고 상어 피부의 특징을 이용해 만든 생활용품을 고르세요.",
+   "svg": "<svg viewBox=\"0 0 316 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"310\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"313\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"313\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"313\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">동물</text><text x=\"133\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">특징</text><text x=\"253\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">생활용품</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">오리</text><text x=\"133\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물갈퀴</text><text x=\"253\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">오리발</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상어</text><text x=\"133\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물 저항을 줄임</text><text x=\"253\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">수영복</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">도꼬마리</text><text x=\"133\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">갈고리 가시</text><text x=\"253\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">벨크로</text></svg>",
+   "options": [
+    "벨크로",
+    "오리발",
+    "수영복",
+    "우산"
+   ],
+   "answer": 2,
+   "why": "상어의 피부 특징을 이용하여 물의 저항을 줄이는 수영복을 만들었습니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-03-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "도마뱀의 발바닥이 벽에 잘 붙는 특징을 이용해 만들 수 있는 용품으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "벽에 붙였다 뗄 수 있는 접착 테이프",
+    "물에 뜨는 신발",
+    "추위를 막는 외투",
+    "소리를 내는 호루라기"
+   ],
+   "answer": 0,
+   "why": "도마뱀 발바닥의 잔털이 벽에 붙는 특징을 이용해 붙였다 뗄 수 있는 테이프를 만들 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-03-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "문어의 빨판이 물체에 잘 붙는 특징을 이용해 새로운 생활용품을 설계하려고 합니다. 가장 알맞은 아이디어는 무엇인가요?",
+   "options": [
+    "얼음에서 미끄러지지 않는 장갑",
+    "물에 뜨는 모자",
+    "벽에 붙여 수건을 걸 수 있는 빨판 걸이",
+    "소리를 크게 하는 확성기"
+   ],
+   "answer": 2,
+   "why": "빨판이 붙는 성질을 이용하면 벽에 붙여 쓰는 걸이를 만들 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과02-03-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 생활",
+   "standard": "4과02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "모둠이 동물의 특징을 이용한 용품을 함께 설계할 때 알맞은 태도는 무엇인가요?",
+   "options": [
+    "서로의 아이디어를 귀 기울여 듣고 좋은 점을 모아 정리한다",
+    "내 의견만 고집한다",
+    "다른 친구의 의견은 무시한다",
+    "아무 의견도 내지 않는다"
+   ],
+   "answer": 0,
+   "why": "협력하여 설계할 때는 서로의 의견을 존중하고 좋은 생각을 모아야 합니다."
+  }
+ ],
+ "skipped": []
+}
