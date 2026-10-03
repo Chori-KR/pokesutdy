@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초3-4",
+  "unit": "동물의 한살이",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "서하의 관찰 일지",
+   "text": "서하는 배추흰나비 알이 붙은 배춧잎을 교실에서 길렀습니다. 3일쯤 지나자 좁쌀처럼 작은 애벌레가 알에서 나왔습니다. 애벌레는 배춧잎을 먹으며 허물을 여러 번 벗고 몸이 점점 커졌습니다. 2주쯤 뒤 애벌레는 먹이를 먹지 않고 움직이지 않는 번데기가 되었습니다. 열흘쯤 지나 번데기의 껍질이 갈라지고, 날개가 있는 어른벌레인 나비가 나왔습니다. 서하는 날짜마다 모습을 그림과 글로 기록하여 관찰 보고서를 만들었습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "과학-초3-4-4과04-01-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "배추흰나비의 한살이 순서로 알맞은 것은 무엇인가요?",
+   "options": [
+    "알 → 애벌레 → 번데기 → 어른벌레",
+    "알 → 번데기 → 애벌레 → 어른벌레",
+    "애벌레 → 알 → 어른벌레 → 번데기",
+    "어른벌레 → 알 → 번데기 → 애벌레"
+   ],
+   "answer": 0,
+   "why": "배추흰나비는 알, 애벌레, 번데기, 어른벌레의 순서로 자랍니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-01-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "배추흰나비 애벌레가 먹이를 먹지 않고 움직이지 않으면서 어른벌레가 될 준비를 하는 단계를 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "번데기"
+   ],
+   "why": "애벌레는 번데기 단계를 거쳐 어른벌레가 됩니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-01-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 배추흰나비 한살이의 순서입니다. ㉠에 들어갈 알맞은 단계는 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 330 70\" font-family=\"sans-serif\"><rect x=\"4\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"39\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">알</text><line x1=\"76\" y1=\"35\" x2=\"86\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"89,35.0 83,31.0 83,39.0\" fill=\"currentColor\"/><rect x=\"88\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"123\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">애벌레</text><line x1=\"160\" y1=\"35\" x2=\"170\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"173,35.0 167,31.0 167,39.0\" fill=\"currentColor\"/><rect x=\"172\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"207\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><line x1=\"244\" y1=\"35\" x2=\"254\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"257,35.0 251,31.0 251,39.0\" fill=\"currentColor\"/><rect x=\"256\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"291\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">어른벌레</text><text x=\"291\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">(나비)</text></svg>",
+   "options": [
+    "올챙이",
+    "병아리",
+    "번데기",
+    "씨앗"
+   ],
+   "answer": 2,
+   "why": "애벌레 다음에는 번데기 단계가 있고, 그 뒤에 어른벌레가 됩니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-01-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "서하의 관찰 일지에서 애벌레 시기에 볼 수 있는 모습은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "배춧잎을 먹으며 허물을 벗고 몸이 점점 커졌다",
+    "움직이지 않고 먹이도 먹지 않았다",
+    "날개가 생겨 하늘을 날았다",
+    "알 속에서 자랐다"
+   ],
+   "answer": 0,
+   "why": "글에서 애벌레는 배춧잎을 먹으며 허물을 벗고 몸이 커졌다고 했습니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-01-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "서하의 관찰 결과로 알 수 있는 배추흰나비 한살이의 특징으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "번데기 시기에 가장 많이 먹는다",
+    "처음부터 끝까지 모습이 같다",
+    "애벌레가 곧바로 나비가 된다",
+    "단계마다 모습이 크게 달라진다"
+   ],
+   "answer": 3,
+   "why": "알, 애벌레, 번데기, 어른벌레로 자라면서 모습이 크게 달라집니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-01-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "서하처럼 관찰한 날짜, 모습, 느낀 점을 글과 그림으로 정리한 자료를 무엇이라고 하나요? (다섯 글자)",
+   "answers": [
+    "관찰 보고서",
+    "관찰보고서"
+   ],
+   "why": "관찰한 내용을 글과 그림으로 정리한 것이 관찰 보고서입니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-02-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "씨앗이 싹 트는 데 꼭 필요한 것은 무엇인가요?",
+   "options": [
+    "소금",
+    "물",
+    "모래만",
+    "어둠만"
+   ],
+   "answer": 1,
+   "why": "씨앗이 싹 트려면 물, 알맞은 온도, 공기가 필요합니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-02-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "식물이 잎에서 양분을 만들 때 필요한 것으로, 해에서 오는 빛을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "햇빛"
+   ],
+   "why": "식물은 햇빛을 이용해 잎에서 양분을 만듭니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-02-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "‘식물이 자라는 데 물이 필요한가?’를 알아보는 실험에서 다르게 해 줄 조건은 무엇인가요?",
+   "options": [
+    "화분의 크기",
+    "물을 주는 것과 주지 않는 것",
+    "햇빛의 양",
+    "놓아 두는 장소의 온도"
+   ],
+   "answer": 1,
+   "why": "알아보려는 조건 하나만 다르게 하고 나머지는 모두 같게 해야 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-02-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 식물 키우기 실험의 설계입니다. 이 실험으로 알아볼 수 있는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 276 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"270\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"173\" y1=\"3\" x2=\"173\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"273\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"273\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"273\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><text x=\"123\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"223\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">물</text><text x=\"123\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">준다</text><text x=\"223\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">주지 않는다</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">햇빛</text><text x=\"123\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">받는다</text><text x=\"223\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">받는다</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">온도</text><text x=\"123\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">같음</text><text x=\"223\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">같음</text></svg>",
+   "options": [
+    "알 수 없다",
+    "식물이 자라는 데 햇빛이 필요한지",
+    "식물이 자라는 데 온도가 필요한지",
+    "식물이 자라는 데 물이 필요한지"
+   ],
+   "answer": 3,
+   "why": "가와 나는 물만 다르게 하고 나머지 조건은 같으므로 물의 영향을 알아볼 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-02-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "표는 같은 날 심은 강낭콩을 2주 동안 키운 결과입니다. 결과로 알 수 있는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 306 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"300\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"303\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"303\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><text x=\"138\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가(물 줌)</text><text x=\"248\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나(물 안 줌)</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">키(cm)</text><text x=\"138\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">14</text><text x=\"248\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"43\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">잎의 상태</text><text x=\"138\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">초록색</text><text x=\"248\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">시들음</text></svg>",
+   "options": [
+    "식물이 잘 자라려면 물이 필요하다",
+    "물을 주지 않아야 잘 자란다",
+    "물은 식물에 영향이 없다",
+    "햇빛이 필요하다"
+   ],
+   "answer": 0,
+   "why": "물을 준 가는 잘 자랐고 물을 주지 않은 나는 시들었으므로 식물이 자라려면 물이 필요합니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-02-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "물이 식물에 미치는 영향을 알아보는 실험에서 같게 해야 할 조건이 아닌 것은 무엇인가요?",
+   "options": [
+    "흙의 종류와 양",
+    "화분의 크기",
+    "물을 주는 양",
+    "놓아 둔 장소의 온도"
+   ],
+   "answer": 2,
+   "why": "물이 알아보려는 조건이므로 다르게 하고, 나머지 조건은 같게 해야 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-03-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "닭의 한살이 순서로 알맞은 것은 무엇인가요?",
+   "options": [
+    "알 → 병아리 → 닭",
+    "병아리 → 알 → 닭",
+    "닭 → 병아리 → 알",
+    "알 → 닭 → 병아리"
+   ],
+   "answer": 0,
+   "why": "닭은 알에서 병아리로 깨어나 자라 닭이 됩니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-03-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "생물이 태어나 자라서 다음 세대를 남기는 과정을 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "한살이"
+   ],
+   "why": "생물이 태어나 자라 새끼를 낳거나 씨를 남기는 과정을 한살이라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-03-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 개구리의 한살이입니다. ㉠에 들어갈 알맞은 단계는 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 330 70\" font-family=\"sans-serif\"><rect x=\"4\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"39\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">알</text><line x1=\"76\" y1=\"35\" x2=\"86\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"89,35.0 83,31.0 83,39.0\" fill=\"currentColor\"/><rect x=\"88\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"123\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><line x1=\"160\" y1=\"35\" x2=\"170\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"173,35.0 167,31.0 167,39.0\" fill=\"currentColor\"/><rect x=\"172\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"207\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">다리가 난</text><text x=\"207\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">올챙이</text><line x1=\"244\" y1=\"35\" x2=\"254\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"257,35.0 251,31.0 251,39.0\" fill=\"currentColor\"/><rect x=\"256\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"291\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">개구리</text></svg>",
+   "options": [
+    "씨앗",
+    "번데기",
+    "병아리",
+    "꼬리가 있는 올챙이"
+   ],
+   "answer": 3,
+   "why": "개구리 알에서는 꼬리가 있는 올챙이가 나오고, 다리가 생기면서 개구리가 됩니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-03-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "생물에 따라 한살이가 다양하다는 것을 바르게 말한 것은 무엇인가요?",
+   "options": [
+    "모든 동물은 알에서 태어난다",
+    "알을 낳는 동물과 새끼를 낳는 동물이 있다",
+    "모든 동물은 한살이가 같다",
+    "식물은 한살이가 없다"
+   ],
+   "answer": 1,
+   "why": "닭과 개구리는 알을 낳고, 강아지와 사람은 새끼를 낳는 등 한살이가 다양합니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-03-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "배추흰나비와 개구리의 한살이에서 같은 점은 무엇인가요?",
+   "options": [
+    "새끼를 낳는다",
+    "번데기 단계가 있다",
+    "자라면서 모습이 크게 달라진다",
+    "모습이 처음부터 같다"
+   ],
+   "answer": 2,
+   "why": "배추흰나비와 개구리는 자라면서 모습이 크게 달라집니다."
+  },
+  {
+   "id": "과학-초3-4-4과04-03-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "동물의 한살이",
+   "standard": "4과04-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "여러 생물의 한살이를 조사해 소개 자료를 만들 때 알맞은 방법은 무엇인가요?",
+   "options": [
+    "생물별 한살이 단계를 그림과 글로 정리하고 출처를 적는다",
+    "한 생물만 조사해 쓴다",
+    "내 마음대로 지어 쓴다",
+    "그림 없이 글만 길게 쓴다"
+   ],
+   "answer": 0,
+   "why": "조사한 한살이를 단계별로 알기 쉽게 정리하고 출처를 밝혀야 합니다."
+  }
+ ],
+ "skipped": []
+}
