@@ -463,20 +463,24 @@ def ruler_mm(cm=8, bars=(), u=34):
     W = cm * u + 2 * x0
     top = 14 + 30 * len(bars)
     out = []
-    for i, (s, e, nm) in enumerate(bars):
+    for i, (s_, e, nm) in enumerate(bars):
         y = 10 + 30 * i
-        xs, xe = x0 + s / 10 * u, x0 + e / 10 * u
+        xs, xe = x0 + s_ / 10 * u, x0 + e / 10 * u
         out.append(f'<rect x="{_n(xs)}" y="{y}" width="{_n(xe - xs)}" height="18" rx="3" fill="{BLUE if i == 0 else ORANGE}" fill-opacity="0.7" stroke="{C}" stroke-width="2"/>')
         if nm:
             out.append(text((xs + xe) / 2, y + 14, nm, 13, weight="bold"))
         out.append(line(xs, y + 18, xs, top, 2, 0.5, "3 3") + line(xe, y + 18, xe, top, 2, 0.5, "3 3"))
     out.append(f'<rect x="4" y="{top}" width="{W - 8}" height="52" rx="4" fill="none" stroke="{C}" stroke-width="2.5"/>')
+    big, mid, small = [], [], []
     for k in range(cm * 10 + 1):
         x = x0 + k * u / 10
         ln = 22 if k % 10 == 0 else (15 if k % 5 == 0 else 9)
-        out.append(line(x, top, x, top + ln, 2 if k % 10 == 0 else 1.5 if False else 2, None if k % 5 == 0 else 0.6))
+        (big if k % 10 == 0 else mid if k % 5 == 0 else small).append(f"M{_n(x)},{top}v{ln}")
         if k % 10 == 0:
             out.append(text(x, top + 42, k // 10, 12))
+    out.append(f'<path d="{"".join(small)}" stroke="{C}" stroke-width="2" stroke-opacity="0.6"/>')
+    out.append(f'<path d="{"".join(mid)}" stroke="{C}" stroke-width="2"/>')
+    out.append(f'<path d="{"".join(big)}" stroke="{C}" stroke-width="2.5"/>')
     return svg(W, top + 58, "".join(out))
 
 

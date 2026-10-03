@@ -1,0 +1,1210 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "초",
+  "course": "수학",
+  "gradeBand": "초3-4",
+  "unit": "도형과 측정",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-초3-4-4수03-15-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "자로 지우개의 길이를 재었습니다. 지우개의 길이는 몇 mm인가요?",
+   "svg": "<svg viewBox=\"0 0 308 102\" font-family=\"sans-serif\"><rect x=\"18\" y=\"10\" width=\"159.8\" height=\"18\" rx=\"3\" fill=\"#4b7bec\" fill-opacity=\"0.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"97.9\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">지우개</text><line x1=\"18\" y1=\"28\" x2=\"18\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><line x1=\"177.8\" y1=\"28\" x2=\"177.8\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><rect x=\"4\" y=\"44\" width=\"300\" height=\"52\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"18\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"52\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"86\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"120\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"154\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"188\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"222\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"256\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">7</text><text x=\"290\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">8</text><path d=\"M21.4,44v9M24.8,44v9M28.2,44v9M31.6,44v9M38.4,44v9M41.8,44v9M45.2,44v9M48.6,44v9M55.4,44v9M58.8,44v9M62.2,44v9M65.6,44v9M72.4,44v9M75.8,44v9M79.2,44v9M82.6,44v9M89.4,44v9M92.8,44v9M96.2,44v9M99.6,44v9M106.4,44v9M109.8,44v9M113.2,44v9M116.6,44v9M123.4,44v9M126.8,44v9M130.2,44v9M133.6,44v9M140.4,44v9M143.8,44v9M147.2,44v9M150.6,44v9M157.4,44v9M160.8,44v9M164.2,44v9M167.6,44v9M174.4,44v9M177.8,44v9M181.2,44v9M184.6,44v9M191.4,44v9M194.8,44v9M198.2,44v9M201.6,44v9M208.4,44v9M211.8,44v9M215.2,44v9M218.6,44v9M225.4,44v9M228.8,44v9M232.2,44v9M235.6,44v9M242.4,44v9M245.8,44v9M249.2,44v9M252.6,44v9M259.4,44v9M262.8,44v9M266.2,44v9M269.6,44v9M276.4,44v9M279.8,44v9M283.2,44v9M286.6,44v9\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><path d=\"M35,44v15M69,44v15M103,44v15M137,44v15M171,44v15M205,44v15M239,44v15M273,44v15\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M18,44v22M52,44v22M86,44v22M120,44v22M154,44v22M188,44v22M222,44v22M256,44v22M290,44v22\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "7 mm",
+    "4 mm",
+    "47 mm",
+    "40 mm"
+   ],
+   "answer": 2,
+   "why": "지우개의 한쪽 끝이 0에 맞추어져 있고 다른 쪽 끝이 4 cm에서 작은 눈금 7칸을 더 간 곳이므로 47 mm입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-15-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "1 cm를 같은 길이로 10칸으로 나눈 한 칸의 길이를 무엇이라고 하나요?",
+   "options": [
+    "1 mm",
+    "1 m",
+    "1 km",
+    "10 mm"
+   ],
+   "answer": 0,
+   "why": "1 cm를 10칸으로 나눈 한 칸의 길이는 1 mm입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-15-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "자로 클립의 길이를 재려고 합니다. 클립의 한쪽 끝이 5 mm, 다른 쪽 끝이 38 mm에 있습니다. 클립의 길이는 몇 mm인가요?",
+   "svg": "<svg viewBox=\"0 0 240 102\" font-family=\"sans-serif\"><rect x=\"35\" y=\"10\" width=\"112.2\" height=\"18\" rx=\"3\" fill=\"#4b7bec\" fill-opacity=\"0.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"91.1\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">클립</text><line x1=\"35\" y1=\"28\" x2=\"35\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><line x1=\"147.2\" y1=\"28\" x2=\"147.2\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><rect x=\"4\" y=\"44\" width=\"232\" height=\"52\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"18\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"52\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"86\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"120\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"154\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"188\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"222\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><path d=\"M21.4,44v9M24.8,44v9M28.2,44v9M31.6,44v9M38.4,44v9M41.8,44v9M45.2,44v9M48.6,44v9M55.4,44v9M58.8,44v9M62.2,44v9M65.6,44v9M72.4,44v9M75.8,44v9M79.2,44v9M82.6,44v9M89.4,44v9M92.8,44v9M96.2,44v9M99.6,44v9M106.4,44v9M109.8,44v9M113.2,44v9M116.6,44v9M123.4,44v9M126.8,44v9M130.2,44v9M133.6,44v9M140.4,44v9M143.8,44v9M147.2,44v9M150.6,44v9M157.4,44v9M160.8,44v9M164.2,44v9M167.6,44v9M174.4,44v9M177.8,44v9M181.2,44v9M184.6,44v9M191.4,44v9M194.8,44v9M198.2,44v9M201.6,44v9M208.4,44v9M211.8,44v9M215.2,44v9M218.6,44v9\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><path d=\"M35,44v15M69,44v15M103,44v15M137,44v15M171,44v15M205,44v15\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M18,44v22M52,44v22M86,44v22M120,44v22M154,44v22M188,44v22M222,44v22\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "answers": [
+    "33",
+    "33 mm",
+    "33mm"
+   ],
+   "why": "38-5=33이므로 클립의 길이는 33 mm입니다. 끝 눈금을 그대로 읽지 않고 시작한 눈금을 빼야 합니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-15-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "서울에서 부산까지의 거리를 나타낼 때 가장 알맞은 단위는 무엇인가요?",
+   "options": [
+    "mm",
+    "m",
+    "cm",
+    "km"
+   ],
+   "answer": 3,
+   "why": "아주 먼 거리는 km로 나타내는 것이 알맞습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-15-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "두 막대의 길이의 차는 몇 mm인가요?",
+   "svg": "<svg viewBox=\"0 0 308 132\" font-family=\"sans-serif\"><rect x=\"18\" y=\"10\" width=\"176.8\" height=\"18\" rx=\"3\" fill=\"#4b7bec\" fill-opacity=\"0.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"106.4\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><line x1=\"18\" y1=\"28\" x2=\"18\" y2=\"74\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><line x1=\"194.8\" y1=\"28\" x2=\"194.8\" y2=\"74\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><rect x=\"18\" y=\"40\" width=\"119\" height=\"18\" rx=\"3\" fill=\"#e07b39\" fill-opacity=\"0.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"77.5\" y=\"54\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><line x1=\"18\" y1=\"58\" x2=\"18\" y2=\"74\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><line x1=\"137\" y1=\"58\" x2=\"137\" y2=\"74\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><rect x=\"4\" y=\"74\" width=\"300\" height=\"52\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"18\" y=\"116\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"52\" y=\"116\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"86\" y=\"116\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"120\" y=\"116\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"154\" y=\"116\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"188\" y=\"116\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"222\" y=\"116\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"256\" y=\"116\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">7</text><text x=\"290\" y=\"116\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">8</text><path d=\"M21.4,74v9M24.8,74v9M28.2,74v9M31.6,74v9M38.4,74v9M41.8,74v9M45.2,74v9M48.6,74v9M55.4,74v9M58.8,74v9M62.2,74v9M65.6,74v9M72.4,74v9M75.8,74v9M79.2,74v9M82.6,74v9M89.4,74v9M92.8,74v9M96.2,74v9M99.6,74v9M106.4,74v9M109.8,74v9M113.2,74v9M116.6,74v9M123.4,74v9M126.8,74v9M130.2,74v9M133.6,74v9M140.4,74v9M143.8,74v9M147.2,74v9M150.6,74v9M157.4,74v9M160.8,74v9M164.2,74v9M167.6,74v9M174.4,74v9M177.8,74v9M181.2,74v9M184.6,74v9M191.4,74v9M194.8,74v9M198.2,74v9M201.6,74v9M208.4,74v9M211.8,74v9M215.2,74v9M218.6,74v9M225.4,74v9M228.8,74v9M232.2,74v9M235.6,74v9M242.4,74v9M245.8,74v9M249.2,74v9M252.6,74v9M259.4,74v9M262.8,74v9M266.2,74v9M269.6,74v9M276.4,74v9M279.8,74v9M283.2,74v9M286.6,74v9\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><path d=\"M35,74v15M69,74v15M103,74v15M137,74v15M171,74v15M205,74v15M239,74v15M273,74v15\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M18,74v22M52,74v22M86,74v22M120,74v22M154,74v22M188,74v22M222,74v22M256,74v22M290,74v22\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "87 mm",
+    "17 mm",
+    "7 mm",
+    "27 mm"
+   ],
+   "answer": 1,
+   "why": "가는 52 mm, 나는 35 mm이므로 52-35=17(mm)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-15-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "□ 안에 알맞은 단위를 쓰세요.\n쌀알 한 알의 길이는 약 6 □입니다.",
+   "answers": [
+    "mm",
+    "밀리미터",
+    "MM"
+   ],
+   "why": "쌀알처럼 아주 작은 것의 길이는 mm로 나타내는 것이 알맞습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-15-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "길이를 알맞은 단위로 나타낸 것은 무엇인가요?",
+   "options": [
+    "축구장의 긴 쪽 길이는 105 km이다",
+    "연필의 길이는 17 cm이다",
+    "개미의 몸길이는 5 m이다",
+    "서울에서 부산까지의 거리는 400 mm이다"
+   ],
+   "answer": 1,
+   "why": "연필은 cm, 축구장은 m, 개미는 mm, 서울-부산은 km가 알맞습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-15-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "운동장 한 바퀴의 길이가 250 m입니다. 운동장을 몇 바퀴 돌면 1 km를 걷게 되나요?",
+   "svg": "<svg viewBox=\"0 0 260 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"60\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">250 m</text><rect x=\"70\" y=\"14\" width=\"180\" height=\"30\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"160\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><path d=\"M10,54 q0,10 10,10 L122,64 l8,8 l8,-8 L240,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"130\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 km</text></svg>",
+   "options": [
+    "2",
+    "3",
+    "5",
+    "4"
+   ],
+   "answer": 3,
+   "why": "1 km는 1000 m이고 250×4=1000이므로 4바퀴를 돌면 됩니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-15-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "길이를 mm 단위로 나타내면 더 편리한 경우로 알맞은 것은 무엇인가요?",
+   "options": [
+    "연필심의 굵기를 정확하게 말할 때",
+    "도시 사이의 거리를 말할 때",
+    "운동장의 길이를 말할 때",
+    "강의 길이를 말할 때"
+   ],
+   "answer": 0,
+   "why": "아주 작은 길이를 정확하게 나타낼 때는 mm가 편리합니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-16-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "막대의 길이 3 cm를 mm로 나타내면 몇 mm인가요?",
+   "svg": "<svg viewBox=\"0 0 206 102\" font-family=\"sans-serif\"><rect x=\"18\" y=\"10\" width=\"102\" height=\"18\" rx=\"3\" fill=\"#4b7bec\" fill-opacity=\"0.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"69\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">막대</text><line x1=\"18\" y1=\"28\" x2=\"18\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><line x1=\"120\" y1=\"28\" x2=\"120\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><rect x=\"4\" y=\"44\" width=\"198\" height=\"52\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"18\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"52\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"86\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"120\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"154\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"188\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><path d=\"M21.4,44v9M24.8,44v9M28.2,44v9M31.6,44v9M38.4,44v9M41.8,44v9M45.2,44v9M48.6,44v9M55.4,44v9M58.8,44v9M62.2,44v9M65.6,44v9M72.4,44v9M75.8,44v9M79.2,44v9M82.6,44v9M89.4,44v9M92.8,44v9M96.2,44v9M99.6,44v9M106.4,44v9M109.8,44v9M113.2,44v9M116.6,44v9M123.4,44v9M126.8,44v9M130.2,44v9M133.6,44v9M140.4,44v9M143.8,44v9M147.2,44v9M150.6,44v9M157.4,44v9M160.8,44v9M164.2,44v9M167.6,44v9M174.4,44v9M177.8,44v9M181.2,44v9M184.6,44v9\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><path d=\"M35,44v15M69,44v15M103,44v15M137,44v15M171,44v15\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M18,44v22M52,44v22M86,44v22M120,44v22M154,44v22M188,44v22\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "300 mm",
+    "3 mm",
+    "30 mm",
+    "13 mm"
+   ],
+   "answer": 2,
+   "why": "1 cm는 10 mm이므로 3 cm는 30 mm입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-16-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "2 km는 몇 m인가요?",
+   "svg": "<svg viewBox=\"0 0 260 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"120\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"70\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 km</text><rect x=\"130\" y=\"14\" width=\"120\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"190\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 km</text><path d=\"M10,54 q0,10 10,10 L122,64 l8,8 l8,-8 L240,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"130\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? m</text></svg>",
+   "options": [
+    "200 m",
+    "20000 m",
+    "20 m",
+    "2000 m"
+   ],
+   "answer": 3,
+   "why": "1 km는 1000 m이므로 2 km는 2000 m입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-16-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "40 mm는 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 240 102\" font-family=\"sans-serif\"><rect x=\"18\" y=\"10\" width=\"136\" height=\"18\" rx=\"3\" fill=\"#4b7bec\" fill-opacity=\"0.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"86\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">막대</text><line x1=\"18\" y1=\"28\" x2=\"18\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><line x1=\"154\" y1=\"28\" x2=\"154\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><rect x=\"4\" y=\"44\" width=\"232\" height=\"52\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"18\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"52\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"86\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"120\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"154\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"188\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"222\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><path d=\"M21.4,44v9M24.8,44v9M28.2,44v9M31.6,44v9M38.4,44v9M41.8,44v9M45.2,44v9M48.6,44v9M55.4,44v9M58.8,44v9M62.2,44v9M65.6,44v9M72.4,44v9M75.8,44v9M79.2,44v9M82.6,44v9M89.4,44v9M92.8,44v9M96.2,44v9M99.6,44v9M106.4,44v9M109.8,44v9M113.2,44v9M116.6,44v9M123.4,44v9M126.8,44v9M130.2,44v9M133.6,44v9M140.4,44v9M143.8,44v9M147.2,44v9M150.6,44v9M157.4,44v9M160.8,44v9M164.2,44v9M167.6,44v9M174.4,44v9M177.8,44v9M181.2,44v9M184.6,44v9M191.4,44v9M194.8,44v9M198.2,44v9M201.6,44v9M208.4,44v9M211.8,44v9M215.2,44v9M218.6,44v9\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><path d=\"M35,44v15M69,44v15M103,44v15M137,44v15M171,44v15M205,44v15\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M18,44v22M52,44v22M86,44v22M120,44v22M154,44v22M188,44v22M222,44v22\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "answers": [
+    "4",
+    "4 cm",
+    "4cm"
+   ],
+   "why": "10 mm가 1 cm이므로 40 mm는 4 cm입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-16-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "아래 색연필의 길이를 ‘몇 cm 몇 mm’로 나타낸 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 308 102\" font-family=\"sans-serif\"><rect x=\"18\" y=\"10\" width=\"193.8\" height=\"18\" rx=\"3\" fill=\"#4b7bec\" fill-opacity=\"0.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"114.9\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">색연필</text><line x1=\"18\" y1=\"28\" x2=\"18\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><line x1=\"211.8\" y1=\"28\" x2=\"211.8\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><rect x=\"4\" y=\"44\" width=\"300\" height=\"52\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"18\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"52\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"86\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"120\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"154\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"188\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"222\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"256\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">7</text><text x=\"290\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">8</text><path d=\"M21.4,44v9M24.8,44v9M28.2,44v9M31.6,44v9M38.4,44v9M41.8,44v9M45.2,44v9M48.6,44v9M55.4,44v9M58.8,44v9M62.2,44v9M65.6,44v9M72.4,44v9M75.8,44v9M79.2,44v9M82.6,44v9M89.4,44v9M92.8,44v9M96.2,44v9M99.6,44v9M106.4,44v9M109.8,44v9M113.2,44v9M116.6,44v9M123.4,44v9M126.8,44v9M130.2,44v9M133.6,44v9M140.4,44v9M143.8,44v9M147.2,44v9M150.6,44v9M157.4,44v9M160.8,44v9M164.2,44v9M167.6,44v9M174.4,44v9M177.8,44v9M181.2,44v9M184.6,44v9M191.4,44v9M194.8,44v9M198.2,44v9M201.6,44v9M208.4,44v9M211.8,44v9M215.2,44v9M218.6,44v9M225.4,44v9M228.8,44v9M232.2,44v9M235.6,44v9M242.4,44v9M245.8,44v9M249.2,44v9M252.6,44v9M259.4,44v9M262.8,44v9M266.2,44v9M269.6,44v9M276.4,44v9M279.8,44v9M283.2,44v9M286.6,44v9\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><path d=\"M35,44v15M69,44v15M103,44v15M137,44v15M171,44v15M205,44v15M239,44v15M273,44v15\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M18,44v22M52,44v22M86,44v22M120,44v22M154,44v22M188,44v22M222,44v22M256,44v22M290,44v22\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "7 cm 5 mm",
+    "5 cm 7 mm",
+    "57 cm",
+    "5 cm 70 mm"
+   ],
+   "answer": 1,
+   "why": "5 cm에서 작은 눈금 7칸을 더 간 길이이므로 5 cm 7 mm입니다. 57 mm와 같습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-16-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "3 km 450 m는 몇 m인가요?",
+   "svg": "<svg viewBox=\"0 0 230 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"150\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"85\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3 km</text><rect x=\"160\" y=\"14\" width=\"60\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"190\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">450 m</text><path d=\"M10,54 q0,10 10,10 L107,64 l8,8 l8,-8 L210,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"115\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? m</text></svg>",
+   "options": [
+    "30450 m",
+    "345 m",
+    "3450 m",
+    "3045 m"
+   ],
+   "answer": 2,
+   "why": "3 km는 3000 m이므로 3 km 450 m는 3000+450=3450(m)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-16-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "6200 m는 몇 km 몇 m인가요?",
+   "svg": "<svg viewBox=\"0 0 270 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"250\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"135\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6200 m</text><path d=\"M10,54 q0,10 10,10 L127,64 l8,8 l8,-8 L250,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"135\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? km ? m</text></svg>",
+   "answers": [
+    "6 km 200 m",
+    "6km 200m",
+    "6km200m",
+    "6 km 200m"
+   ],
+   "why": "6200 m는 6000 m와 200 m이고, 6000 m는 6 km이므로 6 km 200 m입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-16-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "나머지와 길이가 다른 하나는 무엇인가요?",
+   "options": [
+    "1 m 23 mm",
+    "123 mm",
+    "12 cm 3 mm",
+    "1 cm 23 mm"
+   ],
+   "answer": 0,
+   "why": "123 mm=12 cm 3 mm=1 cm 23 mm이고, 1 m 23 mm는 1023 mm로 다릅니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-16-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "1 cm와 1 mm의 관계를 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "1 cm와 1 mm는 길이가 같다",
+    "1 mm는 1 cm를 10번 이은 길이와 같다",
+    "1 cm는 1 mm를 10번 이은 길이와 같다",
+    "1 cm는 1 mm를 100번 이은 길이와 같다"
+   ],
+   "answer": 2,
+   "why": "1 cm=10 mm이므로 1 cm는 1 mm를 10번 이은 길이입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-16-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "1 km 5 m는 몇 m인가요?",
+   "svg": "<svg viewBox=\"0 0 250 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"200\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"110\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 km</text><rect x=\"210\" y=\"14\" width=\"30\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"225\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5 m</text><path d=\"M10,54 q0,10 10,10 L117,64 l8,8 l8,-8 L230,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"125\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? m</text></svg>",
+   "answers": [
+    "1005",
+    "1005 m",
+    "1005m"
+   ],
+   "why": "1 km는 1000 m이므로 1 km 5 m는 1000+5=1005(m)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-17-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-17",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "눈금실린더에 담긴 물의 양은 몇 mL인가요?",
+   "svg": "<svg viewBox=\"0 0 126 208\" font-family=\"sans-serif\"><rect x=\"42\" y=\"75\" width=\"66\" height=\"105\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><polyline points=\"40,30 40,180 110,180 110,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"40\" y1=\"180\" x2=\"62\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"40\" y1=\"165\" x2=\"52\" y2=\"165\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"150\" x2=\"62\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"154\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">100</text><line x1=\"40\" y1=\"135\" x2=\"52\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"120\" x2=\"62\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"124\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">200</text><line x1=\"40\" y1=\"105\" x2=\"52\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"90\" x2=\"62\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"94\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">300</text><line x1=\"40\" y1=\"75\" x2=\"52\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"60\" x2=\"62\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"64\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">400</text><line x1=\"40\" y1=\"45\" x2=\"52\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"30\" x2=\"62\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"34\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">500</text><text x=\"75\" y=\"200\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">물</text><text x=\"34\" y=\"14\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(mL)</text></svg>",
+   "options": [
+    "350 mL",
+    "35 mL",
+    "300 mL",
+    "400 mL"
+   ],
+   "answer": 0,
+   "why": "물의 높이가 300과 400 사이의 가운데인 350 mL에 있습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-17-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-17",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "들이의 단위인 mL는 어떻게 읽나요?",
+   "options": [
+    "킬로리터",
+    "리터",
+    "밀리미터",
+    "밀리리터"
+   ],
+   "answer": 3,
+   "why": "mL는 ‘밀리리터’, L는 ‘리터’라고 읽습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-17-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-17",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "눈금 있는 그릇에 담긴 물의 양은 몇 mL인가요?",
+   "svg": "<svg viewBox=\"0 0 126 208\" font-family=\"sans-serif\"><rect x=\"42\" y=\"90\" width=\"66\" height=\"90\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><polyline points=\"40,30 40,180 110,180 110,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"40\" y1=\"180\" x2=\"62\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"40\" y1=\"165\" x2=\"52\" y2=\"165\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"150\" x2=\"62\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"154\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">200</text><line x1=\"40\" y1=\"135\" x2=\"52\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"120\" x2=\"62\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"124\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">400</text><line x1=\"40\" y1=\"105\" x2=\"52\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"90\" x2=\"62\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"94\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">600</text><line x1=\"40\" y1=\"75\" x2=\"52\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"60\" x2=\"62\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"64\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">800</text><line x1=\"40\" y1=\"45\" x2=\"52\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"30\" x2=\"62\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"34\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1000</text><text x=\"75\" y=\"200\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">물</text><text x=\"34\" y=\"14\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(mL)</text></svg>",
+   "answers": [
+    "600",
+    "600 mL",
+    "600mL"
+   ],
+   "why": "물의 높이가 눈금 600에 닿아 있으므로 600 mL입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-17-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-17",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "□ 안에 알맞은 단위를 쓰세요.\n종이컵 한 컵의 들이는 약 200 □입니다.",
+   "answers": [
+    "mL",
+    "ml",
+    "밀리리터",
+    "ML"
+   ],
+   "why": "종이컵 한 컵 정도의 적은 양은 mL로 나타냅니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-17-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-17",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "두 그릇 가와 나에 담긴 물의 양의 차는 몇 mL인가요?",
+   "svg": "<svg viewBox=\"0 0 262 208\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"42\" y=\"75\" width=\"66\" height=\"105\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><polyline points=\"40,30 40,180 110,180 110,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"40\" y1=\"180\" x2=\"62\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"40\" y1=\"165\" x2=\"52\" y2=\"165\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"150\" x2=\"62\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"154\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">200</text><line x1=\"40\" y1=\"135\" x2=\"52\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"120\" x2=\"62\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"124\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">400</text><line x1=\"40\" y1=\"105\" x2=\"52\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"90\" x2=\"62\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"94\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">600</text><line x1=\"40\" y1=\"75\" x2=\"52\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"60\" x2=\"62\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"64\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">800</text><line x1=\"40\" y1=\"45\" x2=\"52\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"30\" x2=\"62\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"34\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1000</text><text x=\"75\" y=\"200\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"34\" y=\"14\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(mL)</text></g><g transform=\"translate(132 0)\"><rect x=\"42\" y=\"112.5\" width=\"66\" height=\"67.5\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><polyline points=\"40,30 40,180 110,180 110,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"40\" y1=\"180\" x2=\"62\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"40\" y1=\"172.5\" x2=\"52\" y2=\"172.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"165\" x2=\"52\" y2=\"165\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"157.5\" x2=\"52\" y2=\"157.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"150\" x2=\"52\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"142.5\" x2=\"62\" y2=\"142.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"146.5\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">250</text><line x1=\"40\" y1=\"135\" x2=\"52\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"127.5\" x2=\"52\" y2=\"127.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"120\" x2=\"52\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"112.5\" x2=\"52\" y2=\"112.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"105\" x2=\"62\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"109\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">500</text><line x1=\"40\" y1=\"97.5\" x2=\"52\" y2=\"97.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"90\" x2=\"52\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"82.5\" x2=\"52\" y2=\"82.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"75\" x2=\"52\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"67.5\" x2=\"62\" y2=\"67.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"71.5\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">750</text><line x1=\"40\" y1=\"60\" x2=\"52\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"52.5\" x2=\"52\" y2=\"52.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"45\" x2=\"52\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"37.5\" x2=\"52\" y2=\"37.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"30\" x2=\"62\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"34\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1000</text><text x=\"75\" y=\"200\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"34\" y=\"14\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(mL)</text></g></svg>",
+   "options": [
+    "150 mL",
+    "250 mL",
+    "350 mL",
+    "1150 mL"
+   ],
+   "answer": 1,
+   "why": "가는 700 mL, 나는 450 mL이므로 700-450=250(mL)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-17-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-17",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "□ 안에 알맞은 단위를 쓰세요.\n욕조에 가득 담을 수 있는 물의 양은 약 200 □입니다.",
+   "answers": [
+    "L",
+    "l",
+    "리터",
+    "ℓ"
+   ],
+   "why": "욕조처럼 큰 그릇의 들이는 L로 나타내는 것이 알맞습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-17-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-17",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "들이를 알맞은 단위로 나타낸 것은 무엇인가요?",
+   "options": [
+    "약병의 들이는 약 5 L이다",
+    "물병의 들이는 약 500 mL이다",
+    "수영장의 들이는 약 2000 mL이다",
+    "종이컵의 들이는 약 200 L이다"
+   ],
+   "answer": 1,
+   "why": "물병은 mL, 약병은 mL보다 적은 양, 수영장은 아주 많은 L로 나타내야 하고, 종이컵은 mL가 알맞습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-17-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-17",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "들이가 1 L인 물병을 가득 채우려면 들이가 200 mL인 컵으로 몇 번 부어야 하나요?",
+   "svg": "<svg viewBox=\"0 0 270 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"50\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"35\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">200 mL</text><rect x=\"60\" y=\"14\" width=\"200\" height=\"30\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"160\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?번</text><path d=\"M10,54 q0,10 10,10 L127,64 l8,8 l8,-8 L250,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"135\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 L</text></svg>",
+   "options": [
+    "2",
+    "4",
+    "10",
+    "5"
+   ],
+   "answer": 3,
+   "why": "1 L는 1000 mL이고 200×5=1000이므로 5번 부어야 합니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-17-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-17",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "어떤 컵에 물을 가득 채우니 약 250 mL입니다. 같은 컵으로 4번 가득 부으면 물의 양은 약 몇 L인가요?",
+   "svg": "<svg viewBox=\"0 0 260 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"60\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">250 mL</text><rect x=\"70\" y=\"14\" width=\"180\" height=\"30\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"160\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">×4</text><path d=\"M10,54 q0,10 10,10 L122,64 l8,8 l8,-8 L240,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"130\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? L</text></svg>",
+   "answers": [
+    "1",
+    "1 L",
+    "1L",
+    "1리터"
+   ],
+   "why": "250×4=1000(mL)이고 1000 mL는 1 L입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-18-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-18",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "2 L는 몇 mL인가요?",
+   "svg": "<svg viewBox=\"0 0 126 208\" font-family=\"sans-serif\"><rect x=\"42\" y=\"30\" width=\"66\" height=\"150\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><polyline points=\"40,30 40,180 110,180 110,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"40\" y1=\"180\" x2=\"62\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"40\" y1=\"142.5\" x2=\"62\" y2=\"142.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"146.5\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">500</text><line x1=\"40\" y1=\"105\" x2=\"62\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"109\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1000</text><line x1=\"40\" y1=\"67.5\" x2=\"62\" y2=\"67.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"71.5\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1500</text><line x1=\"40\" y1=\"30\" x2=\"62\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"34\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2000</text><text x=\"75\" y=\"200\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2 L</text><text x=\"34\" y=\"14\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(mL)</text></svg>",
+   "options": [
+    "2000 mL",
+    "200 mL",
+    "20 mL",
+    "20000 mL"
+   ],
+   "answer": 0,
+   "why": "1 L는 1000 mL이므로 2 L는 2000 mL입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-18-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-18",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "3000 mL는 몇 L인가요?",
+   "svg": "<svg viewBox=\"0 0 126 208\" font-family=\"sans-serif\"><rect x=\"42\" y=\"30\" width=\"66\" height=\"150\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><polyline points=\"40,30 40,180 110,180 110,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"40\" y1=\"180\" x2=\"62\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"40\" y1=\"130\" x2=\"62\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"134\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1000</text><line x1=\"40\" y1=\"80\" x2=\"62\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"84\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2000</text><line x1=\"40\" y1=\"30\" x2=\"62\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"34\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">3000</text><text x=\"75\" y=\"200\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3000 mL</text><text x=\"34\" y=\"14\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(mL)</text></svg>",
+   "options": [
+    "300 L",
+    "30 L",
+    "3 L",
+    "0.3 L"
+   ],
+   "answer": 2,
+   "why": "1000 mL가 1 L이므로 3000 mL는 3 L입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-18-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-18",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "5 L는 몇 mL인가요?",
+   "answers": [
+    "5000",
+    "5000 mL",
+    "5000mL"
+   ],
+   "why": "1 L=1000 mL이므로 5 L는 5000 mL입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-18-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-18",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "2 L 300 mL는 몇 mL인가요?",
+   "svg": "<svg viewBox=\"0 0 126 208\" font-family=\"sans-serif\"><rect x=\"42\" y=\"65\" width=\"66\" height=\"115\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><polyline points=\"40,30 40,180 110,180 110,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"40\" y1=\"180\" x2=\"62\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"40\" y1=\"155\" x2=\"52\" y2=\"155\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"130\" x2=\"62\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"134\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1000</text><line x1=\"40\" y1=\"105\" x2=\"52\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"80\" x2=\"62\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"84\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2000</text><line x1=\"40\" y1=\"55\" x2=\"52\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"30\" x2=\"62\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"34\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">3000</text><text x=\"75\" y=\"200\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2 L 300 mL</text><text x=\"34\" y=\"14\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(mL)</text></svg>",
+   "options": [
+    "23000 mL",
+    "230 mL",
+    "2030 mL",
+    "2300 mL"
+   ],
+   "answer": 3,
+   "why": "2 L는 2000 mL이므로 2 L 300 mL는 2000+300=2300(mL)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-18-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-18",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그릇에 담긴 물의 양을 ‘몇 L 몇 mL’로 나타내세요. (눈금 한 칸은 100 mL이고 가득 차면 2 L입니다.)",
+   "svg": "<svg viewBox=\"0 0 126 228\" font-family=\"sans-serif\"><rect x=\"42\" y=\"72.5\" width=\"66\" height=\"127.5\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><polyline points=\"40,30 40,200 110,200 110,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"40\" y1=\"200\" x2=\"62\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"204\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"40\" y1=\"191.5\" x2=\"52\" y2=\"191.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"183\" x2=\"52\" y2=\"183\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"174.5\" x2=\"52\" y2=\"174.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"166\" x2=\"52\" y2=\"166\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"157.5\" x2=\"62\" y2=\"157.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"161.5\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">500</text><line x1=\"40\" y1=\"149\" x2=\"52\" y2=\"149\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"140.5\" x2=\"52\" y2=\"140.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"132\" x2=\"52\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"123.5\" x2=\"52\" y2=\"123.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"115\" x2=\"62\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"119\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1000</text><line x1=\"40\" y1=\"106.5\" x2=\"52\" y2=\"106.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"98\" x2=\"52\" y2=\"98\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"89.5\" x2=\"52\" y2=\"89.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"81\" x2=\"52\" y2=\"81\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"72.5\" x2=\"62\" y2=\"72.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"76.5\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1500</text><line x1=\"40\" y1=\"64\" x2=\"52\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"55.5\" x2=\"52\" y2=\"55.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"47\" x2=\"52\" y2=\"47\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"38.5\" x2=\"52\" y2=\"38.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"30\" x2=\"62\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"34\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2000</text><text x=\"75\" y=\"220\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">물</text><text x=\"34\" y=\"14\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(mL)</text></svg>",
+   "options": [
+    "1 L 50 mL",
+    "1 L 500 mL",
+    "15 L",
+    "500 mL"
+   ],
+   "answer": 1,
+   "why": "눈금이 1500 mL이고 1500 mL는 1000 mL와 500 mL이므로 1 L 500 mL입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-18-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-18",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "4050 mL는 몇 L 몇 mL인가요?",
+   "svg": "<svg viewBox=\"0 0 270 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"250\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"135\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4050 mL</text><path d=\"M10,54 q0,10 10,10 L127,64 l8,8 l8,-8 L250,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"135\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? L ? mL</text></svg>",
+   "answers": [
+    "4 L 50 mL",
+    "4L 50mL",
+    "4L50mL",
+    "4 L 50mL"
+   ],
+   "why": "4050 mL는 4000 mL와 50 mL이고, 4000 mL는 4 L이므로 4 L 50 mL입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-18-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-18",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "1 L와 1 mL의 관계를 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "1 mL는 1 L의 10배이다",
+    "1 L는 1 mL를 100번 더한 양과 같다",
+    "1 L는 1 mL를 1000번 더한 양과 같다",
+    "1 L와 1 mL는 같은 양이다"
+   ],
+   "answer": 2,
+   "why": "1 L=1000 mL이므로 1 L는 1 mL를 1000번 더한 양과 같습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-18-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-18",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "들이를 나타낸 것 중 나머지와 다른 하나는 무엇인가요?",
+   "options": [
+    "1 L 25 mL",
+    "1250 mL",
+    "1 L 250 mL",
+    "1000 mL와 250 mL를 합한 양"
+   ],
+   "answer": 0,
+   "why": "1 L 250 mL=1250 mL=1000 mL+250 mL이고, 1 L 25 mL는 1025 mL로 다릅니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-18-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-18",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "1 L 8 mL는 몇 mL인가요?",
+   "answers": [
+    "1008",
+    "1008 mL",
+    "1008mL"
+   ],
+   "why": "1 L는 1000 mL이므로 1 L 8 mL는 1000+8=1008(mL)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-19-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-19",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "1 L 200 mL + 2 L 300 mL는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 320 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"120\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"70\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 L 200 mL</text><rect x=\"130\" y=\"14\" width=\"180\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"220\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2 L 300 mL</text><path d=\"M10,54 q0,10 10,10 L152,64 l8,8 l8,-8 L300,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? L ? mL</text></svg>",
+   "options": [
+    "2 L 500 mL",
+    "3 L 100 mL",
+    "3 L 500 mL",
+    "4 L 500 mL"
+   ],
+   "answer": 2,
+   "why": "L는 L끼리 1+2=3, mL는 mL끼리 200+300=500이므로 3 L 500 mL입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-19-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-19",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "5 L 800 mL - 2 L 300 mL는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 240 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"100\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"60\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2 L 300 mL</text><rect x=\"110\" y=\"14\" width=\"120\" height=\"30\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"170\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><path d=\"M10,54 q0,10 10,10 L112,64 l8,8 l8,-8 L220,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"120\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5 L 800 mL</text></svg>",
+   "options": [
+    "3 L 500 mL",
+    "3 L 100 mL",
+    "7 L 100 mL",
+    "2 L 500 mL"
+   ],
+   "answer": 0,
+   "why": "L끼리 5-2=3, mL끼리 800-300=500이므로 3 L 500 mL입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-19-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-19",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "400 mL + 800 mL는 몇 L 몇 mL인가요?",
+   "answers": [
+    "1 L 200 mL",
+    "1L 200mL",
+    "1L200mL"
+   ],
+   "why": "400+800=1200(mL)이고 1200 mL는 1 L 200 mL입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-19-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-19",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "물통에 물이 1 L 500 mL 들어 있습니다. 물 700 mL를 더 부으면 물은 모두 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 190 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"110\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"65\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 L 500 mL</text><rect x=\"120\" y=\"14\" width=\"60\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"150\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">700 mL</text><path d=\"M10,54 q0,10 10,10 L87,64 l8,8 l8,-8 L170,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"95\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? L ? mL</text></svg>",
+   "options": [
+    "2 L 20 mL",
+    "2 L 700 mL",
+    "1 L 200 mL",
+    "2 L 200 mL"
+   ],
+   "answer": 3,
+   "why": "1 L 500 mL+700 mL에서 mL끼리 500+700=1200(mL)=1 L 200 mL이므로 모두 2 L 200 mL입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-19-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-19",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "두 그릇 가와 나의 물을 모두 큰 통에 부으면 물은 모두 몇 mL인가요?",
+   "svg": "<svg viewBox=\"0 0 262 208\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"42\" y=\"120\" width=\"66\" height=\"60\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><polyline points=\"40,30 40,180 110,180 110,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"40\" y1=\"180\" x2=\"62\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"40\" y1=\"165\" x2=\"52\" y2=\"165\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"150\" x2=\"62\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"154\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">200</text><line x1=\"40\" y1=\"135\" x2=\"52\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"120\" x2=\"62\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"124\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">400</text><line x1=\"40\" y1=\"105\" x2=\"52\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"90\" x2=\"62\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"94\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">600</text><line x1=\"40\" y1=\"75\" x2=\"52\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"60\" x2=\"62\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"64\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">800</text><line x1=\"40\" y1=\"45\" x2=\"52\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"30\" x2=\"62\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"34\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1000</text><text x=\"75\" y=\"200\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"34\" y=\"14\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(mL)</text></g><g transform=\"translate(132 0)\"><rect x=\"42\" y=\"67.5\" width=\"66\" height=\"112.5\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><polyline points=\"40,30 40,180 110,180 110,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"40\" y1=\"180\" x2=\"62\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"40\" y1=\"172.5\" x2=\"52\" y2=\"172.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"165\" x2=\"52\" y2=\"165\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"157.5\" x2=\"52\" y2=\"157.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"150\" x2=\"52\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"142.5\" x2=\"62\" y2=\"142.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"146.5\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">250</text><line x1=\"40\" y1=\"135\" x2=\"52\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"127.5\" x2=\"52\" y2=\"127.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"120\" x2=\"52\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"112.5\" x2=\"52\" y2=\"112.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"105\" x2=\"62\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"109\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">500</text><line x1=\"40\" y1=\"97.5\" x2=\"52\" y2=\"97.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"90\" x2=\"52\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"82.5\" x2=\"52\" y2=\"82.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"75\" x2=\"52\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"67.5\" x2=\"62\" y2=\"67.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"71.5\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">750</text><line x1=\"40\" y1=\"60\" x2=\"52\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"52.5\" x2=\"52\" y2=\"52.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"45\" x2=\"52\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"37.5\" x2=\"52\" y2=\"37.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"30\" x2=\"62\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"34\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1000</text><text x=\"75\" y=\"200\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"34\" y=\"14\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(mL)</text></g></svg>",
+   "options": [
+    "1050 mL",
+    "1150 mL",
+    "350 mL",
+    "1250 mL"
+   ],
+   "answer": 1,
+   "why": "가는 400 mL, 나는 750 mL이므로 400+750=1150(mL)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-19-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-19",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "3 L - 1 L 400 mL는 얼마인가요? 몇 L 몇 mL로 쓰세요.",
+   "svg": "<svg viewBox=\"0 0 210 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"100\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"60\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 L 400 mL</text><rect x=\"110\" y=\"14\" width=\"90\" height=\"30\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"155\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><path d=\"M10,54 q0,10 10,10 L97,64 l8,8 l8,-8 L190,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"105\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3 L</text></svg>",
+   "answers": [
+    "1 L 600 mL",
+    "1L 600mL",
+    "1L600mL"
+   ],
+   "why": "3 L를 2 L 1000 mL로 바꾸어 계산합니다. 2 L 1000 mL-1 L 400 mL=1 L 600 mL입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-19-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-19",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "주스 2 L 중에서 650 mL를 마시고, 다시 300 mL를 마셨습니다. 남은 주스는 얼마인가요?",
+   "options": [
+    "1 L 350 mL",
+    "1 L 50 mL",
+    "950 mL",
+    "1 L 150 mL"
+   ],
+   "answer": 1,
+   "why": "마신 양은 650+300=950(mL)입니다. 2 L-950 mL=2000 mL-950 mL=1050 mL=1 L 50 mL입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-19-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-19",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "물이 1 L 250 mL 들어 있는 병, 800 mL 들어 있는 병, 2 L 들어 있는 병이 있습니다. 세 병의 물은 모두 몇 L 몇 mL인가요?",
+   "options": [
+    "3 L 800 mL",
+    "3 L 50 mL",
+    "4 L 250 mL",
+    "4 L 50 mL"
+   ],
+   "answer": 3,
+   "why": "1 L 250 mL+800 mL=2 L 50 mL이고, 여기에 2 L를 더하면 4 L 50 mL입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-19-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-19",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "큰 통에 물 5 L가 들어 있습니다. 여기서 1 L 800 mL를 덜어 내고 다시 600 mL를 부었습니다. 지금 통에 들어 있는 물의 양은 몇 L 몇 mL인가요?",
+   "answers": [
+    "3 L 800 mL",
+    "3L 800mL",
+    "3L800mL"
+   ],
+   "why": "5 L-1 L 800 mL=3 L 200 mL이고, 여기에 600 mL를 더하면 3 L 800 mL입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-20-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-20",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "주방 저울의 바늘이 가리키는 무게는 몇 g인가요?",
+   "svg": "<svg viewBox=\"0 0 184 184\" font-family=\"sans-serif\"><circle cx=\"92\" cy=\"92\" r=\"76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"92\" y1=\"27\" x2=\"92\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"113.6\" y1=\"25.4\" x2=\"115.2\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"39.4\" x2=\"136.1\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">100</text><line x1=\"148.6\" y1=\"50.9\" x2=\"152.7\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"71.9\" x2=\"163.3\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">200</text><line x1=\"162\" y1=\"92\" x2=\"167\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"112.1\" x2=\"163.3\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">300</text><line x1=\"148.6\" y1=\"133.1\" x2=\"152.7\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"144.6\" x2=\"136.1\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">400</text><line x1=\"113.6\" y1=\"158.6\" x2=\"115.2\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"157\" x2=\"92\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"147\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">500</text><line x1=\"70.4\" y1=\"158.6\" x2=\"68.8\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"144.6\" x2=\"47.9\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">600</text><line x1=\"35.4\" y1=\"133.1\" x2=\"31.3\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"112.1\" x2=\"20.7\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">700</text><line x1=\"22\" y1=\"92\" x2=\"17\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"71.9\" x2=\"20.7\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">800</text><line x1=\"35.4\" y1=\"50.9\" x2=\"31.3\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"39.4\" x2=\"47.9\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">900</text><line x1=\"70.4\" y1=\"25.4\" x2=\"68.8\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"92\" x2=\"111.2\" y2=\"151\" stroke=\"#e07b39\" stroke-width=\"3.5\"/><circle cx=\"92\" cy=\"92\" r=\"5\" fill=\"currentColor\"/><text x=\"92\" y=\"114\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">g</text></svg>",
+   "options": [
+    "450 g",
+    "45 g",
+    "400 g",
+    "500 g"
+   ],
+   "answer": 0,
+   "why": "바늘이 400과 500의 가운데를 가리키므로 450 g입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-20-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-20",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "무게의 단위인 kg은 어떻게 읽나요?",
+   "options": [
+    "킬로미터",
+    "그램",
+    "킬로그램",
+    "밀리그램"
+   ],
+   "answer": 2,
+   "why": "kg은 ‘킬로그램’, g은 ‘그램’이라고 읽습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-20-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-20",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "저울의 바늘이 가리키는 무게는 몇 g인가요?",
+   "svg": "<svg viewBox=\"0 0 184 184\" font-family=\"sans-serif\"><circle cx=\"92\" cy=\"92\" r=\"76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"92\" y1=\"27\" x2=\"92\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"113.6\" y1=\"25.4\" x2=\"115.2\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"39.4\" x2=\"136.1\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">100</text><line x1=\"148.6\" y1=\"50.9\" x2=\"152.7\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"71.9\" x2=\"163.3\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">200</text><line x1=\"162\" y1=\"92\" x2=\"167\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"112.1\" x2=\"163.3\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">300</text><line x1=\"148.6\" y1=\"133.1\" x2=\"152.7\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"144.6\" x2=\"136.1\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">400</text><line x1=\"113.6\" y1=\"158.6\" x2=\"115.2\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"157\" x2=\"92\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"147\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">500</text><line x1=\"70.4\" y1=\"158.6\" x2=\"68.8\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"144.6\" x2=\"47.9\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">600</text><line x1=\"35.4\" y1=\"133.1\" x2=\"31.3\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"112.1\" x2=\"20.7\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">700</text><line x1=\"22\" y1=\"92\" x2=\"17\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"71.9\" x2=\"20.7\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">800</text><line x1=\"35.4\" y1=\"50.9\" x2=\"31.3\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"39.4\" x2=\"47.9\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">900</text><line x1=\"70.4\" y1=\"25.4\" x2=\"68.8\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"92\" x2=\"33\" y2=\"111.2\" stroke=\"#e07b39\" stroke-width=\"3.5\"/><circle cx=\"92\" cy=\"92\" r=\"5\" fill=\"currentColor\"/><text x=\"92\" y=\"114\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">g</text></svg>",
+   "answers": [
+    "700",
+    "700 g",
+    "700g"
+   ],
+   "why": "바늘이 700을 가리키고 있으므로 700 g입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-20-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-20",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "□ 안에 알맞은 단위를 쓰세요.\n연필 한 자루의 무게는 약 10 □입니다.",
+   "answers": [
+    "g",
+    "그램",
+    "G"
+   ],
+   "why": "연필처럼 가벼운 물건은 g으로 나타내는 것이 알맞습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-20-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-20",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "두 저울에 올린 물건 가와 나의 무게의 차는 몇 g인가요?",
+   "svg": "<svg viewBox=\"0 0 378 208\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><circle cx=\"92\" cy=\"92\" r=\"76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"92\" y1=\"27\" x2=\"92\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"113.6\" y1=\"25.4\" x2=\"115.2\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"39.4\" x2=\"136.1\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">100</text><line x1=\"148.6\" y1=\"50.9\" x2=\"152.7\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"71.9\" x2=\"163.3\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">200</text><line x1=\"162\" y1=\"92\" x2=\"167\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"112.1\" x2=\"163.3\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">300</text><line x1=\"148.6\" y1=\"133.1\" x2=\"152.7\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"144.6\" x2=\"136.1\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">400</text><line x1=\"113.6\" y1=\"158.6\" x2=\"115.2\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"157\" x2=\"92\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"147\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">500</text><line x1=\"70.4\" y1=\"158.6\" x2=\"68.8\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"144.6\" x2=\"47.9\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">600</text><line x1=\"35.4\" y1=\"133.1\" x2=\"31.3\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"112.1\" x2=\"20.7\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">700</text><line x1=\"22\" y1=\"92\" x2=\"17\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"71.9\" x2=\"20.7\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">800</text><line x1=\"35.4\" y1=\"50.9\" x2=\"31.3\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"39.4\" x2=\"47.9\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">900</text><line x1=\"70.4\" y1=\"25.4\" x2=\"68.8\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"92\" x2=\"55.6\" y2=\"142.2\" stroke=\"#e07b39\" stroke-width=\"3.5\"/><circle cx=\"92\" cy=\"92\" r=\"5\" fill=\"currentColor\"/><text x=\"92\" y=\"114\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">g</text></g><text x=\"96\" y=\"202\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(190 0)\"><circle cx=\"92\" cy=\"92\" r=\"76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"92\" y1=\"27\" x2=\"92\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"113.6\" y1=\"25.4\" x2=\"115.2\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"39.4\" x2=\"136.1\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">100</text><line x1=\"148.6\" y1=\"50.9\" x2=\"152.7\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"71.9\" x2=\"163.3\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">200</text><line x1=\"162\" y1=\"92\" x2=\"167\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"112.1\" x2=\"163.3\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">300</text><line x1=\"148.6\" y1=\"133.1\" x2=\"152.7\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"144.6\" x2=\"136.1\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">400</text><line x1=\"113.6\" y1=\"158.6\" x2=\"115.2\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"157\" x2=\"92\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"147\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">500</text><line x1=\"70.4\" y1=\"158.6\" x2=\"68.8\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"144.6\" x2=\"47.9\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">600</text><line x1=\"35.4\" y1=\"133.1\" x2=\"31.3\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"112.1\" x2=\"20.7\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">700</text><line x1=\"22\" y1=\"92\" x2=\"17\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"71.9\" x2=\"20.7\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">800</text><line x1=\"35.4\" y1=\"50.9\" x2=\"31.3\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"39.4\" x2=\"47.9\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">900</text><line x1=\"70.4\" y1=\"25.4\" x2=\"68.8\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"92\" x2=\"154\" y2=\"92\" stroke=\"#e07b39\" stroke-width=\"3.5\"/><circle cx=\"92\" cy=\"92\" r=\"5\" fill=\"currentColor\"/><text x=\"92\" y=\"114\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">g</text></g><text x=\"282\" y=\"202\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "options": [
+    "450 g",
+    "850 g",
+    "150 g",
+    "350 g"
+   ],
+   "answer": 3,
+   "why": "가는 600 g, 나는 250 g이므로 600-250=350(g)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-20-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-20",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "□ 안에 알맞은 단위를 쓰세요.\n수박 한 통의 무게는 약 5 □입니다.",
+   "answers": [
+    "kg",
+    "KG",
+    "킬로그램"
+   ],
+   "why": "수박처럼 무거운 물건은 kg으로 나타내는 것이 알맞습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-20-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-20",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "무게를 알맞은 단위로 나타낸 것은 무엇인가요?",
+   "options": [
+    "사과 한 개의 무게는 약 200 kg이다",
+    "달걀 한 개의 무게는 약 50 g이다",
+    "코끼리의 무게는 약 5 g이다",
+    "공책 한 권의 무게는 약 100 kg이다"
+   ],
+   "answer": 1,
+   "why": "달걀은 g, 사과도 g, 코끼리는 t이나 kg, 공책은 g으로 나타내는 것이 알맞습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-20-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-20",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "달걀 한 개의 무게가 약 50 g일 때 1 kg은 달걀 약 몇 개의 무게와 같은가요?",
+   "svg": "<svg viewBox=\"0 0 260 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"40\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"30\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">50 g</text><rect x=\"50\" y=\"14\" width=\"200\" height=\"30\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"150\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?개</text><path d=\"M10,54 q0,10 10,10 L122,64 l8,8 l8,-8 L240,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"130\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 kg</text></svg>",
+   "options": [
+    "10",
+    "50",
+    "20",
+    "100"
+   ],
+   "answer": 2,
+   "why": "1 kg은 1000 g이고 1000÷50=20이므로 달걀 약 20개의 무게와 같습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-20-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-20",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "무게를 g 단위로 나타내면 더 편리한 경우로 알맞은 것은 무엇인가요?",
+   "options": [
+    "약의 무게를 정확하게 말할 때",
+    "트럭의 무게를 말할 때",
+    "코끼리의 무게를 말할 때",
+    "배의 무게를 말할 때"
+   ],
+   "answer": 0,
+   "why": "아주 가벼운 물건의 무게를 정확하게 나타낼 때는 g이 편리합니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-21-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-21",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "저울의 바늘이 1 kg(1000 g)을 한 바퀴 돈 곳에 있습니다. 3 kg은 몇 g인가요?",
+   "svg": "<svg viewBox=\"0 0 290 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"90\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"55\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 kg</text><rect x=\"100\" y=\"14\" width=\"90\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"145\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 kg</text><rect x=\"190\" y=\"14\" width=\"90\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"235\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 kg</text><path d=\"M10,54 q0,10 10,10 L137,64 l8,8 l8,-8 L270,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"145\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3 kg = ? g</text></svg>",
+   "options": [
+    "30 g",
+    "300 g",
+    "3000 g",
+    "30000 g"
+   ],
+   "answer": 2,
+   "why": "1 kg은 1000 g이므로 3 kg은 3000 g입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-21-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-21",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "5000 g은 몇 kg인가요?",
+   "options": [
+    "5 kg",
+    "50 kg",
+    "500 kg",
+    "0.5 kg"
+   ],
+   "answer": 0,
+   "why": "1000 g이 1 kg이므로 5000 g은 5 kg입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-21-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-21",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "2 kg은 몇 g인가요?",
+   "answers": [
+    "2000",
+    "2000 g",
+    "2000g"
+   ],
+   "why": "1 kg=1000 g이므로 2 kg은 2000 g입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-21-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-21",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "3 kg 400 g은 몇 g인가요?",
+   "svg": "<svg viewBox=\"0 0 230 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"150\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"85\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3 kg</text><rect x=\"160\" y=\"14\" width=\"60\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"190\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">400 g</text><path d=\"M10,54 q0,10 10,10 L107,64 l8,8 l8,-8 L210,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"115\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? g</text></svg>",
+   "options": [
+    "34000 g",
+    "340 g",
+    "3040 g",
+    "3400 g"
+   ],
+   "answer": 3,
+   "why": "3 kg은 3000 g이므로 3 kg 400 g은 3000+400=3400(g)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-21-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-21",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "저울의 바늘이 가리키는 무게는 1 kg보다 600 g 더 무겁습니다. 이 무게를 ‘몇 kg 몇 g’으로 나타내면 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 184 184\" font-family=\"sans-serif\"><circle cx=\"92\" cy=\"92\" r=\"76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"92\" y1=\"27\" x2=\"92\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"113.6\" y1=\"25.4\" x2=\"115.2\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"39.4\" x2=\"136.1\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">100</text><line x1=\"148.6\" y1=\"50.9\" x2=\"152.7\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"71.9\" x2=\"163.3\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">200</text><line x1=\"162\" y1=\"92\" x2=\"167\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"112.1\" x2=\"163.3\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">300</text><line x1=\"148.6\" y1=\"133.1\" x2=\"152.7\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"144.6\" x2=\"136.1\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">400</text><line x1=\"113.6\" y1=\"158.6\" x2=\"115.2\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"157\" x2=\"92\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"147\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">500</text><line x1=\"70.4\" y1=\"158.6\" x2=\"68.8\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"144.6\" x2=\"47.9\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">600</text><line x1=\"35.4\" y1=\"133.1\" x2=\"31.3\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"112.1\" x2=\"20.7\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">700</text><line x1=\"22\" y1=\"92\" x2=\"17\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"71.9\" x2=\"20.7\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">800</text><line x1=\"35.4\" y1=\"50.9\" x2=\"31.3\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"39.4\" x2=\"47.9\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">900</text><line x1=\"70.4\" y1=\"25.4\" x2=\"68.8\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"92\" x2=\"55.6\" y2=\"142.2\" stroke=\"#e07b39\" stroke-width=\"3.5\"/><circle cx=\"92\" cy=\"92\" r=\"5\" fill=\"currentColor\"/><text x=\"92\" y=\"114\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">g</text></svg>",
+   "options": [
+    "1 kg 60 g",
+    "1 kg 600 g",
+    "6 kg",
+    "600 kg"
+   ],
+   "answer": 1,
+   "why": "1 kg과 600 g을 합한 무게이므로 1 kg 600 g입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-21-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-21",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "7080 g은 몇 kg 몇 g인가요?",
+   "answers": [
+    "7 kg 80 g",
+    "7kg 80g",
+    "7kg80g"
+   ],
+   "why": "7080 g은 7000 g과 80 g이고, 7000 g은 7 kg이므로 7 kg 80 g입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-21-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-21",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "1 kg과 1 g의 관계를 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "1 kg은 1 g을 100번 더한 무게와 같다",
+    "1 kg은 1 g을 1000번 더한 무게와 같다",
+    "1 g은 1 kg의 1000배이다",
+    "1 kg과 1 g은 같은 무게이다"
+   ],
+   "answer": 1,
+   "why": "1 kg=1000 g이므로 1 kg은 1 g을 1000번 더한 무게입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-21-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-21",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "무게를 나타낸 것 중 나머지와 다른 하나는 무엇인가요?",
+   "options": [
+    "2 kg 5 g",
+    "2005 g",
+    "2 kg과 5 g을 합한 무게",
+    "2050 g"
+   ],
+   "answer": 3,
+   "why": "2 kg 5 g=2005 g이고 2050 g은 2 kg 50 g이므로 다릅니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-21-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-21",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "1 kg 30 g은 몇 g인가요?",
+   "svg": "<svg viewBox=\"0 0 250 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"200\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"110\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 kg</text><rect x=\"210\" y=\"14\" width=\"30\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"225\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30 g</text><path d=\"M10,54 q0,10 10,10 L117,64 l8,8 l8,-8 L230,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"125\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? g</text></svg>",
+   "answers": [
+    "1030",
+    "1030 g",
+    "1030g"
+   ],
+   "why": "1 kg은 1000 g이므로 1 kg 30 g은 1000+30=1030(g)입니다."
+  }
+ ],
+ "skipped": []
+}
