@@ -1,0 +1,531 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "초",
+  "course": "수학",
+  "gradeBand": "초1-2",
+  "unit": "자료와 가능성",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-초1-2-2수04-01-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "모양에 따라 분류하려고 합니다. 세모 모양은 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 348 52\" font-family=\"sans-serif\"><circle cx=\"22\" cy=\"26\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"60,10 76,38.8 44,38.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"82\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"136,10 152,38.8 120,38.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"174\" cy=\"26\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"212,10 228,38.8 196,38.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"234\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"288\" cy=\"26\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"326,10 342,38.8 310,38.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "4",
+    "3",
+    "5",
+    "2"
+   ],
+   "answer": 0,
+   "why": "세모 모양은 둘째, 넷째, 여섯째, 아홉째로 4개입니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-01-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "다음을 과일과 채소로 분류하려고 합니다. 과일은 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 302 70\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"296\" height=\"64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"77\" y1=\"3\" x2=\"77\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"151\" y1=\"3\" x2=\"151\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"3\" x2=\"225\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"35\" x2=\"299\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"40\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">사과</text><text x=\"114\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">당근</text><text x=\"188\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">포도</text><text x=\"262\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">오이</text><text x=\"40\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">바나나</text><text x=\"114\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">배추</text><text x=\"188\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">딸기</text><text x=\"262\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">감자</text></svg>",
+   "answers": [
+    "4",
+    "4개",
+    "네 개"
+   ],
+   "why": "과일은 사과, 포도, 바나나, 딸기로 4개입니다. 당근, 오이, 배추, 감자는 채소입니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-01-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "색칠한 것과 색칠하지 않은 것으로 분류하려고 합니다. 색칠한 것은 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 346 52\" font-family=\"sans-serif\"><circle cx=\"26\" cy=\"26\" r=\"16\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"110\" cy=\"26\" r=\"16\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"136\" y=\"10\" width=\"32\" height=\"32\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"194\" cy=\"26\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"220\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"278\" cy=\"26\" r=\"16\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"304\" y=\"10\" width=\"32\" height=\"32\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "3",
+    "4",
+    "6",
+    "5"
+   ],
+   "answer": 3,
+   "why": "속을 색칠한 것은 첫째, 셋째, 넷째, 일곱째, 여덟째로 5개입니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-01-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "모양에 따라 분류했을 때 가장 많은 모양은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 348 52\" font-family=\"sans-serif\"><rect x=\"6\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"60\" cy=\"26\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"82\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"136,10 152,38.8 120,38.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"158\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"212\" cy=\"26\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"250,10 266,38.8 234,38.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"272\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"326\" cy=\"26\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "동그라미",
+    "네모",
+    "세모",
+    "모두 같다"
+   ],
+   "answer": 1,
+   "why": "동그라미 3개, 네모 4개, 세모 2개이므로 네모가 가장 많습니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-01-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "탈것을 다니는 곳(땅, 물, 하늘)에 따라 분류했습니다. 땅에서 다니는 것은 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 302 70\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"296\" height=\"64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"77\" y1=\"3\" x2=\"77\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"151\" y1=\"3\" x2=\"151\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"3\" x2=\"225\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"35\" x2=\"299\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"40\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">버스</text><text x=\"114\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">배</text><text x=\"188\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">비행기</text><text x=\"262\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">자동차</text><text x=\"40\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">기차</text><text x=\"114\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">헬리콥터</text><text x=\"188\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">요트</text><text x=\"262\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">자전거</text></svg>",
+   "options": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "answer": 1,
+   "why": "땅에서 다니는 것은 버스, 자동차, 기차, 자전거로 4개입니다. 배와 요트는 물, 비행기와 헬리콥터는 하늘입니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-01-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "크기에 따라 큰 것과 작은 것으로 분류했습니다. 큰 것은 작은 것보다 몇 개 더 많은가요?",
+   "svg": "<svg viewBox=\"0 0 346 52\" font-family=\"sans-serif\"><circle cx=\"26\" cy=\"26\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"68\" cy=\"30.2\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"94\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"152,10 168,38.8 136,38.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"185\" y=\"21.2\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"236\" cy=\"26\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"278,21.2 287,37.4 269,37.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"304\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "answers": [
+    "2",
+    "2개",
+    "두 개"
+   ],
+   "why": "큰 것은 5개, 작은 것은 3개이므로 큰 것이 5-3=2(개) 더 많습니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-01-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "물건을 분류하는 기준으로 알맞지 않은 것은 무엇인가요?",
+   "options": [
+    "모양이 같은 것끼리",
+    "예쁜 것과 예쁘지 않은 것",
+    "다리 수가 같은 것끼리",
+    "바퀴가 있는 것과 없는 것"
+   ],
+   "answer": 1,
+   "why": "‘예쁜 것’은 사람마다 생각이 달라서 분류 결과가 달라집니다. 누가 분류해도 결과가 같은 분명한 기준이 필요합니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-01-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "모양과 색칠 여부를 함께 기준으로 분류하려고 합니다. ‘색칠한 네모’는 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 346 52\" font-family=\"sans-serif\"><rect x=\"10\" y=\"10\" width=\"32\" height=\"32\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"68\" cy=\"26\" r=\"16\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"94\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"152,10 168,38.8 136,38.8\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"178\" y=\"10\" width=\"32\" height=\"32\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"236\" cy=\"26\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"262\" y=\"10\" width=\"32\" height=\"32\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"320,10 336,38.8 304,38.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "3",
+    "2",
+    "4",
+    "5"
+   ],
+   "answer": 0,
+   "why": "네모 4개 중에서 색칠한 것은 첫째, 다섯째, 일곱째로 3개입니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-01-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "모양(동그라미, 네모)과 색칠 여부를 함께 기준으로 하여 ‘색칠한 동그라미’처럼 분류하면, 아래 그림은 모두 몇 가지로 분류되나요?",
+   "svg": "<svg viewBox=\"0 0 304 52\" font-family=\"sans-serif\"><circle cx=\"26\" cy=\"26\" r=\"16\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"110\" cy=\"26\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"136\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"194\" cy=\"26\" r=\"16\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"236\" cy=\"26\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"262\" y=\"10\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "2",
+    "4",
+    "3",
+    "1"
+   ],
+   "answer": 2,
+   "why": "색칠한 동그라미, 색칠하지 않은 동그라미, 색칠하지 않은 네모가 있고 색칠한 네모는 없으므로 3가지입니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-02-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "학생 12명이 좋아하는 과일을 하나씩 적었습니다. 딸기를 좋아하는 학생은 몇 명인가요?",
+   "svg": "<svg viewBox=\"0 0 302 102\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"296\" height=\"96\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"77\" y1=\"3\" x2=\"77\" y2=\"99\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"151\" y1=\"3\" x2=\"151\" y2=\"99\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"3\" x2=\"225\" y2=\"99\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"35\" x2=\"299\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"67\" x2=\"299\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"40\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">사과</text><text x=\"114\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">포도</text><text x=\"188\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">딸기</text><text x=\"262\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">사과</text><text x=\"40\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">귤</text><text x=\"114\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">포도</text><text x=\"188\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">사과</text><text x=\"262\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">딸기</text><text x=\"40\" y=\"88\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">포도</text><text x=\"114\" y=\"88\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">귤</text><text x=\"188\" y=\"88\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">사과</text><text x=\"262\" y=\"88\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">딸기</text></svg>",
+   "options": [
+    "2",
+    "4",
+    "3",
+    "5"
+   ],
+   "answer": 2,
+   "why": "딸기는 셋째, 여덟째, 열두째로 3명입니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-02-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "좋아하는 민속놀이를 조사한 자료를 보고 표를 만들고 있습니다. ? 에 알맞은 수를 쓰세요.",
+   "svg": "<svg viewBox=\"0 0 362 144\" font-family=\"sans-serif\"><g transform=\"translate(18 0)\"><rect x=\"3\" y=\"3\" width=\"320\" height=\"64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"67\" y1=\"3\" x2=\"67\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"131\" y1=\"3\" x2=\"131\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"195\" y1=\"3\" x2=\"195\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"259\" y1=\"3\" x2=\"259\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"35\" x2=\"323\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"35\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">윷놀이</text><text x=\"99\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">제기차기</text><text x=\"163\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">팽이치기</text><text x=\"227\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">윷놀이</text><text x=\"291\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">연날리기</text><text x=\"35\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">윷놀이</text><text x=\"99\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">팽이치기</text><text x=\"163\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">제기차기</text><text x=\"227\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">윷놀이</text><text x=\"291\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">팽이치기</text></g><g transform=\"translate(0 78)\"><rect x=\"3\" y=\"3\" width=\"356\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"87\" y1=\"3\" x2=\"87\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"155\" y1=\"3\" x2=\"155\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"223\" y1=\"3\" x2=\"223\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"291\" y1=\"3\" x2=\"291\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"359\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"45\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">놀이</text><text x=\"121\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">윷놀이</text><text x=\"189\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">제기차기</text><text x=\"257\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">팽이치기</text><text x=\"325\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연날리기</text><text x=\"45\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">학생 수(명)</text><text x=\"121\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"189\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"257\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">?</text><text x=\"325\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text></g></svg>",
+   "answers": [
+    "3",
+    "3명"
+   ],
+   "why": "팽이치기를 적은 학생을 세면 3명입니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-02-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "좋아하는 계절을 조사하여 표로 나타냈습니다. 조사한 학생은 모두 몇 명인가요?",
+   "svg": "<svg viewBox=\"0 0 326 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"320\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"99\" y1=\"3\" x2=\"99\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"155\" y1=\"3\" x2=\"155\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"211\" y1=\"3\" x2=\"211\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"267\" y1=\"3\" x2=\"267\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"323\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"51\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">계절</text><text x=\"127\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">봄</text><text x=\"183\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">여름</text><text x=\"239\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가을</text><text x=\"295\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">겨울</text><text x=\"51\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">학생 수(명)</text><text x=\"127\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"183\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">7</text><text x=\"239\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"295\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text></svg>",
+   "options": [
+    "20",
+    "21",
+    "24",
+    "22"
+   ],
+   "answer": 3,
+   "why": "5+7+4+6=22(명)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-02-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "조사한 자료를 표로 나타내면 좋은 점은 무엇인가요?",
+   "options": [
+    "종류별 수를 한눈에 알기 쉽다",
+    "누가 무엇을 좋아하는지 알 수 있다",
+    "자료를 더 많이 모을 수 있다",
+    "조사를 다시 하지 않아도 된다"
+   ],
+   "answer": 0,
+   "why": "표로 나타내면 종류별 수와 전체 수를 쉽게 알 수 있습니다. 누가 무엇을 골랐는지는 처음 자료에서 알 수 있습니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-02-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "2주일 동안의 날씨를 조사했습니다. 이 자료를 표로 나타낼 때, ‘비’ 칸에 알맞은 수는 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 328 70\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"322\" height=\"64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"49\" y1=\"3\" x2=\"49\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"95\" y1=\"3\" x2=\"95\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"141\" y1=\"3\" x2=\"141\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"187\" y1=\"3\" x2=\"187\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"233\" y1=\"3\" x2=\"233\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"279\" y1=\"3\" x2=\"279\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"35\" x2=\"325\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"26\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">맑음</text><text x=\"72\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">흐림</text><text x=\"118\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">비</text><text x=\"164\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">맑음</text><text x=\"210\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">맑음</text><text x=\"256\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">비</text><text x=\"302\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">흐림</text><text x=\"26\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">맑음</text><text x=\"72\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">비</text><text x=\"118\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">맑음</text><text x=\"164\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">흐림</text><text x=\"210\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">맑음</text><text x=\"256\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">비</text><text x=\"302\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">맑음</text></svg>",
+   "options": [
+    "3",
+    "5",
+    "4",
+    "7"
+   ],
+   "answer": 2,
+   "why": "비가 온 날은 셋째, 여섯째, 아홉째, 열셋째 날로 4일입니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-02-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "좋아하는 운동을 조사한 표입니다. 피구를 좋아하는 학생은 몇 명인가요?",
+   "svg": "<svg viewBox=\"0 0 410 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"404\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"87\" y1=\"3\" x2=\"87\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"151\" y1=\"3\" x2=\"151\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"215\" y1=\"3\" x2=\"215\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"279\" y1=\"3\" x2=\"279\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"343\" y1=\"3\" x2=\"343\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"407\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"45\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">운동</text><text x=\"119\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">축구</text><text x=\"183\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">피구</text><text x=\"247\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">줄넘기</text><text x=\"311\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">술래잡기</text><text x=\"375\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">합계</text><text x=\"45\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">학생 수(명)</text><text x=\"119\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"183\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">?</text><text x=\"247\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"311\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"375\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">21</text></svg>",
+   "answers": [
+    "7",
+    "7명"
+   ],
+   "why": "합계 21명에서 나머지를 빼면 21-6-5-3=7(명)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-02-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "좋아하는 간식을 조사한 표입니다. 표를 보고 알게 된 사실로 틀린 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 326 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"320\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"99\" y1=\"3\" x2=\"99\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"155\" y1=\"3\" x2=\"155\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"211\" y1=\"3\" x2=\"211\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"267\" y1=\"3\" x2=\"267\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"323\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"51\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">간식</text><text x=\"127\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">떡</text><text x=\"183\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">과자</text><text x=\"239\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">과일</text><text x=\"295\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">빵</text><text x=\"51\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">학생 수(명)</text><text x=\"127\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"183\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"239\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"295\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text></svg>",
+   "options": [
+    "가장 많은 학생이 좋아하는 간식은 과자이다",
+    "조사한 학생은 모두 18명이다",
+    "빵을 좋아하는 학생은 떡보다 1명 더 많다",
+    "과일을 좋아하는 학생이 가장 적다"
+   ],
+   "answer": 3,
+   "why": "가장 적은 것은 3명인 떡입니다. 과일은 5명으로 두 번째로 많습니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-02-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "처음 조사한 자료에서는 알 수 있지만, 그 자료를 정리한 표에서는 알 수 없는 것은 무엇인가요?",
+   "options": [
+    "가장 많은 학생이 좋아하는 계절",
+    "조사한 학생 수",
+    "봄을 좋아하는 학생 수",
+    "민지가 좋아하는 계절"
+   ],
+   "answer": 3,
+   "why": "표에는 계절별 학생 수만 있고 누가 무엇을 골랐는지는 없습니다. 그래서 민지가 고른 계절은 처음 자료에서만 알 수 있습니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-02-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "가지고 있는 학용품 수를 조사한 표입니다. 가장 많은 학용품과 가장 적은 학용품의 수의 차는 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 322 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"316\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"79\" y1=\"3\" x2=\"79\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"139\" y1=\"3\" x2=\"139\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"199\" y1=\"3\" x2=\"199\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"259\" y1=\"3\" x2=\"259\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"319\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"41\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">학용품</text><text x=\"109\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연필</text><text x=\"169\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">지우개</text><text x=\"229\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">자</text><text x=\"289\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">풀</text><text x=\"41\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수(개)</text><text x=\"109\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">9</text><text x=\"169\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"229\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"289\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text></svg>",
+   "answers": [
+    "6",
+    "6개"
+   ],
+   "why": "가장 많은 연필은 9개, 가장 적은 풀은 3개이므로 9-3=6(개)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-03-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "좋아하는 동물을 조사하여 ○를 이용한 그래프로 나타냈습니다. 가장 많은 학생이 좋아하는 동물은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 300 246\" font-family=\"sans-serif\"><text x=\"150\" y=\"20\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">좋아하는 동물</text><rect x=\"3\" y=\"30\" width=\"294\" height=\"210\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"47\" y1=\"30\" x2=\"47\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"60\" x2=\"297\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"90\" x2=\"297\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"120\" x2=\"297\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"150\" x2=\"297\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"180\" x2=\"297\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"210\" x2=\"297\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"109\" y1=\"30\" x2=\"109\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"171\" y1=\"30\" x2=\"171\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"233\" y1=\"30\" x2=\"233\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><text x=\"25\" y=\"200\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"25\" y=\"170\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"25\" y=\"140\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"25\" y=\"110\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"25\" y=\"80\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"25\" y=\"50\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"25\" y=\"230\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">(명)</text><text x=\"78\" y=\"230\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">강아지</text><circle cx=\"78\" cy=\"195\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"78\" cy=\"165\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"78\" cy=\"135\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"78\" cy=\"105\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"78\" cy=\"75\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"140\" y=\"230\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">고양이</text><circle cx=\"140\" cy=\"195\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"140\" cy=\"165\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"140\" cy=\"135\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"202\" y=\"230\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">토끼</text><circle cx=\"202\" cy=\"195\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"202\" cy=\"165\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"202\" cy=\"135\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"202\" cy=\"105\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"264\" y=\"230\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">햄스터</text><circle cx=\"264\" cy=\"195\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"264\" cy=\"165\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/></svg>",
+   "options": [
+    "고양이",
+    "강아지",
+    "토끼",
+    "햄스터"
+   ],
+   "answer": 1,
+   "why": "○가 가장 높이 올라간 강아지(5명)를 가장 많이 좋아합니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-03-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "표를 보고 ○를 이용한 그래프를 그리고 있습니다. 여름 칸에는 ○를 몇 개 그려야 하나요?",
+   "svg": "<svg viewBox=\"0 0 326 302\" font-family=\"sans-serif\"><g transform=\"translate(0 0)\"><rect x=\"3\" y=\"3\" width=\"320\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"99\" y1=\"3\" x2=\"99\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"155\" y1=\"3\" x2=\"155\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"211\" y1=\"3\" x2=\"211\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"267\" y1=\"3\" x2=\"267\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"323\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"51\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">계절</text><text x=\"127\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">봄</text><text x=\"183\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">여름</text><text x=\"239\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가을</text><text x=\"295\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">겨울</text><text x=\"51\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">학생 수(명)</text><text x=\"127\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"183\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"239\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"295\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text></g><g transform=\"translate(25 80)\"><rect x=\"3\" y=\"6\" width=\"270\" height=\"210\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"47\" y1=\"6\" x2=\"47\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"36\" x2=\"273\" y2=\"36\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"66\" x2=\"273\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"96\" x2=\"273\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"126\" x2=\"273\" y2=\"126\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"156\" x2=\"273\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"186\" x2=\"273\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"6\" x2=\"103\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"159\" y1=\"6\" x2=\"159\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"215\" y1=\"6\" x2=\"215\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><text x=\"25\" y=\"176\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"25\" y=\"146\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"25\" y=\"116\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"25\" y=\"86\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"25\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"25\" y=\"26\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"25\" y=\"206\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">(명)</text><text x=\"75\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">봄</text><circle cx=\"75\" cy=\"171\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"75\" cy=\"141\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"75\" cy=\"111\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"75\" cy=\"81\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"131\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">여름</text><text x=\"187\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가을</text><circle cx=\"187\" cy=\"171\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"187\" cy=\"141\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"187\" cy=\"111\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"243\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">겨울</text><circle cx=\"243\" cy=\"171\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"243\" cy=\"141\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"243\" cy=\"111\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"243\" cy=\"81\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"243\" cy=\"51\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/></g></svg>",
+   "answers": [
+    "6",
+    "6개",
+    "여섯 개"
+   ],
+   "why": "표에서 여름을 좋아하는 학생은 6명이므로 ○를 6개 그립니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-03-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "좋아하는 색깔을 조사한 그래프입니다. 노랑을 좋아하는 학생은 몇 명인가요?",
+   "svg": "<svg viewBox=\"0 0 276 192\" font-family=\"sans-serif\"><rect x=\"3\" y=\"6\" width=\"270\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"47\" y1=\"6\" x2=\"47\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"36\" x2=\"273\" y2=\"36\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"66\" x2=\"273\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"96\" x2=\"273\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"126\" x2=\"273\" y2=\"126\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"156\" x2=\"273\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"6\" x2=\"103\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"159\" y1=\"6\" x2=\"159\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"215\" y1=\"6\" x2=\"215\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><text x=\"25\" y=\"146\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"25\" y=\"116\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"25\" y=\"86\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"25\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"25\" y=\"26\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"25\" y=\"176\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">(명)</text><text x=\"75\" y=\"176\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">빨강</text><circle cx=\"75\" cy=\"141\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"75\" cy=\"111\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"75\" cy=\"81\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"75\" cy=\"51\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"131\" y=\"176\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">노랑</text><circle cx=\"131\" cy=\"141\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"131\" cy=\"111\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"187\" y=\"176\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">파랑</text><circle cx=\"187\" cy=\"141\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"187\" cy=\"111\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"187\" cy=\"81\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"187\" cy=\"51\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"187\" cy=\"21\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"243\" y=\"176\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">초록</text><circle cx=\"243\" cy=\"141\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"243\" cy=\"111\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"243\" cy=\"81\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/></svg>",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "answer": 0,
+   "why": "노랑 칸에 ○가 2개 있으므로 2명입니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-03-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "좋아하는 놀이 기구를 조사하여 /를 이용한 그래프로 나타냈습니다. 그네를 좋아하는 학생은 시소를 좋아하는 학생보다 몇 명 더 많은가요?",
+   "svg": "<svg viewBox=\"0 0 316 222\" font-family=\"sans-serif\"><rect x=\"3\" y=\"6\" width=\"310\" height=\"210\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"47\" y1=\"6\" x2=\"47\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"36\" x2=\"313\" y2=\"36\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"66\" x2=\"313\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"96\" x2=\"313\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"126\" x2=\"313\" y2=\"126\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"156\" x2=\"313\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"186\" x2=\"313\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"113\" y1=\"6\" x2=\"113\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"179\" y1=\"6\" x2=\"179\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"245\" y1=\"6\" x2=\"245\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><text x=\"25\" y=\"176\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"25\" y=\"146\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"25\" y=\"116\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"25\" y=\"86\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"25\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"25\" y=\"26\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"25\" y=\"206\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">(명)</text><text x=\"80\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">그네</text><line x1=\"71\" y1=\"180\" x2=\"89\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"71\" y1=\"150\" x2=\"89\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"71\" y1=\"120\" x2=\"89\" y2=\"102\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"71\" y1=\"90\" x2=\"89\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"71\" y1=\"60\" x2=\"89\" y2=\"42\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"71\" y1=\"30\" x2=\"89\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"146\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">미끄럼틀</text><line x1=\"137\" y1=\"180\" x2=\"155\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"137\" y1=\"150\" x2=\"155\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"137\" y1=\"120\" x2=\"155\" y2=\"102\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"137\" y1=\"90\" x2=\"155\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"212\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">시소</text><line x1=\"203\" y1=\"180\" x2=\"221\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"203\" y1=\"150\" x2=\"221\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"203\" y1=\"120\" x2=\"221\" y2=\"102\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"278\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">정글짐</text><line x1=\"269\" y1=\"180\" x2=\"287\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"269\" y1=\"150\" x2=\"287\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"269\" y1=\"120\" x2=\"287\" y2=\"102\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"269\" y1=\"90\" x2=\"287\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"269\" y1=\"60\" x2=\"287\" y2=\"42\" stroke=\"currentColor\" stroke-width=\"3\"/></svg>",
+   "options": [
+    "2",
+    "3",
+    "1",
+    "9"
+   ],
+   "answer": 1,
+   "why": "그네는 6명, 시소는 3명이므로 6-3=3(명) 더 많습니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-03-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "조사한 자료를 ○, ×, / 등을 이용한 그래프로 나타내면 좋은 점은 무엇인가요?",
+   "options": [
+    "조사한 학생의 이름을 알 수 있다",
+    "가장 많은 것과 가장 적은 것을 한눈에 비교하기 쉽다",
+    "자료를 따로 모으지 않아도 된다",
+    "조사한 내용이 저절로 바뀐다"
+   ],
+   "answer": 1,
+   "why": "그래프는 표시의 높이(길이)로 많고 적음을 한눈에 비교할 수 있습니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-03-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "받고 싶은 선물을 조사하여 ×를 이용한 그래프로 나타냈습니다. 3명보다 많은 학생이 받고 싶은 선물은 몇 가지인가요?",
+   "svg": "<svg viewBox=\"0 0 258 200\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"252\" height=\"192\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"195\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"163\" x2=\"255\" y2=\"163\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"35\" x2=\"255\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"3\" y1=\"67\" x2=\"255\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"3\" y1=\"99\" x2=\"255\" y2=\"99\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"3\" y1=\"131\" x2=\"255\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"195\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"133\" y1=\"3\" x2=\"133\" y2=\"195\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"163\" y1=\"3\" x2=\"163\" y2=\"195\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"195\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"223\" y1=\"3\" x2=\"223\" y2=\"195\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><text x=\"38\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">책</text><line x1=\"79\" y1=\"10\" x2=\"97\" y2=\"28\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"79\" y1=\"28\" x2=\"97\" y2=\"10\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"109\" y1=\"10\" x2=\"127\" y2=\"28\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"109\" y1=\"28\" x2=\"127\" y2=\"10\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"139\" y1=\"10\" x2=\"157\" y2=\"28\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"139\" y1=\"28\" x2=\"157\" y2=\"10\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"169\" y1=\"10\" x2=\"187\" y2=\"28\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"169\" y1=\"28\" x2=\"187\" y2=\"10\" stroke=\"#e07b39\" stroke-width=\"3\"/><text x=\"38\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">인형</text><line x1=\"79\" y1=\"42\" x2=\"97\" y2=\"60\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"79\" y1=\"60\" x2=\"97\" y2=\"42\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"109\" y1=\"42\" x2=\"127\" y2=\"60\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"109\" y1=\"60\" x2=\"127\" y2=\"42\" stroke=\"#e07b39\" stroke-width=\"3\"/><text x=\"38\" y=\"88\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">블록</text><line x1=\"79\" y1=\"74\" x2=\"97\" y2=\"92\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"79\" y1=\"92\" x2=\"97\" y2=\"74\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"109\" y1=\"74\" x2=\"127\" y2=\"92\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"109\" y1=\"92\" x2=\"127\" y2=\"74\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"139\" y1=\"74\" x2=\"157\" y2=\"92\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"139\" y1=\"92\" x2=\"157\" y2=\"74\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"169\" y1=\"74\" x2=\"187\" y2=\"92\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"169\" y1=\"92\" x2=\"187\" y2=\"74\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"199\" y1=\"74\" x2=\"217\" y2=\"92\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"199\" y1=\"92\" x2=\"217\" y2=\"74\" stroke=\"#e07b39\" stroke-width=\"3\"/><text x=\"38\" y=\"120\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공</text><line x1=\"79\" y1=\"106\" x2=\"97\" y2=\"124\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"79\" y1=\"124\" x2=\"97\" y2=\"106\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"109\" y1=\"106\" x2=\"127\" y2=\"124\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"109\" y1=\"124\" x2=\"127\" y2=\"106\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"139\" y1=\"106\" x2=\"157\" y2=\"124\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"139\" y1=\"124\" x2=\"157\" y2=\"106\" stroke=\"#e07b39\" stroke-width=\"3\"/><text x=\"38\" y=\"152\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">퍼즐</text><line x1=\"79\" y1=\"138\" x2=\"97\" y2=\"156\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"79\" y1=\"156\" x2=\"97\" y2=\"138\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"109\" y1=\"138\" x2=\"127\" y2=\"156\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"109\" y1=\"156\" x2=\"127\" y2=\"138\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"139\" y1=\"138\" x2=\"157\" y2=\"156\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"139\" y1=\"156\" x2=\"157\" y2=\"138\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"169\" y1=\"138\" x2=\"187\" y2=\"156\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"169\" y1=\"156\" x2=\"187\" y2=\"138\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"199\" y1=\"138\" x2=\"217\" y2=\"156\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"199\" y1=\"156\" x2=\"217\" y2=\"138\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"229\" y1=\"138\" x2=\"247\" y2=\"156\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"229\" y1=\"156\" x2=\"247\" y2=\"138\" stroke=\"#e07b39\" stroke-width=\"3\"/><text x=\"88\" y=\"184\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"118\" y=\"184\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"148\" y=\"184\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"178\" y=\"184\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"208\" y=\"184\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"238\" y=\"184\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"38\" y=\"184\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">(명)</text></svg>",
+   "answers": [
+    "3",
+    "3가지"
+   ],
+   "why": "3명보다 많은 것은 책(4명), 블록(5명), 퍼즐(6명)으로 3가지입니다. 공은 3명이라 들어가지 않습니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-03-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "학교에 오는 방법을 조사한 그래프입니다. 그래프를 보고 알 수 있는 내용으로 옳은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 292 220\" font-family=\"sans-serif\"><rect x=\"3\" y=\"6\" width=\"286\" height=\"208\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"47\" y1=\"6\" x2=\"47\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"32\" x2=\"289\" y2=\"32\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"58\" x2=\"289\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"84\" x2=\"289\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"110\" x2=\"289\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"136\" x2=\"289\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"162\" x2=\"289\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"188\" x2=\"289\" y2=\"188\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"107\" y1=\"6\" x2=\"107\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"167\" y1=\"6\" x2=\"167\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"227\" y1=\"6\" x2=\"227\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><text x=\"25\" y=\"180\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"25\" y=\"154\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"25\" y=\"128\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"25\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"25\" y=\"76\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"25\" y=\"50\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"25\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">7</text><text x=\"25\" y=\"206\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">(명)</text><text x=\"77\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">걸어서</text><circle cx=\"77\" cy=\"175\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"77\" cy=\"149\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"77\" cy=\"123\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"77\" cy=\"97\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"77\" cy=\"71\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"77\" cy=\"45\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"77\" cy=\"19\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"137\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">자전거</text><circle cx=\"137\" cy=\"175\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"137\" cy=\"149\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"137\" cy=\"123\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"197\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">버스</text><circle cx=\"197\" cy=\"175\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"197\" cy=\"149\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"197\" cy=\"123\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"197\" cy=\"97\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"257\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">자동차</text><circle cx=\"257\" cy=\"175\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"257\" cy=\"149\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/></svg>",
+   "options": [
+    "조사한 학생은 모두 15명이다",
+    "버스로 오는 학생이 자전거보다 2명 더 많다",
+    "걸어서 오는 학생이 가장 많다",
+    "자동차로 오는 학생이 가장 많다"
+   ],
+   "answer": 2,
+   "why": "걸어서 오는 학생이 7명으로 가장 많습니다. 모두 7+3+4+2=16(명)이고, 버스는 자전거보다 1명 더 많습니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-03-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "좋아하는 과일을 조사하여 그래프로 나타냈는데 잘못 그린 곳이 있습니다. 무엇이 잘못되었나요?",
+   "svg": "<svg viewBox=\"0 0 276 192\" font-family=\"sans-serif\"><rect x=\"3\" y=\"6\" width=\"270\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"47\" y1=\"6\" x2=\"47\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"36\" x2=\"273\" y2=\"36\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"66\" x2=\"273\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"96\" x2=\"273\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"126\" x2=\"273\" y2=\"126\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"156\" x2=\"273\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"6\" x2=\"103\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"159\" y1=\"6\" x2=\"159\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"215\" y1=\"6\" x2=\"215\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><text x=\"25\" y=\"146\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"25\" y=\"116\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"25\" y=\"86\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"25\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"25\" y=\"26\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"25\" y=\"176\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">(명)</text><text x=\"75\" y=\"176\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">사과</text><circle cx=\"75\" cy=\"141\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"75\" cy=\"111\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"75\" cy=\"81\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"131\" y=\"176\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">배</text><circle cx=\"131\" cy=\"141\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"131\" cy=\"81\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"131\" cy=\"51\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"131\" cy=\"21\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"187\" y=\"176\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">포도</text><circle cx=\"187\" cy=\"141\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"187\" cy=\"111\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"243\" y=\"176\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">감</text><circle cx=\"243\" cy=\"141\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"243\" cy=\"111\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"243\" cy=\"81\" r=\"9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/></svg>",
+   "options": [
+    "배 칸의 ○를 아래에서부터 빈칸 없이 채우지 않았다",
+    "사과 칸에 ○를 너무 많이 그렸다",
+    "○ 대신 ×를 그려야 한다",
+    "가로에 과일 이름을 쓰면 안 된다"
+   ],
+   "answer": 0,
+   "why": "○는 아래에서부터 한 칸에 하나씩 빈칸 없이 그려야 합니다. 배 칸은 중간이 비어 있어 높이로 비교하기 어렵습니다."
+  },
+  {
+   "id": "수학-초1-2-2수04-03-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "자료와 가능성",
+   "standard": "2수04-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "2주일(14일) 동안의 날씨를 그래프로 나타냈는데 ‘비’ 칸이 지워졌습니다. 비가 온 날은 며칠인가요?",
+   "svg": "<svg viewBox=\"0 0 276 222\" font-family=\"sans-serif\"><rect x=\"3\" y=\"6\" width=\"270\" height=\"210\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"47\" y1=\"6\" x2=\"47\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"36\" x2=\"273\" y2=\"36\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"66\" x2=\"273\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"96\" x2=\"273\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"126\" x2=\"273\" y2=\"126\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"156\" x2=\"273\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.4\"/><line x1=\"3\" y1=\"186\" x2=\"273\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"6\" x2=\"103\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"159\" y1=\"6\" x2=\"159\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><line x1=\"215\" y1=\"6\" x2=\"215\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><text x=\"25\" y=\"176\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"25\" y=\"146\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"25\" y=\"116\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"25\" y=\"86\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"25\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"25\" y=\"26\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"25\" y=\"206\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">(명)</text><text x=\"75\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">맑음</text><line x1=\"66\" y1=\"180\" x2=\"84\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"66\" y1=\"150\" x2=\"84\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"66\" y1=\"120\" x2=\"84\" y2=\"102\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"66\" y1=\"90\" x2=\"84\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"66\" y1=\"60\" x2=\"84\" y2=\"42\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"66\" y1=\"30\" x2=\"84\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"131\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">흐림</text><line x1=\"122\" y1=\"180\" x2=\"140\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"122\" y1=\"150\" x2=\"140\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"122\" y1=\"120\" x2=\"140\" y2=\"102\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"122\" y1=\"90\" x2=\"140\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"187\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">비</text><text x=\"243\" y=\"206\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">눈</text><line x1=\"234\" y1=\"180\" x2=\"252\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"3\"/></svg>",
+   "answers": [
+    "3",
+    "3일"
+   ],
+   "why": "맑음 6일, 흐림 4일, 눈 1일을 더하면 11일입니다. 14-11=3이므로 비가 온 날은 3일입니다."
+  }
+ ],
+ "skipped": []
+}

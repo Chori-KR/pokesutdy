@@ -531,3 +531,69 @@ def crossed_items(n, crossed, kind="circle", r=12):
         if i >= n - crossed:
             out.append(line(cx - r - 3, cy + r + 3, cx + r + 3, cy - r - 3, 3, color=ORANGE))
     return svg(per * cs + 14, rows * cs + 12, "".join(out))
+
+
+# ── ○, ×, / 그래프 ─────────────────────────────────────
+def _mark(kind, cx, cy, r=9):
+    if kind == "○":
+        return f'<circle cx="{_n(cx)}" cy="{_n(cy)}" r="{r}" fill="none" stroke="{BLUE}" stroke-width="3"/>'
+    if kind == "×":
+        return line(cx - r, cy - r, cx + r, cy + r, 3, color=ORANGE) + line(cx - r, cy + r, cx + r, cy - r, 3, color=ORANGE)
+    return line(cx - r, cy + r, cx + r, cy - r, 3)
+
+
+def ox_graph(cats, vals, maxn, kind="○", title=None, cw=50, rh=30, skip=None, unit="명"):
+    """세로 그래프: 아래에서부터 kind 표시. skip={(열, 칸)} 은 비워 둠(잘못 그린 예)"""
+    n = len(cats)
+    lw = 44
+    top = 30 if title else 6
+    W = lw + cw * n + 8
+    H = top + rh * (maxn + 1) + 6
+    out = []
+    if title:
+        out.append(text(W / 2, 20, title, 14, weight="bold"))
+    out.append(f'<rect x="3" y="{top}" width="{W - 6}" height="{rh * (maxn + 1)}" fill="none" stroke="{C}" stroke-width="2"/>')
+    out.append(line(3 + lw, top, 3 + lw, top + rh * (maxn + 1), 2))
+    for k in range(1, maxn + 1):
+        y = top + rh * k
+        out.append(line(3, y, W - 3, y, 2 if k == maxn else 1.5, None if k == maxn else 0.4))
+    for i in range(1, n):
+        out.append(line(3 + lw + cw * i, top, 3 + lw + cw * i, top + rh * (maxn + 1), 1.5, 0.6))
+    for k in range(1, maxn + 1):
+        out.append(text(3 + lw / 2, top + rh * (maxn - k) + rh / 2 + 5, k, 13))
+    out.append(text(3 + lw / 2, top + rh * maxn + rh / 2 + 5, f"({unit})", 12))
+    for i, (c, v) in enumerate(zip(cats, vals)):
+        cx = 3 + lw + cw * (i + 0.5)
+        out.append(text(cx, top + rh * maxn + rh / 2 + 5, c, 13, weight="bold"))
+        drawn = 0
+        k = 0
+        while drawn < v:
+            if skip and (i, k) in skip:
+                k += 1
+                continue
+            out.append(_mark(kind, cx, top + rh * (maxn - 1 - k) + rh / 2))
+            drawn += 1
+            k += 1
+    return svg(W, H, "".join(out))
+
+
+def ox_graph_h(cats, vals, maxn, kind="×", cw=30, rh=32, lw=70, unit="명"):
+    """가로 그래프: 왼쪽에서부터 kind 표시"""
+    n = len(cats)
+    W = lw + cw * maxn + 8
+    H = rh * (n + 1) + 8
+    out = [f'<rect x="3" y="3" width="{W - 6}" height="{rh * (n + 1)}" fill="none" stroke="{C}" stroke-width="2"/>',
+           line(3 + lw, 3, 3 + lw, 3 + rh * (n + 1), 2), line(3, 3 + rh * n, W - 3, 3 + rh * n, 2)]
+    for i in range(1, n):
+        out.append(line(3, 3 + rh * i, W - 3, 3 + rh * i, 1.5, 0.6))
+    for k in range(1, maxn):
+        out.append(line(3 + lw + cw * k, 3, 3 + lw + cw * k, 3 + rh * (n + 1), 1.5, 0.4))
+    for i, (c, v) in enumerate(zip(cats, vals)):
+        cy = 3 + rh * (i + 0.5)
+        out.append(text(3 + lw / 2, cy + 5, c, 13, weight="bold"))
+        for k in range(v):
+            out.append(_mark(kind, 3 + lw + cw * (k + 0.5), cy))
+    for k in range(1, maxn + 1):
+        out.append(text(3 + lw + cw * (k - 0.5), 3 + rh * n + rh / 2 + 5, k, 13))
+    out.append(text(3 + lw / 2, 3 + rh * n + rh / 2 + 5, f"({unit})", 12))
+    return svg(W, H, "".join(out))
