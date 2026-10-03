@@ -212,7 +212,7 @@ def area_fig(kind, base, h, s=16, texts=None, extra=None, fill=True):
     texts={'base':'6 cm','h':'4 cm','top':'3 cm','d1':'..','d2':'..'}"""
     texts = texts or {}
     bw, hh = base * s, h * s
-    x0, y0 = 30, 20
+    x0, y0 = 30, 28
     fo = f' fill="{BLUE}" fill-opacity="0.18"' if fill else ' fill="none"'
     out = []
     if kind == "parallelogram":
@@ -226,14 +226,14 @@ def area_fig(kind, base, h, s=16, texts=None, extra=None, fill=True):
         bx, hx2 = (x0 + bw / 2, y0 + hh + 20), (hx + 6, y0 + hh / 2 + 5)
         ha = "start"
     elif kind == "triangle":
-        ap = x0 + bw * 0.6
+        ap = x0 + bw * 0.12
         pts = [(ap, y0), (x0 + bw, y0 + hh), (x0, y0 + hh)]
         out.append(f'<polygon points="{P(pts)}"{fo} {ST}/>')
         out.append(f'<line x1="{_n(ap)}" y1="{y0}" x2="{_n(ap)}" y2="{_n(y0 + hh)}" {DASH}/>')
         out.append(_right((ap, y0 + hh), (ap, y0), (ap + 20, y0 + hh)))
         W = x0 + bw + 30
-        bx, hx2 = (x0 + bw / 2, y0 + hh + 20), (ap - 6, y0 + hh / 2 + 5)
-        ha = "end"
+        bx, hx2 = (x0 + bw / 2, y0 + hh + 20), (ap + 6, y0 + hh / 2 + 5)
+        ha = "start"
     elif kind == "trapezoid":
         tw = (extra or base * 0.5) * s
         off = (bw - tw) / 2 - 8
@@ -244,8 +244,8 @@ def area_fig(kind, base, h, s=16, texts=None, extra=None, fill=True):
         out.append(_right((hx, y0 + hh), (hx, y0), (hx + 20, y0 + hh)))
         out.append(text(x0 + off + tw / 2, y0 - 6, texts.get("top", ""), 13, weight="bold"))
         W = x0 + bw + 30
-        bx, hx2 = (x0 + bw / 2, y0 + hh + 20), (hx + 6, y0 + hh / 2 + 5)
-        ha = "start"
+        bx, hx2 = (x0 + bw / 2, y0 + hh + 20), (hx - 6, y0 + hh / 2 + 5)
+        ha = "end"
     elif kind == "rhombus":
         d2 = (extra or base) * s
         cx, cy = x0 + bw / 2, y0 + hh / 2
@@ -256,10 +256,10 @@ def area_fig(kind, base, h, s=16, texts=None, extra=None, fill=True):
         out.append(f'<line x1="{_n(cx - bw / 2)}" y1="{_n(cy)}" x2="{_n(cx + bw / 2)}" y2="{_n(cy)}" {DASH}/>')
         out.append(f'<line x1="{_n(cx)}" y1="{_n(cy - hh / 2)}" x2="{_n(cx)}" y2="{_n(cy + hh / 2)}" {DASH}/>')
         out.append(_right((cx, cy), (cx, cy - 12), (cx + 12, cy)))
-        W = x0 + bw + 30
+        W = x0 + bw + 60
         bx, hx2 = (cx, cy + hh / 2 + 20), (cx - 8, cy - hh / 4)
-        out.append(text(cx + bw / 4, cy + 18, texts.get("d1", ""), 13, weight="bold"))
-        out.append(text(cx + 6, cy - hh / 4 + 4, texts.get("d2", ""), 13, "start", "bold"))
+        out.append(text(cx + bw / 2 + 6, cy + 5, texts.get("d1", ""), 13, "start", "bold"))
+        out.append(text(cx + 8, cy - hh / 2 - 4, texts.get("d2", ""), 13, "start", "bold"))
         return svg(_n(W), _n(y0 + hh + 28), "".join(out))
     else:  # rect
         out.append(f'<rect x="{x0}" y="{y0}" width="{_n(bw)}" height="{_n(hh)}"{fo} {ST}/>')
@@ -338,3 +338,71 @@ def cong_pair(P1, P2, names1=None, names2=None, W=None, H=None):
                 L = math.hypot(dx, dy) or 1
                 out.append(text(q[0] + dx / L * 14, q[1] + dy / L * 14 + 5, nm, 14, weight="bold"))
     return svg(_n(W or (max(xs) - min(xs) + 48)), _n(H or (max(ys) - min(ys) + 48)), "".join(out))
+
+
+def stack_cells(grid):
+    """grid[행(앞→뒤)][열(왼→오)] = 높이 → blocks()에 쓸 (x,y,z) 집합. y=0이 맨 앞줄"""
+    cells = set()
+    for y, row in enumerate(grid):
+        for x, hgt in enumerate(row):
+            for z in range(hgt):
+                cells.add((x, y, z))
+    return cells
+
+
+def top_grid(grid, g=34, hide=None, title=None):
+    """위에서 본 모양: 각 칸에 쌓은 개수. grid[0]이 맨 앞줄(그림에서는 아래쪽). hide=(행,열)이면 ? 표시"""
+    rows, cols = len(grid), len(grid[0])
+    out = []
+    for yi, row in enumerate(grid):
+        ry = rows - 1 - yi  # 앞줄이 아래
+        for xi, v in enumerate(row):
+            if v == 0:
+                continue
+            out.append(f'<rect x="{4 + xi * g}" y="{4 + ry * g}" width="{g}" height="{g}" fill="{BLUE}" fill-opacity="0.22" {ST}/>')
+            lab = "?" if hide == (yi, xi) else str(v)
+            out.append(text(4 + xi * g + g / 2, 4 + ry * g + g / 2 + 6, lab, 17, weight="bold"))
+    H = rows * g + 8 + (22 if title else 0)
+    if title:
+        out.append(text(4 + cols * g / 2, H - 6, title, 14, weight="bold"))
+    return svg(cols * g + 8, H, "".join(out))
+
+
+def skyline(heights, g=26, title=None):
+    """앞(또는 옆)에서 본 모양: 열마다 쌓인 높이"""
+    cols = len(heights)
+    mh = max(heights)
+    out = []
+    for xi, hgt in enumerate(heights):
+        for z in range(hgt):
+            out.append(f'<rect x="{4 + xi * g}" y="{4 + (mh - 1 - z) * g}" width="{g}" height="{g}" fill="{BLUE}" fill-opacity="0.22" {ST}/>')
+    H = mh * g + 8 + (22 if title else 0)
+    if title:
+        out.append(text(4 + cols * g / 2, H - 6, title, 14, weight="bold"))
+    return svg(cols * g + 8, H, "".join(out))
+
+
+def l_shape(a, b, c, d, s=14, labels=True):
+    """ㄱ자(L) 모양: 가로 a, 세로 b인 큰 직사각형에서 오른쪽 위를 가로 c, 세로 d만큼 잘라 낸 도형. 변 길이를 표시"""
+    x0, y0 = 52, 26
+    A, B, Cc, Dd = a * s, b * s, c * s, d * s
+    pts = [(x0, y0), (x0 + A - Cc, y0), (x0 + A - Cc, y0 + Dd), (x0 + A, y0 + Dd), (x0 + A, y0 + B), (x0, y0 + B)]
+    out = [f'<polygon points="{P(pts)}" fill="{BLUE}" fill-opacity="0.18" {ST}/>']
+    if labels:
+        out.append(text(x0 + A / 2, y0 + B + 18, f"{a} cm", 13, weight="bold"))
+        out.append(text(x0 - 6, y0 + B / 2 + 5, f"{b} cm", 13, "end", "bold"))
+        out.append(text(x0 + (A - Cc) / 2, y0 - 6, f"{a - c} cm", 13, weight="bold"))
+        out.append(text(x0 + A - Cc - 6, y0 + Dd / 2 + 5, f"{d} cm", 13, "end", "bold"))
+        out.append(text(x0 + A - Cc / 2, y0 + Dd - 6, f"{c} cm", 13, weight="bold"))
+        out.append(text(x0 + A + 6, y0 + Dd + (B - Dd) / 2 + 5, f"{b - d} cm", 13, "start", "bold"))
+    return svg(_n(x0 + A + 62), _n(y0 + B + 30), "".join(out))
+
+
+def rect_fig(w, h, wt=None, ht=None, s=16, fill=True):
+    x0, y0 = 40, 16
+    out = [f'<rect x="{x0}" y="{y0}" width="{_n(w * s)}" height="{_n(h * s)}" fill="{BLUE if fill else "none"}" fill-opacity="0.18" {ST}/>']
+    if wt:
+        out.append(text(x0 + w * s / 2, y0 + h * s + 18, wt, 13, weight="bold"))
+    if ht:
+        out.append(text(x0 - 6, y0 + h * s / 2 + 5, ht, 13, "end", "bold"))
+    return svg(_n(x0 + w * s + 16), _n(y0 + h * s + 30), "".join(out))

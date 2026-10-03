@@ -6,6 +6,7 @@ from svgkit import svg, text, line, table, BLUE, ORANGE, C, _n
 from kit_ko import KoBank, report
 from kit34 import hold
 from kit56 import *
+from kit12 import blocks
 
 def cm(n):
     return f"${n}\\,\\mathrm{{cm}}$"

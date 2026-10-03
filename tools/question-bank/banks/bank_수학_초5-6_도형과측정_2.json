@@ -1,0 +1,1205 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "초",
+  "course": "수학",
+  "gradeBand": "초5-6",
+  "unit": "도형과 측정",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-초5-6-6수03-08-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원기둥의 전개도에서 옆면은 어떤 모양인가요?",
+   "svg": "<svg viewBox=\"0 0 141.7 154\" font-family=\"sans-serif\"><rect x=\"8\" y=\"52\" width=\"125.7\" height=\"50\" fill=\"#4b7bec\" fill-opacity=\"0.15\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"34\" cy=\"28\" r=\"20\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"34\" cy=\"126\" r=\"20\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"70.8\" y=\"82\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">옆면</text></svg>",
+   "options": [
+    "삼각형",
+    "원",
+    "직사각형",
+    "부채꼴"
+   ],
+   "answer": 2,
+   "why": "원기둥의 옆면을 펼치면 직사각형이 됩니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-08-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "원기둥의 전개도에서 원은 모두 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 141.7 144\" font-family=\"sans-serif\"><rect x=\"8\" y=\"52\" width=\"125.7\" height=\"40\" fill=\"#4b7bec\" fill-opacity=\"0.15\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"34\" cy=\"28\" r=\"20\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"34\" cy=\"116\" r=\"20\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"70.8\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">옆면</text></svg>",
+   "answers": [
+    "2",
+    "2개",
+    "두 개"
+   ],
+   "why": "원기둥의 두 밑면이 원이므로 전개도에는 원이 2개 있습니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-08-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원기둥의 전개도를 이루는 도형을 바르게 짝지은 것은 무엇인가요?",
+   "options": [
+    "원 2개와 직사각형 1개",
+    "원 1개와 직사각형 2개",
+    "원 2개와 삼각형 1개",
+    "직사각형 6개"
+   ],
+   "answer": 0,
+   "why": "원기둥의 전개도는 밑면인 원 2개와 옆면인 직사각형 1개로 이루어집니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-08-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "원기둥의 전개도에서 옆면인 직사각형의 세로가 7 cm입니다. 이 원기둥의 높이는 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 141.7 174\" font-family=\"sans-serif\"><rect x=\"8\" y=\"52\" width=\"125.7\" height=\"70\" fill=\"#4b7bec\" fill-opacity=\"0.15\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"34\" cy=\"28\" r=\"20\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"34\" cy=\"146\" r=\"20\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"70.8\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">옆면</text></svg>",
+   "answers": [
+    "7",
+    "7cm",
+    "7 cm"
+   ],
+   "why": "옆면의 세로는 원기둥의 높이와 같으므로 7 cm입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-08-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "원기둥의 밑면의 둘레가 18 cm입니다. 전개도에서 옆면인 직사각형의 가로는 몇 cm인가요?",
+   "answers": [
+    "18",
+    "18cm",
+    "18 cm"
+   ],
+   "why": "옆면의 가로는 밑면의 둘레와 같으므로 18 cm입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-08-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "원기둥의 전개도에서 옆면의 가로와 길이가 같은 것은 무엇인가요?",
+   "options": [
+    "원기둥의 높이",
+    "밑면인 원의 지름",
+    "밑면인 원의 반지름",
+    "밑면인 원의 둘레"
+   ],
+   "answer": 3,
+   "why": "옆면을 말아서 밑면에 맞닿게 하므로 옆면의 가로는 밑면의 둘레와 같습니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-08-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "원기둥의 전개도에서 옆면의 가로가 25 cm, 세로가 8 cm입니다. 옆면의 넓이는 몇 cm²인가요?",
+   "answers": [
+    "200",
+    "200cm²",
+    "200 cm²",
+    "200cm2"
+   ],
+   "why": "옆면은 가로 25 cm, 세로 8 cm인 직사각형이므로 25×8=200(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-08-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "밑면의 둘레가 15 cm, 높이가 4 cm인 원기둥의 옆면을 직사각형으로 펼쳤습니다. 이 직사각형의 둘레는 몇 cm인가요?",
+   "options": [
+    "$19\\,\\mathrm{cm}$",
+    "$38\\,\\mathrm{cm}$",
+    "$60\\,\\mathrm{cm}$",
+    "$30\\,\\mathrm{cm}$"
+   ],
+   "answer": 1,
+   "why": "가로가 15 cm, 세로가 4 cm이므로 둘레는 (15+4)×2=38(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-08-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "원기둥의 전개도를 그리는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "옆면을 원으로 그리고 위·아래에 직사각형을 붙인다",
+    "옆면 직사각형의 가로를 밑면의 둘레와 같게 그리고 위·아래에 밑면인 원을 붙인다",
+    "옆면 직사각형의 세로를 밑면의 둘레와 같게 그린다",
+    "밑면을 한 개만 그린다"
+   ],
+   "answer": 1,
+   "why": "옆면의 가로는 밑면의 둘레, 세로는 높이로 그리고 밑면 두 개를 옆면에 붙입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-09-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "쌓기나무를 2×2로 한 층 쌓았습니다. 사용한 쌓기나무는 모두 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 110 98\" font-family=\"sans-serif\"><rect x=\"25\" y=\"22\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,22 40,10 70,10 55,22\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,22 40,10 70,10 55,22\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"55,22 70,10 70,40 55,52\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,22 70,10 70,40 55,52\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"55\" y=\"22\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,22 70,10 100,10 85,22\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,22 70,10 100,10 85,22\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"85,22 100,10 100,40 85,52\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"85,22 100,10 100,40 85,52\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"10\" y=\"34\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,34 25,22 55,22 40,34\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,34 25,22 55,22 40,34\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"40,34 55,22 55,52 40,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,34 55,22 55,52 40,64\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"40\" y=\"34\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,34 55,22 85,22 70,34\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,34 55,22 85,22 70,34\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"70,34 85,22 85,52 70,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,34 85,22 85,52 70,64\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><text x=\"40\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">▲ 앞</text></svg>",
+   "options": [
+    "8",
+    "3",
+    "5",
+    "4"
+   ],
+   "answer": 3,
+   "why": "한 층에 2개씩 2줄로 놓았으므로 4개입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-09-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "쌓기나무를 1층에 4개 놓고 그 위에 더 쌓았습니다. 사용한 쌓기나무는 모두 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 110 128\" font-family=\"sans-serif\"><rect x=\"25\" y=\"52\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,52 40,40 70,40 55,52\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,52 40,40 70,40 55,52\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"55,52 70,40 70,70 55,82\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,52 70,40 70,70 55,82\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"55\" y=\"52\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,52 70,40 100,40 85,52\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,52 70,40 100,40 85,52\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"85,52 100,40 100,70 85,82\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"85,52 100,40 100,70 85,82\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"10\" y=\"64\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,64 25,52 55,52 40,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,64 25,52 55,52 40,64\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"40,64 55,52 55,82 40,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,64 55,52 55,82 40,94\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"40\" y=\"64\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,64 55,52 85,52 70,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,64 55,52 85,52 70,64\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"70,64 85,52 85,82 70,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,64 85,52 85,82 70,94\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"10\" y=\"34\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,34 25,22 55,22 40,34\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,34 25,22 55,22 40,34\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"40,34 55,22 55,52 40,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,34 55,22 55,52 40,64\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><text x=\"40\" y=\"122\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">▲ 앞</text></svg>",
+   "options": [
+    "5",
+    "4",
+    "6",
+    "3"
+   ],
+   "answer": 0,
+   "why": "1층에 4개, 2층에 1개를 쌓았으므로 5개입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-09-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "위에서 본 모양의 칸마다 쌓은 쌓기나무 수가 2, 1, 1, 1, 3, 1입니다. 쌓기나무는 모두 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 110 76\" font-family=\"sans-serif\"><rect x=\"4\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"38\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"72\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"4\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"38\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><rect x=\"72\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text></svg>",
+   "answers": [
+    "9",
+    "9개"
+   ],
+   "why": "각 칸의 수를 모두 더하면 2+1+1+1+3+1=9(개)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-09-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "위에서 본 모양 위에 칸마다 쌓은 개수를 써 놓았습니다. 3줄로 쌓은 이 모양의 쌓기나무는 모두 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 76 110\" font-family=\"sans-serif\"><rect x=\"4\" y=\"72\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"95\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><rect x=\"38\" y=\"72\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"95\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"4\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"38\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"4\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"38\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text></svg>",
+   "answers": [
+    "10",
+    "10개"
+   ],
+   "why": "3+1+2+2+1+1=10(개)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-09-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "앞줄과 뒷줄에 높이가 다르게 쌓은 쌓기나무입니다. 사용한 쌓기나무는 모두 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 110 128\" font-family=\"sans-serif\"><rect x=\"25\" y=\"52\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,52 40,40 70,40 55,52\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,52 40,40 70,40 55,52\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"55,52 70,40 70,70 55,82\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,52 70,40 70,70 55,82\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"55\" y=\"52\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,52 70,40 100,40 85,52\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,52 70,40 100,40 85,52\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"85,52 100,40 100,70 85,82\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"85,52 100,40 100,70 85,82\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"55\" y=\"22\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,22 70,10 100,10 85,22\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,22 70,10 100,10 85,22\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"85,22 100,10 100,40 85,52\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"85,22 100,10 100,40 85,52\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"10\" y=\"64\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,64 25,52 55,52 40,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,64 25,52 55,52 40,64\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"40,64 55,52 55,82 40,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,64 55,52 55,82 40,94\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"40\" y=\"64\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,64 55,52 85,52 70,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,64 55,52 85,52 70,64\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"70,64 85,52 85,82 70,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,64 85,52 85,82 70,94\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"10\" y=\"34\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,34 25,22 55,22 40,34\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,34 25,22 55,22 40,34\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"40,34 55,22 55,52 40,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,34 55,22 55,52 40,64\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"40\" y=\"34\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,34 55,22 85,22 70,34\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,34 55,22 85,22 70,34\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"70,34 85,22 85,52 70,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,34 85,22 85,52 70,64\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><text x=\"40\" y=\"122\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">▲ 앞</text></svg>",
+   "options": [
+    "6",
+    "5",
+    "7",
+    "8"
+   ],
+   "answer": 2,
+   "why": "앞줄에 2개와 2개, 뒷줄에 1개와 2개를 쌓았으므로 2+2+1+2=7(개)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-09-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "쌓기나무 12개로 가로 3개, 세로 2개, 높이 2개인 직육면체를 만들려고 합니다. 지금 8개를 쌓았다면 몇 개를 더 쌓아야 하나요?",
+   "options": [
+    "8",
+    "3",
+    "6",
+    "4"
+   ],
+   "answer": 3,
+   "why": "직육면체를 만드는 데 필요한 쌓기나무는 3×2×2=12(개)이므로 12-8=4(개)를 더 쌓아야 합니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-09-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "위에서 본 모양의 각 칸에 쌓은 쌓기나무의 수를 써 놓았는데 한 칸이 가려져 있습니다. 쌓기나무가 모두 10개일 때 ?에 알맞은 수를 구하세요.",
+   "svg": "<svg viewBox=\"0 0 110 76\" font-family=\"sans-serif\"><rect x=\"4\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"38\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"72\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"4\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"38\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><rect x=\"72\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text></svg>",
+   "answers": [
+    "3",
+    "3개"
+   ],
+   "why": "가려진 칸을 제외한 수의 합은 7이므로 ?는 10-7=3입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-09-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "3줄로 쌓은 쌓기나무의 모양입니다. 맨 앞줄부터 층수를 살펴 사용한 쌓기나무는 모두 몇 개인지 구하세요.",
+   "svg": "<svg viewBox=\"0 0 155 170\" font-family=\"sans-serif\"><rect x=\"40\" y=\"82\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,82 55,70 85,70 70,82\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,82 55,70 85,70 70,82\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"70,82 85,70 85,100 70,112\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,82 85,70 85,100 70,112\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"70\" y=\"82\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,82 85,70 115,70 100,82\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,82 85,70 115,70 100,82\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"100,82 115,70 115,100 100,112\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"100,82 115,70 115,100 100,112\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"100\" y=\"82\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"100,82 115,70 145,70 130,82\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"100,82 115,70 145,70 130,82\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"130,82 145,70 145,100 130,112\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"130,82 145,70 145,100 130,112\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"25\" y=\"94\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,94 40,82 70,82 55,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,94 40,82 70,82 55,94\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"55,94 70,82 70,112 55,124\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,94 70,82 70,112 55,124\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"55\" y=\"94\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,94 70,82 100,82 85,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,94 70,82 100,82 85,94\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"85,94 100,82 100,112 85,124\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"85,94 100,82 100,112 85,124\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"85\" y=\"94\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"85,94 100,82 130,82 115,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"85,94 100,82 130,82 115,94\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"115,94 130,82 130,112 115,124\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"115,94 130,82 130,112 115,124\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"25\" y=\"64\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,64 40,52 70,52 55,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,64 40,52 70,52 55,64\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"55,64 70,52 70,82 55,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,64 70,52 70,82 55,94\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"55\" y=\"64\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,64 70,52 100,52 85,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,64 70,52 100,52 85,64\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"85,64 100,52 100,82 85,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"85,64 100,52 100,82 85,94\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"10\" y=\"106\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,106 25,94 55,94 40,106\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,106 25,94 55,94 40,106\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"40,106 55,94 55,124 40,136\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,106 55,94 55,124 40,136\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"40\" y=\"106\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,106 55,94 85,94 70,106\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,106 55,94 85,94 70,106\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"70,106 85,94 85,124 70,136\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,106 85,94 85,124 70,136\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"70\" y=\"106\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,106 85,94 115,94 100,106\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,106 85,94 115,94 100,106\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"100,106 115,94 115,124 100,136\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"100,106 115,94 115,124 100,136\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"10\" y=\"76\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,76 25,64 55,64 40,76\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,76 25,64 55,64 40,76\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"40,76 55,64 55,94 40,106\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,76 55,64 55,94 40,106\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"10\" y=\"46\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,46 25,34 55,34 40,46\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,46 25,34 55,34 40,46\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"40,46 55,34 55,64 40,76\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,46 55,34 55,64 40,76\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><text x=\"55\" y=\"164\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">▲ 앞</text></svg>",
+   "options": [
+    "11",
+    "13",
+    "12",
+    "14"
+   ],
+   "answer": 1,
+   "why": "각 칸의 쌓기나무를 더하면 3+1+1+2+2+1+1+1+1=13(개)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-09-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한 모서리에 3개씩 쌓은 큰 정육면체(쌓기나무 27개)를 만들려고 합니다. 위에서 본 모양의 칸 수가 아래와 같을 때 더 필요한 쌓기나무는 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 110 110\" font-family=\"sans-serif\"><rect x=\"4\" y=\"72\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"95\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><rect x=\"38\" y=\"72\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"95\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><rect x=\"72\" y=\"72\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"95\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><rect x=\"4\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><rect x=\"38\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"72\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"4\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"38\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"72\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text></svg>",
+   "options": [
+    "8",
+    "4",
+    "6",
+    "10"
+   ],
+   "answer": 2,
+   "why": "지금 쌓은 쌓기나무는 21개이므로 27-21=6(개)가 더 필요합니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-10-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "쌓기나무로 만든 모양을 위에서 보았을 때 쌓기나무가 놓인 칸은 모두 몇 칸인가요?",
+   "svg": "<svg viewBox=\"0 0 110 128\" font-family=\"sans-serif\"><rect x=\"25\" y=\"52\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,52 40,40 70,40 55,52\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,52 40,40 70,40 55,52\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"55,52 70,40 70,70 55,82\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,52 70,40 70,70 55,82\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"55\" y=\"52\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,52 70,40 100,40 85,52\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,52 70,40 100,40 85,52\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"85,52 100,40 100,70 85,82\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"85,52 100,40 100,70 85,82\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"10\" y=\"64\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,64 25,52 55,52 40,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,64 25,52 55,52 40,64\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"40,64 55,52 55,82 40,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,64 55,52 55,82 40,94\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"40\" y=\"64\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,64 55,52 85,52 70,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,64 55,52 85,52 70,64\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"70,64 85,52 85,82 70,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,64 85,52 85,82 70,94\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"40\" y=\"34\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,34 55,22 85,22 70,34\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,34 55,22 85,22 70,34\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"70,34 85,22 85,52 70,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,34 85,22 85,52 70,64\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><text x=\"40\" y=\"122\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">▲ 앞</text></svg>",
+   "options": [
+    "4",
+    "5",
+    "3",
+    "2"
+   ],
+   "answer": 0,
+   "why": "위에서 보면 2줄에 2칸씩 모두 4칸에 쌓기나무가 있습니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-10-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "쌓기나무로 만든 모양을 앞에서 보았을 때 가장 높은 곳은 몇 층인가요?",
+   "svg": "<svg viewBox=\"0 0 110 158\" font-family=\"sans-serif\"><rect x=\"25\" y=\"82\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,82 40,70 70,70 55,82\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,82 40,70 70,70 55,82\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"55,82 70,70 70,100 55,112\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,82 70,70 70,100 55,112\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"55\" y=\"82\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,82 70,70 100,70 85,82\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,82 70,70 100,70 85,82\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"85,82 100,70 100,100 85,112\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"85,82 100,70 100,100 85,112\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"25\" y=\"52\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,52 40,40 70,40 55,52\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"25,52 40,40 70,40 55,52\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"55,52 70,40 70,70 55,82\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"55,52 70,40 70,70 55,82\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"10\" y=\"94\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,94 25,82 55,82 40,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,94 25,82 55,82 40,94\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"40,94 55,82 55,112 40,124\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,94 55,82 55,112 40,124\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"40\" y=\"94\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,94 55,82 85,82 70,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,94 55,82 85,82 70,94\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"70,94 85,82 85,112 70,124\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,94 85,82 85,112 70,124\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"40\" y=\"64\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,64 55,52 85,52 70,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,64 55,52 85,52 70,64\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"70,64 85,52 85,82 70,94\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,64 85,52 85,82 70,94\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"40\" y=\"34\" width=\"30\" height=\"30\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,34 55,22 85,22 70,34\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"40,34 55,22 85,22 70,34\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"70,34 85,22 85,52 70,64\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"70,34 85,22 85,52 70,64\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><text x=\"40\" y=\"152\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">▲ 앞</text></svg>",
+   "options": [
+    "1층",
+    "2층",
+    "3층",
+    "4층"
+   ],
+   "answer": 2,
+   "why": "앞에서 본 모양에서 가장 높은 쪽은 3층까지 쌓인 곳입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-10-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "위에서 본 모양입니다. 쌓기나무가 놓인 칸은 모두 몇 칸인가요?",
+   "svg": "<svg viewBox=\"0 0 110 76\" font-family=\"sans-serif\"><rect x=\"4\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"38\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"72\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"4\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"72\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text></svg>",
+   "answers": [
+    "5",
+    "5칸",
+    "다섯 칸"
+   ],
+   "why": "쌓기나무가 놓인 칸은 앞줄 3칸, 뒷줄 2칸으로 모두 5칸입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-10-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "위에서 본 모양의 칸마다 쌓은 개수가 그림과 같습니다. 이 모양을 앞에서 본 모양은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 214 224\" font-family=\"sans-serif\"><g transform=\"translate(4 5)\"><rect x=\"4\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"38\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"72\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><rect x=\"4\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"38\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"72\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text></g><text x=\"59\" y=\"104\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">위에서 본 모양</text><g transform=\"translate(124 0)\"><rect x=\"4\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"4\" y=\"30\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"4\" y=\"4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"30\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"30\" y=\"30\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"56\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"167\" y=\"104\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(16 114)\"><rect x=\"4\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"30\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"30\" y=\"30\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"56\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"56\" y=\"30\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"56\" y=\"4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"59\" y=\"218\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(112 114)\"><rect x=\"4\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"4\" y=\"30\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"30\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"30\" y=\"30\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"56\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"56\" y=\"30\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"56\" y=\"4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"155\" y=\"218\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text></svg>",
+   "options": [
+    "나",
+    "가",
+    "다",
+    "모두 아니다"
+   ],
+   "answer": 0,
+   "why": "앞에서 보면 각 줄의 가장 높은 층이 보이므로 1층, 2층, 3층 모양인 나입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-10-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "위에서 본 모양의 각 칸에 쌓은 개수입니다. 오른쪽 옆에서 본 모양에서 가장 높은 층은 몇 층인가요?",
+   "svg": "<svg viewBox=\"0 0 76 110\" font-family=\"sans-serif\"><rect x=\"4\" y=\"72\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"95\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><rect x=\"38\" y=\"72\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"95\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"4\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"38\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"4\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"38\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text></svg>",
+   "options": [
+    "3층",
+    "2층",
+    "1층",
+    "4층"
+   ],
+   "answer": 0,
+   "why": "각 줄의 가장 높은 층은 3, 2, 2이므로 옆에서 본 모양에서 가장 높은 곳은 3층입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-10-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "위에서 본 모양의 각 칸에 쌓은 개수입니다. 앞에서 본 모양에서 왼쪽 칸은 몇 층으로 보이나요?",
+   "svg": "<svg viewBox=\"0 0 76 76\" font-family=\"sans-serif\"><rect x=\"4\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"38\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"4\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"38\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text></svg>",
+   "answers": [
+    "2",
+    "2층",
+    "이층"
+   ],
+   "why": "앞에서 보면 왼쪽 열은 앞줄이 2개, 뒷줄이 1개이므로 가장 높은 층인 2층으로 보입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-10-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "위에서 본 모양의 각 칸에 쌓은 개수입니다. 오른쪽 옆에서 본 모양을 앞쪽 줄부터 차례로 나타낸 것은 무엇인가요? (각 줄에서 가장 높은 층)",
+   "svg": "<svg viewBox=\"0 0 110 76\" font-family=\"sans-serif\"><rect x=\"4\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><rect x=\"38\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"72\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"4\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"38\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"72\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text></svg>",
+   "options": [
+    "1층, 2층",
+    "2층, 3층",
+    "3층, 3층",
+    "3층, 2층"
+   ],
+   "answer": 3,
+   "why": "앞줄의 가장 높은 층은 3층, 뒷줄은 2층입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-10-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "위에서 본 모양의 각 칸에 쌓은 개수를 나타낸 것입니다. 앞에서 본 모양이 왼쪽 3층, 오른쪽 1층으로 보일 때 ?에 알맞은 수는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 76 76\" font-family=\"sans-serif\"><rect x=\"4\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><rect x=\"38\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"4\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"38\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text></svg>",
+   "options": [
+    "4",
+    "3",
+    "2",
+    "5"
+   ],
+   "answer": 1,
+   "why": "앞에서 본 왼쪽 열은 ?와 뒷줄의 2 중 큰 수가 보이므로 3층이 되려면 ?는 3이어야 합니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-10-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "위에서 본 모양의 각 칸에 쌓은 개수입니다. 앞에서 본 모양의 가장 높은 층의 수를 왼쪽부터 차례로 쓰면 어떻게 되나요?",
+   "svg": "<svg viewBox=\"0 0 110 110\" font-family=\"sans-serif\"><rect x=\"4\" y=\"72\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"95\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"38\" y=\"72\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"95\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><rect x=\"72\" y=\"72\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"95\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"4\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"38\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><rect x=\"72\" y=\"38\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"61\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"4\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"21\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"38\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"55\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><rect x=\"72\" y=\"4\" width=\"34\" height=\"34\" fill=\"#4b7bec\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"27\" font-size=\"17\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text></svg>",
+   "options": [
+    "2, 2, 1",
+    "2, 3, 1",
+    "1, 3, 1",
+    "3, 3, 1"
+   ],
+   "answer": 1,
+   "why": "앞에서 보면 각 열에서 가장 높은 층이 보입니다. 왼쪽 열은 2, 가운데 열은 3, 오른쪽 열은 1입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-11-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "가로 5 cm, 세로 3 cm인 직사각형의 둘레는 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 136 94\" font-family=\"sans-serif\"><rect x=\"40\" y=\"16\" width=\"80\" height=\"48\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"80\" y=\"82\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5 cm</text><text x=\"34\" y=\"45\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">3 cm</text></svg>",
+   "answers": [
+    "16",
+    "16cm",
+    "16 cm"
+   ],
+   "why": "(5+3)×2=16(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-11-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "한 변이 7 cm인 정사각형의 둘레는 몇 cm인가요?",
+   "options": [
+    "$21\\,\\mathrm{cm}$",
+    "$14\\,\\mathrm{cm}$",
+    "$49\\,\\mathrm{cm}$",
+    "$28\\,\\mathrm{cm}$"
+   ],
+   "answer": 3,
+   "why": "정사각형은 네 변의 길이가 같으므로 7×4=28(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-11-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "한 변이 9 cm인 정삼각형의 둘레는 몇 cm인가요?",
+   "options": [
+    "$27\\,\\mathrm{cm}$",
+    "$18\\,\\mathrm{cm}$",
+    "$36\\,\\mathrm{cm}$",
+    "$81\\,\\mathrm{cm}$"
+   ],
+   "answer": 0,
+   "why": "정삼각형은 세 변의 길이가 같으므로 9×3=27(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-11-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "한 변이 6 cm인 정오각형의 둘레는 몇 cm인가요?",
+   "answers": [
+    "30",
+    "30cm",
+    "30 cm"
+   ],
+   "why": "정오각형은 다섯 변의 길이가 모두 같으므로 6×5=30(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-11-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "ㄱ자 모양 도형의 각 변의 길이가 그림과 같습니다. 이 도형의 둘레는 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 254 168\" font-family=\"sans-serif\"><polygon points=\"52,26 136,26 136,68 192,68 192,138 52,138\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"122\" y=\"156\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10 cm</text><text x=\"46\" y=\"87\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">8 cm</text><text x=\"94\" y=\"20\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6 cm</text><text x=\"130\" y=\"52\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">3 cm</text><text x=\"164\" y=\"62\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4 cm</text><text x=\"198\" y=\"108\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">5 cm</text></svg>",
+   "answers": [
+    "36",
+    "36cm",
+    "36 cm"
+   ],
+   "why": "ㄱ자 모양 도형의 둘레는 가로 10 cm, 세로 8 cm인 직사각형의 둘레와 같으므로 (10+8)×2=36(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-11-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "둘레가 26 cm이고 가로가 8 cm인 직사각형의 세로는 몇 cm인가요?",
+   "options": [
+    "$18\\,\\mathrm{cm}$",
+    "$13\\,\\mathrm{cm}$",
+    "$5\\,\\mathrm{cm}$",
+    "$10\\,\\mathrm{cm}$"
+   ],
+   "answer": 2,
+   "why": "가로와 세로의 합은 26÷2=13(cm)이므로 세로는 13-8=5(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-11-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한 변이 4 cm인 정육각형과 둘레가 같은 정사각형의 한 변은 몇 cm인가요?",
+   "options": [
+    "$24\\,\\mathrm{cm}$",
+    "$4\\,\\mathrm{cm}$",
+    "$8\\,\\mathrm{cm}$",
+    "$6\\,\\mathrm{cm}$"
+   ],
+   "answer": 3,
+   "why": "정육각형의 둘레는 4×6=24(cm)이므로 정사각형의 한 변은 24÷4=6(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-11-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "둘레가 30 cm인 직사각형의 가로가 세로의 2배입니다. 가로는 몇 cm인가요?",
+   "answers": [
+    "10",
+    "10cm",
+    "10 cm"
+   ],
+   "why": "(가로+세로)×2=30이므로 가로+세로=15이고 가로가 세로의 2배이므로 세로는 5 cm, 가로는 10 cm입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-11-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한 귀퉁이를 잘라 낸 직사각형 모양 도형의 둘레는 몇 cm인가요? (길이는 그림에 나타나 있습니다)",
+   "svg": "<svg viewBox=\"0 0 282 182\" font-family=\"sans-serif\"><polygon points=\"52,26 150,26 150,82 220,82 220,152 52,152\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"136\" y=\"170\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12 cm</text><text x=\"46\" y=\"94\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">9 cm</text><text x=\"101\" y=\"20\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7 cm</text><text x=\"144\" y=\"59\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">4 cm</text><text x=\"185\" y=\"76\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5 cm</text><text x=\"226\" y=\"122\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">5 cm</text></svg>",
+   "options": [
+    "$21\\,\\mathrm{cm}$",
+    "$42\\,\\mathrm{cm}$",
+    "$36\\,\\mathrm{cm}$",
+    "$48\\,\\mathrm{cm}$"
+   ],
+   "answer": 1,
+   "why": "둘레는 가로 12 cm, 세로 9 cm인 직사각형의 둘레와 같으므로 (12+9)×2=42(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-12-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-12",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "1 cm²는 어떤 넓이인가요?",
+   "options": [
+    "둘레가 1 cm인 도형의 넓이",
+    "한 변이 1 m인 정사각형의 넓이",
+    "한 변이 1 cm인 정사각형의 넓이",
+    "길이가 1 cm인 선분의 넓이"
+   ],
+   "answer": 2,
+   "why": "1 cm²는 한 변이 1 cm인 정사각형의 넓이입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-12-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-12",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "교실 바닥의 넓이를 나타낼 때 가장 알맞은 단위는 무엇인가요?",
+   "options": [
+    "m²",
+    "cm²",
+    "km²",
+    "mm"
+   ],
+   "answer": 0,
+   "why": "교실 바닥은 m²로 나타내는 것이 알맞습니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-12-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-12",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "우리나라의 넓이를 나타낼 때 가장 알맞은 단위는 무엇인가요?",
+   "options": [
+    "cm²",
+    "m²",
+    "km²",
+    "mm²"
+   ],
+   "answer": 2,
+   "why": "아주 넓은 땅의 넓이는 km²로 나타냅니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-12-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-12",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "1 m²는 몇 cm²인가요?",
+   "answers": [
+    "10000",
+    "10000cm²",
+    "10000 cm²",
+    "10,000",
+    "만"
+   ],
+   "why": "1 m는 100 cm이므로 1 m²는 100×100=10000(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-12-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-12",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "1 km²는 몇 m²인가요?",
+   "answers": [
+    "1000000",
+    "1000000m²",
+    "1000000 m²",
+    "1,000,000",
+    "백만"
+   ],
+   "why": "1 km는 1000 m이므로 1 km²는 1000×1000=1000000(m²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-12-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-12",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "2 m²는 몇 cm²인가요?",
+   "options": [
+    "$20000\\,\\mathrm{cm^2}$",
+    "$2000\\,\\mathrm{cm^2}$",
+    "$200\\,\\mathrm{cm^2}$",
+    "$200000\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 0,
+   "why": "1 m²가 10000 cm²이므로 2 m²는 20000 cm²입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-12-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-12",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "3 km²는 몇 m²인가요?",
+   "options": [
+    "$3000\\,\\mathrm{m^2}$",
+    "$300000\\,\\mathrm{m^2}$",
+    "$30000\\,\\mathrm{m^2}$",
+    "$3000000\\,\\mathrm{m^2}$"
+   ],
+   "answer": 3,
+   "why": "1 km²가 1000000 m²이므로 3 km²는 3000000 m²입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-12-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-12",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "50000 cm²는 몇 m²인가요?",
+   "options": [
+    "$50\\,\\mathrm{m^2}$",
+    "$5\\,\\mathrm{m^2}$",
+    "$500\\,\\mathrm{m^2}$",
+    "$0.5\\,\\mathrm{m^2}$"
+   ],
+   "answer": 1,
+   "why": "10000 cm²가 1 m²이므로 50000 cm²는 5 m²입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-12-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-12",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다음 중 넓이를 알맞은 단위로 나타낸 것은 무엇인가요?",
+   "options": [
+    "우표의 넓이는 약 5 km²이다",
+    "운동장의 넓이는 약 5000 m²이다",
+    "우리나라의 넓이는 약 100000 m²이다",
+    "교실 칠판의 넓이는 약 4 mm²이다"
+   ],
+   "answer": 1,
+   "why": "운동장은 m², 우표는 cm², 우리나라는 km², 칠판은 m²로 나타내는 것이 알맞습니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-13-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-13",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "가로 6 cm, 세로 4 cm인 직사각형의 넓이는 몇 cm²인가요?",
+   "svg": "<svg viewBox=\"0 0 152 110\" font-family=\"sans-serif\"><rect x=\"40\" y=\"16\" width=\"96\" height=\"64\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"88\" y=\"98\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6 cm</text><text x=\"34\" y=\"53\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">4 cm</text></svg>",
+   "options": [
+    "$48\\,\\mathrm{cm^2}$",
+    "$20\\,\\mathrm{cm^2}$",
+    "$10\\,\\mathrm{cm^2}$",
+    "$24\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 3,
+   "why": "(직사각형의 넓이)=(가로)×(세로)=6×4=24(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-13-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-13",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "한 변이 5 cm인 정사각형의 넓이는 몇 cm²인가요?",
+   "answers": [
+    "25",
+    "25cm²",
+    "25 cm²",
+    "25cm2"
+   ],
+   "why": "(정사각형의 넓이)=(한 변)×(한 변)=5×5=25(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-13-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-13",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "직사각형의 넓이를 구하는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "(가로)×(세로)",
+    "(가로)+(세로)",
+    "(가로+세로)×2",
+    "(가로)÷(세로)"
+   ],
+   "answer": 0,
+   "why": "직사각형의 넓이는 가로와 세로를 곱하여 구합니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-13-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-13",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "가로 9 cm, 세로 7 cm인 직사각형의 넓이는 몇 cm²인가요?",
+   "answers": [
+    "63",
+    "63cm²",
+    "63 cm²",
+    "63cm2"
+   ],
+   "why": "9×7=63(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-13-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-13",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "한 변이 12 cm인 정사각형의 넓이는 몇 cm²인가요?",
+   "options": [
+    "$24\\,\\mathrm{cm^2}$",
+    "$48\\,\\mathrm{cm^2}$",
+    "$144\\,\\mathrm{cm^2}$",
+    "$120\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 2,
+   "why": "12×12=144(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-13-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-13",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "넓이가 48 cm²이고 가로가 8 cm인 직사각형의 세로는 몇 cm인가요?",
+   "options": [
+    "$56\\,\\mathrm{cm}$",
+    "$40\\,\\mathrm{cm}$",
+    "$8\\,\\mathrm{cm}$",
+    "$6\\,\\mathrm{cm}$"
+   ],
+   "answer": 3,
+   "why": "(세로)=(넓이)÷(가로)=48÷8=6(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-13-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-13",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "둘레가 20 cm인 정사각형의 넓이는 몇 cm²인가요?",
+   "options": [
+    "$100\\,\\mathrm{cm^2}$",
+    "$25\\,\\mathrm{cm^2}$",
+    "$20\\,\\mathrm{cm^2}$",
+    "$16\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 1,
+   "why": "한 변은 20÷4=5(cm)이므로 넓이는 5×5=25(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-13-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-13",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "가로 12 cm, 세로 5 cm인 직사각형과 넓이가 같고 가로가 10 cm인 직사각형의 세로는 몇 cm인가요?",
+   "answers": [
+    "6",
+    "6cm",
+    "6 cm"
+   ],
+   "why": "처음 직사각형의 넓이는 12×5=60(cm²)이므로 새 직사각형의 세로는 60÷10=6(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-13-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-13",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "가로 8 cm, 세로 6 cm인 직사각형의 가로를 2배로 늘이면 넓이는 몇 배가 되나요?",
+   "options": [
+    "8배",
+    "4배",
+    "2배",
+    "그대로이다"
+   ],
+   "answer": 2,
+   "why": "세로는 그대로이고 가로만 2배가 되면 넓이도 2배가 됩니다. 처음 48 cm², 나중 96 cm²입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-14-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-14",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "밑변이 8 cm, 높이가 5 cm인 평행사변형의 넓이는 몇 cm²인가요?",
+   "svg": "<svg viewBox=\"0 0 232.8 138\" font-family=\"sans-serif\"><polygon points=\"74.8,28 202.8,28 158,108 30,108\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"74.8\" y1=\"28\" x2=\"74.8\" y2=\"108\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><polyline points=\"74.8,99 83.8,99 83.8,108\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"94\" y=\"128\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8 cm</text><text x=\"80.8\" y=\"73\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">5 cm</text></svg>",
+   "options": [
+    "$40\\,\\mathrm{cm^2}$",
+    "$26\\,\\mathrm{cm^2}$",
+    "$13\\,\\mathrm{cm^2}$",
+    "$20\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 0,
+   "why": "(평행사변형의 넓이)=(밑변)×(높이)=8×5=40(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-14-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-14",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "밑변이 6 cm, 높이가 4 cm인 삼각형의 넓이는 몇 cm²인가요?",
+   "svg": "<svg viewBox=\"0 0 156 122\" font-family=\"sans-serif\"><polygon points=\"41.5,28 126,92 30,92\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"41.5\" y1=\"28\" x2=\"41.5\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><polyline points=\"41.5,83 50.5,83 50.5,92\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"78\" y=\"112\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6 cm</text><text x=\"47.5\" y=\"65\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">4 cm</text></svg>",
+   "answers": [
+    "12",
+    "12cm²",
+    "12 cm²",
+    "12cm2"
+   ],
+   "why": "(삼각형의 넓이)=(밑변)×(높이)÷2=6×4÷2=12(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-14-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-14",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "사다리꼴의 넓이를 구하는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "(윗변+아랫변)×2",
+    "(윗변)×(아랫변)",
+    "(윗변+아랫변)×(높이)÷2",
+    "(윗변)×(높이)"
+   ],
+   "answer": 2,
+   "why": "사다리꼴의 넓이는 (윗변+아랫변)×(높이)÷2로 구합니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-14-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-14",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "윗변이 4 cm, 아랫변이 8 cm, 높이가 5 cm인 사다리꼴의 넓이는 몇 cm²인가요?",
+   "svg": "<svg viewBox=\"0 0 188 138\" font-family=\"sans-serif\"><polygon points=\"54,28 118,28 158,108 30,108\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"118\" y1=\"28\" x2=\"118\" y2=\"108\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><polyline points=\"118,99 127,99 127,108\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"86\" y=\"22\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4 cm</text><text x=\"94\" y=\"128\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8 cm</text><text x=\"112\" y=\"73\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">5 cm</text></svg>",
+   "options": [
+    "$30\\,\\mathrm{cm^2}$",
+    "$60\\,\\mathrm{cm^2}$",
+    "$40\\,\\mathrm{cm^2}$",
+    "$20\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 0,
+   "why": "(4+8)×5÷2=30(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-14-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-14",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "두 대각선의 길이가 6 cm, 8 cm인 마름모의 넓이는 몇 cm²인가요?",
+   "svg": "<svg viewBox=\"0 0 218 152\" font-family=\"sans-serif\"><polygon points=\"94,28 158,76 94,124 30,76\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"30\" y1=\"76\" x2=\"158\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><line x1=\"94\" y1=\"28\" x2=\"94\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><polyline points=\"94,67 103,67 103,76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"164\" y=\"81\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">8 cm</text><text x=\"102\" y=\"24\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">6 cm</text></svg>",
+   "answers": [
+    "24",
+    "24cm²",
+    "24 cm²",
+    "24cm2"
+   ],
+   "why": "(마름모의 넓이)=(한 대각선)×(다른 대각선)÷2=8×6÷2=24(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-14-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-14",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "넓이가 36 cm²이고 밑변이 9 cm인 평행사변형의 높이는 몇 cm인가요?",
+   "options": [
+    "$9\\,\\mathrm{cm}$",
+    "$27\\,\\mathrm{cm}$",
+    "$45\\,\\mathrm{cm}$",
+    "$4\\,\\mathrm{cm}$"
+   ],
+   "answer": 3,
+   "why": "(높이)=(넓이)÷(밑변)=36÷9=4(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-14-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-14",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "넓이가 30 cm²이고 높이가 6 cm인 삼각형의 밑변은 몇 cm인가요?",
+   "answers": [
+    "10",
+    "10cm",
+    "10 cm"
+   ],
+   "why": "밑변×6÷2=30이므로 밑변은 30×2÷6=10(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-14-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-14",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "윗변이 3 cm, 아랫변이 7 cm이고 넓이가 40 cm²인 사다리꼴의 높이는 몇 cm인가요?",
+   "options": [
+    "$4\\,\\mathrm{cm}$",
+    "$8\\,\\mathrm{cm}$",
+    "$6\\,\\mathrm{cm}$",
+    "$10\\,\\mathrm{cm}$"
+   ],
+   "answer": 1,
+   "why": "(3+7)×높이÷2=40이므로 높이는 40×2÷10=8(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-14-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-14",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "밑변과 높이가 각각 같은 평행사변형과 삼각형이 있습니다. 두 도형의 넓이 사이의 관계로 알맞은 것은 무엇인가요?",
+   "options": [
+    "두 도형의 넓이는 같다",
+    "삼각형의 넓이는 평행사변형의 넓이의 절반이다",
+    "삼각형의 넓이가 평행사변형의 넓이의 2배이다",
+    "관계가 없다"
+   ],
+   "answer": 1,
+   "why": "평행사변형은 밑변×높이, 삼각형은 밑변×높이÷2이므로 삼각형은 평행사변형의 절반입니다."
+  }
+ ],
+ "skipped": []
+}
