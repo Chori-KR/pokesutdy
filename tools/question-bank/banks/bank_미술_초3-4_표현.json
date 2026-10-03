@@ -1,0 +1,579 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "미술",
+  "school": "초",
+  "course": "미술",
+  "gradeBand": "초3-4",
+  "unit": "표현",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "하늘이의 작품 준비",
+   "text": "하늘이는 ‘우리 동네의 봄’이라는 주제로 그림을 그리기로 했습니다. 먼저 학교 앞 공원을 걸으며 벚꽃과 벤치, 놀이터를 관찰했습니다. 집에 돌아와 ‘벚꽃 아래에서 가족이 도시락을 먹는 모습’을 상상해 아이디어를 구체화했습니다. 하늘이는 포근한 느낌을 주려고 분홍과 노랑 같은 따뜻한 색을 많이 쓰기로 했고, 꽃잎은 부드러운 곡선으로 그리기로 정했습니다. 완성한 뒤에는 작품에 ‘봄 소풍’이라는 제목을 붙이고, 이름을 적어 소중히 보관했습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "미술-초3-4-4미02-01-c1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "표현할 주제를 정하기 위해 할 수 있는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "다른 사람의 작품을 그대로 베낀다",
+    "아무 생각도 하지 않는다",
+    "주변을 관찰하고 상상해 본다",
+    "주제 없이 바로 시작한다"
+   ],
+   "answer": 2,
+   "why": "관찰과 상상으로 아이디어를 떠올릴 수 있습니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-01-c2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "떠오른 생각을 가지가 뻗어 나가듯이 펼쳐 정리하는 방법을 무엇이라고 하나요? (네 글자)",
+   "answers": [
+    "마인드맵",
+    "마인드 맵"
+   ],
+   "why": "떠오른 생각을 가지처럼 펼쳐 정리하는 방법이 마인드맵입니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-01-b1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "‘우리 동네의 봄’ 주제를 더 구체적으로 정한 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "벚꽃 아래에서 가족이 도시락을 먹는 모습",
+    "봄",
+    "그림",
+    "동네"
+   ],
+   "answer": 0,
+   "why": "하늘이는 주제를 구체적인 장면으로 정했습니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-01-b2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "하늘이가 아이디어를 얻기 위해 가장 먼저 한 일은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "색칠을 마쳤다",
+    "작품을 완성했다",
+    "제목을 붙였다",
+    "학교 앞 공원을 걸으며 관찰했다"
+   ],
+   "answer": 3,
+   "why": "글에서 하늘이는 공원을 걸으며 벚꽃과 벤치, 놀이터를 관찰했습니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-01-a1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "구름이 동물 모양처럼 보이는 것을 보고 아이디어를 넓히는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "구름을 보지 않는다",
+    "그 동물이 하늘을 달리는 이야기를 상상해 그림 주제로 정한다",
+    "동물 그림을 지운다",
+    "생각을 하지 않고 그린다"
+   ],
+   "answer": 1,
+   "why": "관찰한 것에 상상을 더하면 다양한 아이디어가 나옵니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-01-a2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다양한 아이디어를 떠올린 다음 주제를 구체화할 때 가장 알맞은 순서는 무엇인가요?",
+   "options": [
+    "여러 아이디어 적기 → 마음에 드는 것 고르기 → 장면과 표현 방법 정하기",
+    "바로 완성하기 → 제목 붙이기",
+    "다른 사람 것 베끼기 → 색칠하기",
+    "아이디어 없이 재료 고르기"
+   ],
+   "answer": 0,
+   "why": "아이디어를 많이 낸 뒤 고르고 구체화하는 순서가 알맞습니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-02-c1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "수채화 물감으로 색칠한 뒤 다른 색을 칠하기 전에 붓은 어떻게 하나요?",
+   "options": [
+    "그대로 다른 색을 칠한다",
+    "물에 깨끗이 씻는다",
+    "입에 물어 닦는다",
+    "던져 버린다"
+   ],
+   "answer": 1,
+   "why": "붓을 씻어야 색이 섞이지 않고 깨끗하게 칠할 수 있습니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-02-c2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "물감을 짜서 여러 가지 색을 섞을 때 쓰는 판을 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "팔레트"
+   ],
+   "why": "물감을 짜서 섞는 판을 팔레트라고 합니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-02-b1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표를 보고 물을 섞어 맑고 투명하게 칠하는 재료를 고르세요.",
+   "svg": "<svg viewBox=\"0 0 296 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"290\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"293\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"293\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"293\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">재료</text><text x=\"198\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">특징</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">크레파스</text><text x=\"198\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">기름기가 있어 진하게 칠해짐</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수채화 물감</text><text x=\"198\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물을 섞어 맑고 투명하게 칠함</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">색연필</text><text x=\"198\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">가늘게 선을 그리기 좋음</text></svg>",
+   "options": [
+    "모두 같다",
+    "크레파스",
+    "색연필",
+    "수채화 물감"
+   ],
+   "answer": 3,
+   "why": "표에서 물을 섞어 맑고 투명하게 칠하는 재료는 수채화 물감입니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-02-b2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "가위를 사용할 때 안전한 방법은 무엇인가요?",
+   "options": [
+    "날을 아래로 향하게 하고 건넬 때는 손잡이를 상대에게 준다",
+    "가위를 들고 뛰어다닌다",
+    "날 쪽을 상대에게 내민다",
+    "입에 물고 이동한다"
+   ],
+   "answer": 0,
+   "why": "가위는 다치지 않도록 안전하게 다루어야 합니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-02-a1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "물을 많이 섞은 물감이 번지는 맑은 느낌을 살려 표현하려고 합니다. 적절한 재료와 방법은 무엇인가요?",
+   "options": [
+    "물감을 물 없이 진하게 바른다",
+    "크레파스를 힘껏 누르며 칠한다",
+    "수채화 물감에 물을 충분히 섞어 부드럽게 칠한다",
+    "색연필로 점만 찍는다"
+   ],
+   "answer": 2,
+   "why": "물을 섞어 칠하면 맑고 번지는 표현을 할 수 있습니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-02-a2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "점토 작업을 하다 쉬는 시간에 점토가 마르지 않게 하는 방법은 무엇인가요?",
+   "options": [
+    "선풍기 바람을 쐰다",
+    "햇볕 아래에 둔다",
+    "물 없이 그대로 둔다",
+    "젖은 천이나 비닐로 덮어 둔다"
+   ],
+   "answer": 3,
+   "why": "점토는 마르면 갈라지므로 젖은 천이나 비닐로 덮어 둡니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-03-c1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림은 여러 가지 선입니다. 가는 어떤 선인가요?",
+   "svg": "<svg viewBox=\"0 0 128 68\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><polyline points=\"8.0,12.0 21.0,32.0 34.0,12.0 47.0,32.0 60.0,12.0 73.0,32.0 86.0,12.0 99.0,32.0 112.0,12.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><text x=\"64\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text></svg>",
+   "options": [
+    "직선",
+    "지그재그선",
+    "곡선",
+    "점선"
+   ],
+   "answer": 1,
+   "why": "뾰족뾰족 꺾이는 선은 지그재그선입니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-03-c2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "파랑처럼 시원하고 차가운 느낌을 주는 색을 무슨 색이라고 하나요? (차가운 ○)",
+   "answers": [
+    "한색",
+    "차가운 색",
+    "차가운색"
+   ],
+   "why": "차가운 느낌을 주는 색을 차가운 색(한색)이라고 합니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-03-b1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림의 가와 나 중 힘이 세고 튼튼한 느낌을 주는 선은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 128 140\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><line x1=\"8\" y1=\"22.0\" x2=\"112\" y2=\"22.0\" stroke=\"currentColor\" stroke-width=\"9\"/></g><text x=\"64\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(4 72)\"><line x1=\"8\" y1=\"22.0\" x2=\"112\" y2=\"22.0\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"64\" y=\"134\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "options": [
+    "둘 다",
+    "나",
+    "가",
+    "둘 다 아니다"
+   ],
+   "answer": 2,
+   "why": "굵은 선은 힘세고 튼튼한 느낌을 줍니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-03-b2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림의 가와 나 중 거칠고 까슬까슬한 질감을 나타내는 데 알맞은 무늬는 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 146 88\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,12 14,32 20,44 26,24 32,36 38,16 44,28 50,48 56,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,44 14,38 20,32 26,26 32,44 38,38 44,32 50,26 56,44\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"36\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"8\" y=\"8\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"32\" y=\"8\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"20\" y=\"20\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"44\" y=\"20\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"8\" y=\"32\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"32\" y=\"32\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"20\" y=\"44\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"44\" y=\"44\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/></g><text x=\"110\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "options": [
+    "가",
+    "나",
+    "둘 다",
+    "둘 다 아니다"
+   ],
+   "answer": 0,
+   "why": "어긋나게 겹친 선으로 그린 가가 거친 질감을 잘 나타냅니다. 나는 규칙적인 바둑무늬입니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-03-a1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "잔잔한 호수를 표현하려고 합니다. 조형 요소를 알맞게 고른 것은 무엇인가요?",
+   "options": [
+    "주황색, 굵고 짧은 선",
+    "빨간색, 뾰족한 지그재그선, 거친 질감",
+    "파란색, 가로로 길고 부드러운 곡선, 매끈한 면",
+    "검정색, 점만 가득"
+   ],
+   "answer": 2,
+   "why": "잔잔하고 시원한 느낌은 차가운 색과 부드러운 곡선, 매끈한 면으로 표현합니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-03-a2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림의 큰 원과 작은 원을 겹쳐 표현할 때 큰 원은 가깝게, 작은 원은 멀게 보입니다. 이 표현에 쓰인 조형 요소는 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 142 104\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><circle cx=\"40.0\" cy=\"40.0\" r=\"34.0\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"98\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(98 20)\"><circle cx=\"20.0\" cy=\"20.0\" r=\"14.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"118\" y=\"98\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "options": [
+    "크기(형)",
+    "냄새",
+    "소리",
+    "온도"
+   ],
+   "answer": 0,
+   "why": "같은 모양이라도 크기를 다르게 하면 가깝고 먼 느낌을 줄 수 있습니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-04-c1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "작품을 완성한 뒤 소중히 여기는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "남에게 던진다",
+    "구겨서 버린다",
+    "바닥에 아무렇게나 둔다",
+    "이름과 제목을 적고 깨끗하게 보관한다"
+   ],
+   "answer": 3,
+   "why": "이름과 제목을 적고 소중히 보관하는 것이 작품을 아끼는 태도입니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-04-c2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "작품의 내용이나 느낌을 나타내도록 작품에 붙이는 이름을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "제목"
+   ],
+   "why": "작품에 붙이는 이름을 제목이라고 합니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-04-b1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "하늘이가 작품에 붙인 제목은 무엇인가요? (글에 나온 그대로 쓰세요)",
+   "passage": "p1",
+   "answers": [
+    "봄 소풍",
+    "봄소풍"
+   ],
+   "why": "글에서 하늘이는 ‘봄 소풍’이라는 제목을 붙였습니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-04-b2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표현 의도를 분명히 한다는 것의 뜻으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "아무 생각 없이 만드는 것",
+    "무엇을 어떻게 나타내고 싶은지 먼저 생각하고 만드는 것",
+    "남이 시키는 대로만 만드는 것",
+    "빨리 끝내는 것"
+   ],
+   "answer": 1,
+   "why": "표현 의도는 무엇을 어떻게 나타낼지에 대한 생각입니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-04-a1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "하늘이가 포근한 느낌을 주려고 선택한 방법을 바르게 설명한 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "차가운 색을 쓰고 뾰족하게 그렸다",
+    "따뜻한 색을 많이 쓰고 꽃잎을 부드러운 곡선으로 그렸다",
+    "색을 쓰지 않았다",
+    "굵고 거친 선만 썼다"
+   ],
+   "answer": 1,
+   "why": "표현 의도(포근함)에 맞게 따뜻한 색과 부드러운 곡선을 선택했습니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-04-a2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "자기 작품과 친구 작품을 소중히 여기는 태도를 바르게 나타낸 것은 무엇인가요?",
+   "options": [
+    "작품은 아무렇게나 둔다",
+    "내 작품만 소중히 한다",
+    "친구 작품에 낙서한다",
+    "내 작품은 정성껏 완성하고, 친구 작품은 허락 없이 만지거나 망가뜨리지 않는다"
+   ],
+   "answer": 3,
+   "why": "자기 작품과 다른 사람의 작품 모두 소중히 여겨야 합니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-05-c1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "과학 시간에 관찰한 식물을 그림으로 자세히 나타내는 활동은 미술과 어떤 교과를 관련지은 것인가요? (두 글자)",
+   "answers": [
+    "과학"
+   ],
+   "why": "식물을 관찰해 그리는 것은 과학과 미술을 관련지은 활동입니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-05-c2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "국어 시간에 쓴 시에 어울리는 그림을 함께 그린 작품을 ‘○○화’라고 합니다. 빈칸에 알맞은 한 글자를 쓰세요. (시○화)",
+   "answers": [
+    "시"
+   ],
+   "why": "시와 그림을 함께 나타낸 작품을 시화라고 합니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-05-b1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "사회 시간에 배운 ‘우리 동네’를 미술로 표현하는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "동네의 건물과 길을 그려 나만의 동네 지도를 만든다",
+    "동네 사진을 버린다",
+    "지도를 보지 않는다",
+    "다른 동네를 그린다"
+   ],
+   "answer": 0,
+   "why": "사회에서 배운 내용을 그림과 지도로 표현할 수 있습니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-05-b2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "수학 시간에 배운 도형을 이용해 미술 작품을 만드는 활동으로 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 186 54\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><circle cx=\"27.0\" cy=\"27.0\" r=\"21.0\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><g transform=\"translate(66 0)\"><polygon points=\"27.0,8 46,46 8,46\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><g transform=\"translate(128 0)\"><rect x=\"8\" y=\"8\" width=\"38\" height=\"38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g></svg>",
+   "options": [
+    "도형은 쓰지 않는다",
+    "도형을 지운다",
+    "원, 삼각형, 사각형을 조합해 집과 나무 그림을 만든다",
+    "점수를 매긴다"
+   ],
+   "answer": 2,
+   "why": "여러 도형을 조합하면 다양한 모습을 만들 수 있습니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-05-a1",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다양한 교과와 관련지어 주제를 표현하는 것의 좋은 점으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "아무 도움이 안 된다",
+    "공부가 더 어려워진다",
+    "미술이 사라진다",
+    "배운 내용을 새로운 방법으로 표현하며 더 깊이 이해할 수 있다"
+   ],
+   "answer": 3,
+   "why": "타 교과 내용을 미술로 표현하면 이해가 깊어지고 흥미가 높아집니다."
+  },
+  {
+   "id": "미술-초3-4-4미02-05-a2",
+   "subject": "미술",
+   "gradeBand": "초3-4",
+   "unit": "표현",
+   "standard": "4미02-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "‘물의 순환’을 배운 뒤 미술 표현으로 이어 가는 방법으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "그림 없이 시험만 본다",
+    "물이 구름, 비, 강이 되어 돌아가는 모습을 그림 이야기로 그린다",
+    "물을 모두 버린다",
+    "순환을 잊는다"
+   ],
+   "answer": 1,
+   "why": "과학 내용을 그림 이야기로 표현하면 흥미를 높이고 이해도 깊어집니다."
+  }
+ ],
+ "skipped": []
+}
