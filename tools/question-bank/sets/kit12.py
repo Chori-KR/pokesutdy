@@ -183,12 +183,14 @@ def dot_grid(cols, rows, segs=(), sp=30, fill_poly=None, dots=True):
 def clock(h, m, r=70, show_hands=True, label=None, hour_only=False):
     cx = cy = r + 8
     out = [f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{C}" stroke-width="3"/>']
+    d_big, d_small = [], []
     for k in range(60):
         a = math.radians(k * 6)
         big = k % 5 == 0
         r1 = r - (9 if big else 5)
-        out.append(line(cx + r1 * math.sin(a), cy - r1 * math.cos(a), cx + (r - 1) * math.sin(a), cy - (r - 1) * math.cos(a),
-                        2.5 if big else 2, None if big else 0.45))
+        (d_big if big else d_small).append(f"M{cx + r1 * math.sin(a):.1f},{cy - r1 * math.cos(a):.1f}L{cx + (r - 1) * math.sin(a):.1f},{cy - (r - 1) * math.cos(a):.1f}")
+    out.append(f'<path d="{"".join(d_small)}" stroke="{C}" stroke-width="2" stroke-opacity="0.45"/>')
+    out.append(f'<path d="{"".join(d_big)}" stroke="{C}" stroke-width="2.5"/>')
     for k in range(1, 13):
         a = math.radians(k * 30)
         rr = r * 0.76
@@ -330,3 +332,111 @@ def counters(n, per_row=10, r=8, kind="circle", fill=BLUE, ten_frame=False):
         c, rr = i % per_row, i // per_row
         out.append(shape(kind, 6 + c * cs + cs / 2, 6 + rr * cs + cs / 2, r, fill=fill))
     return svg(W, H, "".join(out))
+
+
+# ── 시간 띠 · 달력 · 하루 ───────────────────────────────
+def time_strip(h0, hours, shade=None, label_min=False):
+    """h0시부터 hours시간 동안의 시간 띠. 10분마다 눈금. shade=(시작분, 끝분) h0시 기준 분"""
+    u = 300 / (hours * 6)
+    x0, y0 = 16, 30
+    W = 300 + 32
+    out = []
+    if shade:
+        a, b_ = shade
+        out.append(f'<rect x="{_n(x0 + a / 10 * u)}" y="{y0}" width="{_n((b_ - a) / 10 * u)}" height="26" fill="{BLUE}" fill-opacity="0.45"/>')
+    out.append(f'<rect x="{x0}" y="{y0}" width="300" height="26" fill="none" stroke="{C}" stroke-width="2.5"/>')
+    for k in range(hours * 6 + 1):
+        x = x0 + k * u
+        big = k % 6 == 0
+        out.append(line(x, y0, x, y0 + (26 if big else 10), 2.5 if big else 2, None if big else 0.6))
+        if big:
+            out.append(text(x, y0 - 8, f"{h0 + k // 6}시", 13, weight="bold"))
+    if label_min:
+        out.append(text(x0 + 3 * u, y0 + 44, "10분", 12) + line(x0, y0 + 34, x0 + u, y0 + 34, 2))
+    return svg(W, y0 + 52 if label_min else y0 + 36, "".join(out))
+
+
+def calendar(title, days, start, marks=(), circle=()):
+    """start: 1일의 요일(0=일 … 6=토). marks: 칠할 날짜, circle: 동그라미 칠 날짜"""
+    names = "일월화수목금토"
+    cw, rh = 44, 28
+    W = cw * 7 + 6
+    rows = (start + days + 6) // 7
+    H = 30 + rh * (rows + 1) + 6
+    out = [text(W / 2, 20, title, 15, weight="bold"),
+           f'<rect x="3" y="30" width="{W - 6}" height="{rh * (rows + 1)}" fill="none" stroke="{C}" stroke-width="2"/>',
+           line(3, 30 + rh, W - 3, 30 + rh, 2)]
+    for i, n in enumerate(names):
+        out.append(text(3 + cw * (i + 0.5), 30 + 19, n, 13, weight="bold"))
+    for d in range(1, days + 1):
+        k = start + d - 1
+        r, c = divmod(k, 7)
+        cx, cy = 3 + cw * (c + 0.5), 30 + rh * (r + 1) + rh / 2
+        if d in marks:
+            out.append(f'<rect x="{_n(cx - cw / 2 + 3)}" y="{_n(cy - rh / 2 + 3)}" width="{cw - 6}" height="{rh - 6}" rx="4" fill="{BLUE}" fill-opacity="0.4"/>')
+        if d in circle:
+            out.append(f'<circle cx="{_n(cx)}" cy="{_n(cy)}" r="12" fill="none" stroke="{ORANGE}" stroke-width="2.5"/>')
+        out.append(text(cx, cy + 5, d, 13))
+    return svg(W, H, "".join(out))
+
+
+def day_line(shade=None):
+    """하루(0시~24시) 띠: 오전/오후. shade=(시작시, 끝시) 0~24"""
+    x0, w = 14, 300
+    u = w / 24
+    y0 = 34
+    out = []
+    if shade:
+        out.append(f'<rect x="{_n(x0 + shade[0] * u)}" y="{y0}" width="{_n((shade[1] - shade[0]) * u)}" height="24" fill="{BLUE}" fill-opacity="0.45"/>')
+    out.append(f'<rect x="{x0}" y="{y0}" width="{w}" height="24" fill="none" stroke="{C}" stroke-width="2.5"/>')
+    out.append(line(x0 + 12 * u, y0 - 22, x0 + 12 * u, y0 + 24, 3))
+    out.append(text(x0 + 6 * u, 18, "오전", 14, weight="bold"))
+    out.append(text(x0 + 18 * u, 18, "오후", 14, weight="bold"))
+    for h in range(25):
+        x = x0 + h * u
+        out.append(line(x, y0 + 24, x, y0 + (14 if h % 3 else 6), 2, 0.7))
+        if h % 3 == 0:
+            out.append(text(x, y0 + 42, h if h <= 12 else h - 12, 12))
+    return svg(w + 28, y0 + 50, "".join(out))
+
+
+# ── 줄자 · 길이 그림 ───────────────────────────────────
+def tape(max_cm, end_cm, step=10, label_every=50, name="", start=0):
+    """줄자(cm): start~max_cm, 물건이 0에서 end_cm까지"""
+    x0, w = 26, 290
+    u = w / (max_cm - start)
+    out = [f'<rect x="{x0}" y="14" width="{_n((end_cm - start) * u)}" height="20" rx="3" fill="{BLUE}" fill-opacity="0.6" stroke="{C}" stroke-width="2"/>',
+           text(x0 + (end_cm - start) * u / 2, 29, name, 13, weight="bold"),
+           f'<rect x="{x0 - 20}" y="40" width="{w + 40}" height="40" fill="none" stroke="{C}" stroke-width="2.5"/>']
+    v = start
+    while v <= max_cm:
+        x = x0 + (v - start) * u
+        lab = (v - start) % label_every == 0
+        out.append(line(x, 40, x, 40 + (16 if lab else 9), 2, None if lab else 0.6))
+        if lab:
+            out.append(text(x, 72, v, 12))
+        v += step
+    out.append(line(x0 + (end_cm - start) * u, 34, x0 + (end_cm - start) * u, 40, 2, 0.6, "3 2"))
+    out.append(text(x0 + w + 20, 96, "(cm)", 12, "end"))
+    return svg(x0 + w + 26, 100, "".join(out))
+
+
+def seg_bars(parts, total=None, u=1.0, gap_label="?"):
+    """이어 붙인 막대: parts=[(길이값, 글자, 'B'|'O'|'Q')]. total이면 아래에 전체 길이 괄호"""
+    x0 = 10
+    out = []
+    x = x0
+    for val, lab, kind in parts:
+        w = val * u
+        fill = {"B": BLUE, "O": ORANGE, "Q": "none"}[kind]
+        dash = ' stroke-dasharray="6 4"' if kind == "Q" else ""
+        out.append(f'<rect x="{_n(x)}" y="14" width="{_n(w)}" height="30" fill="{fill}" fill-opacity="0.45" stroke="{C}" stroke-width="2"{dash}/>')
+        out.append(text(x + w / 2, 35, lab, 13, weight="bold"))
+        x += w
+    W = x + 10
+    H = 54
+    if total:
+        out.append(f'<path d="M{x0},54 q0,10 10,10 L{_n(W / 2 - 8)},64 l8,8 l8,-8 L{_n(W - 20)},64 q10,0 10,-10" fill="none" stroke="{C}" stroke-width="2"/>')
+        out.append(text(W / 2, 92, total, 13, weight="bold"))
+        H = 100
+    return svg(_n(W), H, "".join(out))

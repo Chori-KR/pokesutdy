@@ -1,0 +1,1039 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "초",
+  "course": "수학",
+  "gradeBand": "초1-2",
+  "unit": "도형과 측정",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-초1-2-2수03-08-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "1시간은 몇 분인가요?",
+   "options": [
+    "100",
+    "10",
+    "60",
+    "24"
+   ],
+   "answer": 2,
+   "why": "긴바늘이 한 바퀴 도는 데 60분이 걸리고, 이것이 1시간입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-08-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "시간 띠에서 색칠한 부분은 2시간입니다. 2시간은 몇 분인가요?",
+   "svg": "<svg viewBox=\"0 0 332 82\" font-family=\"sans-serif\"><rect x=\"16\" y=\"30\" width=\"300\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\"/><rect x=\"16\" y=\"30\" width=\"300\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"16\" y1=\"30\" x2=\"16\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"16\" y=\"22\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1시</text><line x1=\"41\" y1=\"30\" x2=\"41\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"66\" y1=\"30\" x2=\"66\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"91\" y1=\"30\" x2=\"91\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"116\" y1=\"30\" x2=\"116\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"141\" y1=\"30\" x2=\"141\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"166\" y1=\"30\" x2=\"166\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"166\" y=\"22\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2시</text><line x1=\"191\" y1=\"30\" x2=\"191\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"216\" y1=\"30\" x2=\"216\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"241\" y1=\"30\" x2=\"241\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"266\" y1=\"30\" x2=\"266\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"291\" y1=\"30\" x2=\"291\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"316\" y1=\"30\" x2=\"316\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"316\" y=\"22\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3시</text><text x=\"91\" y=\"74\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">10분</text><line x1=\"16\" y1=\"64\" x2=\"41\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "answers": [
+    "120",
+    "120분"
+   ],
+   "why": "1시간은 60분이므로 2시간은 60+60=120(분)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-08-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "시계의 긴바늘이 12에서 출발하여 한 바퀴를 돌았습니다. 걸린 시간은 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 282 162\" font-family=\"sans-serif\"><g transform=\"translate(0 0)\"><circle cx=\"68\" cy=\"68\" r=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M73.7,13.3L74.2,9.3M79.4,14.2L80.3,10.3M85.0,15.7L86.2,11.9M90.4,17.8L92.0,14.1M100.3,23.5L102.7,20.3M104.8,27.1L107.5,24.2M108.9,31.2L111.8,28.5M112.5,35.7L115.7,33.3M118.2,45.6L121.9,44.0M120.3,51.0L124.1,49.8M121.8,56.6L125.7,55.7M122.7,62.3L126.7,61.8M122.7,73.7L126.7,74.2M121.8,79.4L125.7,80.3M120.3,85.0L124.1,86.2M118.2,90.4L121.9,92.0M112.5,100.3L115.7,102.7M108.9,104.8L111.8,107.5M104.8,108.9L107.5,111.8M100.3,112.5L102.7,115.7M90.4,118.2L92.0,121.9M85.0,120.3L86.2,124.1M79.4,121.8L80.3,125.7M73.7,122.7L74.2,126.7M62.3,122.7L61.8,126.7M56.6,121.8L55.7,125.7M51.0,120.3L49.8,124.1M45.6,118.2L44.0,121.9M35.7,112.5L33.3,115.7M31.2,108.9L28.5,111.8M27.1,104.8L24.2,107.5M23.5,100.3L20.3,102.7M17.8,90.4L14.1,92.0M15.7,85.0L11.9,86.2M14.2,79.4L10.3,80.3M13.3,73.7L9.3,74.2M13.3,62.3L9.3,61.8M14.2,56.6L10.3,55.7M15.7,51.0L11.9,49.8M17.8,45.6L14.1,44.0M23.5,35.7L20.3,33.3M27.1,31.2L24.2,28.5M31.2,27.1L28.5,24.2M35.7,23.5L33.3,20.3M45.6,17.8L44.0,14.1M51.0,15.7L49.8,11.9M56.6,14.2L55.7,10.3M62.3,13.3L61.8,9.3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><path d=\"M68.0,17.0L68.0,9.0M93.5,23.8L97.5,16.9M112.2,42.5L119.1,38.5M119.0,68.0L127.0,68.0M112.2,93.5L119.1,97.5M93.5,112.2L97.5,119.1M68.0,119.0L68.0,127.0M42.5,112.2L38.5,119.1M23.8,93.5L16.9,97.5M17.0,68.0L9.0,68.0M23.8,42.5L16.9,38.5M42.5,23.8L38.5,16.9\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"90.8\" y=\"33.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"107.5\" y=\"50.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"113.6\" y=\"73\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"107.5\" y=\"95.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"90.8\" y=\"112.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><text x=\"68\" y=\"118.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><text x=\"45.2\" y=\"112.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><text x=\"28.5\" y=\"95.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8</text><text x=\"22.4\" y=\"73\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">9</text><text x=\"28.5\" y=\"50.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text><text x=\"45.2\" y=\"33.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">11</text><text x=\"68\" y=\"27.4\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12</text><line x1=\"68\" y1=\"68\" x2=\"89.8\" y2=\"55.4\" stroke=\"currentColor\" stroke-width=\"6\"/><line x1=\"68\" y1=\"68\" x2=\"68\" y2=\"30.2\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><circle cx=\"68\" cy=\"68\" r=\"5\" fill=\"currentColor\"/></g><text x=\"68\" y=\"154\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">처음</text><g transform=\"translate(146 0)\"><circle cx=\"68\" cy=\"68\" r=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M73.7,13.3L74.2,9.3M79.4,14.2L80.3,10.3M85.0,15.7L86.2,11.9M90.4,17.8L92.0,14.1M100.3,23.5L102.7,20.3M104.8,27.1L107.5,24.2M108.9,31.2L111.8,28.5M112.5,35.7L115.7,33.3M118.2,45.6L121.9,44.0M120.3,51.0L124.1,49.8M121.8,56.6L125.7,55.7M122.7,62.3L126.7,61.8M122.7,73.7L126.7,74.2M121.8,79.4L125.7,80.3M120.3,85.0L124.1,86.2M118.2,90.4L121.9,92.0M112.5,100.3L115.7,102.7M108.9,104.8L111.8,107.5M104.8,108.9L107.5,111.8M100.3,112.5L102.7,115.7M90.4,118.2L92.0,121.9M85.0,120.3L86.2,124.1M79.4,121.8L80.3,125.7M73.7,122.7L74.2,126.7M62.3,122.7L61.8,126.7M56.6,121.8L55.7,125.7M51.0,120.3L49.8,124.1M45.6,118.2L44.0,121.9M35.7,112.5L33.3,115.7M31.2,108.9L28.5,111.8M27.1,104.8L24.2,107.5M23.5,100.3L20.3,102.7M17.8,90.4L14.1,92.0M15.7,85.0L11.9,86.2M14.2,79.4L10.3,80.3M13.3,73.7L9.3,74.2M13.3,62.3L9.3,61.8M14.2,56.6L10.3,55.7M15.7,51.0L11.9,49.8M17.8,45.6L14.1,44.0M23.5,35.7L20.3,33.3M27.1,31.2L24.2,28.5M31.2,27.1L28.5,24.2M35.7,23.5L33.3,20.3M45.6,17.8L44.0,14.1M51.0,15.7L49.8,11.9M56.6,14.2L55.7,10.3M62.3,13.3L61.8,9.3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><path d=\"M68.0,17.0L68.0,9.0M93.5,23.8L97.5,16.9M112.2,42.5L119.1,38.5M119.0,68.0L127.0,68.0M112.2,93.5L119.1,97.5M93.5,112.2L97.5,119.1M68.0,119.0L68.0,127.0M42.5,112.2L38.5,119.1M23.8,93.5L16.9,97.5M17.0,68.0L9.0,68.0M23.8,42.5L16.9,38.5M42.5,23.8L38.5,16.9\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"90.8\" y=\"33.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"107.5\" y=\"50.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"113.6\" y=\"73\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"107.5\" y=\"95.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"90.8\" y=\"112.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><text x=\"68\" y=\"118.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><text x=\"45.2\" y=\"112.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><text x=\"28.5\" y=\"95.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8</text><text x=\"22.4\" y=\"73\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">9</text><text x=\"28.5\" y=\"50.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text><text x=\"45.2\" y=\"33.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">11</text><text x=\"68\" y=\"27.4\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12</text><line x1=\"68\" y1=\"68\" x2=\"93.2\" y2=\"68\" stroke=\"currentColor\" stroke-width=\"6\"/><line x1=\"68\" y1=\"68\" x2=\"68\" y2=\"30.2\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><circle cx=\"68\" cy=\"68\" r=\"5\" fill=\"currentColor\"/></g><text x=\"214\" y=\"154\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">한 바퀴 뒤</text></svg>",
+   "options": [
+    "1분",
+    "10분",
+    "12시간",
+    "1시간"
+   ],
+   "answer": 3,
+   "why": "긴바늘이 한 바퀴 돌면 60분이 지나고, 짧은바늘은 숫자 한 칸을 움직입니다. 60분은 1시간입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-08-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "1시간 20분은 몇 분인가요?",
+   "options": [
+    "120분",
+    "21분",
+    "80분",
+    "100분"
+   ],
+   "answer": 2,
+   "why": "1시간은 60분이므로 1시간 20분은 60+20=80(분)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-08-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "95분은 몇 시간 몇 분인가요?",
+   "answers": [
+    "1시간 35분",
+    "1시간35분"
+   ],
+   "why": "95분은 60분과 35분이므로 1시간 35분입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-08-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림 그리기를 시작한 시각과 끝낸 시각입니다. 그림을 그린 시간은 몇 분인가요?",
+   "svg": "<svg viewBox=\"0 0 282 162\" font-family=\"sans-serif\"><g transform=\"translate(0 0)\"><circle cx=\"68\" cy=\"68\" r=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M73.7,13.3L74.2,9.3M79.4,14.2L80.3,10.3M85.0,15.7L86.2,11.9M90.4,17.8L92.0,14.1M100.3,23.5L102.7,20.3M104.8,27.1L107.5,24.2M108.9,31.2L111.8,28.5M112.5,35.7L115.7,33.3M118.2,45.6L121.9,44.0M120.3,51.0L124.1,49.8M121.8,56.6L125.7,55.7M122.7,62.3L126.7,61.8M122.7,73.7L126.7,74.2M121.8,79.4L125.7,80.3M120.3,85.0L124.1,86.2M118.2,90.4L121.9,92.0M112.5,100.3L115.7,102.7M108.9,104.8L111.8,107.5M104.8,108.9L107.5,111.8M100.3,112.5L102.7,115.7M90.4,118.2L92.0,121.9M85.0,120.3L86.2,124.1M79.4,121.8L80.3,125.7M73.7,122.7L74.2,126.7M62.3,122.7L61.8,126.7M56.6,121.8L55.7,125.7M51.0,120.3L49.8,124.1M45.6,118.2L44.0,121.9M35.7,112.5L33.3,115.7M31.2,108.9L28.5,111.8M27.1,104.8L24.2,107.5M23.5,100.3L20.3,102.7M17.8,90.4L14.1,92.0M15.7,85.0L11.9,86.2M14.2,79.4L10.3,80.3M13.3,73.7L9.3,74.2M13.3,62.3L9.3,61.8M14.2,56.6L10.3,55.7M15.7,51.0L11.9,49.8M17.8,45.6L14.1,44.0M23.5,35.7L20.3,33.3M27.1,31.2L24.2,28.5M31.2,27.1L28.5,24.2M35.7,23.5L33.3,20.3M45.6,17.8L44.0,14.1M51.0,15.7L49.8,11.9M56.6,14.2L55.7,10.3M62.3,13.3L61.8,9.3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><path d=\"M68.0,17.0L68.0,9.0M93.5,23.8L97.5,16.9M112.2,42.5L119.1,38.5M119.0,68.0L127.0,68.0M112.2,93.5L119.1,97.5M93.5,112.2L97.5,119.1M68.0,119.0L68.0,127.0M42.5,112.2L38.5,119.1M23.8,93.5L16.9,97.5M17.0,68.0L9.0,68.0M23.8,42.5L16.9,38.5M42.5,23.8L38.5,16.9\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"90.8\" y=\"33.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"107.5\" y=\"50.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"113.6\" y=\"73\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"107.5\" y=\"95.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"90.8\" y=\"112.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><text x=\"68\" y=\"118.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><text x=\"45.2\" y=\"112.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><text x=\"28.5\" y=\"95.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8</text><text x=\"22.4\" y=\"73\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">9</text><text x=\"28.5\" y=\"50.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text><text x=\"45.2\" y=\"33.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">11</text><text x=\"68\" y=\"27.4\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12</text><line x1=\"68\" y1=\"68\" x2=\"89.8\" y2=\"55.4\" stroke=\"currentColor\" stroke-width=\"6\"/><line x1=\"68\" y1=\"68\" x2=\"68\" y2=\"30.2\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><circle cx=\"68\" cy=\"68\" r=\"5\" fill=\"currentColor\"/></g><text x=\"68\" y=\"154\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">시작</text><g transform=\"translate(146 0)\"><circle cx=\"68\" cy=\"68\" r=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M73.7,13.3L74.2,9.3M79.4,14.2L80.3,10.3M85.0,15.7L86.2,11.9M90.4,17.8L92.0,14.1M100.3,23.5L102.7,20.3M104.8,27.1L107.5,24.2M108.9,31.2L111.8,28.5M112.5,35.7L115.7,33.3M118.2,45.6L121.9,44.0M120.3,51.0L124.1,49.8M121.8,56.6L125.7,55.7M122.7,62.3L126.7,61.8M122.7,73.7L126.7,74.2M121.8,79.4L125.7,80.3M120.3,85.0L124.1,86.2M118.2,90.4L121.9,92.0M112.5,100.3L115.7,102.7M108.9,104.8L111.8,107.5M104.8,108.9L107.5,111.8M100.3,112.5L102.7,115.7M90.4,118.2L92.0,121.9M85.0,120.3L86.2,124.1M79.4,121.8L80.3,125.7M73.7,122.7L74.2,126.7M62.3,122.7L61.8,126.7M56.6,121.8L55.7,125.7M51.0,120.3L49.8,124.1M45.6,118.2L44.0,121.9M35.7,112.5L33.3,115.7M31.2,108.9L28.5,111.8M27.1,104.8L24.2,107.5M23.5,100.3L20.3,102.7M17.8,90.4L14.1,92.0M15.7,85.0L11.9,86.2M14.2,79.4L10.3,80.3M13.3,73.7L9.3,74.2M13.3,62.3L9.3,61.8M14.2,56.6L10.3,55.7M15.7,51.0L11.9,49.8M17.8,45.6L14.1,44.0M23.5,35.7L20.3,33.3M27.1,31.2L24.2,28.5M31.2,27.1L28.5,24.2M35.7,23.5L33.3,20.3M45.6,17.8L44.0,14.1M51.0,15.7L49.8,11.9M56.6,14.2L55.7,10.3M62.3,13.3L61.8,9.3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><path d=\"M68.0,17.0L68.0,9.0M93.5,23.8L97.5,16.9M112.2,42.5L119.1,38.5M119.0,68.0L127.0,68.0M112.2,93.5L119.1,97.5M93.5,112.2L97.5,119.1M68.0,119.0L68.0,127.0M42.5,112.2L38.5,119.1M23.8,93.5L16.9,97.5M17.0,68.0L9.0,68.0M23.8,42.5L16.9,38.5M42.5,23.8L38.5,16.9\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"90.8\" y=\"33.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"107.5\" y=\"50.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"113.6\" y=\"73\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"107.5\" y=\"95.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"90.8\" y=\"112.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><text x=\"68\" y=\"118.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><text x=\"45.2\" y=\"112.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><text x=\"28.5\" y=\"95.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8</text><text x=\"22.4\" y=\"73\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">9</text><text x=\"28.5\" y=\"50.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text><text x=\"45.2\" y=\"33.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">11</text><text x=\"68\" y=\"27.4\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12</text><line x1=\"68\" y1=\"68\" x2=\"93.1\" y2=\"70.2\" stroke=\"currentColor\" stroke-width=\"6\"/><line x1=\"68\" y1=\"68\" x2=\"100.7\" y2=\"49.1\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><circle cx=\"68\" cy=\"68\" r=\"5\" fill=\"currentColor\"/></g><text x=\"214\" y=\"154\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">끝</text></svg>",
+   "options": [
+    "110분",
+    "10분",
+    "70분",
+    "60분"
+   ],
+   "answer": 2,
+   "why": "2시부터 3시까지 60분, 3시부터 3시 10분까지 10분이므로 70분입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-08-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "어떤 영화의 상영 시간은 100분입니다. 1시간 30분과 비교하여 바르게 말한 것은 무엇인가요?",
+   "options": [
+    "100분은 1시간 40분이므로 10분 더 길다",
+    "100분은 1시간이므로 30분 더 짧다",
+    "100분은 1시간 40분이므로 10분 더 짧다",
+    "두 시간은 같다"
+   ],
+   "answer": 0,
+   "why": "100분=60분+40분=1시간 40분이므로 1시간 30분보다 10분 더 깁니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-08-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "줄넘기를 25분, 축구를 50분 했습니다. 운동한 시간은 모두 몇 시간 몇 분인가요?",
+   "answers": [
+    "1시간 15분",
+    "1시간15분"
+   ],
+   "why": "25+50=75(분)이고, 75분은 60분과 15분이므로 1시간 15분입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-08-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림의 시각에 책을 읽기 시작하여 1시간 10분 동안 읽었습니다. 책 읽기를 끝낸 시각은 언제인가요?",
+   "svg": "<svg viewBox=\"0 0 156 156\" font-family=\"sans-serif\"><circle cx=\"78\" cy=\"78\" r=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M84.8,13.4L85.2,9.4M91.5,14.4L92.3,10.5M98.1,16.2L99.3,12.4M104.4,18.6L106.1,15.0M116.2,25.4L118.6,22.2M121.5,29.7L124.2,26.7M126.3,34.5L129.3,31.8M130.6,39.8L133.8,37.4M137.4,51.6L141.0,49.9M139.8,57.9L143.6,56.7M141.6,64.5L145.5,63.7M142.6,71.2L146.6,70.8M142.6,84.8L146.6,85.2M141.6,91.5L145.5,92.3M139.8,98.1L143.6,99.3M137.4,104.4L141.0,106.1M130.6,116.2L133.8,118.6M126.3,121.5L129.3,124.2M121.5,126.3L124.2,129.3M116.2,130.6L118.6,133.8M104.4,137.4L106.1,141.0M98.1,139.8L99.3,143.6M91.5,141.6L92.3,145.5M84.8,142.6L85.2,146.6M71.2,142.6L70.8,146.6M64.5,141.6L63.7,145.5M57.9,139.8L56.7,143.6M51.6,137.4L49.9,141.0M39.8,130.6L37.4,133.8M34.5,126.3L31.8,129.3M29.7,121.5L26.7,124.2M25.4,116.2L22.2,118.6M18.6,104.4L15.0,106.1M16.2,98.1L12.4,99.3M14.4,91.5L10.5,92.3M13.4,84.8L9.4,85.2M13.4,71.2L9.4,70.8M14.4,64.5L10.5,63.7M16.2,57.9L12.4,56.7M18.6,51.6L15.0,49.9M25.4,39.8L22.2,37.4M29.7,34.5L26.7,31.8M34.5,29.7L31.8,26.7M39.8,25.4L37.4,22.2M51.6,18.6L49.9,15.0M57.9,16.2L56.7,12.4M64.5,14.4L63.7,10.5M71.2,13.4L70.8,9.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><path d=\"M78.0,17.0L78.0,9.0M108.5,25.2L112.5,18.2M130.8,47.5L137.8,43.5M139.0,78.0L147.0,78.0M130.8,108.5L137.8,112.5M108.5,130.8L112.5,137.8M78.0,139.0L78.0,147.0M47.5,130.8L43.5,137.8M25.2,108.5L18.2,112.5M17.0,78.0L9.0,78.0M25.2,47.5L18.2,43.5M47.5,25.2L43.5,18.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"104.6\" y=\"36.9\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"124.1\" y=\"56.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"131.2\" y=\"83\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"124.1\" y=\"109.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"104.6\" y=\"129.1\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><text x=\"78\" y=\"136.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><text x=\"51.4\" y=\"129.1\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><text x=\"31.9\" y=\"109.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8</text><text x=\"24.8\" y=\"83\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">9</text><text x=\"31.9\" y=\"56.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text><text x=\"51.4\" y=\"36.9\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">11</text><text x=\"78\" y=\"29.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12</text><line x1=\"78\" y1=\"78\" x2=\"98.8\" y2=\"98.8\" stroke=\"currentColor\" stroke-width=\"6\"/><line x1=\"78\" y1=\"78\" x2=\"78\" y2=\"122.1\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><circle cx=\"78\" cy=\"78\" r=\"5\" fill=\"currentColor\"/></svg>",
+   "options": [
+    "5시 10분",
+    "4시 40분",
+    "6시 10분",
+    "5시 40분"
+   ],
+   "answer": 3,
+   "why": "시작 시각은 4시 30분입니다. 1시간 뒤는 5시 30분, 다시 10분 뒤는 5시 40분입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-09-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "하루는 몇 시간인가요?",
+   "options": [
+    "12",
+    "60",
+    "24",
+    "7"
+   ],
+   "answer": 2,
+   "why": "하루(1일)는 24시간입니다. 짧은바늘이 두 바퀴 도는 시간입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-09-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "달력에서 색칠한 날은 일요일부터 토요일까지 1주일입니다. 1주일은 며칠인가요?",
+   "svg": "<svg viewBox=\"0 0 314 204\" font-family=\"sans-serif\"><text x=\"157\" y=\"20\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6월</text><rect x=\"3\" y=\"30\" width=\"308\" height=\"168\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"58\" x2=\"311\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"25\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">일</text><text x=\"69\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">월</text><text x=\"113\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">화</text><text x=\"157\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수</text><text x=\"201\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">목</text><text x=\"245\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">금</text><text x=\"289\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">토</text><rect x=\"6\" y=\"61\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"25\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><rect x=\"50\" y=\"61\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"69\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><rect x=\"94\" y=\"61\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"113\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><rect x=\"138\" y=\"61\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"157\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><rect x=\"182\" y=\"61\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"201\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><rect x=\"226\" y=\"61\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"245\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><rect x=\"270\" y=\"61\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"289\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">7</text><text x=\"25\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">8</text><text x=\"69\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">9</text><text x=\"113\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">10</text><text x=\"157\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">11</text><text x=\"201\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">12</text><text x=\"245\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">13</text><text x=\"289\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">14</text><text x=\"25\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">15</text><text x=\"69\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">16</text><text x=\"113\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">17</text><text x=\"157\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">18</text><text x=\"201\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">19</text><text x=\"245\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">20</text><text x=\"289\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">21</text><text x=\"25\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">22</text><text x=\"69\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">23</text><text x=\"113\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">24</text><text x=\"157\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">25</text><text x=\"201\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">26</text><text x=\"245\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">27</text><text x=\"289\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">28</text><text x=\"25\" y=\"189\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">29</text><text x=\"69\" y=\"189\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">30</text></svg>",
+   "options": [
+    "5",
+    "6",
+    "7",
+    "10"
+   ],
+   "answer": 2,
+   "why": "일, 월, 화, 수, 목, 금, 토요일이므로 1주일은 7일입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-09-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "1년은 몇 개월인가요?",
+   "answers": [
+    "12",
+    "12개월",
+    "열두 달",
+    "12달"
+   ],
+   "why": "1월부터 12월까지 있으므로 1년은 12개월입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-09-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "어느 해 5월의 달력입니다. 이 달의 셋째 금요일은 며칠인가요?",
+   "svg": "<svg viewBox=\"0 0 314 204\" font-family=\"sans-serif\"><text x=\"157\" y=\"20\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5월</text><rect x=\"3\" y=\"30\" width=\"308\" height=\"168\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"58\" x2=\"311\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"25\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">일</text><text x=\"69\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">월</text><text x=\"113\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">화</text><text x=\"157\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수</text><text x=\"201\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">목</text><text x=\"245\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">금</text><text x=\"289\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">토</text><text x=\"157\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"201\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"245\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"289\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"25\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"69\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"113\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">7</text><text x=\"157\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">8</text><text x=\"201\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">9</text><text x=\"245\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">10</text><text x=\"289\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">11</text><text x=\"25\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">12</text><text x=\"69\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">13</text><text x=\"113\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">14</text><text x=\"157\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">15</text><text x=\"201\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">16</text><text x=\"245\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">17</text><text x=\"289\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">18</text><text x=\"25\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">19</text><text x=\"69\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">20</text><text x=\"113\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">21</text><text x=\"157\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">22</text><text x=\"201\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">23</text><text x=\"245\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">24</text><text x=\"289\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">25</text><text x=\"25\" y=\"189\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">26</text><text x=\"69\" y=\"189\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">27</text><text x=\"113\" y=\"189\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">28</text><text x=\"157\" y=\"189\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">29</text><text x=\"201\" y=\"189\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">30</text><text x=\"245\" y=\"189\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">31</text></svg>",
+   "options": [
+    "10일",
+    "17일",
+    "24일",
+    "18일"
+   ],
+   "answer": 1,
+   "why": "금요일은 3일, 10일, 17일, …이므로 셋째 금요일은 17일입니다. 같은 요일은 7일마다 돌아옵니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-09-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "색칠한 부분은 놀이공원에 있었던 시간입니다. 오전 9시부터 오후 3시까지는 몇 시간인가요?",
+   "svg": "<svg viewBox=\"0 0 328 84\" font-family=\"sans-serif\"><rect x=\"126.5\" y=\"34\" width=\"75\" height=\"24\" fill=\"#4b7bec\" fill-opacity=\"0.45\"/><rect x=\"14\" y=\"34\" width=\"300\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"164\" y1=\"12\" x2=\"164\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"89\" y=\"18\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">오전</text><text x=\"239\" y=\"18\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">오후</text><line x1=\"14\" y1=\"58\" x2=\"14\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><text x=\"14\" y=\"76\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"26.5\" y1=\"58\" x2=\"26.5\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"39\" y1=\"58\" x2=\"39\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"51.5\" y1=\"58\" x2=\"51.5\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><text x=\"51.5\" y=\"76\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"64\" y1=\"58\" x2=\"64\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"76.5\" y1=\"58\" x2=\"76.5\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"89\" y1=\"58\" x2=\"89\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><text x=\"89\" y=\"76\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"101.5\" y1=\"58\" x2=\"101.5\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"114\" y1=\"58\" x2=\"114\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"126.5\" y1=\"58\" x2=\"126.5\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><text x=\"126.5\" y=\"76\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">9</text><line x1=\"139\" y1=\"58\" x2=\"139\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"151.5\" y1=\"58\" x2=\"151.5\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"164\" y1=\"58\" x2=\"164\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><text x=\"164\" y=\"76\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">12</text><line x1=\"176.5\" y1=\"58\" x2=\"176.5\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"189\" y1=\"58\" x2=\"189\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"201.5\" y1=\"58\" x2=\"201.5\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><text x=\"201.5\" y=\"76\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"214\" y1=\"58\" x2=\"214\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"226.5\" y1=\"58\" x2=\"226.5\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"239\" y1=\"58\" x2=\"239\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><text x=\"239\" y=\"76\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"251.5\" y1=\"58\" x2=\"251.5\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"264\" y1=\"58\" x2=\"264\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"276.5\" y1=\"58\" x2=\"276.5\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><text x=\"276.5\" y=\"76\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">9</text><line x1=\"289\" y1=\"58\" x2=\"289\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"301.5\" y1=\"58\" x2=\"301.5\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><line x1=\"314\" y1=\"58\" x2=\"314\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><text x=\"314\" y=\"76\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">12</text></svg>",
+   "options": [
+    "12시간",
+    "3시간",
+    "9시간",
+    "6시간"
+   ],
+   "answer": 3,
+   "why": "오전 9시부터 낮 12시까지 3시간, 낮 12시부터 오후 3시까지 3시간이므로 6시간입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-09-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "1주일 3일은 며칠인가요?",
+   "answers": [
+    "10",
+    "10일"
+   ],
+   "why": "1주일은 7일이므로 1주일 3일은 7+3=10(일)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-09-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "어느 해 3월의 달력입니다. 색칠한 날(3월 5일부터 3월 18일까지) 동안 수영을 배웠다면, 수영을 배운 기간은 몇 주일인가요?",
+   "svg": "<svg viewBox=\"0 0 314 204\" font-family=\"sans-serif\"><text x=\"157\" y=\"20\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3월</text><rect x=\"3\" y=\"30\" width=\"308\" height=\"168\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"58\" x2=\"311\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"25\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">일</text><text x=\"69\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">월</text><text x=\"113\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">화</text><text x=\"157\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수</text><text x=\"201\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">목</text><text x=\"245\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">금</text><text x=\"289\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">토</text><text x=\"25\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"69\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"113\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"157\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><rect x=\"182\" y=\"61\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"201\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><rect x=\"226\" y=\"61\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"245\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><rect x=\"270\" y=\"61\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"289\" y=\"77\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">7</text><rect x=\"6\" y=\"89\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"25\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">8</text><rect x=\"50\" y=\"89\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"69\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">9</text><rect x=\"94\" y=\"89\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"113\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">10</text><rect x=\"138\" y=\"89\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"157\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">11</text><rect x=\"182\" y=\"89\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"201\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">12</text><rect x=\"226\" y=\"89\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"245\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">13</text><rect x=\"270\" y=\"89\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"289\" y=\"105\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">14</text><rect x=\"6\" y=\"117\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"25\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">15</text><rect x=\"50\" y=\"117\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"69\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">16</text><rect x=\"94\" y=\"117\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"113\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">17</text><rect x=\"138\" y=\"117\" width=\"38\" height=\"22\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><text x=\"157\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">18</text><text x=\"201\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">19</text><text x=\"245\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">20</text><text x=\"289\" y=\"133\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">21</text><text x=\"25\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">22</text><text x=\"69\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">23</text><text x=\"113\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">24</text><text x=\"157\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">25</text><text x=\"201\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">26</text><text x=\"245\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">27</text><text x=\"289\" y=\"161\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">28</text><text x=\"25\" y=\"189\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">29</text><text x=\"69\" y=\"189\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">30</text><text x=\"113\" y=\"189\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">31</text></svg>",
+   "options": [
+    "1주일",
+    "3주일",
+    "2주일",
+    "13주일"
+   ],
+   "answer": 2,
+   "why": "5일부터 18일까지는 14일이고, 7일이 1주일이므로 14일은 2주일입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-09-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "26시간은 몇 일 몇 시간인가요?",
+   "options": [
+    "2일 6시간",
+    "1일 6시간",
+    "2일 2시간",
+    "1일 2시간"
+   ],
+   "answer": 3,
+   "why": "1일은 24시간이므로 26시간은 24시간과 2시간, 곧 1일 2시간입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-09-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "강아지를 키운 지 1년 3개월이 되었습니다. 몇 개월 동안 키웠나요?",
+   "answers": [
+    "15",
+    "15개월"
+   ],
+   "why": "1년은 12개월이므로 1년 3개월은 12+3=15(개월)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-10-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "연필의 길이는 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 236 96\" font-family=\"sans-serif\"><rect x=\"14\" y=\"12\" width=\"156\" height=\"18\" rx=\"3\" fill=\"#4b7bec\" fill-opacity=\"0.75\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"92\" y=\"26\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연필</text><line x1=\"14\" y1=\"30\" x2=\"14\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><line x1=\"170\" y1=\"30\" x2=\"170\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><rect x=\"4\" y=\"46\" width=\"228\" height=\"44\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"46\" x2=\"14\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"14\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"40\" y1=\"46\" x2=\"40\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"66\" y1=\"46\" x2=\"66\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"66\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"92\" y1=\"46\" x2=\"92\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"92\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"118\" y1=\"46\" x2=\"118\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"118\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"144\" y1=\"46\" x2=\"144\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"144\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"170\" y1=\"46\" x2=\"170\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"170\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"196\" y1=\"46\" x2=\"196\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"196\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">7</text><line x1=\"222\" y1=\"46\" x2=\"222\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"222\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">8</text></svg>",
+   "options": [
+    "5 cm",
+    "6 cm",
+    "7 cm",
+    "60 cm"
+   ],
+   "answer": 1,
+   "why": "연필의 왼쪽 끝이 0에 맞추어져 있고 오른쪽 끝이 6에 있으므로 6 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-10-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "색 테이프의 길이는 1 cm가 몇 번인가요?",
+   "svg": "<svg viewBox=\"0 0 258 68\" font-family=\"sans-serif\"><text x=\"27\" y=\"16\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 cm</text><line x1=\"10\" y1=\"22\" x2=\"44\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"10\" y1=\"18\" x2=\"10\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44\" y1=\"18\" x2=\"44\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"10\" y=\"32\" width=\"34\" height=\"28\" fill=\"#4b7bec\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"44\" y=\"32\" width=\"34\" height=\"28\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"78\" y=\"32\" width=\"34\" height=\"28\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"112\" y=\"32\" width=\"34\" height=\"28\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"146\" y=\"32\" width=\"34\" height=\"28\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"180\" y=\"32\" width=\"34\" height=\"28\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"214\" y=\"32\" width=\"34\" height=\"28\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "answers": [
+    "7",
+    "7번"
+   ],
+   "why": "1 cm 칸이 7개이므로 1 cm가 7번, 곧 7 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-10-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "1 m는 어떻게 읽나요?",
+   "options": [
+    "1 센티미터",
+    "1 엠",
+    "1 미터",
+    "1 미리"
+   ],
+   "answer": 2,
+   "why": "m는 ‘미터’, cm는 ‘센티미터’라고 읽습니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-10-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "크레파스의 길이는 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 288 96\" font-family=\"sans-serif\"><rect x=\"92\" y=\"12\" width=\"156\" height=\"18\" rx=\"3\" fill=\"#4b7bec\" fill-opacity=\"0.75\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"170\" y=\"26\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">크레파스</text><line x1=\"92\" y1=\"30\" x2=\"92\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><line x1=\"248\" y1=\"30\" x2=\"248\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><rect x=\"4\" y=\"46\" width=\"280\" height=\"44\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"46\" x2=\"14\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"14\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"40\" y1=\"46\" x2=\"40\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"66\" y1=\"46\" x2=\"66\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"66\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"92\" y1=\"46\" x2=\"92\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"92\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"118\" y1=\"46\" x2=\"118\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"118\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"144\" y1=\"46\" x2=\"144\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"144\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"170\" y1=\"46\" x2=\"170\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"170\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"196\" y1=\"46\" x2=\"196\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"196\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">7</text><line x1=\"222\" y1=\"46\" x2=\"222\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"222\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">8</text><line x1=\"248\" y1=\"46\" x2=\"248\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"248\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">9</text><line x1=\"274\" y1=\"46\" x2=\"274\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"274\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">10</text></svg>",
+   "options": [
+    "9 cm",
+    "3 cm",
+    "12 cm",
+    "6 cm"
+   ],
+   "answer": 3,
+   "why": "크레파스가 3부터 9까지 있으므로 1 cm가 6번, 곧 6 cm입니다. 끝의 눈금 9를 그대로 읽으면 안 됩니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-10-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "책상의 길이를 여러 사람이 각자 자기 뼘으로 재었더니 잰 뼘의 수가 서로 달랐습니다. 그 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "책상의 길이가 계속 변하기 때문에",
+    "뼘의 길이가 사람마다 다르기 때문에",
+    "뼘으로는 길이를 잴 수 없기 때문에",
+    "책상이 너무 무겁기 때문에"
+   ],
+   "answer": 1,
+   "why": "뼘의 길이는 사람마다 달라서 잰 횟수가 다르게 나옵니다. 그래서 누구나 같은 cm, m 같은 단위가 필요합니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-10-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "□ 안에 알맞은 단위를 cm와 m 중에서 골라 쓰세요.\n교실 긴 쪽의 길이는 약 9 □입니다.",
+   "answers": [
+    "m",
+    "미터"
+   ],
+   "why": "교실은 긴 길이이므로 m 단위가 알맞습니다. 9 cm는 손가락 길이 정도입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-10-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "같은 책상의 길이를 두 사람이 자기 뼘으로 재었습니다. 한 뼘의 길이가 더 긴 사람은 누구인가요?",
+   "svg": "<svg viewBox=\"0 0 360 126\" font-family=\"sans-serif\"><text x=\"44\" y=\"44\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">지호</text><rect x=\"54\" y=\"40\" width=\"260\" height=\"12\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M54,38 Q72.6,12 91.1,38\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M91.1,38 Q109.7,12 128.3,38\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M128.3,38 Q146.9,12 165.4,38\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M165.4,38 Q184,12 202.6,38\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M202.6,38 Q221.1,12 239.7,38\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M239.7,38 Q258.3,12 276.9,38\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M276.9,38 Q295.4,12 314,38\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"320\" y=\"50\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">7뼘</text><text x=\"44\" y=\"100\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">수아</text><rect x=\"54\" y=\"96\" width=\"260\" height=\"12\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M54,94 Q68.4,68 82.9,94\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M82.9,94 Q97.3,68 111.8,94\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M111.8,94 Q126.2,68 140.7,94\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M140.7,94 Q155.1,68 169.6,94\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M169.6,94 Q184,68 198.4,94\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M198.4,94 Q212.9,68 227.3,94\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M227.3,94 Q241.8,68 256.2,94\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M256.2,94 Q270.7,68 285.1,94\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><path d=\"M285.1,94 Q299.6,68 314,94\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"320\" y=\"106\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">9뼘</text></svg>",
+   "options": [
+    "지호",
+    "수아",
+    "두 사람이 같다",
+    "알 수 없다"
+   ],
+   "answer": 0,
+   "why": "같은 길이를 잴 때 한 뼘이 길수록 잰 횟수는 적습니다. 지호가 7뼘으로 더 적으므로 지호의 뼘이 더 깁니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-10-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "자 위에 크레파스와 지우개를 놓았습니다. 바르게 말한 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 262 126\" font-family=\"sans-serif\"><rect x=\"40\" y=\"12\" width=\"182\" height=\"18\" rx=\"3\" fill=\"#4b7bec\" fill-opacity=\"0.75\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"131\" y=\"26\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">크레파스</text><line x1=\"40\" y1=\"30\" x2=\"40\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><line x1=\"222\" y1=\"30\" x2=\"222\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><rect x=\"66\" y=\"42\" width=\"78\" height=\"18\" rx=\"3\" fill=\"#e07b39\" fill-opacity=\"0.75\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"105\" y=\"56\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">지우개</text><line x1=\"66\" y1=\"60\" x2=\"66\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><line x1=\"144\" y1=\"60\" x2=\"144\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"3 3\"/><rect x=\"4\" y=\"76\" width=\"254\" height=\"44\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"76\" x2=\"14\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"14\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"40\" y1=\"76\" x2=\"40\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"66\" y1=\"76\" x2=\"66\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"66\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"92\" y1=\"76\" x2=\"92\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"92\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"118\" y1=\"76\" x2=\"118\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"118\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"144\" y1=\"76\" x2=\"144\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"144\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"170\" y1=\"76\" x2=\"170\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"170\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"196\" y1=\"76\" x2=\"196\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"196\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">7</text><line x1=\"222\" y1=\"76\" x2=\"222\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"222\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">8</text><line x1=\"248\" y1=\"76\" x2=\"248\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"248\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">9</text></svg>",
+   "options": [
+    "크레파스가 4 cm 더 길다",
+    "크레파스가 3 cm 더 길다",
+    "지우개가 4 cm 더 길다",
+    "크레파스가 6 cm 더 길다"
+   ],
+   "answer": 0,
+   "why": "크레파스는 1부터 8까지 7 cm, 지우개는 2부터 5까지 3 cm이므로 크레파스가 7-3=4(cm) 더 깁니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-10-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "길이가 1 m인 막대로 칠판의 긴 쪽을 재었더니 꼭 4번이었습니다. 칠판의 긴 쪽 길이는 몇 m인가요?",
+   "answers": [
+    "4",
+    "4 m",
+    "4m",
+    "4미터"
+   ],
+   "why": "1 m로 4번 잰 길이이므로 4 m입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-11-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "1 m 막대를 줄자로 재었습니다. 1 m는 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 342 100\" font-family=\"sans-serif\"><rect x=\"26\" y=\"14\" width=\"290\" height=\"20\" rx=\"3\" fill=\"#4b7bec\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"171\" y=\"29\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 m 막대</text><rect x=\"6\" y=\"40\" width=\"330\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"26\" y1=\"40\" x2=\"26\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"26\" y=\"72\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"55\" y1=\"40\" x2=\"55\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"84\" y1=\"40\" x2=\"84\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"113\" y1=\"40\" x2=\"113\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"142\" y1=\"40\" x2=\"142\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"171\" y1=\"40\" x2=\"171\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"171\" y=\"72\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">50</text><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"229\" y1=\"40\" x2=\"229\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"258\" y1=\"40\" x2=\"258\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"287\" y1=\"40\" x2=\"287\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"316\" y1=\"40\" x2=\"316\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"316\" y=\"72\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">100</text><line x1=\"316\" y1=\"34\" x2=\"316\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\" stroke-dasharray=\"3 2\"/><text x=\"336\" y=\"96\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(cm)</text></svg>",
+   "options": [
+    "10 cm",
+    "1000 cm",
+    "60 cm",
+    "100 cm"
+   ],
+   "answer": 3,
+   "why": "1 m 막대가 줄자의 0부터 100까지 닿으므로 1 m는 100 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-11-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "300 cm는 몇 m인가요?",
+   "answers": [
+    "3",
+    "3 m",
+    "3m",
+    "3미터"
+   ],
+   "why": "100 cm가 1 m이므로 300 cm는 3 m입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-11-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "길이가 1 m인 막대 2개를 겹치지 않게 이어 놓았습니다. 모두 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 320 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"150\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"85\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 m</text><rect x=\"160\" y=\"14\" width=\"150\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"235\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 m</text><path d=\"M10,54 q0,10 10,10 L152,64 l8,8 l8,-8 L300,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? cm</text></svg>",
+   "options": [
+    "200 cm",
+    "2 cm",
+    "20 cm",
+    "102 cm"
+   ],
+   "answer": 0,
+   "why": "1 m는 100 cm이므로 1 m 2개는 100+100=200(cm)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-11-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "1 m 35 cm는 몇 cm인가요?",
+   "options": [
+    "1035 cm",
+    "1350 cm",
+    "135 cm",
+    "36 cm"
+   ],
+   "answer": 2,
+   "why": "1 m는 100 cm이므로 1 m 35 cm는 100+35=135(cm)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-11-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "208 cm는 몇 m 몇 cm인가요?",
+   "answers": [
+    "2 m 8 cm",
+    "2m 8cm",
+    "2m8cm",
+    "2 m 8cm",
+    "2미터 8센티미터"
+   ],
+   "why": "208 cm는 200 cm와 8 cm이고, 200 cm는 2 m이므로 2 m 8 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-11-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "길이가 나머지와 다른 하나는 무엇인가요?",
+   "options": [
+    "105 cm",
+    "1 m 5 cm",
+    "100 cm보다 5 cm 더 긴 길이",
+    "1 m 50 cm"
+   ],
+   "answer": 3,
+   "why": "105 cm=1 m 5 cm이고 100 cm보다 5 cm 긴 길이도 105 cm입니다. 1 m 50 cm는 150 cm로 다릅니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-11-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "길이가 가장 긴 것은 무엇인가요?",
+   "options": [
+    "1 m 9 cm",
+    "98 cm",
+    "1 m 15 cm",
+    "120 cm"
+   ],
+   "answer": 3,
+   "why": "모두 cm로 바꾸면 109 cm, 98 cm, 115 cm, 120 cm이므로 120 cm가 가장 깁니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-11-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "줄넘기 줄의 길이를 재었더니 1 m 자로 2번 재고 35 cm가 더 남았습니다. 줄의 길이는 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 325.5 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"130\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"75\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 m</text><rect x=\"140\" y=\"14\" width=\"130\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"205\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 m</text><rect x=\"270\" y=\"14\" width=\"45.5\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"292.8\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">35 cm</text><path d=\"M10,54 q0,10 10,10 L154.8,64 l8,8 l8,-8 L305.5,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"162.8\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">줄의 길이</text></svg>",
+   "answers": [
+    "235",
+    "235 cm",
+    "235cm"
+   ],
+   "why": "1 m 2번은 200 cm이고 35 cm가 더 있으므로 200+35=235(cm)입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-11-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "줄자로 줄의 길이를 재었습니다. 줄의 길이를 바르게 나타낸 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 342 100\" font-family=\"sans-serif\"><rect x=\"26\" y=\"14\" width=\"188.5\" height=\"20\" rx=\"3\" fill=\"#4b7bec\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"120.2\" y=\"29\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">줄</text><rect x=\"6\" y=\"40\" width=\"330\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"26\" y1=\"40\" x2=\"26\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"26\" y=\"72\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"40.5\" y1=\"40\" x2=\"40.5\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"55\" y1=\"40\" x2=\"55\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"69.5\" y1=\"40\" x2=\"69.5\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"84\" y1=\"40\" x2=\"84\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"98.5\" y1=\"40\" x2=\"98.5\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"98.5\" y=\"72\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">50</text><line x1=\"113\" y1=\"40\" x2=\"113\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"127.5\" y1=\"40\" x2=\"127.5\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"142\" y1=\"40\" x2=\"142\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"156.5\" y1=\"40\" x2=\"156.5\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"171\" y1=\"40\" x2=\"171\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"171\" y=\"72\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">100</text><line x1=\"185.5\" y1=\"40\" x2=\"185.5\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"214.5\" y1=\"40\" x2=\"214.5\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"229\" y1=\"40\" x2=\"229\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"243.5\" y1=\"40\" x2=\"243.5\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"243.5\" y=\"72\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">150</text><line x1=\"258\" y1=\"40\" x2=\"258\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"272.5\" y1=\"40\" x2=\"272.5\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"287\" y1=\"40\" x2=\"287\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"301.5\" y1=\"40\" x2=\"301.5\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"316\" y1=\"40\" x2=\"316\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"316\" y=\"72\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">200</text><line x1=\"214.5\" y1=\"34\" x2=\"214.5\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\" stroke-dasharray=\"3 2\"/><text x=\"336\" y=\"96\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(cm)</text></svg>",
+   "options": [
+    "1 m 3 cm",
+    "1 m 30 cm",
+    "13 m",
+    "103 cm"
+   ],
+   "answer": 1,
+   "why": "줄이 0부터 130까지 닿으므로 130 cm이고, 130 cm는 1 m 30 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-12-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-12",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "엄지손가락 너비는 약 1 cm입니다. 지우개의 길이가 엄지손가락 너비로 4번쯤이면, 지우개의 길이는 약 몇 cm인가요?",
+   "options": [
+    "약 4 cm",
+    "약 1 cm",
+    "약 40 cm",
+    "약 14 cm"
+   ],
+   "answer": 0,
+   "why": "약 1 cm인 엄지손가락 너비로 4번쯤이므로 약 4 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-12-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-12",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 길이가 약 1 m에 가장 가까운 것은 무엇인가요?",
+   "options": [
+    "클립의 길이",
+    "지우개의 길이",
+    "교실 문의 폭",
+    "운동장 한 바퀴"
+   ],
+   "answer": 2,
+   "why": "교실 문의 폭은 약 1 m입니다. 클립과 지우개는 몇 cm, 운동장 한 바퀴는 아주 깁니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-12-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-12",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "위의 짧은 막대는 1 cm입니다. 아래 색 테이프의 길이는 약 몇 cm인지 어림하세요.",
+   "svg": "<svg viewBox=\"0 0 174 74\" font-family=\"sans-serif\"><text x=\"10\" y=\"18\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">1 cm</text><rect x=\"54\" y=\"6\" width=\"30\" height=\"16\" fill=\"#e07b39\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"10\" y=\"40\" width=\"150\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "answers": [
+    "5",
+    "약 5",
+    "5 cm",
+    "약 5 cm",
+    "5cm",
+    "약 5cm"
+   ],
+   "why": "1 cm 막대를 5번쯤 이어 놓은 길이이므로 약 5 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-12-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-12",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "물건의 길이를 알맞게 어림한 것은 무엇인가요?",
+   "options": [
+    "운동화의 길이는 약 2 m",
+    "연필의 길이는 약 15 cm",
+    "칠판의 길이는 약 50 cm",
+    "식탁의 높이는 약 7 m"
+   ],
+   "answer": 1,
+   "why": "연필은 약 15 cm쯤입니다. 운동화는 약 20 cm, 칠판은 몇 m, 식탁 높이는 1 m가 안 됩니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-12-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-12",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "길이가 30 cm인 끈의 길이를 네 사람이 어림했습니다. 실제 길이에 가장 가깝게 어림한 사람은 누구인가요?",
+   "svg": "<svg viewBox=\"0 0 318 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"312\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"59\" y1=\"3\" x2=\"59\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"123\" y1=\"3\" x2=\"123\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"187\" y1=\"3\" x2=\"187\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"251\" y1=\"3\" x2=\"251\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"315\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"31\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">이름</text><text x=\"91\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">지호</text><text x=\"155\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수아</text><text x=\"219\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">은우</text><text x=\"283\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다온</text><text x=\"31\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">어림</text><text x=\"91\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">약 25 cm</text><text x=\"155\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">약 32 cm</text><text x=\"219\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">약 40 cm</text><text x=\"283\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">약 20 cm</text></svg>",
+   "options": [
+    "지호",
+    "수아",
+    "은우",
+    "다온"
+   ],
+   "answer": 1,
+   "why": "30 cm와의 차이가 지호 5 cm, 수아 2 cm, 은우 10 cm, 다온 10 cm이므로 수아가 가장 가깝습니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-12-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-12",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "줄의 길이를 약 70 cm로 어림했습니다. 자로 재어 보니 72 cm였습니다. 어림한 길이와 잰 길이의 차이는 몇 cm인가요?",
+   "answers": [
+    "2",
+    "2 cm",
+    "2cm"
+   ],
+   "why": "72-70=2이므로 차이는 2 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-12-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-12",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다음 중 길이를 cm 단위로 어림하는 것이 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "교실 긴 쪽의 길이",
+    "필통의 길이",
+    "복도의 길이",
+    "버스의 길이"
+   ],
+   "answer": 1,
+   "why": "필통처럼 짧은 물건은 cm로, 교실·복도·버스처럼 긴 것은 m로 어림하는 것이 알맞습니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-12-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-12",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "내 한 걸음은 약 50 cm입니다. 교실 문에서 칠판까지 6걸음이었다면 약 몇 m인가요?",
+   "svg": "<svg viewBox=\"0 0 305 54\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"47.5\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"33.8\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">50cm</text><rect x=\"57.5\" y=\"14\" width=\"47.5\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"81.2\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">50cm</text><rect x=\"105\" y=\"14\" width=\"47.5\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"128.8\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">50cm</text><rect x=\"152.5\" y=\"14\" width=\"47.5\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"176.2\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">50cm</text><rect x=\"200\" y=\"14\" width=\"47.5\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"223.8\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">50cm</text><rect x=\"247.5\" y=\"14\" width=\"47.5\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"271.2\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">50cm</text></svg>",
+   "options": [
+    "약 6 m",
+    "약 3 m",
+    "약 56 cm",
+    "약 30 m"
+   ],
+   "answer": 1,
+   "why": "50 cm 2걸음이 약 1 m이므로 6걸음은 약 3 m입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-12-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-12",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "위의 막대는 1 m입니다. 줄넘기 줄의 길이는 약 몇 m인지 어림하세요.",
+   "svg": "<svg viewBox=\"0 0 234 90\" font-family=\"sans-serif\"><text x=\"10\" y=\"22\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">1 m</text><rect x=\"46\" y=\"10\" width=\"70\" height=\"16\" fill=\"#e07b39\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M10,52 C63,40 126,64 220,52\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"5\"/><text x=\"105\" y=\"82\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">줄넘기 줄</text></svg>",
+   "answers": [
+    "3",
+    "약 3",
+    "3 m",
+    "약 3 m",
+    "3m",
+    "약 3m"
+   ],
+   "why": "1 m 막대를 3번쯤 이어 놓은 길이와 비슷하므로 약 3 m입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-13-c1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-13",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "15 cm + 23 cm는 몇 cm인가요?",
+   "options": [
+    "38 cm",
+    "28 cm",
+    "8 cm",
+    "48 cm"
+   ],
+   "answer": 0,
+   "why": "cm끼리 더하면 15+23=38이므로 38 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-13-c2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-13",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "계산하세요.\n2 m 50 cm + 1 m 20 cm",
+   "answers": [
+    "3 m 70 cm",
+    "3m 70cm",
+    "3m70cm",
+    "370 cm",
+    "370cm"
+   ],
+   "why": "m끼리 2+1=3, cm끼리 50+20=70이므로 3 m 70 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-13-c3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-13",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "길이가 12 cm, 25 cm인 색 테이프를 겹치지 않게 이었습니다. 이은 색 테이프의 길이는 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 297.5 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"90\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"55\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12 cm</text><rect x=\"100\" y=\"14\" width=\"187.5\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"193.8\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">25 cm</text><path d=\"M10,54 q0,10 10,10 L140.8,64 l8,8 l8,-8 L277.5,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"148.8\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? cm</text></svg>",
+   "options": [
+    "13 cm",
+    "27 cm",
+    "37 cm",
+    "47 cm"
+   ],
+   "answer": 2,
+   "why": "12+25=37이므로 37 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-13-b1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-13",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "3 m 80 cm - 1 m 50 cm는 얼마인가요?",
+   "options": [
+    "2 m 30 cm",
+    "1 m 30 cm",
+    "2 m 3 cm",
+    "5 m 30 cm"
+   ],
+   "answer": 0,
+   "why": "m끼리 3-1=2, cm끼리 80-50=30이므로 2 m 30 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-13-b2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-13",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "64 cm인 색 테이프에서 28 cm를 잘라 썼습니다. 남은 색 테이프는 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 314.4 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"128.8\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"74.4\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">28 cm</text><rect x=\"138.8\" y=\"14\" width=\"165.6\" height=\"30\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"221.6\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><path d=\"M10,54 q0,10 10,10 L149.2,64 l8,8 l8,-8 L294.4,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"157.2\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">64 cm</text></svg>",
+   "answers": [
+    "36",
+    "36 cm",
+    "36cm"
+   ],
+   "why": "64-28=36이므로 남은 길이는 36 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-13-b3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-13",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "1 m 40 cm인 막대와 85 cm인 막대를 겹치지 않게 이었습니다. 전체 길이는 몇 m 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 323.8 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"189\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"104.5\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 m 40 cm</text><rect x=\"199\" y=\"14\" width=\"114.8\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"256.4\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">85 cm</text><path d=\"M10,54 q0,10 10,10 L153.9,64 l8,8 l8,-8 L303.8,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"161.9\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text></svg>",
+   "options": [
+    "1 m 25 cm",
+    "2 m 25 cm",
+    "2 m 15 cm",
+    "225 m"
+   ],
+   "answer": 1,
+   "why": "140+85=225(cm)이고, 225 cm는 2 m 25 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-13-a1",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-13",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "키가 1 m 28 cm인 어린이가 높이 45 cm인 의자 위에 올라섰습니다. 바닥에서 어린이 머리끝까지의 높이는 몇 m 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 322.8 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"78.8\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"49.4\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">의자 45 cm</text><rect x=\"88.8\" y=\"14\" width=\"224\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"200.8\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">키 1 m 28 cm</text><path d=\"M10,54 q0,10 10,10 L153.4,64 l8,8 l8,-8 L302.8,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"161.4\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">바닥에서 머리끝까지</text></svg>",
+   "options": [
+    "1 m 63 cm",
+    "1 m 83 cm",
+    "1 m 73 cm",
+    "83 cm"
+   ],
+   "answer": 2,
+   "why": "1 m 28 cm+45 cm에서 cm끼리 28+45=73이므로 1 m 73 cm입니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-13-a2",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-13",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "줄 가는 2 m 45 cm, 줄 나는 3 m 10 cm입니다. 줄 나는 줄 가보다 몇 cm 더 긴가요?",
+   "svg": "<svg viewBox=\"0 0 330 92\" font-family=\"sans-serif\"><rect x=\"10\" y=\"10\" width=\"245\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"132\" y=\"31\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가 2 m 45 cm</text><rect x=\"10\" y=\"54\" width=\"310\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"165\" y=\"75\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나 3 m 10 cm</text></svg>",
+   "answers": [
+    "65",
+    "65 cm",
+    "65cm"
+   ],
+   "why": "3 m 10 cm=310 cm, 2 m 45 cm=245 cm이므로 310-245=65(cm) 더 깁니다."
+  },
+  {
+   "id": "수학-초1-2-2수03-13-a3",
+   "subject": "수학",
+   "gradeBand": "초1-2",
+   "unit": "도형과 측정",
+   "standard": "2수03-13",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "1 m 70 cm인 끈에 다른 끈을 겹치지 않게 이어서 3 m 20 cm로 만들려고 합니다. 몇 m 몇 cm인 끈을 이어야 하나요?",
+   "svg": "<svg viewBox=\"0 0 324 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"161.5\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"90.8\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 m 70 cm</text><rect x=\"171.5\" y=\"14\" width=\"142.5\" height=\"30\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"242.8\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><path d=\"M10,54 q0,10 10,10 L154,64 l8,8 l8,-8 L304,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"162\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3 m 20 cm</text></svg>",
+   "options": [
+    "1 m 50 cm",
+    "2 m 50 cm",
+    "1 m 10 cm",
+    "4 m 90 cm"
+   ],
+   "answer": 0,
+   "why": "3 m 20 cm-1 m 70 cm를 계산합니다. 320-170=150(cm)이므로 1 m 50 cm입니다."
+  }
+ ],
+ "skipped": []
+}
