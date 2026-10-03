@@ -1,0 +1,1212 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "초",
+  "course": "수학",
+  "gradeBand": "초3-4",
+  "unit": "도형과 측정",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-초3-4-4수03-01-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "아래 그림에서 반직선은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 158 224\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><line x1=\"12\" y1=\"24\" x2=\"138\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\"/><polyline points=\"16.1,20.1 8,24 16.1,27.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"133.9,27.9 142,24 133.9,20.1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"40\" cy=\"24\" r=\"4\" fill=\"currentColor\"/><circle cx=\"110\" cy=\"24\" r=\"4\" fill=\"currentColor\"/><text x=\"40\" y=\"46\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><text x=\"110\" y=\"46\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄴ</text></g><text x=\"79\" y=\"66\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(4 76)\"><line x1=\"40\" y1=\"24\" x2=\"110\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"40\" cy=\"24\" r=\"4\" fill=\"currentColor\"/><circle cx=\"110\" cy=\"24\" r=\"4\" fill=\"currentColor\"/><text x=\"40\" y=\"46\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><text x=\"110\" y=\"46\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄴ</text></g><text x=\"79\" y=\"142\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(4 152)\"><line x1=\"40\" y1=\"24\" x2=\"138\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\"/><polyline points=\"133.9,27.9 142,24 133.9,20.1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"40\" cy=\"24\" r=\"4\" fill=\"currentColor\"/><circle cx=\"110\" cy=\"24\" r=\"4\" fill=\"currentColor\"/><text x=\"40\" y=\"46\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><text x=\"110\" y=\"46\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄴ</text></g><text x=\"79\" y=\"218\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text></svg>",
+   "options": [
+    "가",
+    "나",
+    "다",
+    "없다"
+   ],
+   "answer": 2,
+   "why": "한 점에서 시작하여 한쪽으로 끝없이 늘인 곧은 선(다)이 반직선입니다. 가는 직선, 나는 선분입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-01-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "두 점을 곧게 이은 선을 무엇이라고 하나요?",
+   "options": [
+    "직선",
+    "반직선",
+    "선분",
+    "곡선"
+   ],
+   "answer": 2,
+   "why": "두 점을 곧게 이은 선은 선분입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-01-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "양쪽으로 끝없이 늘인 곧은 선을 무엇이라고 하나요?",
+   "answers": [
+    "직선"
+   ],
+   "why": "양쪽으로 끝없이 늘인 곧은 선은 직선입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-01-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "아래 그림의 도형을 바르게 읽은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 200 60\" font-family=\"sans-serif\"><line x1=\"40\" y1=\"30\" x2=\"188\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"3\"/><polyline points=\"183.9,33.9 192,30 183.9,26.1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"40\" cy=\"30\" r=\"4\" fill=\"currentColor\"/><circle cx=\"160\" cy=\"30\" r=\"4\" fill=\"currentColor\"/><text x=\"40\" y=\"52\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><text x=\"160\" y=\"52\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄴ</text></svg>",
+   "options": [
+    "반직선 ㄱㄴ",
+    "반직선 ㄴㄱ",
+    "직선 ㄱㄴ",
+    "선분 ㄱㄴ"
+   ],
+   "answer": 0,
+   "why": "점 ㄱ에서 시작하여 점 ㄴ을 지나 끝없이 늘인 선이므로 반직선 ㄱㄴ입니다. 반직선은 시작하는 점을 먼저 읽습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-01-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 서로 같은 것은 무엇인가요?",
+   "options": [
+    "선분 ㄱㄴ과 직선 ㄱㄴ",
+    "반직선 ㄱㄴ과 반직선 ㄴㄱ",
+    "직선 ㄱㄴ과 반직선 ㄱㄴ",
+    "선분 ㄱㄴ과 선분 ㄴㄱ"
+   ],
+   "answer": 3,
+   "why": "선분은 양 끝점이 같으면 읽는 순서가 달라도 같습니다. 반직선은 시작하는 점이 다르면 서로 다른 도형입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-01-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "점 ㄱ과 점 ㄴ을 지나는 직선은 모두 몇 개 그을 수 있나요?",
+   "answers": [
+    "1",
+    "1개",
+    "한 개",
+    "하나"
+   ],
+   "why": "서로 다른 두 점을 지나는 직선은 오직 하나만 그을 수 있습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-01-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "직선, 반직선, 선분을 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "선분은 한쪽으로 끝없이 늘인 선이고, 직선은 두 점을 곧게 이은 선이다",
+    "선분은 두 점을 곧게 이은 선이고, 반직선은 한 점에서 한쪽으로 끝없이 늘인 선이다",
+    "직선은 한 점에서 시작하여 한쪽으로만 끝없이 늘인 선이다",
+    "반직선은 양쪽 끝이 있는 선이고, 선분은 끝이 없는 선이다"
+   ],
+   "answer": 1,
+   "why": "선분은 양 끝이 있고, 반직선은 한쪽만 끝이 없고, 직선은 양쪽 모두 끝이 없습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-01-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한 직선 위에 있지 않은 세 점 ㄱ, ㄴ, ㄷ이 있습니다. 이 중 두 점을 이어 그을 수 있는 선분은 모두 몇 개인가요?",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "6"
+   ],
+   "answer": 1,
+   "why": "선분 ㄱㄴ, 선분 ㄴㄷ, 선분 ㄱㄷ으로 모두 3개입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-01-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다음 중 선분의 예로 알맞지 않은 것은 무엇인가요?",
+   "options": [
+    "팽팽하게 당긴 고무줄",
+    "자로 두 점을 이어 그은 선",
+    "직각삼각자의 한 변",
+    "손전등에서 끝없이 퍼져 나가는 빛줄기"
+   ],
+   "answer": 3,
+   "why": "손전등의 빛줄기는 한 점에서 시작하여 한쪽으로 끝없이 나아가므로 반직선에 가깝습니다. 나머지는 양 끝이 있는 선분입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-02-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "아래 각 중에서 직각은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 416 120\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"59.8\" y2=\"21.2\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><path d=\"M52.8,74.9 A24,24 0 0 0 40.8,54.1\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></g><text x=\"72\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(140 0)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"-11.1\" y2=\"27.4\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><path d=\"M52.8,74.9 A24,24 0 0 0 13.4,56.5\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></g><text x=\"208\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(276 0)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"28.8\" y2=\"12.9\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><polyline points=\"44.8,74.9 44.8,58.9 28.8,58.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"344\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text></svg>",
+   "options": [
+    "가",
+    "나",
+    "다",
+    "없다"
+   ],
+   "answer": 2,
+   "why": "삼각자의 직각 부분과 꼭 맞는 각(다)이 직각입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-02-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "삼각자의 직각 부분에 꼭 맞게 대어 지는 각을 무엇이라고 하나요?",
+   "options": [
+    "직각",
+    "예각",
+    "둔각",
+    "평각"
+   ],
+   "answer": 0,
+   "why": "삼각자의 직각 부분과 꼭 맞는 각을 직각이라고 합니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-02-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "아래 각은 직각보다 작은 각입니다. 이런 각을 무엇이라고 하나요?",
+   "svg": "<svg viewBox=\"0 0 150 110\" font-family=\"sans-serif\"><line x1=\"33\" y1=\"85.8\" x2=\"111.8\" y2=\"71.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"33\" y1=\"85.8\" x2=\"66.8\" y2=\"13.3\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"33\" cy=\"85.8\" r=\"4\" fill=\"currentColor\"/><path d=\"M56.6,81.6 A24,24 0 0 0 43.1,64\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></svg>",
+   "answers": [
+    "예각"
+   ],
+   "why": "직각보다 작은 각은 예각입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-02-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "아래 각 중에서 예각은 모두 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 416 244\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"76.3\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><path d=\"M52.8,74.9 A24,24 0 0 0 47.2,59.5\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></g><text x=\"72\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(140 0)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"28.8\" y2=\"12.9\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><polyline points=\"44.8,74.9 44.8,58.9 28.8,58.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"208\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(276 0)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"7.6\" y2=\"16.6\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><path d=\"M52.8,74.9 A24,24 0 0 0 20.6,52.3\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></g><text x=\"344\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(72 124)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"50\" y2=\"16.6\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><path d=\"M52.8,74.9 A24,24 0 0 0 37,52.3\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></g><text x=\"140\" y=\"238\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text><g transform=\"translate(208 124)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"-24.9\" y2=\"43.9\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><path d=\"M52.8,74.9 A24,24 0 0 0 8,62.9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></g><text x=\"276\" y=\"238\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">마</text></svg>",
+   "options": [
+    "1",
+    "3",
+    "2",
+    "4"
+   ],
+   "answer": 2,
+   "why": "직각보다 작은 가와 라가 예각이므로 모두 2개입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-02-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "아래 각 중에서 직각보다 작은 각은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 416 244\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"-6.8\" y2=\"24.1\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><path d=\"M52.8,74.9 A24,24 0 0 0 15,55.2\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></g><text x=\"72\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(140 0)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"72.6\" y2=\"31\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><path d=\"M52.8,74.9 A24,24 0 0 0 45.8,57.9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></g><text x=\"208\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(276 0)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"28.8\" y2=\"12.9\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><polyline points=\"44.8,74.9 44.8,58.9 28.8,58.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"344\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(140 124)\"><line x1=\"28.8\" y1=\"74.9\" x2=\"90.8\" y2=\"74.9\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.8\" y1=\"74.9\" x2=\"-24.9\" y2=\"43.9\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"28.8\" cy=\"74.9\" r=\"4\" fill=\"currentColor\"/><path d=\"M52.8,74.9 A24,24 0 0 0 8,62.9\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/></g><text x=\"208\" y=\"238\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
+   "options": [
+    "가",
+    "나",
+    "다",
+    "라"
+   ],
+   "answer": 1,
+   "why": "직각보다 작은 각은 예각이고, 나가 예각입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-02-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "직각보다 크고 일직선보다 작은 각을 무엇이라고 하나요?",
+   "answers": [
+    "둔각"
+   ],
+   "why": "직각보다 크고 일직선(180°)보다 작은 각이 둔각입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-02-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "예각과 둔각의 차이를 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "예각은 변이 길고 둔각은 변이 짧다",
+    "예각은 직각보다 큰 각이고 둔각은 직각보다 작은 각이다",
+    "예각과 둔각은 모두 직각과 크기가 같다",
+    "예각은 직각보다 작은 각이고 둔각은 직각보다 큰 각이다"
+   ],
+   "answer": 3,
+   "why": "직각과 비교하여 작은 각은 예각, 큰 각은 둔각입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-02-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "시계의 두 바늘이 만드는 작은 쪽 각은 직각과 비교하면 어떤 각인가요?",
+   "svg": "<svg viewBox=\"0 0 144 144\" font-family=\"sans-serif\"><circle cx=\"72\" cy=\"72\" r=\"64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M78.2,13.3L78.6,9.3M84.3,14.3L85.1,10.4M90.2,15.9L91.5,12.1M96.0,18.1L97.6,14.4M106.7,24.3L109.0,21.0M111.5,28.2L114.2,25.2M115.8,32.5L118.8,29.8M119.7,37.3L123.0,35.0M125.9,48.0L129.6,46.4M128.1,53.8L131.9,52.5M129.7,59.7L133.6,58.9M130.7,65.8L134.7,65.4M130.7,78.2L134.7,78.6M129.7,84.3L133.6,85.1M128.1,90.2L131.9,91.5M125.9,96.0L129.6,97.6M119.7,106.7L123.0,109.0M115.8,111.5L118.8,114.2M111.5,115.8L114.2,118.8M106.7,119.7L109.0,123.0M96.0,125.9L97.6,129.6M90.2,128.1L91.5,131.9M84.3,129.7L85.1,133.6M78.2,130.7L78.6,134.7M65.8,130.7L65.4,134.7M59.7,129.7L58.9,133.6M53.8,128.1L52.5,131.9M48.0,125.9L46.4,129.6M37.3,119.7L35.0,123.0M32.5,115.8L29.8,118.8M28.2,111.5L25.2,114.2M24.3,106.7L21.0,109.0M18.1,96.0L14.4,97.6M15.9,90.2L12.1,91.5M14.3,84.3L10.4,85.1M13.3,78.2L9.3,78.6M13.3,65.8L9.3,65.4M14.3,59.7L10.4,58.9M15.9,53.8L12.1,52.5M18.1,48.0L14.4,46.4M24.3,37.3L21.0,35.0M28.2,32.5L25.2,29.8M32.5,28.2L29.8,25.2M37.3,24.3L35.0,21.0M48.0,18.1L46.4,14.4M53.8,15.9L52.5,12.1M59.7,14.3L58.9,10.4M65.8,13.3L65.4,9.3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><path d=\"M72.0,17.0L72.0,9.0M99.5,24.4L103.5,17.4M119.6,44.5L126.6,40.5M127.0,72.0L135.0,72.0M119.6,99.5L126.6,103.5M99.5,119.6L103.5,126.6M72.0,127.0L72.0,135.0M44.5,119.6L40.5,126.6M24.4,99.5L17.4,103.5M17.0,72.0L9.0,72.0M24.4,44.5L17.4,40.5M44.5,24.4L40.5,17.4\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"96.3\" y=\"34.9\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"114.1\" y=\"52.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"120.6\" y=\"77\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"114.1\" y=\"101.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"96.3\" y=\"119.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><text x=\"72\" y=\"125.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><text x=\"47.7\" y=\"119.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><text x=\"29.9\" y=\"101.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8</text><text x=\"23.4\" y=\"77\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">9</text><text x=\"29.9\" y=\"52.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text><text x=\"47.7\" y=\"34.9\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">11</text><text x=\"72\" y=\"28.4\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12</text><line x1=\"72\" y1=\"72\" x2=\"95.3\" y2=\"85.4\" stroke=\"currentColor\" stroke-width=\"6\"/><line x1=\"72\" y1=\"72\" x2=\"72\" y2=\"31.7\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><circle cx=\"72\" cy=\"72\" r=\"5\" fill=\"currentColor\"/></svg>",
+   "options": [
+    "예각",
+    "둔각",
+    "직각",
+    "알 수 없다"
+   ],
+   "answer": 1,
+   "why": "4시일 때 짧은바늘과 긴바늘이 이루는 각은 직각(3시)보다 크므로 둔각입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-02-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "삼각형 ㄱㄴㄷ에서 각 ㄴ이 직각입니다. 나머지 두 각은 직각과 비교하면 어떤가요?",
+   "svg": "<svg viewBox=\"0 0 170 150\" font-family=\"sans-serif\"><polygon points=\"30,120 30,30 140,120\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"17.6\" y=\"135.1\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄴ</text><text x=\"21.7\" y=\"21.3\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><text x=\"154.8\" y=\"131.1\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄷ</text><polyline points=\"42,120 42,108 30,108\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "하나는 직각이다",
+    "둘 다 직각보다 크다",
+    "둘 다 직각보다 작다",
+    "하나는 직각보다 크다"
+   ],
+   "answer": 2,
+   "why": "삼각형의 세 각의 크기의 합은 180°이고 한 각이 90°이면 나머지 두 각의 합이 90°이므로 둘 다 직각보다 작습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-03-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "직선 가에 평행한 직선은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 262 212\" font-family=\"sans-serif\"><line x1=\"22\" y1=\"66\" x2=\"230\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"29.2,62.5 22,66 29.2,69.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"222.8,69.5 230,66 222.8,62.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"246\" y=\"75\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><line x1=\"22\" y1=\"136\" x2=\"230\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"29.2,132.5 22,136 29.2,139.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"222.8,139.5 230,136 222.8,132.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"246\" y=\"145\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><line x1=\"86\" y1=\"22\" x2=\"86\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"89.5,29.2 86,22 82.5,29.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"82.5,182.8 86,190 89.5,182.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"82\" y=\"211\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><line x1=\"127.6\" y1=\"187.2\" x2=\"234.4\" y2=\"44.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"129.1,179.3 127.6,187.2 134.7,183.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"232.9,52.7 234.4,44.8 227.3,48.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"247.2\" y=\"39.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text><polyline points=\"98,66 98,78 86,78\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"98,136 98,148 86,148\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "나",
+    "다",
+    "라",
+    "없다"
+   ],
+   "answer": 0,
+   "why": "아무리 늘여도 만나지 않는 두 직선(가와 나)이 서로 평행합니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-03-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "직선 다에 수직인 직선은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 282 212\" font-family=\"sans-serif\"><line x1=\"22\" y1=\"86\" x2=\"260\" y2=\"86\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"29.2,82.5 22,86 29.2,89.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"252.8,89.5 260,86 252.8,82.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"276\" y=\"95\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><line x1=\"48.7\" y1=\"187.9\" x2=\"143.3\" y2=\"34.1\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"49.5,180 48.7,187.9 55.4,183.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"142.5,42 143.3,34.1 136.6,38.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"155.1\" y=\"27.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><line x1=\"156\" y1=\"22\" x2=\"156\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"159.5,29.2 156,22 152.5,29.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"152.5,182.8 156,190 159.5,182.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"152\" y=\"211\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><line x1=\"226\" y1=\"22\" x2=\"226\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"229.5,29.2 226,22 222.5,29.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"222.5,182.8 226,190 229.5,182.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"222\" y=\"211\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text><polyline points=\"168,86 168,98 156,98\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "가",
+    "나",
+    "라",
+    "없다"
+   ],
+   "answer": 0,
+   "why": "두 직선이 만나서 이루는 각이 직각인 직선(가)이 직선 다에 수직입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-03-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "한 직선에 수직인 두 직선은 서로 만나지 않습니다. 이런 두 직선의 관계를 무엇이라고 하나요?",
+   "answers": [
+    "평행",
+    "평행하다",
+    "평행선",
+    "평행한 직선"
+   ],
+   "why": "서로 만나지 않는 두 직선은 평행하다고 합니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-03-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "두 직선이 서로 만나서 이루는 각이 직각일 때, 두 직선의 관계를 무엇이라고 하나요?",
+   "options": [
+    "수직",
+    "평행",
+    "예각",
+    "둔각"
+   ],
+   "answer": 0,
+   "why": "두 직선이 만나 직각을 이루면 서로 수직이라고 합니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-03-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "서로 수직인 직선끼리 짝지은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 282 212\" font-family=\"sans-serif\"><line x1=\"22\" y1=\"126\" x2=\"250\" y2=\"126\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"29.2,122.5 22,126 29.2,129.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"242.8,129.5 250,126 242.8,122.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"266\" y=\"135\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><line x1=\"106\" y1=\"22\" x2=\"106\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"109.5,29.2 106,22 102.5,29.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"102.5,182.8 106,190 109.5,182.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"102\" y=\"211\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><line x1=\"137.5\" y1=\"187.1\" x2=\"254.5\" y2=\"34.9\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"139.1,179.3 137.5,187.1 144.6,183.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"252.9,42.7 254.5,34.9 247.4,38.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"267.5\" y=\"29.7\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><line x1=\"22\" y1=\"56\" x2=\"250\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"29.2,52.5 22,56 29.2,59.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"242.8,59.5 250,56 242.8,52.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"266\" y=\"65\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text><polyline points=\"118,126 118,114 106,114\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"118,56 118,68 106,68\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "나와 다",
+    "가와 라",
+    "가와 나",
+    "다와 라"
+   ],
+   "answer": 2,
+   "why": "가와 나가 직각을 이루며 만납니다. 가와 라는 평행하고, 다는 어느 직선과도 직각으로 만나지 않습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-03-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "직사각형에서 서로 마주 보는 두 변은 어떤 관계인가요? 한 낱말로 쓰세요.",
+   "answers": [
+    "평행",
+    "평행하다",
+    "평행선"
+   ],
+   "why": "직사각형의 마주 보는 두 변은 아무리 늘여도 만나지 않으므로 서로 평행합니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-03-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "평행한 두 직선의 성질로 알맞은 것은 무엇인가요?",
+   "options": [
+    "아무리 늘여도 만나지 않고, 두 직선 사이의 거리가 일정하다",
+    "한 점에서 만나고 직각을 이룬다",
+    "늘이면 반드시 한 점에서 만난다",
+    "두 직선 사이의 거리가 점점 넓어진다"
+   ],
+   "answer": 0,
+   "why": "평행선은 서로 만나지 않고 어디서나 거리가 같습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-03-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "평행한 두 직선 가와 나 사이에 수직인 선분 ㄱㄴ을 그었더니 3 cm였습니다. 같은 방법으로 그은 선분 ㄷㄹ의 길이는 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 290 160\" font-family=\"sans-serif\"><line x1=\"6\" y1=\"36\" x2=\"254\" y2=\"36\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"13.2,32.5 6,36 13.2,39.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"246.8,39.5 254,36 246.8,32.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"6\" y1=\"120\" x2=\"254\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"13.2,116.5 6,120 13.2,123.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"246.8,123.5 254,120 246.8,116.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"70\" y1=\"36\" x2=\"70\" y2=\"120\" stroke=\"#4b7bec\" stroke-width=\"3\"/><line x1=\"170\" y1=\"36\" x2=\"170\" y2=\"120\" stroke=\"#4b7bec\" stroke-width=\"3\"/><text x=\"70\" y=\"28\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><text x=\"70\" y=\"142\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄴ</text><text x=\"170\" y=\"28\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄷ</text><text x=\"170\" y=\"142\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄹ</text><text x=\"98\" y=\"84\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3 cm</text><text x=\"198\" y=\"84\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? cm</text><text x=\"262\" y=\"40\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"262\" y=\"124\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><polyline points=\"70,48 82,48 82,36\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"170,48 182,48 182,36\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "알 수 없다",
+    "6 cm",
+    "9 cm",
+    "3 cm"
+   ],
+   "answer": 3,
+   "why": "평행선 사이의 거리는 어디서나 일정하므로 선분 ㄷㄹ도 3 cm입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-03-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "직선 가 위에 있지 않은 한 점 ㅇ을 지나고 직선 가에 평행한 직선은 몇 개 그을 수 있나요?",
+   "options": [
+    "2개",
+    "1개",
+    "3개",
+    "셀 수 없이 많다"
+   ],
+   "answer": 1,
+   "why": "한 점을 지나고 주어진 직선에 평행한 직선은 오직 하나만 그을 수 있습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-04-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "도형을 어느 쪽으로 밀었나요?",
+   "svg": "<svg viewBox=\"0 0 206 118\" font-family=\"sans-serif\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"26\" y1=\"4\" x2=\"26\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"48\" y1=\"4\" x2=\"48\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"70\" y1=\"4\" x2=\"70\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"92\" y1=\"4\" x2=\"92\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"114\" y1=\"4\" x2=\"114\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"136\" y1=\"4\" x2=\"136\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"158\" y1=\"4\" x2=\"158\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"180\" y1=\"4\" x2=\"180\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"202\" y1=\"4\" x2=\"202\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"202\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"26\" x2=\"202\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"48\" x2=\"202\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"70\" x2=\"202\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"92\" x2=\"202\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"114\" x2=\"202\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"26,26 70,26 70,48 48,48 48,92 26,92\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"37\" cy=\"37\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><polygon points=\"114,26 158,26 158,48 136,48 136,92 114,92\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"125\" cy=\"37\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "왼쪽",
+    "오른쪽",
+    "위쪽",
+    "아래쪽"
+   ],
+   "answer": 1,
+   "why": "처음 도형(테두리만 그린 것)이 오른쪽으로 옮겨져 색칠한 도형이 되었습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-04-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "처음 도형(테두리)을 점선을 기준으로 움직여 색칠한 도형이 되었습니다. 도형을 어떻게 움직였나요?",
+   "svg": "<svg viewBox=\"0 0 184 118\" font-family=\"sans-serif\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"26\" y1=\"4\" x2=\"26\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"48\" y1=\"4\" x2=\"48\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"70\" y1=\"4\" x2=\"70\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"92\" y1=\"4\" x2=\"92\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"114\" y1=\"4\" x2=\"114\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"136\" y1=\"4\" x2=\"136\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"158\" y1=\"4\" x2=\"158\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"180\" y1=\"4\" x2=\"180\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"180\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"26\" x2=\"180\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"48\" x2=\"180\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"70\" x2=\"180\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"92\" x2=\"180\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"114\" x2=\"180\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"26,26 70,26 70,48 48,48 48,92 26,92\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"37\" cy=\"37\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><polygon points=\"136,26 92,26 92,48 114,48 114,92 136,92\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"125\" cy=\"37\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"81\" y1=\"0\" x2=\"81\" y2=\"118\" stroke=\"#e07b39\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/></svg>",
+   "options": [
+    "밀기",
+    "자르기",
+    "돌리기",
+    "뒤집기"
+   ],
+   "answer": 3,
+   "why": "점선을 기준으로 좌우가 바뀐 모양이 되었으므로 오른쪽으로 뒤집은 것입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-04-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "도형을 밀어도 도형의 모양과 크기는 어떻게 되나요? (같다/달라진다)",
+   "answers": [
+    "같다",
+    "같아요",
+    "변하지 않는다",
+    "그대로이다",
+    "그대로",
+    "변함없다"
+   ],
+   "why": "도형을 밀면 위치만 바뀌고 모양과 크기는 그대로입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-04-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "도형을 오른쪽으로 뒤집었을 때의 모양은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 314 248\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"22,22 58,22 58,40 40,40 40,76 22,76\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"31\" cy=\"31\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"53\" y=\"116\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">처음</text><g transform=\"translate(108 0)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"22,76 58,76 58,58 40,58 40,22 22,22\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"31\" cy=\"67\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"157\" y=\"116\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(212 0)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"76,22 76,58 58,58 58,40 22,40 22,22\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"67\" cy=\"31\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"261\" y=\"116\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(56 126)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"58,22 22,22 22,40 40,40 40,76 58,76\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"49\" cy=\"31\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"105\" y=\"242\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(160 126)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"58,76 22,76 22,58 40,58 40,22 58,22\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"49\" cy=\"67\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"209\" y=\"242\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
+   "options": [
+    "가",
+    "나",
+    "다",
+    "라"
+   ],
+   "answer": 2,
+   "why": "오른쪽으로 뒤집으면 도형의 왼쪽과 오른쪽이 서로 바뀝니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-04-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "도형을 시계 방향으로 90°만큼 돌렸을 때의 모양은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 314 248\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"22,22 58,22 58,40 40,40 40,76 22,76\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"31\" cy=\"31\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"53\" y=\"116\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">처음</text><g transform=\"translate(108 0)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"22,58 22,22 40,22 40,40 76,40 76,58\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"31\" cy=\"49\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"157\" y=\"116\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(212 0)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"58,22 22,22 22,40 40,40 40,76 58,76\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"49\" cy=\"31\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"261\" y=\"116\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(56 126)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"22,76 58,76 58,58 40,58 40,22 22,22\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"31\" cy=\"67\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"105\" y=\"242\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(160 126)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"76,22 76,58 58,58 58,40 22,40 22,22\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"67\" cy=\"31\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"209\" y=\"242\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
+   "options": [
+    "가",
+    "나",
+    "다",
+    "라"
+   ],
+   "answer": 3,
+   "why": "시계 방향으로 90° 돌리면 위쪽에 있던 부분이 오른쪽으로 옮겨 갑니다. 점이 있는 쪽을 따라가며 확인할 수 있습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-04-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "도형을 오른쪽으로 몇 칸 밀었나요?",
+   "svg": "<svg viewBox=\"0 0 206 118\" font-family=\"sans-serif\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"26\" y1=\"4\" x2=\"26\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"48\" y1=\"4\" x2=\"48\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"70\" y1=\"4\" x2=\"70\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"92\" y1=\"4\" x2=\"92\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"114\" y1=\"4\" x2=\"114\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"136\" y1=\"4\" x2=\"136\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"158\" y1=\"4\" x2=\"158\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"180\" y1=\"4\" x2=\"180\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"202\" y1=\"4\" x2=\"202\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"202\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"26\" x2=\"202\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"48\" x2=\"202\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"70\" x2=\"202\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"92\" x2=\"202\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"114\" x2=\"202\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"26,26 70,26 70,48 48,48 48,92 26,92\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"37\" cy=\"37\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><polygon points=\"136,48 180,48 180,70 158,70 158,114 136,114\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"147\" cy=\"59\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "answers": [
+    "5",
+    "5칸",
+    "다섯 칸"
+   ],
+   "why": "처음 도형의 점이 오른쪽으로 5칸, 아래쪽으로 1칸 이동했습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-04-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "ㄱ 모양 도형을 오른쪽으로 뒤집은 다음, 그 도형을 다시 오른쪽으로 뒤집으면 어떤 모양이 되나요?",
+   "options": [
+    "처음 도형과 같은 모양",
+    "처음 도형과 좌우가 바뀐 모양",
+    "처음 도형과 위아래가 바뀐 모양",
+    "알 수 없다"
+   ],
+   "answer": 0,
+   "why": "같은 방향으로 두 번 뒤집으면 처음 모양으로 돌아옵니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-04-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "처음 도형을 시계 반대 방향으로 90°만큼 돌렸을 때의 모양은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 314 248\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"22,22 58,22 58,40 40,40 40,76 22,76\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"31\" cy=\"31\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"53\" y=\"116\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">처음</text><g transform=\"translate(108 0)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"22,76 58,76 58,58 40,58 40,22 22,22\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"31\" cy=\"67\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"157\" y=\"116\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(212 0)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"22,58 22,22 40,22 40,40 76,40 76,58\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"31\" cy=\"49\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"261\" y=\"116\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(56 126)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"76,22 76,58 58,58 58,40 22,40 22,22\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"67\" cy=\"31\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"105\" y=\"242\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(160 126)\"><line x1=\"4\" y1=\"4\" x2=\"4\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"22\" y1=\"4\" x2=\"22\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"58\" y1=\"4\" x2=\"58\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"76\" y1=\"4\" x2=\"76\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"94\" y1=\"4\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"4\" x2=\"94\" y2=\"4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"22\" x2=\"94\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"40\" x2=\"94\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"58\" x2=\"94\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"76\" x2=\"94\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><line x1=\"4\" y1=\"94\" x2=\"94\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.2\"/><polygon points=\"58,76 22,76 22,58 40,58 40,22 58,22\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"49\" cy=\"67\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"209\" y=\"242\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
+   "options": [
+    "가",
+    "나",
+    "다",
+    "라"
+   ],
+   "answer": 1,
+   "why": "시계 반대 방향으로 90° 돌리면 위쪽 부분이 왼쪽으로 옮겨 갑니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-04-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "도형을 시계 방향으로 90°씩 4번 연속하여 돌리면 어떻게 되나요?",
+   "answers": [
+    "처음과 같다",
+    "처음 도형과 같다",
+    "처음 모양과 같다",
+    "같다",
+    "처음 모양이 된다",
+    "제자리"
+   ],
+   "why": "90°씩 4번이면 360°를 돌려 처음 모양과 같아집니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-05-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "점 ㄱ을 오른쪽으로 3칸 옮기면 어느 점에 놓이게 되나요?",
+   "svg": "<svg viewBox=\"0 0 230 170\" font-family=\"sans-serif\"><line x1=\"25\" y1=\"25\" x2=\"25\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"115\" y1=\"25\" x2=\"115\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"145\" y1=\"25\" x2=\"145\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"175\" y1=\"25\" x2=\"175\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"205\" y1=\"25\" x2=\"205\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"25\" x2=\"205\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"55\" x2=\"205\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"85\" x2=\"205\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"115\" x2=\"205\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"145\" x2=\"205\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><circle cx=\"55\" cy=\"115\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"55\" cy=\"115\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"67\" y=\"107\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><circle cx=\"55\" cy=\"25\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"55\" cy=\"25\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"67\" y=\"17\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><circle cx=\"145\" cy=\"115\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"145\" cy=\"115\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"157\" y=\"107\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><circle cx=\"115\" cy=\"85\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"115\" cy=\"85\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"127\" y=\"77\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><circle cx=\"205\" cy=\"55\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"205\" cy=\"55\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"217\" y=\"47\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
+   "options": [
+    "가",
+    "나",
+    "다",
+    "라"
+   ],
+   "answer": 1,
+   "why": "점 ㄱ에서 오른쪽으로 3칸 가면 점 나의 위치입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-05-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "점 ㄱ을 아래쪽으로 2칸 옮기면 어느 점에 놓이게 되나요?",
+   "svg": "<svg viewBox=\"0 0 230 170\" font-family=\"sans-serif\"><line x1=\"25\" y1=\"25\" x2=\"25\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"115\" y1=\"25\" x2=\"115\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"145\" y1=\"25\" x2=\"145\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"175\" y1=\"25\" x2=\"175\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"205\" y1=\"25\" x2=\"205\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"25\" x2=\"205\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"55\" x2=\"205\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"85\" x2=\"205\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"115\" x2=\"205\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"145\" x2=\"205\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><circle cx=\"175\" cy=\"55\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"175\" cy=\"55\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"187\" y=\"47\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><circle cx=\"115\" cy=\"55\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"115\" cy=\"55\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"127\" y=\"47\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><circle cx=\"205\" cy=\"25\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"205\" cy=\"25\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"217\" y=\"17\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><circle cx=\"175\" cy=\"115\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"175\" cy=\"115\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"187\" y=\"107\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><circle cx=\"85\" cy=\"115\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"85\" cy=\"115\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"97\" y=\"107\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
+   "options": [
+    "가",
+    "나",
+    "다",
+    "라"
+   ],
+   "answer": 2,
+   "why": "점 ㄱ에서 아래쪽으로 2칸 가면 점 다의 위치입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-05-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "점 ㄱ에서 점 ㄴ까지 화살표를 따라 옮겼습니다. 오른쪽으로 몇 칸 옮겼나요?",
+   "svg": "<svg viewBox=\"0 0 230 140\" font-family=\"sans-serif\"><line x1=\"25\" y1=\"25\" x2=\"25\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"115\" y1=\"25\" x2=\"115\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"145\" y1=\"25\" x2=\"145\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"175\" y1=\"25\" x2=\"175\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"205\" y1=\"25\" x2=\"205\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"25\" x2=\"205\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"55\" x2=\"205\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"85\" x2=\"205\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"115\" x2=\"205\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"55\" y1=\"85\" x2=\"175\" y2=\"85\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><polyline points=\"166,89.3 175,85 166,80.7\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"55\" cy=\"85\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"55\" cy=\"85\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"67\" y=\"77\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><circle cx=\"175\" cy=\"85\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"175\" cy=\"85\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"187\" y=\"77\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄴ</text></svg>",
+   "answers": [
+    "4",
+    "4칸",
+    "네 칸"
+   ],
+   "why": "점 ㄱ에서 점 ㄴ까지 오른쪽으로 4칸 움직였습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-05-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "점 ㄱ을 점 ㄴ으로 옮기는 방법을 바르게 말한 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 200 170\" font-family=\"sans-serif\"><line x1=\"25\" y1=\"25\" x2=\"25\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"115\" y1=\"25\" x2=\"115\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"145\" y1=\"25\" x2=\"145\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"175\" y1=\"25\" x2=\"175\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"25\" x2=\"175\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"55\" x2=\"175\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"85\" x2=\"175\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"115\" x2=\"175\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"145\" x2=\"175\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"55\" y1=\"145\" x2=\"145\" y2=\"145\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><polyline points=\"136,149.3 145,145 136,140.7\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"145\" y1=\"145\" x2=\"145\" y2=\"55\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><polyline points=\"149.3,64 145,55 140.7,64\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"55\" cy=\"145\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"55\" cy=\"145\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"67\" y=\"137\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><circle cx=\"145\" cy=\"55\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"145\" cy=\"55\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"157\" y=\"47\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄴ</text></svg>",
+   "options": [
+    "왼쪽으로 3칸, 위쪽으로 3칸",
+    "오른쪽으로 3칸, 아래쪽으로 3칸",
+    "오른쪽으로 3칸, 위쪽으로 3칸",
+    "오른쪽으로 4칸, 위쪽으로 1칸"
+   ],
+   "answer": 2,
+   "why": "점 ㄱ에서 오른쪽으로 3칸, 위쪽으로 3칸 가면 점 ㄴ에 놓입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-05-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "점 ㅇ을 기준으로 점 ㄱ의 위치를 바르게 말한 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 200 170\" font-family=\"sans-serif\"><line x1=\"25\" y1=\"25\" x2=\"25\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"115\" y1=\"25\" x2=\"115\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"145\" y1=\"25\" x2=\"145\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"175\" y1=\"25\" x2=\"175\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"25\" x2=\"175\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"55\" x2=\"175\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"85\" x2=\"175\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"115\" x2=\"175\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"145\" x2=\"175\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><circle cx=\"55\" cy=\"145\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"55\" cy=\"145\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"67\" y=\"137\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㅇ</text><circle cx=\"145\" cy=\"85\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"145\" cy=\"85\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"157\" y=\"77\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text></svg>",
+   "options": [
+    "오른쪽으로 3칸, 아래쪽으로 2칸",
+    "오른쪽으로 2칸, 위쪽으로 3칸",
+    "왼쪽으로 3칸, 위쪽으로 2칸",
+    "오른쪽으로 3칸, 위쪽으로 2칸"
+   ],
+   "answer": 3,
+   "why": "점 ㅇ에서 오른쪽으로 3칸, 위쪽으로 2칸 간 곳에 점 ㄱ이 있습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-05-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "점 ㄱ을 오른쪽으로 4칸, 위쪽으로 1칸 옮기면 놓이는 점의 이름을 쓰세요.",
+   "svg": "<svg viewBox=\"0 0 230 140\" font-family=\"sans-serif\"><line x1=\"25\" y1=\"25\" x2=\"25\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"115\" y1=\"25\" x2=\"115\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"145\" y1=\"25\" x2=\"145\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"175\" y1=\"25\" x2=\"175\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"205\" y1=\"25\" x2=\"205\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"25\" x2=\"205\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"55\" x2=\"205\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"85\" x2=\"205\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"115\" x2=\"205\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><circle cx=\"55\" cy=\"85\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"55\" cy=\"85\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"67\" y=\"77\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><circle cx=\"175\" cy=\"55\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"175\" cy=\"55\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"187\" y=\"47\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><circle cx=\"115\" cy=\"25\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"115\" cy=\"25\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"127\" y=\"17\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><circle cx=\"175\" cy=\"85\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"175\" cy=\"85\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"187\" y=\"77\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text></svg>",
+   "answers": [
+    "가",
+    "점 가"
+   ],
+   "why": "오른쪽으로 4칸 가서 위쪽으로 1칸 가면 점 가의 자리입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-05-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "점 ㄱ을 점 ㄴ으로 옮기는 방법으로 알맞지 않은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 200 170\" font-family=\"sans-serif\"><line x1=\"25\" y1=\"25\" x2=\"25\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"115\" y1=\"25\" x2=\"115\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"145\" y1=\"25\" x2=\"145\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"175\" y1=\"25\" x2=\"175\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"25\" x2=\"175\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"55\" x2=\"175\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"85\" x2=\"175\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"115\" x2=\"175\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"145\" x2=\"175\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><circle cx=\"25\" cy=\"145\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"25\" cy=\"145\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"37\" y=\"137\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><circle cx=\"145\" cy=\"55\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"145\" cy=\"55\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"157\" y=\"47\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄴ</text></svg>",
+   "options": [
+    "오른쪽으로 4칸 간 다음 위쪽으로 3칸 간다",
+    "오른쪽으로 4칸 간 다음 아래쪽으로 3칸 간다",
+    "위쪽으로 3칸 간 다음 오른쪽으로 4칸 간다",
+    "위쪽으로 1칸, 오른쪽으로 4칸, 위쪽으로 2칸 간다"
+   ],
+   "answer": 1,
+   "why": "점 ㄴ은 점 ㄱ보다 위쪽에 있으므로 아래쪽으로 가면 안 됩니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-05-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "점을 위쪽으로 2칸, 왼쪽으로 3칸, 다시 아래쪽으로 4칸 옮겼습니다. 처음 위치와 비교한 마지막 위치를 바르게 나타낸 것은 무엇인가요?",
+   "options": [
+    "오른쪽으로 3칸, 아래쪽으로 2칸",
+    "왼쪽으로 3칸, 위쪽으로 2칸",
+    "왼쪽으로 3칸, 아래쪽으로 2칸",
+    "왼쪽으로 3칸, 아래쪽으로 6칸"
+   ],
+   "answer": 2,
+   "why": "위로 2칸, 아래로 4칸이면 결국 아래쪽으로 2칸이고, 왼쪽으로 3칸 이동했습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-05-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "모눈선을 따라 점 ㄱ에서 점 ㄴ까지 가장 짧게 가려면 모두 몇 칸을 움직여야 하나요?",
+   "svg": "<svg viewBox=\"0 0 230 170\" font-family=\"sans-serif\"><line x1=\"25\" y1=\"25\" x2=\"25\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"115\" y1=\"25\" x2=\"115\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"145\" y1=\"25\" x2=\"145\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"175\" y1=\"25\" x2=\"175\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"205\" y1=\"25\" x2=\"205\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"25\" x2=\"205\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"55\" x2=\"205\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"85\" x2=\"205\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"115\" x2=\"205\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><line x1=\"25\" y1=\"145\" x2=\"205\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.25\"/><circle cx=\"55\" cy=\"145\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"55\" cy=\"145\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"67\" y=\"137\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><circle cx=\"175\" cy=\"55\" r=\"5.5\" fill=\"#e07b39\"/><circle cx=\"175\" cy=\"55\" r=\"5.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"187\" y=\"47\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄴ</text></svg>",
+   "answers": [
+    "7",
+    "7칸",
+    "일곱 칸"
+   ],
+   "why": "오른쪽으로 4칸, 위쪽으로 3칸 가면 되므로 모두 4+3=7(칸)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-06-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원의 한가운데 점 ㅇ과 원 위의 점 ㄷ을 이은 선분 ㅇㄷ을 무엇이라고 하나요?",
+   "svg": "<svg viewBox=\"0 0 156 152\" font-family=\"sans-serif\"><circle cx=\"76\" cy=\"76\" r=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"76\" y1=\"76\" x2=\"114.6\" y2=\"30\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"114.6\" cy=\"30\" r=\"4\" fill=\"currentColor\"/><text x=\"126.6\" y=\"26\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄷ</text><circle cx=\"76\" cy=\"76\" r=\"4.5\" fill=\"currentColor\"/><text x=\"74\" y=\"96\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㅇ</text></svg>",
+   "options": [
+    "반지름",
+    "지름",
+    "중심",
+    "원"
+   ],
+   "answer": 0,
+   "why": "원의 중심과 원 위의 한 점을 이은 선분은 반지름입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-06-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원의 중심을 지나며 원 위의 두 점을 이은 선분 ㄱㄴ을 무엇이라고 하나요?",
+   "svg": "<svg viewBox=\"0 0 156 152\" font-family=\"sans-serif\"><circle cx=\"76\" cy=\"76\" r=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"16\" y1=\"76\" x2=\"136\" y2=\"76\" stroke=\"#e07b39\" stroke-width=\"3\"/><circle cx=\"16\" cy=\"76\" r=\"4\" fill=\"currentColor\"/><circle cx=\"136\" cy=\"76\" r=\"4\" fill=\"currentColor\"/><text x=\"4\" y=\"81\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><text x=\"148\" y=\"81\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄴ</text><circle cx=\"76\" cy=\"76\" r=\"4.5\" fill=\"currentColor\"/><text x=\"74\" y=\"96\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㅇ</text></svg>",
+   "options": [
+    "중심",
+    "반지름",
+    "지름",
+    "호"
+   ],
+   "answer": 2,
+   "why": "원의 중심을 지나도록 원 위의 두 점을 이은 선분은 지름입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-06-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "원의 한가운데에 있는 점을 무엇이라고 하나요?",
+   "answers": [
+    "중심",
+    "원의 중심"
+   ],
+   "why": "원의 한가운데 점을 원의 중심이라고 합니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-06-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "한 원에서 지름은 반지름의 몇 배인가요?",
+   "options": [
+    "2배",
+    "1배",
+    "3배",
+    "4배"
+   ],
+   "answer": 0,
+   "why": "지름은 반지름 2개를 이은 길이와 같으므로 반지름의 2배입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-06-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "이 원의 반지름이 5 cm일 때, 지름은 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 156 152\" font-family=\"sans-serif\"><circle cx=\"76\" cy=\"76\" r=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"76\" y1=\"76\" x2=\"114.6\" y2=\"30\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"114.6\" cy=\"30\" r=\"4\" fill=\"currentColor\"/><text x=\"126.6\" y=\"26\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄷ</text><text x=\"67.3\" y=\"55\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5 cm</text><circle cx=\"76\" cy=\"76\" r=\"4.5\" fill=\"currentColor\"/><text x=\"74\" y=\"96\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㅇ</text></svg>",
+   "options": [
+    "5 cm",
+    "25 cm",
+    "15 cm",
+    "10 cm"
+   ],
+   "answer": 3,
+   "why": "지름은 반지름의 2배이므로 5×2=10(cm)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-06-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "지름이 12 cm인 원의 반지름은 몇 cm인가요?",
+   "answers": [
+    "6",
+    "6 cm",
+    "6cm"
+   ],
+   "why": "반지름은 지름의 반이므로 12÷2=6(cm)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-06-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "원의 성질로 알맞지 않은 것은 무엇인가요?",
+   "options": [
+    "한 원에서 반지름은 모두 같은 길이이다",
+    "지름은 원 안에 그을 수 있는 가장 짧은 선분이다",
+    "지름은 원의 중심을 지난다",
+    "한 원에서 반지름은 셀 수 없이 많이 그을 수 있다"
+   ],
+   "answer": 1,
+   "why": "지름은 원 안에 그을 수 있는 가장 긴 선분입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-06-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "아래 원 안에 있는 선분 중 가장 긴 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 188 188\" font-family=\"sans-serif\"><circle cx=\"94\" cy=\"94\" r=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"28.2\" y1=\"117.9\" x2=\"159.8\" y2=\"70.1\" stroke=\"#e07b39\" stroke-width=\"3\"/><circle cx=\"28.2\" cy=\"117.9\" r=\"4\" fill=\"currentColor\"/><circle cx=\"159.8\" cy=\"70.1\" r=\"4\" fill=\"currentColor\"/><text x=\"16.2\" y=\"123.9\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄱ</text><text x=\"171.8\" y=\"68.1\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄴ</text><line x1=\"106.2\" y1=\"25.1\" x2=\"33.4\" y2=\"59\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"106.2\" cy=\"25.1\" r=\"4\" fill=\"currentColor\"/><circle cx=\"33.4\" cy=\"59\" r=\"4\" fill=\"currentColor\"/><text x=\"110.2\" y=\"15.1\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄷ</text><text x=\"19.4\" y=\"55\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㄹ</text><line x1=\"94\" y1=\"94\" x2=\"129\" y2=\"154.6\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><circle cx=\"129\" cy=\"154.6\" r=\"4\" fill=\"currentColor\"/><text x=\"141\" y=\"160.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㅁ</text><circle cx=\"94\" cy=\"94\" r=\"4.5\" fill=\"currentColor\"/><text x=\"104\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">ㅇ</text></svg>",
+   "options": [
+    "선분 ㄷㄹ",
+    "선분 ㄱㄴ",
+    "선분 ㅇㅁ",
+    "모두 같다"
+   ],
+   "answer": 1,
+   "why": "선분 ㄱㄴ은 원의 중심을 지나는 지름이므로 원 안에서 가장 깁니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-06-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "지름이 10 cm인 원 3개를 그림처럼 이어 붙였습니다. 전체 길이는 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 242 102\" font-family=\"sans-serif\"><circle cx=\"51\" cy=\"51.0\" r=\"35\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"16\" y1=\"51\" x2=\"86\" y2=\"51\" stroke=\"#e07b39\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><circle cx=\"121\" cy=\"51.0\" r=\"35\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"86\" y1=\"51\" x2=\"156\" y2=\"51\" stroke=\"#e07b39\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><circle cx=\"191\" cy=\"51.0\" r=\"35\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"156\" y1=\"51\" x2=\"226\" y2=\"51\" stroke=\"#e07b39\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><text x=\"51\" y=\"43\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10 cm</text></svg>",
+   "answers": [
+    "30",
+    "30 cm",
+    "30cm"
+   ],
+   "why": "원 3개의 지름을 모두 더하면 10+10+10=30(cm)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-07-c1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원을 그리는 데 쓰는 도구는 무엇인가요?",
+   "options": [
+    "저울",
+    "각도기",
+    "삼각자",
+    "컴퍼스"
+   ],
+   "answer": 3,
+   "why": "컴퍼스를 이용하면 원을 그릴 수 있습니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-07-c2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "컴퍼스를 그림과 같이 벌려 원을 그리면 원의 반지름은 몇 cm가 되나요?",
+   "svg": "<svg viewBox=\"0 0 360 140\" font-family=\"sans-serif\"><rect x=\"30\" y=\"96\" width=\"300\" height=\"38\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"44\" y1=\"96\" x2=\"44\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"78\" y1=\"96\" x2=\"78\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"78\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"112\" y1=\"96\" x2=\"112\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"112\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"146\" y1=\"96\" x2=\"146\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"146\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"180\" y1=\"96\" x2=\"180\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"180\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"214\" y1=\"96\" x2=\"214\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"214\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"248\" y1=\"96\" x2=\"248\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"248\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"282\" y1=\"96\" x2=\"282\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"282\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">7</text><line x1=\"316\" y1=\"96\" x2=\"316\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"316\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">8</text><line x1=\"95\" y1=\"12\" x2=\"44\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"95\" y1=\"12\" x2=\"146\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"95\" cy=\"12\" r=\"5\" fill=\"currentColor\"/><circle cx=\"44\" cy=\"96\" r=\"3\" fill=\"currentColor\"/><polygon points=\"142,82 150,82 146,96\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"88\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">바늘</text><text x=\"154\" y=\"76\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">연필</text></svg>",
+   "options": [
+    "3 cm",
+    "6 cm",
+    "1 cm",
+    "8 cm"
+   ],
+   "answer": 0,
+   "why": "컴퍼스를 3 cm만큼 벌려 그린 원의 반지름은 3 cm입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-07-c3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "컴퍼스로 원을 그릴 때 컴퍼스의 침을 꽂는 곳은 원의 무엇이 되나요?",
+   "answers": [
+    "중심",
+    "원의 중심"
+   ],
+   "why": "컴퍼스의 침을 꽂은 점이 원의 중심이 됩니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-07-b1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "컴퍼스를 그림과 같이 벌려 원을 그리면 이 원의 지름은 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 360 140\" font-family=\"sans-serif\"><rect x=\"30\" y=\"96\" width=\"300\" height=\"38\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"44\" y1=\"96\" x2=\"44\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"78\" y1=\"96\" x2=\"78\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"78\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"112\" y1=\"96\" x2=\"112\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"112\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"146\" y1=\"96\" x2=\"146\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"146\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"180\" y1=\"96\" x2=\"180\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"180\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"214\" y1=\"96\" x2=\"214\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"214\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"248\" y1=\"96\" x2=\"248\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"248\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"282\" y1=\"96\" x2=\"282\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"282\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">7</text><line x1=\"316\" y1=\"96\" x2=\"316\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"316\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">8</text><line x1=\"112\" y1=\"12\" x2=\"44\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"112\" y1=\"12\" x2=\"180\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"112\" cy=\"12\" r=\"5\" fill=\"currentColor\"/><circle cx=\"44\" cy=\"96\" r=\"3\" fill=\"currentColor\"/><polygon points=\"176,82 184,82 180,96\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"88\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">바늘</text><text x=\"188\" y=\"76\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">연필</text></svg>",
+   "options": [
+    "4 cm",
+    "2 cm",
+    "8 cm",
+    "16 cm"
+   ],
+   "answer": 2,
+   "why": "반지름이 4 cm이므로 지름은 4×2=8(cm)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-07-b2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "주어진 원과 크기가 같은 원을 그리는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "컴퍼스를 벌리지 않고 그린다",
+    "컴퍼스를 아주 크게 벌려 그린다",
+    "컴퍼스를 아주 작게 벌려 그린다",
+    "컴퍼스의 침을 중심에 꽂고 연필 끝을 원 위에 맞추어 벌린 뒤, 새로운 곳에서 그린다"
+   ],
+   "answer": 3,
+   "why": "컴퍼스를 주어진 원의 반지름만큼 벌려서 그리면 크기가 같은 원이 됩니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-07-b3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "지름이 10 cm인 원을 그리려면 컴퍼스를 몇 cm만큼 벌려야 하나요?",
+   "answers": [
+    "5",
+    "5 cm",
+    "5cm"
+   ],
+   "why": "컴퍼스를 벌린 길이가 반지름이므로 10÷2=5(cm)만큼 벌려야 합니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-07-a1",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "컴퍼스로 원을 그리는 순서를 바르게 나열한 것은 무엇인가요?\n㉠ 컴퍼스를 원하는 반지름만큼 벌린다\n㉡ 컴퍼스의 침을 원의 중심으로 정한 곳에 꽂는다\n㉢ 연필 끝으로 한 바퀴 돌려 원을 그린다",
+   "options": [
+    "㉡ → ㉠ → ㉢",
+    "㉠ → ㉡ → ㉢",
+    "㉢ → ㉠ → ㉡",
+    "㉠ → ㉢ → ㉡"
+   ],
+   "answer": 1,
+   "why": "먼저 컴퍼스를 알맞게 벌리고, 침을 중심에 꽂은 다음 한 바퀴 돌려 그립니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-07-a2",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "반지름이 3 cm인 원을 그릴 때와 지름이 3 cm인 원을 그릴 때 컴퍼스를 벌려야 하는 길이의 차는 몇 cm인가요?",
+   "options": [
+    "6 cm",
+    "3 cm",
+    "1.5 cm",
+    "0 cm"
+   ],
+   "answer": 2,
+   "why": "반지름이 3 cm이면 3 cm 벌리고, 지름이 3 cm이면 반지름이 1.5 cm이므로 1.5 cm 벌립니다. 차는 3-1.5=1.5(cm)입니다."
+  },
+  {
+   "id": "수학-초3-4-4수03-07-a3",
+   "subject": "수학",
+   "gradeBand": "초3-4",
+   "unit": "도형과 측정",
+   "standard": "4수03-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "컴퍼스를 2 cm, 4 cm로 각각 벌려 중심이 같은 두 원을 그렸습니다. 작은 원의 지름은 큰 원의 지름보다 몇 cm 짧은가요?",
+   "svg": "<svg viewBox=\"0 0 192 192\" font-family=\"sans-serif\"><circle cx=\"96\" cy=\"96\" r=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"96\" cy=\"96\" r=\"40\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><line x1=\"96\" y1=\"96\" x2=\"176\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><circle cx=\"96\" cy=\"96\" r=\"4.5\" fill=\"currentColor\"/><text x=\"116\" y=\"88\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2 cm</text><text x=\"152\" y=\"116\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4 cm</text></svg>",
+   "options": [
+    "4 cm",
+    "2 cm",
+    "6 cm",
+    "8 cm"
+   ],
+   "answer": 0,
+   "why": "작은 원의 지름은 4 cm, 큰 원의 지름은 8 cm이므로 8-4=4(cm) 짧습니다."
+  }
+ ],
+ "skipped": []
+}
