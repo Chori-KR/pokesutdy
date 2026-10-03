@@ -1,0 +1,851 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "초",
+  "course": "수학",
+  "gradeBand": "초5-6",
+  "unit": "도형과 측정",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-초5-6-6수03-15-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원주율은 무엇을 무엇으로 나눈 값인가요?",
+   "options": [
+    "반지름을 원주로 나눈 값",
+    "지름을 원주로 나눈 값",
+    "원주를 지름으로 나눈 값",
+    "원의 넓이를 지름으로 나눈 값"
+   ],
+   "answer": 2,
+   "why": "(원주율)=(원주)÷(지름)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-15-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "원주율을 소수로 나타낼 때 흔히 쓰는 근삿값을 쓰세요. (소수 둘째 자리까지)",
+   "answers": [
+    "3.14"
+   ],
+   "why": "원주율은 끝없이 이어지는 수이고 흔히 3.14로 나타냅니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-15-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원의 크기가 커지면 원주는 어떻게 되나요?",
+   "options": [
+    "길어진다",
+    "짧아진다",
+    "변하지 않는다",
+    "0이 된다"
+   ],
+   "answer": 0,
+   "why": "지름이 커질수록 원주도 길어집니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-15-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "지름이 10 cm인 원의 원주를 재었더니 31.4 cm였습니다. 원주율은 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 108 108\" font-family=\"sans-serif\"><circle cx=\"54\" cy=\"54\" r=\"40\" fill=\"none\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"14\" y1=\"54\" x2=\"94\" y2=\"54\" stroke=\"#e07b39\" stroke-width=\"3\"/><text x=\"54\" y=\"46\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10 cm</text><circle cx=\"54\" cy=\"54\" r=\"3.5\" fill=\"currentColor\"/></svg>",
+   "answers": [
+    "3.14"
+   ],
+   "why": "(원주율)=(원주)÷(지름)=31.4÷10=3.14입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-15-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "원주가 18.6 cm이고 지름이 6 cm인 원이 있습니다. 원주율을 소수 첫째 자리까지 구하세요.",
+   "answers": [
+    "3.1"
+   ],
+   "why": "18.6÷6=3.1입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-15-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "크기가 다른 여러 원의 원주율에 대한 설명으로 옳은 것은 무엇인가요?",
+   "options": [
+    "원마다 원주율이 모두 다르다",
+    "큰 원일수록 원주율이 크다",
+    "작은 원일수록 원주율이 크다",
+    "원의 크기와 관계없이 원주율은 일정하다"
+   ],
+   "answer": 3,
+   "why": "원의 크기가 달라져도 원주를 지름으로 나눈 값은 항상 같습니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-15-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "원주율을 $3.14$로 할 때 지름이 5 cm인 원의 원주는 몇 cm인가요?",
+   "options": [
+    "$7.85\\,\\mathrm{cm}$",
+    "$15.7\\,\\mathrm{cm}$",
+    "$31.4\\,\\mathrm{cm}$",
+    "$8.14\\,\\mathrm{cm}$"
+   ],
+   "answer": 1,
+   "why": "(원주)=(지름)×(원주율)=5×3.14=15.7(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-15-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "원주율을 $3.14$로 할 때 원주가 37.68 cm인 원의 지름은 몇 cm인가요?",
+   "answers": [
+    "12",
+    "12cm",
+    "12 cm"
+   ],
+   "why": "(지름)=(원주)÷(원주율)=37.68÷3.14=12(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-15-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "지름이 2배가 되면 원주는 어떻게 되나요?",
+   "options": [
+    "4배가 된다",
+    "2배가 된다",
+    "그대로이다",
+    "반이 된다"
+   ],
+   "answer": 1,
+   "why": "원주는 지름에 원주율을 곱한 값이므로 지름이 2배가 되면 원주도 2배가 됩니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-16-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원주율을 $3.14$로 할 때 지름이 10 cm인 원의 원주는 몇 cm인가요?",
+   "svg": "<svg viewBox=\"0 0 120 144\" font-family=\"sans-serif\"><circle cx=\"60\" cy=\"60\" r=\"46\" fill=\"none\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"14\" y1=\"60\" x2=\"106\" y2=\"60\" stroke=\"#e07b39\" stroke-width=\"3\"/><text x=\"60\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10 cm</text><circle cx=\"60\" cy=\"60\" r=\"3.5\" fill=\"currentColor\"/><text x=\"60\" y=\"128\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">원주를 구하세요</text></svg>",
+   "options": [
+    "$78.5\\,\\mathrm{cm}$",
+    "$15.7\\,\\mathrm{cm}$",
+    "$62.8\\,\\mathrm{cm}$",
+    "$31.4\\,\\mathrm{cm}$"
+   ],
+   "answer": 3,
+   "why": "(원주)=(지름)×(원주율)=10×3.14=31.4(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-16-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원의 넓이를 구하는 식으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "(반지름)×(반지름)×(원주율)",
+    "(지름)×(원주율)",
+    "(반지름)×2×(원주율)",
+    "(반지름)+(원주율)"
+   ],
+   "answer": 0,
+   "why": "원의 넓이는 (반지름)×(반지름)×(원주율)로 구합니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-16-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원주율을 3으로 할 때 반지름이 3 cm인 원의 넓이는 몇 cm²인가요?",
+   "options": [
+    "$9\\,\\mathrm{cm^2}$",
+    "$18\\,\\mathrm{cm^2}$",
+    "$27\\,\\mathrm{cm^2}$",
+    "$54\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 2,
+   "why": "3×3×3=27(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-16-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "원주율을 $3.14$로 할 때 반지름이 5 cm인 원의 넓이는 몇 cm²인가요?",
+   "svg": "<svg viewBox=\"0 0 116 116\" font-family=\"sans-serif\"><circle cx=\"58\" cy=\"58\" r=\"44\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"58\" y1=\"58\" x2=\"102\" y2=\"58\" stroke=\"#e07b39\" stroke-width=\"3\"/><text x=\"80\" y=\"51\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5 cm</text><circle cx=\"58\" cy=\"58\" r=\"3.5\" fill=\"currentColor\"/></svg>",
+   "answers": [
+    "78.5",
+    "78.5cm²",
+    "78.5 cm²",
+    "78.5cm2"
+   ],
+   "why": "(원의 넓이)=5×5×3.14=78.5(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-16-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "원주율을 3으로 할 때 반지름이 6 cm인 원의 넓이는 몇 cm²인가요?",
+   "options": [
+    "$216\\,\\mathrm{cm^2}$",
+    "$36\\,\\mathrm{cm^2}$",
+    "$72\\,\\mathrm{cm^2}$",
+    "$108\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 3,
+   "why": "6×6×3=108(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-16-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "원주율을 $3.14$로 할 때 지름이 20 cm인 원의 원주는 몇 cm인가요?",
+   "options": [
+    "$31.4\\,\\mathrm{cm}$",
+    "$62.8\\,\\mathrm{cm}$",
+    "$125.6\\,\\mathrm{cm}$",
+    "$314\\,\\mathrm{cm}$"
+   ],
+   "answer": 1,
+   "why": "(원주)=20×3.14=62.8(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-16-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "원주율을 $3.14$로 할 때 원주가 62.8 cm인 원의 반지름은 몇 cm인가요?",
+   "answers": [
+    "10",
+    "10cm",
+    "10 cm"
+   ],
+   "why": "지름은 62.8÷3.14=20(cm)이므로 반지름은 10 cm입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-16-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "원주율을 $3.14$로 할 때 반지름이 10 cm인 원의 넓이는 몇 cm²인가요?",
+   "options": [
+    "$31.4\\,\\mathrm{cm^2}$",
+    "$62.8\\,\\mathrm{cm^2}$",
+    "$314\\,\\mathrm{cm^2}$",
+    "$100\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 2,
+   "why": "10×10×3.14=314(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-16-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "원의 반지름이 2배가 되면 원의 넓이는 몇 배가 되나요?",
+   "options": [
+    "4배",
+    "2배",
+    "8배",
+    "그대로이다"
+   ],
+   "answer": 0,
+   "why": "넓이는 (반지름)×(반지름)×(원주율)이므로 반지름이 2배이면 넓이는 2×2=4(배)가 됩니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-17-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-17",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "한 모서리가 3 cm인 정육면체의 겉넓이는 몇 cm²인가요?",
+   "answers": [
+    "54",
+    "54cm²",
+    "54 cm²",
+    "54cm2"
+   ],
+   "why": "한 면의 넓이는 3×3=9(cm²)이고 면이 6개이므로 9×6=54(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-17-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-17",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "가로 3 cm, 세로 2 cm, 높이 1 cm인 직육면체의 겉넓이는 몇 cm²인가요?",
+   "svg": "<svg viewBox=\"0 0 192.2 81.6\" font-family=\"sans-serif\"><polyline points=\"46,53.6 70.2,36 136.2,36\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><line x1=\"70.2\" y1=\"36\" x2=\"70.2\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><polygon points=\"46,31.6 112,31.6 112,53.6 46,53.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"46,31.6 112,31.6 136.2,14 70.2,14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"112,31.6 136.2,14 136.2,36 112,53.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"79\" y=\"71.6\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3 cm</text><text x=\"138.1\" y=\"58.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2 cm</text><text x=\"40\" y=\"47.6\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">1 cm</text></svg>",
+   "options": [
+    "$6\\,\\mathrm{cm^2}$",
+    "$11\\,\\mathrm{cm^2}$",
+    "$22\\,\\mathrm{cm^2}$",
+    "$18\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 2,
+   "why": "(3×2+2×1+3×1)×2=(6+2+3)×2=22(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-17-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-17",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "직육면체의 겉넓이를 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "6개 면의 넓이를 모두 더한 값",
+    "한 면의 넓이",
+    "모서리 길이를 모두 더한 값",
+    "가로·세로·높이를 곱한 값"
+   ],
+   "answer": 0,
+   "why": "겉넓이는 입체도형의 겉면 전체의 넓이이며, 직육면체는 6개 면의 넓이의 합입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-17-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-17",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "그림과 같은 직육면체의 겉넓이는 몇 cm²인가요?",
+   "svg": "<svg viewBox=\"0 0 202.8 106.4\" font-family=\"sans-serif\"><polyline points=\"46,78.4 76.8,56 146.8,56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><line x1=\"76.8\" y1=\"56\" x2=\"76.8\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><polygon points=\"46,36.4 116,36.4 116,78.4 46,78.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"46,36.4 116,36.4 146.8,14 76.8,14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"116,36.4 146.8,14 146.8,56 116,78.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"81\" y=\"96.4\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5 cm</text><text x=\"145.4\" y=\"81.2\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4 cm</text><text x=\"40\" y=\"62.4\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">3 cm</text></svg>",
+   "answers": [
+    "94",
+    "94cm²",
+    "94 cm²",
+    "94cm2"
+   ],
+   "why": "합동인 면이 3쌍이므로 (5×4+4×3+5×3)×2=(20+12+15)×2=94(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-17-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-17",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "한 모서리가 7 cm인 정육면체의 겉넓이는 몇 cm²인가요?",
+   "options": [
+    "$49\\,\\mathrm{cm^2}$",
+    "$147\\,\\mathrm{cm^2}$",
+    "$343\\,\\mathrm{cm^2}$",
+    "$294\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 3,
+   "why": "한 면의 넓이는 7×7=49(cm²)이므로 49×6=294(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-17-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-17",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "직육면체의 겉넓이를 구하는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "가로·세로·높이를 곱한다",
+    "합동인 세 쌍의 면의 넓이를 더해 2배 한다",
+    "모서리의 길이를 모두 더한다",
+    "한 면의 넓이에 3을 곱한다"
+   ],
+   "answer": 1,
+   "why": "마주 보는 면은 합동이므로 서로 다른 세 면의 넓이를 더해 2배 합니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-17-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-17",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "정육면체의 겉넓이가 150 cm²입니다. 한 모서리의 길이는 몇 cm인가요?",
+   "answers": [
+    "5",
+    "5cm",
+    "5 cm"
+   ],
+   "why": "한 면의 넓이는 150÷6=25(cm²)이고 5×5=25이므로 한 모서리는 5 cm입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-17-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-17",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "가로 6 cm, 세로 3 cm, 높이 4 cm인 직육면체의 겉넓이는 몇 cm²인가요?",
+   "options": [
+    "$72\\,\\mathrm{cm^2}$",
+    "$108\\,\\mathrm{cm^2}$",
+    "$54\\,\\mathrm{cm^2}$",
+    "$144\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 1,
+   "why": "(6×3+3×4+6×4)×2=(18+12+24)×2=108(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-17-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-17",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한 모서리가 2 cm인 정육면체 2개를 면끼리 붙여 직육면체 1개를 만들었습니다. 만든 직육면체의 겉넓이는 몇 cm²인가요?",
+   "options": [
+    "$24\\,\\mathrm{cm^2}$",
+    "$48\\,\\mathrm{cm^2}$",
+    "$32\\,\\mathrm{cm^2}$",
+    "$40\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 3,
+   "why": "붙여서 만든 직육면체는 가로 4 cm, 세로 2 cm, 높이 2 cm이므로 (4×2+2×2+4×2)×2=(8+4+8)×2=40(cm²)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-18-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-18",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "1 cm³는 어떤 부피인가요?",
+   "options": [
+    "한 모서리가 1 cm인 정육면체의 부피",
+    "한 모서리가 1 m인 정육면체의 부피",
+    "한 변이 1 cm인 정사각형의 넓이",
+    "길이가 1 cm인 선분"
+   ],
+   "answer": 0,
+   "why": "1 cm³는 한 모서리가 1 cm인 정육면체의 부피입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-18-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-18",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "한 모서리가 1 cm인 쌓기나무 8개로 만든 정육면체의 부피는 몇 cm³인가요?",
+   "answers": [
+    "8",
+    "8cm³",
+    "8 cm³",
+    "8cm3"
+   ],
+   "why": "1 cm³인 쌓기나무가 8개이므로 부피는 8 cm³입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-18-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-18",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "교실의 부피를 나타낼 때 알맞은 단위는 무엇인가요?",
+   "options": [
+    "mm²",
+    "cm³",
+    "m³",
+    "cm"
+   ],
+   "answer": 2,
+   "why": "교실처럼 큰 공간의 부피는 m³로 나타냅니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-18-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-18",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "1 m³는 몇 cm³인가요?",
+   "answers": [
+    "1000000",
+    "1,000,000",
+    "1000000cm³",
+    "1000000 cm³",
+    "백만"
+   ],
+   "why": "1 m=100 cm이므로 1 m³=100×100×100=1000000(cm³)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-18-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-18",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "3 m³는 몇 cm³인가요?",
+   "options": [
+    "$3000\\,\\mathrm{cm^3}$",
+    "$300000\\,\\mathrm{cm^3}$",
+    "$30000\\,\\mathrm{cm^3}$",
+    "$3000000\\,\\mathrm{cm^3}$"
+   ],
+   "answer": 3,
+   "why": "1 m³가 1000000 cm³이므로 3 m³는 3000000 cm³입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-18-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-18",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "한 모서리가 1 cm인 쌓기나무를 가로 3개, 세로 2개, 2층으로 쌓았습니다. 부피는 몇 cm³인가요?",
+   "svg": "<svg viewBox=\"0 0 124 116.8\" font-family=\"sans-serif\"><rect x=\"23\" y=\"46.4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"23,46.4 36,36 62,36 49,46.4\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"23,46.4 36,36 62,36 49,46.4\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"49,46.4 62,36 62,62 49,72.4\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"49,46.4 62,36 62,62 49,72.4\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"49\" y=\"46.4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"49,46.4 62,36 88,36 75,46.4\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"49,46.4 62,36 88,36 75,46.4\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"75,46.4 88,36 88,62 75,72.4\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"75,46.4 88,36 88,62 75,72.4\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"75\" y=\"46.4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"75,46.4 88,36 114,36 101,46.4\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"75,46.4 88,36 114,36 101,46.4\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"101,46.4 114,36 114,62 101,72.4\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"101,46.4 114,36 114,62 101,72.4\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"23\" y=\"20.4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"23,20.4 36,10 62,10 49,20.4\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"23,20.4 36,10 62,10 49,20.4\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"49,20.4 62,10 62,36 49,46.4\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"49,20.4 62,10 62,36 49,46.4\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"49\" y=\"20.4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"49,20.4 62,10 88,10 75,20.4\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"49,20.4 62,10 88,10 75,20.4\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"75,20.4 88,10 88,36 75,46.4\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"75,20.4 88,10 88,36 75,46.4\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"75\" y=\"20.4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"75,20.4 88,10 114,10 101,20.4\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"75,20.4 88,10 114,10 101,20.4\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"101,20.4 114,10 114,36 101,46.4\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"101,20.4 114,10 114,36 101,46.4\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"10\" y=\"56.8\" width=\"26\" height=\"26\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,56.8 23,46.4 49,46.4 36,56.8\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,56.8 23,46.4 49,46.4 36,56.8\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"36,56.8 49,46.4 49,72.4 36,82.8\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"36,56.8 49,46.4 49,72.4 36,82.8\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"36\" y=\"56.8\" width=\"26\" height=\"26\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"36,56.8 49,46.4 75,46.4 62,56.8\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"36,56.8 49,46.4 75,46.4 62,56.8\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"62,56.8 75,46.4 75,72.4 62,82.8\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"62,56.8 75,46.4 75,72.4 62,82.8\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"62\" y=\"56.8\" width=\"26\" height=\"26\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"62,56.8 75,46.4 101,46.4 88,56.8\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"62,56.8 75,46.4 101,46.4 88,56.8\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"88,56.8 101,46.4 101,72.4 88,82.8\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"88,56.8 101,46.4 101,72.4 88,82.8\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"10\" y=\"30.8\" width=\"26\" height=\"26\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,30.8 23,20.4 49,20.4 36,30.8\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"10,30.8 23,20.4 49,20.4 36,30.8\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"36,30.8 49,20.4 49,46.4 36,56.8\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"36,30.8 49,20.4 49,46.4 36,56.8\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"36\" y=\"30.8\" width=\"26\" height=\"26\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"36,30.8 49,20.4 75,20.4 62,30.8\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"36,30.8 49,20.4 75,20.4 62,30.8\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"62,30.8 75,20.4 75,46.4 62,56.8\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"62,30.8 75,20.4 75,46.4 62,56.8\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><rect x=\"62\" y=\"30.8\" width=\"26\" height=\"26\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"62,30.8 75,20.4 101,20.4 88,30.8\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"62,30.8 75,20.4 101,20.4 88,30.8\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"88,30.8 101,20.4 101,46.4 88,56.8\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"88,30.8 101,20.4 101,46.4 88,56.8\" fill=\"currentColor\" fill-opacity=\"0.35\" stroke=\"none\"/><text x=\"49\" y=\"110.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">▲ 앞</text></svg>",
+   "answers": [
+    "12",
+    "12cm³",
+    "12 cm³",
+    "12cm3"
+   ],
+   "why": "쌓기나무가 3×2×2=12(개)이므로 부피는 12 cm³입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-18-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-18",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "5000000 cm³는 몇 m³인가요?",
+   "options": [
+    "$50\\,\\mathrm{m^3}$",
+    "$5\\,\\mathrm{m^3}$",
+    "$0.5\\,\\mathrm{m^3}$",
+    "$500\\,\\mathrm{m^3}$"
+   ],
+   "answer": 1,
+   "why": "1000000 cm³가 1 m³이므로 5000000 cm³는 5 m³입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-18-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-18",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다음 중 부피가 가장 큰 것은 무엇인가요?",
+   "options": [
+    "30000 cm³",
+    "400000 cm³",
+    "0.5 m³",
+    "800 cm³"
+   ],
+   "answer": 2,
+   "why": "0.5 m³=500000 cm³이므로 가장 큽니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-18-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-18",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다음 중 부피를 알맞은 단위로 나타낸 것은 무엇인가요?",
+   "options": [
+    "교실의 부피는 약 200 m³이다",
+    "필통의 부피는 약 200 m³이다",
+    "주사위의 부피는 약 2 m³이다",
+    "물 한 컵의 부피는 약 250 m³이다"
+   ],
+   "answer": 0,
+   "why": "교실은 m³, 필통·주사위·물 한 컵은 cm³ 정도로 나타내는 것이 알맞습니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-19-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-19",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "가로 3 cm, 세로 4 cm, 높이 5 cm인 직육면체의 부피는 몇 cm³인가요?",
+   "svg": "<svg viewBox=\"0 0 185.2 147.6\" font-family=\"sans-serif\"><polyline points=\"46,119.6 81.2,94 129.2,94\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><line x1=\"81.2\" y1=\"94\" x2=\"81.2\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><polygon points=\"46,39.6 94,39.6 94,119.6 46,119.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"46,39.6 94,39.6 129.2,14 81.2,14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"94,39.6 129.2,14 129.2,94 94,119.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"70\" y=\"137.6\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3 cm</text><text x=\"125.6\" y=\"120.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4 cm</text><text x=\"40\" y=\"84.6\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">5 cm</text></svg>",
+   "options": [
+    "$47\\,\\mathrm{cm^3}$",
+    "$12\\,\\mathrm{cm^3}$",
+    "$60\\,\\mathrm{cm^3}$",
+    "$94\\,\\mathrm{cm^3}$"
+   ],
+   "answer": 2,
+   "why": "(직육면체의 부피)=(가로)×(세로)×(높이)=3×4×5=60(cm³)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-19-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-19",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "한 모서리가 4 cm인 정육면체의 부피는 몇 cm³인가요?",
+   "answers": [
+    "64",
+    "64cm³",
+    "64 cm³",
+    "64cm3"
+   ],
+   "why": "4×4×4=64(cm³)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-19-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-19",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "직육면체의 부피를 구하는 식으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "(가로)×(세로)×(높이)",
+    "(가로)+(세로)+(높이)",
+    "(가로+세로)×(높이)",
+    "(가로)×(세로)"
+   ],
+   "answer": 0,
+   "why": "직육면체의 부피는 가로, 세로, 높이를 곱하여 구합니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-19-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-19",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "가로 8 cm, 세로 5 cm, 높이 3 cm인 직육면체의 부피는 몇 cm³인가요?",
+   "answers": [
+    "120",
+    "120cm³",
+    "120 cm³",
+    "120cm3"
+   ],
+   "why": "8×5×3=120(cm³)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-19-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-19",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "부피가 90 cm³이고 밑면의 가로가 6 cm, 세로가 5 cm인 직육면체의 높이는 몇 cm인가요?",
+   "options": [
+    "$5\\,\\mathrm{cm}$",
+    "$15\\,\\mathrm{cm}$",
+    "$30\\,\\mathrm{cm}$",
+    "$3\\,\\mathrm{cm}$"
+   ],
+   "answer": 3,
+   "why": "(높이)=90÷(6×5)=3(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-19-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-19",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "한 모서리가 10 cm인 정육면체의 부피는 몇 cm³인가요?",
+   "options": [
+    "$100\\,\\mathrm{cm^3}$",
+    "$1000\\,\\mathrm{cm^3}$",
+    "$600\\,\\mathrm{cm^3}$",
+    "$300\\,\\mathrm{cm^3}$"
+   ],
+   "answer": 1,
+   "why": "10×10×10=1000(cm³)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-19-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-19",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "정육면체의 부피가 125 cm³입니다. 한 모서리의 길이는 몇 cm인가요?",
+   "answers": [
+    "5",
+    "5cm",
+    "5 cm"
+   ],
+   "why": "5×5×5=125이므로 한 모서리는 5 cm입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-19-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-19",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "가로 12 cm, 세로 5 cm, 높이 4 cm인 직육면체와 부피가 같고 가로가 10 cm, 높이가 3 cm인 직육면체의 세로는 몇 cm인가요?",
+   "options": [
+    "$6\\,\\mathrm{cm}$",
+    "$8\\,\\mathrm{cm}$",
+    "$10\\,\\mathrm{cm}$",
+    "$4\\,\\mathrm{cm}$"
+   ],
+   "answer": 1,
+   "why": "처음 부피는 12×5×4=240(cm³)이므로 세로는 240÷(10×3)=8(cm)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수03-19-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "도형과 측정",
+   "standard": "6수03-19",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "직육면체의 가로, 세로, 높이를 각각 2배로 늘이면 부피는 몇 배가 되나요?",
+   "options": [
+    "6배",
+    "2배",
+    "4배",
+    "8배"
+   ],
+   "answer": 3,
+   "why": "부피는 가로×세로×높이이므로 2×2×2=8(배)가 됩니다."
+  }
+ ],
+ "skipped": []
+}

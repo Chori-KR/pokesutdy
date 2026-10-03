@@ -36,7 +36,7 @@ def cuboid_fig(a, b, c, labels=("", "", ""), s=14, fill=False, W=None, hidden=Tr
         out.append(text(x0 + w + dx / 2 + 14, y0 + h - dy / 2 + 14, labels[1], 13, weight="bold"))
     if labels[2]:
         out.append(text(x0 - 6, y0 + h / 2 + 5, labels[2], 13, "end", "bold"))
-    return svg(_n(W or (w + dx + 60)), _n(y0 + h + 28), "".join(out))
+    return svg(_n(W or (x0 + w + dx + 56)), _n(y0 + h + 28), "".join(out))
 
 
 def _prism_pts(n, r, ry, cx, cy):
