@@ -1,0 +1,361 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초3-4",
+  "unit": "생태계",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "사라져 가는 철새",
+   "text": "어느 강 하류에는 넓은 습지가 있어 해마다 겨울이면 철새들이 찾아왔습니다. 습지에는 갈대와 물고기, 곤충이 많아 새들이 먹이를 얻기에 좋았습니다. 그런데 사람들이 습지를 메워 공장과 도로를 만들면서 갈대밭이 줄고 물이 더러워졌습니다. 먹이가 줄어든 철새는 해마다 수가 줄어들었습니다. 이를 안타깝게 여긴 마을 사람들은 습지 일부를 보호 구역으로 정하고 쓰레기 줄이기 운동을 시작했습니다. 몇 해 뒤 철새가 조금씩 다시 찾아오기 시작했습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "과학-초3-4-4과14-01-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 생태계의 비생물 요소에 해당하는 것은 무엇인가요?",
+   "options": [
+    "소나무",
+    "토끼",
+    "햇빛",
+    "곰팡이"
+   ],
+   "answer": 2,
+   "why": "햇빛, 물, 공기, 흙은 비생물 요소이고, 토끼, 소나무, 곰팡이는 생물 요소입니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-01-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "햇빛, 물, 공기, 흙처럼 살아 있지 않지만 생태계를 이루는 요소를 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "비생물",
+    "비생물 요소",
+    "비생물요소"
+   ],
+   "why": "살아 있지 않은 생태계 구성 요소를 비생물 요소라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-01-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "식물이 동물과 다르게 양분을 얻는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "햇빛을 이용해 스스로 양분을 만든다",
+    "다른 생물을 먹어서 얻는다",
+    "죽은 생물을 분해해서 얻는다",
+    "공기를 마셔서 얻는다"
+   ],
+   "answer": 0,
+   "why": "식물은 햇빛을 이용해 스스로 양분을 만들고, 동물은 다른 생물을 먹어 양분을 얻습니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-01-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표를 보고 생태계의 비생물 요소만 바르게 고른 것을 고르세요.",
+   "svg": "<svg viewBox=\"0 0 256 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"250\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"253\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"253\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"253\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">구성 요소</text><text x=\"168\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">예</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"168\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">소나무, 토끼</text><text x=\"43\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"168\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">햇빛, 물</text><text x=\"43\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><text x=\"168\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">곰팡이, 세균</text></svg>",
+   "options": [
+    "가와 다",
+    "가",
+    "다",
+    "나"
+   ],
+   "answer": 3,
+   "why": "햇빛과 물은 살아 있지 않은 비생물 요소이고, 가와 다는 생물 요소입니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-01-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "곰팡이나 버섯이 양분을 얻는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "햇빛으로 스스로 만든다",
+    "죽은 생물이나 배설물을 분해해서 얻는다",
+    "살아 있는 동물을 잡아먹어 얻는다",
+    "물만 마셔서 얻는다"
+   ],
+   "answer": 1,
+   "why": "곰팡이, 버섯, 세균 같은 분해자는 죽은 생물이나 배설물을 분해해 양분을 얻습니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-01-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "식물처럼 햇빛으로 스스로 양분을 만들어 생태계의 다른 생물에게 먹이를 제공하는 생물을 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "생산자"
+   ],
+   "why": "스스로 양분을 만드는 생물을 생산자라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-02-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 먹고 먹히는 관계에 해당하는 것은 무엇인가요?",
+   "options": [
+    "나무가 비를 맞는다",
+    "메뚜기가 벼의 잎을 갉아 먹는다",
+    "구름이 바람에 날아간다",
+    "돌멩이가 물에 가라앉는다"
+   ],
+   "answer": 1,
+   "why": "메뚜기가 벼를 먹는 것은 먹고 먹히는 관계입니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-02-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "벼 → 메뚜기 → 개구리 → 뱀처럼 먹고 먹히는 관계가 사슬처럼 이어진 것을 무엇이라고 하나요? (네 글자)",
+   "answers": [
+    "먹이사슬",
+    "먹이 사슬"
+   ],
+   "why": "먹고 먹히는 관계가 사슬처럼 이어진 것을 먹이사슬이라고 합니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-02-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 먹이사슬입니다. ㉠에 들어갈 알맞은 생물은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 300 70\" font-family=\"sans-serif\"><rect x=\"4\" y=\"6\" width=\"62.5\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"35.2\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">벼</text><line x1=\"68.5\" y1=\"35\" x2=\"78.5\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"81.5,35.0 75.5,31.0 75.5,39.0\" fill=\"currentColor\"/><rect x=\"80.5\" y=\"6\" width=\"62.5\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"111.8\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">메뚜기</text><line x1=\"145\" y1=\"35\" x2=\"155\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"158,35.0 152,31.0 152,39.0\" fill=\"currentColor\"/><rect x=\"157\" y=\"6\" width=\"62.5\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"188.2\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><line x1=\"221.5\" y1=\"35\" x2=\"231.5\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"234.5,35.0 228.5,31.0 228.5,39.0\" fill=\"currentColor\"/><rect x=\"233.5\" y=\"6\" width=\"62.5\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"264.8\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">뱀</text></svg>",
+   "options": [
+    "곰팡이",
+    "물",
+    "햇빛",
+    "개구리"
+   ],
+   "answer": 3,
+   "why": "메뚜기를 먹는 개구리를 뱀이 잡아먹는 먹이사슬입니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-02-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "먹이사슬을 화살표로 나타낼 때 화살표의 방향은 어떻게 하나요?",
+   "options": [
+    "먹히는 생물에서 먹는 생물 쪽으로 그린다",
+    "먹는 생물에서 먹히는 생물 쪽으로 그린다",
+    "아무렇게나 그린다",
+    "항상 위쪽으로 그린다"
+   ],
+   "answer": 0,
+   "why": "먹이사슬의 화살표는 먹히는 생물에서 먹는 생물 쪽으로, 양분이 이동하는 방향으로 그립니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-02-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림은 어느 지역의 먹이 관계입니다. 개구리와 쥐를 모두 먹는 생물은 무엇인가요? (한 가지 고르세요)",
+   "svg": "<svg viewBox=\"0 0 330 170\" font-family=\"sans-serif\"><line x1=\"55.4\" y1=\"68\" x2=\"96.4\" y2=\"38.1\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"96.4,38.1 91.3,48 85.4,39.9\" fill=\"currentColor\"/><line x1=\"55.4\" y1=\"102\" x2=\"96.4\" y2=\"131.9\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"96.4,131.9 85.4,130.1 91.3,122\" fill=\"currentColor\"/><line x1=\"154.8\" y1=\"21.1\" x2=\"172.6\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"172.6,21.1 162.6,26.1 162.6,16.1\" fill=\"currentColor\"/><line x1=\"231.6\" y1=\"38.1\" x2=\"273.9\" y2=\"68\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"273.9,68 262.9,66.3 268.7,58.1\" fill=\"currentColor\"/><line x1=\"154.8\" y1=\"136.4\" x2=\"263\" y2=\"97.5\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"263,97.5 255.3,105.6 251.9,96.2\" fill=\"currentColor\"/><line x1=\"154.8\" y1=\"148.9\" x2=\"172.6\" y2=\"148.9\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"172.6,148.9 162.6,153.9 162.6,143.9\" fill=\"currentColor\"/><rect x=\"0\" y=\"71\" width=\"64\" height=\"28\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"32\" y=\"90\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">풀</text><rect x=\"87.8\" y=\"7.1\" width=\"64\" height=\"28\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"119.8\" y=\"26.1\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">메뚜기</text><rect x=\"87.8\" y=\"134.9\" width=\"64\" height=\"28\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"119.8\" y=\"153.9\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">쥐</text><rect x=\"175.6\" y=\"7.1\" width=\"64\" height=\"28\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"207.6\" y=\"26.1\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">개구리</text><rect x=\"175.6\" y=\"134.9\" width=\"64\" height=\"28\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"207.6\" y=\"153.9\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">여우</text><rect x=\"266\" y=\"71\" width=\"64\" height=\"28\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"298\" y=\"90\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">뱀</text></svg>",
+   "options": [
+    "메뚜기",
+    "여우",
+    "뱀",
+    "풀"
+   ],
+   "answer": 2,
+   "why": "그림에서 뱀은 개구리와 쥐를 모두 먹습니다. 여우는 쥐만 먹습니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-02-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림은 어느 먹이그물입니다. 주황색 테두리의 메뚜기가 갑자기 모두 사라졌을 때 가장 먼저 영향을 받을 생물은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 330 170\" font-family=\"sans-serif\"><line x1=\"55.4\" y1=\"68\" x2=\"96.4\" y2=\"38.1\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"96.4,38.1 91.3,48 85.4,39.9\" fill=\"currentColor\"/><line x1=\"55.4\" y1=\"102\" x2=\"96.4\" y2=\"131.9\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"96.4,131.9 85.4,130.1 91.3,122\" fill=\"currentColor\"/><line x1=\"154.8\" y1=\"21.1\" x2=\"172.6\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"172.6,21.1 162.6,26.1 162.6,16.1\" fill=\"currentColor\"/><line x1=\"231.6\" y1=\"38.1\" x2=\"273.9\" y2=\"68\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"273.9,68 262.9,66.3 268.7,58.1\" fill=\"currentColor\"/><line x1=\"154.8\" y1=\"136.4\" x2=\"263\" y2=\"97.5\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"263,97.5 255.3,105.6 251.9,96.2\" fill=\"currentColor\"/><rect x=\"0\" y=\"71\" width=\"64\" height=\"28\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"32\" y=\"90\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">풀</text><rect x=\"87.8\" y=\"7.1\" width=\"64\" height=\"28\" rx=\"6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"119.8\" y=\"26.1\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">메뚜기</text><rect x=\"87.8\" y=\"134.9\" width=\"64\" height=\"28\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"119.8\" y=\"153.9\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">쥐</text><rect x=\"175.6\" y=\"7.1\" width=\"64\" height=\"28\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"207.6\" y=\"26.1\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">개구리</text><rect x=\"266\" y=\"71\" width=\"64\" height=\"28\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"298\" y=\"90\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">뱀</text></svg>",
+   "options": [
+    "쥐를 먹던 뱀 전체",
+    "풀",
+    "햇빛",
+    "메뚜기를 먹던 개구리"
+   ],
+   "answer": 3,
+   "why": "메뚜기가 사라지면 메뚜기를 먹던 개구리가 먹이가 줄어 가장 먼저 영향을 받습니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-03-c1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 인간 활동이 생태계에 영향을 주는 예로 알맞은 것은 무엇인가요?",
+   "options": [
+    "비가 와서 강물이 불어난다",
+    "숲을 없애고 도로를 만들어 동물의 살 곳이 줄어든다",
+    "계절이 바뀐다",
+    "밤하늘에 별이 뜬다"
+   ],
+   "answer": 1,
+   "why": "숲을 없애고 도로를 만들면 그곳에 살던 생물의 서식지가 줄어듭니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-03-c2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "쓰레기를 종류별로 나누어 버려 다시 쓸 수 있게 하는 일을 무엇이라고 하나요? (네 글자)",
+   "answers": [
+    "분리배출",
+    "분리 배출",
+    "분리수거",
+    "분리 수거"
+   ],
+   "why": "쓰레기를 종류별로 나누어 버리면 자원을 다시 쓰고 환경 오염을 줄일 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-03-b1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "글에서 철새의 수가 줄어든 까닭으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "철새가 모두 사람이 되었기 때문이다",
+    "겨울이 따뜻해졌기 때문이다",
+    "습지가 메워져 먹이가 줄고 물이 더러워졌기 때문이다",
+    "갈대가 너무 많이 자랐기 때문이다"
+   ],
+   "answer": 2,
+   "why": "습지를 메워 공장과 도로를 만들면서 먹이가 줄고 물이 더러워져 철새가 줄었습니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-03-b2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "생태계를 보전하기 위해 우리가 실천할 수 있는 일로 알맞은 것은 무엇인가요?",
+   "options": [
+    "일회용품을 줄이고 쓰레기를 분리해서 버린다",
+    "동물을 마음대로 잡아 온다",
+    "숲의 나무를 함부로 베어 간다",
+    "강에 쓰레기를 버린다"
+   ],
+   "answer": 0,
+   "why": "일회용품을 줄이고 쓰레기를 분리해 버리면 생태계의 오염을 줄일 수 있습니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-03-a1",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "글에서 마을 사람들의 노력 이후 철새가 다시 찾아온 까닭으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "도로가 넓어졌기 때문이다",
+    "공장이 더 늘어났기 때문이다",
+    "보호 구역에서 먹이와 깨끗한 물이 회복되기 시작했기 때문이다",
+    "쓰레기가 더 많아졌기 때문이다"
+   ],
+   "answer": 2,
+   "why": "습지를 보호하고 쓰레기를 줄이자 철새가 먹이를 얻을 수 있는 환경이 되살아났습니다."
+  },
+  {
+   "id": "과학-초3-4-4과14-03-a2",
+   "subject": "과학",
+   "gradeBand": "초3-4",
+   "unit": "생태계",
+   "standard": "4과14-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "생태계의 한 곳이 파괴되면 다른 생물에게도 영향이 생기는 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "생물들이 먹이 관계로 서로 이어져 있기 때문이다",
+    "생물들이 서로 관계가 없기 때문이다",
+    "비생물 요소는 변하지 않기 때문이다",
+    "한 생물은 한 곳에서만 살 수 있기 때문이다"
+   ],
+   "answer": 0,
+   "why": "생태계의 생물은 먹이 관계로 이어져 있어 한 생물이 줄면 다른 생물도 영향을 받습니다."
+  }
+ ],
+ "skipped": []
+}

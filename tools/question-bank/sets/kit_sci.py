@@ -110,3 +110,68 @@ def flask_balloon(state="big", label=None, W=130):
     if label:
         out.append(text(60, 140, label, 13, weight="bold"))
     return svg(W, 148 if label else 124, "".join(out))
+
+
+def web(nodes, edges, W=300, H=170, hot=None):
+    """먹이 관계 그림. nodes {이름: (x,y)} 0~1 비율, edges [(먹히는 것, 먹는 것)] — 화살표는 먹히는 쪽에서 먹는 쪽으로."""
+    bw, bh = 64, 28
+    pos = {k: (v[0] * (W - bw) + bw / 2, v[1] * (H - bh) + bh / 2) for k, v in nodes.items()}
+    out = []
+    for a, b_ in edges:
+        (x1, y1), (x2, y2) = pos[a], pos[b_]
+        dx, dy = x2 - x1, y2 - y1
+        d = math.hypot(dx, dy)
+        ux, uy = dx / d, dy / d
+        # 상자 가장자리까지 줄이기
+        def cut(ux, uy):
+            tx = (bw / 2 + 3) / abs(ux) if abs(ux) > 1e-6 else 1e9
+            ty = (bh / 2 + 3) / abs(uy) if abs(uy) > 1e-6 else 1e9
+            return min(tx, ty)
+        s = cut(ux, uy)
+        sx, sy = x1 + ux * s, y1 + uy * s
+        ex, ey = x2 - ux * s, y2 - uy * s
+        out.append(line(sx, sy, ex, ey, 2.5))
+        px, py = -uy, ux
+        out.append(f'<polygon points="{_n(ex)},{_n(ey)} {_n(ex - ux * 10 + px * 5)},{_n(ey - uy * 10 + py * 5)} {_n(ex - ux * 10 - px * 5)},{_n(ey - uy * 10 - py * 5)}" fill="{C}"/>')
+    for k, (x, y) in pos.items():
+        col = ORANGE if hot == k else C
+        out.append(f'<rect x="{_n(x - bw / 2)}" y="{_n(y - bh / 2)}" width="{bw}" height="{bh}" rx="6" fill="none" stroke="{col}" stroke-width="2.5"/>')
+        out.append(text(x, y + 5, k, 13, weight="bold" if hot == k else None))
+    return svg(W, H, "".join(out))
+
+
+def magnet(x, y, left, right, w=76, h=26):
+    """막대자석 한 개의 조각. left/right: 'N' 또는 'S' (N=주황 무늬, S=파랑 무늬)"""
+    out = []
+    for i, p in enumerate((left, right)):
+        col = ORANGE if p == "N" else BLUE
+        out.append(f'<rect x="{_n(x + i * w / 2)}" y="{y}" width="{_n(w / 2)}" height="{h}" fill="{col}" fill-opacity="0.35" stroke="{C}" stroke-width="2.5"/>')
+        out.append(text(x + i * w / 2 + w / 4, y + h / 2 + 5, p, 15, weight="bold"))
+    return "".join(out)
+
+
+def magnet_pair(a, b_, gap=34, label=None):
+    """두 막대자석을 마주 놓은 모습. a, b_: (왼쪽 극, 오른쪽 극)"""
+    w = 76
+    W = w * 2 + gap + 16
+    out = [magnet(8, 14, a[0], a[1]), magnet(8 + w + gap, 14, b_[0], b_[1])]
+    if label:
+        out.append(text(W / 2, 62, label, 13, weight="bold"))
+    return svg(W, 68 if label else 50, "".join(out))
+
+
+def seesaw(left, right, tilt=0, W=250):
+    """수평잡기: left/right 물체 이름. tilt<0이면 왼쪽이 내려감, >0이면 오른쪽이 내려감, 0이면 수평."""
+    cx, cy = W / 2, 92
+    L = 100
+    ang = math.radians(tilt * 12)
+    dy = math.sin(ang) * L
+    dx = math.cos(ang) * L
+    lx, ly = cx - dx, cy - 14 - dy
+    rx, ry = cx + dx, cy - 14 + dy
+    out = [f'<polygon points="{cx},{cy - 10} {cx - 16},{cy + 18} {cx + 16},{cy + 18}" fill="none" stroke="{C}" stroke-width="2.5"/>',
+           line(lx, ly, rx, ry, 5)]
+    for (x, y, lab) in ((lx, ly, left), (rx, ry, right)):
+        out.append(f'<rect x="{_n(x - 28)}" y="{_n(y - 32)}" width="56" height="26" rx="5" fill="none" stroke="{C}" stroke-width="2.5"/>')
+        out.append(text(x, y - 14, lab, 12, weight="bold"))
+    return svg(W, 118, "".join(out))

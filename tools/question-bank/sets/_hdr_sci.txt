@@ -6,4 +6,4 @@ from svgkit import svg, text, line, table, line_graph, bar_graph, BLUE, ORANGE, 
 from kit_ko import KoBank, report
 from kit_soc import compare_table
 from kit34 import hold
-from kit_sci import flow, cup, moon, stars, syringe, flask_balloon
+from kit_sci import flow, cup, moon, stars, syringe, flask_balloon, web, magnet_pair, seesaw
