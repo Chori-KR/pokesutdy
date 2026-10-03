@@ -1,0 +1,1129 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "체육",
+  "school": "초",
+  "course": "체육",
+  "gradeBand": "초3-4",
+  "unit": "스포츠",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "피구 게임 이야기",
+   "text": "4학년 2반은 체육 시간에 피구를 했습니다. 서로 정한 규칙은 ‘공에 맞으면 밖으로 나간다’, ‘얼굴은 맞히지 않는다’였습니다. 게임 중 하준이는 공에 맞았지만 아무도 못 봤다고 생각하고 그대로 계속 뛰었습니다. 이를 본 서아가 “하준아, 네 공이 닿는 것 봤어. 규칙대로 하자.”라고 조용히 말했습니다. 하준이는 잠깐 망설이다가 밖으로 나갔습니다. 게임이 끝난 뒤 선생님께서는 하준이와 서아를 칭찬하시며 “이긴 팀도 진 팀도 모두 최선을 다했고 규칙을 지켜서 멋진 게임이었어요.”라고 말씀하셨습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "체육-초3-4-4체02-01-c1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "스포츠에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "책상에 앉아서만 하는 활동이다",
+    "규칙 없이 마음대로 하는 놀이이다",
+    "정해진 규칙에 따라 몸을 움직이며 즐기는 활동이다",
+    "혼자서만 해야 하는 활동이다"
+   ],
+   "answer": 2,
+   "why": "스포츠는 규칙에 따라 몸을 움직이며 즐기는 활동입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-01-c2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "축구, 피구처럼 공격과 수비 계획을 세워 겨루는 스포츠 유형을 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "전략형",
+    "전략형 스포츠"
+   ],
+   "why": "공격과 수비의 전략을 세워 겨루는 스포츠를 전략형 스포츠라고 합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-01-b1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표를 보고 자연 속에서 즐기는 생태형 스포츠를 고르세요.",
+   "svg": "<svg viewBox=\"0 0 256 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"250\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"253\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"253\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"253\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">유형</text><text x=\"158\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">예</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"158\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">달리기, 체조</text><text x=\"33\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"158\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">피구, 축구</text><text x=\"33\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><text x=\"158\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">등산, 자전거 타기</text></svg>",
+   "options": [
+    "다",
+    "가",
+    "나",
+    "가와 나"
+   ],
+   "answer": 0,
+   "why": "자연환경에서 즐기는 등산, 자전거 타기는 생태형 스포츠입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-01-b2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "기술형 스포츠의 특징으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "승패 없이 구경만 한다",
+    "공격과 수비로 나뉘어 점수를 겨룬다",
+    "자연 속에서 안전하게 걷는 것이 목적이다",
+    "정해진 동작이나 기록을 정확하고 잘 해내는 것을 겨룬다"
+   ],
+   "answer": 3,
+   "why": "기술형 스포츠는 정해진 기술이나 기록을 겨루는 스포츠입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-01-a1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "달리기, 멀리뛰기, 체조, 피구 중 스포츠 유형이 다른 하나는 무엇인가요?",
+   "options": [
+    "달리기",
+    "피구",
+    "멀리뛰기",
+    "체조"
+   ],
+   "answer": 1,
+   "why": "달리기, 멀리뛰기, 체조는 기술형이고 피구는 전략형입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-01-a2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "생태형 스포츠를 즐길 때 알맞은 태도는 무엇인가요?",
+   "options": [
+    "꽃과 나무를 마음대로 꺾는다",
+    "자연을 보호하며 쓰레기를 되가져 온다",
+    "큰 소리로 야생 동물을 놀라게 한다",
+    "쓰레기는 그냥 두고 온다"
+   ],
+   "answer": 1,
+   "why": "생태형 스포츠는 자연환경 속에서 하므로 자연을 보호하는 태도가 필요합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-02-c1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 장소를 옮겨 가며 하는 이동 움직임은 무엇인가요?",
+   "options": [
+    "한 발로 서서 균형 잡기",
+    "제자리에서 굽히기",
+    "제자리에서 비틀기",
+    "달리기"
+   ],
+   "answer": 3,
+   "why": "달리기, 걷기, 뛰기는 몸이 장소를 옮겨 가는 이동 움직임입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-02-c2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "던지기, 받기, 차기처럼 공이나 도구를 다루는 움직임을 무엇이라고 하나요? (두 글자 + 움직임)",
+   "answers": [
+    "조작",
+    "조작 움직임",
+    "조작움직임"
+   ],
+   "why": "물체를 다루는 움직임을 조작 움직임이라고 합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-02-b1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표의 ㉠에 들어갈 알맞은 말은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 276 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"270\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"273\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"273\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"273\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">움직임 기술</text><text x=\"188\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">예</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">이동</text><text x=\"188\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">걷기, 달리기, 뛰기</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><text x=\"188\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">굽히기, 비틀기, 균형 잡기</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">조작</text><text x=\"188\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">던지기, 받기, 차기</text></svg>",
+   "options": [
+    "비이동",
+    "이동",
+    "조작",
+    "휴식"
+   ],
+   "answer": 0,
+   "why": "제자리에서 몸을 움직이는 굽히기, 비틀기, 균형 잡기는 비이동 움직임입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-02-b2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 비이동 움직임에 해당하는 것은 무엇인가요?",
+   "options": [
+    "앞으로 달려가기",
+    "공을 멀리 던지기",
+    "제자리에서 몸을 쭉 펴고 늘이기",
+    "공을 발로 차기"
+   ],
+   "answer": 2,
+   "why": "제자리에서 몸을 펴고 늘이는 움직임은 비이동 움직임입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-02-a1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "피구에서 사용하는 기본 움직임 기술을 바르게 짝지은 것은 무엇인가요?",
+   "options": [
+    "모두 비이동",
+    "공 던지기(이동), 달려서 피하기(조작)",
+    "공 받기(이동), 몸 비틀기(조작)",
+    "공 던지기(조작), 달려서 피하기(이동)"
+   ],
+   "answer": 3,
+   "why": "공을 던지는 것은 조작, 달려서 피하는 것은 이동 움직임입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-02-a2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "표에서 움직임 종류가 잘못 분류된 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 236 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"230\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"133\" y1=\"3\" x2=\"133\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"233\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"233\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"233\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"233\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"68\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">움직임</text><text x=\"183\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">종류</text><text x=\"68\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가 – 걷기</text><text x=\"183\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">이동</text><text x=\"68\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나 – 공 차기</text><text x=\"183\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">조작</text><text x=\"68\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다 – 달리기</text><text x=\"183\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">비이동</text><text x=\"68\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라 – 몸 비틀기</text><text x=\"183\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">비이동</text></svg>",
+   "options": [
+    "가",
+    "다",
+    "나",
+    "라"
+   ],
+   "answer": 1,
+   "why": "달리기는 장소를 옮겨 가는 이동 움직임입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-03-c1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "움직일 때 몸의 어떤 부분을 쓰는지 생각하는 움직임 요소는 무엇인가요?",
+   "options": [
+    "관계 요소",
+    "공간 요소",
+    "신체 요소",
+    "날씨 요소"
+   ],
+   "answer": 2,
+   "why": "몸의 어느 부분을 어떻게 쓰는지에 관한 것이 신체 요소입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-03-c2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "움직임에 쓰는 힘의 크기, 속도, 흐름에 관한 움직임 요소를 무엇이라고 하나요? (두 글자 + 요소)",
+   "answers": [
+    "노력",
+    "노력 요소",
+    "노력요소"
+   ],
+   "why": "힘, 시간, 흐름과 관련된 요소가 노력 요소입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-03-b1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "앞으로, 뒤로, 옆으로 같은 방향과 넓은 곳, 좁은 곳을 생각하는 움직임 요소를 두 글자로 쓰세요. (○○ 요소)",
+   "answers": [
+    "공간",
+    "공간 요소"
+   ],
+   "why": "방향, 범위, 경로 등에 관한 요소가 공간 요소입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-03-b2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "친구와 마주 보고 공을 주고받는 것은 사람이나 사물과의 관계를 생각하는 움직임 요소입니다. 이 움직임 요소를 두 글자로 쓰세요. (○○ 요소)",
+   "answers": [
+    "관계",
+    "관계 요소"
+   ],
+   "why": "사람이나 사물과의 관계에 관한 요소가 관계 요소입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-03-a1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "같은 달리기라도 처음에는 천천히, 나중에는 빠르게 달릴 때 달라진 움직임 요소는 무엇인가요?",
+   "options": [
+    "노력 요소(시간)",
+    "신체 요소",
+    "공간 요소",
+    "관계 요소"
+   ],
+   "answer": 0,
+   "why": "속도(시간)를 바꾸는 것은 노력 요소와 관련이 있습니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-03-a2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "좁은 공간에서 친구들과 부딪히지 않고 움직이는 방법으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "눈을 감고 움직인다",
+    "앞만 보고 최대한 빠르게 달린다",
+    "주변 친구와 공간을 살피며 방향을 바꾸고 속도를 조절한다",
+    "친구를 밀면서 움직인다"
+   ],
+   "answer": 2,
+   "why": "공간과 관계, 노력 요소를 함께 고려하면 안전하게 움직일 수 있습니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-04-c1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "멀리뛰기는 달리기와 어떤 움직임을 연결한 기술인가요?",
+   "options": [
+    "뛰기",
+    "던지기",
+    "차기",
+    "굽히기"
+   ],
+   "answer": 0,
+   "why": "멀리뛰기는 달려가서 뛰는 복합 움직임입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-04-c2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "공을 받은 뒤 바로 던지는 움직임은 받기와 무엇을 연결한 것인가요? (세 글자)",
+   "answers": [
+    "던지기"
+   ],
+   "why": "받은 공을 바로 던지는 것은 받기와 던지기를 연결한 복합 움직임입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-04-b1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 복합적인 움직임의 순서입니다. ㉠에 들어갈 알맞은 움직임은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 280 70\" font-family=\"sans-serif\"><rect x=\"4\" y=\"6\" width=\"81.3\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"44.7\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">달리기</text><line x1=\"87.3\" y1=\"35\" x2=\"97.3\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"100.3,35.0 94.3,31.0 94.3,39.0\" fill=\"currentColor\"/><rect x=\"99.3\" y=\"6\" width=\"81.3\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"140\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><line x1=\"182.7\" y1=\"35\" x2=\"192.7\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"195.7,35.0 189.7,31.0 189.7,39.0\" fill=\"currentColor\"/><rect x=\"194.7\" y=\"6\" width=\"81.3\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"235.3\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">착지하기</text></svg>",
+   "options": [
+    "굽히기",
+    "눕기",
+    "앉기",
+    "도약하기(뛰어오르기)"
+   ],
+   "answer": 3,
+   "why": "달리기 뒤에 도약하고 착지하는 것은 멀리뛰기의 연결 움직임입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-04-b2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "드리블하며 달려가다가 슛을 하는 움직임은 어떤 기술들을 연결한 것인가요?",
+   "options": [
+    "눕기와 구르기",
+    "드리블(조작)과 달리기(이동), 슛(조작)",
+    "앉기와 일어서기",
+    "굽히기와 비틀기"
+   ],
+   "answer": 1,
+   "why": "드리블, 달리기, 슛을 연결한 복합 움직임입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-04-a1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다음 중 여러 기본 움직임이 연결된 복합 움직임이 아닌 것은 무엇인가요?",
+   "options": [
+    "달리면서 공 받기",
+    "제자리에서 서 있기",
+    "뛰어올라 공 던지기",
+    "공을 몰고 가서 차기"
+   ],
+   "answer": 1,
+   "why": "제자리에서 서 있는 것은 하나의 기본 움직임입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-04-a2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "달려오는 친구의 패스를 받아 곧바로 다른 친구에게 던지는 게임 상황에서 연결해야 할 움직임은 무엇인가요?",
+   "options": [
+    "던지기 → 앉기 → 눕기",
+    "앉기 → 눕기 → 일어서기",
+    "굽히기 → 비틀기 → 구르기",
+    "달리기 → 받기 → 던지기"
+   ],
+   "answer": 3,
+   "why": "달리면서 받고 곧바로 던지는 움직임은 이동과 조작이 연결된 복합 움직임입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-05-c1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 기술형 스포츠에 해당하는 것은 무엇인가요?",
+   "options": [
+    "멀리뛰기",
+    "축구",
+    "피구",
+    "농구"
+   ],
+   "answer": 0,
+   "why": "멀리뛰기, 달리기, 체조는 기술형 스포츠입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-05-c2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "100 m 달리기에서 달린 시간을 재는 도구를 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "초시계",
+    "스톱워치",
+    "스탑워치"
+   ],
+   "why": "기록을 재기 위해 초시계를 사용합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-05-b1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "멀리뛰기에서 더 멀리 뛰기 위해 해야 할 동작은 무엇인가요?",
+   "options": [
+    "눈을 감고 뛴다",
+    "서서 가만히 앞으로 걷는다",
+    "도움닫기 후 한 발로 힘차게 구르며 뛰어오른다",
+    "구르지 않고 바로 앉는다"
+   ],
+   "answer": 2,
+   "why": "도움닫기로 속도를 얻고 힘차게 구르면 더 멀리 뛸 수 있습니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-05-b2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "달리기에서 빠르게 달리기 위한 팔의 사용 방법은 무엇인가요?",
+   "options": [
+    "팔을 가만히 둔다",
+    "팔을 주머니에 넣는다",
+    "팔을 위로 계속 든다",
+    "팔을 앞뒤로 힘차게 흔든다"
+   ],
+   "answer": 3,
+   "why": "팔을 앞뒤로 힘차게 흔들면 빠르게 달리는 데 도움이 됩니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-05-a1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "달리기 기록을 높이기 위한 여러 기술 중 알맞은 것을 모두 포함한 것은 무엇인가요?",
+   "options": [
+    "고개를 숙이고 팔을 내린 채 달린다",
+    "시선은 앞을 보고 팔은 크게 흔들며 가슴을 편다",
+    "뒤를 돌아보며 달린다",
+    "발을 끌면서 달린다"
+   ],
+   "answer": 1,
+   "why": "앞을 보고 팔을 크게 흔들며 가슴을 펴야 속도를 낼 수 있습니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-05-a2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "멀리뛰기 기록을 재는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "점프한 높이를 잰다",
+    "착지한 곳에서 가장 먼 곳까지 잰다",
+    "구름판과 가장 가까운 착지 지점까지의 거리를 잰다",
+    "달린 시간을 잰다"
+   ],
+   "answer": 2,
+   "why": "구름판 앞에서 몸이 닿은 가장 가까운 자국까지의 거리를 기록으로 합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-06-c1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "전략형 스포츠인 피구에서 공을 던져 상대를 맞히는 사람의 역할을 두 글자로 쓰세요.",
+   "answers": [
+    "공격"
+   ],
+   "why": "공을 던져 상대를 맞히는 것은 공격 역할입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-06-c2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "상대 팀의 공격을 막는 역할을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "수비"
+   ],
+   "why": "상대의 공격을 막는 것이 수비입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-06-b1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림에서 공을 가진 A가 패스를 하기에 가장 알맞은 친구는 누구인가요? (동그라미는 우리 팀, 네모는 상대 팀)",
+   "svg": "<svg viewBox=\"0 0 230 140\" font-family=\"sans-serif\"><rect x=\"6\" y=\"6\" width=\"218\" height=\"128\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"115\" y1=\"6\" x2=\"115\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><circle cx=\"28\" cy=\"70\" r=\"11\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"27.8\" y=\"75\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"146\" cy=\"70\" r=\"11\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"145.5\" y=\"75\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><rect x=\"77\" y=\"60\" width=\"20\" height=\"20\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"86.7\" y=\"75\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상</text><circle cx=\"180\" cy=\"32\" r=\"11\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"180.4\" y=\"36.6\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text></svg>",
+   "options": [
+    "C",
+    "B",
+    "A",
+    "상대 팀 선수"
+   ],
+   "answer": 0,
+   "why": "B는 바로 앞에 상대가 있어 패스가 막히기 쉽고, 상대가 없는 C가 패스를 받기에 좋습니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-06-b2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "공이 없는 선수가 공격에 도움이 되는 행동으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "코트 밖으로 나간다",
+    "제자리에서 가만히 서 있는다",
+    "상대가 없는 빈 공간으로 이동해 공을 받을 준비를 한다",
+    "친구가 공을 못 받게 한다"
+   ],
+   "answer": 2,
+   "why": "공이 없을 때에도 빈 공간으로 움직이면 팀 공격에 도움이 됩니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-06-a1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "공격 기회를 만들기 위한 기본 전략으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "친구와 짧게 패스하며 상대 수비가 약한 곳을 찾는다",
+    "혼자서만 공을 가진다",
+    "항상 같은 방향으로만 던진다",
+    "친구의 말을 듣지 않는다"
+   ],
+   "answer": 0,
+   "why": "패스로 상대 수비를 흔들고 약한 곳을 공략하는 것이 기본 전략입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-06-a2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림에서 골대가 왼쪽에 있다고 합니다. 공을 가진 상대(네모)를 막으려는 수비(동그라미)의 위치로 가장 알맞은 설명은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 230 140\" font-family=\"sans-serif\"><rect x=\"6\" y=\"6\" width=\"218\" height=\"128\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"115\" y1=\"6\" x2=\"115\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"127\" y=\"60\" width=\"20\" height=\"20\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"136.8\" y=\"75\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공</text><circle cx=\"93\" cy=\"70\" r=\"11\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"93.2\" y=\"75\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수</text></svg>",
+   "options": [
+    "공격자와 멀리 떨어진다",
+    "공격자 뒤쪽에 선다",
+    "코트 밖에 선다",
+    "공격자와 골대 사이에 서서 길을 막는다"
+   ],
+   "answer": 3,
+   "why": "수비는 공격자와 골대 사이에 서서 진행 방향을 막아야 합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-07-c1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 생태형 스포츠에 해당하는 것은 무엇인가요?",
+   "options": [
+    "100 m 달리기",
+    "등산",
+    "피구",
+    "농구"
+   ],
+   "answer": 1,
+   "why": "등산, 걷기, 자전거 타기 같은 자연 속 활동이 생태형 스포츠입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-07-c2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "자전거를 탈 때 머리를 보호하기 위해 꼭 써야 하는 안전용품은 무엇인가요? (두 글자)",
+   "answers": [
+    "헬멧"
+   ],
+   "why": "자전거를 탈 때는 머리를 보호하는 헬멧을 써야 합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-07-b1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "등산을 하기 전에 준비해야 할 것으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "슬리퍼와 간식만",
+    "편한 신발과 물, 날씨 확인",
+    "아무 준비 없이 출발",
+    "어두운 밤에 출발"
+   ],
+   "answer": 1,
+   "why": "등산 전에는 편한 신발, 물, 날씨 확인 등이 필요합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-07-b2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "자연 속에서 활동한 뒤 자연을 지키는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "불을 피우고 그냥 간다",
+    "쓰레기를 숲에 묻는다",
+    "꽃을 꺾어 가져온다",
+    "쓰레기를 가져와 분리해서 버린다"
+   ],
+   "answer": 3,
+   "why": "자연을 지키려면 쓰레기를 되가져 와 분리배출해야 합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-07-a1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "자전거로 오르막길을 오를 때 알맞은 방법은 무엇인가요?",
+   "options": [
+    "기어를 낮추고 몸을 앞으로 기울여 천천히 오른다",
+    "속도를 최대로 올려 돌진한다",
+    "브레이크를 잡은 채 오른다",
+    "손을 놓고 오른다"
+   ],
+   "answer": 0,
+   "why": "오르막에서는 기어를 낮추고 몸을 앞으로 기울여 균형을 잡습니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-07-a2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "비가 온 뒤 미끄러운 산길을 걸을 때 안전하게 활동하는 방법은 무엇인가요?",
+   "options": [
+    "손을 주머니에 넣고 걷는다",
+    "뛰어서 내려간다",
+    "발밑을 잘 살피고 천천히 걷는다",
+    "미끄러운 길에서 장난친다"
+   ],
+   "answer": 2,
+   "why": "미끄러운 길에서는 발밑을 잘 살피며 천천히 걸어야 안전합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-08-c1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "철봉 매달리기가 처음이라 어렵게 느껴질 때 알맞은 생각은 무엇인가요?",
+   "options": [
+    "다른 사람이 하는 것을 비웃자",
+    "나는 절대 못 해",
+    "안 하고 구경만 할래",
+    "처음이라 어렵지만 한 번 해 보자"
+   ],
+   "answer": 3,
+   "why": "자신감을 갖고 적극적으로 시도하는 태도가 중요합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-08-c2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "새로운 움직임을 연습할 때 실패해도 포기하지 않고 다시 해 보는 것을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "도전",
+    "시도"
+   ],
+   "why": "실패해도 다시 해 보는 것이 도전(시도)하는 태도입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-08-b1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "친구가 줄넘기를 못 해서 속상해합니다. 알맞은 말은 무엇인가요?",
+   "options": [
+    "너는 정말 못하네",
+    "처음엔 누구나 어려워. 같이 연습해 보자",
+    "그냥 포기해",
+    "나는 상관없어"
+   ],
+   "answer": 1,
+   "why": "격려하며 함께 연습하는 말이 자신감을 키워 줍니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-08-b2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "수행이 잘 되지 않을 때 자신감을 갖는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "연습하지 않는다",
+    "한 번에 가장 어려운 목표만 정한다",
+    "작은 목표를 세워 조금씩 성공해 본다",
+    "실패한 자신을 탓한다"
+   ],
+   "answer": 2,
+   "why": "작은 목표를 이루며 성공 경험을 쌓으면 자신감이 커집니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-08-a1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "체육 시간에 처음 해 보는 높이뛰기에서 높은 줄 앞에서 망설일 때 가장 알맞은 행동은 무엇인가요?",
+   "options": [
+    "낮은 높이부터 시작해 단계적으로 높여 본다",
+    "아예 시도하지 않는다",
+    "친구의 높이를 따라 한다",
+    "다치지 않으려고 구경만 한다"
+   ],
+   "answer": 0,
+   "why": "단계적으로 도전하면 안전하게 자신감을 키울 수 있습니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-08-a2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다양한 활동 상황에서 자신감을 가지고 적극적으로 참여하는 모습으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "잘 못할 것 같으면 빠진다",
+    "잘하는 활동만 고른다",
+    "처음 해 보는 활동도 규칙을 익혀 즐겁게 시도한다",
+    "틀릴까 봐 질문하지 않는다"
+   ],
+   "answer": 2,
+   "why": "적극적으로 시도하는 태도가 자신감을 키웁니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-09-c1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "게임을 시작하기 전에 모두가 함께 정하고 끝까지 지켜야 하는 약속을 두 글자로 쓰세요.",
+   "answers": [
+    "규칙"
+   ],
+   "why": "게임에서는 모두가 합의한 규칙을 지켜야 합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-09-c2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "반칙하지 않고 규칙을 지키며 공정하게 경기하는 것을 무엇이라고 하나요? (다섯 글자 – 페어○○)",
+   "answers": [
+    "페어플레이",
+    "페어 플레이",
+    "fair play",
+    "페어플래이"
+   ],
+   "why": "규칙을 지키며 공정하게 경기하는 것을 페어플레이라고 합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-09-b1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "피구 게임 이야기에서 하준이가 처음에 한 행동은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "공에 맞았지만 모르는 척 계속 뛰었다",
+    "바로 밖으로 나갔다",
+    "규칙을 바꾸자고 했다",
+    "게임을 그만두었다"
+   ],
+   "answer": 0,
+   "why": "글에서 하준이는 공에 맞았지만 그대로 계속 뛰었다고 했습니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-09-b2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "게임에서 졌을 때 알맞은 태도는 무엇인가요?",
+   "options": [
+    "다음부터 하지 않겠다고 한다",
+    "상대 팀을 탓한다",
+    "화를 내며 공을 던진다",
+    "결과를 받아들이고 상대를 격려한다"
+   ],
+   "answer": 3,
+   "why": "결과를 받아들이고 서로 격려하는 것이 바른 태도입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-09-a1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "선생님이 하준이와 서아를 칭찬한 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "공을 가장 잘 던졌기 때문이다",
+    "규칙을 지키려고 정직하게 행동했기 때문이다",
+    "이긴 팀이었기 때문이다",
+    "가장 크게 응원했기 때문이다"
+   ],
+   "answer": 1,
+   "why": "규칙대로 하자고 말한 서아와 규칙을 지킨 하준이를 칭찬했습니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-09-a2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "게임이 불리해질 때 최선을 다하는 모습으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "점수를 속인다",
+    "끝까지 포기하지 않고 팀원과 협력하며 규칙을 지킨다",
+    "심판에게 화를 낸다",
+    "게임을 중단시킨다"
+   ],
+   "answer": 1,
+   "why": "최선을 다하고 규칙을 지키는 것이 바른 게임 태도입니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-10-c1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "운동을 시작하기 전에 몸을 풀어 부상을 막는 활동을 무엇이라고 하나요? (네 글자)",
+   "answers": [
+    "준비운동",
+    "준비 운동"
+   ],
+   "why": "운동 전 준비운동으로 몸을 풀어 부상을 예방합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-10-c2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "체육 활동을 할 때 알맞은 옷차림은 무엇인가요?",
+   "options": [
+    "신발 끈이 풀린 신발",
+    "긴 치마와 슬리퍼",
+    "단추가 많은 옷과 구두",
+    "움직이기 편한 옷과 운동화"
+   ],
+   "answer": 3,
+   "why": "움직이기 편한 옷과 운동화가 안전합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-10-b1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "처음 보는 새로운 스포츠를 소개받았을 때 알맞은 태도는 무엇인가요?",
+   "options": [
+    "규칙을 배우며 열린 마음으로 참여해 본다",
+    "낯설다고 거부한다",
+    "비웃는다",
+    "참여하지 않고 가만히 있는다"
+   ],
+   "answer": 0,
+   "why": "새로운 스포츠에도 개방적인 태도로 참여해야 합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-10-b2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "운동장에서 공놀이를 하다가 다른 친구가 지나갈 때 알맞은 행동은 무엇인가요?",
+   "options": [
+    "친구를 향해 공을 찬다",
+    "더 세게 공을 던진다",
+    "잠시 멈추고 친구가 안전하게 지나가게 한다",
+    "소리를 지른다"
+   ],
+   "answer": 2,
+   "why": "주변 친구의 안전을 먼저 생각해야 합니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-10-a1",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다양한 스포츠에 개방적으로 참여하면서 안전하게 활동하는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "다른 사람이 하는 대로만 한다",
+    "안전 수칙은 읽지 않는다",
+    "몸이 아파도 참는다",
+    "종목마다 안전 수칙을 확인하고 몸 상태를 살피며 참여한다"
+   ],
+   "answer": 3,
+   "why": "안전 수칙을 확인하고 몸 상태를 살피면 안전하게 활동할 수 있습니다."
+  },
+  {
+   "id": "체육-초3-4-4체02-10-a2",
+   "subject": "체육",
+   "gradeBand": "초3-4",
+   "unit": "스포츠",
+   "standard": "4체02-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "체육 시간에 몸이 아프거나 어지러울 때 가장 알맞은 행동은 무엇인가요?",
+   "options": [
+    "참고 계속한다",
+    "활동을 멈추고 선생님께 바로 말씀드린다",
+    "아무에게도 말하지 않는다",
+    "친구에게만 말한다"
+   ],
+   "answer": 1,
+   "why": "몸이 좋지 않을 때는 무리하지 않고 바로 선생님께 알려야 합니다."
+  }
+ ],
+ "skipped": []
+}
