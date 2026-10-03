@@ -32,7 +32,7 @@ def render(files, title):
             if q.get("passage"):
                 p = ps[q["passage"]]
                 parts.append(f'<div class="passage"><b>📖 {html.escape(p["title"])}</b><p>{html.escape(p["text"])}</p>'
-                             f'<div class="src">출처: {html.escape(p["source"])}</div></div>')
+                             + (f'<div class="src">출처: {html.escape(p["source"])}</div>' if p["source"] else "") + '</div>')
             if q.get("svg"):
                 parts.append(img(q["svg"]))
             parts.append(f'<div class="body">{html.escape(q["body"])}</div>')

@@ -37,8 +37,6 @@ def report(b, per_std, lo=100, hi=300):
             errs.append(f"지문 {p['id']} 문제 수 {n}")
         if not (lo <= L <= hi):
             errs.append(f"지문 {p['id']} 길이 {L}자")
-        if not p["source"]:
-            errs.append(f"지문 {p['id']} 출처 없음")
     pq = sum(used.values())
     print("errors", errs)
     print("answer pos", dict(sorted(pos.items())), "short", short, "/", len(qs),

@@ -14,6 +14,8 @@ class Bank:
         self._n = collections.Counter()
 
     def passage(self, pid, title, text, source):
+        if source.strip() == "직접 지음":   # 직접 지은 글은 출처를 적지 않는다 (앱은 빈 출처를 보여 주지 않음)
+            source = ""
         self.passages.append({"id": pid, "title": title, "text": text, "source": source})
         return pid
 
