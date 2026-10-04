@@ -1,0 +1,349 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초5-6",
+  "unit": "지층과 화석",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "과학-초5-6-6과01-01-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "자갈, 모래, 진흙 등이 쌓여 층층이 만들어진 것을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "지층"
+   ],
+   "why": "퇴적물이 층층이 쌓여 만들어진 줄무늬 모양의 층을 지층이라고 합니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-01-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림은 어느 지층의 단면입니다. 이 지층에서 가장 먼저 쌓인 층은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 300 134\" font-family=\"sans-serif\"><rect x=\"14\" y=\"10\" width=\"150\" height=\"38\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"22\" y1=\"18\" x2=\"156\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><line x1=\"22\" y1=\"25\" x2=\"156\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><line x1=\"22\" y1=\"32\" x2=\"156\" y2=\"32\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><line x1=\"22\" y1=\"39\" x2=\"156\" y2=\"39\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><text x=\"176\" y=\"34\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">진흙층</text><rect x=\"14\" y=\"48\" width=\"150\" height=\"38\" fill=\"none\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"24.0\" cy=\"58\" r=\"2\" fill=\"currentColor\"/><circle cx=\"34.5\" cy=\"65\" r=\"2\" fill=\"currentColor\"/><circle cx=\"45.0\" cy=\"72\" r=\"2\" fill=\"currentColor\"/><circle cx=\"55.5\" cy=\"59\" r=\"2\" fill=\"currentColor\"/><circle cx=\"66.0\" cy=\"66\" r=\"2\" fill=\"currentColor\"/><circle cx=\"76.5\" cy=\"73\" r=\"2\" fill=\"currentColor\"/><circle cx=\"87.0\" cy=\"60\" r=\"2\" fill=\"currentColor\"/><circle cx=\"97.5\" cy=\"67\" r=\"2\" fill=\"currentColor\"/><circle cx=\"108.0\" cy=\"74\" r=\"2\" fill=\"currentColor\"/><circle cx=\"118.5\" cy=\"61\" r=\"2\" fill=\"currentColor\"/><circle cx=\"129.0\" cy=\"68\" r=\"2\" fill=\"currentColor\"/><circle cx=\"139.5\" cy=\"75\" r=\"2\" fill=\"currentColor\"/><circle cx=\"150.0\" cy=\"62\" r=\"2\" fill=\"currentColor\"/><circle cx=\"160.5\" cy=\"69\" r=\"2\" fill=\"currentColor\"/><text x=\"176\" y=\"72\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">모래층</text><rect x=\"14\" y=\"86\" width=\"150\" height=\"38\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"32\" cy=\"98\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"110\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"88\" cy=\"98\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"116\" cy=\"110\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"144\" cy=\"98\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"176\" y=\"110\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">자갈층</text></svg>",
+   "options": [
+    "모래층",
+    "진흙층",
+    "자갈층",
+    "알 수 없다"
+   ],
+   "answer": 2,
+   "why": "지층은 아래에 있는 층이 먼저 쌓인 것이므로 가장 아래의 자갈층이 가장 먼저 쌓였습니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-01-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "지층이 만들어지는 과정으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "물에 운반된 자갈, 모래, 진흙이 쌓여 차곡차곡 쌓인다",
+    "바위가 한꺼번에 생긴다",
+    "구름이 땅에 내려앉는다",
+    "바람이 땅을 파서 만든다"
+   ],
+   "answer": 0,
+   "why": "지층은 퇴적물이 오랜 시간 동안 층층이 쌓여 만들어집니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-01-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "지층 모형 실험에서 자갈, 모래, 진흙을 섞은 물을 페트병에 넣고 흔든 뒤 가만히 두었습니다. 바닥에서부터 쌓이는 순서로 알맞은 것은 무엇인가요?",
+   "options": [
+    "자갈 → 모래 → 진흙",
+    "진흙 → 모래 → 자갈",
+    "모래 → 자갈 → 진흙",
+    "모두 섞인다"
+   ],
+   "answer": 0,
+   "why": "알갱이가 큰 자갈이 먼저 가라앉고 그 위에 모래, 진흙이 쌓입니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-01-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "어느 절벽에서 지층 줄무늬가 여러 겹으로 보입니다. 이 지층에서 알 수 있는 사실은 무엇인가요?",
+   "options": [
+    "줄무늬는 아무 의미가 없다",
+    "한 번에 만들어졌다",
+    "지층이 사람이 쌓은 것이다",
+    "오랜 시간에 걸쳐 여러 번 퇴적물이 쌓였다"
+   ],
+   "answer": 3,
+   "why": "여러 겹의 줄무늬는 서로 다른 퇴적물이 여러 차례 쌓였음을 보여 줍니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-01-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "그림의 지층 A층과 C층 중 더 오래된 층은 어느 것인가요? (지층이 뒤집히지 않았다고 가정합니다)",
+   "svg": "<svg viewBox=\"0 0 300 134\" font-family=\"sans-serif\"><rect x=\"14\" y=\"10\" width=\"150\" height=\"38\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"22\" y1=\"18\" x2=\"156\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><line x1=\"22\" y1=\"25\" x2=\"156\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><line x1=\"22\" y1=\"32\" x2=\"156\" y2=\"32\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><line x1=\"22\" y1=\"39\" x2=\"156\" y2=\"39\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><text x=\"176\" y=\"34\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">A층</text><rect x=\"14\" y=\"48\" width=\"150\" height=\"38\" fill=\"none\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"24.0\" cy=\"58\" r=\"2\" fill=\"currentColor\"/><circle cx=\"34.5\" cy=\"65\" r=\"2\" fill=\"currentColor\"/><circle cx=\"45.0\" cy=\"72\" r=\"2\" fill=\"currentColor\"/><circle cx=\"55.5\" cy=\"59\" r=\"2\" fill=\"currentColor\"/><circle cx=\"66.0\" cy=\"66\" r=\"2\" fill=\"currentColor\"/><circle cx=\"76.5\" cy=\"73\" r=\"2\" fill=\"currentColor\"/><circle cx=\"87.0\" cy=\"60\" r=\"2\" fill=\"currentColor\"/><circle cx=\"97.5\" cy=\"67\" r=\"2\" fill=\"currentColor\"/><circle cx=\"108.0\" cy=\"74\" r=\"2\" fill=\"currentColor\"/><circle cx=\"118.5\" cy=\"61\" r=\"2\" fill=\"currentColor\"/><circle cx=\"129.0\" cy=\"68\" r=\"2\" fill=\"currentColor\"/><circle cx=\"139.5\" cy=\"75\" r=\"2\" fill=\"currentColor\"/><circle cx=\"150.0\" cy=\"62\" r=\"2\" fill=\"currentColor\"/><circle cx=\"160.5\" cy=\"69\" r=\"2\" fill=\"currentColor\"/><text x=\"176\" y=\"72\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">B층</text><rect x=\"14\" y=\"86\" width=\"150\" height=\"38\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"32\" cy=\"98\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"110\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"88\" cy=\"98\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"116\" cy=\"110\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"144\" cy=\"98\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"176\" y=\"110\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">C층</text></svg>",
+   "answers": [
+    "C층",
+    "C",
+    "c층"
+   ],
+   "why": "아래쪽 지층일수록 먼저 쌓인 오래된 지층이므로 C층이 더 오래되었습니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-02-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "자갈, 모래, 진흙 등의 퇴적물이 오랜 시간 쌓이고 다져져 굳어서 만들어진 암석을 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "퇴적암"
+   ],
+   "why": "퇴적물이 쌓여 단단하게 굳어진 암석은 퇴적암입니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-02-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "알갱이가 자갈이나 큰 돌로 되어 있는 퇴적암은 무엇인가요?",
+   "options": [
+    "사암",
+    "역암",
+    "이암",
+    "화강암"
+   ],
+   "answer": 1,
+   "why": "자갈이 많은 퇴적암은 역암입니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-02-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 퇴적암을 알갱이의 크기에 따라 분류한 것입니다. ㉠에 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 246 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"240\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"243\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"243\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"243\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">퇴적암</text><text x=\"163\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">알갱이의 크기</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">역암</text><text x=\"163\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">큼(자갈)</text><text x=\"43\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">사암</text><text x=\"163\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">㉠</text><text x=\"43\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">이암</text><text x=\"163\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">작음(진흙)</text></svg>",
+   "options": [
+    "가장 큼",
+    "중간(모래)",
+    "아주 작아서 보이지 않음",
+    "알 수 없음"
+   ],
+   "answer": 1,
+   "why": "사암은 모래 크기의 알갱이로 이루어진 퇴적암입니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-02-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "퇴적암을 알갱이의 큰 것부터 차례로 나열한 것은 무엇인가요?",
+   "options": [
+    "역암 → 사암 → 이암",
+    "이암 → 사암 → 역암",
+    "사암 → 역암 → 이암",
+    "이암 → 역암 → 사암"
+   ],
+   "answer": 0,
+   "why": "자갈 > 모래 > 진흙 순이므로 역암 > 사암 > 이암입니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-02-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "퇴적물이 퇴적암으로 되는 과정에서 일어나는 일로 알맞은 것은 무엇인가요?",
+   "options": [
+    "퇴적물이 모두 사라진다",
+    "퇴적물이 녹아 액체가 된다",
+    "퇴적물이 바람에 날아간다",
+    "위에 쌓이는 퇴적물의 무게에 눌려 다져지고 알갱이 사이가 단단히 굳는다"
+   ],
+   "answer": 3,
+   "why": "퇴적물은 위의 무게에 눌려 다져지고 알갱이를 붙이는 물질에 의해 굳어 퇴적암이 됩니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-02-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "어떤 퇴적암을 손으로 만져 보았더니 알갱이가 아주 곱고 매끄러웠습니다. 이 암석은 무엇일 가능성이 가장 높은가요?",
+   "options": [
+    "이암",
+    "역암",
+    "사암",
+    "알 수 없다"
+   ],
+   "answer": 0,
+   "why": "알갱이가 아주 고운 퇴적암은 진흙이 굳은 이암입니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-03-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "옛날에 살았던 생물의 몸체나 흔적이 지층 속에 남아 있는 것을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "화석"
+   ],
+   "why": "과거 생물의 몸이나 흔적이 암석 속에 남은 것이 화석입니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-03-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림은 화석이 만들어지는 과정입니다. 가장 먼저 일어나는 일은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 330 64\" font-family=\"sans-serif\"><rect x=\"4\" y=\"6\" width=\"70\" height=\"52\" rx=\"6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"39\" y=\"29\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">생물이</text><text x=\"39\" y=\"43\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">죽는다</text><line x1=\"76\" y1=\"32\" x2=\"86\" y2=\"32\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"89,32.0 83,28.0 83,36.0\" fill=\"currentColor\"/><rect x=\"88\" y=\"6\" width=\"70\" height=\"52\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"123\" y=\"29\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">퇴적물에</text><text x=\"123\" y=\"43\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">묻힌다</text><line x1=\"160\" y1=\"32\" x2=\"170\" y2=\"32\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"173,32.0 167,28.0 167,36.0\" fill=\"currentColor\"/><rect x=\"172\" y=\"6\" width=\"70\" height=\"52\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"207\" y=\"29\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">굳어서</text><text x=\"207\" y=\"43\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">화석이 됨</text><line x1=\"244\" y1=\"32\" x2=\"254\" y2=\"32\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"257,32.0 251,28.0 251,36.0\" fill=\"currentColor\"/><rect x=\"256\" y=\"6\" width=\"70\" height=\"52\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"291\" y=\"29\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">땅 위로</text><text x=\"291\" y=\"43\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">드러남</text></svg>",
+   "options": [
+    "화석이 땅 위로 드러난다",
+    "퇴적물에 묻힌다",
+    "생물이 죽는다",
+    "화석이 굳는다"
+   ],
+   "answer": 2,
+   "why": "생물이 죽은 뒤 퇴적물에 묻히고 굳어 화석이 되며, 오랜 시간 뒤 땅 위로 드러납니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-03-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "화석이 만들어지기 좋은 조건으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "불에 모두 탄다",
+    "생물이 땅 위에서 썩어 없어진다",
+    "바람에 날려 흩어진다",
+    "생물의 단단한 부분이 빨리 퇴적물에 묻힌다"
+   ],
+   "answer": 3,
+   "why": "생물의 몸이 썩기 전에 퇴적물에 빨리 묻히면 화석이 되기 쉽습니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-03-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 어느 지층에서 나온 화석입니다. 이 화석으로 알 수 있는 사실은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 300 134\" font-family=\"sans-serif\"><rect x=\"14\" y=\"10\" width=\"150\" height=\"38\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"24.0\" cy=\"20\" r=\"2\" fill=\"currentColor\"/><circle cx=\"34.5\" cy=\"27\" r=\"2\" fill=\"currentColor\"/><circle cx=\"45.0\" cy=\"34\" r=\"2\" fill=\"currentColor\"/><circle cx=\"55.5\" cy=\"21\" r=\"2\" fill=\"currentColor\"/><circle cx=\"66.0\" cy=\"28\" r=\"2\" fill=\"currentColor\"/><circle cx=\"76.5\" cy=\"35\" r=\"2\" fill=\"currentColor\"/><circle cx=\"87.0\" cy=\"22\" r=\"2\" fill=\"currentColor\"/><circle cx=\"97.5\" cy=\"29\" r=\"2\" fill=\"currentColor\"/><circle cx=\"108.0\" cy=\"36\" r=\"2\" fill=\"currentColor\"/><circle cx=\"118.5\" cy=\"23\" r=\"2\" fill=\"currentColor\"/><circle cx=\"129.0\" cy=\"30\" r=\"2\" fill=\"currentColor\"/><circle cx=\"139.5\" cy=\"37\" r=\"2\" fill=\"currentColor\"/><circle cx=\"150.0\" cy=\"24\" r=\"2\" fill=\"currentColor\"/><circle cx=\"160.5\" cy=\"31\" r=\"2\" fill=\"currentColor\"/><text x=\"176\" y=\"34\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">모래층</text><rect x=\"14\" y=\"48\" width=\"150\" height=\"38\" fill=\"none\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"89.0\" cy=\"67.0\" rx=\"18\" ry=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"77\" y1=\"58\" x2=\"77\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"58\" x2=\"83\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"89\" y1=\"58\" x2=\"89\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"95\" y1=\"58\" x2=\"95\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"101\" y1=\"58\" x2=\"101\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"176\" y=\"72\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">조개 화석층</text><rect x=\"14\" y=\"86\" width=\"150\" height=\"38\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"22\" y1=\"94\" x2=\"156\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><line x1=\"22\" y1=\"101\" x2=\"156\" y2=\"101\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><line x1=\"22\" y1=\"108\" x2=\"156\" y2=\"108\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><line x1=\"22\" y1=\"115\" x2=\"156\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><text x=\"176\" y=\"110\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">진흙층</text></svg>",
+   "options": [
+    "이곳은 늘 사막이었다",
+    "이곳이 옛날에 바다였을 것이다",
+    "화석은 사람이 넣었다",
+    "생물이 살지 않았다"
+   ],
+   "answer": 1,
+   "why": "조개는 바다에 사는 생물이므로 이 지층은 옛날에 바다였던 곳이었음을 알려 줍니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-03-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "높은 산에서 바다 생물의 화석이 발견되었습니다. 이로부터 추리할 수 있는 것은 무엇인가요?",
+   "options": [
+    "사람들이 화석을 옮겨 놓았다",
+    "바다 생물이 산에서 살았다",
+    "그곳은 옛날에 바다였고 땅이 솟아올라 산이 되었다",
+    "바다가 산 위로 흘렀다"
+   ],
+   "answer": 2,
+   "why": "바다 생물 화석은 그곳이 옛날에 바다였다가 지각 변동으로 솟아올랐음을 알려 줍니다."
+  },
+  {
+   "id": "과학-초5-6-6과01-03-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "지층과 화석",
+   "standard": "6과01-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "고사리 화석이 발견된 지층에서 추리할 수 있는 과거 환경으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "따뜻하고 습한 육지 환경",
+    "얼음으로 덮인 극지방",
+    "깊은 바다",
+    "건조한 사막"
+   ],
+   "answer": 0,
+   "why": "고사리는 따뜻하고 습한 곳에서 자라므로 화석으로부터 과거 환경을 추리할 수 있습니다."
+  }
+ ],
+ "skipped": []
+}
