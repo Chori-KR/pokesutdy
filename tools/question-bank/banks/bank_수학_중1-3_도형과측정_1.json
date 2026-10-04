@@ -1,0 +1,1169 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "중",
+  "course": "수학",
+  "gradeBand": "중1-3",
+  "unit": "도형과 측정",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-중1-3-9수03-01-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "점 $A$에서 시작하여 점 $B$를 지나 한쪽으로 끝없이 뻗은 선을 무엇이라고 하나요?",
+   "options": [
+    "직선 $AB$",
+    "선분 $AB$",
+    "반직선 $AB$",
+    "반직선 $BA$"
+   ],
+   "answer": 2,
+   "why": "한 점에서 시작하여 한쪽으로 끝없이 뻗은 선은 반직선이고, 시작점이 $A$이므로 반직선 $AB$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-01-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "서로 다른 두 점을 지나는 직선은 모두 몇 개인가요? (숫자만 쓰세요)",
+   "answers": [
+    "1",
+    "1개",
+    "한 개"
+   ],
+   "why": "서로 다른 두 점을 지나는 직선은 오직 하나입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-01-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "두 직선이 한 점에서 만날 때 생기는 서로 마주 보는 각을 맞꼭지각이라고 합니다. 한 각이 $70^\\circ$이면 그 맞꼭지각의 크기는 몇 도인가요? (숫자만)",
+   "answers": [
+    "70",
+    "70°",
+    "70 °"
+   ],
+   "why": "맞꼭지각의 크기는 서로 같으므로 $70^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-01-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "한 평면 위에서 두 직선의 위치 관계로 알맞지 않은 것은 무엇인가요?",
+   "options": [
+    "꼬인 위치",
+    "한 점에서 만난다",
+    "평행하다",
+    "일치한다"
+   ],
+   "answer": 0,
+   "why": "꼬인 위치는 공간에서만 생기며, 한 평면 위의 두 직선에서는 생기지 않습니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-01-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림의 직육면체에서 모서리 $AB$(굵게 표시)와 꼬인 위치에 있는 모서리는 모두 몇 개인가요?",
+   "svg": "<svg viewBox=\"0 0 210 160\" font-family=\"sans-serif\"><line x1=\"40\" y1=\"70\" x2=\"130\" y2=\"70\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"130\" y1=\"70\" x2=\"130\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"130\" y1=\"130\" x2=\"40\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"130\" x2=\"40\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"70\" x2=\"70\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"130\" y1=\"70\" x2=\"160\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"130\" y1=\"130\" x2=\"160\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"46\" x2=\"160\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"160\" y1=\"46\" x2=\"160\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"106\" x2=\"40\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"70\" y1=\"106\" x2=\"70\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"70\" y1=\"106\" x2=\"160\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"40\" cy=\"70\" r=\"3\" fill=\"currentColor\"/><text x=\"28\" y=\"64\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"130\" cy=\"70\" r=\"3\" fill=\"currentColor\"/><text x=\"142\" y=\"84\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"130\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"142\" y=\"144\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"40\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"28\" y=\"144\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text><circle cx=\"70\" cy=\"46\" r=\"3\" fill=\"currentColor\"/><text x=\"60\" y=\"38\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">E</text><circle cx=\"160\" cy=\"46\" r=\"3\" fill=\"currentColor\"/><text x=\"172\" y=\"40\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">F</text><circle cx=\"160\" cy=\"106\" r=\"3\" fill=\"currentColor\"/><text x=\"174\" y=\"112\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">G</text><circle cx=\"70\" cy=\"106\" r=\"3\" fill=\"currentColor\"/><text x=\"58\" y=\"110\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">H</text></svg>",
+   "options": [
+    "6개",
+    "3개",
+    "5개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "$AB$와 평행한 모서리 3개, 만나는 모서리 4개를 뺀 $12-1-3-4=4$개가 꼬인 위치입니다 ($CG, DH, FG, EH$)."
+  },
+  {
+   "id": "수학-중1-3-9수03-01-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림의 직육면체에서 모서리 $AB$와 평행한 면은 모두 몇 개인가요? (모서리가 포함된 면은 제외합니다)",
+   "svg": "<svg viewBox=\"0 0 210 160\" font-family=\"sans-serif\"><line x1=\"40\" y1=\"70\" x2=\"130\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"130\" y1=\"70\" x2=\"130\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"130\" y1=\"130\" x2=\"40\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"130\" x2=\"40\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"70\" x2=\"70\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"130\" y1=\"70\" x2=\"160\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"130\" y1=\"130\" x2=\"160\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"46\" x2=\"160\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"160\" y1=\"46\" x2=\"160\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"106\" x2=\"40\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"70\" y1=\"106\" x2=\"70\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"70\" y1=\"106\" x2=\"160\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"40\" cy=\"70\" r=\"3\" fill=\"currentColor\"/><text x=\"28\" y=\"64\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"130\" cy=\"70\" r=\"3\" fill=\"currentColor\"/><text x=\"142\" y=\"84\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"130\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"142\" y=\"144\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"40\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"28\" y=\"144\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text><circle cx=\"70\" cy=\"46\" r=\"3\" fill=\"currentColor\"/><text x=\"60\" y=\"38\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">E</text><circle cx=\"160\" cy=\"46\" r=\"3\" fill=\"currentColor\"/><text x=\"172\" y=\"40\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">F</text><circle cx=\"160\" cy=\"106\" r=\"3\" fill=\"currentColor\"/><text x=\"174\" y=\"112\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">G</text><circle cx=\"70\" cy=\"106\" r=\"3\" fill=\"currentColor\"/><text x=\"58\" y=\"110\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">H</text></svg>",
+   "options": [
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 1,
+   "why": "$AB$와 평행한 면은 면 $EFGH$와 면 $DCGH$ 두 개입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-01-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림에서 직선 위의 점 $O$에서 세 반직선이 이루는 각이 $40^\\circ$, $x$, $90^\\circ$입니다. $x$의 크기는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 220 140\" font-family=\"sans-serif\"><line x1=\"20\" y1=\"110\" x2=\"200\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"110\" y1=\"110\" x2=\"110\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"110\" y1=\"110\" x2=\"160\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M138,110 A28,28 0 0 0 126.3,87.2\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"147.3\" y=\"94.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">40°</text><path d=\"M123.9,90.5 A24,24 0 0 0 110,86\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"121.6\" y=\"77.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">x</text><path d=\"M110,80 A30,30 0 0 0 80,110\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"78.9\" y=\"82.9\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">90°</text><circle cx=\"20\" cy=\"110\" r=\"3\" fill=\"currentColor\"/><text x=\"12\" y=\"126\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"110\" cy=\"110\" r=\"3\" fill=\"currentColor\"/><text x=\"110\" y=\"128\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">O</text><circle cx=\"200\" cy=\"110\" r=\"3\" fill=\"currentColor\"/><text x=\"208\" y=\"126\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"110\" cy=\"20\" r=\"3\" fill=\"currentColor\"/><text x=\"107.8\" y=\"11.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"160\" cy=\"40\" r=\"3\" fill=\"currentColor\"/><text x=\"169.4\" y=\"35\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text></svg>",
+   "options": [
+    "40°",
+    "50°",
+    "60°",
+    "130°"
+   ],
+   "answer": 1,
+   "why": "한 직선 위의 각의 합은 $180^\\circ$이므로 $x=180^\\circ-40^\\circ-90^\\circ=50^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-01-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "세 직선이 한 점에서 만나 여섯 개의 각이 생겼습니다. 세 쌍의 맞꼭지각의 크기가 각각 $2x^\\circ$, $3x^\\circ$, $(x+30)^\\circ$일 때, $x$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "25"
+   ],
+   "why": "세 각을 더하면 $180^\\circ$이므로 $2x+3x+(x+30)=180$, $6x=150$, $x=25$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-01-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "공간에서 직선 $l$과 평면 $P$의 위치 관계로 알맞은 것을 모두 고른 것은 무엇인가요?",
+   "options": [
+    "일치한다, 평행하다",
+    "한 점에서 만난다, 꼬인 위치에 있다",
+    "평행하다, 꼬인 위치에 있다",
+    "한 점에서 만난다, 평행하다, 직선이 평면에 포함된다"
+   ],
+   "answer": 3,
+   "why": "공간에서 직선과 평면은 한 점에서 만나거나, 평행하거나, 직선이 평면에 포함됩니다. 꼬인 위치는 두 직선 사이의 관계입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-02-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림에서 $l \\parallel m$일 때 ∠①의 동위각은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 240 190\" font-family=\"sans-serif\"><line x1=\"14\" y1=\"50\" x2=\"226\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"8\" x2=\"176\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"84\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">①</text><text x=\"130\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">②</text><text x=\"80\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">③</text><text x=\"128\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">④</text><text x=\"128\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑤</text><text x=\"174\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑥</text><text x=\"124\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑦</text><text x=\"172\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑧</text><text x=\"222\" y=\"42\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">l</text><text x=\"222\" y=\"112\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">m</text><text x=\"120\" y=\"182\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">l ∥ m</text></svg>",
+   "options": [
+    "∠⑤",
+    "∠⑥",
+    "∠⑦",
+    "∠④"
+   ],
+   "answer": 0,
+   "why": "같은 위치에 있는 각이 동위각이므로 ∠①의 동위각은 ∠⑤입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-02-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림에서 $l \\parallel m$일 때 ∠③의 엇각은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 240 190\" font-family=\"sans-serif\"><line x1=\"14\" y1=\"50\" x2=\"226\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"8\" x2=\"176\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"84\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">①</text><text x=\"130\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">②</text><text x=\"80\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">③</text><text x=\"128\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">④</text><text x=\"128\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑤</text><text x=\"174\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑥</text><text x=\"124\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑦</text><text x=\"172\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑧</text><text x=\"222\" y=\"42\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">l</text><text x=\"222\" y=\"112\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">m</text></svg>",
+   "options": [
+    "∠⑦",
+    "∠⑤",
+    "∠⑥",
+    "∠②"
+   ],
+   "answer": 2,
+   "why": "엇갈린 위치의 각이 엇각이므로 ∠③과 ∠⑥은 엇각입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-02-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "그림에서 $l \\parallel m$이고 ∠①이 $65^\\circ$일 때 ∠⑤의 크기는 몇 도인가요? (숫자만)",
+   "svg": "<svg viewBox=\"0 0 240 190\" font-family=\"sans-serif\"><line x1=\"14\" y1=\"50\" x2=\"226\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"8\" x2=\"176\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"84\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">65°</text><text x=\"130\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">②</text><text x=\"80\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">③</text><text x=\"128\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">④</text><text x=\"128\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑤</text><text x=\"174\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑥</text><text x=\"124\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑦</text><text x=\"172\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑧</text><text x=\"222\" y=\"42\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">l</text><text x=\"222\" y=\"112\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">m</text></svg>",
+   "answers": [
+    "65",
+    "65°",
+    "65 °"
+   ],
+   "why": "평행선에서 동위각의 크기는 같으므로 $65^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-02-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림에서 $l \\parallel m$이고 ∠②가 $125^\\circ$일 때 ∠⑧의 크기는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 240 190\" font-family=\"sans-serif\"><line x1=\"14\" y1=\"50\" x2=\"226\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"8\" x2=\"176\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"84\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">①</text><text x=\"130\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">125°</text><text x=\"80\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">③</text><text x=\"128\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">④</text><text x=\"128\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑤</text><text x=\"174\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑥</text><text x=\"124\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑦</text><text x=\"172\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><text x=\"222\" y=\"42\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">l</text><text x=\"222\" y=\"112\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">m</text></svg>",
+   "options": [
+    "35°",
+    "125°",
+    "65°",
+    "55°"
+   ],
+   "answer": 3,
+   "why": "∠②와 ∠⑥은 동위각이므로 $125^\\circ$이고, ∠⑥과 ∠⑧은 합이 $180^\\circ$이므로 ∠⑧$=180^\\circ-125^\\circ=55^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-02-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 두 직선이 평행하기 위한 조건으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "동위각의 크기의 합이 $180^\\circ$이다",
+    "동위각의 크기가 같다",
+    "맞꼭지각의 크기가 같다",
+    "엇각의 크기의 합이 $180^\\circ$이다"
+   ],
+   "answer": 1,
+   "why": "두 직선이 한 직선과 만날 때 동위각(또는 엇각)의 크기가 같으면 두 직선은 평행합니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-02-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림에서 ∠③이 $70^\\circ$, ∠⑤가 $75^\\circ$일 때 두 직선 $l, m$에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 240 190\" font-family=\"sans-serif\"><line x1=\"14\" y1=\"50\" x2=\"226\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"8\" x2=\"176\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"84\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">①</text><text x=\"130\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">②</text><text x=\"80\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">70°</text><text x=\"128\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">④</text><text x=\"128\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">75°</text><text x=\"174\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑥</text><text x=\"124\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑦</text><text x=\"172\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑧</text><text x=\"222\" y=\"42\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">l</text><text x=\"222\" y=\"112\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">m</text></svg>",
+   "options": [
+    "수직이다",
+    "평행하다",
+    "평행하지 않다",
+    "알 수 없다"
+   ],
+   "answer": 2,
+   "why": "∠③의 엇각은 ∠⑥이고 ∠⑤는 ∠①의 동위각입니다. ∠⑤$=75^\\circ$이면 ∠④(∠⑤의 엇각)$=75^\\circ$이어야 하는데 ∠③$=70^\\circ$이면 ∠④$=110^\\circ$이므로 엇각이 같지 않아 평행하지 않습니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-02-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "그림에서 $l \\parallel m$일 때 $x$의 크기는 몇 도인가요? (숫자만 쓰세요)",
+   "svg": "<svg viewBox=\"0 0 250 160\" font-family=\"sans-serif\"><line x1=\"20\" y1=\"40\" x2=\"220\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"20\" y1=\"130\" x2=\"220\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"86\" y1=\"40\" x2=\"150\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"85\" x2=\"110\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M104,52.7 A22,22 0 0 0 108,40\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"120.3\" y=\"54.9\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">35°</text><path d=\"M132,130 A22,22 0 0 0 124.6,113.6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"142.8\" y=\"119.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">48°</text><circle cx=\"86\" cy=\"40\" r=\"3\" fill=\"currentColor\"/><text x=\"76\" y=\"34\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"150\" cy=\"85\" r=\"3\" fill=\"currentColor\"/><text x=\"162\" y=\"103\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">P</text><circle cx=\"110\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"98\" y=\"146\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><text x=\"226\" y=\"34\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">l</text><text x=\"226\" y=\"124\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">m</text><text x=\"168\" y=\"88\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">x</text></svg>",
+   "answers": [
+    "83",
+    "83°",
+    "83 °"
+   ],
+   "why": "$P$를 지나고 $l$에 평행한 직선을 그으면 $x=35^\\circ+48^\\circ=83^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-02-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "평행한 두 직선 $l, m$이 한 직선과 만나 생긴 동위각의 크기가 각각 $(3x+10)^\\circ$, $(5x-30)^\\circ$입니다. $x$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "20"
+   ],
+   "why": "동위각은 같으므로 $3x+10=5x-30$, $2x=40$, $x=20$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-02-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "평행한 두 직선과 한 직선이 만나 생긴 같은 쪽의 안쪽 두 각(동측내각) 중 한 각이 $128^\\circ$일 때 나머지 한 각의 크기는 얼마인가요?",
+   "options": [
+    "52°",
+    "128°",
+    "62°",
+    "38°"
+   ],
+   "answer": 0,
+   "why": "동측내각의 합은 $180^\\circ$이므로 $180^\\circ-128^\\circ=52^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-03-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "작도에서 사용하는 도구는 눈금 없는 자와 무엇인가요? (세 글자)",
+   "answers": [
+    "컴퍼스"
+   ],
+   "why": "작도는 눈금 없는 자와 컴퍼스만으로 도형을 그리는 것입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-03-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "작도에서 컴퍼스의 용도로 알맞은 것은 무엇인가요?",
+   "options": [
+    "각의 크기를 잰다",
+    "선분의 길이를 눈금으로 잰다",
+    "원을 그리거나 선분의 길이를 옮긴다",
+    "직선을 긋는다"
+   ],
+   "answer": 2,
+   "why": "컴퍼스는 원을 그리거나 선분의 길이를 옮기는 데 씁니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-03-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "눈금 없는 자로 할 수 있는 일은 무엇인가요?",
+   "options": [
+    "두 점을 지나는 직선을 긋는다",
+    "선분의 길이를 잰다",
+    "각의 크기를 잰다",
+    "두 선분의 길이를 비교하여 숫자로 말한다"
+   ],
+   "answer": 0,
+   "why": "눈금 없는 자는 두 점을 잇는 선분이나 직선을 긋는 데만 씁니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-03-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "선분 $AB$와 길이가 같은 선분 $CD$를 작도하는 순서로 알맞은 것은 무엇인가요?",
+   "options": [
+    "직선 위에 점 $C$를 잡는다 → $AB$의 길이를 컴퍼스로 잰다 → 점 $C$에 컴퍼스를 대고 원을 그려 직선과의 교점을 $D$로 한다",
+    "$AB$의 길이를 잰다 → 점 $D$를 잡는다 → 자로 선분을 긋는다",
+    "점 $C$에서 원을 먼저 그린다 → 직선을 긋는다",
+    "자로 $AB$의 길이를 눈금으로 잰다"
+   ],
+   "answer": 0,
+   "why": "직선 위에 점 $C$를 잡고, 컴퍼스로 $AB$의 길이를 재어 $C$를 중심으로 하는 원과 직선의 교점이 $D$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-03-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "세 선분의 길이가 다음과 같을 때 삼각형을 작도할 수 있는 것은 무엇인가요?",
+   "options": [
+    "$4\\,\\mathrm{cm},\\ 4\\,\\mathrm{cm},\\ 8\\,\\mathrm{cm}$",
+    "$3\\,\\mathrm{cm},\\ 4\\,\\mathrm{cm},\\ 8\\,\\mathrm{cm}$",
+    "$2\\,\\mathrm{cm},\\ 2\\,\\mathrm{cm},\\ 5\\,\\mathrm{cm}$",
+    "$5\\,\\mathrm{cm},\\ 6\\,\\mathrm{cm},\\ 10\\,\\mathrm{cm}$"
+   ],
+   "answer": 3,
+   "why": "가장 긴 변의 길이가 나머지 두 변의 길이의 합보다 작아야 하므로 $10<5+6$을 만족하는 경우만 가능합니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-03-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 삼각형이 하나로 정해지는 조건은 무엇인가요?",
+   "options": [
+    "세 각의 크기",
+    "두 변의 길이와 그 끼인각의 크기",
+    "두 변의 길이와 그 끼인각이 아닌 한 각의 크기",
+    "한 변의 길이와 한 각의 크기"
+   ],
+   "answer": 1,
+   "why": "삼각형이 하나로 정해지는 경우는 세 변, 두 변과 그 끼인각, 한 변과 그 양 끝 각이 주어질 때입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-03-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "세 변의 길이가 $8\\,\\mathrm{cm},\\ 5\\,\\mathrm{cm},\\ x\\,\\mathrm{cm}$인 삼각형을 만들 수 있는 자연수 $x$는 모두 몇 개인가요? (숫자만)",
+   "answers": [
+    "9",
+    "9개"
+   ],
+   "why": "$8-5<x<8+5$이므로 $3<x<13$이고 자연수 $x=4,5,\\ldots,12$로 9개입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-03-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "세 각의 크기가 $40^\\circ,\\ 60^\\circ,\\ 80^\\circ$인 삼각형에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "유일하게 하나로 정해진다",
+    "한 가지로 정해지지 않으며 크기가 다른 삼각형이 여러 개 있다",
+    "작도할 수 없다",
+    "정삼각형이다"
+   ],
+   "answer": 1,
+   "why": "세 각만으로는 삼각형의 크기가 정해지지 않아 닮은 삼각형이 무수히 많습니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-03-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\angle B=30^\\circ$, $\\overline{AB}=6\\,\\mathrm{cm}$, $\\overline{AC}=4\\,\\mathrm{cm}$일 때 삼각형 $ABC$는 어떻게 되나요?",
+   "options": [
+    "직각삼각형이다",
+    "반드시 하나로 정해진다",
+    "작도할 수 없다",
+    "삼각형이 한 가지로 정해지지 않는다(두 개 가능하다)"
+   ],
+   "answer": 3,
+   "why": "두 변과 그 끼인각이 아닌 각이 주어지면 조건을 만족하는 삼각형이 두 개 있을 수 있습니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-04-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "두 도형이 완전히 겹쳐질 때 이 두 도형을 서로 무엇이라고 하나요?",
+   "options": [
+    "합동",
+    "닮음",
+    "대칭",
+    "평행"
+   ],
+   "answer": 0,
+   "why": "모양과 크기가 같아 완전히 포개어지는 두 도형은 합동입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-04-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "그림에서 $\\triangle ABC \\equiv \\triangle DEF$입니다. $\\overline{DE}$의 길이는 몇 $\\mathrm{cm}$인가요? (숫자만)",
+   "svg": "<svg viewBox=\"0 0 240 160\" font-family=\"sans-serif\"><line x1=\"20\" y1=\"120\" x2=\"90\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"90\" y1=\"120\" x2=\"50\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"40\" x2=\"20\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"140\" y1=\"120\" x2=\"210\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"210\" y1=\"120\" x2=\"170\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"40\" x2=\"140\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"20\" cy=\"120\" r=\"3\" fill=\"currentColor\"/><text x=\"7.5\" y=\"127.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"90\" cy=\"120\" r=\"3\" fill=\"currentColor\"/><text x=\"81.4\" y=\"133.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"50\" cy=\"40\" r=\"3\" fill=\"currentColor\"/><text x=\"40.1\" y=\"35.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"140\" cy=\"120\" r=\"3\" fill=\"currentColor\"/><text x=\"149.2\" y=\"133.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text><circle cx=\"210\" cy=\"120\" r=\"3\" fill=\"currentColor\"/><text x=\"222.5\" y=\"127.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">E</text><circle cx=\"170\" cy=\"40\" r=\"3\" fill=\"currentColor\"/><text x=\"179.5\" y=\"35.1\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">F</text><text x=\"55\" y=\"138\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5 cm</text><text x=\"175\" y=\"138\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text></svg>",
+   "answers": [
+    "5"
+   ],
+   "why": "합동인 두 삼각형에서 대응변의 길이는 같으므로 $\\overline{DE}=\\overline{AB}=5\\,\\mathrm{cm}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-04-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "세 변의 길이가 각각 같은 두 삼각형은 합동입니다. 이 합동 조건의 이름은 무엇인가요?",
+   "options": [
+    "ASA 합동",
+    "SAS 합동",
+    "SSS 합동",
+    "AAA 합동"
+   ],
+   "answer": 2,
+   "why": "세 쌍의 대응변의 길이가 각각 같은 경우를 SSS 합동이라고 합니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-04-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\triangle ABC$와 $\\triangle DEF$에서 $\\overline{AB}=\\overline{DE}$, $\\angle B=\\angle E$, $\\overline{BC}=\\overline{EF}$이면 두 삼각형은 합동입니다. 이 합동 조건은 무엇인가요?",
+   "options": [
+    "AAS 합동",
+    "SSS 합동",
+    "ASA 합동",
+    "SAS 합동"
+   ],
+   "answer": 3,
+   "why": "두 변의 길이와 그 끼인각의 크기가 각각 같으므로 SAS 합동입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-04-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\triangle ABC$와 $\\triangle DEF$에서 $\\overline{AB}=\\overline{DE}$, $\\angle A=\\angle D$, $\\angle B=\\angle E$이면 두 삼각형은 합동입니다. 이 합동 조건은 무엇인가요?",
+   "options": [
+    "SSS 합동",
+    "ASA 합동",
+    "SAS 합동",
+    "RHS 합동"
+   ],
+   "answer": 1,
+   "why": "한 변의 길이와 그 양 끝 각의 크기가 각각 같으므로 ASA 합동입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-04-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 두 삼각형이 합동이라고 할 수 없는 경우는 무엇인가요?",
+   "options": [
+    "두 변의 길이와 그 끼인각의 크기가 각각 같을 때",
+    "세 변의 길이가 각각 같을 때",
+    "세 각의 크기가 각각 같을 때",
+    "한 변의 길이와 그 양 끝 각의 크기가 각각 같을 때"
+   ],
+   "answer": 2,
+   "why": "세 각의 크기가 같아도 크기가 다를 수 있으므로 합동이라고 할 수 없습니다. (닮음)"
+  },
+  {
+   "id": "수학-중1-3-9수03-04-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "정사각형 $ABCD$에서 $\\overline{BE}=\\overline{CF}$인 점 $E, F$를 각각 변 $BC, CD$ 위에 잡았을 때 $\\triangle ABE\\equiv\\triangle BCF$의 합동 조건은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 200 160\" font-family=\"sans-serif\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"130\" x2=\"150\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"130\" x2=\"150\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"20\" x2=\"40\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"20\" x2=\"95\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"130\" x2=\"150\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"40\" cy=\"20\" r=\"3\" fill=\"currentColor\"/><text x=\"28\" y=\"16\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"40\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"28\" y=\"144\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"150\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"162\" y=\"144\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"150\" cy=\"20\" r=\"3\" fill=\"currentColor\"/><text x=\"162\" y=\"16\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text><circle cx=\"95\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"95\" y=\"148\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">E</text><circle cx=\"150\" cy=\"75\" r=\"3\" fill=\"currentColor\"/><text x=\"164\" y=\"79\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">F</text></svg>",
+   "options": [
+    "SAS 합동",
+    "SSS 합동",
+    "ASA 합동",
+    "RHA 합동"
+   ],
+   "answer": 0,
+   "why": "$\\overline{AB}=\\overline{BC}$, $\\angle ABE=\\angle BCF=90^\\circ$, $\\overline{BE}=\\overline{CF}$이므로 SAS 합동입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-04-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\triangle ABC\\equiv\\triangle DEF$이고 $\\angle A=50^\\circ$, $\\angle B=60^\\circ$일 때 $\\angle F$의 크기는 얼마인가요?",
+   "options": [
+    "60°",
+    "50°",
+    "70°",
+    "80°"
+   ],
+   "answer": 2,
+   "why": "$\\angle C=180^\\circ-50^\\circ-60^\\circ=70^\\circ$이고 $\\angle F=\\angle C=70^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-04-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\angle XOY$의 이등분선 위의 한 점 $P$에서 두 변 $OX, OY$에 내린 수선의 발을 각각 $A, B$라 할 때, $\\triangle POA\\equiv\\triangle POB$의 합동 조건은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"20\" y1=\"130\" x2=\"200\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"20\" y1=\"130\" x2=\"150\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"20\" y1=\"130\" x2=\"151\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"151\" y1=\"82\" x2=\"151\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"151\" y1=\"82\" x2=\"120\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"20\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"10\" y=\"144\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">O</text><circle cx=\"200\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"208\" y=\"144\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">X</text><circle cx=\"150\" cy=\"20\" r=\"3\" fill=\"currentColor\"/><text x=\"158\" y=\"18\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">Y</text><circle cx=\"151\" cy=\"82\" r=\"3\" fill=\"currentColor\"/><text x=\"165\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">P</text><circle cx=\"151\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"151\" y=\"148\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"120\" cy=\"45\" r=\"3\" fill=\"currentColor\"/><text x=\"106\" y=\"41\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text></svg>",
+   "options": [
+    "RHA 합동",
+    "SSS 합동",
+    "SAS 합동",
+    "ASA 합동"
+   ],
+   "answer": 0,
+   "why": "$\\angle PAO=\\angle PBO=90^\\circ$, $\\overline{PO}$는 공통, $\\angle AOP=\\angle BOP$이므로 직각삼각형의 빗변과 한 예각이 같은 RHA 합동입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-05-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "삼각형의 세 내각의 크기의 합은 몇 도인가요? (숫자만)",
+   "answers": [
+    "180",
+    "180°",
+    "180 °"
+   ],
+   "why": "삼각형의 내각의 합은 $180^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-05-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "사각형의 네 내각의 크기의 합은 얼마인가요?",
+   "options": [
+    "720°",
+    "180°",
+    "540°",
+    "360°"
+   ],
+   "answer": 3,
+   "why": "사각형은 대각선으로 삼각형 2개로 나뉘므로 $180^\\circ\\times2=360^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-05-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "오각형의 한 꼭짓점에서 대각선을 그으면 오각형은 삼각형 몇 개로 나누어지나요? (숫자만)",
+   "answers": [
+    "3",
+    "3개"
+   ],
+   "why": "$n$각형은 한 꼭짓점에서 그은 대각선으로 $(n-2)$개의 삼각형으로 나누어지므로 $5-2=3$개입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-05-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "육각형의 내각의 크기의 합은 몇 도인가요? (숫자만)",
+   "answers": [
+    "720",
+    "720°",
+    "720 °"
+   ],
+   "why": "$180^\\circ\\times(6-2)=720^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-05-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "정오각형의 한 내각의 크기는 얼마인가요?",
+   "options": [
+    "72°",
+    "108°",
+    "120°",
+    "100°"
+   ],
+   "answer": 1,
+   "why": "내각의 합 $180^\\circ\\times3=540^\\circ$를 5로 나누면 $108^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-05-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "정팔각형의 한 외각의 크기는 얼마인가요?",
+   "options": [
+    "135°",
+    "45°",
+    "60°",
+    "30°"
+   ],
+   "answer": 1,
+   "why": "다각형의 외각의 합은 $360^\\circ$이므로 정팔각형의 한 외각은 $360^\\circ\\div8=45^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-05-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "내각의 크기의 합이 $1260^\\circ$인 다각형은 몇 각형인가요? (예: 5)",
+   "answers": [
+    "9",
+    "9각형",
+    "구각형"
+   ],
+   "why": "$180^\\circ\\times(n-2)=1260^\\circ$에서 $n-2=7$이므로 $n=9$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-05-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한 외각의 크기가 $30^\\circ$인 정다각형은 무엇인가요?",
+   "options": [
+    "정십오각형",
+    "정팔각형",
+    "정십각형",
+    "정십이각형"
+   ],
+   "answer": 3,
+   "why": "$360^\\circ\\div30^\\circ=12$이므로 정십이각형입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-05-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "한 내각의 크기가 $150^\\circ$인 정다각형의 대각선의 총 개수를 구하세요. (숫자만)",
+   "answers": [
+    "54",
+    "54개"
+   ],
+   "why": "한 외각이 $30^\\circ$이므로 정십이각형이고 대각선의 개수는 $\\dfrac{12\\times(12-3)}{2}=54$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-06-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "한 원에서 두 부채꼴의 중심각의 크기가 2배이면 호의 길이는 어떻게 되나요?",
+   "options": [
+    "2배가 된다",
+    "같다",
+    "4배가 된다",
+    "절반이 된다"
+   ],
+   "answer": 0,
+   "why": "한 원에서 호의 길이는 중심각의 크기에 정비례합니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-06-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원에서 두 반지름과 호로 둘러싸인 도형을 무엇이라고 하나요?",
+   "options": [
+    "반원",
+    "활꼴",
+    "부채꼴",
+    "원기둥"
+   ],
+   "answer": 2,
+   "why": "두 반지름과 호로 둘러싸인 도형은 부채꼴입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-06-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림과 같이 반지름이 $6\\,\\mathrm{cm}$, 중심각이 $60^\\circ$인 부채꼴의 호의 길이는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 200 190\" font-family=\"sans-serif\"><path d=\"M40,100 L110,100 A70,70 0 0 0 75,39.4 Z\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"28\" y=\"116\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">O</text><text x=\"122\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><text x=\"82\" y=\"27.3\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><text x=\"68.5\" y=\"91\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">60°</text><text x=\"75\" y=\"116\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6 cm</text></svg>",
+   "options": [
+    "$12\\pi\\,\\mathrm{cm}$",
+    "$\\pi\\,\\mathrm{cm}$",
+    "$6\\pi\\,\\mathrm{cm}$",
+    "$2\\pi\\,\\mathrm{cm}$"
+   ],
+   "answer": 3,
+   "why": "호의 길이는 $2\\pi\\times6\\times\\dfrac{60}{360}=2\\pi$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-06-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "반지름이 $9\\,\\mathrm{cm}$, 중심각이 $120^\\circ$인 부채꼴의 호의 길이는 얼마인가요?",
+   "options": [
+    "$3\\pi\\,\\mathrm{cm}$",
+    "$6\\pi\\,\\mathrm{cm}$",
+    "$9\\pi\\,\\mathrm{cm}$",
+    "$12\\pi\\,\\mathrm{cm}$"
+   ],
+   "answer": 1,
+   "why": "$2\\pi\\times9\\times\\dfrac{120}{360}=6\\pi$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-06-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "반지름이 $6\\,\\mathrm{cm}$, 중심각이 $60^\\circ$인 부채꼴의 넓이는 얼마인가요?",
+   "options": [
+    "$12\\pi\\,\\mathrm{cm^2}$",
+    "$3\\pi\\,\\mathrm{cm^2}$",
+    "$6\\pi\\,\\mathrm{cm^2}$",
+    "$36\\pi\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 2,
+   "why": "$\\pi\\times6^2\\times\\dfrac{60}{360}=6\\pi$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-06-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "반지름이 $8\\,\\mathrm{cm}$이고 호의 길이가 $4\\pi\\,\\mathrm{cm}$인 부채꼴의 중심각의 크기는 몇 도인가요? (숫자만)",
+   "answers": [
+    "90",
+    "90°",
+    "90 °"
+   ],
+   "why": "$2\\pi\\times8\\times\\dfrac{x}{360}=4\\pi$에서 $x=90$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-06-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "반지름이 $10\\,\\mathrm{cm}$이고 호의 길이가 $6\\pi\\,\\mathrm{cm}$인 부채꼴의 넓이는 얼마인가요?",
+   "options": [
+    "$30\\pi\\,\\mathrm{cm^2}$",
+    "$60\\pi\\,\\mathrm{cm^2}$",
+    "$15\\pi\\,\\mathrm{cm^2}$",
+    "$100\\pi\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 0,
+   "why": "$S=\\dfrac12 rl=\\dfrac12\\times10\\times6\\pi=30\\pi$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-06-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "반지름이 $12\\,\\mathrm{cm}$인 부채꼴의 넓이가 $24\\pi\\,\\mathrm{cm^2}$일 때 중심각의 크기는 얼마인가요?",
+   "options": [
+    "90°",
+    "30°",
+    "60°",
+    "120°"
+   ],
+   "answer": 2,
+   "why": "$\\pi\\times12^2\\times\\dfrac{x}{360}=24\\pi$에서 $144x=8640$이므로 $x=60$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-06-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "한 원에서 중심각이 $40^\\circ$인 부채꼴의 호의 길이가 $8\\,\\mathrm{cm}$일 때, 중심각이 $120^\\circ$인 부채꼴의 호의 길이는 몇 $\\mathrm{cm}$인가요? (숫자만)",
+   "answers": [
+    "24"
+   ],
+   "why": "호의 길이는 중심각에 정비례하므로 $8\\times\\dfrac{120}{40}=24$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-07-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다각형인 면으로만 둘러싸인 입체도형을 무엇이라고 하나요?",
+   "options": [
+    "다면체",
+    "회전체",
+    "원기둥",
+    "구"
+   ],
+   "answer": 0,
+   "why": "다각형으로 이루어진 면으로 둘러싸인 입체도형이 다면체입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-07-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "정육면체의 면의 개수는 몇 개인가요? (숫자만)",
+   "answers": [
+    "6",
+    "6개"
+   ],
+   "why": "정육면체는 정사각형 면이 6개입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-07-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "직사각형의 한 변을 축으로 하여 1회전시킬 때 생기는 회전체는 무엇인가요?",
+   "options": [
+    "원뿔대",
+    "원뿔",
+    "구",
+    "원기둥"
+   ],
+   "answer": 3,
+   "why": "직사각형을 한 변을 축으로 회전시키면 원기둥이 됩니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-07-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "오각기둥의 모서리의 개수는 몇 개인가요? (숫자만)",
+   "answers": [
+    "15",
+    "15개"
+   ],
+   "why": "밑면의 모서리 $5\\times2=10$개와 옆 모서리 5개를 합하여 15개입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-07-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "삼각뿔대의 꼭짓점의 개수는 몇 개인가요? (숫자만)",
+   "answers": [
+    "6",
+    "6개"
+   ],
+   "why": "삼각뿔대는 두 밑면의 꼭짓점이 각각 3개씩이므로 6개입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-07-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "정팔면체의 꼭짓점의 개수는 몇 개인가요?",
+   "options": [
+    "8개",
+    "6개",
+    "12개",
+    "4개"
+   ],
+   "answer": 1,
+   "why": "정팔면체는 면 8개, 모서리 12개, 꼭짓점 6개입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-07-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "어떤 다면체의 꼭짓점이 10개, 면이 7개일 때 오일러의 공식 $v-e+f=2$를 이용하여 모서리의 개수를 구하세요. (숫자만)",
+   "answers": [
+    "15",
+    "15개"
+   ],
+   "why": "$10-e+7=2$이므로 $e=15$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-07-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "원뿔을 회전축을 포함하는 평면으로 자를 때 생기는 단면의 모양은 무엇인가요?",
+   "options": [
+    "원",
+    "이등변삼각형",
+    "직사각형",
+    "정삼각형"
+   ],
+   "answer": 1,
+   "why": "원뿔을 축을 포함하는 평면으로 자르면 이등변삼각형 모양의 단면이 생깁니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-07-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "직각삼각형의 직각을 낀 한 변을 축으로 하여 1회전시켰을 때 생기는 회전체의 이름은 무엇인가요?",
+   "options": [
+    "원뿔대",
+    "원기둥",
+    "구",
+    "원뿔"
+   ],
+   "answer": 3,
+   "why": "직각삼각형을 직각을 낀 한 변을 축으로 회전시키면 원뿔이 됩니다."
+  }
+ ],
+ "skipped": []
+}
