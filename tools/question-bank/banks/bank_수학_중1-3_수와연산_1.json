@@ -1,0 +1,1146 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "중",
+  "course": "수학",
+  "gradeBand": "중1-3",
+  "unit": "수와 연산",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-중1-3-9수01-01-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 소수인 것은?",
+   "options": [
+    "15",
+    "9",
+    "13",
+    "21"
+   ],
+   "answer": 2,
+   "why": "13은 1과 13으로만 나누어지는 소수입니다. 9, 15, 21은 3의 배수입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-01-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "12를 소인수분해하면?",
+   "options": [
+    "$2^{2}\\times3$",
+    "$2\\times6$",
+    "$2\\times3^{2}$",
+    "$3\\times4$"
+   ],
+   "answer": 0,
+   "why": "$12=2\\times2\\times3=2^{2}\\times3$입니다. 6과 4는 소수가 아닙니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-01-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "30의 소인수를 모두 더하면 얼마인가요? (숫자만)",
+   "answers": [
+    "10"
+   ],
+   "why": "$30=2\\times3\\times5$이므로 소인수는 2, 3, 5이고 합은 10입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-01-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "60을 소인수분해하면?",
+   "options": [
+    "$2\\times3^{2}\\times5$",
+    "$2\\times3\\times10$",
+    "$2^{2}\\times15$",
+    "$2^{2}\\times3\\times5$"
+   ],
+   "answer": 3,
+   "why": "$60=2\\times2\\times3\\times5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-01-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$72=2^{3}\\times3^{2}$의 약수는 모두 몇 개인가요?",
+   "options": [
+    "5개",
+    "12개",
+    "6개",
+    "24개"
+   ],
+   "answer": 1,
+   "why": "지수에 1을 더해 곱합니다. $(3+1)\\times(2+1)=12$(개)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-01-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "$180=2^{a}\\times3^{b}\\times5$일 때 $a+b$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "4"
+   ],
+   "why": "$180=2^{2}\\times3^{2}\\times5$이므로 $a=2$, $b=2$, $a+b=4$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-01-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$36=2^{2}\\times3^{2}$의 약수가 아닌 것은?",
+   "options": [
+    "12",
+    "8",
+    "18",
+    "9"
+   ],
+   "answer": 1,
+   "why": "36의 약수는 2의 지수가 2 이하입니다. $8=2^{3}$은 약수가 아닙니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-01-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "84에 가장 작은 자연수 $x$를 곱하여 어떤 자연수의 제곱이 되게 하려고 합니다. $x$를 구하세요. (숫자만)",
+   "answers": [
+    "21"
+   ],
+   "why": "$84=2^{2}\\times3\\times7$이므로 소인수의 지수가 모두 짝수가 되려면 $3\\times7=21$을 곱해야 합니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-01-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "소인수분해할 때 1을 소인수로 쓰지 않는 이유는?",
+   "options": [
+    "1을 곱하면 값이 달라지기 때문이다",
+    "1은 합성수이기 때문이다",
+    "1은 약수가 없기 때문이다",
+    "1은 소수가 아니기 때문이다"
+   ],
+   "answer": 3,
+   "why": "소인수는 소수인 약수입니다. 1은 소수도 합성수도 아닙니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-02-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "12와 18의 최대공약수는?",
+   "options": [
+    "6",
+    "3",
+    "12",
+    "36"
+   ],
+   "answer": 0,
+   "why": "$12=2^{2}\\times3$, $18=2\\times3^{2}$이므로 공통인 $2\\times3=6$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-02-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "8과 12의 최소공배수는?",
+   "options": [
+    "48",
+    "4",
+    "24",
+    "96"
+   ],
+   "answer": 2,
+   "why": "$8=2^{3}$, $12=2^{2}\\times3$이므로 $2^{3}\\times3=24$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-02-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "24와 36의 최대공약수를 구하세요. (숫자만)",
+   "answers": [
+    "12"
+   ],
+   "why": "$24=2^{3}\\times3$, $36=2^{2}\\times3^{2}$이므로 $2^{2}\\times3=12$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-02-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$2^{3}\\times3\\times5$와 $2^{2}\\times3^{2}$의 최대공약수는?",
+   "options": [
+    "$2\\times3$",
+    "$2^{3}\\times3^{2}\\times5$",
+    "$2^{2}\\times3^{2}$",
+    "$2^{2}\\times3$"
+   ],
+   "answer": 3,
+   "why": "공통인 소인수 2, 3의 지수 중 작은 것을 택합니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-02-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "사탕 36개와 초콜릿 48개를 남김없이 똑같이 나누어 주려고 합니다. 최대 몇 명에게 나누어 줄 수 있나요?",
+   "options": [
+    "6명",
+    "12명",
+    "24명",
+    "144명"
+   ],
+   "answer": 1,
+   "why": "36과 48의 최대공약수가 12입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-02-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "두 자연수의 최대공약수가 4, 최소공배수가 24입니다. 한 수가 8일 때 다른 수를 구하세요. (숫자만)",
+   "answers": [
+    "12"
+   ],
+   "why": "(두 수의 곱)=(최대공약수)$\\times$(최소공배수)이므로 $8\\times x=4\\times24$이므로 $x=12$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-02-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "A 버스는 12분마다, B 버스는 18분마다 출발합니다. 두 버스가 동시에 출발한 뒤 처음으로 다시 동시에 출발하는 것은 몇 분 후인가요?",
+   "options": [
+    "72분 후",
+    "6분 후",
+    "36분 후",
+    "30분 후"
+   ],
+   "answer": 2,
+   "why": "12와 18의 최소공배수 36입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-02-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "가로 48 cm, 세로 36 cm인 직사각형을 크기가 같은 정사각형 모양 타일로 빈틈없이 덮으려고 합니다. 가장 큰 타일을 쓸 때 필요한 타일은 몇 장인가요? (숫자만)",
+   "answers": [
+    "12",
+    "12장"
+   ],
+   "why": "한 변은 48과 36의 최대공약수 12 cm입니다. $(48\\div12)\\times(36\\div12)=4\\times3=12$(장)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-02-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "소인수분해를 이용하여 최대공약수를 구하는 방법으로 옳은 것은?",
+   "options": [
+    "공통인 소인수에 대하여 지수가 작은 쪽을 택해 곱한다",
+    "모든 소인수에 대하여 지수가 큰 쪽을 택해 곱한다",
+    "공통인 소인수에 대하여 지수가 큰 쪽을 택해 곱한다",
+    "공통이 아닌 소인수만 모아 곱한다"
+   ],
+   "answer": 0,
+   "why": "최대공약수는 두 수의 약수이므로 지수가 작은 쪽을 택합니다. (최소공배수는 큰 쪽)"
+  },
+  {
+   "id": "수학-중1-3-9수01-03-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "해발 100 m를 $+100$ m라 할 때, 해수면보다 50 m 낮은 곳은 어떻게 나타내나요?",
+   "options": [
+    "$-100$ m",
+    "$+50$ m",
+    "$-50$ m",
+    "$+150$ m"
+   ],
+   "answer": 2,
+   "why": "기준보다 낮은 쪽은 음수로 나타냅니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-03-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 정수가 아닌 유리수는?",
+   "options": [
+    "$-\\dfrac32$",
+    "0",
+    "$-4$",
+    "7"
+   ],
+   "answer": 0,
+   "why": "$-\\dfrac32$는 분수로만 나타낼 수 있고 정수가 아닙니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-03-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "$-3,\\ 0,\\ 2,\\ \\dfrac12,\\ 5,\\ -\\dfrac23$ 중 양의 정수는 모두 몇 개인가요? (숫자만)",
+   "answers": [
+    "2",
+    "2개"
+   ],
+   "why": "양의 정수는 2와 5입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-03-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "0에 대한 설명으로 옳은 것은?",
+   "options": [
+    "음의 정수이다",
+    "자연수이다",
+    "양의 정수이다",
+    "정수이지만 양수도 음수도 아니다"
+   ],
+   "answer": 3,
+   "why": "0은 정수이고 양수도 음수도 아닙니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-03-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 옳은 것은?",
+   "options": [
+    "모든 유리수는 정수이다",
+    "모든 정수는 유리수이다",
+    "0은 음의 유리수이다",
+    "유리수는 양수와 음수로만 이루어져 있다"
+   ],
+   "answer": 1,
+   "why": "정수는 $\\dfrac{n}{1}$ 꼴로 쓸 수 있어 유리수에 포함됩니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-03-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 음수($-$)로 나타내야 하는 것은?",
+   "options": [
+    "영상 3 ℃",
+    "지하 1층",
+    "지상 2층",
+    "이익 5000원"
+   ],
+   "answer": 1,
+   "why": "지상을 $+$로 보면 지하는 $-$로 나타냅니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-03-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "자연수, 정수, 유리수 사이의 관계로 옳은 것은?",
+   "options": [
+    "자연수와 정수는 서로 겹치지 않는다",
+    "정수는 자연수에 포함되고 자연수는 유리수에 포함된다",
+    "유리수는 정수에 포함되고 정수는 자연수에 포함된다",
+    "자연수는 정수에 포함되고 정수는 유리수에 포함된다"
+   ],
+   "answer": 3,
+   "why": "자연수 $\\subset$ 정수 $\\subset$ 유리수입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-03-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "$-4,\\ -1.5,\\ 0,\\ \\dfrac63,\\ 7,\\ -\\dfrac23$ 중 정수는 모두 몇 개인가요? (숫자만)",
+   "answers": [
+    "4",
+    "4개"
+   ],
+   "why": "$-4$, $0$, $\\dfrac63=2$, $7$이 정수이므로 4개입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-03-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$-3$과 4 사이에 있는 정수는 모두 몇 개인가요?",
+   "options": [
+    "6개",
+    "5개",
+    "7개",
+    "8개"
+   ],
+   "answer": 0,
+   "why": "$-2,-1,0,1,2,3$으로 6개입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-04-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "수직선 위의 점 A, B, C 중 가장 작은 수를 나타내는 점은?",
+   "svg": "<svg viewBox=\"0 0 330 74\" font-family=\"sans-serif\"><line x1=\"14\" y1=\"46\" x2=\"316\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"22\" y1=\"41\" x2=\"22\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"22\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-6</text><line x1=\"53.8\" y1=\"41\" x2=\"53.8\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"53.8\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-5</text><line x1=\"85.6\" y1=\"41\" x2=\"85.6\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"85.6\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-4</text><line x1=\"117.3\" y1=\"41\" x2=\"117.3\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"117.3\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-3</text><line x1=\"149.1\" y1=\"41\" x2=\"149.1\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"149.1\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-2</text><line x1=\"180.9\" y1=\"41\" x2=\"180.9\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"180.9\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-1</text><line x1=\"212.7\" y1=\"41\" x2=\"212.7\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"212.7\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"244.4\" y1=\"41\" x2=\"244.4\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"244.4\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"276.2\" y1=\"41\" x2=\"276.2\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"276.2\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"308\" y1=\"41\" x2=\"308\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"308\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><circle cx=\"117.3\" cy=\"46\" r=\"5\" fill=\"#4b7bec\"/><text x=\"117.3\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"244.4\" cy=\"46\" r=\"5\" fill=\"#4b7bec\"/><text x=\"244.4\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"53.8\" cy=\"46\" r=\"5\" fill=\"#4b7bec\"/><text x=\"53.8\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text></svg>",
+   "options": [
+    "B",
+    "A",
+    "C",
+    "셋 모두 같다"
+   ],
+   "answer": 2,
+   "why": "수직선에서는 왼쪽에 있을수록 작은 수입니다. 가장 왼쪽 점은 C입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-04-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$-\\dfrac12$ $\\square$ $-\\dfrac13$에서 $\\square$ 안에 알맞은 부등호는?",
+   "options": [
+    "$\\ge$",
+    "$>$",
+    "$=$",
+    "$<$"
+   ],
+   "answer": 3,
+   "why": "음수는 절댓값이 클수록 작습니다. $\\dfrac12>\\dfrac13$이므로 $-\\dfrac12<-\\dfrac13$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-04-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$-7,\\ 3,\\ 5,\\ -2$ 중 절댓값이 가장 큰 수는?",
+   "options": [
+    "3",
+    "$-7$",
+    "5",
+    "$-2$"
+   ],
+   "answer": 1,
+   "why": "절댓값은 각각 7, 3, 5, 2이므로 $-7$이 가장 큽니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-04-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$-2,\\ \\dfrac12,\\ -\\dfrac32,\\ 0$을 작은 수부터 차례로 나열한 것은?",
+   "options": [
+    "$0<\\dfrac12<-\\dfrac32<-2$",
+    "$-\\dfrac32<-2<0<\\dfrac12$",
+    "$-2<-\\dfrac32<0<\\dfrac12$",
+    "$-2<0<-\\dfrac32<\\dfrac12$"
+   ],
+   "answer": 2,
+   "why": "음수 중에서는 절댓값이 큰 $-2$가 더 작습니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-04-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "$-\\dfrac73$보다 작은 정수 중 가장 큰 수를 구하세요. (숫자만)",
+   "answers": [
+    "-3"
+   ],
+   "why": "$-\\dfrac73=-2.33\\cdots$이므로 이보다 작은 정수 중 가장 큰 수는 $-3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-04-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "0.3과 $\\dfrac13$ 중 더 큰 수는?",
+   "options": [
+    "$\\dfrac13$",
+    "0.3",
+    "두 수는 같다",
+    "알 수 없다"
+   ],
+   "answer": 0,
+   "why": "$\\dfrac13=0.333\\cdots>0.3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-04-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$-\\dfrac45$와 $-\\dfrac34$의 대소 관계와 그 이유로 옳은 것은?",
+   "options": [
+    "$-\\dfrac45>-\\dfrac34$, 음수끼리는 절댓값이 큰 쪽이 더 크기 때문이다",
+    "$-\\dfrac45>-\\dfrac34$, 분자가 더 크기 때문이다",
+    "$-\\dfrac45<-\\dfrac34$, 음수끼리는 절댓값이 큰 쪽이 더 작기 때문이다",
+    "$-\\dfrac45=-\\dfrac34$, 분모와 분자의 차가 같기 때문이다"
+   ],
+   "answer": 2,
+   "why": "$\\dfrac45=0.8>\\dfrac34=0.75$이므로 $-\\dfrac45<-\\dfrac34$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-04-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "수직선에서 $-3$과 7로부터 같은 거리에 있는 점이 나타내는 수를 구하세요. (숫자만)",
+   "svg": "<svg viewBox=\"0 0 330 74\" font-family=\"sans-serif\"><line x1=\"14\" y1=\"46\" x2=\"316\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"22\" y1=\"41\" x2=\"22\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"22\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-4</text><line x1=\"45.8\" y1=\"41\" x2=\"45.8\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"45.8\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">-3</text><line x1=\"69.7\" y1=\"41\" x2=\"69.7\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"69.7\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-2</text><line x1=\"93.5\" y1=\"41\" x2=\"93.5\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"93.5\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-1</text><line x1=\"117.3\" y1=\"41\" x2=\"117.3\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"117.3\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"141.2\" y1=\"41\" x2=\"141.2\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"141.2\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"165\" y1=\"41\" x2=\"165\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"165\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"188.8\" y1=\"41\" x2=\"188.8\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"188.8\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"212.7\" y1=\"41\" x2=\"212.7\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"212.7\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"236.5\" y1=\"41\" x2=\"236.5\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"236.5\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"260.3\" y1=\"41\" x2=\"260.3\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"260.3\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"284.2\" y1=\"41\" x2=\"284.2\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"284.2\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><line x1=\"308\" y1=\"41\" x2=\"308\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"308\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">8</text><circle cx=\"45.8\" cy=\"46\" r=\"5\" fill=\"#4b7bec\"/><text x=\"45.8\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><circle cx=\"284.2\" cy=\"46\" r=\"5\" fill=\"#4b7bec\"/><text x=\"284.2\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text></svg>",
+   "answers": [
+    "2"
+   ],
+   "why": "두 수의 한가운데이므로 $\\dfrac{-3+7}{2}=2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-04-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$a<0<b$이고 $|a|>|b|$일 때 옳은 것은?",
+   "options": [
+    "$a+b<0$",
+    "$a+b>0$",
+    "$a+b=0$",
+    "$a-b>0$"
+   ],
+   "answer": 0,
+   "why": "음수 $a$의 절댓값이 더 크므로 합은 음수입니다. $a-b$는 음수입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-05-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$(-3)+(-5)$를 계산하면?",
+   "options": [
+    "2",
+    "8",
+    "$-2$",
+    "$-8$"
+   ],
+   "answer": 3,
+   "why": "같은 부호끼리의 합은 절댓값을 더하고 부호를 그대로 씁니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-05-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$(-4)\\times(+6)$을 계산하면?",
+   "options": [
+    "24",
+    "$-24$",
+    "$-10$",
+    "10"
+   ],
+   "answer": 1,
+   "why": "부호가 다른 두 수의 곱은 음수입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-05-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "$(-2)-(-7)$을 계산하세요. (숫자만)",
+   "answers": [
+    "5"
+   ],
+   "why": "$(-2)+(+7)=5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-05-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$-3+4\\times(-2)$를 계산하면?",
+   "options": [
+    "$-14$",
+    "$-11$",
+    "5",
+    "$-5$"
+   ],
+   "answer": 1,
+   "why": "곱셈을 먼저 합니다. $-3+(-8)=-11$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-05-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "아침 기온이 $-3$ ℃였는데 낮에 7 ℃ 오르고 저녁에 5 ℃ 내려갔습니다. 저녁 기온은?",
+   "options": [
+    "9 ℃",
+    "1 ℃",
+    "$-9$ ℃",
+    "$-1$ ℃"
+   ],
+   "answer": 3,
+   "why": "$-3+7-5=-1$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-05-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "$(-2)^{2}-3\\times(-1)$을 계산하세요. (숫자만)",
+   "answers": [
+    "7"
+   ],
+   "why": "$4-(-3)=7$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-05-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\left(-\\dfrac12\\right)^{2}\\div\\dfrac14\\times(-2)$를 계산하면?",
+   "options": [
+    "$-2$",
+    "2",
+    "$-\\dfrac12$",
+    "$\\dfrac12$"
+   ],
+   "answer": 0,
+   "why": "$\\dfrac14\\div\\dfrac14=1$이고 $1\\times(-2)=-2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-05-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "$-2^{2}+(-3)^{2}\\times\\dfrac13-4$를 계산하세요. (숫자만)",
+   "answers": [
+    "-5"
+   ],
+   "why": "$-4+9\\times\\dfrac13-4=-4+3-4=-5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-05-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "어떤 수에서 $-\\dfrac23$을 뺐더니 $\\dfrac12$이 되었습니다. 어떤 수는?",
+   "options": [
+    "$\\dfrac16$",
+    "$\\dfrac76$",
+    "$-\\dfrac16$",
+    "$-\\dfrac76$"
+   ],
+   "answer": 2,
+   "why": "(어떤 수)$=\\dfrac12+\\left(-\\dfrac23\\right)=-\\dfrac16$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-06-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 유한소수로 나타낼 수 있는 분수는?",
+   "options": [
+    "$\\dfrac27$",
+    "$\\dfrac13$",
+    "$\\dfrac56$",
+    "$\\dfrac{3}{8}$"
+   ],
+   "answer": 3,
+   "why": "$\\dfrac38=0.375$입니다. 분모의 소인수가 2뿐이기 때문입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-06-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "순환소수 $0.\\dot{3}$을 분수로 나타내면?",
+   "options": [
+    "$\\dfrac{3}{10}$",
+    "$\\dfrac13$",
+    "$\\dfrac{3}{100}$",
+    "$\\dfrac{1}{30}$"
+   ],
+   "answer": 1,
+   "why": "$x=0.333\\cdots$에서 $10x-x=3$이므로 $x=\\dfrac13$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-06-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "$\\dfrac{5}{11}=0.4545\\cdots$의 순환마디를 쓰세요. (숫자만)",
+   "answers": [
+    "45"
+   ],
+   "why": "소수점 아래에서 반복되는 부분은 45입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-06-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "순환소수 $0.\\dot{1}\\dot{2}$를 분수로 나타내면?",
+   "options": [
+    "$\\dfrac{12}{90}$",
+    "$\\dfrac{12}{100}$",
+    "$\\dfrac{4}{33}$",
+    "$\\dfrac{1}{12}$"
+   ],
+   "answer": 2,
+   "why": "$100x-x=12$이므로 $x=\\dfrac{12}{99}=\\dfrac{4}{33}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-06-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 기약분수로 나타냈을 때 분모의 소인수가 2나 5뿐인 것은?",
+   "options": [
+    "$\\dfrac{9}{2^{2}\\times3\\times5}$",
+    "$\\dfrac{7}{2\\times3^{2}}$",
+    "$\\dfrac{5}{2\\times3\\times7}$",
+    "$\\dfrac{11}{3\\times5^{2}}$"
+   ],
+   "answer": 0,
+   "why": "약분하면 $\\dfrac{3}{2^{2}\\times5}$로 분모의 소인수가 2, 5뿐입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-06-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "유리수와 순환소수의 관계로 옳은 것은?",
+   "options": [
+    "유한소수는 유리수가 아니고 순환소수만 유리수이다",
+    "순환소수는 분수로 나타낼 수 없으므로 유리수가 아니다",
+    "유한소수와 순환소수는 모두 분수로 나타낼 수 있어 유리수이다",
+    "순환하지 않는 무한소수도 분수로 나타낼 수 있다"
+   ],
+   "answer": 2,
+   "why": "유리수는 소수로 나타내면 유한소수 또는 순환소수입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-06-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "$0.4\\dot{3}=\\dfrac{a}{30}$일 때 $a$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "13"
+   ],
+   "why": "$x=0.4333\\cdots$에서 $100x-10x=43-4=39$이므로 $x=\\dfrac{39}{90}=\\dfrac{13}{30}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-06-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$x=0.\\dot{7}$을 분수로 나타낼 때 $10x-x$를 계산하는 이유는?",
+   "options": [
+    "소수점 아래의 순환하는 부분을 없애기 위해서이다",
+    "분모를 10으로 만들기 위해서이다",
+    "소수점 아래 첫째 자리만 남기기 위해서이다",
+    "$x$를 정수로 만들기 위해서이다"
+   ],
+   "answer": 0,
+   "why": "$10x=7.777\\cdots$에서 $x=0.777\\cdots$을 빼면 순환 부분이 사라져 $9x=7$이 됩니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-06-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "$\\dfrac{a}{2^{2}\\times3\\times5}$가 유한소수가 되도록 하는 가장 작은 두 자리 자연수 $a$를 구하세요. (숫자만)",
+   "answers": [
+    "12"
+   ],
+   "why": "분모의 소인수 3을 약분해야 하므로 $a$는 3의 배수입니다. 가장 작은 두 자리 3의 배수는 12입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-07-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "9의 제곱근은?",
+   "options": [
+    "81",
+    "3",
+    "$-3$",
+    "$\\pm3$"
+   ],
+   "answer": 3,
+   "why": "제곱하여 9가 되는 수는 3과 $-3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-07-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$\\sqrt{16}$의 값은?",
+   "options": [
+    "$\\pm4$",
+    "4",
+    "$-4$",
+    "8"
+   ],
+   "answer": 1,
+   "why": "$\\sqrt{16}$은 16의 양의 제곱근이므로 4입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-07-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$\\sqrt{5}$ $\\square$ 2에서 $\\square$ 안에 알맞은 부등호는?",
+   "options": [
+    "$<$",
+    "$>$",
+    "$=$",
+    "$\\le$"
+   ],
+   "answer": 1,
+   "why": "$2=\\sqrt{4}$이고 $5>4$이므로 $\\sqrt{5}>2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-07-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\sqrt{(-3)^{2}}$을 간단히 하면?",
+   "options": [
+    "9",
+    "$-3$",
+    "$\\pm3$",
+    "3"
+   ],
+   "answer": 3,
+   "why": "$\\sqrt{9}=3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-07-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\sqrt{12}$를 $a\\sqrt{b}$ 꼴로 나타내면? ($b$는 가장 작은 자연수)",
+   "options": [
+    "$2\\sqrt{3}$",
+    "$3\\sqrt{2}$",
+    "$4\\sqrt{3}$",
+    "$6\\sqrt{2}$"
+   ],
+   "answer": 0,
+   "why": "$\\sqrt{12}=\\sqrt{4\\times3}=2\\sqrt{3}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-07-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "$\\sqrt{2}\\times\\sqrt{8}$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "4"
+   ],
+   "why": "$\\sqrt{2\\times8}=\\sqrt{16}=4$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-07-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$3,\\ \\sqrt{10},\\ 2\\sqrt{2},\\ \\sqrt{7}$을 작은 수부터 차례로 나열한 것은?",
+   "options": [
+    "$\\sqrt{7}<3<2\\sqrt{2}<\\sqrt{10}$",
+    "$2\\sqrt{2}<\\sqrt{7}<3<\\sqrt{10}$",
+    "$\\sqrt{7}<2\\sqrt{2}<3<\\sqrt{10}$",
+    "$3<\\sqrt{7}<2\\sqrt{2}<\\sqrt{10}$"
+   ],
+   "answer": 2,
+   "why": "제곱하면 $7,\\ 8,\\ 9,\\ 10$이므로 $\\sqrt{7}<\\sqrt{8}<3<\\sqrt{10}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-07-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "$\\sqrt{72}=a\\sqrt{2}$일 때 $a$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "6"
+   ],
+   "why": "$\\sqrt{72}=\\sqrt{36\\times2}=6\\sqrt{2}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수01-07-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "수와 연산",
+   "standard": "9수01-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\sqrt{24x}$가 자연수가 되도록 하는 가장 작은 자연수 $x$는?",
+   "options": [
+    "12",
+    "2",
+    "3",
+    "6"
+   ],
+   "answer": 3,
+   "why": "$24=2^{3}\\times3$이므로 $x=2\\times3=6$일 때 $\\sqrt{144}=12$입니다."
+  }
+ ],
+ "skipped": []
+}
