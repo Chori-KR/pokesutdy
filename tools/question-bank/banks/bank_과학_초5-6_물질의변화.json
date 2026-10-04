@@ -1,0 +1,459 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초5-6",
+  "unit": "물질의 변화",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "과학-초5-6-6과14-01-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "얼음이 녹아 물이 되는 변화처럼 물질의 성질이 달라지지 않는 변화는 무엇인가요?",
+   "options": [
+    "종이가 불에 타는 것",
+    "철이 녹스는 것",
+    "종이를 가위로 자르는 것",
+    "음식이 썩는 것"
+   ],
+   "answer": 2,
+   "why": "종이를 자르면 모양만 바뀌고 종이의 성질은 그대로입니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-01-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 물질의 성질이 달라지는 변화를 한 가지 고르세요.",
+   "options": [
+    "철이 녹스는 것",
+    "얼음이 녹는 것",
+    "설탕이 물에 녹는 것",
+    "고무줄을 늘리는 것"
+   ],
+   "answer": 0,
+   "why": "철이 녹슬면 처음의 철과 다른 성질의 물질이 생깁니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-01-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 여러 가지 변화를 정리한 것입니다. 성질이 달라지는 변화끼리 바르게 짝지은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 256 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"250\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"253\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"253\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"253\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"253\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">번호</text><text x=\"158\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">변화</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><text x=\"158\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">초가 탄다</text><text x=\"33\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉡</text><text x=\"158\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">얼음이 녹는다</text><text x=\"33\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉢</text><text x=\"158\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">달걀을 삶는다</text><text x=\"33\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉣</text><text x=\"158\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">철사를 구부린다</text></svg>",
+   "options": [
+    "㉢, ㉣",
+    "㉡, ㉣",
+    "㉠, ㉡",
+    "㉠, ㉢"
+   ],
+   "answer": 3,
+   "why": "초가 타고 달걀이 익으면 처음과 다른 물질이 생겨 성질이 달라집니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-01-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "물질의 성질이 달라지지 않는 변화의 예를 한 가지만 쓰세요.",
+   "answers": [
+    "얼음이 녹는 것",
+    "얼음이 녹아 물이 되는 것",
+    "물이 얼음이 되는 것",
+    "설탕이 물에 녹는 것",
+    "철사를 구부리는 것"
+   ],
+   "why": "상태나 모양만 변하고 물질의 성질은 그대로인 변화입니다. (한 가지를 쓰세요)"
+  },
+  {
+   "id": "과학-초5-6-6과14-01-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "철 못이 공기 중에서 녹스는 변화를 성질이 달라지는 변화라고 하는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "철의 모양만 달라지기 때문이다",
+    "붉은 갈색의 부스러지는 물질이 생겨 처음의 철과 성질이 다르기 때문이다",
+    "철의 크기만 커지기 때문이다",
+    "물에 녹아 없어지기 때문이다"
+   ],
+   "answer": 1,
+   "why": "녹슨 철은 단단한 회색의 철과 색깔·단단함이 달라 다른 물질로 변한 것입니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-01-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "요리 과정에서 일어나는 변화 중 성질이 달라지지 않는 변화에 해당하는 것은 무엇인가요?",
+   "options": [
+    "달걀을 프라이하는 것",
+    "얼음을 잘게 부수는 것",
+    "빵 반죽이 부풀어 구워지는 것",
+    "고기가 타서 검게 변하는 것"
+   ],
+   "answer": 1,
+   "why": "얼음을 부수면 모양만 바뀌고 성질은 그대로입니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-02-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "물질이 탈 때 나타나는 공통적인 현상은 무엇인가요?",
+   "options": [
+    "부피가 변하지 않는다",
+    "차가워진다",
+    "소리만 난다",
+    "빛과 열이 발생한다"
+   ],
+   "answer": 3,
+   "why": "물질이 탈 때는 빛과 열이 나옵니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-02-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "물질이 산소와 빠르게 결합하여 빛과 열을 내는 현상을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "연소"
+   ],
+   "why": "물질이 산소와 결합하며 빛과 열을 내는 현상을 연소라고 합니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-02-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림 (가)~(다)의 촛불에서 집기병 안의 촛불이 가장 먼저 꺼지는 것은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 310 156\" font-family=\"sans-serif\"><line x1=\"11\" y1=\"120\" x2=\"79\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"39\" y=\"92\" width=\"12\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"45\" cy=\"80\" rx=\"5\" ry=\"10\" fill=\"#e07b39\" fill-opacity=\"0.85\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"45\" y=\"146\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">(가)</text><line x1=\"121\" y1=\"120\" x2=\"189\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"149\" y=\"92\" width=\"12\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"155\" cy=\"80\" rx=\"5\" ry=\"10\" fill=\"#e07b39\" fill-opacity=\"0.85\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M131,120 L131,46 Q155,34 179,46 L179,120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"155\" y=\"146\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">(나)</text><line x1=\"231\" y1=\"120\" x2=\"299\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"259\" y=\"92\" width=\"12\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"265\" cy=\"80\" rx=\"5\" ry=\"10\" fill=\"#e07b39\" fill-opacity=\"0.85\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M241,112 L241,46 Q265,34 289,46 L289,112\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"235\" y=\"112\" width=\"10\" height=\"8\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"285\" y=\"112\" width=\"10\" height=\"8\" fill=\"#4b7bec\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"265\" y=\"146\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">(다)</text></svg>",
+   "options": [
+    "(나)",
+    "(가)",
+    "(다)",
+    "모두 동시에 꺼진다"
+   ],
+   "answer": 0,
+   "why": "(나)는 공기가 드나들 수 없어 집기병 안의 산소가 줄어들면 가장 먼저 꺼집니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-02-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "연소가 일어나려면 필요한 조건이 아닌 것은 무엇인가요?",
+   "options": [
+    "산소",
+    "탈 물질",
+    "이산화 탄소",
+    "발화점 이상의 온도"
+   ],
+   "answer": 2,
+   "why": "연소의 3요소는 탈 물질, 산소, 발화점 이상의 온도입니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-02-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "알코올램프의 불을 끄기 위해 뚜껑을 덮는 것은 연소의 조건 중 무엇을 없애는 방법인가요?",
+   "options": [
+    "빛",
+    "탈 물질",
+    "발화점 이상의 온도",
+    "산소"
+   ],
+   "answer": 3,
+   "why": "뚜껑을 덮으면 산소의 공급이 끊겨 불이 꺼집니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-02-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "다음 중 연소의 조건 한 가지를 없애 불을 끄는 방법으로 알맞지 않은 것은 무엇인가요?",
+   "options": [
+    "물을 뿌려 온도를 낮춘다",
+    "불이 난 곳에 부채질을 하여 바람을 보낸다",
+    "소화기로 산소를 막는다",
+    "가스 밸브를 잠가 탈 물질을 없앤다"
+   ],
+   "answer": 1,
+   "why": "부채질은 산소를 공급하여 불을 더 키울 수 있습니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-03-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "양초가 연소하면 생기는 물질 중 석회수를 뿌옇게 흐리게 하는 기체는 무엇인가요?",
+   "answers": [
+    "이산화 탄소",
+    "이산화탄소"
+   ],
+   "why": "석회수가 뿌옇게 흐려지면 이산화 탄소가 있다는 것을 알 수 있습니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-03-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "양초가 연소할 때 생기는 물질 중 푸른색 염화 코발트 종이를 붉게 변하게 하는 것은 무엇인가요? (한 글자)",
+   "answers": [
+    "물"
+   ],
+   "why": "염화 코발트 종이가 붉게 변하면 물이 생겼다는 뜻입니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-03-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 양초가 연소할 때의 실험 결과입니다. 이로부터 알 수 있는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 286 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"280\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"113\" y1=\"3\" x2=\"113\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"283\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"58\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">실험</text><text x=\"198\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">결과</text><text x=\"58\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">석회수</text><text x=\"198\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">뿌옇게 흐려짐</text><text x=\"58\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">염화 코발트 종이</text><text x=\"198\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">붉은색으로 변함</text></svg>",
+   "options": [
+    "양초는 변하지 않는다",
+    "양초가 연소하면 산소만 생긴다",
+    "양초가 연소하면 이산화 탄소와 물이 생긴다",
+    "양초가 연소하면 아무것도 생기지 않는다"
+   ],
+   "answer": 2,
+   "why": "석회수가 흐려지면 이산화 탄소, 염화 코발트 종이가 붉어지면 물이 생겼음을 알 수 있습니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-03-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "연소한 뒤 남은 물질이 처음 물질과 성질이 다르다는 것을 보여 주는 예는 무엇인가요?",
+   "options": [
+    "나무가 타고 남은 숯이나 재는 나무와 색과 단단함이 다르다",
+    "얼음이 녹은 물은 얼음과 성질이 같다",
+    "철사를 구부려도 철이다",
+    "설탕을 물에 녹여도 설탕이다"
+   ],
+   "answer": 0,
+   "why": "연소 전후에 새로운 성질의 물질이 생깁니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-03-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "표는 양초가 연소하기 전과 후 남은 양초의 질량입니다. 질량이 줄어든 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 226 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"220\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"93\" y1=\"3\" x2=\"93\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"223\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"223\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"48\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">구분</text><text x=\"158\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">양초의 질량</text><text x=\"48\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연소 전</text><text x=\"158\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">12.4 g</text><text x=\"48\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연소 후</text><text x=\"158\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">11.8 g</text></svg>",
+   "options": [
+    "산소가 양초를 먹기 때문이다",
+    "양초가 사라지기 때문이다",
+    "양초가 타면서 이산화 탄소와 물(수증기) 같은 기체로 변해 공기 중으로 날아가기 때문이다",
+    "양초의 크기만 작아지기 때문이다"
+   ],
+   "answer": 2,
+   "why": "연소로 생긴 기체가 공기 중으로 나가므로 남은 양초의 질량이 줄어듭니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-03-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "표는 철 솜을 연소시키기 전과 후의 질량입니다. 질량이 늘어난 까닭으로 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 226 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"220\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"93\" y1=\"3\" x2=\"93\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"223\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"223\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"48\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">구분</text><text x=\"158\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">철 솜의 질량</text><text x=\"48\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연소 전</text><text x=\"158\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3.0 g</text><text x=\"48\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연소 후</text><text x=\"158\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3.4 g</text></svg>",
+   "options": [
+    "철이 공기 중의 산소와 결합하여 새로운 물질이 되었기 때문이다",
+    "철 솜이 물을 흡수했기 때문이다",
+    "철 솜이 부풀었기 때문이다",
+    "철이 사라졌기 때문이다"
+   ],
+   "answer": 0,
+   "why": "철이 산소와 결합하면 새 물질이 되어 질량이 늘어납니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-04-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "화석 연료를 태울 때 많이 생겨 지구 온난화의 원인이 되는 기체는 무엇인가요?",
+   "options": [
+    "질소",
+    "산소",
+    "헬륨",
+    "이산화 탄소"
+   ],
+   "answer": 3,
+   "why": "화석 연료를 태우면 이산화 탄소가 많이 나와 지구 온난화를 일으킵니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-04-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "자동차 배기가스나 공장 연기 속 물질이 비에 녹아 내리는 비를 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "산성비"
+   ],
+   "why": "황산화물·질소 산화물이 빗물에 녹으면 산성비가 됩니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-04-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "산성비가 생태계에 미치는 피해로 알맞은 것은 무엇인가요?",
+   "options": [
+    "식물이 더 빨리 자란다",
+    "호수와 토양이 산성이 되어 물고기가 죽고 나무가 시든다",
+    "물이 더 맑아진다",
+    "동물이 늘어난다"
+   ],
+   "answer": 1,
+   "why": "산성비는 호수와 토양을 산성으로 만들어 생물에 피해를 줍니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-04-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "연료가 불완전 연소할 때 생기는 해로운 기체는 무엇인가요?",
+   "answers": [
+    "일산화 탄소",
+    "일산화탄소"
+   ],
+   "why": "불완전 연소에서는 일산화 탄소가 생겨 사람에게 중독을 일으킬 수 있습니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-04-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "연소로 생기는 오염 물질을 줄이기 위한 방법으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "화석 연료를 더 많이 태운다",
+    "대중교통을 이용하고 태양광 같은 신재생 에너지를 늘린다",
+    "자동차를 더 많이 탄다",
+    "공장의 배출 장치를 없앤다"
+   ],
+   "answer": 1,
+   "why": "화석 연료 사용을 줄이면 연소 생성물에 의한 피해를 줄일 수 있습니다."
+  },
+  {
+   "id": "과학-초5-6-6과14-04-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "물질의 변화",
+   "standard": "6과14-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "공장에 매연 저감 장치를 설치하는 것의 효과로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "불이 꺼진다",
+    "연료가 더 많이 필요해진다",
+    "산소가 없어진다",
+    "연소할 때 나오는 해로운 물질이 공기 중으로 덜 퍼진다"
+   ],
+   "answer": 3,
+   "why": "저감 장치는 배기가스의 오염 물질을 걸러 줍니다."
+  }
+ ],
+ "skipped": []
+}
