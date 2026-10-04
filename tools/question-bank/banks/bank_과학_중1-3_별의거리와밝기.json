@@ -1,0 +1,461 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "중",
+  "course": "과학",
+  "gradeBand": "중1-3",
+  "unit": "별의 거리와 밝기",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "과학-중1-3-9과15-01-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "연주시차에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "달의 위상 변화",
+    "별이 자전하여 생기는 각도",
+    "지구가 공전하는 동안 가까운 별이 먼 배경 별에 대해 움직여 보이는 각도의 변화(의 절반)",
+    "태양의 일주 운동"
+   ],
+   "answer": 2,
+   "why": "연주시차는 지구의 공전 때문에 나타나는 별의 위치 변화입니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-01-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "연주시차가 0.1″인 별까지의 거리는 몇 pc(파섹)인가요? (거리 = 1 ÷ 연주시차) (숫자만)",
+   "answers": [
+    "10",
+    "10pc",
+    "10 pc"
+   ],
+   "why": "$\\dfrac{1}{0.1}=10$ (pc)입니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-01-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "1등급인 별은 6등급인 별보다 몇 배 밝나요?",
+   "options": [
+    "100배",
+    "5배",
+    "6배",
+    "25배"
+   ],
+   "answer": 0,
+   "why": "5등급 차이는 100배의 밝기 차이입니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-01-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "별의 색과 표면 온도의 관계로 알맞은 것은 무엇인가요?",
+   "options": [
+    "노란색 별이 가장 뜨겁다",
+    "붉은색 별이 파란색 별보다 온도가 높다",
+    "색과 온도는 관계가 없다",
+    "파란색 별이 붉은색 별보다 표면 온도가 높다"
+   ],
+   "answer": 3,
+   "why": "표면 온도가 높을수록 파란색, 낮을수록 붉은색을 띱니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-01-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "연주시차가 서로 다른 두 별 A와 B가 있습니다. A의 연주시차가 B보다 크다면 두 별까지의 거리를 바르게 비교한 것은 무엇인가요?",
+   "options": [
+    "A가 B보다 멀다",
+    "A가 B보다 가깝다",
+    "두 별의 거리는 같다",
+    "알 수 없다"
+   ],
+   "answer": 1,
+   "why": "거리는 연주시차에 반비례하므로 시차가 클수록 가깝습니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-01-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "겉보기 등급이 같은 별 A, B의 절대 등급이 각각 5등급, −2등급입니다. 두 별까지의 거리를 비교한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "A가 더 멀리 있다",
+    "절대 등급이 더 작은(실제로 더 밝은) B가 더 멀리 있다",
+    "두 별의 거리는 같다",
+    "비교할 수 없다"
+   ],
+   "answer": 1,
+   "why": "겉보기 밝기가 같을 때 실제로 더 밝은 별이 더 멀리 있습니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-02-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "밤하늘에서 띠 모양으로 보이는 은하수는 무엇인가요?",
+   "options": [
+    "대기의 불빛",
+    "다른 은하의 모습",
+    "구름의 모습",
+    "우리은하를 안쪽에서 바라본 모습"
+   ],
+   "answer": 3,
+   "why": "은하수는 우리은하의 원반을 옆에서 본 모습입니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-02-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "별들이 불규칙하게 모여 있고 젊고 푸른 별이 많으며 플레이아데스가 대표적인 성단을 무엇이라고 하나요? (네 글자)",
+   "answers": [
+    "산개 성단",
+    "산개성단"
+   ],
+   "why": "산개 성단은 비교적 젊은 별들이 성기게 모인 성단입니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-02-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "구상 성단의 특징으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "수십만 개의 늙은 별이 공 모양으로 빽빽하게 모여 있고 붉은색을 띤다",
+    "젊은 별이 불규칙하게 모여 있다",
+    "별이 거의 없다",
+    "푸른 별이 대부분이다"
+   ],
+   "answer": 0,
+   "why": "구상 성단은 나이가 많은 붉은 별들이 공 모양으로 모여 있습니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-02-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "오리온 대성운처럼 주변 별빛을 받아 스스로 빛을 내는 성운을 무엇이라고 하나요?",
+   "options": [
+    "반사 성운",
+    "암흑 성운",
+    "발광 성운",
+    "산개 성단"
+   ],
+   "answer": 2,
+   "why": "가스가 별의 복사 에너지를 받아 빛을 냅니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-02-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "태양계가 우리은하 안에서 위치한 곳으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "은하 밖의 다른 은하",
+    "은하 중심",
+    "은하 중심에서 가장 먼 가장자리 밖",
+    "은하 중심에서 약 8.5 kpc 떨어진 나선팔 부근"
+   ],
+   "answer": 3,
+   "why": "태양계는 중심에서 멀리 떨어진 나선팔에 위치합니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-02-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "산개 성단과 구상 성단을 비교한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "두 성단은 모든 점이 같다",
+    "산개 성단은 젊은 별이 푸르고 구상 성단은 늙은 별이 붉으며 별의 수도 구상 성단이 훨씬 많다",
+    "구상 성단이 더 젊은 별이다",
+    "산개 성단의 별이 더 많다"
+   ],
+   "answer": 1,
+   "why": "두 성단은 별의 수, 나이, 색, 모양이 다릅니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-03-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "풍선 표면에 점을 찍고 풍선을 부풀릴 때 점 사이 거리 변화가 나타내는 것은 무엇인가요?",
+   "options": [
+    "행성이 공전하는 모습",
+    "별이 폭발하는 모습",
+    "우주가 팽창할 때 은하 사이 거리가 멀어지는 모습",
+    "달의 위상 변화"
+   ],
+   "answer": 2,
+   "why": "팽창하는 우주 모형입니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-03-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "멀리 있는 은하의 스펙트럼 선이 붉은색 쪽으로 이동하는 현상을 무엇이라고 하나요? (네 글자)",
+   "answers": [
+    "적색 편이",
+    "적색편이"
+   ],
+   "why": "은하가 멀어질 때 스펙트럼 선이 붉은 쪽으로 이동합니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-03-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "허블 법칙의 내용으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "멀리 있는 은하일수록 더 빠른 속도로 멀어진다",
+    "가까운 은하일수록 더 빠르게 멀어진다",
+    "모든 은하의 속도는 같다",
+    "은하는 모두 우리에게 다가온다"
+   ],
+   "answer": 0,
+   "why": "후퇴 속도는 거리에 비례합니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-03-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "팽창하는 우주에서 중심에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "중심은 하나의 별이다",
+    "우리은하가 우주의 중심이다",
+    "어느 은하에서 보아도 다른 은하들이 멀어지므로 특별한 중심이 없다",
+    "모든 은하는 중심을 향해 모인다"
+   ],
+   "answer": 2,
+   "why": "풍선 위 어느 점에서 보아도 다른 점들이 멀어집니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-03-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "풍선을 부풀리기 전후 점 A에서 점 B, C까지의 거리가 표와 같습니다. 이 결과가 보여 주는 팽창의 특징은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 286 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"280\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"173\" y1=\"3\" x2=\"173\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"283\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">점</text><text x=\"118\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">팽창 전(cm)</text><text x=\"228\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">팽창 후(cm)</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><text x=\"118\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"228\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"33\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><text x=\"118\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"228\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">8</text></svg>",
+   "options": [
+    "A에서 멀리 있던 점일수록 거리 증가량이 크다(멀수록 더 빨리 멀어진다)",
+    "거리 증가량이 모두 같다",
+    "가까운 점일수록 증가량이 크다",
+    "거리가 줄어든다"
+   ],
+   "answer": 0,
+   "why": "B는 2 cm 늘었고 C는 4 cm 늘어 멀수록 증가량이 큽니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-03-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "우주가 팽창하고 있다면 과거로 거슬러 올라갈수록 우주의 크기는 어떠했을까요?",
+   "options": [
+    "크기가 없었다",
+    "더 컸다",
+    "지금과 같았다",
+    "더 작았으며 이것이 대폭발(빅뱅) 우주론의 바탕이 된다"
+   ],
+   "answer": 3,
+   "why": "팽창을 거슬러 올라가면 한 점에서 시작했다는 모형이 됩니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-04-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "인공위성이 일상에서 활용되는 사례로 알맞은 것은 무엇인가요?",
+   "options": [
+    "지진 발생 지점 만들기",
+    "통신, 기상 관측, 위치 정보(GPS)",
+    "물고기 양식",
+    "식물 재배"
+   ],
+   "answer": 1,
+   "why": "인공위성은 통신과 기상, 위치 안내에 쓰입니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-04-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "2022년에 우리나라가 발사한 달 궤도선의 이름은 무엇인가요? (세 글자)",
+   "answers": [
+    "다누리"
+   ],
+   "why": "다누리는 한국 최초의 달 궤도선입니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-04-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "우주 망원경이 지상 망원경보다 유리한 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "더 가까이 별에 가기 때문이다",
+    "대기의 영향을 받지 않아 더 선명하게 관측할 수 있기 때문이다",
+    "대기가 더 두껍기 때문이다",
+    "빛이 필요 없기 때문이다"
+   ],
+   "answer": 1,
+   "why": "대기의 흔들림과 흡수 없이 관측합니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-04-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "우주 탐사 과정에서 개발된 기술이 일상생활에 활용된 사례로 알맞은 것은 무엇인가요?",
+   "options": [
+    "증기 기관",
+    "신분제",
+    "활판 인쇄",
+    "정수 기술, 단열 소재, 위성 기반 위치 서비스"
+   ],
+   "answer": 3,
+   "why": "우주 기술이 생활에 응용됩니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-04-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "우주 탐사의 의의와 문제점을 균형 있게 평가한 것은 무엇인가요?",
+   "options": [
+    "우주 이해와 기술 발전에 기여하지만 큰 비용과 우주 쓰레기 문제도 고려해야 한다",
+    "장점만 있고 문제는 없다",
+    "의미가 전혀 없다",
+    "비용이 들지 않는다"
+   ],
+   "answer": 0,
+   "why": "과학의 유용성과 한계를 함께 살펴야 합니다."
+  },
+  {
+   "id": "과학-중1-3-9과15-04-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "별의 거리와 밝기",
+   "standard": "9과15-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "우주 쓰레기 문제에 대한 대응으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "문제를 외면한다",
+    "우주 쓰레기를 더 늘린다",
+    "수명이 다한 위성을 제거하고 쓰레기를 줄이는 기술·국제 규칙을 마련한다",
+    "위성 발사를 모두 금지한다"
+   ],
+   "answer": 2,
+   "why": "기술과 국제 협력으로 대응해야 합니다."
+  }
+ ],
+ "skipped": []
+}
