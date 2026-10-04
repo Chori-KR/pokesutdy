@@ -1,0 +1,251 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "사회",
+  "school": "초",
+  "course": "사회",
+  "gradeBand": "초5-6",
+  "unit": "일제 강점과 저항",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "1919년 3월 1일",
+   "text": "1910년 일제는 우리나라의 주권을 빼앗고 조선 총독부를 두어 식민 통치를 시작했습니다. 일제는 우리의 토지를 조사한다며 땅을 빼앗고, 군인 경찰인 헌병을 앞세워 우리 민족의 자유로운 활동을 억눌렀습니다.\n\n그러나 우리 민족은 포기하지 않았습니다. 1919년 3월 1일, 서울 탑골 공원에서 독립 선언서가 낭독되었고 사람들은 거리로 나와 “대한 독립 만세!”를 외쳤습니다. 만세 운동은 전국과 해외까지 퍼졌고 여성과 학생, 농민 등 많은 사람이 참여했습니다. 이 운동을 3·1 운동이라고 합니다.\n3·1 운동을 계기로 독립운동은 더욱 조직적으로 이어졌고, 같은 해 중국 상하이에서는 대한민국 임시 정부가 세워졌습니다. 이후 일제는 우리말과 글 사용을 막고 이름을 일본식으로 바꾸게 했지만, 사람들은 한글을 지키고 독립운동을 계속했습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "사회-초5-6-6사06-01-c1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "일제 강점과 저항",
+   "standard": "6사06-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "1919년 3월 1일에 전국에서 일어난 독립 만세 운동을 무엇이라고 하나요?",
+   "passage": "p1",
+   "answers": [
+    "3·1 운동",
+    "3·1운동",
+    "삼일운동",
+    "3.1 운동"
+   ],
+   "why": "1919년 3월 1일의 독립 만세 운동은 3·1 운동입니다."
+  },
+  {
+   "id": "사회-초5-6-6사06-01-c2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "일제 강점과 저항",
+   "standard": "6사06-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "3·1 운동 이후 중국 상하이에 세워진 우리 민족의 정부는 무엇인가요?",
+   "passage": "p1",
+   "answers": [
+    "대한민국 임시 정부",
+    "임시 정부",
+    "대한민국 임시정부",
+    "임시정부"
+   ],
+   "why": "1919년 상하이에 대한민국 임시 정부가 세워졌습니다."
+  },
+  {
+   "id": "사회-초5-6-6사06-01-b1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "일제 강점과 저항",
+   "standard": "6사06-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "일제가 우리 민족에게 한 일로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "자유롭게 말하게 했다",
+    "우리 문화를 보호해 주었다",
+    "토지를 빼앗고 우리말과 글 사용을 막으며 이름을 일본식으로 바꾸게 했다",
+    "독립을 도와주었다"
+   ],
+   "answer": 2,
+   "why": "일제는 식민 통치를 위해 토지 수탈, 우리말·글 사용 금지, 창씨개명 등을 강요했습니다."
+  },
+  {
+   "id": "사회-초5-6-6사06-01-b2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "일제 강점과 저항",
+   "standard": "6사06-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "일제 강점기에 우리 민족이 독립을 위해 한 노력으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "3·1 운동에 참여하고 한글을 지키며 독립군으로 싸웠다",
+    "일제에 협력했다",
+    "우리말을 쓰지 않았다",
+    "독립을 포기했다"
+   ],
+   "answer": 0,
+   "why": "만세 운동, 한글 지키기, 무장 투쟁 등 다양한 방법으로 독립운동을 했습니다."
+  },
+  {
+   "id": "사회-초5-6-6사06-01-a1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "일제 강점과 저항",
+   "standard": "6사06-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "3·1 운동이 우리 역사에서 가지는 의미로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "일부 사람만 참여한 운동이었다",
+    "일제가 바로 물러나게 만들었다",
+    "독립운동이 끝나는 계기가 되었다",
+    "온 국민이 한마음으로 독립 의지를 보여 독립운동이 조직적으로 이어지는 계기가 되었다"
+   ],
+   "answer": 3,
+   "why": "3·1 운동은 대한민국 임시 정부 수립 등 독립운동 확산의 계기가 되었습니다."
+  },
+  {
+   "id": "사회-초5-6-6사06-01-a2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "일제 강점과 저항",
+   "standard": "6사06-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "일제가 우리말과 글을 쓰지 못하게 한 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "우리말이 쓰기 어려웠기 때문이다",
+    "우리 민족의 정신을 없애 쉽게 지배하려고 했기 때문이다",
+    "우리를 도우려고 했기 때문이다",
+    "외국어를 가르치려고 했기 때문이다"
+   ],
+   "answer": 1,
+   "why": "일제는 민족 말살 정책으로 우리의 말과 글, 이름을 없애려 했습니다."
+  },
+  {
+   "id": "사회-초5-6-6사06-02-c1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "일제 강점과 저항",
+   "standard": "6사06-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "우리나라가 일제로부터 해방된 날은 언제인가요? (월 일)",
+   "answers": [
+    "8월 15일",
+    "8·15",
+    "8월15일"
+   ],
+   "why": "1945년 8월 15일에 광복을 맞이했습니다."
+  },
+  {
+   "id": "사회-초5-6-6사06-02-c2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "일제 강점과 저항",
+   "standard": "6사06-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "6·25 전쟁은 어느 해에 일어났나요?",
+   "options": [
+    "1919년",
+    "1950년",
+    "1945년",
+    "1988년"
+   ],
+   "answer": 1,
+   "why": "6·25 전쟁은 1950년 6월 25일에 시작되었습니다."
+  },
+  {
+   "id": "사회-초5-6-6사06-02-b1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "일제 강점과 저항",
+   "standard": "6사06-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "연표의 ㉠에 알맞은 사건은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 344 96\" font-family=\"sans-serif\"><line x1=\"16\" y1=\"52\" x2=\"314\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"320,52 310,46 310,58\" fill=\"currentColor\"/><circle cx=\"24\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1910</text><text x=\"24\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">국권 피탈</text><circle cx=\"118\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"118\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1919</text><text x=\"118\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3·1 운동</text><circle cx=\"212\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"212\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><text x=\"212\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">광복</text><circle cx=\"306\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"306\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1950</text><text x=\"306\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6·25 전쟁</text></svg>",
+   "options": [
+    "1876년",
+    "1960년",
+    "1988년",
+    "1945년"
+   ],
+   "answer": 3,
+   "why": "광복은 1945년 8월 15일입니다."
+  },
+  {
+   "id": "사회-초5-6-6사06-02-b2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "일제 강점과 저항",
+   "standard": "6사06-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "6·25 전쟁이 우리 생활에 미친 영향으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "많은 사람이 죽거나 다치고 이산가족이 생겼으며 건물과 시설이 파괴되었다",
+    "나라가 더 풍요로워졌다",
+    "남북이 하나가 되었다",
+    "전쟁 피해가 없었다"
+   ],
+   "answer": 0,
+   "why": "전쟁으로 인명 피해와 이산가족, 큰 재산 피해가 발생했습니다."
+  },
+  {
+   "id": "사회-초5-6-6사06-02-a1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "일제 강점과 저항",
+   "standard": "6사06-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "광복 이후에도 곧바로 통일 국가를 세우지 못한 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "일제가 계속 지배했기 때문이다",
+    "독립을 원하지 않았기 때문이다",
+    "38도선을 기준으로 남과 북을 각각 미국과 소련이 나누어 관리했기 때문이다",
+    "정부가 없었기 때문이다"
+   ],
+   "answer": 2,
+   "why": "광복 후 38도선을 경계로 남북에 서로 다른 나라의 군대가 들어와 분단이 시작되었습니다."
+  },
+  {
+   "id": "사회-초5-6-6사06-02-a2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "일제 강점과 저항",
+   "standard": "6사06-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "광복과 6·25 전쟁이 이어진 후 우리 사회에 나타난 생활 모습으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "모두 외국으로 이주했다",
+    "전쟁 이후 곧바로 풍요로워졌다",
+    "생활에 변화가 없었다",
+    "광복의 기쁨도 잠시, 전쟁으로 폐허가 된 곳에서 재건을 위해 힘썼다"
+   ],
+   "answer": 3,
+   "why": "전쟁 후 사람들은 폐허 속에서 나라를 다시 일으키기 위해 노력했습니다."
+  }
+ ],
+ "skipped": []
+}
