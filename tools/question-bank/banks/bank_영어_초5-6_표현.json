@@ -1,0 +1,1182 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "영어",
+  "school": "초",
+  "course": "영어",
+  "gradeBand": "초5-6",
+  "unit": "표현",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "My Best Friend",
+   "text": "(①) is my best friend. (②) name is Jisu. She is ten years old. She (③) long black hair and big eyes. She is tall and kind. She likes drawing and singing. She has a cute white dog. Its name is Bori. Jisu and I play with Bori in the park every weekend.",
+   "source": ""
+  },
+  {
+   "id": "p2",
+   "title": "Asking the Way",
+   "text": "A: Excuse me. Where is the library? B: Go straight for two blocks. Then (①) right at the bank. A: Turn right at the bank? B: Yes. The library is (②) the bank and the park. A: Is it far from here? B: No, it is only five minutes on foot. It is a big white building, and you can see a clock on it. A: Thank you very much! B: You're welcome.",
+   "source": ""
+  },
+  {
+   "id": "p3",
+   "title": "My Diary",
+   "text": "Dear Diary, Today was a (①) day. I was very (②) because I got a good score on my English test. After school, I played soccer with my friends. After dinner, I finished my homework and read a comic book. Tomorrow, I (③) go to the museum with my family. I am excited about it! Good night.",
+   "source": ""
+  },
+  {
+   "id": "p4",
+   "title": "Talking About Pets",
+   "text": "A: Do you have a pet? B: Yes, I do. I have a rabbit. A: What is its name? B: Its name is Snow. A: How old is it? B: It is two years old. A: What does it eat? B: It eats carrots and grass. A: Does it like to play? B: Yes, it does. It likes to jump around the garden. A: That sounds cute! B: Thank you. Do you have a pet, too?",
+   "source": ""
+  },
+  {
+   "id": "p5",
+   "title": "A Thank-You Letter",
+   "text": "Dear Grandma, How are you? I hope you are well. Thank you for the lovely scarf. It is warm and soft. I wear it every day on my way to school, and my friends say it is pretty. Last weekend, I showed it to my sister, and she wants one, too. I hope to see you soon. Please take care of your health. Love, Mina",
+   "source": ""
+  },
+  {
+   "id": "p6",
+   "title": "Making a Poster",
+   "text": "Our class is making a poster about healthy food. We draw pictures of fruits and vegetables. We write short sentences like ‘Eat more vegetables!’ and ‘Drink water!’ We use bright colors, so people can see it easily. We also record a short video to share our poster with other classes.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "영어-초5-6-6영02-01-c1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "Thank you. 를 자연스럽게 말할 때 더 세게 읽는 낱말은 무엇인가요?",
+   "options": [
+    "둘 다 똑같이",
+    "you",
+    "Thank",
+    "알 수 없다"
+   ],
+   "answer": 2,
+   "why": "Thank you.는 Thank를 더 세게 읽습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-01-c2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "hello를 말할 때 더 세게 읽는 음절은 몇 번째인가요? (숫자로 쓰세요)",
+   "answers": [
+    "2",
+    "2번째",
+    "두 번째",
+    "두번째"
+   ],
+   "why": "hello는 he-LLO처럼 두 번째 음절을 세게 읽습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-01-b1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "How are you? 를 말할 때 끝억양으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "내려 읽는다(↘)",
+    "올려 읽는다(↗)",
+    "평평하게 읽는다",
+    "억양이 없다"
+   ],
+   "answer": 0,
+   "why": "How, What 같은 의문사 의문문은 보통 끝을 내려 읽습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-01-b2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "I have a dog and a cat. 을 리듬에 맞게 읽을 때 약하고 빠르게 읽는 낱말로 알맞은 것은 무엇인가요?",
+   "options": [
+    "cat, have",
+    "dog, cat",
+    "I, dog",
+    "a, and, a"
+   ],
+   "answer": 3,
+   "why": "a, and 같은 기능어는 약하고 빠르게, dog, cat 같은 내용어는 세게 읽습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-01-a1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "A: Is it a pen? B: No, it’s a pencil. B가 가장 강하게 읽는 낱말은 무엇인가요? (영어로 쓰세요)",
+   "answers": [
+    "pencil",
+    "Pencil"
+   ],
+   "why": "pen이 아니라 pencil이라는 것을 알리려고 pencil을 가장 강하게 읽습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-01-a2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "What a nice day! 처럼 감탄을 나타내는 문장은 끝억양을 어떻게 하는 것이 자연스러운가요?",
+   "options": [
+    "올려 읽는다(↗)",
+    "내려 읽는다(↘)",
+    "매우 낮게 속삭인다",
+    "읽지 않는다"
+   ],
+   "answer": 1,
+   "why": "감탄문은 보통 끝을 내려 읽습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-02-c1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "그림을 보고 알맞은 영어 낱말을 쓰세요.",
+   "svg": "<svg viewBox=\"0 0 120 82\" font-family=\"sans-serif\"><g transform=\"translate(36,40) scale(0.9)\"><polygon points=\"0.0,-26.0 6.5,-8.9 24.7,-8.0 10.5,3.4 15.3,21.0 0.0,11.0 -15.3,21.0 -10.5,3.4 -24.7,-8.0 -6.5,-8.9\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g></svg>",
+   "answers": [
+    "star",
+    "a star"
+   ],
+   "why": "별 그림이므로 star입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-02-c2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림에 알맞은 낱말은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 120 82\" font-family=\"sans-serif\"><g transform=\"translate(36,40) scale(0.9)\"><path d=\"M0,22 C-34,0 -22,-26 0,-10 C22,-26 34,0 0,22 Z\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g></svg>",
+   "options": [
+    "house",
+    "heart",
+    "book",
+    "ball"
+   ],
+   "answer": 1,
+   "why": "하트 그림이므로 heart입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-02-b1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "그림을 보고 How many apples? 에 알맞게 영어로 답하세요. (예: Two apples.)",
+   "svg": "<svg viewBox=\"0 0 222 82\" font-family=\"sans-serif\"><g transform=\"translate(36,40) scale(0.9)\"><path d=\"M0,-14 C-24,-24 -30,10 -12,22 C-6,27 6,27 12,22 C30,10 24,-24 0,-14 Z\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M0,-14 q0,-10 6,-14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><g transform=\"translate(94,40) scale(0.9)\"><path d=\"M0,-14 C-24,-24 -30,10 -12,22 C-6,27 6,27 12,22 C30,10 24,-24 0,-14 Z\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M0,-14 q0,-10 6,-14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><g transform=\"translate(152,40) scale(0.9)\"><path d=\"M0,-14 C-24,-24 -30,10 -12,22 C-6,27 6,27 12,22 C30,10 24,-24 0,-14 Z\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M0,-14 q0,-10 6,-14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g></svg>",
+   "answers": [
+    "Three apples.",
+    "Three apples",
+    "three apples",
+    "3 apples"
+   ],
+   "why": "사과가 세 개이므로 Three apples.입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-02-b2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "그림을 보고 빈칸에 알맞은 낱말을 쓰세요: It is a ____.",
+   "svg": "<svg viewBox=\"0 0 120 82\" font-family=\"sans-serif\"><g transform=\"translate(36,40) scale(0.9)\"><rect x=\"-5\" y=\"6\" width=\"10\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cy=\"-8\" r=\"20\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g></svg>",
+   "answers": [
+    "tree"
+   ],
+   "why": "나무 그림이므로 tree입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-02-a1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림과 맞는 문장은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 234 82\" font-family=\"sans-serif\"><g transform=\"translate(36,40) scale(0.9)\"><ellipse rx=\"22\" ry=\"13\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"20,0 34,-12 34,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"-12\" cy=\"-3\" r=\"2.5\" fill=\"currentColor\"/></g><g transform=\"translate(94,40) scale(0.9)\"><ellipse rx=\"22\" ry=\"13\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"20,0 34,-12 34,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"-12\" cy=\"-3\" r=\"2.5\" fill=\"currentColor\"/></g><g transform=\"translate(164,40) scale(0.9)\"><circle r=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M-24,0 q24,-16 48,0 M-24,0 q24,16 48,0 M0,-24 q-12,24 0,48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g></svg>",
+   "options": [
+    "There are two balls and one fish.",
+    "There is one fish and two balls.",
+    "There are three fish.",
+    "There are two fish and one ball."
+   ],
+   "answer": 3,
+   "why": "그림에는 물고기가 두 마리, 공이 한 개 있습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-02-a2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "그림을 보고 빈칸에 알맞은 낱말을 쓰세요: It is ____ today.",
+   "svg": "<svg viewBox=\"0 0 100 90\" font-family=\"sans-serif\"><path d=\"M26,56 a14,14 0 0 1 4,-27 a18,18 0 0 1 34,2 a12,12 0 0 1 4,25 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"34\" y1=\"64\" x2=\"29\" y2=\"78\" stroke=\"#4b7bec\" stroke-width=\"3\"/><line x1=\"48\" y1=\"64\" x2=\"43\" y2=\"78\" stroke=\"#4b7bec\" stroke-width=\"3\"/><line x1=\"62\" y1=\"64\" x2=\"57\" y2=\"78\" stroke=\"#4b7bec\" stroke-width=\"3\"/></svg>",
+   "answers": [
+    "rainy",
+    "raining"
+   ],
+   "why": "비 오는 날씨 그림이므로 rainy입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-03-c1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "문장을 바르게 쓴 것은 무엇인가요?",
+   "options": [
+    "My name is Sam.",
+    "my name is sam.",
+    "My name is sam.",
+    "my name is Sam"
+   ],
+   "answer": 0,
+   "why": "문장의 첫 글자와 사람 이름의 첫 글자는 대문자로 쓰고 마침표를 찍습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-03-c2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "빈칸에 알맞은 문장 부호를 쓰세요: How old are you__",
+   "answers": [
+    "?",
+    "？"
+   ],
+   "why": "묻는 문장 끝에는 물음표(?)를 씁니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-03-b1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "Yes I can. 를 바르게 고친 것은 무엇인가요?",
+   "options": [
+    "yes I can.",
+    "Yes. I can,",
+    "Yes, I can.",
+    "Yes I Can."
+   ],
+   "answer": 2,
+   "why": "Yes 뒤에는 쉼표(,)를 쓰고 문장 끝에는 마침표를 찍습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-03-b2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 대문자와 문장 부호를 바르게 쓴 문장은 무엇인가요?",
+   "options": [
+    "what is your name?",
+    "what is your name.",
+    "What is your name.",
+    "What is your name?"
+   ],
+   "answer": 3,
+   "why": "의문문은 첫 글자를 대문자로 쓰고 끝에 물음표를 씁니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-03-a1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "i like tom and anna. 를 바르게 고친 문장을 쓰세요.",
+   "answers": [
+    "I like Tom and Anna.",
+    "I like Tom and Anna"
+   ],
+   "why": "I, Tom, Anna는 대문자로 쓰고 문장 끝에는 마침표를 찍습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-03-a2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "감탄하는 문장을 바르게 쓴 것은 무엇인가요?",
+   "options": [
+    "what a nice day!",
+    "What a nice day!",
+    "What a nice day?",
+    "What a nice day."
+   ],
+   "answer": 1,
+   "why": "감탄문은 첫 글자를 대문자로 쓰고 끝에 느낌표를 씁니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-04-c1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "‘My Best Friend’의 빈칸 ①에 알맞은 낱말은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "Those",
+    "These",
+    "This",
+    "They"
+   ],
+   "answer": 2,
+   "why": "한 명의 친구를 소개할 때 This is ~를 씁니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-04-c2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "그림을 보고 빈칸에 알맞은 낱말을 쓰세요: This is a ____.",
+   "svg": "<svg viewBox=\"0 0 120 82\" font-family=\"sans-serif\"><g transform=\"translate(36,40) scale(0.9)\"><rect x=\"-22\" y=\"-26\" width=\"44\" height=\"52\" rx=\"3\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M-14,-26 v52 M-6,-12 h20 M-6,-2 h20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g></svg>",
+   "answers": [
+    "book",
+    "a book"
+   ],
+   "why": "책 그림이므로 book입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-04-b1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "‘My Best Friend’의 빈칸 ②에 알맞은 낱말은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "Her",
+    "His",
+    "She",
+    "He"
+   ],
+   "answer": 0,
+   "why": "여자 친구 Jisu의 이름이므로 Her name을 씁니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-04-b2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "코끼리를 묘사하는 문장으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "It has wings.",
+    "It is small and pink.",
+    "It is big and gray.",
+    "It lives in water."
+   ],
+   "answer": 2,
+   "why": "코끼리는 크고 회색입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-04-a1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "‘My Best Friend’의 빈칸 ③에 알맞은 낱말은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "has",
+    "have",
+    "is",
+    "are"
+   ],
+   "answer": 0,
+   "why": "주어가 She이므로 has를 씁니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-04-a2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "우리 형(오빠)이 키가 크다고 소개하는 문장을 바르게 쓴 것은 무엇인가요?",
+   "options": [
+    "Tall my brother is.",
+    "My brother tall is.",
+    "My brother are tall.",
+    "My brother is tall."
+   ],
+   "answer": 3,
+   "why": "영어 문장은 주어 + be동사 + 형용사 순서로 씁니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-05-c1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "‘Asking the Way’의 빈칸 ①에 알맞은 낱말은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "turns",
+    "turn",
+    "turned",
+    "turning"
+   ],
+   "answer": 1,
+   "why": "길을 안내할 때는 Turn right.처럼 동사원형으로 말합니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-05-c2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림에서 은행(bank)은 우체국(post office)의 어느 쪽에 있나요? 알맞게 말한 문장은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 330 88\" font-family=\"sans-serif\"><rect x=\"4.0\" y=\"6\" width=\"102.0\" height=\"44\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"55\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">post office</text><rect x=\"114.0\" y=\"6\" width=\"102.0\" height=\"44\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"165\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">bank</text><rect x=\"224.0\" y=\"6\" width=\"102.0\" height=\"44\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"275\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">park</text><line x1=\"4\" y1=\"62\" x2=\"326\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"165\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">road</text></svg>",
+   "options": [
+    "The bank is under the post office.",
+    "The bank is next to the post office.",
+    "The bank is behind the park.",
+    "The bank is on the post office."
+   ],
+   "answer": 1,
+   "why": "은행은 우체국 옆에 있습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-05-b1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "‘Asking the Way’의 빈칸 ②에 알맞은 낱말은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "in",
+    "on",
+    "under",
+    "between"
+   ],
+   "answer": 3,
+   "why": "은행과 공원 사이에 있으므로 between입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-05-b2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림에서 도서관의 위치를 바르게 설명한 문장은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 330 88\" font-family=\"sans-serif\"><rect x=\"4.0\" y=\"6\" width=\"102.0\" height=\"44\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"55\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">bank</text><rect x=\"114.0\" y=\"6\" width=\"102.0\" height=\"44\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"165\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">library</text><rect x=\"224.0\" y=\"6\" width=\"102.0\" height=\"44\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"275\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">park</text><line x1=\"4\" y1=\"62\" x2=\"326\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"165\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">road</text></svg>",
+   "options": [
+    "The library is between the bank and the park.",
+    "The library is behind the bank.",
+    "The library is next to the post office.",
+    "The library is on the park."
+   ],
+   "answer": 0,
+   "why": "도서관은 은행과 공원 사이에 있습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-05-a1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "대화에서 길 안내 순서로 알맞은 것은 무엇인가요?",
+   "passage": "p2",
+   "options": [
+    "두 블록 직진 → 은행에서 오른쪽으로 돌기",
+    "은행에서 왼쪽으로 돌기 → 두 블록 직진",
+    "공원에서 오른쪽으로 돌기",
+    "건너편으로 건너기"
+   ],
+   "answer": 0,
+   "why": "Go straight for two blocks. Then turn right at the bank.라고 했습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-05-a2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "아침에 하는 일을 순서대로 말한 문장으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "I breakfast First eat wash.",
+    "First, Then I wash my face I eat.",
+    "First, I wash my face. Then, I eat breakfast.",
+    "Wash first I my Then."
+   ],
+   "answer": 2,
+   "why": "First, Then 같은 순서 낱말로 행동의 순서를 말할 수 있습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-06-c1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "‘My Diary’의 빈칸 ②에 알맞은 낱말은 무엇인가요?",
+   "passage": "p3",
+   "options": [
+    "hungry",
+    "sad",
+    "angry",
+    "happy"
+   ],
+   "answer": 3,
+   "why": "영어 시험을 잘 봐서 기분이 좋으므로 happy입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-06-c2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "그림 속 표정에 알맞은 감정 낱말을 쓰세요: I am ____.",
+   "svg": "<svg viewBox=\"0 0 80 76\" font-family=\"sans-serif\"><circle cx=\"40\" cy=\"38\" r=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"31\" cy=\"32\" r=\"3.5\" fill=\"currentColor\"/><circle cx=\"49\" cy=\"32\" r=\"3.5\" fill=\"currentColor\"/><path d=\"M26,56 q14,-14 28,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg>",
+   "answers": [
+    "sad"
+   ],
+   "why": "슬픈 표정이므로 sad입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-06-b1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "‘My Diary’의 빈칸 ①에 알맞은 낱말은 무엇인가요?",
+   "passage": "p3",
+   "options": [
+    "goods",
+    "good",
+    "well",
+    "gooder"
+   ],
+   "answer": 1,
+   "why": "day(명사)를 꾸미는 형용사는 good입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-06-b2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "여름에 제주도에 갔던 경험을 말하는 문장을 완성하세요: I ____ to Jeju last summer.",
+   "answers": [
+    "went"
+   ],
+   "why": "last summer는 지난 일이므로 과거형 went를 씁니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-06-a1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "‘My Diary’의 빈칸 ③에 알맞은 낱말은 무엇인가요?",
+   "passage": "p3",
+   "options": [
+    "did",
+    "was",
+    "will",
+    "went"
+   ],
+   "answer": 2,
+   "why": "Tomorrow는 미래이므로 will go를 씁니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-06-a2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "내 의견을 말할 때 알맞은 문장은 무엇인가요?",
+   "options": [
+    "I think English is fun.",
+    "English fun think I.",
+    "I am think English.",
+    "Think I English fun."
+   ],
+   "answer": 0,
+   "why": "I think ~는 의견을 말하는 표현입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-07-c1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "토끼의 나이를 묻는 질문으로 알맞은 것은 무엇인가요?",
+   "passage": "p4",
+   "options": [
+    "Where is it?",
+    "What is it?",
+    "How old is it?",
+    "Who is it?"
+   ],
+   "answer": 2,
+   "why": "나이를 물을 때는 How old ~?를 씁니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-07-c2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "Where do you live? 에 알맞은 대답은 무엇인가요?",
+   "options": [
+    "I live in Busan.",
+    "I am ten.",
+    "It is red.",
+    "Yes, I do."
+   ],
+   "answer": 0,
+   "why": "장소를 물을 때는 I live in ~. 로 답합니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-07-b1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "토끼가 먹는 것을 묻고 답한 부분에서 토끼가 먹는 것은 무엇인가요? (영어 낱말 하나로 쓰세요)",
+   "passage": "p4",
+   "answers": [
+    "carrots",
+    "carrot",
+    "grass"
+   ],
+   "why": "It eats carrots and grass.라고 했습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-07-b2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "시각을 묻는 질문으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "Who is she?",
+    "What color is it?",
+    "How many are there?",
+    "What time is it?"
+   ],
+   "answer": 3,
+   "why": "시각은 What time is it?으로 묻습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-07-a1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "질문과 대답이 알맞게 짝지어진 것은 무엇인가요?",
+   "passage": "p4",
+   "options": [
+    "A: How old is it? B: It eats carrots.",
+    "A: What does it eat? B: It eats carrots.",
+    "A: What is its name? B: It is two years old.",
+    "A: Do you have a pet? B: It is Snow."
+   ],
+   "answer": 1,
+   "why": "What does it eat?에는 먹는 것으로 답해야 합니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-07-a2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "How many pets do you have? 에 알맞은 대답은 무엇인가요?",
+   "options": [
+    "I have a good time.",
+    "I have two cats.",
+    "It is cute.",
+    "I am fine."
+   ],
+   "answer": 1,
+   "why": "How many ~?는 수를 묻는 질문이므로 개수로 답합니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-08-c1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "예시문을 참고하여 빈칸에 알맞은 낱말을 쓰세요: Dear Grandma, Thank ____ for the lovely scarf.",
+   "passage": "p5",
+   "answers": [
+    "you"
+   ],
+   "why": "감사를 전하는 표현은 Thank you for ~입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-08-c2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "생일 카드에 쓰는 인사말을 영어로 쓰세요. (두 낱말, 느낌표 포함)",
+   "answers": [
+    "Happy birthday!",
+    "Happy birthday",
+    "happy birthday"
+   ],
+   "why": "생일 카드의 인사말은 Happy birthday!입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-08-b1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "예시문의 형식에 맞게 쓴 글은 무엇인가요? (친구 Tom에게 책 선물을 받고 감사하는 글)",
+   "passage": "p5",
+   "options": [
+    "Dear Tom, I am sorry. Good night.",
+    "Thank Tom book fun Jina Love Dear.",
+    "Dear Jina, Thank you for the book. Love, Tom",
+    "Dear Tom, Thank you for the book. It is fun. Love, Jina"
+   ],
+   "answer": 3,
+   "why": "Dear ~, 감사 인사, 이유나 느낌, Love, 이름 순으로 씁니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-08-b2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "편지의 끝인사로 알맞은 것은 무엇인가요?",
+   "passage": "p5",
+   "options": [
+    "Love, Mina",
+    "Dear Mina",
+    "Hello Mina",
+    "Mina Dear"
+   ],
+   "answer": 0,
+   "why": "편지의 끝에는 Love, Your friend 같은 끝인사와 이름을 씁니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-08-a1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "편지의 구성 요소를 순서대로 나열한 것은 무엇인가요?",
+   "passage": "p5",
+   "options": [
+    "첫인사(Dear ~) → 본문 → 끝인사 → 이름",
+    "본문 → 첫인사 → 이름 → 끝인사",
+    "이름 → 본문 → 첫인사",
+    "끝인사 → 첫인사 → 본문"
+   ],
+   "answer": 0,
+   "why": "예시문처럼 Dear ~로 시작하고 본문 뒤 끝인사와 이름을 씁니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-08-a2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "초대하는 글을 쓸 때 알맞은 문장은 무엇인가요?",
+   "options": [
+    "My party is not Saturday you.",
+    "Come party my Saturday please on.",
+    "Please come to my party on Saturday.",
+    "Party please Saturday come."
+   ],
+   "answer": 2,
+   "why": "Please come to ~는 초대할 때 쓰는 문장입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-09-c1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "포스터를 다른 반과 나누기 위해 학생들이 한 일은 무엇인가요?",
+   "passage": "p6",
+   "options": [
+    "발표를 하지 않았다",
+    "포스터를 버렸다",
+    "글을 지웠다",
+    "짧은 영상을 녹화했다"
+   ],
+   "answer": 3,
+   "why": "We also record a short video to share our poster with other classes.라고 했습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-09-c2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "영어로 말할 낱말이 생각나지 않을 때 쓸 수 있는 전략으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "아무 말도 하지 않는다",
+    "그림을 그리거나 몸짓으로 표현한다",
+    "포기하고 자리에 앉는다",
+    "다른 사람에게 화를 낸다"
+   ],
+   "answer": 1,
+   "why": "그림이나 몸짓으로도 뜻을 전할 수 있습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-09-b1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "포스터에 쓸 문장으로 가장 알맞은 것은 무엇인가요?",
+   "passage": "p6",
+   "options": [
+    "Vegetables is bored",
+    "vegetables eat the more",
+    "Eat more vegetables!",
+    "Eat vegetable in not"
+   ],
+   "answer": 2,
+   "why": "짧고 분명한 명령문이 포스터에 알맞습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-09-b2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "발표 자료를 만들 때 가장 알맞은 방법은 무엇인가요?",
+   "options": [
+    "그림과 짧은 문장으로 핵심 내용을 보여 준다",
+    "아주 긴 글만 쓴다",
+    "내용 없이 색칠만 한다",
+    "친구의 자료를 그대로 쓴다"
+   ],
+   "answer": 0,
+   "why": "그림과 짧은 문장은 핵심 내용을 전달하기 좋습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-09-a1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "포스터에 밝은 색을 쓴 까닭은 무엇인가요?",
+   "passage": "p6",
+   "options": [
+    "글자를 감추려고",
+    "색이 없어서이다",
+    "사람들이 쉽게 볼 수 있도록 하기 위해서이다",
+    "시간이 남아서이다"
+   ],
+   "answer": 2,
+   "why": "we use bright colors, so people can see it easily라고 했습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-09-a2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "친구들 앞에서 영어로 동물을 소개하려고 합니다. 창의적이고 효과적인 방법은 무엇인가요?",
+   "options": [
+    "동물 그림과 짧은 문장, 동작을 함께 사용한다",
+    "동물 이름만 읽는다",
+    "아무것도 준비하지 않는다",
+    "다른 사람의 발표를 그대로 외운다"
+   ],
+   "answer": 0,
+   "why": "여러 전략과 매체를 함께 쓰면 의미를 더 창의적으로 표현할 수 있습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-10-c1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "Let’s do it together! 의 뜻으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "나는 싫어!",
+    "혼자 해!",
+    "그만하자!",
+    "함께 하자!"
+   ],
+   "answer": 3,
+   "why": "Let’s ~는 ‘~하자’라는 권유의 표현입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-10-c2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "친구가 도와주었을 때 하는 말을 영어로 쓰세요. (고맙다는 말, 두 낱말)",
+   "answers": [
+    "Thank you",
+    "thank you",
+    "Thanks",
+    "Thank you.",
+    "thanks"
+   ],
+   "why": "도움을 받은 뒤에는 Thank you.라고 말합니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-10-b1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "Can I join you? 에 알맞은 대답은 무엇인가요?",
+   "options": [
+    "No, I am ten.",
+    "Sure! Come on.",
+    "It is red.",
+    "I like soccer."
+   ],
+   "answer": 1,
+   "why": "함께하고 싶다는 말에는 Sure! 같은 말로 받아 줍니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-10-b2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "친구가 말하기 활동에서 실수했을 때 알맞은 말은 무엇인가요?",
+   "options": [
+    "You are bad.",
+    "That’s OK. Try again!",
+    "Be quiet!",
+    "I don’t like you."
+   ],
+   "answer": 1,
+   "why": "격려하는 말을 하면 서로 자신감을 가지고 활동할 수 있습니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-10-a1",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "모둠 활동에서 역할을 나눌 때 가장 알맞은 말은 무엇인가요?",
+   "options": [
+    "I don’t want to work.",
+    "I do everything.",
+    "You do it alone.",
+    "You draw, and I will write. Let’s start!"
+   ],
+   "answer": 3,
+   "why": "역할을 나누고 함께 시작하자고 말하는 것이 협력하는 표현입니다."
+  },
+  {
+   "id": "영어-초5-6-6영02-10-a2",
+   "subject": "영어",
+   "gradeBand": "초5-6",
+   "unit": "표현",
+   "standard": "6영02-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "영어 말하기 시간에 자신 없는 친구에게 해 줄 수 있는 말로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "Don’t worry. You can do it!",
+    "Your English is bad.",
+    "Don’t talk.",
+    "Sit down."
+   ],
+   "answer": 0,
+   "why": "용기를 북돋는 말은 친구가 자신감을 갖게 합니다."
+  }
+ ],
+ "skipped": []
+}
