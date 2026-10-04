@@ -1,0 +1,848 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "중",
+  "course": "수학",
+  "gradeBand": "중1-3",
+  "unit": "도형과 측정",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-중1-3-9수03-15-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "직각삼각형에서 직각을 낀 두 변의 길이를 $a, b$, 빗변의 길이를 $c$라 할 때 성립하는 관계는 무엇인가요?",
+   "options": [
+    "$a^2-b^2=c^2$",
+    "$a+b=c$",
+    "$a^2+b^2=c^2$",
+    "$ab=c^2$"
+   ],
+   "answer": 2,
+   "why": "피타고라스 정리: 직각삼각형에서 $a^2+b^2=c^2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-15-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "직각을 낀 두 변의 길이가 $3\\,\\mathrm{cm},\\ 4\\,\\mathrm{cm}$인 직각삼각형의 빗변의 길이는 몇 $\\mathrm{cm}$인가요? (숫자만)",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"50\" y1=\"46\" x2=\"50\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"124\" x2=\"154\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"154\" y1=\"124\" x2=\"50\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"50,114 60,114 60,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"50\" cy=\"46\" r=\"3\" fill=\"currentColor\"/><text x=\"42.8\" y=\"39.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"50\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"39.6\" y=\"135.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"154\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"166.2\" y=\"132.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><text x=\"34\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"118\" y=\"142\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"128\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text></svg>",
+   "answers": [
+    "5"
+   ],
+   "why": "$\\sqrt{3^2+4^2}=\\sqrt{25}=5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-15-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "직각을 낀 두 변의 길이가 $5,\\ 12$인 직각삼각형의 빗변의 길이를 구하세요. (숫자만)",
+   "answers": [
+    "13"
+   ],
+   "why": "$\\sqrt{5^2+12^2}=\\sqrt{169}=13$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-15-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "빗변의 길이가 $13$이고 한 변의 길이가 $5$인 직각삼각형의 나머지 한 변의 길이는 얼마인가요?",
+   "options": [
+    "12",
+    "8",
+    "10",
+    "18"
+   ],
+   "answer": 0,
+   "why": "$\\sqrt{13^2-5^2}=\\sqrt{144}=12$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-15-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "한 변의 길이가 $6$인 정사각형의 대각선의 길이는 얼마인가요?",
+   "options": [
+    "$6\\sqrt3$",
+    "$12$",
+    "$6$",
+    "$6\\sqrt2$"
+   ],
+   "answer": 3,
+   "why": "대각선의 길이는 $\\sqrt{6^2+6^2}=6\\sqrt2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-15-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "한 변의 길이가 $4$인 정삼각형의 높이는 얼마인가요?",
+   "options": [
+    "$2$",
+    "$2\\sqrt3$",
+    "$4\\sqrt3$",
+    "$2\\sqrt2$"
+   ],
+   "answer": 1,
+   "why": "높이는 $\\sqrt{4^2-2^2}=\\sqrt{12}=2\\sqrt3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-15-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "세 변의 길이가 다음과 같은 삼각형 중 직각삼각형인 것은 무엇인가요?",
+   "options": [
+    "$6,\\ 8,\\ 11$",
+    "$6,\\ 8,\\ 10$",
+    "$4,\\ 5,\\ 6$",
+    "$5,\\ 6,\\ 7$"
+   ],
+   "answer": 1,
+   "why": "$6^2+8^2=10^2$을 만족하므로 직각삼각형입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-15-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "좌표평면 위의 두 점 $A(1,2)$, $B(4,6)$ 사이의 거리를 구하세요. (숫자만)",
+   "answers": [
+    "5"
+   ],
+   "why": "$\\sqrt{(4-1)^2+(6-2)^2}=\\sqrt{25}=5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-15-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "가로 $3$, 세로 $4$, 높이 $12$인 직육면체의 대각선의 길이는 얼마인가요?",
+   "options": [
+    "$12\\sqrt2$",
+    "19",
+    "$\\sqrt{19}$",
+    "13"
+   ],
+   "answer": 3,
+   "why": "대각선의 길이는 $\\sqrt{3^2+4^2+12^2}=\\sqrt{169}=13$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-16-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림의 직각삼각형 $ABC$에서 $\\sin A$의 값은 얼마인가요? ($\\overline{AB}=4,\\ \\overline{BC}=3,\\ \\overline{AC}=5$)",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"50\" y1=\"24\" x2=\"50\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"124\" x2=\"125\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"125\" y1=\"124\" x2=\"50\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"50,114 60,114 60,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M50,50 A26,26 0 0 0 65.6,44.8\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"24\" r=\"3\" fill=\"currentColor\"/><text x=\"45.4\" y=\"15.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"50\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"42.2\" y=\"138.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"125\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"135.8\" y=\"135.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><text x=\"34\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"118\" y=\"142\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"128\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><text x=\"190\" y=\"28\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">sin A=?</text></svg>",
+   "options": [
+    "$\\dfrac35$",
+    "$\\dfrac45$",
+    "$\\dfrac34$",
+    "$\\dfrac53$"
+   ],
+   "answer": 0,
+   "why": "$\\sin A=\\dfrac{\\text{높이}}{\\text{빗변}}=\\dfrac{\\overline{BC}}{\\overline{AC}}=\\dfrac35$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-16-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림의 직각삼각형 $ABC$에서 $\\cos A$의 값은 얼마인가요? ($\\overline{AB}=4,\\ \\overline{BC}=3,\\ \\overline{AC}=5$)",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"50\" y1=\"24\" x2=\"50\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"124\" x2=\"125\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"125\" y1=\"124\" x2=\"50\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"50,114 60,114 60,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M50,50 A26,26 0 0 0 65.6,44.8\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"24\" r=\"3\" fill=\"currentColor\"/><text x=\"45.4\" y=\"15.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"50\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"42.2\" y=\"138.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"125\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"135.8\" y=\"135.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><text x=\"34\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"118\" y=\"142\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"128\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><text x=\"190\" y=\"28\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">cos A=?</text></svg>",
+   "options": [
+    "$\\dfrac34$",
+    "$\\dfrac35$",
+    "$\\dfrac45$",
+    "$\\dfrac54$"
+   ],
+   "answer": 2,
+   "why": "$\\cos A=\\dfrac{\\overline{AB}}{\\overline{AC}}=\\dfrac45$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-16-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림의 직각삼각형 $ABC$에서 $\\tan A$의 값은 얼마인가요? ($\\overline{AB}=4,\\ \\overline{BC}=3,\\ \\overline{AC}=5$)",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"50\" y1=\"24\" x2=\"50\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"124\" x2=\"125\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"125\" y1=\"124\" x2=\"50\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"50,114 60,114 60,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M50,50 A26,26 0 0 0 65.6,44.8\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"24\" r=\"3\" fill=\"currentColor\"/><text x=\"45.4\" y=\"15.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"50\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"42.2\" y=\"138.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"125\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"135.8\" y=\"135.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><text x=\"34\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"118\" y=\"142\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"128\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><text x=\"190\" y=\"28\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">tan A=?</text></svg>",
+   "options": [
+    "$\\dfrac45$",
+    "$\\dfrac43$",
+    "$\\dfrac35$",
+    "$\\dfrac34$"
+   ],
+   "answer": 3,
+   "why": "$\\tan A=\\dfrac{\\overline{BC}}{\\overline{AB}}=\\dfrac34$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-16-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\sin30^\\circ$의 값은 얼마인가요?",
+   "options": [
+    "$\\dfrac{\\sqrt3}{2}$",
+    "$\\dfrac12$",
+    "$\\dfrac{\\sqrt2}{2}$",
+    "$1$"
+   ],
+   "answer": 1,
+   "why": "$\\sin30^\\circ=\\dfrac12$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-16-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\tan60^\\circ$의 값은 얼마인가요?",
+   "options": [
+    "$1$",
+    "$\\dfrac{\\sqrt3}{3}$",
+    "$\\sqrt3$",
+    "$\\dfrac{\\sqrt3}{2}$"
+   ],
+   "answer": 2,
+   "why": "$\\tan60^\\circ=\\sqrt3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-16-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\cos45^\\circ$의 값은 얼마인가요?",
+   "options": [
+    "$\\dfrac{\\sqrt2}{2}$",
+    "$\\dfrac12$",
+    "$\\dfrac{\\sqrt3}{2}$",
+    "$1$"
+   ],
+   "answer": 0,
+   "why": "$\\cos45^\\circ=\\dfrac{\\sqrt2}{2}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-16-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\sin A=\\dfrac35$일 때 $\\cos A$의 값은 얼마인가요? ($0^\\circ<A<90^\\circ$)",
+   "options": [
+    "$\\dfrac34$",
+    "$\\dfrac35$",
+    "$\\dfrac45$",
+    "$\\dfrac54$"
+   ],
+   "answer": 2,
+   "why": "$\\sin^2A+\\cos^2A=1$이므로 $\\cos^2A=1-\\dfrac9{25}=\\dfrac{16}{25}$, $\\cos A=\\dfrac45$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-16-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\sin30^\\circ+\\cos60^\\circ$의 값은 얼마인가요?",
+   "options": [
+    "$1$",
+    "$\\dfrac12$",
+    "$\\dfrac{\\sqrt3}{2}$",
+    "$\\sqrt3$"
+   ],
+   "answer": 0,
+   "why": "$\\dfrac12+\\dfrac12=1$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-16-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\sin A=\\dfrac5{13}$일 때 $\\tan A$의 값은 얼마인가요? ($0^\\circ<A<90^\\circ$)",
+   "options": [
+    "$\\dfrac{13}{12}$",
+    "$\\dfrac{12}{13}$",
+    "$\\dfrac{12}5$",
+    "$\\dfrac5{12}$"
+   ],
+   "answer": 3,
+   "why": "밑변이 $\\sqrt{13^2-5^2}=12$이므로 $\\tan A=\\dfrac5{12}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-17-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-17",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "빗변의 길이가 $10$이고 $\\angle A=30^\\circ$인 직각삼각형 $ABC$($\\angle B=90^\\circ$)에서 $\\overline{BC}$의 길이를 구하세요. (숫자만)",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"50\" y1=\"24\" x2=\"50\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"124\" x2=\"107.7\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"107.7\" y1=\"124\" x2=\"50\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"50,114 60,114 60,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M50,50 A26,26 0 0 0 63,46.5\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"60.4\" y=\"66.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30°</text><circle cx=\"50\" cy=\"24\" r=\"3\" fill=\"currentColor\"/><text x=\"46.4\" y=\"15.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"50\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"43.5\" y=\"139.3\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"107.7\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"117.6\" y=\"136.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><text x=\"118\" y=\"142\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><text x=\"128\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text></svg>",
+   "answers": [
+    "5"
+   ],
+   "why": "$\\overline{BC}=10\\sin30^\\circ=10\\times\\dfrac12=5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-17-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-17",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "빗변의 길이가 $10$이고 $\\angle A=60^\\circ$인 직각삼각형 $ABC$($\\angle B=90^\\circ$)에서 $\\overline{AB}$의 길이는 얼마인가요?",
+   "options": [
+    "$5\\sqrt3$",
+    "5",
+    "10",
+    "$10\\sqrt3$"
+   ],
+   "answer": 1,
+   "why": "$\\overline{AB}=10\\cos60^\\circ=5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-17-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-17",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "건물에서 $100\\,\\mathrm{m}$ 떨어진 곳에서 건물 꼭대기를 올려본각이 $45^\\circ$일 때 눈높이를 무시하면 건물의 높이는 얼마인가요?",
+   "options": [
+    "$50\\,\\mathrm{m}$",
+    "$100\\,\\mathrm{m}$",
+    "$100\\sqrt2\\,\\mathrm{m}$",
+    "$200\\,\\mathrm{m}$"
+   ],
+   "answer": 1,
+   "why": "$\\tan45^\\circ=1$이므로 높이는 $100\\times1=100\\,\\mathrm{m}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-17-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-17",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "나무에서 $12\\,\\mathrm{m}$ 떨어진 곳에서 나무 꼭대기를 올려본각이 $45^\\circ$이고 눈높이가 $1.5\\,\\mathrm{m}$일 때 나무의 높이는 얼마인가요?",
+   "options": [
+    "$1.5\\,\\mathrm{m}$",
+    "$12\\,\\mathrm{m}$",
+    "$12\\sqrt2\\,\\mathrm{m}$",
+    "$13.5\\,\\mathrm{m}$"
+   ],
+   "answer": 3,
+   "why": "$12\\tan45^\\circ+1.5=13.5\\,\\mathrm{m}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-17-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-17",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "경사각이 $30^\\circ$인 경사로를 $20\\,\\mathrm{m}$ 올라갔을 때 높이는 얼마인가요?",
+   "options": [
+    "$10\\,\\mathrm{m}$",
+    "$10\\sqrt3\\,\\mathrm{m}$",
+    "$20\\,\\mathrm{m}$",
+    "$5\\,\\mathrm{m}$"
+   ],
+   "answer": 0,
+   "why": "높이는 $20\\sin30^\\circ=10\\,\\mathrm{m}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-17-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-17",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "두 변의 길이가 $6,\\ 8$이고 그 끼인각이 $30^\\circ$인 삼각형의 넓이를 구하세요. (숫자만)",
+   "answers": [
+    "12"
+   ],
+   "why": "$\\dfrac12\\times6\\times8\\times\\sin30^\\circ=12$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-17-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-17",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "두 변의 길이가 $4,\\ 6$이고 그 끼인각이 $60^\\circ$인 삼각형의 넓이는 얼마인가요?",
+   "options": [
+    "$6$",
+    "$12\\sqrt3$",
+    "$6\\sqrt3$",
+    "$12$"
+   ],
+   "answer": 2,
+   "why": "$\\dfrac12\\times4\\times6\\times\\sin60^\\circ=12\\times\\dfrac{\\sqrt3}{2}=6\\sqrt3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-17-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-17",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "이웃한 두 변의 길이가 $5,\\ 8$이고 그 끼인각이 $30^\\circ$인 평행사변형의 넓이는 얼마인가요?",
+   "options": [
+    "10",
+    "40",
+    "$20\\sqrt3$",
+    "20"
+   ],
+   "answer": 3,
+   "why": "평행사변형의 넓이는 $5\\times8\\times\\sin30^\\circ=20$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-17-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-17",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "삼각형 $ABC$에서 $\\overline{AB}=10$, $\\angle B=30^\\circ$, $\\angle C=45^\\circ$일 때 $\\overline{AC}$의 길이는 얼마인가요?",
+   "options": [
+    "$10\\sqrt2$",
+    "$5\\sqrt2$",
+    "$5$",
+    "$5\\sqrt3$"
+   ],
+   "answer": 1,
+   "why": "$A$에서 $\\overline{BC}$에 내린 수선의 길이는 $10\\sin30^\\circ=5$이고, $\\overline{AC}=\\dfrac{5}{\\sin45^\\circ}=5\\sqrt2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-18-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-18",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원의 중심에서 현에 내린 수선은 그 현을 어떻게 하나요?",
+   "options": [
+    "길이가 변한다",
+    "삼등분한다",
+    "이등분한다",
+    "평행하다"
+   ],
+   "answer": 2,
+   "why": "원의 중심에서 현에 내린 수선은 그 현을 이등분합니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-18-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-18",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원의 접선과 접점을 지나는 반지름은 어떤 관계인가요?",
+   "options": [
+    "수직이다",
+    "평행하다",
+    "일치한다",
+    "$45^\\circ$로 만난다"
+   ],
+   "answer": 0,
+   "why": "원의 접선은 접점을 지나는 반지름과 수직입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-18-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-18",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "원 밖의 한 점 $P$에서 원에 그은 두 접선의 접점을 $A, B$라 할 때 $\\overline{PA}=7$이면 $\\overline{PB}$의 길이를 구하세요. (숫자만)",
+   "answers": [
+    "7"
+   ],
+   "why": "한 점에서 원에 그은 두 접선의 길이는 같으므로 $\\overline{PB}=7$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-18-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-18",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "반지름이 $5$인 원에서 중심으로부터 현까지의 거리가 $3$일 때 현의 길이는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 220 160\" font-family=\"sans-serif\"><circle cx=\"110\" cy=\"85\" r=\"52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"66\" y1=\"112\" x2=\"154\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"110\" y1=\"85\" x2=\"110\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"110\" y1=\"85\" x2=\"66\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><polyline points=\"110,102 120,102 120,112\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"110\" cy=\"85\" r=\"3\" fill=\"currentColor\"/><text x=\"110\" y=\"77\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">O</text><circle cx=\"110\" cy=\"112\" r=\"3\" fill=\"currentColor\"/><text x=\"110\" y=\"128\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">M</text><circle cx=\"66\" cy=\"112\" r=\"3\" fill=\"currentColor\"/><text x=\"54\" y=\"126\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"154\" cy=\"112\" r=\"3\" fill=\"currentColor\"/><text x=\"166\" y=\"126\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><text x=\"122\" y=\"100\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"80\" y=\"90\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text></svg>",
+   "options": [
+    "6",
+    "4",
+    "8",
+    "10"
+   ],
+   "answer": 2,
+   "why": "현의 절반은 $\\sqrt{5^2-3^2}=4$이므로 현의 길이는 $8$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-18-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-18",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "반지름이 $5$인 원의 중심 $O$에서 $13$ 떨어진 점 $P$에서 원에 접선을 그었을 때, 접점 $A$까지의 접선의 길이는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 260 170\" font-family=\"sans-serif\"><circle cx=\"80\" cy=\"90\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"90\" x2=\"210\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"90\" x2=\"99\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"99\" y1=\"44\" x2=\"210\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"95.2,53.2 104.4,57.1 108.2,47.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"90\" r=\"3\" fill=\"currentColor\"/><text x=\"74\" y=\"108\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">O</text><circle cx=\"210\" cy=\"90\" r=\"3\" fill=\"currentColor\"/><text x=\"220\" y=\"106\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">P</text><circle cx=\"99\" cy=\"44\" r=\"3\" fill=\"currentColor\"/><text x=\"95\" y=\"34\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text></svg>",
+   "options": [
+    "12",
+    "8",
+    "$\\sqrt{194}$",
+    "18"
+   ],
+   "answer": 0,
+   "why": "$\\angle OAP=90^\\circ$이므로 $\\overline{PA}=\\sqrt{13^2-5^2}=12$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-18-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-18",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "원 밖의 점 $P$에서 원 $O$에 그은 접선의 길이가 $PA=6$이고 $\\overline{OP}=10$일 때, 원의 반지름의 길이를 구하세요. (숫자만)",
+   "answers": [
+    "8"
+   ],
+   "why": "$\\overline{OA}=\\sqrt{10^2-6^2}=8$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-18-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-18",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "원에 외접하는 사각형 $ABCD$에서 $\\overline{AB}=7$, $\\overline{CD}=9$, $\\overline{AD}=8$일 때 $\\overline{BC}$의 길이는 얼마인가요?",
+   "options": [
+    "10",
+    "6",
+    "9",
+    "8"
+   ],
+   "answer": 3,
+   "why": "원에 외접하는 사각형은 대변의 길이의 합이 같으므로 $7+9=8+\\overline{BC}$, $\\overline{BC}=8$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-18-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-18",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "삼각형 $ABC$의 내접원이 변 $AB, BC, CA$와 만나는 점을 각각 $D, E, F$라 하고 $\\overline{AB}=7,\\ \\overline{BC}=8,\\ \\overline{CA}=9$일 때 $\\overline{AD}$의 길이는 얼마인가요?",
+   "options": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "answer": 1,
+   "why": "$\\overline{AD}=\\dfrac{\\overline{AB}+\\overline{CA}-\\overline{BC}}{2}=\\dfrac{7+9-8}{2}=4$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-18-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-18",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한 원에서 두 현의 길이가 같을 때 중심으로부터 두 현까지의 거리는 어떻게 되나요?",
+   "options": [
+    "다르다",
+    "같다",
+    "큰 현이 더 가깝다",
+    "알 수 없다"
+   ],
+   "answer": 1,
+   "why": "한 원에서 길이가 같은 두 현은 원의 중심으로부터 같은 거리에 있습니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-19-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-19",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "한 호에 대한 원주각의 크기는 그 호에 대한 중심각의 크기의 몇 배인가요?",
+   "options": [
+    "$\\dfrac13$",
+    "2",
+    "1",
+    "$\\dfrac12$"
+   ],
+   "answer": 3,
+   "why": "원주각의 크기는 중심각의 크기의 $\\dfrac12$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-19-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-19",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "중심각이 $100^\\circ$인 호에 대한 원주각의 크기는 몇 도인가요? (숫자만)",
+   "svg": "<svg viewBox=\"0 0 230 170\" font-family=\"sans-serif\"><circle cx=\"115\" cy=\"85\" r=\"62\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"162.5\" y1=\"45.1\" x2=\"67.5\" y2=\"45.1\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"162.5\" y1=\"45.1\" x2=\"115\" y2=\"147\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"67.5\" y1=\"45.1\" x2=\"115\" y2=\"147\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"115\" y1=\"85\" x2=\"162.5\" y2=\"45.1\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"115\" y1=\"85\" x2=\"67.5\" y2=\"45.1\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M130.3,72.1 A20,20 0 0 0 99.7,72.1\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"115\" y=\"55\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">100°</text><path d=\"M126,123.4 A26,26 0 0 0 104,123.4\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"115\" y=\"111\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><circle cx=\"162.5\" cy=\"45.1\" r=\"3\" fill=\"currentColor\"/><text x=\"172.9\" y=\"41.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"67.5\" cy=\"45.1\" r=\"3\" fill=\"currentColor\"/><text x=\"57.1\" y=\"41.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"115\" cy=\"147\" r=\"3\" fill=\"currentColor\"/><text x=\"115\" y=\"164\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">P</text><circle cx=\"115\" cy=\"85\" r=\"3\" fill=\"currentColor\"/><text x=\"115\" y=\"103\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">O</text></svg>",
+   "answers": [
+    "50",
+    "50°",
+    "50 °"
+   ],
+   "why": "원주각은 중심각의 절반이므로 $50^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-19-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-19",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "반원에 대한 원주각의 크기는 얼마인가요?",
+   "options": [
+    "90°",
+    "45°",
+    "180°",
+    "60°"
+   ],
+   "answer": 0,
+   "why": "지름에 대한 원주각은 $90^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-19-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-19",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "한 원에서 같은 호에 대한 원주각의 크기는 어떻게 되나요?",
+   "options": [
+    "중심각과 같다",
+    "모두 다르다",
+    "모두 같다",
+    "두 배가 된다"
+   ],
+   "answer": 2,
+   "why": "같은 호에 대한 원주각의 크기는 모두 같습니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-19-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-19",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "원주각 $\\angle APB=35^\\circ$일 때 호 $AB$에 대한 중심각 $\\angle AOB$의 크기는 몇 도인가요? (숫자만)",
+   "answers": [
+    "70",
+    "70°",
+    "70 °"
+   ],
+   "why": "중심각은 원주각의 2배이므로 $70^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-19-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-19",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "원에 내접하는 사각형 $ABCD$에서 $\\angle A=80^\\circ$일 때 $\\angle C$의 크기는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 230 170\" font-family=\"sans-serif\"><circle cx=\"115\" cy=\"85\" r=\"62\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"61.3\" y1=\"54\" x2=\"64.2\" y2=\"120.6\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"64.2\" y1=\"120.6\" x2=\"162.5\" y2=\"124.9\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"162.5\" y1=\"124.9\" x2=\"150.6\" y2=\"34.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"150.6\" y1=\"34.2\" x2=\"61.3\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"61.3\" cy=\"54\" r=\"3\" fill=\"currentColor\"/><text x=\"50.2\" y=\"51.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"64.2\" cy=\"120.6\" r=\"3\" fill=\"currentColor\"/><text x=\"54.1\" y=\"132.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"162.5\" cy=\"124.9\" r=\"3\" fill=\"currentColor\"/><text x=\"172.7\" y=\"136.9\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"150.6\" cy=\"34.2\" r=\"3\" fill=\"currentColor\"/><text x=\"158.9\" y=\"28.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text></svg>",
+   "options": [
+    "110°",
+    "80°",
+    "90°",
+    "100°"
+   ],
+   "answer": 3,
+   "why": "원에 내접하는 사각형의 대각의 크기의 합은 $180^\\circ$이므로 $\\angle C=100^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-19-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-19",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한 원에서 호의 길이가 $6$인 호에 대한 원주각이 $30^\\circ$일 때, 원주각이 $60^\\circ$인 호의 길이는 얼마인가요?",
+   "options": [
+    "9",
+    "12",
+    "18",
+    "24"
+   ],
+   "answer": 1,
+   "why": "호의 길이는 원주각의 크기에 정비례하므로 $6\\times\\dfrac{60}{30}=12$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-19-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-19",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "원에 내접하는 사각형 $ABCD$에서 $\\angle A=70^\\circ$이다. 변 $BC$의 연장선 위의 점 $E$에 대하여 $\\angle DCE$의 크기는 얼마인가요?",
+   "options": [
+    "90°",
+    "110°",
+    "70°",
+    "20°"
+   ],
+   "answer": 2,
+   "why": "$\\angle BCD=180^\\circ-70^\\circ=110^\\circ$이므로 $\\angle DCE=180^\\circ-110^\\circ=70^\\circ$이고, 이는 내대각 $\\angle A$와 같습니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-19-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-19",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "원 위의 점 $A$에서의 접선과 현 $AB$가 이루는 각이 $50^\\circ$일 때, 호 $AB$에 대한 원주각 $\\angle ACB$의 크기는 얼마인가요?",
+   "options": [
+    "50°",
+    "100°",
+    "25°",
+    "130°"
+   ],
+   "answer": 0,
+   "why": "접선과 현이 이루는 각의 크기는 그 호에 대한 원주각의 크기와 같으므로 $50^\\circ$입니다."
+  }
+ ],
+ "skipped": []
+}
