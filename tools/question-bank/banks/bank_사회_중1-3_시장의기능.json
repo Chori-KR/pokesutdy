@@ -1,0 +1,361 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "사회",
+  "school": "중",
+  "course": "사회",
+  "gradeBand": "중1-3",
+  "unit": "시장의 기능",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "사과 시장의 가격 (정리글)",
+   "text": "사과 시장에서 가격과 거래량이 어떻게 결정되는지 살펴보자. 소비자는 가격이 오르면 사과를 적게 사려 하고(수요 법칙), 생산자는 가격이 오르면 더 많이 팔려고 한다(공급 법칙). 가격에 따른 한 달 동안의 수요량과 공급량이 다음과 같다고 하자. 가격 1,000원일 때 수요량 50개, 공급량 10개이다. 2,000원일 때 수요량 40개, 공급량 20개이다. 3,000원일 때 수요량 30개, 공급량 30개이다. 4,000원일 때 수요량 20개, 공급량 40개이다. 5,000원일 때 수요량 10개, 공급량 50개이다.\n\n가격이 4,000원이면 공급량이 수요량보다 많아 팔리지 않는 사과가 남는다. 이를 초과 공급이라 하며, 이때 판매자들이 가격을 내리게 된다. 반대로 가격이 낮으면 초과 수요가 생겨 가격이 오른다. 이런 과정을 거쳐 수요량과 공급량이 같아지는 균형 가격과 균형 거래량이 결정된다. 이처럼 시장 가격은 수요와 공급이 서로 만나 조정되는 과정에서 정해진다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "사회-중1-3-9사(일사)09-01-c1",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "시장을 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "세금을 걷는 기관",
+    "물건을 만드는 공장",
+    "상품이나 서비스를 사고팔려는 사람들이 만나 거래하는 곳이나 관계",
+    "학생이 공부하는 장소"
+   ],
+   "answer": 2,
+   "why": "시장은 거래가 이루어지는 곳이나 관계를 말합니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-01-c2",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "노동력을 사고팔아 임금이 결정되는 시장을 무엇이라고 하나요? (예: ○○ 시장)",
+   "answers": [
+    "노동 시장",
+    "노동시장"
+   ],
+   "why": "노동 시장은 일자리와 임금이 결정되는 시장입니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-01-b1",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "사람들이 각자 잘하는 일을 하고 시장에서 필요한 것을 교환하는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "분업과 교환을 하면 더 많은 상품을 효율적으로 얻을 수 있기 때문이다",
+    "모든 것을 혼자 만드는 것이 가장 효율적이기 때문이다",
+    "교환하면 손해만 보기 때문이다",
+    "시장은 필요 없기 때문이다"
+   ],
+   "answer": 0,
+   "why": "분업과 교환이 경제 활동을 효율적으로 만듭니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-01-b2",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "온라인 시장의 특징으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "비교할 수 없다",
+    "직접 만나야만 거래할 수 있다",
+    "특정 시간에만 거래할 수 있다",
+    "시간과 장소의 제약이 적어 다양한 상품을 쉽게 비교하고 거래할 수 있다"
+   ],
+   "answer": 3,
+   "why": "온라인 시장은 접근성이 높습니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-01-a1",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "시장이 사회에서 자원을 효율적으로 나누는 데 도움이 되는 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "정부가 모든 것을 정해 주기 때문이다",
+    "가격이라는 신호를 통해 필요한 상품이 어디에 얼마나 필요한지 알려 주기 때문이다",
+    "가격이 아무 정보도 주지 않기 때문이다",
+    "소비자가 상품을 선택하지 못하기 때문이다"
+   ],
+   "answer": 1,
+   "why": "가격은 수요와 공급을 알려 주는 신호입니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-01-a2",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "전통 시장과 온라인 시장 사례를 비교하여 시장의 필요성을 도출한 것으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "두 시장은 서로 아무 기능이 없다",
+    "형태는 달라도 판매자와 구매자를 이어 주어 거래 비용을 줄이고 경제 활동을 가능하게 한다",
+    "오직 전통 시장만 필요하다",
+    "시장이 없어도 거래는 저절로 이루어진다"
+   ],
+   "answer": 1,
+   "why": "시장은 거래를 연결하여 경제 활동의 바탕이 됩니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-02-c1",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "수요 법칙을 바르게 설명한 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "가격이 내리면 수요량이 줄어드는 관계",
+    "가격이 오르면 수요량도 늘어나는 관계",
+    "가격과 수요량은 관계가 없다",
+    "가격이 오르면 수요량이 줄어드는 관계"
+   ],
+   "answer": 3,
+   "why": "다른 조건이 같을 때 가격과 수요량은 반대로 움직입니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-02-b1",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "이 사과 시장의 균형 가격은 얼마인가요? (숫자만, 원 단위)",
+   "passage": "p1",
+   "answers": [
+    "3000",
+    "3,000",
+    "3000원",
+    "3,000원"
+   ],
+   "why": "수요량과 공급량이 30개로 같은 3,000원이 균형 가격입니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-02-a1",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "가격이 4,000원일 때 시장에서 나타나는 현상과 그 결과로 가장 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "공급량이 수요량보다 20개 많아 초과 공급이 생기고 가격이 내려갈 압력이 생긴다",
+    "수요량이 공급량보다 많아 가격이 오른다",
+    "수요량과 공급량이 같아 가격이 그대로이다",
+    "초과 수요가 20개 생긴다"
+   ],
+   "answer": 0,
+   "why": "공급 40개, 수요 20개로 초과 공급 20개입니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-02-c2",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "공급 법칙을 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "가격과 공급량은 관계가 없다",
+    "가격이 오르면 공급량이 줄어드는 관계",
+    "가격이 오르면 공급량이 늘어나는 관계",
+    "가격이 내리면 공급량이 늘어나는 관계"
+   ],
+   "answer": 2,
+   "why": "다른 조건이 같을 때 가격과 공급량은 같은 방향으로 움직입니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-02-b2",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 어느 시장의 가격에 따른 수요량과 공급량입니다. 균형 가격은 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 258 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"252\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"87\" y1=\"3\" x2=\"87\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"171\" y1=\"3\" x2=\"171\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"255\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"255\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"255\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"255\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"45\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가격(원)</text><text x=\"129\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수요량</text><text x=\"213\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공급량</text><text x=\"45\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1,000</text><text x=\"129\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">9</text><text x=\"213\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"45\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2,000</text><text x=\"129\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">7</text><text x=\"213\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"45\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3,000</text><text x=\"129\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"213\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"45\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4,000</text><text x=\"129\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"213\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">7</text></svg>",
+   "options": [
+    "1,000원",
+    "2,000원",
+    "4,000원",
+    "3,000원"
+   ],
+   "answer": 3,
+   "why": "수요량과 공급량이 5개로 같은 가격은 3,000원입니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-02-a2",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "어떤 상품의 가격이 균형 가격보다 낮아 초과 수요가 생겼을 때 시장에서 나타나는 과정으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "가격이 계속 내려간다",
+    "상품이 부족하므로 가격이 오르고 수요량은 줄며 공급량은 늘어 균형을 찾아간다",
+    "수요량이 계속 늘어난다",
+    "공급량이 계속 줄어든다"
+   ],
+   "answer": 1,
+   "why": "가격 신호를 통해 수요와 공급이 조정됩니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-03-c1",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "소비자의 소득이 늘어나면 일반적인 상품의 수요는 어떻게 변하나요?",
+   "options": [
+    "공급이 줄어든다",
+    "수요가 줄어든다",
+    "수요가 늘어난다",
+    "변하지 않는다"
+   ],
+   "answer": 2,
+   "why": "소득이 늘면 구매 능력이 커집니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-03-c2",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "한 재화의 가격이 오르면 다른 재화의 수요가 늘어나는, 서로 바꾸어 쓸 수 있는 재화를 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "대체재"
+   ],
+   "why": "대체재는 서로 바꾸어 쓸 수 있는 관계의 재화입니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-03-b1",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "태풍으로 사과 농사가 큰 피해를 입었을 때 사과 시장에서 나타나는 변화로 알맞은 것은 무엇인가요?",
+   "options": [
+    "공급이 감소하여 가격이 오른다",
+    "공급이 증가하여 가격이 내린다",
+    "수요가 반드시 줄어든다",
+    "가격이 변하지 않는다"
+   ],
+   "answer": 0,
+   "why": "공급이 줄면 균형 가격이 상승합니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-03-b2",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "농업 기술이 발전하여 같은 비용으로 더 많은 작물을 생산하게 되면 나타나는 변화로 알맞은 것은 무엇인가요?",
+   "options": [
+    "가격이 반드시 오른다",
+    "공급이 감소한다",
+    "공급이 증가하여 가격이 내려갈 수 있다",
+    "수요가 사라진다"
+   ],
+   "answer": 2,
+   "why": "생산 비용이 줄고 기술이 발전하면 공급이 증가합니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-03-a1",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "배추 값이 크게 올랐을 때 소비자의 합리적인 대응으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "대체할 수 있는 다른 채소를 선택하거나 소비를 줄이고 가격이 안정될 때까지 기다린다",
+    "가격과 관계없이 평소와 같이 산다",
+    "모두 사재기한다",
+    "불평만 하고 선택을 바꾸지 않는다"
+   ],
+   "answer": 0,
+   "why": "대체재 선택 등 합리적 소비가 필요합니다."
+  },
+  {
+   "id": "사회-중1-3-9사(일사)09-03-a2",
+   "subject": "사회",
+   "gradeBand": "중1-3",
+   "unit": "시장의 기능",
+   "standard": "9사(일사)09-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한파로 채소 가격이 급등하는 상황에서 시장 가격의 변동에 대응하는 방안으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "아무 대응도 하지 않는다",
+    "가격을 일부러 더 올린다",
+    "수요를 늘린다",
+    "공급자는 저장·수입 등으로 물량을 확보하고, 정부는 유통을 돕고 소비자는 대체재를 이용한다"
+   ],
+   "answer": 3,
+   "why": "공급과 수요 양쪽에서 가격 안정을 도모합니다."
+  }
+ ],
+ "skipped": []
+}
