@@ -1,4 +1,4 @@
-"""영어 · 중1-3 · 표현_2 — 자동 생성 래퍼"""
+"""영어 · 중1-3 · 표현 — 자동 생성 래퍼"""
 import os, sys, math
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, os.path.dirname(__file__))
@@ -6,7 +6,7 @@ from common import Bank
 from kit_ko import KoBank, report
 from svgkit import svg, text, line, table, bar_graph, hbar_graph, line_graph, BLUE, ORANGE, C, _n
 
-bank = Bank("영어", "중", "영어", "중1-3", "표현_2", "bank_영어_중1-3_표현_2.json")
+bank = Bank("영어", "중", "영어", "중1-3", "표현", "bank_영어_중1-3_표현_2.json")
 b = KoBank(bank)
 
 
