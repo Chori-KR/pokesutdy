@@ -1,0 +1,459 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "중",
+  "course": "과학",
+  "gradeBand": "중1-3",
+  "unit": "원소와 화합물",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "과학-중1-3-9과11-01-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "물을 이루는 원소로 알맞게 짝지은 것은 무엇인가요?",
+   "options": [
+    "수소, 질소",
+    "탄소, 산소",
+    "수소, 산소",
+    "산소, 염소"
+   ],
+   "answer": 2,
+   "why": "물($\\mathrm{H_2O}$)은 수소와 산소로 이루어진 화합물입니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-01-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "물의 화학식을 쓰세요. (예: 이산화탄소는 $\\mathrm{CO_2}$)",
+   "answers": [
+    "H2O",
+    "$\\mathrm{H_2O}$",
+    "H₂O"
+   ],
+   "why": "물 분자는 수소 원자 2개와 산소 원자 1개로 이루어집니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-01-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "한 종류의 원소로만 이루어진 순물질은 무엇인가요?",
+   "options": [
+    "원소",
+    "화합물",
+    "혼합물",
+    "용액"
+   ],
+   "answer": 0,
+   "why": "원소는 더 이상 분해되지 않는 한 종류의 성분입니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-01-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 화합물에 해당하는 것은 무엇인가요?",
+   "options": [
+    "수소",
+    "산소",
+    "철",
+    "이산화탄소"
+   ],
+   "answer": 3,
+   "why": "이산화탄소는 탄소와 산소로 이루어진 화합물입니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-01-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "화학식 $\\mathrm{NaCl}$이 나타내는 물질에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "나트륨 원소이다",
+    "나트륨과 염소로 이루어진 화합물이다",
+    "염소 원소이다",
+    "혼합물이다"
+   ],
+   "answer": 1,
+   "why": "$\\mathrm{NaCl}$은 염화 나트륨입니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-01-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "물을 전기 분해했을 때 (-)극과 (+)극에서 각각 발생하는 기체로 알맞은 것은 무엇인가요?",
+   "options": [
+    "(-)극: 산소, (+)극: 수소",
+    "(-)극: 수소, (+)극: 산소",
+    "둘 다 수소",
+    "둘 다 산소"
+   ],
+   "answer": 1,
+   "why": "수소가 산소의 2배 부피로 발생합니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-02-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원자의 중심에 있는 (+)전하를 띤 부분을 무엇이라고 하나요?",
+   "options": [
+    "분자",
+    "전자",
+    "중성자",
+    "원자핵"
+   ],
+   "answer": 3,
+   "why": "원자핵은 양성자와 중성자로 이루어집니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-02-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "(-)전하를 띠고 원자핵 주위를 움직이는 입자는 무엇인가요?",
+   "options": [
+    "전자",
+    "양성자",
+    "중성자",
+    "원자핵"
+   ],
+   "answer": 0,
+   "why": "전자는 (-)전하를 가집니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-02-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "원자가 전기적으로 중성인 까닭은 무엇인가요?",
+   "options": [
+    "전자 수가 항상 더 많기 때문이다",
+    "중성자가 없기 때문이다",
+    "양성자 수와 전자 수가 같기 때문이다",
+    "양성자가 없기 때문이다"
+   ],
+   "answer": 2,
+   "why": "양성자의 (+)전하와 전자의 (-)전하가 상쇄됩니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-02-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "원자번호는 원자의 어떤 입자의 수와 같은가요? (양성자 / 중성자 / 전자 중 쓰기)",
+   "answers": [
+    "양성자",
+    "양성자 수"
+   ],
+   "why": "원자번호는 양성자 수입니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-02-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "탄소 원자($\\mathrm{C}$)의 양성자 수는 6이고 질량수는 12입니다. 중성자 수는 몇 개인가요?",
+   "options": [
+    "0개",
+    "12개",
+    "18개",
+    "6개"
+   ],
+   "answer": 3,
+   "why": "중성자 수 = 질량수 − 양성자 수 = 12 − 6 = 6입니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-02-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "양성자 수가 같고 중성자 수가 다른 원자들을 무엇이라고 하나요?",
+   "options": [
+    "이온",
+    "동위 원소",
+    "분자",
+    "화합물"
+   ],
+   "answer": 1,
+   "why": "같은 원소이지만 질량수가 다릅니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-03-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "주기율표에서 가로줄을 무엇이라고 하나요?",
+   "options": [
+    "계",
+    "족",
+    "주기",
+    "분"
+   ],
+   "answer": 2,
+   "why": "가로줄은 주기, 세로줄은 족입니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-03-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "주기율표에서 원소를 배열하는 기준은 무엇인가요?",
+   "options": [
+    "원자번호",
+    "발견된 순서",
+    "원소의 이름",
+    "원소의 색"
+   ],
+   "answer": 0,
+   "why": "원자번호 순서대로 배열하여 성질이 비슷한 원소가 같은 족에 모입니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-03-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "같은 족에 속한 원소들의 공통점은 무엇인가요?",
+   "options": [
+    "질량이 같다",
+    "원자번호가 같다",
+    "화학적 성질이 비슷하다",
+    "상태가 같다"
+   ],
+   "answer": 2,
+   "why": "같은 족 원소는 성질이 비슷합니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-03-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "주기율표에서 같은 세로줄 원소의 모임을 무엇이라고 하나요? (한 글자)",
+   "answers": [
+    "족"
+   ],
+   "why": "세로줄을 족이라고 합니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-03-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "알칼리 금속(1족)의 성질로 알맞은 것은 무엇인가요?",
+   "options": [
+    "물과 격렬하게 반응하여 수소 기체를 발생시킨다",
+    "물과 전혀 반응하지 않는다",
+    "공기 중에서 안정하다",
+    "비금속이다"
+   ],
+   "answer": 0,
+   "why": "알칼리 금속은 반응성이 매우 큽니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-03-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "18족 비활성 기체의 성질로 알맞은 것은 무엇인가요?",
+   "options": [
+    "상온에서 고체이다",
+    "반응성이 매우 크다",
+    "금속이다",
+    "다른 원소와 거의 반응하지 않는다"
+   ],
+   "answer": 3,
+   "why": "비활성 기체는 안정한 전자 배치를 가집니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-04-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "물질의 성질을 나타내는 가장 작은 입자로 원자가 결합하여 만들어진 것은 무엇인가요?",
+   "options": [
+    "이온",
+    "분자",
+    "원자핵",
+    "전자"
+   ],
+   "answer": 1,
+   "why": "분자는 독립된 입자로 물질의 성질을 가집니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-04-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원자가 전자를 잃어 (+)전하를 띠는 입자를 무엇이라고 하나요?",
+   "options": [
+    "음이온",
+    "양이온",
+    "분자",
+    "중성자"
+   ],
+   "answer": 1,
+   "why": "전자를 잃으면 (+)전하를 띠는 양이온이 됩니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-04-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "원자가 전자를 얻으면 어떤 입자가 되나요?",
+   "options": [
+    "분자",
+    "양이온",
+    "중성 원자",
+    "음이온"
+   ],
+   "answer": 3,
+   "why": "전자를 얻으면 (-)전하를 띠는 음이온입니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-04-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "나트륨 이온($\\mathrm{Na^+}$)은 나트륨 원자가 전자를 몇 개 잃은 것인가요? (숫자만)",
+   "answers": [
+    "1"
+   ],
+   "why": "$\\mathrm{Na^+}$는 전자를 1개 잃은 양이온입니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-04-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "산소 분자($\\mathrm{O_2}$)를 이루는 원자의 수는 몇 개인가요?",
+   "options": [
+    "2개",
+    "1개",
+    "3개",
+    "4개"
+   ],
+   "answer": 0,
+   "why": "아래 첨자 2는 산소 원자가 2개임을 나타냅니다."
+  },
+  {
+   "id": "과학-중1-3-9과11-04-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "원소와 화합물",
+   "standard": "9과11-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "이온 결합 물질 $\\mathrm{NaCl}$이 고체 상태에서 전기를 통하지 않는 까닭은 무엇인가요?",
+   "options": [
+    "전자가 많기 때문이다",
+    "이온이 없기 때문이다",
+    "이온이 자유롭게 움직일 수 없기 때문이다",
+    "분자로 되어 있기 때문이다"
+   ],
+   "answer": 2,
+   "why": "녹이거나 물에 녹이면 이온이 움직여 전기가 통합니다."
+  }
+ ],
+ "skipped": []
+}
