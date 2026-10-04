@@ -1,0 +1,245 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "사회",
+  "school": "초",
+  "course": "사회",
+  "gradeBand": "초5-6",
+  "unit": "세계의 지형과 삶",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "높은 산에 사는 사람들",
+   "text": "남아메리카의 안데스산맥에는 해발 3,000미터가 넘는 높은 곳에도 도시와 마을이 있습니다. 이곳은 공기가 희박하고 일교차가 크지만, 사람들은 이런 환경에 알맞은 삶을 이어 갑니다.\n\n산비탈에는 계단식 밭을 만들어 감자와 옥수수를 키우고, 풀이 자라는 높은 초원에서는 라마와 알파카를 길러 털로 옷감을 만듭니다. 추위를 막기 위해 두꺼운 털옷과 모자를 쓰고 다닙니다.\n한편 큰 강의 하류에 있는 넓은 평야 지역에서는 농사가 잘되어 많은 사람이 모여 삽니다. 바다와 가까운 해안에서는 고기잡이와 항구를 이용한 무역이 발달했습니다.\n이처럼 같은 시대에도 지형이 다르면 사람들의 생활 모습이 달라집니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "사회-초5-6-6사10-01-c1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 지형과 삶",
+   "standard": "6사10-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "안데스산맥의 사람들이 산비탈에 만든 밭은 무엇인가요?",
+   "passage": "p1",
+   "answers": [
+    "계단식 밭",
+    "계단밭"
+   ],
+   "why": "가파른 산비탈에 계단식 밭을 만들어 감자와 옥수수를 키웁니다."
+  },
+  {
+   "id": "사회-초5-6-6사10-01-c2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 지형과 삶",
+   "standard": "6사10-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "큰 강 하류의 넓은 평야 지역에서 발달하는 산업은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "광산업",
+    "고기잡이",
+    "농업",
+    "유목"
+   ],
+   "answer": 2,
+   "why": "평야는 땅이 넓고 평평하여 농업이 발달합니다."
+  },
+  {
+   "id": "사회-초5-6-6사10-01-b1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 지형과 삶",
+   "standard": "6사10-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "해안 지역에서 발달한 생활 모습으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "고기잡이와 항구를 이용한 무역",
+    "높은 산의 방목",
+    "사막의 낙타 유목",
+    "밀림의 화전"
+   ],
+   "answer": 0,
+   "why": "바다와 가까운 해안에서는 어업과 무역이 발달합니다."
+  },
+  {
+   "id": "사회-초5-6-6사10-01-b2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 지형과 삶",
+   "standard": "6사10-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "높은 산지에서 라마와 알파카를 기르는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "바닷물이 가깝기 때문이다",
+    "물고기를 잡을 수 있기 때문이다",
+    "농사를 지을 수 없기 때문이다",
+    "풀이 자라는 초원이 있어 털로 옷감을 만들 수 있기 때문이다"
+   ],
+   "answer": 3,
+   "why": "산지의 초원을 이용해 가축을 기르고 털로 옷을 만들어 입습니다."
+  },
+  {
+   "id": "사회-초5-6-6사10-01-a1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 지형과 삶",
+   "standard": "6사10-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "네덜란드가 바다를 막아 땅을 넓힌(간척) 것은 지형을 어떻게 이용한 사례인가요?",
+   "options": [
+    "높은 산을 깎아 평지를 만든 사례이다",
+    "낮은 땅이라는 지형의 불리함을 극복하여 생활 터전을 넓힌 사례이다",
+    "사막에 물을 끌어온 사례이다",
+    "빙하를 녹인 사례이다"
+   ],
+   "answer": 1,
+   "why": "바다보다 낮은 땅이 많은 네덜란드는 간척으로 땅을 넓혀 살아가고 있습니다."
+  },
+  {
+   "id": "사회-초5-6-6사10-01-a2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 지형과 삶",
+   "standard": "6사10-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "알프스산맥 지역의 사람들이 산의 경치를 이용하여 발달시킨 산업으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "해상 무역",
+    "관광업과 스키장 운영",
+    "벼농사",
+    "열대 과일 재배"
+   ],
+   "answer": 1,
+   "why": "아름다운 산지 경관과 눈을 활용해 관광업이 발달했습니다."
+  },
+  {
+   "id": "사회-초5-6-6사10-02-c1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 지형과 삶",
+   "standard": "6사10-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "일 년 내내 덥고 비가 많이 내리는 기후는 무엇인가요? (열대, 건조, 온대, 한대 중에서 고르세요)",
+   "answers": [
+    "열대 기후",
+    "열대"
+   ],
+   "why": "일 년 내내 덥고 비가 많이 내리는 기후가 열대 기후입니다."
+  },
+  {
+   "id": "사회-초5-6-6사10-02-c2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 지형과 삶",
+   "standard": "6사10-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "사막처럼 비가 거의 오지 않는 곳에서 물과 풀을 찾아 가축과 함께 이동하며 사는 생활 방식을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "유목"
+   ],
+   "why": "건조 기후에서는 물과 풀을 찾아 이동하며 가축을 기르는 유목 생활을 합니다."
+  },
+  {
+   "id": "사회-초5-6-6사10-02-b1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 지형과 삶",
+   "standard": "6사10-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 어느 지역의 기후입니다. 이 지역에 알맞은 기후와 생활 모습은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 296 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"290\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"183\" y1=\"3\" x2=\"183\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"293\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">구분</text><text x=\"128\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연평균 기온</text><text x=\"238\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연 강수량</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가 지역</text><text x=\"128\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">27°C</text><text x=\"238\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2,500mm</text></svg>",
+   "options": [
+    "온대 기후 – 사계절 뚜렷한 옷차림",
+    "한대 기후 – 두꺼운 털옷과 얼음집",
+    "건조 기후 – 사막의 흙벽돌집",
+    "열대 기후 – 바닥을 땅에서 띄운 집, 얇고 통풍이 잘 되는 옷"
+   ],
+   "answer": 3,
+   "why": "연중 기온이 높고 비가 많으면 열대 기후이며, 통풍이 잘되는 고상 가옥과 얇은 옷이 알맞습니다."
+  },
+  {
+   "id": "사회-초5-6-6사10-02-b2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 지형과 삶",
+   "standard": "6사10-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "추운 한대 기후 지역에서 사람들이 두꺼운 털옷을 입고 사는 까닭은 무엇인가요?",
+   "options": [
+    "기온이 매우 낮아 추위를 막아야 하기 때문이다",
+    "일 년 내내 덥기 때문이다",
+    "비가 너무 많기 때문이다",
+    "바람이 불지 않기 때문이다"
+   ],
+   "answer": 0,
+   "why": "한대 기후는 매우 추워서 두꺼운 옷으로 몸을 보호합니다."
+  },
+  {
+   "id": "사회-초5-6-6사10-02-a1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 지형과 삶",
+   "standard": "6사10-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "건조 기후 지역의 집이 두꺼운 흙벽과 작은 창문으로 지어지는 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "눈이 쌓이기 때문이다",
+    "비가 많이 오기 때문이다",
+    "낮의 강한 열과 모래바람을 막고 밤의 추위를 견디기 위해서이다",
+    "집을 빨리 짓기 위해서이다"
+   ],
+   "answer": 2,
+   "why": "건조 기후는 일교차가 크고 모래바람이 불어 두꺼운 벽과 작은 창이 알맞습니다."
+  },
+  {
+   "id": "사회-초5-6-6사10-02-a2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 지형과 삶",
+   "standard": "6사10-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "기후 환경과 인간생활의 관계를 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "사람들은 기후와 상관없이 같은 옷을 입는다",
+    "기후는 생활에 아무 영향도 주지 않는다",
+    "모든 지역의 집 모양은 같다",
+    "사람들은 기후에 맞게 집, 옷, 음식을 만들며 생활 방식을 발전시켜 왔다"
+   ],
+   "answer": 3,
+   "why": "기후에 따라 의식주와 산업이 달라집니다."
+  }
+ ],
+ "skipped": []
+}
