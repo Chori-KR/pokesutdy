@@ -65,6 +65,25 @@
     "백신",
     "치료제 개발"
    ],
+   "why": "감염병은 백신과 치료제를 개발하여 예방하고 치료할 수 있습니다."
+  },
+  {
+   "id": "과학-초5-6-6과16-01-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "과학과 미래 사회",
+   "standard": "6과16-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "미래 사회의 문제를 토의할 때 알맞은 태도는 무엇인가요?",
+   "options": [
+    "다른 사람의 의견을 끝까지 듣고 근거를 들어 해결 방법을 제안한다",
+    "내 의견만 계속 주장한다",
+    "의견을 말하지 않는다",
+    "다른 의견은 무시한다"
+   ],
+   "answer": 0,
    "why": "토의에서는 서로의 의견을 존중하고 근거를 들어 해결 방안을 찾습니다."
   },
   {
@@ -78,12 +97,12 @@
    "type": "multiple",
    "body": "바다에 쌓이는 플라스틱 쓰레기 문제를 해결하는 방법으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "썩는 재료로 만든 제품을 개발하고 재활용 기술을 발전시킨다",
+    "문제를 모른 척한다",
     "플라스틱을 바다에 더 많이 버린다",
     "일회용품을 더 많이 만든다",
-    "문제를 모른 척한다"
+    "썩는 재료로 만든 제품을 개발하고 재활용 기술을 발전시킨다"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "과학 기술로 환경에 덜 해로운 재료를 만들고 재활용을 늘려 문제를 줄일 수 있습니다."
   },
   {
@@ -97,12 +116,12 @@
    "type": "multiple",
    "body": "과학 기술이 미래 사회의 문제 해결에 도움을 주지만 조심해야 하는 점은 무엇인가요?",
    "options": [
-    "기술은 윤리와 상관없다",
     "기술은 무조건 많이 쓸수록 좋다",
+    "기술을 쓸 때 안전, 개인 정보 보호, 윤리 문제를 함께 생각해야 한다",
     "새로운 기술은 문제를 만들지 않는다",
-    "기술을 쓸 때 안전, 개인 정보 보호, 윤리 문제를 함께 생각해야 한다"
+    "기술은 윤리와 상관없다"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "과학 기술은 편리하지만 안전과 윤리, 개인 정보 보호 같은 문제를 함께 생각해야 합니다."
   },
   {
@@ -154,12 +173,12 @@
    "body": "표는 직업과 관련된 과학 분야입니다. ( )에 알맞은 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 260 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"254\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"87\" y1=\"3\" x2=\"87\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"257\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"257\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"257\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"45\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">직업</text><text x=\"172\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">관련 과학 분야</text><text x=\"45\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">건축가</text><text x=\"172\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">( )</text><text x=\"45\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수의사</text><text x=\"172\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">생명 과학</text><text x=\"45\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">프로그래머</text><text x=\"172\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">컴퓨터 과학</text></svg>",
    "options": [
+    "음악",
     "요리법",
-    "물질과 힘(물리)",
     "역사",
-    "음악"
+    "물질과 힘(물리)"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "건축가는 건물을 안전하게 짓기 위해 물질의 성질과 힘에 관한 과학 지식을 활용합니다."
   },
   {
@@ -173,12 +192,12 @@
    "type": "multiple",
    "body": "자신의 진로와 과학을 관련지어 설명한 것으로 알맞은 것은 무엇인가요?",
    "options": [
-    "요리는 과학과 관련이 없다",
+    "요리사가 되고 싶다. 음식이 익을 때의 변화와 영양소를 알면 더 맛있고 건강한 요리를 할 수 있기 때문이다",
     "나는 아무 꿈이 없다",
     "과학은 나의 진로와 관련이 없다",
-    "요리사가 되고 싶다. 음식이 익을 때의 변화와 영양소를 알면 더 맛있고 건강한 요리를 할 수 있기 때문이다"
+    "요리는 과학과 관련이 없다"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "진로와 과학을 구체적으로 관련지어 설명한 예입니다."
   },
   {
@@ -192,12 +211,12 @@
    "type": "multiple",
    "body": "축구 선수나 스포츠 트레이너가 과학 지식을 활용하는 사례로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "운동할 때 몸의 근육과 뼈의 움직임을 이해하여 부상을 줄이고 기록을 높인다",
-    "과학과 전혀 관계가 없다",
     "이론 없이 운동만 한다",
+    "과학과 전혀 관계가 없다",
+    "운동할 때 몸의 근육과 뼈의 움직임을 이해하여 부상을 줄이고 기록을 높인다",
     "근육 이름만 외운다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "스포츠 분야에서도 몸의 구조와 운동 원리 같은 과학 지식이 활용됩니다."
   },
   {
