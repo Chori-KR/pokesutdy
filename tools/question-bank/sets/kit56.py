@@ -432,3 +432,75 @@ def range_line(lo, hi, spans, W=320):
         else:
             out.append(f'<circle cx="{_n(xc)}" cy="{y}" r="6.5" fill="{"none" if c_open else ORANGE}" stroke="{C}" stroke-width="2.5"/>')
     return svg(W, 80, "".join(out))
+
+
+_FILLS = [(BLUE, 0.5), (ORANGE, 0.5), (BLUE, 0.2), (ORANGE, 0.2), (C, 0.12)]
+
+
+def band_graph(items, W=320, title=None, hide=None):
+    """띠그래프. items [(이름, 퍼센트)]. 퍼센트 합 100. hide=번호면 그 칸의 퍼센트를 ?로"""
+    x0, y0, bw, bh = 14, 44 if title else 26, W - 28, 36
+    out = []
+    if title:
+        out.append(text(W / 2, 16, title, 13, weight="bold"))
+    x = x0
+    for i, (nm, pct) in enumerate(items):
+        w = bw * pct / 100
+        col, op = _FILLS[i % len(_FILLS)]
+        out.append(f'<rect x="{_n(x)}" y="{y0}" width="{_n(w)}" height="{bh}" fill="{col}" fill-opacity="{op}" stroke="{C}" stroke-width="2"/>')
+        lab = "?" if hide == i else f"{pct}%"
+        out.append(text(x + w / 2, y0 + bh / 2 + 5, lab, 13, weight="bold"))
+        out.append(text(x + w / 2, y0 + bh + 18, nm, 12))
+        x += w
+    # 눈금
+    for k in range(0, 101, 25):
+        out.append(line(x0 + bw * k / 100, y0 - 4, x0 + bw * k / 100, y0, 2))
+        out.append(text(x0 + bw * k / 100, y0 - 8, k, 12))
+    return svg(W, y0 + bh + 30, "".join(out))
+
+
+def pie_graph(items, R=62, title=None, hide=None):
+    """원그래프. items [(이름, 퍼센트)], 12시 방향에서 시계 방향"""
+    cx = R + 44
+    cy = R + (58 if title else 50)
+    out = []
+    a0 = -90.0
+    for i, (nm, pct) in enumerate(items):
+        a1 = a0 + 360 * pct / 100
+        col, op = _FILLS[i % len(_FILLS)]
+        x1, y1 = cx + R * math.cos(math.radians(a0)), cy + R * math.sin(math.radians(a0))
+        x2, y2 = cx + R * math.cos(math.radians(a1)), cy + R * math.sin(math.radians(a1))
+        large = 1 if (a1 - a0) > 180 else 0
+        out.append(f'<path d="M{cx},{cy} L{_n(x1)},{_n(y1)} A{R},{R} 0 {large} 1 {_n(x2)},{_n(y2)} Z" fill="{col}" fill-opacity="{op}" stroke="{C}" stroke-width="2"/>')
+        am = math.radians((a0 + a1) / 2)
+        rr = R * 0.62 if pct >= 12 else R + 18
+        lab = "?" if hide == i else f"{pct}%"
+        out.append(text(cx + rr * math.cos(am), cy + rr * math.sin(am) + 4, lab, 12, weight="bold"))
+        rr2 = R + 18
+        if pct >= 12:
+            out.append(text(cx + rr2 * math.cos(am), cy + rr2 * math.sin(am) + 4, nm, 12))
+        else:
+            out.append(text(cx + (R + 34) * math.cos(am), cy + (R + 34) * math.sin(am) + 4, nm, 12))
+        a0 = a1
+    if title:
+        out.append(text(cx, 16, title, 13, weight="bold"))
+    return svg(2 * cx, cy + R + 44, "".join(out))
+
+
+def spinner(parts, R=54, names=None, hot=()):
+    """회전판: parts 칸 수(같은 크기 부채꼴). names 칸마다 글자, hot 번호는 주황"""
+    n = parts
+    cx = cy = R + 12
+    out = []
+    for i in range(n):
+        a0 = -90 + 360 * i / n
+        a1 = -90 + 360 * (i + 1) / n
+        x1, y1 = cx + R * math.cos(math.radians(a0)), cy + R * math.sin(math.radians(a0))
+        x2, y2 = cx + R * math.cos(math.radians(a1)), cy + R * math.sin(math.radians(a1))
+        fill = ORANGE if i in hot else "none"
+        out.append(f'<path d="M{cx},{cy} L{_n(x1)},{_n(y1)} A{R},{R} 0 0 1 {_n(x2)},{_n(y2)} Z" fill="{fill}" fill-opacity="0.45" stroke="{C}" stroke-width="2.5"/>')
+        if names:
+            am = math.radians((a0 + a1) / 2)
+            out.append(text(cx + R * 0.64 * math.cos(am), cy + R * 0.64 * math.sin(am) + 5, names[i], 14, weight="bold"))
+    out.append(f'<polygon points="{cx},{cy - R - 2} {cx - 6},{cy - R - 12} {cx + 6},{cy - R - 12}" fill="{C}"/>')
+    return svg(2 * cx, 2 * cy + 4, "".join(out))

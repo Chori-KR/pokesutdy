@@ -1,0 +1,1008 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "초",
+  "course": "수학",
+  "gradeBand": "초5-6",
+  "unit": "자료와 가능성",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-초5-6-6수04-01-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "평균을 구하는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "자료 중 가장 작은 값을 고른다",
+    "자료 중 가장 큰 값을 고른다",
+    "자료의 값을 모두 더한 수를 자료의 수로 나눈다",
+    "자료의 값을 모두 곱한다"
+   ],
+   "answer": 2,
+   "why": "(평균)=(자료의 값을 모두 더한 수)÷(자료의 수)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-01-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "3, 5, 7의 평균을 쓰세요.",
+   "answers": [
+    "5"
+   ],
+   "why": "(3+5+7)÷3=15÷3=5입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-01-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "평균에 대한 설명으로 옳은 것은 무엇인가요?",
+   "options": [
+    "자료의 값을 고르게 하여 대표하는 값이다",
+    "자료 중 가장 큰 값이다",
+    "자료 중 가장 많이 나온 값이다",
+    "자료의 개수이다"
+   ],
+   "answer": 0,
+   "why": "평균은 자료의 값을 고르게 한 대표값입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-01-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "시험 점수가 8점, 9점, 10점, 7점, 6점입니다. 평균은 몇 점인가요?",
+   "options": [
+    "40",
+    "9",
+    "7",
+    "8"
+   ],
+   "answer": 3,
+   "why": "(8+9+10+7+6)÷5=40÷5=8(점)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-01-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "표는 모둠 친구 4명이 1분 동안 한 줄넘기 횟수입니다. 평균은 몇 회인가요?",
+   "svg": "<svg viewBox=\"0 0 310 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"304\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"139\" y1=\"3\" x2=\"139\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"195\" y1=\"3\" x2=\"195\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"251\" y1=\"3\" x2=\"251\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"307\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">이름</text><text x=\"111\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">민수</text><text x=\"167\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">지아</text><text x=\"223\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">하준</text><text x=\"279\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">서연</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">횟수(회)</text><text x=\"111\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">12</text><text x=\"167\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">15</text><text x=\"223\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">18</text><text x=\"279\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">15</text></svg>",
+   "answers": [
+    "15",
+    "15회"
+   ],
+   "why": "(12+15+18+15)÷4=60÷4=15(회)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-01-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "1모둠 점수는 80, 90, 85, 89점이고 2모둠 점수는 78, 85, 82, 83점입니다. 어느 모둠의 평균이 더 높고 몇 점 차이가 나나요?",
+   "options": [
+    "2모둠이 4점 더 높다",
+    "1모둠이 4점 더 높다",
+    "1모둠이 2점 더 높다",
+    "두 모둠의 평균이 같다"
+   ],
+   "answer": 1,
+   "why": "1모둠 평균은 344÷4=86(점), 2모둠 평균은 328÷4=82(점)이므로 1모둠이 4점 더 높습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-01-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "세 번의 시험 점수의 평균이 80점입니다. 첫 번째가 75점, 두 번째가 85점일 때 세 번째 점수는 몇 점인가요?",
+   "answers": [
+    "80",
+    "80점"
+   ],
+   "why": "세 점수의 합은 80×3=240(점)이므로 세 번째는 240-75-85=80(점)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-01-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "5개 수의 평균이 6입니다. 그중 4개가 4, 5, 7, 8일 때 나머지 한 수는 얼마인가요?",
+   "options": [
+    "5",
+    "6",
+    "7",
+    "30"
+   ],
+   "answer": 1,
+   "why": "5개 수의 합은 6×5=30이므로 나머지 수는 30-(4+5+7+8)=6입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-01-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "우리 반 학생들의 평균 키가 140 cm라고 합니다. 이에 대한 설명으로 옳은 것은 무엇인가요?",
+   "options": [
+    "가장 작은 학생의 키가 140 cm이다",
+    "모든 학생의 키가 140 cm이다",
+    "가장 큰 학생의 키가 140 cm이다",
+    "140 cm보다 큰 학생과 작은 학생이 있을 수 있다"
+   ],
+   "answer": 3,
+   "why": "평균은 값들을 고르게 한 값일 뿐이므로 각각의 값은 평균보다 클 수도 작을 수도 있습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-02-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "띠그래프는 어떤 그래프인가요?",
+   "options": [
+    "전체에 대한 각 부분의 비율을 띠 모양에 나타낸 그래프",
+    "시간에 따른 변화를 선으로 나타낸 그래프",
+    "항목의 수를 막대의 길이로 나타낸 그래프",
+    "점으로만 나타낸 그래프"
+   ],
+   "answer": 0,
+   "why": "띠그래프는 전체를 100 %로 보고 각 부분의 비율을 길이로 나타낸 그래프입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-02-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원그래프에서 가장 많은 학생이 좋아하는 운동은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 212 226\" font-family=\"sans-serif\"><path d=\"M106,120 L106,58 A62,62 0 0 1 142.4,170.2 Z\" fill=\"#4b7bec\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"142.6\" y=\"112.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">40%</text><text x=\"182.1\" y=\"99.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">축구</text><path d=\"M106,120 L142.4,170.2 A62,62 0 0 1 47,139.2 Z\" fill=\"#e07b39\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"94.1\" y=\"160.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30%</text><text x=\"81.3\" y=\"200.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">야구</text><path d=\"M106,120 L47,139.2 A62,62 0 0 1 69.6,69.8 Z\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"69.4\" y=\"112.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">20%</text><text x=\"29.9\" y=\"99.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">농구</text><path d=\"M106,120 L69.6,69.8 A62,62 0 0 1 106,58 Z\" fill=\"#e07b39\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"81.3\" y=\"47.9\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10%</text><text x=\"76.3\" y=\"32.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">기타</text><text x=\"106\" y=\"16\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">좋아하는 운동</text></svg>",
+   "options": [
+    "농구",
+    "야구",
+    "축구",
+    "기타"
+   ],
+   "answer": 2,
+   "why": "원그래프에서 가장 넓은 부분인 40 %는 축구입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-02-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "띠그래프나 원그래프에서 각 항목의 백분율을 모두 더하면 얼마인가요?",
+   "options": [
+    "1000 %",
+    "50 %",
+    "10 %",
+    "100 %"
+   ],
+   "answer": 3,
+   "why": "전체를 100 %로 나누어 나타내므로 합은 100 %입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-02-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "그림은 좋아하는 과일을 조사하여 나타낸 띠그래프입니다. 배를 좋아하는 학생은 전체의 몇 %인가요?",
+   "svg": "<svg viewBox=\"0 0 320 110\" font-family=\"sans-serif\"><text x=\"160\" y=\"16\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">좋아하는 과일</text><rect x=\"14\" y=\"44\" width=\"116.8\" height=\"36\" fill=\"#4b7bec\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"72.4\" y=\"67\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">40%</text><text x=\"72.4\" y=\"98\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">사과</text><rect x=\"130.8\" y=\"44\" width=\"73\" height=\"36\" fill=\"#e07b39\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"167.3\" y=\"67\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">25%</text><text x=\"167.3\" y=\"98\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">배</text><rect x=\"203.8\" y=\"44\" width=\"58.4\" height=\"36\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"233\" y=\"67\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">20%</text><text x=\"233\" y=\"98\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">귤</text><rect x=\"262.2\" y=\"44\" width=\"43.8\" height=\"36\" fill=\"#e07b39\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"284.1\" y=\"67\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">15%</text><text x=\"284.1\" y=\"98\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">기타</text><line x1=\"14\" y1=\"40\" x2=\"14\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"14\" y=\"36\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"87\" y1=\"40\" x2=\"87\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"87\" y=\"36\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">25</text><line x1=\"160\" y1=\"40\" x2=\"160\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"36\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">50</text><line x1=\"233\" y1=\"40\" x2=\"233\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"233\" y=\"36\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">75</text><line x1=\"306\" y1=\"40\" x2=\"306\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"306\" y=\"36\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">100</text></svg>",
+   "answers": [
+    "25",
+    "25%",
+    "25 %"
+   ],
+   "why": "띠그래프에서 배가 차지하는 부분은 25 %입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-02-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "전체 학생이 200명인 학교에서 원그래프의 어떤 항목이 30 %입니다. 이 항목에 해당하는 학생은 몇 명인가요?",
+   "svg": "<svg viewBox=\"0 0 212 226\" font-family=\"sans-serif\"><path d=\"M106,120 L106,58 A62,62 0 0 1 165,139.2 Z\" fill=\"#4b7bec\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"137.1\" y=\"101.4\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30%</text><text x=\"170.7\" y=\"77\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">가</text><path d=\"M106,120 L165,139.2 A62,62 0 0 1 44,120 Z\" fill=\"#e07b39\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"100\" y=\"162\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">45%</text><text x=\"93.5\" y=\"203\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">나</text><path d=\"M106,120 L44,120 A62,62 0 0 1 106,58 Z\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"78.8\" y=\"96.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">25%</text><text x=\"49.4\" y=\"67.4\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">다</text><text x=\"106\" y=\"16\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">전체 200명</text></svg>",
+   "options": [
+    "30명",
+    "60명",
+    "6명",
+    "90명"
+   ],
+   "answer": 1,
+   "why": "200명의 30 %는 200×0.3=60(명)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-02-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "전체 40명 중 12명이 좋아하는 항목의 비율은 몇 %인가요?",
+   "options": [
+    "40 %",
+    "12 %",
+    "30 %",
+    "3 %"
+   ],
+   "answer": 2,
+   "why": "12÷40=0.3이므로 30 %입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-02-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림은 좋아하는 과일을 조사한 띠그래프입니다. 사과와 배를 좋아하는 학생은 전체의 몇 %인가요?",
+   "svg": "<svg viewBox=\"0 0 320 92\" font-family=\"sans-serif\"><rect x=\"14\" y=\"26\" width=\"116.8\" height=\"36\" fill=\"#4b7bec\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"72.4\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">40%</text><text x=\"72.4\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">사과</text><rect x=\"130.8\" y=\"26\" width=\"73\" height=\"36\" fill=\"#e07b39\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"167.3\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">25%</text><text x=\"167.3\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">배</text><rect x=\"203.8\" y=\"26\" width=\"58.4\" height=\"36\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"233\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">20%</text><text x=\"233\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">귤</text><rect x=\"262.2\" y=\"26\" width=\"43.8\" height=\"36\" fill=\"#e07b39\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"284.1\" y=\"49\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">15%</text><text x=\"284.1\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">기타</text><line x1=\"14\" y1=\"22\" x2=\"14\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"14\" y=\"18\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"87\" y1=\"22\" x2=\"87\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"87\" y=\"18\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">25</text><line x1=\"160\" y1=\"22\" x2=\"160\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"18\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">50</text><line x1=\"233\" y1=\"22\" x2=\"233\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"233\" y=\"18\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">75</text><line x1=\"306\" y1=\"22\" x2=\"306\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"306\" y=\"18\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">100</text></svg>",
+   "options": [
+    "65 %",
+    "60 %",
+    "45 %",
+    "75 %"
+   ],
+   "answer": 0,
+   "why": "40+25=65(%)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-02-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "어느 마을 주민 500명을 대상으로 조사했더니 25 %가 ‘매우 만족’이라고 답했습니다. 매우 만족이라고 답한 주민은 몇 명인가요?",
+   "options": [
+    "250명",
+    "25명",
+    "125명",
+    "100명"
+   ],
+   "answer": 2,
+   "why": "500×0.25=125(명)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-02-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "비율그래프(띠그래프, 원그래프)가 필요한 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "전체에 대한 각 부분의 비율을 한눈에 비교하기 쉽기 때문이다",
+    "시간에 따른 변화를 보기 쉽기 때문이다",
+    "항목의 개수만 알 수 있기 때문이다",
+    "자료를 더하지 않아도 되기 때문이다"
+   ],
+   "answer": 0,
+   "why": "비율그래프는 전체에 대한 각 항목의 비율을 한눈에 비교하는 데 알맞습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-03-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "하루 동안 시각별 기온 변화를 나타내기에 가장 알맞은 그래프는 무엇인가요?",
+   "options": [
+    "그림그래프",
+    "원그래프",
+    "띠그래프",
+    "꺾은선그래프"
+   ],
+   "answer": 3,
+   "why": "시간에 따라 변하는 양은 꺾은선그래프로 나타내는 것이 알맞습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-03-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "전체에 대한 각 부분의 비율을 나타내기에 알맞은 그래프는 무엇인가요?",
+   "options": [
+    "꺾은선그래프",
+    "원그래프",
+    "막대그래프",
+    "점그래프"
+   ],
+   "answer": 1,
+   "why": "비율을 나타낼 때는 띠그래프나 원그래프가 알맞습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-03-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "학생별 독서량을 비교하기에 가장 알맞은 그래프는 무엇인가요?",
+   "options": [
+    "원그래프",
+    "막대그래프",
+    "띠그래프",
+    "꺾은선그래프"
+   ],
+   "answer": 1,
+   "why": "항목별 수량을 비교할 때는 막대그래프가 알맞습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-03-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "‘우리 반 친구들이 좋아하는 계절은 무엇일까?’라는 탐구 문제를 해결하기 위한 자료 수집 방법으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "운동장을 그린다",
+    "친구의 키를 잰다",
+    "교실 온도를 잰다",
+    "친구들에게 설문 조사를 한다"
+   ],
+   "answer": 3,
+   "why": "좋아하는 것을 알아보려면 설문 조사로 자료를 수집합니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-03-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "표는 좋아하는 계절을 조사한 결과(40명)입니다. 여름을 좋아하는 학생은 전체의 몇 %인가요?",
+   "svg": "<svg viewBox=\"0 0 336 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"330\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"133\" y1=\"3\" x2=\"133\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"183\" y1=\"3\" x2=\"183\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"233\" y1=\"3\" x2=\"233\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"283\" y1=\"3\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"333\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">계절</text><text x=\"108\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">봄</text><text x=\"158\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">여름</text><text x=\"208\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가을</text><text x=\"258\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">겨울</text><text x=\"308\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">합계</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">학생(명)</text><text x=\"108\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">10</text><text x=\"158\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">16</text><text x=\"208\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">8</text><text x=\"258\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"308\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">40</text></svg>",
+   "answers": [
+    "40",
+    "40%",
+    "40 %"
+   ],
+   "why": "16÷40=0.4이므로 40 %입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-03-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "위와 같은 조사 결과(봄 10명, 여름 16명, 가을 8명, 겨울 6명, 합계 40명)에서 가을을 좋아하는 학생은 전체의 몇 %인가요?",
+   "options": [
+    "20 %",
+    "8 %",
+    "40 %",
+    "25 %"
+   ],
+   "answer": 0,
+   "why": "8÷40=0.2이므로 20 %입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-03-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "좋아하는 계절 조사 결과(봄 10명, 여름 16명, 가을 8명, 겨울 6명, 합계 40명)에서 봄과 가을을 좋아하는 학생은 전체의 몇 %인가요?",
+   "options": [
+    "25 %",
+    "18 %",
+    "45 %",
+    "55 %"
+   ],
+   "answer": 2,
+   "why": "(10+8)÷40=0.45이므로 45 %입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-03-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "‘진서의 키가 1학년부터 6학년까지 해마다 어떻게 변했는가?’를 나타내기에 가장 알맞은 그래프는 무엇인가요?",
+   "options": [
+    "그림그래프",
+    "원그래프",
+    "띠그래프",
+    "꺾은선그래프"
+   ],
+   "answer": 3,
+   "why": "시간에 따른 변화를 나타내는 것에는 꺾은선그래프가 알맞습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-03-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "탐구 문제를 해결하는 과정을 순서대로 바르게 나열한 것은 무엇인가요?",
+   "options": [
+    "탐구 문제 정하기 → 자료 수집하기 → 자료 정리하기 → 그래프로 나타내기 → 해석하기",
+    "그래프로 나타내기 → 탐구 문제 정하기 → 자료 수집하기",
+    "자료 수집하기 → 해석하기 → 탐구 문제 정하기",
+    "해석하기 → 자료 정리하기 → 자료 수집하기"
+   ],
+   "answer": 0,
+   "why": "탐구 문제를 정하고 자료를 수집·정리한 뒤 그래프로 나타내어 해석합니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-04-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "동전 한 개를 던질 때 그림 면이 나올 가능성을 말로 알맞게 표현한 것은 무엇인가요?",
+   "options": [
+    "불가능하다",
+    "반반이다",
+    "확실하다",
+    "~일 것 같다"
+   ],
+   "answer": 1,
+   "why": "동전은 그림 면과 숫자 면이 나올 가능성이 같으므로 ‘반반이다’입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-04-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "‘해가 서쪽에서 뜬다’의 가능성을 말로 알맞게 표현한 것은 무엇인가요?",
+   "answers": [
+    "불가능하다",
+    "불가능"
+   ],
+   "why": "해가 서쪽에서 뜨는 일은 일어날 수 없으므로 불가능합니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-04-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "‘내일은 오늘 다음 날이다’의 가능성을 말로 알맞게 표현한 것은 무엇인가요?",
+   "options": [
+    "반반이다",
+    "불가능하다",
+    "확실하다",
+    "~아닐 것 같다"
+   ],
+   "answer": 2,
+   "why": "반드시 일어나는 일이므로 확실합니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-04-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "주사위 한 개를 던질 때 7의 눈이 나올 가능성을 말로 알맞게 표현한 것은 무엇인가요?",
+   "answers": [
+    "불가능하다",
+    "불가능"
+   ],
+   "why": "주사위에는 7의 눈이 없으므로 불가능합니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-04-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "주사위 한 개를 던질 때 짝수의 눈이 나올 가능성을 말로 알맞게 표현한 것은 무엇인가요?",
+   "options": [
+    "반반이다",
+    "불가능하다",
+    "확실하다",
+    "~아닐 것 같다"
+   ],
+   "answer": 0,
+   "why": "짝수(2, 4, 6)와 홀수(1, 3, 5)가 나올 가능성이 같으므로 반반입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-04-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "주머니에 흰 구슬 1개와 검은 구슬 1개가 들어 있습니다. 구슬 한 개를 꺼낼 때 흰 구슬일 가능성은 어떻게 표현할 수 있나요?",
+   "options": [
+    "불가능하다",
+    "확실하다",
+    "반반이다",
+    "~일 것 같다"
+   ],
+   "answer": 2,
+   "why": "두 구슬이 꺼내질 가능성이 같으므로 반반입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-04-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "주머니에 흰 구슬 3개와 검은 구슬 1개가 들어 있습니다. 구슬 한 개를 꺼낼 때 흰 구슬일 가능성을 말로 알맞게 표현한 것은 무엇인가요?",
+   "options": [
+    "~일 것 같다",
+    "반반이다",
+    "불가능하다",
+    "확실하다"
+   ],
+   "answer": 0,
+   "why": "흰 구슬이 더 많으므로 흰 구슬이 나올 가능성이 더 높습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-04-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "주머니에 빨간 구슬 2개와 파란 구슬 6개가 들어 있습니다. 구슬을 한 개 꺼낼 때 가능성이 더 높은 것은 무엇인가요?",
+   "options": [
+    "알 수 없다",
+    "빨간 구슬이 나올 가능성",
+    "두 가능성이 같다",
+    "파란 구슬이 나올 가능성"
+   ],
+   "answer": 3,
+   "why": "파란 구슬이 더 많으므로 파란 구슬이 나올 가능성이 더 높습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-04-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "가능성이 높은 것부터 차례로 나열한 것은 무엇인가요?",
+   "options": [
+    "확실하다 – ~일 것 같다 – 반반이다 – ~아닐 것 같다 – 불가능하다",
+    "불가능하다 – ~아닐 것 같다 – 반반이다 – ~일 것 같다 – 확실하다",
+    "반반이다 – 확실하다 – 불가능하다",
+    "~일 것 같다 – 확실하다 – 반반이다"
+   ],
+   "answer": 0,
+   "why": "확실한 일이 가장 가능성이 높고 불가능한 일이 가장 낮습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-05-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "일어날 수 없는 일의 가능성을 수로 쓰세요.",
+   "answers": [
+    "0"
+   ],
+   "why": "불가능한 일의 가능성은 0입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-05-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "반드시 일어나는 일의 가능성을 수로 쓰세요.",
+   "answers": [
+    "1"
+   ],
+   "why": "확실한 일의 가능성은 1입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-05-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "일이 일어날 가능성이 반반일 때 분수로 쓰세요. (분자/분모)",
+   "answers": [
+    "1/2",
+    "1 / 2"
+   ],
+   "why": "반반인 가능성은 $\\frac{1}{2}$입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-05-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "동전 한 개를 던질 때 숫자 면이 나올 가능성을 수로 나타내면 무엇인가요?",
+   "options": [
+    "$\\frac{1}{3}$",
+    "$\\frac{1}{2}$",
+    "1",
+    "0"
+   ],
+   "answer": 1,
+   "why": "동전에는 면이 2개이고 숫자 면은 1개이므로 $\\frac{1}{2}$입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-05-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "주사위 한 개를 던질 때 6의 눈이 나올 가능성을 분수로 쓰세요. (분자/분모)",
+   "answers": [
+    "1/6",
+    "1 / 6"
+   ],
+   "why": "주사위의 눈은 6가지이고 6의 눈은 1가지이므로 $\\frac{1}{6}$입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-05-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "주사위 한 개를 던질 때 홀수의 눈이 나올 가능성을 수로 나타내면 무엇인가요?",
+   "options": [
+    "$\\frac{1}{3}$",
+    "$\\frac{1}{2}$",
+    "$\\frac{1}{6}$",
+    "$\\frac{2}{3}$"
+   ],
+   "answer": 1,
+   "why": "홀수는 1, 3, 5로 3가지이므로 $\\frac{3}{6}$=$\\frac{1}{2}$입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-05-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림과 같은 회전판을 돌려 화살이 주황색 칸에 멈출 가능성을 수로 나타내면 무엇인가요? (8칸 중 3칸이 주황색)",
+   "svg": "<svg viewBox=\"0 0 132 136\" font-family=\"sans-serif\"><path d=\"M66,66 L66,12 A54,54 0 0 1 104.2,27.8 Z\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"79.2\" y=\"39.1\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><path d=\"M66,66 L104.2,27.8 A54,54 0 0 1 120,66 Z\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"97.9\" y=\"57.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><path d=\"M66,66 L120,66 A54,54 0 0 1 104.2,104.2 Z\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"97.9\" y=\"84.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><path d=\"M66,66 L104.2,104.2 A54,54 0 0 1 66,120 Z\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"79.2\" y=\"102.9\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><path d=\"M66,66 L66,120 A54,54 0 0 1 27.8,104.2 Z\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"52.8\" y=\"102.9\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><path d=\"M66,66 L27.8,104.2 A54,54 0 0 1 12,66 Z\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"34.1\" y=\"84.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><path d=\"M66,66 L12,66 A54,54 0 0 1 27.8,27.8 Z\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"34.1\" y=\"57.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><path d=\"M66,66 L27.8,27.8 A54,54 0 0 1 66,12 Z\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"52.8\" y=\"39.1\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8</text><polygon points=\"66,10 60,0 72,0\" fill=\"currentColor\"/></svg>",
+   "options": [
+    "$\\frac{1}{8}$",
+    "$\\frac{5}{8}$",
+    "$\\frac{3}{5}$",
+    "$\\frac{3}{8}$"
+   ],
+   "answer": 3,
+   "why": "전체 8칸 중 주황색 칸이 3칸이므로 $\\frac{3}{8}$입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-05-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "주머니에 파란 구슬 4개와 흰 구슬 6개가 들어 있습니다. 한 개를 꺼낼 때 파란 구슬일 가능성을 기약분수로 나타내면 무엇인가요?",
+   "options": [
+    "$\\frac{2}{5}$",
+    "$\\frac{4}{10}$",
+    "$\\frac{3}{5}$",
+    "$\\frac{2}{3}$"
+   ],
+   "answer": 0,
+   "why": "전체 10개 중 파란 구슬은 4개이므로 $\\frac{4}{10}$=$\\frac{2}{5}$입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-05-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "1부터 10까지 적힌 카드 중 한 장을 뽑을 때 3의 배수가 나올 가능성을 분수로 쓰세요. (분자/분모)",
+   "answers": [
+    "3/10",
+    "3 / 10"
+   ],
+   "why": "3의 배수는 3, 6, 9로 3장이므로 $\\frac{3}{10}$입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-06-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "동전을 100번 던졌더니 그림 면이 48번 나왔습니다. 그림 면이 나올 가능성은 대략 어떻다고 할 수 있나요?",
+   "options": [
+    "확실하다",
+    "불가능하다",
+    "반반에 가깝다",
+    "거의 나오지 않는다"
+   ],
+   "answer": 2,
+   "why": "100번 중 48번이므로 약 절반에 가까워 반반이라고 볼 수 있습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-06-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "표는 주사위를 60번 던져 나온 눈의 횟수입니다. 가장 많이 나온 눈은 무엇인가요? (숫자로 쓰세요)",
+   "svg": "<svg viewBox=\"0 0 330 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"324\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"107\" y1=\"3\" x2=\"107\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"151\" y1=\"3\" x2=\"151\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"195\" y1=\"3\" x2=\"195\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"239\" y1=\"3\" x2=\"239\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"283\" y1=\"3\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"327\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">눈</text><text x=\"85\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"129\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"173\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"217\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"261\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><text x=\"305\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">횟수</text><text x=\"85\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">8</text><text x=\"129\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">10</text><text x=\"173\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">12</text><text x=\"217\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">9</text><text x=\"261\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">11</text><text x=\"305\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">10</text></svg>",
+   "answers": [
+    "3",
+    "3의 눈"
+   ],
+   "why": "가장 큰 횟수 12가 3의 눈입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-06-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "실험에서 어떤 결과가 더 많이 나왔다면 그 결과가 일어날 가능성은 어떻다고 예상할 수 있나요?",
+   "options": [
+    "알 수 없다",
+    "더 낮다",
+    "0이다",
+    "더 높다"
+   ],
+   "answer": 3,
+   "why": "자주 나온 결과일수록 앞으로도 나올 가능성이 높다고 예상할 수 있습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-06-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "병뚜껑을 100번 던졌더니 오목한 면이 62번, 볼록한 면이 38번 나왔습니다. 어느 쪽이 나올 가능성이 더 큰가요?",
+   "svg": "<svg viewBox=\"0 0 296 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"290\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"93\" y1=\"3\" x2=\"93\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"293\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"48\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">위쪽 면</text><text x=\"143\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">오목한 면</text><text x=\"243\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">볼록한 면</text><text x=\"48\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">횟수(번)</text><text x=\"143\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">62</text><text x=\"243\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">38</text></svg>",
+   "options": [
+    "볼록한 면",
+    "오목한 면",
+    "두 면이 같다",
+    "알 수 없다"
+   ],
+   "answer": 1,
+   "why": "62번이 38번보다 많으므로 오목한 면이 나올 가능성이 더 큽니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-06-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "병뚜껑을 100번 던진 결과 오목한 면이 62번 나왔습니다. 오목한 면이 나온 횟수의 비율을 소수로 나타내면 얼마인가요?",
+   "answers": [
+    "0.62"
+   ],
+   "why": "62÷100=0.62입니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-06-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "위 실험 결과를 보고 다음에 병뚜껑을 던질 때 어느 면이 나올 것이라고 예상하는 것이 가장 알맞은가요? (오목한 면 62번, 볼록한 면 38번)",
+   "options": [
+    "반드시 볼록한 면",
+    "볼록한 면",
+    "오목한 면",
+    "예상할 수 없다"
+   ],
+   "answer": 2,
+   "why": "더 자주 나온 오목한 면이 나올 가능성이 더 크므로 오목한 면이라고 예상하는 것이 알맞습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-06-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "회전판을 200번 돌려 나온 결과가 빨강 120번, 파랑 50번, 노랑 30번입니다. 이 결과로 판단할 수 있는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 296 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"290\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"153\" y1=\"3\" x2=\"153\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"223\" y1=\"3\" x2=\"223\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"293\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">색</text><text x=\"118\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">빨강</text><text x=\"188\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">파랑</text><text x=\"258\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">노랑</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">횟수(번)</text><text x=\"118\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">120</text><text x=\"188\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">50</text><text x=\"258\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">30</text></svg>",
+   "options": [
+    "빨간색 칸이 가장 넓을 가능성이 크다",
+    "노란색 칸이 가장 넓을 가능성이 크다",
+    "세 색의 칸의 넓이가 모두 같다",
+    "판단할 수 없다"
+   ],
+   "answer": 0,
+   "why": "빨강이 가장 많이 나왔으므로 빨간색 칸이 가장 넓다고 짐작할 수 있습니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-06-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "주사위의 홀수 눈이 나오면 지아가 이기고 짝수 눈이 나오면 하준이가 이기는 게임을 합니다. 이 게임이 공정한 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "짝수가 더 많이 나오기 때문이다",
+    "홀수가 더 많이 나오기 때문이다",
+    "홀수와 짝수가 나올 가능성이 같기 때문이다",
+    "주사위를 던지는 사람이 다르기 때문이다"
+   ],
+   "answer": 2,
+   "why": "주사위의 눈 6개 중 홀수와 짝수가 각각 3개씩이므로 공정합니다."
+  },
+  {
+   "id": "수학-초5-6-6수04-06-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "자료와 가능성",
+   "standard": "6수04-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "동전 던지기 실험의 횟수를 계속 늘려 갈 때 앞면이 나오는 비율은 어떻게 되는 경향이 있나요?",
+   "options": [
+    "$\\frac{1}{2}$에 가까워진다",
+    "0에 가까워진다",
+    "1에 가까워진다",
+    "계속 커진다"
+   ],
+   "answer": 0,
+   "why": "실험 횟수가 많아질수록 앞면이 나오는 비율은 $\\frac{1}{2}$에 가까워집니다."
+  }
+ ],
+ "skipped": []
+}
