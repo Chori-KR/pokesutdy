@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "중",
+  "course": "수학",
+  "gradeBand": "중1-3",
+  "unit": "자료와 가능성",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-중1-3-9수04-08-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림은 한 집단의 상자그림입니다. 상자 안의 굵은 세로선이 나타내는 값은?",
+   "svg": "<svg viewBox=\"0 0 330 104\" font-family=\"sans-serif\"><line x1=\"56\" y1=\"64\" x2=\"310\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"56\" y1=\"8\" x2=\"56\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"56\" y1=\"64\" x2=\"56\" y2=\"69\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"56\" y=\"84\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"106.8\" y1=\"8\" x2=\"106.8\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"106.8\" y1=\"64\" x2=\"106.8\" y2=\"69\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"106.8\" y=\"84\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">20</text><line x1=\"157.6\" y1=\"8\" x2=\"157.6\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"157.6\" y1=\"64\" x2=\"157.6\" y2=\"69\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"157.6\" y=\"84\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">40</text><line x1=\"208.4\" y1=\"8\" x2=\"208.4\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"208.4\" y1=\"64\" x2=\"208.4\" y2=\"69\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"208.4\" y=\"84\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">60</text><line x1=\"259.2\" y1=\"8\" x2=\"259.2\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"259.2\" y1=\"64\" x2=\"259.2\" y2=\"69\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"259.2\" y=\"84\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">80</text><line x1=\"310\" y1=\"8\" x2=\"310\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"310\" y1=\"64\" x2=\"310\" y2=\"69\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"310\" y=\"84\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">100</text><text x=\"310\" y=\"100\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(점)</text><text x=\"48\" y=\"44\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">A</text><line x1=\"106.8\" y1=\"39\" x2=\"144.9\" y2=\"39\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"221.1\" y1=\"39\" x2=\"259.2\" y2=\"39\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"106.8\" y1=\"31\" x2=\"106.8\" y2=\"47\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"259.2\" y1=\"31\" x2=\"259.2\" y2=\"47\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"144.9\" y=\"25\" width=\"76.2\" height=\"28\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"183\" y1=\"25\" x2=\"183\" y2=\"53\" stroke=\"#e07b39\" stroke-width=\"3.5\"/></svg>",
+   "options": [
+    "최빈값",
+    "평균",
+    "중앙값(제2사분위수)",
+    "최댓값"
+   ],
+   "answer": 2,
+   "why": "상자 안의 세로선은 중앙값을 나타냅니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-08-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "자료 $1,\\ 3,\\ 5,\\ 7,\\ 9,\\ 11,\\ 13$의 제1사분위수는?",
+   "options": [
+    "3",
+    "1",
+    "5",
+    "2"
+   ],
+   "answer": 0,
+   "why": "중앙값 7을 기준으로 아래쪽 $1,3,5$의 가운데 값이 제1사분위수 3입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-08-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "자료 $1,\\ 3,\\ 5,\\ 7,\\ 9,\\ 11,\\ 13$의 사분위수 범위를 구하세요. (숫자만)",
+   "answers": [
+    "8"
+   ],
+   "why": "제1사분위수 3, 제3사분위수 11이므로 $11-3=8$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-08-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 두 집단 A, B의 상자그림입니다. 중앙값이 같을 때 자료가 더 고르게 모여 있는 집단은?",
+   "svg": "<svg viewBox=\"0 0 330 154\" font-family=\"sans-serif\"><line x1=\"56\" y1=\"114\" x2=\"310\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"56\" y1=\"8\" x2=\"56\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"56\" y1=\"114\" x2=\"56\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"56\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">10</text><line x1=\"87.8\" y1=\"8\" x2=\"87.8\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"87.8\" y1=\"114\" x2=\"87.8\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"87.8\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">20</text><line x1=\"119.5\" y1=\"8\" x2=\"119.5\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"119.5\" y1=\"114\" x2=\"119.5\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"119.5\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">30</text><line x1=\"151.2\" y1=\"8\" x2=\"151.2\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"151.2\" y1=\"114\" x2=\"151.2\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"151.2\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">40</text><line x1=\"183\" y1=\"8\" x2=\"183\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"183\" y1=\"114\" x2=\"183\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"183\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">50</text><line x1=\"214.8\" y1=\"8\" x2=\"214.8\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"214.8\" y1=\"114\" x2=\"214.8\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"214.8\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">60</text><line x1=\"246.5\" y1=\"8\" x2=\"246.5\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"246.5\" y1=\"114\" x2=\"246.5\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"246.5\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">70</text><line x1=\"278.2\" y1=\"8\" x2=\"278.2\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"278.2\" y1=\"114\" x2=\"278.2\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"278.2\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">80</text><line x1=\"310\" y1=\"8\" x2=\"310\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"310\" y1=\"114\" x2=\"310\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"310\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">90</text><text x=\"310\" y=\"150\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(점)</text><text x=\"48\" y=\"44\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">A</text><line x1=\"87.8\" y1=\"39\" x2=\"135.4\" y2=\"39\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"230.6\" y1=\"39\" x2=\"278.2\" y2=\"39\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"87.8\" y1=\"31\" x2=\"87.8\" y2=\"47\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"278.2\" y1=\"31\" x2=\"278.2\" y2=\"47\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"135.4\" y=\"25\" width=\"95.2\" height=\"28\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"183\" y1=\"25\" x2=\"183\" y2=\"53\" stroke=\"#e07b39\" stroke-width=\"3.5\"/><text x=\"48\" y=\"94\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">B</text><line x1=\"119.5\" y1=\"89\" x2=\"167.1\" y2=\"89\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"198.9\" y1=\"89\" x2=\"246.5\" y2=\"89\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"119.5\" y1=\"81\" x2=\"119.5\" y2=\"97\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"246.5\" y1=\"81\" x2=\"246.5\" y2=\"97\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"167.1\" y=\"75\" width=\"31.8\" height=\"28\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"183\" y1=\"75\" x2=\"183\" y2=\"103\" stroke=\"#e07b39\" stroke-width=\"3.5\"/></svg>",
+   "options": [
+    "알 수 없다",
+    "A",
+    "두 집단이 같다",
+    "B"
+   ],
+   "answer": 3,
+   "why": "상자의 길이(사분위수 범위)가 B는 10, A는 30으로 B가 더 짧습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-08-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "상자그림에서 상자의 길이는 무엇을 나타내나요?",
+   "options": [
+    "범위",
+    "사분위수 범위",
+    "분산",
+    "평균과 중앙값의 차"
+   ],
+   "answer": 1,
+   "why": "상자는 제1사분위수에서 제3사분위수까지이므로 그 길이는 사분위수 범위입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-08-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "자료의 최솟값이 12, 최댓값이 48일 때 범위를 구하세요. (숫자만)",
+   "answers": [
+    "36"
+   ],
+   "why": "(범위)$=$(최댓값)$-$(최솟값)$=48-12=36$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-08-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림은 A반과 B반의 시험 점수를 나타낸 상자그림입니다. 옳은 것은?",
+   "svg": "<svg viewBox=\"0 0 330 154\" font-family=\"sans-serif\"><line x1=\"56\" y1=\"114\" x2=\"310\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"56\" y1=\"8\" x2=\"56\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"56\" y1=\"114\" x2=\"56\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"56\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">30</text><line x1=\"92.3\" y1=\"8\" x2=\"92.3\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"92.3\" y1=\"114\" x2=\"92.3\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"92.3\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">40</text><line x1=\"128.6\" y1=\"8\" x2=\"128.6\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"128.6\" y1=\"114\" x2=\"128.6\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"128.6\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">50</text><line x1=\"164.9\" y1=\"8\" x2=\"164.9\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"164.9\" y1=\"114\" x2=\"164.9\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"164.9\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">60</text><line x1=\"201.1\" y1=\"8\" x2=\"201.1\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"201.1\" y1=\"114\" x2=\"201.1\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"201.1\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">70</text><line x1=\"237.4\" y1=\"8\" x2=\"237.4\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"237.4\" y1=\"114\" x2=\"237.4\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"237.4\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">80</text><line x1=\"273.7\" y1=\"8\" x2=\"273.7\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"273.7\" y1=\"114\" x2=\"273.7\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"273.7\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">90</text><line x1=\"310\" y1=\"8\" x2=\"310\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><line x1=\"310\" y1=\"114\" x2=\"310\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"310\" y=\"134\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">100</text><text x=\"310\" y=\"150\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(점)</text><text x=\"48\" y=\"44\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">A</text><line x1=\"92.3\" y1=\"39\" x2=\"146.7\" y2=\"39\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"219.3\" y1=\"39\" x2=\"291.9\" y2=\"39\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"92.3\" y1=\"31\" x2=\"92.3\" y2=\"47\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"291.9\" y1=\"31\" x2=\"291.9\" y2=\"47\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"146.7\" y=\"25\" width=\"72.6\" height=\"28\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"183\" y1=\"25\" x2=\"183\" y2=\"53\" stroke=\"#e07b39\" stroke-width=\"3.5\"/><text x=\"48\" y=\"94\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">B</text><line x1=\"128.6\" y1=\"89\" x2=\"164.9\" y2=\"89\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"237.4\" y1=\"89\" x2=\"273.7\" y2=\"89\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"128.6\" y1=\"81\" x2=\"128.6\" y2=\"97\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"273.7\" y1=\"81\" x2=\"273.7\" y2=\"97\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"164.9\" y=\"75\" width=\"72.6\" height=\"28\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"201.1\" y1=\"75\" x2=\"201.1\" y2=\"103\" stroke=\"#e07b39\" stroke-width=\"3.5\"/></svg>",
+   "options": [
+    "A반의 사분위수 범위가 B반보다 작다",
+    "B반의 중앙값이 A반보다 높다",
+    "A반의 최솟값이 B반보다 크다",
+    "두 반의 범위가 같다"
+   ],
+   "answer": 1,
+   "why": "중앙값은 A반 65, B반 70입니다. 사분위수 범위는 둘 다 20이고, 범위는 A반 55, B반 40입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-08-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "상자그림만으로는 알 수 없는 것은?",
+   "options": [
+    "사분위수 범위",
+    "중앙값",
+    "최솟값",
+    "각 학생의 정확한 점수"
+   ],
+   "answer": 3,
+   "why": "상자그림은 요약된 값만 보여 주며 개별 자료의 값은 알 수 없습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-08-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "상자그림에서 중앙값이 상자의 왼쪽에 치우쳐 있고 오른쪽 수염이 길 때 분포에 대한 해석으로 알맞은 것은?",
+   "options": [
+    "작은 값에 자료가 몰려 있고 큰 값 쪽으로 넓게 퍼져 있다",
+    "큰 값에 자료가 몰려 있다",
+    "자료가 모든 구간에 고르게 퍼져 있다",
+    "최빈값이 최댓값이다"
+   ],
+   "answer": 0,
+   "why": "중앙값이 왼쪽에 있으면 아래쪽 자료가 촘촘하고 오른쪽 수염이 길면 큰 값들이 멀리 퍼져 있습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-09-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림은 학생 6명의 공부 시간(시간)과 시험 점수(점)를 산점도로 나타낸 것입니다. 두 변량 사이의 관계는?",
+   "svg": "<svg viewBox=\"0 0 300 230\" font-family=\"sans-serif\"><text x=\"40\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(점)</text><text x=\"280\" y=\"222\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(시간)</text><line x1=\"46\" y1=\"26\" x2=\"46\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"46\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"78.9\" y1=\"26\" x2=\"78.9\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"78.9\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"111.7\" y1=\"26\" x2=\"111.7\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"111.7\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"144.6\" y1=\"26\" x2=\"144.6\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"144.6\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"177.4\" y1=\"26\" x2=\"177.4\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"177.4\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"210.3\" y1=\"26\" x2=\"210.3\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"210.3\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"243.1\" y1=\"26\" x2=\"243.1\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"243.1\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"276\" y1=\"26\" x2=\"276\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"276\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">7</text><line x1=\"46\" y1=\"186\" x2=\"276\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">30</text><line x1=\"46\" y1=\"159.3\" x2=\"276\" y2=\"159.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"163.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">40</text><line x1=\"46\" y1=\"132.7\" x2=\"276\" y2=\"132.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"136.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">50</text><line x1=\"46\" y1=\"106\" x2=\"276\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"110\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">60</text><line x1=\"46\" y1=\"79.3\" x2=\"276\" y2=\"79.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"83.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">70</text><line x1=\"46\" y1=\"52.7\" x2=\"276\" y2=\"52.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"56.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">80</text><line x1=\"46\" y1=\"26\" x2=\"276\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">90</text><line x1=\"46\" y1=\"22\" x2=\"46\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"46\" y1=\"186\" x2=\"280\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"78.9\" cy=\"159.3\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"111.7\" cy=\"132.7\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"144.6\" cy=\"119.3\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"177.4\" cy=\"92.7\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"210.3\" cy=\"66\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"243.1\" cy=\"52.7\" r=\"4.5\" fill=\"#4b7bec\"/></svg>",
+   "options": [
+    "상관관계가 없다",
+    "음의 상관관계",
+    "양의 상관관계",
+    "알 수 없다"
+   ],
+   "answer": 2,
+   "why": "점들이 오른쪽 위로 향하므로 한 변량이 커질 때 다른 변량도 커지는 양의 상관관계입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-09-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 음의 상관관계가 있는 두 변량은?",
+   "options": [
+    "어린이의 나이와 신발 크기",
+    "키와 몸무게",
+    "공부 시간과 시험 점수",
+    "자동차의 속도와 같은 거리를 가는 데 걸리는 시간"
+   ],
+   "answer": 3,
+   "why": "속도가 빠를수록 걸리는 시간은 짧아지므로 음의 상관관계입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-09-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림은 두 변량 $x$, $y$의 산점도입니다. 두 변량 사이의 관계는?",
+   "svg": "<svg viewBox=\"0 0 300 230\" font-family=\"sans-serif\"><text x=\"40\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">y</text><text x=\"280\" y=\"222\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">x</text><line x1=\"46\" y1=\"26\" x2=\"46\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"46\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"78.9\" y1=\"26\" x2=\"78.9\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"78.9\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"111.7\" y1=\"26\" x2=\"111.7\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"111.7\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"144.6\" y1=\"26\" x2=\"144.6\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"144.6\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"177.4\" y1=\"26\" x2=\"177.4\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"177.4\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"210.3\" y1=\"26\" x2=\"210.3\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"210.3\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"243.1\" y1=\"26\" x2=\"243.1\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"243.1\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"276\" y1=\"26\" x2=\"276\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"276\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">7</text><line x1=\"46\" y1=\"186\" x2=\"276\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"46\" y1=\"146\" x2=\"276\" y2=\"146\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"150\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"46\" y1=\"106\" x2=\"276\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"110\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"46\" y1=\"66\" x2=\"276\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"70\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"46\" y1=\"26\" x2=\"276\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">8</text><line x1=\"46\" y1=\"22\" x2=\"46\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"46\" y1=\"186\" x2=\"280\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"78.9\" cy=\"86\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"111.7\" cy=\"146\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"144.6\" cy=\"66\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"177.4\" cy=\"126\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"210.3\" cy=\"86\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"243.1\" cy=\"146\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"111.7\" cy=\"66\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"210.3\" cy=\"126\" r=\"4.5\" fill=\"#4b7bec\"/></svg>",
+   "options": [
+    "양의 상관관계",
+    "상관관계가 없다",
+    "음의 상관관계",
+    "강한 음의 상관관계"
+   ],
+   "answer": 1,
+   "why": "점들이 어느 방향으로도 뚜렷한 경향 없이 흩어져 있으므로 상관관계가 없습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-09-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "산점도에서 점들이 대체로 오른쪽 위로 향하는 경향이 있을 때 옳은 것은?",
+   "options": [
+    "두 변량은 서로 관계가 없다",
+    "한 변량이 커질 때 다른 변량은 대체로 작아진다",
+    "한 변량이 커질 때 다른 변량도 대체로 커진다",
+    "점들이 모두 한 직선 위에 있다"
+   ],
+   "answer": 2,
+   "why": "이것이 양의 상관관계입니다. 모든 점이 한 직선 위에 있을 필요는 없습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-09-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 학생 8명의 수학 점수와 과학 점수를 산점도로 나타낸 것입니다. 수학 80점 이상이면서 과학 70점 이상인 학생은 몇 명인가요?",
+   "svg": "<svg viewBox=\"0 0 300 230\" font-family=\"sans-serif\"><text x=\"40\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">과학</text><text x=\"280\" y=\"222\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">수학</text><line x1=\"46\" y1=\"26\" x2=\"46\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"46\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">50</text><line x1=\"92\" y1=\"26\" x2=\"92\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"92\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">60</text><line x1=\"138\" y1=\"26\" x2=\"138\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"138\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">70</text><line x1=\"184\" y1=\"26\" x2=\"184\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"184\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">80</text><line x1=\"230\" y1=\"26\" x2=\"230\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"230\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">90</text><line x1=\"276\" y1=\"26\" x2=\"276\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"276\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">100</text><line x1=\"46\" y1=\"186\" x2=\"276\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">40</text><line x1=\"46\" y1=\"159.3\" x2=\"276\" y2=\"159.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"163.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">50</text><line x1=\"46\" y1=\"132.7\" x2=\"276\" y2=\"132.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"136.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">60</text><line x1=\"46\" y1=\"106\" x2=\"276\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"110\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">70</text><line x1=\"46\" y1=\"79.3\" x2=\"276\" y2=\"79.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"83.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">80</text><line x1=\"46\" y1=\"52.7\" x2=\"276\" y2=\"52.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"56.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">90</text><line x1=\"46\" y1=\"26\" x2=\"276\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">100</text><line x1=\"46\" y1=\"22\" x2=\"46\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"46\" y1=\"186\" x2=\"280\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"92\" cy=\"159.3\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"138\" cy=\"119.3\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"184\" cy=\"92.7\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"207\" cy=\"52.7\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"230\" cy=\"79.3\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"161\" cy=\"66\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"253\" cy=\"132.7\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"69\" cy=\"106\" r=\"4.5\" fill=\"#4b7bec\"/></svg>",
+   "options": [
+    "3명",
+    "2명",
+    "4명",
+    "5명"
+   ],
+   "answer": 0,
+   "why": "해당하는 점은 (80, 75), (85, 90), (90, 80)으로 3명입니다. (95, 60)은 과학이 70점 미만입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-09-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 상관관계가 거의 없다고 볼 수 있는 두 변량은?",
+   "options": [
+    "운동량과 칼로리 소모량",
+    "어린이의 나이와 키",
+    "같은 반 학생의 신발 크기와 수학 시험 점수",
+    "겨울철 기온과 난방비"
+   ],
+   "answer": 2,
+   "why": "나머지는 한쪽이 변하면 다른 쪽도 함께 변하는 경향이 뚜렷합니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-09-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림과 같이 산점도의 점들이 오른쪽 아래로 향하는 직선 가까이에 모여 있다면 두 변량의 관계는?",
+   "svg": "<svg viewBox=\"0 0 300 230\" font-family=\"sans-serif\"><text x=\"40\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">y</text><text x=\"280\" y=\"222\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">x</text><line x1=\"46\" y1=\"26\" x2=\"46\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"46\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"74.8\" y1=\"26\" x2=\"74.8\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"74.8\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"103.5\" y1=\"26\" x2=\"103.5\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"103.5\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"132.2\" y1=\"26\" x2=\"132.2\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"132.2\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"161\" y1=\"26\" x2=\"161\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"161\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"189.8\" y1=\"26\" x2=\"189.8\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"189.8\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"218.5\" y1=\"26\" x2=\"218.5\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"218.5\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"247.2\" y1=\"26\" x2=\"247.2\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"247.2\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">7</text><line x1=\"276\" y1=\"26\" x2=\"276\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"276\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">8</text><line x1=\"46\" y1=\"186\" x2=\"276\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"46\" y1=\"154\" x2=\"276\" y2=\"154\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"158\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"46\" y1=\"122\" x2=\"276\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"126\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"46\" y1=\"90\" x2=\"276\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"94\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"46\" y1=\"58\" x2=\"276\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"62\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">8</text><line x1=\"46\" y1=\"26\" x2=\"276\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">10</text><line x1=\"46\" y1=\"22\" x2=\"46\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"46\" y1=\"186\" x2=\"280\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"74.8\" cy=\"42\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"103.5\" cy=\"58\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"132.2\" cy=\"74\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"161\" cy=\"90\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"189.8\" cy=\"122\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"218.5\" cy=\"138\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"247.2\" cy=\"154\" r=\"4.5\" fill=\"#4b7bec\"/></svg>",
+   "options": [
+    "강한 음의 상관관계",
+    "강한 양의 상관관계",
+    "약한 음의 상관관계",
+    "상관관계가 없다"
+   ],
+   "answer": 0,
+   "why": "오른쪽 아래로 향하면 음, 점들이 직선에 가까울수록 강한 상관관계입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-09-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "아이스크림 판매량과 물놀이 사고 수가 양의 상관관계를 보였을 때 가장 합리적인 해석은?",
+   "options": [
+    "두 변량은 아무 관계가 없다",
+    "아이스크림이 사고의 원인이다",
+    "사고가 아이스크림 판매의 원인이다",
+    "둘 다 더운 날씨의 영향을 받았을 수 있어 인과관계라고 단정할 수 없다"
+   ],
+   "answer": 3,
+   "why": "상관관계가 있다고 해서 한쪽이 다른 쪽의 원인이라고 할 수는 없습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-09-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "그림은 학생 6명의 중간고사와 기말고사 점수를 나타낸 산점도입니다. 점선 위의 점은 두 점수가 같은 학생입니다. 점선보다 위쪽에 있는 점(기말고사 점수가 더 높은 학생)은 몇 개인가요? (숫자만)",
+   "svg": "<svg viewBox=\"0 0 300 230\" font-family=\"sans-serif\"><text x=\"40\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">기말</text><text x=\"280\" y=\"222\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">중간</text><line x1=\"46\" y1=\"26\" x2=\"46\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"46\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">40</text><line x1=\"84.3\" y1=\"26\" x2=\"84.3\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"84.3\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">50</text><line x1=\"122.7\" y1=\"26\" x2=\"122.7\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"122.7\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">60</text><line x1=\"161\" y1=\"26\" x2=\"161\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"161\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">70</text><line x1=\"199.3\" y1=\"26\" x2=\"199.3\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"199.3\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">80</text><line x1=\"237.7\" y1=\"26\" x2=\"237.7\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"237.7\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">90</text><line x1=\"276\" y1=\"26\" x2=\"276\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"276\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">100</text><line x1=\"46\" y1=\"186\" x2=\"276\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">40</text><line x1=\"46\" y1=\"159.3\" x2=\"276\" y2=\"159.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"163.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">50</text><line x1=\"46\" y1=\"132.7\" x2=\"276\" y2=\"132.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"136.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">60</text><line x1=\"46\" y1=\"106\" x2=\"276\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"110\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">70</text><line x1=\"46\" y1=\"79.3\" x2=\"276\" y2=\"79.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"83.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">80</text><line x1=\"46\" y1=\"52.7\" x2=\"276\" y2=\"52.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"56.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">90</text><line x1=\"46\" y1=\"26\" x2=\"276\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.2\"/><text x=\"40\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">100</text><line x1=\"46\" y1=\"22\" x2=\"46\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"46\" y1=\"186\" x2=\"280\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"46\" y1=\"186\" x2=\"276\" y2=\"26\" stroke=\"#e07b39\" stroke-width=\"2.2\" stroke-dasharray=\"6 5\"/><circle cx=\"122.7\" cy=\"106\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"161\" cy=\"119.3\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"199.3\" cy=\"66\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"84.3\" cy=\"172.7\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"237.7\" cy=\"39.3\" r=\"4.5\" fill=\"#4b7bec\"/><circle cx=\"180.2\" cy=\"92.7\" r=\"4.5\" fill=\"#4b7bec\"/></svg>",
+   "answers": [
+    "3",
+    "3개",
+    "3명"
+   ],
+   "why": "(60,70), (80,85), (90,95)가 점선 위쪽에 있고, (70,65), (50,45)는 아래쪽, (75,75)는 점선 위에 있으므로 위쪽은 3개입니다."
+  }
+ ],
+ "skipped": []
+}

@@ -83,7 +83,7 @@ def boxplot(rows, lo, hi, step, W=330, unit=""):
     return svg(W, H, "".join(out))
 
 
-def scatter(points, xr, yr, xstep, ystep, xlab="", ylab="", W=300, H=230):
+def scatter(points, xr, yr, xstep, ystep, xlab="", ylab="", W=300, H=230, diag=False):
     x0, y0, pw, ph = 46, 26, W - 70, H - 70
     yb = y0 + ph
     X = lambda v: x0 + (v - xr[0]) / (xr[1] - xr[0]) * pw
@@ -101,6 +101,8 @@ def scatter(points, xr, yr, xstep, ystep, xlab="", ylab="", W=300, H=230):
         v += ystep
     out.append(line(x0, y0 - 4, x0, yb, 2))
     out.append(line(x0, yb, x0 + pw + 4, yb, 2))
+    if diag:
+        out.append(line(X(xr[0]), Y(xr[0]), X(xr[1]), Y(xr[1]), 2.2, dash="6 5", color=ORANGE))
     for a, b in points:
         out.append(f'<circle cx="{_n(X(a))}" cy="{_n(Y(b))}" r="4.5" fill="{BLUE}"/>')
     return svg(W, H, "".join(out))
