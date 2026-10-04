@@ -1,0 +1,224 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초5-6",
+  "unit": "과학과 미래 사회",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "과학-초5-6-6과16-01-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "과학과 미래 사회",
+   "standard": "6과16-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 미래 사회에 일어날 수 있는 문제로 알맞은 것은 무엇인가요?",
+   "options": [
+    "학교 급식 메뉴 변경",
+    "수업 시간표 변경",
+    "기후 변화와 에너지 부족",
+    "교실 청소 당번 정하기"
+   ],
+   "answer": 2,
+   "why": "기후 변화, 에너지 부족, 고령화, 쓰레기 문제 등은 미래 사회가 함께 해결해야 할 문제입니다."
+  },
+  {
+   "id": "과학-초5-6-6과16-01-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "과학과 미래 사회",
+   "standard": "6과16-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "태양빛이나 바람처럼 한 번 쓰고 없어지지 않고 계속 쓸 수 있는 에너지를 무엇이라고 하나요? (예: 태양광, 풍력)",
+   "answers": [
+    "신재생 에너지",
+    "재생 에너지",
+    "신재생에너지",
+    "재생에너지"
+   ],
+   "why": "태양광·풍력 같은 신재생 에너지는 화석 연료 사용을 줄여 줍니다."
+  },
+  {
+   "id": "과학-초5-6-6과16-01-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "과학과 미래 사회",
+   "standard": "6과16-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "표는 미래 사회의 문제와 이를 해결하는 데 도움이 되는 과학 기술입니다. 빈칸에 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 280 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"274\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"87\" y1=\"3\" x2=\"87\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"277\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"277\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"277\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"45\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">미래 문제</text><text x=\"182\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">과학 기술</text><text x=\"45\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">고령화</text><text x=\"182\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">돌봄 로봇, 건강 관리 기기</text><text x=\"45\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">감염병</text><text x=\"182\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">( )</text><text x=\"45\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">식량 부족</text><text x=\"182\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">스마트 농장</text></svg>",
+   "answers": [
+    "백신과 치료제 개발",
+    "백신 개발",
+    "백신",
+    "치료제 개발"
+   ],
+   "why": "토의에서는 서로의 의견을 존중하고 근거를 들어 해결 방안을 찾습니다."
+  },
+  {
+   "id": "과학-초5-6-6과16-01-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "과학과 미래 사회",
+   "standard": "6과16-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "바다에 쌓이는 플라스틱 쓰레기 문제를 해결하는 방법으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "썩는 재료로 만든 제품을 개발하고 재활용 기술을 발전시킨다",
+    "플라스틱을 바다에 더 많이 버린다",
+    "일회용품을 더 많이 만든다",
+    "문제를 모른 척한다"
+   ],
+   "answer": 0,
+   "why": "과학 기술로 환경에 덜 해로운 재료를 만들고 재활용을 늘려 문제를 줄일 수 있습니다."
+  },
+  {
+   "id": "과학-초5-6-6과16-01-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "과학과 미래 사회",
+   "standard": "6과16-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "과학 기술이 미래 사회의 문제 해결에 도움을 주지만 조심해야 하는 점은 무엇인가요?",
+   "options": [
+    "기술은 윤리와 상관없다",
+    "기술은 무조건 많이 쓸수록 좋다",
+    "새로운 기술은 문제를 만들지 않는다",
+    "기술을 쓸 때 안전, 개인 정보 보호, 윤리 문제를 함께 생각해야 한다"
+   ],
+   "answer": 3,
+   "why": "과학 기술은 편리하지만 안전과 윤리, 개인 정보 보호 같은 문제를 함께 생각해야 합니다."
+  },
+  {
+   "id": "과학-초5-6-6과16-02-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "과학과 미래 사회",
+   "standard": "6과16-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "날씨를 관측하고 예보하는 일을 하는 직업은 무엇인가요? (직업 이름)",
+   "answers": [
+    "기상 예보관",
+    "기상예보관",
+    "예보관",
+    "기상청 직원"
+   ],
+   "why": "기상 예보관은 기상 자료를 분석하여 날씨를 예보합니다."
+  },
+  {
+   "id": "과학-초5-6-6과16-02-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "과학과 미래 사회",
+   "standard": "6과16-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 생명 과학 지식을 가장 많이 활용하는 직업은 무엇인가요?",
+   "options": [
+    "우체부",
+    "수의사",
+    "화가",
+    "버스 운전기사"
+   ],
+   "answer": 1,
+   "why": "수의사는 동물의 몸과 질병에 관한 생명 과학 지식을 활용합니다."
+  },
+  {
+   "id": "과학-초5-6-6과16-02-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "과학과 미래 사회",
+   "standard": "6과16-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 직업과 관련된 과학 분야입니다. ( )에 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 260 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"254\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"87\" y1=\"3\" x2=\"87\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"257\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"257\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"257\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"45\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">직업</text><text x=\"172\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">관련 과학 분야</text><text x=\"45\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">건축가</text><text x=\"172\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">( )</text><text x=\"45\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수의사</text><text x=\"172\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">생명 과학</text><text x=\"45\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">프로그래머</text><text x=\"172\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">컴퓨터 과학</text></svg>",
+   "options": [
+    "요리법",
+    "물질과 힘(물리)",
+    "역사",
+    "음악"
+   ],
+   "answer": 1,
+   "why": "건축가는 건물을 안전하게 짓기 위해 물질의 성질과 힘에 관한 과학 지식을 활용합니다."
+  },
+  {
+   "id": "과학-초5-6-6과16-02-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "과학과 미래 사회",
+   "standard": "6과16-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "자신의 진로와 과학을 관련지어 설명한 것으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "요리는 과학과 관련이 없다",
+    "나는 아무 꿈이 없다",
+    "과학은 나의 진로와 관련이 없다",
+    "요리사가 되고 싶다. 음식이 익을 때의 변화와 영양소를 알면 더 맛있고 건강한 요리를 할 수 있기 때문이다"
+   ],
+   "answer": 3,
+   "why": "진로와 과학을 구체적으로 관련지어 설명한 예입니다."
+  },
+  {
+   "id": "과학-초5-6-6과16-02-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "과학과 미래 사회",
+   "standard": "6과16-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "축구 선수나 스포츠 트레이너가 과학 지식을 활용하는 사례로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "운동할 때 몸의 근육과 뼈의 움직임을 이해하여 부상을 줄이고 기록을 높인다",
+    "과학과 전혀 관계가 없다",
+    "이론 없이 운동만 한다",
+    "근육 이름만 외운다"
+   ],
+   "answer": 0,
+   "why": "스포츠 분야에서도 몸의 구조와 운동 원리 같은 과학 지식이 활용됩니다."
+  },
+  {
+   "id": "과학-초5-6-6과16-02-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "과학과 미래 사회",
+   "standard": "6과16-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "자신의 진로를 과학과 관련지어 발표할 때 가장 알맞은 구성은 무엇인가요?",
+   "options": [
+    "하고 싶은 일 → 관련된 과학 지식 → 앞으로 준비할 일",
+    "좋아하는 연예인 → 친구 이름 → 점심 메뉴",
+    "과학 용어만 나열하기",
+    "관련 없는 이야기만 하기"
+   ],
+   "answer": 0,
+   "why": "진로 → 관련 과학 → 준비할 일의 순서로 말하면 과학과 진로의 관계가 분명해집니다."
+  }
+ ],
+ "skipped": []
+}
