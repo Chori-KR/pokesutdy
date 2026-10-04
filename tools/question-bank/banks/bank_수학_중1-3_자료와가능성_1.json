@@ -1,0 +1,1165 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "중",
+  "course": "수학",
+  "gradeBand": "중1-3",
+  "unit": "자료와 가능성",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-중1-3-9수04-01-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "자료 $5,\\ 2,\\ 9,\\ 4,\\ 7$의 중앙값은?",
+   "options": [
+    "7",
+    "4",
+    "5",
+    "5.4"
+   ],
+   "answer": 2,
+   "why": "크기순으로 나열하면 $2,4,5,7,9$이고 가운데 값은 5입니다. (5.4는 평균입니다.)"
+  },
+  {
+   "id": "수학-중1-3-9수04-01-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "자료 $2,\\ 3,\\ 3,\\ 5,\\ 3,\\ 7,\\ 5$의 최빈값은?",
+   "options": [
+    "3",
+    "5",
+    "2",
+    "7"
+   ],
+   "answer": 0,
+   "why": "3이 3번 나와 가장 많이 나타납니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-01-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "자료 $4,\\ 8,\\ 6,\\ 2$의 중앙값을 구하세요. (숫자만)",
+   "answers": [
+    "5"
+   ],
+   "why": "크기순으로 $2,4,6,8$이고 개수가 짝수이므로 가운데 두 값의 평균 $\\dfrac{4+6}{2}=5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-01-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "신발 가게 주인이 다음 달에 가장 많이 준비해야 할 신발 크기를 정하려고 합니다. 가장 알맞은 대푯값은?",
+   "options": [
+    "합계",
+    "중앙값",
+    "평균",
+    "최빈값"
+   ],
+   "answer": 3,
+   "why": "가장 많이 팔린 치수가 필요하므로 최빈값이 알맞습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-01-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "자료 $1,\\ 2,\\ 2,\\ 3,\\ 100$의 대푯값으로 가장 알맞은 것과 그 이유는?",
+   "options": [
+    "평균 21.6, 모든 값을 반영하기 때문에 가장 알맞다",
+    "중앙값 2, 극단적으로 큰 값 100의 영향을 받지 않기 때문이다",
+    "최빈값 1, 가장 처음 나오는 값이기 때문이다",
+    "최댓값 100, 자료를 대표하는 가장 큰 값이기 때문이다"
+   ],
+   "answer": 1,
+   "why": "평균은 $\\dfrac{108}{5}=21.6$으로 대부분의 값과 크게 차이가 납니다. 중앙값은 극단값의 영향을 받지 않습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-01-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "자료 9개를 크기순으로 나열할 때 중앙값은 몇 번째 값인가요? (숫자만)",
+   "answers": [
+    "5",
+    "5번째"
+   ],
+   "why": "홀수 개일 때는 $\\dfrac{9+1}{2}=5$(번째) 값이 중앙값입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-01-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "자료 $1,\\ 1,\\ 2,\\ 3,\\ 3,\\ 4$의 최빈값은?",
+   "options": [
+    "1",
+    "1과 3",
+    "3",
+    "2.3"
+   ],
+   "answer": 1,
+   "why": "1과 3이 각각 2번씩 나와 가장 많으므로 최빈값은 1과 3 두 개입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-01-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "자료 $3,\\ 5,\\ x,\\ 9$를 크기순으로 나열한 것이고 중앙값이 6일 때 $x$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "7"
+   ],
+   "why": "가운데 두 값이 5와 $x$이므로 $\\dfrac{5+x}{2}=6$에서 $x=7$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-01-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "학생 5명의 한 달 용돈이 $1,\\ 2,\\ 2,\\ 3,\\ 50$(만 원)일 때 평균을 대푯값으로 쓰기 부적절한 이유는?",
+   "options": [
+    "평균은 항상 정수가 아니기 때문이다",
+    "자료의 개수가 홀수이기 때문이다",
+    "50이 최빈값이기 때문이다",
+    "50이라는 극단적인 값 때문에 평균이 대부분의 값보다 훨씬 커지기 때문이다"
+   ],
+   "answer": 3,
+   "why": "평균은 $\\dfrac{58}{5}=11.6$으로 4명의 용돈보다 훨씬 큽니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-02-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림은 학생들의 윗몸일으키기 횟수를 줄기와 잎 그림으로 나타낸 것입니다. 잎이 가장 많은 줄기는?",
+   "svg": "<svg viewBox=\"0 0 300 148\" font-family=\"sans-serif\"><text x=\"60\" y=\"22\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">줄기</text><text x=\"90\" y=\"22\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">잎</text><line x1=\"70\" y1=\"8\" x2=\"70\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"20\" y1=\"30\" x2=\"280\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"60\" y=\"50\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\">1</text><text x=\"82\" y=\"50\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\">2 5 8</text><text x=\"60\" y=\"78\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\">2</text><text x=\"82\" y=\"78\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\">0 3 3 7</text><text x=\"60\" y=\"106\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\">3</text><text x=\"82\" y=\"106\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\">1 4</text><text x=\"20\" y=\"140\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">1 | 2는 12회</text></svg>",
+   "options": [
+    "2",
+    "1",
+    "3",
+    "0"
+   ],
+   "answer": 0,
+   "why": "줄기 2의 잎은 0, 3, 3, 7로 4개입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-02-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림은 학생들의 키를 나타낸 히스토그램입니다. 도수가 가장 큰 계급은?",
+   "svg": "<svg viewBox=\"0 0 330 230\" font-family=\"sans-serif\"><text x=\"40\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">도수(명)</text><line x1=\"46\" y1=\"180\" x2=\"306\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"46\" y1=\"149.6\" x2=\"306\" y2=\"149.6\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"153.6\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"46\" y1=\"119.2\" x2=\"306\" y2=\"119.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"123.2\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"46\" y1=\"88.8\" x2=\"306\" y2=\"88.8\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"92.8\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"46\" y1=\"58.4\" x2=\"306\" y2=\"58.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"62.4\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">8</text><line x1=\"46\" y1=\"28\" x2=\"306\" y2=\"28\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"32\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">10</text><line x1=\"46\" y1=\"24\" x2=\"46\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"46\" y=\"134.4\" width=\"65\" height=\"45.6\" fill=\"#4b7bec\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"111\" y=\"73.6\" width=\"65\" height=\"106.4\" fill=\"#4b7bec\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"176\" y=\"28\" width=\"65\" height=\"152\" fill=\"#4b7bec\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"241\" y=\"104\" width=\"65\" height=\"76\" fill=\"#4b7bec\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">150</text><text x=\"111\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">155</text><text x=\"176\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">160</text><text x=\"241\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">165</text><text x=\"306\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">170</text><text x=\"310\" y=\"216\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(cm)</text></svg>",
+   "options": [
+    "150 cm 이상 155 cm 미만",
+    "155 cm 이상 160 cm 미만",
+    "160 cm 이상 165 cm 미만",
+    "165 cm 이상 170 cm 미만"
+   ],
+   "answer": 2,
+   "why": "도수가 10명으로 가장 큰 막대는 160 이상 165 미만입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-02-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "그림은 학급 학생들의 수학 점수를 나타낸 히스토그램입니다. 전체 학생은 몇 명인가요? (숫자만)",
+   "svg": "<svg viewBox=\"0 0 330 230\" font-family=\"sans-serif\"><text x=\"40\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">도수(명)</text><line x1=\"46\" y1=\"180\" x2=\"306\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"46\" y1=\"149.6\" x2=\"306\" y2=\"149.6\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"153.6\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"46\" y1=\"119.2\" x2=\"306\" y2=\"119.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"123.2\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"46\" y1=\"88.8\" x2=\"306\" y2=\"88.8\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"92.8\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"46\" y1=\"58.4\" x2=\"306\" y2=\"58.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"62.4\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">8</text><line x1=\"46\" y1=\"28\" x2=\"306\" y2=\"28\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"32\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">10</text><line x1=\"46\" y1=\"24\" x2=\"46\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"46\" y=\"119.2\" width=\"65\" height=\"60.8\" fill=\"#4b7bec\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"111\" y=\"88.8\" width=\"65\" height=\"91.2\" fill=\"#4b7bec\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"176\" y=\"43.2\" width=\"65\" height=\"136.8\" fill=\"#4b7bec\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"241\" y=\"104\" width=\"65\" height=\"76\" fill=\"#4b7bec\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">40</text><text x=\"111\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">50</text><text x=\"176\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">60</text><text x=\"241\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">70</text><text x=\"306\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">80</text><text x=\"310\" y=\"216\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(점)</text></svg>",
+   "answers": [
+    "24",
+    "24명"
+   ],
+   "why": "도수를 모두 더하면 $4+6+9+5=24$(명)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-02-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "계급이 ‘10 이상 20 미만’일 때 계급의 크기는?",
+   "options": [
+    "30",
+    "15",
+    "20",
+    "10"
+   ],
+   "answer": 3,
+   "why": "계급의 크기는 구간의 폭 $20-10=10$입니다. 15는 계급값입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-02-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "도수분포다각형은 히스토그램에서 각 직사각형의 어느 점을 차례로 이어서 그리나요?",
+   "svg": "<svg viewBox=\"0 0 330 230\" font-family=\"sans-serif\"><text x=\"40\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">도수(명)</text><line x1=\"46\" y1=\"180\" x2=\"306\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"46\" y1=\"149.6\" x2=\"306\" y2=\"149.6\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"153.6\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"46\" y1=\"119.2\" x2=\"306\" y2=\"119.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"123.2\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"46\" y1=\"88.8\" x2=\"306\" y2=\"88.8\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"92.8\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"46\" y1=\"58.4\" x2=\"306\" y2=\"58.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"62.4\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">8</text><line x1=\"46\" y1=\"28\" x2=\"306\" y2=\"28\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"32\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">10</text><line x1=\"46\" y1=\"24\" x2=\"46\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"46\" y=\"149.6\" width=\"65\" height=\"30.4\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"111\" y=\"104\" width=\"65\" height=\"76\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"176\" y=\"58.4\" width=\"65\" height=\"121.6\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"241\" y=\"134.4\" width=\"65\" height=\"45.6\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"111\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">10</text><text x=\"176\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">20</text><text x=\"241\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">30</text><text x=\"306\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">40</text><text x=\"310\" y=\"216\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(회)</text><polyline points=\"13.5,180 78.5,149.6 143.5,104 208.5,58.4 273.5,134.4 338.5,180\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"3\"/><circle cx=\"78.5\" cy=\"149.6\" r=\"4\" fill=\"#e07b39\"/><circle cx=\"143.5\" cy=\"104\" r=\"4\" fill=\"#e07b39\"/><circle cx=\"208.5\" cy=\"58.4\" r=\"4\" fill=\"#e07b39\"/><circle cx=\"273.5\" cy=\"134.4\" r=\"4\" fill=\"#e07b39\"/></svg>",
+   "options": [
+    "왼쪽 위 꼭짓점",
+    "윗변의 중점",
+    "오른쪽 위 꼭짓점",
+    "밑변의 중점"
+   ],
+   "answer": 1,
+   "why": "각 계급의 계급값 위에서 도수를 나타내는 점, 즉 윗변의 중점을 잇습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-02-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "도수분포표에서 도수의 총합이 20이고, 계급별 도수가 $3,\\ x,\\ 8,\\ 5,\\ 2$일 때 $x$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "2"
+   ],
+   "why": "$3+x+8+5+2=20$이므로 $x=2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-02-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림은 학생 20명의 키를 나타낸 히스토그램입니다. 키가 160 cm 이상인 학생은 전체의 몇 %인가요?",
+   "svg": "<svg viewBox=\"0 0 330 230\" font-family=\"sans-serif\"><text x=\"40\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">도수(명)</text><line x1=\"46\" y1=\"180\" x2=\"306\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"46\" y1=\"149.6\" x2=\"306\" y2=\"149.6\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"153.6\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"46\" y1=\"119.2\" x2=\"306\" y2=\"119.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"123.2\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"46\" y1=\"88.8\" x2=\"306\" y2=\"88.8\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"92.8\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"46\" y1=\"58.4\" x2=\"306\" y2=\"58.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"62.4\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">8</text><line x1=\"46\" y1=\"28\" x2=\"306\" y2=\"28\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"40\" y=\"32\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">10</text><line x1=\"46\" y1=\"24\" x2=\"46\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"46\" y=\"149.6\" width=\"65\" height=\"30.4\" fill=\"#4b7bec\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"111\" y=\"88.8\" width=\"65\" height=\"91.2\" fill=\"#4b7bec\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"176\" y=\"58.4\" width=\"65\" height=\"121.6\" fill=\"#4b7bec\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"241\" y=\"119.2\" width=\"65\" height=\"60.8\" fill=\"#4b7bec\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">140</text><text x=\"111\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">150</text><text x=\"176\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">160</text><text x=\"241\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">170</text><text x=\"306\" y=\"198\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">180</text><text x=\"310\" y=\"216\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(cm)</text></svg>",
+   "options": [
+    "30%",
+    "40%",
+    "60%",
+    "12%"
+   ],
+   "answer": 2,
+   "why": "$8+4=12$(명)이므로 $\\dfrac{12}{20}\\times100=60$(%)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-02-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "그림은 학생들의 점수를 줄기와 잎 그림으로 나타낸 것입니다. 중앙값을 구하세요. (숫자만)",
+   "svg": "<svg viewBox=\"0 0 300 176\" font-family=\"sans-serif\"><text x=\"60\" y=\"22\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">줄기</text><text x=\"90\" y=\"22\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">잎</text><line x1=\"70\" y1=\"8\" x2=\"70\" y2=\"148\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"20\" y1=\"30\" x2=\"280\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"60\" y=\"50\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\">5</text><text x=\"82\" y=\"50\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\">2 5 8</text><text x=\"60\" y=\"78\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\">6</text><text x=\"82\" y=\"78\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\">0 3 4 7</text><text x=\"60\" y=\"106\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\">7</text><text x=\"82\" y=\"106\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\">1 5 6 9</text><text x=\"60\" y=\"134\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\">8</text><text x=\"82\" y=\"134\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\">2 6</text><text x=\"20\" y=\"168\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">5 | 2는 52점</text></svg>",
+   "answers": [
+    "67",
+    "67점"
+   ],
+   "why": "자료가 모두 13개이고 7번째 값이 중앙값입니다. 크기순으로 $52,55,58,60,63,64,67,\\cdots$이므로 67점입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-02-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "도수분포표를 만들 때 계급의 수를 너무 적게 하면 생기는 문제는?",
+   "options": [
+    "자료의 분포 모양을 자세히 알기 어렵다",
+    "계급의 크기가 0이 된다",
+    "자료의 개수가 달라진다",
+    "도수의 합이 달라진다"
+   ],
+   "answer": 0,
+   "why": "계급이 너무 적으면 많은 값이 한 계급에 묶여 분포의 특징이 드러나지 않습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-03-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "전체 도수가 20이고 어떤 계급의 도수가 6일 때, 그 계급의 상대도수는?",
+   "options": [
+    "3.3",
+    "0.6",
+    "0.3",
+    "0.2"
+   ],
+   "answer": 2,
+   "why": "(상대도수)$=\\dfrac{6}{20}=0.3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-03-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "전체 학생이 40명이고 어떤 계급의 상대도수가 0.25일 때, 그 계급의 도수를 구하세요. (숫자만)",
+   "answers": [
+    "10",
+    "10명"
+   ],
+   "why": "(도수)$=40\\times0.25=10$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-03-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "상대도수의 총합은?",
+   "options": [
+    "1",
+    "0",
+    "100",
+    "전체 도수"
+   ],
+   "answer": 0,
+   "why": "(도수의 합)$\\div$(전체 도수)$=1$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-03-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 전체 40명의 상대도수분포표입니다. ?에 알맞은 수는?",
+   "svg": "<svg viewBox=\"0 0 216 186\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"210\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"183\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"143\" y1=\"3\" x2=\"143\" y2=\"183\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"213\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"213\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"213\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"213\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"153\" x2=\"213\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">계급</text><text x=\"108\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">도수</text><text x=\"178\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상대도수</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10~20</text><text x=\"108\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"178\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0.1</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">20~30</text><text x=\"108\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">?</text><text x=\"178\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0.4</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30~40</text><text x=\"108\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">12</text><text x=\"178\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0.3</text><text x=\"38\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">40~50</text><text x=\"108\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">8</text><text x=\"178\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0.2</text><text x=\"38\" y=\"173\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">합계</text><text x=\"108\" y=\"173\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">40</text><text x=\"178\" y=\"173\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text></svg>",
+   "options": [
+    "14",
+    "4",
+    "12",
+    "16"
+   ],
+   "answer": 3,
+   "why": "$40\\times0.4=16$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-03-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "수학 80점 이상인 학생이 A반은 30명 중 9명, B반은 20명 중 8명입니다. 80점 이상인 학생의 비율은 어느 반이 더 높은가요?",
+   "options": [
+    "A반",
+    "B반",
+    "두 반이 같다",
+    "알 수 없다"
+   ],
+   "answer": 1,
+   "why": "상대도수는 A반 $\\dfrac{9}{30}=0.3$, B반 $\\dfrac{8}{20}=0.4$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-03-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "상대도수가 0.15인 계급의 도수가 9일 때, 전체 도수를 구하세요. (숫자만)",
+   "answers": [
+    "60",
+    "60명"
+   ],
+   "why": "(전체 도수)$=9\\div0.15=60$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-03-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "전체 도수가 서로 다른 두 집단의 분포를 비교할 때 상대도수가 편리한 이유는?",
+   "options": [
+    "도수의 합을 쉽게 구할 수 있기 때문이다",
+    "전체에 대한 비율로 나타내어 크기가 다른 집단도 공평하게 비교할 수 있기 때문이다",
+    "계급의 크기를 알 수 있기 때문이다",
+    "도수가 항상 1이 되기 때문이다"
+   ],
+   "answer": 1,
+   "why": "도수는 집단의 크기에 따라 달라지지만 상대도수는 비율이므로 비교하기 좋습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-03-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "표는 A반(40명)과 B반(20명)의 상대도수분포표입니다. 60점 이상 70점 미만인 학생에 대한 설명으로 옳은 것은?",
+   "svg": "<svg viewBox=\"0 0 270 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"264\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"67\" y1=\"3\" x2=\"67\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"167\" y1=\"3\" x2=\"167\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"267\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"267\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"267\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"35\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">성적</text><text x=\"117\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A반(40명)</text><text x=\"217\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B반(20명)</text><text x=\"35\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">60~70</text><text x=\"117\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0.20</text><text x=\"217\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0.35</text><text x=\"35\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">70~80</text><text x=\"117\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0.50</text><text x=\"217\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0.40</text><text x=\"35\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">80~90</text><text x=\"117\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0.30</text><text x=\"217\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0.25</text></svg>",
+   "options": [
+    "도수는 같고 비율은 B반이 더 크다",
+    "도수도 A반이 더 많고 비율도 A반이 더 크다",
+    "도수도 B반이 더 많고 비율도 B반이 더 크다",
+    "도수는 A반이 더 많고, 비율은 B반이 더 크다"
+   ],
+   "answer": 3,
+   "why": "A반은 $40\\times0.20=8$명, B반은 $20\\times0.35=7$명이므로 도수는 A반이 많고 상대도수는 B반이 큽니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-03-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "70점 이상 80점 미만인 학생의 상대도수가 A반(40명)은 0.50, B반(20명)은 0.40입니다. 이 계급의 학생은 A반이 B반보다 몇 명 더 많은가요? (숫자만)",
+   "answers": [
+    "12",
+    "12명"
+   ],
+   "why": "A반은 $40\\times0.50=20$명, B반은 $20\\times0.40=8$명이므로 $20-8=12$(명)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-04-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "통계적 탐구를 하는 순서로 알맞은 것은?",
+   "options": [
+    "문제 설정 → 계획 수립 → 자료 수집 → 분석 → 결론",
+    "자료 수집 → 문제 설정 → 계획 수립 → 분석 → 결론",
+    "문제 설정 → 자료 수집 → 결론 → 계획 수립 → 분석",
+    "결론 → 문제 설정 → 분석 → 계획 수립 → 자료 수집"
+   ],
+   "answer": 0,
+   "why": "먼저 무엇을 알아볼지 정하고 계획을 세운 뒤 자료를 모으고 분석해 결론을 냅니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-04-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 통계적 탐구 문제로 가장 알맞은 것은?",
+   "options": [
+    "우리 반 학생들은 모두 착할까?",
+    "수면은 좋은 것일까?",
+    "우리 반 학생들의 하루 평균 수면 시간은 몇 시간일까?",
+    "나는 내일 몇 시에 일어날까?"
+   ],
+   "answer": 2,
+   "why": "자료를 모아 수로 답할 수 있는 질문이 탐구 문제로 알맞습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-04-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "스프레드시트 같은 공학 도구를 사용하면 좋은 점은?",
+   "options": [
+    "분석 결과를 해석할 필요가 없어진다",
+    "자료를 모으지 않아도 결론을 낼 수 있다",
+    "자료의 오류가 저절로 없어진다",
+    "많은 자료를 빠르게 정리하고 그래프로 나타낼 수 있다"
+   ],
+   "answer": 3,
+   "why": "공학 도구는 계산과 그래프 작성을 도와주지만, 해석은 사람이 합니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-04-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "각 계급의 도수를 직사각형의 높이로 나타내어 분포를 한눈에 보려 할 때 가장 알맞은 그래프는?",
+   "options": [
+    "원그래프",
+    "히스토그램",
+    "그림그래프",
+    "표"
+   ],
+   "answer": 1,
+   "why": "계급별 도수를 막대 높이로 보여 주는 것은 히스토그램입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-04-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "우리 반 25명의 수면 시간을 조사했더니 평균 7.2시간, 중앙값 7시간이었습니다. 해석으로 가장 알맞은 것은?",
+   "options": [
+    "다른 반 학생들도 7시간씩 잔다",
+    "우리 반 모든 학생이 7.2시간씩 잔다",
+    "우리 반 학생들은 대체로 7시간 정도 잔다고 볼 수 있다",
+    "수면 시간이 7시간인 학생이 가장 많다"
+   ],
+   "answer": 2,
+   "why": "평균과 중앙값은 자료의 중심을 나타낼 뿐 모든 학생이 같다는 뜻은 아닙니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-04-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "25명에게 설문한 결과 수면 시간이 7시간 이상인 학생이 15명입니다. 이 학생들의 상대도수를 소수로 나타내세요. (숫자만)",
+   "answers": [
+    "0.6"
+   ],
+   "why": "$\\dfrac{15}{25}=0.6$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-04-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "‘학생들은 스마트폰을 많이 쓴다’를 탐구 문제로 삼기에 부적절한 이유는?",
+   "options": [
+    "‘많이’의 기준이 없어 자료로 확인하기 어렵기 때문이다",
+    "스마트폰은 조사할 수 없기 때문이다",
+    "학생의 수가 너무 많기 때문이다",
+    "평균을 구할 수 없기 때문이다"
+   ],
+   "answer": 0,
+   "why": "‘하루 평균 사용 시간은 몇 시간인가?’처럼 수치로 확인 가능하게 바꿔야 합니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-04-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "학교 도서관에서만 학생들의 독서량을 조사했습니다. 이 조사의 문제점은?",
+   "options": [
+    "조사 시간이 짧아서 평균이 변한다",
+    "응답자가 많아져서 결과가 부정확해진다",
+    "독서를 좋아하는 학생이 많이 포함되어 결과가 한쪽으로 치우칠 수 있다",
+    "도서관에서는 공학 도구를 쓸 수 없다"
+   ],
+   "answer": 2,
+   "why": "자료를 모으는 장소와 대상이 한쪽에 치우치면 전체를 대표하지 못합니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-04-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "어느 반의 점수는 평균 70점, 중앙값 85점입니다. 이 결과에 대한 합리적인 해석은?",
+   "options": [
+    "일부 매우 낮은 점수가 평균을 낮추었을 수 있으므로 중앙값도 함께 살펴본다",
+    "평균이 항상 가장 정확하므로 평균만 본다",
+    "중앙값이 평균보다 높으면 자료가 잘못된 것이다",
+    "두 값이 다르므로 대푯값은 의미가 없다"
+   ],
+   "answer": 0,
+   "why": "극단적으로 낮은 값은 평균은 낮추지만 중앙값은 거의 바꾸지 않습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-05-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "주사위 한 개를 던질 때 짝수 또는 5의 눈이 나오는 경우의 수는?",
+   "options": [
+    "6가지",
+    "3가지",
+    "5가지",
+    "4가지"
+   ],
+   "answer": 3,
+   "why": "짝수는 2, 4, 6의 3가지, 5는 1가지이고 겹치지 않으므로 $3+1=4$(가지)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-05-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "티셔츠 3벌과 바지 2벌이 있을 때 티셔츠와 바지를 하나씩 짝지어 입는 경우의 수는?",
+   "options": [
+    "5가지",
+    "6가지",
+    "3가지",
+    "9가지"
+   ],
+   "answer": 1,
+   "why": "동시에 일어나므로 곱합니다. $3\\times2=6$(가지)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-05-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "동전 한 개와 주사위 한 개를 동시에 던질 때 나오는 모든 경우의 수를 구하세요. (숫자만)",
+   "answers": [
+    "12",
+    "12가지"
+   ],
+   "why": "$2\\times6=12$(가지)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-05-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "4명의 후보 중에서 회장 1명, 부회장 1명을 뽑는 경우의 수는?",
+   "options": [
+    "7가지",
+    "12가지",
+    "16가지",
+    "6가지"
+   ],
+   "answer": 1,
+   "why": "회장 4가지, 부회장은 남은 3가지이므로 $4\\times3=12$(가지)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-05-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "서로 다른 주사위 두 개를 던질 때 눈의 합이 5 또는 8이 되는 경우의 수는?",
+   "options": [
+    "5가지",
+    "20가지",
+    "4가지",
+    "9가지"
+   ],
+   "answer": 3,
+   "why": "합이 5인 경우 4가지, 합이 8인 경우 5가지이므로 $4+5=9$(가지)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-05-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "서로 다른 동전 3개를 던질 때 일어나는 모든 경우의 수는?",
+   "options": [
+    "8가지",
+    "6가지",
+    "9가지",
+    "3가지"
+   ],
+   "answer": 0,
+   "why": "$2\\times2\\times2=8$(가지)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-05-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "0, 1, 2, 3이 각각 적힌 카드 4장 중 2장을 뽑아 만들 수 있는 두 자리 정수의 개수는?",
+   "options": [
+    "16개",
+    "12개",
+    "9개",
+    "6개"
+   ],
+   "answer": 2,
+   "why": "십의 자리에는 0이 올 수 없으므로 $3\\times3=9$(개)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-05-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "1부터 5까지의 숫자가 각각 적힌 카드 5장 중 서로 다른 3장을 뽑아 세 자리 정수를 만들 때 몇 개를 만들 수 있나요? (숫자만)",
+   "answers": [
+    "60",
+    "60개"
+   ],
+   "why": "백의 자리 5가지, 십의 자리 4가지, 일의 자리 3가지이므로 $5\\times4\\times3=60$(개)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-05-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "A 지점에서 B 지점까지 가는 길이 3가지, B 지점에서 C 지점까지 가는 길이 4가지입니다. A에서 B를 거쳐 C까지 가는 경우의 수와 그 이유는?",
+   "options": [
+    "7가지, 두 길 중 하나만 고르므로 더한다",
+    "7가지, 두 길을 차례로 지나므로 더한다",
+    "12가지, 두 길 중 하나만 고르므로 곱한다",
+    "12가지, 두 길을 차례로 지나므로 곱한다"
+   ],
+   "answer": 3,
+   "why": "두 사건이 잇따라 일어나므로 곱의 법칙을 씁니다. $3\\times4=12$(가지)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-06-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "주사위 한 개를 던질 때 3의 배수의 눈이 나올 확률은?",
+   "options": [
+    "$\\dfrac12$",
+    "$\\dfrac13$",
+    "$\\dfrac16$",
+    "$\\dfrac23$"
+   ],
+   "answer": 1,
+   "why": "3의 배수는 3, 6의 2가지이므로 $\\dfrac{2}{6}=\\dfrac13$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-06-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "동전 2개를 동시에 던질 때 모두 앞면이 나올 확률은?",
+   "options": [
+    "$\\dfrac13$",
+    "$\\dfrac12$",
+    "$\\dfrac14$",
+    "$\\dfrac34$"
+   ],
+   "answer": 2,
+   "why": "모든 경우는 4가지이고 모두 앞면인 경우는 1가지입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-06-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "반드시 일어나는 사건의 확률을 구하세요. (숫자만)",
+   "answers": [
+    "1"
+   ],
+   "why": "반드시 일어나는 사건의 확률은 1입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-06-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "흰 구슬 3개, 검은 구슬 2개가 들어 있는 주머니에서 구슬 1개를 꺼낼 때 흰 구슬일 확률은?",
+   "options": [
+    "$\\dfrac35$",
+    "$\\dfrac23$",
+    "$\\dfrac25$",
+    "$\\dfrac12$"
+   ],
+   "answer": 0,
+   "why": "전체 5개 중 흰 구슬이 3개입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-06-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "내일 비가 올 확률이 0.3일 때 비가 오지 않을 확률은?",
+   "options": [
+    "0.03",
+    "0.3",
+    "0.7",
+    "1.3"
+   ],
+   "answer": 2,
+   "why": "(어떤 사건이 일어나지 않을 확률)$=1-$(일어날 확률)$=0.7$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-06-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "서로 다른 주사위 두 개를 던질 때 눈의 합이 7일 확률은?",
+   "options": [
+    "$\\dfrac16$",
+    "$\\dfrac{1}{12}$",
+    "$\\dfrac{7}{36}$",
+    "$\\dfrac{1}{36}$"
+   ],
+   "answer": 0,
+   "why": "합이 7인 경우는 $(1,6),(2,5),\\cdots,(6,1)$의 6가지이므로 $\\dfrac{6}{36}=\\dfrac16$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-06-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "1부터 10까지의 숫자가 각각 적힌 카드 중 한 장을 뽑을 때 소수 또는 짝수일 확률은?",
+   "options": [
+    "$\\dfrac12$",
+    "$\\dfrac{9}{10}$",
+    "$\\dfrac35$",
+    "$\\dfrac45$"
+   ],
+   "answer": 3,
+   "why": "소수 2, 3, 5, 7과 짝수 2, 4, 6, 8, 10에서 겹치는 2를 한 번만 세면 8장입니다. $\\dfrac{8}{10}=\\dfrac45$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-06-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "사건 A가 일어날 확률이 $\\dfrac25$일 때, A가 일어나지 않을 확률을 $\\dfrac{a}{5}$라 하면 $a$의 값은? (숫자만)",
+   "answers": [
+    "3"
+   ],
+   "why": "$1-\\dfrac25=\\dfrac35$이므로 $a=3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-06-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "동전을 던질 때 앞면이 나올 확률이 $\\dfrac12$이라는 말의 뜻으로 알맞은 것은?",
+   "options": [
+    "두 번 던지면 반드시 앞면이 한 번 나온다",
+    "많이 던질수록 앞면이 나오는 비율이 $\\dfrac12$에 가까워진다",
+    "앞면이 3번 연속 나오면 다음은 반드시 뒷면이 나온다",
+    "10번 던지면 반드시 앞면이 5번 나온다"
+   ],
+   "answer": 1,
+   "why": "확률은 장기적인 비율을 뜻하며, 짧은 횟수의 결과를 보장하지 않습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-07-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "자료 $2,\\ 4,\\ 6$의 평균은 4입니다. 각 값의 편차를 차례로 쓰면?",
+   "options": [
+    "$2,\\ 4,\\ 6$",
+    "$-2,\\ 0,\\ 2$",
+    "$-4,\\ 0,\\ 4$",
+    "$-2,\\ -1,\\ 1$"
+   ],
+   "answer": 1,
+   "why": "(편차)$=$(변량)$-$(평균)이므로 $2-4,\\ 4-4,\\ 6-4$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-07-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "자료 $1,\\ 3,\\ 5,\\ 7,\\ 9$의 분산을 구하세요. (숫자만)",
+   "answers": [
+    "8"
+   ],
+   "why": "평균은 5이고 편차는 $-4,-2,0,2,4$입니다. 분산은 $\\dfrac{16+4+0+4+16}{5}=8$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-07-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "분산이 16일 때 표준편차는?",
+   "options": [
+    "256",
+    "8",
+    "16",
+    "4"
+   ],
+   "answer": 3,
+   "why": "표준편차는 분산의 양의 제곱근이므로 $\\sqrt{16}=4$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-07-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "A반 성적은 평균 70점, 표준편차 5점이고 B반 성적은 평균 70점, 표준편차 12점입니다. 성적이 더 고른 반은?",
+   "options": [
+    "A반",
+    "B반",
+    "두 반이 같다",
+    "알 수 없다"
+   ],
+   "answer": 0,
+   "why": "표준편차가 작을수록 자료가 평균 가까이에 모여 있습니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-07-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "편차의 총합은 항상 얼마인가요?",
+   "options": [
+    "평균",
+    "1",
+    "0",
+    "분산"
+   ],
+   "answer": 2,
+   "why": "평균보다 큰 값의 편차와 작은 값의 편차가 서로 상쇄되어 합은 항상 0입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-07-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "분산과 표준편차의 관계로 옳은 것은?",
+   "options": [
+    "표준편차는 분산에서 평균을 뺀 값이다",
+    "분산은 표준편차의 양의 제곱근이다",
+    "분산은 표준편차의 2배이다",
+    "표준편차는 분산의 양의 제곱근이다"
+   ],
+   "answer": 3,
+   "why": "분산은 편차를 제곱했으므로 제곱근을 씌워 단위를 원래대로 되돌린 것이 표준편차입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-07-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "자료 $2,\\ 4,\\ 6,\\ 8$의 분산을 구하세요. (숫자만)",
+   "answers": [
+    "5"
+   ],
+   "why": "평균 5, 편차 $-3,-1,1,3$이므로 분산은 $\\dfrac{9+1+1+9}{4}=5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수04-07-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "자료 $x_1,\\ x_2,\\ \\cdots,\\ x_5$의 평균이 6, 분산이 4일 때 $2x_1+1,\\ \\cdots,\\ 2x_5+1$의 평균과 분산은 차례로?",
+   "options": [
+    "13, 4",
+    "13, 16",
+    "12, 16",
+    "13, 8"
+   ],
+   "answer": 1,
+   "why": "평균은 $2\\times6+1=13$이고, 분산은 $2^{2}\\times4=16$입니다. (더하는 수는 분산에 영향이 없습니다.)"
+  },
+  {
+   "id": "수학-중1-3-9수04-07-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "자료와 가능성",
+   "standard": "9수04-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "평균이 같은 두 반의 점수의 분산이 A반 25, B반 49일 때 알맞은 해석은?",
+   "options": [
+    "B반의 평균이 더 높다",
+    "A반의 평균이 더 높다",
+    "B반이 점수가 평균에서 더 멀리 흩어져 있다",
+    "두 반의 점수 분포가 같다"
+   ],
+   "answer": 2,
+   "why": "분산이 클수록 자료가 평균에서 더 멀리 흩어져 있습니다."
+  }
+ ],
+ "skipped": []
+}
