@@ -1,0 +1,30 @@
+import os, sys, math
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, os.path.dirname(__file__))
+from common import Bank
+from svgkit import svg, text, line, table, BLUE, ORANGE, C, _n
+from kit_ko import KoBank, report
+from kit34 import hold
+from kit56 import cuboid_fig, prism_fig, pyramid_fig, cone_fig, cyl_fig, sphere_fig
+from kit_soc import compare_table
+from kit_m9 import geo, sector, polar, plane, parab
+from fractions import Fraction
+
+
+def A(n, u="°"):
+    """단답형 허용 답: 숫자만/단위 붙임"""
+    return [str(n), f"{n}{u}", f"{n} {u}"]
+
+
+def mc(b, S, lv, body, ok, bad, why, svg=None, keep=False):
+    kw = dict(options=[ok] + list(bad), answer=ok, why=why, keep=keep)
+    if svg:
+        kw["svg"] = svg
+    b.q(S, lv, body, **kw)
+
+
+def sh(b, S, lv, body, answers, why, svg=None):
+    kw = dict(answers=answers, why=why)
+    if svg:
+        kw["svg"] = svg
+    b.q(S, lv, body, **kw)

@@ -113,3 +113,94 @@ def sector(r, deg, labels=None, W=None, name=("O", "A", "B")):
         t = polar(cx, cy, R + 24, a0 + deg / 2)
         out.append(text(t[0] + 6, t[1] + 4, labels["arc"], 13, weight="bold"))
     return svg(W or 200, 190, "".join(out))
+
+
+def plane(xr=(-5, 5), yr=(-5, 5), pts=(), lines=(), curves=(), W=240, H=240, texts=(), step=1, poly=(), xlab="x", ylab="y", grid=True):
+    """좌표평면. pts [(x,y,글자,'o'?)] lines [((x1,y1),(x2,y2)[,'o'|'d'])](직선 전체) curves [[(x,y)...] 또는 (점목록,'o')] poly [[(x,y)...]] 꺾은선
+    texts [(x,y,글자)] (좌표 단위). 좌표 단위를 화면으로 변환해서 그린다."""
+    x0, x1 = xr
+    y0, y1 = yr
+    pad = 26
+    sx = (W - 2 * pad) / (x1 - x0)
+    sy = (H - 2 * pad) / (y1 - y0)
+    if isinstance(step, tuple):
+        sxx, syy = sx, sy
+    else:
+        sxx = syy = min(sx, sy)
+    ox = pad + (-x0) * sxx
+    oy = H - pad - (-y0) * syy
+    X = lambda x: ox + x * sxx
+    Y = lambda y: oy - y * syy
+    out = []
+    xs_, ys_ = (step if isinstance(step, tuple) else (step, step))
+    gxs = [v for v in range(int(math.ceil(x0 / xs_)) * xs_, int(x1) + 1, xs_)]
+    gys = [v for v in range(int(math.ceil(y0 / ys_)) * ys_, int(y1) + 1, ys_)]
+    if grid:
+        for gx in gxs:
+            out.append(line(X(gx), Y(y0), X(gx), Y(y1), 1.2, 0.18))
+        for gy in gys:
+            out.append(line(X(x0), Y(gy), X(x1), Y(gy), 1.2, 0.18))
+    out.append(line(X(x0), Y(0), X(x1) + 6, Y(0), 2.2))
+    out.append(line(X(0), Y(y0), X(0), Y(y1) - 6, 2.2))
+    out.append(text(X(x1) + 4, Y(0) + 16, xlab, 13, anchor="end", weight="bold"))
+    out.append(text(X(0) + 12, Y(y1) - 2, ylab, 13, weight="bold"))
+    out.append(text(X(0) - 8, Y(0) + 14, "O", 12, anchor="end"))
+    for gx in gxs:
+        if gx != 0:
+            out.append(line(X(gx), Y(0) - 3, X(gx), Y(0) + 3, 2))
+            out.append(text(X(gx), Y(0) + 17, gx, 12))
+    for gy in gys:
+        if gy != 0:
+            out.append(line(X(0) - 3, Y(gy), X(0) + 3, Y(gy), 2))
+            out.append(text(X(0) - 7, Y(gy) + 4, gy, 12, anchor="end"))
+
+    def clip_line(p, q):
+        (ax, ay), (bx, by) = p, q
+        if abs(bx - ax) < 1e-9:
+            return (ax, y0), (ax, y1)
+        m = (by - ay) / (bx - ax)
+        c = ay - m * ax
+        cand = []
+        for xv in (x0, x1):
+            yv = m * xv + c
+            if y0 - 1e-9 <= yv <= y1 + 1e-9:
+                cand.append((xv, yv))
+        if abs(m) > 1e-9:
+            for yv in (y0, y1):
+                xv = (yv - c) / m
+                if x0 - 1e-9 <= xv <= x1 + 1e-9:
+                    cand.append((xv, yv))
+        cand = sorted(set((round(a, 6), round(b, 6)) for a, b in cand))
+        return cand[0], cand[-1]
+
+    for ln in lines:
+        p, q, *st = ln
+        a, b = clip_line(p, q)
+        sty = st[0] if st else None
+        if sty == "d":
+            out.append(line(X(a[0]), Y(a[1]), X(b[0]), Y(b[1]), 2.2, dash="6 5"))
+        else:
+            out.append(line(X(a[0]), Y(a[1]), X(b[0]), Y(b[1]), 3, color=ORANGE if sty == "o" else BLUE))
+    for cv in curves:
+        pts_, *st = cv if isinstance(cv, tuple) else (cv,)
+        col = ORANGE if (st and st[0] == "o") else BLUE
+        seg = [(X(a), Y(b)) for a, b in pts_ if y0 - 0.01 <= b <= y1 + 0.01]
+        out.append(f'<polyline points="{" ".join(f"{_n(a)},{_n(b)}" for a, b in seg)}" fill="none" stroke="{col}" stroke-width="3"/>')
+    for pl in poly:
+        out.append(f'<polyline points="{" ".join(f"{_n(X(a))},{_n(Y(b))}" for a, b in pl)}" fill="none" stroke="{BLUE}" stroke-width="3" stroke-linejoin="round"/>')
+        for a, b in pl:
+            out.append(f'<circle cx="{_n(X(a))}" cy="{_n(Y(b))}" r="3.5" fill="{BLUE}"/>')
+    for p in pts:
+        px, py, lab, *st = p
+        col = ORANGE if st and st[0] == "o" else C
+        out.append(f'<circle cx="{_n(X(px))}" cy="{_n(Y(py))}" r="4.5" fill="{col}" stroke="{C}" stroke-width="1.5"/>')
+        if lab:
+            out.append(text(X(px) + 10, Y(py) - 7, lab, 13, anchor="start", weight="bold"))
+    for tx, ty, s_ in texts:
+        out.append(text(X(tx), Y(ty), s_, 13, weight="bold"))
+    return svg(W, H, "".join(out))
+
+
+def parab(a, p=0, q=0, lo=-5, hi=5, n=80):
+    """y=a(x-p)^2+q 점 목록"""
+    return [(lo + (hi - lo) * i / n, a * (lo + (hi - lo) * i / n - p) ** 2 + q) for i in range(n + 1)]

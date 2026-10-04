@@ -1,0 +1,1152 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "중",
+  "course": "수학",
+  "gradeBand": "중1-3",
+  "unit": "변화와 관계",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-중1-3-9수02-01-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "한 개에 $x$원인 사탕 5개의 값을 문자를 사용한 식으로 나타내면 무엇인가요?",
+   "options": [
+    "$\\dfrac{x}{5}$원",
+    "$x+5$원",
+    "$5x$원",
+    "$x^5$원"
+   ],
+   "answer": 2,
+   "why": "(한 개의 값)×(개수)이므로 $x\\times5=5x$(원)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-01-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "$x=3$일 때 $2x+1$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "7"
+   ],
+   "why": "$2\\times3+1=7$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-01-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$a\\times b\\times3$을 곱셈 기호를 생략하여 나타낸 것은 무엇인가요?",
+   "options": [
+    "$3ab$",
+    "$ab3$",
+    "$a3b$",
+    "$a+b+3$"
+   ],
+   "answer": 0,
+   "why": "수는 문자 앞에 쓰고 곱셈 기호를 생략하므로 $3ab$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-01-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "시속 $a\\,\\mathrm{km}$로 3시간 동안 달린 거리를 문자를 사용한 식으로 나타낸 것은 무엇인가요?",
+   "options": [
+    "$a^3\\,\\mathrm{km}$",
+    "$\\dfrac{a}{3}\\,\\mathrm{km}$",
+    "$(a+3)\\,\\mathrm{km}$",
+    "$3a\\,\\mathrm{km}$"
+   ],
+   "answer": 3,
+   "why": "(거리)=(속력)×(시간)이므로 $3a\\,\\mathrm{km}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-01-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "$x=-2$일 때 $x^2-3x+1$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "11"
+   ],
+   "why": "$(-2)^2-3\\times(-2)+1=4+6+1=11$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-01-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "정가가 $x$원인 물건을 $20\\%$ 할인하여 팔 때의 판매 가격을 문자를 사용한 식으로 나타낸 것은 무엇인가요?",
+   "options": [
+    "$0.2x$원",
+    "$0.8x$원",
+    "$1.2x$원",
+    "$(x-20)$원"
+   ],
+   "answer": 1,
+   "why": "$20\\%$ 할인한 가격은 정가의 $80\\%$이므로 $0.8x$(원)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-01-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "가로의 길이가 $a$, 세로의 길이가 $b$인 직사각형의 둘레의 길이를 문자를 사용한 식으로 나타낸 것은 무엇인가요?",
+   "options": [
+    "$ab$",
+    "$2(a+b)$",
+    "$a+b$",
+    "$2ab$"
+   ],
+   "answer": 1,
+   "why": "둘레의 길이는 $2\\times(a+b)$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-01-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "$a=2,\\ b=-3$일 때 $2a^2-3ab+b$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "23"
+   ],
+   "why": "$2\\times4-3\\times2\\times(-3)+(-3)=8+18-3=23$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-01-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "성냥개비로 정사각형을 한 줄로 이어 붙일 때 정사각형 $n$개를 만드는 데 필요한 성냥개비의 수를 $n$에 대한 식으로 나타낸 것은 무엇인가요? (정사각형 1개는 4개)",
+   "options": [
+    "$4n-1$",
+    "$4n$",
+    "$3n$",
+    "$3n+1$"
+   ],
+   "answer": 3,
+   "why": "처음 1개는 4개, 이후 1개 늘 때마다 3개씩 늘어나므로 $4+3(n-1)=3n+1$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-02-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 $3x$와 동류항인 것은 무엇인가요?",
+   "options": [
+    "$5x$",
+    "$3y$",
+    "$x^2$",
+    "$3$"
+   ],
+   "answer": 0,
+   "why": "문자와 차수가 같은 항이 동류항이므로 $5x$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-02-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$(2x+3)+(3x+4)$를 간단히 하면 얼마인가요?",
+   "options": [
+    "$6x+7$",
+    "$5x+12$",
+    "$5x+7$",
+    "$5x^2+7$"
+   ],
+   "answer": 2,
+   "why": "$x$항끼리 $2x+3x=5x$, 상수항끼리 $3+4=7$이므로 $5x+7$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-02-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 $x$에 대한 일차식은 무엇인가요?",
+   "options": [
+    "$5$",
+    "$x^2+1$",
+    "$\\dfrac{2}{x}$",
+    "$3x-2$"
+   ],
+   "answer": 3,
+   "why": "차수가 1인 다항식이 일차식입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-02-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$(4x-3)+(2x+5)$를 간단히 하면 얼마인가요?",
+   "options": [
+    "$6x-2$",
+    "$6x+2$",
+    "$2x+2$",
+    "$6x+8$"
+   ],
+   "answer": 1,
+   "why": "$4x+2x=6x$, $-3+5=2$이므로 $6x+2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-02-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$(5x+2)-(3x-4)$를 간단히 하면 얼마인가요?",
+   "options": [
+    "$8x-2$",
+    "$2x-2$",
+    "$2x+6$",
+    "$2x+2$"
+   ],
+   "answer": 2,
+   "why": "$5x+2-3x+4=2x+6$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-02-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$2(3x-1)-3(x+2)$를 간단히 하면 얼마인가요?",
+   "options": [
+    "$3x-8$",
+    "$3x-4$",
+    "$3x+4$",
+    "$9x-8$"
+   ],
+   "answer": 0,
+   "why": "$6x-2-3x-6=3x-8$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-02-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\dfrac{x+1}{2}+\\dfrac{2x-1}{3}$을 간단히 하면 얼마인가요?",
+   "options": [
+    "$\\dfrac{7x-1}{6}$",
+    "$\\dfrac{3x}{5}$",
+    "$\\dfrac{7x+1}{6}$",
+    "$\\dfrac{3x+1}{6}$"
+   ],
+   "answer": 2,
+   "why": "통분하면 $\\dfrac{3(x+1)+2(2x-1)}{6}=\\dfrac{7x+1}{6}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-02-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$-(2x-3)-3(1-x)$를 간단히 하면 얼마인가요?",
+   "options": [
+    "$x$",
+    "$-5x+6$",
+    "$5x$",
+    "$-x$"
+   ],
+   "answer": 0,
+   "why": "$-2x+3-3+3x=x$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-02-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "어떤 식에 $3x-2$를 더했더니 $5x+1$이 되었습니다. 어떤 식은 무엇인가요?",
+   "options": [
+    "$2x+1$",
+    "$8x-1$",
+    "$2x-3$",
+    "$2x+3$"
+   ],
+   "answer": 3,
+   "why": "(어떤 식)$=(5x+1)-(3x-2)=2x+3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-03-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "미지수의 값에 따라 참이 되기도 하고 거짓이 되기도 하는 등식을 무엇이라고 하나요?",
+   "options": [
+    "항등식",
+    "방정식",
+    "부등식",
+    "다항식"
+   ],
+   "answer": 1,
+   "why": "미지수의 값에 따라 참, 거짓이 달라지는 등식은 방정식입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-03-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$x=2$가 해인 방정식은 무엇인가요?",
+   "options": [
+    "$3x-1=7$",
+    "$3x-1=5$",
+    "$x+2=2$",
+    "$2x=2$"
+   ],
+   "answer": 1,
+   "why": "$x=2$를 대입하면 $3\\times2-1=5$이므로 성립합니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-03-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "등식의 성질로 알맞은 것은 무엇인가요? ($a=b$일 때)",
+   "options": [
+    "$a=b+c$",
+    "$a-c=b+c$",
+    "$ac=b$",
+    "$a+c=b+c$"
+   ],
+   "answer": 3,
+   "why": "등식의 양변에 같은 수를 더해도 등식이 성립합니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-03-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 $x$의 값에 관계없이 항상 참인 등식(항등식)은 무엇인가요?",
+   "options": [
+    "$2x+3=3+2x$",
+    "$2x+3=5$",
+    "$x+3=2x$",
+    "$x=2$"
+   ],
+   "answer": 0,
+   "why": "양변이 같은 식이므로 $x$에 관계없이 항상 성립합니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-03-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "방정식 $3x+2=x+8$을 이항하여 정리하면 어떻게 되나요?",
+   "options": [
+    "$2x=10$",
+    "$4x=10$",
+    "$2x=6$",
+    "$4x=6$"
+   ],
+   "answer": 2,
+   "why": "$3x-x=8-2$이므로 $2x=6$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-03-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 등식의 성질을 바르게 이용한 것은 무엇인가요?",
+   "options": [
+    "$a=b$이면 $a-c=b+c$이다",
+    "$ac=bc$이면 항상 $a=b$이다",
+    "$a+c=b$이면 $a=b$이다",
+    "$a=b$이면 $\\dfrac{a}{3}=\\dfrac{b}{3}$이다"
+   ],
+   "answer": 3,
+   "why": "양변을 0이 아닌 같은 수로 나누어도 등식이 성립합니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-03-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "$x=-1$이 방정식 $2x+a=5$의 해일 때 상수 $a$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "7"
+   ],
+   "why": "$2\\times(-1)+a=5$에서 $a=7$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-03-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "방정식 $ax+3=5x+b$가 $x$에 관계없이 항상 성립할 때 $a+b$의 값은 얼마인가요?",
+   "options": [
+    "2",
+    "8",
+    "5",
+    "-2"
+   ],
+   "answer": 1,
+   "why": "항등식이므로 $a=5$, $b=3$이고 $a+b=8$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-03-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "방정식 $\\dfrac{x}{2}+1=3$을 풀기 위해 양변에 2를 곱하여 $x+2=6$을 얻었습니다. 이 과정에서 이용한 등식의 성질은 무엇인가요?",
+   "options": [
+    "양변을 같은 수로 나누어도 등식이 성립한다",
+    "양변에 같은 수를 더해도 등식이 성립한다",
+    "양변에 같은 수를 곱해도 등식이 성립한다",
+    "양변에서 같은 수를 빼도 등식이 성립한다"
+   ],
+   "answer": 2,
+   "why": "양변에 2를 곱했으므로 곱셈에 대한 성질을 이용했습니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-04-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "일차방정식 $3x-5=7$을 푸세요. (숫자만)",
+   "answers": [
+    "4"
+   ],
+   "why": "$3x=12$이므로 $x=4$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-04-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "일차방정식 $2(x+1)=10$의 해는 무엇인가요?",
+   "options": [
+    "$x=4$",
+    "$x=5$",
+    "$x=3$",
+    "$x=2$"
+   ],
+   "answer": 0,
+   "why": "$x+1=5$이므로 $x=4$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-04-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "연속하는 두 자연수의 합이 $25$일 때 작은 수를 구하세요. (숫자만)",
+   "answers": [
+    "12"
+   ],
+   "why": "작은 수를 $x$라 하면 $x+(x+1)=25$이므로 $x=12$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-04-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "일차방정식 $0.3x+1.2=0.9$의 해는 무엇인가요?",
+   "options": [
+    "$x=-7$",
+    "$x=1$",
+    "$x=-1$",
+    "$x=7$"
+   ],
+   "answer": 2,
+   "why": "양변에 10을 곱하면 $3x+12=9$, $3x=-3$이므로 $x=-1$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-04-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "일차방정식 $\\dfrac{x-1}{2}-\\dfrac{x+1}{3}=1$의 해는 무엇인가요?",
+   "options": [
+    "$x=11$",
+    "$x=5$",
+    "$x=7$",
+    "$x=13$"
+   ],
+   "answer": 0,
+   "why": "양변에 6을 곱하면 $3(x-1)-2(x+1)=6$, $x-5=6$이므로 $x=11$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-04-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "현재 아버지는 $40$세, 아들은 $10$세입니다. 몇 년 후에 아버지의 나이가 아들의 나이의 $2$배가 되나요?",
+   "options": [
+    "30년 후",
+    "10년 후",
+    "15년 후",
+    "20년 후"
+   ],
+   "answer": 3,
+   "why": "$x$년 후라 하면 $40+x=2(10+x)$, $x=20$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-04-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "집에서 학교까지 갈 때는 시속 $4\\,\\mathrm{km}$, 올 때는 시속 $6\\,\\mathrm{km}$로 걸어서 모두 $5$시간이 걸렸습니다. 집에서 학교까지의 거리는 얼마인가요?",
+   "options": [
+    "$10\\,\\mathrm{km}$",
+    "$12\\,\\mathrm{km}$",
+    "$15\\,\\mathrm{km}$",
+    "$24\\,\\mathrm{km}$"
+   ],
+   "answer": 1,
+   "why": "거리를 $x$라 하면 $\\dfrac{x}{4}+\\dfrac{x}{6}=5$이므로 $5x=60$, $x=12$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-04-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$10\\%$ 소금물 $200\\,\\mathrm{g}$에 물 $x\\,\\mathrm{g}$을 넣어 $8\\%$ 소금물을 만들려고 합니다. $x$의 값은 얼마인가요?",
+   "options": [
+    "20",
+    "50",
+    "40",
+    "100"
+   ],
+   "answer": 1,
+   "why": "소금의 양이 같으므로 $20=0.08(200+x)$이고 $200+x=250$, $x=50$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-04-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "원가에 $40\\%$의 이익을 붙여 정가를 정하고, 정가에서 $25\\%$를 할인하여 $21000$원에 팔았습니다. 원가는 얼마인가요? (숫자만, 원)",
+   "answers": [
+    "20000",
+    "20000원"
+   ],
+   "why": "원가를 $x$라 하면 $1.4x\\times0.75=1.05x=21000$이므로 $x=20000$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-05-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "점 $P(2,3)$에서 $x$좌표는 얼마인가요? (숫자만)",
+   "answers": [
+    "2"
+   ],
+   "why": "순서쌍 $(x,y)$의 앞의 수가 $x$좌표이므로 2입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-05-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "원점의 좌표는 무엇인가요?",
+   "options": [
+    "$(1,0)$",
+    "$(1,1)$",
+    "$(0,1)$",
+    "$(0,0)$"
+   ],
+   "answer": 3,
+   "why": "원점은 두 축이 만나는 점으로 $(0,0)$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-05-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "점 $(-3,2)$는 몇 사분면 위에 있나요?",
+   "svg": "<svg viewBox=\"0 0 230 230\" font-family=\"sans-serif\"><line x1=\"26\" y1=\"204\" x2=\"26\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"43.8\" y1=\"204\" x2=\"43.8\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"61.6\" y1=\"204\" x2=\"61.6\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"79.4\" y1=\"204\" x2=\"79.4\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"97.2\" y1=\"204\" x2=\"97.2\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"115\" y1=\"204\" x2=\"115\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"132.8\" y1=\"204\" x2=\"132.8\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"150.6\" y1=\"204\" x2=\"150.6\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"168.4\" y1=\"204\" x2=\"168.4\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"186.2\" y1=\"204\" x2=\"186.2\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"204\" y1=\"204\" x2=\"204\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"204\" x2=\"204\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"186.2\" x2=\"204\" y2=\"186.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"168.4\" x2=\"204\" y2=\"168.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"150.6\" x2=\"204\" y2=\"150.6\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"132.8\" x2=\"204\" y2=\"132.8\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"115\" x2=\"204\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"97.2\" x2=\"204\" y2=\"97.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"79.4\" x2=\"204\" y2=\"79.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"61.6\" x2=\"204\" y2=\"61.6\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"43.8\" x2=\"204\" y2=\"43.8\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"26\" x2=\"204\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"115\" x2=\"210\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"115\" y1=\"204\" x2=\"115\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"208\" y=\"131\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">x</text><text x=\"127\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">y</text><text x=\"107\" y=\"129\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">O</text><line x1=\"26\" y1=\"112\" x2=\"26\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"26\" y=\"132\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-5</text><line x1=\"43.8\" y1=\"112\" x2=\"43.8\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"43.8\" y=\"132\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-4</text><line x1=\"61.6\" y1=\"112\" x2=\"61.6\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"61.6\" y=\"132\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-3</text><line x1=\"79.4\" y1=\"112\" x2=\"79.4\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"79.4\" y=\"132\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-2</text><line x1=\"97.2\" y1=\"112\" x2=\"97.2\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"97.2\" y=\"132\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-1</text><line x1=\"132.8\" y1=\"112\" x2=\"132.8\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"132.8\" y=\"132\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"150.6\" y1=\"112\" x2=\"150.6\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"150.6\" y=\"132\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"168.4\" y1=\"112\" x2=\"168.4\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"168.4\" y=\"132\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"186.2\" y1=\"112\" x2=\"186.2\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"186.2\" y=\"132\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"204\" y1=\"112\" x2=\"204\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"204\" y=\"132\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"112\" y1=\"204\" x2=\"118\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"108\" y=\"208\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-5</text><line x1=\"112\" y1=\"186.2\" x2=\"118\" y2=\"186.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"108\" y=\"190.2\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-4</text><line x1=\"112\" y1=\"168.4\" x2=\"118\" y2=\"168.4\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"108\" y=\"172.4\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-3</text><line x1=\"112\" y1=\"150.6\" x2=\"118\" y2=\"150.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"108\" y=\"154.6\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-2</text><line x1=\"112\" y1=\"132.8\" x2=\"118\" y2=\"132.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"108\" y=\"136.8\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-1</text><line x1=\"112\" y1=\"97.2\" x2=\"118\" y2=\"97.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"108\" y=\"101.2\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1</text><line x1=\"112\" y1=\"79.4\" x2=\"118\" y2=\"79.4\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"108\" y=\"83.4\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"112\" y1=\"61.6\" x2=\"118\" y2=\"61.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"108\" y=\"65.6\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">3</text><line x1=\"112\" y1=\"43.8\" x2=\"118\" y2=\"43.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"108\" y=\"47.8\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"112\" y1=\"26\" x2=\"118\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"108\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">5</text><circle cx=\"61.6\" cy=\"79.4\" r=\"4.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"71.6\" y=\"72.4\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">P</text></svg>",
+   "options": [
+    "제2사분면",
+    "제1사분면",
+    "제3사분면",
+    "제4사분면"
+   ],
+   "answer": 0,
+   "why": "$x<0,\\ y>0$이므로 제2사분면입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-05-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "점 $(a,b)$를 $x$축에 대하여 대칭이동한 점의 좌표는 무엇인가요?",
+   "options": [
+    "$(-a,-b)$",
+    "$(-a,b)$",
+    "$(a,-b)$",
+    "$(b,a)$"
+   ],
+   "answer": 2,
+   "why": "$x$축에 대한 대칭은 $y$좌표의 부호가 바뀝니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-05-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$a>0,\\ ab<0$일 때 점 $(a,b)$는 몇 사분면 위에 있나요?",
+   "options": [
+    "제3사분면",
+    "제1사분면",
+    "제2사분면",
+    "제4사분면"
+   ],
+   "answer": 3,
+   "why": "$a>0$이고 $ab<0$이므로 $b<0$이므로 제4사분면입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-05-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "점 $(3,-4)$에서 $x$축까지의 거리를 구하세요. (숫자만)",
+   "answers": [
+    "4"
+   ],
+   "why": "$x$축까지의 거리는 $y$좌표의 절댓값 4입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-05-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "점 $P(a-1,\\ 2-a)$가 $y$축 위에 있을 때 $a$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "1"
+   ],
+   "why": "$y$축 위의 점은 $x$좌표가 0이므로 $a-1=0$, $a=1$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-05-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "세 점 $A(0,0)$, $B(4,0)$, $C(2,3)$를 꼭짓점으로 하는 삼각형의 넓이를 구하세요. (숫자만)",
+   "svg": "<svg viewBox=\"0 0 240 200\" font-family=\"sans-serif\"><line x1=\"26\" y1=\"174\" x2=\"26\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"55.6\" y1=\"174\" x2=\"55.6\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"85.2\" y1=\"174\" x2=\"85.2\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"114.8\" y1=\"174\" x2=\"114.8\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"144.4\" y1=\"174\" x2=\"144.4\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"174\" y1=\"174\" x2=\"174\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"203.6\" y1=\"174\" x2=\"203.6\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"174\" x2=\"203.6\" y2=\"174\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"144.4\" x2=\"203.6\" y2=\"144.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"114.8\" x2=\"203.6\" y2=\"114.8\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"85.2\" x2=\"203.6\" y2=\"85.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"55.6\" x2=\"203.6\" y2=\"55.6\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"26\" x2=\"203.6\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"144.4\" x2=\"209.6\" y2=\"144.4\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"55.6\" y1=\"174\" x2=\"55.6\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"207.6\" y=\"160.4\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">x</text><text x=\"67.6\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">y</text><text x=\"47.6\" y=\"158.4\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">O</text><line x1=\"26\" y1=\"141.4\" x2=\"26\" y2=\"147.4\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"26\" y=\"161.4\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-1</text><line x1=\"85.2\" y1=\"141.4\" x2=\"85.2\" y2=\"147.4\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"85.2\" y=\"161.4\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"114.8\" y1=\"141.4\" x2=\"114.8\" y2=\"147.4\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"114.8\" y=\"161.4\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"144.4\" y1=\"141.4\" x2=\"144.4\" y2=\"147.4\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"144.4\" y=\"161.4\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"174\" y1=\"141.4\" x2=\"174\" y2=\"147.4\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"174\" y=\"161.4\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"203.6\" y1=\"141.4\" x2=\"203.6\" y2=\"147.4\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"203.6\" y=\"161.4\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"52.6\" y1=\"174\" x2=\"58.6\" y2=\"174\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"48.6\" y=\"178\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-1</text><line x1=\"52.6\" y1=\"114.8\" x2=\"58.6\" y2=\"114.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"48.6\" y=\"118.8\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1</text><line x1=\"52.6\" y1=\"85.2\" x2=\"58.6\" y2=\"85.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"48.6\" y=\"89.2\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"52.6\" y1=\"55.6\" x2=\"58.6\" y2=\"55.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"48.6\" y=\"59.6\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">3</text><line x1=\"52.6\" y1=\"26\" x2=\"58.6\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"48.6\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><circle cx=\"55.6\" cy=\"144.4\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"65.6\" y=\"137.4\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"174\" cy=\"144.4\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"184\" y=\"137.4\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"114.8\" cy=\"55.6\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"124.8\" y=\"48.6\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">C</text></svg>",
+   "answers": [
+    "6"
+   ],
+   "why": "밑변 $\\overline{AB}=4$, 높이 $3$이므로 넓이는 $\\dfrac12\\times4\\times3=6$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-05-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "점 $(-2,3)$을 원점에 대하여 대칭이동한 점의 좌표는 무엇인가요?",
+   "options": [
+    "$(2,3)$",
+    "$(2,-3)$",
+    "$(-2,-3)$",
+    "$(3,-2)$"
+   ],
+   "answer": 1,
+   "why": "원점 대칭은 $x$, $y$좌표의 부호가 모두 바뀝니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-06-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "그래프는 어떤 사람이 걸은 시간 $x$(분)과 집에서의 거리 $y$(m)의 관계입니다. $x=2$분일 때 $y$의 값을 구하세요. (숫자만)",
+   "svg": "<svg viewBox=\"0 0 250 210\" font-family=\"sans-serif\"><line x1=\"26\" y1=\"184\" x2=\"26\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"59\" y1=\"184\" x2=\"59\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"92\" y1=\"184\" x2=\"92\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"125\" y1=\"184\" x2=\"125\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"158\" y1=\"184\" x2=\"158\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"191\" y1=\"184\" x2=\"191\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"224\" y1=\"184\" x2=\"224\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"184\" x2=\"224\" y2=\"184\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"131.3\" x2=\"224\" y2=\"131.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"78.7\" x2=\"224\" y2=\"78.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"26\" x2=\"224\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"184\" x2=\"230\" y2=\"184\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"26\" y1=\"184\" x2=\"26\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"228\" y=\"200\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">x</text><text x=\"38\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">y</text><text x=\"18\" y=\"198\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">O</text><line x1=\"59\" y1=\"181\" x2=\"59\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"59\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"92\" y1=\"181\" x2=\"92\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"92\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"125\" y1=\"181\" x2=\"125\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"125\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"158\" y1=\"181\" x2=\"158\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"158\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"191\" y1=\"181\" x2=\"191\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"191\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"224\" y1=\"181\" x2=\"224\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"224\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"23\" y1=\"131.3\" x2=\"29\" y2=\"131.3\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"19\" y=\"135.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">100</text><line x1=\"23\" y1=\"78.7\" x2=\"29\" y2=\"78.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"19\" y=\"82.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">200</text><line x1=\"23\" y1=\"26\" x2=\"29\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"19\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">300</text><polyline points=\"26,184 92,131.3 158,131.3 224,52.3\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"184\" r=\"3.5\" fill=\"#4b7bec\"/><circle cx=\"92\" cy=\"131.3\" r=\"3.5\" fill=\"#4b7bec\"/><circle cx=\"158\" cy=\"131.3\" r=\"3.5\" fill=\"#4b7bec\"/><circle cx=\"224\" cy=\"52.3\" r=\"3.5\" fill=\"#4b7bec\"/></svg>",
+   "answers": [
+    "100"
+   ],
+   "why": "그래프에서 2분일 때 거리는 $100\\,\\mathrm{m}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-06-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "시간이 지나도 집에서의 거리가 변하지 않아 그래프가 수평선인 구간에서 이 사람은 무엇을 하고 있었나요?",
+   "options": [
+    "뛰었다",
+    "계속 걸었다",
+    "멈춰 있었다",
+    "되돌아갔다"
+   ],
+   "answer": 2,
+   "why": "거리가 변하지 않는 구간은 움직이지 않고 멈춰 있는 구간입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-06-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "일정한 속력으로 걸을 때 시간에 따른 이동 거리의 그래프의 모양으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "원점을 지나는 오른쪽 위로 향하는 직선",
+    "수평선",
+    "오른쪽 아래로 향하는 직선",
+    "곡선"
+   ],
+   "answer": 0,
+   "why": "속력이 일정하면 거리가 시간에 정비례하므로 오른쪽 위로 향하는 직선입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-06-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "물탱크에 일정한 속도로 물을 채울 때 시간에 따른 물의 높이를 나타낸 그래프의 모양은 무엇인가요?",
+   "options": [
+    "오른쪽 아래로 향하는 직선",
+    "수평선",
+    "오른쪽 위로 향하는 직선",
+    "위로 갈수록 가파른 곡선"
+   ],
+   "answer": 2,
+   "why": "일정한 속도로 채우면 높이가 시간에 정비례하여 직선이 됩니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-06-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "두 사람 가, 나의 이동 거리 그래프가 한 점에서 만났다면 그 점이 뜻하는 것은 무엇인가요?",
+   "options": [
+    "같은 시각에 같은 위치에 있다",
+    "같은 속력으로 달린다",
+    "둘 다 멈췄다",
+    "출발 시각이 같다"
+   ],
+   "answer": 0,
+   "why": "두 그래프가 만나는 점은 같은 시각에 같은 거리에 있음을 뜻합니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-06-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그래프는 $x$시간 동안 물건의 가격 변화를 나타낸 것입니다. 가격이 가장 높은 때는 언제인가요?",
+   "svg": "<svg viewBox=\"0 0 240 210\" font-family=\"sans-serif\"><line x1=\"26\" y1=\"184\" x2=\"26\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"52.3\" y1=\"184\" x2=\"52.3\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"78.7\" y1=\"184\" x2=\"78.7\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"105\" y1=\"184\" x2=\"105\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"131.3\" y1=\"184\" x2=\"131.3\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"157.7\" y1=\"184\" x2=\"157.7\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"184\" y1=\"184\" x2=\"184\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"184\" x2=\"184\" y2=\"184\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"157.7\" x2=\"184\" y2=\"157.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"131.3\" x2=\"184\" y2=\"131.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"105\" x2=\"184\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"78.7\" x2=\"184\" y2=\"78.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"52.3\" x2=\"184\" y2=\"52.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"26\" x2=\"184\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"184\" x2=\"190\" y2=\"184\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"26\" y1=\"184\" x2=\"26\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"188\" y=\"200\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">x</text><text x=\"38\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">y</text><text x=\"18\" y=\"198\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">O</text><line x1=\"52.3\" y1=\"181\" x2=\"52.3\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"52.3\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"78.7\" y1=\"181\" x2=\"78.7\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"78.7\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"105\" y1=\"181\" x2=\"105\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"105\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"131.3\" y1=\"181\" x2=\"131.3\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"131.3\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"157.7\" y1=\"181\" x2=\"157.7\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"157.7\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"184\" y1=\"181\" x2=\"184\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"184\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"23\" y1=\"157.7\" x2=\"29\" y2=\"157.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"19\" y=\"161.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1</text><line x1=\"23\" y1=\"131.3\" x2=\"29\" y2=\"131.3\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"19\" y=\"135.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"23\" y1=\"105\" x2=\"29\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"19\" y=\"109\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">3</text><line x1=\"23\" y1=\"78.7\" x2=\"29\" y2=\"78.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"19\" y=\"82.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"23\" y1=\"52.3\" x2=\"29\" y2=\"52.3\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"19\" y=\"56.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">5</text><line x1=\"23\" y1=\"26\" x2=\"29\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"19\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><polyline points=\"26,131.3 52.3,105 105,52.3 157.7,105\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"131.3\" r=\"3.5\" fill=\"#4b7bec\"/><circle cx=\"52.3\" cy=\"105\" r=\"3.5\" fill=\"#4b7bec\"/><circle cx=\"105\" cy=\"52.3\" r=\"3.5\" fill=\"#4b7bec\"/><circle cx=\"157.7\" cy=\"105\" r=\"3.5\" fill=\"#4b7bec\"/></svg>",
+   "options": [
+    "$x=5$일 때",
+    "$x=0$일 때",
+    "$x=1$일 때",
+    "$x=3$일 때"
+   ],
+   "answer": 3,
+   "why": "그래프에서 $x=3$일 때 가장 높습니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-06-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "가격을 나타낸 그래프가 $x=3$에서 $x=5$로 가면서 오른쪽 아래로 내려갑니다. 이 구간에서 가격은 어떻게 변하나요?",
+   "options": [
+    "점점 올라간다",
+    "점점 내려간다",
+    "변하지 않는다",
+    "알 수 없다"
+   ],
+   "answer": 1,
+   "why": "$x=3$에서 5로 가며 그래프가 내려가므로 가격이 내려갑니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-06-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "그래프는 학생이 집에서 학교까지 갔다가 돌아온 거리를 나타냅니다. 학교까지 도착한 때의 거리가 $300\\,\\mathrm{m}$일 때, 집에서 학교까지 갔다가 돌아온 총 이동 거리는 몇 $\\mathrm{m}$인가요? (숫자만)",
+   "svg": "<svg viewBox=\"0 0 250 210\" font-family=\"sans-serif\"><line x1=\"26\" y1=\"184\" x2=\"26\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"50.8\" y1=\"184\" x2=\"50.8\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"75.5\" y1=\"184\" x2=\"75.5\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"100.2\" y1=\"184\" x2=\"100.2\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"125\" y1=\"184\" x2=\"125\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"149.8\" y1=\"184\" x2=\"149.8\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"174.5\" y1=\"184\" x2=\"174.5\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"199.2\" y1=\"184\" x2=\"199.2\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"224\" y1=\"184\" x2=\"224\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"184\" x2=\"224\" y2=\"184\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"131.3\" x2=\"224\" y2=\"131.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"78.7\" x2=\"224\" y2=\"78.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"26\" x2=\"224\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"184\" x2=\"230\" y2=\"184\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"26\" y1=\"184\" x2=\"26\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"228\" y=\"200\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">x</text><text x=\"38\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">y</text><text x=\"18\" y=\"198\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">O</text><line x1=\"50.8\" y1=\"181\" x2=\"50.8\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"50.8\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"75.5\" y1=\"181\" x2=\"75.5\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"75.5\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"100.2\" y1=\"181\" x2=\"100.2\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"100.2\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"125\" y1=\"181\" x2=\"125\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"125\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"149.8\" y1=\"181\" x2=\"149.8\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"149.8\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"174.5\" y1=\"181\" x2=\"174.5\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"174.5\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"199.2\" y1=\"181\" x2=\"199.2\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"199.2\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">7</text><line x1=\"224\" y1=\"181\" x2=\"224\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"224\" y=\"201\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">8</text><line x1=\"23\" y1=\"131.3\" x2=\"29\" y2=\"131.3\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"19\" y=\"135.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">100</text><line x1=\"23\" y1=\"78.7\" x2=\"29\" y2=\"78.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"19\" y=\"82.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">200</text><line x1=\"23\" y1=\"26\" x2=\"29\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"19\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">300</text><polyline points=\"26,184 100.2,26 149.8,26 224,184\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"184\" r=\"3.5\" fill=\"#4b7bec\"/><circle cx=\"100.2\" cy=\"26\" r=\"3.5\" fill=\"#4b7bec\"/><circle cx=\"149.8\" cy=\"26\" r=\"3.5\" fill=\"#4b7bec\"/><circle cx=\"224\" cy=\"184\" r=\"3.5\" fill=\"#4b7bec\"/></svg>",
+   "answers": [
+    "600"
+   ],
+   "why": "갈 때 300 m, 올 때 300 m이므로 모두 600 m입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-06-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그래프에서 가파르게 올라가는 구간은 무엇을 뜻하나요?",
+   "options": [
+    "더 느리게 이동한다",
+    "더 빠르게 이동한다",
+    "멈춰 있다",
+    "되돌아온다"
+   ],
+   "answer": 1,
+   "why": "기울기가 클수록 단위 시간당 이동 거리가 크므로 더 빠릅니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-07-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 $y$가 $x$에 정비례하는 것은 무엇인가요?",
+   "options": [
+    "$y=x^2$",
+    "$y=\\dfrac6x$",
+    "$y=x+2$",
+    "$y=2x$"
+   ],
+   "answer": 3,
+   "why": "$y=ax$ 꼴이 정비례 관계입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-07-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 $y$가 $x$에 반비례하는 것은 무엇인가요?",
+   "options": [
+    "$y=\\dfrac6x$",
+    "$y=6x$",
+    "$y=x-6$",
+    "$y=\\dfrac x6$"
+   ],
+   "answer": 0,
+   "why": "$y=\\dfrac ax$ 꼴이 반비례 관계입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-07-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "$y$가 $x$에 정비례하고 $x=3$일 때 $y=12$입니다. $x=5$일 때 $y$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "20"
+   ],
+   "why": "$y=4x$이므로 $x=5$일 때 $y=20$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-07-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "$y$가 $x$에 반비례하고 $x=2$일 때 $y=9$입니다. $x=6$일 때 $y$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "3"
+   ],
+   "why": "$xy=18$이므로 $x=6$일 때 $y=3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-07-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "정비례 관계 $y=ax$의 그래프가 점 $(2,6)$을 지날 때 $a$의 값은 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 240 220\" font-family=\"sans-serif\"><line x1=\"26\" y1=\"194\" x2=\"26\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"40\" y1=\"194\" x2=\"40\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"54\" y1=\"194\" x2=\"54\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"68\" y1=\"194\" x2=\"68\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"82\" y1=\"194\" x2=\"82\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"96\" y1=\"194\" x2=\"96\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"110\" y1=\"194\" x2=\"110\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"124\" y1=\"194\" x2=\"124\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"194\" x2=\"124\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"180\" x2=\"124\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"166\" x2=\"124\" y2=\"166\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"152\" x2=\"124\" y2=\"152\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"138\" x2=\"124\" y2=\"138\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"124\" x2=\"124\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"110\" x2=\"124\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"96\" x2=\"124\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"82\" x2=\"124\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"68\" x2=\"124\" y2=\"68\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"54\" x2=\"124\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"40\" x2=\"124\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"26\" x2=\"124\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"138\" x2=\"130\" y2=\"138\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"68\" y1=\"194\" x2=\"68\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"128\" y=\"154\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">x</text><text x=\"80\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">y</text><text x=\"60\" y=\"152\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">O</text><line x1=\"26\" y1=\"135\" x2=\"26\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"26\" y=\"155\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-3</text><line x1=\"40\" y1=\"135\" x2=\"40\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"155\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-2</text><line x1=\"54\" y1=\"135\" x2=\"54\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"54\" y=\"155\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-1</text><line x1=\"82\" y1=\"135\" x2=\"82\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"82\" y=\"155\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"96\" y1=\"135\" x2=\"96\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"96\" y=\"155\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"110\" y1=\"135\" x2=\"110\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"110\" y=\"155\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"124\" y1=\"135\" x2=\"124\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"124\" y=\"155\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"65\" y1=\"194\" x2=\"71\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"61\" y=\"198\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-4</text><line x1=\"65\" y1=\"180\" x2=\"71\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"61\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-3</text><line x1=\"65\" y1=\"166\" x2=\"71\" y2=\"166\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"61\" y=\"170\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-2</text><line x1=\"65\" y1=\"152\" x2=\"71\" y2=\"152\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"61\" y=\"156\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-1</text><line x1=\"65\" y1=\"124\" x2=\"71\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"61\" y=\"128\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1</text><line x1=\"65\" y1=\"110\" x2=\"71\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"61\" y=\"114\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"65\" y1=\"96\" x2=\"71\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"61\" y=\"100\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">3</text><line x1=\"65\" y1=\"82\" x2=\"71\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"61\" y=\"86\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"65\" y1=\"68\" x2=\"71\" y2=\"68\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"61\" y=\"72\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">5</text><line x1=\"65\" y1=\"54\" x2=\"71\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"61\" y=\"58\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"65\" y1=\"40\" x2=\"71\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"61\" y=\"44\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">7</text><line x1=\"65\" y1=\"26\" x2=\"71\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"61\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">8</text><line x1=\"49.3\" y1=\"194\" x2=\"105.3\" y2=\"26\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"96\" cy=\"54\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"106\" y=\"47\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">(2, 6)</text></svg>",
+   "options": [
+    "4",
+    "2",
+    "3",
+    "12"
+   ],
+   "answer": 2,
+   "why": "$6=a\\times2$이므로 $a=3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-07-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "반비례 관계 $y=\\dfrac ax\\ (a>0)$의 그래프의 모양으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "$y$축에 평행한 직선",
+    "원점을 지나는 직선",
+    "포물선",
+    "좌표축에 한없이 가까워지는 한 쌍의 곡선(제1, 3사분면)"
+   ],
+   "answer": 3,
+   "why": "반비례의 그래프는 제1, 3사분면에 한 쌍의 곡선(쌍곡선)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-07-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "$y=ax$에서 $x=-2$일 때 $y=6$입니다. $a$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "-3"
+   ],
+   "why": "$6=a\\times(-2)$이므로 $a=-3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-07-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "반비례 관계 $y=\\dfrac ax$의 그래프가 점 $(-3,-4)$를 지납니다. $x=6$일 때 $y$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "2"
+   ],
+   "why": "$a=(-3)\\times(-4)=12$이므로 $y=\\dfrac{12}{6}=2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-07-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$y=-\\dfrac5x$의 그래프가 지나는 사분면은 어디인가요?",
+   "options": [
+    "제1, 3사분면",
+    "제2, 4사분면",
+    "제1, 2사분면",
+    "제3, 4사분면"
+   ],
+   "answer": 1,
+   "why": "$a<0$인 반비례 그래프는 제2, 4사분면을 지납니다."
+  }
+ ],
+ "skipped": []
+}
