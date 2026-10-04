@@ -1,0 +1,246 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "사회",
+  "school": "초",
+  "course": "사회",
+  "gradeBand": "초5-6",
+  "unit": "우리나라 지형",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "우리 땅 독도",
+   "text": "독도는 우리나라 동쪽 끝에 있는 섬으로, 울릉도에서 동쪽으로 약 87킬로미터 떨어져 있습니다. 독도는 동도와 서도 두 개의 큰 섬과 여러 개의 작은 바위섬으로 이루어져 있으며, 오래전 바다 속 화산이 폭발하여 생긴 화산섬입니다.\n\n독도 주변 바다는 따뜻한 물과 차가운 물이 만나 물고기가 많이 모여 어업에 좋은 곳입니다. 또 독도는 우리나라의 영해와 배타적 경제 수역을 정하는 기준이 되어 중요합니다.\n독도가 우리 땅이라는 역사 기록도 많습니다. 『삼국사기』에는 신라의 이사부가 우산국을 복속시킨 이야기가 나와 있고, 『세종실록지리지』에는 울릉도와 우산도(독도)가 강원도 울진현에 속한다고 적혀 있습니다. 1900년 대한제국은 칙령 제41호로 울릉도를 울도군으로 승격하고 독도를 관할 구역에 포함시켰습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "사회-초5-6-6사01-01-c1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "우리나라 지형",
+   "standard": "6사01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "우리나라에서 높은 산지가 많은 쪽은 어느 방향인가요? (동, 서, 남, 북 중에서 쓰세요)",
+   "answers": [
+    "동쪽",
+    "동"
+   ],
+   "why": "우리나라는 동쪽이 높고 서쪽이 낮은 동고서저의 지형입니다."
+  },
+  {
+   "id": "사회-초5-6-6사01-01-c2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "우리나라 지형",
+   "standard": "6사01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "한강처럼 큰 하천이 흘러 들어가는 곳은 어디인가요? (바다 이름)",
+   "answers": [
+    "서해",
+    "황해"
+   ],
+   "why": "한강은 서해로 흘러 들어갑니다."
+  },
+  {
+   "id": "사회-초5-6-6사01-01-b1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "우리나라 지형",
+   "standard": "6사01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 우리나라 해안의 특징입니다. 갯벌이 넓게 발달한 해안은 어디인가요?",
+   "svg": "<svg viewBox=\"0 0 286 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"283\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"283\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">해안</text><text x=\"178\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">특징</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">동해안</text><text x=\"178\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">해안선이 단조롭고 모래사장이 많다</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">서해안</text><text x=\"178\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">해안선이 복잡하고 갯벌이 넓다</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">남해안</text><text x=\"178\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">섬이 많고 해안선이 복잡하다</text></svg>",
+   "options": [
+    "남해안",
+    "동해안",
+    "서해안",
+    "모두 같다"
+   ],
+   "answer": 2,
+   "why": "서해안은 밀물과 썰물의 차이가 커서 갯벌이 넓게 발달합니다."
+  },
+  {
+   "id": "사회-초5-6-6사01-01-b2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "우리나라 지형",
+   "standard": "6사01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "하천 주변의 평야에서 주로 하는 활동으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "벼농사 같은 농업",
+    "고기잡이",
+    "스키",
+    "석탄 캐기"
+   ],
+   "answer": 0,
+   "why": "하천 주변의 평야는 물을 쉽게 얻을 수 있어 벼농사가 발달했습니다."
+  },
+  {
+   "id": "사회-초5-6-6사01-01-a1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "우리나라 지형",
+   "standard": "6사01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "우리나라의 큰 하천이 대부분 서쪽과 남쪽 바다로 흐르는 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "비가 서쪽에서만 오기 때문이다",
+    "서쪽이 높고 동쪽이 낮기 때문이다",
+    "바다가 모두 막혀 있기 때문이다",
+    "동쪽이 높고 서쪽과 남쪽이 낮은 지형이기 때문이다"
+   ],
+   "answer": 3,
+   "why": "물은 높은 곳에서 낮은 곳으로 흐르므로 동고서저 지형에서는 서쪽과 남쪽으로 흐릅니다."
+  },
+  {
+   "id": "사회-초5-6-6사01-01-a2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "우리나라 지형",
+   "standard": "6사01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "남해안에서 양식업과 관광업이 발달한 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "갯벌이 거의 없기 때문이다",
+    "섬이 많고 바다가 잔잔하며 경치가 아름답기 때문이다",
+    "산이 없기 때문이다",
+    "바다가 너무 거칠기 때문이다"
+   ],
+   "answer": 1,
+   "why": "남해안은 섬이 많고 경치가 아름다워 양식업과 관광업이 발달했습니다."
+  },
+  {
+   "id": "사회-초5-6-6사01-02-c1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "우리나라 지형",
+   "standard": "6사01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "독도는 어떻게 만들어진 섬인가요?",
+   "passage": "p1",
+   "options": [
+    "강이 흘러 만든 삼각주",
+    "바다 속 화산이 폭발하여 만들어진 화산섬",
+    "모래가 쌓여 만든 섬",
+    "사람이 흙을 쌓아 만든 섬"
+   ],
+   "answer": 1,
+   "why": "독도는 오래전 바다 속 화산 활동으로 만들어진 화산섬입니다."
+  },
+  {
+   "id": "사회-초5-6-6사01-02-c2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "우리나라 지형",
+   "standard": "6사01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "독도에서 가장 가까운 우리나라의 섬은 어디인가요? (두 글자)",
+   "answers": [
+    "울릉도"
+   ],
+   "why": "독도는 울릉도에서 동쪽으로 약 87킬로미터 떨어져 있습니다."
+  },
+  {
+   "id": "사회-초5-6-6사01-02-b1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "우리나라 지형",
+   "standard": "6사01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "독도가 우리 땅임을 알려 주는 옛 기록으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "택리지만",
+    "훈민정음",
+    "농사직설",
+    "삼국사기와 세종실록지리지"
+   ],
+   "answer": 3,
+   "why": "삼국사기와 세종실록지리지에 우산국과 우산도에 관한 기록이 있습니다."
+  },
+  {
+   "id": "사회-초5-6-6사01-02-b2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "우리나라 지형",
+   "standard": "6사01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "독도 주변 바다가 어업에 좋은 까닭으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "따뜻한 물과 차가운 물이 만나 물고기가 많이 모이기 때문이다",
+    "바닷물이 얼어 있기 때문이다",
+    "갯벌이 넓기 때문이다",
+    "강물이 흘러 들어오기 때문이다"
+   ],
+   "answer": 0,
+   "why": "난류와 한류가 만나는 곳은 어장이 잘 형성됩니다."
+  },
+  {
+   "id": "사회-초5-6-6사01-02-a1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "우리나라 지형",
+   "standard": "6사01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "독도가 영토로서 가지는 중요성으로 가장 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "사람이 살 수 없는 땅이라 중요하지 않다",
+    "아무런 가치가 없다",
+    "영해와 배타적 경제 수역의 기준이 되고 수산 자원이 풍부하다",
+    "다른 나라 땅이다"
+   ],
+   "answer": 2,
+   "why": "독도는 바다 영역을 정하는 기준이 되며 자원이 풍부한 중요한 영토입니다."
+  },
+  {
+   "id": "사회-초5-6-6사01-02-a2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "우리나라 지형",
+   "standard": "6사01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "독도를 지키기 위한 노력으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "독도에 대해 잘못된 정보를 퍼뜨린다",
+    "독도에 관심을 두지 않는다",
+    "독도에 대한 자료를 숨긴다",
+    "독도에 대한 역사 기록과 사실을 바르게 알고 알리는 활동을 한다"
+   ],
+   "answer": 3,
+   "why": "독도의 역사와 지리를 바르게 알고 알리는 것이 독도 사랑을 실천하는 방법입니다."
+  }
+ ],
+ "skipped": []
+}
