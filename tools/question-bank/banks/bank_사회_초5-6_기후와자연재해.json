@@ -1,0 +1,252 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "사회",
+  "school": "초",
+  "course": "사회",
+  "gradeBand": "초5-6",
+  "unit": "기후와 자연재해",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "달라지는 우리나라의 날씨",
+   "text": "우리나라는 봄, 여름, 가을, 겨울이 뚜렷합니다. 봄에는 날씨가 따뜻해지지만 건조하여 산불이 나기 쉽고, 중국에서 날아오는 황사가 나타나기도 합니다. 여름에는 덥고 비가 많이 내리며, 장마와 태풍의 영향을 받습니다. 가을에는 하늘이 맑고 선선하며, 겨울에는 춥고 건조하며 눈이 내립니다.\n\n그런데 최근 지구의 평균 기온이 오르는 기후변화가 나타나면서 자연재해도 달라지고 있습니다. 여름철 폭염이 길어지고 열대야가 늘었으며, 짧은 시간에 많은 비가 쏟아지는 집중 호우가 잦아졌습니다. 바닷물의 온도가 높아지면서 더 강한 태풍이 오기도 합니다.\n전문가들은 기후변화로 생기는 피해를 줄이려면 에너지를 아껴 쓰고, 가까운 거리는 걸어 다니거나 대중교통을 이용하며, 일회용품 사용을 줄이는 작은 실천부터 시작해야 한다고 말합니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "사회-초5-6-6사02-01-c1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "기후와 자연재해",
+   "standard": "6사02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "우리나라에서 여름에 나타나는 기후 특징으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "하늘이 맑고 선선하다",
+    "춥고 건조하다",
+    "덥고 비가 많이 내린다",
+    "건조하고 황사가 많다"
+   ],
+   "answer": 2,
+   "why": "우리나라의 여름은 덥고 비가 많이 내리며, 장마와 태풍의 영향을 받습니다."
+  },
+  {
+   "id": "사회-초5-6-6사02-01-c2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "기후와 자연재해",
+   "standard": "6사02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "다음 중 기후변화로 늘어나고 있는 자연재해는 무엇인가요?",
+   "answers": [
+    "폭염과 집중 호우",
+    "폭염, 집중 호우",
+    "폭염",
+    "집중 호우"
+   ],
+   "why": "기후변화로 기온이 오르면서 폭염과 집중 호우 같은 자연재해가 늘고 있습니다."
+  },
+  {
+   "id": "사회-초5-6-6사02-01-b1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "기후와 자연재해",
+   "standard": "6사02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 어느 지역의 월별 기온과 강수량입니다. 강수량이 가장 많은 달의 계절은 언제인가요?",
+   "svg": "<svg viewBox=\"0 0 322 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"316\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"87\" y1=\"3\" x2=\"87\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"145\" y1=\"3\" x2=\"145\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"203\" y1=\"3\" x2=\"203\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"261\" y1=\"3\" x2=\"261\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"319\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"319\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"45\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">월</text><text x=\"116\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1월</text><text x=\"174\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4월</text><text x=\"232\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7월</text><text x=\"290\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10월</text><text x=\"45\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">기온(°C)</text><text x=\"116\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">-2</text><text x=\"174\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">12</text><text x=\"232\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">26</text><text x=\"290\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">15</text><text x=\"45\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">강수량(mm)</text><text x=\"116\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">30</text><text x=\"174\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">80</text><text x=\"232\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">340</text><text x=\"290\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">50</text></svg>",
+   "options": [
+    "여름",
+    "봄",
+    "가을",
+    "겨울"
+   ],
+   "answer": 0,
+   "why": "7월의 강수량이 340mm로 가장 많고 7월은 여름입니다."
+  },
+  {
+   "id": "사회-초5-6-6사02-01-b2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "기후와 자연재해",
+   "standard": "6사02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "기후변화로 자연재해의 피해가 커지는 까닭으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "바람이 불지 않기 때문이다",
+    "계절이 하나로 줄었기 때문이다",
+    "비가 전혀 내리지 않기 때문이다",
+    "지구의 평균 기온이 올라 폭염·집중 호우·강한 태풍이 늘기 때문이다"
+   ],
+   "answer": 3,
+   "why": "글에서 기온 상승으로 폭염, 집중 호우, 더 강한 태풍이 늘고 있다고 했습니다."
+  },
+  {
+   "id": "사회-초5-6-6사02-01-a1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "기후와 자연재해",
+   "standard": "6사02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "기후변화에 대응하기 위해 우리가 할 수 있는 행동으로 가장 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "냉방기를 하루 종일 켜 둔다",
+    "가까운 거리는 걸어 다니고 일회용품 사용을 줄인다",
+    "쓰지 않는 방의 불을 켜 둔다",
+    "자가용만 이용한다"
+   ],
+   "answer": 1,
+   "why": "에너지와 자원을 아끼는 생활 습관이 기후변화 대응에 도움이 됩니다."
+  },
+  {
+   "id": "사회-초5-6-6사02-01-a2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "기후와 자연재해",
+   "standard": "6사02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "우리나라의 계절별 특징을 알맞게 짝지은 것은 무엇인가요?",
+   "options": [
+    "봄 – 비가 가장 많음 / 겨울 – 덥고 습함",
+    "봄 – 건조하고 황사가 나타남 / 겨울 – 춥고 건조함",
+    "여름 – 건조하고 선선함 / 가을 – 장마가 있음",
+    "가을 – 폭염이 가장 심함 / 여름 – 눈이 내림"
+   ],
+   "answer": 1,
+   "why": "봄은 건조하고 황사가 나타나며, 겨울은 춥고 건조합니다."
+  },
+  {
+   "id": "사회-초5-6-6사02-02-c1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "기후와 자연재해",
+   "standard": "6사02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "우리나라에서 인구가 가장 많이 모여 사는 지역은 어디인가요? (지역 이름으로 쓰세요)",
+   "answers": [
+    "수도권",
+    "서울과 그 주변",
+    "서울·경기·인천"
+   ],
+   "why": "우리나라 인구의 약 절반이 서울·인천·경기 지역인 수도권에 모여 삽니다."
+  },
+  {
+   "id": "사회-초5-6-6사02-02-c2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "기후와 자연재해",
+   "standard": "6사02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "다음 중 촌락의 인구가 줄어들며 생기는 문제는 무엇인가요?",
+   "answers": [
+    "일손이 부족하고 학교와 가게가 문을 닫는다",
+    "일손 부족",
+    "학교가 문을 닫는다",
+    "일손이 부족하다"
+   ],
+   "why": "촌락은 인구가 줄고 고령화되어 일손 부족과 시설 폐쇄 문제가 생깁니다."
+  },
+  {
+   "id": "사회-초5-6-6사02-02-b1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "기후와 자연재해",
+   "standard": "6사02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그래프는 어느 나라의 지역별 인구 비율입니다. 인구가 가장 많은 지역은 어디인가요?",
+   "svg": "<svg viewBox=\"0 0 330 230\" font-family=\"sans-serif\"><text x=\"46\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(%)</text><line x1=\"52\" y1=\"186\" x2=\"314\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"52\" y1=\"159.3\" x2=\"314\" y2=\"159.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"163.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">10</text><line x1=\"52\" y1=\"132.7\" x2=\"314\" y2=\"132.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"136.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">20</text><line x1=\"52\" y1=\"106\" x2=\"314\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"110\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">30</text><line x1=\"52\" y1=\"79.3\" x2=\"314\" y2=\"79.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"83.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">40</text><line x1=\"52\" y1=\"52.7\" x2=\"314\" y2=\"52.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"56.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">50</text><line x1=\"52\" y1=\"26\" x2=\"314\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">60</text><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"68.4\" y=\"52.7\" width=\"32.8\" height=\"133.3\" fill=\"#4b7bec\"/><text x=\"84.8\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">A지역</text><rect x=\"133.9\" y=\"119.3\" width=\"32.8\" height=\"66.7\" fill=\"#4b7bec\"/><text x=\"150.2\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">B지역</text><rect x=\"199.4\" y=\"146\" width=\"32.8\" height=\"40\" fill=\"#4b7bec\"/><text x=\"215.8\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">C지역</text><rect x=\"264.9\" y=\"159.3\" width=\"32.8\" height=\"26.7\" fill=\"#4b7bec\"/><text x=\"281.2\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">D지역</text></svg>",
+   "options": [
+    "D지역",
+    "B지역",
+    "C지역",
+    "A지역"
+   ],
+   "answer": 3,
+   "why": "A지역이 50%로 가장 높습니다."
+  },
+  {
+   "id": "사회-초5-6-6사02-02-b2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "기후와 자연재해",
+   "standard": "6사02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "인구가 대도시에 지나치게 몰릴 때 나타나는 문제로 알맞은 것은 무엇인가요?",
+   "options": [
+    "교통 혼잡, 주택 부족, 환경 오염이 심해진다",
+    "농사지을 땅이 늘어난다",
+    "빈집이 늘어난다",
+    "학교가 문을 닫는다"
+   ],
+   "answer": 0,
+   "why": "대도시에는 교통 혼잡, 주택 부족, 환경 오염 같은 문제가 생기기 쉽습니다."
+  },
+  {
+   "id": "사회-초5-6-6사02-02-a1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "기후와 자연재해",
+   "standard": "6사02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "촌락의 인구 감소 문제를 해결하기 위한 방안으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "촌락의 농사를 금지한다",
+    "촌락의 학교를 모두 닫는다",
+    "일자리와 교육·의료 시설을 늘려 살기 좋은 촌락을 만든다",
+    "도시로의 이사를 장려한다"
+   ],
+   "answer": 2,
+   "why": "촌락에서도 생활할 수 있도록 일자리와 생활 시설을 늘려야 합니다."
+  },
+  {
+   "id": "사회-초5-6-6사02-02-a2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "기후와 자연재해",
+   "standard": "6사02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "인구가 한곳에 몰리는 문제를 줄이기 위해 정부가 추진하는 정책으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "대도시에 새 건물만 짓는다",
+    "모든 기업을 서울로 옮긴다",
+    "지방 도로를 없앤다",
+    "공공 기관을 지방으로 옮기고 지역 균형 발전을 돕는다"
+   ],
+   "answer": 3,
+   "why": "공공 기관 이전과 지역 균형 발전은 인구 분산을 위한 대표적인 정책입니다."
+  }
+ ],
+ "skipped": []
+}
