@@ -406,3 +406,29 @@ def rect_fig(w, h, wt=None, ht=None, s=16, fill=True):
     if ht:
         out.append(text(x0 - 6, y0 + h * s / 2 + 5, ht, 13, "end", "bold"))
     return svg(_n(x0 + w * s + 16), _n(y0 + h * s + 30), "".join(out))
+
+
+def range_line(lo, hi, spans, W=320):
+    """수의 범위 수직선. spans: [(왼쪽 끝 값 또는 None, 왼쪽 열림 여부, 오른쪽 끝 값 또는 None, 오른쪽 열림 여부)]
+    열림 여부 True면 ○(포함하지 않음), False면 ●(포함). None이면 화살표로 끝없이"""
+    x0, x1 = 24, W - 24
+    u = (x1 - x0) / (hi - lo)
+    y = 46
+    out = [line(x0 - 12, y, x1 + 12, y, 2.5)]
+    for v in range(lo, hi + 1):
+        x = x0 + (v - lo) * u
+        out.append(line(x, y - 7, x, y + 7, 2))
+        out.append(text(x, y + 26, v, 13, weight="bold"))
+    for (a, a_open, c, c_open) in spans:
+        xa = x0 + (a - lo) * u if a is not None else x0 - 12
+        xc = x0 + (c - lo) * u if c is not None else x1 + 12
+        out.append(line(xa + (6.5 if (a is not None and a_open) else 0), y, xc - (6.5 if (c is not None and c_open) else 0), y, 6, color=ORANGE))
+        if a is None:
+            out.append(f'<polygon points="{_n(xa - 10)},{y} {_n(xa)},{y - 7} {_n(xa)},{y + 7}" fill="{ORANGE}"/>')
+        else:
+            out.append(f'<circle cx="{_n(xa)}" cy="{y}" r="6.5" fill="{"none" if a_open else ORANGE}" stroke="{C}" stroke-width="2.5"/>')
+        if c is None:
+            out.append(f'<polygon points="{_n(xc + 10)},{y} {_n(xc)},{y - 7} {_n(xc)},{y + 7}" fill="{ORANGE}"/>')
+        else:
+            out.append(f'<circle cx="{_n(xc)}" cy="{y}" r="6.5" fill="{"none" if c_open else ORANGE}" stroke="{C}" stroke-width="2.5"/>')
+    return svg(W, 80, "".join(out))

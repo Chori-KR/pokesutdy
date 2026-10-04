@@ -1,0 +1,1158 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "초",
+  "course": "수학",
+  "gradeBand": "초5-6",
+  "unit": "수와 연산",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-초5-6-6수01-01-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$18 - 6  \\div  3$을 계산하면 얼마인가요?",
+   "options": [
+    "6",
+    "4",
+    "16",
+    "12"
+   ],
+   "answer": 2,
+   "why": "나눗셈을 먼저 계산하여 6÷3=2, 18-2=16입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-01-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "$3  \\times  (4 + 2)$을 계산한 값을 쓰세요.",
+   "answers": [
+    "18"
+   ],
+   "why": "괄호 안을 먼저 계산하여 4+2=6, 3×6=18입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-01-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$15 + 6  \\times  2 - 3$에서 가장 먼저 계산해야 하는 것은 무엇인가요?",
+   "options": [
+    "$6  \\times  2$",
+    "$15 + 6$",
+    "$2 - 3$",
+    "$15 + 6  \\times  2$"
+   ],
+   "answer": 0,
+   "why": "덧셈·뺄셈과 곱셈이 섞여 있으면 곱셈을 먼저 계산합니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-01-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "$24  \\div  (2 + 4)  \\times  3$을 계산한 값을 쓰세요.",
+   "answers": [
+    "12"
+   ],
+   "why": "괄호 안 2+4=6을 먼저 계산하고 앞에서부터 24÷6=4, 4×3=12입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-01-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$(12 - 4)  \\times  5 + 3$을 계산하면 얼마인가요?",
+   "options": [
+    "40",
+    "29",
+    "55",
+    "43"
+   ],
+   "answer": 3,
+   "why": "(12-4)=8, 8×5=40, 40+3=43입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-01-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$20 - 4  \\times  3$을 ‘20-4=16, 16×3=48’로 계산했습니다. 어디가 잘못되었나요?",
+   "options": [
+    "뺄셈을 먼저 계산하지 않았다",
+    "곱셈을 먼저 계산하지 않았다",
+    "덧셈을 먼저 계산했다",
+    "잘못된 곳이 없다"
+   ],
+   "answer": 1,
+   "why": "곱셈을 먼저 계산하여 4×3=12, 20-12=8이어야 합니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-01-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "연필 한 자루가 700원입니다. 5000원을 내고 연필 5자루를 샀다면 거스름돈은 얼마인가요? (식: $5000 - 700  \\times  5$)",
+   "answers": [
+    "1500",
+    "1500원",
+    "1,500",
+    "1,500원"
+   ],
+   "why": "700×5=3500, 5000-3500=1500(원)입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-01-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$18  \\div  3 + 3 = 3$이 되도록 괄호로 묶어야 하는 부분은 어디인가요?",
+   "options": [
+    "$18  \\div  3$",
+    "$3 + 3$",
+    "$18  \\div  3 + 3$",
+    "괄호가 필요 없다"
+   ],
+   "answer": 1,
+   "why": "18÷(3+3)=18÷6=3이 되므로 3+3에 괄호를 묶어야 합니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-01-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "덧셈, 뺄셈, 곱셈, 나눗셈이 섞여 있고 괄호도 있는 식의 계산 순서를 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "곱셈을 가장 마지막에 계산한다",
+    "무조건 앞에서부터 차례로 계산한다",
+    "덧셈과 뺄셈을 먼저 계산한다",
+    "괄호 안을 먼저, 그다음 곱셈과 나눗셈, 마지막에 덧셈과 뺄셈을 앞에서부터 계산한다"
+   ],
+   "answer": 3,
+   "why": "괄호 안 → 곱셈·나눗셈 → 덧셈·뺄셈(앞에서부터) 순서로 계산합니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-02-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "‘15 이상인 수’에 대한 설명으로 옳은 것은 무엇인가요?",
+   "options": [
+    "15와 같거나 큰 수",
+    "15보다 큰 수",
+    "15와 같거나 작은 수",
+    "15보다 작은 수"
+   ],
+   "answer": 0,
+   "why": "이상은 기준이 되는 수를 포함하여 그보다 큰 수입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-02-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "수직선에 나타낸 수의 범위를 바르게 말한 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 320 80\" font-family=\"sans-serif\"><line x1=\"12\" y1=\"46\" x2=\"308\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"24\" y1=\"39\" x2=\"24\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text><line x1=\"51.2\" y1=\"39\" x2=\"51.2\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"51.2\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">11</text><line x1=\"78.4\" y1=\"39\" x2=\"78.4\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"78.4\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12</text><line x1=\"105.6\" y1=\"39\" x2=\"105.6\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"105.6\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">13</text><line x1=\"132.8\" y1=\"39\" x2=\"132.8\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"132.8\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">14</text><line x1=\"160\" y1=\"39\" x2=\"160\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">15</text><line x1=\"187.2\" y1=\"39\" x2=\"187.2\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"187.2\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">16</text><line x1=\"214.4\" y1=\"39\" x2=\"214.4\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"214.4\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">17</text><line x1=\"241.6\" y1=\"39\" x2=\"241.6\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"241.6\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">18</text><line x1=\"268.8\" y1=\"39\" x2=\"268.8\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"268.8\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">19</text><line x1=\"296\" y1=\"39\" x2=\"296\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"296\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">20</text><line x1=\"78.4\" y1=\"46\" x2=\"308\" y2=\"46\" stroke=\"#e07b39\" stroke-width=\"6\"/><circle cx=\"78.4\" cy=\"46\" r=\"6.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"318,46 308,39 308,53\" fill=\"#e07b39\"/></svg>",
+   "options": [
+    "12 이하인 수",
+    "12 초과인 수",
+    "12 이상인 수",
+    "12 미만인 수"
+   ],
+   "answer": 2,
+   "why": "12에 ●이 있고 오른쪽으로 이어지므로 12와 같거나 큰 수, 즉 12 이상인 수입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-02-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "10 초과 20 이하인 자연수 중 가장 작은 수를 쓰세요.",
+   "answers": [
+    "11"
+   ],
+   "why": "10 초과이므로 10은 포함하지 않아 가장 작은 자연수는 11입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-02-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "키가 130 cm 이상 135 cm 미만인 학생의 키로 알맞은 것은 무엇인가요?",
+   "options": [
+    "135.1 cm",
+    "135 cm",
+    "129.9 cm",
+    "134.9 cm"
+   ],
+   "answer": 3,
+   "why": "130 이상 135 미만이므로 135는 포함하지 않고 134.9는 포함됩니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-02-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "수직선에 ○와 ●로 나타낸 수의 범위를 이상, 이하, 초과, 미만을 사용하여 알맞게 나타낸 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 320 80\" font-family=\"sans-serif\"><line x1=\"12\" y1=\"46\" x2=\"308\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"24\" y1=\"39\" x2=\"24\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><line x1=\"51.2\" y1=\"39\" x2=\"51.2\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"51.2\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><line x1=\"78.4\" y1=\"39\" x2=\"78.4\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"78.4\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><line x1=\"105.6\" y1=\"39\" x2=\"105.6\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"105.6\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><line x1=\"132.8\" y1=\"39\" x2=\"132.8\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"132.8\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><line x1=\"160\" y1=\"39\" x2=\"160\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8</text><line x1=\"187.2\" y1=\"39\" x2=\"187.2\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"187.2\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">9</text><line x1=\"214.4\" y1=\"39\" x2=\"214.4\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"214.4\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text><line x1=\"241.6\" y1=\"39\" x2=\"241.6\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"241.6\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">11</text><line x1=\"268.8\" y1=\"39\" x2=\"268.8\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"268.8\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12</text><line x1=\"296\" y1=\"39\" x2=\"296\" y2=\"53\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"296\" y=\"72\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">13</text><line x1=\"84.9\" y1=\"46\" x2=\"187.2\" y2=\"46\" stroke=\"#e07b39\" stroke-width=\"6\"/><circle cx=\"78.4\" cy=\"46\" r=\"6.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"187.2\" cy=\"46\" r=\"6.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "options": [
+    "5 이상 9 미만인 수",
+    "5 초과 9 이하인 수",
+    "5 이상 9 이하인 수",
+    "5 초과 9 미만인 수"
+   ],
+   "answer": 1,
+   "why": "5에는 ○, 9에는 ●이므로 5는 포함하지 않고 9는 포함합니다. 5 초과 9 이하입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-02-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "14 미만인 자연수는 모두 몇 개인가요?",
+   "answers": [
+    "13",
+    "13개"
+   ],
+   "why": "14 미만이므로 14를 포함하지 않아 1부터 13까지 13개입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-02-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "놀이기구는 키가 120 cm 이상인 사람만 탈 수 있습니다. 키가 119.8 cm인 민수가 탈 수 있는지 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "119.8을 반올림하면 120이므로 탈 수 있다",
+    "120에 가까우므로 탈 수 있다",
+    "120 cm 이상이 아니므로 탈 수 없다",
+    "120 미만이어도 탈 수 있다"
+   ],
+   "answer": 2,
+   "why": "119.8은 120보다 작으므로 120 이상의 범위에 속하지 않습니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-02-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "수영장 입장료가 키 100 cm 미만은 무료, 100 cm 이상 140 cm 미만은 3000원, 140 cm 이상은 5000원입니다. 키가 140 cm인 학생의 입장료는 얼마인가요?",
+   "options": [
+    "5000원",
+    "3000원",
+    "무료",
+    "8000원"
+   ],
+   "answer": 0,
+   "why": "140 cm는 140 cm 이상에 속하므로 5000원입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-02-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "6 이상 12 미만인 자연수는 모두 몇 개인가요?",
+   "options": [
+    "7",
+    "5",
+    "6",
+    "12"
+   ],
+   "answer": 2,
+   "why": "6, 7, 8, 9, 10, 11로 모두 6개입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-03-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "3.14를 반올림하여 일의 자리까지 나타내면 얼마인가요?",
+   "options": [
+    "3",
+    "4",
+    "3.1",
+    "3.2"
+   ],
+   "answer": 0,
+   "why": "소수 첫째 자리 숫자가 1이므로 버림하여 3입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-03-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "2345를 올림하여 백의 자리까지 나타내세요.",
+   "answers": [
+    "2400"
+   ],
+   "why": "백의 자리 아래 수 45를 올려서 2400입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-03-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "5678을 버림하여 십의 자리까지 나타내면 얼마인가요?",
+   "options": [
+    "5700",
+    "5680",
+    "5600",
+    "5670"
+   ],
+   "answer": 3,
+   "why": "십의 자리 아래 수 8을 버리면 5670입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-03-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "4.65를 반올림하여 소수 첫째 자리까지 나타내면 얼마인가요?",
+   "options": [
+    "4.6",
+    "4.7",
+    "5",
+    "4.65"
+   ],
+   "answer": 1,
+   "why": "소수 둘째 자리 숫자가 5이므로 올림하여 4.7입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-03-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "12340을 올림하여 천의 자리까지 나타내세요.",
+   "answers": [
+    "13000"
+   ],
+   "why": "천의 자리 아래 수 340을 올려서 13000입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-03-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "76543을 반올림하여 만의 자리까지 나타내면 얼마인가요?",
+   "options": [
+    "70000",
+    "80000",
+    "76000",
+    "77000"
+   ],
+   "answer": 1,
+   "why": "천의 자리 숫자가 6이므로 올림하여 80000입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-03-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "공 100개를 한 상자에 12개씩 담아 모두 포장하려고 합니다. 필요한 상자는 최소 몇 개인가요?",
+   "answers": [
+    "9",
+    "9개"
+   ],
+   "why": "100÷12=8.33…이므로 8상자로는 부족하고 남은 공을 담으려면 올림하여 9상자가 필요합니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-03-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한 개에 1000원인 과자를 3250원으로 최대 몇 개까지 살 수 있나요?",
+   "options": [
+    "5",
+    "4",
+    "3.25",
+    "3"
+   ],
+   "answer": 3,
+   "why": "3250÷1000=3.25이므로 버림하여 3개까지 살 수 있습니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-03-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한 번에 6명까지 탈 수 있는 엘리베이터로 학생 40명이 모두 올라가려면 최소 몇 번 운행해야 하나요?",
+   "options": [
+    "7",
+    "6",
+    "8",
+    "7.5"
+   ],
+   "answer": 0,
+   "why": "40÷6=6.66…이므로 올림하여 7번 운행해야 합니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-04-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "12의 약수는 모두 몇 개인가요?",
+   "options": [
+    "5",
+    "4",
+    "6",
+    "12"
+   ],
+   "answer": 2,
+   "why": "12의 약수는 1, 2, 3, 4, 6, 12로 6개입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-04-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "8과 12의 공약수를 모두 쓴 것은 무엇인가요?",
+   "options": [
+    "2, 4",
+    "1, 2, 4, 8",
+    "1, 2, 3, 4",
+    "1, 2, 4"
+   ],
+   "answer": 3,
+   "why": "8의 약수는 1, 2, 4, 8, 12의 약수는 1, 2, 3, 4, 6, 12이므로 공약수는 1, 2, 4입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-04-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "10의 약수를 모두 쓴 것은 무엇인가요?",
+   "options": [
+    "1, 5, 10",
+    "1, 2, 5, 10",
+    "2, 5, 10",
+    "1, 2, 3, 5, 10"
+   ],
+   "answer": 1,
+   "why": "10을 나누어떨어지게 하는 수는 1, 2, 5, 10입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-04-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "18과 24의 최대공약수를 쓰세요.",
+   "answers": [
+    "6"
+   ],
+   "why": "18과 24의 공약수는 1, 2, 3, 6이므로 최대공약수는 6입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-04-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "두 수의 공약수 중에서 가장 큰 수를 무엇이라고 하나요?",
+   "options": [
+    "공배수",
+    "최소공배수",
+    "최대공약수",
+    "약수"
+   ],
+   "answer": 2,
+   "why": "공약수 중 가장 큰 수를 최대공약수라고 합니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-04-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "30과 45의 최대공약수는 얼마인가요?",
+   "options": [
+    "15",
+    "5",
+    "10",
+    "30"
+   ],
+   "answer": 0,
+   "why": "30=2×3×5, 45=3×3×5이므로 최대공약수는 3×5=15입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-04-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "36과 48의 공약수는 모두 몇 개인가요?",
+   "answers": [
+    "6",
+    "6개"
+   ],
+   "why": "36과 48의 최대공약수는 12이고 공약수는 최대공약수 12의 약수와 같습니다. 12의 약수는 6개입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-04-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "가로 24 cm, 세로 36 cm인 직사각형 모양의 종이를 남김없이 크기가 같은 정사각형으로 잘라 가장 큰 정사각형을 만들려고 합니다. 정사각형의 한 변은 몇 cm인가요?",
+   "options": [
+    "$4\\,\\mathrm{cm}$",
+    "$6\\,\\mathrm{cm}$",
+    "$12\\,\\mathrm{cm}$",
+    "$24\\,\\mathrm{cm}$"
+   ],
+   "answer": 2,
+   "why": "24와 36의 최대공약수가 12이므로 한 변이 12 cm인 정사각형을 만들 수 있습니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-04-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "두 수의 최대공약수를 구하는 방법으로 옳은 것은 무엇인가요?",
+   "options": [
+    "두 수를 공약수로 계속 나누어 더 나눌 수 없을 때까지 나눈 공약수를 모두 곱한다",
+    "두 수를 곱한다",
+    "두 수 중 큰 수를 고른다",
+    "두 수를 더한다"
+   ],
+   "answer": 0,
+   "why": "공약수로 나누어 더 이상 공약수가 1뿐일 때까지 나눈 수들의 곱이 최대공약수입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-05-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "6의 배수를 작은 수부터 차례로 쓴 것은 무엇인가요?",
+   "options": [
+    "12, 24, 36, 48",
+    "1, 2, 3, 6",
+    "6, 8, 10, 12",
+    "6, 12, 18, 24"
+   ],
+   "answer": 3,
+   "why": "6에 1, 2, 3, 4, …를 곱한 수가 6의 배수입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-05-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "3과 4의 공배수 중 가장 작은 수를 쓰세요.",
+   "answers": [
+    "12"
+   ],
+   "why": "3의 배수는 3, 6, 9, 12, …, 4의 배수는 4, 8, 12, …이므로 가장 작은 공배수는 12입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-05-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "4의 배수 중 다섯 번째로 작은 수는 얼마인가요?",
+   "options": [
+    "16",
+    "20",
+    "24",
+    "5"
+   ],
+   "answer": 1,
+   "why": "4×5=20이므로 다섯 번째 4의 배수는 20입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-05-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "6과 8의 최소공배수를 쓰세요.",
+   "answers": [
+    "24"
+   ],
+   "why": "6의 배수 6, 12, 18, 24와 8의 배수 8, 16, 24에서 처음 만나는 24가 최소공배수입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-05-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "10과 15의 최소공배수는 얼마인가요?",
+   "options": [
+    "150",
+    "30",
+    "15",
+    "5"
+   ],
+   "answer": 1,
+   "why": "10과 15를 5로 나누면 2와 3이므로 최소공배수는 5×2×3=30입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-05-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "공배수에 대한 설명으로 옳은 것은 무엇인가요?",
+   "options": [
+    "두 수의 차",
+    "두 수의 약수 중 공통인 수",
+    "두 수를 더한 수",
+    "두 수의 배수 중 공통인 수"
+   ],
+   "answer": 3,
+   "why": "공배수는 두 수의 공통인 배수입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-05-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "12분마다 출발하는 버스와 18분마다 출발하는 버스가 오전 9시에 동시에 출발했습니다. 두 버스가 처음으로 다시 동시에 출발하는 것은 몇 분 뒤인가요?",
+   "answers": [
+    "36",
+    "36분"
+   ],
+   "why": "12와 18의 최소공배수는 36이므로 36분 뒤입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-05-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "1부터 100까지의 자연수 중에서 3의 배수이면서 4의 배수인 수는 모두 몇 개인가요?",
+   "options": [
+    "8",
+    "33",
+    "25",
+    "12"
+   ],
+   "answer": 0,
+   "why": "3과 4의 공배수는 12의 배수이므로 12, 24, …, 96으로 모두 8개입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-05-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "두 수의 공배수와 최소공배수의 관계를 바르게 말한 것은 무엇인가요?",
+   "options": [
+    "공배수는 최소공배수보다 항상 작다",
+    "두 수의 공배수는 최소공배수의 약수이다",
+    "두 수의 공배수는 최소공배수의 배수이다",
+    "공배수는 최소공배수와 관계가 없다"
+   ],
+   "answer": 2,
+   "why": "두 수의 공배수는 최소공배수의 배수와 같습니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-06-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$\\frac{1}{2}$과 크기가 같은 분수는 무엇인가요?",
+   "options": [
+    "$\\frac{3}{4}$",
+    "$\\frac{2}{3}$",
+    "$\\frac{1}{4}$",
+    "$\\frac{2}{4}$"
+   ],
+   "answer": 3,
+   "why": "분모와 분자에 같은 수 2를 곱하면 $\\frac{2}{4}$로 크기가 같습니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-06-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "$\\frac{6}{9}$을 분모와 분자의 공약수 3으로 나누어 간단하게 나타내세요. (분수로 쓰세요: 분자/분모)",
+   "answers": [
+    "2/3",
+    "2 / 3"
+   ],
+   "why": "분모와 분자를 3으로 나누면 6÷3=2, 9÷3=3이므로 $\\frac{2}{3}$입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-06-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-06",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "분모가 다른 분수를 분모가 같게 만드는 것을 무엇이라고 하나요?",
+   "options": [
+    "약분",
+    "통분",
+    "기약분수",
+    "역수"
+   ],
+   "answer": 1,
+   "why": "분모가 다른 분수를 분모가 같게 만드는 것을 통분이라고 합니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-06-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\frac{18}{24}$을 기약분수로 나타내면 무엇인가요?",
+   "options": [
+    "$\\frac{6}{8}$",
+    "$\\frac{9}{12}$",
+    "$\\frac{3}{4}$",
+    "$\\frac{2}{3}$"
+   ],
+   "answer": 2,
+   "why": "18과 24의 최대공약수 6으로 나누면 $\\frac{3}{4}$이고 더 약분되지 않으므로 기약분수입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-06-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\frac{1}{2}$과 $\\frac{2}{3}$을 분모가 6인 분수로 통분한 것은 무엇인가요?",
+   "options": [
+    "$\\frac{3}{6}$, $\\frac{4}{6}$",
+    "$\\frac{2}{6}$, $\\frac{4}{6}$",
+    "$\\frac{3}{6}$, $\\frac{2}{6}$",
+    "$\\frac{1}{6}$, $\\frac{2}{6}$"
+   ],
+   "answer": 0,
+   "why": "$\\frac{1}{2}$=$\\frac{3}{6}$, $\\frac{2}{3}$=$\\frac{4}{6}$입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-06-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-06",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "$\\frac{12}{18}$를 기약분수로 나타낸 것을 분수로 쓰세요. (분자/분모)",
+   "answers": [
+    "2/3",
+    "2 / 3"
+   ],
+   "why": "12와 18의 최대공약수 6으로 나누면 $\\frac{2}{3}$입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-06-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\frac{5}{8}$와 $\\frac{7}{12}$을 분모가 24인 분수로 통분한 것은 무엇인가요?",
+   "options": [
+    "$\\frac{15}{24}$, $\\frac{7}{24}$",
+    "$\\frac{10}{24}$, $\\frac{14}{24}$",
+    "$\\frac{15}{24}$, $\\frac{14}{24}$",
+    "$\\frac{5}{24}$, $\\frac{7}{24}$"
+   ],
+   "answer": 2,
+   "why": "$\\frac{5}{8}$=$\\frac{15}{24}$, $\\frac{7}{12}$=$\\frac{14}{24}$입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-06-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "$\\frac{2}{3}$과 크기가 같은 분수 중 분모가 12인 분수의 분자를 쓰세요.",
+   "answers": [
+    "8"
+   ],
+   "why": "분모 3에 4를 곱해 12가 되므로 분자 2에도 4를 곱해 8입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-06-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-06",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "분수를 약분하는 방법을 바르게 설명한 것은 무엇인가요?",
+   "options": [
+    "분모와 분자를 그 둘의 공약수로 나눈다",
+    "분모와 분자에 같은 수를 곱한다",
+    "분모와 분자를 더한다",
+    "분모만 나눈다"
+   ],
+   "answer": 0,
+   "why": "약분은 분모와 분자를 공약수로 나누어 간단히 하는 것입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-07-c1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$\\frac{1}{2}$과 $\\frac{1}{3}$의 크기를 비교한 것으로 옳은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 266 72\" font-family=\"sans-serif\"><text x=\"50\" y=\"22\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">1/2</text><rect x=\"58\" y=\"4\" width=\"100\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"61\" y1=\"27\" x2=\"155\" y2=\"7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"158\" y=\"4\" width=\"100\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"50\" y=\"56\" font-size=\"14\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">1/3</text><rect x=\"58\" y=\"38\" width=\"66.7\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"61\" y1=\"61\" x2=\"121.7\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"124.7\" y=\"38\" width=\"66.7\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"191.3\" y=\"38\" width=\"66.7\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "비교할 수 없다",
+    "$\\frac{1}{2}$ < $\\frac{1}{3}$",
+    "$\\frac{1}{2}$ = $\\frac{1}{3}$",
+    "$\\frac{1}{2}$ > $\\frac{1}{3}$"
+   ],
+   "answer": 3,
+   "why": "분자가 같을 때에는 분모가 작을수록 큰 분수이므로 $\\frac{1}{2}$이 더 큽니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-07-c2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$\\frac{3}{5}$과 $\\frac{2}{5}$ 중 더 큰 분수는 무엇인가요?",
+   "options": [
+    "$\\frac{2}{5}$",
+    "$\\frac{3}{5}$",
+    "같다",
+    "알 수 없다"
+   ],
+   "answer": 1,
+   "why": "분모가 같으면 분자가 큰 분수가 더 큽니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-07-c3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-07",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$\\frac{1}{4}$과 $\\frac{1}{6}$ 중 더 큰 분수는 무엇인가요?",
+   "options": [
+    "$\\frac{1}{6}$",
+    "$\\frac{1}{4}$",
+    "같다",
+    "알 수 없다"
+   ],
+   "answer": 1,
+   "why": "분자가 같으면 분모가 작은 분수가 더 큽니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-07-b1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\frac{2}{3}$와 $\\frac{3}{4}$의 크기를 비교한 것으로 옳은 것은 무엇인가요?",
+   "options": [
+    "비교할 수 없다",
+    "$\\frac{2}{3}$ > $\\frac{3}{4}$",
+    "$\\frac{2}{3}$ = $\\frac{3}{4}$",
+    "$\\frac{2}{3}$ < $\\frac{3}{4}$"
+   ],
+   "answer": 3,
+   "why": "통분하면 $\\frac{8}{12}$ < $\\frac{9}{12}$이므로 $\\frac{2}{3}$ < $\\frac{3}{4}$입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-07-b2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "$\\frac{5}{6}$와 $\\frac{7}{9}$ 중 더 큰 분수를 쓰세요. (분자/분모)",
+   "answers": [
+    "5/6",
+    "5 / 6"
+   ],
+   "why": "분모를 18로 통분하면 $\\frac{15}{18}$와 $\\frac{14}{18}$이므로 $\\frac{5}{6}$이 더 큽니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-07-b3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-07",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\frac{3}{4}$, $\\frac{5}{8}$, $\\frac{2}{3}$ 중 가장 큰 분수는 무엇인가요?",
+   "options": [
+    "$\\frac{3}{4}$",
+    "$\\frac{5}{8}$",
+    "$\\frac{2}{3}$",
+    "모두 같다"
+   ],
+   "answer": 0,
+   "why": "분모를 24로 통분하면 $\\frac{18}{24}$, $\\frac{15}{24}$, $\\frac{16}{24}$이므로 $\\frac{3}{4}$이 가장 큽니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-07-a1",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\frac{2}{5}$, $\\frac{3}{10}$, $\\frac{1}{2}$를 큰 수부터 차례로 쓴 것은 무엇인가요?",
+   "options": [
+    "$\\frac{2}{5}$, $\\frac{1}{2}$, $\\frac{3}{10}$",
+    "$\\frac{3}{10}$, $\\frac{2}{5}$, $\\frac{1}{2}$",
+    "$\\frac{1}{2}$, $\\frac{2}{5}$, $\\frac{3}{10}$",
+    "$\\frac{1}{2}$, $\\frac{3}{10}$, $\\frac{2}{5}$"
+   ],
+   "answer": 2,
+   "why": "분모를 10으로 통분하면 $\\frac{4}{10}$, $\\frac{3}{10}$, $\\frac{5}{10}$이므로 $\\frac{1}{2}$ > $\\frac{2}{5}$ > $\\frac{3}{10}$입니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-07-a2",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\frac{3}{7}$과 $\\frac{4}{9}$의 크기를 비교하는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "두 분수를 더해 본다",
+    "분모끼리만 비교한다",
+    "분자끼리만 비교한다",
+    "두 분수를 분모 63으로 통분하여 분자를 비교한다"
+   ],
+   "answer": 3,
+   "why": "$\\frac{3}{7}$=$\\frac{27}{63}$, $\\frac{4}{9}$=$\\frac{28}{63}$이므로 $\\frac{4}{9}$이 더 큽니다."
+  },
+  {
+   "id": "수학-초5-6-6수01-07-a3",
+   "subject": "수학",
+   "gradeBand": "초5-6",
+   "unit": "수와 연산",
+   "standard": "6수01-07",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "우유를 철수는 $\\frac{3}{5}$ L, 영희는 $\\frac{5}{8}$ L 마셨습니다. 누가 더 많이 마셨나요?",
+   "options": [
+    "철수",
+    "영희",
+    "똑같이 마셨다",
+    "알 수 없다"
+   ],
+   "answer": 1,
+   "why": "$\\frac{3}{5}$=$\\frac{24}{40}$, $\\frac{5}{8}$=$\\frac{25}{40}$이므로 영희가 더 많이 마셨습니다."
+  }
+ ],
+ "skipped": []
+}

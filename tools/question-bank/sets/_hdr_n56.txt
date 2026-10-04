@@ -1,0 +1,37 @@
+import os, sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, os.path.dirname(__file__))
+from common import Bank
+from svgkit import svg, text, line, table, BLUE, ORANGE, C, _n
+from kit_ko import KoBank, report
+from kit34 import hold
+from kit56 import *
+from kit12 import blocks
+
+def cm(n):
+    return f"${n}\\,\\mathrm{{cm}}$"
+
+def cm2(n):
+    return f"${n}\\,\\mathrm{{cm^2}}$"
+
+def cm3(n):
+    return f"${n}\\,\\mathrm{{cm^3}}$"
+
+def ans(n, unit=""):
+    """단답형 허용 답: 숫자만, 단위 붙임"""
+    a = [str(n)]
+    if unit:
+        a += [f"{n}{unit}", f"{n} {unit}"]
+    return a
+from kit34n import fr, mx, ex, frac_bars, frac_bar, frac_line, pie
+from kit_soc import compare_table
+from math import gcd
+from fractions import Fraction
+
+
+def lcm(a, b):
+    return a * b // gcd(a, b)
+
+
+def divisors(n):
+    return [d for d in range(1, n + 1) if n % d == 0]
