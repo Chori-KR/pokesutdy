@@ -1,0 +1,236 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "체육",
+  "school": "초",
+  "course": "체육",
+  "gradeBand": "초5-6",
+  "unit": "스포츠 2",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "체육-초5-6-6체02-11-c1",
+   "subject": "체육",
+   "gradeBand": "초5-6",
+   "unit": "스포츠 2",
+   "standard": "6체02-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "경기 중 실수한 팀원에게 해 줄 수 있는 말로 알맞은 것은 무엇인가요?",
+   "options": [
+    "다시는 하지 마.",
+    "너 때문에 졌어.",
+    "괜찮아, 다음에 잘하면 돼!",
+    "빠져."
+   ],
+   "answer": 2,
+   "why": "격려하는 말은 팀원들의 자신감을 높여 줍니다."
+  },
+  {
+   "id": "체육-초5-6-6체02-11-c2",
+   "subject": "체육",
+   "gradeBand": "초5-6",
+   "unit": "스포츠 2",
+   "standard": "6체02-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "팀 경기에서 서로 도우며 함께 힘을 합치는 것을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "협력",
+    "협동"
+   ],
+   "why": "팀원이 서로 힘을 합치는 것을 협력이라고 합니다."
+  },
+  {
+   "id": "체육-초5-6-6체02-11-b1",
+   "subject": "체육",
+   "gradeBand": "초5-6",
+   "unit": "스포츠 2",
+   "standard": "6체02-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "경기에서 운동 기술이 부족한 팀원을 배려하는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "규칙을 쉽게 바꾸거나 기회를 나누어 함께 참여하게 한다",
+    "공을 주지 않는다",
+    "경기에서 뺀다",
+    "비웃는다"
+   ],
+   "answer": 0,
+   "why": "모두가 함께 즐길 수 있도록 기회를 나누고 배려해야 합니다."
+  },
+  {
+   "id": "체육-초5-6-6체02-11-b2",
+   "subject": "체육",
+   "gradeBand": "초5-6",
+   "unit": "스포츠 2",
+   "standard": "6체02-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "팀 경기 전 작전 회의에서 알맞은 태도는 무엇인가요?",
+   "options": [
+    "회의에 참여하지 않는다",
+    "내 의견만 말한다",
+    "듣지 않는다",
+    "다른 사람의 의견을 끝까지 듣고 함께 정한다"
+   ],
+   "answer": 3,
+   "why": "협력하는 팀은 서로의 의견을 존중하여 작전을 정합니다."
+  },
+  {
+   "id": "체육-초5-6-6체02-11-a1",
+   "subject": "체육",
+   "gradeBand": "초5-6",
+   "unit": "스포츠 2",
+   "standard": "6체02-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "표는 모둠의 역할 나누기입니다. 팀의 협력을 가장 잘 보여 주는 역할 분담은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 266 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"260\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"93\" y1=\"3\" x2=\"93\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"263\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"263\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"263\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"48\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">역할</text><text x=\"178\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">하는 일</text><text x=\"48\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공격</text><text x=\"178\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">공을 몰고 슛</text><text x=\"48\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수비</text><text x=\"178\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">상대 공격 막기</text><text x=\"48\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">응원·기록</text><text x=\"178\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">점수 기록, 격려</text></svg>",
+   "options": [
+    "한 명이 모든 역할을 한다",
+    "모든 팀원이 각자 맡은 역할을 하며 서로 돕는다",
+    "역할 없이 한다",
+    "잘하는 사람만 계속 뛴다"
+   ],
+   "answer": 1,
+   "why": "역할을 나누고 서로 돕는 것이 협력입니다."
+  },
+  {
+   "id": "체육-초5-6-6체02-11-a2",
+   "subject": "체육",
+   "gradeBand": "초5-6",
+   "unit": "스포츠 2",
+   "standard": "6체02-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "경기에서 이기고 있을 때에도 상대 팀과 우리 팀 구성원을 배려하는 행동으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "상대를 놀린다",
+    "상대를 놀리지 않고 서로 수고했다고 격려한다",
+    "우리 팀 실수한 친구만 탓한다",
+    "경기 후 인사하지 않는다"
+   ],
+   "answer": 1,
+   "why": "승패와 관계없이 서로를 배려하고 존중해야 합니다."
+  },
+  {
+   "id": "체육-초5-6-6체02-12-c1",
+   "subject": "체육",
+   "gradeBand": "초5-6",
+   "unit": "스포츠 2",
+   "standard": "6체02-12",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "체육 활동이 끝난 뒤 사용한 도구를 제자리에 가져다 두는 일을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "정리",
+    "정리정돈",
+    "정돈"
+   ],
+   "why": "사용한 도구를 제자리에 두는 정리는 공동의 물건을 아끼는 태도입니다."
+  },
+  {
+   "id": "체육-초5-6-6체02-12-c2",
+   "subject": "체육",
+   "gradeBand": "초5-6",
+   "unit": "스포츠 2",
+   "standard": "6체02-12",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "운동하다가 생긴 쓰레기를 아무 곳에나 버리지 않고 모아서 버리는 곳은 어디인가요? (세 글자)",
+   "answers": [
+    "쓰레기통"
+   ],
+   "why": "쓰레기는 정해진 쓰레기통에 버려야 합니다."
+  },
+  {
+   "id": "체육-초5-6-6체02-12-b1",
+   "subject": "체육",
+   "gradeBand": "초5-6",
+   "unit": "스포츠 2",
+   "standard": "6체02-12",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "등산이나 산책 후 자연에 대한 감사를 실천하는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "동물을 괴롭힌다",
+    "나뭇가지를 꺾는다",
+    "쓰레기를 남긴다",
+    "자연을 훼손하지 않고 깨끗이 지킨다"
+   ],
+   "answer": 3,
+   "why": "자연이 주는 즐거움에 감사하며 환경을 보호해야 합니다."
+  },
+  {
+   "id": "체육-초5-6-6체02-12-b2",
+   "subject": "체육",
+   "gradeBand": "초5-6",
+   "unit": "스포츠 2",
+   "standard": "6체02-12",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "체육 시설(운동장, 체육관)에 대해 감사하는 마음을 가지는 태도로 알맞은 것은 무엇인가요?",
+   "options": [
+    "시설을 아껴 쓰고 고마움을 표현한다",
+    "시설을 함부로 쓴다",
+    "시설을 더럽힌다",
+    "관심을 갖지 않는다"
+   ],
+   "answer": 0,
+   "why": "공동의 시설을 아끼고 감사하는 태도가 필요합니다."
+  },
+  {
+   "id": "체육-초5-6-6체02-12-a1",
+   "subject": "체육",
+   "gradeBand": "초5-6",
+   "unit": "스포츠 2",
+   "standard": "6체02-12",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "환경을 보호하기 위해 스포츠 활동에서 실천할 수 있는 일로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "쓰레기를 아무 곳에나 버린다",
+    "일회용품을 많이 쓴다",
+    "일회용품을 줄이고 개인 물병을 가져오며 쓰레기를 분리배출한다",
+    "물을 마구 쓴다"
+   ],
+   "answer": 2,
+   "why": "일회용품을 줄이고 분리배출하면 환경을 보호할 수 있습니다."
+  },
+  {
+   "id": "체육-초5-6-6체02-12-a2",
+   "subject": "체육",
+   "gradeBand": "초5-6",
+   "unit": "스포츠 2",
+   "standard": "6체02-12",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "야외 스포츠 대회를 마친 뒤 환경을 지키기 위한 행동으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "정리하지 않고 떠난다",
+    "쓰레기는 그대로 둔다",
+    "일부만 정리한다",
+    "참가자 모두 쓰레기를 줍고 자리를 깨끗이 정리한다"
+   ],
+   "answer": 3,
+   "why": "모두가 책임을 지고 정리해야 자연과 시설을 깨끗이 유지할 수 있습니다."
+  }
+ ],
+ "skipped": []
+}
