@@ -1,0 +1,344 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초5-6",
+  "unit": "날씨와 기상",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "과학-초5-6-6과06-01-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "날씨를 나타내는 기상 요소가 아닌 것은 무엇인가요?",
+   "options": [
+    "강수량",
+    "기온",
+    "달의 모양",
+    "바람의 세기(풍속)"
+   ],
+   "answer": 2,
+   "why": "기온, 강수량, 습도, 풍향, 풍속, 구름양 등이 기상 요소입니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-01-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "공기 중에 수증기가 들어 있는 정도를 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "습도"
+   ],
+   "why": "습도는 공기 중에 수증기가 포함된 정도입니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-01-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 어느 날의 기상 요소 측정 결과입니다. 우산을 챙겨야 하는 날로 알맞은 것은 언제인가요?",
+   "svg": "<svg viewBox=\"0 0 330 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"324\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"151\" y1=\"3\" x2=\"151\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"239\" y1=\"3\" x2=\"239\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"327\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"327\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"327\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"327\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">요일</text><text x=\"107\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">기온(°C)</text><text x=\"195\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">강수량(mm)</text><text x=\"283\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">풍속(m/s)</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">월</text><text x=\"107\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">24</text><text x=\"195\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"283\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"33\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">화</text><text x=\"107\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">21</text><text x=\"195\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">35</text><text x=\"283\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"33\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수</text><text x=\"107\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">26</text><text x=\"195\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"283\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"33\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">목</text><text x=\"107\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">28</text><text x=\"195\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"283\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text></svg>",
+   "options": [
+    "화요일",
+    "월요일",
+    "수요일",
+    "목요일"
+   ],
+   "answer": 0,
+   "why": "강수량이 35mm로 비가 많이 내린 날은 화요일입니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-01-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "바람이 불어오는 방향을 알아볼 때 사용하는 기구는 무엇인가요? (세 글자)",
+   "answers": [
+    "풍향계"
+   ],
+   "why": "풍향계는 바람이 불어오는 방향을 알려 줍니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-01-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그래프는 어느 날의 기온 변화입니다. 야외 운동을 하기에 가장 덜 더운 시각은 언제인가요?",
+   "svg": "<svg viewBox=\"0 0 330 240\" font-family=\"sans-serif\"><text x=\"46\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(°C)</text><line x1=\"52\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"36\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">15</text><line x1=\"52\" y1=\"154\" x2=\"304\" y2=\"154\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"158\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">20</text><line x1=\"52\" y1=\"122\" x2=\"304\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"126\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">25</text><line x1=\"52\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"94\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">30</text><line x1=\"52\" y1=\"58\" x2=\"304\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"62\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">35</text><line x1=\"52\" y1=\"26\" x2=\"304\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">40</text><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M44,196 q4,-6 8,0 t8,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"212\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"77.2\" y1=\"26\" x2=\"77.2\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"77.2\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6시</text><line x1=\"127.6\" y1=\"26\" x2=\"127.6\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"127.6\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">9시</text><line x1=\"178\" y1=\"26\" x2=\"178\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"178\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">12시</text><line x1=\"228.4\" y1=\"26\" x2=\"228.4\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"228.4\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">15시</text><line x1=\"278.8\" y1=\"26\" x2=\"278.8\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"278.8\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">18시</text><polyline points=\"77.2,154 127.6,122 178,77.2 228.4,64.4 278.8,102.8\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"77.2\" cy=\"154\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"127.6\" cy=\"122\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"178\" cy=\"77.2\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"228.4\" cy=\"64.4\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"278.8\" cy=\"102.8\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "18시",
+    "12시",
+    "15시",
+    "6시"
+   ],
+   "answer": 3,
+   "why": "기온이 가장 낮은 6시가 가장 덜 덥습니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-01-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "폭염이 계속될 때 건강을 지키기 위한 행동으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "한낮에 오랫동안 운동한다",
+    "한낮 야외 활동을 줄이고 물을 자주 마신다",
+    "물을 마시지 않는다",
+    "그늘 없는 곳에서 쉰다"
+   ],
+   "answer": 1,
+   "why": "폭염에는 야외 활동을 줄이고 충분히 수분을 보충해야 합니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-02-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "이른 아침 풀잎에 맺힌 작은 물방울을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "이슬"
+   ],
+   "why": "공기 중의 수증기가 차가운 물체 표면에서 응결하여 이슬이 됩니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-02-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "이슬, 안개, 구름의 공통점으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "얼음이 녹아서 만들어진다",
+    "공기 중의 수증기가 응결하여 만들어진다",
+    "물이 끓어서 만들어진다",
+    "물이 얼어서 만들어진다"
+   ],
+   "answer": 1,
+   "why": "이슬, 안개, 구름은 모두 공기 중의 수증기가 응결하여 생깁니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-02-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 이슬, 안개, 구름이 생기는 곳을 정리한 것입니다. ㉠에 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 266 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"260\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"263\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"263\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"263\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">구분</text><text x=\"168\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">생기는 곳</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">이슬</text><text x=\"168\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">㉠</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">안개</text><text x=\"168\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">땅 가까운 공기 속</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">구름</text><text x=\"168\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">높은 하늘의 공기 속</text></svg>",
+   "options": [
+    "우주",
+    "땅속",
+    "바닷속",
+    "차가운 물체의 표면"
+   ],
+   "answer": 3,
+   "why": "이슬은 풀잎이나 거미줄 같은 차가운 물체의 표면에 맺힙니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-02-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "안개와 구름의 차이로 알맞은 것은 무엇인가요?",
+   "options": [
+    "안개는 땅 가까이에서, 구름은 높은 하늘에서 만들어진다",
+    "안개는 높은 하늘에서, 구름은 땅 가까이에서 만들어진다",
+    "안개는 수증기로, 구름은 얼음으로만 만들어진다",
+    "안개와 구름은 완전히 같다"
+   ],
+   "answer": 0,
+   "why": "안개와 구름은 모두 작은 물방울이지만 생기는 높이가 다릅니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-02-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "맑고 바람이 약한 밤에 이슬이 잘 생기는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "구름이 많아 따뜻하기 때문이다",
+    "밤에 기온이 높아지기 때문이다",
+    "밤에 지표면이 식어 풀잎 표면의 온도가 낮아져 수증기가 응결하기 때문이다",
+    "바람이 세게 불기 때문이다"
+   ],
+   "answer": 2,
+   "why": "물체 표면이 차가워지면 접촉한 공기 중의 수증기가 응결하여 이슬이 됩니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-02-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "얼음물이 담긴 차가운 컵의 겉면에 물방울이 맺히는 현상과 같은 원리로 생기는 것은 무엇인가요?",
+   "options": [
+    "번개",
+    "바람",
+    "눈사람",
+    "이슬"
+   ],
+   "answer": 3,
+   "why": "공기 중의 수증기가 차가운 표면에서 응결하는 원리는 이슬과 같습니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-03-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "주위보다 공기의 압력(기압)이 높은 곳을 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "고기압"
+   ],
+   "why": "주위보다 기압이 높은 곳이 고기압입니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-03-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "고기압과 저기압 중 일반적으로 날씨가 맑은 곳은 어디인가요?",
+   "answers": [
+    "고기압",
+    "고기압 지역"
+   ],
+   "why": "고기압에서는 공기가 내려와 구름이 잘 생기지 않아 맑은 날씨가 나타납니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-03-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림에서 바람의 방향이 알맞게 나타나 있습니다. 바람은 어떻게 부나요?",
+   "svg": "<svg viewBox=\"0 0 250 130\" font-family=\"sans-serif\"><ellipse cx=\"55\" cy=\"70\" rx=\"46\" ry=\"42\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"55\" y=\"75\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">고기압</text><ellipse cx=\"195\" cy=\"70\" rx=\"46\" ry=\"42\" fill=\"#e07b39\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"195\" y=\"75\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">저기압</text><line x1=\"108\" y1=\"70\" x2=\"137\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"146,70 137,65.5 137,74.5\" fill=\"currentColor\"/><text x=\"127\" y=\"56\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">바람</text></svg>",
+   "options": [
+    "저기압에서 고기압으로 분다",
+    "고기압에서 저기압으로 분다",
+    "두 곳 사이에서는 불지 않는다",
+    "방향은 일정하지 않다"
+   ],
+   "answer": 1,
+   "why": "바람은 기압이 높은 곳에서 낮은 곳으로 붑니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-03-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "저기압 지역의 날씨 특징으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "바람이 전혀 불지 않는다",
+    "공기가 내려와 맑다",
+    "공기가 올라가 구름이 많이 생기고 비나 눈이 올 수 있다",
+    "항상 맑다"
+   ],
+   "answer": 2,
+   "why": "저기압에서는 상승 기류가 생겨 구름이 만들어지고 비나 눈이 내리기 쉽습니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-03-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "우리나라 쪽에 저기압이 다가오고 있다는 예보를 들었을 때 알맞은 대비는 무엇인가요?",
+   "options": [
+    "우산을 준비하고 비나 바람에 대비한다",
+    "야외 행사를 취소하지 않고 장비를 준비하지 않는다",
+    "빨래를 밖에 널어 둔다",
+    "아무 준비도 하지 않는다"
+   ],
+   "answer": 0,
+   "why": "저기압이 다가오면 구름이 늘고 비나 바람이 강해질 수 있습니다."
+  },
+  {
+   "id": "과학-초5-6-6과06-03-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "날씨와 기상",
+   "standard": "6과06-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림은 두 지역의 기압 분포입니다. 이 그림에서 바람이 부는 방향은 어느 쪽인가요?",
+   "svg": "<svg viewBox=\"0 0 250 130\" font-family=\"sans-serif\"><ellipse cx=\"55\" cy=\"70\" rx=\"46\" ry=\"42\" fill=\"#e07b39\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"55\" y=\"75\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">저기압</text><ellipse cx=\"195\" cy=\"70\" rx=\"46\" ry=\"42\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"195\" y=\"75\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">고기압</text></svg>",
+   "options": [
+    "위에서 아래로",
+    "왼쪽에서 오른쪽으로",
+    "오른쪽에서 왼쪽으로",
+    "아래에서 위로"
+   ],
+   "answer": 2,
+   "why": "오른쪽이 고기압, 왼쪽이 저기압이므로 바람은 오른쪽에서 왼쪽으로 붑니다."
+  }
+ ],
+ "skipped": []
+}
