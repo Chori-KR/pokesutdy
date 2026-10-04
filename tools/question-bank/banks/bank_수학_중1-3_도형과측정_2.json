@@ -1,0 +1,1184 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "중",
+  "course": "수학",
+  "gradeBand": "중1-3",
+  "unit": "도형과 측정",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-중1-3-9수03-08-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "가로 $3\\,\\mathrm{cm}$, 세로 $4\\,\\mathrm{cm}$, 높이 $5\\,\\mathrm{cm}$인 직육면체의 부피는 몇 $\\mathrm{cm^3}$인가요?",
+   "options": [
+    "47",
+    "12",
+    "60",
+    "120"
+   ],
+   "answer": 2,
+   "why": "부피는 $3\\times4\\times5=60\\,\\mathrm{cm^3}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-08-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "한 모서리의 길이가 $4\\,\\mathrm{cm}$인 정육면체의 겉넓이는 몇 $\\mathrm{cm^2}$인가요?",
+   "options": [
+    "96",
+    "64",
+    "48",
+    "128"
+   ],
+   "answer": 0,
+   "why": "정사각형 6개이므로 $6\\times4\\times4=96\\,\\mathrm{cm^2}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-08-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-08",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "밑면의 반지름이 $r$, 높이가 $h$인 원기둥의 부피를 구하는 식은 무엇인가요?",
+   "options": [
+    "$\\dfrac43\\pi r^3$",
+    "$2\\pi r h$",
+    "$\\dfrac13\\pi r^2 h$",
+    "$\\pi r^2 h$"
+   ],
+   "answer": 3,
+   "why": "원기둥의 부피는 (밑넓이)×(높이)$=\\pi r^2 h$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-08-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림의 원기둥(밑면의 반지름 $3\\,\\mathrm{cm}$, 높이 $5\\,\\mathrm{cm}$)의 겉넓이는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 140 109\" font-family=\"sans-serif\"><path d=\"M22,24.5 L22,84.5 A30,10.5 0 0 0 82,84.5 L82,24.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M22,84.5 A30,10.5 0 0 1 82,84.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><ellipse cx=\"52\" cy=\"24.5\" rx=\"30\" ry=\"10.5\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"52\" y1=\"24.5\" x2=\"82\" y2=\"24.5\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"67\" y=\"51\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><line x1=\"92\" y1=\"24.5\" x2=\"92\" y2=\"84.5\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"98\" y=\"59.5\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">5</text></svg>",
+   "options": [
+    "$30\\pi\\,\\mathrm{cm^2}$",
+    "$48\\pi\\,\\mathrm{cm^2}$",
+    "$45\\pi\\,\\mathrm{cm^2}$",
+    "$63\\pi\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 1,
+   "why": "겉넓이는 $2\\times\\pi\\times3^2+2\\pi\\times3\\times5=18\\pi+30\\pi=48\\pi$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-08-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "밑면이 한 변의 길이가 $6\\,\\mathrm{cm}$인 정사각형이고 높이가 $4\\,\\mathrm{cm}$인 사각뿔의 부피는 몇 $\\mathrm{cm^3}$인가요?",
+   "options": [
+    "144",
+    "48",
+    "24",
+    "72"
+   ],
+   "answer": 1,
+   "why": "부피는 $\\dfrac13\\times36\\times4=48\\,\\mathrm{cm^3}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-08-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-08",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "반지름이 $3\\,\\mathrm{cm}$인 구의 부피는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 92 92\" font-family=\"sans-serif\"><circle cx=\"46\" cy=\"46\" r=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M12,46 A34,10.2 0 0 0 80,46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M12,46 A34,10.2 0 0 1 80,46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><circle cx=\"46\" cy=\"46\" r=\"3.5\" fill=\"currentColor\"/><line x1=\"46\" y1=\"46\" x2=\"80\" y2=\"46\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"63\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text></svg>",
+   "options": [
+    "$108\\pi\\,\\mathrm{cm^3}$",
+    "$12\\pi\\,\\mathrm{cm^3}$",
+    "$27\\pi\\,\\mathrm{cm^3}$",
+    "$36\\pi\\,\\mathrm{cm^3}$"
+   ],
+   "answer": 3,
+   "why": "구의 부피는 $\\dfrac43\\pi r^3=\\dfrac43\\pi\\times27=36\\pi$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-08-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림의 원뿔(밑면의 반지름 $3\\,\\mathrm{cm}$, 모선의 길이 $5\\,\\mathrm{cm}$)의 겉넓이는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 88 98.5\" font-family=\"sans-serif\"><path d=\"M14,74 L44,14 L74,74\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M14,74 A30,10.5 0 0 0 74,74\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M14,74 A30,10.5 0 0 1 74,74\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/></svg>",
+   "options": [
+    "$24\\pi\\,\\mathrm{cm^2}$",
+    "$15\\pi\\,\\mathrm{cm^2}$",
+    "$9\\pi\\,\\mathrm{cm^2}$",
+    "$30\\pi\\,\\mathrm{cm^2}$"
+   ],
+   "answer": 0,
+   "why": "밑넓이 $\\pi\\times3^2=9\\pi$, 옆넓이 $\\pi\\times3\\times5=15\\pi$이므로 겉넓이는 $24\\pi$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-08-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "반지름이 $5\\,\\mathrm{cm}$인 구의 겉넓이는 몇 $\\pi\\,\\mathrm{cm^2}$인가요? (숫자만)",
+   "answers": [
+    "100",
+    "100π"
+   ],
+   "why": "구의 겉넓이는 $4\\pi r^2=4\\pi\\times25=100\\pi$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-08-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-08",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "원기둥에 꼭 맞게 들어 있는 구(지름과 높이가 같음)의 부피는 원기둥 부피의 몇 배인가요?",
+   "options": [
+    "$\\dfrac13$",
+    "$\\dfrac12$",
+    "$\\dfrac23$",
+    "$\\dfrac34$"
+   ],
+   "answer": 2,
+   "why": "구 $\\dfrac43\\pi r^3$, 원기둥 $\\pi r^2\\cdot2r=2\\pi r^3$이므로 비는 $\\dfrac23$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-09-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "이등변삼각형의 두 밑각의 크기에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "항상 $60^\\circ$이다",
+    "서로 다르다",
+    "합이 $90^\\circ$이다",
+    "서로 같다"
+   ],
+   "answer": 3,
+   "why": "이등변삼각형의 두 밑각의 크기는 같습니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-09-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "$\\overline{AB}=\\overline{AC}$인 이등변삼각형 $ABC$에서 $\\angle A=40^\\circ$일 때 $\\angle B$의 크기는 몇 도인가요? (숫자만)",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"115\" y1=\"20\" x2=\"40\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"135\" x2=\"190\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"190\" y1=\"135\" x2=\"115\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M101.9,40.1 A24,24 0 0 0 128.1,40.1\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"115\" y=\"62\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">40°</text><line x1=\"81.7\" y1=\"80.2\" x2=\"73.3\" y2=\"74.8\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"156.7\" y1=\"74.8\" x2=\"148.3\" y2=\"80.2\" stroke=\"currentColor\" stroke-width=\"2.2\"/><circle cx=\"115\" cy=\"20\" r=\"3\" fill=\"currentColor\"/><text x=\"115\" y=\"11\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"40\" cy=\"135\" r=\"3\" fill=\"currentColor\"/><text x=\"28.4\" y=\"144.9\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"190\" cy=\"135\" r=\"3\" fill=\"currentColor\"/><text x=\"201.6\" y=\"144.9\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text></svg>",
+   "answers": [
+    "70",
+    "70°",
+    "70 °"
+   ],
+   "why": "밑각의 크기는 $(180^\\circ-40^\\circ)\\div2=70^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-09-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-09",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$\\overline{AB}=\\overline{AC}$인 이등변삼각형에서 $\\angle B=50^\\circ$일 때 $\\angle C$의 크기는 얼마인가요?",
+   "options": [
+    "80°",
+    "50°",
+    "65°",
+    "40°"
+   ],
+   "answer": 1,
+   "why": "이등변삼각형의 밑각은 같으므로 $\\angle C=\\angle B=50^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-09-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "이등변삼각형의 꼭지각이 $80^\\circ$일 때 한 밑각의 크기는 몇 도인가요?",
+   "options": [
+    "100°",
+    "40°",
+    "50°",
+    "80°"
+   ],
+   "answer": 2,
+   "why": "$(180^\\circ-80^\\circ)\\div2=50^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-09-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "이등변삼각형 $ABC$ ($\\overline{AB}=\\overline{AC}$)에서 꼭지각 $A$의 이등분선과 밑변 $BC$가 만나는 점을 $D$라 할 때 알맞은 설명은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"115\" y1=\"20\" x2=\"40\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"135\" x2=\"190\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"190\" y1=\"135\" x2=\"115\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"115\" y1=\"20\" x2=\"115\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><polyline points=\"115,125 125,125 125,135\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"81.7\" y1=\"80.2\" x2=\"73.3\" y2=\"74.8\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"156.7\" y1=\"74.8\" x2=\"148.3\" y2=\"80.2\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"75\" y1=\"130\" x2=\"75\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"80\" y1=\"130\" x2=\"80\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"150\" y1=\"130\" x2=\"150\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"155\" y1=\"130\" x2=\"155\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"2.2\"/><circle cx=\"115\" cy=\"20\" r=\"3\" fill=\"currentColor\"/><text x=\"115\" y=\"11\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"40\" cy=\"135\" r=\"3\" fill=\"currentColor\"/><text x=\"27.9\" y=\"143.7\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"190\" cy=\"135\" r=\"3\" fill=\"currentColor\"/><text x=\"202.1\" y=\"143.7\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"115\" cy=\"135\" r=\"3\" fill=\"currentColor\"/><text x=\"115\" y=\"152\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text></svg>",
+   "options": [
+    "$\\overline{AD}$는 $\\overline{BC}$를 수직이등분한다",
+    "$\\overline{AD}=\\overline{BC}$이다",
+    "$\\overline{BD}=2\\overline{DC}$이다",
+    "$\\angle ADB=60^\\circ$이다"
+   ],
+   "answer": 0,
+   "why": "이등변삼각형의 꼭지각의 이등분선은 밑변을 수직이등분합니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-09-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-09",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\overline{AB}=\\overline{AC}$인 삼각형 $ABC$에서 $\\angle B=(2x+10)^\\circ$, $\\angle C=(3x-20)^\\circ$일 때 $x$의 값을 구하세요.",
+   "options": [
+    "10",
+    "20",
+    "30",
+    "40"
+   ],
+   "answer": 2,
+   "why": "밑각이 같으므로 $2x+10=3x-20$에서 $x=30$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-09-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "$\\overline{AB}=\\overline{AC}$인 삼각형 $ABC$에서 $\\overline{BC}$의 연장선 위의 점 $D$에 대해 $\\angle ACD=110^\\circ$일 때 $\\angle A$의 크기는 몇 도인가요? (숫자만)",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"90\" y1=\"20\" x2=\"30\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"30\" y1=\"130\" x2=\"215\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"130\" x2=\"90\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M172,130 A22,22 0 0 0 139.5,110.7\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"168.4\" y=\"103\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">110°</text><line x1=\"64.4\" y1=\"77.4\" x2=\"55.6\" y2=\"72.6\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"124.4\" y1=\"72.6\" x2=\"115.6\" y2=\"77.4\" stroke=\"currentColor\" stroke-width=\"2.2\"/><circle cx=\"90\" cy=\"20\" r=\"3\" fill=\"currentColor\"/><text x=\"85.4\" y=\"11.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"30\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"17.6\" y=\"137.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"150\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"159.4\" y=\"143\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"215\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"227.5\" y=\"137.7\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text></svg>",
+   "answers": [
+    "40",
+    "40°",
+    "40 °"
+   ],
+   "why": "$\\angle ACB=180^\\circ-110^\\circ=70^\\circ$이므로 $\\angle B=70^\\circ$이고 $\\angle A=180^\\circ-70^\\circ-70^\\circ=40^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-09-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "삼각형 $ABC$에서 $\\angle B=\\angle C$이면 어떤 삼각형인가요?",
+   "options": [
+    "$\\overline{AB}=\\overline{AC}$인 이등변삼각형",
+    "$\\overline{BC}=\\overline{AB}$인 이등변삼각형",
+    "정삼각형",
+    "직각삼각형"
+   ],
+   "answer": 0,
+   "why": "두 내각의 크기가 같은 삼각형은 그 두 각의 대변의 길이가 같은 이등변삼각형입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-09-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-09",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\overline{AB}=\\overline{AC}$인 이등변삼각형 $ABC$에서 $\\overline{BC}$ 위의 점 $D$에 대해 $\\overline{AD}$가 $\\angle A$의 이등분선일 때 $\\triangle ABD\\equiv\\triangle ACD$의 합동 조건은 무엇인가요?",
+   "options": [
+    "RHA 합동",
+    "SSS 합동",
+    "ASA 합동",
+    "SAS 합동"
+   ],
+   "answer": 3,
+   "why": "$\\overline{AB}=\\overline{AC}$, $\\angle BAD=\\angle CAD$, $\\overline{AD}$ 공통이므로 SAS 합동입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-10-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "삼각형의 세 변의 수직이등분선이 만나는 점을 무엇이라고 하나요?",
+   "options": [
+    "내심",
+    "외심",
+    "무게중심",
+    "수심"
+   ],
+   "answer": 1,
+   "why": "세 변의 수직이등분선의 교점은 외심입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-10-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "삼각형의 세 내각의 이등분선이 만나는 점을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "내심"
+   ],
+   "why": "세 내각의 이등분선의 교점은 내심입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-10-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-10",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "삼각형의 외심에서 세 꼭짓점까지의 거리에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "모두 다르다",
+    "모두 같다",
+    "두 개만 같다",
+    "빗변에서만 같다"
+   ],
+   "answer": 1,
+   "why": "외심은 세 꼭짓점에서 같은 거리에 있는 점입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-10-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "빗변의 길이가 $10\\,\\mathrm{cm}$인 직각삼각형의 외접원의 반지름의 길이는 몇 $\\mathrm{cm}$인가요?",
+   "options": [
+    "2.5",
+    "10",
+    "20",
+    "5"
+   ],
+   "answer": 3,
+   "why": "직각삼각형의 외심은 빗변의 중점이므로 반지름은 $10\\div2=5\\,\\mathrm{cm}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-10-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "삼각형 $ABC$의 외심을 $O$라 하고 $\\angle A=60^\\circ$일 때 $\\angle BOC$의 크기는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><circle cx=\"115\" cy=\"90\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-dasharray=\"6 5\"/><line x1=\"115\" y1=\"25\" x2=\"59\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"59\" y1=\"122\" x2=\"171\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"171\" y1=\"122\" x2=\"115\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"115\" y1=\"90\" x2=\"59\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"115\" y1=\"90\" x2=\"171\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><path d=\"M99.4,98.9 A18,18 0 0 0 130.6,98.9\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"115\" y=\"126\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><circle cx=\"115\" cy=\"25\" r=\"3\" fill=\"currentColor\"/><text x=\"115\" y=\"16\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"59\" cy=\"122\" r=\"3\" fill=\"currentColor\"/><text x=\"47.7\" y=\"132.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"171\" cy=\"122\" r=\"3\" fill=\"currentColor\"/><text x=\"182.3\" y=\"132.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"115\" cy=\"90\" r=\"3\" fill=\"currentColor\"/><text x=\"115\" y=\"108\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">O</text></svg>",
+   "options": [
+    "120°",
+    "60°",
+    "30°",
+    "90°"
+   ],
+   "answer": 0,
+   "why": "외심에서 중심각은 원주각의 2배이므로 $\\angle BOC=2\\times60^\\circ=120^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-10-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-10",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "삼각형 $ABC$의 내심을 $I$라 하고 $\\angle A=70^\\circ$일 때 $\\angle BIC$의 크기는 얼마인가요?",
+   "options": [
+    "140°",
+    "110°",
+    "125°",
+    "55°"
+   ],
+   "answer": 2,
+   "why": "$\\angle BIC=90^\\circ+\\dfrac12\\angle A=90^\\circ+35^\\circ=125^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-10-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "세 변의 길이가 $3\\,\\mathrm{cm},\\ 4\\,\\mathrm{cm},\\ 5\\,\\mathrm{cm}$인 직각삼각형의 내접원의 반지름의 길이는 몇 $\\mathrm{cm}$인가요?",
+   "options": [
+    "3",
+    "2",
+    "1.5",
+    "1"
+   ],
+   "answer": 3,
+   "why": "직각삼각형의 내접원의 반지름은 $\\dfrac{3+4-5}{2}=1$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-10-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "둘레의 길이가 $24\\,\\mathrm{cm}$이고 내접원의 반지름이 $2\\,\\mathrm{cm}$인 삼각형의 넓이는 몇 $\\mathrm{cm^2}$인가요? (숫자만)",
+   "answers": [
+    "24"
+   ],
+   "why": "넓이 $=\\dfrac12\\times r\\times(\\text{둘레})=\\dfrac12\\times2\\times24=24$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-10-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-10",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "삼각형 $ABC$의 외심 $O$에 대해 $\\angle OBC=30^\\circ$일 때 $\\angle A$의 크기는 얼마인가요?",
+   "options": [
+    "30°",
+    "60°",
+    "90°",
+    "120°"
+   ],
+   "answer": 1,
+   "why": "$\\triangle OBC$는 이등변삼각형이므로 $\\angle BOC=180^\\circ-60^\\circ=120^\\circ$이고 $\\angle A=\\dfrac12\\angle BOC=60^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-11-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "평행사변형의 성질로 알맞은 것은 무엇인가요?",
+   "options": [
+    "대각선이 서로 수직이다",
+    "네 변의 길이가 모두 같다",
+    "두 쌍의 대각의 크기가 각각 같다",
+    "네 각이 모두 직각이다"
+   ],
+   "answer": 2,
+   "why": "평행사변형은 두 쌍의 대변의 길이, 대각의 크기가 각각 같습니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-11-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "평행사변형 $ABCD$에서 $\\angle A=70^\\circ$일 때 $\\angle C$의 크기는 몇 도인가요? (숫자만)",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"50\" y1=\"30\" x2=\"20\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"20\" y1=\"130\" x2=\"160\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"160\" y1=\"130\" x2=\"190\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"190\" y1=\"30\" x2=\"50\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"30\" r=\"3\" fill=\"currentColor\"/><text x=\"40.4\" y=\"25.3\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"20\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"8.8\" y=\"140.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"160\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"169.6\" y=\"142.7\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"190\" cy=\"30\" r=\"3\" fill=\"currentColor\"/><text x=\"201.2\" y=\"27.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text></svg>",
+   "answers": [
+    "70",
+    "70°",
+    "70 °"
+   ],
+   "why": "평행사변형의 대각의 크기는 같으므로 $\\angle C=\\angle A=70^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-11-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-11",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "네 변의 길이가 모두 같은 사각형은 무엇인가요?",
+   "options": [
+    "마름모",
+    "직사각형",
+    "평행사변형",
+    "사다리꼴"
+   ],
+   "answer": 0,
+   "why": "네 변의 길이가 모두 같은 사각형이 마름모입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-11-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "평행사변형 $ABCD$에서 $\\overline{AB}=5\\,\\mathrm{cm}$, $\\overline{BC}=8\\,\\mathrm{cm}$일 때 둘레의 길이는 몇 $\\mathrm{cm}$인가요? (숫자만)",
+   "answers": [
+    "26"
+   ],
+   "why": "대변의 길이가 같으므로 둘레는 $2\\times(5+8)=26\\,\\mathrm{cm}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-11-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "직사각형 $ABCD$의 두 대각선의 교점을 $O$라 하고 $\\overline{AC}=10\\,\\mathrm{cm}$일 때 $\\overline{OB}$의 길이는 몇 $\\mathrm{cm}$인가요?",
+   "options": [
+    "20",
+    "10",
+    "5",
+    "2.5"
+   ],
+   "answer": 2,
+   "why": "직사각형의 대각선은 길이가 같고 서로 이등분하므로 $\\overline{OB}=\\dfrac12\\overline{BD}=5\\,\\mathrm{cm}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-11-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-11",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "마름모의 두 대각선의 길이가 $6\\,\\mathrm{cm},\\ 8\\,\\mathrm{cm}$일 때 한 변의 길이는 몇 $\\mathrm{cm}$인가요?",
+   "options": [
+    "5",
+    "7",
+    "10",
+    "14"
+   ],
+   "answer": 0,
+   "why": "대각선은 서로 수직이등분하므로 한 변은 $\\sqrt{3^2+4^2}=5\\,\\mathrm{cm}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-11-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "평행사변형 $ABCD$에서 $\\angle A=2\\angle B$일 때 $\\angle A$의 크기는 몇 도인가요? (숫자만)",
+   "answers": [
+    "120",
+    "120°",
+    "120 °"
+   ],
+   "why": "이웃한 두 각의 합은 $180^\\circ$이므로 $3\\angle B=180^\\circ$, $\\angle B=60^\\circ$이고 $\\angle A=120^\\circ$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-11-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "마름모가 정사각형이 되기 위한 조건으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "네 변의 길이가 같다",
+    "두 대각선이 서로 수직이다",
+    "두 쌍의 대변이 평행하다",
+    "한 내각의 크기가 $90^\\circ$이다"
+   ],
+   "answer": 3,
+   "why": "마름모에서 한 내각이 직각이면 네 각이 모두 직각이 되어 정사각형입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-11-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-11",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "등변사다리꼴의 성질로 알맞은 것은 무엇인가요?",
+   "options": [
+    "두 대각선이 서로 수직이다",
+    "두 대각선의 길이가 같다",
+    "네 변의 길이가 모두 같다",
+    "두 쌍의 대변이 평행하다"
+   ],
+   "answer": 1,
+   "why": "등변사다리꼴은 평행하지 않은 두 변의 길이가 같고 두 대각선의 길이도 같습니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-12-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-12",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "한 도형을 일정한 비율로 확대하거나 축소한 도형과 합동인 도형을 무엇이라고 하나요?",
+   "options": [
+    "대칭 도형",
+    "닮은 도형",
+    "합동 도형",
+    "평행 도형"
+   ],
+   "answer": 1,
+   "why": "확대·축소하여 합동이 되는 도형을 닮은 도형이라고 합니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-12-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-12",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "닮은 두 도형에서 대응하는 변의 길이의 비를 무엇이라고 하나요?",
+   "options": [
+    "비례식",
+    "합동비",
+    "축척",
+    "닮음비"
+   ],
+   "answer": 3,
+   "why": "닮은 도형의 대응변의 길이의 비는 닮음비입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-12-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-12",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "닮음비가 $2:3$인 두 삼각형에서 작은 삼각형의 한 변이 $6\\,\\mathrm{cm}$일 때 대응하는 변의 길이는 몇 $\\mathrm{cm}$인가요?",
+   "options": [
+    "9",
+    "4",
+    "12",
+    "15"
+   ],
+   "answer": 0,
+   "why": "$6\\times\\dfrac32=9\\,\\mathrm{cm}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-12-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-12",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "닮음비가 $1:2$인 두 삼각형의 넓이의 비는 얼마인가요?",
+   "options": [
+    "$1:3$",
+    "$1:2$",
+    "$1:4$",
+    "$1:8$"
+   ],
+   "answer": 2,
+   "why": "닮은 평면도형의 넓이의 비는 닮음비의 제곱이므로 $1:4$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-12-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-12",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "닮음비가 $1:2$인 두 입체도형의 부피의 비는 얼마인가요?",
+   "options": [
+    "$1:6$",
+    "$1:2$",
+    "$1:4$",
+    "$1:8$"
+   ],
+   "answer": 3,
+   "why": "닮은 입체도형의 부피의 비는 닮음비의 세제곱이므로 $1:8$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-12-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-12",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "닮은 두 도형에서 대응하는 각의 크기는 어떻게 되나요?",
+   "options": [
+    "서로 다르다",
+    "서로 같다",
+    "닮음비만큼 다르다",
+    "2배이다"
+   ],
+   "answer": 1,
+   "why": "닮은 도형에서 대응각의 크기는 같습니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-12-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-12",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "닮음비가 $3:5$인 두 삼각형이 있습니다. 작은 삼각형의 넓이가 $18\\,\\mathrm{cm^2}$일 때 큰 삼각형의 넓이는 몇 $\\mathrm{cm^2}$인가요? (숫자만)",
+   "answers": [
+    "50"
+   ],
+   "why": "넓이의 비는 $9:25$이므로 큰 삼각형의 넓이는 $18\\times\\dfrac{25}{9}=50$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-12-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-12",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "닮은 두 입체도형의 부피의 비가 $8:27$일 때 겉넓이의 비는 얼마인가요?",
+   "options": [
+    "$8:27$",
+    "$2:3$",
+    "$4:9$",
+    "$16:81$"
+   ],
+   "answer": 2,
+   "why": "부피의 비 $8:27$에서 닮음비는 $2:3$이므로 겉넓이의 비는 $4:9$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-12-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-12",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "축척이 $\\dfrac{1}{50000}$인 지도에서 실제 거리 $5\\,\\mathrm{km}$는 지도에서 몇 $\\mathrm{cm}$인가요?",
+   "options": [
+    "10",
+    "5",
+    "100",
+    "25"
+   ],
+   "answer": 0,
+   "why": "$5\\,\\mathrm{km}=500000\\,\\mathrm{cm}$이므로 지도에서의 길이는 $500000\\div50000=10\\,\\mathrm{cm}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-13-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-13",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "두 삼각형에서 세 쌍의 대응변의 길이의 비가 같을 때 두 삼각형은 닮음입니다. 이 닮음 조건의 이름은 무엇인가요?",
+   "options": [
+    "AA 닮음",
+    "SAS 닮음",
+    "SSS 닮음",
+    "ASA 닮음"
+   ],
+   "answer": 2,
+   "why": "세 쌍의 대응변의 길이의 비가 같은 경우는 SSS 닮음입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-13-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-13",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "두 삼각형에서 두 쌍의 대응각의 크기가 각각 같을 때 두 삼각형은 닮음입니다. 이 닮음 조건의 이름은 무엇인가요?",
+   "options": [
+    "AA 닮음",
+    "SSS 닮음",
+    "SAS 닮음",
+    "RHS 닮음"
+   ],
+   "answer": 0,
+   "why": "두 쌍의 대응각의 크기가 각각 같은 경우는 AA 닮음입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-13-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-13",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "두 쌍의 대응변의 길이의 비가 같고 그 끼인각의 크기가 같은 두 삼각형은 닮음입니다. 이 닮음 조건의 이름은 무엇인가요?",
+   "options": [
+    "ASA 닮음",
+    "SSS 닮음",
+    "AA 닮음",
+    "SAS 닮음"
+   ],
+   "answer": 3,
+   "why": "두 변의 길이의 비와 그 끼인각이 같은 경우는 SAS 닮음입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-13-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-13",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\triangle ABC$의 세 변이 $3,4,5$이고 $\\triangle DEF$의 세 변이 $6,8,10$일 때 두 삼각형의 닮음 조건은 무엇인가요?",
+   "options": [
+    "SAS 닮음",
+    "SSS 닮음",
+    "AA 닮음",
+    "합동"
+   ],
+   "answer": 1,
+   "why": "$3:6=4:8=5:10$이므로 SSS 닮음입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-13-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-13",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\angle A=50^\\circ,\\ \\angle B=60^\\circ$인 $\\triangle ABC$와 $\\angle D=50^\\circ,\\ \\angle E=60^\\circ$인 $\\triangle DEF$의 닮음 조건은 무엇인가요?",
+   "options": [
+    "SSS 닮음",
+    "AA 닮음",
+    "SAS 닮음",
+    "합동"
+   ],
+   "answer": 1,
+   "why": "두 쌍의 대응각이 같으므로 AA 닮음입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-13-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-13",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$\\overline{AB}:\\overline{DE}=\\overline{AC}:\\overline{DF}=1:2$이고 $\\angle A=\\angle D$일 때 $\\triangle ABC$와 $\\triangle DEF$의 닮음 조건은 무엇인가요?",
+   "options": [
+    "RHS 합동",
+    "SSS 닮음",
+    "AA 닮음",
+    "SAS 닮음"
+   ],
+   "answer": 3,
+   "why": "두 변의 비가 같고 끼인각이 같으므로 SAS 닮음입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-13-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-13",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "직각삼각형 $ABC$ ($\\angle A=90^\\circ$)에서 꼭짓점 $A$에서 빗변 $BC$에 내린 수선의 발을 $H$라 하자. $\\overline{BH}=4$, $\\overline{HC}=9$일 때 $\\overline{AH}$의 길이를 구하세요.",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"80\" y1=\"30\" x2=\"20\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"20\" y1=\"130\" x2=\"210\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"210\" y1=\"130\" x2=\"80\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><polyline points=\"74.9,38.6 82.8,44.7 87.9,36.1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"80,120 90,120 90,130\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"30\" r=\"3\" fill=\"currentColor\"/><text x=\"77\" y=\"21.3\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"20\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"7.6\" y=\"138\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"210\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"222.7\" y=\"136.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"80\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"72.5\" y=\"144.7\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">H</text><text x=\"50\" y=\"146\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"146\" y=\"146\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">9</text></svg>",
+   "options": [
+    "6",
+    "13",
+    "36",
+    "5"
+   ],
+   "answer": 0,
+   "why": "$\\triangle HBA\\sim\\triangle HAC$이므로 $\\overline{AH}^2=\\overline{BH}\\times\\overline{HC}=36$, $\\overline{AH}=6$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-13-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-13",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "닮은 두 삼각형에서 대응하는 두 변의 길이가 각각 $6,\\ 9$이고, 작은 삼각형의 다른 한 변이 $8$일 때 큰 삼각형에서 대응하는 변의 길이를 구하세요. (숫자만)",
+   "answers": [
+    "12"
+   ],
+   "why": "닮음비가 $6:9=2:3$이므로 $8\\times\\dfrac32=12$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-13-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-13",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\angle A$를 공통으로 하는 $\\triangle ABC$와 $\\triangle ADE$에서 $\\overline{AB}=9,\\ \\overline{AC}=12,\\ \\overline{AD}=3,\\ \\overline{AE}=4$일 때 두 삼각형은 어떤 관계인가요?",
+   "options": [
+    "닮음이 아니다",
+    "합동",
+    "SAS 닮음",
+    "AA 닮음"
+   ],
+   "answer": 2,
+   "why": "$\\overline{AD}:\\overline{AB}=\\overline{AE}:\\overline{AC}=1:3$이고 $\\angle A$가 공통이므로 SAS 닮음입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-14-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-14",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "삼각형 $ABC$에서 $\\overline{DE}\\parallel\\overline{BC}$일 때 성립하는 비례식은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"115\" y1=\"20\" x2=\"30\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"30\" y1=\"140\" x2=\"200\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"200\" y1=\"140\" x2=\"115\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"72\" y1=\"80\" x2=\"158\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"115\" cy=\"20\" r=\"3\" fill=\"currentColor\"/><text x=\"115\" y=\"11\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"30\" cy=\"140\" r=\"3\" fill=\"currentColor\"/><text x=\"18.7\" y=\"150.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"200\" cy=\"140\" r=\"3\" fill=\"currentColor\"/><text x=\"211.3\" y=\"150.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"72\" cy=\"80\" r=\"3\" fill=\"currentColor\"/><text x=\"59.5\" y=\"80.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text><circle cx=\"158\" cy=\"80\" r=\"3\" fill=\"currentColor\"/><text x=\"170.5\" y=\"80.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">E</text></svg>",
+   "options": [
+    "$\\overline{DE}:\\overline{BC}=\\overline{AD}:\\overline{DB}$",
+    "$\\overline{AD}:\\overline{DB}=\\overline{AB}:\\overline{AC}$",
+    "$\\overline{AD}:\\overline{AE}=\\overline{DB}:\\overline{AC}$",
+    "$\\overline{AD}:\\overline{AB}=\\overline{AE}:\\overline{AC}$"
+   ],
+   "answer": 3,
+   "why": "평행선이 두 변과 만날 때 대응하는 선분의 비는 같습니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-14-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-14",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "$\\overline{AD}=3\\,\\mathrm{cm}$, $\\overline{DB}=6\\,\\mathrm{cm}$일 때 $\\overline{AD}:\\overline{DB}$를 가장 간단한 자연수의 비로 나타내면 $1:\\square$입니다. $\\square$에 알맞은 수를 쓰세요. (숫자만)",
+   "answers": [
+    "2"
+   ],
+   "why": "$3:6=1:2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-14-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-14",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "삼각형 $ABC$에서 $\\overline{DE}\\parallel\\overline{BC}$이고 $\\overline{AD}=\\overline{DB}$일 때 $\\overline{AE}$와 $\\overline{EC}$의 관계는 무엇인가요?",
+   "options": [
+    "$\\overline{AE}=2\\overline{EC}$",
+    "$\\overline{AE}=\\overline{EC}$",
+    "$\\overline{AE}<\\overline{EC}$",
+    "알 수 없다"
+   ],
+   "answer": 1,
+   "why": "$\\overline{AD}:\\overline{DB}=\\overline{AE}:\\overline{EC}=1:1$이므로 $\\overline{AE}=\\overline{EC}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-14-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-14",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "삼각형 $ABC$에서 $\\overline{DE}\\parallel\\overline{BC}$이고 $\\overline{AD}=4,\\ \\overline{DB}=6,\\ \\overline{AE}=6$일 때 $\\overline{EC}$의 길이를 구하세요.",
+   "options": [
+    "12",
+    "4",
+    "9",
+    "6"
+   ],
+   "answer": 2,
+   "why": "$4:6=6:\\overline{EC}$이므로 $\\overline{EC}=9$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-14-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-14",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "삼각형 $ABC$에서 $\\overline{DE}\\parallel\\overline{BC}$, $\\overline{AD}:\\overline{AB}=2:5$이고 $\\overline{BC}=15$일 때 $\\overline{DE}$의 길이를 구하세요.",
+   "options": [
+    "6",
+    "10",
+    "5",
+    "7.5"
+   ],
+   "answer": 0,
+   "why": "$\\overline{DE}:\\overline{BC}=\\overline{AD}:\\overline{AB}=2:5$이므로 $\\overline{DE}=15\\times\\dfrac25=6$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-14-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-14",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "세 평행선 $l,m,n$이 두 직선과 만나 $a:b=3:5$일 때, $a=6$이면 $b$의 값은 얼마인가요?",
+   "options": [
+    "8",
+    "6",
+    "10",
+    "12"
+   ],
+   "answer": 2,
+   "why": "$3:5=6:b$에서 $b=10$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-14-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-14",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "삼각형 $ABC$에서 두 변 $AB, AC$의 중점을 각각 $D, E$라 하고 $\\overline{BC}=14$일 때 $\\overline{DE}$의 길이를 구하세요. (숫자만)",
+   "answers": [
+    "7"
+   ],
+   "why": "중점연결정리에 의해 $\\overline{DE}=\\dfrac12\\overline{BC}=7$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-14-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-14",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "삼각형 $ABC$에서 $\\angle A$의 이등분선이 $\\overline{BC}$와 만나는 점을 $D$라 하자. $\\overline{AB}=6,\\ \\overline{AC}=4,\\ \\overline{BC}=10$일 때 $\\overline{BD}$의 길이를 구하세요.",
+   "options": [
+    "6",
+    "4",
+    "5",
+    "7"
+   ],
+   "answer": 0,
+   "why": "각의 이등분선의 성질로 $\\overline{BD}:\\overline{DC}=\\overline{AB}:\\overline{AC}=3:2$이므로 $\\overline{BD}=10\\times\\dfrac35=6$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수03-14-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "도형과 측정",
+   "standard": "9수03-14",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\overline{AD}=\\overline{DB}$, $\\overline{DE}\\parallel\\overline{BC}$일 때 $\\triangle ADE$와 $\\triangle ABC$의 넓이의 비는 얼마인가요?",
+   "options": [
+    "$1:8$",
+    "$1:2$",
+    "$1:3$",
+    "$1:4$"
+   ],
+   "answer": 3,
+   "why": "닮음비가 $1:2$이므로 넓이의 비는 $1:4$입니다."
+  }
+ ],
+ "skipped": []
+}
