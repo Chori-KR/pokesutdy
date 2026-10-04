@@ -1,0 +1,1162 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "수학",
+  "school": "중",
+  "course": "수학",
+  "gradeBand": "중1-3",
+  "unit": "변화와 관계",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "수학-중1-3-9수02-15-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 일차함수인 것은?",
+   "options": [
+    "$y=x^{2}+1$",
+    "$y=\\dfrac{2}{x}$",
+    "$y=2x-1$",
+    "$y=3$"
+   ],
+   "answer": 2,
+   "why": "$y=ax+b$ ($a\\ne0$) 꼴이 일차함수입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-15-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "일차함수 $y=3x+2$의 그래프가 $y$축과 만나는 점의 $y$좌표(= $y$절편)를 구하세요. (숫자만)",
+   "answers": [
+    "2"
+   ],
+   "why": "$x=0$일 때 $y=2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-15-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-15",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$y=2x$의 그래프를 $y$축의 방향으로 3만큼 평행이동한 그래프의 식은?",
+   "options": [
+    "$y=2x+3$",
+    "$y=2x-3$",
+    "$y=5x$",
+    "$y=2x+6$"
+   ],
+   "answer": 0,
+   "why": "$y$축 방향으로 $b$만큼 평행이동하면 $y=ax+b$가 됩니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-15-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "일차함수 $y=2x-4$의 그래프의 $x$절편은?",
+   "options": [
+    "-2",
+    "-4",
+    "4",
+    "2"
+   ],
+   "answer": 3,
+   "why": "$y=0$을 넣으면 $2x-4=0$이므로 $x=2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-15-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "그림의 직선의 기울기와 $y$절편의 합을 구하세요. (숫자만)",
+   "svg": "<svg viewBox=\"0 0 230 230\" font-family=\"sans-serif\"><line x1=\"26\" y1=\"204\" x2=\"26\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"51.4\" y1=\"204\" x2=\"51.4\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"76.9\" y1=\"204\" x2=\"76.9\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"102.3\" y1=\"204\" x2=\"102.3\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"127.7\" y1=\"204\" x2=\"127.7\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"153.1\" y1=\"204\" x2=\"153.1\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"178.6\" y1=\"204\" x2=\"178.6\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"204\" y1=\"204\" x2=\"204\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"204\" x2=\"204\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"178.6\" x2=\"204\" y2=\"178.6\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"153.1\" x2=\"204\" y2=\"153.1\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"127.7\" x2=\"204\" y2=\"127.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"102.3\" x2=\"204\" y2=\"102.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"76.9\" x2=\"204\" y2=\"76.9\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"51.4\" x2=\"204\" y2=\"51.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"26\" x2=\"204\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"153.1\" x2=\"210\" y2=\"153.1\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"76.9\" y1=\"204\" x2=\"76.9\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"208\" y=\"169.1\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">x</text><text x=\"88.9\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">y</text><text x=\"68.9\" y=\"167.1\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">O</text><line x1=\"26\" y1=\"150.1\" x2=\"26\" y2=\"156.1\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"26\" y=\"170.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-2</text><line x1=\"51.4\" y1=\"150.1\" x2=\"51.4\" y2=\"156.1\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"51.4\" y=\"170.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-1</text><line x1=\"102.3\" y1=\"150.1\" x2=\"102.3\" y2=\"156.1\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"102.3\" y=\"170.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"127.7\" y1=\"150.1\" x2=\"127.7\" y2=\"156.1\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"127.7\" y=\"170.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"153.1\" y1=\"150.1\" x2=\"153.1\" y2=\"156.1\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"153.1\" y=\"170.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"178.6\" y1=\"150.1\" x2=\"178.6\" y2=\"156.1\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"178.6\" y=\"170.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"204\" y1=\"150.1\" x2=\"204\" y2=\"156.1\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"204\" y=\"170.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"73.9\" y1=\"204\" x2=\"79.9\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"69.9\" y=\"208\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-2</text><line x1=\"73.9\" y1=\"178.6\" x2=\"79.9\" y2=\"178.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"69.9\" y=\"182.6\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-1</text><line x1=\"73.9\" y1=\"127.7\" x2=\"79.9\" y2=\"127.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"69.9\" y=\"131.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1</text><line x1=\"73.9\" y1=\"102.3\" x2=\"79.9\" y2=\"102.3\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"69.9\" y=\"106.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"73.9\" y1=\"76.9\" x2=\"79.9\" y2=\"76.9\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"69.9\" y=\"80.9\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">3</text><line x1=\"73.9\" y1=\"51.4\" x2=\"79.9\" y2=\"51.4\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"69.9\" y=\"55.4\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"73.9\" y1=\"26\" x2=\"79.9\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"69.9\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">5</text><line x1=\"26\" y1=\"26\" x2=\"204\" y2=\"204\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"76.9\" cy=\"76.9\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"86.9\" y=\"69.9\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">(0,3)</text><circle cx=\"153.1\" cy=\"153.1\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"163.1\" y=\"146.1\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">(3,0)</text></svg>",
+   "answers": [
+    "2"
+   ],
+   "why": "두 점 $(0,3)$, $(3,0)$을 지나므로 기울기는 $-1$, $y$절편은 3입니다. 합은 2입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-15-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-15",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "물통에 물이 5 L 들어 있고 매분 2 L씩 물을 더 넣습니다. $x$분 후 물의 양을 $y$ L라 할 때 $x$와 $y$ 사이의 관계식은?",
+   "options": [
+    "$y=5x+2$",
+    "$y=2x+5$",
+    "$y=2x$",
+    "$y=7x$"
+   ],
+   "answer": 1,
+   "why": "처음 양 5에 매분 $2x$가 더해지므로 $y=2x+5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-15-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "넓이가 12로 일정한 직사각형의 가로를 $x$, 세로를 $y$라 할 때 $y$가 $x$의 일차함수가 아닌 이유는?",
+   "options": [
+    "$y$의 값이 변하지 않기 때문이다",
+    "$y=\\dfrac{12}{x}$ 꼴로 $x$에 대한 일차식이 아니기 때문이다",
+    "$x$와 $y$가 모두 양수이기 때문이다",
+    "$y$가 $x$의 함수가 아니기 때문이다"
+   ],
+   "answer": 1,
+   "why": "$xy=12$에서 $y=\\dfrac{12}{x}$로 반비례 관계이며 일차함수가 아닙니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-15-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "그림은 $y=-2x+6$의 그래프입니다. 이 그래프와 $x$축, $y$축으로 둘러싸인 삼각형의 넓이를 구하세요. (숫자만)",
+   "svg": "<svg viewBox=\"0 0 230 230\" font-family=\"sans-serif\"><line x1=\"26\" y1=\"204\" x2=\"26\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"48.2\" y1=\"204\" x2=\"48.2\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"70.5\" y1=\"204\" x2=\"70.5\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"92.8\" y1=\"204\" x2=\"92.8\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"115\" y1=\"204\" x2=\"115\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"137.2\" y1=\"204\" x2=\"137.2\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"159.5\" y1=\"204\" x2=\"159.5\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"204\" x2=\"159.5\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"181.8\" x2=\"159.5\" y2=\"181.8\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"159.5\" x2=\"159.5\" y2=\"159.5\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"137.2\" x2=\"159.5\" y2=\"137.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"115\" x2=\"159.5\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"92.8\" x2=\"159.5\" y2=\"92.8\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"70.5\" x2=\"159.5\" y2=\"70.5\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"48.2\" x2=\"159.5\" y2=\"48.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"26\" x2=\"159.5\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"181.8\" x2=\"165.5\" y2=\"181.8\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"48.2\" y1=\"204\" x2=\"48.2\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"163.5\" y=\"197.8\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">x</text><text x=\"60.2\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">y</text><text x=\"40.2\" y=\"195.8\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">O</text><line x1=\"26\" y1=\"178.8\" x2=\"26\" y2=\"184.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"26\" y=\"198.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-1</text><line x1=\"70.5\" y1=\"178.8\" x2=\"70.5\" y2=\"184.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"70.5\" y=\"198.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"92.8\" y1=\"178.8\" x2=\"92.8\" y2=\"184.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"92.8\" y=\"198.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"115\" y1=\"178.8\" x2=\"115\" y2=\"184.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"115\" y=\"198.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"137.2\" y1=\"178.8\" x2=\"137.2\" y2=\"184.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"137.2\" y=\"198.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"159.5\" y1=\"178.8\" x2=\"159.5\" y2=\"184.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"159.5\" y=\"198.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"45.2\" y1=\"204\" x2=\"51.2\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"41.2\" y=\"208\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-1</text><line x1=\"45.2\" y1=\"159.5\" x2=\"51.2\" y2=\"159.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"41.2\" y=\"163.5\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1</text><line x1=\"45.2\" y1=\"137.2\" x2=\"51.2\" y2=\"137.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"41.2\" y=\"141.2\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"45.2\" y1=\"115\" x2=\"51.2\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"41.2\" y=\"119\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">3</text><line x1=\"45.2\" y1=\"92.8\" x2=\"51.2\" y2=\"92.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"41.2\" y=\"96.8\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"45.2\" y1=\"70.5\" x2=\"51.2\" y2=\"70.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"41.2\" y=\"74.5\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">5</text><line x1=\"45.2\" y1=\"48.2\" x2=\"51.2\" y2=\"48.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"41.2\" y=\"52.2\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"45.2\" y1=\"26\" x2=\"51.2\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"41.2\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">7</text><line x1=\"37.1\" y1=\"26\" x2=\"126.1\" y2=\"204\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"48.2\" cy=\"48.2\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"58.2\" y=\"41.2\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">(0,6)</text><circle cx=\"115\" cy=\"181.8\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"125\" y=\"174.8\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">(3,0)</text></svg>",
+   "answers": [
+    "9"
+   ],
+   "why": "$x$절편 3, $y$절편 6이므로 넓이는 $\\dfrac12\\times3\\times6=9$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-15-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-15",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$y=-\\dfrac12x+2$의 그래프를 그리기 위해 이용할 수 있는 두 점은?",
+   "options": [
+    "$(0,2),\\ (-4,0)$",
+    "$(0,2),\\ (2,0)$",
+    "$(0,-2),\\ (4,0)$",
+    "$(0,2),\\ (4,0)$"
+   ],
+   "answer": 3,
+   "why": "$y$절편은 2, $x$절편은 $0=-\\dfrac12x+2$에서 4입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-16-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$x$의 값이 증가할 때 $y$의 값이 감소하는 일차함수는?",
+   "options": [
+    "$y=-3x+1$",
+    "$y=3x-1$",
+    "$y=\\dfrac12x$",
+    "$y=x+5$"
+   ],
+   "answer": 0,
+   "why": "기울기가 음수이면 $x$가 증가할 때 $y$가 감소합니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-16-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "두 점 $(1,2)$, $(3,8)$을 지나는 직선의 기울기는?",
+   "options": [
+    "$\\dfrac13$",
+    "6",
+    "3",
+    "-3"
+   ],
+   "answer": 2,
+   "why": "(기울기)$=\\dfrac{8-2}{3-1}=3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-16-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-16",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "기울기가 2이고 $y$절편이 5인 일차함수의 식을 쓰세요.",
+   "answers": [
+    "y=2x+5",
+    "$y=2x+5$",
+    "2x+5"
+   ],
+   "why": "$y=ax+b$에 $a=2$, $b=5$를 넣으면 $y=2x+5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-16-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$y=2x+1$의 그래프와 평행한 직선은?",
+   "options": [
+    "$y=x+2$",
+    "$y=-2x+1$",
+    "$y=\\dfrac12x+1$",
+    "$y=2x-3$"
+   ],
+   "answer": 3,
+   "why": "기울기가 같고 $y$절편이 다르면 평행합니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-16-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림의 직선을 그래프로 하는 일차함수의 식은?",
+   "svg": "<svg viewBox=\"0 0 230 230\" font-family=\"sans-serif\"><line x1=\"26\" y1=\"204\" x2=\"26\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"48.2\" y1=\"204\" x2=\"48.2\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"70.5\" y1=\"204\" x2=\"70.5\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"92.8\" y1=\"204\" x2=\"92.8\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"115\" y1=\"204\" x2=\"115\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"137.2\" y1=\"204\" x2=\"137.2\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"159.5\" y1=\"204\" x2=\"159.5\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"204\" x2=\"159.5\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"181.8\" x2=\"159.5\" y2=\"181.8\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"159.5\" x2=\"159.5\" y2=\"159.5\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"137.2\" x2=\"159.5\" y2=\"137.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"115\" x2=\"159.5\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"92.8\" x2=\"159.5\" y2=\"92.8\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"70.5\" x2=\"159.5\" y2=\"70.5\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"48.2\" x2=\"159.5\" y2=\"48.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"26\" x2=\"159.5\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"159.5\" x2=\"165.5\" y2=\"159.5\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"70.5\" y1=\"204\" x2=\"70.5\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"163.5\" y=\"175.5\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">x</text><text x=\"82.5\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">y</text><text x=\"62.5\" y=\"173.5\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">O</text><line x1=\"26\" y1=\"156.5\" x2=\"26\" y2=\"162.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"26\" y=\"176.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-2</text><line x1=\"48.2\" y1=\"156.5\" x2=\"48.2\" y2=\"162.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"48.2\" y=\"176.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-1</text><line x1=\"92.8\" y1=\"156.5\" x2=\"92.8\" y2=\"162.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"92.8\" y=\"176.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"115\" y1=\"156.5\" x2=\"115\" y2=\"162.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"115\" y=\"176.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"137.2\" y1=\"156.5\" x2=\"137.2\" y2=\"162.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"137.2\" y=\"176.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"159.5\" y1=\"156.5\" x2=\"159.5\" y2=\"162.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"159.5\" y=\"176.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"67.5\" y1=\"204\" x2=\"73.5\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"63.5\" y=\"208\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-2</text><line x1=\"67.5\" y1=\"181.8\" x2=\"73.5\" y2=\"181.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"63.5\" y=\"185.8\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-1</text><line x1=\"67.5\" y1=\"137.2\" x2=\"73.5\" y2=\"137.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"63.5\" y=\"141.2\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1</text><line x1=\"67.5\" y1=\"115\" x2=\"73.5\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"63.5\" y=\"119\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"67.5\" y1=\"92.8\" x2=\"73.5\" y2=\"92.8\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"63.5\" y=\"96.8\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">3</text><line x1=\"67.5\" y1=\"70.5\" x2=\"73.5\" y2=\"70.5\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"63.5\" y=\"74.5\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"67.5\" y1=\"48.2\" x2=\"73.5\" y2=\"48.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"63.5\" y=\"52.2\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">5</text><line x1=\"67.5\" y1=\"26\" x2=\"73.5\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"63.5\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"37.1\" y1=\"204\" x2=\"126.1\" y2=\"26\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"70.5\" cy=\"137.2\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"80.5\" y=\"130.2\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">(0,1)</text><circle cx=\"115\" cy=\"48.2\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"125\" y=\"41.2\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">(2,5)</text></svg>",
+   "options": [
+    "$y=\\dfrac12x+1$",
+    "$y=2x+1$",
+    "$y=2x-1$",
+    "$y=x+2$"
+   ],
+   "answer": 1,
+   "why": "두 점 $(0,1)$, $(2,5)$를 지나므로 기울기 $\\dfrac{5-1}{2-0}=2$, $y$절편 1입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-16-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-16",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "두 점 $(-1,5)$, $(2,-1)$을 지나는 일차함수의 식은?",
+   "options": [
+    "$y=-2x-3$",
+    "$y=2x+3$",
+    "$y=-2x+3$",
+    "$y=-\\dfrac12x+3$"
+   ],
+   "answer": 2,
+   "why": "기울기는 $\\dfrac{-1-5}{2-(-1)}=-2$이고, $(2,-1)$을 넣으면 $b=3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-16-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "점 $(2,3)$을 지나고 $y=3x-1$의 그래프와 평행한 직선의 $y$절편을 구하세요. (숫자만)",
+   "answers": [
+    "-3"
+   ],
+   "why": "기울기가 3이므로 $y=3x+b$에 $(2,3)$을 넣으면 $b=-3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-16-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$a>0,\\ b<0$일 때 $y=ax+b$의 그래프가 지나지 않는 사분면은?",
+   "options": [
+    "제2사분면",
+    "제1사분면",
+    "제3사분면",
+    "제4사분면"
+   ],
+   "answer": 0,
+   "why": "오른쪽 위로 향하고 $y$절편이 음수이므로 제1, 3, 4사분면을 지납니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-16-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-16",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$x$절편이 $-2$, $y$절편이 4인 직선의 식은?",
+   "options": [
+    "$y=\\dfrac12x+4$",
+    "$y=-2x+4$",
+    "$y=2x+4$",
+    "$y=2x-4$"
+   ],
+   "answer": 2,
+   "why": "두 점 $(-2,0)$, $(0,4)$에서 기울기는 $\\dfrac{4-0}{0-(-2)}=2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-17-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-17",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "일차방정식 $x+y=3$의 해(순서쌍 $(x,y)$)인 것은?",
+   "options": [
+    "$(1,2)$",
+    "$(1,3)$",
+    "$(2,2)$",
+    "$(3,1)$"
+   ],
+   "answer": 0,
+   "why": "$x+y=3$이 되는 것은 $(1,2)$뿐입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-17-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-17",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$2x+y=4$를 $y$에 대하여 풀면?",
+   "options": [
+    "$y=\\dfrac12x-2$",
+    "$y=2x+4$",
+    "$y=-2x-4$",
+    "$y=-2x+4$"
+   ],
+   "answer": 3,
+   "why": "$2x$를 이항하면 $y=-2x+4$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-17-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-17",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "일차방정식 $x+y=5$의 그래프가 $x$축과 만나는 점의 $x$좌표를 구하세요. (숫자만)",
+   "answers": [
+    "5"
+   ],
+   "why": "$y=0$을 넣으면 $x=5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-17-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-17",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "일차방정식 $3x-y=6$의 그래프의 기울기는?",
+   "options": [
+    "-3",
+    "3",
+    "6",
+    "-6"
+   ],
+   "answer": 1,
+   "why": "$y=3x-6$으로 고치면 기울기는 3입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-17-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-17",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "일차방정식 $2x+3y=6$의 그래프의 $x$절편과 $y$절편을 차례로 쓴 것은?",
+   "options": [
+    "2, 3",
+    "3, 2",
+    "-3, -2",
+    "6, 6"
+   ],
+   "answer": 1,
+   "why": "$y=0$이면 $x=3$, $x=0$이면 $y=2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-17-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-17",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림의 직선을 그래프로 하는 일차방정식은?",
+   "svg": "<svg viewBox=\"0 0 230 230\" font-family=\"sans-serif\"><line x1=\"26\" y1=\"204\" x2=\"26\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"51.4\" y1=\"204\" x2=\"51.4\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"76.9\" y1=\"204\" x2=\"76.9\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"102.3\" y1=\"204\" x2=\"102.3\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"127.7\" y1=\"204\" x2=\"127.7\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"153.1\" y1=\"204\" x2=\"153.1\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"178.6\" y1=\"204\" x2=\"178.6\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"204\" y1=\"204\" x2=\"204\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"204\" x2=\"204\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"178.6\" x2=\"204\" y2=\"178.6\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"153.1\" x2=\"204\" y2=\"153.1\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"127.7\" x2=\"204\" y2=\"127.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"102.3\" x2=\"204\" y2=\"102.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"76.9\" x2=\"204\" y2=\"76.9\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"51.4\" x2=\"204\" y2=\"51.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"26\" x2=\"204\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"178.6\" x2=\"210\" y2=\"178.6\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"51.4\" y1=\"204\" x2=\"51.4\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"208\" y=\"194.6\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">x</text><text x=\"63.4\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">y</text><text x=\"43.4\" y=\"192.6\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">O</text><line x1=\"26\" y1=\"175.6\" x2=\"26\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"26\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-1</text><line x1=\"76.9\" y1=\"175.6\" x2=\"76.9\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"76.9\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"102.3\" y1=\"175.6\" x2=\"102.3\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"102.3\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"127.7\" y1=\"175.6\" x2=\"127.7\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"127.7\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"153.1\" y1=\"175.6\" x2=\"153.1\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"153.1\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"178.6\" y1=\"175.6\" x2=\"178.6\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"178.6\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"204\" y1=\"175.6\" x2=\"204\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"204\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"48.4\" y1=\"204\" x2=\"54.4\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"208\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-1</text><line x1=\"48.4\" y1=\"153.1\" x2=\"54.4\" y2=\"153.1\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"157.1\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1</text><line x1=\"48.4\" y1=\"127.7\" x2=\"54.4\" y2=\"127.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"131.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"48.4\" y1=\"102.3\" x2=\"54.4\" y2=\"102.3\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"106.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">3</text><line x1=\"48.4\" y1=\"76.9\" x2=\"54.4\" y2=\"76.9\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"80.9\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"48.4\" y1=\"51.4\" x2=\"54.4\" y2=\"51.4\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"55.4\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">5</text><line x1=\"48.4\" y1=\"26\" x2=\"54.4\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"26\" y1=\"51.4\" x2=\"178.6\" y2=\"204\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"51.4\" cy=\"76.9\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"61.4\" y=\"69.9\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">(0,4)</text><circle cx=\"153.1\" cy=\"178.6\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"163.1\" y=\"171.6\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">(4,0)</text></svg>",
+   "options": [
+    "$2x+y=4$",
+    "$x-y=4$",
+    "$x+y=-4$",
+    "$x+y=4$"
+   ],
+   "answer": 3,
+   "why": "$(0,4)$, $(4,0)$을 지나므로 $x+y=4$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-17-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-17",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "일차방정식 $ax+by=c$ ($b\\ne0$)의 그래프가 직선인 이유는?",
+   "options": [
+    "$y=-\\dfrac abx+\\dfrac cb$로 고쳐 쓰면 일차함수가 되기 때문이다",
+    "$x$와 $y$의 값이 모두 정수이기 때문이다",
+    "해가 오직 하나뿐이기 때문이다",
+    "$x$의 계수가 항상 1이기 때문이다"
+   ],
+   "answer": 0,
+   "why": "$y$에 대하여 풀면 $y=(\\text{기울기})x+(\\text{절편})$ 꼴입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-17-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-17",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "일차방정식 $ax+2y=8$의 그래프가 점 $(2,1)$을 지날 때 $a$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "3"
+   ],
+   "why": "$2a+2=8$이므로 $a=3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-17-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-17",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "일차방정식 $x=2$의 그래프는?",
+   "options": [
+    "점 $(2,0)$을 지나고 $x$축에 평행한 직선",
+    "점 $(0,2)$를 지나고 $y$축에 평행한 직선",
+    "점 $(2,0)$을 지나고 $y$축에 평행한 직선",
+    "점 $(0,2)$를 지나고 $x$축에 평행한 직선"
+   ],
+   "answer": 2,
+   "why": "$x=2$이면 $y$는 어떤 값이든 되므로 $y$축에 평행한 직선입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-18-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-18",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$\\begin{cases}y=x+1\\\\y=-x+3\\end{cases}$의 해는?",
+   "options": [
+    "$x=2,\\ y=3$",
+    "$x=2,\\ y=1$",
+    "$x=1,\\ y=3$",
+    "$x=1,\\ y=2$"
+   ],
+   "answer": 3,
+   "why": "$x+1=-x+3$에서 $x=1$, $y=2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-18-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-18",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림은 연립방정식 $\\begin{cases}y=x+1\\\\y=-x+5\\end{cases}$의 두 식을 각각 그래프로 나타낸 것입니다. 연립방정식의 해는?",
+   "svg": "<svg viewBox=\"0 0 230 230\" font-family=\"sans-serif\"><line x1=\"26\" y1=\"204\" x2=\"26\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"51.4\" y1=\"204\" x2=\"51.4\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"76.9\" y1=\"204\" x2=\"76.9\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"102.3\" y1=\"204\" x2=\"102.3\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"127.7\" y1=\"204\" x2=\"127.7\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"153.1\" y1=\"204\" x2=\"153.1\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"178.6\" y1=\"204\" x2=\"178.6\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"204\" y1=\"204\" x2=\"204\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"204\" x2=\"204\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"178.6\" x2=\"204\" y2=\"178.6\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"153.1\" x2=\"204\" y2=\"153.1\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"127.7\" x2=\"204\" y2=\"127.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"102.3\" x2=\"204\" y2=\"102.3\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"76.9\" x2=\"204\" y2=\"76.9\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"51.4\" x2=\"204\" y2=\"51.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"26\" x2=\"204\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.18\"/><line x1=\"26\" y1=\"178.6\" x2=\"210\" y2=\"178.6\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"51.4\" y1=\"204\" x2=\"51.4\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"208\" y=\"194.6\" font-size=\"13\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">x</text><text x=\"63.4\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">y</text><text x=\"43.4\" y=\"192.6\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">O</text><line x1=\"26\" y1=\"175.6\" x2=\"26\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"26\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-1</text><line x1=\"76.9\" y1=\"175.6\" x2=\"76.9\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"76.9\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"102.3\" y1=\"175.6\" x2=\"102.3\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"102.3\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"127.7\" y1=\"175.6\" x2=\"127.7\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"127.7\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"153.1\" y1=\"175.6\" x2=\"153.1\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"153.1\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"178.6\" y1=\"175.6\" x2=\"178.6\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"178.6\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"204\" y1=\"175.6\" x2=\"204\" y2=\"181.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"204\" y=\"195.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"48.4\" y1=\"204\" x2=\"54.4\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"208\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">-1</text><line x1=\"48.4\" y1=\"153.1\" x2=\"54.4\" y2=\"153.1\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"157.1\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">1</text><line x1=\"48.4\" y1=\"127.7\" x2=\"54.4\" y2=\"127.7\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"131.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"48.4\" y1=\"102.3\" x2=\"54.4\" y2=\"102.3\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"106.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">3</text><line x1=\"48.4\" y1=\"76.9\" x2=\"54.4\" y2=\"76.9\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"80.9\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"48.4\" y1=\"51.4\" x2=\"54.4\" y2=\"51.4\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"55.4\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">5</text><line x1=\"48.4\" y1=\"26\" x2=\"54.4\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"44.4\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"26\" y1=\"178.6\" x2=\"178.6\" y2=\"26\" stroke=\"#4b7bec\" stroke-width=\"3\"/><line x1=\"26\" y1=\"26\" x2=\"204\" y2=\"204\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"102.3\" cy=\"102.3\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"112.3\" y=\"95.3\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">P</text></svg>",
+   "options": [
+    "$x=3,\\ y=2$",
+    "$x=2,\\ y=3$",
+    "$x=0,\\ y=1$",
+    "$x=5,\\ y=0$"
+   ],
+   "answer": 1,
+   "why": "두 직선의 교점 $(2,3)$의 좌표가 연립방정식의 해입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-18-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-18",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "두 직선 $x+y=3$, $ax-y=9$의 교점이 $(4,-1)$일 때 $a$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "2"
+   ],
+   "why": "교점을 $ax-y=9$에 넣으면 $4a+1=9$이므로 $a=2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-18-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-18",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "두 직선 $x+y=4$, $x-y=2$의 교점의 좌표는?",
+   "options": [
+    "$(2,2)$",
+    "$(1,3)$",
+    "$(3,1)$",
+    "$(4,2)$"
+   ],
+   "answer": 2,
+   "why": "연립해서 풀면 $x=3$, $y=1$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-18-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-18",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "두 직선 $y=2x-1$, $y=-x+8$의 교점의 좌표는?",
+   "options": [
+    "$(3,5)$",
+    "$(5,3)$",
+    "$(3,7)$",
+    "$(2,3)$"
+   ],
+   "answer": 0,
+   "why": "$2x-1=-x+8$에서 $x=3$, $y=5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-18-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-18",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "두 직선 $y=x+3$, $y=-2x+9$의 교점의 $y$좌표를 구하세요. (숫자만)",
+   "answers": [
+    "5"
+   ],
+   "why": "$x+3=-2x+9$에서 $x=2$이므로 $y=5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-18-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-18",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\begin{cases}y=2x+1\\\\y=2x-3\\end{cases}$의 해에 대해 옳은 것은?",
+   "options": [
+    "해가 2개이다",
+    "해가 1개이다",
+    "해가 없다",
+    "해가 무수히 많다"
+   ],
+   "answer": 2,
+   "why": "기울기는 같고 $y$절편이 다른 평행한 두 직선은 만나지 않으므로 해가 없습니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-18-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-18",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\begin{cases}2x+y=3\\\\4x+2y=6\\end{cases}$의 두 일차방정식을 그래프로 그렸을 때 알맞은 설명은?",
+   "options": [
+    "두 직선이 일치하므로 해가 무수히 많다",
+    "두 직선이 평행하므로 해가 없다",
+    "두 직선이 한 점에서 만나므로 해가 1개이다",
+    "두 직선이 수직이므로 해가 없다"
+   ],
+   "answer": 0,
+   "why": "둘째 식은 첫째 식의 2배이므로 같은 직선입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-18-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-18",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$\\begin{cases}x+y=2\\\\ax+2y=5\\end{cases}$의 해가 없을 때 $a$의 값은?",
+   "options": [
+    "5",
+    "1",
+    "4",
+    "2"
+   ],
+   "answer": 3,
+   "why": "두 직선이 평행하려면 기울기가 같아야 합니다. $y=-x+2$, $y=-\\dfrac a2x+\\dfrac52$에서 $a=2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-19-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-19",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$(x+3)(x+2)$를 전개하면?",
+   "options": [
+    "$x^{2}+6$",
+    "$x^{2}+5x+6$",
+    "$x^{2}+5x+5$",
+    "$x^{2}+6x+5$"
+   ],
+   "answer": 1,
+   "why": "$x^{2}+(3+2)x+3\\times2=x^{2}+5x+6$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-19-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-19",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$(x+4)^{2}$을 전개하면?",
+   "options": [
+    "$x^{2}+16$",
+    "$x^{2}+8x+16$",
+    "$x^{2}+4x+16$",
+    "$x^{2}+8x+8$"
+   ],
+   "answer": 1,
+   "why": "$(a+b)^{2}=a^{2}+2ab+b^{2}$이므로 $x^{2}+8x+16$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-19-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-19",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$x^{2}+5x+6$을 인수분해하면?",
+   "options": [
+    "$(x+5)(x+1)$",
+    "$(x+1)(x+6)$",
+    "$(x-2)(x-3)$",
+    "$(x+2)(x+3)$"
+   ],
+   "answer": 3,
+   "why": "합이 5, 곱이 6인 두 수는 2와 3입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-19-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-19",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$(2x-1)(3x+4)$를 전개하면?",
+   "options": [
+    "$6x^{2}+5x-4$",
+    "$6x^{2}-4$",
+    "$6x^{2}+11x-4$",
+    "$5x^{2}+5x-4$"
+   ],
+   "answer": 0,
+   "why": "$6x^{2}+8x-3x-4=6x^{2}+5x-4$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-19-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-19",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$(x-5)(x+5)$를 전개하면?",
+   "options": [
+    "$x^{2}-10x+25$",
+    "$x^{2}+25$",
+    "$x^{2}-25$",
+    "$x^{2}-10$"
+   ],
+   "answer": 2,
+   "why": "$(a-b)(a+b)=a^{2}-b^{2}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-19-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-19",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$x^{2}-9$를 인수분해하면?",
+   "options": [
+    "$(x-9)(x+1)$",
+    "$(x-3)^{2}$",
+    "$(x+3)^{2}$",
+    "$(x+3)(x-3)$"
+   ],
+   "answer": 3,
+   "why": "$a^{2}-b^{2}=(a+b)(a-b)$이므로 $(x+3)(x-3)$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-19-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-19",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$x^{2}-5x+4$를 인수분해하면?",
+   "options": [
+    "$(x+1)(x+4)$",
+    "$(x-1)(x-4)$",
+    "$(x-2)(x-2)$",
+    "$(x-1)(x+4)$"
+   ],
+   "answer": 1,
+   "why": "합이 $-5$, 곱이 4인 두 수는 $-1$과 $-4$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-19-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-19",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "$x^{2}+ax+12=(x+3)(x+b)$일 때 $a+b$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "11"
+   ],
+   "why": "$3b=12$이므로 $b=4$, $a=3+4=7$입니다. $a+b=11$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-19-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-19",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$x^{2}+6x+9$를 인수분해하면?",
+   "options": [
+    "$(x+3)(x-3)$",
+    "$(x+9)(x+1)$",
+    "$(x+3)^{2}$",
+    "$(x-3)^{2}$"
+   ],
+   "answer": 2,
+   "why": "$a^{2}+2ab+b^{2}=(a+b)^{2}$ 꼴이므로 $(x+3)^{2}$입니다. 전개하면 원래 식이 됩니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-20-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-20",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$x^{2}-5x+6=0$의 해는?",
+   "options": [
+    "$x=2$ 또는 $x=3$",
+    "$x=-2$ 또는 $x=-3$",
+    "$x=1$ 또는 $x=6$",
+    "$x=2$ 또는 $x=-3$"
+   ],
+   "answer": 0,
+   "why": "$(x-2)(x-3)=0$이므로 $x=2$ 또는 $x=3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-20-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-20",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "$(x-1)(x+4)=0$의 해는?",
+   "options": [
+    "$x=1$ 또는 $x=4$",
+    "$x=-1$ 또는 $x=4$",
+    "$x=1$ 또는 $x=-4$",
+    "$x=-1$ 또는 $x=-4$"
+   ],
+   "answer": 2,
+   "why": "$x-1=0$ 또는 $x+4=0$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-20-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-20",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "이차방정식 $x^{2}=49$의 양수인 해를 구하세요. (숫자만)",
+   "answers": [
+    "7"
+   ],
+   "why": "$x=\\pm7$이므로 양수인 해는 7입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-20-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-20",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$x^{2}+2x-8=0$의 해는?",
+   "options": [
+    "$x=-4$ 또는 $x=2$",
+    "$x=4$ 또는 $x=-2$",
+    "$x=-4$ 또는 $x=-2$",
+    "$x=4$ 또는 $x=2$"
+   ],
+   "answer": 0,
+   "why": "$(x+4)(x-2)=0$이므로 $x=-4$ 또는 $x=2$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-20-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-20",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$x^{2}-6x+9=0$의 해는?",
+   "options": [
+    "$x=9$ 또는 $x=1$",
+    "$x=-3$ (중근)",
+    "$x=3$ 또는 $x=-3$",
+    "$x=3$ (중근)"
+   ],
+   "answer": 3,
+   "why": "$(x-3)^{2}=0$이므로 $x=3$ (중근)입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-20-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-20",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "연속하는 두 자연수의 곱이 56일 때, 큰 수를 구하세요. (숫자만)",
+   "answers": [
+    "8"
+   ],
+   "why": "작은 수를 $x$라 하면 $x(x+1)=56$, $x=7$이므로 큰 수는 8입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-20-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-20",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "근의 공식을 이용하여 $x^{2}-4x+1=0$을 풀면?",
+   "options": [
+    "$x=-2\\pm\\sqrt{3}$",
+    "$x=2\\pm\\sqrt{3}$",
+    "$x=4\\pm\\sqrt{3}$",
+    "$x=2\\pm\\sqrt{5}$"
+   ],
+   "answer": 1,
+   "why": "$x=\\dfrac{4\\pm\\sqrt{16-4}}{2}=2\\pm\\sqrt{3}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-20-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-20",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "가로가 세로보다 3 cm 더 긴 직사각형의 넓이가 40 cm$^2$입니다. 세로의 길이(cm)를 구하세요. (숫자만)",
+   "answers": [
+    "5",
+    "5cm",
+    "5 cm"
+   ],
+   "why": "세로를 $x$라 하면 $x(x+3)=40$, $(x+8)(x-5)=0$이므로 $x=5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-20-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-20",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "이차방정식 $x^{2}+ax-10=0$의 한 근이 2일 때 $a$의 값과 다른 한 근은?",
+   "options": [
+    "$a=3$, 다른 근 $5$",
+    "$a=3$, 다른 근 $-5$",
+    "$a=-3$, 다른 근 $5$",
+    "$a=-3$, 다른 근 $-5$"
+   ],
+   "answer": 1,
+   "why": "$4+2a-10=0$에서 $a=3$이고, $x^{2}+3x-10=(x-2)(x+5)$이므로 다른 근은 $-5$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-21-c1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-21",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 이차함수인 것은?",
+   "options": [
+    "$y=x^{3}+1$",
+    "$y=3x-1$",
+    "$y=\\dfrac{1}{x^{2}}$",
+    "$y=x^{2}-3x$"
+   ],
+   "answer": 3,
+   "why": "$y=ax^{2}+bx+c$ ($a\\ne0$) 꼴이 이차함수입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-21-c2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-21",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "반지름이 $x$ cm인 원의 넓이를 $y$ cm$^2$라 할 때 $x$와 $y$ 사이의 관계식은?",
+   "options": [
+    "$y=\\pi x^{2}$",
+    "$y=2\\pi x$",
+    "$y=\\pi x$",
+    "$y=\\pi x^{3}$"
+   ],
+   "answer": 0,
+   "why": "(원의 넓이)$=\\pi\\times(\\text{반지름})^{2}$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-21-c3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-21",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "$y=x^{2}-2x$에서 $x=3$일 때 $y$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "3"
+   ],
+   "why": "$3^{2}-2\\times3=9-6=3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-21-b1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-21",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$y=(x+1)^{2}-x^{2}$에 대한 설명으로 옳은 것은?",
+   "options": [
+    "정리하면 $y=x^{2}+1$인 이차함수이다",
+    "$x^{2}$이 있으므로 이차함수이다",
+    "정리하면 $y=2x+1$인 일차함수이다",
+    "정리하면 $y=2x^{2}+1$인 이차함수이다"
+   ],
+   "answer": 2,
+   "why": "$(x+1)^{2}-x^{2}=2x+1$이므로 $x^{2}$항이 사라져 일차함수입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-21-b2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-21",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "가로가 $x$ cm, 세로가 $(x+3)$ cm인 직사각형의 넓이를 $y$ cm$^2$라 할 때 알맞은 것은?",
+   "options": [
+    "$y=x+3$ (일차함수)",
+    "$y=2x+6$ (일차함수)",
+    "$y=x^{2}+3$ (이차함수)",
+    "$y=x^{2}+3x$ (이차함수)"
+   ],
+   "answer": 3,
+   "why": "$y=x(x+3)=x^{2}+3x$이므로 이차함수입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-21-b3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-21",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "$f(x)=x^{2}+ax$이고 $f(2)=10$일 때 $a$의 값을 구하세요. (숫자만)",
+   "answers": [
+    "3"
+   ],
+   "why": "$4+2a=10$이므로 $a=3$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-21-a1",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-21",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$y=(a-2)x^{2}+3x$가 $x$에 대한 이차함수가 되기 위한 조건은?",
+   "options": [
+    "$a=2$",
+    "$a\\ne2$",
+    "$a>2$",
+    "$a\\ne0$"
+   ],
+   "answer": 1,
+   "why": "$x^{2}$의 계수 $a-2$가 0이 아니어야 합니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-21-a2",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-21",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "밑변이 $x$ cm, 높이가 $(x+4)$ cm인 삼각형의 넓이 $y$ cm$^2$가 이차함수인 이유로 알맞은 것은?",
+   "options": [
+    "$y=2x^{2}$으로 $x^{2}$의 계수가 2이기 때문이다",
+    "$y=\\dfrac12x+2$로 $x$에 대한 일차식이기 때문이다",
+    "$y=\\dfrac12x^{2}+2x$로 $x$에 대한 이차식이기 때문이다",
+    "$x$와 $x+4$가 서로 다른 식이어서 함수가 아니기 때문이다"
+   ],
+   "answer": 2,
+   "why": "$y=\\dfrac12x(x+4)=\\dfrac12x^{2}+2x$입니다."
+  },
+  {
+   "id": "수학-중1-3-9수02-21-a3",
+   "subject": "수학",
+   "gradeBand": "중1-3",
+   "unit": "변화와 관계",
+   "standard": "9수02-21",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "길이가 20 cm인 끈으로 직사각형을 만듭니다. 가로를 $x$ cm, 넓이를 $y$ cm$^2$라 할 때 $y$를 $x$의 식으로 나타내면?",
+   "options": [
+    "$y=-x^{2}+10x$",
+    "$y=10x$",
+    "$y=x^{2}+10x$",
+    "$y=-x^{2}+20x$"
+   ],
+   "answer": 0,
+   "why": "세로는 $10-x$이므로 $y=x(10-x)=-x^{2}+10x$이고 이차함수입니다."
+  }
+ ],
+ "skipped": []
+}
