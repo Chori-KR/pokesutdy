@@ -1,0 +1,573 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "중",
+  "course": "과학",
+  "gradeBand": "중1-3",
+  "unit": "세포분열과 생장",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "과학-중1-3-9과21-01-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "생물이 생장하는 주된 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "세포가 합쳐진다",
+    "세포가 계속 한없이 커진다",
+    "세포 분열로 세포의 수가 늘어난다",
+    "세포가 사라진다"
+   ],
+   "answer": 2,
+   "why": "개체의 생장은 세포 수의 증가가 중요합니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-01-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "한 변의 길이가 2 cm인 정육면체의 표면적은 24 $\\mathrm{cm^2}$, 부피는 8 $\\mathrm{cm^3}$입니다. (표면적) ÷ (부피)의 값은 얼마인가요? (숫자만)",
+   "answers": [
+    "3",
+    "3.0"
+   ],
+   "why": "$24\\div8=3$입니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-01-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "정육면체 모양 세포의 한 변이 커질수록 (표면적) ÷ (부피)의 값은 어떻게 되나요?",
+   "options": [
+    "작아진다",
+    "커진다",
+    "변하지 않는다",
+    "0이 된다"
+   ],
+   "answer": 0,
+   "why": "한 변이 길어지면 부피가 표면적보다 빠르게 증가합니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-01-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "세포가 분열하면 (표면적) ÷ (부피)의 값은 어떻게 변하나요?",
+   "options": [
+    "0이 된다",
+    "작아진다",
+    "변하지 않는다",
+    "세포가 작아지므로 커진다"
+   ],
+   "answer": 3,
+   "why": "작은 세포일수록 표면적 대 부피의 비가 큽니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-01-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "표는 정육면체 모형 세포의 크기에 따른 표면적과 부피입니다. 이 자료로 알 수 있는 세포가 무한히 커지지 못하는 까닭은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 290 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"284\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"87\" y1=\"3\" x2=\"87\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"187\" y1=\"3\" x2=\"187\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"287\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"287\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"287\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"45\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">한 변(cm)</text><text x=\"137\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">표면적(cm²)</text><text x=\"237\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">부피(cm³)</text><text x=\"45\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"137\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"237\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"45\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"137\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">24</text><text x=\"237\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">8</text><text x=\"45\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"137\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">54</text><text x=\"237\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">27</text></svg>",
+   "options": [
+    "세포가 커질수록 표면적이 줄어들기 때문이다",
+    "세포가 커질수록 부피에 비해 표면적이 상대적으로 작아져 물질 교환이 효율적으로 일어나기 어렵기 때문이다",
+    "부피가 작아지기 때문이다",
+    "표면적과 부피가 같아지기 때문이다"
+   ],
+   "answer": 1,
+   "why": "표면적 대 부피 비가 6, 3, 2로 줄어듭니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-01-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "생장에서 세포 분열이 세포의 단순한 크기 증가보다 중요한 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "세포 분열은 몸의 크기를 줄이기 때문이다",
+    "작은 세포를 유지하여 물질 교환 효율을 높이면서 몸을 키울 수 있기 때문이다",
+    "세포 분열은 에너지를 쓰지 않기 때문이다",
+    "세포가 커지면 표면적이 사라지기 때문이다"
+   ],
+   "answer": 1,
+   "why": "분열로 효율을 유지하며 생장합니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-02-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "체세포 분열의 결과로 알맞은 것은 무엇인가요?",
+   "options": [
+    "세포가 사라진다",
+    "염색체 수가 반인 딸세포 4개",
+    "염색체 수가 두 배인 세포 1개",
+    "모세포와 염색체 수가 같은 딸세포 2개가 만들어진다"
+   ],
+   "answer": 3,
+   "why": "체세포 분열은 같은 유전 정보를 가진 딸세포를 만듭니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-02-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "사람의 체세포 한 개에 들어 있는 염색체 수는 몇 개인가요? (숫자만)",
+   "answers": [
+    "46",
+    "46개"
+   ],
+   "why": "사람의 체세포에는 23쌍(46개)의 염색체가 있습니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-02-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "체세포 분열 과정 중 염색 분체가 분리되어 양극으로 이동하는 시기는 언제인가요?",
+   "options": [
+    "후기",
+    "전기",
+    "중기",
+    "말기"
+   ],
+   "answer": 0,
+   "why": "후기에 염색 분체가 분리됩니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-02-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "감수 분열의 결과로 알맞은 것은 무엇인가요?",
+   "options": [
+    "염색체 수가 두 배인 세포 4개",
+    "염색체 수가 같은 세포 2개",
+    "염색체 수가 절반으로 줄어든 생식세포 4개가 만들어진다",
+    "세포 1개"
+   ],
+   "answer": 2,
+   "why": "감수 분열은 2회 연속 분열하여 염색체 수가 반인 세포를 만듭니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-02-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "체세포의 염색체 수가 46개인 사람의 정자 한 개에 들어 있는 염색체 수는 몇 개인가요?",
+   "options": [
+    "12개",
+    "46개",
+    "92개",
+    "23개"
+   ],
+   "answer": 3,
+   "why": "생식세포는 체세포의 절반인 23개입니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-02-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "생식세포 형성 과정에서 염색체 수가 절반으로 줄어드는 의의로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "자손의 염색체 수를 계속 늘린다",
+    "수정이 되었을 때 자손의 염색체 수가 부모와 같게 유지되게 한다",
+    "수정이 일어나지 않게 한다",
+    "자손에게 유전 정보를 주지 않게 한다"
+   ],
+   "answer": 1,
+   "why": "정자(n)와 난자(n)가 합쳐져 2n이 됩니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-03-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "수정란이 일으키는 초기의 빠른 세포 분열을 무엇이라고 하나요?",
+   "options": [
+    "광합성",
+    "감수 분열",
+    "난할",
+    "소화"
+   ],
+   "answer": 2,
+   "why": "난할은 수정란이 개체로 되는 초기 발생 과정입니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-03-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "수정란이 초기에 빠르게 분열하는 세포 분열을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "난할"
+   ],
+   "why": "난할은 세포의 크기는 커지지 않고 수만 늘어납니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-03-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "난할이 진행되는 동안 세포 하나의 크기 변화로 알맞은 것은 무엇인가요?",
+   "options": [
+    "분열할 때마다 세포 하나의 크기는 점점 작아진다",
+    "점점 커진다",
+    "변하지 않는다",
+    "사라진다"
+   ],
+   "answer": 0,
+   "why": "세포 수는 늘고 세포 하나는 작아집니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-03-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "수정란에서 개체가 되는 과정을 순서대로 나열한 것은 무엇인가요?",
+   "options": [
+    "배아 → 수정란 → 4세포기",
+    "태아 → 수정란 → 8세포기 → 개체",
+    "수정란 → 2세포기 → 4세포기 → 8세포기 → 배아 → 태아 → 개체",
+    "수정란 → 개체 → 배아"
+   ],
+   "answer": 2,
+   "why": "세포 분열을 거듭하며 개체가 됩니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-03-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "수정란이 난할을 3회 일으키면 세포 수는 모두 몇 개가 되나요?",
+   "options": [
+    "8개",
+    "3개",
+    "6개",
+    "9개"
+   ],
+   "answer": 0,
+   "why": "세포 수는 매번 2배가 되어 $2^3=8$입니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-03-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "발생 과정에서 세포 분열 후 세포가 서로 다른 모양과 기능으로 변하는 현상을 설명한 것으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "세포 분열이 중단된다",
+    "세포가 모두 같은 모양을 유지한다",
+    "세포가 하나로 합쳐진다",
+    "세포 분화로 조직과 기관이 만들어진다"
+   ],
+   "answer": 3,
+   "why": "분화하여 조직·기관이 형성됩니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-04-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "순종의 둥근 완두와 순종의 주름진 완두를 교배했더니 잡종 1대(F1)가 모두 둥근 완두였습니다. 이 결과에서 알 수 있는 원리는 무엇인가요?",
+   "options": [
+    "분리의 법칙",
+    "우열의 원리",
+    "독립의 법칙",
+    "돌연변이"
+   ],
+   "answer": 1,
+   "why": "대립 형질 중 우성인 둥근 형질만 F1에 나타납니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-04-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "잡종 1대(F1)끼리 교배했을 때 잡종 2대(F2)에서 나타나는 우성 : 열성 표현형의 비는 얼마인가요? (예: 3:1)",
+   "answers": [
+    "3:1",
+    "3대1",
+    "3 : 1"
+   ],
+   "why": "분리의 법칙에 따라 F2에서 우성과 열성이 3:1로 나타납니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-04-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "유전자형이 $Rr$인 둥근 완두를 자가 수분했을 때 자손의 표현형 비(둥근 : 주름)로 알맞은 것은 무엇인가요?",
+   "options": [
+    "1 : 1",
+    "3 : 1",
+    "1 : 3",
+    "2 : 1"
+   ],
+   "answer": 1,
+   "why": "$RR:Rr:rr=1:2:1$이고 우성이 3, 열성이 1입니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-04-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "멘델이 실험 재료로 완두를 선택한 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "교배가 불가능하기 때문이다",
+    "대립 형질이 없기 때문이다",
+    "한 세대가 매우 길기 때문이다",
+    "대립 형질이 뚜렷하고 한 세대가 짧으며 교배 조절이 쉽기 때문이다"
+   ],
+   "answer": 3,
+   "why": "관찰과 실험이 쉬운 재료입니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-04-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "잡종 2대(F2)에서 둥근 완두와 주름진 완두가 3 : 1로 나왔고 총 400개였다면 둥근 완두는 몇 개일까요?",
+   "options": [
+    "300개",
+    "100개",
+    "200개",
+    "400개"
+   ],
+   "answer": 0,
+   "why": "$400\\times\\dfrac{3}{4}=300$(개)입니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-04-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "$Rr \\times Rr$의 교배에서 자손의 유전자형 비로 알맞은 것은 무엇인가요?",
+   "options": [
+    "$RR:Rr:rr=1:1:1$",
+    "$RR:Rr:rr=3:1:0$",
+    "$RR:Rr:rr=1:2:1$",
+    "$RR:Rr:rr=2:1:1$"
+   ],
+   "answer": 2,
+   "why": "각 부모가 R, r를 1/2씩 만들어 1:2:1이 됩니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-05-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "유전 연구에서 일란성 쌍둥이를 연구하는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "연구할 형질이 없기 때문이다",
+    "유전자가 완전히 다르기 때문이다",
+    "형질이 전혀 같지 않기 때문이다",
+    "유전자가 같아 환경의 영향을 알아볼 수 있기 때문이다"
+   ],
+   "answer": 3,
+   "why": "일란성 쌍둥이는 유전자가 같습니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-05-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "ABO식 혈액형에서 A와 B의 대립유전자를 모두 가진 사람의 혈액형은 무엇인가요? (두 글자)",
+   "answers": [
+    "AB형",
+    "AB"
+   ],
+   "why": "A와 B 유전자를 모두 가지면 AB형입니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-05-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 어느 집안의 가계도입니다. 정상인 부모에게서 유전병이 있는 아들이 태어났습니다. 이 유전병은 어떤 형질로 유전되나요?",
+   "svg": "<svg viewBox=\"0 0 230 170\" font-family=\"sans-serif\"><rect x=\"50\" y=\"22\" width=\"30\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"150\" cy=\"37\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"37\" x2=\"134\" y2=\"37\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"107\" y1=\"37\" x2=\"107\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"100\" x2=\"150\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"100\" x2=\"70\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"100\" x2=\"150\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"112\" width=\"30\" height=\"30\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"150\" cy=\"127\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"15\" y=\"60\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">아버지</text><text x=\"168\" y=\"55\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">어머니</text><text x=\"20\" y=\"160\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">■ 유전병</text></svg>",
+   "options": [
+    "우성 형질",
+    "열성 형질",
+    "알 수 없다",
+    "우열이 없다"
+   ],
+   "answer": 1,
+   "why": "정상 부모에게서 병이 나타났으므로 병은 열성입니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-05-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "적록 색맹이 남자에게 더 많이 나타나는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "색맹 유전자가 우성이기 때문이다",
+    "남자는 X 염색체가 두 개이기 때문이다",
+    "색맹 유전자가 X 염색체에 있는 열성이며 남자는 X 염색체가 하나뿐이기 때문이다",
+    "여자는 색을 구별하지 못하기 때문이다"
+   ],
+   "answer": 2,
+   "why": "X 염색체 열성 유전입니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-05-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "아버지가 A형(유전자형 AO), 어머니가 B형(유전자형 BO)일 때 자녀에게 나타날 수 있는 혈액형으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "A형, B형, AB형, O형",
+    "A형, B형만",
+    "AB형만",
+    "O형만"
+   ],
+   "answer": 0,
+   "why": "자손은 AB, AO, BO, OO의 유전자형이 가능합니다."
+  },
+  {
+   "id": "과학-중1-3-9과21-05-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "세포분열과 생장",
+   "standard": "9과21-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "유전병이 부모와 자녀에게서 나타나는 방식을 알아보는 방법으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "한 사람만 관찰한다",
+    "아무 조사도 하지 않는다",
+    "가계도를 만들어 대를 이어 형질의 유전 여부를 분석한다",
+    "소문에 의존한다"
+   ],
+   "answer": 2,
+   "why": "가계도는 유전 형질의 전달 방식을 보여 줍니다."
+  }
+ ],
+ "skipped": []
+}
