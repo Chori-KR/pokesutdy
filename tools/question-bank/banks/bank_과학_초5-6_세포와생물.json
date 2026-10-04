@@ -1,0 +1,351 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초5-6",
+  "unit": "세포와 생물",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "과학-초5-6-6과11-01-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "생물의 몸을 이루는 기본 단위를 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "세포"
+   ],
+   "why": "세포는 생물의 몸을 이루는 기본 단위입니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-01-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림은 현미경입니다. 눈으로 들여다보는 부분인 접안렌즈는 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 210 200\" font-family=\"sans-serif\"><rect x=\"84\" y=\"12\" width=\"20\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"80\" y=\"34\" width=\"28\" height=\"52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"86\" y=\"86\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"56\" y=\"124\" width=\"80\" height=\"8\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M108,48 Q150,50 150,110 L150,176\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"150\" cy=\"116\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"96\" cy=\"154\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"178\" width=\"108\" height=\"12\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"84\" y1=\"22\" x2=\"40\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"27\" font-size=\"15\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">㉢</text><line x1=\"86\" y1=\"94\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"99\" font-size=\"15\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><line x1=\"56\" y1=\"128\" x2=\"28\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"22\" y=\"133\" font-size=\"15\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">㉤</text><line x1=\"158\" y1=\"116\" x2=\"184\" y2=\"116\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"190\" y=\"121\" font-size=\"15\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">㉣</text><line x1=\"130\" y1=\"184\" x2=\"184\" y2=\"184\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"190\" y=\"189\" font-size=\"15\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">㉡</text></svg>",
+   "options": [
+    "㉡",
+    "㉠",
+    "㉢",
+    "㉣"
+   ],
+   "answer": 2,
+   "why": "맨 위에서 눈을 대고 보는 부분이 접안렌즈입니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-01-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 현미경입니다. 관찰할 물체(받침 유리)를 올려놓는 곳은 어디인가요?",
+   "svg": "<svg viewBox=\"0 0 210 200\" font-family=\"sans-serif\"><rect x=\"84\" y=\"12\" width=\"20\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"80\" y=\"34\" width=\"28\" height=\"52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"86\" y=\"86\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"56\" y=\"124\" width=\"80\" height=\"8\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M108,48 Q150,50 150,110 L150,176\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"150\" cy=\"116\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"96\" cy=\"154\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"178\" width=\"108\" height=\"12\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"84\" y1=\"22\" x2=\"40\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"27\" font-size=\"15\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">㉡</text><line x1=\"86\" y1=\"94\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"34\" y=\"99\" font-size=\"15\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">㉤</text><line x1=\"56\" y1=\"128\" x2=\"28\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"22\" y=\"133\" font-size=\"15\" text-anchor=\"end\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><line x1=\"158\" y1=\"116\" x2=\"184\" y2=\"116\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"190\" y=\"121\" font-size=\"15\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">㉢</text><line x1=\"130\" y1=\"184\" x2=\"184\" y2=\"184\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"190\" y=\"189\" font-size=\"15\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">㉣</text></svg>",
+   "options": [
+    "㉠",
+    "㉡",
+    "㉢",
+    "㉣"
+   ],
+   "answer": 0,
+   "why": "관찰할 물체를 올려놓는 곳은 재물대입니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-01-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "현미경으로 관찰을 시작할 때 알맞은 방법은 무엇인가요?",
+   "options": [
+    "받침 유리 없이 관찰한다",
+    "가장 높은 배율로 시작한다",
+    "초점을 맞추지 않고 관찰한다",
+    "낮은 배율의 대물렌즈로 시작하여 초점을 맞춘다"
+   ],
+   "answer": 3,
+   "why": "낮은 배율로 물체를 찾은 뒤 필요하면 배율을 높입니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-01-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "그림은 두 세포를 현미경으로 본 모습입니다. 사각형의 칸으로 나뉜 (가)와 같은 세포를 가진 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 300 118\" font-family=\"sans-serif\"><rect x=\"12\" y=\"26\" width=\"38\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"31\" cy=\"41\" r=\"5\" fill=\"#4b7bec\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"50\" y=\"26\" width=\"38\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"69\" cy=\"41\" r=\"5\" fill=\"#4b7bec\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"88\" y=\"26\" width=\"38\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"107\" cy=\"41\" r=\"5\" fill=\"#4b7bec\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"12\" y=\"56\" width=\"38\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"31\" cy=\"71\" r=\"5\" fill=\"#4b7bec\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"50\" y=\"56\" width=\"38\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"69\" cy=\"71\" r=\"5\" fill=\"#4b7bec\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"88\" y=\"56\" width=\"38\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"107\" cy=\"71\" r=\"5\" fill=\"#4b7bec\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"68\" y=\"110\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">(가)</text><ellipse cx=\"188\" cy=\"36\" rx=\"24\" ry=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"188\" cy=\"36\" r=\"5\" fill=\"#4b7bec\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><ellipse cx=\"234\" cy=\"52\" rx=\"22\" ry=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"234\" cy=\"52\" r=\"5\" fill=\"#4b7bec\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><ellipse cx=\"200\" cy=\"78\" rx=\"20\" ry=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"78\" r=\"5\" fill=\"#4b7bec\" fill-opacity=\"0.6\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"214\" y=\"110\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">(나)</text></svg>",
+   "options": [
+    "사람의 입안 상피",
+    "양파 표피",
+    "물고기 비늘",
+    "개구리 알"
+   ],
+   "answer": 1,
+   "why": "양파 표피 세포는 세포벽이 있어 벽돌처럼 네모난 칸으로 보입니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-01-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "접안렌즈 10배, 대물렌즈 40배로 관찰할 때 현미경의 배율은 몇 배인가요? (숫자만)",
+   "answers": [
+    "400",
+    "400배"
+   ],
+   "why": "현미경의 배율 = 접안렌즈 배율 × 대물렌즈 배율 = 10 × 40 = 400배입니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-02-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "식물이 물과 양분을 흡수하고 몸을 지탱하는 기관은 무엇인가요? (두 글자)",
+   "answers": [
+    "뿌리"
+   ],
+   "why": "뿌리는 땅속에서 물과 양분을 흡수하고 식물을 지탱합니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-02-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림에서 식물의 ㉢은 어떤 기관인가요?",
+   "svg": "<svg viewBox=\"0 0 200 222\" font-family=\"sans-serif\"><line x1=\"100\" y1=\"56\" x2=\"100\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"100\" y1=\"150\" x2=\"62\" y2=\"206\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"100\" y1=\"150\" x2=\"100\" y2=\"206\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"100\" y1=\"150\" x2=\"138\" y2=\"206\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"72\" cy=\"104\" rx=\"26\" ry=\"11\" transform=\"rotate(-25 72 104)\" fill=\"#4b7bec\" fill-opacity=\"0.25\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"130\" cy=\"84\" rx=\"26\" ry=\"11\" transform=\"rotate(25 130 84)\" fill=\"#4b7bec\" fill-opacity=\"0.25\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"100\" cy=\"23\" r=\"8\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"112.4\" cy=\"32\" r=\"8\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"107.6\" cy=\"46.5\" r=\"8\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"92.4\" cy=\"46.5\" r=\"8\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"87.6\" cy=\"32\" r=\"8\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"100\" cy=\"36\" r=\"6\" fill=\"currentColor\"/><line x1=\"8\" y1=\"150\" x2=\"192\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\" stroke-dasharray=\"6 5\"/><line x1=\"112\" y1=\"30\" x2=\"160\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"168\" y=\"31\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉡</text><line x1=\"58\" y1=\"112\" x2=\"22\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"14\" y=\"129\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉣</text><line x1=\"100\" y1=\"120\" x2=\"160\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"168\" y=\"133\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉢</text><line x1=\"84\" y1=\"192\" x2=\"40\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"32\" y=\"215\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text></svg>",
+   "options": [
+    "뿌리",
+    "줄기",
+    "잎",
+    "꽃"
+   ],
+   "answer": 1,
+   "why": "가운데 위아래로 이어진 부분은 줄기입니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-02-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "붉은 잉크를 탄 물에 흰 꽃을 꽂아 두었더니 꽃잎과 줄기 속이 붉게 물들었습니다. 이 실험으로 알 수 있는 줄기의 기능은 무엇인가요?",
+   "options": [
+    "광합성을 한다",
+    "꽃을 피운다",
+    "씨를 만든다",
+    "뿌리에서 흡수한 물이 이동하는 통로이다"
+   ],
+   "answer": 3,
+   "why": "붉은 물이 줄기를 따라 올라갔으므로 줄기는 물이 이동하는 통로입니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-02-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림에서 식물이 빛을 받아 양분을 만드는 일을 하는 기관은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 200 222\" font-family=\"sans-serif\"><line x1=\"100\" y1=\"56\" x2=\"100\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"100\" y1=\"150\" x2=\"62\" y2=\"206\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"100\" y1=\"150\" x2=\"100\" y2=\"206\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"100\" y1=\"150\" x2=\"138\" y2=\"206\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"72\" cy=\"104\" rx=\"26\" ry=\"11\" transform=\"rotate(-25 72 104)\" fill=\"#4b7bec\" fill-opacity=\"0.25\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"130\" cy=\"84\" rx=\"26\" ry=\"11\" transform=\"rotate(25 130 84)\" fill=\"#4b7bec\" fill-opacity=\"0.25\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"100\" cy=\"23\" r=\"8\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"112.4\" cy=\"32\" r=\"8\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"107.6\" cy=\"46.5\" r=\"8\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"92.4\" cy=\"46.5\" r=\"8\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"87.6\" cy=\"32\" r=\"8\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"100\" cy=\"36\" r=\"6\" fill=\"currentColor\"/><line x1=\"8\" y1=\"150\" x2=\"192\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\" stroke-dasharray=\"6 5\"/><line x1=\"112\" y1=\"30\" x2=\"160\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"168\" y=\"31\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉣</text><line x1=\"58\" y1=\"112\" x2=\"22\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"14\" y=\"129\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><line x1=\"100\" y1=\"120\" x2=\"160\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"168\" y=\"133\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉡</text><line x1=\"84\" y1=\"192\" x2=\"40\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"32\" y=\"215\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉢</text></svg>",
+   "options": [
+    "㉠",
+    "㉡",
+    "㉢",
+    "㉣"
+   ],
+   "answer": 0,
+   "why": "잎은 햇빛을 받아 광합성으로 양분을 만듭니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-02-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "식물의 잎이 하는 일로 알맞은 것은 무엇인가요?",
+   "options": [
+    "땅속의 물을 흡수한다",
+    "씨를 만든다",
+    "빛을 이용해 양분을 만들고 물을 수증기로 내보낸다",
+    "식물을 땅에 단단히 고정한다"
+   ],
+   "answer": 2,
+   "why": "잎은 광합성으로 양분을 만들고 증산 작용으로 물을 내보냅니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-02-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "꽃과 열매의 기능에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "꽃과 열매는 하는 일이 없다",
+    "꽃은 물을 흡수하고 열매는 양분을 만든다",
+    "꽃은 몸을 지탱하고 열매는 물을 이동시킨다",
+    "꽃은 씨를 만드는 일을, 열매는 씨를 보호하고 퍼뜨리는 일을 돕는다"
+   ],
+   "answer": 3,
+   "why": "꽃은 번식에 관여하고, 열매는 씨를 보호하며 퍼뜨리는 데 도움을 줍니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-03-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "사막에서 사는 선인장의 잎이 가시 모양인 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "물을 많이 내보내기 위해서이다",
+    "물이 몸 밖으로 많이 빠져나가는 것을 줄이기 위해서이다",
+    "벌레를 끌어들이기 위해서이다",
+    "빛을 막기 위해서이다"
+   ],
+   "answer": 1,
+   "why": "선인장의 가시 잎은 물이 빠져나가는 것을 줄여 사막 환경에 적응한 것입니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-03-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "물 위에 떠서 사는 연꽃, 개구리밥 같은 식물을 무엇이라고 하나요? (네 글자)",
+   "answers": [
+    "수생 식물",
+    "수생식물",
+    "물풀"
+   ],
+   "why": "물속이나 물 위에서 사는 식물을 수생 식물이라고 합니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-03-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 두 식물의 특징입니다. ㉠에 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 316 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"310\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"313\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"313\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">식물</text><text x=\"133\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">뿌리</text><text x=\"253\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">잎맥</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">강낭콩</text><text x=\"133\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">곧은뿌리와 곁뿌리</text><text x=\"253\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">그물 모양</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">옥수수</text><text x=\"133\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">㉠</text><text x=\"253\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">나란한 모양</text></svg>",
+   "options": [
+    "뿌리가 없다",
+    "곧은뿌리",
+    "수염뿌리",
+    "곁뿌리만 있다"
+   ],
+   "answer": 2,
+   "why": "옥수수와 같은 외떡잎식물은 수염뿌리와 나란한 잎맥을 가집니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-03-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "식물의 특징을 조사한 자료를 만들 때 알맞은 방법은 무엇인가요?",
+   "options": [
+    "식물의 사는 곳, 잎·줄기·뿌리의 모양과 특징을 조사하여 정리한다",
+    "식물의 이름만 적는다",
+    "식물을 그림만 그린다",
+    "친구의 자료를 그대로 베낀다"
+   ],
+   "answer": 0,
+   "why": "식물의 사는 곳과 생김새, 적응한 특징을 근거를 들어 정리합니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-03-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "연못에 사는 연꽃의 줄기와 뿌리 속에 구멍이 많이 있는 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "햇빛을 막기 위해서이다",
+    "물을 많이 저장하기 위해서이다",
+    "물속의 뿌리까지 공기를 전달하고 물에 뜨게 하기 위해서이다",
+    "양분을 만들기 위해서이다"
+   ],
+   "answer": 2,
+   "why": "수생 식물의 구멍 난 줄기는 공기를 전달하고 물에 뜨는 데 도움을 줍니다."
+  },
+  {
+   "id": "과학-초5-6-6과11-03-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "세포와 생물",
+   "standard": "6과11-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "덩굴 식물(나팔꽃)이 다른 물체를 감고 올라가는 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "스스로 몸을 지탱하기 어려워 높은 곳으로 올라가 햇빛을 더 많이 받기 위해서이다",
+    "물을 흡수하기 위해서이다",
+    "땅속에 들어가기 위해서이다",
+    "벌레를 쫓기 위해서이다"
+   ],
+   "answer": 0,
+   "why": "덩굴 식물은 줄기가 약해 다른 물체를 감고 올라가 햇빛을 받습니다."
+  }
+ ],
+ "skipped": []
+}
