@@ -1,0 +1,570 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "음악",
+  "school": "초",
+  "course": "음악",
+  "gradeBand": "초5-6",
+  "unit": "감상",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "음악-초5-6-6음02-01-c1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "음악에서 소리의 길고 짧음이 이루는 규칙적인 흐름을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "리듬"
+   ],
+   "why": "소리의 길고 짧음의 어울림은 리듬입니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-01-c2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "음악에서 소리의 세기를 크게 또는 작게 나타내는 것을 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "셈여림"
+   ],
+   "why": "소리의 크기를 나타내는 것은 셈여림입니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-01-b1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 어느 음악의 가락선입니다. 이 가락의 모양으로 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 292 100\" font-family=\"sans-serif\"><polyline points=\"24,58.5 64.7,47 105.3,35.5 146,24 186.7,35.5 227.3,47 268,58.5\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"24\" cy=\"58.5\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"94\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><circle cx=\"64.7\" cy=\"47\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"64.7\" y=\"94\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><circle cx=\"105.3\" cy=\"35.5\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"105.3\" y=\"94\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><circle cx=\"146\" cy=\"24\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"146\" y=\"94\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text><circle cx=\"186.7\" cy=\"35.5\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"186.7\" y=\"94\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">마</text><circle cx=\"227.3\" cy=\"47\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"227.3\" y=\"94\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">바</text><circle cx=\"268\" cy=\"58.5\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"268\" y=\"94\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">사</text></svg>",
+   "options": [
+    "계속 같은 높이이다",
+    "계속 올라간다",
+    "점점 올라갔다가 내려온다",
+    "계속 내려간다"
+   ],
+   "answer": 2,
+   "why": "가락선이 올라갔다가 다시 내려오는 모양입니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-01-b2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "‘빠르기’가 달라지면 음악의 느낌은 어떻게 달라지나요?",
+   "options": [
+    "빠르면 활기차고 느리면 차분한 느낌을 줄 수 있다",
+    "아무 차이가 없다",
+    "빠르기가 달라져도 느낌은 같다",
+    "느릴수록 항상 신난다"
+   ],
+   "answer": 0,
+   "why": "빠르기는 음악의 분위기에 큰 영향을 줍니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-01-a1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "같은 곡을 바이올린과 피아노로 연주했을 때 다르게 들리는 까닭은 무엇 때문인가요? (음악의 요소)",
+   "options": [
+    "빠르기가 다르기 때문이다",
+    "박자가 다르기 때문이다",
+    "화성이 같기 때문이다",
+    "음색이 다르기 때문이다"
+   ],
+   "answer": 3,
+   "why": "같은 곡도 악기에 따라 소리의 색깔(음색)이 달라집니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-01-a2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "곡의 첫 부분은 작게(p) 시작해서 점점 크게 연주합니다. 이때 쓰는 셈여림 기호의 이름은 무엇인가요?",
+   "options": [
+    "점점 여리게(데크레셴도)",
+    "점점 세게(크레셴도)",
+    "아주 세게(ff)",
+    "여리게(p)"
+   ],
+   "answer": 1,
+   "why": "점점 크게 하라는 표시는 크레셴도입니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-02-c1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "아프리카의 북소리처럼 두드려 소리를 내는 악기를 무엇이라고 하나요? (세 글자)",
+   "answers": [
+    "타악기",
+    "북"
+   ],
+   "why": "두드려 소리를 내는 악기를 타악기라고 합니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-02-c2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 나라와 대표 악기가 바르게 짝지어진 것은 무엇인가요?",
+   "options": [
+    "한국 – 시타르",
+    "인도 – 시타르",
+    "일본 – 가야금",
+    "중국 – 젬베"
+   ],
+   "answer": 1,
+   "why": "시타르는 인도의 대표적인 현악기입니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-02-b1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 여러 나라의 음악입니다. ㉠에 알맞은 나라는 어디인가요?",
+   "svg": "<svg viewBox=\"0 0 266 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"260\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"263\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"263\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"263\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나라</text><text x=\"168\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">대표 음악·악기</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><text x=\"168\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">탱고, 반도네온</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">일본</text><text x=\"168\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">샤미센</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">인도</text><text x=\"168\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">시타르</text></svg>",
+   "options": [
+    "호주",
+    "한국",
+    "이집트",
+    "아르헨티나"
+   ],
+   "answer": 3,
+   "why": "탱고와 반도네온은 아르헨티나를 대표하는 음악과 악기입니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-02-b2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "음악을 들으면서 구성을 알아볼 때 ‘A – B – A’로 표시되는 형식은 무엇인가요?",
+   "options": [
+    "처음과 끝이 같고 가운데가 다른 3부분 형식",
+    "처음과 끝이 모두 다른 형식",
+    "계속 같은 부분만 반복",
+    "한 부분으로만 이루어진 형식"
+   ],
+   "answer": 0,
+   "why": "A–B–A는 처음과 끝이 같은 3부분 형식입니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-02-a1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "각 나라의 음악이 서로 다른 특징을 가지는 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "악기가 한 가지뿐이기 때문이다",
+    "음악은 모두 똑같기 때문이다",
+    "그 나라의 자연환경, 생활, 문화가 음악에 반영되기 때문이다",
+    "악보가 없기 때문이다"
+   ],
+   "answer": 2,
+   "why": "음악은 그 지역의 삶과 문화를 담고 있습니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-02-a2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "아프리카 음악과 남미 음악을 듣고 비교한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "둘 다 악기가 없다",
+    "두 문화의 음악은 완전히 같다",
+    "음악에는 차이가 없다",
+    "두 문화의 음악은 리듬과 악기, 분위기가 다를 수 있다"
+   ],
+   "answer": 3,
+   "why": "문화권마다 사용하는 악기와 리듬이 다릅니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-03-c1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "영화나 드라마의 장면 분위기를 살리기 위해 사용하는 음악을 무엇이라고 하나요? (네 글자)",
+   "answers": [
+    "영화음악",
+    "영화 음악",
+    "배경음악",
+    "배경 음악"
+   ],
+   "why": "영화나 드라마에서 장면의 분위기를 살리는 음악이 쓰입니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-03-c2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "운동회에서 응원할 때 쓰이는 음악의 활용 목적으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "잠을 자게 한다",
+    "분위기를 북돋우고 힘을 내게 한다",
+    "수업을 방해한다",
+    "조용하게 만든다"
+   ],
+   "answer": 1,
+   "why": "행사의 목적에 맞게 음악이 활용됩니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-03-b1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "다음 중 음악이 쓰인 곳과 그 활용을 바르게 짝지은 것은 무엇인가요?",
+   "options": [
+    "병원 – 시끄러운 음악 틀기",
+    "도서관 – 큰 소리로 노래하기",
+    "졸업식 – 축하와 감사의 마음 전하기",
+    "독서 시간 – 격렬한 음악 틀기"
+   ],
+   "answer": 2,
+   "why": "행사의 의미에 맞게 음악이 사용됩니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-03-b2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "광고에서 음악을 쓰는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "듣는 사람의 기억에 남게 하고 상품의 이미지를 전달하려고",
+    "소리를 없애려고",
+    "광고를 지루하게 하려고",
+    "상품을 숨기려고"
+   ],
+   "answer": 0,
+   "why": "광고 음악은 기억에 남고 분위기를 전달합니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-03-a1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "같은 장면에 느린 음악과 빠른 음악을 각각 사용했을 때의 차이로 알맞은 것은 무엇인가요?",
+   "options": [
+    "음악은 장면에 영향을 주지 않는다",
+    "두 음악의 느낌은 같다",
+    "느린 음악은 차분하거나 슬픈 느낌, 빠른 음악은 긴박하거나 신나는 느낌을 준다",
+    "빠른 음악은 항상 슬프다"
+   ],
+   "answer": 2,
+   "why": "음악의 빠르기는 장면의 분위기를 바꿉니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-03-a2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "무용 공연에서 음악이 필요한 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "춤의 리듬과 분위기를 정해 주어 표현을 돕기 때문이다",
+    "관객이 없어지기 때문이다",
+    "춤을 방해하기 때문이다",
+    "아무 역할이 없기 때문이다"
+   ],
+   "answer": 0,
+   "why": "음악은 무용의 리듬과 분위기를 이끕니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-04-c1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "생활 속에서 들을 수 있는 음악으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "멈춰 있는 시계",
+    "진공 상태의 우주 공간",
+    "소리가 차단된 방음실",
+    "학교종 소리와 지하철 안내 멜로디"
+   ],
+   "answer": 3,
+   "why": "우리 주변에는 다양한 음악과 소리가 있습니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-04-c2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "기분이 좋을 때 어울리는 음악의 느낌은 무엇인가요? (한 단어)",
+   "answers": [
+    "밝은",
+    "경쾌한",
+    "신나는",
+    "즐거운",
+    "밝은 음악"
+   ],
+   "why": "기쁜 마음에는 밝고 경쾌한 음악이 어울립니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-04-b1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "친구가 슬픈 음악을 들으며 눈물을 흘릴 때 알맞은 태도는 무엇인가요?",
+   "options": [
+    "놀린다",
+    "친구의 감정을 존중하고 공감한다",
+    "무시한다",
+    "시끄럽다고 화낸다"
+   ],
+   "answer": 1,
+   "why": "음악을 들으며 느끼는 감정은 사람마다 다르므로 존중해야 합니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-04-b2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "공연장에서 음악을 감상할 때 지켜야 할 예절은 무엇인가요?",
+   "options": [
+    "큰 소리로 이야기한다",
+    "연주 중에는 조용히 하고 끝난 뒤 박수를 친다",
+    "연주 중에 돌아다닌다",
+    "휴대 전화를 크게 튼다"
+   ],
+   "answer": 1,
+   "why": "공연 예절을 지키는 것은 연주자와 다른 관객을 배려하는 일입니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-04-a1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "같은 음악을 듣고도 사람마다 느낌이 다른 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "음악은 감정을 전달하지 않기 때문이다",
+    "음악이 사람마다 다르게 바뀌기 때문이다",
+    "느낌은 모두 같아야 하기 때문이다",
+    "각자의 경험과 기분에 따라 느끼는 것이 다르기 때문이다"
+   ],
+   "answer": 3,
+   "why": "음악은 듣는 사람의 경험과 마음에 따라 다르게 느껴집니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-04-a2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "생활 속 음악 감상을 더 풍부하게 하는 방법으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "음악을 듣고 느낌을 말이나 그림, 몸짓으로 표현해 본다",
+    "한 번만 듣는다",
+    "소리를 끈다",
+    "느낌을 숨긴다"
+   ],
+   "answer": 0,
+   "why": "느낌을 표현해 보면 음악을 더 깊이 감상할 수 있습니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-05-c1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "꽹과리, 징, 장구, 북으로 연주하는 우리나라 전통 음악은 무엇인가요? (네 글자)",
+   "answers": [
+    "사물놀이",
+    "사물 놀이"
+   ],
+   "why": "사물놀이는 꽹과리, 징, 장구, 북 네 가지 악기로 연주합니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-05-c2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-05",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 우리나라 전통 악기가 아닌 것은 무엇인가요?",
+   "options": [
+    "대금",
+    "가야금",
+    "기타",
+    "장구"
+   ],
+   "answer": 2,
+   "why": "가야금, 대금, 장구는 국악기이고 기타는 서양 악기입니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-05-b1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "소리꾼이 북 치는 고수의 장단에 맞추어 노래와 말, 몸짓으로 이야기를 들려주는 전통 음악은 무엇인가요? (두 글자)",
+   "answers": [
+    "판소리"
+   ],
+   "why": "판소리는 소리, 아니리, 발림으로 이루어진 우리나라의 전통 음악입니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-05-b2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-05",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 국악기를 연주 방법에 따라 나눈 것입니다. ㉠에 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 276 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"270\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"143\" y1=\"3\" x2=\"143\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"273\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"273\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"273\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"73\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연주 방법</text><text x=\"208\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">악기</text><text x=\"73\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">줄을 뜯거나 타는 악기</text><text x=\"208\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">가야금, 거문고</text><text x=\"73\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><text x=\"208\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">대금, 피리</text><text x=\"73\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">두드리는 악기</text><text x=\"208\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">장구, 북</text></svg>",
+   "options": [
+    "소리가 나지 않는 악기",
+    "손으로 흔드는 악기",
+    "발로 밟는 악기",
+    "입으로 불어서 소리 내는 악기"
+   ],
+   "answer": 3,
+   "why": "대금, 피리는 입으로 불어서 소리를 내는 관악기입니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-05-a1",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "국악의 가치를 지키고 이어 가기 위한 방법으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "국악을 없앤다",
+    "국악을 듣고 배우며 생활 속에서 즐기고 알린다",
+    "서양 음악만 듣는다",
+    "국악은 필요 없다고 한다"
+   ],
+   "answer": 1,
+   "why": "국악을 직접 듣고 배우고 알리는 것이 가치를 이어 가는 방법입니다."
+  },
+  {
+   "id": "음악-초5-6-6음02-05-a2",
+   "subject": "음악",
+   "gradeBand": "초5-6",
+   "unit": "감상",
+   "standard": "6음02-05",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "아리랑이 오랫동안 전해지며 사랑받는 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "외국 노래이기 때문이다",
+    "한 가지 가락만 있기 때문이다",
+    "지역마다 다른 가락으로 불리며 우리 민족의 삶과 정서를 담고 있기 때문이다",
+    "악보가 없기 때문이다"
+   ],
+   "answer": 2,
+   "why": "아리랑은 지역마다 다양한 가락으로 전해지며 민족의 정서를 담고 있습니다."
+  }
+ ],
+ "skipped": []
+}
