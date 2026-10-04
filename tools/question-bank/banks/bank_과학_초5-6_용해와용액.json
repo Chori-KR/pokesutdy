@@ -1,0 +1,348 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초5-6",
+  "unit": "용해와 용액",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "과학-초5-6-6과03-01-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "설탕이 물에 녹아 골고루 섞이는 현상을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "용해"
+   ],
+   "why": "어떤 물질이 다른 물질에 녹아 골고루 섞이는 현상을 용해라고 합니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-01-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "소금물에서 용매는 무엇인가요? (한 글자)",
+   "answers": [
+    "물"
+   ],
+   "why": "소금(용질)을 녹이는 물이 용매이고, 소금이 녹아 있는 소금물은 용액입니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-01-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 같은 양의 물(100 mL)에 녹는 용질의 양을 나타낸 것입니다. 가장 많이 녹은 용질은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 196 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"190\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"193\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"193\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"193\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">용질</text><text x=\"133\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">녹은 양(g)</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"133\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">36</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"133\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">100</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><text x=\"133\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">20</text></svg>",
+   "options": [
+    "다",
+    "가",
+    "나",
+    "모두 같다"
+   ],
+   "answer": 2,
+   "why": "나가 100 g으로 가장 많이 녹았습니다. 용질의 종류에 따라 녹는 양이 다릅니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-01-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그래프는 물의 온도에 따라 녹는 어떤 용질의 양을 나타낸 것입니다. 물의 온도가 높아지면 녹는 양은 어떻게 되나요?",
+   "svg": "<svg viewBox=\"0 0 330 240\" font-family=\"sans-serif\"><text x=\"46\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(g)</text><line x1=\"52\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"52\" y1=\"154\" x2=\"304\" y2=\"154\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"158\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">20</text><line x1=\"52\" y1=\"122\" x2=\"304\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"126\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">40</text><line x1=\"52\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"94\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">60</text><line x1=\"52\" y1=\"58\" x2=\"304\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"62\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">80</text><line x1=\"52\" y1=\"26\" x2=\"304\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">100</text><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83.5\" y1=\"26\" x2=\"83.5\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"83.5\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">10</text><line x1=\"146.5\" y1=\"26\" x2=\"146.5\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"146.5\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">30</text><line x1=\"209.5\" y1=\"26\" x2=\"209.5\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"209.5\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">50</text><line x1=\"272.5\" y1=\"26\" x2=\"272.5\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"272.5\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">70</text><text x=\"304\" y=\"220\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(°C)</text><polyline points=\"83.5,154 146.5,130 209.5,98 272.5,50\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"83.5\" cy=\"154\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"146.5\" cy=\"130\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"209.5\" cy=\"98\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"272.5\" cy=\"50\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "많아진다",
+    "적어진다",
+    "변하지 않는다",
+    "0이 된다"
+   ],
+   "answer": 0,
+   "why": "대부분의 고체 용질은 물의 온도가 높을수록 더 많이 녹습니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-01-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "소금을 녹인 물에 소금을 더 넣었더니 더 이상 녹지 않고 바닥에 가라앉았습니다. 그 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "소금이 물로 변했기 때문이다",
+    "소금이 사라졌기 때문이다",
+    "물이 소금을 싫어하기 때문이다",
+    "일정한 양의 물에 녹을 수 있는 용질의 양에는 한계가 있기 때문이다"
+   ],
+   "answer": 3,
+   "why": "일정한 온도의 일정한 양의 물에는 용질이 녹을 수 있는 양이 정해져 있습니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-01-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "물에 더 많은 양의 백반을 녹이려고 할 때 알맞은 방법은 무엇인가요?",
+   "options": [
+    "물의 온도를 낮춘다",
+    "물의 온도를 높인다",
+    "백반을 더 큰 덩어리로 넣는다",
+    "물을 흔들지 않고 둔다"
+   ],
+   "answer": 1,
+   "why": "물의 온도가 높을수록 백반이 더 많이 녹습니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-02-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "같은 양의 물에 설탕을 녹일 때 설탕을 더 많이 넣으면 용액의 진하기는 어떻게 되나요? (진해진다 / 연해진다)",
+   "answers": [
+    "진해진다",
+    "진해짐",
+    "진하다"
+   ],
+   "why": "용질이 많을수록 용액이 진해집니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-02-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "그림은 같은 양의 물에 용질 알갱이(●)를 녹인 두 용액입니다. 더 진한 용액은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 194 112\" font-family=\"sans-serif\"><g transform=\"translate(0 0)\"><rect x=\"15\" y=\"29.5\" width=\"62\" height=\"52.5\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,29.5 77,29.5\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"><circle cx=\"10\" cy=\"62\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"24\" cy=\"64\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"38\" cy=\"60\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text></g><g transform=\"translate(102 0)\"><rect x=\"15\" y=\"29.5\" width=\"62\" height=\"52.5\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,29.5 77,29.5\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"><circle cx=\"10\" cy=\"62\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"24\" cy=\"64\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"38\" cy=\"60\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"52\" cy=\"63\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"17\" cy=\"52\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"31\" cy=\"54\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"45\" cy=\"52\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"10\" cy=\"42\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"24\" cy=\"44\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></g></svg>",
+   "options": [
+    "가",
+    "나",
+    "두 용액이 같다",
+    "알 수 없다"
+   ],
+   "answer": 1,
+   "why": "물의 양이 같을 때 용질이 많이 녹은 나가 더 진합니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-02-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "방울토마토를 두 용액에 넣었더니 가에서는 가라앉고 나에서는 떠올랐습니다. 더 진한 용액은 어느 것인가요?",
+   "options": [
+    "알 수 없다",
+    "가",
+    "두 용액이 같다",
+    "나"
+   ],
+   "answer": 3,
+   "why": "진한 용액일수록 물체가 더 잘 뜹니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-02-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "설탕물 100 mL에 설탕 10 g이 녹아 있습니다. 같은 설탕 10 g을 물 50 mL에 녹이면 설탕물의 진하기는 어떻게 달라지나요?",
+   "options": [
+    "더 진해진다",
+    "더 연해진다",
+    "달라지지 않는다",
+    "설탕이 사라진다"
+   ],
+   "answer": 0,
+   "why": "용질의 양이 같을 때 용매(물)가 적을수록 용액은 진해집니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-02-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "표는 같은 양의 물에 황설탕을 녹인 세 용액입니다. 진하기가 진한 순서대로 알맞게 나열한 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 286 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"173\" y1=\"3\" x2=\"173\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"283\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"283\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">용액</text><text x=\"118\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">황설탕(숟가락)</text><text x=\"228\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">물(mL)</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"118\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"228\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">100</text><text x=\"33\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"118\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"228\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">100</text><text x=\"33\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><text x=\"118\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"228\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">100</text></svg>",
+   "options": [
+    "나 → 다 → 가",
+    "가 → 다 → 나",
+    "다 → 나 → 가",
+    "가 → 나 → 다"
+   ],
+   "answer": 0,
+   "why": "같은 양의 물에 용질이 많을수록 진하므로 나(3) > 다(2) > 가(1)입니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-02-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "진한 주스를 연하게 만드는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "물을 증발시킨다",
+    "주스 가루를 더 넣는다",
+    "물을 더 넣는다",
+    "그대로 둔다"
+   ],
+   "answer": 2,
+   "why": "용매(물)를 더 넣으면 용액이 연해집니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-03-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "다음 중 용액에 해당하는 것은 무엇인가요?",
+   "options": [
+    "모래와 물",
+    "흙탕물",
+    "물과 기름",
+    "이온 음료"
+   ],
+   "answer": 3,
+   "why": "이온 음료는 여러 물질이 물에 골고루 녹아 있는 용액입니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-03-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "상처를 소독할 때 쓰는 소독약은 어떤 물질이 물이나 알코올에 녹은 것인가요? (용액 / 고체)",
+   "answers": [
+    "용액"
+   ],
+   "why": "소독약은 소독 물질이 녹아 있는 용액입니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-03-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "병원에서 환자에게 맞는 수액이 용액인 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "색이 예쁘기 때문이다",
+    "약 성분이 골고루 녹아 있어 몸에 일정하게 흡수시킬 수 있기 때문이다",
+    "물이 필요 없기 때문이다",
+    "맛이 달기 때문이다"
+   ],
+   "answer": 1,
+   "why": "용액은 성분이 골고루 섞여 있어 약을 일정한 양으로 전달하기 좋습니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-03-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "생활 속에서 용액을 이용하는 예로 알맞지 않은 것은 무엇인가요?",
+   "options": [
+    "세제로 설거지를 한다",
+    "식초로 음식 맛을 낸다",
+    "모래를 섞은 흙탕물을 마신다",
+    "음료수를 마신다"
+   ],
+   "answer": 2,
+   "why": "흙탕물은 알갱이가 가라앉는 혼합물이어서 용액이 아닙니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-03-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "용액이 우리 생활에 필요한 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "물질을 골고루 섞어 쓰기 편하게 하고, 약·음식·세제 등으로 다양하게 이용할 수 있기 때문이다",
+    "용액은 마시지 못하기 때문이다",
+    "용액은 아무 곳에도 쓰이지 않기 때문이다",
+    "용액은 모두 위험하기 때문이다"
+   ],
+   "answer": 0,
+   "why": "용액은 성분이 골고루 섞여 있어 생활에서 널리 쓰입니다."
+  },
+  {
+   "id": "과학-초5-6-6과03-03-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "용해와 용액",
+   "standard": "6과03-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "용액에 대한 안전한 사용 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "표시가 없는 용액을 맛본다",
+    "맛이 좋으면 많이 마신다",
+    "라벨의 사용 방법을 읽고 정해진 양과 방법으로 사용한다",
+    "서로 다른 세제를 모두 섞어 쓴다"
+   ],
+   "answer": 2,
+   "why": "세제와 약 같은 용액은 정해진 방법과 양을 지켜 안전하게 사용해야 합니다."
+  }
+ ],
+ "skipped": []
+}
