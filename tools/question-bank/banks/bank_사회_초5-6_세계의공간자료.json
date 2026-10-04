@@ -1,0 +1,243 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "사회",
+  "school": "초",
+  "course": "사회",
+  "gradeBand": "초5-6",
+  "unit": "세계의 공간 자료",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "title": "지구본과 세계지도",
+   "text": "하준이는 지구본과 세계지도를 함께 놓고 살펴보았습니다. 지구본은 둥근 지구를 줄여 놓은 모형이라 대륙과 바다의 모양, 크기, 거리와 방향이 실제와 가장 비슷합니다. 하지만 크기가 커서 들고 다니기 어렵고, 한눈에 지구 전체를 볼 수 없습니다.\n\n세계지도는 둥근 지구를 평평한 종이에 펼쳐 나타냈기 때문에 한눈에 세계 전체를 볼 수 있고 들고 다니기 편리합니다. 그러나 평평하게 펼치는 과정에서 육지의 모양이나 크기가 실제와 조금 다르게 나타나는 곳이 있습니다.\n또 요즘에는 인공위성 사진이나 컴퓨터로 보는 디지털 영상 지도도 많이 쓰입니다. 선생님께서는 위치를 정확하게 나타낼 때 지구본이나 세계지도에 그려진 위도와 경도를 이용한다고 알려 주셨습니다.",
+   "source": ""
+  }
+ ],
+ "questions": [
+  {
+   "id": "사회-초5-6-6사09-01-c1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 공간 자료",
+   "standard": "6사09-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "둥근 지구의 모습과 가장 비슷하게 줄여 만든 공간 자료는 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "관광 안내도",
+    "세계지도",
+    "지구본",
+    "버스 노선도"
+   ],
+   "answer": 2,
+   "why": "지구본은 지구의 모양과 대륙의 크기, 방향이 실제와 가장 비슷합니다."
+  },
+  {
+   "id": "사회-초5-6-6사09-01-c2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 공간 자료",
+   "standard": "6사09-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "위도의 기준이 되는 0도의 선을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "적도"
+   ],
+   "why": "위도 0도의 선은 적도입니다."
+  },
+  {
+   "id": "사회-초5-6-6사09-01-b1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 공간 자료",
+   "standard": "6사09-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "세계지도의 장점으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "한눈에 세계 전체를 볼 수 있고 들고 다니기 편리하다",
+    "지구의 크기와 방향이 항상 정확하다",
+    "육지의 모양이 하나도 달라지지 않는다",
+    "입체적으로 볼 수 있다"
+   ],
+   "answer": 0,
+   "why": "세계지도는 평평해서 한눈에 보기 쉽고 휴대하기 편리합니다."
+  },
+  {
+   "id": "사회-초5-6-6사09-01-b2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 공간 자료",
+   "standard": "6사09-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림에서 ‘가’ 지점의 위도와 경도를 바르게 나타낸 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 300 190\" font-family=\"sans-serif\"><rect x=\"44\" y=\"14\" width=\"242\" height=\"142\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44\" y1=\"156\" x2=\"286\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><text x=\"36\" y=\"160\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0°</text><line x1=\"44\" y1=\"108.7\" x2=\"286\" y2=\"108.7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><text x=\"36\" y=\"112.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">20°</text><line x1=\"44\" y1=\"61.3\" x2=\"286\" y2=\"61.3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><text x=\"36\" y=\"65.3\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">40°</text><line x1=\"44\" y1=\"14\" x2=\"286\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><text x=\"36\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">60°</text><line x1=\"44\" y1=\"14\" x2=\"44\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><text x=\"44\" y=\"174\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0°</text><line x1=\"124.7\" y1=\"14\" x2=\"124.7\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><text x=\"124.7\" y=\"174\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">30°</text><line x1=\"205.3\" y1=\"14\" x2=\"205.3\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><text x=\"205.3\" y=\"174\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">60°</text><line x1=\"286\" y1=\"14\" x2=\"286\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><text x=\"286\" y=\"174\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">90°</text><text x=\"14\" y=\"89\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">북위</text><text x=\"165\" y=\"186\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">동경</text><circle cx=\"205.3\" cy=\"61.3\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"217.3\" y=\"53.3\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">가</text></svg>",
+   "options": [
+    "북위 40°, 서경 60°",
+    "북위 60°, 동경 40°",
+    "남위 40°, 동경 60°",
+    "북위 40°, 동경 60°"
+   ],
+   "answer": 3,
+   "why": "세로축 위도는 40°, 가로축 경도는 60°에 해당하며 적도 위쪽이므로 북위, 본초 자오선 오른쪽이므로 동경입니다."
+  },
+  {
+   "id": "사회-초5-6-6사09-01-a1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 공간 자료",
+   "standard": "6사09-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "지구본과 세계지도를 비교한 설명으로 알맞은 것은 무엇인가요?",
+   "passage": "p1",
+   "options": [
+    "지구본은 세계지도보다 항상 편리하다",
+    "지구본은 실제와 비슷하지만 휴대가 불편하고, 세계지도는 편리하지만 모양과 크기가 왜곡될 수 있다",
+    "세계지도는 지구본보다 실제와 똑같다",
+    "둘 다 같은 점만 있다"
+   ],
+   "answer": 1,
+   "why": "두 자료의 장단점을 비교하여 상황에 맞게 이용해야 합니다."
+  },
+  {
+   "id": "사회-초5-6-6사09-01-a2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 공간 자료",
+   "standard": "6사09-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "경도 0도인 세로선(본초 자오선)이 지나는 나라는 어디인가요?",
+   "options": [
+    "일본",
+    "영국",
+    "브라질",
+    "호주"
+   ],
+   "answer": 1,
+   "why": "경도 0도인 본초 자오선은 영국의 그리니치 천문대를 지납니다."
+  },
+  {
+   "id": "사회-초5-6-6사09-02-c1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 공간 자료",
+   "standard": "6사09-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "세계에서 가장 큰 대륙은 무엇인가요? (대륙 이름)",
+   "answers": [
+    "아시아"
+   ],
+   "why": "아시아는 세계에서 가장 넓은 대륙입니다."
+  },
+  {
+   "id": "사회-초5-6-6사09-02-c2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 공간 자료",
+   "standard": "6사09-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "세계에서 가장 큰 대양은 어디인가요?",
+   "answers": [
+    "태평양"
+   ],
+   "why": "태평양은 세계에서 가장 큰 바다입니다."
+  },
+  {
+   "id": "사회-초5-6-6사09-02-b1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 공간 자료",
+   "standard": "6사09-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "우리나라의 위치에 대한 설명으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "남반구에 있는 나라이다",
+    "유럽의 서쪽 끝에 있는 섬나라이다",
+    "모든 면이 육지로 둘러싸여 있다",
+    "아시아 대륙의 동쪽에 있으며 삼면이 바다로 둘러싸인 반도 국가이다"
+   ],
+   "answer": 3,
+   "why": "우리나라는 유라시아 대륙 동쪽에 있고 삼면이 바다인 반도국입니다."
+  },
+  {
+   "id": "사회-초5-6-6사09-02-b2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 공간 자료",
+   "standard": "6사09-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "바다에 접해 있지 않고 땅으로만 둘러싸인 나라를 무엇이라고 하나요?",
+   "options": [
+    "내륙국",
+    "섬나라",
+    "반도국",
+    "해양국"
+   ],
+   "answer": 0,
+   "why": "바다와 접하지 않은 나라를 내륙국이라고 합니다."
+  },
+  {
+   "id": "사회-초5-6-6사09-02-a1",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 공간 자료",
+   "standard": "6사09-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "일본과 영국의 공통된 영토 특징으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "한 면만 바다에 접한 반도국이다",
+    "사방이 모두 육지로 이어진 내륙국이다",
+    "사방이 바다로 둘러싸인 섬나라이다",
+    "바다에 접하지 않았다"
+   ],
+   "answer": 2,
+   "why": "일본과 영국은 모두 섬으로 이루어진 섬나라입니다."
+  },
+  {
+   "id": "사회-초5-6-6사09-02-a2",
+   "subject": "사회",
+   "gradeBand": "초5-6",
+   "unit": "세계의 공간 자료",
+   "standard": "6사09-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "우리나라가 대륙과 바다를 모두 쉽게 이용할 수 있는 지리적 이점으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "대륙과 완전히 떨어져 있다",
+    "외국과의 교류가 어렵다",
+    "바다를 이용할 수 없다",
+    "대륙으로 가는 육상 교통과 바다를 통한 해상 교통을 함께 활용할 수 있다"
+   ],
+   "answer": 3,
+   "why": "반도국인 우리나라는 육지와 바다 양쪽으로 교류하기 유리합니다."
+  }
+ ],
+ "skipped": []
+}
