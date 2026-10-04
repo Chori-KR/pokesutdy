@@ -1,0 +1,460 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "초",
+  "course": "과학",
+  "gradeBand": "초5-6",
+  "unit": "온도와 열",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "과학-초5-6-6과07-01-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "그림의 온도계가 가리키는 온도는 몇 °C인가요? (숫자만 쓰세요)",
+   "svg": "<svg viewBox=\"0 0 150 226\" font-family=\"sans-serif\"><text x=\"60\" y=\"16\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">°C</text><rect x=\"52\" y=\"22\" width=\"16\" height=\"160\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"60\" cy=\"190\" r=\"15\" fill=\"#e07b39\" fill-opacity=\"0.85\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"56\" y=\"99\" width=\"8\" height=\"85\" fill=\"#e07b39\" fill-opacity=\"0.85\"/><line x1=\"70\" y1=\"176\" x2=\"82\" y2=\"176\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"88\" y=\"180\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">0</text><line x1=\"70\" y1=\"146.4\" x2=\"82\" y2=\"146.4\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"88\" y=\"150.4\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">10</text><line x1=\"70\" y1=\"116.8\" x2=\"82\" y2=\"116.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"88\" y=\"120.8\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">20</text><line x1=\"70\" y1=\"87.2\" x2=\"82\" y2=\"87.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"88\" y=\"91.2\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">30</text><line x1=\"70\" y1=\"57.6\" x2=\"82\" y2=\"57.6\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"88\" y=\"61.6\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">40</text><line x1=\"70\" y1=\"28\" x2=\"82\" y2=\"28\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"88\" y=\"32\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">50</text><line x1=\"70\" y1=\"170.1\" x2=\"76\" y2=\"170.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"164.2\" x2=\"76\" y2=\"164.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"158.2\" x2=\"76\" y2=\"158.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"152.3\" x2=\"76\" y2=\"152.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"140.5\" x2=\"76\" y2=\"140.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"134.6\" x2=\"76\" y2=\"134.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"128.6\" x2=\"76\" y2=\"128.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"122.7\" x2=\"76\" y2=\"122.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"110.9\" x2=\"76\" y2=\"110.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"105\" x2=\"76\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"99\" x2=\"76\" y2=\"99\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"93.1\" x2=\"76\" y2=\"93.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"81.3\" x2=\"76\" y2=\"81.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"75.4\" x2=\"76\" y2=\"75.4\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"69.4\" x2=\"76\" y2=\"69.4\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"63.5\" x2=\"76\" y2=\"63.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"51.7\" x2=\"76\" y2=\"51.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"45.8\" x2=\"76\" y2=\"45.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"39.8\" x2=\"76\" y2=\"39.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"33.9\" x2=\"76\" y2=\"33.9\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"60\" y=\"220\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text></svg>",
+   "answers": [
+    "26",
+    "26°C",
+    "26 °C",
+    "26도"
+   ],
+   "why": "액체 기둥의 끝이 26 눈금에 있으므로 26 °C입니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-01-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "온도를 재는 도구는 무엇인가요?",
+   "options": [
+    "자",
+    "저울",
+    "온도계",
+    "시계"
+   ],
+   "answer": 2,
+   "why": "온도계는 물체의 따뜻하고 차가운 정도를 재는 도구입니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-01-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림의 온도계가 가리키는 온도로 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 150 226\" font-family=\"sans-serif\"><text x=\"60\" y=\"16\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">°C</text><rect x=\"52\" y=\"22\" width=\"16\" height=\"160\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"60\" cy=\"190\" r=\"15\" fill=\"#e07b39\" fill-opacity=\"0.85\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"56\" y=\"87.2\" width=\"8\" height=\"96.8\" fill=\"#e07b39\" fill-opacity=\"0.85\"/><line x1=\"70\" y1=\"176\" x2=\"82\" y2=\"176\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"88\" y=\"180\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">-10</text><line x1=\"70\" y1=\"139\" x2=\"82\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"88\" y=\"143\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">0</text><line x1=\"70\" y1=\"102\" x2=\"82\" y2=\"102\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"88\" y=\"106\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">10</text><line x1=\"70\" y1=\"65\" x2=\"82\" y2=\"65\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"88\" y=\"69\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">20</text><line x1=\"70\" y1=\"28\" x2=\"82\" y2=\"28\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"88\" y=\"32\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">30</text><line x1=\"70\" y1=\"168.6\" x2=\"76\" y2=\"168.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"161.2\" x2=\"76\" y2=\"161.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"153.8\" x2=\"76\" y2=\"153.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"146.4\" x2=\"76\" y2=\"146.4\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"131.6\" x2=\"76\" y2=\"131.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"124.2\" x2=\"76\" y2=\"124.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"116.8\" x2=\"76\" y2=\"116.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"109.4\" x2=\"76\" y2=\"109.4\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"94.6\" x2=\"76\" y2=\"94.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"87.2\" x2=\"76\" y2=\"87.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"79.8\" x2=\"76\" y2=\"79.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"72.4\" x2=\"76\" y2=\"72.4\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"57.6\" x2=\"76\" y2=\"57.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"50.2\" x2=\"76\" y2=\"50.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"42.8\" x2=\"76\" y2=\"42.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"35.4\" x2=\"76\" y2=\"35.4\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"60\" y=\"220\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "options": [
+    "14 °C",
+    "4 °C",
+    "16 °C",
+    "-4 °C"
+   ],
+   "answer": 0,
+   "why": "액체 기둥의 끝이 14 눈금에 있습니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-01-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "액체 온도계로 물의 온도를 잴 때 알맞은 방법은 무엇인가요?",
+   "options": [
+    "온도계를 꺼내서 읽는다",
+    "온도계를 비스듬히 두고 바로 읽는다",
+    "액체샘이 컵 바닥에 닿게 하고 읽는다",
+    "액체샘(온도계 아래 둥근 부분)을 물에 담그고 액체 기둥이 멈춘 뒤 눈높이에서 읽는다"
+   ],
+   "answer": 3,
+   "why": "액체샘을 물에 담그고 눈금이 멈춘 뒤 눈높이에서 읽어야 정확합니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-01-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "short",
+   "body": "표는 두 컵의 물의 온도입니다. 가와 나의 온도 차이는 몇 °C인가요? (숫자만 쓰세요)",
+   "svg": "<svg viewBox=\"0 0 258 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"252\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"87\" y1=\"3\" x2=\"87\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"171\" y1=\"3\" x2=\"171\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"255\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"45\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">컵</text><text x=\"129\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"213\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"45\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">온도(°C)</text><text x=\"129\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">18</text><text x=\"213\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">24</text></svg>",
+   "answers": [
+    "6",
+    "6°C",
+    "6 °C"
+   ],
+   "why": "24 − 18 = 6 이므로 6 °C 차이입니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-01-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "찬물에 손을 담갔다가 미지근한 물에 넣으면 따뜻하게 느껴집니다. 이 사실에서 알 수 있는 것은 무엇인가요?",
+   "options": [
+    "미지근한 물이 실제로 뜨겁다",
+    "손의 느낌으로는 정확한 온도를 알기 어려워 온도계로 재야 한다",
+    "손은 온도를 정확히 안다",
+    "온도는 느낌으로 충분하다"
+   ],
+   "answer": 1,
+   "why": "느낌은 손의 처음 상태에 따라 달라지므로 온도계로 재어야 객관적입니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-02-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "열은 어떤 방향으로 이동하나요?",
+   "options": [
+    "온도가 낮은 물체에서 높은 물체로",
+    "온도가 높은 물체에서 낮은 물체로",
+    "온도가 같은 물체 사이에서만",
+    "이동하지 않는다"
+   ],
+   "answer": 1,
+   "why": "열은 항상 온도가 높은 곳에서 낮은 곳으로 이동합니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-02-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "뜨거운 물이 든 컵을 찬물이 든 그릇에 담갔을 때 뜨거운 물의 온도는 어떻게 되나요? (낮아진다 / 높아진다)",
+   "answers": [
+    "낮아진다",
+    "낮아짐",
+    "내려간다"
+   ],
+   "why": "뜨거운 물의 열이 찬물로 이동하여 온도가 낮아집니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-02-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그래프는 뜨거운 물(실선)과 차가운 물(점선)을 접촉시켰을 때의 온도 변화입니다. 시간이 오래 지나면 두 물의 온도는 어떻게 되나요?",
+   "svg": "<svg viewBox=\"0 0 330 240\" font-family=\"sans-serif\"><text x=\"46\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(°C)</text><line x1=\"52\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"52\" y1=\"154\" x2=\"304\" y2=\"154\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"158\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">20</text><line x1=\"52\" y1=\"122\" x2=\"304\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"126\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">40</text><line x1=\"52\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"94\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">60</text><line x1=\"52\" y1=\"58\" x2=\"304\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"62\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">80</text><line x1=\"52\" y1=\"26\" x2=\"304\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">100</text><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"26\" x2=\"73\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"73\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"115\" y1=\"26\" x2=\"115\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"115\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"157\" y1=\"26\" x2=\"157\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"157\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"199\" y1=\"26\" x2=\"199\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"199\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"241\" y1=\"26\" x2=\"241\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"241\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"283\" y1=\"26\" x2=\"283\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"283\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"304\" y=\"220\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(분)</text><polyline points=\"73,58 115,74 157,86.8 199,96.4 241,102.8 283,106\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"73\" cy=\"58\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"115\" cy=\"74\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"157\" cy=\"86.8\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"199\" cy=\"96.4\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"241\" cy=\"102.8\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"283\" cy=\"106\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"73,154 115,138 157,125.2 199,115.6 241,109.2 283,106\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><rect x=\"68\" y=\"149\" width=\"10\" height=\"10\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"110\" y=\"133\" width=\"10\" height=\"10\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"152\" y=\"120.2\" width=\"10\" height=\"10\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"194\" y=\"110.6\" width=\"10\" height=\"10\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"236\" y=\"104.2\" width=\"10\" height=\"10\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"278\" y=\"101\" width=\"10\" height=\"10\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "모두 0 °C가 된다",
+    "뜨거운 물이 계속 더 높다",
+    "차가운 물이 더 높아진다",
+    "같아진다"
+   ],
+   "answer": 3,
+   "why": "두 물체가 오래 접촉하면 온도가 같아지는 열평형 상태가 됩니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-02-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "80 °C의 물 100 mL와 20 °C의 물 100 mL를 섞으면 온도는 대략 몇 °C가 되나요?",
+   "options": [
+    "약 50 °C",
+    "약 100 °C",
+    "약 80 °C",
+    "약 20 °C"
+   ],
+   "answer": 0,
+   "why": "양이 같으면 두 물의 중간쯤의 온도가 됩니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-02-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "차가운 음료수 캔을 따뜻한 손으로 잡았을 때 손과 캔의 온도 변화로 알맞은 것은 무엇인가요?",
+   "options": [
+    "둘 다 높아진다",
+    "손의 온도는 높아지고 캔의 온도는 낮아진다",
+    "손의 온도는 낮아지고 캔의 온도는 높아진다",
+    "변화가 없다"
+   ],
+   "answer": 2,
+   "why": "열이 손(높은 온도)에서 캔(낮은 온도)으로 이동합니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-02-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "뜨거운 국에 담근 금속 숟가락이 뜨거워지는 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "차가움이 숟가락으로 이동하기 때문이다",
+    "숟가락이 스스로 열을 내기 때문이다",
+    "열이 숟가락에서 국으로 이동하기 때문이다",
+    "열이 국에서 숟가락으로 이동하기 때문이다"
+   ],
+   "answer": 3,
+   "why": "온도가 높은 국에서 낮은 숟가락으로 열이 이동하여 숟가락의 온도가 올라갑니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-03-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "금속 막대의 한쪽 끝을 가열하면 열이 막대를 따라 다른 쪽 끝으로 이동합니다. 고체에서 열이 이웃한 부분으로 이동하는 방식을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "전도"
+   ],
+   "why": "고체에서 열이 이웃한 입자로 차례로 전달되는 방식이 전도입니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-03-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "태양의 열이 우주 공간을 지나 지구에 전달되는 방식은 무엇인가요?",
+   "options": [
+    "전도",
+    "복사",
+    "대류",
+    "증발"
+   ],
+   "answer": 1,
+   "why": "태양의 열은 물질 없이도 직접 전달되는 복사로 지구에 옵니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-03-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "물을 아래에서 가열할 때 따뜻해진 물이 위로 올라가고 위쪽의 차가운 물이 내려오며 열이 이동하는 방식을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "대류"
+   ],
+   "why": "액체나 기체에서 물질이 직접 움직이며 열이 이동하는 방식이 대류입니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-03-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "난로는 방 아래쪽에, 에어컨은 방 위쪽에 두는 것이 효율적인 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "복사가 일어나지 않기 때문이다",
+    "전도가 일어나기 때문이다",
+    "따뜻한 공기는 위로, 차가운 공기는 아래로 이동하는 대류 때문이다",
+    "공기가 움직이지 않기 때문이다"
+   ],
+   "answer": 2,
+   "why": "난로는 아래에서 데워진 공기가 올라가고, 에어컨은 위에서 차가워진 공기가 내려오는 대류를 이용합니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-03-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "모닥불에서 조금 떨어져 있어도 따뜻하게 느껴지는 주된 열의 이동 방식은 무엇인가요?",
+   "options": [
+    "복사",
+    "전도",
+    "대류",
+    "증발"
+   ],
+   "answer": 0,
+   "why": "모닥불의 열이 공기를 거치지 않고 직접 전달되는 복사로 따뜻함을 느낍니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-03-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "프라이팬의 손잡이를 나무나 플라스틱으로 만드는 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "보기에 좋기 때문이다",
+    "열이 잘 전달되어 빨리 데우기 위해서이다",
+    "열이 잘 전달되지 않아 손잡이가 뜨거워지는 것을 줄이기 위해서이다",
+    "금속보다 무겁기 때문이다"
+   ],
+   "answer": 2,
+   "why": "나무와 플라스틱은 열이 잘 전도되지 않아 손잡이가 덜 뜨거워집니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-04-c1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "short",
+   "body": "열이 이동하는 것을 막는 것을 무엇이라고 하나요? (두 글자)",
+   "answers": [
+    "단열"
+   ],
+   "why": "열의 이동을 막는 것을 단열이라고 합니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-04-c2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "뜨거운 국을 오랫동안 따뜻하게 보관할 때 쓰는 용기는 무엇인가요?",
+   "options": [
+    "보온병",
+    "얇은 알루미늄 컵",
+    "유리컵",
+    "종이컵 뚜껑 없이"
+   ],
+   "answer": 0,
+   "why": "보온병은 열의 이동을 막아 온도를 오래 유지합니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-04-b1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "표는 재료별 열이 전달되는 정도입니다. 단열 재료로 가장 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 236 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"230\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"93\" y1=\"3\" x2=\"93\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"233\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"233\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"233\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"233\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"48\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">재료</text><text x=\"163\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">열 전달</text><text x=\"48\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">구리</text><text x=\"163\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">매우 빠름</text><text x=\"48\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">알루미늄</text><text x=\"163\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">빠름</text><text x=\"48\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나무</text><text x=\"163\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">느림</text><text x=\"48\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">스티로폼</text><text x=\"163\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">매우 느림</text></svg>",
+   "options": [
+    "나무",
+    "구리",
+    "알루미늄",
+    "스티로폼"
+   ],
+   "answer": 3,
+   "why": "열이 가장 느리게 전달되는 스티로폼이 단열에 가장 알맞습니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-04-b2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "추운 겨울에 창문을 이중창으로 하면 좋은 까닭으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "유리가 두꺼워 소리가 커진다",
+    "두 유리 사이의 공기가 열의 이동을 줄여 실내가 따뜻하게 유지된다",
+    "바람이 더 잘 통한다",
+    "햇빛이 완전히 막힌다"
+   ],
+   "answer": 1,
+   "why": "유리 사이의 공기층이 단열 효과를 냅니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-04-a1",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "보온병의 이중 벽 사이를 진공(공기가 거의 없는 상태)으로 만드는 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "소리를 막기 위해서이다",
+    "공기가 없으면 전도와 대류에 의한 열의 이동이 크게 줄어들기 때문이다",
+    "병을 가볍게 하기 위해서이다",
+    "물이 더 빨리 끓게 하기 위해서이다"
+   ],
+   "answer": 1,
+   "why": "진공층은 전도와 대류를 막아 단열 효과를 높입니다."
+  },
+  {
+   "id": "과학-초5-6-6과07-04-a2",
+   "subject": "과학",
+   "gradeBand": "초5-6",
+   "unit": "온도와 열",
+   "standard": "6과07-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "얼음을 오랫동안 녹지 않게 보관하는 상자를 만들려고 합니다. 가장 알맞은 설계는 무엇인가요?",
+   "options": [
+    "구리 상자에 담아 둔다",
+    "얇은 철제 상자에 뚜껑 없이 둔다",
+    "유리 상자를 햇빛 아래 둔다",
+    "스티로폼 상자에 뚜껑을 덮고 틈을 막는다"
+   ],
+   "answer": 3,
+   "why": "열이 잘 전달되지 않는 재료로 만들고 틈을 막아야 단열이 잘 됩니다."
+  }
+ ],
+ "skipped": []
+}
