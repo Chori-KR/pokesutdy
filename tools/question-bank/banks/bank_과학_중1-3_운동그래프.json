@@ -1,0 +1,463 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "과학",
+  "school": "중",
+  "course": "과학",
+  "gradeBand": "중1-3",
+  "unit": "운동 그래프",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "과학-중1-3-9과19-01-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "속력의 단위로 알맞은 것은 무엇인가요?",
+   "options": [
+    "N",
+    "kg",
+    "m/s",
+    "Pa"
+   ],
+   "answer": 2,
+   "why": "속력은 이동 거리를 걸린 시간으로 나눈 값으로 m/s를 씁니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-01-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "시간에 따른 위치 그래프가 위로 올라가는 직선일 때 물체의 운동은 어떠한가요?",
+   "options": [
+    "일정한 속력으로 움직인다",
+    "정지해 있다",
+    "속력이 점점 줄어든다",
+    "속력이 점점 커진다"
+   ],
+   "answer": 0,
+   "why": "위치-시간 그래프의 기울기가 일정하면 속력이 일정합니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-01-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 어떤 물체의 시간에 따른 위치를 나타낸 것입니다. 이 물체의 속력은 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 330 240\" font-family=\"sans-serif\"><text x=\"46\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(m)</text><line x1=\"52\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"52\" y1=\"154\" x2=\"304\" y2=\"154\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"158\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">10</text><line x1=\"52\" y1=\"122\" x2=\"304\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"126\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">20</text><line x1=\"52\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"94\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">30</text><line x1=\"52\" y1=\"58\" x2=\"304\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"62\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">40</text><line x1=\"52\" y1=\"26\" x2=\"304\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">50</text><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"26\" x2=\"73\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"73\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"115\" y1=\"26\" x2=\"115\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"115\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"157\" y1=\"26\" x2=\"157\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"157\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"199\" y1=\"26\" x2=\"199\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"199\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"241\" y1=\"26\" x2=\"241\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"241\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"283\" y1=\"26\" x2=\"283\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"283\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"304\" y=\"220\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(s)</text><polyline points=\"73,186 115,154 157,122 199,90 241,58 283,26\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"73\" cy=\"186\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"115\" cy=\"154\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"157\" cy=\"122\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"199\" cy=\"90\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"241\" cy=\"58\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"283\" cy=\"26\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "50 m/s",
+    "5 m/s",
+    "20 m/s",
+    "10 m/s"
+   ],
+   "answer": 3,
+   "why": "5초 동안 50 m를 이동했으므로 50 ÷ 5 = 10 m/s입니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-01-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "그림은 시간에 따른 속력을 나타낸 것입니다. 이 물체가 4초 동안 이동한 거리는 몇 m인가요? (숫자만)",
+   "svg": "<svg viewBox=\"0 0 330 240\" font-family=\"sans-serif\"><text x=\"46\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(m/s)</text><line x1=\"52\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"52\" y1=\"106\" x2=\"304\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"110\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">5</text><line x1=\"52\" y1=\"26\" x2=\"304\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">10</text><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"26\" x2=\"73\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"73\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"115\" y1=\"26\" x2=\"115\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"115\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"157\" y1=\"26\" x2=\"157\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"157\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"199\" y1=\"26\" x2=\"199\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"199\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"241\" y1=\"26\" x2=\"241\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"241\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"283\" y1=\"26\" x2=\"283\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"283\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"304\" y=\"220\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(s)</text><polyline points=\"73,106 115,106 157,106 199,106 241,106 283,106\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"73\" cy=\"106\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"115\" cy=\"106\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"157\" cy=\"106\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"199\" cy=\"106\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"241\" cy=\"106\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"283\" cy=\"106\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "answers": [
+    "20"
+   ],
+   "why": "속력이 5 m/s로 일정하므로 5 × 4 = 20 m입니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-01-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "위치-시간 그래프에서 물체가 정지해 있을 때 나타나는 모양은 무엇인가요?",
+   "options": [
+    "오른쪽 위로 향하는 직선",
+    "시간 축에 나란한 수평선",
+    "오른쪽 아래로 향하는 직선",
+    "수직선"
+   ],
+   "answer": 1,
+   "why": "위치가 변하지 않으면 그래프는 수평선입니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-01-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "속력-시간 그래프가 시간 축에 나란한 수평선일 때 물체는 어떻게 운동하나요?",
+   "options": [
+    "속력이 점점 커진다",
+    "일정한 속력으로 등속 직선 운동을 한다",
+    "정지해 있다",
+    "속력이 점점 작아진다"
+   ],
+   "answer": 1,
+   "why": "속력이 일정한 운동을 등속 운동이라고 합니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-02-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "공기 저항을 무시할 때 낙하하는 물체의 속력은 시간이 지나면서 어떻게 변하나요?",
+   "options": [
+    "증가하다 멈춘다",
+    "일정하다",
+    "점점 느려진다",
+    "일정하게 증가한다"
+   ],
+   "answer": 3,
+   "why": "자유 낙하하는 물체에는 중력이 작용해 속력이 일정하게 늘어납니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-02-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "자유 낙하하는 물체에 작용하는 힘은 무엇인가요?",
+   "options": [
+    "중력",
+    "마찰력",
+    "탄성력",
+    "자기력"
+   ],
+   "answer": 0,
+   "why": "공기 저항을 무시하면 중력만 작용합니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-02-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림은 자유 낙하하는 물체의 시간에 따른 속력을 나타낸 것입니다. 3초일 때 속력은 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 330 240\" font-family=\"sans-serif\"><text x=\"46\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(m/s)</text><line x1=\"52\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"52\" y1=\"146\" x2=\"304\" y2=\"146\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"150\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">10</text><line x1=\"52\" y1=\"106\" x2=\"304\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"110\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">20</text><line x1=\"52\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"70\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">30</text><line x1=\"52\" y1=\"26\" x2=\"304\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">40</text><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"77.2\" y1=\"26\" x2=\"77.2\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"77.2\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"127.6\" y1=\"26\" x2=\"127.6\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"127.6\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"178\" y1=\"26\" x2=\"178\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"178\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"228.4\" y1=\"26\" x2=\"228.4\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"228.4\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"278.8\" y1=\"26\" x2=\"278.8\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"278.8\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"304\" y=\"220\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(s)</text><polyline points=\"77.2,186 127.6,146 178,106 228.4,66 278.8,26\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"77.2\" cy=\"186\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"127.6\" cy=\"146\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"178\" cy=\"106\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"228.4\" cy=\"66\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"278.8\" cy=\"26\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+   "options": [
+    "20 m/s",
+    "10 m/s",
+    "30 m/s",
+    "40 m/s"
+   ],
+   "answer": 2,
+   "why": "속력이 1초마다 10 m/s씩 증가합니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-02-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "자유 낙하하는 물체의 속력이 1초마다 증가하는 값은 약 몇 m/s인가요? (숫자만)",
+   "answers": [
+    "10",
+    "9.8"
+   ],
+   "why": "중력 가속도 약 $9.8\\,\\mathrm{m/s^2}$, 흔히 $10\\,\\mathrm{m/s}$로 어림합니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-02-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "공기 저항이 없는 곳에서 무거운 쇠공과 가벼운 깃털을 동시에 떨어뜨리면 어떻게 되나요?",
+   "options": [
+    "둘 다 떨어지지 않는다",
+    "쇠공이 먼저 떨어진다",
+    "깃털이 먼저 떨어진다",
+    "동시에 떨어진다"
+   ],
+   "answer": 3,
+   "why": "중력 가속도는 질량과 관계없이 같습니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-02-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "속력-시간 그래프가 원점에서 오른쪽 위로 올라가는 직선일 때 이 운동은 무엇인가요?",
+   "options": [
+    "등속 운동이다",
+    "속력이 일정하게 증가하는 운동이다",
+    "속력이 감소하는 운동이다",
+    "정지 상태이다"
+   ],
+   "answer": 1,
+   "why": "기울기가 일정하면 속력이 일정하게 변합니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-03-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "물체에 힘을 작용하여 힘의 방향으로 움직이게 했을 때 힘이 한 것을 무엇이라고 하나요?",
+   "options": [
+    "전력",
+    "열",
+    "일",
+    "속력"
+   ],
+   "answer": 2,
+   "why": "일 = 힘 × 이동 거리입니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-03-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "일의 단위로 알맞은 것은 무엇인가요?",
+   "options": [
+    "J",
+    "N",
+    "W",
+    "Pa"
+   ],
+   "answer": 0,
+   "why": "일과 에너지의 단위는 J(줄)입니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-03-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "$10\\,\\mathrm{N}$의 힘으로 물체를 힘의 방향으로 $3\\,\\mathrm{m}$ 이동시켰을 때 한 일은 얼마인가요?",
+   "options": [
+    "13 J",
+    "3 J",
+    "30 J",
+    "300 J"
+   ],
+   "answer": 2,
+   "why": "일 = 10 × 3 = 30 J입니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-03-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "높은 곳에 있는 물체가 가지는 에너지를 무엇이라고 하나요? (○○ 에너지)",
+   "answers": [
+    "위치",
+    "위치 에너지",
+    "중력 위치 에너지"
+   ],
+   "why": "높이가 높을수록 위치 에너지가 큽니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-03-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "질량이 같은 물체의 속력이 2배가 되면 운동 에너지는 몇 배가 되나요?",
+   "options": [
+    "4배",
+    "2배",
+    "3배",
+    "8배"
+   ],
+   "answer": 0,
+   "why": "운동 에너지는 속력의 제곱에 비례합니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-03-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "같은 높이에서 질량이 2배인 물체의 위치 에너지는 어떻게 되나요?",
+   "options": [
+    "4배가 된다",
+    "변함없다",
+    "절반이 된다",
+    "2배가 된다"
+   ],
+   "answer": 3,
+   "why": "위치 에너지는 질량과 높이에 비례합니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-04-c1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "역학적 에너지는 무엇의 합인가요?",
+   "options": [
+    "열에너지와 빛에너지",
+    "위치 에너지와 운동 에너지",
+    "전기 에너지와 소리 에너지",
+    "화학 에너지와 핵 에너지"
+   ],
+   "answer": 1,
+   "why": "역학적 에너지는 위치 에너지와 운동 에너지의 합입니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-04-c2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "공을 위로 던졌을 때 올라가는 동안 위치 에너지는 어떻게 되나요?",
+   "options": [
+    "감소한다",
+    "증가한다",
+    "변함없다",
+    "0이 된다"
+   ],
+   "answer": 1,
+   "why": "높이가 증가하므로 위치 에너지가 증가합니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-04-b1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "마찰과 공기 저항이 없을 때 자유 낙하하는 물체의 역학적 에너지는 어떻게 되나요?",
+   "options": [
+    "0이 된다",
+    "계속 증가한다",
+    "계속 감소한다",
+    "일정하게 보존된다"
+   ],
+   "answer": 3,
+   "why": "위치 에너지가 줄어든 만큼 운동 에너지가 늘어납니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-04-b2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "롤러코스터가 가장 높은 곳에서 내려올 때 위치 에너지가 줄어드는 만큼 늘어나는 에너지는 무엇인가요? (○○ 에너지)",
+   "answers": [
+    "운동",
+    "운동 에너지"
+   ],
+   "why": "위치 에너지가 운동 에너지로 전환됩니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-04-a1",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "진자가 가장 낮은 점을 지날 때의 에너지로 알맞은 것은 무엇인가요? (마찰 없음)",
+   "options": [
+    "운동 에너지가 가장 크고 위치 에너지가 가장 작다",
+    "위치 에너지가 가장 크다",
+    "운동 에너지가 가장 작다",
+    "두 에너지가 모두 0이다"
+   ],
+   "answer": 0,
+   "why": "가장 낮은 점에서 속력이 최대입니다."
+  },
+  {
+   "id": "과학-중1-3-9과19-04-a2",
+   "subject": "과학",
+   "gradeBand": "중1-3",
+   "unit": "운동 그래프",
+   "standard": "9과19-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "실제로 굴러 내려오는 공이 처음 높이까지 다시 올라가지 못하는 까닭은 무엇인가요?",
+   "options": [
+    "중력이 사라지기 때문이다",
+    "에너지가 새로 생기기 때문이다",
+    "마찰 등으로 역학적 에너지의 일부가 열에너지로 바뀌기 때문이다",
+    "공의 질량이 늘어나기 때문이다"
+   ],
+   "answer": 2,
+   "why": "마찰이 있으면 역학적 에너지가 보존되지 않습니다."
+  }
+ ],
+ "skipped": []
+}
