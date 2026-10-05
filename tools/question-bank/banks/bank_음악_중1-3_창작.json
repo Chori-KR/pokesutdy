@@ -1,0 +1,459 @@
+{
+ "version": 1,
+ "meta": {
+  "curriculum": "2022 개정 교육과정",
+  "subject": "음악",
+  "school": "중",
+  "course": "음악",
+  "gradeBand": "중1-3",
+  "unit": "창작",
+  "createdAt": "2026-10-02"
+ },
+ "passages": [],
+ "questions": [
+  {
+   "id": "음악-중1-3-9음03-01-c1",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "음악을 만들기 위해 가장 먼저 떠올리는 것은 무엇인가요?",
+   "options": [
+    "관객의 수",
+    "악기의 가격",
+    "표현하고 싶은 생각이나 느낌",
+    "연주 시간표"
+   ],
+   "answer": 2,
+   "why": "음악적 아이디어가 출발점입니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-01-c2",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-01",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "음악을 만들 때 사용할 수 있는 매체는 무엇인가요?",
+   "options": [
+    "악기와 음악 앱",
+    "연필만",
+    "지우개",
+    "가방"
+   ],
+   "answer": 0,
+   "why": "악기와 디지털 도구로 음악을 만듭니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-01-b1",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "'비 오는 날'을 표현하는 음악을 만들 때 알맞은 선택은 무엇인가요?",
+   "options": [
+    "빠르고 시끄럽게만 한다",
+    "큰북만 계속 친다",
+    "소리를 내지 않는다",
+    "짧고 가벼운 소리로 빗방울을 표현한다"
+   ],
+   "answer": 3,
+   "why": "소재와 소리를 연결합니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-01-b2",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-01",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "소리를 직접 녹음하여 음악에 활용하는 것을 □□이라고 합니다. 알맞은 말을 쓰세요. (예: 녹음)",
+   "answers": [
+    "녹음"
+   ],
+   "why": "녹음한 소리로 음악을 만들 수 있습니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-01-a1",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "한 가지 아이디어를 다양한 방법으로 발전시키는 방법으로 알맞은 것은 무엇인가요?",
+   "options": [
+    "한 가지로만 한다",
+    "빠르기·셈여림·음색을 바꾸어 본다",
+    "계획 없이 한다",
+    "처음 것을 버린다"
+   ],
+   "answer": 1,
+   "why": "요소를 바꾸며 발전시킵니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-01-a2",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-01",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "창작 과정에서 자기 주도적으로 활동하는 모습은 무엇인가요?",
+   "options": [
+    "다른 사람이 완성하게 한다",
+    "스스로 목표와 계획을 세우고 수정하며 완성한다",
+    "계획 없이 한다",
+    "시작하지 않는다"
+   ],
+   "answer": 1,
+   "why": "주도적으로 활동합니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-02-c1",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "오선보에서 음의 길이가 가장 긴 음표는 무엇인가요?",
+   "options": [
+    "2분음표",
+    "4분음표",
+    "8분음표",
+    "온음표"
+   ],
+   "answer": 3,
+   "why": "온음표는 4박입니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-02-c2",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-02",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "세종 때 만들어진 우리나라 전통 악보는 무엇인가요?",
+   "options": [
+    "정간보",
+    "오선보",
+    "숫자보",
+    "계이름보"
+   ],
+   "answer": 0,
+   "why": "정간보는 칸을 나누어 음의 길이를 나타냅니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-02-b1",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "그림의 마디에서 비어 있는 박에 알맞은 음표는 무엇인가요? (4분의 4박자)",
+   "svg": "<svg viewBox=\"0 0 184 48\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"44\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"26\" y=\"33\" font-size=\"22\" text-anchor=\"middle\" fill=\"currentColor\">♩</text><rect x=\"48\" y=\"4\" width=\"44\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"70\" y=\"33\" font-size=\"22\" text-anchor=\"middle\" fill=\"currentColor\">♩</text><rect x=\"92\" y=\"4\" width=\"44\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"114\" y=\"33\" font-size=\"22\" text-anchor=\"middle\" fill=\"currentColor\">♩</text><rect x=\"136\" y=\"4\" width=\"44\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"158\" y=\"33\" font-size=\"22\" text-anchor=\"middle\" fill=\"currentColor\">㉠</text></svg>",
+   "options": [
+    "온음표 한 개",
+    "2분음표 한 개",
+    "4분음표 한 개",
+    "8분음표 한 개"
+   ],
+   "answer": 2,
+   "why": "한 마디는 4박이므로 나머지 한 박을 채웁니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-02-b2",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-02",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "'도 레 미 솔' 가락을 한 음씩 높여 '레 미 파 라'로 바꾸는 것을 □□□라고 합니다. (조○○)",
+   "answers": [
+    "조옮김",
+    "옮김"
+   ],
+   "why": "가락 전체를 높이거나 낮추는 것이 조옮김입니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-02-a1",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "주어진 조건 '리듬은 그대로, 가락만 높게 바꾸기'에 알맞은 변화는 무엇인가요?",
+   "options": [
+    "쉼표를 없앤다",
+    "음표 길이를 모두 바꾼다",
+    "박자를 바꾼다",
+    "음표의 길이는 그대로 두고 음의 높이만 바꾼다"
+   ],
+   "answer": 3,
+   "why": "리듬은 그대로 두고 가락만 바꿉니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-02-a2",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-02",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "정간보에서 한 칸이 나타내는 것은 무엇인가요?",
+   "options": [
+    "악기의 이름",
+    "일정한 길이의 박",
+    "음량",
+    "빠르기말"
+   ],
+   "answer": 1,
+   "why": "정간보는 칸의 수로 음의 길이를 나타냅니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-03-c1",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "한 곡이 'a - b' 두 부분으로 이루어진 형식은 무엇인가요?",
+   "options": [
+    "세도막 형식",
+    "한도막 형식",
+    "두도막 형식",
+    "론도 형식"
+   ],
+   "answer": 2,
+   "why": "서로 다른 두 가락이 이어지는 형식입니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-03-c2",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-03",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "간단한 음악을 만들 때 쓸 수 있는 음악 요소는 무엇인가요?",
+   "options": [
+    "리듬과 가락",
+    "맛과 향",
+    "색과 모양",
+    "무게와 길이"
+   ],
+   "answer": 0,
+   "why": "리듬과 가락이 기본 요소입니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-03-b1",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "도·미·솔 세 음을 동시에 연주해 만든 화음은 무엇인가요?",
+   "options": [
+    "버금딸림화음(Ⅳ)",
+    "딸림화음(Ⅴ)",
+    "으뜸화음(Ⅰ)",
+    "불협화음"
+   ],
+   "answer": 2,
+   "why": "도·미·솔은 다장조의 으뜸화음입니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-03-b2",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-03",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "한 곡이 'a - b - a'로 이루어진 형식을 □도막 형식이라고 합니다. □에 알맞은 한 글자를 쓰세요.",
+   "answers": [
+    "세"
+   ],
+   "why": "세도막 형식입니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-03-a1",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "주제가 계속 돌아오고 사이에 다른 가락이 끼어드는 'a - b - a - c - a' 형식은 무엇인가요?",
+   "options": [
+    "론도 형식",
+    "한도막 형식",
+    "두도막 형식",
+    "변주곡 형식"
+   ],
+   "answer": 0,
+   "why": "주제가 반복되는 론도 형식입니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-03-a2",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-03",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "같은 가락을 리듬이나 빠르기를 바꾸어 여러 번 변화시키는 형식은 무엇인가요?",
+   "options": [
+    "행진곡",
+    "돌림노래",
+    "두도막",
+    "변주곡"
+   ],
+   "answer": 3,
+   "why": "주제를 변형하는 변주곡입니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-04-c1",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "학교에서 수업 시작을 알리는 종소리는 어떤 역할을 하나요?",
+   "options": [
+    "영화 음악이다",
+    "시간을 알리는 신호이다",
+    "노래 가사이다",
+    "응원가이다"
+   ],
+   "answer": 1,
+   "why": "소리로 정보를 전달합니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-04-c2",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-04",
+   "level": "C",
+   "difficulty": "easy",
+   "type": "multiple",
+   "body": "광고에서 짧고 신나는 음악을 쓰는 이유는 무엇인가요?",
+   "options": [
+    "소리를 줄이려고",
+    "제품을 기억하기 쉽게 하려고",
+    "정보를 숨기려고",
+    "관객을 줄이려고"
+   ],
+   "answer": 1,
+   "why": "음악이 광고의 기억을 돕습니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-04-b1",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "multiple",
+   "body": "게임에서 승리했을 때 나오는 효과음의 역할은 무엇인가요?",
+   "options": [
+    "점수를 낮춘다",
+    "게임을 끝낸다",
+    "소리를 없앤다",
+    "성공했다는 느낌을 전달한다"
+   ],
+   "answer": 3,
+   "why": "효과음이 감정을 전달합니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-04-b2",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-04",
+   "level": "B",
+   "difficulty": "medium",
+   "type": "short",
+   "body": "내가 만든 음악을 다른 사람이 허락 없이 쓰지 못하도록 보호하는 권리를 □□□이라고 합니다. 알맞은 말을 쓰세요. (○○권)",
+   "answers": [
+    "저작권",
+    "저작"
+   ],
+   "why": "저작권입니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-04-a1",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "내가 만든 음악을 온라인에 올릴 때 책임 있는 행동은 무엇인가요?",
+   "options": [
+    "다른 사람의 곡을 쓰지 않고 출처와 이름을 표시한다",
+    "남의 곡을 그대로 올린다",
+    "출처를 숨긴다",
+    "허락 없이 판매한다"
+   ],
+   "answer": 0,
+   "why": "창작물에 책임감을 가집니다."
+  },
+  {
+   "id": "음악-중1-3-9음03-04-a2",
+   "subject": "음악",
+   "gradeBand": "중1-3",
+   "unit": "창작",
+   "standard": "9음03-04",
+   "level": "A",
+   "difficulty": "hard",
+   "type": "multiple",
+   "body": "교실 알림 음악을 만들 때 알맞은 방법은 무엇인가요?",
+   "options": [
+    "소리를 높게만 한다",
+    "아주 크고 길게 만든다",
+    "짧고 편안하게 만들어 모두가 듣기 좋게 한다",
+    "불쾌한 소리로 만든다"
+   ],
+   "answer": 2,
+   "why": "공동체를 배려하는 창작입니다."
+  }
+ ],
+ "skipped": []
+}
