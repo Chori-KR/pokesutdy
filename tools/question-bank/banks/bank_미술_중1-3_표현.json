@@ -280,16 +280,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림 ㉠과 ㉡의 질감을 비교한 설명으로 알맞은 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 156 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"150\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"43\" y1=\"3\" x2=\"43\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"153\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"153\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"23\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><text x=\"98\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">무늬</text><text x=\"23\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><text x=\"98\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">● ● ●</text><text x=\"23\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉡</text><text x=\"98\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">━ ━ ━</text></svg>",
+   "body": "그림에서 보이는 질감 무늬로 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 64 64\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"14\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"14\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"14\" cy=\"50\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"50\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"50\" r=\"4\" fill=\"currentColor\"/></svg>",
    "options": [
-    "둘 다 줄무늬이다",
-    "둘 다 점무늬이다",
-    "㉠은 점무늬로 규칙적이고 ㉡은 줄무늬로 선의 방향이 느껴진다",
-    "㉠은 줄무늬이고 ㉡은 점무늬이다"
+    "바둑무늬",
+    "줄무늬",
+    "점무늬",
+    "물결무늬"
    ],
    "answer": 2,
-   "why": "점무늬와 줄무늬를 구분합니다."
+   "why": "동그란 점이 규칙적으로 늘어선 점무늬입니다."
   },
   {
    "id": "미술-중1-3-9미02-03-b2",
