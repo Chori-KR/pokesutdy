@@ -99,15 +99,15 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "빈 상자와 책이 가득 든 상자를 같은 바닥에서 밀 때 힘의 크기를 비교한 것으로 알맞은 것은 무엇인가요?",
+   "body": "다음 중 힘이 작용하여 물체의 ‘움직임’이 아니라 ‘모양’이 변한 경우는 무엇인가요?",
    "options": [
-    "빈 상자를 밀 때 더 큰 힘이 든다",
-    "책이 가득 든 상자를 밀 때 더 큰 힘이 든다",
-    "두 경우 힘이 같다",
-    "힘이 들지 않는다"
+    "멈춰 있던 수레를 밀어 움직이게 한다",
+    "찰흙을 손으로 눌러 납작하게 만든다",
+    "굴러가는 공을 손으로 잡아 멈추게 한다",
+    "그네를 밀어 앞으로 나아가게 한다"
    ],
    "answer": 1,
-   "why": "무거운 물체를 밀수록 더 큰 힘이 필요합니다."
+   "why": "찰흙을 누르면 모양이 변합니다. 수레, 공, 그네는 힘을 받아 움직임(빠르기나 움직이는 방향)이 변한 경우입니다."
   },
   {
    "id": "과학-초3-4-4과01-01-a2",
@@ -172,16 +172,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림은 수평잡기 막대의 양쪽에 두 물체를 올려놓은 모습입니다. 더 무거운 물체는 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 250 118\" font-family=\"sans-serif\"><polygon points=\"125.0,82 109.0,110 141.0,110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"42.8\" y1=\"95.5\" x2=\"207.2\" y2=\"60.5\" stroke=\"currentColor\" stroke-width=\"5\"/><rect x=\"14.8\" y=\"63.5\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"42.8\" y=\"81.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수박</text><rect x=\"179.2\" y=\"28.5\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"207.2\" y=\"46.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">귤</text></svg>",
+   "body": "수박은 귤보다 무겁습니다. 수평잡기 막대의 양쪽에 수박과 귤을 올려놓았을 때의 모습으로 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 516 288\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><polygon points=\"125.0,82 109.0,110 141.0,110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"42.8\" y1=\"95.5\" x2=\"207.2\" y2=\"60.5\" stroke=\"currentColor\" stroke-width=\"5\"/><rect x=\"14.8\" y=\"63.5\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"42.8\" y=\"81.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">귤</text><rect x=\"179.2\" y=\"28.5\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"207.2\" y=\"46.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수박</text></g><text x=\"129\" y=\"136\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(262 0)\"><polygon points=\"125.0,82 109.0,110 141.0,110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"41\" y1=\"78\" x2=\"209\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"5\"/><rect x=\"13\" y=\"46\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"41\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수박</text><rect x=\"181\" y=\"46\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"209\" y=\"64\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">귤</text></g><text x=\"387\" y=\"136\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(4 146)\"><polygon points=\"125.0,82 109.0,110 141.0,110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"42.8\" y1=\"95.5\" x2=\"207.2\" y2=\"60.5\" stroke=\"currentColor\" stroke-width=\"5\"/><rect x=\"14.8\" y=\"63.5\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"42.8\" y=\"81.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수박</text><rect x=\"179.2\" y=\"28.5\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"207.2\" y=\"46.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">귤</text></g><text x=\"129\" y=\"282\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(262 146)\"><polygon points=\"125.0,82 109.0,110 141.0,110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"42.8\" y1=\"60.5\" x2=\"207.2\" y2=\"95.5\" stroke=\"currentColor\" stroke-width=\"5\"/><rect x=\"14.8\" y=\"28.5\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"42.8\" y=\"46.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수박</text><rect x=\"179.2\" y=\"63.5\" width=\"56\" height=\"26\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"207.2\" y=\"81.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">귤</text></g><text x=\"387\" y=\"282\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
    "options": [
-    "수박",
-    "귤",
-    "둘이 같다",
-    "알 수 없다"
+    "다",
+    "가",
+    "나",
+    "라"
    ],
    "answer": 0,
-   "why": "수평잡기에서 아래로 내려간 쪽의 물체가 더 무겁습니다."
+   "why": "수평잡기에서는 더 무거운 물체 쪽이 아래로 내려갑니다. 수박 쪽이 내려간 그림은 다입니다."
   },
   {
    "id": "과학-초3-4-4과01-02-b2",
@@ -381,11 +381,11 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "비스듬하게 기울어진 면을 이용해 물체를 낮은 곳에서 높은 곳으로 올릴 때 쓰는 도구를 무엇이라고 하나요? (두 글자)",
+   "body": "병따개나 장도리처럼 막대와 받침점을 이용해 작은 힘으로 물체를 움직이는 도구를 무엇이라고 하나요? (두 글자)",
    "answers": [
-    "빗면"
+    "지레"
    ],
-   "why": "기울어진 면을 이용한 도구를 빗면이라고 합니다."
+   "why": "받침점에 막대를 걸쳐 작은 힘으로 물체를 움직이는 도구를 지레라고 합니다."
   },
   {
    "id": "과학-초3-4-4과01-04-b1",
@@ -396,16 +396,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "시율이가 조사한 병따개에서 지레의 힘점은 무엇인가요?",
+   "body": "시율이가 조사한 병따개에서 병뚜껑에 힘이 작용하는 곳을 무엇이라고 하나요?",
    "passage": "p1",
    "options": [
-    "병뚜껑에 힘이 작용하는 곳",
-    "손으로 힘을 주는 곳",
+    "힘점",
+    "작용점",
     "받침점",
-    "병의 아랫부분"
+    "빗면"
    ],
    "answer": 1,
-   "why": "글에서 지레에서 힘을 주는 곳을 힘점이라고 했습니다."
+   "why": "글에서 지레에서 물체에 힘이 작용하는 곳을 작용점이라고 했습니다. 손으로 힘을 주는 곳은 힘점입니다."
   },
   {
    "id": "과학-초3-4-4과01-04-b2",
@@ -416,16 +416,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림은 같은 높이로 물체를 올리는 두 빗면입니다. 물체를 올리는 데 힘이 더 적게 드는 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 206 296\" font-family=\"sans-serif\"><g transform=\"translate(49 0)\"><polygon points=\"14,100 94,100 94,30\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"76\" y=\"16\" width=\"18\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"103\" y=\"140\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가(짧고 가파름)</text><g transform=\"translate(4 150)\"><polygon points=\"14,100 184,100 184,30\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"166\" y=\"16\" width=\"18\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"103\" y=\"290\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나(길고 완만함)</text></svg>",
+   "body": "그림은 같은 높이로 물체를 올리는 네 빗면입니다. 물체를 올리는 데 힘이 가장 적게 드는 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 404 296\" font-family=\"sans-serif\"><g transform=\"translate(74 0)\"><polygon points=\"14,100 134,100 134,40\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"116\" y=\"26\" width=\"18\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"148\" y=\"140\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(232 0)\"><polygon points=\"14,100 84,100 84,40\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"66\" y=\"26\" width=\"18\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"281\" y=\"140\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(4 150)\"><polygon points=\"14,100 194,100 194,40\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"176\" y=\"26\" width=\"18\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"108\" y=\"290\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(222 150)\"><polygon points=\"14,100 164,100 164,40\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"146\" y=\"26\" width=\"18\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"311\" y=\"290\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
    "options": [
-    "알 수 없다",
+    "라",
     "가",
-    "둘이 같다",
-    "나"
+    "나",
+    "다"
    ],
    "answer": 3,
-   "why": "같은 높이라면 빗면이 길고 완만할수록 힘이 적게 듭니다."
+   "why": "같은 높이라면 빗면이 길고 완만할수록 힘이 적게 듭니다. 가장 길고 완만한 빗면은 다입니다."
   },
   {
    "id": "과학-초3-4-4과01-04-a1",
