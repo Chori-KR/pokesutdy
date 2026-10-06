@@ -31,6 +31,8 @@ def day_night4(W=270):
         px, py = cx + (r - 9) * math.cos(a), cy - (r - 9) * math.sin(a)
         out.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="5" fill="{C}"/>')
         tx, ty = cx + (r + 16) * math.cos(a), cy - (r + 16) * math.sin(a) + 5
+        if deg == 180:   # 왼쪽은 태양 빛 화살표와 겹치지 않게 점 안쪽 위에 쓴다
+            tx, ty = px + 18, py - 8
         out.append(text(tx, ty, lab, 15, weight="bold"))
     out.append(line(cx, cy - r - 16, cx, cy + r + 16, 2, dash="5 4"))
     return svg(W, 170, "".join(out))
