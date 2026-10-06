@@ -9,6 +9,28 @@ from kit12 import seg_bars
 from kit34 import hold, ruler_mm, beaker, dial
 
 
+def dial_short(value, full, r=84, labels_every=200, minor=100):
+    """dial과 같지만 바늘을 짧게 해서 눈금 숫자를 가리지 않게 한다"""
+    import math
+    from kit34 import dot
+    cx = cy = r + 16
+    out = [f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{C}" stroke-width="3"/>']
+    k = 0
+    while k < full:
+        a = math.radians(k / full * 360)
+        big = k % labels_every == 0
+        r1 = r - (11 if big else 6)
+        out.append(line(cx + r1 * math.sin(a), cy - r1 * math.cos(a), cx + (r - 1) * math.sin(a), cy - (r - 1) * math.cos(a), 2.5 if big else 2))
+        if big:
+            rr = r - 25
+            out.append(text(cx + rr * math.sin(a), cy - rr * math.cos(a) + 4, k, 12, weight="bold"))
+        k += minor
+    a = math.radians(value / full * 360)
+    out.append(line(cx, cy, cx + (r - 40) * math.sin(a), cy - (r - 40) * math.cos(a), 3.5, color=ORANGE) + dot(cx, cy, 5))
+    out.append(text(cx, cy + 22, "g", 13, weight="bold"))
+    return svg(2 * r + 32, 2 * r + 32, "".join(out))
+
+
 def bars(*parts, total=None):
     """parts: (너비, 글자, 'B'|'O'|'Q')"""
     return seg_bars(list(parts), total=total, u=1.0)
@@ -271,7 +293,7 @@ b.q(S, "B", "3 kg 400 g은 몇 g인가요?",
     options=["3400 g", "340 g", "3040 g", "34000 g"], answer="3400 g",
     why="3 kg은 3000 g이므로 3 kg 400 g은 3000+400=3400(g)입니다.")
 b.q(S, "B", "저울의 바늘이 가리키는 무게를 ‘몇 kg 몇 g’으로 나타내면 얼마인가요?",
-    svg=dial(1600, 2000, r=84, labels_every=200, minor=100),
+    svg=dial_short(1600, 2000),
     options=["1 kg 600 g", "1 kg 60 g", "16 kg", "600 g"], answer="1 kg 600 g",
     why="바늘이 1600 g을 가리키고, 1600 g은 1000 g과 600 g이므로 1 kg 600 g입니다.")
 b.q(S, "B", "7080 g은 몇 kg 몇 g인가요?",

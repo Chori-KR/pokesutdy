@@ -27,15 +27,15 @@
    "level": "C",
    "difficulty": "easy",
    "type": "multiple",
-   "body": "다음 중 생태계의 비생물 요소에 해당하는 것은 무엇인가요?",
+   "body": "다음 중 생태계를 이루는 요소 가운데 살아 있는 생물 요소는 무엇인가요?",
    "options": [
-    "소나무",
-    "토끼",
+    "공기",
     "햇빛",
-    "곰팡이"
+    "다람쥐",
+    "흙"
    ],
    "answer": 2,
-   "why": "햇빛, 물, 공기, 흙은 비생물 요소이고, 토끼, 소나무, 곰팡이는 생물 요소입니다."
+   "why": "다람쥐는 살아 있는 생물 요소이고, 햇빛, 공기, 흙은 비생물 요소입니다."
   },
   {
    "id": "과학-초3-4-4과14-01-c2",
@@ -82,8 +82,8 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "표를 보고 생태계의 비생물 요소만 바르게 고른 것을 고르세요.",
-   "svg": "<svg viewBox=\"0 0 256 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"250\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"253\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"253\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"253\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">구성 요소</text><text x=\"168\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">예</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"168\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">소나무, 토끼</text><text x=\"43\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"168\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">햇빛, 물</text><text x=\"43\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><text x=\"168\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">곰팡이, 세균</text></svg>",
+   "body": "표는 생물을 양분을 얻는 방법에 따라 세 무리로 나눈 것입니다. 다른 생물을 먹어서 양분을 얻는 생물 무리를 고르세요.",
+   "svg": "<svg viewBox=\"0 0 256 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"250\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"253\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"253\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"253\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">무리</text><text x=\"168\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">생물</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"168\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">소나무, 벼</text><text x=\"43\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"168\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">토끼, 메뚜기</text><text x=\"43\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><text x=\"168\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">곰팡이, 세균</text></svg>",
    "options": [
     "가와 다",
     "가",
@@ -91,7 +91,7 @@
     "나"
    ],
    "answer": 3,
-   "why": "햇빛과 물은 살아 있지 않은 비생물 요소이고, 가와 다는 생물 요소입니다."
+   "why": "토끼와 메뚜기는 다른 생물을 먹어 양분을 얻습니다. 가는 햇빛으로 스스로 양분을 만들고, 다는 죽은 생물이나 배설물을 분해해 양분을 얻습니다."
   },
   {
    "id": "과학-초3-4-4과14-01-a1",
@@ -155,7 +155,7 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "벼 → 메뚜기 → 개구리 → 뱀처럼 먹고 먹히는 관계가 사슬처럼 이어진 것을 무엇이라고 하나요? (네 글자)",
+   "body": "풀 → 토끼 → 여우처럼 먹고 먹히는 관계가 사슬처럼 이어진 것을 무엇이라고 하나요? (네 글자)",
    "answers": [
     "먹이사슬",
     "먹이 사슬"

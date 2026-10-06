@@ -297,13 +297,13 @@
    "body": "표를 보고 쓰임새에 알맞은 물질을 고르세요.",
    "svg": "<svg viewBox=\"0 0 316 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"310\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"313\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"313\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"313\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">물체</text><text x=\"133\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">필요한 성질</text><text x=\"253\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">알맞은 물질</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">장화</text><text x=\"133\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물이 스며들지 않음</text><text x=\"253\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">고무</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">창문</text><text x=\"133\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">투명함</text><text x=\"253\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">유리</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">철길</text><text x=\"133\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">아주 단단함</text><text x=\"253\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">철</text></svg>",
    "options": [
-    "창문에는 투명한 유리가 알맞다",
+    "철길에는 아주 단단한 철이 알맞다",
     "창문에는 철이 알맞다",
     "장화에는 유리가 알맞다",
     "철길에는 고무가 알맞다"
    ],
    "answer": 0,
-   "why": "표에서 투명해야 하는 창문에는 유리가 알맞습니다."
+   "why": "표에서 아주 단단해야 하는 철길에는 철이 알맞습니다. 창문에는 유리, 장화에는 고무가 알맞습니다."
   },
   {
    "id": "과학-초3-4-4과05-03-a1",
