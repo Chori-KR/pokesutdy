@@ -78,7 +78,9 @@
    "body": "한 발로 서서 균형을 오래 유지하는 능력과 관련된 체력 요소는 무엇인가요?",
    "answers": [
     "평형성",
-    "균형"
+    "균형",
+    "균형성",
+    "평형"
    ],
    "why": "몸의 균형을 유지하는 능력은 평형성입니다."
   },
@@ -165,9 +167,9 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "표는 한 학생의 체력 측정 결과입니다. 가장 부족한 체력 요소는 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 226 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"220\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"223\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"223\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"223\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">체력 요소</text><text x=\"163\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">등급</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">심폐지구력</text><text x=\"163\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2등급</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">유연성</text><text x=\"163\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4등급</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">근지구력</text><text x=\"163\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1등급</text></svg>",
+   "svg": "<svg viewBox=\"0 0 226 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"220\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"223\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"223\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"223\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"223\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">체력 요소</text><text x=\"163\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">등급</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">심폐지구력</text><text x=\"163\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2등급</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">유연성</text><text x=\"163\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4등급</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">근지구력</text><text x=\"163\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1등급</text><text x=\"53\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">순발력</text><text x=\"163\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3등급</text></svg>",
    "options": [
-    "모두 같다",
+    "순발력",
     "심폐지구력",
     "근지구력",
     "유연성"
@@ -488,7 +490,9 @@
    "answers": [
     "운동 기록",
     "운동기록",
-    "기록"
+    "기록",
+    "운동 일지",
+    "운동일지"
    ],
    "why": "운동 기록을 하면 꾸준히 운동하는 데 도움이 됩니다."
   },
@@ -597,10 +601,10 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "위험한 상황이 닥쳤을 때 가장 먼저 해야 할 일은 무엇인가요? (두 글자)",
+   "body": "위험한 상황이 닥쳤을 때 당황하지 않고 마음을 가라앉혀 차분하게 행동하는 것을 무엇이라고 하나요? (두 글자)",
    "answers": [
     "침착",
-    "진정",
+    "침착함",
     "침착하기"
    ],
    "why": "위험한 상황에서는 먼저 침착하게 행동해야 합니다."

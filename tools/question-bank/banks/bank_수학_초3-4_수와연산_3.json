@@ -98,7 +98,7 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "주스가 $\\frac{5}{6}$ L 있었습니다. 그중 $\\frac{2}{6}$ L를 마셨습니다. 남은 주스는 몇 L인가요?",
-   "svg": "<svg viewBox=\"0 0 88 88\" font-family=\"sans-serif\"><circle cx=\"44\" cy=\"44\" r=\"38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M44,44 L44,6 A38,38 0 0 1 76.9,25 Z\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44\" y1=\"44\" x2=\"44\" y2=\"6\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M44,44 L76.9,25 A38,38 0 0 1 76.9,63 Z\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44\" y1=\"44\" x2=\"76.9\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M44,44 L76.9,63 A38,38 0 0 1 44,82 Z\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44\" y1=\"44\" x2=\"76.9\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"44\" y1=\"44\" x2=\"44\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"44\" y1=\"44\" x2=\"11.1\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"44\" y1=\"44\" x2=\"11.1\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+   "svg": "<svg viewBox=\"0 0 88 88\" font-family=\"sans-serif\"><circle cx=\"44\" cy=\"44\" r=\"38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M44,44 L44,6 A38,38 0 0 1 76.9,25 Z\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44\" y1=\"44\" x2=\"44\" y2=\"6\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M44,44 L76.9,25 A38,38 0 0 1 76.9,63 Z\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44\" y1=\"44\" x2=\"76.9\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M44,44 L76.9,63 A38,38 0 0 1 44,82 Z\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44\" y1=\"44\" x2=\"76.9\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M44,44 L44,82 A38,38 0 0 1 11.1,63 Z\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44\" y1=\"44\" x2=\"44\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M44,44 L11.1,63 A38,38 0 0 1 11.1,25 Z\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44\" y1=\"44\" x2=\"11.1\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"44\" y1=\"44\" x2=\"11.1\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
    "options": [
     "$\\frac{7}{6}$ L",
     "$\\frac{3}{6}$ L",
@@ -106,7 +106,7 @@
     "$\\frac{2}{6}$ L"
    ],
    "answer": 1,
-   "why": "5/6-2/6=3/6(L)입니다."
+   "why": "처음 주스는 그림처럼 6칸 중 5칸이고, 2칸을 마시면 3칸이 남으므로 5/6-2/6=3/6(L)입니다."
   },
   {
    "id": "수학-초3-4-4수01-15-b3",
