@@ -29,7 +29,7 @@ def phone():
     o = [f'<rect x="40" y="6" width="150" height="190" rx="18" fill="none" {ST}/>',
          f'<rect x="54" y="26" width="122" height="146" rx="6" fill="none" stroke="{C}" stroke-width="2"/>',
          f'<rect x="60" y="36" width="110" height="56" rx="10" fill="{BLUE}" fill-opacity="0.3" {ST}/>',
-         text(115, 58, "내일 소풍이에요.", 13), text(115, 78, "도시락을 챙겨요!", 13),
+         text(115, 58, "내일 소풍이에요.", 12), text(115, 78, "도시락을 챙겨요!", 12),
          f'<rect x="60" y="104" width="80" height="34" rx="10" fill="{ORANGE}" fill-opacity="0.35" {ST}/>',
          text(100, 126, "알겠어요!", 13),
          f'<circle cx="115" cy="186" r="5" fill="none" stroke="{C}" stroke-width="2"/>']

@@ -20,20 +20,20 @@ PB = b.passage("p2", "Making a New Friend",
 PC = b.passage("p3", "Classroom Rules",
                "Rule 1: Raise your hand. Rule 2: Listen to your teacher. Rule 3: Don't run in the classroom. Rule 4: Be quiet in the library. Rule 5: Clean up your desk. Follow the rules and have a good day at school!", "직접 지음")
 PD = b.passage("p4", "My Diary",
-               "Dear Diary, I am very (①) today because I did not sleep well. At lunch, I am (②) and I want to eat pizza. But my friend gave me a gold star, so I am (③) now. It was a long day, but I will sleep well tonight. Good night!", "직접 지음")
+               "Dear Diary, I am very (①) today because I did not sleep well. At lunch, I was (②) and I wanted to eat pizza. But my teacher gave me a gold star, so I am (③) now. It was a long day, but I will sleep well tonight. Good night!", "직접 지음")
 PE = b.passage("p5", "Our Animal Poster",
                "Our group is making a poster about animals. We do not know the English word for ‘giraffe’, so we draw a picture of it. We use a tablet to find photos. We write short sentences like ‘It is tall.’ Then we show our poster and act like a giraffe in front of the class.", "직접 지음")
 PF = b.passage("p6", "Borrowing a Pencil",
-               "Tom: Excuse me, Ann. Can I borrow your pencil? Ann: Sure. Here you are. Tom: Thank you. Ann: You're welcome. Tom: Oh, sorry! I dropped it. Ann: It's OK. Tom: Thanks for waiting for me. Ann: No problem!", "직접 지음")
+               "Tom: Excuse me, Ann. Can I borrow your pencil? Ann: Sure. Here you are. Tom: Thank you. Ann: You're welcome. Tom: Oh, sorry! I dropped it. Ann: It's OK. Tom: Thank you for being so kind. Ann: No problem!", "직접 지음")
 
 # ───────── 4영02-01 강세·리듬·억양에 맞게 따라 말하기 ─────────
 S = "4영02-01"
 b.q(S, "C", "선생님이 ‘Hello!’ 하고 인사해요. 따라 말하는 방법으로 가장 알맞은 것은 무엇인가요?",
     options=["선생님의 소리를 잘 듣고 같은 억양으로 또박또박 말한다", "아주 작은 소리로 다른 말을 한다", "말하지 않고 웃기만 한다", "빠르게 아무 소리나 낸다"], answer="선생님의 소리를 잘 듣고 같은 억양으로 또박또박 말한다",
     why="듣고 같은 강세와 억양으로 따라 말하는 것이 알맞습니다.")
-b.q(S, "C", "apple을 따라 말할 때 강하게 읽는 부분은 첫 번째와 두 번째 중 몇 번째인가요? (숫자로 쓰세요)",
-    answers=["1", "첫", "첫 번째", "첫번째", "1번째"],
-    why="apple은 첫 번째 부분 ap을 강하게 읽습니다.")
+b.q(S, "C", "elephant를 el-e-phant의 세 부분으로 나누어 따라 말할 때 강하게 읽는 부분은 몇 번째인가요? (숫자로 쓰세요)",
+    answers=["1", "첫", "첫 번째", "첫번째", "1번째", "하나"],
+    why="elephant는 첫 번째 부분 el을 강하게 읽습니다(EL-e-phant).")
 b.q(S, "B", "I like apples. 를 자연스럽게 말할 때 가장 강하게 읽는 낱말 두 개는 무엇인가요?",
     options=["like, apples", "I, like", "I, apples", "I, like, apples 모두 똑같이"], answer="like, apples",
     why="의미를 전하는 낱말(like, apples)을 강하게 읽고 I는 약하게 읽습니다.")
@@ -146,7 +146,7 @@ b.q(S, "C", "Classroom Rules에서 ‘Raise your hand.’의 뜻으로 알맞은
 b.q(S, "C", "친구에게 ‘앉으세요.’라고 말하려고 합니다. 빈칸에 알맞은 낱말을 쓰세요: Sit ____.",
     answers=["down", "Down"],
     why="Sit down.은 ‘앉으세요.’입니다.")
-b.q(S, "B", "도서관에서 지켜야 하는 말은 무엇인가요?",
+b.q(S, "B", "도서관에서 지켜야 할 규칙으로 알맞은 것은 무엇인가요?",
     options=["Be quiet.", "Run fast.", "Shout loud.", "Play ball."], answer="Be quiet.", passage=PC,
     why="Rule 4에서 도서관에서는 Be quiet.라고 했습니다.")
 b.q(S, "B", "친구에게 문을 열어 달라고 하는 지시 문장은 무엇인가요?",
@@ -161,7 +161,7 @@ b.q(S, "A", "친구에게 ‘이야기하지 마세요.’라고 지시하는 �
 
 # ───────── 4영02-07 감정 표현하기 ─────────
 S = "4영02-07"
-b.q(S, "C", "My Diary에서 친구가 gold star를 주어서 기분이 좋아진 감정 ③에 알맞은 낱말은 무엇인가요?",
+b.q(S, "C", "My Diary에서 선생님이 gold star를 주어서 기분이 좋아진 감정 ③에 알맞은 낱말은 무엇인가요?",
     options=["happy", "sad", "angry", "tired"], answer="happy", passage=PD,
     why="gold star를 받아서 기분이 좋으므로 happy입니다.")
 b.q(S, "C", "그림 속 얼굴의 감정을 나타내는 낱말을 쓰세요: I am ____.",
@@ -217,7 +217,7 @@ b.q(S, "B", "모둠이 사진을 찾기 위해 사용한 매체는 무엇인가�
     options=["tablet", "radio", "map", "letter"], answer="tablet", passage=PE,
     why="We use a tablet to find photos.라고 했습니다.")
 b.q(S, "B", "포스터에서 글 말고 의미를 전달하는 데 쓸 수 있는 것을 영어 한 단어로 쓰세요. (그림)",
-    answers=["picture", "Picture", "pictures", "photo", "photos"],
+    answers=["picture", "Picture", "pictures", "Pictures", "photo", "Photo", "photos", "drawing", "drawings"],
     why="그림(picture)이나 사진(photo)으로도 의미를 전달할 수 있습니다.")
 b.q(S, "A", "발표를 더 재미있고 창의적으로 만드는 방법으로 글에 나온 것은 무엇인가요?",
     options=["기린 흉내를 내며 포스터를 보여 준다", "작은 소리로 읽기만 한다", "아무 준비 없이 발표한다", "친구의 포스터를 가져온다"], answer="기린 흉내를 내며 포스터를 보여 준다", passage=PE,
@@ -229,12 +229,12 @@ b.q(S, "A", "좋아하는 동물을 소개하는 카드를 창의적으로 만�
 # ───────── 4영02-10 대화 예절 ─────────
 S = "4영02-10"
 b.q(S, "C", "Thank you. 에 대한 대답으로 알맞은 말을 쓰세요.",
-    answers=["You're welcome", "You're welcome.", "you're welcome", "You are welcome", "You are welcome."],
+    answers=["You're welcome", "You're welcome.", "you're welcome", "you're welcome.", "You’re welcome", "You’re welcome.", "You are welcome", "You are welcome.", "you are welcome"],
     why="Thank you.에는 You're welcome.이라고 답합니다.")
 b.q(S, "C", "Borrowing a Pencil에서 Ann의 연필을 빌려 달라고 하기 전에 Tom이 한 말은 무엇인가요?",
     options=["Excuse me.", "Good night.", "Goodbye.", "Happy birthday."], answer="Excuse me.", passage=PF,
     why="Tom은 Excuse me, Ann.이라고 먼저 말했습니다.")
-b.q(S, "B", "Tom이 Ann에게 연필을 빌려 받은 뒤에 해야 하는 말은 무엇인가요?",
+b.q(S, "B", "Tom이 Ann에게 연필을 빌린 뒤에 해야 하는 말은 무엇인가요?",
     options=["Thank you.", "Sorry.", "Goodbye.", "Excuse me."], answer="Thank you.", passage=PF,
     why="받은 뒤 고마움을 표현하는 말은 Thank you.입니다.")
 b.q(S, "B", "친구가 이야기할 때 올바른 태도는 무엇인가요?",

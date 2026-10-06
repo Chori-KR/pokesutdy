@@ -41,12 +41,12 @@ PF = b.passage("p6", "Making a Poster",
 
 # ───────── 6영02-01 강세·리듬·억양에 맞게 말하기 ─────────
 S = "6영02-01"
-b.q(S, "C", "Thank you. 를 자연스럽게 말할 때 더 세게 읽는 낱말은 무엇인가요?",
-    options=["Thank", "you", "둘 다 똑같이", "알 수 없다"], answer="Thank",
-    why="Thank you.는 Thank를 더 세게 읽습니다.")
-b.q(S, "C", "hello를 말할 때 더 세게 읽는 음절은 몇 번째인가요? (숫자로 쓰세요)",
-    answers=["2", "2번째", "두 번째", "두번째"],
-    why="hello는 he-LLO처럼 두 번째 음절을 세게 읽습니다.")
+b.q(S, "C", "다음 중 첫 번째 음절을 가장 세게 읽는 낱말은 무엇인가요?",
+    options=["tiger", "guitar", "banana", "balloon"], answer="tiger",
+    why="tiger는 TI-ger로 첫 음절을 세게 읽고, guitar(gui-TAR), banana(ba-NA-na), balloon(bal-LOON)은 두 번째 음절을 세게 읽습니다.")
+b.q(S, "C", "today(to-day)를 말할 때 더 세게 읽는 음절은 몇 번째인가요? (숫자로 쓰세요)",
+    answers=["2", "2번째", "두 번째", "두번째", "둘"],
+    why="today는 to-DAY처럼 두 번째 음절을 세게 읽습니다.")
 b.q(S, "B", "How are you? 를 말할 때 끝억양으로 알맞은 것은 무엇인가요?",
     options=["내려 읽는다(↘)", "올려 읽는다(↗)", "평평하게 읽는다", "억양이 없다"], answer="내려 읽는다(↘)",
     why="How, What 같은 의문사 의문문은 보통 끝을 내려 읽습니다.")
@@ -69,17 +69,17 @@ b.q(S, "C", "그림에 알맞은 낱말은 무엇인가요?",
     svg=icons_row([("heart", 1)]), options=["heart", "house", "book", "ball"], answer="heart",
     why="하트 그림이므로 heart입니다.")
 b.q(S, "B", "그림을 보고 How many apples? 에 알맞게 영어로 답하세요. (예: Two apples.)",
-    svg=icons_row([("apple", 3)]), answers=["Three apples.", "Three apples", "three apples", "3 apples"],
+    svg=icons_row([("apple", 3)]), answers=["Three apples.", "Three apples", "three apples", "three apples.", "3 apples", "3 apples."],
     why="사과가 세 개이므로 Three apples.입니다.")
 b.q(S, "B", "그림을 보고 빈칸에 알맞은 낱말을 쓰세요: It is a ____.",
-    svg=icons_row([("tree", 1)]), answers=["tree"],
+    svg=icons_row([("tree", 1)]), answers=["tree", "Tree"],
     why="나무 그림이므로 tree입니다.")
 b.q(S, "A", "그림과 맞는 문장은 무엇인가요?",
     svg=icons_row([("fish", 2), ("ball", 1)]),
     options=["There are two fish and one ball.", "There is one fish and two balls.", "There are three fish.", "There are two balls and one fish."], answer="There are two fish and one ball.",
     why="그림에는 물고기가 두 마리, 공이 한 개 있습니다.")
 b.q(S, "A", "그림을 보고 빈칸에 알맞은 낱말을 쓰세요: It is ____ today.",
-    svg=weather("rainy"), answers=["rainy", "raining"],
+    svg=weather("rainy"), answers=["rainy", "Rainy", "raining"],
     why="비 오는 날씨 그림이므로 rainy입니다.")
 
 # ───────── 6영02-03 알파벳 대소문자와 문장 부호 ─────────
@@ -159,7 +159,7 @@ b.q(S, "B", "‘My Diary’의 빈칸 ①에 알맞은 낱말은 무엇인가요
     options=["good", "goods", "well", "gooder"], answer="good", passage=PC,
     why="day(명사)를 꾸미는 형용사는 good입니다.")
 b.q(S, "B", "여름에 제주도에 갔던 경험을 말하는 문장을 완성하세요: I ____ to Jeju last summer.",
-    answers=["went"],
+    answers=["went", "Went"],
     why="last summer는 지난 일이므로 과거형 went를 씁니다.")
 b.q(S, "A", "‘My Diary’의 빈칸 ③에 알맞은 낱말은 무엇인가요?",
     options=["will", "was", "did", "went"], answer="will", passage=PC,
@@ -195,7 +195,7 @@ b.q(S, "C", "예시문을 참고하여 빈칸에 알맞은 낱말을 쓰세요: 
     answers=["you"], passage=PE,
     why="감사를 전하는 표현은 Thank you for ~입니다.")
 b.q(S, "C", "생일 카드에 쓰는 인사말을 영어로 쓰세요. (두 낱말, 느낌표 포함)",
-    answers=["Happy birthday!", "Happy birthday", "happy birthday"],
+    answers=["Happy birthday!", "Happy Birthday!", "Happy birthday", "Happy Birthday", "happy birthday", "happy birthday!"],
     why="생일 카드의 인사말은 Happy birthday!입니다.")
 b.q(S, "B", "예시문의 형식에 맞게 쓴 글은 무엇인가요? (친구 Tom에게 책 선물을 받고 감사하는 글)",
     options=["Dear Tom, Thank you for the book. It is fun. Love, Jina", "Thank Tom book fun Jina Love Dear.", "Dear Jina, Thank you for the book. Love, Tom", "Dear Tom, I am sorry. Good night."], answer="Dear Tom, Thank you for the book. It is fun. Love, Jina", passage=PE,
@@ -237,7 +237,7 @@ b.q(S, "C", "Let’s do it together! 의 뜻으로 알맞은 것은 무엇인가
     options=["함께 하자!", "혼자 해!", "그만하자!", "나는 싫어!"], answer="함께 하자!",
     why="Let’s ~는 ‘~하자’라는 권유의 표현입니다.")
 b.q(S, "C", "친구가 도와주었을 때 하는 말을 영어로 쓰세요. (고맙다는 말, 두 낱말)",
-    answers=["Thank you", "thank you", "Thanks", "Thank you.", "thanks"],
+    answers=["Thank you", "thank you", "Thank you.", "Thank you!", "thank you.", "Thanks", "thanks"],
     why="도움을 받은 뒤에는 Thank you.라고 말합니다.")
 b.q(S, "B", "Can I join you? 에 알맞은 대답은 무엇인가요?",
     options=["Sure! Come on.", "No, I am ten.", "It is red.", "I like soccer."], answer="Sure! Come on.",

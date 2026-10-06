@@ -10,6 +10,21 @@ from kit34 import hold
 from kit12 import clock
 from kit_en import letters, syllables, weather, face
 
+def mini_clock(h, r=44):
+    """작은 시계(정각): 테두리, 숫자 12개, 시곗바늘(굵게), 분침(12를 가리킴)"""
+    import math
+    cx = cy = r + 6
+    out = [f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{C}" stroke-width="3"/>']
+    for k in range(1, 13):
+        a = math.radians(k * 30)
+        out.append(text(round(cx + r * 0.76 * math.sin(a), 1), round(cy - r * 0.76 * math.cos(a) + 5, 1), k, 12, weight="bold"))
+    ha = math.radians((h % 12) * 30)
+    out.append(line(cx, cy, round(cx + r * 0.42 * math.sin(ha), 1), round(cy - r * 0.42 * math.cos(ha), 1), 6))
+    out.append(line(cx, cy, cx, round(cy - r * 0.63, 1), 3.5, color=BLUE))
+    out.append(f'<circle cx="{cx}" cy="{cy}" r="4" fill="{C}"/>')
+    return svg(2 * r + 12, 2 * r + 12, "".join(out))
+
+
 bank = Bank("영어", "초", "영어", "초3-4", "이해", "bank_영어_초3-4_이해.json")
 b = KoBank(bank)
 
@@ -85,10 +100,10 @@ b.q(S, "A", "요일 이름을 바르게 쓴 것은 무엇인가요?",
 
 # ───────── 4영01-03 강세·리듬·억양 ─────────
 S = "4영01-03"
-b.q(S, "C", "apple은 첫 번째 부분을 강하게 읽습니다. 그림에서 강하게 읽는 부분은 어느 쪽인가요?",
-    svg=syllables(["ap", "ple"], stress=0),
-    options=["ap", "ple", "둘 다", "알 수 없다"], answer="ap",
-    why="apple은 ap 부분을 강하게 읽습니다.")
+b.q(S, "C", "그림은 watermelon을 네 부분으로 나누고, 강하게 읽는 부분을 굵은 글씨와 주황 테두리로 표시한 것입니다. 강하게 읽는 부분은 어느 것인가요?",
+    svg=syllables(["wa", "ter", "mel", "on"], stress=0),
+    options=["wa", "ter", "mel", "on"], answer="wa",
+    why="watermelon은 첫 부분 wa를 강하게 읽습니다(WA-ter-mel-on).")
 b.q(S, "C", "banana는 ba-NA-na로 읽습니다. 강하게 읽는 부분은 몇 번째 부분인가요? (숫자로 쓰세요)",
     answers=["2", "둘", "두 번째", "두번째", "2번째"],
     why="banana는 두 번째 부분 NA를 강하게 읽습니다.")
@@ -162,8 +177,8 @@ b.q(S, "C", "파티는 무슨 요일인가요? 영어로 쓰세요.",
     answers=["Saturday", "saturday"], passage=P4,
     why="My birthday party is this Saturday.라고 했습니다.")
 b.q(S, "B", "파티가 시작하는 시각을 나타낸 시계는 무엇인가요?",
-    svg=hold([(clock(2, 0, r=44), "가"), (clock(4, 0, r=44), "나")], gap=8, cols=2),
-    options=["가", "나", "둘 다", "모두 아니다"], answer="가", passage=P4,
+    svg=hold([(mini_clock(2), "가"), (mini_clock(4), "나"), (mini_clock(3), "다"), (mini_clock(5), "라")], gap=8, cols=2),
+    options=["가", "나", "다", "라"], answer="가", passage=P4,
     why="Please come at two o'clock.이므로 2시를 나타낸 가입니다.")
 b.q(S, "A", "Sam이 Jina에게 부탁한 것은 무엇인가요?",
     options=["파티에 올 수 있는지 전화로 알려 달라는 것", "피자를 가져오라는 것", "선물을 사 오라는 것", "집에서 기다리라는 것"], answer="파티에 올 수 있는지 전화로 알려 달라는 것", passage=P4,
@@ -171,13 +186,13 @@ b.q(S, "A", "Sam이 Jina에게 부탁한 것은 무엇인가요?",
 
 # ───────── 4영01-07 듣기·읽기 전략 ─────────
 S = "4영01-07"
-b.q(S, "C", "A Rainy Day 글의 내용을 가장 잘 나타내는 제목은 무엇인가요? (제목을 보면 글의 내용을 짐작할 수 있습니다)",
+b.q(S, "C", "이 글의 내용을 가장 잘 나타내는 제목은 무엇인가요?",
     options=["A Rainy Day", "My Dog", "A Birthday Party", "Lunch Time"], answer="A Rainy Day", passage=P5,
     why="비 오는 날 학교에 가는 내용이므로 A Rainy Day가 알맞습니다.")
 b.q(S, "B", "boots의 뜻을 몰라도 puts on his blue boots, walks to school in the rain에서 짐작할 수 있는 뜻은 무엇인가요?",
     options=["장화", "모자", "가방", "우산"], answer="장화", passage=P5,
     why="비 오는 날 신고 걸어가는 것이라는 앞뒤 내용으로 boots가 신발(장화)임을 짐작할 수 있습니다.")
-b.q(S, "A", "모르는 단어가 있는 글을 읽을 때 쓸 수 있는 전략을 모두 포함한 것은 무엇인가요?",
+b.q(S, "A", "모르는 단어가 있는 글을 읽을 때 쓸 수 있는 알맞은 전략은 무엇인가요?",
     options=["제목과 그림 보기, 앞뒤 내용으로 뜻 짐작하기", "모르는 단어가 나오면 읽기를 멈추기", "처음부터 끝까지 한 글자씩만 읽기", "내용을 보지 않고 답 찍기"], answer="제목과 그림 보기, 앞뒤 내용으로 뜻 짐작하기", passage=P5,
     why="제목·그림을 활용하고 앞뒤 문장으로 뜻을 짐작하는 것이 읽기 전략입니다.")
 b.q(S, "C", "Our Weekly Plan에서 P.E. 수업이 있는 요일은 무슨 요일인가요? 영어로 쓰세요.",
@@ -248,7 +263,7 @@ b.q(S, "C", "샌드위치를 가져온 사람은 누구인가요?",
     why="Mia has a sandwich.라고 했습니다.")
 b.q(S, "B", "Ravi의 점심 냄새가 다르다고 말한 뒤 Mia가 한 행동은 무엇인가요?",
     options=["Ravi의 음식을 맛보았다", "자리를 옮겼다", "음식을 버렸다", "친구를 놀렸다"], answer="Ravi의 음식을 맛보았다", passage=P12,
-    why="Ravi가 Try some!이라고 하자 Mia는 tastes it했습니다.")
+    why="Ravi가 Try some!이라고 하자 Mia tastes it.(Mia가 맛을 본다)이라고 했습니다.")
 b.q(S, "A", "이 글에서 친구들이 보여 준 태도로 가장 알맞은 것은 무엇인가요?",
     options=["서로 다른 음식을 궁금해하고 존중하며 나누었다", "다른 음식은 먹지 않겠다고 했다", "서로의 음식을 놀렸다", "각자 따로 앉아 먹었다"], answer="서로 다른 음식을 궁금해하고 존중하며 나누었다", passage=P12,
     why="서로 다른 음식을 놀리지 않고 궁금해하며 함께 나누었습니다.")

@@ -31,7 +31,7 @@
   {
    "id": "p4",
    "title": "My Diary",
-   "text": "Dear Diary, I am very (①) today because I did not sleep well. At lunch, I am (②) and I want to eat pizza. But my friend gave me a gold star, so I am (③) now. It was a long day, but I will sleep well tonight. Good night!",
+   "text": "Dear Diary, I am very (①) today because I did not sleep well. At lunch, I was (②) and I wanted to eat pizza. But my teacher gave me a gold star, so I am (③) now. It was a long day, but I will sleep well tonight. Good night!",
    "source": ""
   },
   {
@@ -43,7 +43,7 @@
   {
    "id": "p6",
    "title": "Borrowing a Pencil",
-   "text": "Tom: Excuse me, Ann. Can I borrow your pencil? Ann: Sure. Here you are. Tom: Thank you. Ann: You're welcome. Tom: Oh, sorry! I dropped it. Ann: It's OK. Tom: Thanks for waiting for me. Ann: No problem!",
+   "text": "Tom: Excuse me, Ann. Can I borrow your pencil? Ann: Sure. Here you are. Tom: Thank you. Ann: You're welcome. Tom: Oh, sorry! I dropped it. Ann: It's OK. Tom: Thank you for being so kind. Ann: No problem!",
    "source": ""
   }
  ],
@@ -76,15 +76,16 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "apple을 따라 말할 때 강하게 읽는 부분은 첫 번째와 두 번째 중 몇 번째인가요? (숫자로 쓰세요)",
+   "body": "elephant를 el-e-phant의 세 부분으로 나누어 따라 말할 때 강하게 읽는 부분은 몇 번째인가요? (숫자로 쓰세요)",
    "answers": [
     "1",
     "첫",
     "첫 번째",
     "첫번째",
-    "1번째"
+    "1번째",
+    "하나"
    ],
-   "why": "apple은 첫 번째 부분 ap을 강하게 읽습니다."
+   "why": "elephant는 첫 번째 부분 el을 강하게 읽습니다(EL-e-phant)."
   },
   {
    "id": "영어-초3-4-4영02-01-b1",
@@ -647,7 +648,7 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "도서관에서 지켜야 하는 말은 무엇인가요?",
+   "body": "도서관에서 지켜야 할 규칙으로 알맞은 것은 무엇인가요?",
    "passage": "p3",
    "options": [
     "Shout loud.",
@@ -725,7 +726,7 @@
    "level": "C",
    "difficulty": "easy",
    "type": "multiple",
-   "body": "My Diary에서 친구가 gold star를 주어서 기분이 좋아진 감정 ③에 알맞은 낱말은 무엇인가요?",
+   "body": "My Diary에서 선생님이 gold star를 주어서 기분이 좋아진 감정 ③에 알맞은 낱말은 무엇인가요?",
    "passage": "p4",
    "options": [
     "tired",
@@ -1021,8 +1022,12 @@
     "picture",
     "Picture",
     "pictures",
+    "Pictures",
     "photo",
-    "photos"
+    "Photo",
+    "photos",
+    "drawing",
+    "drawings"
    ],
    "why": "그림(picture)이나 사진(photo)으로도 의미를 전달할 수 있습니다."
   },
@@ -1079,8 +1084,12 @@
     "You're welcome",
     "You're welcome.",
     "you're welcome",
+    "you're welcome.",
+    "You’re welcome",
+    "You’re welcome.",
     "You are welcome",
-    "You are welcome."
+    "You are welcome.",
+    "you are welcome"
    ],
    "why": "Thank you.에는 You're welcome.이라고 답합니다."
   },
@@ -1113,7 +1122,7 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "Tom이 Ann에게 연필을 빌려 받은 뒤에 해야 하는 말은 무엇인가요?",
+   "body": "Tom이 Ann에게 연필을 빌린 뒤에 해야 하는 말은 무엇인가요?",
    "passage": "p6",
    "options": [
     "Thank you.",

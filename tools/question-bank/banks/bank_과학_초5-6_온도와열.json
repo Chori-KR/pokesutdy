@@ -152,14 +152,16 @@
    "standard": "6과07-02",
    "level": "C",
    "difficulty": "easy",
-   "type": "short",
-   "body": "뜨거운 물이 든 컵을 찬물이 든 그릇에 담갔을 때 뜨거운 물의 온도는 어떻게 되나요? (낮아진다 / 높아진다)",
-   "answers": [
-    "낮아진다",
-    "낮아짐",
-    "내려간다"
+   "type": "multiple",
+   "body": "60 °C의 뜨거운 물이 든 컵을 20 °C의 찬물이 든 그릇에 담갔습니다. 10분 뒤 컵 속 뜨거운 물의 온도로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "약 15 °C",
+    "약 70 °C",
+    "약 60 °C",
+    "약 45 °C"
    ],
-   "why": "뜨거운 물의 열이 찬물로 이동하여 온도가 낮아집니다."
+   "answer": 3,
+   "why": "뜨거운 물의 열이 찬물로 이동하므로 뜨거운 물의 온도는 처음(60 °C)보다 낮아지고, 찬물의 온도(20 °C)보다는 높게 유지됩니다."
   },
   {
    "id": "과학-초5-6-6과07-02-b1",
@@ -173,12 +175,12 @@
    "body": "그래프는 뜨거운 물(실선)과 차가운 물(점선)을 접촉시켰을 때의 온도 변화입니다. 시간이 오래 지나면 두 물의 온도는 어떻게 되나요?",
    "svg": "<svg viewBox=\"0 0 330 240\" font-family=\"sans-serif\"><text x=\"46\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(°C)</text><line x1=\"52\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"52\" y1=\"154\" x2=\"304\" y2=\"154\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"158\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">20</text><line x1=\"52\" y1=\"122\" x2=\"304\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"126\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">40</text><line x1=\"52\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"94\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">60</text><line x1=\"52\" y1=\"58\" x2=\"304\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"62\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">80</text><line x1=\"52\" y1=\"26\" x2=\"304\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">100</text><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"26\" x2=\"73\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"73\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"115\" y1=\"26\" x2=\"115\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"115\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"157\" y1=\"26\" x2=\"157\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"157\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"199\" y1=\"26\" x2=\"199\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"199\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"241\" y1=\"26\" x2=\"241\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"241\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"283\" y1=\"26\" x2=\"283\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"283\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"304\" y=\"220\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(분)</text><polyline points=\"73,58 115,74 157,86.8 199,96.4 241,102.8 283,106\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"73\" cy=\"58\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"115\" cy=\"74\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"157\" cy=\"86.8\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"199\" cy=\"96.4\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"241\" cy=\"102.8\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"283\" cy=\"106\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"73,154 115,138 157,125.2 199,115.6 241,109.2 283,106\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><rect x=\"68\" y=\"149\" width=\"10\" height=\"10\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"110\" y=\"133\" width=\"10\" height=\"10\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"152\" y=\"120.2\" width=\"10\" height=\"10\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"194\" y=\"110.6\" width=\"10\" height=\"10\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"236\" y=\"104.2\" width=\"10\" height=\"10\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"278\" y=\"101\" width=\"10\" height=\"10\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
    "options": [
-    "모두 0 °C가 된다",
+    "같아진다",
     "뜨거운 물이 계속 더 높다",
     "차가운 물이 더 높아진다",
-    "같아진다"
+    "모두 0 °C가 된다"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "두 물체가 오래 접촉하면 온도가 같아지는 열평형 상태가 됩니다."
   },
   {
@@ -192,12 +194,12 @@
    "type": "multiple",
    "body": "80 °C의 물 100 mL와 20 °C의 물 100 mL를 섞으면 온도는 대략 몇 °C가 되나요?",
    "options": [
-    "약 50 °C",
-    "약 100 °C",
     "약 80 °C",
+    "약 100 °C",
+    "약 50 °C",
     "약 20 °C"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "양이 같으면 두 물의 중간쯤의 온도가 됩니다."
   },
   {
@@ -211,12 +213,12 @@
    "type": "multiple",
    "body": "차가운 음료수 캔을 따뜻한 손으로 잡았을 때 손과 캔의 온도 변화로 알맞은 것은 무엇인가요?",
    "options": [
-    "둘 다 높아진다",
+    "변화가 없다",
     "손의 온도는 높아지고 캔의 온도는 낮아진다",
-    "손의 온도는 낮아지고 캔의 온도는 높아진다",
-    "변화가 없다"
+    "둘 다 높아진다",
+    "손의 온도는 낮아지고 캔의 온도는 높아진다"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "열이 손(높은 온도)에서 캔(낮은 온도)으로 이동합니다."
   },
   {
@@ -230,12 +232,12 @@
    "type": "multiple",
    "body": "뜨거운 국에 담근 금속 숟가락이 뜨거워지는 까닭으로 알맞은 것은 무엇인가요?",
    "options": [
-    "차가움이 숟가락으로 이동하기 때문이다",
     "숟가락이 스스로 열을 내기 때문이다",
+    "열이 국에서 숟가락으로 이동하기 때문이다",
     "열이 숟가락에서 국으로 이동하기 때문이다",
-    "열이 국에서 숟가락으로 이동하기 때문이다"
+    "차가움이 숟가락으로 이동하기 때문이다"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "온도가 높은 국에서 낮은 숟가락으로 열이 이동하여 숟가락의 온도가 올라갑니다."
   },
   {
@@ -264,12 +266,12 @@
    "type": "multiple",
    "body": "태양의 열이 우주 공간을 지나 지구에 전달되는 방식은 무엇인가요?",
    "options": [
+    "대류",
     "전도",
     "복사",
-    "대류",
     "증발"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "태양의 열은 물질 없이도 직접 전달되는 복사로 지구에 옵니다."
   },
   {
@@ -298,12 +300,12 @@
    "type": "multiple",
    "body": "난로는 방 아래쪽에, 에어컨은 방 위쪽에 두는 것이 효율적인 까닭으로 알맞은 것은 무엇인가요?",
    "options": [
-    "복사가 일어나지 않기 때문이다",
-    "전도가 일어나기 때문이다",
     "따뜻한 공기는 위로, 차가운 공기는 아래로 이동하는 대류 때문이다",
+    "전도가 일어나기 때문이다",
+    "복사가 일어나지 않기 때문이다",
     "공기가 움직이지 않기 때문이다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "난로는 아래에서 데워진 공기가 올라가고, 에어컨은 위에서 차가워진 공기가 내려오는 대류를 이용합니다."
   },
   {
@@ -317,12 +319,12 @@
    "type": "multiple",
    "body": "모닥불에서 조금 떨어져 있어도 따뜻하게 느껴지는 주된 열의 이동 방식은 무엇인가요?",
    "options": [
-    "복사",
-    "전도",
     "대류",
+    "전도",
+    "복사",
     "증발"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "모닥불의 열이 공기를 거치지 않고 직접 전달되는 복사로 따뜻함을 느낍니다."
   },
   {
@@ -336,12 +338,12 @@
    "type": "multiple",
    "body": "프라이팬의 손잡이를 나무나 플라스틱으로 만드는 까닭으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "보기에 좋기 때문이다",
-    "열이 잘 전달되어 빨리 데우기 위해서이다",
     "열이 잘 전달되지 않아 손잡이가 뜨거워지는 것을 줄이기 위해서이다",
+    "열이 잘 전달되어 빨리 데우기 위해서이다",
+    "보기에 좋기 때문이다",
     "금속보다 무겁기 때문이다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "나무와 플라스틱은 열이 잘 전도되지 않아 손잡이가 덜 뜨거워집니다."
   },
   {
@@ -370,12 +372,12 @@
    "type": "multiple",
    "body": "뜨거운 국을 오랫동안 따뜻하게 보관할 때 쓰는 용기는 무엇인가요?",
    "options": [
-    "보온병",
+    "뚜껑 없는 종이컵",
     "얇은 알루미늄 컵",
     "유리컵",
-    "종이컵 뚜껑 없이"
+    "보온병"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "보온병은 열의 이동을 막아 온도를 오래 유지합니다."
   },
   {
@@ -390,12 +392,12 @@
    "body": "표는 재료별 열이 전달되는 정도입니다. 단열 재료로 가장 알맞은 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 236 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"230\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"93\" y1=\"3\" x2=\"93\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"233\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"233\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"233\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"233\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"48\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">재료</text><text x=\"163\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">열 전달</text><text x=\"48\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">구리</text><text x=\"163\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">매우 빠름</text><text x=\"48\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">알루미늄</text><text x=\"163\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">빠름</text><text x=\"48\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나무</text><text x=\"163\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">느림</text><text x=\"48\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">스티로폼</text><text x=\"163\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">매우 느림</text></svg>",
    "options": [
-    "나무",
     "구리",
+    "스티로폼",
     "알루미늄",
-    "스티로폼"
+    "나무"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "열이 가장 느리게 전달되는 스티로폼이 단열에 가장 알맞습니다."
   },
   {
@@ -428,12 +430,12 @@
    "type": "multiple",
    "body": "보온병의 이중 벽 사이를 진공(공기가 거의 없는 상태)으로 만드는 까닭으로 가장 알맞은 것은 무엇인가요?",
    "options": [
+    "물이 더 빨리 끓게 하기 위해서이다",
     "소리를 막기 위해서이다",
-    "공기가 없으면 전도와 대류에 의한 열의 이동이 크게 줄어들기 때문이다",
     "병을 가볍게 하기 위해서이다",
-    "물이 더 빨리 끓게 하기 위해서이다"
+    "공기가 없으면 전도와 대류에 의한 열의 이동이 크게 줄어들기 때문이다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "진공층은 전도와 대류를 막아 단열 효과를 높입니다."
   },
   {
@@ -447,12 +449,12 @@
    "type": "multiple",
    "body": "얼음을 오랫동안 녹지 않게 보관하는 상자를 만들려고 합니다. 가장 알맞은 설계는 무엇인가요?",
    "options": [
-    "구리 상자에 담아 둔다",
+    "스티로폼 상자에 뚜껑을 덮고 틈을 막는다",
     "얇은 철제 상자에 뚜껑 없이 둔다",
     "유리 상자를 햇빛 아래 둔다",
-    "스티로폼 상자에 뚜껑을 덮고 틈을 막는다"
+    "구리 상자에 담아 둔다"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "열이 잘 전달되지 않는 재료로 만들고 틈을 막아야 단열이 잘 됩니다."
   }
  ],

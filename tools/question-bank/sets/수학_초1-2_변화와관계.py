@@ -14,9 +14,9 @@ def number_grid(start, end, marked, cols=10, cw=32, rh=30):
     W, H = cols * cw + 6, rows * rh + 6
     out = [f'<rect x="3" y="3" width="{W-6}" height="{H-6}" fill="none" stroke="{C}" stroke-width="2"/>']
     for c in range(1, cols):
-        out.append(line(3 + c * cw, 3, 3 + c * cw, H - 3, 1.2, 0.5))
+        out.append(line(3 + c * cw, 3, 3 + c * cw, H - 3, 2, 0.5))
     for r in range(1, rows):
-        out.append(line(3, 3 + r * rh, W - 3, 3 + r * rh, 1.2, 0.5))
+        out.append(line(3, 3 + r * rh, W - 3, 3 + r * rh, 2, 0.5))
     for i, n in enumerate(nums):
         r, c = divmod(i, cols)
         cx, cy = 3 + c * cw + cw / 2, 3 + r * rh + rh / 2
@@ -32,8 +32,8 @@ def add_table(n=4, marked=()):
     W = H = (n + 1) * cw + 6
     out = [f'<rect x="3" y="3" width="{W-6}" height="{H-6}" fill="none" stroke="{C}" stroke-width="2"/>']
     for k in range(1, n + 1):
-        out.append(line(3 + k * cw, 3, 3 + k * cw, H - 3, 2 if k == 1 else 1.2))
-        out.append(line(3, 3 + k * cw, W - 3, 3 + k * cw, 2 if k == 1 else 1.2))
+        out.append(line(3 + k * cw, 3, 3 + k * cw, H - 3, 3 if k == 1 else 2))
+        out.append(line(3, 3 + k * cw, W - 3, 3 + k * cw, 3 if k == 1 else 2))
     out.append(text(3 + cw / 2, 3 + cw / 2 + 6, "+", 16, weight="bold"))
     for k in range(1, n + 1):
         out.append(text(3 + k * cw + cw / 2, 3 + cw / 2 + 5, k, 14, weight="bold"))
@@ -77,7 +77,7 @@ b.q(S, "C", "규칙을 찾아 빈칸에 알맞은 수를 고르세요.\n2, 4, 6,
 
 b.q(S, "C", "규칙에 따라 과일을 늘어놓았습니다. □에 알맞은 과일은 무엇인가요?\n사과, 사과, 귤, 사과, 사과, 귤, 사과, □",
     answers=["사과"],
-    why="사과, 사과, 귤이 되풀이됩니다. 일곱 번째 사과 다음은 여덟 번째로 사과입니다.")
+    why="사과, 사과, 귤이 되풀이됩니다. 일곱 번째가 사과이고, 여덟 번째도 사과입니다.")
 
 b.q(S, "B", "바둑돌을 규칙에 따라 늘어놓았습니다. 규칙을 바르게 말한 것은 무엇인가요?",
     svg=row_of(["stone_b", "stone_w", "stone_w"] * 3, r=13, gap=8),
@@ -123,10 +123,10 @@ b.q(S, "C", "‘2부터 시작하여 5씩 커지는’ 규칙으로 수를 늘�
     options=[7, 10, 12, 17], answer=12,
     why="2, 7, 12이므로 세 번째 수는 12입니다.")
 
-b.q(S, "C", "‘큰 구슬 1개, 작은 구슬 2개’가 되풀이되도록 구슬을 꿰고 있습니다. 10번째 구슬은 큰 구슬과 작은 구슬 중 무엇인가요?",
+b.q(S, "C", "‘큰 구슬 1개, 작은 구슬 2개’가 되풀이되도록 구슬을 꿰고 있습니다. 계속 꿰어 나갈 때, 큰 구슬을 꿰게 되는 것은 몇 번째인가요?",
     svg=row_of(["bead_big", "bead_small", "bead_small"] * 2, r=14, gap=6),
-    answers=["큰 구슬", "큰구슬", "큰 것", "큰"],
-    why="1, 4, 7, 10번째가 큰 구슬입니다.")
+    options=["8번째", "9번째", "10번째", "11번째"], answer="10번째",
+    why="큰 구슬은 1, 4, 7, 10번째로 3개마다 나옵니다. 8, 9, 11번째는 작은 구슬입니다.")
 
 b.q(S, "B", "‘사과 2개, 배 1개’가 되풀이되도록 과일 9개를 늘어놓으려고 합니다. 배는 모두 몇 개를 놓게 되나요?",
     options=[2, 3, 4, 6], answer=3,

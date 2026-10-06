@@ -39,14 +39,11 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "빛이 전혀 없는 어두운 방에서는 물체를 볼 수 있을까요? (볼 수 있다 / 볼 수 없다)",
+   "body": "곧게 나아가던 빛이 물체에 가로막혀 물체 뒤쪽에 생기는 어두운 부분을 무엇이라고 하나요? (세 글자)",
    "answers": [
-    "볼 수 없다",
-    "없다",
-    "볼수없다",
-    "못 본다"
+    "그림자"
    ],
-   "why": "물체를 보려면 빛이 있어야 합니다."
+   "why": "빛이 물체를 통과하지 못하고 가로막히면 물체 뒤쪽에 그림자가 생깁니다."
   },
   {
    "id": "과학-초5-6-6과02-01-b1",
@@ -95,16 +92,16 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "그림은 전등, 책, 눈의 위치와 빛이 지나는 길입니다. 빛이 나아가는 순서로 알맞은 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 250 56\" font-family=\"sans-serif\"><rect x=\"4\" y=\"6\" width=\"71.3\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"39.7\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">전등</text><line x1=\"77.3\" y1=\"28\" x2=\"87.3\" y2=\"28\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"90.3,28.0 84.3,24.0 84.3,32.0\" fill=\"currentColor\"/><rect x=\"89.3\" y=\"6\" width=\"71.3\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"125\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">책</text><line x1=\"162.7\" y1=\"28\" x2=\"172.7\" y2=\"28\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"175.7,28.0 169.7,24.0 169.7,32.0\" fill=\"currentColor\"/><rect x=\"174.7\" y=\"6\" width=\"71.3\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"210.3\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">눈</text></svg>",
+   "body": "표는 어둠상자 속 인형을 상자의 구멍으로 들여다본 결과입니다. 이 결과로부터 내릴 수 있는 결론으로 알맞은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 296 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"290\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"173\" y1=\"3\" x2=\"173\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"293\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"293\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"88\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">어둠상자의 상태</text><text x=\"233\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">인형이 보이는가</text><text x=\"88\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">뚜껑의 창을 닫음</text><text x=\"233\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">보이지 않음</text><text x=\"88\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">창을 열어 빛이 들어옴</text><text x=\"233\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">보임</text></svg>",
    "options": [
-    "전등 → 책 → 눈",
-    "눈 → 책 → 전등",
-    "책 → 전등 → 눈",
-    "전등 → 눈 → 책"
+    "물체는 스스로 빛을 내어 보인다",
+    "물체를 보려면 빛이 있어야 한다",
+    "눈에서 나온 빛이 물체를 비추어 보인다",
+    "어두운 곳에서는 물체가 사라진다"
    ],
-   "answer": 0,
-   "why": "전등에서 나온 빛이 책에 반사되어 눈으로 들어옵니다."
+   "answer": 1,
+   "why": "빛이 들어올 때만 인형이 보이므로 물체를 보려면 빛이 있어야 한다는 것을 알 수 있습니다."
   },
   {
    "id": "과학-초5-6-6과02-01-a2",
@@ -152,12 +149,12 @@
    "body": "그림에서 빛이 거울에 부딪혀 되돌아 나오는 현상을 무엇이라고 하나요?",
    "svg": "<svg viewBox=\"0 0 250 160\" font-family=\"sans-serif\"><line x1=\"30\" y1=\"120\" x2=\"220\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"40\" y1=\"122\" x2=\"30\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"65\" y1=\"122\" x2=\"55\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"90\" y1=\"122\" x2=\"80\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"115\" y1=\"122\" x2=\"105\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"140\" y1=\"122\" x2=\"130\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"165\" y1=\"122\" x2=\"155\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"190\" y1=\"122\" x2=\"180\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"215\" y1=\"122\" x2=\"205\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><text x=\"220\" y=\"148\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">거울</text><line x1=\"125\" y1=\"14\" x2=\"125\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"131\" y=\"22\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">법선</text><line x1=\"65.9\" y1=\"49.5\" x2=\"119.2\" y2=\"113.1\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"125,120 122.7,110.2 115.8,116\" fill=\"#e07b39\"/><line x1=\"125\" y1=\"120\" x2=\"178.4\" y2=\"56.4\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"184.1,49.5 174.9,53.5 181.8,59.3\" fill=\"#e07b39\"/><text x=\"61.9\" y=\"53.5\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">입사광</text><text x=\"188.1\" y=\"53.5\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">반사광</text><text x=\"91\" y=\"96\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">40°</text><text x=\"159\" y=\"96\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text></svg>",
    "options": [
+    "빛의 흡수",
     "빛의 직진",
-    "빛의 반사",
     "빛의 굴절",
-    "빛의 흡수"
+    "빛의 반사"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "빛이 거울에 부딪혀 되돌아 나오는 현상은 반사입니다."
   },
   {
@@ -172,12 +169,12 @@
    "body": "그림에서 빛의 입사각이 50°일 때 반사각은 몇 도인가요?",
    "svg": "<svg viewBox=\"0 0 250 160\" font-family=\"sans-serif\"><line x1=\"30\" y1=\"120\" x2=\"220\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"40\" y1=\"122\" x2=\"30\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"65\" y1=\"122\" x2=\"55\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"90\" y1=\"122\" x2=\"80\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"115\" y1=\"122\" x2=\"105\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"140\" y1=\"122\" x2=\"130\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"165\" y1=\"122\" x2=\"155\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"190\" y1=\"122\" x2=\"180\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><line x1=\"215\" y1=\"122\" x2=\"205\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.6\"/><text x=\"220\" y=\"148\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">거울</text><line x1=\"125\" y1=\"14\" x2=\"125\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"131\" y=\"22\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">법선</text><line x1=\"54.5\" y1=\"60.9\" x2=\"118.1\" y2=\"114.2\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"125,120 121,110.8 115.2,117.7\" fill=\"#e07b39\"/><line x1=\"125\" y1=\"120\" x2=\"188.6\" y2=\"66.6\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"195.5,60.9 185.7,63.2 191.5,70.1\" fill=\"#e07b39\"/><text x=\"50.5\" y=\"64.9\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">입사광</text><text x=\"199.5\" y=\"64.9\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">반사광</text><text x=\"91\" y=\"96\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">50°</text><text x=\"159\" y=\"96\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text></svg>",
    "options": [
-    "130°",
+    "50°",
     "40°",
     "100°",
-    "50°"
+    "130°"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "빛이 반사할 때 입사각과 반사각은 같습니다."
   },
   {
@@ -207,12 +204,12 @@
    "type": "multiple",
    "body": "물이 담긴 컵에 꽂은 빨대가 꺾여 보이는 까닭으로 알맞은 것은 무엇인가요?",
    "options": [
-    "물과 공기의 경계에서 빛이 굴절하기 때문이다",
-    "빨대가 실제로 꺾였기 때문이다",
     "빛이 직진하기 때문이다",
+    "빨대가 실제로 꺾였기 때문이다",
+    "물과 공기의 경계에서 빛이 굴절하기 때문이다",
     "물이 빛을 모두 흡수하기 때문이다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "물속 빨대에서 나온 빛이 물에서 공기로 나올 때 굴절하여 꺾여 보입니다."
   },
   {
@@ -224,16 +221,15 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "그림은 빛이 물에서 공기로 나아가는 모습입니다. 이때 빛이 꺾이는 방향으로 알맞은 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 300 168\" font-family=\"sans-serif\"><rect x=\"20\" y=\"90\" width=\"260\" height=\"70\" fill=\"#4b7bec\" fill-opacity=\"0.18\" stroke=\"none\"/><line x1=\"20\" y1=\"90\" x2=\"280\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"130\" y1=\"12\" x2=\"130\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"30\" y=\"24\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">공기</text><text x=\"30\" y=\"150\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">물</text><line x1=\"91.9\" y1=\"148.7\" x2=\"125.1\" y2=\"97.5\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"130,90 121.3,95.1 128.9,100\" fill=\"#e07b39\"/><line x1=\"130\" y1=\"90\" x2=\"184.4\" y2=\"44.4\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"191.3,38.6 181.5,40.9 187.3,47.8\" fill=\"#e07b39\"/><text x=\"87.9\" y=\"162.7\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">처음 빛</text><text x=\"195.3\" y=\"42.6\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">나아가는 빛</text></svg>",
+   "body": "다음 현상 중 빛의 굴절 때문에 나타나는 것을 〈보기〉에서 모두 고른 것은 무엇인가요?\n〈보기〉\nㄱ. 물속에 들어간 다리가 실제보다 짧아 보인다.\nㄴ. 거울에 내 얼굴이 비쳐 보인다.\nㄷ. 물이 담긴 컵 바닥의 동전이 떠올라 보인다.\nㄹ. 햇빛이 비치는 곳에 선 나무 뒤에 그림자가 생긴다.",
    "options": [
-    "꺾이지 않는다",
-    "법선에 더 가깝게 꺾인다",
-    "경계면에 더 가깝게 꺾인다(법선에서 멀어진다)",
-    "거꾸로 돌아간다"
+    "ㄱ, ㄴ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄷ",
+    "ㄷ, ㄹ"
    ],
    "answer": 2,
-   "why": "빛이 물에서 공기로 나갈 때는 법선에서 멀어지는 쪽으로 꺾입니다."
+   "why": "ㄱ과 ㄷ은 물과 공기의 경계에서 빛이 꺾여 나타나는 굴절 현상입니다. ㄴ은 빛의 반사, ㄹ은 빛의 직진 때문에 나타납니다."
   },
   {
    "id": "과학-초5-6-6과02-03-c1",
@@ -262,13 +258,16 @@
    "standard": "6과02-03",
    "level": "C",
    "difficulty": "easy",
-   "type": "short",
-   "body": "돋보기에 쓰이는 렌즈는 무엇인가요? (볼록 렌즈, 오목 렌즈 중에서 쓰세요)",
-   "answers": [
-    "볼록 렌즈",
-    "볼록렌즈"
+   "type": "multiple",
+   "body": "다음 중 거울을 이용한 물건이 아닌 것은 무엇인가요?",
+   "options": [
+    "자동차의 뒷거울",
+    "돋보기",
+    "세면대 거울",
+    "치과에서 쓰는 작은 거울"
    ],
-   "why": "돋보기는 볼록 렌즈를 사용하여 물체를 크게 보이게 합니다."
+   "answer": 1,
+   "why": "돋보기는 볼록 렌즈를 이용한 물건이고, 나머지는 빛의 반사를 이용하는 거울입니다."
   },
   {
    "id": "과학-초5-6-6과02-03-b1",
@@ -280,14 +279,14 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "그림처럼 빛을 퍼지게 하는 렌즈의 이름은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 240 172\" font-family=\"sans-serif\"><path d=\"M96,18 L124,18 Q110,76 124,134 L96,134 Q110,76 96,18 Z\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"110\" y=\"164\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">오목 렌즈</text><line x1=\"14\" y1=\"42\" x2=\"98\" y2=\"42\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"122\" y1=\"42\" x2=\"214\" y2=\"18.2\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"76\" x2=\"98\" y2=\"76\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"122\" y1=\"76\" x2=\"214\" y2=\"76\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"110\" x2=\"98\" y2=\"110\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"122\" y1=\"110\" x2=\"214\" y2=\"133.8\" stroke=\"#e07b39\" stroke-width=\"2.5\"/></svg>",
+   "svg": "<svg viewBox=\"0 0 240 172\" font-family=\"sans-serif\"><path d=\"M96,18 L124,18 Q110,76 124,134 L96,134 Q110,76 96,18 Z\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"110\" y=\"164\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">렌즈</text><line x1=\"14\" y1=\"42\" x2=\"98\" y2=\"42\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"122\" y1=\"42\" x2=\"214\" y2=\"18.2\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"76\" x2=\"98\" y2=\"76\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"122\" y1=\"76\" x2=\"214\" y2=\"76\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"110\" x2=\"98\" y2=\"110\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"122\" y1=\"110\" x2=\"214\" y2=\"133.8\" stroke=\"#e07b39\" stroke-width=\"2.5\"/></svg>",
    "options": [
+    "평면 거울",
     "볼록 렌즈",
     "오목 렌즈",
-    "평면 거울",
     "볼록 거울"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "가운데가 얇고 빛이 퍼지는 렌즈는 오목 렌즈입니다."
   },
   {
@@ -301,12 +300,12 @@
    "type": "multiple",
    "body": "도로의 모퉁이에 설치하여 넓은 범위를 비추어 보는 반사경에 쓰인 거울은 무엇인가요?",
    "options": [
-    "평면 거울",
-    "오목 거울",
     "볼록 거울",
+    "오목 거울",
+    "평면 거울",
     "렌즈"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "볼록 거울은 넓은 범위를 볼 수 있어 도로 반사경 등에 쓰입니다."
   },
   {
@@ -321,12 +320,12 @@
    "body": "그림의 볼록 렌즈를 이용한 장치로 가장 알맞은 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 240 172\" font-family=\"sans-serif\"><path d=\"M110,18 Q132,76 110,134 Q88,76 110,18 Z\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"110\" y=\"164\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">볼록 렌즈</text><line x1=\"14\" y1=\"42\" x2=\"105\" y2=\"42\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"114\" y1=\"42\" x2=\"215\" y2=\"94\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"76\" x2=\"105\" y2=\"76\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"114\" y1=\"76\" x2=\"215\" y2=\"76\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"110\" x2=\"105\" y2=\"110\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><line x1=\"114\" y1=\"110\" x2=\"215\" y2=\"58\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><circle cx=\"180\" cy=\"76\" r=\"4\" fill=\"currentColor\"/><text x=\"180\" y=\"98\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">초점</text></svg>",
    "options": [
-    "햇빛을 모아 종이를 태우는 확대경",
-    "빛을 퍼지게 하는 안경",
     "넓은 범위를 비추는 도로 반사경",
+    "빛을 퍼지게 하는 안경",
+    "햇빛을 한곳에 모아 종이를 태울 수 있는 돋보기",
     "빛을 반사하는 숟가락"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "볼록 렌즈는 빛을 한곳에 모으므로 확대경, 카메라 등에 이용됩니다."
   },
   {

@@ -146,7 +146,8 @@
    "answers": [
     "8월 15일",
     "8·15",
-    "8월15일"
+    "8월15일",
+    "8.15"
    ],
    "why": "1945년 8월 15일에 광복을 맞이했습니다."
   },
@@ -178,7 +179,7 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "연표의 ㉠에 알맞은 사건은 무엇인가요?",
+   "body": "연표의 ㉠에 알맞은 연도는 언제인가요?",
    "svg": "<svg viewBox=\"0 0 344 96\" font-family=\"sans-serif\"><line x1=\"16\" y1=\"52\" x2=\"314\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"320,52 310,46 310,58\" fill=\"currentColor\"/><circle cx=\"24\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1910</text><text x=\"24\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">국권 피탈</text><circle cx=\"118\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"118\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1919</text><text x=\"118\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3·1 운동</text><circle cx=\"212\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"212\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><text x=\"212\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">광복</text><circle cx=\"306\" cy=\"52\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"306\" y=\"38\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1950</text><text x=\"306\" y=\"78\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6·25 전쟁</text></svg>",
    "options": [
     "1876년",

@@ -903,16 +903,15 @@
    "level": "C",
    "difficulty": "easy",
    "type": "multiple",
-   "body": "시소에 상자 가와 나를 올려놓았습니다. 더 무거운 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 300 146\" font-family=\"sans-serif\"><polygon points=\"150,112 136,140 164,140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><g transform=\"rotate(-7.3 150 108)\"><line x1=\"40\" y1=\"108\" x2=\"260\" y2=\"108\" stroke=\"currentColor\" stroke-width=\"4\"/><rect x=\"46\" y=\"68\" width=\"62\" height=\"40\" rx=\"5\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"77\" y=\"94\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><rect x=\"192\" y=\"68\" width=\"62\" height=\"40\" rx=\"5\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"223\" y=\"94\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></g></svg>",
+   "body": "두 손으로 들어 보았을 때 가장 무거운 것은 무엇인가요?",
    "options": [
-    "나",
-    "가",
-    "둘의 무게가 같다",
-    "알 수 없다"
+    "연필 한 자루",
+    "지우개 한 개",
+    "색종이 한 장",
+    "교과서가 가득 든 책가방"
    ],
-   "answer": 1,
-   "why": "시소는 무거운 쪽이 아래로 내려갑니다. 가 쪽이 내려갔으므로 가가 더 무겁습니다."
+   "answer": 3,
+   "why": "교과서가 가득 든 책가방을 들면 손에 힘이 가장 많이 들어가므로 가장 무겁습니다."
   },
   {
    "id": "수학-초1-2-2수03-06-c3",
@@ -923,13 +922,13 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "모양과 크기가 같은 그릇에 물을 담았습니다. 물이 더 많이 들어 있는 그릇은 가와 나 중 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 190 160\" font-family=\"sans-serif\"><rect x=\"23\" y=\"91.5\" width=\"54\" height=\"38.5\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><line x1=\"30\" y1=\"124\" x2=\"70\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"112\" x2=\"70\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"100\" x2=\"70\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><polyline points=\"20,20 20,130 80,130 80,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"50\" y=\"152\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><rect x=\"113\" y=\"47.5\" width=\"54\" height=\"82.5\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><line x1=\"120\" y1=\"124\" x2=\"160\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"120\" y1=\"112\" x2=\"160\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"120\" y1=\"100\" x2=\"160\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"120\" y1=\"88\" x2=\"160\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"120\" y1=\"76\" x2=\"160\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"120\" y1=\"64\" x2=\"160\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><polyline points=\"110,20 110,130 170,130 170,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"140\" y=\"152\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "body": "모양과 크기가 같은 그릇에 물을 담았습니다. 물이 가장 적게 들어 있는 그릇은 가, 나, 다, 라 중 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 370 160\" font-family=\"sans-serif\"><rect x=\"23\" y=\"69.5\" width=\"54\" height=\"60.5\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><line x1=\"30\" y1=\"124\" x2=\"70\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"112\" x2=\"70\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"100\" x2=\"70\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"88\" x2=\"70\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"76\" x2=\"70\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><polyline points=\"20,20 20,130 80,130 80,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"50\" y=\"152\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><rect x=\"113\" y=\"42\" width=\"54\" height=\"88\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><line x1=\"120\" y1=\"124\" x2=\"160\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"120\" y1=\"112\" x2=\"160\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"120\" y1=\"100\" x2=\"160\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"120\" y1=\"88\" x2=\"160\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"120\" y1=\"76\" x2=\"160\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"120\" y1=\"64\" x2=\"160\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"120\" y1=\"52\" x2=\"160\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><polyline points=\"110,20 110,130 170,130 170,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"140\" y=\"152\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><rect x=\"203\" y=\"97\" width=\"54\" height=\"33\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><line x1=\"210\" y1=\"124\" x2=\"250\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"210\" y1=\"112\" x2=\"250\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><polyline points=\"200,20 200,130 260,130 260,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"230\" y=\"152\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><rect x=\"293\" y=\"58.5\" width=\"54\" height=\"71.5\" fill=\"#4b7bec\" fill-opacity=\"0.4\"/><line x1=\"300\" y1=\"124\" x2=\"340\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"300\" y1=\"112\" x2=\"340\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"300\" y1=\"100\" x2=\"340\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"300\" y1=\"88\" x2=\"340\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><line x1=\"300\" y1=\"76\" x2=\"340\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.35\"/><polyline points=\"290,20 290,130 350,130 350,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"320\" y=\"152\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
    "answers": [
-    "나",
-    "그릇 나"
+    "다",
+    "그릇 다"
    ],
-   "why": "그릇의 모양과 크기가 같으므로 물의 높이가 더 높은 나에 물이 더 많습니다."
+   "why": "그릇의 모양과 크기가 같으므로 물의 높이가 가장 낮은 다에 물이 가장 적게 들어 있습니다."
   },
   {
    "id": "수학-초1-2-2수03-06-b1",
@@ -960,15 +959,15 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "물병에 가득 담긴 물을 빈 컵에 부었더니 컵이 가득 차고 물이 넘쳤습니다. 바르게 말한 것은 무엇인가요?",
+   "body": "물병에 물을 가득 채워 빈 그릇 가, 나, 다, 라에 각각 한 번씩 부었습니다. 가와 라는 물이 넘쳤고, 나는 딱 가득 찼고, 다는 반쯤 찼습니다. 물을 가장 많이 담을 수 있는 그릇은 무엇인가요?",
    "options": [
-    "컵에 담을 수 있는 양이 물병보다 많다",
-    "물병에 담을 수 있는 양이 컵보다 많다",
-    "물병과 컵에 담을 수 있는 양이 같다",
-    "컵이 물병보다 무겁다"
+    "가",
+    "나",
+    "다",
+    "라"
    ],
-   "answer": 1,
-   "why": "물이 넘쳤다는 것은 물병의 물이 컵에 다 들어가지 않았다는 뜻이므로 물병에 담을 수 있는 양이 더 많습니다."
+   "answer": 2,
+   "why": "물이 넘친 가와 라는 물병보다 적게 담기고, 나는 물병과 같습니다. 반쯤만 찬 다는 물병보다 더 많이 담을 수 있으므로 가장 많이 담습니다."
   },
   {
    "id": "수학-초1-2-2수03-06-b3",
@@ -979,11 +978,12 @@
    "level": "B",
    "difficulty": "medium",
    "type": "short",
-   "body": "같은 컵으로 물을 부어 가득 채웠더니 주전자는 8컵, 꽃병은 5컵이 들어갔습니다. 물을 더 많이 담을 수 있는 것은 무엇인가요?",
+   "body": "같은 컵으로 물을 부어 가득 채웠더니 주전자는 8컵, 꽃병은 5컵이 들어갔습니다. 주전자에는 꽃병보다 물이 몇 컵 더 들어가나요?",
    "answers": [
-    "주전자"
+    "3",
+    "3컵"
    ],
-   "why": "같은 컵으로 더 많이 부은 주전자에 물을 더 많이 담을 수 있습니다."
+   "why": "같은 컵으로 주전자는 8컵, 꽃병은 5컵이므로 주전자에 8-5=3(컵) 더 들어갑니다."
   },
   {
    "id": "수학-초1-2-2수03-06-a1",

@@ -54,7 +54,7 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "표는 어느 날의 기상 요소 측정 결과입니다. 우산을 챙겨야 하는 날로 알맞은 것은 언제인가요?",
+   "body": "표는 어느 주의 요일별 기상 요소 측정 결과입니다. 비가 내려 우산이 필요했던 날은 언제인가요?",
    "svg": "<svg viewBox=\"0 0 330 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"324\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"151\" y1=\"3\" x2=\"151\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"239\" y1=\"3\" x2=\"239\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"327\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"327\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"327\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"327\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">요일</text><text x=\"107\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">기온(°C)</text><text x=\"195\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">강수량(mm)</text><text x=\"283\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">풍속(m/s)</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">월</text><text x=\"107\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">24</text><text x=\"195\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"283\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"33\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">화</text><text x=\"107\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">21</text><text x=\"195\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">35</text><text x=\"283\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"33\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수</text><text x=\"107\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">26</text><text x=\"195\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"283\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"33\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">목</text><text x=\"107\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">28</text><text x=\"195\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"283\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3</text></svg>",
    "options": [
     "화요일",
@@ -254,12 +254,11 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "고기압과 저기압 중 일반적으로 날씨가 맑은 곳은 어디인가요?",
+   "body": "공기의 무게 때문에 생기는, 공기가 누르는 힘을 무엇이라고 하나요? (두 글자)",
    "answers": [
-    "고기압",
-    "고기압 지역"
+    "기압"
    ],
-   "why": "고기압에서는 공기가 내려와 구름이 잘 생기지 않아 맑은 날씨가 나타납니다."
+   "why": "공기의 무게로 생기는 누르는 힘을 기압이라고 하며, 주위보다 기압이 높은 곳은 고기압, 낮은 곳은 저기압입니다."
   },
   {
    "id": "과학-초5-6-6과06-03-b1",
@@ -270,16 +269,15 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림에서 바람의 방향이 알맞게 나타나 있습니다. 바람은 어떻게 부나요?",
-   "svg": "<svg viewBox=\"0 0 250 130\" font-family=\"sans-serif\"><ellipse cx=\"55\" cy=\"70\" rx=\"46\" ry=\"42\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"55\" y=\"75\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">고기압</text><ellipse cx=\"195\" cy=\"70\" rx=\"46\" ry=\"42\" fill=\"#e07b39\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"195\" y=\"75\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">저기압</text><line x1=\"108\" y1=\"70\" x2=\"137\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"146,70 137,65.5 137,74.5\" fill=\"currentColor\"/><text x=\"127\" y=\"56\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">바람</text></svg>",
+   "body": "바람 발생 모형실험에서 수조의 한쪽 칸에는 따뜻한 물, 다른 쪽 칸에는 얼음물을 넣고 수조 가운데에 향 연기를 피웠습니다. 이 실험에 대한 설명으로 알맞은 것은 무엇인가요?",
    "options": [
-    "저기압에서 고기압으로 분다",
-    "고기압에서 저기압으로 분다",
-    "두 곳 사이에서는 불지 않는다",
-    "방향은 일정하지 않다"
+    "따뜻한 물 쪽 공기가 고기압이 되어, 연기는 따뜻한 물 쪽에서 얼음물 쪽으로 움직인다",
+    "얼음물 쪽 공기가 고기압이 되어, 연기는 얼음물 쪽에서 따뜻한 물 쪽으로 움직인다",
+    "얼음물 쪽 공기가 저기압이 되어, 연기는 따뜻한 물 쪽에서 얼음물 쪽으로 움직인다",
+    "얼음물 쪽 공기가 고기압이 되어, 연기는 따뜻한 물 쪽에서 얼음물 쪽으로 움직인다"
    ],
    "answer": 1,
-   "why": "바람은 기압이 높은 곳에서 낮은 곳으로 붑니다."
+   "why": "차가운 쪽 공기는 기압이 높아지고(고기압) 따뜻한 쪽은 기압이 낮아지므로(저기압), 연기(바람)는 고기압인 얼음물 쪽에서 저기압인 따뜻한 물 쪽으로 움직입니다."
   },
   {
    "id": "과학-초5-6-6과06-03-b2",
@@ -328,16 +326,16 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "그림은 두 지역의 기압 분포입니다. 이 그림에서 바람이 부는 방향은 어느 쪽인가요?",
+   "body": "그림은 두 지역의 기압 분포입니다. 이에 대한 설명으로 옳은 것을 〈보기〉에서 모두 고른 것은 무엇인가요?\n〈보기〉\nㄱ. 바람은 오른쪽 지역에서 왼쪽 지역으로 분다.\nㄴ. 왼쪽 지역은 구름이 많고 비가 올 가능성이 크다.\nㄷ. 오른쪽 지역은 공기가 올라가 구름이 잘 생긴다.\nㄹ. 바람은 왼쪽 지역에서 오른쪽 지역으로 분다.",
    "svg": "<svg viewBox=\"0 0 250 130\" font-family=\"sans-serif\"><ellipse cx=\"55\" cy=\"70\" rx=\"46\" ry=\"42\" fill=\"#e07b39\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"55\" y=\"75\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">저기압</text><ellipse cx=\"195\" cy=\"70\" rx=\"46\" ry=\"42\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"195\" y=\"75\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">고기압</text></svg>",
    "options": [
-    "위에서 아래로",
-    "왼쪽에서 오른쪽으로",
-    "오른쪽에서 왼쪽으로",
-    "아래에서 위로"
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄹ"
    ],
-   "answer": 2,
-   "why": "오른쪽이 고기압, 왼쪽이 저기압이므로 바람은 오른쪽에서 왼쪽으로 붑니다."
+   "answer": 1,
+   "why": "오른쪽이 고기압, 왼쪽이 저기압이므로 바람은 오른쪽에서 왼쪽으로 붑니다(ㄱ). 저기압인 왼쪽은 공기가 올라가 구름이 많고 비가 오기 쉬우며(ㄴ), 고기압인 오른쪽은 공기가 내려와 맑습니다."
   }
  ],
  "skipped": []

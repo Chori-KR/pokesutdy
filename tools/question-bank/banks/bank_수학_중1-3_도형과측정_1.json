@@ -133,7 +133,7 @@
    "difficulty": "hard",
    "type": "multiple",
    "body": "그림에서 직선 위의 점 $O$에서 세 반직선이 이루는 각이 $40^\\circ$, $x$, $90^\\circ$입니다. $x$의 크기는 얼마인가요?",
-   "svg": "<svg viewBox=\"0 0 220 140\" font-family=\"sans-serif\"><line x1=\"20\" y1=\"110\" x2=\"200\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"110\" y1=\"110\" x2=\"110\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"110\" y1=\"110\" x2=\"160\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M138,110 A28,28 0 0 0 126.3,87.2\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"147.3\" y=\"94.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">40°</text><path d=\"M123.9,90.5 A24,24 0 0 0 110,86\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"121.6\" y=\"77.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">x</text><path d=\"M110,80 A30,30 0 0 0 80,110\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"78.9\" y=\"82.9\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">90°</text><circle cx=\"20\" cy=\"110\" r=\"3\" fill=\"currentColor\"/><text x=\"12\" y=\"126\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"110\" cy=\"110\" r=\"3\" fill=\"currentColor\"/><text x=\"110\" y=\"128\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">O</text><circle cx=\"200\" cy=\"110\" r=\"3\" fill=\"currentColor\"/><text x=\"208\" y=\"126\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"110\" cy=\"20\" r=\"3\" fill=\"currentColor\"/><text x=\"107.8\" y=\"11.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"160\" cy=\"40\" r=\"3\" fill=\"currentColor\"/><text x=\"169.4\" y=\"35\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text></svg>",
+   "svg": "<svg viewBox=\"0 0 220 140\" font-family=\"sans-serif\"><line x1=\"20\" y1=\"110\" x2=\"200\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"110\" y1=\"110\" x2=\"110\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"110\" y1=\"110\" x2=\"171\" y2=\"59\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M138,110 A28,28 0 0 0 131.5,92\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"149.5\" y=\"99.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">40°</text><path d=\"M128.4,94.6 A24,24 0 0 0 110,86\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"126.1\" y=\"79.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">x</text><path d=\"M110,80 A30,30 0 0 0 80,110\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"78.9\" y=\"82.9\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">90°</text><circle cx=\"20\" cy=\"110\" r=\"3\" fill=\"currentColor\"/><text x=\"12\" y=\"126\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"110\" cy=\"110\" r=\"3\" fill=\"currentColor\"/><text x=\"110\" y=\"128\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">O</text><circle cx=\"200\" cy=\"110\" r=\"3\" fill=\"currentColor\"/><text x=\"208\" y=\"126\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"110\" cy=\"20\" r=\"3\" fill=\"currentColor\"/><text x=\"107.5\" y=\"11.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"171\" cy=\"59\" r=\"3\" fill=\"currentColor\"/><text x=\"182.8\" y=\"57.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text></svg>",
    "options": [
     "40°",
     "50°",
@@ -283,16 +283,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림에서 ∠③이 $70^\\circ$, ∠⑤가 $75^\\circ$일 때 두 직선 $l, m$에 대한 설명으로 알맞은 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 240 190\" font-family=\"sans-serif\"><line x1=\"14\" y1=\"50\" x2=\"226\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"8\" x2=\"176\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"84\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">①</text><text x=\"130\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">②</text><text x=\"80\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">70°</text><text x=\"128\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">④</text><text x=\"128\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">75°</text><text x=\"174\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑥</text><text x=\"124\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑦</text><text x=\"172\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑧</text><text x=\"222\" y=\"42\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">l</text><text x=\"222\" y=\"112\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">m</text></svg>",
+   "body": "그림과 같이 두 직선 $l, m$이 한 직선과 만나서 8개의 각이 생겼습니다. 다음 중 $l \\parallel m$이 되는 경우는 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 240 190\" font-family=\"sans-serif\"><line x1=\"14\" y1=\"50\" x2=\"226\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"8\" x2=\"176\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"84\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">①</text><text x=\"130\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">②</text><text x=\"80\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">③</text><text x=\"128\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">④</text><text x=\"128\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑤</text><text x=\"174\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑥</text><text x=\"124\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑦</text><text x=\"172\" y=\"140\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">⑧</text><text x=\"222\" y=\"42\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">l</text><text x=\"222\" y=\"112\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">m</text><text x=\"120\" y=\"182\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">l과 m은 평행할까요?</text></svg>",
    "options": [
-    "수직이다",
-    "평행하다",
-    "평행하지 않다",
-    "알 수 없다"
+    "∠②$=65^\\circ$, ∠⑥$=75^\\circ$",
+    "∠③$=70^\\circ$, ∠⑥$=110^\\circ$",
+    "∠①$=110^\\circ$, ∠⑤$=110^\\circ$",
+    "∠④$=100^\\circ$, ∠⑤$=80^\\circ$"
    ],
    "answer": 2,
-   "why": "∠③의 엇각은 ∠⑥이고 ∠⑤는 ∠①의 동위각입니다. ∠⑤$=75^\\circ$이면 ∠④(∠⑤의 엇각)$=75^\\circ$이어야 하는데 ∠③$=70^\\circ$이면 ∠④$=110^\\circ$이므로 엇각이 같지 않아 평행하지 않습니다."
+   "why": "∠①과 ∠⑤는 동위각이고 크기가 같으므로 $l \\parallel m$입니다. 나머지는 엇각(∠③과 ∠⑥, ∠④와 ∠⑤)이나 동위각(∠②와 ∠⑥)의 크기가 달라 평행하지 않습니다."
   },
   {
    "id": "수학-중1-3-9수03-02-a1",
@@ -304,7 +304,7 @@
    "difficulty": "hard",
    "type": "short",
    "body": "그림에서 $l \\parallel m$일 때 $x$의 크기는 몇 도인가요? (숫자만 쓰세요)",
-   "svg": "<svg viewBox=\"0 0 250 160\" font-family=\"sans-serif\"><line x1=\"20\" y1=\"40\" x2=\"220\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"20\" y1=\"130\" x2=\"220\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"86\" y1=\"40\" x2=\"150\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"85\" x2=\"110\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M104,52.7 A22,22 0 0 0 108,40\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"120.3\" y=\"54.9\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">35°</text><path d=\"M132,130 A22,22 0 0 0 124.6,113.6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"142.8\" y=\"119.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">48°</text><circle cx=\"86\" cy=\"40\" r=\"3\" fill=\"currentColor\"/><text x=\"76\" y=\"34\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"150\" cy=\"85\" r=\"3\" fill=\"currentColor\"/><text x=\"162\" y=\"103\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">P</text><circle cx=\"110\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"98\" y=\"146\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><text x=\"226\" y=\"34\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">l</text><text x=\"226\" y=\"124\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">m</text><text x=\"168\" y=\"88\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">x</text></svg>",
+   "svg": "<svg viewBox=\"0 0 250 160\" font-family=\"sans-serif\"><line x1=\"20\" y1=\"40\" x2=\"220\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"20\" y1=\"130\" x2=\"220\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"86\" y1=\"40\" x2=\"150\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"85\" x2=\"110\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M104,52.7 A22,22 0 0 0 108,40\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"120.3\" y=\"54.9\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">35°</text><path d=\"M132,130 A22,22 0 0 0 124.6,113.6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"142.8\" y=\"119.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">48°</text><circle cx=\"86\" cy=\"40\" r=\"3\" fill=\"currentColor\"/><text x=\"76\" y=\"34\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"150\" cy=\"85\" r=\"3\" fill=\"currentColor\"/><text x=\"162\" y=\"103\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">P</text><circle cx=\"110\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"98\" y=\"146\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><text x=\"226\" y=\"34\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">l</text><text x=\"226\" y=\"124\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">m</text><text x=\"130\" y=\"90\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">x</text></svg>",
    "answers": [
     "83",
     "83°",
@@ -357,7 +357,8 @@
    "type": "short",
    "body": "작도에서 사용하는 도구는 눈금 없는 자와 무엇인가요? (세 글자)",
    "answers": [
-    "컴퍼스"
+    "컴퍼스",
+    "컴파스"
    ],
    "why": "작도는 눈금 없는 자와 컴퍼스만으로 도형을 그리는 것입니다."
   },
@@ -410,12 +411,12 @@
    "type": "multiple",
    "body": "선분 $AB$와 길이가 같은 선분 $CD$를 작도하는 순서로 알맞은 것은 무엇인가요?",
    "options": [
-    "직선 위에 점 $C$를 잡는다 → $AB$의 길이를 컴퍼스로 잰다 → 점 $C$에 컴퍼스를 대고 원을 그려 직선과의 교점을 $D$로 한다",
+    "자로 $AB$의 길이를 눈금으로 잰다",
     "$AB$의 길이를 잰다 → 점 $D$를 잡는다 → 자로 선분을 긋는다",
     "점 $C$에서 원을 먼저 그린다 → 직선을 긋는다",
-    "자로 $AB$의 길이를 눈금으로 잰다"
+    "직선 위에 점 $C$를 잡는다 → $AB$의 길이를 컴퍼스로 잰다 → 점 $C$에 컴퍼스를 대고 원을 그려 직선과의 교점을 $D$로 한다"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "직선 위에 점 $C$를 잡고, 컴퍼스로 $AB$의 길이를 재어 $C$를 중심으로 하는 원과 직선의 교점이 $D$입니다."
   },
   {
@@ -429,12 +430,12 @@
    "type": "multiple",
    "body": "세 선분의 길이가 다음과 같을 때 삼각형을 작도할 수 있는 것은 무엇인가요?",
    "options": [
-    "$4\\,\\mathrm{cm},\\ 4\\,\\mathrm{cm},\\ 8\\,\\mathrm{cm}$",
     "$3\\,\\mathrm{cm},\\ 4\\,\\mathrm{cm},\\ 8\\,\\mathrm{cm}$",
+    "$5\\,\\mathrm{cm},\\ 6\\,\\mathrm{cm},\\ 10\\,\\mathrm{cm}$",
     "$2\\,\\mathrm{cm},\\ 2\\,\\mathrm{cm},\\ 5\\,\\mathrm{cm}$",
-    "$5\\,\\mathrm{cm},\\ 6\\,\\mathrm{cm},\\ 10\\,\\mathrm{cm}$"
+    "$4\\,\\mathrm{cm},\\ 4\\,\\mathrm{cm},\\ 8\\,\\mathrm{cm}$"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "가장 긴 변의 길이가 나머지 두 변의 길이의 합보다 작아야 하므로 $10<5+6$을 만족하는 경우만 가능합니다."
   },
   {
@@ -483,12 +484,12 @@
    "type": "multiple",
    "body": "세 각의 크기가 $40^\\circ,\\ 60^\\circ,\\ 80^\\circ$인 삼각형에 대한 설명으로 알맞은 것은 무엇인가요?",
    "options": [
+    "정삼각형이다",
     "유일하게 하나로 정해진다",
-    "한 가지로 정해지지 않으며 크기가 다른 삼각형이 여러 개 있다",
     "작도할 수 없다",
-    "정삼각형이다"
+    "한 가지로 정해지지 않으며 크기가 다른 삼각형이 여러 개 있다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "세 각만으로는 삼각형의 크기가 정해지지 않아 닮은 삼각형이 무수히 많습니다."
   },
   {
@@ -502,12 +503,12 @@
    "type": "multiple",
    "body": "$\\angle B=30^\\circ$, $\\overline{AB}=6\\,\\mathrm{cm}$, $\\overline{AC}=4\\,\\mathrm{cm}$일 때 삼각형 $ABC$는 어떻게 되나요?",
    "options": [
-    "직각삼각형이다",
+    "삼각형이 한 가지로 정해지지 않는다(두 개 가능하다)",
     "반드시 하나로 정해진다",
     "작도할 수 없다",
-    "삼각형이 한 가지로 정해지지 않는다(두 개 가능하다)"
+    "직각삼각형이다"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "두 변과 그 끼인각이 아닌 각이 주어지면 조건을 만족하는 삼각형이 두 개 있을 수 있습니다."
   },
   {
@@ -521,12 +522,12 @@
    "type": "multiple",
    "body": "두 도형이 완전히 겹쳐질 때 이 두 도형을 서로 무엇이라고 하나요?",
    "options": [
-    "합동",
-    "닮음",
     "대칭",
+    "닮음",
+    "합동",
     "평행"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "모양과 크기가 같아 완전히 포개어지는 두 도형은 합동입니다."
   },
   {
@@ -556,12 +557,12 @@
    "type": "multiple",
    "body": "세 변의 길이가 각각 같은 두 삼각형은 합동입니다. 이 합동 조건의 이름은 무엇인가요?",
    "options": [
-    "ASA 합동",
+    "AAA 합동",
     "SAS 합동",
-    "SSS 합동",
-    "AAA 합동"
+    "ASA 합동",
+    "SSS 합동"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "세 쌍의 대응변의 길이가 각각 같은 경우를 SSS 합동이라고 합니다."
   },
   {
@@ -575,12 +576,12 @@
    "type": "multiple",
    "body": "$\\triangle ABC$와 $\\triangle DEF$에서 $\\overline{AB}=\\overline{DE}$, $\\angle B=\\angle E$, $\\overline{BC}=\\overline{EF}$이면 두 삼각형은 합동입니다. 이 합동 조건은 무엇인가요?",
    "options": [
-    "AAS 합동",
     "SSS 합동",
+    "SAS 합동",
     "ASA 합동",
-    "SAS 합동"
+    "AAS 합동"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "두 변의 길이와 그 끼인각의 크기가 각각 같으므로 SAS 합동입니다."
   },
   {
@@ -594,12 +595,12 @@
    "type": "multiple",
    "body": "$\\triangle ABC$와 $\\triangle DEF$에서 $\\overline{AB}=\\overline{DE}$, $\\angle A=\\angle D$, $\\angle B=\\angle E$이면 두 삼각형은 합동입니다. 이 합동 조건은 무엇인가요?",
    "options": [
+    "SAS 합동",
     "SSS 합동",
     "ASA 합동",
-    "SAS 합동",
     "RHS 합동"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "한 변의 길이와 그 양 끝 각의 크기가 각각 같으므로 ASA 합동입니다."
   },
   {
@@ -613,12 +614,12 @@
    "type": "multiple",
    "body": "다음 중 두 삼각형이 합동이라고 할 수 없는 경우는 무엇인가요?",
    "options": [
-    "두 변의 길이와 그 끼인각의 크기가 각각 같을 때",
-    "세 변의 길이가 각각 같을 때",
     "세 각의 크기가 각각 같을 때",
+    "세 변의 길이가 각각 같을 때",
+    "두 변의 길이와 그 끼인각의 크기가 각각 같을 때",
     "한 변의 길이와 그 양 끝 각의 크기가 각각 같을 때"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "세 각의 크기가 같아도 크기가 다를 수 있으므로 합동이라고 할 수 없습니다. (닮음)"
   },
   {
@@ -633,12 +634,12 @@
    "body": "정사각형 $ABCD$에서 $\\overline{BE}=\\overline{CF}$인 점 $E, F$를 각각 변 $BC, CD$ 위에 잡았을 때 $\\triangle ABE\\equiv\\triangle BCF$의 합동 조건은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 200 160\" font-family=\"sans-serif\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"130\" x2=\"150\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"130\" x2=\"150\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"20\" x2=\"40\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"20\" x2=\"95\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"130\" x2=\"150\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"40\" cy=\"20\" r=\"3\" fill=\"currentColor\"/><text x=\"28\" y=\"16\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"40\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"28\" y=\"144\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"150\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"162\" y=\"144\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"150\" cy=\"20\" r=\"3\" fill=\"currentColor\"/><text x=\"162\" y=\"16\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text><circle cx=\"95\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"95\" y=\"148\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">E</text><circle cx=\"150\" cy=\"75\" r=\"3\" fill=\"currentColor\"/><text x=\"164\" y=\"79\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">F</text></svg>",
    "options": [
-    "SAS 합동",
-    "SSS 합동",
     "ASA 합동",
+    "SSS 합동",
+    "SAS 합동",
     "RHA 합동"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "$\\overline{AB}=\\overline{BC}$, $\\angle ABE=\\angle BCF=90^\\circ$, $\\overline{BE}=\\overline{CF}$이므로 SAS 합동입니다."
   },
   {
@@ -652,12 +653,12 @@
    "type": "multiple",
    "body": "$\\triangle ABC\\equiv\\triangle DEF$이고 $\\angle A=50^\\circ$, $\\angle B=60^\\circ$일 때 $\\angle F$의 크기는 얼마인가요?",
    "options": [
-    "60°",
-    "50°",
     "70°",
+    "50°",
+    "60°",
     "80°"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "$\\angle C=180^\\circ-50^\\circ-60^\\circ=70^\\circ$이고 $\\angle F=\\angle C=70^\\circ$입니다."
   },
   {
@@ -672,12 +673,12 @@
    "body": "$\\angle XOY$의 이등분선 위의 한 점 $P$에서 두 변 $OX, OY$에 내린 수선의 발을 각각 $A, B$라 할 때, $\\triangle POA\\equiv\\triangle POB$의 합동 조건은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"20\" y1=\"130\" x2=\"200\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"20\" y1=\"130\" x2=\"150\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"20\" y1=\"130\" x2=\"151\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"151\" y1=\"82\" x2=\"151\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"151\" y1=\"82\" x2=\"120\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"20\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"10\" y=\"144\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">O</text><circle cx=\"200\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"208\" y=\"144\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">X</text><circle cx=\"150\" cy=\"20\" r=\"3\" fill=\"currentColor\"/><text x=\"158\" y=\"18\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">Y</text><circle cx=\"151\" cy=\"82\" r=\"3\" fill=\"currentColor\"/><text x=\"165\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">P</text><circle cx=\"151\" cy=\"130\" r=\"3\" fill=\"currentColor\"/><text x=\"151\" y=\"148\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"120\" cy=\"45\" r=\"3\" fill=\"currentColor\"/><text x=\"106\" y=\"41\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text></svg>",
    "options": [
-    "RHA 합동",
+    "ASA 합동",
     "SSS 합동",
     "SAS 합동",
-    "ASA 합동"
+    "RHA 합동"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "$\\angle PAO=\\angle PBO=90^\\circ$, $\\overline{PO}$는 공통, $\\angle AOP=\\angle BOP$이므로 직각삼각형의 빗변과 한 예각이 같은 RHA 합동입니다."
   },
   {
@@ -708,12 +709,12 @@
    "type": "multiple",
    "body": "사각형의 네 내각의 크기의 합은 얼마인가요?",
    "options": [
-    "720°",
     "180°",
+    "360°",
     "540°",
-    "360°"
+    "720°"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "사각형은 대각선으로 삼각형 2개로 나뉘므로 $180^\\circ\\times2=360^\\circ$입니다."
   },
   {
@@ -779,12 +780,12 @@
    "type": "multiple",
    "body": "정팔각형의 한 외각의 크기는 얼마인가요?",
    "options": [
+    "30°",
     "135°",
-    "45°",
     "60°",
-    "30°"
+    "45°"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "다각형의 외각의 합은 $360^\\circ$이므로 정팔각형의 한 외각은 $360^\\circ\\div8=45^\\circ$입니다."
   },
   {
@@ -815,12 +816,12 @@
    "type": "multiple",
    "body": "한 외각의 크기가 $30^\\circ$인 정다각형은 무엇인가요?",
    "options": [
-    "정십오각형",
+    "정십이각형",
     "정팔각형",
     "정십각형",
-    "정십이각형"
+    "정십오각형"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "$360^\\circ\\div30^\\circ=12$이므로 정십이각형입니다."
   },
   {
@@ -850,12 +851,12 @@
    "type": "multiple",
    "body": "한 원에서 두 부채꼴의 중심각의 크기가 2배이면 호의 길이는 어떻게 되나요?",
    "options": [
-    "2배가 된다",
-    "같다",
     "4배가 된다",
+    "같다",
+    "2배가 된다",
     "절반이 된다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "한 원에서 호의 길이는 중심각의 크기에 정비례합니다."
   },
   {
@@ -869,12 +870,12 @@
    "type": "multiple",
    "body": "원에서 두 반지름과 호로 둘러싸인 도형을 무엇이라고 하나요?",
    "options": [
-    "반원",
+    "원기둥",
     "활꼴",
-    "부채꼴",
-    "원기둥"
+    "반원",
+    "부채꼴"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "두 반지름과 호로 둘러싸인 도형은 부채꼴입니다."
   },
   {
@@ -889,12 +890,12 @@
    "body": "그림과 같이 반지름이 $6\\,\\mathrm{cm}$, 중심각이 $60^\\circ$인 부채꼴의 호의 길이는 얼마인가요?",
    "svg": "<svg viewBox=\"0 0 200 190\" font-family=\"sans-serif\"><path d=\"M40,100 L110,100 A70,70 0 0 0 75,39.4 Z\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"28\" y=\"116\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">O</text><text x=\"122\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><text x=\"82\" y=\"27.3\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><text x=\"68.5\" y=\"91\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">60°</text><text x=\"75\" y=\"116\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6 cm</text></svg>",
    "options": [
-    "$12\\pi\\,\\mathrm{cm}$",
     "$\\pi\\,\\mathrm{cm}$",
+    "$2\\pi\\,\\mathrm{cm}$",
     "$6\\pi\\,\\mathrm{cm}$",
-    "$2\\pi\\,\\mathrm{cm}$"
+    "$12\\pi\\,\\mathrm{cm}$"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "호의 길이는 $2\\pi\\times6\\times\\dfrac{60}{360}=2\\pi$입니다."
   },
   {
@@ -908,12 +909,12 @@
    "type": "multiple",
    "body": "반지름이 $9\\,\\mathrm{cm}$, 중심각이 $120^\\circ$인 부채꼴의 호의 길이는 얼마인가요?",
    "options": [
+    "$9\\pi\\,\\mathrm{cm}$",
     "$3\\pi\\,\\mathrm{cm}$",
     "$6\\pi\\,\\mathrm{cm}$",
-    "$9\\pi\\,\\mathrm{cm}$",
     "$12\\pi\\,\\mathrm{cm}$"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "$2\\pi\\times9\\times\\dfrac{120}{360}=6\\pi$입니다."
   },
   {
@@ -927,12 +928,12 @@
    "type": "multiple",
    "body": "반지름이 $6\\,\\mathrm{cm}$, 중심각이 $60^\\circ$인 부채꼴의 넓이는 얼마인가요?",
    "options": [
-    "$12\\pi\\,\\mathrm{cm^2}$",
-    "$3\\pi\\,\\mathrm{cm^2}$",
     "$6\\pi\\,\\mathrm{cm^2}$",
+    "$3\\pi\\,\\mathrm{cm^2}$",
+    "$12\\pi\\,\\mathrm{cm^2}$",
     "$36\\pi\\,\\mathrm{cm^2}$"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "$\\pi\\times6^2\\times\\dfrac{60}{360}=6\\pi$입니다."
   },
   {
@@ -963,12 +964,12 @@
    "type": "multiple",
    "body": "반지름이 $10\\,\\mathrm{cm}$이고 호의 길이가 $6\\pi\\,\\mathrm{cm}$인 부채꼴의 넓이는 얼마인가요?",
    "options": [
-    "$30\\pi\\,\\mathrm{cm^2}$",
-    "$60\\pi\\,\\mathrm{cm^2}$",
     "$15\\pi\\,\\mathrm{cm^2}$",
+    "$60\\pi\\,\\mathrm{cm^2}$",
+    "$30\\pi\\,\\mathrm{cm^2}$",
     "$100\\pi\\,\\mathrm{cm^2}$"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "$S=\\dfrac12 rl=\\dfrac12\\times10\\times6\\pi=30\\pi$입니다."
   },
   {
@@ -982,12 +983,12 @@
    "type": "multiple",
    "body": "반지름이 $12\\,\\mathrm{cm}$인 부채꼴의 넓이가 $24\\pi\\,\\mathrm{cm^2}$일 때 중심각의 크기는 얼마인가요?",
    "options": [
-    "90°",
-    "30°",
     "60°",
+    "30°",
+    "90°",
     "120°"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "$\\pi\\times12^2\\times\\dfrac{x}{360}=24\\pi$에서 $144x=8640$이므로 $x=60$입니다."
   },
   {
@@ -1016,12 +1017,12 @@
    "type": "multiple",
    "body": "다각형인 면으로만 둘러싸인 입체도형을 무엇이라고 하나요?",
    "options": [
-    "다면체",
+    "구",
     "회전체",
     "원기둥",
-    "구"
+    "다면체"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "다각형으로 이루어진 면으로 둘러싸인 입체도형이 다면체입니다."
   },
   {
@@ -1051,12 +1052,12 @@
    "type": "multiple",
    "body": "직사각형의 한 변을 축으로 하여 1회전시킬 때 생기는 회전체는 무엇인가요?",
    "options": [
-    "원뿔대",
     "원뿔",
+    "원기둥",
     "구",
-    "원기둥"
+    "원뿔대"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "직사각형을 한 변을 축으로 회전시키면 원기둥이 됩니다."
   },
   {
@@ -1137,12 +1138,12 @@
    "type": "multiple",
    "body": "원뿔을 회전축을 포함하는 평면으로 자를 때 생기는 단면의 모양은 무엇인가요?",
    "options": [
+    "사다리꼴",
     "원",
-    "이등변삼각형",
     "직사각형",
-    "정삼각형"
+    "이등변삼각형"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "원뿔을 축을 포함하는 평면으로 자르면 이등변삼각형 모양의 단면이 생깁니다."
   },
   {
@@ -1156,12 +1157,12 @@
    "type": "multiple",
    "body": "직각삼각형의 직각을 낀 한 변을 축으로 하여 1회전시켰을 때 생기는 회전체의 이름은 무엇인가요?",
    "options": [
-    "원뿔대",
+    "원뿔",
     "원기둥",
     "구",
-    "원뿔"
+    "원뿔대"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "직각삼각형을 직각을 낀 한 변을 축으로 회전시키면 원뿔이 됩니다."
   }
  ],

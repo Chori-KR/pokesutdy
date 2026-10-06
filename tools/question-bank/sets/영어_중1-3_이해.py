@@ -46,7 +46,7 @@ P10 = b.passage("p10", "Reading Rabbits Book Club",
 P11 = b.passage("p11", "After the Math Test",
     "Amy: How was your math test, Ben? Ben: It was a piece of cake! I finished early. Amy: Wow, you must have studied hard. Ben: Yes, I did. But Mina was under the weather today, so she missed the test. Amy: Oh no, is she okay? Ben: I think she has a cold. She said she will take a make-up test next week. Amy: I hope she feels better soon. By the way, our science test is next Monday. Ben: Don't worry. Let's study together this weekend. Two heads are better than one. Amy: Great idea! I'll bring some snacks.", "직접 지음")
 P12 = b.passage("p12", "Dara's First Concert",
-    "Dara was nervous about her first piano concert. Her teacher whispered, \"Break a leg!\" before she walked onto the stage. Dara smiled because she knew it meant \"Good luck!\" When she sat down, the room was so quiet that you could hear a pin drop. She took a deep breath and began to play. Her fingers danced across the keys, and the music filled the hall. After the last note, the audience stood up and cheered. Dara's heart was full. Her teacher later said, \"You really are the apple of your parents' eyes.\" Dara blushed, but she was happy.", "직접 지음")
+    "Dara was nervous about her first piano concert. Her teacher whispered, \"Break a leg!\" before she walked onto the stage. Dara smiled because she knew it meant \"Good luck!\" When she sat down, the room was so quiet that you could hear a pin drop. She took a deep breath and began to play. Her fingers danced across the keys, and the music filled the hall. After the last note, the audience stood up and cheered. Dara's heart was full. Her teacher later said, \"You really are the apple of your parents' eye.\" Dara blushed, but she was happy.", "직접 지음")
 
 # ───────── 9영01-01 연음·축약 ─────────
 S = "9영01-01"
@@ -77,19 +77,19 @@ Q(S, "A", "글쓴이가 가장 동의할 만한 말은 무엇인가요?", "충�
 
 # ───────── 9영01-04 논리적 관계 ─────────
 S = "9영01-04"
-Q(S, "C", "씨앗이 물과 따뜻한 흙을 얻은 뒤 가장 먼저 자라는 것은 무엇인가요?", "뿌리", ["줄기", "꽃", "씨앗"], "a small root grows down 이 먼저입니다.", p=P5)
+SH(S, "C", "씨앗이 물과 따뜻한 흙을 얻은 뒤 가장 먼저 자라는 부분은 무엇인가요? (글에 나온 영어 한 단어)", ["root", "Root", "a root", "roots", "a small root"], "After a few days, a small root grows down into the soil이 먼저이고, 그다음에 stem이 자랍니다.", p=P5)
 Q(S, "B", "잎이 열린 뒤 잎이 하는 일은 무엇인가요?", "햇빛으로 식물의 양분을 만든다", ["꽃을 시들게 한다", "씨앗을 땅에 심는다", "뿌리를 끊는다"], "they use sunlight to make food for the plant.", p=P5)
 Q(S, "A", "식물이 자라는 순서로 알맞은 것은 무엇인가요?", "씨앗 → 뿌리 → 줄기 → 잎 → 꽃", ["씨앗 → 줄기 → 뿌리 → 꽃 → 잎", "뿌리 → 씨앗 → 잎 → 줄기 → 꽃", "씨앗 → 잎 → 뿌리 → 줄기 → 꽃"], "글의 순서를 따라가면 알 수 있습니다.", p=P5)
 Q(S, "C", "Eun-woo가 버스를 놓친 까닭은 무엇인가요?", "늦게 일어났기 때문이다", ["비가 왔기 때문이다", "어머니가 회의 중이었기 때문이다", "우산이 없었기 때문이다"], "알람이 울리지 않아 늦게 일어났습니다.", p=P6)
 Q(S, "B", "버스를 놓친 직후 Eun-woo가 한 일은 무엇인가요?", "어머니에게 전화했다", ["지하철을 탔다", "수건을 받았다", "아침을 먹었다"], "버스가 떠난 뒤 어머니께 전화한 다음 지하철을 탔습니다.", p=P6)
-SH(S, "A", "Eun-woo가 그날 이후 매일 밤 알람을 확인하는 까닭은 무엇인가요? (한국어로 한 문장)", ["늦지 않으려고", "다시 늦지 않기 위해", "알람이 울리지 않아서 늦었기 때문에"], "알람이 울리지 않아 하루가 꼬였기 때문에 다시 늦지 않으려는 것입니다.", p=P6)
+Q(S, "A", "Eun-woo가 그날 이후 매일 밤 알람을 확인하는 까닭으로 가장 알맞은 것은 무엇인가요?", "알람이 울리지 않아 지각했던 일을 다시 겪지 않으려고", ["어머니가 회의 중에 전화를 받지 않아서", "비 오는 날에는 지하철을 타야 해서", "선생님께 수건을 돌려드리려고"], "알람이 울리지 않아 늦게 일어난 것이 모든 일의 시작이었으므로, 다시 늦지 않으려고 알람을 확인합니다.", p=P6)
 
 # ───────── 9영01-05 인물의 감정 ─────────
 S = "9영01-05"
 Q(S, "C", "오늘 아침 발표를 앞둔 Jiho의 기분으로 알맞은 것은 무엇인가요?", "nervous (긴장한)", ["bored (지루한)", "angry (화난)", "sleepy (졸린)"], "손이 떨리고 심장이 빨리 뛰었습니다.", p=P7)
 Q(S, "B", "Sora가 웃는 것을 본 뒤 Jiho의 기분으로 알맞은 것은 무엇인가요?", "encouraged (힘이 난)", ["embarrassed (창피한)", "jealous (질투하는)", "disappointed (실망한)"], "he felt a little better 이므로 힘을 얻었습니다.", p=P7)
 Q(S, "A", "발표를 끝낸 뒤 Jiho의 감정을 가장 잘 나타낸 말은 무엇인가요?", "proud (자랑스러운)", ["lonely (외로운)", "afraid (두려운)", "confused (혼란스러운)"], "I did it! I'm so happy with myself.", p=P7)
-SH(S, "C", "Coco가 사라진 날 밤, Mia의 기분은 어땠나요? (영어 한 단어: s로 시작하는 기분)", ["sad", "Sad"], "눈물을 흘리며 저녁도 먹지 못했습니다.", p=P8)
+SH(S, "C", "Coco가 사라진 날 밤, Mia의 기분은 어땠나요? (s로 시작하는 영어 세 글자 낱말)", ["sad", "Sad"], "눈물을 흘리며 저녁도 먹지 못했습니다.", p=P8)
 Q(S, "B", "Mia가 이웃에게 \"thank you\"를 여러 번 말한 까닭으로 알맞은 것은 무엇인가요?", "Coco를 찾아 주어 고마웠기 때문이다", ["이웃에게 화가 났기 때문이다", "새 이름표가 싫었기 때문이다", "이웃이 이사 갔기 때문이다"], "Coco를 안고 온 이웃에게 고마움을 표현했습니다.", p=P8)
 Q(S, "A", "이 글에서 Mia의 감정 변화로 알맞은 것은 무엇인가요?", "worried → relieved (걱정 → 안도)", ["happy → sad (기쁨 → 슬픔)", "angry → bored (화 → 지루함)", "proud → ashamed (자랑 → 부끄러움)"], "잃어버린 뒤 걱정하다가 찾은 뒤 안도했습니다.", p=P8)
 
@@ -109,7 +109,7 @@ Q(S, "B", "\"Mina was under the weather today\"에서 under the weather의 뜻�
 Q(S, "A", "\"Two heads are better than one.\"이 암시하는 뜻은 무엇인가요?", "함께 하면 혼자 할 때보다 더 잘할 수 있다", ["머리가 둘인 사람이 더 똑똑하다", "혼자 공부해야 한다", "머리를 맞대면 아프다"], "함께 공부하자는 제안의 이유입니다.", p=P11)
 Q(S, "C", "\"Break a leg!\"에 담긴 뜻은 무엇인가요?", "행운을 빈다", ["다리를 조심해라", "무대에서 내려와라", "연주를 멈춰라"], "글에서 \"Good luck!\"이라고 풀이합니다.", p=P12)
 Q(S, "B", "\"you could hear a pin drop\"이 나타내는 분위기는 무엇인가요?", "매우 조용하다", ["매우 시끄럽다", "매우 어둡다", "매우 춥다"], "핀 떨어지는 소리까지 들릴 만큼 조용하다는 표현입니다.", p=P12)
-Q(S, "A", "\"the apple of your parents' eyes\"에 담긴 뜻은 무엇인가요?", "부모님이 아주 사랑하는 사람", ["사과를 좋아하는 사람", "눈이 나쁜 사람", "부모님께 꾸중 듣는 사람"], "apple of one's eye는 몹시 소중한 사람을 뜻합니다.", p=P12)
+Q(S, "A", "\"the apple of your parents' eye\"에 담긴 뜻은 무엇인가요?", "부모님이 아주 사랑하는 사람", ["사과를 좋아하는 사람", "눈이 나쁜 사람", "부모님께 꾸중 듣는 사람"], "apple of one's eye는 몹시 소중한 사람을 뜻합니다.", p=P12)
 
 # ───────── 9영01-08 매체·전략 ─────────
 S = "9영01-08"
@@ -126,7 +126,7 @@ Q(S, "C", "친구가 \"I think summer is better than winter.\"라고 했는데 �
 SH(S, "C", "\"Everyone has different opinions. We should ___ them.\"에 들어갈 알맞은 영어 단어를 쓰세요. (r로 시작)", ["respect", "Respect"], "다른 의견을 존중해야 합니다.")
 Q(S, "B", "토론에서 의견이 다를 때 알맞은 영어 표현은 무엇인가요?", "That's an interesting idea, but I see it differently.", ["Nobody agrees with you.", "Stop talking.", "That's boring."], "상대 의견을 인정하면서 내 생각을 말합니다.")
 Q(S, "B", "글쓴이의 의견이 나와 다를 때 가장 알맞은 읽기 태도는 무엇인가요?", "근거를 살피며 다른 관점을 이해하려 한다", ["읽지 않고 덮는다", "글쓴이를 비웃는다", "내용을 모두 무시한다"], "다양한 관점을 존중하며 읽는 태도입니다.")
-Q(S, "A", "Sam: \"I think school uniforms are good.\" 다음 중 Sam의 의견을 존중하면서 다른 의견을 말한 것은 무엇인가요?", "I understand your point, but I think free clothes help us show who we are.", ["That's the worst idea ever.", "Only a fool likes uniforms.", "I won't listen to you."], "존중하면서 자신의 의견을 표현합니다.")
+Q(S, "A", "Sam: \"I think school uniforms are good.\" 다음 중 Sam의 의견을 존중하면서 다른 의견을 말한 것은 무엇인가요?", "I understand your point, but I think wearing our own clothes helps us show who we are.", ["That's the worst idea ever.", "Only a fool likes uniforms.", "I won't listen to you."], "존중하면서 자신의 의견을 표현합니다.")
 Q(S, "A", "다음 중 상대방의 관점을 존중하지 않는 말은 무엇인가요?", "That's a silly idea. Nobody agrees with you.", ["Could you tell me more about that?", "I never thought of it that way.", "We can agree to disagree."], "상대를 깎아내리는 말입니다.")
 
 # ───────── 9영01-10 관심사 ─────────

@@ -94,15 +94,16 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "위치-시간 그래프에서 물체가 정지해 있을 때 나타나는 모양은 무엇인가요?",
+   "body": "그림은 직선 위에서 움직이는 물체의 시간에 따른 속력을 나타낸 것입니다. 이 물체가 0초부터 5초까지 이동한 거리는 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 330 240\" font-family=\"sans-serif\"><text x=\"46\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(m/s)</text><line x1=\"52\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"52\" y1=\"154\" x2=\"304\" y2=\"154\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"158\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"52\" y1=\"122\" x2=\"304\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"126\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"52\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"94\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"52\" y1=\"58\" x2=\"304\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"62\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">8</text><line x1=\"52\" y1=\"26\" x2=\"304\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">10</text><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"26\" x2=\"73\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"73\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"115\" y1=\"26\" x2=\"115\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"115\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"157\" y1=\"26\" x2=\"157\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"157\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"199\" y1=\"26\" x2=\"199\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"199\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"241\" y1=\"26\" x2=\"241\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"241\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"283\" y1=\"26\" x2=\"283\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"283\" y=\"204\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">5</text><text x=\"304\" y=\"220\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(s)</text><polyline points=\"73,186 115,154 157,122 199,90 241,58 283,26\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"73\" cy=\"186\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"115\" cy=\"154\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"157\" cy=\"122\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"199\" cy=\"90\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"241\" cy=\"58\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"283\" cy=\"26\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
    "options": [
-    "오른쪽 위로 향하는 직선",
-    "시간 축에 나란한 수평선",
-    "오른쪽 아래로 향하는 직선",
-    "수직선"
+    "10 m",
+    "25 m",
+    "50 m",
+    "2 m"
    ],
    "answer": 1,
-   "why": "위치가 변하지 않으면 그래프는 수평선입니다."
+   "why": "속력-시간 그래프 아래의 넓이가 이동 거리이므로 $\\dfrac{1}{2}\\times5\\times10=25$ m입니다."
   },
   {
    "id": "과학-중1-3-9과19-01-a2",
@@ -208,10 +209,10 @@
    "type": "multiple",
    "body": "공기 저항이 없는 곳에서 무거운 쇠공과 가벼운 깃털을 동시에 떨어뜨리면 어떻게 되나요?",
    "options": [
-    "둘 다 떨어지지 않는다",
-    "쇠공이 먼저 떨어진다",
-    "깃털이 먼저 떨어진다",
-    "동시에 떨어진다"
+    "둘 다 떨어지지 않고 떠 있다",
+    "쇠공이 먼저 바닥에 닿는다",
+    "깃털이 먼저 바닥에 닿는다",
+    "동시에 바닥에 닿는다"
    ],
    "answer": 3,
    "why": "중력 가속도는 질량과 관계없이 같습니다."
@@ -225,15 +226,15 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "속력-시간 그래프가 원점에서 오른쪽 위로 올라가는 직선일 때 이 운동은 무엇인가요?",
+   "body": "공기 저항이 없을 때 질량 $1\\,\\mathrm{kg}$인 공과 $2\\,\\mathrm{kg}$인 공을 같은 높이에서 동시에 자유 낙하시켰습니다. 2초 뒤 두 공의 속력으로 알맞은 것은 무엇인가요? (속력은 1초마다 $9.8\\,\\mathrm{m/s}$씩 증가)",
    "options": [
-    "등속 운동이다",
-    "속력이 일정하게 증가하는 운동이다",
-    "속력이 감소하는 운동이다",
-    "정지 상태이다"
+    "두 공 모두 9.8 m/s",
+    "두 공 모두 19.6 m/s",
+    "1 kg 공 9.8 m/s, 2 kg 공 19.6 m/s",
+    "1 kg 공 19.6 m/s, 2 kg 공 39.2 m/s"
    ],
    "answer": 1,
-   "why": "기울기가 일정하면 속력이 일정하게 변합니다."
+   "why": "자유 낙하에서 속력 변화는 질량과 관계없이 1초마다 $9.8\\,\\mathrm{m/s}$이므로 2초 뒤 두 공 모두 $9.8\\times2=19.6$ m/s입니다."
   },
   {
    "id": "과학-중1-3-9과19-03-c1",

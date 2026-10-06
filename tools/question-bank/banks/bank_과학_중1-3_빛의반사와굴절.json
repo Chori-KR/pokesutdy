@@ -56,16 +56,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림은 빛이 공기에서 물로 진행할 때를 나타낸 것입니다. 입사각과 굴절각의 크기 관계로 알맞은 것은 무엇인가요?",
+   "body": "그림은 빛이 공기에서 물로 진행할 때를 나타낸 것입니다. 이에 대한 설명으로 옳은 것을 〈보기〉에서 모두 고른 것은?\n〈보기〉\nㄱ. 굴절 광선은 법선 쪽으로 꺾인다.\nㄴ. 입사각이 굴절각보다 크다.\nㄷ. 빛은 경계면에서 진행 방향이 바뀌지 않는다.\nㄹ. 굴절각은 굴절 광선과 경계면 사이의 각이다.",
    "svg": "<svg viewBox=\"0 0 230 190\" font-family=\"sans-serif\"><line x1=\"20\" y1=\"95\" x2=\"210\" y2=\"95\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"115\" y1=\"20\" x2=\"115\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"34\" y=\"87\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">공기</text><text x=\"34\" y=\"113\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">물</text><text x=\"121\" y=\"28\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">법선</text><line x1=\"61.4\" y1=\"50\" x2=\"115\" y2=\"95\" stroke=\"#4b7bec\" stroke-width=\"3\"/><line x1=\"115\" y1=\"95\" x2=\"155.2\" y2=\"152.3\" stroke=\"#e07b39\" stroke-width=\"3\"/><text x=\"55.4\" y=\"44\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">입사 광선</text><text x=\"161.2\" y=\"166.3\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">굴절 광선</text></svg>",
    "options": [
-    "입사각 > 굴절각",
-    "입사각 < 굴절각",
-    "입사각 = 굴절각",
-    "비교할 수 없다"
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄹ"
    ],
    "answer": 0,
-   "why": "공기에서 물로 갈 때는 법선 쪽으로 꺾여 굴절각이 더 작습니다."
+   "why": "공기에서 물로 갈 때 빛은 법선 쪽으로 꺾여 굴절각이 입사각보다 작습니다. 굴절각은 굴절 광선과 법선 사이의 각입니다."
   },
   {
    "id": "과학-중1-3-9과10-01-b2",
@@ -428,15 +428,15 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "같은 크기로 소리 A와 B를 낼 때 B의 진동수가 A보다 컸습니다. 소리 A와 B를 비교한 설명으로 알맞은 것은 무엇인가요?",
+   "body": "진폭이 같은 소리 가, 나, 다의 진동수가 각각 200 Hz, 500 Hz, 350 Hz입니다. 세 소리를 비교한 설명으로 알맞은 것은 무엇인가요?",
    "options": [
-    "B가 A보다 높은 소리이다",
-    "B가 A보다 큰 소리이다",
-    "B가 A보다 낮은 소리이다",
-    "두 소리는 높이가 같다"
+    "나가 가장 높은 소리이다",
+    "가가 가장 높은 소리이다",
+    "나가 가장 큰 소리이다",
+    "다가 가장 낮은 소리이다"
    ],
    "answer": 0,
-   "why": "진동수가 클수록 소리가 높습니다."
+   "why": "진동수가 클수록 높은 소리이므로 나가 가장 높고 가가 가장 낮습니다. 진폭이 같으므로 소리의 크기는 같습니다."
   },
   {
    "id": "과학-중1-3-9과10-04-a2",

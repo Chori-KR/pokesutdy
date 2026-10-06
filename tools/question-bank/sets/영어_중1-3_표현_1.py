@@ -56,7 +56,7 @@ SH(S, "C", "\"I'm very ___. I have a big test tomorrow.\"에 알맞은 감정 �
 Q(S, "B", "한 소년이 상을 받고 활짝 웃으며 팔을 번쩍 들었습니다. 이 소년을 가장 알맞게 묘사한 문장은 무엇인가요?", "He looks proud and happy.", ["He looks bored and tired.", "He looks scared and lonely.", "He looks angry and upset."], "웃음과 팔을 번쩍 든 모습은 자랑스럽고 기쁜 기분입니다.")
 Q(S, "B", "\"I'm happy.\"보다 더 강한 기쁨을 나타내는 표현은 무엇인가요?", "I'm thrilled.", ["I'm fine.", "I'm okay.", "I'm calm."], "thrilled는 매우 신나고 기쁜 상태입니다.")
 Q(S, "A", "친구들이 생일을 잊어 버려 속상한 Tom의 기분을 묘사한 문장은 무엇인가요?", "Tom feels disappointed because his friends forgot his birthday.", ["Tom feels excited because his friends forgot his birthday.", "Tom feels proud because his friends forgot his birthday.", "Tom feels relaxed because his friends forgot his birthday."], "기대했던 일이 이루어지지 않아 실망한 감정입니다.")
-SH(S, "A", "\"My heart is pounding and my hands are cold before the show.\"는 어떤 감정을 나타내나요? (n으로 시작하는 영어 한 단어)", ["nervous", "Nervous"], "무대 전의 심장 두근거림은 긴장(nervous)입니다.")
+SH(S, "A", "\"I fell down in front of the whole class, and my face turned red.\"는 어떤 감정을 나타내나요? (e로 시작하는 영어 한 단어)", ["embarrassed", "Embarrassed"], "여러 사람 앞에서 넘어져 얼굴이 빨개진 것은 창피한(embarrassed) 감정입니다.")
 
 # ───────── 9영02-03 사실 정보 설명 ─────────
 S = "9영02-03"
@@ -65,13 +65,13 @@ SH(S, "C", "\"Seoul is the ___ of Korea.\"에 알맞은 낱말을 쓰세요. (�
 Q(S, "B", "\"물은 섭씨 100도에서 끓는다\"를 영어로 알맞게 나타낸 문장은 무엇인가요?", "Water boils at 100 degrees Celsius.", ["Water boil at 100 degrees Celsius.", "Water boils in 100 degrees Celsius.", "Water is boiled at 100 degrees Celsius every day."], "일반적인 사실은 현재 시제로 표현합니다.")
 Q(S, "B", "박쥐에 관한 사실을 설명한 문장으로 알맞은 것은 무엇인가요?", "Bats are the only mammals that can fly.", ["Bats is the only mammals that can fly.", "Bats are the only mammal that flies fly.", "Bats be the only mammals that can fly."], "복수 주어에는 are를 씁니다.")
 Q(S, "A", "\"Mt. Halla is ___ than Mt. Namsan.\" 높이를 비교하는 문장에 알맞은 말은 무엇인가요?", "higher", ["high", "highest", "more high"], "비교급은 higher입니다.")
-Q(S, "A", "\"치타는 시속 100킬로미터까지 달릴 수 있다\"를 알맞게 표현한 것은 무엇인가요?", "Cheetahs can run as fast as 100 km/h.", ["Cheetahs can runs fast than 100 km/h.", "Cheetahs can running as fast 100 km/h.", "Cheetah can run as fast as 100 km/h each."], "as fast as로 속도를 비교합니다.")
+Q(S, "A", "\"치타는 시속 100킬로미터까지 달릴 수 있다\"를 알맞게 표현한 것은 무엇인가요?", "Cheetahs can run as fast as 100 km/h.", ["Cheetahs can runs fast than 100 km/h.", "Cheetahs can running as fast 100 km/h.", "Cheetah can run as fast as 100 km/h each."], "as fast as 100 km/h는 ‘시속 100킬로미터만큼 빠르게(까지)’라는 뜻이며, can 뒤에는 동사원형 run을 씁니다.")
 
 # ───────── 9영02-04 경험·계획 ─────────
 S = "9영02-04"
 Q(S, "C", "\"How was your weekend?\"에 대한 대답으로 알맞은 것은 무엇인가요?", "I went to the zoo with my family.", ["I will go to the zoo tomorrow.", "I am going to the zoo now.", "I go to the zoo every day."], "주말 경험을 묻는 질문에는 과거형으로 답합니다.")
 SH(S, "B", "\"I ___ to Busan last summer.\"에 알맞은 go의 과거형을 쓰세요.", ["went", "Went"], "go의 과거형은 went입니다.")
-Q(S, "A", "\"Have you ever been to Jeju Island?\"에 대한 대답으로 알맞은 것은 무엇인가요?", "Yes, I have. I visited there last year.", ["Yes, I will. I visited there last year.", "Yes, I am. I visit there last year.", "No, I do. I never visited there."], "경험을 묻는 현재완료 질문에는 have로 답합니다.")
+Q(S, "A", "\"Have you ever been to Jeju Island?\"에 대한 대답으로 알맞은 것은 무엇인가요?", "Yes, I have. I went there last year.", ["Yes, I will. I went there last year.", "Yes, I am. I go there last year.", "No, I do. I never went there."], "경험을 묻는 현재완료 질문에는 have로 답합니다.")
 Q(S, "C", "겨울 방학 계획 글의 (1)에 알맞은 말은 무엇인가요?", "went", ["go", "will go", "am going"], "last year가 있으므로 과거형 went입니다.", p=P1)
 Q(S, "B", "겨울 방학 계획 글의 (2)에 알맞은 말은 무엇인가요?", "clean", ["cleaned", "cleans", "cleaning"], "plan to 뒤에는 동사원형이 옵니다.", p=P1)
 Q(S, "A", "이 글의 내용과 일치하는 것은 무엇인가요?", "글쓴이는 올해 스키를 배울 계획이다", ["글쓴이는 작년에 스키를 배웠다", "글쓴이는 책을 한 권만 읽을 것이다", "글쓴이는 시골에 가지 않을 것이다"], "This year, I want to learn how to ski.", p=P1)
@@ -89,7 +89,7 @@ SH(S, "A", "\"I missed the bus. I had to walk.\"를 because로 연결하면 \"I 
 S = "9영02-06"
 Q(S, "C", "자신의 의견을 말할 때 문장을 시작하는 표현으로 알맞은 것은 무엇인가요?", "In my opinion,", ["By the way,", "At last,", "Good night,"], "의견을 말할 때는 In my opinion을 씁니다.")
 Q(S, "B", "\"I agree with you.\"의 뜻으로 알맞은 것은 무엇인가요?", "나는 너의 의견에 동의해", ["나는 너의 의견에 반대해", "나는 너를 모른다", "나는 너에게 질문한다"], "agree with는 동의한다는 뜻입니다.")
-SH(S, "A", "\"I think we need more trees. ___, trees give us shade.\" 이유를 덧붙이는 연결어로 알맞은 낱말을 쓰세요. (F로 시작: F___, ...)", ["First", "first", "Second", "second", "Also", "also", "Besides", "besides"], "이유를 덧붙일 때 First, Second, Also 등을 씁니다.")
+SH(S, "A", "\"I think we need more trees. ___, trees give us shade.\" 이유를 덧붙이는 연결어로 알맞은 낱말을 쓰세요. (F로 시작: F___, ...)", ["First", "first", "Furthermore", "furthermore", "Second", "second", "Also", "also", "Besides", "besides"], "이유를 덧붙일 때 First, Furthermore, Also 등을 씁니다.")
 Q(S, "C", "글쓴이의 의견은 무엇인가요?", "학생들은 교복을 입어야 한다", ["학생들은 교복을 입지 말아야 한다", "교복은 비싸야 한다", "학교에 가지 않아야 한다"], "In my opinion, students should wear school uniforms.", p=P8)
 Q(S, "B", "글쓴이가 제시한 이유로 알맞은 것은 무엇인가요?", "아침에 입을 옷을 고르는 시간이 줄어든다", ["교복이 항상 편안하다", "교복이 값비싸다", "교복을 입으면 숙제가 없다"], "uniforms save time in the morning", p=P8)
 Q(S, "A", "마지막 문장 \"For these reasons, ...\"의 역할로 알맞은 것은 무엇인가요?", "앞의 이유를 정리하며 의견을 다시 강조한다", ["새로운 반대 의견을 소개한다", "질문을 던진다", "글을 시작한다"], "For these reasons는 결론에 쓰는 표현입니다.", p=P8)
@@ -107,7 +107,7 @@ Q(S, "A", "이 글의 주제를 요약한 것으로 가장 알맞은 것은 무�
 S = "9영02-08"
 Q(S, "C", "이메일의 (1)에 알맞은 시작 인사는 무엇인가요?", "Dear", ["Good bye", "Thank", "Sorry"], "편지는 Dear로 시작합니다.", p=P6)
 Q(S, "B", "이메일의 (2)에 알맞은 맺음말은 무엇인가요?", "Best wishes", ["Dear friend", "Good morning", "See you never"], "끝맺음 인사로 Best wishes를 씁니다.", p=P6)
-SH(S, "A", "이메일에서 \"I took many photos, and I will send them to you this weekend.\"의 will send는 어느 때의 일을 나타내나요? (과거/미래 중 쓰기)", ["미래", "future"], "will + 동사원형은 미래를 나타냅니다.", p=P6)
+SH(S, "A", "이메일에서 Jisu가 사진을 보내 주겠다고 한 때는 언제인가요? (글에 나온 영어 두 낱말)", ["this weekend", "This weekend", "this weekend."], "I will send them to you this weekend.에서 will send는 앞으로 할 일이고, 그때는 this weekend입니다.", p=P6)
 Q(S, "C", "일기에서 가장 먼저 쓰는 것은 무엇인가요?", "날짜와 요일", ["친구 이름", "시험 점수", "주소"], "일기는 날짜와 요일로 시작합니다.", p=P7)
 Q(S, "B", "일기의 \"I ride a roller coaster three times\"를 알맞게 고친 것은 무엇인가요?", "I rode a roller coaster three times.", ["I riding a roller coaster three times.", "I will ride a roller coaster three times.", "I rides a roller coaster three times."], "지난 일을 쓰는 일기는 과거형 rode를 씁니다.", p=P7)
 Q(S, "A", "일기 마지막 부분에 덧붙이기에 가장 알맞은 문장은 무엇인가요?", "I will remember this day forever.", ["Dear Principal,", "Please send me an answer.", "Thank you for buying."], "하루의 느낌이나 다짐으로 일기를 마무리합니다.", p=P7)
@@ -124,7 +124,7 @@ Q(S, "A", "다음 중 정보 윤리에 어긋나는 행동은 무엇인가요?",
 # ───────── 9영02-10 상황·목적 전략 ─────────
 S = "9영02-10"
 Q(S, "C", "글을 쓰기 전에 아이디어를 마구 떠올려 적어 보는 활동은 무엇인가요?", "브레인스토밍", ["받아쓰기", "베껴 쓰기", "외우기"], "아이디어를 모으는 쓰기 전 전략입니다.")
-SH(S, "C", "쓰기 전에 아이디어를 쏟아 내는 활동을 영어로 brain___ 이라고 합니다. 빈칸에 알맞은 낱말을 쓰세요.", ["storming", "Storming"], "brainstorming은 아이디어를 쏟아 내는 활동입니다.")
+SH(S, "C", "상대의 말을 잘 알아듣지 못했을 때 다시 말해 달라고 부탁하는 표현을 완성하세요: \"Could you say that ___, please?\" (a로 시작하는 영어 한 단어)", ["again", "Again"], "Could you say that again, please?는 다시 말해 달라고 정중하게 부탁하는 표현입니다.")
 Q(S, "B", "선생님께 정중하게 도움을 청하는 말로 알맞은 것은 무엇인가요?", "Could you help me, please?", ["Help me now.", "You must help me.", "Hey, help."], "상황과 대상에 맞는 정중한 표현입니다.")
 Q(S, "B", "말하다가 영어 단어가 생각나지 않을 때 알맞은 전략은 무엇인가요?", "다른 말로 풀어서 설명한다", ["말을 멈추고 가만히 있는다", "한국어로만 말한다", "상대를 쳐다보지 않는다"], "의사소통을 이어 가는 전략입니다.")
 Q(S, "A", "교장 선생님께 보내는 공식적인 이메일에 알맞은 문장은 무엇인가요?", "I would like to ask about the school festival.", ["Yo! Tell me about the festival.", "Hey, what's up with the festival?", "Gimme the festival info."], "공식적인 상황에는 정중하고 격식 있는 표현을 씁니다.")

@@ -263,16 +263,16 @@
    "level": "C",
    "difficulty": "easy",
    "type": "multiple",
-   "body": "표에서 시장의 ‘옛날’ 모습에 해당하는 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 306 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"300\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"303\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"303\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"303\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><text x=\"138\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><text x=\"248\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">길</text><text x=\"138\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">흙길</text><text x=\"248\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">포장된 도로</text><text x=\"43\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">집</text><text x=\"138\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">초가집</text><text x=\"248\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">높은 건물</text><text x=\"43\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">짐 나르기</text><text x=\"138\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">소달구지</text><text x=\"248\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">트럭</text></svg>",
+   "body": "표는 시장의 옛날 모습과 오늘 모습을 비교한 것입니다. ㉠에 들어갈 알맞은 말은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 306 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"300\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"3\" x2=\"83\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"303\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"303\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"303\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"43\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><text x=\"138\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">옛날</text><text x=\"248\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">오늘</text><text x=\"43\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">길</text><text x=\"138\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">흙길</text><text x=\"248\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">포장된 도로</text><text x=\"43\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">집</text><text x=\"138\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">㉠</text><text x=\"248\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">높은 건물</text><text x=\"43\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">짐 나르기</text><text x=\"138\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">소달구지</text><text x=\"248\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">트럭</text></svg>",
    "options": [
-    "B",
-    "A",
-    "둘 다",
-    "알 수 없다"
+    "높은 아파트",
+    "초가집",
+    "유리로 된 빌딩",
+    "대형 마트"
    ],
    "answer": 1,
-   "why": "흙길, 초가집, 소달구지는 옛날 시장의 모습이고 B는 오늘의 모습입니다."
+   "why": "옛날 시장 길 양옆에는 낮은 초가집이 있었고, 오늘은 높은 건물이 서 있습니다."
   },
   {
    "id": "사회-초3-4-4사02-03-c2",

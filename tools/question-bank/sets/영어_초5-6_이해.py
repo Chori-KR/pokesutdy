@@ -33,15 +33,15 @@ P9 = b.passage("p9", "Why I Love Reading",
 P10 = b.passage("p10", "My New Puppy",
     "I have a new puppy. He is very energetic. He runs around the house all day, jumps on the sofa, and plays with his toys. He also loves to chew my shoes! By evening, he is so tired that he falls asleep right away. Then my house becomes quiet, and I can finally do my homework.", "직접 지음")
 P11 = b.passage("p11", "Recycling Is Easy",
-    "Recycling helps our Earth. We can save paper, plastic, and cans. We put paper in the paper box. We put cans and bottles in separate boxes. Recycling also saves energy and keeps our town clean. Small actions can make a big change. Let's recycle every day!", "직접 지음")
+    "Recycling helps our Earth. We can recycle paper, plastic, and cans. We put paper in the paper box. We put cans and bottles in separate boxes. Recycling also saves energy and keeps our town clean. Small actions can make a big change. Let's recycle every day!", "직접 지음")
 P12 = b.passage("p12", "A School Trip",
     "Yesterday, my class went on a trip to the zoo. We left school at nine o'clock by bus. When we arrived, we first saw the monkeys. Then we watched the elephants take a bath. After lunch, we visited the penguin house. Before we went home, we bought small gifts at the shop. We came back to school at four o'clock. It was a great day!", "직접 지음")
 
 # ───────── 6영01-01 강세·리듬·억양 식별 ─────────
 S = "6영01-01"
-b.q(S, "C", "apple을 읽을 때 더 강하게 읽는 부분은 어느 것인가요?",
-    svg=syllables(["ap", "ple"]), options=["ap", "ple", "둘 다 똑같이", "알 수 없다"], answer="ap",
-    why="apple은 첫 번째 음절 ap를 강하게 읽습니다.")
+b.q(S, "C", "television을 읽을 때 가장 강하게 읽는 부분은 어느 것인가요?",
+    svg=syllables(["te", "le", "vi", "sion"]), options=["te", "le", "vi", "sion"], answer="te",
+    why="television은 첫 번째 음절을 강하게 읽습니다(TE-le-vi-sion).")
 b.q(S, "C", "hen, hat, bed, dog 중에서 ten과 끝소리가 같은(라임이 되는) 단어를 쓰세요.",
     answers=["hen"],
     why="ten과 hen은 모두 -en으로 끝납니다.")
@@ -54,7 +54,7 @@ b.q(S, "B", "다음 중 문장 끝을 올려 읽는(↗) 것이 자연스러운 
 b.q(S, "A", "다음 중 문장 끝을 내려 읽는(↘) 것이 자연스러운 의문문은 무엇인가요?",
     options=["What is your name?", "Is this your bag?", "Are you hungry?", "Can you swim?"], answer="What is your name?",
     why="What, Where 같은 의문사 의문문은 보통 끝을 내려 읽습니다.")
-b.q(S, "A", "A: Do you want a green apple? B: No, I want a RED apple. 에서 B가 가장 강하게 읽는 낱말은 무엇인가요?",
+b.q(S, "A", "A: Do you want a green apple? B: No, I want a red apple. 에서 B가 가장 강하게 읽는 낱말은 무엇인가요?",
     answers=["red", "RED", "Red"],
     why="green이 아니라 red라는 것을 강조하기 위해 red를 강하게 읽습니다.")
 
@@ -103,7 +103,7 @@ b.q(S, "A", "‘I’m looking forward to the trip.’의 의미로 가장 알맞
 # ───────── 6영01-04 담화나 글의 세부 정보 ─────────
 S = "6영01-04"
 b.q(S, "C", "글쓴이는 토요일 오전에 어디에 갔나요? (영어로 쓰세요)",
-    answers=["library", "the library"], passage=P1,
+    answers=["library", "the library", "Library", "to the library"], passage=P1,
     why="On Saturday morning, I went to the library 라고 했습니다.")
 b.q(S, "C", "글쓴이가 도서관에서 빌린 책은 무엇에 관한 책인가요? (영어 낱말 하나로 쓰세요)",
     answers=["space", "Space"], passage=P1,
@@ -114,8 +114,8 @@ b.q(S, "B", "토요일 오후의 날씨로 알맞은 것은 무엇인가요?",
 b.q(S, "B", "Tom이 살고 있는 도시는 어디인가요? (영어로 쓰세요)",
     answers=["Toronto", "in Toronto", "Toronto, Canada"], passage=P2,
     why="I'm in Canada now. I live with my uncle in Toronto.라고 했습니다.")
-b.q(S, "A", "Tom은 12월에 누구와 눈사람을 만들었나요? (영어로 쓰세요)",
-    answers=["cousin", "his cousin", "a cousin", "my cousin"], passage=P2,
+b.q(S, "A", "Tom은 어제 누구와 눈사람을 만들었나요? (영어로 쓰세요)",
+    answers=["cousin", "his cousin", "a cousin", "my cousin", "Cousin", "with his cousin", "with my cousin"], passage=P2,
     why="Yesterday, I made a snowman with my cousin.라고 했습니다.")
 b.q(S, "A", "Tom이 앞으로 하고 싶은 일은 무엇인가요?",
     options=["다음 여름에 한국을 방문하는 것", "캐나다에서 학교에 다니는 것", "삼촌을 한국에 초대하는 것", "눈사람을 또 만드는 것"], answer="다음 여름에 한국을 방문하는 것", passage=P2,
@@ -145,9 +145,9 @@ b.q(S, "A", "글쓴이가 마지막에 ‘Let’s recycle every day!’라고 �
 # ───────── 6영01-06 일이나 사건의 순서 ─────────
 S = "6영01-06"
 b.q(S, "C", "샌드위치를 만들 때 가장 먼저 해야 할 일은 무엇인가요? (영어로 쓰세요)",
-    answers=["wash your hands", "Wash your hands", "wash hands", "wash my hands"], passage=P5,
+    answers=["wash your hands", "Wash your hands", "wash your hands.", "Wash your hands.", "wash hands", "Wash hands", "wash my hands", "Wash my hands"], passage=P5,
     why="First, wash your hands.라고 했습니다.")
-b.q(S, "C", "샌드위치를 만든 뒤 마지막으로 하는 일은 무엇인가요?",
+b.q(S, "C", "샌드위치를 만드는 과정의 마지막 단계는 무엇인가요?",
     options=["샌드위치를 반으로 자른다", "빵 두 장을 접시에 놓는다", "손을 씻는다", "치즈를 올린다"], answer="샌드위치를 반으로 자른다", passage=P5,
     why="Finally, cut the sandwich in half.라고 했습니다.")
 b.q(S, "B", "샌드위치를 만드는 순서로 알맞은 것은 무엇인가요?",
@@ -187,7 +187,7 @@ b.q(S, "A", "이 글에서 puppy가 신발을 씹는 것을 말한 까닭으로 
 # ───────── 6영01-08 다양한 매체로 표현된 글 ─────────
 S = "6영01-08"
 b.q(S, "C", "포스터에서 축제가 열리는 날짜를 영어로 쓰세요. (예: May 3)",
-    answers=["October 20", "October 20 (Friday)", "Friday, October 20", "20 October"], passage=P3,
+    answers=["October 20", "October 20th", "Oct. 20", "Oct 20", "October 20 (Friday)", "Friday, October 20", "20 October", "october 20"], passage=P3,
     why="Date: October 20 (Friday).라고 적혀 있습니다.")
 b.q(S, "C", "축제 입장료는 얼마인가요? (영어 낱말 하나로 쓰세요)",
     answers=["free", "Free"], passage=P3,
@@ -214,7 +214,7 @@ b.q(S, "C", "엄마가 만들어 주는 따뜻하고 달콤한 음료는 무엇�
     answers=["cocoa", "Cocoa"], passage=P7,
     why="Mom makes cocoa, warm and sweet.라고 했습니다.")
 b.q(S, "B", "시에서 창문에서 춤을 추듯이 보이는 것은 무엇인가요? (영어로 쓰세요)",
-    answers=["drops", "raindrops", "rain drops", "rain"], passage=P7,
+    answers=["drops", "Drops", "raindrops", "Raindrops", "rain drops", "drop", "raindrop", "rain"], passage=P7,
     why="Drops are dancing on the window pane. 에서 raindrops를 춤추는 것처럼 표현했습니다.")
 b.q(S, "B", "Mina가 리본을 잃어버렸을 때의 마음으로 알맞은 것은 무엇인가요?",
     options=["슬프고 속상했다", "화가 났다", "신이 났다", "졸렸다"], answer="슬프고 속상했다", passage=P8,

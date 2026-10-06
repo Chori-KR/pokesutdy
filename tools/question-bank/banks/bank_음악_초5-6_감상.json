@@ -20,7 +20,7 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "음악에서 소리의 길고 짧음이 이루는 규칙적인 흐름을 무엇이라고 하나요? (두 글자)",
+   "body": "음악에서 길고 짧은 소리가 어울려 만드는 흐름을 무엇이라고 하나요? (두 글자)",
    "answers": [
     "리듬"
    ],
@@ -129,8 +129,7 @@
    "type": "short",
    "body": "아프리카의 북소리처럼 두드려 소리를 내는 악기를 무엇이라고 하나요? (세 글자)",
    "answers": [
-    "타악기",
-    "북"
+    "타악기"
    ],
    "why": "두드려 소리를 내는 악기를 타악기라고 합니다."
   },
@@ -370,15 +369,15 @@
    "standard": "6음02-04",
    "level": "C",
    "difficulty": "easy",
-   "type": "short",
-   "body": "기분이 좋을 때 어울리는 음악의 느낌은 무엇인가요? (한 단어)",
-   "answers": [
-    "밝은",
-    "경쾌한",
-    "신나는",
-    "즐거운",
-    "밝은 음악"
+   "type": "multiple",
+   "body": "기분이 좋을 때 어울리는 음악의 느낌은 무엇인가요?",
+   "options": [
+    "어둡고 무거운 느낌",
+    "밝고 경쾌한 느낌",
+    "쓸쓸하고 슬픈 느낌",
+    "무섭고 긴장된 느낌"
    ],
+   "answer": 1,
    "why": "기쁜 마음에는 밝고 경쾌한 음악이 어울립니다."
   },
   {
@@ -411,12 +410,12 @@
    "type": "multiple",
    "body": "공연장에서 음악을 감상할 때 지켜야 할 예절은 무엇인가요?",
    "options": [
+    "휴대 전화를 크게 튼다",
     "큰 소리로 이야기한다",
-    "연주 중에는 조용히 하고 끝난 뒤 박수를 친다",
     "연주 중에 돌아다닌다",
-    "휴대 전화를 크게 튼다"
+    "연주 중에는 조용히 하고 끝난 뒤 박수를 친다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "공연 예절을 지키는 것은 연주자와 다른 관객을 배려하는 일입니다."
   },
   {
@@ -430,12 +429,12 @@
    "type": "multiple",
    "body": "같은 음악을 듣고도 사람마다 느낌이 다른 까닭으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "음악은 감정을 전달하지 않기 때문이다",
+    "각자의 경험과 기분에 따라 느끼는 것이 다르기 때문이다",
     "음악이 사람마다 다르게 바뀌기 때문이다",
     "느낌은 모두 같아야 하기 때문이다",
-    "각자의 경험과 기분에 따라 느끼는 것이 다르기 때문이다"
+    "음악은 감정을 전달하지 않기 때문이다"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "음악은 듣는 사람의 경험과 마음에 따라 다르게 느껴집니다."
   },
   {
@@ -449,12 +448,12 @@
    "type": "multiple",
    "body": "생활 속 음악 감상을 더 풍부하게 하는 방법으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "음악을 듣고 느낌을 말이나 그림, 몸짓으로 표현해 본다",
-    "한 번만 듣는다",
     "소리를 끈다",
+    "한 번만 듣는다",
+    "음악을 듣고 느낌을 말이나 그림, 몸짓으로 표현해 본다",
     "느낌을 숨긴다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "느낌을 표현해 보면 음악을 더 깊이 감상할 수 있습니다."
   },
   {
@@ -484,12 +483,12 @@
    "type": "multiple",
    "body": "다음 중 우리나라 전통 악기가 아닌 것은 무엇인가요?",
    "options": [
-    "대금",
+    "장구",
     "가야금",
-    "기타",
-    "장구"
+    "대금",
+    "기타"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "가야금, 대금, 장구는 국악기이고 기타는 서양 악기입니다."
   },
   {
@@ -501,7 +500,7 @@
    "level": "B",
    "difficulty": "medium",
    "type": "short",
-   "body": "소리꾼이 북 치는 고수의 장단에 맞추어 노래와 말, 몸짓으로 이야기를 들려주는 전통 음악은 무엇인가요? (두 글자)",
+   "body": "소리꾼이 북 치는 고수의 장단에 맞추어 노래와 말, 몸짓으로 이야기를 들려주는 전통 음악은 무엇인가요? (세 글자)",
    "answers": [
     "판소리"
    ],
@@ -519,12 +518,12 @@
    "body": "표는 국악기를 연주 방법에 따라 나눈 것입니다. ㉠에 알맞은 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 276 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"270\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"143\" y1=\"3\" x2=\"143\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"273\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"273\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"273\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"73\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연주 방법</text><text x=\"208\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">악기</text><text x=\"73\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">줄을 뜯거나 타는 악기</text><text x=\"208\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">가야금, 거문고</text><text x=\"73\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><text x=\"208\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">대금, 피리</text><text x=\"73\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">두드리는 악기</text><text x=\"208\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">장구, 북</text></svg>",
    "options": [
-    "소리가 나지 않는 악기",
     "손으로 흔드는 악기",
+    "입으로 불어서 소리 내는 악기",
     "발로 밟는 악기",
-    "입으로 불어서 소리 내는 악기"
+    "소리가 나지 않는 악기"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "대금, 피리는 입으로 불어서 소리를 내는 관악기입니다."
   },
   {
@@ -538,12 +537,12 @@
    "type": "multiple",
    "body": "국악의 가치를 지키고 이어 가기 위한 방법으로 가장 알맞은 것은 무엇인가요?",
    "options": [
+    "서양 음악만 듣는다",
     "국악을 없앤다",
     "국악을 듣고 배우며 생활 속에서 즐기고 알린다",
-    "서양 음악만 듣는다",
     "국악은 필요 없다고 한다"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "국악을 직접 듣고 배우고 알리는 것이 가치를 이어 가는 방법입니다."
   },
   {
@@ -557,12 +556,12 @@
    "type": "multiple",
    "body": "아리랑이 오랫동안 전해지며 사랑받는 까닭으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "외국 노래이기 때문이다",
-    "한 가지 가락만 있기 때문이다",
     "지역마다 다른 가락으로 불리며 우리 민족의 삶과 정서를 담고 있기 때문이다",
+    "한 가지 가락만 있기 때문이다",
+    "외국 노래이기 때문이다",
     "악보가 없기 때문이다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "아리랑은 지역마다 다양한 가락으로 전해지며 민족의 정서를 담고 있습니다."
   }
  ],

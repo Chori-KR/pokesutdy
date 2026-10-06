@@ -96,7 +96,7 @@
     "공책과 자"
    ],
    "answer": 3,
-   "why": "공책 1500원과 자 1500원을 합하면 3000원으로 살 수 있습니다. 색연필이 들어가면 3000원을 넘습니다."
+   "why": "공책 1500원과 자 1500원을 합하면 3000원으로 살 수 있습니다. 색연필과 공책, 색연필과 자는 3500원이고, 세 가지를 사면 4500원이라 3000원을 넘습니다."
   },
   {
    "id": "사회-초3-4-4사07-01-a1",
@@ -237,16 +237,16 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "표는 빵집에서 일어난 일을 정리한 것입니다. 생산 활동과 소비 활동을 바르게 나눈 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 286 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"280\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"93\" y1=\"3\" x2=\"93\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"283\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"48\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">누가</text><text x=\"188\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">한 일</text><text x=\"48\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">빵집 주인</text><text x=\"188\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">밀가루로 빵을 만듦</text><text x=\"48\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">손님</text><text x=\"188\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">빵을 사서 먹음</text></svg>",
+   "body": "표는 여러 사람이 한 일을 정리한 것입니다. 생산 활동끼리 바르게 묶은 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 286 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"280\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"283\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"283\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"283\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><text x=\"173\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">누가 한 일</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">(가)</text><text x=\"173\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">빵집 주인이 빵을 만듦</text><text x=\"33\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">(나)</text><text x=\"173\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">손님이 빵을 사서 먹음</text><text x=\"33\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">(다)</text><text x=\"173\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">농부가 밭에서 밀을 기름</text><text x=\"33\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">(라)</text><text x=\"173\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">학생이 우유를 사서 마심</text></svg>",
    "options": [
-    "둘 다 소비",
-    "빵집 주인은 소비, 손님은 생산",
-    "둘 다 생산",
-    "빵집 주인은 생산, 손님은 소비"
+    "(다), (라)",
+    "(가), (나)",
+    "(나), (라)",
+    "(가), (다)"
    ],
    "answer": 3,
-   "why": "빵을 만드는 일은 생산 활동이고, 빵을 사서 먹는 일은 소비 활동입니다."
+   "why": "빵을 만들고 밀을 기르는 일은 생산 활동이고, 빵이나 우유를 사서 먹고 마시는 일은 소비 활동입니다."
   }
  ],
  "skipped": []
