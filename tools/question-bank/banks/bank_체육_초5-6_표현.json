@@ -36,7 +36,7 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "리듬 체조, 줄넘기 표현처럼 스포츠 기술을 응용한 표현 활동은 무엇인가요? (다섯 글자)",
+   "body": "줄넘기, 공 다루기 같은 스포츠 기술을 응용해 음악에 맞추어 아름답게 나타내는 표현 활동의 유형은 무엇인가요? (다섯 글자)",
    "answers": [
     "스포츠 표현",
     "스포츠표현"
@@ -53,7 +53,7 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "표는 표현 활동의 유형과 종목입니다. ㉠에 알맞은 유형은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 286 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"283\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"283\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">유형</text><text x=\"193\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">종목</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">스포츠 표현</text><text x=\"193\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">리듬 체조, 줄넘기 표현</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><text x=\"193\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">강강술래, 탈춤</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">현대 표현</text><text x=\"193\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">현대 무용, 창작 무용</text></svg>",
+   "svg": "<svg viewBox=\"0 0 286 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"283\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"283\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">유형</text><text x=\"193\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">종목</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">스포츠 표현</text><text x=\"193\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">줄넘기 표현, 공·후프 표현</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><text x=\"193\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">강강술래, 탈춤</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">현대 표현</text><text x=\"193\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">현대 무용, 창작 무용</text></svg>",
    "options": [
     "투기 표현",
     "생태 표현",
@@ -93,13 +93,13 @@
    "type": "multiple",
    "body": "표현 활동 종목과 유형을 바르게 짝지은 것은 무엇인가요?",
    "options": [
-    "세 종목 모두 스포츠 표현",
-    "리듬 체조 – 전통 표현, 탈춤 – 현대 표현, 현대 무용 – 스포츠 표현",
-    "리듬 체조 – 현대 표현, 탈춤 – 스포츠 표현, 현대 무용 – 전통 표현",
-    "리듬 체조 – 스포츠 표현, 탈춤 – 전통 표현, 현대 무용 – 현대 표현"
+    "줄넘기 표현 – 스포츠 표현, 탈춤 – 현대 표현, 현대 무용 – 전통 표현",
+    "줄넘기 표현 – 전통 표현, 탈춤 – 현대 표현, 현대 무용 – 스포츠 표현",
+    "줄넘기 표현 – 현대 표현, 탈춤 – 스포츠 표현, 현대 무용 – 전통 표현",
+    "줄넘기 표현 – 스포츠 표현, 탈춤 – 전통 표현, 현대 무용 – 현대 표현"
    ],
    "answer": 3,
-   "why": "리듬 체조는 스포츠 표현, 탈춤은 전통 표현, 현대 무용은 현대 표현입니다."
+   "why": "줄넘기 기술을 응용한 줄넘기 표현은 스포츠 표현, 탈춤은 전통 표현, 현대 무용은 현대 표현입니다."
   },
   {
    "id": "체육-초5-6-6체03-01-a2",
