@@ -57,7 +57,7 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림은 ‘우리 동네’를 중심으로 한 생각 정리입니다. 이를 바탕으로 주제를 확장한 것으로 알맞은 것은 무엇인가요?",
+   "body": "표는 ‘우리 동네’를 중심으로 한 생각 정리입니다. 이를 바탕으로 주제를 확장한 것으로 알맞은 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 316 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"310\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"93\" y1=\"3\" x2=\"93\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"313\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"48\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">중심</text><text x=\"203\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">떠오른 생각</text><text x=\"48\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">우리 동네</text><text x=\"203\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">놀이터, 시장, 오래된 나무, 골목길</text></svg>",
    "options": [
     "‘골목길에서 만난 오래된 나무 이야기’를 그림으로 표현한다",
@@ -153,10 +153,9 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "디지털 그림 프로그램에서 여러 장의 투명한 필름처럼 겹쳐 그림을 나누어 그리는 기능을 무엇이라고 하나요? (두 글자)",
+   "body": "디지털 그림 프로그램에서 여러 장의 투명한 필름처럼 겹쳐 그림을 나누어 그리는 기능을 무엇이라고 하나요? (세 글자)",
    "answers": [
-    "레이어",
-    "층"
+    "레이어"
    ],
    "why": "레이어는 그림을 층으로 나누어 그리는 기능입니다."
   },
@@ -299,16 +298,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림의 따뜻한 색(가)과 차가운 색(나)을 나란히 놓았을 때 나타나는 효과는 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 146 76\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#e07b39\" fill-opacity=\"0.65\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"36\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.65\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"110\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "body": "그림처럼 같은 모양의 크기를 조금씩 점점 크게 바꾸어 늘어놓았을 때 쓰인 조형 원리는 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 206 60\" font-family=\"sans-serif\"><g transform=\"translate(4 18)\"><circle cx=\"12.0\" cy=\"12.0\" r=\"6.0\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><g transform=\"translate(38 12)\"><circle cx=\"18.0\" cy=\"18.0\" r=\"12.0\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><g transform=\"translate(84 6)\"><circle cx=\"24.0\" cy=\"24.0\" r=\"18.0\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><g transform=\"translate(142 0)\"><circle cx=\"30.0\" cy=\"30.0\" r=\"24.0\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g></svg>",
    "options": [
-    "서로 뚜렷하게 보이는 대비 효과",
-    "색이 모두 사라진다",
-    "두 색이 똑같아 보인다",
-    "검은색으로 변한다"
+    "점증",
+    "대비",
+    "균형",
+    "강조"
    ],
    "answer": 0,
-   "why": "따뜻한 색과 차가운 색을 나란히 놓으면 서로 뚜렷하게 보입니다."
+   "why": "크기나 색 등을 조금씩 점점 바꾸어 변화와 움직임을 느끼게 하는 원리를 점증이라고 합니다."
   },
   {
    "id": "미술-초5-6-6미02-03-a1",
@@ -372,10 +371,11 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "작품을 만들 때 처음 계획을 그려 보는 밑그림을 무엇이라고 하나요? (두 글자)",
+   "body": "작품을 만들기 전에 떠오른 구상을 간단히 그려 보는 그림을 무엇이라고 하나요? (세 글자)",
    "answers": [
     "스케치",
-    "밑그림"
+    "밑그림",
+    "아이디어 스케치"
    ],
    "why": "스케치는 작품의 구상을 간단히 그려 보는 것입니다."
   },

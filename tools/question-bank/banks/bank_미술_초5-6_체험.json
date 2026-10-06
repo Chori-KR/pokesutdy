@@ -55,16 +55,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림 가와 나 중 ‘까칠까칠한’ 느낌의 질감을 나타낸 것은 어느 것인가요?",
-   "svg": "<svg viewBox=\"0 0 146 88\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,12 14,32 20,44 26,24 32,36 38,16 44,28 50,48 56,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,44 14,38 20,32 26,26 32,44 38,38 44,32 50,26 56,44\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"36\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"110\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "body": "그림 가~라 중 ‘까칠까칠한’ 느낌의 질감을 나타낸 것은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 294 88\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"36\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"8\" y1=\"12\" x2=\"56\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"25\" x2=\"56\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"38\" x2=\"56\" y2=\"38\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"51\" x2=\"56\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"4\"/></g><text x=\"110\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(152 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"14\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"14\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"14\" cy=\"50\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"50\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"50\" r=\"4\" fill=\"currentColor\"/></g><text x=\"184\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(226 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,12 14,32 20,44 26,24 32,36 38,16 44,28 50,48 56,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,44 14,38 20,32 26,26 32,44 38,38 44,32 50,26 56,44\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"258\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
    "options": [
     "가",
     "나",
-    "둘 다",
-    "둘 다 아니다"
+    "다",
+    "라"
    ],
-   "answer": 0,
-   "why": "울퉁불퉁하게 표현한 가가 거친 질감입니다."
+   "answer": 3,
+   "why": "불규칙하게 어긋난 선으로 울퉁불퉁하게 표현한 라가 거친 질감입니다. 가는 아무 무늬 없는 매끈한 면, 나와 다는 규칙적인 줄무늬와 점무늬입니다."
   },
   {
    "id": "미술-초5-6-6미01-01-b2",
@@ -77,12 +77,12 @@
    "type": "multiple",
    "body": "사과를 탐색할 때 사용할 수 있는 감각으로 알맞은 것은 무엇인가요?",
    "options": [
-    "감각을 쓰지 않는다",
+    "보기, 만지기, 냄새 맡기, 소리 듣기 등 여러 감각",
     "눈으로만 본다",
     "소리만 듣는다",
-    "보기, 만지기, 냄새 맡기, 소리 듣기 등 여러 감각"
+    "감각을 쓰지 않는다"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "다양한 감각을 활용하면 대상을 더 풍부하게 탐색할 수 있습니다."
   },
   {
@@ -96,12 +96,12 @@
    "type": "multiple",
    "body": "스마트 기기의 카메라로 학교 주변을 탐색할 때 좋은 점으로 가장 알맞은 것은 무엇인가요?",
    "options": [
+    "기록할 수 없다",
     "아무것도 볼 수 없다",
-    "다양한 각도에서 대상을 찍어 모양과 색, 질감을 자세히 비교할 수 있다",
     "작품을 만들 수 없다",
-    "기록할 수 없다"
+    "다양한 각도에서 대상을 찍어 모양과 색, 질감을 자세히 비교할 수 있다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "사진은 다양한 시각에서 대상을 탐색하고 기록하는 데 유용합니다."
   },
   {
@@ -150,12 +150,16 @@
    "standard": "6미01-02",
    "level": "C",
    "difficulty": "easy",
-   "type": "short",
-   "body": "그림 가와 나 중 ‘부드럽다’는 느낌을 가장 잘 나타낸 선은 어느 것인가요?",
-   "svg": "<svg viewBox=\"0 0 128 140\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><polyline points=\"8.0,12.0 21.0,32.0 34.0,12.0 47.0,32.0 60.0,12.0 73.0,32.0 86.0,12.0 99.0,32.0 112.0,12.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><text x=\"64\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(4 72)\"><path d=\"M8,22.0 q13.0,-22 26.0,0 t26.0,0 t26.0,0 t26.0,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"64\" y=\"134\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
-   "answers": [
-    "나"
+   "type": "multiple",
+   "body": "그림 가~라 중 ‘부드럽다’는 느낌을 가장 잘 나타낸 선은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 256 140\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><polyline points=\"8.0,12.0 21.0,32.0 34.0,12.0 47.0,32.0 60.0,12.0 73.0,32.0 86.0,12.0 99.0,32.0 112.0,12.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><text x=\"64\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(132 0)\"><line x1=\"8\" y1=\"22.0\" x2=\"112\" y2=\"22.0\" stroke=\"currentColor\" stroke-width=\"9\"/></g><text x=\"192\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(4 72)\"><path d=\"M8,22.0 q13.0,-22 26.0,0 t26.0,0 t26.0,0 t26.0,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"64\" y=\"134\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(132 72)\"><line x1=\"8\" y1=\"22.0\" x2=\"112\" y2=\"22.0\" stroke=\"currentColor\" stroke-width=\"4\" stroke-dasharray=\"2 9\" stroke-linecap=\"round\"/></g><text x=\"192\" y=\"134\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
+   "options": [
+    "가",
+    "나",
+    "다",
+    "라"
    ],
+   "answer": 2,
    "why": "곡선은 부드럽고 편안한 느낌을 줍니다."
   },
   {
@@ -169,12 +173,12 @@
    "type": "multiple",
    "body": "‘울퉁불퉁한 돌’의 질감을 그림으로 나타내는 방법으로 알맞은 것은 무엇인가요?",
    "options": [
-    "하얗게 둔다",
     "아무것도 칠하지 않는다",
+    "연필로 거칠게 눌러 쓰거나 탁본을 떠서 표현한다",
     "매끈하게만 칠한다",
-    "연필로 거칠게 눌러 쓰거나 탁본을 떠서 표현한다"
+    "하얗게 둔다"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "탁본이나 거친 선으로 돌의 질감을 표현할 수 있습니다."
   },
   {
@@ -188,12 +192,12 @@
    "type": "multiple",
    "body": "친구와 함께 바람의 느낌을 서로 다른 방법으로 표현했습니다. 알맞은 설명은 무엇인가요?",
    "options": [
-    "같은 느낌도 선, 색, 형으로 다르게 나타낼 수 있다",
+    "표현할 수 없다",
     "표현은 모두 같아야 한다",
     "한 가지 표현만 맞다",
-    "표현할 수 없다"
+    "같은 느낌도 선, 색, 형으로 다르게 나타낼 수 있다"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "같은 느낌도 사람마다 다양한 방식으로 표현할 수 있습니다."
   },
   {
@@ -207,12 +211,12 @@
    "type": "multiple",
    "body": "‘시끄러운 소리’의 느낌을 그림으로 표현할 때 가장 알맞은 방법은 무엇인가요?",
    "options": [
-    "아무것도 그리지 않는다",
-    "연하고 부드러운 색만 쓴다",
     "날카롭고 굵은 선과 강한 색을 사용하여 크게 표현한다",
+    "연하고 부드러운 색만 쓴다",
+    "아무것도 그리지 않는다",
     "점 하나만 찍는다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "느낌에 어울리는 선과 색을 선택하여 표현합니다."
   },
   {
@@ -243,7 +247,7 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "낙엽, 돌, 나뭇가지 같은 자연물로 만든 작품은 무엇을 이용한 것인가요? (세 글자)",
+   "body": "낙엽, 돌, 나뭇가지처럼 자연에서 얻을 수 있는 재료를 무엇이라고 하나요? (세 글자)",
    "answers": [
     "자연물"
    ],
@@ -258,11 +262,13 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "버려진 물건을 새롭게 활용해 만드는 활동을 무엇이라고 하나요? (네 글자)",
+   "body": "버려진 물건을 새롭게 활용해 만드는 미술 활동을 무엇이라고 하나요?",
    "answers": [
     "재활용 미술",
     "재활용미술",
-    "재활용"
+    "재활용",
+    "새활용",
+    "업사이클링"
    ],
    "why": "버려진 물건을 새롭게 활용하는 활동이 재활용 미술입니다."
   },
@@ -277,12 +283,12 @@
    "type": "multiple",
    "body": "학교 주변을 걸으며 찾은 평범한 대상이 새롭게 보이게 하는 방법은 무엇인가요?",
    "options": [
-    "관찰하지 않는다",
-    "한눈에 보고 지나간다",
     "눈을 감는다",
-    "가까이서 보거나 다른 각도로 보며 느낌을 떠올려 본다"
+    "한눈에 보고 지나간다",
+    "가까이서 보거나 다른 각도로 보며 느낌을 떠올려 본다",
+    "관찰하지 않는다"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "관점을 바꾸면 새로운 의미를 발견할 수 있습니다."
   },
   {
@@ -296,12 +302,12 @@
    "type": "multiple",
    "body": "환경 미술 활동에서 지켜야 할 태도로 알맞은 것은 무엇인가요?",
    "options": [
+    "자연물을 버린다",
     "나무를 꺾는다",
-    "자연을 훼손하지 않고 작품을 만든 뒤 정리한다",
     "쓰레기를 남긴다",
-    "자연물을 버린다"
+    "자연을 훼손하지 않고 작품을 만든 뒤 정리한다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "자연을 아끼고 보호하는 마음이 필요합니다."
   },
   {
@@ -315,12 +321,12 @@
    "type": "multiple",
    "body": "빈 페트병을 화분으로 바꾸어 식물을 키우는 활동의 의미로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "환경을 오염시킨다",
     "쓰레기를 늘린다",
     "버려지는 물건에 새로운 쓸모와 의미를 부여한다",
+    "환경을 오염시킨다",
     "의미가 없다"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "재활용 활동은 물건의 새로운 의미를 발견하는 일입니다."
   },
   {
@@ -334,12 +340,12 @@
    "type": "multiple",
    "body": "공원의 낡은 계단을 알록달록하게 칠해 사람들이 즐겁게 걷도록 만든 미술 활동의 효과로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "공간이 밝아지고 사람들이 새로운 느낌을 갖는다",
-    "공간이 더 위험해진다",
     "사람들이 멀어진다",
+    "공간이 더 위험해진다",
+    "공간이 밝아지고 사람들이 새로운 느낌을 갖는다",
     "아무 변화가 없다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "공공 미술은 환경과 사람의 관계에 새로운 의미를 만듭니다."
   },
   {
@@ -353,12 +359,12 @@
    "type": "multiple",
    "body": "광고 이미지는 무엇을 하기 위해 만들어지나요?",
    "options": [
-    "아무 목적 없이",
-    "그림 실력을 자랑하려고",
     "상품이나 생각을 알리고 사람들을 설득하려고",
+    "그림 실력을 자랑하려고",
+    "아무 목적 없이",
     "시험 문제를 내려고"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "광고는 상품이나 생각을 알리고 사람들을 설득하려는 이미지입니다."
   },
   {
@@ -372,12 +378,12 @@
    "type": "multiple",
    "body": "이모티콘이 나타내는 것으로 알맞은 것은 무엇인가요?",
    "options": [
-    "표정이나 감정을 그림으로 전달한다",
-    "글자 크기만 알려 준다",
     "소리만 전달한다",
+    "글자 크기만 알려 준다",
+    "표정이나 감정을 그림으로 전달한다",
     "아무 의미가 없다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "이모티콘은 감정과 느낌을 이미지로 전달합니다."
   },
   {
@@ -391,12 +397,12 @@
    "type": "multiple",
    "body": "신문 사진 한 장만으로 사건 전체를 판단하면 안 되는 까닭은 무엇인가요?",
    "options": [
-    "사진은 볼 수 없기 때문이다",
+    "사진은 일부분만 보여 주고 선택된 장면일 수 있기 때문이다",
     "사진은 항상 거짓이기 때문이다",
     "사진은 아무 의미가 없기 때문이다",
-    "사진은 일부분만 보여 주고 선택된 장면일 수 있기 때문이다"
+    "사진은 볼 수 없기 때문이다"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "이미지는 만든 사람의 선택이 담겨 있으므로 비판적으로 봐야 합니다."
   },
   {
@@ -410,12 +416,12 @@
    "type": "multiple",
    "body": "컴퓨터로 사진을 합성하여 만든 가짜 이미지를 구별하는 방법으로 알맞은 것은 무엇인가요?",
    "options": [
+    "친구가 올렸으니 믿는다",
     "무조건 믿는다",
-    "출처를 확인하고 다른 자료와 비교해 본다",
     "보지 않는다",
-    "친구가 올렸으니 믿는다"
+    "출처를 확인하고 다른 자료와 비교해 본다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "이미지의 출처와 사실 여부를 확인해야 합니다."
   },
   {
@@ -448,12 +454,12 @@
    "type": "multiple",
    "body": "내 생각과 느낌을 전달하기 위해 이미지를 만들 때 알맞은 태도는 무엇인가요?",
    "options": [
-    "출처를 숨긴다",
     "남의 그림을 마음대로 쓴다",
+    "다른 사람의 사진이나 그림을 허락 없이 쓰지 않고 사실을 왜곡하지 않는다",
     "사실과 다르게 꾸민다",
-    "다른 사람의 사진이나 그림을 허락 없이 쓰지 않고 사실을 왜곡하지 않는다"
+    "출처를 숨긴다"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "이미지를 활용할 때는 저작권과 사실에 대한 책임이 필요합니다."
   }
  ],

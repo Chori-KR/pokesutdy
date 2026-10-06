@@ -145,16 +145,16 @@
    "level": "C",
    "difficulty": "easy",
    "type": "multiple",
-   "body": "그림에서 따뜻한 느낌을 주는 색으로 알맞은 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 146 76\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#e07b39\" fill-opacity=\"0.65\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"36\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.65\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"110\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "body": "그림 가~라 중 시원하고 차가운 느낌을 주는 색은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 294 76\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#e07b39\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"32\" y=\"31\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">빨강</text></g><text x=\"36\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.65\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"32\" y=\"31\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">파랑</text></g><text x=\"110\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(152 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#e07b39\" fill-opacity=\"0.65\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"32\" y=\"31\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">주황</text></g><text x=\"184\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(226 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#e07b39\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"32\" y=\"31\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">노랑</text></g><text x=\"258\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
    "options": [
-    "나 (파랑 계열)",
-    "가 (주황·붉은 계열)",
-    "둘 다",
-    "둘 다 아니다"
+    "가",
+    "나",
+    "다",
+    "라"
    ],
    "answer": 1,
-   "why": "주황과 빨강 계열은 따뜻한 색, 파랑 계열은 차가운 색입니다."
+   "why": "파랑 계열은 차가운 색이고, 빨강·주황·노랑 계열은 따뜻한 색입니다."
   },
   {
    "id": "미술-초5-6-6미03-02-b1",
@@ -167,12 +167,12 @@
    "type": "multiple",
    "body": "작품을 형식 면에서 분석할 때 살펴보는 것으로 알맞은 것은 무엇인가요?",
    "options": [
-    "액자 모양",
     "작가의 나이",
+    "재료와 표현 방법, 선·색·형 같은 조형 요소",
     "작품의 가격",
-    "재료와 표현 방법, 선·색·형 같은 조형 요소"
+    "액자 모양"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "형식 분석은 재료, 표현 방법, 조형 요소와 원리를 살피는 것입니다."
   },
   {
@@ -187,12 +187,12 @@
    "body": "그림 가와 나의 선의 느낌을 비교한 설명으로 알맞은 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 128 140\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><polyline points=\"8.0,12.0 21.0,32.0 34.0,12.0 47.0,32.0 60.0,12.0 73.0,32.0 86.0,12.0 99.0,32.0 112.0,12.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><text x=\"64\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(4 72)\"><path d=\"M8,22.0 q13.0,-22 26.0,0 t26.0,0 t26.0,0 t26.0,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"64\" y=\"134\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
    "options": [
-    "가는 날카롭고 긴장된 느낌, 나는 부드럽고 편안한 느낌을 준다",
+    "선은 느낌을 주지 않는다",
     "가와 나는 똑같다",
     "가는 부드럽고 나는 날카롭다",
-    "선은 느낌을 주지 않는다"
+    "가는 날카롭고 긴장된 느낌, 나는 부드럽고 편안한 느낌을 준다"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "꺾인 선은 날카롭고 긴장되며, 곡선은 부드럽고 편안합니다."
   },
   {
@@ -206,12 +206,12 @@
    "type": "multiple",
    "body": "작품의 주제를 파악하는 방법으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "색만 본다",
-    "제목만 본다",
     "소재, 색, 구도, 제목을 함께 살펴 작가가 전하려는 생각을 찾는다",
+    "제목만 본다",
+    "색만 본다",
     "작가를 모르면 알 수 없다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "내용과 형식을 종합하면 주제를 파악할 수 있습니다."
   },
   {
@@ -223,7 +223,7 @@
    "level": "A",
    "difficulty": "hard",
    "type": "short",
-   "body": "한 작품에서 큰 형태를 중앙에 크게 놓고 주변을 작게 배치하여 눈에 띄게 하는 조형 원리는 무엇인가요? (두 글자)",
+   "body": "보는 사람의 눈길이 가장 먼저 가도록 작품의 어떤 부분을 특히 두드러지게 나타내는 조형 원리는 무엇인가요? (두 글자)",
    "answers": [
     "강조"
    ],
@@ -255,12 +255,12 @@
    "type": "multiple",
    "body": "지역 미술관이나 전시회에 가는 목적으로 알맞은 것은 무엇인가요?",
    "options": [
-    "작품을 가져가기 위해서",
-    "시끄럽게 떠들기 위해서",
     "작품을 만지기 위해서",
-    "다양한 작품을 감상하고 느낌을 나누기 위해서"
+    "시끄럽게 떠들기 위해서",
+    "다양한 작품을 감상하고 느낌을 나누기 위해서",
+    "작품을 가져가기 위해서"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "전시는 작품을 감상하고 느낌을 나누는 장입니다."
   },
   {
@@ -274,12 +274,12 @@
    "type": "multiple",
    "body": "학교와 마을이 함께하는 벽화 그리기 활동의 좋은 점은 무엇인가요?",
    "options": [
+    "의미가 없다",
     "서로 다투게 된다",
-    "함께 아름다운 환경을 만들며 공동체 의식을 키운다",
     "환경이 더러워진다",
-    "의미가 없다"
+    "함께 아름다운 환경을 만들며 공동체 의식을 키운다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "공동체 미술 활동은 협동과 소속감을 키웁니다."
   },
   {
@@ -293,12 +293,12 @@
    "type": "multiple",
    "body": "미술관 관람 예절로 알맞은 것은 무엇인가요?",
    "options": [
-    "작품을 만지며 본다",
     "큰 소리로 이야기한다",
     "작품을 만지지 않고 조용히 감상한다",
+    "작품을 만지며 본다",
     "뛰어다닌다"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "작품 보호와 다른 관람객을 배려해야 합니다."
   },
   {
@@ -312,12 +312,12 @@
    "type": "multiple",
    "body": "공동체 미술 활동에 참여한 뒤 경험을 공유하는 방법으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "활동 사진과 느낀 점을 글이나 발표로 정리해 친구들과 나눈다",
-    "아무에게도 말하지 않는다",
     "활동을 잊는다",
+    "아무에게도 말하지 않는다",
+    "활동 사진과 느낀 점을 글이나 발표로 정리해 친구들과 나눈다",
     "혼자만 간직한다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "경험을 글과 발표로 공유하면 더 많은 사람이 함께 느낄 수 있습니다."
   },
   {
@@ -331,12 +331,12 @@
    "type": "multiple",
    "body": "공공장소의 미술 작품(조형물, 벽화)을 아끼고 보호해야 하는 까닭으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "쉽게 고칠 수 있기 때문이다",
-    "나만 볼 수 있기 때문이다",
     "모두가 함께 누리는 문화이므로 훼손하지 않고 함께 지켜야 하기 때문이다",
+    "나만 볼 수 있기 때문이다",
+    "쉽게 고칠 수 있기 때문이다",
     "아무 가치가 없기 때문이다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "공공 미술은 공동체 모두의 문화 자산입니다."
   },
   {
@@ -350,12 +350,12 @@
    "type": "multiple",
    "body": "작품을 감상할 때 쓸 수 있는 방법으로 알맞은 것은 무엇인가요?",
    "options": [
-    "작품을 자세히 보고 느낌을 말하거나 글로 쓴다",
-    "한 번 슥 보고 지나간다",
     "눈을 감고 지나간다",
+    "한 번 슥 보고 지나간다",
+    "작품을 자세히 보고 느낌을 말하거나 글로 쓴다",
     "작품을 보지 않는다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "말과 글로 느낌을 나누면 감상이 깊어집니다."
   },
   {
@@ -369,12 +369,12 @@
    "type": "multiple",
    "body": "같은 작품을 보고 친구가 나와 다르게 느꼈을 때 알맞은 태도는 무엇인가요?",
    "options": [
-    "화를 낸다",
+    "친구의 생각을 존중하며 들어 본다",
     "틀렸다고 말한다",
     "무시한다",
-    "친구의 생각을 존중하며 들어 본다"
+    "화를 낸다"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "사람마다 느끼는 점이 다를 수 있으므로 존중해야 합니다."
   },
   {
@@ -389,12 +389,12 @@
    "body": "표는 두 친구가 같은 그림을 보고 느낀 점입니다. 두 의견을 바르게 이해한 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 286 96\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"280\" height=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"283\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">친구</text><text x=\"178\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">느낀 점</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">하준</text><text x=\"178\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">색이 따뜻해서 포근하다</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">서아</text><text x=\"178\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">인물 표정이 쓸쓸해 보인다</text></svg>",
    "options": [
+    "느낌은 같아야 한다",
     "한 사람의 의견만 맞다",
-    "서로 다른 부분에 주목하여 각자 다르게 느낄 수 있다",
     "두 사람 모두 틀렸다",
-    "느낌은 같아야 한다"
+    "서로 다른 부분에 주목하여 각자 다르게 느낄 수 있다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "색과 표정처럼 서로 다른 부분을 보면 느낌이 다를 수 있습니다."
   },
   {
@@ -427,12 +427,12 @@
    "type": "multiple",
    "body": "누리집이나 가상 미술관으로 작품을 감상하는 방법의 장점은 무엇인가요?",
    "options": [
-    "느낌을 나눌 수 없다",
     "작품이 사라진다",
+    "직접 가지 않아도 여러 작품을 확대하여 자세히 볼 수 있다",
     "작품을 볼 수 없다",
-    "직접 가지 않아도 여러 작품을 확대하여 자세히 볼 수 있다"
+    "느낌을 나눌 수 없다"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "디지털 매체를 활용하면 다양한 작품을 쉽게 감상할 수 있습니다."
   },
   {
@@ -446,12 +446,12 @@
    "type": "multiple",
    "body": "모둠 토의에서 작품에 대한 서로 다른 관점을 존중하는 방법으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "각자 그렇게 생각한 까닭을 듣고 질문하며 새로운 시각을 받아들인다",
+    "의견을 말하지 않는다",
     "내 의견만 말한다",
     "다른 의견을 반박만 한다",
-    "의견을 말하지 않는다"
+    "각자 그렇게 생각한 까닭을 듣고 질문하며 새로운 시각을 받아들인다"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "까닭을 듣고 질문하면 다양한 관점을 이해할 수 있습니다."
   }
  ],
