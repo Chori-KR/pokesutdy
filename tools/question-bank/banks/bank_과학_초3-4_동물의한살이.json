@@ -62,15 +62,15 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "그림은 배추흰나비 한살이의 순서입니다. ㉠에 들어갈 알맞은 단계는 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 330 70\" font-family=\"sans-serif\"><rect x=\"4\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"39\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">알</text><line x1=\"76\" y1=\"35\" x2=\"86\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"89,35.0 83,31.0 83,39.0\" fill=\"currentColor\"/><rect x=\"88\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"123\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">애벌레</text><line x1=\"160\" y1=\"35\" x2=\"170\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"173,35.0 167,31.0 167,39.0\" fill=\"currentColor\"/><rect x=\"172\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"207\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><line x1=\"244\" y1=\"35\" x2=\"254\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"257,35.0 251,31.0 251,39.0\" fill=\"currentColor\"/><rect x=\"256\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"291\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">어른벌레</text><text x=\"291\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">(나비)</text></svg>",
+   "svg": "<svg viewBox=\"0 0 330 70\" font-family=\"sans-serif\"><rect x=\"4\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"39\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">알</text><line x1=\"76\" y1=\"35\" x2=\"86\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"89,35.0 83,31.0 83,39.0\" fill=\"currentColor\"/><rect x=\"88\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"123\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><line x1=\"160\" y1=\"35\" x2=\"170\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"173,35.0 167,31.0 167,39.0\" fill=\"currentColor\"/><rect x=\"172\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"207\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">번데기</text><line x1=\"244\" y1=\"35\" x2=\"254\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"257,35.0 251,31.0 251,39.0\" fill=\"currentColor\"/><rect x=\"256\" y=\"6\" width=\"70\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"291\" y=\"32\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">어른벌레</text><text x=\"291\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">(나비)</text></svg>",
    "options": [
     "올챙이",
     "병아리",
-    "번데기",
+    "애벌레",
     "씨앗"
    ],
    "answer": 2,
-   "why": "애벌레 다음에는 번데기 단계가 있고, 그 뒤에 어른벌레가 됩니다."
+   "why": "배추흰나비 알에서는 애벌레가 나오고, 애벌레가 자라 번데기가 된 뒤 어른벌레가 됩니다."
   },
   {
    "id": "과학-초3-4-4과04-01-b2",
@@ -124,7 +124,9 @@
    "body": "서하처럼 관찰한 날짜, 모습, 느낀 점을 글과 그림으로 정리한 자료를 무엇이라고 하나요? (다섯 글자)",
    "answers": [
     "관찰 보고서",
-    "관찰보고서"
+    "관찰보고서",
+    "관찰 일지",
+    "관찰일지"
    ],
    "why": "관찰한 내용을 글과 그림으로 정리한 것이 관찰 보고서입니다."
   },
@@ -171,15 +173,15 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "‘식물이 자라는 데 물이 필요한가?’를 알아보는 실험에서 다르게 해 줄 조건은 무엇인가요?",
+   "body": "‘식물이 자라는 데 알맞은 온도가 필요한가?’를 알아보는 실험에서 다르게 해 줄 조건은 무엇인가요?",
    "options": [
     "화분의 크기",
-    "물을 주는 것과 주지 않는 것",
-    "햇빛의 양",
-    "놓아 두는 장소의 온도"
+    "화분을 놓아 두는 곳의 온도",
+    "주는 물의 양",
+    "흙의 종류"
    ],
    "answer": 1,
-   "why": "알아보려는 조건 하나만 다르게 하고 나머지는 모두 같게 해야 합니다."
+   "why": "알아보려는 조건인 온도 하나만 다르게 하고 나머지 조건은 모두 같게 해야 합니다."
   },
   {
    "id": "과학-초3-4-4과04-02-b2",
@@ -191,15 +193,15 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "표는 식물 키우기 실험의 설계입니다. 이 실험으로 알아볼 수 있는 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 276 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"270\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"173\" y1=\"3\" x2=\"173\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"273\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"273\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"273\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><text x=\"123\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"223\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">물</text><text x=\"123\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">준다</text><text x=\"223\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">주지 않는다</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">햇빛</text><text x=\"123\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">받는다</text><text x=\"223\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">받는다</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">온도</text><text x=\"123\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">같음</text><text x=\"223\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">같음</text></svg>",
+   "svg": "<svg viewBox=\"0 0 276 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"270\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"173\" y1=\"3\" x2=\"173\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"273\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"273\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"273\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><text x=\"123\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"223\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">물</text><text x=\"123\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">준다</text><text x=\"223\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">준다</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">햇빛</text><text x=\"123\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">받는다</text><text x=\"223\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">받지 않는다</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">온도</text><text x=\"123\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">같음</text><text x=\"223\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">같음</text></svg>",
    "options": [
-    "알 수 없다",
-    "식물이 자라는 데 햇빛이 필요한지",
+    "식물이 자라는 데 흙이 필요한지",
+    "식물이 자라는 데 물이 필요한지",
     "식물이 자라는 데 온도가 필요한지",
-    "식물이 자라는 데 물이 필요한지"
+    "식물이 자라는 데 햇빛이 필요한지"
    ],
    "answer": 3,
-   "why": "가와 나는 물만 다르게 하고 나머지 조건은 같으므로 물의 영향을 알아볼 수 있습니다."
+   "why": "가와 나는 햇빛만 다르게 하고 물과 온도는 같으므로 햇빛의 영향을 알아볼 수 있습니다."
   },
   {
    "id": "과학-초3-4-4과04-02-a1",

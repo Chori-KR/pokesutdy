@@ -63,14 +63,14 @@ def rt(a, bb, c, names=("A", "B", "C"), hide=None, tx=None, W=230, H=160, ang=No
     return geo(pts, segs=segs, rights=[(names[1], names[0], names[2])], texts=texts, arcs=arcs, W=W, H=H)
 
 
-def circ(pts_deg, chords=(), R=62, O=(115, 85), W=230, H=170, show_center=True, texts=(), arcs=(), extra_pts=None, extra_segs=(), dashed=()):
+def circ(pts_deg, chords=(), R=62, O=(115, 85), W=230, H=170, show_center=True, texts=(), arcs=(), extra_pts=None, extra_segs=(), dashed=(), oloff=(0, 18)):
     pts = {k: polar(O[0], O[1], R, d) for k, d in pts_deg.items()}
     if show_center:
         pts["O"] = O
     if extra_pts:
         pts.update(extra_pts)
     segs = list(chords) + list(extra_segs)
-    return geo(pts, segs=segs, circles=[(O[0], O[1], R)], texts=texts, arcs=list(arcs), W=W, H=H, loff={"O": (0, 18)})
+    return geo(pts, segs=segs, circles=[(O[0], O[1], R)], texts=texts, arcs=list(arcs), W=W, H=H, loff={"O": oloff})
 
 
 # ───────── 9수03-15 피타고라스 정리 ─────────
@@ -158,7 +158,7 @@ S = "9수03-19"
 mc(b, S, "C", "한 호에 대한 원주각의 크기는 그 호에 대한 중심각의 크기의 몇 배인가요?",
    "$\\dfrac12$", ["2", "1", "$\\dfrac13$"], "원주각의 크기는 중심각의 크기의 $\\dfrac12$입니다.")
 sh(b, S, "C", "중심각이 $100^\\circ$인 호에 대한 원주각의 크기는 몇 도인가요? (숫자만)", A(50), "원주각은 중심각의 절반이므로 $50^\\circ$입니다.",
-   svg=circ({"A": 40, "B": 140, "P": 270}, chords=[("A", "B"), ("A", "P"), ("B", "P"), ("O", "A"), ("O", "B")], arcs=[("O", "A", "B", 20, "100°"), ("P", "A", "B", 26, "?")]))
+   svg=circ({"A": 40, "B": 140, "P": 270}, chords=[("A", "B"), ("A", "P"), ("B", "P"), ("O", "A"), ("O", "B")], arcs=[("O", "A", "B", 20, "100°"), ("P", "A", "B", 26, "?")], oloff=(14, 6)))
 mc(b, S, "C", "반원에 대한 원주각의 크기는 얼마인가요?",
    "90°", ["45°", "180°", "60°"], "지름에 대한 원주각은 $90^\\circ$입니다.")
 mc(b, S, "B", "한 원에서 같은 호에 대한 원주각의 크기는 어떻게 되나요?",

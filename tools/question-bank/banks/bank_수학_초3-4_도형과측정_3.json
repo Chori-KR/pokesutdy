@@ -313,10 +313,10 @@
     "1 m 23 mm",
     "123 mm",
     "12 cm 3 mm",
-    "1 cm 23 mm"
+    "10 cm 23 mm"
    ],
    "answer": 0,
-   "why": "123 mm=12 cm 3 mm=1 cm 23 mm이고, 1 m 23 mm는 1023 mm로 다릅니다."
+   "why": "123 mm=12 cm 3 mm=10 cm 23 mm이고, 1 m 23 mm는 1023 mm로 다릅니다."
   },
   {
    "id": "수학-초3-4-4수03-16-a2",
@@ -485,7 +485,7 @@
     "종이컵의 들이는 약 200 L이다"
    ],
    "answer": 1,
-   "why": "물병은 mL, 약병은 mL보다 적은 양, 수영장은 아주 많은 L로 나타내야 하고, 종이컵은 mL가 알맞습니다."
+   "why": "물병은 약 500 mL가 알맞습니다. 약병은 mL, 수영장은 아주 많은 L, 종이컵은 약 200 mL로 나타내야 알맞습니다."
   },
   {
    "id": "수학-초3-4-4수03-17-a2",
@@ -995,7 +995,7 @@
     "공책 한 권의 무게는 약 100 kg이다"
    ],
    "answer": 1,
-   "why": "달걀은 g, 사과도 g, 코끼리는 t이나 kg, 공책은 g으로 나타내는 것이 알맞습니다."
+   "why": "달걀은 약 50 g이 알맞습니다. 사과와 공책은 g, 코끼리는 kg으로 나타내야 알맞습니다."
   },
   {
    "id": "수학-초3-4-4수03-20-a2",
@@ -1045,7 +1045,7 @@
    "level": "C",
    "difficulty": "easy",
    "type": "multiple",
-   "body": "저울의 바늘이 1 kg(1000 g)을 한 바퀴 돈 곳에 있습니다. 3 kg은 몇 g인가요?",
+   "body": "1 kg은 1000 g입니다. 3 kg은 몇 g인가요?",
    "svg": "<svg viewBox=\"0 0 290 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"90\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"55\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 kg</text><rect x=\"100\" y=\"14\" width=\"90\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"145\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 kg</text><rect x=\"190\" y=\"14\" width=\"90\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"235\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1 kg</text><path d=\"M10,54 q0,10 10,10 L137,64 l8,8 l8,-8 L270,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"145\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3 kg = ? g</text></svg>",
    "options": [
     "30 g",
@@ -1121,16 +1121,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "저울의 바늘이 가리키는 무게는 1 kg보다 600 g 더 무겁습니다. 이 무게를 ‘몇 kg 몇 g’으로 나타내면 얼마인가요?",
-   "svg": "<svg viewBox=\"0 0 184 184\" font-family=\"sans-serif\"><circle cx=\"92\" cy=\"92\" r=\"76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"92\" y1=\"27\" x2=\"92\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"113.6\" y1=\"25.4\" x2=\"115.2\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"39.4\" x2=\"136.1\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">100</text><line x1=\"148.6\" y1=\"50.9\" x2=\"152.7\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"71.9\" x2=\"163.3\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">200</text><line x1=\"162\" y1=\"92\" x2=\"167\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.8\" y1=\"112.1\" x2=\"163.3\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"140.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">300</text><line x1=\"148.6\" y1=\"133.1\" x2=\"152.7\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.2\" y1=\"144.6\" x2=\"136.1\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"122\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">400</text><line x1=\"113.6\" y1=\"158.6\" x2=\"115.2\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"157\" x2=\"92\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"92\" y=\"147\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">500</text><line x1=\"70.4\" y1=\"158.6\" x2=\"68.8\" y2=\"163.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"144.6\" x2=\"47.9\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"137.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">600</text><line x1=\"35.4\" y1=\"133.1\" x2=\"31.3\" y2=\"136.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"112.1\" x2=\"20.7\" y2=\"115.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"111.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">700</text><line x1=\"22\" y1=\"92\" x2=\"17\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.2\" y1=\"71.9\" x2=\"20.7\" y2=\"68.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.5\" y=\"80.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">800</text><line x1=\"35.4\" y1=\"50.9\" x2=\"31.3\" y2=\"47.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"53.8\" y1=\"39.4\" x2=\"47.9\" y2=\"31.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"62\" y=\"54.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">900</text><line x1=\"70.4\" y1=\"25.4\" x2=\"68.8\" y2=\"20.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"92\" y1=\"92\" x2=\"55.6\" y2=\"142.2\" stroke=\"#e07b39\" stroke-width=\"3.5\"/><circle cx=\"92\" cy=\"92\" r=\"5\" fill=\"currentColor\"/><text x=\"92\" y=\"114\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">g</text></svg>",
+   "body": "저울의 바늘이 가리키는 무게를 ‘몇 kg 몇 g’으로 나타내면 얼마인가요?",
+   "svg": "<svg viewBox=\"0 0 200 200\" font-family=\"sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"84\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"100\" y1=\"27\" x2=\"100\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"100\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"124.1\" y1=\"25.8\" x2=\"125.6\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"142.9\" y1=\"40.9\" x2=\"148.8\" y2=\"32.9\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"134.7\" y=\"56.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">200</text><line x1=\"163.1\" y1=\"54.2\" x2=\"167.1\" y2=\"51.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"169.4\" y1=\"77.4\" x2=\"178.9\" y2=\"74.4\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"156.1\" y=\"85.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">400</text><line x1=\"178\" y1=\"100\" x2=\"183\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"169.4\" y1=\"122.6\" x2=\"178.9\" y2=\"125.6\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"156.1\" y=\"122.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">600</text><line x1=\"163.1\" y1=\"145.8\" x2=\"167.1\" y2=\"148.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"142.9\" y1=\"159.1\" x2=\"148.8\" y2=\"167.1\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"134.7\" y=\"151.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">800</text><line x1=\"124.1\" y1=\"174.2\" x2=\"125.6\" y2=\"178.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"100\" y1=\"173\" x2=\"100\" y2=\"183\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"100\" y=\"163\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1000</text><line x1=\"75.9\" y1=\"174.2\" x2=\"74.4\" y2=\"178.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"57.1\" y1=\"159.1\" x2=\"51.2\" y2=\"167.1\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"65.3\" y=\"151.7\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1200</text><line x1=\"36.9\" y1=\"145.8\" x2=\"32.9\" y2=\"148.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.6\" y1=\"122.6\" x2=\"21.1\" y2=\"125.6\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.9\" y=\"122.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1400</text><line x1=\"22\" y1=\"100\" x2=\"17\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30.6\" y1=\"77.4\" x2=\"21.1\" y2=\"74.4\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"43.9\" y=\"85.8\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1600</text><line x1=\"36.9\" y1=\"54.2\" x2=\"32.9\" y2=\"51.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"57.1\" y1=\"40.9\" x2=\"51.2\" y2=\"32.9\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"65.3\" y=\"56.3\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1800</text><line x1=\"75.9\" y1=\"25.8\" x2=\"74.4\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"100\" y1=\"100\" x2=\"33.4\" y2=\"78.4\" stroke=\"#e07b39\" stroke-width=\"3.5\"/><circle cx=\"100\" cy=\"100\" r=\"5\" fill=\"currentColor\"/><text x=\"100\" y=\"122\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">g</text></svg>",
    "options": [
     "1 kg 60 g",
     "1 kg 600 g",
-    "6 kg",
-    "600 kg"
+    "16 kg",
+    "600 g"
    ],
    "answer": 1,
-   "why": "1 kg과 600 g을 합한 무게이므로 1 kg 600 g입니다."
+   "why": "바늘이 1600 g을 가리키고, 1600 g은 1000 g과 600 g이므로 1 kg 600 g입니다."
   },
   {
    "id": "수학-초3-4-4수03-21-b3",
