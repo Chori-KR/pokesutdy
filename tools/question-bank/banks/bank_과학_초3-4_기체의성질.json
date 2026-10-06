@@ -46,11 +46,11 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "공기 같은 기체에도 있는, 저울로 잴 수 있는 것을 무엇이라고 하나요? (두 글자)",
+   "body": "공기처럼 눈에 잘 보이지 않고, 담는 그릇을 가득 채우며 퍼지는 물질의 상태를 무엇이라고 하나요? (두 글자)",
    "answers": [
-    "무게"
+    "기체"
    ],
-   "why": "기체도 무게가 있어서 저울로 잴 수 있습니다."
+   "why": "공기처럼 그릇을 가득 채우며 퍼지는 물질의 상태를 기체라고 합니다."
   },
   {
    "id": "과학-초3-4-4과15-01-b1",
@@ -100,16 +100,16 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "표는 같은 공에 공기를 넣기 전과 넣은 뒤의 무게입니다. 공기를 넣은 뒤 늘어난 무게는 무엇의 무게인가요?",
+   "body": "표는 같은 공에 공기를 넣기 전과 넣은 뒤의 무게입니다. 공 안에 넣은 공기의 무게는 몇 g인가요?",
    "svg": "<svg viewBox=\"0 0 316 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"310\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"313\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\"></text><text x=\"133\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공기 넣기 전</text><text x=\"253\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공기 넣은 뒤</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">무게(g)</text><text x=\"133\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">408</text><text x=\"253\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">414</text></svg>",
    "options": [
-    "공의 껍질이 두꺼워진 무게",
-    "공 안에 들어간 공기의 무게",
-    "저울 위 먼지의 무게",
-    "알 수 없다"
+    "408 g",
+    "6 g",
+    "414 g",
+    "822 g"
    ],
    "answer": 1,
-   "why": "공과 저울은 그대로이고 공기만 늘었으므로 늘어난 무게는 공기의 무게입니다."
+   "why": "공과 저울은 그대로이고 공기만 더 넣었으므로 늘어난 무게 414 − 408 = 6(g)이 공기의 무게입니다."
   },
   {
    "id": "과학-초3-4-4과15-01-a2",
@@ -154,13 +154,14 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "주사기 속 공기를 피스톤으로 세게 누르면 공기의 부피는 어떻게 되나요? (두 글자)",
+   "body": "주사기 입구를 막고 주사기 속 공기를 피스톤으로 세게 누르면 공기의 부피는 어떻게 되나요?",
    "answers": [
     "작아진다",
     "줄어든다",
-    "줄어든다.",
     "작아짐",
-    "줄어듦"
+    "줄어듦",
+    "작아져요",
+    "줄어들어요"
    ],
    "why": "공기를 누르면 압력이 높아져 부피가 작아집니다."
   },
@@ -364,15 +365,15 @@
    "level": "C",
    "difficulty": "easy",
    "type": "multiple",
-   "body": "다음 중 공기가 눌리는 성질을 이용한 물건은 무엇인가요?",
+   "body": "자동차 사고가 났을 때 순간적으로 기체가 채워져 부풀어 올라 사람을 보호하는 장치는 무엇인가요?",
    "options": [
-    "유리 컵",
-    "나무 의자",
-    "쇠 숟가락",
-    "물건을 감싸는 에어캡(뽁뽁이) 포장재"
+    "경적",
+    "와이퍼",
+    "전조등",
+    "에어백"
    ],
    "answer": 3,
-   "why": "공기가 든 포장재는 눌렸다가 펴지며 충격을 줄여 줍니다."
+   "why": "에어백은 순간적으로 기체가 채워져 부풀어 오르며 사람에게 전해지는 충격을 줄여 줍니다."
   },
   {
    "id": "과학-초3-4-4과15-04-c2",
@@ -421,7 +422,7 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "그림은 호스로 연결한 두 주사기입니다. 가의 피스톤을 누르면 나의 피스톤은 어떻게 될까요?",
-   "svg": "<svg viewBox=\"0 0 178 168\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"44\" y=\"18\" width=\"80\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"68\" y=\"20\" width=\"56\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.25\"/><line x1=\"68\" y1=\"16\" x2=\"68\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"5\"/><line x1=\"40\" y1=\"33\" x2=\"68\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"40\" y1=\"22\" x2=\"40\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"124\" y1=\"33\" x2=\"140\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"4\"/><text x=\"96\" y=\"37\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공기</text></g><text x=\"89\" y=\"76\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가(누름)</text><g transform=\"translate(4 86)\"><rect x=\"44\" y=\"18\" width=\"80\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"68\" y=\"20\" width=\"56\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.25\"/><line x1=\"68\" y1=\"16\" x2=\"68\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"5\"/><line x1=\"40\" y1=\"33\" x2=\"68\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"40\" y1=\"22\" x2=\"40\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"124\" y1=\"33\" x2=\"140\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"4\"/><text x=\"96\" y=\"37\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공기</text></g><text x=\"89\" y=\"162\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나(연결됨)</text></svg>",
+   "svg": "<svg viewBox=\"0 0 360 92\" font-family=\"sans-serif\"><rect x=\"40\" y=\"20\" width=\"90\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.25\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"66\" y1=\"18\" x2=\"66\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"5\"/><line x1=\"20\" y1=\"35\" x2=\"66\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"20\" y1=\"24\" x2=\"20\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"4\"/><polygon points=\"17,35 5,29 5,41\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"240\" y=\"20\" width=\"90\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.25\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"304\" y1=\"18\" x2=\"304\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"5\"/><line x1=\"304\" y1=\"35\" x2=\"346\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"346\" y1=\"24\" x2=\"346\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"4\"/><path d=\"M130,35 L150,35 Q185,80 220,35 L240,35\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/><text x=\"85\" y=\"76\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가 (누름)</text><text x=\"285\" y=\"76\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"185\" y=\"86\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">호스</text></svg>",
    "options": [
     "안쪽으로 더 들어간다",
     "공기가 밀려와 바깥쪽으로 밀려 나온다",
@@ -458,14 +459,16 @@
    "standard": "4과15-04",
    "level": "A",
    "difficulty": "hard",
-   "type": "short",
-   "body": "풍선 자동차에서 풍선 속 공기가 뒤로 빠져나가면 자동차는 어느 쪽으로 나아가나요? (앞 / 뒤)",
-   "answers": [
-    "앞",
-    "앞쪽",
-    "앞으로"
+   "type": "multiple",
+   "body": "풍선 자동차에 대한 설명으로 옳은 것을 〈보기〉에서 모두 고른 것은 무엇인가요?\n〈보기〉\nㄱ. 풍선 속 공기가 뒤로 빠져나가면 자동차는 앞으로 나아간다.\nㄴ. 풍선 속 공기가 빠져나가며 자동차를 미는 힘이 생긴다.\nㄷ. 공기는 무게가 없어서 자동차를 밀 수 없다.\nㄹ. 자동차는 공기가 빠져나가는 방향과 같은 쪽으로 나아간다.",
+   "options": [
+    "ㄷ, ㄹ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ"
    ],
-   "why": "공기가 뒤로 빠져나가면서 자동차를 앞으로 밀어 주어 자동차가 앞으로 나아갑니다."
+   "answer": 3,
+   "why": "풍선 속 공기가 뒤로 빠져나가며 자동차를 앞으로 미는 힘이 생깁니다(ㄱ, ㄴ). 자동차는 공기가 빠져나가는 방향과 반대쪽으로 나아갑니다(ㄹ 틀림)."
   }
  ],
  "skipped": []
