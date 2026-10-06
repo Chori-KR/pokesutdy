@@ -294,16 +294,15 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림의 리듬을 만들 때 한 마디는 4박입니다. ㉠에 알맞은 개수는 몇 개인가요? (4분음표 1박)",
-   "svg": "<svg viewBox=\"0 0 184 48\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"44\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"26\" y=\"33\" font-size=\"22\" text-anchor=\"middle\" fill=\"currentColor\">♩</text><rect x=\"48\" y=\"4\" width=\"44\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"70\" y=\"33\" font-size=\"22\" text-anchor=\"middle\" fill=\"currentColor\">♩</text><rect x=\"92\" y=\"4\" width=\"44\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"114\" y=\"33\" font-size=\"22\" text-anchor=\"middle\" fill=\"currentColor\">♩</text><rect x=\"136\" y=\"4\" width=\"44\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"158\" y=\"33\" font-size=\"22\" text-anchor=\"middle\" fill=\"currentColor\">㉠</text></svg>",
+   "body": "‘아기 새가 둥지에서 새근새근 잠든 모습’을 소리로 표현하려고 합니다. 빠르기와 셈여림을 가장 알맞게 고른 것은 무엇인가요?",
    "options": [
-    "3개",
-    "2개",
-    "1개",
-    "4개"
+    "빠르게 – 여리게",
+    "빠르게 – 세게",
+    "느리게 – 여리게",
+    "느리게 – 세게"
    ],
    "answer": 2,
-   "why": "앞에 4분음표가 3개(3박)이므로 4박을 채우려면 4분음표 1개가 필요합니다."
+   "why": "조용히 잠든 모습은 느린 빠르기와 여린 소리로 표현하면 잘 어울립니다."
   },
   {
    "id": "음악-초3-4-4음03-03-a1",

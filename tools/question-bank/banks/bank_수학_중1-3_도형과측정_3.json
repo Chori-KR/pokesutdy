@@ -146,11 +146,11 @@
    "level": "A",
    "difficulty": "hard",
    "type": "short",
-   "body": "좌표평면 위의 두 점 $A(1,2)$, $B(4,6)$ 사이의 거리를 구하세요. (숫자만)",
+   "body": "좌표평면 위의 세 점 $A(-2,-3)$, $B(7,9)$, $C(7,-3)$을 꼭짓점으로 하는 삼각형 $ABC$에서 $\\overline{AB}$의 길이를 구하세요. (숫자만)",
    "answers": [
-    "5"
+    "15"
    ],
-   "why": "$\\sqrt{(4-1)^2+(6-2)^2}=\\sqrt{25}=5$입니다."
+   "why": "$\\angle C=90^\\circ$이고 $\\overline{AC}=9$, $\\overline{BC}=12$이므로 $\\overline{AB}=\\sqrt{9^2+12^2}=\\sqrt{225}=15$입니다."
   },
   {
    "id": "수학-중1-3-9수03-15-a3",
@@ -355,7 +355,7 @@
    "difficulty": "easy",
    "type": "short",
    "body": "빗변의 길이가 $10$이고 $\\angle A=30^\\circ$인 직각삼각형 $ABC$($\\angle B=90^\\circ$)에서 $\\overline{BC}$의 길이를 구하세요. (숫자만)",
-   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"50\" y1=\"24\" x2=\"50\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"124\" x2=\"107.7\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"107.7\" y1=\"124\" x2=\"50\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"50,114 60,114 60,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M50,50 A26,26 0 0 0 63,46.5\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"60.4\" y=\"66.6\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30°</text><circle cx=\"50\" cy=\"24\" r=\"3\" fill=\"currentColor\"/><text x=\"46.4\" y=\"15.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"50\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"43.5\" y=\"139.3\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"107.7\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"117.6\" y=\"136.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><text x=\"78.9\" y=\"142\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><text x=\"91\" y=\"71\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text></svg>",
+   "svg": "<svg viewBox=\"0 0 230 160\" font-family=\"sans-serif\"><line x1=\"50\" y1=\"24\" x2=\"50\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"124\" x2=\"107.7\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"107.7\" y1=\"124\" x2=\"50\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"50,114 60,114 60,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M50,50 A26,26 0 0 0 63,46.5\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"61\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30°</text><circle cx=\"50\" cy=\"24\" r=\"3\" fill=\"currentColor\"/><text x=\"46.4\" y=\"15.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"50\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"43.5\" y=\"139.3\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"107.7\" cy=\"124\" r=\"3\" fill=\"currentColor\"/><text x=\"117.6\" y=\"136.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><text x=\"78.9\" y=\"142\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text><text x=\"91\" y=\"71\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text></svg>",
    "answers": [
     "5"
    ],
@@ -626,15 +626,15 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "원에 외접하는 사각형 $ABCD$에서 $\\overline{AB}=7$, $\\overline{CD}=9$, $\\overline{AD}=8$일 때 $\\overline{BC}$의 길이는 얼마인가요?",
+   "body": "원 밖의 점 $P$에서 원 $O$에 그은 두 접선의 접점을 $A, B$라 합니다. $\\angle APB=50^\\circ$일 때 $\\angle AOB$의 크기는 얼마인가요?",
    "options": [
-    "10",
-    "6",
-    "9",
-    "8"
+    "140°",
+    "50°",
+    "100°",
+    "130°"
    ],
    "answer": 3,
-   "why": "원에 외접하는 사각형은 대변의 길이의 합이 같으므로 $7+9=8+\\overline{BC}$, $\\overline{BC}=8$입니다."
+   "why": "접선은 접점을 지나는 반지름과 수직이므로 $\\angle OAP=\\angle OBP=90^\\circ$이고, 사각형 $PAOB$에서 $\\angle AOB=360^\\circ-90^\\circ-90^\\circ-50^\\circ=130^\\circ$입니다."
   },
   {
    "id": "수학-중1-3-9수03-18-a2",

@@ -112,8 +112,8 @@ def concentric(ra=40, rb=80):
     cx = cy = rb + 16
     out = [f'<circle cx="{cx}" cy="{cy}" r="{rb}" fill="none" stroke="{C}" stroke-width="3"/>',
            f'<circle cx="{cx}" cy="{cy}" r="{ra}" fill="none" stroke="{BLUE}" stroke-width="3"/>',
-           line(cx, cy, cx + rb, cy, 2.5, None, "5 4"), dot(cx, cy, 4.5),
-           text(cx + ra / 2, cy - 8, "2 cm", 13, weight="bold"), text(cx + (ra + rb) / 2 - 4, cy + 20, "4 cm", 13, weight="bold")]
+           line(cx, cy, cx - ra, cy, 2.5, BLUE, "5 4"), line(cx, cy, cx, cy + rb, 2.5, None, "5 4"), dot(cx, cy, 4.5),
+           text(cx - ra / 2, cy - 8, "2 cm", 13, weight="bold"), text(cx + 24, cy + rb * 0.75, "4 cm", 13, weight="bold")]
     return svg(2 * rb + 32, 2 * rb + 32, "".join(out))
 
 
@@ -213,7 +213,7 @@ b.q(S, "A", "삼각형 ㄱㄴㄷ에서 각 ㄴ이 직각입니다. 나머지 두
     svg=tri_fig([(0, 90), (0, 0), (110, 90)], right=0, fill=BLUE, vnames=["ㄴ", "ㄱ", "ㄷ"]),
     options=["둘 다 직각보다 작다", "둘 다 직각보다 크다", "하나는 직각이다", "하나는 직각보다 크다"],
     answer="둘 다 직각보다 작다",
-    why="삼각형의 세 각의 크기의 합은 180°이고 한 각이 90°이면 나머지 두 각의 합이 90°이므로 둘 다 직각보다 작습니다.")
+    why="각 ㄱ과 각 ㄷ에 삼각자의 직각 부분을 대어 보면 두 각 모두 직각보다 벌어진 정도가 작으므로 둘 다 예각입니다.")
 
 # ───────── 4수03-03 수직과 평행 ─────────
 S = "4수03-03"

@@ -689,14 +689,16 @@
    "standard": "9수03-05",
    "level": "C",
    "difficulty": "easy",
-   "type": "short",
-   "body": "삼각형의 세 내각의 크기의 합은 몇 도인가요? (숫자만)",
-   "answers": [
-    "180",
-    "180°",
-    "180 °"
+   "type": "multiple",
+   "body": "삼각형의 세 내각의 크기의 합은 얼마인가요?",
+   "options": [
+    "$90^\\circ$",
+    "$180^\\circ$",
+    "$270^\\circ$",
+    "$360^\\circ$"
    ],
-   "why": "삼각형의 내각의 합은 $180^\\circ$입니다."
+   "answer": 1,
+   "why": "삼각형의 내각의 합은 $180^\\circ$입니다. $360^\\circ$는 사각형의 내각의 합이나 다각형의 외각의 합입니다."
   },
   {
    "id": "수학-중1-3-9수03-05-c2",
@@ -761,12 +763,12 @@
    "type": "multiple",
    "body": "정오각형의 한 내각의 크기는 얼마인가요?",
    "options": [
+    "100°",
     "72°",
-    "108°",
     "120°",
-    "100°"
+    "108°"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "내각의 합 $180^\\circ\\times3=540^\\circ$를 5로 나누면 $108^\\circ$입니다."
   },
   {
@@ -780,12 +782,12 @@
    "type": "multiple",
    "body": "정팔각형의 한 외각의 크기는 얼마인가요?",
    "options": [
-    "30°",
+    "45°",
     "135°",
     "60°",
-    "45°"
+    "30°"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "다각형의 외각의 합은 $360^\\circ$이므로 정팔각형의 한 외각은 $360^\\circ\\div8=45^\\circ$입니다."
   },
   {
@@ -816,12 +818,12 @@
    "type": "multiple",
    "body": "한 외각의 크기가 $30^\\circ$인 정다각형은 무엇인가요?",
    "options": [
-    "정십이각형",
-    "정팔각형",
     "정십각형",
+    "정팔각형",
+    "정십이각형",
     "정십오각형"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "$360^\\circ\\div30^\\circ=12$이므로 정십이각형입니다."
   },
   {
@@ -851,12 +853,12 @@
    "type": "multiple",
    "body": "한 원에서 두 부채꼴의 중심각의 크기가 2배이면 호의 길이는 어떻게 되나요?",
    "options": [
-    "4배가 된다",
+    "절반이 된다",
     "같다",
-    "2배가 된다",
-    "절반이 된다"
+    "4배가 된다",
+    "2배가 된다"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "한 원에서 호의 길이는 중심각의 크기에 정비례합니다."
   },
   {
@@ -870,12 +872,12 @@
    "type": "multiple",
    "body": "원에서 두 반지름과 호로 둘러싸인 도형을 무엇이라고 하나요?",
    "options": [
-    "원기둥",
     "활꼴",
+    "부채꼴",
     "반원",
-    "부채꼴"
+    "원기둥"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "두 반지름과 호로 둘러싸인 도형은 부채꼴입니다."
   },
   {
@@ -890,12 +892,12 @@
    "body": "그림과 같이 반지름이 $6\\,\\mathrm{cm}$, 중심각이 $60^\\circ$인 부채꼴의 호의 길이는 얼마인가요?",
    "svg": "<svg viewBox=\"0 0 200 190\" font-family=\"sans-serif\"><path d=\"M40,100 L110,100 A70,70 0 0 0 75,39.4 Z\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"28\" y=\"116\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">O</text><text x=\"122\" y=\"114\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><text x=\"82\" y=\"27.3\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><text x=\"68.5\" y=\"91\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">60°</text><text x=\"75\" y=\"116\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6 cm</text></svg>",
    "options": [
+    "$6\\pi\\,\\mathrm{cm}$",
     "$\\pi\\,\\mathrm{cm}$",
     "$2\\pi\\,\\mathrm{cm}$",
-    "$6\\pi\\,\\mathrm{cm}$",
     "$12\\pi\\,\\mathrm{cm}$"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "호의 길이는 $2\\pi\\times6\\times\\dfrac{60}{360}=2\\pi$입니다."
   },
   {
@@ -909,12 +911,12 @@
    "type": "multiple",
    "body": "반지름이 $9\\,\\mathrm{cm}$, 중심각이 $120^\\circ$인 부채꼴의 호의 길이는 얼마인가요?",
    "options": [
-    "$9\\pi\\,\\mathrm{cm}$",
-    "$3\\pi\\,\\mathrm{cm}$",
     "$6\\pi\\,\\mathrm{cm}$",
+    "$3\\pi\\,\\mathrm{cm}$",
+    "$9\\pi\\,\\mathrm{cm}$",
     "$12\\pi\\,\\mathrm{cm}$"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "$2\\pi\\times9\\times\\dfrac{120}{360}=6\\pi$입니다."
   },
   {
@@ -928,12 +930,12 @@
    "type": "multiple",
    "body": "반지름이 $6\\,\\mathrm{cm}$, 중심각이 $60^\\circ$인 부채꼴의 넓이는 얼마인가요?",
    "options": [
-    "$6\\pi\\,\\mathrm{cm^2}$",
-    "$3\\pi\\,\\mathrm{cm^2}$",
     "$12\\pi\\,\\mathrm{cm^2}$",
+    "$3\\pi\\,\\mathrm{cm^2}$",
+    "$6\\pi\\,\\mathrm{cm^2}$",
     "$36\\pi\\,\\mathrm{cm^2}$"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "$\\pi\\times6^2\\times\\dfrac{60}{360}=6\\pi$입니다."
   },
   {
@@ -964,12 +966,12 @@
    "type": "multiple",
    "body": "반지름이 $10\\,\\mathrm{cm}$이고 호의 길이가 $6\\pi\\,\\mathrm{cm}$인 부채꼴의 넓이는 얼마인가요?",
    "options": [
-    "$15\\pi\\,\\mathrm{cm^2}$",
-    "$60\\pi\\,\\mathrm{cm^2}$",
     "$30\\pi\\,\\mathrm{cm^2}$",
+    "$60\\pi\\,\\mathrm{cm^2}$",
+    "$15\\pi\\,\\mathrm{cm^2}$",
     "$100\\pi\\,\\mathrm{cm^2}$"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "$S=\\dfrac12 rl=\\dfrac12\\times10\\times6\\pi=30\\pi$입니다."
   },
   {
@@ -983,12 +985,12 @@
    "type": "multiple",
    "body": "반지름이 $12\\,\\mathrm{cm}$인 부채꼴의 넓이가 $24\\pi\\,\\mathrm{cm^2}$일 때 중심각의 크기는 얼마인가요?",
    "options": [
-    "60°",
+    "120°",
     "30°",
     "90°",
-    "120°"
+    "60°"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "$\\pi\\times12^2\\times\\dfrac{x}{360}=24\\pi$에서 $144x=8640$이므로 $x=60$입니다."
   },
   {
@@ -1017,12 +1019,12 @@
    "type": "multiple",
    "body": "다각형인 면으로만 둘러싸인 입체도형을 무엇이라고 하나요?",
    "options": [
-    "구",
     "회전체",
+    "다면체",
     "원기둥",
-    "다면체"
+    "구"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "다각형으로 이루어진 면으로 둘러싸인 입체도형이 다면체입니다."
   },
   {
@@ -1033,13 +1035,16 @@
    "standard": "9수03-07",
    "level": "C",
    "difficulty": "easy",
-   "type": "short",
-   "body": "정육면체의 면의 개수는 몇 개인가요? (숫자만)",
-   "answers": [
-    "6",
-    "6개"
+   "type": "multiple",
+   "body": "정육면체의 면의 개수는 몇 개인가요?",
+   "options": [
+    "4개",
+    "6개",
+    "8개",
+    "12개"
    ],
-   "why": "정육면체는 정사각형 면이 6개입니다."
+   "answer": 1,
+   "why": "정육면체는 정사각형 면이 6개입니다. 꼭짓점은 8개, 모서리는 12개입니다."
   },
   {
    "id": "수학-중1-3-9수03-07-c3",
@@ -1052,12 +1057,12 @@
    "type": "multiple",
    "body": "직사각형의 한 변을 축으로 하여 1회전시킬 때 생기는 회전체는 무엇인가요?",
    "options": [
+    "원뿔대",
     "원뿔",
-    "원기둥",
     "구",
-    "원뿔대"
+    "원기둥"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "직사각형을 한 변을 축으로 회전시키면 원기둥이 됩니다."
   },
   {
@@ -1103,12 +1108,12 @@
    "type": "multiple",
    "body": "정팔면체의 꼭짓점의 개수는 몇 개인가요?",
    "options": [
-    "8개",
     "6개",
+    "8개",
     "12개",
     "4개"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "정팔면체는 면 8개, 모서리 12개, 꼭짓점 6개입니다."
   },
   {
@@ -1138,12 +1143,12 @@
    "type": "multiple",
    "body": "원뿔을 회전축을 포함하는 평면으로 자를 때 생기는 단면의 모양은 무엇인가요?",
    "options": [
-    "사다리꼴",
-    "원",
     "직사각형",
-    "이등변삼각형"
+    "원",
+    "이등변삼각형",
+    "사다리꼴"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "원뿔을 축을 포함하는 평면으로 자르면 이등변삼각형 모양의 단면이 생깁니다."
   },
   {
@@ -1157,12 +1162,12 @@
    "type": "multiple",
    "body": "직각삼각형의 직각을 낀 한 변을 축으로 하여 1회전시켰을 때 생기는 회전체의 이름은 무엇인가요?",
    "options": [
-    "원뿔",
+    "원뿔대",
     "원기둥",
     "구",
-    "원뿔대"
+    "원뿔"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "직각삼각형을 직각을 낀 한 변을 축으로 회전시키면 원뿔이 됩니다."
   }
  ],

@@ -11,6 +11,22 @@ from kit_soc import compare_table
 from kit_m9 import geo, sector, polar
 
 
+def sphere_r(r=40, rtxt="3"):
+    """구 + 오른쪽 아래로 그은 반지름(글자가 적도 점선과 겹치지 않게)"""
+    from kit56 import ST, DASH
+    cx = cy = r + 12
+    t = math.radians(40)
+    ex, ey = cx + r * math.cos(t), cy + r * math.sin(t)
+    mx, my = (cx + ex) / 2, (cy + ey) / 2
+    out = [f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" {ST}/>',
+           f'<path d="M{cx - r},{cy} A{r},{_n(r * 0.3)} 0 0 0 {cx + r},{cy}" fill="none" {ST}/>',
+           f'<path d="M{cx - r},{cy} A{r},{_n(r * 0.3)} 0 0 1 {cx + r},{cy}" fill="none" {DASH}/>',
+           f'<circle cx="{cx}" cy="{cy}" r="3.5" fill="{C}"/>',
+           line(cx, cy, ex, ey, 2.5, color=ORANGE),
+           text(mx - 9, my + 17, rtxt, 12, weight="bold")]
+    return svg(2 * r + 24, 2 * r + 24, "".join(out))
+
+
 def A(n, u="°"):
     """단답형 허용 답: 숫자만/단위 붙임"""
     return [str(n), f"{n}{u}", f"{n} {u}"]
@@ -49,7 +65,7 @@ mc(b, S, "B", "그림의 원기둥(밑면의 반지름 $3\\,\\mathrm{cm}$, 높�
    "$48\\pi\\,\\mathrm{cm^2}$", ["$30\\pi\\,\\mathrm{cm^2}$", "$45\\pi\\,\\mathrm{cm^2}$", "$63\\pi\\,\\mathrm{cm^2}$"], "겉넓이는 $2\\times\\pi\\times3^2+2\\pi\\times3\\times5=18\\pi+30\\pi=48\\pi$입니다.", svg=cyl_fig(h=60, r=30, rtxt="3", htxt="5"))
 mc(b, S, "B", "밑면이 한 변의 길이가 $6\\,\\mathrm{cm}$인 정사각형이고 높이가 $4\\,\\mathrm{cm}$인 사각뿔의 부피는 몇 $\\mathrm{cm^3}$인가요?", "48", ["144", "24", "72"], "부피는 $\\dfrac13\\times36\\times4=48\\,\\mathrm{cm^3}$입니다.")
 mc(b, S, "B", "반지름이 $3\\,\\mathrm{cm}$인 구의 부피는 얼마인가요?",
-   "$36\\pi\\,\\mathrm{cm^3}$", ["$12\\pi\\,\\mathrm{cm^3}$", "$27\\pi\\,\\mathrm{cm^3}$", "$108\\pi\\,\\mathrm{cm^3}$"], "구의 부피는 $\\dfrac43\\pi r^3=\\dfrac43\\pi\\times27=36\\pi$입니다.", svg=sphere_fig(rtxt="3"))
+   "$36\\pi\\,\\mathrm{cm^3}$", ["$12\\pi\\,\\mathrm{cm^3}$", "$27\\pi\\,\\mathrm{cm^3}$", "$108\\pi\\,\\mathrm{cm^3}$"], "구의 부피는 $\\dfrac43\\pi r^3=\\dfrac43\\pi\\times27=36\\pi$입니다.", svg=sphere_r())
 mc(b, S, "A", "그림의 원뿔(밑면의 반지름 $3\\,\\mathrm{cm}$, 모선의 길이 $5\\,\\mathrm{cm}$)의 겉넓이는 얼마인가요?",
    "$24\\pi\\,\\mathrm{cm^2}$", ["$15\\pi\\,\\mathrm{cm^2}$", "$9\\pi\\,\\mathrm{cm^2}$", "$30\\pi\\,\\mathrm{cm^2}$"], "밑넓이 $\\pi\\times3^2=9\\pi$, 옆넓이 $\\pi\\times3\\times5=15\\pi$이므로 겉넓이는 $24\\pi$입니다.", svg=cone_fig(h=60, r=30))
 sh(b, S, "A", "반지름이 $5\\,\\mathrm{cm}$인 구의 겉넓이는 몇 $\\pi\\,\\mathrm{cm^2}$인가요? (숫자만)", ["100", "100π"], "구의 겉넓이는 $4\\pi r^2=4\\pi\\times25=100\\pi$입니다.")

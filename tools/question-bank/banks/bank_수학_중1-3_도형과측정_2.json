@@ -117,7 +117,7 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "반지름이 $3\\,\\mathrm{cm}$인 구의 부피는 얼마인가요?",
-   "svg": "<svg viewBox=\"0 0 92 92\" font-family=\"sans-serif\"><circle cx=\"46\" cy=\"46\" r=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M12,46 A34,10.2 0 0 0 80,46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M12,46 A34,10.2 0 0 1 80,46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><circle cx=\"46\" cy=\"46\" r=\"3.5\" fill=\"currentColor\"/><line x1=\"46\" y1=\"46\" x2=\"80\" y2=\"46\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"63\" y=\"40\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text></svg>",
+   "svg": "<svg viewBox=\"0 0 104 104\" font-family=\"sans-serif\"><circle cx=\"52\" cy=\"52\" r=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M12,52 A40,12 0 0 0 92,52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M12,52 A40,12 0 0 1 92,52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><circle cx=\"52\" cy=\"52\" r=\"3.5\" fill=\"currentColor\"/><line x1=\"52\" y1=\"52\" x2=\"82.6\" y2=\"77.7\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"58.3\" y=\"81.9\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text></svg>",
    "options": [
     "$108\\pi\\,\\mathrm{cm^3}$",
     "$12\\pi\\,\\mathrm{cm^3}$",
