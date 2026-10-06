@@ -25,9 +25,8 @@ def mc(b, S, lv, body, ok, bad, why, svg=None, keep=False):
 
 
 def widen(s_, dx=14):
-    """세 자리 눈금 숫자가 왼쪽에서 잘리지 않게 viewBox를 왼쪽으로 넓힘"""
-    import re
-    return re.sub(r'viewBox="0 0 (\d+) (\d+)"', lambda m: f'viewBox="-{dx} 0 {int(m.group(1)) + dx} {m.group(2)}"', s_, count=1)
+    """(예전 보정용) 이제 kit_m9.plane이 왼쪽 여백을 스스로 맞추므로 그대로 돌려준다"""
+    return s_
 
 
 def sh(b, S, lv, body, answers, why, svg=None):

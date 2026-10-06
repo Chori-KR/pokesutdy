@@ -121,13 +121,17 @@ def plane(xr=(-5, 5), yr=(-5, 5), pts=(), lines=(), curves=(), W=240, H=240, tex
     x0, x1 = xr
     y0, y1 = yr
     pad = 26
-    sx = (W - 2 * pad) / (x1 - x0)
+    # 세 자리 이상 y 눈금 숫자가 왼쪽에서 잘리지 않도록 왼쪽 여백을 숫자 길이에 맞춰 늘린다
+    _ys = (step if isinstance(step, tuple) else (step, step))[1]
+    _labs = [str(v) for v in range(int(math.ceil(y0 / _ys)) * _ys, int(y1) + 1, _ys) if v != 0]
+    padL = max(pad, 10 + 7.5 * max((len(t) for t in _labs), default=1)) if x0 >= 0 else pad
+    sx = (W - padL - pad) / (x1 - x0)
     sy = (H - 2 * pad) / (y1 - y0)
     if isinstance(step, tuple):
         sxx, syy = sx, sy
     else:
         sxx = syy = min(sx, sy)
-    ox = pad + (-x0) * sxx
+    ox = padL + (-x0) * sxx
     oy = H - pad - (-y0) * syy
     X = lambda x: ox + x * sxx
     Y = lambda y: oy - y * syy
@@ -142,7 +146,7 @@ def plane(xr=(-5, 5), yr=(-5, 5), pts=(), lines=(), curves=(), W=240, H=240, tex
             out.append(line(X(x0), Y(gy), X(x1), Y(gy), 1.2, 0.18))
     out.append(line(X(x0), Y(0), X(x1) + 6, Y(0), 2.2))
     out.append(line(X(0), Y(y0), X(0), Y(y1) - 6, 2.2))
-    out.append(text(X(x1) + 4, Y(0) + 16, xlab, 13, anchor="end", weight="bold"))
+    out.append(text(X(x1) + 4, Y(0) - 7, xlab, 13, anchor="end", weight="bold"))  # 축 위쪽: 아래 눈금 숫자와 겹치지 않게
     out.append(text(X(0) + 12, Y(y1) - 2, ylab, 13, weight="bold"))
     out.append(text(X(0) - 8, Y(0) + 14, "O", 12, anchor="end"))
     for gx in gxs:
@@ -195,7 +199,8 @@ def plane(xr=(-5, 5), yr=(-5, 5), pts=(), lines=(), curves=(), W=240, H=240, tex
         col = ORANGE if st and st[0] == "o" else C
         out.append(f'<circle cx="{_n(X(px))}" cy="{_n(Y(py))}" r="4.5" fill="{col}" stroke="{C}" stroke-width="1.5"/>')
         if lab:
-            out.append(text(X(px) + 10, Y(py) - 7, lab, 13, anchor="start", weight="bold"))
+            # 아래쪽(음수 y) 점은 이름을 점 아래에 써서 x축 눈금 숫자와 겹치지 않게 한다
+            out.append(text(X(px) + 10, Y(py) + (18 if py < 0 else -7), lab, 13, anchor="start", weight="bold"))
     for tx, ty, s_ in texts:
         out.append(text(X(tx), Y(ty), s_, 13, weight="bold"))
     return svg(W, H, "".join(out))
