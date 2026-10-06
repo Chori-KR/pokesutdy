@@ -60,13 +60,13 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "표는 우리나라 해안의 특징입니다. 갯벌이 넓게 발달한 해안은 어디인가요?",
+   "body": "표는 우리나라 해안의 특징입니다. 표를 바르게 읽은 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 286 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"283\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"283\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">해안</text><text x=\"178\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">특징</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">동해안</text><text x=\"178\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">해안선이 단조롭고 모래사장이 많다</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">서해안</text><text x=\"178\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">해안선이 복잡하고 갯벌이 넓다</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">남해안</text><text x=\"178\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">섬이 많고 해안선이 복잡하다</text></svg>",
    "options": [
-    "남해안",
-    "동해안",
-    "서해안",
-    "모두 같다"
+    "남해안에는 섬이 거의 없다",
+    "동해안은 해안선이 복잡하다",
+    "갯벌이 넓게 발달한 곳은 서해안이다",
+    "서해안은 해안선이 단조롭다"
    ],
    "answer": 2,
    "why": "서해안은 밀물과 썰물의 차이가 커서 갯벌이 넓게 발달합니다."

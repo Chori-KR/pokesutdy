@@ -112,8 +112,8 @@ def concentric(ra=40, rb=80):
     cx = cy = rb + 16
     out = [f'<circle cx="{cx}" cy="{cy}" r="{rb}" fill="none" stroke="{C}" stroke-width="3"/>',
            f'<circle cx="{cx}" cy="{cy}" r="{ra}" fill="none" stroke="{BLUE}" stroke-width="3"/>',
-           line(cx, cy, cx - ra, cy, 2.5, BLUE, "5 4"), line(cx, cy, cx, cy + rb, 2.5, None, "5 4"), dot(cx, cy, 4.5),
-           text(cx - ra / 2, cy - 8, "2 cm", 13, weight="bold"), text(cx + 24, cy + rb * 0.75, "4 cm", 13, weight="bold")]
+           line(cx, cy, cx - ra, cy, 2.5, None, "5 4", color=BLUE), line(cx, cy, cx, cy + rb, 2.5, None, "5 4"), dot(cx, cy, 4.5),
+           text(cx - ra / 2 + 1, cy - 8, "2 cm", 12, weight="bold"), text(cx + 24, cy + rb * 0.75, "4 cm", 12, weight="bold")]
     return svg(2 * rb + 32, 2 * rb + 32, "".join(out))
 
 

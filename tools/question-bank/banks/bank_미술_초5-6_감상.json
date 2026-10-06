@@ -187,9 +187,9 @@
    "body": "그림 가와 나의 선의 느낌을 비교한 설명으로 알맞은 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 128 140\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><polyline points=\"8.0,12.0 21.0,32.0 34.0,12.0 47.0,32.0 60.0,12.0 73.0,32.0 86.0,12.0 99.0,32.0 112.0,12.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><text x=\"64\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(4 72)\"><path d=\"M8,22.0 q13.0,-22 26.0,0 t26.0,0 t26.0,0 t26.0,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"64\" y=\"134\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
    "options": [
-    "선은 느낌을 주지 않는다",
-    "가와 나는 똑같다",
-    "가는 부드럽고 나는 날카롭다",
+    "가는 멈춰 있는 듯 무거운 느낌, 나는 딱딱하고 거친 느낌을 준다",
+    "가는 부드럽고 편안한 느낌, 나는 날카롭고 긴장된 느낌을 준다",
+    "가와 나 모두 차분하고 조용한 느낌을 준다",
     "가는 날카롭고 긴장된 느낌, 나는 부드럽고 편안한 느낌을 준다"
    ],
    "answer": 3,
