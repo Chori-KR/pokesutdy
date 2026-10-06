@@ -20,12 +20,12 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "그림과 같이 전지, 전구, 전선이 끊어진 곳 없이 이어져 있을 때 전구에 불이 켜지나요? (켜진다 / 켜지지 않는다)",
+   "body": "그림처럼 전지, 전구, 전선 등의 전기 부품을 끊어진 곳 없이 서로 연결하여 전기가 흐르도록 한 것을 무엇이라고 하나요? (네 글자)",
    "svg": "<svg viewBox=\"0 0 250 140\" font-family=\"sans-serif\"><line x1=\"28\" y1=\"30\" x2=\"110\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"125.0\" cy=\"30\" r=\"15\" fill=\"#e07b39\" fill-opacity=\"0.55\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"116\" y1=\"21\" x2=\"134\" y2=\"39\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"116\" y1=\"39\" x2=\"134\" y2=\"21\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"140\" y1=\"30\" x2=\"222\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"222\" y1=\"30\" x2=\"222\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"28\" y1=\"110\" x2=\"119\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"121\" y1=\"98\" x2=\"121\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"129\" y1=\"103\" x2=\"129\" y2=\"117\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"129\" y1=\"110\" x2=\"222\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"28\" y1=\"30\" x2=\"28\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"125\" y=\"12\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">전구</text><text x=\"125\" y=\"132\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">전지 1개</text></svg>",
    "answers": [
-    "켜진다",
-    "켜짐",
-    "불이 켜진다"
+    "전기 회로",
+    "전기회로",
+    "회로"
    ],
    "why": "전지, 전구, 전선이 끊김 없이 한 바퀴 이어진 닫힌 회로에서는 전구에 불이 켜집니다."
   },
@@ -209,16 +209,16 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "그림의 왼쪽 회로를 (가), 오른쪽 회로를 (나)라고 할 때 전구가 더 밝은 쪽은 어느 것인가요?",
+   "body": "그림의 왼쪽은 전지 1개를 연결한 회로 (가), 오른쪽은 전지 2개를 직렬연결한 회로 (나)입니다. 두 회로에 대한 설명으로 옳은 것을 〈보기〉에서 모두 고른 것은 무엇인가요?\n〈보기〉\nㄱ. (나)의 전구가 (가)의 전구보다 밝다.\nㄴ. (가)의 전지가 (나)의 전지보다 더 빨리 닳는다.\nㄷ. (가)와 (나)의 전구 밝기는 같다.\nㄹ. 전구 대신 전동기를 연결하면 (나)에서 전동기가 더 빠르게 돈다.",
    "svg": "<svg viewBox=\"0 0 506 140\" font-family=\"sans-serif\"><g transform=\"translate(0 0)\"><line x1=\"28\" y1=\"30\" x2=\"110\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"125.0\" cy=\"30\" r=\"15\" fill=\"#e07b39\" fill-opacity=\"0.55\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"116\" y1=\"21\" x2=\"134\" y2=\"39\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"116\" y1=\"39\" x2=\"134\" y2=\"21\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"140\" y1=\"30\" x2=\"222\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"222\" y1=\"30\" x2=\"222\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"28\" y1=\"110\" x2=\"119\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"121\" y1=\"98\" x2=\"121\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"129\" y1=\"103\" x2=\"129\" y2=\"117\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"129\" y1=\"110\" x2=\"222\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"28\" y1=\"30\" x2=\"28\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><g transform=\"translate(256 0)\"><line x1=\"28\" y1=\"30\" x2=\"110\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"125.0\" cy=\"30\" r=\"15\" fill=\"#e07b39\" fill-opacity=\"0.55\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"116\" y1=\"21\" x2=\"134\" y2=\"39\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"116\" y1=\"39\" x2=\"134\" y2=\"21\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"140\" y1=\"30\" x2=\"222\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"222\" y1=\"30\" x2=\"222\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"28\" y1=\"110\" x2=\"107\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"109\" y1=\"98\" x2=\"109\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"117\" y1=\"103\" x2=\"117\" y2=\"117\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"117\" y1=\"110\" x2=\"133\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"133\" y1=\"98\" x2=\"133\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"141\" y1=\"103\" x2=\"141\" y2=\"117\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"141\" y1=\"110\" x2=\"222\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"28\" y1=\"30\" x2=\"28\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g></svg>",
    "options": [
-    "나",
-    "가",
-    "두 전구의 밝기가 같다",
-    "알 수 없다"
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄹ"
    ],
-   "answer": 0,
-   "why": "전지 두 개를 직렬연결한 나의 전구가 더 밝습니다. (가는 전지 1개, 나는 전지 2개를 연결했습니다.)"
+   "answer": 3,
+   "why": "전지 2개를 직렬연결한 (나)는 전구가 더 밝고(ㄱ) 전동기도 더 빠르게 돕니다(ㄹ). 대신 (나)의 전지가 더 빨리 닳으므로 ㄴ은 틀립니다."
   },
   {
    "id": "과학-초5-6-6과15-02-a2",
@@ -231,12 +231,12 @@
    "type": "multiple",
    "body": "전지 두 개를 직렬연결할 때 (+)극과 (+)극을 이어 붙이면 어떻게 될까요?",
    "options": [
-    "전구가 터진다",
-    "전구가 두 배로 밝아진다",
     "전류가 서로 막아 전구에 불이 잘 켜지지 않는다",
+    "전구가 두 배로 밝아진다",
+    "전구가 터진다",
     "아무 영향이 없다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "같은 극끼리 이으면 전류가 서로 상쇄되어 직렬연결의 효과가 없습니다."
   },
   {
@@ -266,12 +266,12 @@
    "body": "그림의 전자석에 클립이 붙어 있습니다. 클립이 붙어 있으려면 어떤 상태여야 하나요?",
    "svg": "<svg viewBox=\"0 0 290 134\" font-family=\"sans-serif\"><rect x=\"50\" y=\"46\" width=\"150\" height=\"12\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"200,46 214,52 200,58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M70,40 Q78,52 70,64\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"3\"/><path d=\"M86,40 Q94,52 86,64\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"3\"/><path d=\"M102,40 Q110,52 102,64\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"3\"/><path d=\"M118,40 Q126,52 118,64\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"3\"/><line x1=\"70\" y1=\"40\" x2=\"70\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"20\" x2=\"110\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"118\" y1=\"64\" x2=\"118\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"118\" y1=\"84\" x2=\"60\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"206\" cy=\"70\" rx=\"6\" ry=\"3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><ellipse cx=\"210\" cy=\"78\" rx=\"6\" ry=\"3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><ellipse cx=\"206\" cy=\"86\" rx=\"6\" ry=\"3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"110\" y1=\"20\" x2=\"144\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"110\" y1=\"20\" x2=\"110\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"146\" y1=\"8\" x2=\"146\" y2=\"32\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"154\" y1=\"13\" x2=\"154\" y2=\"27\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"154\" y1=\"20\" x2=\"178\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"178\" y1=\"20\" x2=\"178\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"178\" y1=\"100\" x2=\"60\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"60\" y1=\"100\" x2=\"60\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"120\" y=\"118\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">코일 4번 감음 · 전지 1개</text><text x=\"206\" y=\"126\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">클립</text></svg>",
    "options": [
-    "코일을 풀어야 한다",
-    "전류가 흐르지 않아야 한다",
     "전지를 빼야 한다",
-    "전류가 흐르고 있어야 한다"
+    "전류가 흐르지 않아야 한다",
+    "전류가 흐르고 있어야 한다",
+    "코일을 풀어야 한다"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "전자석은 전류가 흐를 때만 자석의 성질을 가집니다."
   },
   {
@@ -285,12 +285,12 @@
    "type": "multiple",
    "body": "전자석의 세기를 세게 하는 방법으로 알맞은 것은 무엇인가요?",
    "options": [
+    "철심을 뺀다",
     "코일을 적게 감는다",
-    "코일을 많이 감고 전지를 직렬로 더 연결한다",
     "전지를 빼낸다",
-    "철심을 뺀다"
+    "코일을 많이 감고 전지를 직렬로 더 연결한다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "코일을 많이 감을수록, 전지를 많이 직렬연결할수록 전자석이 세집니다."
   },
   {
@@ -305,12 +305,12 @@
    "body": "표는 코일을 감은 횟수에 따라 붙은 클립의 수입니다. 이로부터 알 수 있는 사실은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 216 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"210\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"213\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"213\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"213\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">코일 감은 수</text><text x=\"158\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">붙은 클립 수</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10번</text><text x=\"158\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">3개</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">20번</text><text x=\"158\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6개</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30번</text><text x=\"158\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">9개</text></svg>",
    "options": [
-    "코일과 전자석 세기는 관계없다",
     "코일을 많이 감을수록 전자석이 약해진다",
     "코일을 많이 감을수록 전자석이 세진다",
+    "코일과 전자석 세기는 관계없다",
     "클립은 철이 아니다"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "코일 감은 수가 많을수록 붙은 클립의 수가 많아 전자석이 세집니다."
   },
   {
@@ -324,12 +324,12 @@
    "type": "multiple",
    "body": "전자석이 영구 자석보다 편리한 점으로 알맞은 것은 무엇인가요?",
    "options": [
-    "전류를 끊거나 흘려 자석의 성질을 켜고 끌 수 있고 세기를 조절할 수 있다",
-    "항상 같은 세기이다",
     "전지가 필요 없다",
+    "항상 같은 세기이다",
+    "전류를 끊거나 흘려 자석의 성질을 켜고 끌 수 있고 세기를 조절할 수 있다",
     "철을 끌어당기지 못한다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "전자석은 스위치와 전류의 세기로 자석의 성질을 조절할 수 있습니다."
   },
   {
@@ -345,7 +345,8 @@
    "answers": [
     "크레인",
     "전자석 크레인",
-    "전자석 기중기"
+    "전자석 기중기",
+    "기중기"
    ],
    "why": "크레인은 전류를 흘려 철을 붙이고 끊어서 내려놓습니다."
   },
@@ -362,7 +363,9 @@
    "answers": [
     "감전",
     "감전될 수 있어서",
-    "감전 위험"
+    "감전 위험",
+    "감전되기 때문에",
+    "감전될 수 있기 때문에"
    ],
    "why": "물은 전기를 통하게 하므로 젖은 손으로 만지면 감전될 수 있습니다."
   },
@@ -377,12 +380,12 @@
    "type": "multiple",
    "body": "플러그를 뽑을 때 올바른 방법은 무엇인가요?",
    "options": [
-    "젖은 손으로 뽑는다",
-    "전선을 잡고 당긴다",
     "플러그 몸체를 잡고 뽑는다",
+    "전선을 잡고 당긴다",
+    "젖은 손으로 뽑는다",
     "발로 뽑는다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "전선을 당기면 전선이 상할 수 있으므로 플러그 몸체를 잡고 뽑습니다."
   },
   {
@@ -396,12 +399,12 @@
    "type": "multiple",
    "body": "멀티탭 하나에 전기 기구를 많이 연결하면 위험한 까닭으로 알맞은 것은 무엇인가요?",
    "options": [
-    "너무 많은 전류가 흘러 열이 나고 불이 날 수 있기 때문이다",
-    "전기 요금이 없어지기 때문이다",
     "전류가 흐르지 않기 때문이다",
+    "전기 요금이 없어지기 때문이다",
+    "너무 많은 전류가 흘러 열이 나고 불이 날 수 있기 때문이다",
     "기구가 더 오래 쓰이기 때문이다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "한꺼번에 많은 전류가 흐르면 과열되어 화재가 날 수 있습니다."
   },
   {
@@ -415,12 +418,12 @@
    "type": "multiple",
    "body": "번개가 칠 때 안전한 행동으로 알맞은 것은 무엇인가요?",
    "options": [
-    "물가에서 놀이를 계속한다",
+    "건물 안으로 대피하고 전기 기구의 사용을 줄인다",
     "나무 아래에서 비를 피한다",
     "우산을 높이 들고 걷는다",
-    "건물 안으로 대피하고 전기 기구의 사용을 줄인다"
+    "물가에서 놀이를 계속한다"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "번개가 칠 때는 건물 안으로 피하는 것이 안전합니다."
   },
   {
@@ -434,12 +437,12 @@
    "type": "multiple",
    "body": "전기를 효율적으로 사용하기 위한 실천 계획으로 가장 알맞은 것은 무엇인가요?",
    "options": [
+    "사용하지 않는 기구도 계속 켜 둔다",
     "전등을 하루 종일 켜 둔다",
-    "쓰지 않는 전등은 끄고 대기 전력이 큰 기구는 플러그를 뽑으며 에너지 효율이 높은 제품을 쓴다",
     "냉장고 문을 자주 연다",
-    "사용하지 않는 기구도 계속 켜 둔다"
+    "쓰지 않는 전등은 끄고 대기 전력이 큰 기구는 플러그를 뽑으며 에너지 효율이 높은 제품을 쓴다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "필요 없는 전기 사용을 줄이고 효율이 높은 제품을 쓰는 것이 효율적입니다."
   },
   {

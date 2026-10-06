@@ -55,7 +55,7 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그래프는 어느 자원이 해마다 얼마나 남아 있는지를 나타낸 것입니다. 이로부터 알 수 있는 사실은 무엇인가요?",
+   "body": "그래프는 어느 자원의 남은 양을 10년 간격으로 나타낸 것입니다(2030년은 예상한 값). 이로부터 알 수 있는 사실은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 330 230\" font-family=\"sans-serif\"><text x=\"46\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(남은 양(%))</text><line x1=\"52\" y1=\"186\" x2=\"314\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"46\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"52\" y1=\"154\" x2=\"314\" y2=\"154\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"158\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">20</text><line x1=\"52\" y1=\"122\" x2=\"314\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"126\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">40</text><line x1=\"52\" y1=\"90\" x2=\"314\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"94\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">60</text><line x1=\"52\" y1=\"58\" x2=\"314\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"62\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">80</text><line x1=\"52\" y1=\"26\" x2=\"314\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">100</text><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"68.4\" y=\"26\" width=\"32.8\" height=\"160\" fill=\"#4b7bec\"/><text x=\"84.8\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2000년</text><rect x=\"133.9\" y=\"74\" width=\"32.8\" height=\"112\" fill=\"#4b7bec\"/><text x=\"150.2\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2010년</text><rect x=\"199.4\" y=\"122\" width=\"32.8\" height=\"64\" fill=\"#4b7bec\"/><text x=\"215.8\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2020년</text><rect x=\"264.9\" y=\"162\" width=\"32.8\" height=\"24\" fill=\"#4b7bec\"/><text x=\"281.2\" y=\"204\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">2030년</text></svg>",
    "options": [
     "사용할수록 남은 양이 줄어 자원은 한정되어 있다",
@@ -137,7 +137,10 @@
     "태양광",
     "태양광 에너지",
     "태양광발전",
-    "태양광 발전"
+    "태양광 발전",
+    "태양 에너지",
+    "태양에너지",
+    "태양광에너지"
    ],
    "why": "태양광은 햇빛을 이용해 전기를 만드는 재생에너지입니다."
   },
@@ -174,7 +177,11 @@
    "answers": [
     "땅속의 열",
     "땅속 열",
-    "땅 속의 열"
+    "땅 속의 열",
+    "땅속의 열에너지",
+    "땅속 열에너지",
+    "땅의 열",
+    "땅속의 뜨거운 열"
    ],
    "why": "지열 에너지는 땅속의 열을 이용합니다."
   },
@@ -263,13 +270,11 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "쓰레기를 줄이고 다시 쓰며 재활용하는 3R 중 ‘다시 쓰기’를 뜻하는 영어 낱말은 무엇인가요? (Reuse / Reduce / Recycle 중에서)",
+   "body": "다 쓴 페트병이나 캔을 분리배출하여 새 물건을 만드는 원료로 다시 이용하는 것을 무엇이라고 하나요? (세 글자)",
    "answers": [
-    "Reuse",
-    "reuse",
-    "리유즈"
+    "재활용"
    ],
-   "why": "Reduce는 줄이기, Reuse는 다시 쓰기, Recycle은 재활용입니다."
+   "why": "다 쓴 물건을 원료로 다시 이용하는 재활용은 자원을 아끼는 방법입니다."
   },
   {
    "id": "과학-초5-6-6과08-03-b1",

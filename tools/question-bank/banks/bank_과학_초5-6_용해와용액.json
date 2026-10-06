@@ -128,13 +128,11 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "같은 양의 물에 설탕을 녹일 때 설탕을 더 많이 넣으면 용액의 진하기는 어떻게 되나요? (진해진다 / 연해진다)",
+   "body": "용액에 용질이 녹아 있는 정도, 곧 용액이 진하고 연한 정도를 무엇이라고 하나요? (세 글자)",
    "answers": [
-    "진해진다",
-    "진해짐",
-    "진하다"
+    "진하기"
    ],
-   "why": "용질이 많을수록 용액이 진해집니다."
+   "why": "용액의 진하고 연한 정도를 진하기라고 하며, 같은 양의 용매에 용질이 많이 녹아 있을수록 진합니다."
   },
   {
    "id": "과학-초5-6-6과03-02-c2",
@@ -145,16 +143,16 @@
    "level": "C",
    "difficulty": "easy",
    "type": "multiple",
-   "body": "그림은 같은 양의 물에 용질 알갱이(●)를 녹인 두 용액입니다. 더 진한 용액은 어느 것인가요?",
-   "svg": "<svg viewBox=\"0 0 194 112\" font-family=\"sans-serif\"><g transform=\"translate(0 0)\"><rect x=\"15\" y=\"29.5\" width=\"62\" height=\"52.5\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,29.5 77,29.5\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"><circle cx=\"10\" cy=\"62\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"24\" cy=\"64\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"38\" cy=\"60\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text></g><g transform=\"translate(102 0)\"><rect x=\"15\" y=\"29.5\" width=\"62\" height=\"52.5\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,29.5 77,29.5\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"><circle cx=\"10\" cy=\"62\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"24\" cy=\"64\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"38\" cy=\"60\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"52\" cy=\"63\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"17\" cy=\"52\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"31\" cy=\"54\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"45\" cy=\"52\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"10\" cy=\"42\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"24\" cy=\"44\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></g></svg>",
+   "body": "그림은 같은 양의 물에 용질 알갱이(●)를 녹인 네 용액 가~라입니다. 가장 진한 용액은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 398 112\" font-family=\"sans-serif\"><g transform=\"translate(0 0)\"><rect x=\"15\" y=\"29.5\" width=\"62\" height=\"52.5\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,29.5 77,29.5\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"><circle cx=\"10\" cy=\"62\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"24\" cy=\"64\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"38\" cy=\"60\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text></g><g transform=\"translate(102 0)\"><rect x=\"15\" y=\"29.5\" width=\"62\" height=\"52.5\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,29.5 77,29.5\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"><circle cx=\"10\" cy=\"62\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"24\" cy=\"64\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"38\" cy=\"60\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"52\" cy=\"63\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"17\" cy=\"52\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"31\" cy=\"54\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"45\" cy=\"52\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"10\" cy=\"42\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"24\" cy=\"44\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></g><g transform=\"translate(204 0)\"><rect x=\"15\" y=\"29.5\" width=\"62\" height=\"52.5\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,29.5 77,29.5\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"><circle cx=\"10\" cy=\"62\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"24\" cy=\"64\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"38\" cy=\"60\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"52\" cy=\"63\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"17\" cy=\"52\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"31\" cy=\"54\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text></g><g transform=\"translate(306 0)\"><rect x=\"15\" y=\"29.5\" width=\"62\" height=\"52.5\" fill=\"#4b7bec\" fill-opacity=\"0.35\"/><polyline points=\"15,29.5 77,29.5\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"2.5\"/><g transform=\"translate(14,12)\"><circle cx=\"10\" cy=\"62\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"24\" cy=\"64\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"38\" cy=\"60\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"52\" cy=\"63\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"17\" cy=\"52\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"31\" cy=\"54\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"45\" cy=\"52\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"10\" cy=\"42\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"24\" cy=\"44\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"38\" cy=\"42\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"52\" cy=\"44\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"31\" cy=\"34\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"1.5\"/></g><polyline points=\"14,12 14,82 78,82 78,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"46\" y=\"102\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></g></svg>",
    "options": [
     "가",
-    "나",
-    "두 용액이 같다",
-    "알 수 없다"
+    "라",
+    "다",
+    "나"
    ],
    "answer": 1,
-   "why": "물의 양이 같을 때 용질이 많이 녹은 나가 더 진합니다."
+   "why": "물의 양이 같을 때 용질이 가장 많이 녹은 라가 가장 진합니다."
   },
   {
    "id": "과학-초5-6-6과03-02-b1",
@@ -165,15 +163,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "방울토마토를 두 용액에 넣었더니 가에서는 가라앉고 나에서는 떠올랐습니다. 더 진한 용액은 어느 것인가요?",
+   "body": "표는 진하기가 다른 설탕물 가~라에 같은 방울토마토를 넣었을 때의 결과입니다. 가장 진한 설탕물은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 266 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"260\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"263\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"263\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"263\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"263\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">설탕물</text><text x=\"168\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">방울토마토의 위치</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"168\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">바닥에 가라앉음</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"168\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">용액 중간쯤에 뜸</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><text x=\"168\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">수면 위로 조금 떠오름</text><text x=\"38\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text><text x=\"168\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">수면 위로 많이 떠오름</text></svg>",
    "options": [
-    "알 수 없다",
     "가",
-    "두 용액이 같다",
-    "나"
+    "나",
+    "다",
+    "라"
    ],
    "answer": 3,
-   "why": "진한 용액일수록 물체가 더 잘 뜹니다."
+   "why": "용액이 진할수록 물체가 더 높이 떠오르므로, 방울토마토가 가장 많이 떠오른 라가 가장 진합니다."
   },
   {
    "id": "과학-초5-6-6과03-02-b2",
@@ -261,11 +260,11 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "상처를 소독할 때 쓰는 소독약은 어떤 물질이 물이나 알코올에 녹은 것인가요? (용액 / 고체)",
+   "body": "소독약, 식초, 이온 음료처럼 어떤 물질이 다른 물질에 녹아 골고루 섞여 있는 물질을 무엇이라고 하나요? (두 글자)",
    "answers": [
     "용액"
    ],
-   "why": "소독약은 소독 물질이 녹아 있는 용액입니다."
+   "why": "소독약, 식초, 이온 음료는 모두 용질이 용매에 골고루 녹아 있는 용액입니다."
   },
   {
    "id": "과학-초5-6-6과03-03-b1",

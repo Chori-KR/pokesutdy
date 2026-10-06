@@ -55,7 +55,7 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "그림처럼 팔을 구부릴 때 위팔 안쪽 근육은 어떻게 되나요?",
-   "svg": "<svg viewBox=\"0 0 220 190\" font-family=\"sans-serif\"><rect x=\"53\" y=\"20\" width=\"14\" height=\"80\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"53\" y=\"93\" width=\"90\" height=\"14\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"82\" cy=\"60.0\" rx=\"15\" ry=\"27\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"106\" y=\"56\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">근육(줄어듦)</text><circle cx=\"60\" cy=\"100\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"48\" y=\"118\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">관절</text><text x=\"46\" y=\"40\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">뼈</text></svg>",
+   "svg": "<svg viewBox=\"0 0 220 190\" font-family=\"sans-serif\"><rect x=\"53\" y=\"20\" width=\"14\" height=\"80\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"53\" y=\"93\" width=\"90\" height=\"14\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"82\" cy=\"60.0\" rx=\"15\" ry=\"27\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"106\" y=\"56\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">위팔 안쪽 근육</text><circle cx=\"60\" cy=\"100\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"48\" y=\"118\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">관절</text><text x=\"46\" y=\"40\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">뼈</text></svg>",
    "options": [
     "줄어들어 굵어진다",
     "늘어나 가늘어진다",
@@ -73,17 +73,12 @@
    "standard": "6과04-01",
    "level": "B",
    "difficulty": "medium",
-   "type": "multiple",
-   "body": "그림처럼 팔을 쭉 폈을 때 위팔 안쪽 근육의 상태로 알맞은 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 220 190\" font-family=\"sans-serif\"><rect x=\"53\" y=\"20\" width=\"14\" height=\"80\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"53\" y=\"100\" width=\"14\" height=\"80\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"78\" cy=\"60.0\" rx=\"9\" ry=\"36\" fill=\"#4b7bec\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"94\" y=\"56\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">근육(늘어남)</text><circle cx=\"60\" cy=\"100\" r=\"6\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"48\" y=\"118\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">관절</text><text x=\"46\" y=\"40\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">뼈</text></svg>",
-   "options": [
-    "사라진다",
-    "줄어들어 굵어진다",
-    "뼈로 바뀐다",
-    "늘어나 가늘어진다"
+   "type": "short",
+   "body": "빨대 두 개를 이어 붙이고 그 위에 비닐봉지를 붙여 뼈와 근육 모형을 만들었습니다. 비닐봉지에 공기를 불어 넣었더니 비닐봉지가 부풀며 길이가 줄어들어 아래쪽 빨대가 들어 올려졌습니다. 이 모형에서 비닐봉지는 우리 몸의 무엇에 해당하나요? (두 글자)",
+   "answers": [
+    "근육"
    ],
-   "answer": 3,
-   "why": "팔을 폈을 때는 위팔 안쪽 근육이 늘어나 가늘어집니다."
+   "why": "모형에서 빨대는 뼈, 비닐봉지는 근육에 해당합니다. 근육의 길이가 줄어들면 근육에 연결된 뼈가 움직입니다."
   },
   {
    "id": "과학-초5-6-6과04-01-a1",
@@ -96,12 +91,12 @@
    "type": "multiple",
    "body": "몸이 움직이는 원리를 바르게 설명한 것은 무엇인가요?",
    "options": [
+    "피부가 뼈를 당긴다",
     "뼈가 스스로 줄어들어 움직인다",
-    "근육이 줄어들거나 늘어나면서 뼈를 움직여 관절이 구부려지거나 펴진다",
     "관절이 근육을 움직인다",
-    "피부가 뼈를 당긴다"
+    "근육이 줄어들거나 늘어나면서 뼈를 움직여 관절이 구부려지거나 펴진다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "근육의 수축·이완이 뼈를 움직이며 관절에서 몸이 구부려집니다."
   },
   {
@@ -167,12 +162,12 @@
    "body": "표는 몸속 기관과 하는 일입니다. ㉠에 알맞은 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 286 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"280\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"283\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"283\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"283\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">기관</text><text x=\"178\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">하는 일</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">소장</text><text x=\"178\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">㉠</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">심장</text><text x=\"178\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">혈액을 온몸으로 보냄</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">콩팥</text><text x=\"178\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">혈액 속 노폐물을 걸러 오줌을 만듦</text></svg>",
    "options": [
-    "소리를 낸다",
     "공기를 저장한다",
+    "영양소를 흡수한다",
     "오줌을 저장한다",
-    "영양소를 흡수한다"
+    "소리를 낸다"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "소장은 소화된 음식물에서 영양소를 흡수합니다."
   },
   {
@@ -186,12 +181,12 @@
    "type": "multiple",
    "body": "혈액이 온몸을 돌며 하는 일로 알맞은 것은 무엇인가요?",
    "options": [
-    "산소와 영양소를 운반하고 이산화 탄소와 노폐물을 실어 나른다",
+    "소리를 만든다",
     "음식물을 잘게 부순다",
     "오줌을 저장한다",
-    "소리를 만든다"
+    "산소와 영양소를 운반하고 이산화 탄소와 노폐물을 실어 나른다"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "혈액은 순환하면서 필요한 물질을 전달하고 노폐물을 운반합니다."
   },
   {
@@ -224,12 +219,12 @@
    "type": "multiple",
    "body": "운동을 하면 숨이 가빠지고 심장이 빨리 뛰는 까닭으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "배설 기관이 쉬기 때문이다",
-    "소화 기관만 일하기 때문이다",
     "몸이 더 많은 산소와 영양소가 필요해 호흡 기관과 순환 기관이 함께 빠르게 일하기 때문이다",
+    "소화 기관만 일하기 때문이다",
+    "배설 기관이 쉬기 때문이다",
     "근육이 일하지 않기 때문이다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "여러 기관이 서로 관련되어 함께 일합니다."
   },
   {
@@ -243,12 +238,12 @@
    "type": "multiple",
    "body": "건강을 지키기 위한 생활 습관으로 알맞은 것은 무엇인가요?",
    "options": [
-    "운동하지 않기",
-    "밤새 게임하기",
     "편식하기",
-    "균형 잡힌 식사와 규칙적인 운동, 충분한 잠"
+    "밤새 게임하기",
+    "균형 잡힌 식사와 규칙적인 운동, 충분한 잠",
+    "운동하지 않기"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "균형 잡힌 식사, 운동, 충분한 수면은 건강의 기본입니다."
   },
   {
@@ -259,15 +254,15 @@
    "standard": "6과04-03",
    "level": "C",
    "difficulty": "easy",
-   "type": "short",
-   "body": "음식을 먹기 전에 손을 씻는 까닭은 무엇인가요? (한 가지)",
-   "answers": [
-    "세균을 없애기 위해",
-    "세균을 씻어 내려고",
-    "병균을 없애려고",
-    "식중독을 예방하려고",
-    "세균 때문에"
+   "type": "multiple",
+   "body": "음식을 먹기 전에 손을 씻는 까닭으로 가장 알맞은 것은 무엇인가요?",
+   "options": [
+    "손톱이 빨리 자라게 하기 위해서이다",
+    "손을 차갑게 만들기 위해서이다",
+    "음식의 맛을 더 좋게 하기 위해서이다",
+    "손에 묻은 세균이 몸에 들어가 식중독 같은 질병을 일으키는 것을 막기 위해서이다"
    ],
+   "answer": 3,
    "why": "손을 씻으면 세균을 없애 식중독 같은 소화 기관 질병을 예방할 수 있습니다."
   },
   {
