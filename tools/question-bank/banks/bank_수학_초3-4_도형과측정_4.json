@@ -250,7 +250,7 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "배 한 상자의 무게는 3 kg 700 g이고 빈 상자의 무게는 600 g입니다. 배만의 무게는 얼마인가요?",
-   "svg": "<svg viewBox=\"0 0 230 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"60\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상자 600 g</text><rect x=\"70\" y=\"14\" width=\"150\" height=\"30\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"145\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">배 ?</text><path d=\"M10,54 q0,10 10,10 L107,64 l8,8 l8,-8 L210,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"115\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3 kg 700 g</text></svg>",
+   "svg": "<svg viewBox=\"0 0 260 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"90\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"55\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상자 600 g</text><rect x=\"100\" y=\"14\" width=\"150\" height=\"30\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"175\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">배 ?</text><path d=\"M10,54 q0,10 10,10 L122,64 l8,8 l8,-8 L240,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"130\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3 kg 700 g</text></svg>",
    "options": [
     "4 kg 300 g",
     "3 kg 100 g",
@@ -326,7 +326,7 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "무게가 5 kg인 가방에 책을 넣었더니 8 kg 400 g이 되었습니다. 그중 2 kg 100 g은 공책의 무게입니다. 책의 무게는 얼마인가요?",
+   "body": "무게가 5 kg인 가방에 책과 공책을 넣었더니 8 kg 400 g이 되었습니다. 넣은 공책의 무게가 2 kg 100 g이라면 책의 무게는 얼마인가요?",
    "options": [
     "1 kg 700 g",
     "3 kg 400 g",
@@ -403,14 +403,13 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "한 변을 각도기의 오른쪽 밑금(0°)에 맞추었습니다. 각의 크기는 몇 도인가요?",
-   "svg": "<svg viewBox=\"0 0 300 152\" font-family=\"sans-serif\"><g transform=\"translate(15 0)\"><path d=\"M17.0,132 A118,118 0 0 1 253.0,132 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"7\" y1=\"132\" x2=\"263\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"239\" y1=\"132\" x2=\"253\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"232\" y=\"123\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">0</text><line x1=\"243.3\" y1=\"112.9\" x2=\"251.2\" y2=\"111.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"238.4\" y1=\"94.4\" x2=\"245.9\" y2=\"91.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"225.1\" y1=\"80\" x2=\"237.2\" y2=\"73\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"213.8\" y=\"90.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">30</text><text x=\"193.9\" y=\"102\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">150</text><line x1=\"219.3\" y1=\"61.3\" x2=\"225.4\" y2=\"56.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"205.7\" y1=\"47.7\" x2=\"210.8\" y2=\"41.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"187\" y1=\"41.9\" x2=\"194\" y2=\"29.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"180.5\" y=\"57.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">60</text><text x=\"169\" y=\"77.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">120</text><line x1=\"172.6\" y1=\"28.6\" x2=\"175.4\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"154.1\" y1=\"23.7\" x2=\"155.5\" y2=\"15.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"135\" y1=\"28\" x2=\"135\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"135\" y=\"45\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">90</text><text x=\"135\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">90</text><line x1=\"115.9\" y1=\"23.7\" x2=\"114.5\" y2=\"15.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"97.4\" y1=\"28.6\" x2=\"94.6\" y2=\"21.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"83\" y1=\"41.9\" x2=\"76\" y2=\"29.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"89.5\" y=\"57.2\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">120</text><text x=\"101\" y=\"77.1\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">60</text><line x1=\"64.3\" y1=\"47.7\" x2=\"59.2\" y2=\"41.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"50.7\" y1=\"61.3\" x2=\"44.6\" y2=\"56.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"44.9\" y1=\"80\" x2=\"32.8\" y2=\"73\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"56.2\" y=\"90.5\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">150</text><text x=\"76.1\" y=\"102\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">30</text><line x1=\"31.6\" y1=\"94.4\" x2=\"24.1\" y2=\"91.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"26.7\" y1=\"112.9\" x2=\"18.8\" y2=\"111.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"31\" y1=\"132\" x2=\"17\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"38\" y=\"123\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">180</text><circle cx=\"135\" cy=\"132\" r=\"4\" fill=\"currentColor\"/><line x1=\"135\" y1=\"132\" x2=\"277\" y2=\"132\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><line x1=\"135\" y1=\"132\" x2=\"183.6\" y2=\"-1.4\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/></g></svg>",
+   "body": "각도기로 각의 크기를 잴 때 각도기의 중심을 각의 어느 곳에 맞추어야 하나요?",
    "answers": [
-    "70",
-    "70°",
-    "70도"
+    "꼭짓점",
+    "각의 꼭짓점",
+    "꼭지점"
    ],
-   "why": "바깥쪽 눈금으로 70°입니다."
+   "why": "각도기의 중심을 각의 꼭짓점에 맞추고, 밑금을 각의 한 변에 맞추어 잽니다."
   },
   {
    "id": "수학-초3-4-4수03-24-b1",
