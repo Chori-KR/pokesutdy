@@ -61,7 +61,7 @@ S = "9수03-09"
 mc(b, S, "C", "이등변삼각형의 두 밑각의 크기에 대한 설명으로 알맞은 것은 무엇인가요?",
    "서로 같다", ["서로 다르다", "합이 $90^\\circ$이다", "항상 $60^\\circ$이다"], "이등변삼각형의 두 밑각의 크기는 같습니다.")
 sh(b, S, "C", "$\\overline{AB}=\\overline{AC}$인 이등변삼각형 $ABC$에서 $\\angle A=40^\\circ$일 때 $\\angle B$의 크기는 몇 도인가요? (숫자만)", A(70),
-   "밑각의 크기는 $(180^\\circ-40^\\circ)\\div2=70^\\circ$입니다.", svg=tri_fig({"A": (115, 20), "B": (40, 135), "C": (190, 135)}, [("A", "B"), ("B", "C"), ("C", "A")], ticks=[("A", "B", 1), ("A", "C", 1)], arcs=[("A", "B", "C", 24, "40°")]))
+   "밑각의 크기는 $(180^\\circ-40^\\circ)\\div2=70^\\circ$입니다.", svg=tri_fig({"A": (115, 20), "B": (73, 135), "C": (157, 135)}, [("A", "B"), ("B", "C"), ("C", "A")], ticks=[("A", "B", 1), ("A", "C", 1)], arcs=[("A", "B", "C", 24, "40°")]))
 mc(b, S, "C", "$\\overline{AB}=\\overline{AC}$인 이등변삼각형에서 $\\angle B=50^\\circ$일 때 $\\angle C$의 크기는 얼마인가요?",
    "50°", ["80°", "65°", "40°"], "이등변삼각형의 밑각은 같으므로 $\\angle C=\\angle B=50^\\circ$입니다.")
 mc(b, S, "B", "이등변삼각형의 꼭지각이 $80^\\circ$일 때 한 밑각의 크기는 몇 도인가요?", "50°", ["40°", "100°", "80°"], "$(180^\\circ-80^\\circ)\\div2=50^\\circ$입니다.")
@@ -86,7 +86,7 @@ mc(b, S, "C", "삼각형의 외심에서 세 꼭짓점까지의 거리에 대한
    "모두 같다", ["모두 다르다", "두 개만 같다", "빗변에서만 같다"], "외심은 세 꼭짓점에서 같은 거리에 있는 점입니다.")
 mc(b, S, "B", "빗변의 길이가 $10\\,\\mathrm{cm}$인 직각삼각형의 외접원의 반지름의 길이는 몇 $\\mathrm{cm}$인가요?", "5", ["10", "20", "2.5"], "직각삼각형의 외심은 빗변의 중점이므로 반지름은 $10\\div2=5\\,\\mathrm{cm}$입니다.")
 mc(b, S, "B", "삼각형 $ABC$의 외심을 $O$라 하고 $\\angle A=60^\\circ$일 때 $\\angle BOC$의 크기는 얼마인가요?",
-   "120°", ["60°", "30°", "90°"], "외심에서 중심각은 원주각의 2배이므로 $\\angle BOC=2\\times60^\\circ=120^\\circ$입니다.",
+   "120°", ["60°", "30°", "90°"], "$\\overline{OA}=\\overline{OB}=\\overline{OC}$이므로 $\\triangle OAB$, $\\triangle OAC$는 이등변삼각형이고, 이를 이용하면 $\\angle BOC=2\\angle A=2\\times60^\\circ=120^\\circ$입니다.",
    svg=geo({"A": (115, 25), "B": (59, 122), "C": (171, 122), "O": (115, 90)}, segs=[("A", "B"), ("B", "C"), ("C", "A"), ("O", "B", "d"), ("O", "C", "d")], circles=[(115, 90, 65, "d")], arcs=[("O", "B", "C", 18, "?")], W=230, H=160, loff={"O": (0, 18)}))
 mc(b, S, "B", "삼각형 $ABC$의 내심을 $I$라 하고 $\\angle A=70^\\circ$일 때 $\\angle BIC$의 크기는 얼마인가요?",
    "125°", ["110°", "140°", "55°"], "$\\angle BIC=90^\\circ+\\dfrac12\\angle A=90^\\circ+35^\\circ=125^\\circ$입니다.")
@@ -94,7 +94,7 @@ mc(b, S, "A", "세 변의 길이가 $3\\,\\mathrm{cm},\\ 4\\,\\mathrm{cm},\\ 5\\
    "직각삼각형의 내접원의 반지름은 $\\dfrac{3+4-5}{2}=1$입니다.")
 sh(b, S, "A", "둘레의 길이가 $24\\,\\mathrm{cm}$이고 내접원의 반지름이 $2\\,\\mathrm{cm}$인 삼각형의 넓이는 몇 $\\mathrm{cm^2}$인가요? (숫자만)", ["24"],
    "넓이 $=\\dfrac12\\times r\\times(\\text{둘레})=\\dfrac12\\times2\\times24=24$입니다.")
-mc(b, S, "A", "삼각형 $ABC$의 외심 $O$에 대해 $\\angle OBC=30^\\circ$일 때 $\\angle A$의 크기는 얼마인가요?",
+mc(b, S, "A", "예각삼각형 $ABC$의 외심 $O$에 대해 $\\angle OBC=30^\\circ$일 때 $\\angle A$의 크기는 얼마인가요?",
    "60°", ["30°", "90°", "120°"], "$\\triangle OBC$는 이등변삼각형이므로 $\\angle BOC=180^\\circ-60^\\circ=120^\\circ$이고 $\\angle A=\\dfrac12\\angle BOC=60^\\circ$입니다.")
 
 # ───────── 9수03-11 사각형의 성질 ─────────
@@ -102,7 +102,7 @@ S = "9수03-11"
 mc(b, S, "C", "평행사변형의 성질로 알맞은 것은 무엇인가요?",
    "두 쌍의 대각의 크기가 각각 같다", ["네 변의 길이가 모두 같다", "대각선이 서로 수직이다", "네 각이 모두 직각이다"], "평행사변형은 두 쌍의 대변의 길이, 대각의 크기가 각각 같습니다.")
 sh(b, S, "C", "평행사변형 $ABCD$에서 $\\angle A=70^\\circ$일 때 $\\angle C$의 크기는 몇 도인가요? (숫자만)", A(70), "평행사변형의 대각의 크기는 같으므로 $\\angle C=\\angle A=70^\\circ$입니다.",
-   svg=geo({"A": (50, 30), "B": (20, 130), "C": (160, 130), "D": (190, 30)}, segs=[("A", "B"), ("B", "C"), ("C", "D"), ("D", "A")], W=230, H=160))
+   svg=geo({"A": (20, 130), "B": (160, 130), "C": (190, 30), "D": (50, 30)}, segs=[("A", "B"), ("B", "C"), ("C", "D"), ("D", "A")], arcs=[("A", "B", "D", 20, "70°")], W=230, H=160))
 mc(b, S, "C", "네 변의 길이가 모두 같은 사각형은 무엇인가요?",
    "마름모", ["직사각형", "평행사변형", "사다리꼴"], "네 변의 길이가 모두 같은 사각형이 마름모입니다.")
 sh(b, S, "B", "평행사변형 $ABCD$에서 $\\overline{AB}=5\\,\\mathrm{cm}$, $\\overline{BC}=8\\,\\mathrm{cm}$일 때 둘레의 길이는 몇 $\\mathrm{cm}$인가요? (숫자만)", ["26"], "대변의 길이가 같으므로 둘레는 $2\\times(5+8)=26\\,\\mathrm{cm}$입니다.")
@@ -152,7 +152,7 @@ mc(b, S, "B", "$\\overline{AB}:\\overline{DE}=\\overline{AC}:\\overline{DF}=1:2$
    "SAS 닮음", ["SSS 닮음", "AA 닮음", "RHS 합동"], "두 변의 비가 같고 끼인각이 같으므로 SAS 닮음입니다.")
 mc(b, S, "A", "직각삼각형 $ABC$ ($\\angle A=90^\\circ$)에서 꼭짓점 $A$에서 빗변 $BC$에 내린 수선의 발을 $H$라 하자. $\\overline{BH}=4$, $\\overline{HC}=9$일 때 $\\overline{AH}$의 길이를 구하세요.", "6", ["13", "36", "5"],
    "$\\triangle HBA\\sim\\triangle HAC$이므로 $\\overline{AH}^2=\\overline{BH}\\times\\overline{HC}=36$, $\\overline{AH}=6$입니다.",
-   svg=tri_fig({"A": (80, 30), "B": (20, 130), "C": (210, 130), "H": (80, 130)}, [("A", "B"), ("B", "C"), ("C", "A"), ("A", "H", "d")], rights=[("A", "B", "C"), ("H", "A", "C")], texts=[(50, 146, "4"), (146, 146, "9")]))
+   svg=tri_fig({"A": (80, 42), "B": (20, 130), "C": (210, 130), "H": (80, 130)}, [("A", "B"), ("B", "C"), ("C", "A"), ("A", "H", "d")], rights=[("A", "B", "C"), ("H", "A", "C")], texts=[(50, 146, "4"), (146, 146, "9")]))
 sh(b, S, "A", "닮은 두 삼각형에서 대응하는 두 변의 길이가 각각 $6,\\ 9$이고, 작은 삼각형의 다른 한 변이 $8$일 때 큰 삼각형에서 대응하는 변의 길이를 구하세요. (숫자만)", ["12"],
    "닮음비가 $6:9=2:3$이므로 $8\\times\\dfrac32=12$입니다.")
 mc(b, S, "A", "$\\angle A$를 공통으로 하는 $\\triangle ABC$와 $\\triangle ADE$에서 $\\overline{AB}=9,\\ \\overline{AC}=12,\\ \\overline{AD}=3,\\ \\overline{AE}=4$일 때 두 삼각형은 어떤 관계인가요?",
@@ -164,18 +164,18 @@ mc(b, S, "C", "삼각형 $ABC$에서 $\\overline{DE}\\parallel\\overline{BC}$일
    "$\\overline{AD}:\\overline{AB}=\\overline{AE}:\\overline{AC}$", ["$\\overline{AD}:\\overline{DB}=\\overline{AB}:\\overline{AC}$", "$\\overline{AD}:\\overline{AE}=\\overline{DB}:\\overline{AC}$", "$\\overline{DE}:\\overline{BC}=\\overline{AD}:\\overline{DB}$"],
    "평행선이 두 변과 만날 때 대응하는 선분의 비는 같습니다.",
    svg=tri_fig({"A": (115, 20), "B": (30, 140), "C": (200, 140), "D": (72, 80), "E": (158, 80)}, [("A", "B"), ("B", "C"), ("C", "A"), ("D", "E")]))
-sh(b, S, "C", "$\\overline{AD}=3\\,\\mathrm{cm}$, $\\overline{DB}=6\\,\\mathrm{cm}$일 때 $\\overline{AD}:\\overline{DB}$를 가장 간단한 자연수의 비로 나타내면 $1:\\square$입니다. $\\square$에 알맞은 수를 쓰세요. (숫자만)", ["2"], "$3:6=1:2$입니다.")
+sh(b, S, "C", "삼각형의 세 중선이 만나는 한 점을 무엇이라고 하나요? (네 글자)", ["무게중심", "무게 중심"], "삼각형의 세 중선은 한 점에서 만나고, 이 점을 무게중심이라고 합니다.")
 mc(b, S, "C", "삼각형 $ABC$에서 $\\overline{DE}\\parallel\\overline{BC}$이고 $\\overline{AD}=\\overline{DB}$일 때 $\\overline{AE}$와 $\\overline{EC}$의 관계는 무엇인가요?",
    "$\\overline{AE}=\\overline{EC}$", ["$\\overline{AE}=2\\overline{EC}$", "$\\overline{AE}<\\overline{EC}$", "알 수 없다"], "$\\overline{AD}:\\overline{DB}=\\overline{AE}:\\overline{EC}=1:1$이므로 $\\overline{AE}=\\overline{EC}$입니다.")
 mc(b, S, "B", "삼각형 $ABC$에서 $\\overline{DE}\\parallel\\overline{BC}$이고 $\\overline{AD}=4,\\ \\overline{DB}=6,\\ \\overline{AE}=6$일 때 $\\overline{EC}$의 길이를 구하세요.", "9", ["4", "12", "6"],
    "$4:6=6:\\overline{EC}$이므로 $\\overline{EC}=9$입니다.")
 mc(b, S, "B", "삼각형 $ABC$에서 $\\overline{DE}\\parallel\\overline{BC}$, $\\overline{AD}:\\overline{AB}=2:5$이고 $\\overline{BC}=15$일 때 $\\overline{DE}$의 길이를 구하세요.", "6", ["10", "5", "7.5"],
    "$\\overline{DE}:\\overline{BC}=\\overline{AD}:\\overline{AB}=2:5$이므로 $\\overline{DE}=15\\times\\dfrac25=6$입니다.")
-mc(b, S, "B", "세 평행선 $l,m,n$이 두 직선과 만나 $a:b=3:5$일 때, $a=6$이면 $b$의 값은 얼마인가요?",
-   "10", ["6", "8", "12"], "$3:5=6:b$에서 $b=10$입니다.")
+mc(b, S, "B", "세 평행선 $l, m, n$이 두 직선과 만나서 생긴 선분의 길이가 한 직선 위에서는 차례로 $3,\\ 5$이고, 다른 직선 위에서는 차례로 $6,\\ b$입니다. $b$의 값은 얼마인가요?",
+   "10", ["6", "8", "12"], "평행선 사이의 선분의 길이의 비는 같으므로 $3:5=6:b$에서 $b=10$입니다.")
 sh(b, S, "A", "삼각형 $ABC$에서 두 변 $AB, AC$의 중점을 각각 $D, E$라 하고 $\\overline{BC}=14$일 때 $\\overline{DE}$의 길이를 구하세요. (숫자만)", ["7"], "중점연결정리에 의해 $\\overline{DE}=\\dfrac12\\overline{BC}=7$입니다.")
-mc(b, S, "A", "삼각형 $ABC$에서 $\\angle A$의 이등분선이 $\\overline{BC}$와 만나는 점을 $D$라 하자. $\\overline{AB}=6,\\ \\overline{AC}=4,\\ \\overline{BC}=10$일 때 $\\overline{BD}$의 길이를 구하세요.", "6", ["4", "5", "7"],
-   "각의 이등분선의 성질로 $\\overline{BD}:\\overline{DC}=\\overline{AB}:\\overline{AC}=3:2$이므로 $\\overline{BD}=10\\times\\dfrac35=6$입니다.")
+mc(b, S, "A", "삼각형 $ABC$의 무게중심을 $G$, 변 $BC$의 중점을 $D$라 하자. 중선 $\\overline{AD}$의 길이가 $12$일 때 $\\overline{AG}$의 길이를 구하세요.", "8", ["4", "6", "9"],
+   "무게중심은 중선을 꼭짓점으로부터 $2:1$로 나누므로 $\\overline{AG}=12\\times\\dfrac23=8$입니다.")
 mc(b, S, "A", "$\\overline{AD}=\\overline{DB}$, $\\overline{DE}\\parallel\\overline{BC}$일 때 $\\triangle ADE$와 $\\triangle ABC$의 넓이의 비는 얼마인가요?",
    "$1:4$", ["$1:2$", "$1:3$", "$1:8$"], "닮음비가 $1:2$이므로 넓이의 비는 $1:4$입니다.")
 

@@ -104,7 +104,7 @@
     "110°"
    ],
    "answer": 0,
-   "why": "이등변삼각형에서 길이가 같은 두 변에 마주하지 않는 두 각(밑각)의 크기는 같습니다. 각 ㄷ도 70°입니다."
+   "why": "이등변삼각형은 길이가 같은 두 변과 마주 보는 두 각의 크기가 같습니다. 각 ㄴ과 각 ㄷ의 크기가 같으므로 각 ㄷ도 70°입니다."
   },
   {
    "id": "수학-초3-4-4수03-08-b3",
@@ -218,7 +218,7 @@
     "없다"
    ],
    "answer": 0,
-   "why": "세 각이 모두 직각보다 작은 삼각형(나)이 예각삼각형입니다."
+   "why": "세 각이 모두 직각보다 작은 삼각형(가)이 예각삼각형입니다."
   },
   {
    "id": "수학-초3-4-4수03-09-c3",
@@ -341,7 +341,7 @@
    "difficulty": "hard",
    "type": "multiple",
    "body": "삼각형의 두 각이 40°, 50°입니다. 나머지 한 각의 크기와 삼각형의 종류를 바르게 짝지은 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 168 128\" font-family=\"sans-serif\"><polygon points=\"34,94 134,94 100,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"62.2\" y=\"88.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">40°</text><text x=\"106.6\" y=\"86.7\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">50°</text><text x=\"92.3\" y=\"68\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text></svg>",
+   "svg": "<svg viewBox=\"0 0 198 132\" font-family=\"sans-serif\"><polygon points=\"34,98 164,98 110.3,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"62.7\" y=\"94.1\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">40°</text><text x=\"135.7\" y=\"93.1\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">50°</text><text x=\"105.1\" y=\"68.5\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">?</text></svg>",
    "options": [
     "80°, 예각삼각형",
     "90°, 예각삼각형",
@@ -535,7 +535,7 @@
     "라"
    ],
    "answer": 0,
-   "why": "다각형은 선분으로만 둘러싸인 도형입니다. 나는 굽은 선이 있어서 다각형이 아닙니다."
+   "why": "다각형은 선분으로만 둘러싸인 도형입니다. 가는 굽은 선이 있어서 다각형이 아닙니다."
   },
   {
    "id": "수학-초3-4-4수03-11-c2",
@@ -581,7 +581,7 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "정다각형은 어느 것인가요?",
-   "svg": "<svg viewBox=\"0 0 270 292\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><polygon points=\"58,14 99.8,44.4 83.9,93.6 32.1,93.6 16.2,44.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"69\" y=\"138\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(136 0)\"><polygon points=\"20,100 20,30 100,30 100,100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"201\" y=\"138\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(4 148)\"><polygon points=\"58,12 110,50 96,104 28,100 10,44\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"69\" y=\"286\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(136 148)\"><polygon points=\"58,10 104,58 58,106 12,58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"201\" y=\"286\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
+   "svg": "<svg viewBox=\"0 0 270 292\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><polygon points=\"58,14 99.8,44.4 83.9,93.6 32.1,93.6 16.2,44.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"69\" y=\"138\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(136 0)\"><polygon points=\"20,100 20,30 100,30 100,100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"201\" y=\"138\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(4 148)\"><polygon points=\"58,12 110,50 96,104 28,100 10,44\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"69\" y=\"286\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(136 148)\"><polygon points=\"58,20 108,58 58,96 8,58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"201\" y=\"286\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
    "options": [
     "가",
     "나",
@@ -589,7 +589,7 @@
     "라"
    ],
    "answer": 0,
-   "why": "변의 길이와 각의 크기가 모두 같은 정오각형(가)이 정다각형입니다. 나는 직사각형, 다는 변의 길이가 다른 오각형입니다."
+   "why": "변의 길이와 각의 크기가 모두 같은 정오각형(가)이 정다각형입니다. 나는 직사각형, 다는 변의 길이가 다른 오각형, 라는 각의 크기가 다른 마름모입니다."
   },
   {
    "id": "수학-초3-4-4수03-11-b2",
@@ -752,12 +752,12 @@
    "svg": "<svg viewBox=\"0 0 170 110\" font-family=\"sans-serif\"><polygon points=\"15,95 15,15 150,95\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"15,15 150,15 150,95\" fill=\"#e07b39\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></svg>",
    "options": [
     "마름모",
-    "평행사변형",
+    "정사각형",
     "직사각형",
-    "사다리꼴"
+    "삼각형"
    ],
    "answer": 2,
-   "why": "두 직각삼각형을 빗변끼리 붙이면 네 각이 모두 직각인 직사각형이 됩니다."
+   "why": "두 직각삼각형의 가장 긴 변끼리 붙이면 네 각이 모두 직각이고 가로와 세로의 길이가 다른 직사각형이 됩니다."
   },
   {
    "id": "수학-초3-4-4수03-12-b2",
@@ -768,16 +768,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "점선 칸 3개를 빈틈없이 채울 수 있는 조각은 어느 것인가요?",
-   "svg": "<svg viewBox=\"0 0 202 190\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"4\" y=\"4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"4\" y=\"30\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"4\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"30\" y=\"4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"30\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"56\" y=\"4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"82\" y=\"4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"82\" y=\"30\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"82\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"30\" y=\"30\" width=\"26\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><rect x=\"56\" y=\"30\" width=\"26\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><rect x=\"56\" y=\"56\" width=\"26\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/></g><text x=\"60\" y=\"104\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">채울 곳</text><g transform=\"translate(124 28)\"><rect x=\"4\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"26\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"48\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"161\" y=\"104\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(75 114)\"><rect x=\"4\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"26\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"26\" y=\"26\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"101\" y=\"184\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "body": "점선 칸 3개를 조각 한 개로 빈틈없이 채울 수 있는 것은 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 262 190\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"4\" y=\"4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"4\" y=\"30\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"4\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"30\" y=\"4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"30\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"56\" y=\"4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"82\" y=\"4\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"82\" y=\"30\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"82\" y=\"56\" width=\"26\" height=\"26\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"30\" y=\"30\" width=\"26\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><rect x=\"56\" y=\"30\" width=\"26\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><rect x=\"56\" y=\"56\" width=\"26\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/></g><text x=\"60\" y=\"104\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">채울 곳</text><g transform=\"translate(124 28)\"><rect x=\"4\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"26\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"48\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"161\" y=\"104\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(206 17)\"><rect x=\"4\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"26\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"26\" y=\"26\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"232\" y=\"104\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(75 114)\"><rect x=\"4\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"26\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"4\" y=\"26\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"26\" y=\"26\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"101\" y=\"184\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(135 125)\"><rect x=\"4\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"26\" y=\"4\" width=\"22\" height=\"22\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"161\" y=\"184\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
    "options": [
     "가",
-    "둘 다 아니다",
-    "둘 다",
-    "나"
+    "나",
+    "다",
+    "라"
    ],
-   "answer": 3,
-   "why": "빈 곳은 L자 모양 3칸이므로 L자 조각(나)으로 채울 수 있습니다. 일자 조각(가)은 맞지 않습니다."
+   "answer": 1,
+   "why": "빈 곳은 ㄱ자 모양 3칸이므로 같은 모양의 조각(나)으로 채울 수 있습니다. 가는 일자 3칸, 다는 4칸, 라는 2칸이라 맞지 않습니다."
   },
   {
    "id": "수학-초3-4-4수03-12-b3",
@@ -827,12 +827,12 @@
    "type": "multiple",
    "body": "똑같은 정삼각형 4개로 큰 정삼각형을 만들 수 있는 방법을 바르게 설명한 것은 무엇인가요?",
    "options": [
+    "정삼각형으로는 큰 정삼각형을 만들 수 없다",
     "정삼각형 4개를 일직선으로 늘어놓는다",
-    "정삼각형 3개를 큰 삼각형의 세 모서리에 놓고 가운데에 1개를 뒤집어 놓는다",
     "정삼각형 4개를 정사각형 모양으로 놓는다",
-    "정삼각형으로는 큰 정삼각형을 만들 수 없다"
+    "정삼각형 3개를 큰 삼각형의 세 모서리에 놓고 가운데에 1개를 뒤집어 놓는다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "변의 길이가 두 배인 큰 정삼각형은 작은 정삼각형 4개로 만들 수 있습니다."
   },
   {
@@ -864,11 +864,11 @@
    "body": "1분은 몇 초인가요?",
    "options": [
     "10",
-    "100",
     "60",
+    "100",
     "120"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "1분은 60초입니다."
   },
   {
@@ -883,12 +883,12 @@
    "body": "시계에서 가장 가늘고 끝에 동그라미가 있는 바늘(초바늘)이 가리키는 시각은 몇 초인가요?",
    "svg": "<svg viewBox=\"0 0 160 160\" font-family=\"sans-serif\"><circle cx=\"80\" cy=\"80\" r=\"72\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M87.0,13.4L87.4,9.4M93.9,14.5L94.8,10.6M100.7,16.3L101.9,12.5M107.3,18.8L108.9,15.1M119.4,25.8L121.7,22.6M124.8,30.2L127.5,27.2M129.8,35.2L132.8,32.5M134.2,40.6L137.4,38.3M141.2,52.7L144.9,51.1M143.7,59.3L147.5,58.1M145.5,66.1L149.4,65.2M146.6,73.0L150.6,72.6M146.6,87.0L150.6,87.4M145.5,93.9L149.4,94.8M143.7,100.7L147.5,101.9M141.2,107.3L144.9,108.9M134.2,119.4L137.4,121.7M129.8,124.8L132.8,127.5M124.8,129.8L127.5,132.8M119.4,134.2L121.7,137.4M107.3,141.2L108.9,144.9M100.7,143.7L101.9,147.5M93.9,145.5L94.8,149.4M87.0,146.6L87.4,150.6M73.0,146.6L72.6,150.6M66.1,145.5L65.2,149.4M59.3,143.7L58.1,147.5M52.7,141.2L51.1,144.9M40.6,134.2L38.3,137.4M35.2,129.8L32.5,132.8M30.2,124.8L27.2,127.5M25.8,119.4L22.6,121.7M18.8,107.3L15.1,108.9M16.3,100.7L12.5,101.9M14.5,93.9L10.6,94.8M13.4,87.0L9.4,87.4M13.4,73.0L9.4,72.6M14.5,66.1L10.6,65.2M16.3,59.3L12.5,58.1M18.8,52.7L15.1,51.1M25.8,40.6L22.6,38.3M30.2,35.2L27.2,32.5M35.2,30.2L32.5,27.2M40.6,25.8L38.3,22.6M52.7,18.8L51.1,15.1M59.3,16.3L58.1,12.5M66.1,14.5L65.2,10.6M73.0,13.4L72.6,9.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><path d=\"M80.0,17.0L80.0,9.0M111.5,25.4L115.5,18.5M134.6,48.5L141.5,44.5M143.0,80.0L151.0,80.0M134.6,111.5L141.5,115.5M111.5,134.6L115.5,141.5M80.0,143.0L80.0,151.0M48.5,134.6L44.5,141.5M25.4,111.5L18.5,115.5M17.0,80.0L9.0,80.0M25.4,48.5L18.5,44.5M48.5,25.4L44.5,18.5\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"107.4\" y=\"37.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"127.4\" y=\"57.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"134.7\" y=\"85\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"127.4\" y=\"112.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"107.4\" y=\"132.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><text x=\"80\" y=\"139.7\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><text x=\"52.6\" y=\"132.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><text x=\"32.6\" y=\"112.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8</text><text x=\"25.3\" y=\"85\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">9</text><text x=\"32.6\" y=\"57.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text><text x=\"52.6\" y=\"37.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">11</text><text x=\"80\" y=\"30.3\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12</text><line x1=\"80\" y1=\"80\" x2=\"107.4\" y2=\"67.2\" stroke=\"currentColor\" stroke-width=\"6\"/><line x1=\"80\" y1=\"80\" x2=\"119.3\" y2=\"57.3\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><circle cx=\"80\" cy=\"80\" r=\"5\" fill=\"currentColor\"/><line x1=\"80\" y1=\"66\" x2=\"80\" y2=\"146\" stroke=\"#e07b39\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"146\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"80\" r=\"4\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
    "options": [
-    "30초",
     "15초",
     "6초",
+    "30초",
     "60초"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "초바늘이 6을 가리키므로 30초입니다. 숫자 한 칸은 5초를 뜻합니다."
   },
   {
@@ -920,12 +920,12 @@
    "body": "시계가 나타내는 시각은 몇 시 몇 분 몇 초인가요?",
    "svg": "<svg viewBox=\"0 0 160 160\" font-family=\"sans-serif\"><circle cx=\"80\" cy=\"80\" r=\"72\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M87.0,13.4L87.4,9.4M93.9,14.5L94.8,10.6M100.7,16.3L101.9,12.5M107.3,18.8L108.9,15.1M119.4,25.8L121.7,22.6M124.8,30.2L127.5,27.2M129.8,35.2L132.8,32.5M134.2,40.6L137.4,38.3M141.2,52.7L144.9,51.1M143.7,59.3L147.5,58.1M145.5,66.1L149.4,65.2M146.6,73.0L150.6,72.6M146.6,87.0L150.6,87.4M145.5,93.9L149.4,94.8M143.7,100.7L147.5,101.9M141.2,107.3L144.9,108.9M134.2,119.4L137.4,121.7M129.8,124.8L132.8,127.5M124.8,129.8L127.5,132.8M119.4,134.2L121.7,137.4M107.3,141.2L108.9,144.9M100.7,143.7L101.9,147.5M93.9,145.5L94.8,149.4M87.0,146.6L87.4,150.6M73.0,146.6L72.6,150.6M66.1,145.5L65.2,149.4M59.3,143.7L58.1,147.5M52.7,141.2L51.1,144.9M40.6,134.2L38.3,137.4M35.2,129.8L32.5,132.8M30.2,124.8L27.2,127.5M25.8,119.4L22.6,121.7M18.8,107.3L15.1,108.9M16.3,100.7L12.5,101.9M14.5,93.9L10.6,94.8M13.4,87.0L9.4,87.4M13.4,73.0L9.4,72.6M14.5,66.1L10.6,65.2M16.3,59.3L12.5,58.1M18.8,52.7L15.1,51.1M25.8,40.6L22.6,38.3M30.2,35.2L27.2,32.5M35.2,30.2L32.5,27.2M40.6,25.8L38.3,22.6M52.7,18.8L51.1,15.1M59.3,16.3L58.1,12.5M66.1,14.5L65.2,10.6M73.0,13.4L72.6,9.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><path d=\"M80.0,17.0L80.0,9.0M111.5,25.4L115.5,18.5M134.6,48.5L141.5,44.5M143.0,80.0L151.0,80.0M134.6,111.5L141.5,115.5M111.5,134.6L115.5,141.5M80.0,143.0L80.0,151.0M48.5,134.6L44.5,141.5M25.4,111.5L18.5,115.5M17.0,80.0L9.0,80.0M25.4,48.5L18.5,44.5M48.5,25.4L44.5,18.5\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"107.4\" y=\"37.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"127.4\" y=\"57.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"134.7\" y=\"85\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"127.4\" y=\"112.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"107.4\" y=\"132.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><text x=\"80\" y=\"139.7\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><text x=\"52.6\" y=\"132.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><text x=\"32.6\" y=\"112.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8</text><text x=\"25.3\" y=\"85\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">9</text><text x=\"32.6\" y=\"57.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text><text x=\"52.6\" y=\"37.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">11</text><text x=\"80\" y=\"30.3\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12</text><line x1=\"80\" y1=\"80\" x2=\"102.3\" y2=\"100.4\" stroke=\"currentColor\" stroke-width=\"6\"/><line x1=\"80\" y1=\"80\" x2=\"102.7\" y2=\"119.3\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><circle cx=\"80\" cy=\"80\" r=\"5\" fill=\"currentColor\"/><line x1=\"92.1\" y1=\"73\" x2=\"22.8\" y2=\"113\" stroke=\"#e07b39\" stroke-width=\"2\"/><circle cx=\"22.8\" cy=\"113\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"80\" r=\"4\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
    "options": [
-    "5시 5분 40초",
-    "4시 25분 8초",
     "4시 25분 40초",
+    "4시 25분 8초",
+    "5시 5분 40초",
     "4시 40분 25초"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "짧은바늘은 4와 5 사이, 긴바늘은 5(25분), 초바늘은 8(40초)을 가리킵니다."
   },
   {
@@ -939,12 +939,12 @@
    "type": "multiple",
    "body": "2분 30초는 몇 초인가요?",
    "options": [
-    "150초",
-    "230초",
     "90초",
+    "230초",
+    "150초",
     "120초"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "2분은 120초이므로 2분 30초는 120+30=150(초)입니다."
   },
   {
@@ -975,12 +975,12 @@
    "body": "시계가 나타내는 시각을 바르게 읽은 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 160 160\" font-family=\"sans-serif\"><circle cx=\"80\" cy=\"80\" r=\"72\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M87.0,13.4L87.4,9.4M93.9,14.5L94.8,10.6M100.7,16.3L101.9,12.5M107.3,18.8L108.9,15.1M119.4,25.8L121.7,22.6M124.8,30.2L127.5,27.2M129.8,35.2L132.8,32.5M134.2,40.6L137.4,38.3M141.2,52.7L144.9,51.1M143.7,59.3L147.5,58.1M145.5,66.1L149.4,65.2M146.6,73.0L150.6,72.6M146.6,87.0L150.6,87.4M145.5,93.9L149.4,94.8M143.7,100.7L147.5,101.9M141.2,107.3L144.9,108.9M134.2,119.4L137.4,121.7M129.8,124.8L132.8,127.5M124.8,129.8L127.5,132.8M119.4,134.2L121.7,137.4M107.3,141.2L108.9,144.9M100.7,143.7L101.9,147.5M93.9,145.5L94.8,149.4M87.0,146.6L87.4,150.6M73.0,146.6L72.6,150.6M66.1,145.5L65.2,149.4M59.3,143.7L58.1,147.5M52.7,141.2L51.1,144.9M40.6,134.2L38.3,137.4M35.2,129.8L32.5,132.8M30.2,124.8L27.2,127.5M25.8,119.4L22.6,121.7M18.8,107.3L15.1,108.9M16.3,100.7L12.5,101.9M14.5,93.9L10.6,94.8M13.4,87.0L9.4,87.4M13.4,73.0L9.4,72.6M14.5,66.1L10.6,65.2M16.3,59.3L12.5,58.1M18.8,52.7L15.1,51.1M25.8,40.6L22.6,38.3M30.2,35.2L27.2,32.5M35.2,30.2L32.5,27.2M40.6,25.8L38.3,22.6M52.7,18.8L51.1,15.1M59.3,16.3L58.1,12.5M66.1,14.5L65.2,10.6M73.0,13.4L72.6,9.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.45\"/><path d=\"M80.0,17.0L80.0,9.0M111.5,25.4L115.5,18.5M134.6,48.5L141.5,44.5M143.0,80.0L151.0,80.0M134.6,111.5L141.5,115.5M111.5,134.6L115.5,141.5M80.0,143.0L80.0,151.0M48.5,134.6L44.5,141.5M25.4,111.5L18.5,115.5M17.0,80.0L9.0,80.0M25.4,48.5L18.5,44.5M48.5,25.4L44.5,18.5\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"107.4\" y=\"37.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1</text><text x=\"127.4\" y=\"57.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2</text><text x=\"134.7\" y=\"85\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">3</text><text x=\"127.4\" y=\"112.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">4</text><text x=\"107.4\" y=\"132.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">5</text><text x=\"80\" y=\"139.7\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">6</text><text x=\"52.6\" y=\"132.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">7</text><text x=\"32.6\" y=\"112.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">8</text><text x=\"25.3\" y=\"85\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">9</text><text x=\"32.6\" y=\"57.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">10</text><text x=\"52.6\" y=\"37.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">11</text><text x=\"80\" y=\"30.3\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">12</text><line x1=\"80\" y1=\"80\" x2=\"49.9\" y2=\"76.8\" stroke=\"currentColor\" stroke-width=\"6\"/><line x1=\"80\" y1=\"80\" x2=\"123.1\" y2=\"66\" stroke=\"#4b7bec\" stroke-width=\"3.5\"/><circle cx=\"80\" cy=\"80\" r=\"5\" fill=\"currentColor\"/><line x1=\"73\" y1=\"67.9\" x2=\"113\" y2=\"137.2\" stroke=\"#e07b39\" stroke-width=\"2\"/><circle cx=\"113\" cy=\"137.2\" r=\"3.5\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"80\" r=\"4\" fill=\"#e07b39\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
    "options": [
-    "9시 25분 12초",
+    "9시 12분 25초",
     "9시 12분 5초",
     "10시 2분 25초",
-    "9시 12분 25초"
+    "9시 25분 12초"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "짧은바늘이 9, 긴바늘이 2(12분), 초바늘이 5(25초)를 가리킵니다."
   },
   {
@@ -995,11 +995,11 @@
    "body": "시계에 8시 15분 20초를 나타내려고 합니다. 초바늘은 어느 숫자를 가리키게 그려야 하나요?",
    "options": [
     "2",
-    "4",
     "3",
-    "20"
+    "20",
+    "4"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "초바늘은 숫자 한 칸이 5초이므로 20초는 숫자 4를 가리킵니다."
   },
   {
@@ -1050,12 +1050,12 @@
    "type": "multiple",
    "body": "3분 50초 - 1분 20초는 얼마인가요?",
    "options": [
-    "4분 10초",
     "2분 70초",
+    "2분 30초",
     "1분 30초",
-    "2분 30초"
+    "4분 10초"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "분끼리 3-1=2, 초끼리 50-20=30이므로 2분 30초입니다."
   },
   {
@@ -1086,12 +1086,12 @@
    "body": "2분 45초 + 1분 30초는 얼마인가요?",
    "svg": "<svg viewBox=\"0 0 300.5 100\" font-family=\"sans-serif\"><rect x=\"10\" y=\"14\" width=\"181.5\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"100.8\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2분 45초</text><rect x=\"191.5\" y=\"14\" width=\"99\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"241\" y=\"35\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1분 30초</text><path d=\"M10,54 q0,10 10,10 L142.3,64 l8,8 l8,-8 L280.5,64 q10,0 10,-10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"150.3\" y=\"92\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">? 분 ? 초</text></svg>",
    "options": [
-    "4분 15초",
+    "4분 5초",
     "3분 75초",
     "3분 15초",
-    "4분 5초"
+    "4분 15초"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "초끼리 45+30=75(초)=1분 15초이므로 2분+1분+1분 15초=4분 15초입니다."
   },
   {
@@ -1105,12 +1105,12 @@
    "type": "multiple",
    "body": "책 읽기를 5시 10분 20초에 시작하여 1분 40초 동안 읽었습니다. 책 읽기를 마친 시각은 몇 시 몇 분 몇 초인가요?",
    "options": [
-    "5시 11분 0초",
-    "5시 11분 60초",
     "5시 12분 0초",
+    "5시 11분 60초",
+    "5시 11분 0초",
     "5시 12분 20초"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "20초+1분 40초=2분 0초이므로 5시 10분+2분=5시 12분 0초입니다."
   },
   {
@@ -1141,12 +1141,12 @@
    "body": "달리기 기록이 가는 2분 35초, 나는 3분 12초입니다. 두 기록의 차는 몇 초인가요?",
    "svg": "<svg viewBox=\"0 0 330 92\" font-family=\"sans-serif\"><rect x=\"10\" y=\"10\" width=\"155\" height=\"30\" fill=\"#4b7bec\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"88\" y=\"31\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가 2분 35초</text><rect x=\"10\" y=\"52\" width=\"192\" height=\"30\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"106\" y=\"73\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나 3분 12초</text></svg>",
    "options": [
-    "1분 37초",
-    "47초",
     "27초",
-    "37초"
+    "47초",
+    "37초",
+    "1분 37초"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "3분 12초는 192초, 2분 35초는 155초이므로 192-155=37(초)입니다."
   },
   {
@@ -1160,12 +1160,12 @@
    "type": "multiple",
    "body": "영상을 1분 50초, 2분 25초, 3분 5초 동안 차례로 보았습니다. 영상을 본 시간은 모두 몇 분 몇 초인가요?",
    "options": [
+    "6분 20초",
     "6분 80초",
-    "7분 20초",
     "7분 80초",
-    "6분 20초"
+    "7분 20초"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "분끼리 1+2+3=6(분), 초끼리 50+25+5=80(초)=1분 20초이므로 7분 20초입니다."
   },
   {
@@ -1179,12 +1179,12 @@
    "type": "multiple",
    "body": "물이 가득 찬 수조에서 물을 빼는 데 처음 1분 25초가 걸렸고, 그다음 50초가 더 걸려서 모두 뺐습니다. 모두 빼는 데 걸린 시간을 구하는 과정으로 알맞은 것은 무엇인가요?",
    "options": [
-    "1분+25초+50초=2분 15초가 아니다",
     "1분 25초-50초=35초",
     "1분 25초+50초=1분 75초=2분 15초",
+    "1분 25초+50초=1분 75초=1분 15초",
     "25초+50초=75초"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "초끼리 더하면 25+50=75(초)이고 75초는 1분 15초이므로 1분+1분 15초=2분 15초입니다."
   }
  ],
