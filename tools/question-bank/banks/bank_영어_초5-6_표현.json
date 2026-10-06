@@ -587,12 +587,12 @@
    "body": "대화에서 길 안내 순서로 알맞은 것은 무엇인가요?",
    "passage": "p2",
    "options": [
+    "두 블록 직진 → 은행에서 왼쪽으로 돌기",
+    "은행에서 오른쪽으로 돌기 → 두 블록 직진",
     "두 블록 직진 → 은행에서 오른쪽으로 돌기",
-    "은행에서 왼쪽으로 돌기 → 두 블록 직진",
-    "공원에서 오른쪽으로 돌기",
-    "건너편으로 건너기"
+    "한 블록 직진 → 은행에서 오른쪽으로 돌기"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Go straight for two blocks. Then turn right at the bank.라고 했습니다."
   },
   {
@@ -606,12 +606,12 @@
    "type": "multiple",
    "body": "아침에 하는 일을 순서대로 말한 문장으로 알맞은 것은 무엇인가요?",
    "options": [
-    "I breakfast First eat wash.",
+    "Wash first I my Then.",
     "First, Then I wash my face I eat.",
-    "First, I wash my face. Then, I eat breakfast.",
-    "Wash first I my Then."
+    "I breakfast First eat wash.",
+    "First, I wash my face. Then, I eat breakfast."
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "First, Then 같은 순서 낱말로 행동의 순서를 말할 수 있습니다."
   },
   {
@@ -626,12 +626,12 @@
    "body": "‘My Diary’의 빈칸 ②에 알맞은 낱말은 무엇인가요?",
    "passage": "p3",
    "options": [
-    "hungry",
     "sad",
+    "happy",
     "angry",
-    "happy"
+    "hungry"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "영어 시험을 잘 봐서 기분이 좋으므로 happy입니다."
   },
   {
@@ -662,12 +662,12 @@
    "body": "‘My Diary’의 빈칸 ①에 알맞은 낱말은 무엇인가요?",
    "passage": "p3",
    "options": [
+    "well",
     "goods",
     "good",
-    "well",
     "gooder"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "day(명사)를 꾸미는 형용사는 good입니다."
   },
   {
@@ -698,12 +698,12 @@
    "body": "‘My Diary’의 빈칸 ③에 알맞은 낱말은 무엇인가요?",
    "passage": "p3",
    "options": [
-    "did",
-    "was",
     "will",
+    "was",
+    "did",
     "went"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Tomorrow는 미래이므로 will go를 씁니다."
   },
   {
@@ -717,12 +717,12 @@
    "type": "multiple",
    "body": "내 의견을 말할 때 알맞은 문장은 무엇인가요?",
    "options": [
-    "I think English is fun.",
-    "English fun think I.",
     "I am think English.",
+    "English fun think I.",
+    "I think English is fun.",
     "Think I English fun."
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "I think ~는 의견을 말하는 표현입니다."
   },
   {
@@ -737,12 +737,12 @@
    "body": "토끼의 나이를 묻는 질문으로 알맞은 것은 무엇인가요?",
    "passage": "p4",
    "options": [
-    "Where is it?",
-    "What is it?",
     "How old is it?",
+    "What is it?",
+    "Where is it?",
     "Who is it?"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "나이를 물을 때는 How old ~?를 씁니다."
   },
   {
@@ -756,12 +756,12 @@
    "type": "multiple",
    "body": "Where do you live? 에 알맞은 대답은 무엇인가요?",
    "options": [
-    "I live in Busan.",
+    "Yes, I do.",
     "I am ten.",
     "It is red.",
-    "Yes, I do."
+    "I live in Busan."
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "장소를 물을 때는 I live in ~. 로 답합니다."
   },
   {
@@ -793,12 +793,12 @@
    "type": "multiple",
    "body": "시각을 묻는 질문으로 알맞은 것은 무엇인가요?",
    "options": [
-    "Who is she?",
     "What color is it?",
+    "What time is it?",
     "How many are there?",
-    "What time is it?"
+    "Who is she?"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "시각은 What time is it?으로 묻습니다."
   },
   {
@@ -832,12 +832,12 @@
    "type": "multiple",
    "body": "How many pets do you have? 에 알맞은 대답은 무엇인가요?",
    "options": [
+    "I am fine.",
     "I have a good time.",
-    "I have two cats.",
     "It is cute.",
-    "I am fine."
+    "I have two cats."
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "How many ~?는 수를 묻는 질문이므로 개수로 답합니다."
   },
   {
@@ -888,12 +888,12 @@
    "body": "예시문의 형식에 맞게 쓴 글은 무엇인가요? (친구 Tom에게 책 선물을 받고 감사하는 글)",
    "passage": "p5",
    "options": [
-    "Dear Tom, I am sorry. Good night.",
+    "Dear Tom, Thank you for the book. It is fun. Love, Jina",
     "Thank Tom book fun Jina Love Dear.",
     "Dear Jina, Thank you for the book. Love, Tom",
-    "Dear Tom, Thank you for the book. It is fun. Love, Jina"
+    "Dear Tom, I am sorry. Good night."
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Dear ~, 감사 인사, 이유나 느낌, Love, 이름 순으로 씁니다."
   },
   {
@@ -908,12 +908,12 @@
    "body": "편지의 끝인사로 알맞은 것은 무엇인가요?",
    "passage": "p5",
    "options": [
-    "Love, Mina",
-    "Dear Mina",
     "Hello Mina",
+    "Dear Mina",
+    "Love, Mina",
     "Mina Dear"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "편지의 끝에는 Love, Your friend 같은 끝인사와 이름을 씁니다."
   },
   {
@@ -928,12 +928,12 @@
    "body": "편지의 구성 요소를 순서대로 나열한 것은 무엇인가요?",
    "passage": "p5",
    "options": [
-    "첫인사(Dear ~) → 본문 → 끝인사 → 이름",
-    "본문 → 첫인사 → 이름 → 끝인사",
-    "이름 → 본문 → 첫인사",
-    "끝인사 → 첫인사 → 본문"
+    "첫인사(Dear ~) → 본문 → 이름 → 끝인사",
+    "본문 → 첫인사(Dear ~) → 끝인사 → 이름",
+    "첫인사(Dear ~) → 끝인사 → 본문 → 이름",
+    "첫인사(Dear ~) → 본문 → 끝인사 → 이름"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "예시문처럼 Dear ~로 시작하고 본문 뒤 끝인사와 이름을 씁니다."
   },
   {
@@ -947,12 +947,12 @@
    "type": "multiple",
    "body": "초대하는 글을 쓸 때 알맞은 문장은 무엇인가요?",
    "options": [
-    "My party is not Saturday you.",
     "Come party my Saturday please on.",
     "Please come to my party on Saturday.",
+    "My party is not Saturday you.",
     "Party please Saturday come."
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Please come to ~는 초대할 때 쓰는 문장입니다."
   },
   {
@@ -967,12 +967,12 @@
    "body": "포스터를 다른 반과 나누기 위해 학생들이 한 일은 무엇인가요?",
    "passage": "p6",
    "options": [
-    "발표를 하지 않았다",
-    "포스터를 버렸다",
     "글을 지웠다",
-    "짧은 영상을 녹화했다"
+    "포스터를 버렸다",
+    "짧은 영상을 녹화했다",
+    "발표를 하지 않았다"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "We also record a short video to share our poster with other classes.라고 했습니다."
   },
   {
@@ -986,12 +986,12 @@
    "type": "multiple",
    "body": "영어로 말할 낱말이 생각나지 않을 때 쓸 수 있는 전략으로 알맞은 것은 무엇인가요?",
    "options": [
-    "아무 말도 하지 않는다",
     "그림을 그리거나 몸짓으로 표현한다",
+    "아무 말도 하지 않는다",
     "포기하고 자리에 앉는다",
     "다른 사람에게 화를 낸다"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "그림이나 몸짓으로도 뜻을 전할 수 있습니다."
   },
   {
@@ -1045,12 +1045,12 @@
    "body": "포스터에 밝은 색을 쓴 까닭은 무엇인가요?",
    "passage": "p6",
    "options": [
-    "글자를 감추려고",
+    "시간이 남아서이다",
     "색이 없어서이다",
-    "사람들이 쉽게 볼 수 있도록 하기 위해서이다",
-    "시간이 남아서이다"
+    "글자를 감추려고",
+    "사람들이 쉽게 볼 수 있도록 하기 위해서이다"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "we use bright colors, so people can see it easily라고 했습니다."
   },
   {
@@ -1064,12 +1064,12 @@
    "type": "multiple",
    "body": "친구들 앞에서 영어로 동물을 소개하려고 합니다. 창의적이고 효과적인 방법은 무엇인가요?",
    "options": [
-    "동물 그림과 짧은 문장, 동작을 함께 사용한다",
     "동물 이름만 읽는다",
+    "동물 그림과 짧은 문장, 동작을 함께 사용한다",
     "아무것도 준비하지 않는다",
     "다른 사람의 발표를 그대로 외운다"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "여러 전략과 매체를 함께 쓰면 의미를 더 창의적으로 표현할 수 있습니다."
   },
   {
@@ -1083,12 +1083,12 @@
    "type": "multiple",
    "body": "Let’s do it together! 의 뜻으로 알맞은 것은 무엇인가요?",
    "options": [
-    "나는 싫어!",
     "혼자 해!",
+    "함께 하자!",
     "그만하자!",
-    "함께 하자!"
+    "나는 싫어!"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Let’s ~는 ‘~하자’라는 권유의 표현입니다."
   },
   {
@@ -1123,12 +1123,12 @@
    "type": "multiple",
    "body": "Can I join you? 에 알맞은 대답은 무엇인가요?",
    "options": [
+    "I like soccer.",
     "No, I am ten.",
-    "Sure! Come on.",
     "It is red.",
-    "I like soccer."
+    "Sure! Come on."
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "함께하고 싶다는 말에는 Sure! 같은 말로 받아 줍니다."
   },
   {
@@ -1142,12 +1142,12 @@
    "type": "multiple",
    "body": "친구가 말하기 활동에서 실수했을 때 알맞은 말은 무엇인가요?",
    "options": [
-    "You are bad.",
     "That’s OK. Try again!",
+    "You are bad.",
     "Be quiet!",
     "I don’t like you."
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "격려하는 말을 하면 서로 자신감을 가지고 활동할 수 있습니다."
   },
   {
@@ -1161,12 +1161,12 @@
    "type": "multiple",
    "body": "모둠 활동에서 역할을 나눌 때 가장 알맞은 말은 무엇인가요?",
    "options": [
-    "I don’t want to work.",
-    "I do everything.",
     "You do it alone.",
-    "You draw, and I will write. Let’s start!"
+    "I do everything.",
+    "You draw, and I will write. Let’s start!",
+    "I don’t want to work."
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "역할을 나누고 함께 시작하자고 말하는 것이 협력하는 표현입니다."
   },
   {
@@ -1180,12 +1180,12 @@
    "type": "multiple",
    "body": "영어 말하기 시간에 자신 없는 친구에게 해 줄 수 있는 말로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "Don’t worry. You can do it!",
+    "Sit down.",
     "Your English is bad.",
     "Don’t talk.",
-    "Sit down."
+    "Don’t worry. You can do it!"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "용기를 북돋는 말은 친구가 자신감을 갖게 합니다."
   }
  ],

@@ -198,9 +198,9 @@ x = Fr(2, 3) / 4
 b.q(S, "B", "$\\frac{2}{3} \\div 4$를 계산하면 얼마인가요?",
     options=[Fi(x), Fi(Fr(8, 3)), Fi(Fr(1, 3)), Fi(Fr(2, 12)) if False else Fi(Fr(1, 4))], answer=Fi(x),
     why=fr(2, 3) + "×" + fr(1, 4) + "=" + fr(2, 12) + "=" + fr(1, 6) + "입니다.")
-b.q(S, "B", "$8 \\div \\frac{2}{3}$를 계산한 값을 쓰세요.",
-    answers=["12"],
-    why="8×" + fr(3, 2) + "=12입니다.")
+b.q(S, "B", "$10 \\div \\frac{2}{5}$를 계산한 값을 쓰세요.",
+    answers=["25"],
+    why="10×" + fr(5, 2) + "=25입니다.")
 x = Fr(3, 5) / Fr(9, 10)
 b.q(S, "B", "$\\frac{3}{5} \\div \\frac{9}{10}$를 계산하면 얼마인가요?",
     options=[Fi(x), Fi(Fr(27, 50)), Fi(Fr(3, 2)), Fi(Fr(9, 10))], answer=Fi(x),

@@ -37,7 +37,7 @@ P3 = b.passage("p3", "My Dog Coco",
                "I have a pet dog. His name is Coco. He is small, but he is very fast. Coco has brown ears and a white tail. He is three years old. Every day at four o'clock, we go to the park and play with a red ball. Coco loves the ball!", "직접 지음")
 P4 = b.passage("p4", "Birthday Invitation",
                "Hi, Jina! My birthday party is this Saturday. It is at my house. Please come at two o'clock. We will eat pizza and cake, and we will play games. It will be a lot of fun! Can you come? Please call me. See you! - Sam", "직접 지음")
-P5 = b.passage("p5", "A Rainy Day",
+P5 = b.passage("p5", "Minho's Morning",
                "Today is a rainy day. Minho looks out of the window. The sky is gray. He takes his yellow umbrella and puts on his blue boots. He walks to school in the rain. At school, his friends say, \"Minho, your boots are cool!\" Minho smiles.", "직접 지음")
 P6 = b.passage("p6", "Our Weekly Plan",
                "Monday: English and art. Tuesday: music and P.E. Wednesday: math and science. Thursday: Korean and English. Friday: art and a class party. We have P.E. on Tuesday. We have English two times a week. I like Friday the best because of the party!", "직접 지음")

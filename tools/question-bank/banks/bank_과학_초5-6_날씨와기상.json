@@ -89,16 +89,16 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "그래프는 어느 날의 기온 변화입니다. 야외 운동을 하기에 가장 덜 더운 시각은 언제인가요?",
+   "body": "그래프는 어느 날의 기온 변화입니다. 기온이 30 °C보다 높은 시각에는 야외 운동을 하지 않기로 했을 때, 야외 운동을 할 수 있는 시각을 모두 고른 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 330 240\" font-family=\"sans-serif\"><text x=\"46\" y=\"16\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">(°C)</text><line x1=\"52\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"36\" y=\"190\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">15</text><line x1=\"52\" y1=\"154\" x2=\"304\" y2=\"154\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"158\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">20</text><line x1=\"52\" y1=\"122\" x2=\"304\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"126\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">25</text><line x1=\"52\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"94\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">30</text><line x1=\"52\" y1=\"58\" x2=\"304\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"62\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">35</text><line x1=\"52\" y1=\"26\" x2=\"304\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"46\" y=\"30\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">40</text><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M44,196 q4,-6 8,0 t8,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"40\" y=\"212\" font-size=\"12\" text-anchor=\"end\" fill=\"currentColor\">0</text><line x1=\"77.2\" y1=\"26\" x2=\"77.2\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"77.2\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">6시</text><line x1=\"127.6\" y1=\"26\" x2=\"127.6\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"127.6\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">9시</text><line x1=\"178\" y1=\"26\" x2=\"178\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"178\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">12시</text><line x1=\"228.4\" y1=\"26\" x2=\"228.4\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"228.4\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">15시</text><line x1=\"278.8\" y1=\"26\" x2=\"278.8\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-opacity=\"0.22\"/><text x=\"278.8\" y=\"216\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">18시</text><polyline points=\"77.2,154 127.6,122 178,77.2 228.4,64.4 278.8,102.8\" fill=\"none\" stroke=\"#4b7bec\" stroke-width=\"3\"/><circle cx=\"77.2\" cy=\"154\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"127.6\" cy=\"122\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"178\" cy=\"77.2\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"228.4\" cy=\"64.4\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"278.8\" cy=\"102.8\" r=\"5\" fill=\"#4b7bec\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
    "options": [
-    "18시",
-    "12시",
-    "15시",
-    "6시"
+    "9시, 12시, 18시",
+    "6시, 9시",
+    "12시, 15시",
+    "6시, 9시, 18시"
    ],
    "answer": 3,
-   "why": "기온이 가장 낮은 6시가 가장 덜 덥습니다."
+   "why": "6시 20 °C, 9시 25 °C, 18시 28 °C는 30 °C보다 낮고, 12시 32 °C, 15시 34 °C는 30 °C보다 높습니다."
   },
   {
    "id": "과학-초5-6-6과06-01-a2",

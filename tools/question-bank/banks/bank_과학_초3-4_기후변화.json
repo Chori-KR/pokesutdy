@@ -121,13 +121,13 @@
    "level": "A",
    "difficulty": "hard",
    "type": "short",
-   "body": "기후변화에 가장 큰 영향을 주는 것으로 알려진, 연료를 태울 때 많이 나오는 기체는 무엇인가요?",
+   "body": "표는 어느 도시에서 한 해 동안 아주 더운 날(폭염일)이 며칠이었는지 조사한 예시 자료입니다. 2020년의 폭염일 수는 1990년보다 며칠 늘었나요? (숫자만)",
+   "svg": "<svg viewBox=\"0 0 196 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"190\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"193\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"193\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"193\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"193\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">연도</text><text x=\"133\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">폭염일 수(일)</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">1990</text><text x=\"133\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">8</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2000</text><text x=\"133\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">11</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2010</text><text x=\"133\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">15</text><text x=\"38\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">2020</text><text x=\"133\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">20</text></svg>",
    "answers": [
-    "이산화탄소",
-    "이산화 탄소",
-    "CO2"
+    "12",
+    "12일"
    ],
-   "why": "연료를 태울 때 나오는 이산화탄소가 기후변화에 큰 영향을 줍니다."
+   "why": "20 - 8 = 12이므로 12일 늘었습니다. 폭염일이 점점 늘어나는 것은 기후변화 현상의 예입니다."
   },
   {
    "id": "과학-초3-4-4과16-02-c1",

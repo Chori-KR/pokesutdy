@@ -312,16 +312,15 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "그림은 지구의 공전입니다. 지구가 ㉡ 위치에 있을 때 우리나라의 계절로 알맞은 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 276 228\" font-family=\"sans-serif\"><ellipse cx=\"138\" cy=\"100\" rx=\"92\" ry=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"138\" cy=\"100\" r=\"17\" fill=\"#e07b39\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"138\" y=\"104\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">태양</text><circle cx=\"46\" cy=\"100\" r=\"12\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"38\" y1=\"118.3\" x2=\"54\" y2=\"81.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"54\" cy=\"81.7\" r=\"3.5\" fill=\"currentColor\"/><text x=\"20\" y=\"105\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉡</text><circle cx=\"138\" cy=\"42\" r=\"12\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"130\" y1=\"60.3\" x2=\"146\" y2=\"23.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"146\" cy=\"23.7\" r=\"3.5\" fill=\"currentColor\"/><text x=\"112\" y=\"36\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><circle cx=\"230\" cy=\"100\" r=\"12\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"222\" y1=\"118.3\" x2=\"238\" y2=\"81.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"238\" cy=\"81.7\" r=\"3.5\" fill=\"currentColor\"/><text x=\"256\" y=\"105\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉣</text><circle cx=\"138\" cy=\"158\" r=\"12\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"130\" y1=\"176.3\" x2=\"146\" y2=\"139.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"146\" cy=\"139.7\" r=\"3.5\" fill=\"currentColor\"/><text x=\"138\" y=\"196\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉢</text><circle cx=\"14\" cy=\"216\" r=\"3.5\" fill=\"currentColor\"/><text x=\"24\" y=\"220\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">자전축의 북쪽 끝(북극 쪽)</text></svg>",
+   "body": "겨울철 밤하늘에서 볼 수 있는 오리온자리를 여름철 밤하늘에서는 보기 어렵습니다. 그 까닭으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "여름",
-    "겨울",
-    "봄",
-    "가을"
+    "지구가 공전하여 여름에는 오리온자리가 태양과 같은 쪽에 있어 낮에 떠 있기 때문이다",
+    "여름에는 오리온자리의 별들이 빛을 내지 않기 때문이다",
+    "지구가 자전하는 방향이 계절마다 바뀌기 때문이다",
+    "오리온자리가 여름에만 지구에서 아주 멀리 떨어지기 때문이다"
    ],
    "answer": 0,
-   "why": "북반구가 태양 쪽으로 기울어진 ㉡ 위치에서는 여름입니다."
+   "why": "지구가 태양 주위를 공전하면 계절마다 밤에 바라보는 방향이 달라집니다. 여름에는 오리온자리가 태양과 같은 방향에 있어 낮에 떠 있으므로 밤에 보기 어렵습니다."
   },
   {
    "id": "과학-초5-6-6과12-03-a2",

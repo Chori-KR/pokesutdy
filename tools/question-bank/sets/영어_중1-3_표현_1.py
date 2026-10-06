@@ -64,7 +64,7 @@ Q(S, "C", "해가 뜨는 방향을 바르게 설명한 문장은 무엇인가요
 SH(S, "C", "\"Seoul is the ___ of Korea.\"에 알맞은 낱말을 쓰세요. (수도)", ["capital", "Capital"], "수도는 capital입니다.")
 Q(S, "B", "\"물은 섭씨 100도에서 끓는다\"를 영어로 알맞게 나타낸 문장은 무엇인가요?", "Water boils at 100 degrees Celsius.", ["Water boil at 100 degrees Celsius.", "Water boils in 100 degrees Celsius.", "Water is boiled at 100 degrees Celsius every day."], "일반적인 사실은 현재 시제로 표현합니다.")
 Q(S, "B", "박쥐에 관한 사실을 설명한 문장으로 알맞은 것은 무엇인가요?", "Bats are the only mammals that can fly.", ["Bats is the only mammals that can fly.", "Bats are the only mammal that flies fly.", "Bats be the only mammals that can fly."], "복수 주어에는 are를 씁니다.")
-Q(S, "A", "\"Mt. Halla is ___ than Mt. Namsan.\" 높이를 비교하는 문장에 알맞은 말은 무엇인가요?", "higher", ["high", "highest", "more high"], "비교급은 higher입니다.")
+SH(S, "A", "\"Mt. Halla is ___ than Mt. Namsan.\" 높이를 비교하는 문장이 되도록 high를 알맞은 형태로 바꾸어 쓰세요.", ["higher"], "than과 함께 두 대상을 비교할 때는 비교급 higher를 씁니다.")
 Q(S, "A", "\"치타는 시속 100킬로미터까지 달릴 수 있다\"를 알맞게 표현한 것은 무엇인가요?", "Cheetahs can run as fast as 100 km/h.", ["Cheetahs can runs fast than 100 km/h.", "Cheetahs can running as fast 100 km/h.", "Cheetah can run as fast as 100 km/h each."], "as fast as 100 km/h는 ‘시속 100킬로미터만큼 빠르게(까지)’라는 뜻이며, can 뒤에는 동사원형 run을 씁니다.")
 
 # ───────── 9영02-04 경험·계획 ─────────

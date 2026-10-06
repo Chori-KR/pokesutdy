@@ -94,15 +94,16 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "산불의 원인과 피해를 분석한 설명으로 알맞은 것은 무엇인가요?",
+   "body": "표는 어느 지역에서 10년 동안 일어난 자연 재해의 발생 횟수와 피해액을 정리한 예시 자료입니다. 이 자료를 분석한 내용으로 옳은 것을 〈보기〉에서 모두 고른 것은?\n〈보기〉\nㄱ. 가장 자주 일어난 재해는 호우이다.\nㄴ. 한 번 일어날 때의 평균 피해액은 태풍이 가장 크다.\nㄷ. 발생 횟수가 많은 재해일수록 전체 피해액도 크다.\nㄹ. 대설의 전체 피해액은 지진의 2배이다.",
+   "svg": "<svg viewBox=\"0 0 316 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"310\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"313\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"313\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"313\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"313\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">재해</text><text x=\"133\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">발생 횟수(회)</text><text x=\"253\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">피해액(억 원)</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">호우</text><text x=\"133\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">12</text><text x=\"253\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">900</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">태풍</text><text x=\"133\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"253\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1500</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">대설</text><text x=\"133\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"253\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">200</text><text x=\"38\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">지진</text><text x=\"133\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"253\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">50</text></svg>",
    "options": [
-    "비가 많이 내려 발생한다",
-    "건조한 날씨와 강한 바람에 부주의가 겹쳐 확산되며 산림이 크게 훼손된다",
-    "인명 피해가 전혀 없다",
-    "자연적 원인만 있다"
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄹ"
    ],
    "answer": 1,
-   "why": "건조함과 바람이 확산을 부릅니다."
+   "why": "호우가 12회로 가장 많습니다(ㄱ). 한 번당 평균 피해액은 태풍이 1500 ÷ 4 = 375억 원으로 가장 큽니다(ㄴ). 호우는 횟수가 가장 많지만 전체 피해액은 태풍보다 작고(ㄷ 틀림), 대설의 피해액 200억 원은 지진 50억 원의 4배입니다(ㄹ 틀림)."
   },
   {
    "id": "과학-중1-3-9과22-01-a2",
@@ -115,10 +116,10 @@
    "type": "multiple",
    "body": "황사의 발생 원인과 피해로 알맞은 것은 무엇인가요?",
    "options": [
-    "바다의 소금이 날려 홍수가 난다",
+    "바닷물이 증발하고 남은 소금이 바람에 날려 와 농작물이 말라 죽는다",
     "건조 지대의 모래 먼지가 바람에 날려 호흡기 질환과 정밀 기계 피해가 생긴다",
-    "화산에서 나온 가스 때문이다",
-    "피해가 전혀 없다"
+    "공장에서 나온 기체가 빗물에 녹아 내려 건물이 부식된다",
+    "봄철에 꽃가루가 많이 날려 꽃가루 알레르기가 생긴다"
    ],
    "answer": 1,
    "why": "중국 북부 사막의 먼지가 바람에 날아옵니다."
@@ -204,15 +205,15 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "태풍이 다가올 때 취해야 할 조치로 알맞은 것은 무엇인가요?",
+   "body": "태풍에 대비하거나 대처하는 방법과 그 과학적 까닭을 바르게 짝지은 것을 〈보기〉에서 모두 고른 것은?\n〈보기〉\nㄱ. 해안가 낮은 곳의 주민은 미리 높은 곳으로 대피한다. - 태풍이 오면 바닷물의 높이가 높아지고 큰 파도가 밀려올 수 있기 때문이다.\nㄴ. 간판과 창틀을 단단히 고정한다. - 강한 바람에 물체가 날아가거나 부서질 수 있기 때문이다.\nㄷ. 하천 옆 낮은 곳에 차를 세워 둔다. - 비가 많이 와도 빗물이 하천으로 빠르게 빠져나가기 때문이다.\nㄹ. 태풍의 눈에 들어 바람이 잠시 약해지면 바로 밖으로 나간다. - 태풍의 눈이 지나가면 태풍이 끝나기 때문이다.",
    "options": [
-    "배를 바다에 내놓는다",
-    "바닷가에서 파도를 구경한다",
-    "정전을 대비하지 않는다",
-    "간판과 창문을 고정하고 외출을 삼간다"
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄴ"
    ],
    "answer": 3,
-   "why": "시설을 고정하고 위험 지역을 피합니다."
+   "why": "태풍은 해일과 강풍을 일으키므로 ㄱ, ㄴ이 옳습니다. 하천 옆 낮은 곳은 물에 잠기기 쉽고(ㄷ 틀림), 태풍의 눈이 지나가면 다시 강한 바람이 불어옵니다(ㄹ 틀림)."
   },
   {
    "id": "과학-중1-3-9과22-02-a2",
@@ -225,10 +226,10 @@
    "type": "multiple",
    "body": "산사태 위험을 줄이는 방법으로 알맞은 것은 무엇인가요?",
    "options": [
-    "경사지에 건물을 더 짓는다",
+    "경사면의 나무를 베어 흙의 무게를 줄인다",
     "경사지에 나무를 심고 배수 시설을 정비한다",
-    "나무를 베어 낸다",
-    "배수구를 막는다"
+    "경사면에 물을 고이게 하여 흙을 단단하게 만든다",
+    "비가 많이 올 때 경사면 바로 아래 계곡으로 대피한다"
    ],
    "answer": 1,
    "why": "식생과 배수가 토양을 안정시킵니다."

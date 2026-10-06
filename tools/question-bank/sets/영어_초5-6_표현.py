@@ -141,7 +141,7 @@ b.q(S, "B", "그림에서 도서관의 위치를 바르게 설명한 문장은 �
     options=["The library is between the bank and the park.", "The library is behind the bank.", "The library is next to the post office.", "The library is on the park."], answer="The library is between the bank and the park.",
     why="도서관은 은행과 공원 사이에 있습니다.")
 b.q(S, "A", "대화에서 길 안내 순서로 알맞은 것은 무엇인가요?",
-    options=["두 블록 직진 → 은행에서 오른쪽으로 돌기", "은행에서 왼쪽으로 돌기 → 두 블록 직진", "공원에서 오른쪽으로 돌기", "건너편으로 건너기"], answer="두 블록 직진 → 은행에서 오른쪽으로 돌기", keep=True, passage=PB,
+    options=["두 블록 직진 → 은행에서 오른쪽으로 돌기", "은행에서 오른쪽으로 돌기 → 두 블록 직진", "두 블록 직진 → 은행에서 왼쪽으로 돌기", "한 블록 직진 → 은행에서 오른쪽으로 돌기"], answer="두 블록 직진 → 은행에서 오른쪽으로 돌기", passage=PB,
     why="Go straight for two blocks. Then turn right at the bank.라고 했습니다.")
 b.q(S, "A", "아침에 하는 일을 순서대로 말한 문장으로 알맞은 것은 무엇인가요?",
     options=["First, I wash my face. Then, I eat breakfast.", "First, Then I wash my face I eat.", "I breakfast First eat wash.", "Wash first I my Then."], answer="First, I wash my face. Then, I eat breakfast.",
@@ -204,7 +204,7 @@ b.q(S, "B", "편지의 끝인사로 알맞은 것은 무엇인가요?",
     options=["Love, Mina", "Dear Mina", "Hello Mina", "Mina Dear"], answer="Love, Mina",
     why="편지의 끝에는 Love, Your friend 같은 끝인사와 이름을 씁니다.", passage=PE)
 b.q(S, "A", "편지의 구성 요소를 순서대로 나열한 것은 무엇인가요?",
-    options=["첫인사(Dear ~) → 본문 → 끝인사 → 이름", "본문 → 첫인사 → 이름 → 끝인사", "이름 → 본문 → 첫인사", "끝인사 → 첫인사 → 본문"], answer="첫인사(Dear ~) → 본문 → 끝인사 → 이름", keep=True, passage=PE,
+    options=["첫인사(Dear ~) → 본문 → 끝인사 → 이름", "본문 → 첫인사(Dear ~) → 끝인사 → 이름", "첫인사(Dear ~) → 끝인사 → 본문 → 이름", "첫인사(Dear ~) → 본문 → 이름 → 끝인사"], answer="첫인사(Dear ~) → 본문 → 끝인사 → 이름", passage=PE,
     why="예시문처럼 Dear ~로 시작하고 본문 뒤 끝인사와 이름을 씁니다.")
 b.q(S, "A", "초대하는 글을 쓸 때 알맞은 문장은 무엇인가요?",
     options=["Please come to my party on Saturday.", "Come party my Saturday please on.", "My party is not Saturday you.", "Party please Saturday come."], answer="Please come to my party on Saturday.",

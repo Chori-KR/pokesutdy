@@ -25,7 +25,7 @@ P5 = b.passage("p5", "How to Make a Sandwich",
 P6 = b.passage("p6", "Tea Around the World",
     "In England, many people drink tea with milk in the afternoon. In Japan, people often enjoy green tea after meals. In Morocco, mint tea is a sign of friendship, and people pour it from a high place. In Korea, many families drink barley tea at home. People enjoy different kinds of tea, but they all share it with friends and family.", "직접 지음")
 P7 = b.passage("p7", "Rainy Day",
-    "Rain, rain, falling down, On the roof and on the town. I stay inside and watch the rain, Drops are dancing on the window pane. Mom makes cocoa, warm and sweet, I sit on the sofa and tap my feet. I feel so cozy and so bright, A rainy day is a pure delight.", "직접 지음")
+    "Rain, rain, falling down, On the roof and on the town. I stay inside and watch the rain, Drops are dancing on the window pane. Mom makes cocoa, warm and sweet, I sit on the sofa and tap my feet. I feel so cozy and so glad, This rainy day is not so bad.", "직접 지음")
 P8 = b.passage("p8", "Mina and the Lost Ribbon",
     "Mina had a blue ribbon from her grandmother. One day, she lost it on the way home. She looked everywhere, but she could not find it. She sat on a bench and cried. A boy named Leo saw her. \"Why are you crying?\" he asked. \"I lost my ribbon,\" said Mina. Leo helped her look for it. Soon, they found it under a bench. Mina smiled and said, \"Thank you, Leo!\"", "직접 지음")
 P9 = b.passage("p9", "Why I Love Reading",
@@ -69,9 +69,9 @@ b.q(S, "C", "night를 읽을 때 소리가 나지 않는 글자 묶음은 무엇
 b.q(S, "B", "thank의 처음 소리로 알맞은 것은 무엇인가요?",
     options=["/θ/ (혀를 살짝 내밀고 내는 소리)", "/s/", "/t/", "/d/"], answer="/θ/ (혀를 살짝 내밀고 내는 소리)",
     why="thank는 혀끝을 윗니와 아랫니 사이에 대고 /θ/ 소리를 냅니다.")
-b.q(S, "B", "다음 문장을 자연스럽게 끊어 읽을 때 쉬는 곳으로 알맞은 것은 무엇인가요? ‘I like apples and bananas’",
-    options=["I like / apples and bananas", "I / like apples / and bananas", "I like apples / and / bananas", "I like apples and / bananas"], answer="I like / apples and bananas",
-    why="의미 덩어리(주어+동사 / 목적어)로 끊어 읽으면 자연스럽습니다.")
+b.q(S, "B", "다음 문장을 자연스럽게 끊어 읽을 때 쉬는 곳으로 알맞은 것은 무엇인가요? ‘My brother and I went to the park after school.’",
+    options=["My brother and I / went to the park / after school.", "My / brother and I went / to the park after / school.", "My brother / and I went to / the park after school.", "My brother and I went to the / park / after school."], answer="My brother and I / went to the park / after school.",
+    why="누가(My brother and I) / 무엇을 했는지(went to the park) / 언제(after school)처럼 의미 덩어리로 끊어 읽으면 자연스럽습니다.")
 b.q(S, "A", "Can you help me? 를 읽을 때 문장 끝 억양으로 알맞은 것은 무엇인가요?",
     options=["올려 읽는다(↗)", "내려 읽는다(↘)", "낮고 평평하게 읽는다", "억양 없이 읽는다"], answer="올려 읽는다(↗)",
     why="Yes/No 의문문은 끝을 올려 읽습니다.")
@@ -151,13 +151,13 @@ b.q(S, "C", "샌드위치를 만드는 과정의 마지막 단계는 무엇인�
     options=["샌드위치를 반으로 자른다", "빵 두 장을 접시에 놓는다", "손을 씻는다", "치즈를 올린다"], answer="샌드위치를 반으로 자른다", passage=P5,
     why="Finally, cut the sandwich in half.라고 했습니다.")
 b.q(S, "B", "샌드위치를 만드는 순서로 알맞은 것은 무엇인가요?",
-    options=["손 씻기 → 빵 놓기 → 재료 올리기 → 덮기 → 자르기", "자르기 → 손 씻기 → 빵 놓기 → 덮기", "빵 놓기 → 자르기 → 재료 올리기", "재료 올리기 → 손 씻기 → 덮기"], answer="손 씻기 → 빵 놓기 → 재료 올리기 → 덮기 → 자르기", keep=True, passage=P5,
+    options=["손 씻기 → 빵 놓기 → 재료 올리기 → 덮기 → 자르기", "손 씻기 → 재료 올리기 → 빵 놓기 → 덮기 → 자르기", "빵 놓기 → 손 씻기 → 재료 올리기 → 덮기 → 자르기", "손 씻기 → 빵 놓기 → 재료 올리기 → 자르기 → 덮기"], answer="손 씻기 → 빵 놓기 → 재료 올리기 → 덮기 → 자르기", passage=P5,
     why="First, Second, Then, Next, Finally의 순서입니다.")
 b.q(S, "B", "동물원에서 원숭이를 본 다음에 한 일은 무엇인가요?",
     options=["코끼리가 목욕하는 것을 보았다", "펭귄 집을 방문했다", "선물을 샀다", "점심을 먹었다"], answer="코끼리가 목욕하는 것을 보았다", passage=P12,
     why="first saw the monkeys. Then we watched the elephants take a bath.라고 했습니다.")
 b.q(S, "A", "이 글의 사건을 순서대로 나열한 것은 무엇인가요?",
-    options=["원숭이 → 코끼리 → 점심 → 펭귄 집 → 선물 가게", "점심 → 원숭이 → 코끼리 → 선물 가게", "선물 가게 → 펭귄 집 → 점심", "펭귄 집 → 원숭이 → 점심 → 코끼리"], answer="원숭이 → 코끼리 → 점심 → 펭귄 집 → 선물 가게", keep=True, passage=P12,
+    options=["원숭이 → 코끼리 → 점심 → 펭귄 집 → 선물 가게", "코끼리 → 원숭이 → 점심 → 펭귄 집 → 선물 가게", "원숭이 → 코끼리 → 펭귄 집 → 점심 → 선물 가게", "원숭이 → 점심 → 코끼리 → 선물 가게 → 펭귄 집"], answer="원숭이 → 코끼리 → 점심 → 펭귄 집 → 선물 가게", passage=P12,
     why="first, then, after lunch, before we went home의 순서입니다.")
 b.q(S, "A", "집에 돌아가기 전에 학생들이 한 일은 무엇인가요?",
     options=["가게에서 작은 선물을 샀다", "원숭이를 보았다", "점심을 먹었다", "버스를 탔다"], answer="가게에서 작은 선물을 샀다", passage=P12,
@@ -209,7 +209,7 @@ b.q(S, "A", "문자 메시지 형식의 글에서 알 수 있는 특징으로 �
 S = "6영01-09"
 b.q(S, "C", "시 속 화자는 비 오는 날 어떤 기분인가요?",
     options=["편안하고 행복하다", "무섭고 슬프다", "화가 난다", "지루하고 외롭다"], answer="편안하고 행복하다", passage=P7,
-    why="I feel so cozy and so bright라고 했습니다.")
+    why="I feel so cozy and so glad(아늑하고 기쁘다)라고 했습니다.")
 b.q(S, "C", "엄마가 만들어 주는 따뜻하고 달콤한 음료는 무엇인가요? (영어로 쓰세요)",
     answers=["cocoa", "Cocoa"], passage=P7,
     why="Mom makes cocoa, warm and sweet.라고 했습니다.")
