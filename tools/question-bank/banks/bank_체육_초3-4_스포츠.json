@@ -63,15 +63,15 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "표를 보고 자연 속에서 즐기는 생태형 스포츠를 고르세요.",
-   "svg": "<svg viewBox=\"0 0 256 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"250\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"253\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"253\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"253\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">유형</text><text x=\"158\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">예</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"158\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">달리기, 체조</text><text x=\"33\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"158\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">피구, 축구</text><text x=\"33\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><text x=\"158\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">등산, 자전거 타기</text></svg>",
+   "svg": "<svg viewBox=\"0 0 256 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"250\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"253\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"253\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"253\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"253\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">무리</text><text x=\"158\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">예</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"158\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">달리기, 멀리뛰기</text><text x=\"33\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"158\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">피구, 축구</text><text x=\"33\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><text x=\"158\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">등산, 숲길 걷기</text><text x=\"33\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text><text x=\"158\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">매트 구르기, 뜀틀</text></svg>",
    "options": [
     "다",
     "가",
     "나",
-    "가와 나"
+    "라"
    ],
    "answer": 0,
-   "why": "자연환경에서 즐기는 등산, 자전거 타기는 생태형 스포츠입니다."
+   "why": "산이나 숲 같은 자연환경에서 즐기는 등산, 숲길 걷기는 생태형 스포츠입니다."
   },
   {
    "id": "체육-초3-4-4체02-01-b2",
@@ -101,15 +101,15 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "달리기, 멀리뛰기, 체조, 피구 중 스포츠 유형이 다른 하나는 무엇인가요?",
+   "body": "스포츠 유형에 대한 설명으로 옳은 것을 〈보기〉에서 모두 고른 것은 무엇인가요?\n〈보기〉\nㄱ. 피구는 공격과 수비를 하며 상대 팀과 겨루는 전략형 스포츠이다.\nㄴ. 멀리뛰기는 뛴 거리(기록)를 겨루는 기술형 스포츠이다.\nㄷ. 등산은 상대 팀과 점수를 겨루는 전략형 스포츠이다.\nㄹ. 축구는 정해진 동작을 아름답게 해내는 기술형 스포츠이다.",
    "options": [
-    "달리기",
-    "피구",
-    "멀리뛰기",
-    "체조"
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
    ],
    "answer": 1,
-   "why": "달리기, 멀리뛰기, 체조는 기술형이고 피구는 전략형입니다."
+   "why": "피구는 전략형, 멀리뛰기는 기술형이 맞습니다. 등산은 자연 속에서 즐기는 생태형이고, 축구는 공격과 수비로 겨루는 전략형입니다."
   },
   {
    "id": "체육-초3-4-4체02-01-a2",
@@ -122,13 +122,13 @@
    "type": "multiple",
    "body": "생태형 스포츠를 즐길 때 알맞은 태도는 무엇인가요?",
    "options": [
-    "꽃과 나무를 마음대로 꺾는다",
+    "과일 껍질은 썩어서 거름이 되니 숲에 버려도 된다",
     "자연을 보호하며 쓰레기를 되가져 온다",
-    "큰 소리로 야생 동물을 놀라게 한다",
-    "쓰레기는 그냥 두고 온다"
+    "예쁜 꽃이나 돌은 기념으로 조금만 가져온다",
+    "빨리 가려고 정해진 길 대신 지름길을 새로 만든다"
    ],
    "answer": 1,
-   "why": "생태형 스포츠는 자연환경 속에서 하므로 자연을 보호하는 태도가 필요합니다."
+   "why": "생태형 스포츠는 자연환경 속에서 하므로 자연을 보호해야 합니다. 과일 껍질도 쉽게 썩지 않고 동물에게 해로울 수 있으며, 꽃·돌을 가져오거나 길을 새로 내는 것도 자연을 해칩니다."
   },
   {
    "id": "체육-초3-4-4체02-02-c1",
@@ -141,12 +141,12 @@
    "type": "multiple",
    "body": "다음 중 장소를 옮겨 가며 하는 이동 움직임은 무엇인가요?",
    "options": [
-    "한 발로 서서 균형 잡기",
     "제자리에서 굽히기",
+    "달리기",
     "제자리에서 비틀기",
-    "달리기"
+    "한 발로 서서 균형 잡기"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "달리기, 걷기, 뛰기는 몸이 장소를 옮겨 가는 이동 움직임입니다."
   },
   {
@@ -178,12 +178,12 @@
    "body": "표의 ㉠에 들어갈 알맞은 말은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 276 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"270\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"273\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"273\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"273\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">움직임 기술</text><text x=\"188\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">예</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">이동</text><text x=\"188\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">걷기, 달리기, 뛰기</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><text x=\"188\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">굽히기, 비틀기, 균형 잡기</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">조작</text><text x=\"188\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">던지기, 받기, 차기</text></svg>",
    "options": [
-    "비이동",
+    "휴식",
     "이동",
     "조작",
-    "휴식"
+    "비이동"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "제자리에서 몸을 움직이는 굽히기, 비틀기, 균형 잡기는 비이동 움직임입니다."
   },
   {
@@ -197,12 +197,12 @@
    "type": "multiple",
    "body": "다음 중 비이동 움직임에 해당하는 것은 무엇인가요?",
    "options": [
-    "앞으로 달려가기",
-    "공을 멀리 던지기",
     "제자리에서 몸을 쭉 펴고 늘이기",
+    "공을 멀리 던지기",
+    "앞으로 달려가기",
     "공을 발로 차기"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "제자리에서 몸을 펴고 늘이는 움직임은 비이동 움직임입니다."
   },
   {
@@ -216,13 +216,13 @@
    "type": "multiple",
    "body": "피구에서 사용하는 기본 움직임 기술을 바르게 짝지은 것은 무엇인가요?",
    "options": [
-    "모두 비이동",
-    "공 던지기(이동), 달려서 피하기(조작)",
     "공 받기(이동), 몸 비틀기(조작)",
-    "공 던지기(조작), 달려서 피하기(이동)"
+    "공 던지기(이동), 달려서 피하기(조작)",
+    "공 던지기(조작), 달려서 피하기(이동)",
+    "공 받기(조작), 몸 비틀어 피하기(이동)"
    ],
-   "answer": 3,
-   "why": "공을 던지는 것은 조작, 달려서 피하는 것은 이동 움직임입니다."
+   "answer": 2,
+   "why": "공을 던지거나 받는 것은 조작, 달려서 피하는 것은 이동 움직임입니다. 제자리에서 몸을 비트는 것은 비이동 움직임입니다."
   },
   {
    "id": "체육-초3-4-4체02-02-a2",
@@ -236,12 +236,12 @@
    "body": "표에서 움직임 종류가 잘못 분류된 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 236 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"230\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"133\" y1=\"3\" x2=\"133\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"233\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"233\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"233\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"233\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"68\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">움직임</text><text x=\"183\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">종류</text><text x=\"68\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가 – 걷기</text><text x=\"183\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">이동</text><text x=\"68\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나 – 공 차기</text><text x=\"183\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">조작</text><text x=\"68\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다 – 달리기</text><text x=\"183\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">비이동</text><text x=\"68\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라 – 몸 비틀기</text><text x=\"183\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">비이동</text></svg>",
    "options": [
+    "라",
     "가",
-    "다",
     "나",
-    "라"
+    "다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "달리기는 장소를 옮겨 가는 이동 움직임입니다."
   },
   {
@@ -255,12 +255,12 @@
    "type": "multiple",
    "body": "움직일 때 몸의 어떤 부분을 쓰는지 생각하는 움직임 요소는 무엇인가요?",
    "options": [
-    "관계 요소",
     "공간 요소",
     "신체 요소",
+    "관계 요소",
     "날씨 요소"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "몸의 어느 부분을 어떻게 쓰는지에 관한 것이 신체 요소입니다."
   },
   {
@@ -323,12 +323,12 @@
    "type": "multiple",
    "body": "같은 달리기라도 처음에는 천천히, 나중에는 빠르게 달릴 때 달라진 움직임 요소는 무엇인가요?",
    "options": [
-    "노력 요소(시간)",
-    "신체 요소",
     "공간 요소",
+    "신체 요소",
+    "노력 요소(시간)",
     "관계 요소"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "속도(시간)를 바꾸는 것은 노력 요소와 관련이 있습니다."
   },
   {
@@ -342,12 +342,12 @@
    "type": "multiple",
    "body": "좁은 공간에서 친구들과 부딪히지 않고 움직이는 방법으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "눈을 감고 움직인다",
-    "앞만 보고 최대한 빠르게 달린다",
     "주변 친구와 공간을 살피며 방향을 바꾸고 속도를 조절한다",
-    "친구를 밀면서 움직인다"
+    "앞사람만 보고 따라가며 속도를 계속 높인다",
+    "부딪힐 것 같으면 눈을 감고 그 자리에 멈춘다",
+    "친구들이 많이 모인 쪽으로 함께 몰려 움직인다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "공간과 관계, 노력 요소를 함께 고려하면 안전하게 움직일 수 있습니다."
   },
   {
@@ -361,12 +361,12 @@
    "type": "multiple",
    "body": "줄넘기를 하면서 앞으로 나아가는 움직임은 줄넘기와 어떤 움직임을 연결한 것인가요?",
    "options": [
-    "달리기",
-    "던지기",
     "차기",
+    "던지기",
+    "달리기",
     "비틀기"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "줄을 넘으면서 앞으로 달려 나가므로 줄넘기와 달리기(이동)를 연결한 복합 움직임입니다."
   },
   {
@@ -399,12 +399,12 @@
    "body": "그림은 복합적인 움직임의 순서입니다. ㉠에 들어갈 알맞은 움직임은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 280 70\" font-family=\"sans-serif\"><rect x=\"4\" y=\"6\" width=\"81.3\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"44.7\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">달리기</text><line x1=\"87.3\" y1=\"35\" x2=\"97.3\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"100.3,35.0 94.3,31.0 94.3,39.0\" fill=\"currentColor\"/><rect x=\"99.3\" y=\"6\" width=\"81.3\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><text x=\"140\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><line x1=\"182.7\" y1=\"35\" x2=\"192.7\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"195.7,35.0 189.7,31.0 189.7,39.0\" fill=\"currentColor\"/><rect x=\"194.7\" y=\"6\" width=\"81.3\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"235.3\" y=\"39\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">착지하기</text></svg>",
    "options": [
-    "굽히기",
+    "도약하기(뛰어오르기)",
     "눕기",
     "앉기",
-    "도약하기(뛰어오르기)"
+    "굽히기"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "달리기 뒤에 도약하고 착지하는 것은 멀리뛰기의 연결 움직임입니다."
   },
   {
@@ -418,12 +418,12 @@
    "type": "multiple",
    "body": "드리블하며 달려가다가 슛을 하는 움직임은 어떤 기술들을 연결한 것인가요?",
    "options": [
+    "굽히기와 비틀기",
     "눕기와 구르기",
-    "드리블(조작)과 달리기(이동), 슛(조작)",
     "앉기와 일어서기",
-    "굽히기와 비틀기"
+    "드리블(조작)과 달리기(이동), 슛(조작)"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "드리블, 달리기, 슛을 연결한 복합 움직임입니다."
   },
   {
@@ -438,12 +438,12 @@
    "body": "다음 중 여러 기본 움직임이 연결된 복합 움직임이 아닌 것은 무엇인가요?",
    "options": [
     "달리면서 공 받기",
-    "제자리에서 서 있기",
+    "제자리에서 공을 위로 던지기",
     "뛰어올라 공 던지기",
     "공을 몰고 가서 차기"
    ],
    "answer": 1,
-   "why": "제자리에서 서 있는 것은 하나의 기본 움직임입니다."
+   "why": "제자리에서 공을 던지는 것은 조작 움직임 하나만 쓴 것이고, 나머지는 이동(달리기·뛰기)과 조작을 이어서 한 복합 움직임입니다."
   },
   {
    "id": "체육-초3-4-4체02-04-a2",
@@ -454,14 +454,14 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "달려오는 친구의 패스를 받아 곧바로 다른 친구에게 던지는 게임 상황에서 연결해야 할 움직임은 무엇인가요?",
+   "body": "빈 곳으로 달려가면서 친구의 패스를 받고, 멈추지 않고 곧바로 다른 친구에게 던지는 게임 상황입니다. 연결한 움직임을 순서대로 바르게 나타낸 것은 무엇인가요?",
    "options": [
-    "던지기 → 앉기 → 눕기",
-    "앉기 → 눕기 → 일어서기",
-    "굽히기 → 비틀기 → 구르기",
-    "달리기 → 받기 → 던지기"
+    "받기 → 달리기 → 던지기",
+    "달리기 → 받기 → 던지기",
+    "달리기 → 던지기 → 받기",
+    "받기 → 던지기 → 달리기"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "달리면서 받고 곧바로 던지는 움직임은 이동과 조작이 연결된 복합 움직임입니다."
   },
   {
@@ -475,12 +475,12 @@
    "type": "multiple",
    "body": "다음 중 기술형 스포츠에 해당하는 것은 무엇인가요?",
    "options": [
-    "멀리뛰기",
+    "농구",
     "축구",
     "피구",
-    "농구"
+    "멀리뛰기"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "멀리뛰기, 달리기, 체조는 기술형 스포츠입니다."
   },
   {
@@ -511,12 +511,12 @@
    "type": "multiple",
    "body": "멀리뛰기에서 더 멀리 뛰기 위해 해야 할 동작은 무엇인가요?",
    "options": [
-    "눈을 감고 뛴다",
-    "서서 가만히 앞으로 걷는다",
     "도움닫기 후 한 발로 힘차게 구르며 뛰어오른다",
+    "서서 가만히 앞으로 걷는다",
+    "눈을 감고 뛴다",
     "구르지 않고 바로 앉는다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "도움닫기로 속도를 얻고 힘차게 구르면 더 멀리 뛸 수 있습니다."
   },
   {
@@ -530,12 +530,12 @@
    "type": "multiple",
    "body": "달리기에서 빠르게 달리기 위한 팔의 사용 방법은 무엇인가요?",
    "options": [
-    "팔을 가만히 둔다",
-    "팔을 주머니에 넣는다",
     "팔을 위로 계속 든다",
-    "팔을 앞뒤로 힘차게 흔든다"
+    "팔을 주머니에 넣는다",
+    "팔을 앞뒤로 힘차게 흔든다",
+    "팔을 가만히 둔다"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "팔을 앞뒤로 힘차게 흔들면 빠르게 달리는 데 도움이 됩니다."
   },
   {
@@ -547,15 +547,15 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "달리기 기록을 높이기 위한 자세로 가장 알맞은 것은 무엇인가요?",
+   "body": "50 m 달리기에서 기록을 줄이기 위해 결승선을 지나는 방법으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "고개를 숙이고 팔을 내린 채 달린다",
-    "시선은 앞을 보고 팔은 크게 흔들며 가슴을 편다",
-    "뒤를 돌아보며 달린다",
-    "발을 끌면서 달린다"
+    "결승선 앞에서 뒤를 돌아보며 친구와의 거리를 확인한다",
+    "결승선 몇 걸음 앞에서 속도를 줄여 멈출 준비를 한다",
+    "결승선 바로 앞에서 두 발을 모아 점프해 들어간다",
+    "결승선을 다 지날 때까지 속도를 줄이지 않고 달려 나간다"
    ],
-   "answer": 1,
-   "why": "앞을 보고 팔을 크게 흔들며 가슴을 펴야 속도를 낼 수 있습니다."
+   "answer": 3,
+   "why": "결승선 앞에서 속도를 줄이거나 점프하거나 뒤를 보면 기록이 늦어지므로, 결승선을 지날 때까지 힘껏 달려야 합니다."
   },
   {
    "id": "체육-초3-4-4체02-05-a2",
@@ -568,13 +568,13 @@
    "type": "multiple",
    "body": "멀리뛰기 기록을 재는 방법으로 알맞은 것은 무엇인가요?",
    "options": [
-    "점프한 높이를 잰다",
-    "착지한 곳에서 가장 먼 곳까지 잰다",
-    "구름판과 가장 가까운 착지 지점까지의 거리를 잰다",
-    "달린 시간을 잰다"
+    "구름판에서 몸이 닿은 자국 중 가장 멀리 떨어진 곳까지 잰다",
+    "구름판에서 몸이 닿은 자국 중 구름판과 가장 가까운 곳까지 잰다",
+    "도움닫기를 시작한 곳에서 발이 닿은 곳까지 잰다",
+    "손이 뒤쪽에 닿았더라도 발자국까지만 잰다"
    ],
-   "answer": 2,
-   "why": "구름판 앞에서 몸이 닿은 가장 가까운 자국까지의 거리를 기록으로 합니다."
+   "answer": 1,
+   "why": "멀리뛰기는 구름판에서 몸(발, 손, 엉덩이 등)이 닿은 자국 중 구름판에 가장 가까운 곳까지의 거리를 기록으로 합니다."
   },
   {
    "id": "체육-초3-4-4체02-06-c1",
@@ -600,7 +600,7 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "상대 팀의 공격을 막는 역할을 무엇이라고 하나요? (두 글자)",
+   "body": "상대 팀이 점수를 내지 못하도록 막는 역할을 무엇이라고 하나요? (두 글자)",
    "answers": [
     "수비"
    ],
@@ -618,12 +618,12 @@
    "body": "그림에서 공을 가진 A가 패스를 하기에 가장 알맞은 친구는 누구인가요? (동그라미는 우리 팀, 네모는 상대 팀)",
    "svg": "<svg viewBox=\"0 0 260 170\" font-family=\"sans-serif\"><rect x=\"6\" y=\"6\" width=\"248\" height=\"158\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"130\" y1=\"6\" x2=\"130\" y2=\"164\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><circle cx=\"31\" cy=\"85\" r=\"11\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"30.8\" y=\"90\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"160\" cy=\"104\" r=\"11\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"159.8\" y=\"109\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"224\" cy=\"38\" r=\"11\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"224.2\" y=\"42.6\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"118\" cy=\"151\" r=\"11\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"117.6\" y=\"156.4\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text><circle cx=\"105\" cy=\"19\" r=\"11\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"105.2\" y=\"23.6\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">E</text><rect x=\"85\" y=\"84\" width=\"20\" height=\"20\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"95.3\" y=\"99.5\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상</text><rect x=\"63\" y=\"108\" width=\"20\" height=\"20\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"73\" y=\"123.2\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상</text><rect x=\"58\" y=\"42\" width=\"20\" height=\"20\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"68\" y=\"56.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상</text></svg>",
    "options": [
-    "C",
     "B",
     "D",
+    "C",
     "E"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "B, D, E는 A와의 사이에 상대 팀 선수가 있어 패스가 막히기 쉽습니다. 사이에 상대가 없는 C가 패스를 받기에 가장 좋습니다."
   },
   {
@@ -637,12 +637,12 @@
    "type": "multiple",
    "body": "공이 없는 선수가 공격에 도움이 되는 행동으로 알맞은 것은 무엇인가요?",
    "options": [
-    "코트 밖으로 나간다",
-    "제자리에서 가만히 서 있는다",
     "상대가 없는 빈 공간으로 이동해 공을 받을 준비를 한다",
+    "제자리에서 가만히 서 있는다",
+    "코트 밖으로 나간다",
     "친구가 공을 못 받게 한다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "공이 없을 때에도 빈 공간으로 움직이면 팀 공격에 도움이 됩니다."
   },
   {
@@ -656,12 +656,12 @@
    "type": "multiple",
    "body": "공격 기회를 만들기 위한 기본 전략으로 알맞은 것은 무엇인가요?",
    "options": [
+    "공을 잃지 않도록 우리 팀 모두 공 가까이 모여 움직인다",
+    "가장 잘하는 친구에게만 공을 모아 혼자 슛하게 한다",
     "친구와 짧게 패스하며 상대 수비가 약한 곳을 찾는다",
-    "혼자서만 공을 가진다",
-    "항상 같은 방향으로만 던진다",
-    "친구의 말을 듣지 않는다"
+    "상대가 막고 있어도 골대 쪽 먼 친구에게만 길게 던진다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "패스로 상대 수비를 흔들고 약한 곳을 공략하는 것이 기본 전략입니다."
   },
   {
@@ -676,12 +676,12 @@
    "body": "그림에서 골대가 왼쪽에 있다고 합니다. 공을 가진 상대(네모)를 막으려는 수비(동그라미)의 위치로 가장 알맞은 설명은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 230 140\" font-family=\"sans-serif\"><rect x=\"6\" y=\"6\" width=\"218\" height=\"128\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"115\" y1=\"6\" x2=\"115\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-opacity=\"0.5\"/><rect x=\"127\" y=\"60\" width=\"20\" height=\"20\" fill=\"#e07b39\" fill-opacity=\"0.4\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"136.8\" y=\"75\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">공</text><circle cx=\"93\" cy=\"70\" r=\"11\" fill=\"#4b7bec\" fill-opacity=\"0.35\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"93.2\" y=\"75\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수</text></svg>",
    "options": [
-    "공격자와 멀리 떨어진다",
-    "공격자 뒤쪽에 선다",
-    "코트 밖에 선다",
-    "공격자와 골대 사이에 서서 길을 막는다"
+    "공격자와 골대 사이에 서서 길을 막는다",
+    "공을 빼앗으려고 공격자 바로 뒤에 붙어 선다",
+    "골대 바로 앞에만 서서 공격자가 오기를 기다린다",
+    "공격자 옆에 나란히 서서 공만 쳐다본다"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "수비는 공격자와 골대 사이에 서서 진행 방향을 막아야 합니다."
   },
   {
@@ -695,13 +695,13 @@
    "type": "multiple",
    "body": "다음 중 생태형 스포츠에 해당하는 것은 무엇인가요?",
    "options": [
+    "농구",
     "100 m 달리기",
-    "등산",
     "피구",
-    "농구"
+    "등산"
    ],
-   "answer": 1,
-   "why": "등산, 걷기, 자전거 타기 같은 자연 속 활동이 생태형 스포츠입니다."
+   "answer": 3,
+   "why": "등산, 숲길 걷기처럼 자연 속에서 즐기는 활동이 생태형 스포츠입니다."
   },
   {
    "id": "체육-초3-4-4체02-07-c2",
@@ -748,12 +748,12 @@
    "type": "multiple",
    "body": "자연 속에서 활동한 뒤 자연을 지키는 방법으로 알맞은 것은 무엇인가요?",
    "options": [
-    "불을 피우고 그냥 간다",
     "쓰레기를 숲에 묻는다",
+    "쓰레기를 가져와 분리해서 버린다",
     "꽃을 꺾어 가져온다",
-    "쓰레기를 가져와 분리해서 버린다"
+    "불을 피우고 그냥 간다"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "자연을 지키려면 쓰레기를 되가져 와 분리배출해야 합니다."
   },
   {
@@ -765,15 +765,15 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "자전거로 오르막길을 오를 때 알맞은 방법은 무엇인가요?",
+   "body": "등산할 때 가파른 오르막길을 오르는 방법으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "기어를 낮추고 몸을 앞으로 기울여 천천히 오른다",
-    "속도를 최대로 올려 돌진한다",
-    "브레이크를 잡은 채 오른다",
-    "손을 놓고 오른다"
+    "발끝으로만 딛고 가볍게 뛰듯이 오른다",
+    "빨리 오르려고 보폭을 크게 하여 성큼성큼 오른다",
+    "처음에 빠르게 올라가고 지치면 오래 쉬었다 간다",
+    "보폭을 좁게 하고 일정한 빠르기로 천천히 오른다"
    ],
-   "answer": 0,
-   "why": "오르막에서는 기어를 낮추고 몸을 앞으로 기울여 균형을 잡습니다."
+   "answer": 3,
+   "why": "오르막에서는 보폭을 좁게 하고 발바닥 전체로 디디며 일정한 빠르기로 올라야 덜 지치고 안전합니다."
   },
   {
    "id": "체육-초3-4-4체02-07-a2",
@@ -784,15 +784,15 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "비가 온 뒤 미끄러운 산길을 걸을 때 안전하게 활동하는 방법은 무엇인가요?",
+   "body": "비가 온 뒤 미끄러운 산길을 내려갈 때 안전하게 걷는 방법으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "손을 주머니에 넣고 걷는다",
-    "뛰어서 내려간다",
-    "발밑을 잘 살피고 천천히 걷는다",
-    "미끄러운 길에서 장난친다"
+    "무릎을 살짝 굽히고 발바닥 전체로 디디며 천천히 내려간다",
+    "미끄러지기 전에 빨리 지나가도록 뛰어 내려간다",
+    "몸을 뒤로 크게 젖히고 발뒤꿈치로 세게 찍으며 내려간다",
+    "흙길보다 단단해 보이는 젖은 바위나 나무뿌리를 골라 디딘다"
    ],
-   "answer": 2,
-   "why": "미끄러운 길에서는 발밑을 잘 살피며 천천히 걸어야 안전합니다."
+   "answer": 0,
+   "why": "무릎을 굽혀 몸을 낮추고 발바닥 전체로 천천히 디뎌야 미끄러지지 않습니다. 젖은 바위나 나무뿌리는 특히 미끄럽습니다."
   },
   {
    "id": "체육-초3-4-4체02-08-c1",
@@ -805,12 +805,12 @@
    "type": "multiple",
    "body": "철봉 매달리기가 처음이라 어렵게 느껴질 때 알맞은 생각은 무엇인가요?",
    "options": [
-    "다른 사람이 하는 것을 비웃자",
-    "나는 절대 못 해",
     "안 하고 구경만 할래",
-    "처음이라 어렵지만 한 번 해 보자"
+    "나는 절대 못 해",
+    "처음이라 어렵지만 한 번 해 보자",
+    "다른 사람이 하는 것을 비웃자"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "자신감을 갖고 적극적으로 시도하는 태도가 중요합니다."
   },
   {
@@ -840,12 +840,12 @@
    "type": "multiple",
    "body": "친구가 줄넘기를 못 해서 속상해합니다. 알맞은 말은 무엇인가요?",
    "options": [
+    "나는 상관없어",
     "너는 정말 못하네",
-    "처음엔 누구나 어려워. 같이 연습해 보자",
     "그냥 포기해",
-    "나는 상관없어"
+    "처음엔 누구나 어려워. 같이 연습해 보자"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "격려하며 함께 연습하는 말이 자신감을 키워 줍니다."
   },
   {
@@ -859,12 +859,12 @@
    "type": "multiple",
    "body": "수행이 잘 되지 않을 때 자신감을 갖는 방법으로 알맞은 것은 무엇인가요?",
    "options": [
-    "연습하지 않는다",
     "한 번에 가장 어려운 목표만 정한다",
     "작은 목표를 세워 조금씩 성공해 본다",
+    "연습하지 않는다",
     "실패한 자신을 탓한다"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "작은 목표를 이루며 성공 경험을 쌓으면 자신감이 커집니다."
   },
   {
@@ -878,12 +878,12 @@
    "type": "multiple",
    "body": "체육 시간에 처음 해 보는 높이뛰기에서 높은 줄 앞에서 망설일 때 가장 알맞은 행동은 무엇인가요?",
    "options": [
+    "잘하는 친구와 같은 높이에 곧바로 도전해 본다",
+    "오늘은 구경만 하고 자신감이 생기면 그때 처음 해 본다",
     "낮은 높이부터 시작해 단계적으로 높여 본다",
-    "아예 시도하지 않는다",
-    "친구의 높이를 따라 한다",
-    "다치지 않으려고 구경만 한다"
+    "실패하지 않도록 끝까지 가장 낮은 높이만 뛴다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "단계적으로 도전하면 안전하게 자신감을 키울 수 있습니다."
   },
   {
@@ -897,12 +897,12 @@
    "type": "multiple",
    "body": "다양한 활동 상황에서 자신감을 가지고 적극적으로 참여하는 모습으로 알맞은 것은 무엇인가요?",
    "options": [
-    "잘 못할 것 같으면 빠진다",
-    "잘하는 활동만 고른다",
     "처음 해 보는 활동도 규칙을 익혀 즐겁게 시도한다",
-    "틀릴까 봐 질문하지 않는다"
+    "실수하지 않도록 잘하는 활동을 할 때만 앞에 나선다",
+    "처음 하는 활동은 친구들이 하는 것을 보기만 한다",
+    "실패할 것 같으면 다른 친구에게 차례를 넘긴다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "적극적으로 시도하는 태도가 자신감을 키웁니다."
   },
   {
@@ -950,12 +950,12 @@
    "body": "피구 게임 이야기에서 하준이가 처음에 한 행동은 무엇인가요?",
    "passage": "p1",
    "options": [
-    "공에 맞았지만 모르는 척 계속 뛰었다",
-    "바로 밖으로 나갔다",
     "규칙을 바꾸자고 했다",
+    "바로 밖으로 나갔다",
+    "공에 맞았지만 모르는 척 계속 뛰었다",
     "게임을 그만두었다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "글에서 하준이는 공에 맞았지만 그대로 계속 뛰었다고 했습니다."
   },
   {
@@ -969,12 +969,12 @@
    "type": "multiple",
    "body": "게임에서 졌을 때 알맞은 태도는 무엇인가요?",
    "options": [
-    "다음부터 하지 않겠다고 한다",
+    "결과를 받아들이고 상대를 격려한다",
     "상대 팀을 탓한다",
     "화를 내며 공을 던진다",
-    "결과를 받아들이고 상대를 격려한다"
+    "다음부터 하지 않겠다고 한다"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "결과를 받아들이고 서로 격려하는 것이 바른 태도입니다."
   },
   {
@@ -989,12 +989,12 @@
    "body": "선생님이 하준이와 서아를 칭찬한 까닭으로 가장 알맞은 것은 무엇인가요?",
    "passage": "p1",
    "options": [
-    "공을 가장 잘 던졌기 때문이다",
-    "규칙을 지키려고 정직하게 행동했기 때문이다",
-    "이긴 팀이었기 때문이다",
-    "가장 크게 응원했기 때문이다"
+    "두 사람이 이긴 팀이었기 때문이다",
+    "서아가 하준이의 잘못을 모두에게 크게 알렸기 때문이다",
+    "하준이가 공에 맞지 않고 끝까지 남았기 때문이다",
+    "규칙을 지키려고 정직하게 행동했기 때문이다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "규칙대로 하자고 말한 서아와 규칙을 지킨 하준이를 칭찬했습니다."
   },
   {
@@ -1008,10 +1008,10 @@
    "type": "multiple",
    "body": "게임이 불리해질 때 최선을 다하는 모습으로 알맞은 것은 무엇인가요?",
    "options": [
-    "점수를 속인다",
+    "이기기 위해 상대가 못 본 반칙은 조금 해도 된다",
     "끝까지 포기하지 않고 팀원과 협력하며 규칙을 지킨다",
-    "심판에게 화를 낸다",
-    "게임을 중단시킨다"
+    "어차피 질 것이니 다음 게임을 위해 힘을 아낀다",
+    "잘하는 친구에게만 공을 주고 나머지는 쉬게 한다"
    ],
    "answer": 1,
    "why": "최선을 다하고 규칙을 지키는 것이 바른 게임 태도입니다."
@@ -1043,12 +1043,12 @@
    "type": "multiple",
    "body": "체육 활동을 할 때 알맞은 옷차림은 무엇인가요?",
    "options": [
-    "신발 끈이 풀린 신발",
     "긴 치마와 슬리퍼",
+    "움직이기 편한 옷과 운동화",
     "단추가 많은 옷과 구두",
-    "움직이기 편한 옷과 운동화"
+    "신발 끈이 풀린 신발"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "움직이기 편한 옷과 운동화가 안전합니다."
   },
   {
@@ -1062,12 +1062,12 @@
    "type": "multiple",
    "body": "처음 보는 새로운 스포츠를 소개받았을 때 알맞은 태도는 무엇인가요?",
    "options": [
-    "규칙을 배우며 열린 마음으로 참여해 본다",
+    "참여하지 않고 가만히 있는다",
     "낯설다고 거부한다",
     "비웃는다",
-    "참여하지 않고 가만히 있는다"
+    "규칙을 배우며 열린 마음으로 참여해 본다"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "새로운 스포츠에도 개방적인 태도로 참여해야 합니다."
   },
   {
@@ -1081,12 +1081,12 @@
    "type": "multiple",
    "body": "운동장에서 공놀이를 하다가 다른 친구가 지나갈 때 알맞은 행동은 무엇인가요?",
    "options": [
-    "친구를 향해 공을 찬다",
-    "더 세게 공을 던진다",
     "잠시 멈추고 친구가 안전하게 지나가게 한다",
+    "더 세게 공을 던진다",
+    "친구를 향해 공을 찬다",
     "소리를 지른다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "주변 친구의 안전을 먼저 생각해야 합니다."
   },
   {
@@ -1100,12 +1100,12 @@
    "type": "multiple",
    "body": "다양한 스포츠에 개방적으로 참여하면서 안전하게 활동하는 방법으로 알맞은 것은 무엇인가요?",
    "options": [
-    "다른 사람이 하는 대로만 한다",
-    "안전 수칙은 읽지 않는다",
-    "몸이 아파도 참는다",
-    "종목마다 안전 수칙을 확인하고 몸 상태를 살피며 참여한다"
+    "안전 수칙은 한 종목에서 배운 것을 모든 종목에 똑같이 쓴다",
+    "처음 하는 종목은 위험하니 늘 하던 종목만 한다",
+    "종목마다 안전 수칙을 확인하고 몸 상태를 살피며 참여한다",
+    "새 종목은 기회가 적으니 몸이 아파도 빠지지 않는다"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "안전 수칙을 확인하고 몸 상태를 살피면 안전하게 활동할 수 있습니다."
   },
   {
@@ -1119,12 +1119,12 @@
    "type": "multiple",
    "body": "체육 시간에 몸이 아프거나 어지러울 때 가장 알맞은 행동은 무엇인가요?",
    "options": [
-    "참고 계속한다",
-    "활동을 멈추고 선생님께 바로 말씀드린다",
-    "아무에게도 말하지 않는다",
-    "친구에게만 말한다"
+    "옆 친구에게만 알리고 활동은 계속한다",
+    "물을 마시고 잠깐 앉았다가 스스로 판단해 다시 한다",
+    "친구들에게 피해가 가지 않도록 끝날 때까지 참는다",
+    "활동을 멈추고 선생님께 바로 말씀드린다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "몸이 좋지 않을 때는 무리하지 않고 바로 선생님께 알려야 합니다."
   }
  ],

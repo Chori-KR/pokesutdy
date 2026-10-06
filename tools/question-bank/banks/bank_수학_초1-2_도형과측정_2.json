@@ -282,12 +282,15 @@
    "standard": "2수03-09",
    "level": "B",
    "difficulty": "medium",
-   "type": "short",
+   "type": "multiple",
    "body": "1주일 3일은 며칠인가요?",
-   "answers": [
-    "10",
-    "10일"
+   "options": [
+    "10일",
+    "4일",
+    "13일",
+    "73일"
    ],
+   "answer": 0,
    "why": "1주일은 7일이므로 1주일 3일은 7+3=10(일)입니다."
   },
   {

@@ -161,17 +161,25 @@ def net_cuboid(a, b, c, s=18, names=True, fills=None):
 
 
 def net_prism(n, base_side, h, s=16, txt=None):
-    """n각기둥 전개도(정n각기둥, 밑면은 윗쪽 한 개·아래 한 개를 같은 변에 붙임). 옆면 n개를 가로로 나열.
-    txt={'side': '3 cm', 'h': '5 cm'} 로 길이 표시. 밑면은 작은 n각형으로 그림."""
+    """n각기둥 전개도(정n각기둥). 옆면 n개를 가로로 나열하고, 밑면 두 개를 첫 옆면의 위·아래 변에 한 변씩 붙여 그림.
+    txt={'side': '3 cm', 'h': '5 cm'} 로 길이 표시."""
     bw, bh = base_side * s, h * s
-    x0, y0 = 6, 56
+
+    def base(ox, edge_y, up):
+        # 변 (ox, edge_y)-(ox+bw, edge_y)를 한 변으로 하는 정n각형 꼭짓점 (위쪽 또는 아래쪽으로)
+        R = bw / (2 * math.sin(math.pi / n))
+        ap = bw / (2 * math.tan(math.pi / n))
+        cx, cy = ox + bw / 2, edge_y + (-ap if up else ap)
+        st = (90 if up else -90) + 180 / n
+        return [(cx + R * math.cos(math.radians(st + 360 * k / n)), cy + R * math.sin(math.radians(st + 360 * k / n))) for k in range(n)]
+    probe = base(0, 0, True)
+    left = max(0, -min(x for x, _ in probe))      # 밑면이 옆면보다 왼쪽으로 나가는 폭
+    tall = -min(y for _, y in probe)              # 밑면의 높이
+    x0, y0 = 6 + left, tall + 6
     out = []
     for k in range(n):
-        out.append(f'<rect x="{_n(x0 + k * bw)}" y="{y0}" width="{_n(bw)}" height="{_n(bh)}" fill="{BLUE}" fill-opacity="0.15" {ST}/>')
-    # 밑면 두 개
-    r = max(bw * 0.55, 18)
-    for (cx, cy) in ((x0 + bw * 0.5 + 0 * bw, y0 - r - 2), (x0 + bw * 0.5 + 0 * bw, y0 + bh + r + 2)):
-        pts = [(cx + r * math.cos(math.radians(-90 + 360 * k / n)), cy + r * math.sin(math.radians(-90 + 360 * k / n))) for k in range(n)]
+        out.append(f'<rect x="{_n(x0 + k * bw)}" y="{_n(y0)}" width="{_n(bw)}" height="{_n(bh)}" fill="{BLUE}" fill-opacity="0.15" {ST}/>')
+    for pts in (base(x0, y0, True), base(x0, y0 + bh, False)):
         out.append(f'<polygon points="{P(pts)}" fill="{ORANGE}" fill-opacity="0.3" {ST}/>')
     if txt:
         if "side" in txt:
@@ -179,7 +187,7 @@ def net_prism(n, base_side, h, s=16, txt=None):
         if "h" in txt:
             out.append(text(x0 + n * bw + 8, y0 + bh / 2 + 5, txt["h"], 12, "start", "bold"))
     W = x0 + n * bw + (46 if txt and "h" in txt else 10)
-    H = y0 + bh + 2 * r + 12
+    H = y0 + bh + tall + 6
     return svg(_n(W), _n(H), "".join(out))
 
 
