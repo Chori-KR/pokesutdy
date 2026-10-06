@@ -119,16 +119,16 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "‘날개가 있는가?’를 기준으로 동물을 분류하려고 합니다. 잠자리는 어느 쪽에 속하나요?",
-   "svg": "<svg viewBox=\"0 0 346 66\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"340\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"173\" y1=\"3\" x2=\"173\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"343\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"88\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">날개가 있는 동물</text><text x=\"258\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">날개가 없는 동물</text><text x=\"88\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">참새, 나비</text><text x=\"258\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">토끼, 금붕어, 개구리</text></svg>",
+   "body": "표는 ‘날개가 있는가?’와 ‘다리가 6개인가?’ 두 가지 기준으로 동물을 네 무리로 나눈 것입니다. 잠자리가 들어갈 무리는 어느 것인가요?",
+   "svg": "<svg viewBox=\"0 0 336 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"330\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"63\" y1=\"3\" x2=\"63\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"153\" y1=\"3\" x2=\"153\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"243\" y1=\"3\" x2=\"243\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"333\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"333\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"333\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"333\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"33\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">무리</text><text x=\"108\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">날개</text><text x=\"198\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다리 6개</text><text x=\"288\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">동물</text><text x=\"33\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><text x=\"108\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">있음</text><text x=\"198\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">그렇다</text><text x=\"288\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">나비, 벌</text><text x=\"33\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><text x=\"108\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">있음</text><text x=\"198\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">아니다</text><text x=\"288\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">참새, 닭</text><text x=\"33\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><text x=\"108\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">없음</text><text x=\"198\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">그렇다</text><text x=\"288\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">개미</text><text x=\"33\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text><text x=\"108\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">없음</text><text x=\"198\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">아니다</text><text x=\"288\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">토끼, 금붕어</text></svg>",
    "options": [
-    "날개가 없는 동물",
-    "날개가 있는 동물",
-    "둘 다 속한다",
-    "분류할 수 없다"
+    "나",
+    "가",
+    "다",
+    "라"
    ],
    "answer": 1,
-   "why": "잠자리는 날개가 있어 날 수 있으므로 ‘날개가 있는 동물’에 속합니다."
+   "why": "잠자리는 날개가 있고 다리가 6개인 곤충이므로 나비, 벌과 같은 가 무리에 들어갑니다."
   },
   {
    "id": "과학-초3-4-4과02-02-c1",
@@ -235,7 +235,8 @@
    "body": "땅속에서 굴을 파며 사는 두더지는 땅을 파기에 알맞게 넓고 튼튼한 몸의 어떤 부분을 가지고 있나요? (두 글자)",
    "answers": [
     "앞발",
-    "발"
+    "앞 발",
+    "앞다리"
    ],
    "why": "두더지는 넓고 힘센 앞발로 땅속에 굴을 팝니다."
   },
@@ -248,15 +249,15 @@
    "level": "C",
    "difficulty": "easy",
    "type": "multiple",
-   "body": "도꼬마리 열매의 가시가 옷에 잘 붙는 특징을 본떠 만든 물건은 무엇인가요?",
+   "body": "물속으로 빠르게 뛰어드는 물총새의 뾰족한 부리 모양을 본떠 만든 것은 무엇인가요?",
    "options": [
     "우산",
-    "찍찍이(벨크로)",
+    "고속 열차의 앞부분",
     "수영복",
     "냄비"
    ],
    "answer": 1,
-   "why": "벨크로는 갈고리 모양의 가시가 붙는 특징을 본떠 만들었습니다."
+   "why": "물총새의 길고 뾰족한 부리 모양을 본떠 고속 열차의 앞부분을 만들어 소음과 공기 저항을 줄였습니다."
   },
   {
    "id": "과학-초3-4-4과02-03-c2",
@@ -283,9 +284,9 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "표를 보고 상어 피부의 특징을 이용해 만든 생활용품을 고르세요.",
-   "svg": "<svg viewBox=\"0 0 316 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"310\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"193\" y1=\"3\" x2=\"193\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"313\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"313\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"313\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">동물</text><text x=\"133\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">특징</text><text x=\"253\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">생활용품</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">오리</text><text x=\"133\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물갈퀴</text><text x=\"253\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">오리발</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상어</text><text x=\"133\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물 저항을 줄임</text><text x=\"253\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">수영복</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">도꼬마리</text><text x=\"133\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">갈고리 가시</text><text x=\"253\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">벨크로</text></svg>",
+   "svg": "<svg viewBox=\"0 0 356 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"350\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"73\" y1=\"3\" x2=\"73\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"213\" y1=\"3\" x2=\"213\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"353\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"353\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"353\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">동물</text><text x=\"143\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">특징</text><text x=\"283\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">생활용품</text><text x=\"38\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">오리</text><text x=\"143\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물갈퀴</text><text x=\"283\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">오리발</text><text x=\"38\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">상어</text><text x=\"143\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물 저항을 줄임</text><text x=\"283\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">수영복</text><text x=\"38\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수리</text><text x=\"143\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물체를 움켜쥐는 발</text><text x=\"283\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물건을 집는 집게</text></svg>",
    "options": [
-    "벨크로",
+    "물건을 집는 집게",
     "오리발",
     "수영복",
     "우산"

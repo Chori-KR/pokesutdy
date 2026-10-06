@@ -14,8 +14,7 @@ ST = f'stroke="{C}" stroke-width="2.5" stroke-linejoin="round"'
 def dict_entry(rows):
     """국어사전 낱말 풀이 한 쪽: rows = [(굵은 글, 일반 글)]"""
     W = 320
-    H = 18 + 30 * len(rows)
-    out = [f'<rect x="4" y="4" width="{W - 8}" height="{H - 4}" rx="8" fill="none" {ST}/>']
+    out = []
     y = 28
     for bold, norm in rows:
         out.append(text(16, y, bold, 14, "start", "bold"))
@@ -24,7 +23,8 @@ def dict_entry(rows):
             y += 36
         else:
             y += 22
-    return svg(W, y + 6, "".join(out))
+    out.insert(0, f'<rect x="4" y="4" width="{W - 8}" height="{y - 6}" rx="8" fill="none" {ST}/>')
+    return svg(W, y + 2, "".join(out))
 
 
 # ───────── 4국04-01 단어와 단어 간의 의미 관계 ─────────

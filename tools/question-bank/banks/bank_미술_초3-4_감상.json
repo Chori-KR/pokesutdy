@@ -46,11 +46,12 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "미술 작품을 만든 사람을 부르는 말을 쓰세요. (세 글자)",
+   "body": "그림이나 조각 같은 미술 작품을 만든 사람을 부르는 말을 쓰세요.",
    "answers": [
     "미술가",
     "작가",
-    "화가"
+    "화가",
+    "예술가"
    ],
    "why": "미술 작품을 만든 사람을 미술가(작가)라고 합니다."
   },
@@ -159,7 +160,7 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "빨강, 주황, 노랑처럼 따뜻한 느낌을 주는 색을 무슨 색이라고 하나요? (따뜻한 ○)",
+   "body": "빨강, 주황, 노랑처럼 따뜻한 느낌을 주는 색을 무엇이라고 하나요?",
    "answers": [
     "난색",
     "따뜻한 색",
@@ -176,16 +177,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림의 가와 나 중 따뜻한 느낌을 주는 색은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 146 76\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#e07b39\" fill-opacity=\"0.65\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"36\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.65\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"110\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "body": "그림 가~라 중 따뜻한 느낌을 주는 색은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 294 76\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.65\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"32\" y=\"31\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">파랑</text></g><text x=\"36\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"32\" y=\"31\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">하늘색</text></g><text x=\"110\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(152 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#e07b39\" fill-opacity=\"0.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"32\" y=\"31\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">주황</text></g><text x=\"184\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(226 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"46\" rx=\"4\" fill=\"#4b7bec\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"32\" y=\"31\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">남색</text></g><text x=\"258\" y=\"70\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
    "options": [
     "가",
     "나",
-    "둘 다",
-    "둘 다 아니다"
+    "다",
+    "라"
    ],
-   "answer": 0,
-   "why": "주황 계열의 가는 따뜻한 색이고, 파랑 계열의 나는 차가운 색입니다."
+   "answer": 2,
+   "why": "주황은 따뜻한 색이고, 파랑·하늘색·남색은 시원하고 차가운 느낌을 주는 색입니다."
   },
   {
    "id": "미술-초3-4-4미03-02-b2",
@@ -198,12 +199,12 @@
    "type": "multiple",
    "body": "작품에 대한 느낌을 설명한 문장으로 알맞은 것은 무엇인가요?",
    "options": [
-    "잘 모르겠어요.",
-    "그냥 좋아요.",
     "파란색이 많아서 시원하고 차분한 느낌이 들어요.",
+    "그냥 좋아요.",
+    "잘 모르겠어요.",
     "별로예요."
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "작품의 특징(파란색)과 느낌을 함께 말하는 것이 좋은 설명입니다."
   },
   {
@@ -215,16 +216,16 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "그림은 서로 다른 선입니다. 가는 지그재그선, 나는 부드러운 곡선입니다. 활기차고 긴장되는 느낌을 주는 선은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 128 140\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><polyline points=\"8.0,12.0 21.0,32.0 34.0,12.0 47.0,32.0 60.0,12.0 73.0,32.0 86.0,12.0 99.0,32.0 112.0,12.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><text x=\"64\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(4 72)\"><path d=\"M8,22.0 q13.0,-22 26.0,0 t26.0,0 t26.0,0 t26.0,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"64\" y=\"134\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "body": "그림 가~라는 서로 다른 선입니다. 날카롭고 긴장되는 느낌을 가장 강하게 주는 선은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 256 140\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><line x1=\"8\" y1=\"22.0\" x2=\"112\" y2=\"22.0\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"64\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(132 0)\"><path d=\"M8,22.0 q13.0,-22 26.0,0 t26.0,0 t26.0,0 t26.0,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"192\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(4 72)\"><line x1=\"8\" y1=\"22.0\" x2=\"112\" y2=\"22.0\" stroke=\"currentColor\" stroke-width=\"4\" stroke-dasharray=\"2 9\" stroke-linecap=\"round\"/></g><text x=\"64\" y=\"134\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(132 72)\"><polyline points=\"8.0,12.0 21.0,32.0 34.0,12.0 47.0,32.0 60.0,12.0 73.0,32.0 86.0,12.0 99.0,32.0 112.0,12.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><text x=\"192\" y=\"134\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
    "options": [
-    "둘 다 아니다",
+    "가",
     "나",
-    "둘 다",
-    "가"
+    "다",
+    "라"
    ],
    "answer": 3,
-   "why": "뾰족뾰족 꺾이는 지그재그선은 활기차고 긴장된 느낌을 줍니다."
+   "why": "뾰족뾰족 꺾이는 지그재그선(라)은 날카롭고 긴장된 느낌을 줍니다. 가로 직선은 차분하고, 곡선은 부드럽습니다."
   },
   {
    "id": "미술-초3-4-4미03-02-a2",
@@ -237,12 +238,12 @@
    "type": "multiple",
    "body": "작품을 보고 자신의 느낌과 생각을 구체적으로 설명한 것은 무엇인가요?",
    "options": [
+    "좋아요.",
     "예뻐요.",
     "굵은 선과 진한 색을 써서 힘이 느껴지고, 그림 속 사람이 용감해 보여요.",
-    "좋아요.",
     "잘 그렸어요."
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "작품의 특징과 느낌, 생각을 구체적으로 연결해 설명했습니다."
   },
   {
@@ -269,7 +270,7 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "작품을 여러 사람에게 보여 주기 위해 모아서 보여 주는 행사를 두 글자로 무엇이라고 하나요? (○○회 앞 두 글자)",
+   "body": "작품을 여러 사람에게 보여 주기 위해 모아서 보여 주는 행사를 무엇이라고 하나요? (○○회)",
    "answers": [
     "전시",
     "전시회"
@@ -288,12 +289,12 @@
    "body": "미술관에서 지켜야 할 예절로 알맞은 것은 무엇인가요?",
    "passage": "p1",
    "options": [
-    "큰 소리로 뛰어다닌다",
+    "허락 없이 플래시를 터뜨린다",
     "작품을 손으로 만져 본다",
-    "작품을 만지지 않고 조용히 눈으로 감상한다",
-    "허락 없이 플래시를 터뜨린다"
+    "큰 소리로 뛰어다닌다",
+    "작품을 만지지 않고 조용히 눈으로 감상한다"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "글에서 선생님은 작품을 눈으로만 보고 만지지 말라고 안내하셨습니다."
   },
   {
@@ -308,12 +309,12 @@
    "body": "작품 안내판에서 알 수 있는 정보로 글에 나온 것은 무엇인가요?",
    "passage": "p1",
    "options": [
-    "작품 이름, 그린 사람, 만든 재료",
     "미술관 입장료",
+    "작품 이름, 그린 사람, 만든 재료",
     "내일 날씨",
     "다른 사람의 이름"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "안내판에는 작품 이름과 그린 사람, 만든 재료가 적혀 있었습니다."
   },
   {
@@ -365,12 +366,12 @@
    "type": "multiple",
    "body": "같은 작품을 보고 친구와 느낌이 서로 다를 때 알맞은 생각은 무엇인가요?",
    "options": [
-    "느낌은 하나뿐이다",
-    "내 느낌만 옳다",
     "친구의 느낌은 틀렸다",
-    "사람마다 느낌이 다를 수 있다"
+    "내 느낌만 옳다",
+    "사람마다 느낌이 다를 수 있다",
+    "느낌은 하나뿐이다"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "감상은 사람마다 다를 수 있으며 서로 존중해야 합니다."
   },
   {
@@ -399,12 +400,12 @@
    "type": "multiple",
    "body": "친구가 작품을 보고 ‘무섭다’고 했지만 나는 ‘편안하다’고 느꼈습니다. 알맞은 대화는 무엇인가요?",
    "options": [
-    "“그건 틀린 생각이야.”",
     "“그렇게 느꼈구나. 왜 무서웠는지 궁금해.”",
+    "“그건 틀린 생각이야.”",
     "“넌 아무것도 몰라.”",
     "“난 말하기 싫어.”"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "상대의 느낌을 인정하고 까닭을 묻는 것이 존중하는 대화입니다."
   },
   {
@@ -418,12 +419,12 @@
    "type": "multiple",
    "body": "작품 감상에 흥미를 가지고 참여하는 모습은 무엇인가요?",
    "options": [
+    "작품을 비웃는다",
     "작품을 보지 않고 다닌다",
-    "작품 앞에 오래 머물며 친구와 이야기를 나눈다",
     "감상 시간에 딴짓을 한다",
-    "작품을 비웃는다"
+    "작품 앞에 오래 머물며 친구와 이야기를 나눈다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "작품에 관심을 갖고 이야기를 나누는 것이 흥미를 나타내는 참여입니다."
   },
   {
@@ -437,12 +438,12 @@
    "type": "multiple",
    "body": "감상 시간에 친구들의 다양한 의견을 존중하는 태도를 가장 잘 나타낸 행동은 무엇인가요?",
    "options": [
-    "다른 의견은 무시한다",
     "내 의견이 맞다고 우긴다",
+    "친구의 의견을 끝까지 듣고 다른 생각이라도 좋은 점을 찾아 말한다",
     "친구가 말할 때 끼어든다",
-    "친구의 의견을 끝까지 듣고 다른 생각이라도 좋은 점을 찾아 말한다"
+    "다른 의견은 무시한다"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "끝까지 듣고 좋은 점을 찾아 주는 것이 존중하는 태도입니다."
   },
   {
@@ -456,12 +457,12 @@
    "type": "multiple",
    "body": "감상 후 친구와 의견이 달랐을 때 감상 관점을 존중하며 대화를 마무리하는 말로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "“서로 다르게 볼 수 있어서 작품이 더 재미있어졌어.”",
     "“네가 틀렸어.”",
+    "“서로 다르게 볼 수 있어서 작품이 더 재미있어졌어.”",
     "“더 이상 말하지 말자.”",
     "“다시는 같이 보지 않을래.”"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "서로 다른 관점을 긍정적으로 받아들이는 말입니다."
   }
  ],

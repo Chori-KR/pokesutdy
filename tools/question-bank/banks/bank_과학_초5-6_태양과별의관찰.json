@@ -143,16 +143,16 @@
    "level": "C",
    "difficulty": "easy",
    "type": "multiple",
-   "body": "그림에서 ㉠ 위치는 낮인가요, 밤인가요?",
-   "svg": "<svg viewBox=\"0 0 270 170\" font-family=\"sans-serif\"><circle cx=\"150\" cy=\"90\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M150,40 A50,50 0 0 1 150,140 Z\" fill=\"currentColor\" fill-opacity=\"0.35\"/><line x1=\"20\" y1=\"60\" x2=\"73\" y2=\"60\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"82,60 73,55.5 73,64.5\" fill=\"#e07b39\"/><line x1=\"20\" y1=\"90\" x2=\"73\" y2=\"90\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"82,90 73,85.5 73,94.5\" fill=\"#e07b39\"/><line x1=\"20\" y1=\"120\" x2=\"73\" y2=\"120\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"82,120 73,115.5 73,124.5\" fill=\"#e07b39\"/><text x=\"52\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">태양 빛</text><circle cx=\"108\" cy=\"90\" r=\"5\" fill=\"currentColor\"/><text x=\"124\" y=\"94\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><circle cx=\"192\" cy=\"90\" r=\"5\" fill=\"currentColor\"/><text x=\"174\" y=\"94\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉡</text><line x1=\"150\" y1=\"24\" x2=\"150\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/></svg>",
+   "body": "그림은 태양 빛을 받는 지구입니다. ㉠~㉣ 중 지금 낮인 곳은 어디인가요?",
+   "svg": "<svg viewBox=\"0 0 270 170\" font-family=\"sans-serif\"><circle cx=\"150\" cy=\"90\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M150,40 A50,50 0 0 1 150,140 Z\" fill=\"currentColor\" fill-opacity=\"0.35\"/><line x1=\"20\" y1=\"60\" x2=\"73\" y2=\"60\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"82,60 73,55.5 73,64.5\" fill=\"#e07b39\"/><line x1=\"20\" y1=\"90\" x2=\"73\" y2=\"90\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"82,90 73,85.5 73,94.5\" fill=\"#e07b39\"/><line x1=\"20\" y1=\"120\" x2=\"73\" y2=\"120\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"82,120 73,115.5 73,124.5\" fill=\"#e07b39\"/><text x=\"52\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">태양 빛</text><circle cx=\"109.0\" cy=\"90.0\" r=\"5\" fill=\"currentColor\"/><text x=\"84\" y=\"95\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><circle cx=\"191.0\" cy=\"90.0\" r=\"5\" fill=\"currentColor\"/><text x=\"216\" y=\"95\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉡</text><circle cx=\"176.4\" cy=\"58.6\" r=\"5\" fill=\"currentColor\"/><text x=\"192.4\" y=\"44.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉢</text><circle cx=\"176.4\" cy=\"121.4\" r=\"5\" fill=\"currentColor\"/><text x=\"192.4\" y=\"145.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉣</text><line x1=\"150\" y1=\"24\" x2=\"150\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/></svg>",
    "options": [
-    "밤",
-    "낮",
-    "새벽",
-    "알 수 없다"
+    "㉡",
+    "㉠",
+    "㉢",
+    "㉣"
    ],
    "answer": 1,
-   "why": "태양 빛을 받는 쪽에 있는 ㉠은 낮입니다."
+   "why": "태양 빛을 받는 쪽(그림의 왼쪽 밝은 부분)에 있는 ㉠은 낮이고, 빛을 받지 못하는 어두운 쪽의 ㉡, ㉢, ㉣은 밤입니다."
   },
   {
    "id": "과학-초5-6-6과12-02-b1",
@@ -201,16 +201,16 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "그림에서 ㉢ 위치에 사는 사람은 지금 낮과 밤 중 어느 때인가요?",
+   "body": "그림의 ㉢ 위치에 대한 설명으로 옳은 것을 〈보기〉에서 모두 고른 것은 무엇인가요?\n〈보기〉\nㄱ. 지금 밤이다.\nㄴ. 지금 태양 빛을 받고 있다.\nㄷ. 지구가 자전하므로 시간이 지나면 낮이 된다.\nㄹ. 지구가 자전하지 않아도 이곳에는 낮과 밤이 번갈아 생긴다.",
    "svg": "<svg viewBox=\"0 0 270 170\" font-family=\"sans-serif\"><circle cx=\"150\" cy=\"90\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M150,40 A50,50 0 0 1 150,140 Z\" fill=\"currentColor\" fill-opacity=\"0.35\"/><line x1=\"20\" y1=\"60\" x2=\"73\" y2=\"60\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"82,60 73,55.5 73,64.5\" fill=\"#e07b39\"/><line x1=\"20\" y1=\"90\" x2=\"73\" y2=\"90\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"82,90 73,85.5 73,94.5\" fill=\"#e07b39\"/><line x1=\"20\" y1=\"120\" x2=\"73\" y2=\"120\" stroke=\"#e07b39\" stroke-width=\"2.5\"/><polygon points=\"82,120 73,115.5 73,124.5\" fill=\"#e07b39\"/><text x=\"52\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">태양 빛</text><circle cx=\"108\" cy=\"90\" r=\"5\" fill=\"currentColor\"/><text x=\"124\" y=\"94\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉣</text><circle cx=\"192\" cy=\"90\" r=\"5\" fill=\"currentColor\"/><text x=\"174\" y=\"94\" font-size=\"15\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉢</text><line x1=\"150\" y1=\"24\" x2=\"150\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/></svg>",
    "options": [
-    "한낮",
-    "낮",
-    "밤",
-    "알 수 없다"
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
    ],
-   "answer": 2,
-   "why": "태양 빛이 닿지 않는 쪽에 있는 ㉢은 밤입니다."
+   "answer": 1,
+   "why": "㉢은 태양 빛이 닿지 않는 쪽이므로 지금 밤이고(ㄱ), 지구가 자전하면 태양 빛을 받는 쪽으로 돌아가 낮이 됩니다(ㄷ). 지구가 자전하지 않으면 낮과 밤이 바뀌지 않습니다."
   },
   {
    "id": "과학-초5-6-6과12-02-a2",
@@ -223,12 +223,12 @@
    "type": "multiple",
    "body": "한낮이던 곳이 약 12시간이 지난 뒤에는 어떻게 되나요?",
    "options": [
-    "계절이 바뀐다",
-    "계속 낮이다",
     "새벽이 된다",
-    "밤이 된다"
+    "계속 낮이다",
+    "밤이 된다",
+    "계절이 바뀐다"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "지구가 12시간 동안 반 바퀴 자전하면 태양의 반대편이 되어 밤이 됩니다."
   },
   {
@@ -257,12 +257,12 @@
    "type": "multiple",
    "body": "겨울철 밤하늘에서 볼 수 있는 대표적인 별자리는 무엇인가요?",
    "options": [
+    "사자자리",
     "백조자리",
-    "오리온자리",
     "페가수스자리",
-    "사자자리"
+    "오리온자리"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "오리온자리는 겨울철 대표 별자리입니다."
   },
   {
@@ -276,12 +276,12 @@
    "type": "multiple",
    "body": "같은 시각에 보이는 별자리가 계절에 따라 달라지는 까닭으로 알맞은 것은 무엇인가요?",
    "options": [
-    "별이 스스로 움직이기 때문이다",
     "지구가 자전하기 때문이다",
     "지구가 태양 주위를 공전하기 때문이다",
+    "별이 스스로 움직이기 때문이다",
     "달이 별을 가리기 때문이다"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "지구가 공전하면 밤에 바라보는 방향이 달라져 보이는 별자리가 달라집니다."
   },
   {
@@ -295,12 +295,12 @@
    "type": "multiple",
    "body": "같은 시각에 관찰하면 별자리는 한 달에 약 30°씩 어느 쪽으로 이동하나요?",
    "options": [
-    "동쪽에서 서쪽으로",
-    "서쪽에서 동쪽으로",
     "남쪽에서 북쪽으로",
+    "서쪽에서 동쪽으로",
+    "동쪽에서 서쪽으로",
     "움직이지 않는다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "지구의 공전 때문에 별자리는 같은 시각에 동쪽에서 서쪽으로 이동합니다."
   },
   {
@@ -315,12 +315,12 @@
    "body": "그림은 지구의 공전입니다. 지구가 ㉡ 위치에 있을 때 우리나라의 계절로 알맞은 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 276 228\" font-family=\"sans-serif\"><ellipse cx=\"138\" cy=\"100\" rx=\"92\" ry=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"138\" cy=\"100\" r=\"17\" fill=\"#e07b39\" fill-opacity=\"0.8\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"138\" y=\"104\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">태양</text><circle cx=\"46\" cy=\"100\" r=\"12\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"38\" y1=\"118.3\" x2=\"54\" y2=\"81.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"54\" cy=\"81.7\" r=\"3.5\" fill=\"currentColor\"/><text x=\"20\" y=\"105\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉡</text><circle cx=\"138\" cy=\"42\" r=\"12\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"130\" y1=\"60.3\" x2=\"146\" y2=\"23.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"146\" cy=\"23.7\" r=\"3.5\" fill=\"currentColor\"/><text x=\"112\" y=\"36\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉠</text><circle cx=\"230\" cy=\"100\" r=\"12\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"222\" y1=\"118.3\" x2=\"238\" y2=\"81.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"238\" cy=\"81.7\" r=\"3.5\" fill=\"currentColor\"/><text x=\"256\" y=\"105\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉣</text><circle cx=\"138\" cy=\"158\" r=\"12\" fill=\"#4b7bec\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"130\" y1=\"176.3\" x2=\"146\" y2=\"139.7\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"146\" cy=\"139.7\" r=\"3.5\" fill=\"currentColor\"/><text x=\"138\" y=\"196\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">㉢</text><circle cx=\"14\" cy=\"216\" r=\"3.5\" fill=\"currentColor\"/><text x=\"24\" y=\"220\" font-size=\"12\" text-anchor=\"start\" fill=\"currentColor\">자전축의 북쪽 끝(북극 쪽)</text></svg>",
    "options": [
-    "봄",
-    "겨울",
     "여름",
+    "겨울",
+    "봄",
     "가을"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "북반구가 태양 쪽으로 기울어진 ㉡ 위치에서는 여름입니다."
   },
   {
@@ -334,12 +334,12 @@
    "type": "multiple",
    "body": "계절마다 보이는 별자리가 다르지만 별자리의 모양은 변하지 않는 까닭으로 가장 알맞은 것은 무엇인가요?",
    "options": [
-    "별들이 매우 멀리 있어 서로의 상대적인 위치가 거의 변하지 않기 때문이다",
-    "별이 지구를 따라 움직이기 때문이다",
     "별이 모양을 바꾸지 않으려 하기 때문이다",
+    "별이 지구를 따라 움직이기 때문이다",
+    "별들이 매우 멀리 있어 서로의 상대적인 위치가 거의 변하지 않기 때문이다",
     "별자리는 사람이 만들었기 때문에 변하지 않는다"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "별은 매우 멀리 있어 지구에서 보이는 서로의 상대적 위치가 거의 일정합니다."
   }
  ],

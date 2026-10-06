@@ -188,7 +188,7 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "아래 국어사전의 낱말 풀이에서 알 수 있는 것으로 알맞은 것은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 320 128\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"104\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"16\" y=\"28\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">손 [명사]</text><text x=\"16\" y=\"50\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">1 사람의 팔목 끝에 달린 부분.</text><text x=\"16\" y=\"68\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">예) 밥을 먹기 전에 손을 씻었다.</text><text x=\"16\" y=\"86\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">2 일을 하는 사람.</text><text x=\"16\" y=\"104\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">예) 바쁜 농사철에는 손이 모자란다.</text></svg>",
+   "svg": "<svg viewBox=\"0 0 320 124\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"116\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"16\" y=\"28\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">손 [명사]</text><text x=\"16\" y=\"50\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">1 사람의 팔목 끝에 달린 부분.</text><text x=\"16\" y=\"68\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">예) 밥을 먹기 전에 손을 씻었다.</text><text x=\"16\" y=\"86\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">2 일을 하는 사람.</text><text x=\"16\" y=\"104\" font-size=\"13\" text-anchor=\"start\" fill=\"currentColor\">예) 바쁜 농사철에는 손이 모자란다.</text></svg>",
    "options": [
     "‘손’은 동사이다",
     "이 풀이에는 ‘손’의 뜻이 한 가지만 나와 있다",
@@ -242,7 +242,7 @@
    "difficulty": "hard",
    "type": "multiple",
    "body": "아래 낱말 풀이를 보고 ‘달리던 기차가 역에 섰다.’의 ‘서다’와 뜻이 같은 풀이를 고르세요.",
-   "svg": "<svg viewBox=\"0 0 320 122\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"134\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"16\" y=\"28\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">서다 [동사]</text><text x=\"16\" y=\"50\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">1 발을 땅에 디디고 몸을 곧게 하다.</text><text x=\"16\" y=\"72\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">2 움직이던 것이 멈추다.</text><text x=\"16\" y=\"94\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">3 모임이나 기관이 새로 만들어지다.</text></svg>",
+   "svg": "<svg viewBox=\"0 0 320 118\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"110\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"16\" y=\"28\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">서다 [동사]</text><text x=\"16\" y=\"50\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">1 발을 땅에 디디고 몸을 곧게 하다.</text><text x=\"16\" y=\"72\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">2 움직이던 것이 멈추다.</text><text x=\"16\" y=\"94\" font-size=\"14\" text-anchor=\"start\" fill=\"currentColor\" font-weight=\"bold\">3 모임이나 기관이 새로 만들어지다.</text></svg>",
    "options": [
     "1",
     "2",

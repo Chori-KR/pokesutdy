@@ -175,9 +175,9 @@
    "difficulty": "medium",
    "type": "multiple",
    "body": "표를 보고 물을 섞어 맑고 투명하게 칠하는 재료를 고르세요.",
-   "svg": "<svg viewBox=\"0 0 296 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"290\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"293\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"293\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"293\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">재료</text><text x=\"198\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">특징</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">크레파스</text><text x=\"198\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">기름기가 있어 진하게 칠해짐</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수채화 물감</text><text x=\"198\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물을 섞어 맑고 투명하게 칠함</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">색연필</text><text x=\"198\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">가늘게 선을 그리기 좋음</text></svg>",
+   "svg": "<svg viewBox=\"0 0 356 156\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"350\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"353\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"353\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"353\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"123\" x2=\"353\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">재료</text><text x=\"228\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">특징</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">크레파스</text><text x=\"228\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">기름기가 있어 진하게 칠해짐</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">수채화 물감</text><text x=\"228\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물을 섞어 맑고 투명하게 칠함</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">색연필</text><text x=\"228\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">가늘게 선을 그리기 좋음</text><text x=\"53\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">파스텔</text><text x=\"228\" y=\"143\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">가루가 묻어나 문지르면 부드럽게 퍼짐</text></svg>",
    "options": [
-    "모두 같다",
+    "파스텔",
     "크레파스",
     "색연필",
     "수채화 물감"
@@ -213,15 +213,15 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "물을 많이 섞은 물감이 번지는 맑은 느낌을 살려 표현하려고 합니다. 적절한 재료와 방법은 무엇인가요?",
+   "body": "크레파스로 그림을 그린 뒤 그 위에 묽은 물감을 칠했더니 크레파스로 칠한 부분에는 물감이 묻지 않았습니다. 그 까닭으로 알맞은 것은 무엇인가요?",
    "options": [
-    "물감을 물 없이 진하게 바른다",
-    "크레파스를 힘껏 누르며 칠한다",
-    "수채화 물감에 물을 충분히 섞어 부드럽게 칠한다",
-    "색연필로 점만 찍는다"
+    "크레파스가 물감을 모두 빨아들이기 때문이다",
+    "물감이 크레파스보다 색이 진하기 때문이다",
+    "크레파스의 기름 성분이 물감의 물을 밀어내기 때문이다",
+    "종이가 물에 젖지 않기 때문이다"
    ],
    "answer": 2,
-   "why": "물을 섞어 칠하면 맑고 번지는 표현을 할 수 있습니다."
+   "why": "기름기가 있는 크레파스는 물을 밀어내므로, 그 위에 칠한 물감이 묻지 않고 크레파스 그림이 또렷하게 드러납니다."
   },
   {
    "id": "미술-초3-4-4미02-02-a2",
@@ -251,7 +251,7 @@
    "level": "C",
    "difficulty": "easy",
    "type": "multiple",
-   "body": "그림은 여러 가지 선입니다. 가는 어떤 선인가요?",
+   "body": "그림 가와 같은 모양의 선을 무엇이라고 하나요?",
    "svg": "<svg viewBox=\"0 0 128 68\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><polyline points=\"8.0,12.0 21.0,32.0 34.0,12.0 47.0,32.0 60.0,12.0 73.0,32.0 86.0,12.0 99.0,32.0 112.0,12.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><text x=\"64\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text></svg>",
    "options": [
     "직선",
@@ -271,7 +271,7 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "파랑처럼 시원하고 차가운 느낌을 주는 색을 무슨 색이라고 하나요? (차가운 ○)",
+   "body": "파랑, 남색처럼 시원하고 차가운 느낌을 주는 색을 무엇이라고 하나요?",
    "answers": [
     "한색",
     "차가운 색",
@@ -288,16 +288,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림의 가와 나 중 힘이 세고 튼튼한 느낌을 주는 선은 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 128 140\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><line x1=\"8\" y1=\"22.0\" x2=\"112\" y2=\"22.0\" stroke=\"currentColor\" stroke-width=\"9\"/></g><text x=\"64\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(4 72)\"><line x1=\"8\" y1=\"22.0\" x2=\"112\" y2=\"22.0\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"64\" y=\"134\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "body": "그림 가~라 중 힘이 세고 튼튼한 느낌을 주는 선은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 256 140\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><line x1=\"8\" y1=\"22.0\" x2=\"112\" y2=\"22.0\" stroke=\"currentColor\" stroke-width=\"2\"/></g><text x=\"64\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(132 0)\"><line x1=\"8\" y1=\"22.0\" x2=\"112\" y2=\"22.0\" stroke=\"currentColor\" stroke-width=\"4\" stroke-dasharray=\"2 9\" stroke-linecap=\"round\"/></g><text x=\"192\" y=\"62\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(4 72)\"><path d=\"M8,22.0 q13.0,-22 26.0,0 t26.0,0 t26.0,0 t26.0,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></g><text x=\"64\" y=\"134\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(132 72)\"><line x1=\"8\" y1=\"22.0\" x2=\"112\" y2=\"22.0\" stroke=\"currentColor\" stroke-width=\"9\"/></g><text x=\"192\" y=\"134\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
    "options": [
-    "둘 다",
-    "나",
     "가",
-    "둘 다 아니다"
+    "나",
+    "다",
+    "라"
    ],
-   "answer": 2,
-   "why": "굵은 선은 힘세고 튼튼한 느낌을 줍니다."
+   "answer": 3,
+   "why": "굵은 선(라)은 힘세고 튼튼한 느낌을 줍니다. 가는 선은 약하고 섬세하며, 점선은 가볍고, 곡선은 부드럽습니다."
   },
   {
    "id": "미술-초3-4-4미02-03-b2",
@@ -308,16 +308,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림의 가와 나 중 거칠고 까슬까슬한 질감을 나타내는 데 알맞은 무늬는 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 146 88\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,12 14,32 20,44 26,24 32,36 38,16 44,28 50,48 56,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,44 14,38 20,32 26,26 32,44 38,38 44,32 50,26 56,44\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"36\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"8\" y=\"8\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"32\" y=\"8\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"20\" y=\"20\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"44\" y=\"20\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"8\" y=\"32\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"32\" y=\"32\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"20\" y=\"44\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"44\" y=\"44\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/></g><text x=\"110\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "body": "그림 가~라 중 거칠고 까슬까슬한 질감을 나타내는 데 가장 알맞은 무늬는 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 294 88\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"8\" y=\"8\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"32\" y=\"8\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"20\" y=\"20\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"44\" y=\"20\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"8\" y=\"32\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"32\" y=\"32\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"20\" y=\"44\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"44\" y=\"44\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/></g><text x=\"36\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,12 14,32 20,44 26,24 32,36 38,16 44,28 50,48 56,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,44 14,38 20,32 26,26 32,44 38,38 44,32 50,26 56,44\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"110\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(152 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"8\" y1=\"12\" x2=\"56\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"25\" x2=\"56\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"38\" x2=\"56\" y2=\"38\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"51\" x2=\"56\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"4\"/></g><text x=\"184\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(226 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"14\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"14\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"14\" cy=\"50\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"50\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"50\" r=\"4\" fill=\"currentColor\"/></g><text x=\"258\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
    "options": [
     "가",
     "나",
-    "둘 다",
-    "둘 다 아니다"
+    "다",
+    "라"
    ],
-   "answer": 0,
-   "why": "어긋나게 겹친 선으로 그린 가가 거친 질감을 잘 나타냅니다. 나는 규칙적인 바둑무늬입니다."
+   "answer": 1,
+   "why": "어긋나게 겹친 선으로 그린 나가 거친 질감을 잘 나타냅니다. 가는 바둑무늬, 다는 줄무늬, 라는 점무늬로 모두 규칙적인 무늬입니다."
   },
   {
    "id": "미술-초3-4-4미02-03-a1",
@@ -347,13 +347,13 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "그림의 큰 원과 작은 원을 겹쳐 표현할 때 큰 원은 가깝게, 작은 원은 멀게 보입니다. 이 표현에 쓰인 조형 요소는 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 142 104\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><circle cx=\"40.0\" cy=\"40.0\" r=\"34.0\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"98\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(98 20)\"><circle cx=\"20.0\" cy=\"20.0\" r=\"14.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"118\" y=\"98\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "body": "그림처럼 같은 원이라도 크게 그린 가는 가깝게, 작게 그린 나는 멀게 보입니다. 이렇게 가깝고 먼 느낌을 내는 데 쓰인 것은 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 142 104\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><circle cx=\"40.0\" cy=\"40.0\" r=\"34.0\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"98\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(98 20)\"><circle cx=\"20.0\" cy=\"20.0\" r=\"14.0\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><text x=\"118\" y=\"98\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
    "options": [
-    "크기(형)",
-    "냄새",
-    "소리",
-    "온도"
+    "형의 크기",
+    "질감",
+    "선의 종류",
+    "색의 차이"
    ],
    "answer": 0,
    "why": "같은 모양이라도 크기를 다르게 하면 가깝고 먼 느낌을 줄 수 있습니다."
@@ -369,12 +369,12 @@
    "type": "multiple",
    "body": "작품을 완성한 뒤 소중히 여기는 방법으로 알맞은 것은 무엇인가요?",
    "options": [
-    "남에게 던진다",
-    "구겨서 버린다",
     "바닥에 아무렇게나 둔다",
-    "이름과 제목을 적고 깨끗하게 보관한다"
+    "구겨서 버린다",
+    "이름과 제목을 적고 깨끗하게 보관한다",
+    "남에게 던진다"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "이름과 제목을 적고 소중히 보관하는 것이 작품을 아끼는 태도입니다."
   },
   {
@@ -420,12 +420,12 @@
    "type": "multiple",
    "body": "표현 의도를 분명히 한다는 것의 뜻으로 알맞은 것은 무엇인가요?",
    "options": [
-    "아무 생각 없이 만드는 것",
     "무엇을 어떻게 나타내고 싶은지 먼저 생각하고 만드는 것",
+    "아무 생각 없이 만드는 것",
     "남이 시키는 대로만 만드는 것",
     "빨리 끝내는 것"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "표현 의도는 무엇을 어떻게 나타낼지에 대한 생각입니다."
   },
   {
@@ -440,12 +440,12 @@
    "body": "하늘이가 포근한 느낌을 주려고 선택한 방법을 바르게 설명한 것은 무엇인가요?",
    "passage": "p1",
    "options": [
+    "굵고 거친 선만 썼다",
     "차가운 색을 쓰고 뾰족하게 그렸다",
-    "따뜻한 색을 많이 쓰고 꽃잎을 부드러운 곡선으로 그렸다",
     "색을 쓰지 않았다",
-    "굵고 거친 선만 썼다"
+    "따뜻한 색을 많이 쓰고 꽃잎을 부드러운 곡선으로 그렸다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "표현 의도(포근함)에 맞게 따뜻한 색과 부드러운 곡선을 선택했습니다."
   },
   {
@@ -459,12 +459,12 @@
    "type": "multiple",
    "body": "자기 작품과 친구 작품을 소중히 여기는 태도를 바르게 나타낸 것은 무엇인가요?",
    "options": [
-    "작품은 아무렇게나 둔다",
     "내 작품만 소중히 한다",
+    "내 작품은 정성껏 완성하고, 친구 작품은 허락 없이 만지거나 망가뜨리지 않는다",
     "친구 작품에 낙서한다",
-    "내 작품은 정성껏 완성하고, 친구 작품은 허락 없이 만지거나 망가뜨리지 않는다"
+    "작품은 아무렇게나 둔다"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "자기 작품과 다른 사람의 작품 모두 소중히 여겨야 합니다."
   },
   {
@@ -476,7 +476,7 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "과학 시간에 관찰한 식물을 그림으로 자세히 나타내는 활동은 미술과 어떤 교과를 관련지은 것인가요? (두 글자)",
+   "body": "식물이 자라는 모습을 관찰하고 잎과 줄기의 생김새를 그림으로 자세히 나타내는 활동은 미술과 어떤 교과를 관련지은 것인가요? (두 글자)",
    "answers": [
     "과학"
    ],
@@ -491,9 +491,9 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "국어 시간에 쓴 시에 어울리는 그림을 함께 그린 작품을 ‘○○화’라고 합니다. 빈칸에 알맞은 한 글자를 쓰세요. (시○화)",
+   "body": "국어 시간에 쓴 시에 어울리는 그림을 함께 그려 넣은 작품을 무엇이라고 하나요? (두 글자)",
    "answers": [
-    "시"
+    "시화"
    ],
    "why": "시와 그림을 함께 나타낸 작품을 시화라고 합니다."
   },
@@ -508,12 +508,12 @@
    "type": "multiple",
    "body": "사회 시간에 배운 ‘우리 동네’를 미술로 표현하는 방법으로 알맞은 것은 무엇인가요?",
    "options": [
-    "동네의 건물과 길을 그려 나만의 동네 지도를 만든다",
     "동네 사진을 버린다",
+    "동네의 건물과 길을 그려 나만의 동네 지도를 만든다",
     "지도를 보지 않는다",
     "다른 동네를 그린다"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "사회에서 배운 내용을 그림과 지도로 표현할 수 있습니다."
   },
   {
@@ -528,12 +528,12 @@
    "body": "수학 시간에 배운 도형을 이용해 미술 작품을 만드는 활동으로 알맞은 것은 무엇인가요?",
    "svg": "<svg viewBox=\"0 0 186 54\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><circle cx=\"27.0\" cy=\"27.0\" r=\"21.0\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><g transform=\"translate(66 0)\"><polygon points=\"27.0,8 46,46 8,46\" fill=\"#e07b39\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g><g transform=\"translate(128 0)\"><rect x=\"8\" y=\"8\" width=\"38\" height=\"38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></g></svg>",
    "options": [
-    "도형은 쓰지 않는다",
+    "점수를 매긴다",
     "도형을 지운다",
-    "원, 삼각형, 사각형을 조합해 집과 나무 그림을 만든다",
-    "점수를 매긴다"
+    "도형은 쓰지 않는다",
+    "원, 삼각형, 사각형을 조합해 집과 나무 그림을 만든다"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "여러 도형을 조합하면 다양한 모습을 만들 수 있습니다."
   },
   {
@@ -547,12 +547,12 @@
    "type": "multiple",
    "body": "다양한 교과와 관련지어 주제를 표현하는 것의 좋은 점으로 알맞은 것은 무엇인가요?",
    "options": [
-    "아무 도움이 안 된다",
+    "배운 내용을 새로운 방법으로 표현하며 더 깊이 이해할 수 있다",
     "공부가 더 어려워진다",
     "미술이 사라진다",
-    "배운 내용을 새로운 방법으로 표현하며 더 깊이 이해할 수 있다"
+    "아무 도움이 안 된다"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "타 교과 내용을 미술로 표현하면 이해가 깊어지고 흥미가 높아집니다."
   },
   {
@@ -566,12 +566,12 @@
    "type": "multiple",
    "body": "‘물의 순환’을 배운 뒤 미술 표현으로 이어 가는 방법으로 가장 알맞은 것은 무엇인가요?",
    "options": [
+    "물을 모두 버린다",
     "그림 없이 시험만 본다",
     "물이 구름, 비, 강이 되어 돌아가는 모습을 그림 이야기로 그린다",
-    "물을 모두 버린다",
     "순환을 잊는다"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "과학 내용을 그림 이야기로 표현하면 흥미를 높이고 이해도 깊어집니다."
   }
  ],

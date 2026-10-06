@@ -96,16 +96,16 @@
    "level": "A",
    "difficulty": "hard",
    "type": "multiple",
-   "body": "공원에서 지아가 나뭇잎을 탐색할 때 사용한 감각을 모두 포함한 것은 무엇인가요?",
+   "body": "공원에서 지아가 자연물을 탐색할 때 사용한 감각을 모두 바르게 고른 것은 무엇인가요?",
    "passage": "p1",
    "options": [
-    "아무 감각도 쓰지 않음",
-    "미각만",
-    "촉각만",
+    "촉각, 후각, 미각",
+    "시각, 촉각, 미각",
+    "시각, 청각",
     "시각, 촉각, 청각, 후각"
    ],
    "answer": 3,
-   "why": "돋보기로 보고(시각), 만지고(촉각), 소리를 듣고(청각), 냄새를 맡았습니다(후각)."
+   "why": "나뭇잎을 돋보기로 보고(시각), 솔방울을 만지고(촉각), 나뭇잎 소리를 듣고(청각), 풀 냄새를 맡았습니다(후각). 맛을 보지는 않았습니다."
   },
   {
    "id": "미술-초3-4-4미01-01-a2",
@@ -169,16 +169,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림은 두 가지 질감입니다. 솔방울의 까슬까슬한 느낌을 나타내기에 알맞은 무늬는 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 146 88\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,12 14,32 20,44 26,24 32,36 38,16 44,28 50,48 56,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,44 14,38 20,32 26,26 32,44 38,38 44,32 50,26 56,44\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"36\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"8\" y1=\"12\" x2=\"56\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"25\" x2=\"56\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"38\" x2=\"56\" y2=\"38\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"51\" x2=\"56\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"4\"/></g><text x=\"110\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "body": "그림 가~라는 여러 가지 무늬입니다. 솔방울의 까슬까슬한 느낌을 나타내기에 가장 알맞은 무늬는 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 294 88\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"8\" y1=\"12\" x2=\"56\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"25\" x2=\"56\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"38\" x2=\"56\" y2=\"38\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"51\" x2=\"56\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"4\"/></g><text x=\"36\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"14\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"14\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"14\" cy=\"50\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"50\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"50\" r=\"4\" fill=\"currentColor\"/></g><text x=\"110\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(152 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,12 14,32 20,44 26,24 32,36 38,16 44,28 50,48 56,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,44 14,38 20,32 26,26 32,44 38,38 44,32 50,26 56,44\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"184\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(226 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"8\" y=\"8\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"32\" y=\"8\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"20\" y=\"20\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"44\" y=\"20\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"8\" y=\"32\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"32\" y=\"32\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"20\" y=\"44\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"44\" y=\"44\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/></g><text x=\"258\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
    "options": [
-    "둘 다 아니다",
+    "가",
     "나",
-    "둘 다",
-    "가"
+    "다",
+    "라"
    ],
-   "answer": 3,
-   "why": "거칠게 어긋난 선으로 그린 가가 까슬까슬한 느낌을 잘 나타냅니다."
+   "answer": 2,
+   "why": "거칠게 어긋난 선으로 그린 다가 까슬까슬한 느낌을 잘 나타냅니다. 나머지는 규칙적인 줄무늬, 점무늬, 바둑무늬입니다."
   },
   {
    "id": "미술-초3-4-4미01-02-b2",
@@ -191,12 +191,12 @@
    "type": "multiple",
    "body": "바람에 나뭇잎이 흔들리는 소리를 어떻게 나타낼 수 있을까요?",
    "options": [
-    "사각사각 하는 소리말로 쓰거나 몸으로 흔들며 나타낸다",
+    "눈을 감고 잔다",
     "아무것도 나타내지 않는다",
     "큰 북을 친다",
-    "눈을 감고 잔다"
+    "사각사각 하는 소리말로 쓰거나 몸으로 흔들며 나타낸다"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "소리를 글, 소리말, 몸짓 등 다양한 방법으로 나타낼 수 있습니다."
   },
   {
@@ -210,12 +210,12 @@
    "type": "multiple",
    "body": "공원에서 느낀 시원한 바람을 구체적이고 다양하게 표현한 것은 무엇인가요?",
    "options": [
-    "아무것도 하지 않는다",
-    "‘좋았다’라고만 쓴다",
     "파란색과 부드러운 곡선으로 바람을 그리고, ‘살랑살랑 시원했다’고 쓴다",
+    "‘좋았다’라고만 쓴다",
+    "아무것도 하지 않는다",
     "다른 사람의 그림을 베낀다"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "색과 선, 글을 함께 쓰면 느낌을 구체적이고 다양하게 나타낼 수 있습니다."
   },
   {
@@ -230,12 +230,12 @@
    "body": "지아가 느낀 점을 나타낸 방법으로 글에 나온 것은 무엇인가요?",
    "passage": "p1",
    "options": [
-    "표와 그래프",
-    "노래와 춤",
     "만화와 영상",
-    "그림과 짧은 글"
+    "노래와 춤",
+    "그림과 짧은 글",
+    "표와 그래프"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "글에서 지아는 느낀 점을 그림과 짧은 글로 나타냈다고 했습니다."
   },
   {
@@ -249,12 +249,12 @@
    "type": "multiple",
    "body": "나뭇잎을 관찰할 때 살펴볼 점으로 알맞은 것은 무엇인가요?",
    "options": [
+    "이름 순서",
     "가격",
-    "색과 모양",
     "점수",
-    "이름 순서"
+    "색과 모양"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "나뭇잎의 색과 모양, 무늬 등을 살펴보며 특징을 알 수 있습니다."
   },
   {
@@ -283,12 +283,12 @@
    "type": "multiple",
    "body": "같은 돌멩이를 보고 색과 모양을 관찰할 때 알맞은 방법은 무엇인가요?",
    "options": [
-    "던져 본다",
     "한 번 슬쩍 보고 버린다",
     "여러 방향에서 자세히 보고 어떤 점이 특이한지 찾는다",
+    "던져 본다",
     "보지 않고 만진다"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "자세히 살피면 대상의 특징을 발견할 수 있습니다."
   },
   {
@@ -300,16 +300,16 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "그림의 가와 나 중 점이 규칙적으로 반복되어 있는 무늬는 무엇인가요?",
-   "svg": "<svg viewBox=\"0 0 146 88\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"14\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"14\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"14\" cy=\"50\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"50\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"50\" r=\"4\" fill=\"currentColor\"/></g><text x=\"36\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,12 14,32 20,44 26,24 32,36 38,16 44,28 50,48 56,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,44 14,38 20,32 26,26 32,44 38,38 44,32 50,26 56,44\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"110\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text></svg>",
+   "body": "그림 가~라 중 동그란 점이 규칙적으로 반복되어 있는 무늬는 무엇인가요?",
+   "svg": "<svg viewBox=\"0 0 294 88\" font-family=\"sans-serif\"><g transform=\"translate(4 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,12 14,32 20,44 26,24 32,36 38,16 44,28 50,48 56,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"8,44 14,38 20,32 26,26 32,44 38,38 44,32 50,26 56,44\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></g><text x=\"36\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">가</text><g transform=\"translate(78 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"14\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"14\" r=\"4\" fill=\"currentColor\"/><circle cx=\"14\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"32\" r=\"4\" fill=\"currentColor\"/><circle cx=\"14\" cy=\"50\" r=\"4\" fill=\"currentColor\"/><circle cx=\"32\" cy=\"50\" r=\"4\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"50\" r=\"4\" fill=\"currentColor\"/></g><text x=\"110\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">나</text><g transform=\"translate(152 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"8\" y=\"8\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"32\" y=\"8\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"20\" y=\"20\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"44\" y=\"20\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"8\" y=\"32\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"32\" y=\"32\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"20\" y=\"44\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/><rect x=\"44\" y=\"44\" width=\"12\" height=\"12\" fill=\"currentColor\" fill-opacity=\"0.65\"/></g><text x=\"184\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">다</text><g transform=\"translate(226 0)\"><rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"8\" y1=\"12\" x2=\"56\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"25\" x2=\"56\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"38\" x2=\"56\" y2=\"38\" stroke=\"currentColor\" stroke-width=\"4\"/><line x1=\"8\" y1=\"51\" x2=\"56\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"4\"/></g><text x=\"258\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">라</text></svg>",
    "options": [
     "가",
     "나",
-    "둘 다",
-    "둘 다 아니다"
+    "다",
+    "라"
    ],
-   "answer": 0,
-   "why": "점이 일정한 간격으로 반복된 것은 가입니다."
+   "answer": 1,
+   "why": "동그란 점이 일정한 간격으로 반복된 것은 나입니다. 다는 네모가 반복된 바둑무늬, 라는 줄무늬입니다."
   },
   {
    "id": "미술-초3-4-4미01-03-a1",
@@ -360,12 +360,12 @@
    "type": "multiple",
    "body": "다음 중 생활 속에서 미술이 쓰이는 예는 무엇인가요?",
    "options": [
-    "그림자의 길이",
-    "구름의 이동",
     "비가 오는 소리",
-    "포장지와 옷의 무늬"
+    "구름의 이동",
+    "포장지와 옷의 무늬",
+    "그림자의 길이"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "포장지, 옷, 간판, 포스터 등에 미술이 활용됩니다."
   },
   {
@@ -395,12 +395,12 @@
    "body": "표를 보고 안내 표지판의 미술이 하는 역할을 고르세요.",
    "svg": "<svg viewBox=\"0 0 296 126\" font-family=\"sans-serif\"><rect x=\"3\" y=\"3\" width=\"290\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"103\" y1=\"3\" x2=\"103\" y2=\"123\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"33\" x2=\"293\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"3\" y1=\"63\" x2=\"293\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"3\" y1=\"93\" x2=\"293\" y2=\"93\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">생활 속 미술</text><text x=\"198\" y=\"23\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">역할</text><text x=\"53\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">안내 표지판</text><text x=\"198\" y=\"53\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">그림으로 쉽게 길을 알려 줌</text><text x=\"53\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">포장지</text><text x=\"198\" y=\"83\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">물건을 보기 좋게 감쌈</text><text x=\"53\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">옷</text><text x=\"198\" y=\"113\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\">나를 표현하고 몸을 보호함</text></svg>",
    "options": [
-    "물건을 보기 좋게 감싼다",
     "그림으로 쉽게 길을 알려 준다",
+    "물건을 보기 좋게 감싼다",
     "몸을 보호한다",
     "소리를 낸다"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "안내 표지판은 그림으로 쉽게 길을 알려 줍니다."
   },
   {
@@ -414,12 +414,12 @@
    "type": "multiple",
    "body": "교실의 학급 규칙 포스터가 눈에 잘 띄도록 하려면 어떻게 하는 것이 좋을까요?",
    "options": [
+    "그림 없이 길게만 쓴다",
     "아주 작은 글씨로 쓴다",
-    "큰 글씨와 선명한 색, 알기 쉬운 그림을 쓴다",
     "색을 모두 흐리게 한다",
-    "그림 없이 길게만 쓴다"
+    "큰 글씨와 선명한 색, 알기 쉬운 그림을 쓴다"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "포스터는 눈에 잘 띄고 쉽게 이해되도록 만드는 것이 중요합니다."
   },
   {
@@ -433,12 +433,12 @@
    "type": "multiple",
    "body": "우리 동네에서 찾은 생활 속 미술 사례와 그 역할을 바르게 짝지은 것은 무엇인가요?",
    "options": [
-    "쓰레기통 – 음악을 연주한다",
     "벤치 – 소리를 크게 낸다",
+    "공원 안내판 – 그림과 글로 이용 방법을 알려 준다",
     "가로등 – 비를 내린다",
-    "공원 안내판 – 그림과 글로 이용 방법을 알려 준다"
+    "쓰레기통 – 음악을 연주한다"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "안내판은 그림과 글을 활용해 정보를 전달합니다."
   },
   {
@@ -453,12 +453,12 @@
    "body": "지아가 공원 쓰레기통을 보고 생각한 점으로 글에 나온 것은 무엇인가요?",
    "passage": "p1",
    "options": [
-    "색과 모양이 공원과 잘 어울린다",
     "너무 작아서 쓸모없다",
+    "색과 모양이 공원과 잘 어울린다",
     "소리가 시끄럽다",
     "냄새가 좋다"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "글에서 지아는 쓰레기통의 색과 모양이 공원과 잘 어울린다고 생각했습니다."
   }
  ],
