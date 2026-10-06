@@ -7,7 +7,7 @@ from svgkit import table, BLUE, ORANGE, C
 from kit12 import seg_bars
 from kit_ko import KoBank, report
 from kit34 import hold
-from kit34n import stairs, squares, seq_row, toothpick_tri, toothpick_sq, calc_rows, balance, ex
+from kit34n import cell_fig, stairs, squares, seq_row, toothpick_tri, toothpick_sq, calc_rows, balance, ex
 
 bank = Bank("수학", "초", "수학", "초3-4", "변화와 관계", "bank_수학_초3-4_변화와관계.json")
 b = KoBank(bank)
@@ -37,9 +37,9 @@ b.q(S, "B", "표를 보고 순서(□)와 수(○) 사이의 규칙을 식으로
     options=["○ = □ × 3 + 1", "○ = □ + 3", "○ = □ × 4", "○ = □ × 3"], answer="○ = □ × 3 + 1",
     why="순서가 1 커질 때 수는 3씩 커지고, 순서 1일 때 4이므로 ○ = □×3+1입니다.")
 b.q(S, "B", "정사각형 조각을 규칙에 따라 늘어놓았습니다. 일곱째 모양에 필요한 조각은 몇 개인가요?",
-    svg=hold([(squares(1), "첫째"), (squares(2), "둘째"), (squares(3), "셋째")], gap=14),
-    answers=["49", "49개"],
-    why="n째 모양은 n×n개의 조각으로 이루어져 있으므로 일곱째는 7×7=49(개)입니다.")
+    svg=hold([(cell_fig([(c, r) for r in range(k) for c in range(k + 1)]), nm) for k, nm in ((1, "첫째"), (2, "둘째"), (3, "셋째"))], gap=14),
+    answers=["56", "56개"],
+    why="첫째는 1×2, 둘째는 2×3, 셋째는 3×4개이므로 일곱째는 7×8=56(개)입니다.")
 
 b.q(S, "A", "성냥개비로 정사각형을 한 줄로 이어 만들었습니다. 정사각형을 10개 만들려면 성냥개비가 몇 개 필요한가요?",
     svg=hold([(toothpick_sq(1), "1개"), (toothpick_sq(2), "2개"), (toothpick_sq(3), "3개")], gap=14),
