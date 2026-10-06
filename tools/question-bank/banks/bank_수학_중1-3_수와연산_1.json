@@ -217,11 +217,12 @@
    "level": "C",
    "difficulty": "easy",
    "type": "short",
-   "body": "24와 36의 최대공약수를 구하세요. (숫자만)",
+   "body": "18과 30의 공약수는 모두 몇 개인가요? (숫자만)",
    "answers": [
-    "12"
+    "4",
+    "4개"
    ],
-   "why": "$24=2^{3}\\times3$, $36=2^{2}\\times3^{2}$이므로 $2^{2}\\times3=12$입니다."
+   "why": "$18=2\\times3^{2}$, $30=2\\times3\\times5$이므로 최대공약수는 $2\\times3=6$이고, 공약수는 6의 약수 1, 2, 3, 6으로 4개입니다."
   },
   {
    "id": "수학-중1-3-9수01-02-b1",
@@ -366,7 +367,7 @@
     "7"
    ],
    "answer": 0,
-   "why": "$-\\dfrac32$는 분수로만 나타낼 수 있고 정수가 아닙니다."
+   "why": "$-\\dfrac32=-1.5$는 유리수이지만 정수가 아닙니다. 0, $-4$, 7은 모두 정수입니다."
   },
   {
    "id": "수학-중1-3-9수01-03-c3",
@@ -504,13 +505,13 @@
    "level": "C",
    "difficulty": "easy",
    "type": "multiple",
-   "body": "수직선 위의 점 A, B, C 중 가장 작은 수를 나타내는 점은?",
-   "svg": "<svg viewBox=\"0 0 330 74\" font-family=\"sans-serif\"><line x1=\"14\" y1=\"46\" x2=\"316\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"22\" y1=\"41\" x2=\"22\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"22\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-6</text><line x1=\"53.8\" y1=\"41\" x2=\"53.8\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"53.8\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-5</text><line x1=\"85.6\" y1=\"41\" x2=\"85.6\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"85.6\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-4</text><line x1=\"117.3\" y1=\"41\" x2=\"117.3\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"117.3\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-3</text><line x1=\"149.1\" y1=\"41\" x2=\"149.1\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"149.1\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-2</text><line x1=\"180.9\" y1=\"41\" x2=\"180.9\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"180.9\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-1</text><line x1=\"212.7\" y1=\"41\" x2=\"212.7\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"212.7\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"244.4\" y1=\"41\" x2=\"244.4\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"244.4\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"276.2\" y1=\"41\" x2=\"276.2\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"276.2\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"308\" y1=\"41\" x2=\"308\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"308\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><circle cx=\"117.3\" cy=\"46\" r=\"5\" fill=\"#4b7bec\"/><text x=\"117.3\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"244.4\" cy=\"46\" r=\"5\" fill=\"#4b7bec\"/><text x=\"244.4\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"53.8\" cy=\"46\" r=\"5\" fill=\"#4b7bec\"/><text x=\"53.8\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text></svg>",
+   "body": "수직선 위의 점 A, B, C, D 중 가장 작은 수를 나타내는 점은?",
+   "svg": "<svg viewBox=\"0 0 330 74\" font-family=\"sans-serif\"><line x1=\"14\" y1=\"46\" x2=\"316\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.2\"/><line x1=\"22\" y1=\"41\" x2=\"22\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"22\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-6</text><line x1=\"53.8\" y1=\"41\" x2=\"53.8\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"53.8\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-5</text><line x1=\"85.6\" y1=\"41\" x2=\"85.6\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"85.6\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-4</text><line x1=\"117.3\" y1=\"41\" x2=\"117.3\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"117.3\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-3</text><line x1=\"149.1\" y1=\"41\" x2=\"149.1\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"149.1\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-2</text><line x1=\"180.9\" y1=\"41\" x2=\"180.9\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"180.9\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">-1</text><line x1=\"212.7\" y1=\"41\" x2=\"212.7\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"212.7\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"244.4\" y1=\"41\" x2=\"244.4\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"244.4\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"276.2\" y1=\"41\" x2=\"276.2\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"276.2\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"308\" y1=\"41\" x2=\"308\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"308\" y=\"68\" font-size=\"12\" text-anchor=\"middle\" fill=\"currentColor\">3</text><circle cx=\"117.3\" cy=\"46\" r=\"5\" fill=\"#4b7bec\"/><text x=\"117.3\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">A</text><circle cx=\"244.4\" cy=\"46\" r=\"5\" fill=\"#4b7bec\"/><text x=\"244.4\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">B</text><circle cx=\"53.8\" cy=\"46\" r=\"5\" fill=\"#4b7bec\"/><text x=\"53.8\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">C</text><circle cx=\"276.2\" cy=\"46\" r=\"5\" fill=\"#4b7bec\"/><text x=\"276.2\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">D</text></svg>",
    "options": [
     "B",
     "A",
     "C",
-    "셋 모두 같다"
+    "D"
    ],
    "answer": 2,
    "why": "수직선에서는 왼쪽에 있을수록 작은 수입니다. 가장 왼쪽 점은 C입니다."
@@ -596,15 +597,15 @@
    "level": "B",
    "difficulty": "medium",
    "type": "multiple",
-   "body": "0.3과 $\\dfrac13$ 중 더 큰 수는?",
+   "body": "$0.3,\\ \\dfrac13,\\ 0.33,\\ \\dfrac{3}{11}$ 중 가장 큰 수는?",
    "options": [
     "$\\dfrac13$",
     "0.3",
-    "두 수는 같다",
-    "알 수 없다"
+    "0.33",
+    "$\\dfrac{3}{11}$"
    ],
    "answer": 0,
-   "why": "$\\dfrac13=0.333\\cdots>0.3$입니다."
+   "why": "$\\dfrac13=0.333\\cdots$, $\\dfrac{3}{11}=0.2727\\cdots$이므로 $\\dfrac13>0.33>0.3>\\dfrac{3}{11}$입니다."
   },
   {
    "id": "수학-중1-3-9수01-04-a1",
@@ -1116,11 +1117,11 @@
    "level": "A",
    "difficulty": "hard",
    "type": "short",
-   "body": "$\\sqrt{72}=a\\sqrt{2}$일 때 $a$의 값을 구하세요. (숫자만)",
+   "body": "$\\sqrt{(-5)^{2}}-\\sqrt{3^{2}}+(-\\sqrt{2})^{2}$을 계산하세요. (숫자만)",
    "answers": [
-    "6"
+    "4"
    ],
-   "why": "$\\sqrt{72}=\\sqrt{36\\times2}=6\\sqrt{2}$입니다."
+   "why": "$\\sqrt{(-5)^{2}}=5$, $\\sqrt{3^{2}}=3$, $(-\\sqrt{2})^{2}=2$이므로 $5-3+2=4$입니다."
   },
   {
    "id": "수학-중1-3-9수01-07-a3",
