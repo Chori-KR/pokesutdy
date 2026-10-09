@@ -37,11 +37,11 @@ TOPICS = {
         ("두 자리 수 덧셈(받아올림)", "2026-09-01", "2026-10-08", .30, .34, 1),
     ],
     "정민영": [
-        ("두 자리 수 덧셈·뺄셈", "2026-04-06", "2026-05-29", .60, .90, 3),
-        ("곱셈의 뜻", "2026-04-20", "2026-06-30", .50, .88, 3),
-        ("곱셈구구", "2026-05-18", "2026-09-30", .50, .91, 4),
-        ("(몇십몇)×(몇)", "2026-08-24", "2026-10-08", .55, .80, 3),
-        ("나눗셈의 뜻(시작 단계)", "2026-09-28", "2026-10-08", .40, .48, 1),
+        ("두 자리 수 덧셈·뺄셈", "2026-04-06", "2026-06-12", .38, .72, 3),
+        ("곱셈의 뜻", "2026-04-20", "2026-07-10", .30, .74, 3),
+        ("곱셈구구", "2026-05-18", "2026-10-08", .30, .84, 4),
+        ("(몇십몇)×(몇)", "2026-08-24", "2026-10-08", .48, .70, 3),
+        ("나눗셈의 뜻(시작 단계)", "2026-09-28", "2026-10-08", .40, .45, 1),
     ],
     "박준혁": [
         ("분수의 뜻·종류", "2026-04-06", "2026-06-26", .40, .88, 3),
@@ -77,6 +77,9 @@ PROFILE = {
                   moves=(.45, .4, .15), quiz=.75, snacky=.3),
 }
 
+# 학생별 전체 정답률 곡선 (4월 → 10월)
+BASE = {"정민지": (.45, .50), "정민영": (.36, .80), "박준혁": (.40, .82), "이소미": (.22, .62)}
+
 def ease(x):
     x = max(0.0, min(1.0, x))
     return x * x * (3 - 2 * x)
@@ -87,8 +90,11 @@ def topic_now(nick, day):
         s, e = D(s), D(e)
         if day < s:
             continue
-        frac = (day - s).days / max(1, (e - s).days)
-        p = p0 + (p1 - p0) * ease(frac) if day <= e else min(p1 + .03, .95)
+        # 학생 전체 실력 곡선(BASE) + 새 단원 시작 3주 동안만 살짝 낮게, 끝낸 단원은 살짝 높게
+        b0, b1 = BASE[nick]
+        g = b0 + (b1 - b0) * ease((day - D("2026-04-06")).days / 185)
+        fresh = max(0.0, 1 - (day - s).days / 21)
+        p = g - .03 * fresh + (.03 if day > e else 0)
         ramp = min(1.0, .3 + (day - s).days / 21)
         act.append((name, p, w * ramp if day <= e else w * .25))
     return act
@@ -167,6 +173,12 @@ def answer(st, day, at, ctx, diff=None):
     return ok
 
 students = {n: S(n) for n in PROFILE}
+RNG = {}
+SEEDS = json.loads(os.environ.get("SIM_SEEDS", "{}")) or {"정민지": 2000, "정민영": 6001, "박준혁": 3002, "이소미": 6003}
+for _i, _n in enumerate(PROFILE):
+    random.seed(SEEDS.get(_n, 20261009 + 97 * _i))
+    RNG[_n] = random.getstate()
+random.seed(20261009)
 
 def nxt(t, lo=25, hi=80):
     return t + dt.timedelta(seconds=random.randint(lo, hi))
@@ -175,11 +187,13 @@ for day in DAYS:
     raid_today = next((pid for ds, pid in RAIDS if D(ds) == day), None)
     winners = []
     for nick, st in students.items():
+        random.setstate(RNG[nick])
         pr = PROFILE[nick]
         if random.random() > pr["attend"](day) and not raid_today:
+            RNG[nick] = random.getstate()
             continue
         st.events["days"] += 1
-        st.noise = random.gauss(0, .04)
+        st.noise = random.gauss(0, .025)
         t = dt.datetime(day.year, day.month, day.day, 9, random.randint(0, 25), tzinfo=KST)
         # 데일리 퀴즈 (포켓몬 이름 맞히기)
         if random.random() < .9:
@@ -318,6 +332,7 @@ for day in DAYS:
                     st.points += DUPE[GEN1[pid]["rarity"]] * (c["count"] - 1)
                     st.events["dupes_converted"] += c["count"] - 1
                     c["count"] = 1
+        RNG[nick] = random.getstate()
     # 레이드 보상: 성공자 +200P, 협동 달성(3명 이상 성공) 시 반 전체에 보스 포켓몬
     if raid_today:
         for st in winners:
