@@ -12,7 +12,8 @@ random.seed(20261009)
 KST = dt.timezone(dt.timedelta(hours=9))
 D = dt.date.fromisoformat
 
-GEN1 = {p["id"]: p for p in json.load(open(os.path.join(HERE, "gen1.json"), encoding="utf-8"))}
+# 학급 0000의 등장 세대: 1·5·6·9세대 (499종) — 야생은 이 안에서 등급별로 고르게
+GEN1 = {p["id"]: p for p in json.load(open(os.path.join(HERE, "gens.json"), encoding="utf-8"))}
 BY_RAR = collections.defaultdict(list)
 for p in GEN1.values():
     BY_RAR[p["rarity"]].append(p["id"])
@@ -110,8 +111,8 @@ while d <= D("2026-10-08"):
     d += dt.timedelta(days=1)
 
 # 레이드(형성평가) 날짜와 보스 — 한 달에 한 번쯤
-RAIDS = [("2026-04-24", 143), ("2026-05-22", 131), ("2026-06-26", 144), ("2026-07-17", 145),
-         ("2026-09-11", 146), ("2026-10-02", 150)]
+RAIDS = [("2026-04-24", 143), ("2026-05-22", 643), ("2026-06-26", 144), ("2026-07-17", 716),
+         ("2026-09-11", 1007), ("2026-10-02", 150)]  # 잠만보·레시라무·프리져·제르네아스·코라이돈·뮤츠
 RAID_THRESHOLD = 3  # 협동 달성 인원 (선생님 설정 가정)
 
 class S:  # 학생 상태
@@ -174,7 +175,7 @@ def answer(st, day, at, ctx, diff=None):
 
 students = {n: S(n) for n in PROFILE}
 RNG = {}
-SEEDS = json.loads(os.environ.get("SIM_SEEDS", "{}")) or {"정민지": 2000, "정민영": 6001, "박준혁": 3002, "이소미": 6003}
+SEEDS = json.loads(os.environ.get("SIM_SEEDS", "{}")) or {"정민지": 1000, "정민영": 5001, "박준혁": 5002, "이소미": 1003}
 for _i, _n in enumerate(PROFILE):
     random.seed(SEEDS.get(_n, 20261009 + 97 * _i))
     RNG[_n] = random.getstate()
