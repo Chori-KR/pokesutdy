@@ -106,7 +106,7 @@ HOLI = {D(x) for x in ["2026-05-05", "2026-05-25", "2026-06-03", "2026-08-17", "
 DAYS = []
 d = D("2026-04-06")
 while d <= D("2026-10-08"):
-    if d.weekday() < 5 and d not in HOLI and not (D("2026-07-22") <= d <= D("2026-08-16")):
+    if d.weekday() < 5 and d not in HOLI and not (D("2026-07-18") <= d <= D("2026-08-19")):
         DAYS.append(d)
     d += dt.timedelta(days=1)
 
@@ -175,7 +175,7 @@ def answer(st, day, at, ctx, diff=None):
 
 students = {n: S(n) for n in PROFILE}
 RNG = {}
-SEEDS = json.loads(os.environ.get("SIM_SEEDS", "{}")) or {"정민지": 1000, "정민영": 5001, "박준혁": 5002, "이소미": 1003}
+SEEDS = json.loads(os.environ.get("SIM_SEEDS", "{}")) or {"정민지": 2000, "정민영": 8001, "박준혁": 2002, "이소미": 8003}
 for _i, _n in enumerate(PROFILE):
     random.seed(SEEDS.get(_n, 20261009 + 97 * _i))
     RNG[_n] = random.getstate()
