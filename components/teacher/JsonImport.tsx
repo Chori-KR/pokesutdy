@@ -22,6 +22,10 @@ const isMissingDb = (e: { message?: string; code?: string } | null) =>
   !!e && (e.code === "PGRST204" || e.code === "PGRST205" || e.code === "42703" || e.code === "42P01" ||
     /passage|svg|schema cache|does not exist/i.test(e.message ?? ""));
 
+// 똑같은 문제 = 본문·지문·보기(순서 무관)·그림이 모두 같을 때. 본문만 같고 보기나 그림이 다르면 다른 문제.
+const questionKey = (body: string, options: string[], svg: string | null | undefined, passageText: string) =>
+  [textKey(body), passageText, options.map(textKey).sort().join("\u0001"), textKey(svg ?? "")].join("|");
+
 // JSON 문제 은행 가져오기 (Codex로 만든 bank_*.json 여러 개를 한 번에)
 //  1) 파일 읽기·검사 → 미리보기   2) 지문 먼저 저장(같은 글이 이미 있으면 재사용)
 //  3) 문제 저장(이미 있는 똑같은 문제는 건너뜀) — 200개씩 나눠서
@@ -70,15 +74,16 @@ export default function JsonImport({ classId, questions, passages, onRegistered,
         for (const p of data as PassageRow[]) { byText.set(textKey(p.body), p.id); pBodyById.set(p.id, textKey(p.body)); newPassages.push(p); }
       }
 
-      // ── 문제: (본문 + 지문)이 똑같은 문제는 한 번만 ──
-      const seen = new Set(questions.map((q) => `${textKey(q.body)}|${q.passage_id ? pBodyById.get(q.passage_id) ?? q.passage_id : ""}`));
+      // ── 문제: (본문 + 지문 + 보기 + 그림)이 똑같은 문제는 한 번만 ──
+      const seen = new Set(questions.map((q) =>
+        questionKey(q.body, q.options ?? [], q.svg, q.passage_id ? pBodyById.get(q.passage_id) ?? q.passage_id : "")));
       const payload: Record<string, unknown>[] = [];
       let dup = 0;
       for (const b of banks) {
         const keyText = new Map(b.passages.map((p) => [p.key, textKey(p.body)]));
         for (const q of b.questions) {
           const pText = q.passageKey ? keyText.get(q.passageKey) ?? "" : "";
-          const k = `${textKey(q.body)}|${pText}`;
+          const k = questionKey(q.body, q.options, q.svg, pText);
           if (seen.has(k)) { dup++; continue; }
           seen.add(k);
           const row: Record<string, unknown> = {
