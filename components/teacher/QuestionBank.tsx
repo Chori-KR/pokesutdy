@@ -7,6 +7,7 @@ import { supabaseBrowser } from "@/lib/supabase/browser";
 import AiGenerate from "@/components/teacher/AiGenerate";
 import BulkImport from "@/components/teacher/BulkImport";
 import JsonImport, { loadPassages } from "@/components/teacher/JsonImport";
+import LibraryImport from "@/components/teacher/LibraryImport";
 import { PassageBox, SvgImage } from "@/components/student/QuestionMedia";
 import MathText from "@/components/MathText";
 
@@ -41,6 +42,8 @@ interface Props {
   showToast: (t: string) => void;
   hasAiKey: boolean;
   aiProvider?: string;
+  welcome?: boolean;          // 학급을 막 만들었으면 기본 문제 은행을 먼저 펼친다
+  onWelcomeDone?: () => void;
 }
 
 const CIRCLED = ["①", "②", "③", "④"];
@@ -66,12 +69,12 @@ const EMPTY_FORM: FormState = {
 const RAID_ONLY_HINT =
   "레이드 전용 문제 기능에 필요한 DB 작업이 아직 안 됐어요. 'supabase/migrations/0008_raid_only.sql' 실행이 필요해요.";
 
-export default function QuestionBank({ classId, questions, setQuestions, showToast, hasAiKey, aiProvider }: Props) {
+export default function QuestionBank({ classId, questions, setQuestions, showToast, hasAiKey, aiProvider, welcome, onWelcomeDone }: Props) {
   const [search, setSearch] = useState("");
   const [filterTag, setFilterTag] = useState<string | null>(null);
   const [form, setForm] = useState<FormState | null>(null);
   const [formErr, setFormErr] = useState("");
-  const [panel, setPanel] = useState<"ai" | "bulk" | "json" | null>(null);
+  const [panel, setPanel] = useState<"library" | "ai" | "bulk" | "json" | null>(welcome ? "library" : null);
   const [passages, setPassages] = useState<PassageRow[]>([]);
   const [openMedia, setOpenMedia] = useState<string | null>(null); // 그림·지문 미리보기를 펼친 문제
   const [limit, setLimit] = useState(PAGE);
@@ -88,6 +91,17 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
   }, [formOpenSeq]);
 
   const tags = useMemo(() => [...new Set(questions.map((q) => q.tag))], [questions]);
+  // 단원이 많으면 "과목·학년군"별 줄로 묶어 보여준다 (예: 수학·초3-4 → 수와 연산 · 도형과 측정 …)
+  const tagGroups = useMemo(() => {
+    if (tags.length <= 12) return [];
+    const m = new Map<string, { tag: string; unit: string }[]>();
+    for (const t of [...tags].sort((x, y) => x.localeCompare(y, "ko"))) {
+      const sp = t.indexOf(" ");
+      const head = sp > 0 && t.includes("·") ? t.slice(0, sp) : "기타";
+      (m.get(head) ?? m.set(head, []).get(head)!).push({ tag: t, unit: head === "기타" ? t : t.slice(sp + 1) });
+    }
+    return [...m.entries()];
+  }, [tags]);
   const visible = questions
     .filter((q) => (!filterTag || q.tag === filterTag) && (!search || q.body.includes(search)))
     // 출제(활성) 문제를 위로. 같은 활성 상태 안에서는 기존 순서(최신순) 유지 — stable sort
@@ -264,6 +278,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
     <div>
       <div style={{ display: "flex", gap: 8, marginBottom: 8, flexWrap: "wrap" }}>
         <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="문제 검색" style={{ ...T.input, flex: 1, minWidth: 140 }} />
+        <button onClick={() => { setPanel(panel === "library" ? null : "library"); setForm(null); }} style={{ ...T.primaryBtn, background: "#1f8a8a" }}>📚 기본 문제 은행</button>
         <button onClick={() => { setForm({ ...EMPTY_FORM }); setFormErr(""); setPanel(null); setFormOpenSeq((s) => s + 1); }} style={T.primaryBtn}>+ 새 문제</button>
         <button onClick={() => { setPanel(panel === "ai" ? null : "ai"); setForm(null); }} style={{ ...T.primaryBtn, background: "#7c5cd9" }}>🤖 AI 생성</button>
         <button onClick={() => { setPanel(panel === "bulk" ? null : "bulk"); setForm(null); }} style={{ ...T.primaryBtn, background: "#2e8b57" }}>📥 대량 등록</button>
@@ -289,6 +304,17 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
           showToast={showToast}
         />
       )}
+      {panel === "library" && (
+        <LibraryImport
+          classId={classId}
+          questions={questions}
+          passages={passages}
+          welcome={welcome}
+          onRegistered={(rows, ps) => { setQuestions([...rows, ...questions]); if (ps.length) setPassages([...passages, ...ps]); }}
+          onClose={() => { setPanel(null); onWelcomeDone?.(); }}
+          showToast={showToast}
+        />
+      )}
       {panel === "json" && (
         <JsonImport
           classId={classId}
@@ -310,7 +336,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
 
       <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 10, alignItems: "center" }}>
         <button onClick={() => setFilterTag(null)} style={{ ...T.chip, ...(filterTag ? {} : T.chipOn) }}>전체</button>
-        {tags.map((t) => (
+        {tagGroups.length === 0 && tags.map((t) => (
           <button key={t} onClick={() => setFilterTag(filterTag === t ? null : t)} style={{ ...T.chip, ...(filterTag === t ? T.chipOn : {}) }}>{t}</button>
         ))}
         {filterTag && (
@@ -320,6 +346,19 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
           </span>
         )}
       </div>
+      {tagGroups.length > 0 && (
+        <div style={{ marginTop: -4, marginBottom: 10, maxHeight: 220, overflowY: "auto", display: "grid", gap: 4 }}>
+          {tagGroups.map(([head, list]) => (
+            <div key={head} style={{ display: "flex", gap: 5, flexWrap: "wrap", alignItems: "center" }}>
+              <span style={{ fontSize: 11.5, fontWeight: 700, color: "#3a4a7a", minWidth: 78 }}>{head}</span>
+              {list.map(({ tag, unit }) => (
+                <button key={tag} onClick={() => setFilterTag(filterTag === tag ? null : tag)} title={tag}
+                  style={{ ...T.chip, fontSize: 11.5, padding: "3px 9px", ...(filterTag === tag ? T.chipOn : {}) }}>{unit}</button>
+              ))}
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* 추가/수정 폼 */}
       {form && (

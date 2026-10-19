@@ -54,6 +54,7 @@ export default function TeacherHome({ session }: { session: Session }) {
   const [needsClass, setNeedsClass] = useState(false);
   const [className, setClassName] = useState("");
   const [questions, setQuestions] = useState<QuestionRow[]>([]);
+  const [welcome, setWelcome] = useState(false); // 학급을 막 만듦 → 기본 문제 은행부터 보여준다
   const [tab, setTab] = useState<"bank" | "stats" | "settings" | "admin">("bank");
   const isAdmin = !!ADMIN_EMAIL && (session.user.email ?? "").trim().toLowerCase() === ADMIN_EMAIL;
   const [toast, setToast] = useState("");
@@ -112,6 +113,7 @@ export default function TeacherHome({ session }: { session: Session }) {
         );
         setCls(data as ClassRow);
         setNeedsClass(false);
+        setWelcome(true);
         loadQuestions(data.id);
         showToast(`학급이 만들어졌어요! 학급 코드: ${data.class_code}`);
         return;
@@ -211,6 +213,8 @@ export default function TeacherHome({ session }: { session: Session }) {
           showToast={showToast}
           hasAiKey={!!cls.settings?.aiKeyEnc}
           aiProvider={cls.settings?.aiProvider}
+          welcome={welcome}
+          onWelcomeDone={() => setWelcome(false)}
         />
       )}
 

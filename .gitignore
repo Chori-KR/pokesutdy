@@ -17,3 +17,6 @@
 .DS_Store
 *.tsbuildinfo
 next-env.d.ts
+
+# 기본 문제 은행 — 빌드할 때 tools/question-bank/banks 에서 만든다
+/public/library/
