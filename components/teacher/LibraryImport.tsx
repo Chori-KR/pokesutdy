@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { T } from "@/lib/styles";
 import { parseBank, ParsedBank } from "@/lib/bankImport";
 import { saveBanks } from "@/components/teacher/JsonImport";
@@ -8,6 +8,7 @@ import type { QuestionRow, PassageRow } from "@/components/teacher/QuestionBank"
 
 // 기본 문제 은행 — 앱에 들어 있는 문제(public/library, scripts/build-library.mjs가 만듦)를
 // 학년군 → 과목 → 단원으로 골라 우리 반에 넣는다. 파일 고르기 없이 체크만 하면 된다.
+// 학급을 막 만들었으면(welcome) 전부 자동으로 넣는다.
 
 interface LibUnit { tag: string; group: string; unit: string; count: number; svg: number; passage: number; files: string[] }
 interface LibSubject { subject: string; count: number; units: LibUnit[] }
@@ -18,7 +19,8 @@ interface Props {
   classId: string;
   questions: QuestionRow[];
   passages: PassageRow[];
-  welcome?: boolean; // 학급을 막 만들었을 때 — 안내 문구를 바꿔 보여준다
+  welcome?: boolean; // 학급을 막 만들었을 때 — 기본 문제를 전부 자동으로 넣는다
+  onAutoStart?: () => void; // 자동 넣기를 시작했음 (탭을 오가도 다시 넣지 않게)
   onRegistered: (rows: QuestionRow[], passages: PassageRow[]) => void;
   onClose: () => void;
   showToast: (t: string) => void;
@@ -26,7 +28,8 @@ interface Props {
 
 const ACCENT = "#1f8a8a";
 
-export default function LibraryImport({ classId, questions, passages, welcome, onRegistered, onClose, showToast }: Props) {
+export default function LibraryImport({ classId, questions, passages, welcome: welcomeProp, onAutoStart, onRegistered, onClose, showToast }: Props) {
+  const [welcome] = useState(!!welcomeProp); // 처음 열릴 때 값으로 고정
   const [index, setIndex] = useState<LibIndex | null>(null);
   const [band, setBand] = useState("");
   const [picked, setPicked] = useState<Set<string>>(new Set());
@@ -54,6 +57,7 @@ export default function LibraryImport({ classId, questions, passages, welcome, o
     return m;
   }, [index]);
   const pickedCount = [...picked].reduce((n, t) => n + (units.get(t)?.count ?? 0), 0);
+  const allPicked = units.size > 0 && picked.size === units.size;
   const pickedIn = (list: LibUnit[]) => list.filter((u) => picked.has(u.tag)).length;
 
   function toggle(tags: string[], on: boolean) {
@@ -62,11 +66,22 @@ export default function LibraryImport({ classId, questions, passages, welcome, o
     setPicked(next);
   }
 
-  async function register() {
-    if (picked.size === 0) return;
+  // 학급을 막 만들었으면 전체를 골라 바로 넣는다 (한 번만)
+  const autoRan = useRef(false);
+  useEffect(() => {
+    if (!welcome || !index || autoRan.current) return;
+    autoRan.current = true;
+    onAutoStart?.();
+    const all = new Set(units.keys());
+    setPicked(all);
+    register(all);
+  }, [welcome, index]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  async function register(chosen: Set<string> = picked) {
+    if (chosen.size === 0) return;
     setErr("");
     try {
-      const files = [...new Set([...picked].flatMap((t) => units.get(t)?.files ?? []))];
+      const files = [...new Set([...chosen].flatMap((t) => units.get(t)?.files ?? []))];
       const banks: ParsedBank[] = [];
       for (let i = 0; i < files.length; i++) {
         setBusy(`문제 꺼내는 중… ${i}/${files.length}`);
@@ -74,13 +89,13 @@ export default function LibraryImport({ classId, questions, passages, welcome, o
         if (!res.ok) { setErr("문제 파일을 받지 못했어요. 다시 시도해 주세요."); return; }
         const b = parseBank(files[i], await res.text());
         // 한 파일에 다른 단원이 섞여 있어도 고른 단원만
-        banks.push({ ...b, questions: b.questions.filter((q) => picked.has(q.tag)) });
+        banks.push({ ...b, questions: b.questions.filter((q) => chosen.has(q.tag)) });
       }
       const r = await saveBanks({ classId, banks, questions, passages, active: activeOn, source: "기본 은행", onBusy: setBusy });
       if (r.rows.length || r.newPassages.length) onRegistered(r.rows, r.newPassages);
       if (r.error) { setErr(r.error); return; }
       if (r.rows.length === 0) { setErr(`새로 넣을 문제가 없어요 — ${r.dup}개 모두 이미 우리 반에 있어요.`); return; }
-      showToast(`${picked.size}개 단원, ${r.rows.length}개 문제를 우리 반에 넣었어요${r.dup ? ` · 이미 있는 ${r.dup}개는 건너뜀` : ""}`);
+      showToast(`${chosen.size}개 단원, ${r.rows.length.toLocaleString()}개 문제를 우리 반에 넣었어요${r.dup ? ` · 이미 있는 ${r.dup}개는 건너뜀` : ""}`);
       onClose();
     } finally {
       setBusy("");
@@ -92,12 +107,12 @@ export default function LibraryImport({ classId, questions, passages, welcome, o
   return (
     <div style={{ ...T.card, marginBottom: 10, border: `2px solid ${ACCENT}` }}>
       <div style={{ fontSize: 15, fontWeight: 700, marginBottom: 4 }}>
-        {welcome ? "🎉 학급이 만들어졌어요! 어떤 문제로 시작할까요?" : "📚 기본 문제 은행"}
+        {welcome ? "🎉 학급이 만들어졌어요! 기본 문제를 우리 반에 넣고 있어요" : "📚 기본 문제 은행"}
       </div>
       <div style={{ fontSize: 11.5, color: "#666", lineHeight: 1.7, marginBottom: 10 }}>
         2022 개정 교육과정에 맞춘 문제 <b>{index ? index.total.toLocaleString() : "…"}개</b>가 들어 있어요.
         <b> 학년 → 과목 → 단원</b>을 골라 <b>우리 반에 넣기</b>를 누르면 끝! 지문·그림도 함께 들어가요.
-        {welcome && <><br />나중에 문제 은행의 <b>📚 기본 문제 은행</b> 버튼으로 언제든 더 넣을 수 있어요.</>}
+        {welcome && <><br />새 학급에는 <b>전부</b> 넣어 드려요. 잠시만 기다려 주세요(10초쯤). 필요 없는 단원은 문제 은행에서 <b>모두 숨김</b>으로 끌 수 있어요.</>}
       </div>
 
       {/* 학년군 */}
@@ -161,12 +176,13 @@ export default function LibraryImport({ classId, questions, passages, welcome, o
       {busy && <div style={{ fontSize: 12, color: "#3d6fd9", marginBottom: 8 }}>{busy}</div>}
       {err && <div style={{ fontSize: 12, color: "#a32d2d", marginBottom: 8 }}>{err}</div>}
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
-        <button onClick={register} disabled={picked.size === 0 || !!busy}
+        <button onClick={() => register()} disabled={picked.size === 0 || !!busy}
           style={{ ...T.primaryBtn, background: ACCENT, opacity: picked.size === 0 || busy ? 0.5 : 1 }}>
           {picked.size === 0 ? "단원을 골라 주세요" : `단원 ${picked.size}개 · ${pickedCount.toLocaleString()}문제 우리 반에 넣기`}
         </button>
+        {!allPicked && !busy && <button onClick={() => setPicked(new Set(units.keys()))} style={T.secondaryBtn}>전체 고르기 ({index?.total.toLocaleString() ?? "…"}문제)</button>}
         {picked.size > 0 && !busy && <button onClick={() => setPicked(new Set())} style={T.secondaryBtn}>선택 지우기</button>}
-        <button onClick={onClose} disabled={!!busy} style={T.secondaryBtn}>{welcome ? "나중에 할게요" : "닫기"}</button>
+        <button onClick={onClose} disabled={!!busy} style={T.secondaryBtn}>닫기</button>
         <label style={{ fontSize: 12, display: "flex", alignItems: "center", gap: 5, cursor: "pointer", marginLeft: 4 }}>
           <input type="checkbox" checked={activeOn} onChange={(e) => setActiveOn(e.target.checked)} />
           넣자마자 출제(ON)

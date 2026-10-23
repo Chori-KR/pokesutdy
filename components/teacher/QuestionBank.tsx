@@ -38,7 +38,7 @@ const PAGE = 200; // 문제가 많아도 화면이 느려지지 않게 200개씩
 interface Props {
   classId: string;
   questions: QuestionRow[];
-  setQuestions: (qs: QuestionRow[]) => void;
+  setQuestions: React.Dispatch<React.SetStateAction<QuestionRow[]>>;
   showToast: (t: string) => void;
   hasAiKey: boolean;
   aiProvider?: string;
@@ -82,6 +82,16 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
   const passageById = useMemo(() => new Map(passages.map((p) => [p.id, p])), [passages]);
   useEffect(() => { setLimit(PAGE); }, [filterTag, search]);
   const [selected, setSelected] = useState<Set<string>>(new Set()); // M7: 체크된 문제 id
+
+  // 가져온 문제·지문을 목록에 더한다 — 학급을 막 만들 때는 목록 불러오기와 겹칠 수 있어 id로 합친다
+  function addImported(rows: QuestionRow[], ps: PassageRow[]) {
+    const ids = new Set(rows.map((r) => r.id));
+    setQuestions((prev) => [...rows, ...prev.filter((q) => !ids.has(q.id))]);
+    if (ps.length) {
+      const pids = new Set(ps.map((p) => p.id));
+      setPassages((prev) => [...prev.filter((p) => !pids.has(p.id)), ...ps]);
+    }
+  }
 
   // 수정/새 문제 폼을 열면 상단 폼으로 자동 스크롤 (열림 순간에만 — 입력 중 재스크롤 방지)
   const formRef = useRef<HTMLDivElement>(null);
@@ -310,7 +320,8 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
           questions={questions}
           passages={passages}
           welcome={welcome}
-          onRegistered={(rows, ps) => { setQuestions([...rows, ...questions]); if (ps.length) setPassages([...passages, ...ps]); }}
+          onAutoStart={onWelcomeDone}
+          onRegistered={addImported}
           onClose={() => { setPanel(null); onWelcomeDone?.(); }}
           showToast={showToast}
         />
@@ -320,7 +331,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
           classId={classId}
           questions={questions}
           passages={passages}
-          onRegistered={(rows, ps) => { setQuestions([...rows, ...questions]); if (ps.length) setPassages([...passages, ...ps]); }}
+          onRegistered={addImported}
           onClose={() => setPanel(null)}
           showToast={showToast}
         />
