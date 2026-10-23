@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { requireStudent, getClassSettings } from "@/lib/api";
+import { requireStudent, getClassSettings, recentResults } from "@/lib/api";
 import { loadServeQuestions } from "@/lib/questionServe";
 import { seoulToday } from "@/lib/game";
 
@@ -15,29 +15,25 @@ export async function GET(req: NextRequest) {
 
   // 배틀은 4지선다만(단답형은 문제풀이 탭), 그리고 레이드 전용 문제는 제외한다.
   // 지문이 딸린 문제는 '읽을 글'이 선생님이 정한 길이(battleReadMax) 이하인 것만 — 긴 글은 문제풀이에서.
-  const { battleReadMax } = await getClassSettings(supa, student.class_id);
-  const { questions, passages } = await loadServeQuestions(supa, student.class_id, { raid: false, readMax: battleReadMax });
+  // 학생에게 공부 범위(모둠·개별)가 있으면 그 단원 안에서만.
+  const { battleReadMax, lib } = await getClassSettings(supa, student.class_id);
+  const { questions, passages } = await loadServeQuestions(supa, student.class_id, { raid: false, readMax: battleReadMax, lib, studentId: student.id });
 
   // 학생 기록으로 (1) 문제별 최신 결과(가중치) (2) 오늘 배틀에서 이미 나온 문제(PP) 계산.
   // 최근 기록만 봐도 충분(오래된 건 '안 푼 것'처럼 다시 나오는 게 오히려 복습에 좋음).
   // 전체 스캔을 막아 기록이 쌓여도 느려지지 않게 최신 400개로 제한.
-  const { data: logs } = await supa
-    .from("answer_logs")
-    .select("question_id, correct, created_at, context")
-    .eq("student_id", student.id)
-    .order("created_at", { ascending: false })
-    .limit(400);
+  const logs = await recentResults(supa, student.id);
   const seoulFmt = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Seoul" });
   const today = seoulToday();
   const lastResult = new Map<string, { correct: boolean; at: string }>();
   const seenToday = new Set<string>();
-  for (const l of logs ?? []) {
-    if (!l.question_id) continue;
-    const prev = lastResult.get(l.question_id);
+  for (const l of logs) {
+    if (!l.qid) continue;
+    const prev = lastResult.get(l.qid);
     if (!prev || String(l.created_at) > prev.at)
-      lastResult.set(l.question_id, { correct: !!l.correct, at: String(l.created_at) });
+      lastResult.set(l.qid, { correct: !!l.correct, at: String(l.created_at) });
     if (l.context === "battle" && seoulFmt.format(new Date(l.created_at as string)) === today)
-      seenToday.add(l.question_id);
+      seenToday.add(l.qid);
   }
 
   const withStats = questions.map((q) => {

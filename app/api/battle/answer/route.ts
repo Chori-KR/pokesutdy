@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError, insertAnswerLog } from "@/lib/api";
+import { loadGradable, bumpQuestionStats } from "@/lib/questionServe";
 import { applyXp } from "@/lib/game";
 
 // 배틀 답안 기록 — 서버가 정답을 대조해 통계(tries/wrong)와
@@ -19,23 +20,13 @@ export async function POST(req: NextRequest) {
       : Number(body.chosen_idx);
   if (!questionId) return jsonError(400, "question_id가 필요해요.");
 
-  const { data: q } = await supa
-    .from("questions")
-    .select("id, answer_idx, tries, wrong, class_id, tag, difficulty, body, options, type")
-    .eq("id", questionId)
-    .eq("class_id", student.class_id)
-    .single();
+  const q = await loadGradable(supa, student.class_id, questionId); // 우리 반 문제 또는 기본 문제
   if (!q) return jsonError(404, "문제를 찾을 수 없어요.");
 
   const correct = chosenIdx !== null && chosenIdx === q.answer_idx;
 
   const updates: Promise<unknown>[] = [
-    Promise.resolve(
-      supa
-        .from("questions")
-        .update({ tries: q.tries + 1, wrong: q.wrong + (correct ? 0 : 1) })
-        .eq("id", q.id)
-    ),
+    bumpQuestionStats(supa, q, correct),
     insertAnswerLog(supa, { student_id: student.id, question_id: q.id, correct, context: "battle" }, q),
   ];
 

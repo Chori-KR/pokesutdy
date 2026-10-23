@@ -6,8 +6,10 @@ import { DIFF, Difficulty } from "@/lib/game";
 import { supabaseBrowser } from "@/lib/supabase/browser";
 import AiGenerate from "@/components/teacher/AiGenerate";
 import BulkImport from "@/components/teacher/BulkImport";
-import JsonImport, { loadPassages } from "@/components/teacher/JsonImport";
-import LibraryImport from "@/components/teacher/LibraryImport";
+import JsonImport, { loadPassages, saveBanks } from "@/components/teacher/JsonImport";
+import LibraryBank from "@/components/teacher/LibraryBank";
+import { LibSettings, normalizeLibSettings } from "@/lib/libraryShared";
+import { ClientLibQuestion, libUnitMap, useLibIndex } from "@/lib/libIndexClient";
 import { PassageBox, SvgImage } from "@/components/student/QuestionMedia";
 import MathText from "@/components/MathText";
 
@@ -42,8 +44,8 @@ interface Props {
   showToast: (t: string) => void;
   hasAiKey: boolean;
   aiProvider?: string;
-  welcome?: boolean;          // 학급을 막 만들었으면 기본 문제 은행을 먼저 펼친다
-  onWelcomeDone?: () => void;
+  lib: LibSettings;           // 기본 문제 은행: 켠 단원·숨긴 문제·레이드 지정 (학급 설정)
+  saveLib: (patch: Partial<LibSettings>) => Promise<boolean>;
 }
 
 const CIRCLED = ["①", "②", "③", "④"];
@@ -69,12 +71,15 @@ const EMPTY_FORM: FormState = {
 const RAID_ONLY_HINT =
   "레이드 전용 문제 기능에 필요한 DB 작업이 아직 안 됐어요. 'supabase/migrations/0008_raid_only.sql' 실행이 필요해요.";
 
-export default function QuestionBank({ classId, questions, setQuestions, showToast, hasAiKey, aiProvider, welcome, onWelcomeDone }: Props) {
+export default function QuestionBank({ classId, questions, setQuestions, showToast, hasAiKey, aiProvider, lib, saveLib }: Props) {
+  // 📚 기본 문제(모든 학급 공용 원본, 단원 스위치) / ✏️ 우리 반 문제(직접 만든 문제·고친 문제)
+  const [view, setView] = useState<"library" | "mine">("library");
+  const libIndex = useLibIndex();
   const [search, setSearch] = useState("");
   const [filterTag, setFilterTag] = useState<string | null>(null);
   const [form, setForm] = useState<FormState | null>(null);
   const [formErr, setFormErr] = useState("");
-  const [panel, setPanel] = useState<"library" | "ai" | "bulk" | "json" | null>(welcome ? "library" : null);
+  const [panel, setPanel] = useState<"ai" | "bulk" | "json" | null>(null);
   const [passages, setPassages] = useState<PassageRow[]>([]);
   const [openMedia, setOpenMedia] = useState<string | null>(null); // 그림·지문 미리보기를 펼친 문제
   const [limit, setLimit] = useState(PAGE);
@@ -118,8 +123,58 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
     .sort((a, b) => Number(b.active) - Number(a.active));
 
   // 배틀에 실제로 나올 문제 = 출제(ON) + 4지선다 + 레이드전용 아님. 0개면 배틀이 안 돼서 경고.
-  const battleReady = questions.filter((q) => q.active && q.type !== "short" && !q.raid_only).length;
-  const shortActive = questions.filter((q) => q.active && q.type === "short").length;
+  // 출제 현황 = 우리 반 문제(출제 중) + 켠 단원의 기본 문제(숨김·레이드 지정은 대략 뺌)
+  const libStat = useMemo(() => {
+    const ls = normalizeLibSettings(lib);
+    const units = libUnitMap(libIndex);
+    let mc = 0, all = 0;
+    for (const t of ls.libUnits) { const u = units.get(t); if (u) { mc += u.mc; all += u.count; } }
+    const off = new Set([...ls.libHidden, ...ls.libRaid]).size;
+    return { mc: Math.max(0, mc - off), short: Math.max(0, all - mc), units: ls.libUnits.length };
+  }, [lib, libIndex]);
+  const ownBattle = questions.filter((q) => q.active && q.type !== "short" && !q.raid_only).length;
+  const battleReady = ownBattle + libStat.mc;
+  const shortActive = questions.filter((q) => q.active && q.type === "short").length + libStat.short;
+  const oldCopies = questions.filter((q) => q.source === "기본 은행");
+
+  // 기본 문제 → 우리 반용 복사본을 만들어 고친다 (원본은 우리 반에서 숨김)
+  async function copyEdit(q: ClientLibQuestion) {
+    const r = await saveBanks({
+      classId, questions, passages, active: true, source: "기본 문제 고침", onBusy: () => {},
+      banks: [{ file: q.file, questions: [q], passages: q.passage ? [q.passage] : [], errors: [], warnings: [] }],
+    });
+    if (r.error) { showToast(r.error); return; }
+    if (r.rows.length || r.newPassages.length) addImported(r.rows, r.newPassages);
+    const row = r.rows[0];
+    const hidden = new Set(normalizeLibSettings(lib).libHidden);
+    hidden.add(q.id);
+    await saveLib({ libHidden: [...hidden] });
+    setView("mine");
+    if (row) { openEdit(row); showToast("우리 반용 복사본을 만들었어요. 고친 뒤 저장하세요."); }
+    else showToast("이미 우리 반에 같은 문제가 있어요 — ✏️ 우리 반 문제에서 고쳐 주세요. 원본은 숨겼어요.");
+  }
+
+  // 예전 방식(기본 문제를 학급에 복사)으로 들어온 문제 정리 → 지우고 그 단원 스위치를 켠다. 풀이 기록은 남는다.
+  async function cleanupOldCopies() {
+    if (!confirm(`예전 방식으로 복사해 넣은 기본 문제 ${oldCopies.length.toLocaleString()}개를 우리 반 문제에서 지우고,\n그 단원들을 '📚 기본 문제' 스위치로 켤게요. (풀이 기록은 남아요)`)) return;
+    const supa = supabaseBrowser();
+    const ids = oldCopies.map((q) => q.id);
+    for (let i = 0; i < ids.length; i += 200) {
+      const { error } = await supa.from("questions").delete().in("id", ids.slice(i, i + 200));
+      if (error) { showToast(`정리 실패: ${error.message}`); return; }
+    }
+    const gone = new Set(ids);
+    const left = questions.filter((q) => !gone.has(q.id));
+    // 이제 아무 문제도 쓰지 않는 지문도 정리
+    const usedP = new Set(left.map((q) => q.passage_id).filter(Boolean));
+    const orphan = passages.filter((p) => !usedP.has(p.id)).map((p) => p.id);
+    for (let i = 0; i < orphan.length; i += 200) await supa.from("passages").delete().in("id", orphan.slice(i, i + 200));
+    setPassages(passages.filter((p) => usedP.has(p.id)));
+    setQuestions(left);
+    const units = new Set([...normalizeLibSettings(lib).libUnits, ...oldCopies.map((q) => q.tag)]);
+    await saveLib({ libUnits: [...units] });
+    showToast(`정리했어요 — 단원 ${new Set(oldCopies.map((q) => q.tag)).size}개를 기본 문제 스위치로 켰어요.`);
+  }
 
   async function toggleActive(q: QuestionRow) {
     const supa = supabaseBrowser();
@@ -284,24 +339,52 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
     setForm(null);
   }
 
+  const subTab = (k: "library" | "mine", label: string, n: string, color: string) => (
+    <button onClick={() => setView(k)} style={{
+      flex: 1, padding: "9px 6px", fontSize: 13.5, fontWeight: 700, borderRadius: 10, border: "none", cursor: "pointer",
+      background: view === k ? "var(--card)" : "transparent", color: view === k ? color : "#777",
+      boxShadow: view === k ? "0 2px 6px rgba(0,0,0,0.08)" : "none",
+    }}>
+      {label} <span style={{ fontWeight: 400, fontSize: 12, color: "#999" }}>{n}</span>
+    </button>
+  );
+
   return (
     <div>
-      <div style={{ display: "flex", gap: 8, marginBottom: 8, flexWrap: "wrap" }}>
-        <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="문제 검색" style={{ ...T.input, flex: 1, minWidth: 140 }} />
-        <button onClick={() => { setPanel(panel === "library" ? null : "library"); setForm(null); }} style={{ ...T.primaryBtn, background: "#1f8a8a" }}>📚 기본 문제 은행</button>
-        <button onClick={() => { setForm({ ...EMPTY_FORM }); setFormErr(""); setPanel(null); setFormOpenSeq((s) => s + 1); }} style={T.primaryBtn}>+ 새 문제</button>
-        <button onClick={() => { setPanel(panel === "ai" ? null : "ai"); setForm(null); }} style={{ ...T.primaryBtn, background: "#7c5cd9" }}>🤖 AI 생성</button>
-        <button onClick={() => { setPanel(panel === "bulk" ? null : "bulk"); setForm(null); }} style={{ ...T.primaryBtn, background: "#2e8b57" }}>📥 대량 등록</button>
-        <button onClick={() => { setPanel(panel === "json" ? null : "json"); setForm(null); }} style={{ ...T.primaryBtn, background: "#c07a1e" }}>🗂️ JSON 가져오기</button>
+      <div style={{ display: "flex", gap: 0, marginBottom: 8, background: "var(--line)", borderRadius: 12, padding: 3 }}>
+        {subTab("library", "📚 기본 문제", libIndex ? `${libStat.units}개 단원 켬` : "", "#1f8a8a")}
+        {subTab("mine", "✏️ 우리 반 문제", `${questions.length.toLocaleString()}`, "#6a43c7")}
       </div>
 
       {/* 배틀 출제 현황 — 배틀은 4지선다만 쓰므로, 출제된 4지선다가 0이면 경고 */}
       <div style={{ ...T.card, padding: "8px 12px", marginBottom: 8, fontSize: 12, display: "flex", gap: 14, flexWrap: "wrap", alignItems: "center", background: battleReady === 0 ? "#fff5f5" : "#f2f8f4", border: battleReady === 0 ? "1px solid #f0b4b4" : "1px solid #cfe6d8" }}>
-        <span>⚔️ 배틀에 나올 문제(4지선다·출제 중): <b style={{ color: battleReady === 0 ? "#c0392b" : "#0f6e56" }}>{battleReady}개</b></span>
-        <span style={{ color: "#888" }}>✏️ 문제풀이용 단답형(출제 중): {shortActive}개</span>
+        <span>⚔️ 배틀에 나올 문제(4지선다·출제 중): <b style={{ color: battleReady === 0 ? "#c0392b" : "#0f6e56" }}>{battleReady.toLocaleString()}개</b>
+          <span style={{ color: "#888" }}> (기본 {libStat.mc.toLocaleString()} + 우리 반 {ownBattle})</span></span>
+        <span style={{ color: "#888" }}>✏️ 문제풀이용 단답형: {shortActive.toLocaleString()}개</span>
         {battleReady === 0 && (
-          <span style={{ color: "#c0392b", fontWeight: 600 }}>← 배틀을 하려면 4지선다 문제의 토글을 켜서 <b>출제(ON)</b> 하세요.</span>
+          <span style={{ color: "#c0392b", fontWeight: 600 }}>← 배틀을 하려면 📚 기본 문제의 단원 스위치를 켜거나, 우리 반 문제를 <b>출제(ON)</b> 하세요.</span>
         )}
+      </div>
+
+      {view === "library" && <LibraryBank lib={lib} saveLib={saveLib} onCopyEdit={copyEdit} />}
+
+      {view === "mine" && (<>
+      {oldCopies.length > 0 && (
+        <div style={{ ...T.card, padding: "10px 12px", marginBottom: 8, fontSize: 12, lineHeight: 1.7, background: "#fffbea", border: "1px solid #f3dd8a" }}>
+          🧹 예전 방식으로 <b>기본 문제를 우리 반에 복사</b>해 넣은 문제가 <b>{oldCopies.length.toLocaleString()}개</b> 있어요.
+          이제 기본 문제는 복사하지 않고 <b>📚 기본 문제</b>의 단원 스위치로 켜요. 정리하면 용량이 줄고, 앞으로 고쳐지는 기본 문제가 바로 반영돼요.
+          <button onClick={cleanupOldCopies} style={{ ...T.chip, marginLeft: 8, color: "#8a6100", borderColor: "#e3c766", fontWeight: 700 }}>정리하고 스위치로 바꾸기</button>
+        </div>
+      )}
+      <div style={{ fontSize: 12, lineHeight: 1.7, background: "#f5f0ff", border: "1px solid #ddd0fb", color: "#4b3590", borderRadius: 12, padding: "8px 12px", marginBottom: 8 }}>
+        ✏️ <b>선생님이 직접 만든 문제</b>와 <b>기본 문제를 고친 것</b>이 여기 모여요. 이 문제들만 우리 반 용량을 써요.
+      </div>
+      <div style={{ display: "flex", gap: 8, marginBottom: 8, flexWrap: "wrap" }}>
+        <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="문제 검색" style={{ ...T.input, flex: 1, minWidth: 140 }} />
+        <button onClick={() => { setForm({ ...EMPTY_FORM }); setFormErr(""); setPanel(null); setFormOpenSeq((s) => s + 1); }} style={T.primaryBtn}>+ 새 문제</button>
+        <button onClick={() => { setPanel(panel === "ai" ? null : "ai"); setForm(null); }} style={{ ...T.primaryBtn, background: "#7c5cd9" }}>🤖 AI 생성</button>
+        <button onClick={() => { setPanel(panel === "bulk" ? null : "bulk"); setForm(null); }} style={{ ...T.primaryBtn, background: "#2e8b57" }}>📥 대량 등록</button>
+        <button onClick={() => { setPanel(panel === "json" ? null : "json"); setForm(null); }} style={{ ...T.primaryBtn, background: "#c07a1e" }}>🗂️ JSON 가져오기</button>
       </div>
 
       {panel === "ai" && (
@@ -311,18 +394,6 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
           aiProvider={aiProvider}
           onRegistered={(rows) => setQuestions([...rows, ...questions])}
           onClose={() => setPanel(null)}
-          showToast={showToast}
-        />
-      )}
-      {panel === "library" && (
-        <LibraryImport
-          classId={classId}
-          questions={questions}
-          passages={passages}
-          welcome={welcome}
-          onAutoStart={onWelcomeDone}
-          onRegistered={addImported}
-          onClose={() => { setPanel(null); onWelcomeDone?.(); }}
           showToast={showToast}
         />
       )}
@@ -479,7 +550,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
       <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
         {visible.length === 0 && (
           <div style={{ ...T.card, textAlign: "center", color: "#888", fontSize: 13, padding: 24 }}>
-            {questions.length === 0 ? "아직 문제가 없어요. '+ 새 문제'로 첫 문제를 등록해보세요!" : "검색 결과가 없어요."}
+            {questions.length === 0 ? "아직 우리 반 문제가 없어요. '+ 새 문제'로 직접 만들거나, 📚 기본 문제의 단원 스위치를 켜 보세요!" : "검색 결과가 없어요."}
           </div>
         )}
         {visible.slice(0, limit).map((q) => {
@@ -525,6 +596,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
                     <span style={{ padding: "2px 7px", borderRadius: 9, background: DIFF[q.difficulty].bg, color: DIFF[q.difficulty].fg }}>{DIFF[q.difficulty].label}</span>
                     <span style={{ padding: "2px 7px", borderRadius: 9, background: "#eef1f8", color: "#3a4a7a" }}>{q.tag}</span>
                     {q.raid_only && <span style={{ padding: "2px 7px", borderRadius: 9, background: "#fdeee0", color: "#c0651e", fontWeight: 700 }}>🛡️ 레이드 전용</span>}
+                    {q.source === "기본 문제 고침" && <span style={{ padding: "2px 7px", borderRadius: 9, background: "#efe7ff", color: "#6a43c7", fontWeight: 700 }}>✏️ 기본 문제에서 고침</span>}
                     {passage && (
                       <span onClick={() => setOpenMedia(openMedia === q.id ? null : q.id)} title="지문 보기"
                         style={{ padding: "2px 7px", borderRadius: 9, background: "#f3ecff", color: "#6a45c2", fontWeight: 700, cursor: "pointer" }}>
@@ -566,6 +638,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
           </button>
         )}
       </div>
+      </>)}
     </div>
   );
 }

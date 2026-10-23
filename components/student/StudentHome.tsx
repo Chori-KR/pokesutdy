@@ -143,6 +143,8 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
         ))}
       </div>
 
+      {(tab === "battle" || tab === "solve") && cls.scope && <ScopeCard scope={cls.scope} />}
+
       {tab === "battle" && (
         <BattleTab
           student={student}
@@ -233,6 +235,36 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
       )}
 
       {toast && <div style={S.toast}>{toast}</div>}
+    </div>
+  );
+}
+
+// 선생님이 정해 준 공부 범위 — 배틀·문제풀이는 이 단원 안에서만 나온다
+function ScopeCard({ scope }: { scope: NonNullable<ClassInfo["scope"]> }) {
+  const [open, setOpen] = useState(false);
+  const shown = open ? scope.tags : scope.tags.slice(0, 3);
+  return (
+    <div style={{ ...S.panel, padding: "10px 12px", marginBottom: 10, border: "2px solid #f2c94c" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 6 }}>
+        <span style={{ fontSize: 13, fontWeight: 700 }}>🎯 나의 공부 범위</span>
+        {scope.group && (
+          <span style={{ fontSize: 10.5, padding: "1px 8px", borderRadius: 8, background: scope.color ?? "#888", color: "#fff" }}>{scope.group}</span>
+        )}
+      </div>
+      {scope.tags.length === 0 ? (
+        <div style={{ fontSize: 11.5, color: "#a32d2d" }}>아직 공부할 단원이 없어요. 선생님께 알려주세요!</div>
+      ) : (
+        <div style={{ display: "flex", gap: 4, flexWrap: "wrap" }}>
+          {shown.map((t) => (
+            <span key={t} style={{ fontSize: 11, padding: "2px 8px", borderRadius: 8, background: "#e3f4f2", color: "#1f7a74" }}>{t}</span>
+          ))}
+          {scope.tags.length > 3 && (
+            <button onClick={() => setOpen(!open)} style={{ fontSize: 11, padding: "2px 8px", borderRadius: 8, border: "1px solid #ddd", background: "transparent", color: "#888", cursor: "pointer" }}>
+              {open ? "접기" : `+${scope.tags.length - 3}개 더`}
+            </button>
+          )}
+        </div>
+      )}
     </div>
   );
 }

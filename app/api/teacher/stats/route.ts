@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { requireTeacher } from "@/lib/teacherApi";
 import { seoulToday } from "@/lib/game";
 import { fetchAll } from "@/lib/fetchAll";
+import { isMissingColumn } from "@/lib/api";
+import { getLibrary } from "@/lib/library";
 
 // 학생별 통계 (명세 §5.4): 정답률, 오늘/누적 풀이 수, 도감 진행도, 최근 활동, 단원별 정답률.
 // students 테이블은 anon 정책이 없어 서버 경유로만 조회 가능.
@@ -30,14 +32,23 @@ export async function GET(req: NextRequest) {
   // from(YYYY-MM-DD, KST) 00:00 = UTC 기준 경계.
   const fromBoundary = from ? new Date(`${from}T00:00:00+09:00`).toISOString() : null;
   // Supabase는 한 번에 1000줄까지만 주므로 끝까지 나눠 받는다(기록이 많은 반도 통계가 잘리지 않게).
-  type LogRow = { student_id: string; question_id: string | null; correct: boolean; created_at: string };
-  type Pg = PromiseLike<{ data: unknown[] | null; error: { message?: string } | null }>;
+  // 기본 문제(학급에 복사하지 않음)의 기록은 question_id 가 비어 있고 lib_qid·q_tag·q_body 로 남는다(0012).
+  type LogRow = { student_id: string; question_id: string | null; lib_qid?: string | null; q_tag?: string | null; q_body?: string | null; correct: boolean; created_at: string };
+  type Pg = PromiseLike<{ data: unknown[] | null; error: { message?: string; code?: string } | null }>;
+  const logPages = (cols: string) => fetchAll<LogRow>((a, b) => {
+    let q = supa.from("answer_logs").select(cols).in("student_id", ids);
+    if (fromBoundary) q = q.gte("created_at", fromBoundary);
+    return q.order("created_at").order("id").range(a, b) as unknown as Pg;
+  });
+  const BASE_LOG = "student_id, question_id, correct, created_at";
+  const loadLogs = async () => {
+    let r = await logPages(BASE_LOG + ", lib_qid, q_tag, q_body");
+    if (r.error && isMissingColumn(r.error)) r = await logPages(BASE_LOG + ", q_tag, q_body");
+    if (r.error && isMissingColumn(r.error)) r = await logPages(BASE_LOG);
+    return r;
+  };
   const [{ data: logs }, { data: catches }, { data: qRows }] = await Promise.all([
-    fetchAll<LogRow>((a, b) => {
-      let q = supa.from("answer_logs").select("student_id, question_id, correct, created_at").in("student_id", ids);
-      if (fromBoundary) q = q.gte("created_at", fromBoundary);
-      return q.order("created_at").order("id").range(a, b) as unknown as Pg;
-    }),
+    loadLogs(),
     fetchAll<{ student_id: string }>((a, b) =>
       supa.from("catches").select("student_id").in("student_id", ids).order("id").range(a, b) as unknown as Pg),
     fetchAll<{ id: string; tag: string; body: string }>((a, b) =>
@@ -62,7 +73,17 @@ export async function GET(req: NextRequest) {
     return true;
   };
 
-  const allLogs = logs ?? [];
+  // 기록마다 문제 번호(우리 반 문제 id 또는 기본 문제 L:…)와 단원·본문을 붙인다
+  const lib = getLibrary();
+  const allLogs = (logs ?? []).map((l) => {
+    const qid = l.question_id ?? l.lib_qid ?? null;
+    if (qid && !tagOf.has(qid) && l.lib_qid) {
+      const lq = lib.byId.get(l.lib_qid);
+      tagOf.set(qid, lq?.tag ?? l.q_tag ?? "미분류");
+      bodyOf.set(qid, lq?.body ?? l.q_body ?? "");
+    }
+    return { ...l, question_id: qid };
+  });
   const periodLogs = allLogs.filter((l) => inPeriod(String(l.created_at)));
 
   const byStudent = students.map((s) => {

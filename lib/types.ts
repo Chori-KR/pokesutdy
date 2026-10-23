@@ -47,7 +47,10 @@ export interface ClassInfo {
   name: string;
   class_code: string;
   settings: ClassSettings;
+  scope?: StudyScope | null; // 선생님이 정해 준 이 학생의 공부 범위 (없으면 반 전체)
 }
+
+export interface StudyScope { tags: string[]; group: string | null; color: string | null }
 
 export interface ApiQuestion {
   id: string;

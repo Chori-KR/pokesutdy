@@ -36,7 +36,7 @@ export default function StudentPage() {
       if (!res.ok) { setPhase("login"); return; }
       const data = await res.json();
       setStudent(data.student);
-      setCls(data.class);
+      setCls({ ...data.class, scope: data.scope ?? null });
       setCaught(data.caught);
       setCounts(data.counts ?? {});
       setShinies(data.shinies ?? []);

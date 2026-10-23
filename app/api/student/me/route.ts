@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, studentSnapshot, daySnapshot, getClassSettings } from "@/lib/api";
 import { seoulToday, DEFAULT_BATTLE_PID } from "@/lib/game";
+import { scopeOf } from "@/lib/libraryShared";
 
 // 학생 홈 진입 시 호출: 내 정보 + 학급 설정 + 도감 + 일일 카운터 + 게임 상태.
 // 날짜가 바뀌었으면(Asia/Seoul) HP 회복 + 일일 카운터 전체 리셋 (명세 §4.7).
@@ -56,9 +57,15 @@ export async function GET(req: NextRequest) {
     dexRewards: gs.dexRewards ?? [],
   };
 
+  // 학습 범위: 이 학생 것만 (모둠 이름·단원). 다른 학생 배정은 내려보내지 않는다.
+  const { lib, ...publicSettings } = settings;
+  const sc = scopeOf(lib, student.id);
+  const scope = sc ? { tags: sc.tags, group: sc.group?.name ?? null, color: sc.group?.color ?? null } : null;
+
   return NextResponse.json({
     student: studentSnapshot(student),
-    class: { name: cls?.name ?? "", class_code: cls?.class_code ?? "", settings },
+    class: { name: cls?.name ?? "", class_code: cls?.class_code ?? "", settings: publicSettings },
+    scope,
     caught,
     counts,
     shinies,

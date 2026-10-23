@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { SupabaseClient } from "@supabase/supabase-js";
 import { supabaseAdmin } from "@/lib/supabase/admin";
 import { getStudentSession, StudentSession } from "@/lib/studentSession";
+import { LibSettings } from "@/lib/libraryShared";
 import { Inventory, DEFAULT_EXPLORE_LIMIT, DEFAULT_SOLVE_LIMIT, DEFAULT_BATTLE_LIMIT, DEFAULT_RARE_RATE, DEFAULT_SPECIAL_RATE, DEFAULT_LEGEND_RATE, DEFAULT_SHINY_RATE, DEFAULT_RAID_THRESHOLD, DEFAULT_RAID_REWARD_PTS, MAX_DEX_ID, normalizeGens } from "@/lib/game";
 
 // 일일 상태 (day_state jsonb) — 자정(Asia/Seoul) 지나면 통째로 리셋 (명세 §4.7)
@@ -81,14 +82,29 @@ export function answerSnapshot(q: AnswerLogQuestion) {
   };
 }
 
+// 기본 문제(id가 "L:"로 시작)는 학급 문제 표에 없으므로 question_id 대신 lib_qid 에 적는다 (0012).
 export async function insertAnswerLog(
   supa: SupabaseClient,
   row: { student_id: string; question_id: string; correct: boolean; context: string },
   q: AnswerLogQuestion,
 ) {
-  const res = await supa.from("answer_logs").insert({ ...row, ...answerSnapshot(q) });
-  if (res.error && isMissingColumn(res.error)) return supa.from("answer_logs").insert(row);
+  const lib = row.question_id.startsWith("L:");
+  const base: Record<string, unknown> = lib ? { ...row, question_id: null } : { ...row };
+  const snap: Record<string, unknown> = { ...base, ...answerSnapshot(q) };
+  let res = await supa.from("answer_logs").insert(lib ? { ...snap, lib_qid: row.question_id } : snap);
+  if (res.error && isMissingColumn(res.error) && lib) res = await supa.from("answer_logs").insert(snap); // 0012 전: 문제 내용만이라도
+  if (res.error && isMissingColumn(res.error)) return supa.from("answer_logs").insert(base);
   return res;
+}
+
+// 학생 기록에서 문제별 최신 결과 (똑똑한 출제 가중치용). 기본 문제는 lib_qid 로 묶는다.
+export async function recentResults(supa: SupabaseClient, studentId: string, limit = 400) {
+  type L = { question_id: string | null; lib_qid?: string | null; correct: boolean; created_at: string; context?: string };
+  const q = (cols: string) => supa.from("answer_logs").select(cols)
+    .eq("student_id", studentId).order("created_at", { ascending: false }).limit(limit);
+  let { data, error } = await q("question_id, lib_qid, correct, created_at, context");
+  if (error && isMissingColumn(error)) ({ data } = await q("question_id, correct, created_at, context"));
+  return ((data ?? []) as unknown as L[]).map((l) => ({ ...l, qid: l.question_id ?? l.lib_qid ?? null }));
 }
 
 // trades 테이블이 아직 없는 DB(0005 미실행) 안내
@@ -161,7 +177,7 @@ export const DEFAULT_BATTLE_READ_MAX = 800;
 // 학급 설정 로드 (탐색/문제풀이/배틀 일일 한도 포함)
 export async function getClassSettings(supa: SupabaseClient, classId: string) {
   const { data } = await supa.from("classes").select("settings").eq("id", classId).single();
-  const s = (data?.settings ?? {}) as {
+  const s = (data?.settings ?? {}) as LibSettings & {
     moveDiff?: boolean; exploreLimit?: number; solveLimit?: number; battleLimit?: number;
     timerOn?: boolean; timeScale?: number; rareRate?: number; specialRate?: number; legendRate?: number; shinyRate?: number;
     gens?: number[]; // 등장 세대(1~9). 없으면 1세대만 — 기존 학급은 지금과 동일
@@ -178,6 +194,9 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
   // 등장 세대: 잘못된 값·빈 배열이면 1세대로 안전 복귀
   const gens = normalizeGens(s.gens);
   return {
+    // 기본 문제 은행 켠 단원·숨김·레이드 + 학습 범위(모둠) — lib/libraryShared.ts
+    // (서버 전용: 다른 학생의 범위가 들어 있으니 학생 화면에는 scopeOf 결과만 내려보낸다)
+    lib: { libUnits: s.libUnits, libHidden: s.libHidden, libRaid: s.libRaid, groups: s.groups, studentGroups: s.studentGroups, studentTags: s.studentTags } as LibSettings,
     gens,
     moveDiff: s.moveDiff !== false,
     exploreLimit: Math.max(0, Number(s.exploreLimit ?? DEFAULT_EXPLORE_LIMIT)),

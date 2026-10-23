@@ -1,6 +1,7 @@
 // 기본 문제 은행 만들기 — tools/question-bank/banks/bank_*.json → public/library/
 //   index.json : 학년군 → 과목 → (영역) → 단원 목록 + 문제 수
-//   b001.json… : 원본 묶음 파일 그대로 (교사가 단원을 고르면 앱이 받아서 학급에 넣는다)
+//   b001.json… : 원본 묶음 파일 그대로 (서버가 읽어 출제·채점하고, 교사 화면이 문제 보기에 쓴다)
+// 문제는 학급에 복사하지 않는다 — 학급은 켠 단원·숨긴 문제 목록만 갖는다(lib/library.ts).
 // next build / next dev 를 시작할 때 next.config.mjs 가 부른다. public/library 는 커밋하지 않는다.
 // 직접 실행: node scripts/build-library.mjs
 import { readFileSync, readdirSync, mkdirSync, rmSync, statSync, writeFileSync, existsSync } from "fs";
@@ -27,12 +28,14 @@ export function buildLibrary() {
   mkdirSync(OUT, { recursive: true });
 
   const units = new Map(); // tag → 단원 정보
+  const src = {};          // b001.json → 원래 파일 이름 (지문 고유 번호에 씀)
   files.forEach((f, i) => {
     const text = readFileSync(`${SRC}/${f}`, "utf8");
     const bank = JSON.parse(text);
     const meta = bank.meta ?? {};
     const id = `b${String(i + 1).padStart(3, "0")}.json`;
     writeFileSync(`${OUT}/${id}`, text);
+    src[id] = f;
     for (const q of bank.questions ?? []) {
       const subject = q.subject ?? meta.subject;
       const band = q.gradeBand ?? meta.gradeBand;
@@ -43,10 +46,11 @@ export function buildLibrary() {
       if (!u) {
         const area = /^\d+\D+?\((\S+?)\)/.exec(q.standard ?? "")?.[1];
         const group = meta.course && meta.course !== subject ? meta.course : AREA[area] ?? "";
-        u = { tag, band, subject, group, unit, count: 0, svg: 0, passage: 0, files: [], key: stdKey(q.standard) };
+        u = { tag, band, subject, group, unit, count: 0, mc: 0, svg: 0, passage: 0, files: [], key: stdKey(q.standard) };
         units.set(tag, u);
       }
       u.count++;
+      if ((q.type ?? "multiple") !== "short") u.mc++;
       if (q.svg) u.svg++;
       if (q.passage) u.passage++;
       if (!u.files.includes(id)) u.files.push(id);
@@ -59,6 +63,7 @@ export function buildLibrary() {
   const all = [...units.values()];
   const index = {
     total: all.reduce((n, u) => n + u.count, 0),
+    files: src,
     bands: [...new Set(all.map((u) => u.band))]
       .sort((a, b) => order(BANDS, a) - order(BANDS, b))
       .map((band) => {
@@ -73,7 +78,7 @@ export function buildLibrary() {
               return {
                 subject,
                 count: list.reduce((n, u) => n + u.count, 0),
-                units: list.map(({ tag, group, unit, count, svg, passage, files }) => ({ tag, group, unit, count, svg, passage, files })),
+                units: list.map(({ tag, group, unit, count, mc, svg, passage, files }) => ({ tag, group, unit, count, mc, svg, passage, files })),
               };
             }),
         };

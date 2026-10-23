@@ -1,12 +1,13 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
 import { T } from "@/lib/styles";
 import { supabaseBrowser } from "@/lib/supabase/browser";
 import { SEED_QUESTIONS, generateClassCode } from "@/lib/seedQuestions";
 import QuestionBank, { QuestionRow } from "@/components/teacher/QuestionBank";
 import StatsTab from "@/components/teacher/StatsTab";
+import ScopeTab from "@/components/teacher/ScopeTab";
 import AiKeySettings from "@/components/teacher/AiKeySettings";
 import RaidSettings from "@/components/teacher/RaidSettings";
 import SheetExportSettings from "@/components/teacher/SheetExportSettings";
@@ -15,6 +16,8 @@ import Brand from "@/components/Brand";
 import ThemeToggle from "@/components/ThemeToggle";
 import { ALL_GENS, GEN_RANGES, dexTotal, normalizeGens, NEW_CLASS_GENS } from "@/lib/game";
 import { fetchAll } from "@/lib/fetchAll";
+import { LibSettings } from "@/lib/libraryShared";
+import { allLibTags, loadLibIndex } from "@/lib/libIndexClient";
 
 // 관리자(앱 제작자) 이메일 — 이 계정으로 로그인했을 때만 '가입 현황' 탭이 보인다.
 // 실제 권한 검증은 서버(/api/admin/stats)에서 다시 하므로 여기선 표시 여부만 결정.
@@ -24,7 +27,7 @@ export interface ClassRow {
   id: string;
   name: string;
   class_code: string;
-  settings: {
+  settings: LibSettings & { // 기본 문제 은행 스위치·학습 범위 (lib/libraryShared.ts)
     moveDiff: boolean;
     allowStudentSubject?: boolean;
     exploreLimit?: number;
@@ -54,8 +57,8 @@ export default function TeacherHome({ session }: { session: Session }) {
   const [needsClass, setNeedsClass] = useState(false);
   const [className, setClassName] = useState("");
   const [questions, setQuestions] = useState<QuestionRow[]>([]);
-  const [welcome, setWelcome] = useState(false); // 학급을 막 만듦 → 기본 문제 은행부터 보여준다
   const [tab, setTab] = useState<"bank" | "stats" | "settings" | "admin">("bank");
+  const [statsView, setStatsView] = useState<"stats" | "scope">("stats"); // 학생·통계 안: 📊 통계 / 🎯 학습 범위
   const isAdmin = !!ADMIN_EMAIL && (session.user.email ?? "").trim().toLowerCase() === ADMIN_EMAIL;
   const [toast, setToast] = useState("");
   const [err, setErr] = useState("");
@@ -100,10 +103,12 @@ export default function TeacherHome({ session }: { session: Session }) {
     // 학급 코드 충돌 시 재시도 (unique 제약) — 숫자 4자리라 충돌 대비 넉넉히
     for (let i = 0; i < 15; i++) {
       const class_code = generateClassCode();
+      // 새 학급은 기본 문제 은행의 모든 단원을 켠 채로 시작 (복사 없이 스위치만) — 안 쓰는 단원은 끄면 된다
+      const idx = await loadLibIndex();
       const { data, error } = await supa
         .from("classes")
         // 새 학급 기본값: 1세대 + 최신(9세대) — 기존 학급은 설정이 없어 1세대만 유지된다
-        .insert({ teacher_id: session.user.id, name, class_code, settings: { gens: NEW_CLASS_GENS } })
+        .insert({ teacher_id: session.user.id, name, class_code, settings: { gens: NEW_CLASS_GENS, ...(idx ? { libUnits: allLibTags(idx) } : {}) } })
         .select("*")
         .single();
       if (!error && data) {
@@ -113,7 +118,6 @@ export default function TeacherHome({ session }: { session: Session }) {
         );
         setCls(data as ClassRow);
         setNeedsClass(false);
-        setWelcome(true);
         loadQuestions(data.id);
         showToast(`학급이 만들어졌어요! 학급 코드: ${data.class_code}`);
         return;
@@ -134,13 +138,27 @@ export default function TeacherHome({ session }: { session: Session }) {
     updateSettings({ gens: next });
   }
 
-  async function updateSettings(patch: Partial<ClassRow["settings"]>) {
-    if (!cls) return;
-    const settings = { ...cls.settings, ...patch };
+  // 스위치를 빠르게 여러 번 눌러도 앞의 변경을 덮어쓰지 않게 최신 설정을 ref로 들고 바로 반영(실패하면 되돌림)
+  const clsRef = useRef<ClassRow | null>(null);
+  useEffect(() => { clsRef.current = cls; }, [cls]);
+  async function updateSettings(patch: Partial<ClassRow["settings"]>): Promise<boolean> {
+    const cur = clsRef.current;
+    if (!cur) return false;
+    const next = { ...cur, settings: { ...cur.settings, ...patch } };
+    clsRef.current = next;
+    setCls(next);
     const supa = supabaseBrowser();
-    const { error } = await supa.from("classes").update({ settings }).eq("id", cls.id);
-    if (!error) setCls({ ...cls, settings });
-    else showToast("설정 저장에 실패했어요.");
+    const { error } = await supa.from("classes").update({ settings: next.settings }).eq("id", cur.id);
+    if (error) {
+      showToast("설정 저장에 실패했어요.");
+      const back = { ...clsRef.current, settings: { ...clsRef.current.settings } };
+      for (const k of Object.keys(patch) as (keyof ClassRow["settings"])[])
+        (back.settings as unknown as Record<string, unknown>)[k] = (cur.settings as unknown as Record<string, unknown>)[k];
+      clsRef.current = back;
+      setCls(back);
+      return false;
+    }
+    return true;
   }
 
   function toggleMoveDiff() {
@@ -187,10 +205,10 @@ export default function TeacherHome({ session }: { session: Session }) {
         </div>
         <div style={{ display: "flex", gap: 14, alignItems: "center" }}>
           <div style={{ textAlign: "center", fontSize: 12 }}>
-            <div style={{ fontSize: 18, fontWeight: 600 }}>{questions.length}</div>총 문제
+            <div style={{ fontSize: 18, fontWeight: 600 }}>{cls.settings?.libUnits?.length ?? 0}</div>기본 단원 켬
           </div>
           <div style={{ textAlign: "center", fontSize: 12 }}>
-            <div style={{ fontSize: 18, fontWeight: 600 }}>{questions.filter((q) => q.active).length}</div>출제 중
+            <div style={{ fontSize: 18, fontWeight: 600 }}>{questions.length}</div>우리 반 문제
           </div>
           <ThemeToggle variant="header" />
           <button onClick={logout} style={{ padding: "5px 12px", fontSize: 12, borderRadius: 6, cursor: "pointer", border: "2px solid #f8f0dc66", background: "transparent", color: "#f8f0dc" }}>
@@ -213,12 +231,27 @@ export default function TeacherHome({ session }: { session: Session }) {
           showToast={showToast}
           hasAiKey={!!cls.settings?.aiKeyEnc}
           aiProvider={cls.settings?.aiProvider}
-          welcome={welcome}
-          onWelcomeDone={() => setWelcome(false)}
+          lib={cls.settings}
+          saveLib={updateSettings}
         />
       )}
 
-      {tab === "stats" && <StatsTab showToast={showToast} gens={cls.settings?.gens} />}
+      {tab === "stats" && (
+        <>
+          <div style={{ display: "flex", gap: 0, marginBottom: 10, background: "var(--line)", borderRadius: 12, padding: 3 }}>
+            {([["stats", "📊 통계"], ["scope", "🎯 학습 범위"]] as const).map(([k, label]) => (
+              <button key={k} onClick={() => setStatsView(k)} style={{
+                flex: 1, padding: "9px 6px", fontSize: 13.5, fontWeight: 700, borderRadius: 10, border: "none", cursor: "pointer",
+                background: statsView === k ? "var(--card)" : "transparent", color: statsView === k ? (k === "scope" ? "#1f8a8a" : "#3d6fd9") : "#777",
+                boxShadow: statsView === k ? "0 2px 6px rgba(0,0,0,0.08)" : "none",
+              }}>{label}</button>
+            ))}
+          </div>
+          {statsView === "stats"
+            ? <StatsTab showToast={showToast} gens={cls.settings?.gens} />
+            : <ScopeTab lib={cls.settings} saveLib={updateSettings} questions={questions} showToast={showToast} />}
+        </>
+      )}
 
       {tab === "settings" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
