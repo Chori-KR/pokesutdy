@@ -6,6 +6,7 @@ import { teacherFetch } from "@/lib/teacherClient";
 import { GROUP_COLORS, LibSettings, StudyGroup, scopeOf } from "@/lib/libraryShared";
 import { libUnitMap, useLibIndex } from "@/lib/libIndexClient";
 import type { QuestionRow } from "@/components/teacher/QuestionBank";
+import MasteryBoard from "@/components/teacher/MasteryBoard";
 
 // 🎯 학습 범위 (학습경로 1단계): 학생마다 공부할 단원을 다르게.
 // 수준 모둠(기초·기본·도전…)을 만들어 단원을 고르고 학생을 넣는다. 한 학생만 따로 정할 수도 있다(개별 범위).
@@ -215,6 +216,8 @@ export default function ScopeTab({ lib, saveLib, questions, showToast }: Props) 
           </table>
         </div>
       )}
+
+      <MasteryBoard lib={lib} />
     </div>
   );
 }

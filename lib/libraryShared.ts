@@ -14,6 +14,7 @@ export const isLibId = (id: string | null | undefined) => typeof id === "string"
 export interface LibIndexUnit {
   tag: string; group: string; unit: string;
   count: number; mc: number; svg: number; passage: number; files: string[];
+  stds?: string[]; // 이 단원의 성취기준 코드 (교과서 순서)
 }
 export interface LibIndexSubject { subject: string; count: number; units: LibIndexUnit[] }
 export interface LibIndexBand { band: string; count: number; subjects: LibIndexSubject[] }

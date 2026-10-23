@@ -1,6 +1,6 @@
 import { readFileSync } from "fs";
 import path from "path";
-import { parseBank, Difficulty } from "@/lib/bankImport";
+import { parseBank, Difficulty, textKey } from "@/lib/bankImport";
 import { libQid, libPid, LibIndex } from "@/lib/libraryShared";
 
 // 서버에서 기본 문제 은행(public/library — scripts/build-library.mjs가 만듦)을 읽는다.
@@ -10,6 +10,7 @@ import { libQid, libPid, LibIndex } from "@/lib/libraryShared";
 export interface LibQuestion {
   id: string; body: string; options: string[]; answer_idx: number; difficulty: Difficulty;
   tag: string; type: "multiple" | "short"; svg: string | null; passageId: string | null;
+  standard: string | null; // 성취기준 코드 — 학습경로의 한 칸
 }
 export interface LibPassage { id: string; title: string; body: string; source: string; svg: string | null }
 
@@ -17,6 +18,7 @@ interface Library {
   questions: LibQuestion[];
   byId: Map<string, LibQuestion>;
   byTag: Map<string, LibQuestion[]>;
+  byBody: Map<string, LibQuestion>; // 본문 → 기본 문제 (예전에 학급으로 복사된 문제의 성취기준 찾기용)
   passages: Map<string, LibPassage>;
 }
 
@@ -24,7 +26,7 @@ let cache: Library | null = null;
 
 export function getLibrary(): Library {
   if (cache) return cache;
-  const lib: Library = { questions: [], byId: new Map(), byTag: new Map(), passages: new Map() };
+  const lib: Library = { questions: [], byId: new Map(), byTag: new Map(), byBody: new Map(), passages: new Map() };
   const dir = path.join(process.cwd(), "public", "library");
   let index: LibIndex;
   try {
@@ -45,11 +47,14 @@ export function getLibrary(): Library {
       const lq: LibQuestion = {
         id: libQid(q.srcId), body: q.body, options: q.options, answer_idx: q.answer_idx, difficulty: q.difficulty,
         tag: q.tag, type: q.type, svg: q.svg, passageId: q.passageKey ? libPid(src, q.passageKey) : null,
+        standard: q.standard ?? null,
       };
       if (lib.byId.has(lq.id)) continue;
       lib.questions.push(lq);
       lib.byId.set(lq.id, lq);
       (lib.byTag.get(lq.tag) ?? lib.byTag.set(lq.tag, []).get(lq.tag)!).push(lq);
+      const bk = `${lq.tag}|${textKey(lq.body)}`;
+      if (!lib.byBody.has(bk)) lib.byBody.set(bk, lq);
     }
   }
   cache = lib;

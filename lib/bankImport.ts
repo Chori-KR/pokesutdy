@@ -23,6 +23,7 @@ export interface ParsedQuestion {
   body: string; options: string[]; answer_idx: number; difficulty: Difficulty; tag: string;
   type: "multiple" | "short"; svg: string | null; passageKey: string | null;
   srcId?: string;              // 묶음 파일 안의 문제 id (기본 문제 은행의 고유 번호로 씀)
+  standard?: string;           // 성취기준 코드 (예: 4수01-03) — 학습경로의 한 칸
 }
 export interface ParsedBank {
   file: string;
@@ -146,7 +147,7 @@ export function parseBank(file: string, text: string): ParsedBank {
     }
     if (passageKey) used.add(passageKey);
 
-    out.questions.push({ body, options, answer_idx, difficulty, tag, type, svg, passageKey, ...(str(q.id) ? { srcId: str(q.id) } : {}) });
+    out.questions.push({ body, options, answer_idx, difficulty, tag, type, svg, passageKey, ...(str(q.id) ? { srcId: str(q.id) } : {}), ...(str(q.standard) ? { standard: str(q.standard) } : {}) });
   });
 
   for (const [k, p] of pmap) {
