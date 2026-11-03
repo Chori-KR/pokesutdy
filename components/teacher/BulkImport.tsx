@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { T } from "@/lib/styles";
 import { Difficulty, DIFF_FROM_LABEL } from "@/lib/game";
 import { supabaseBrowser } from "@/lib/supabase/browser";
+import { chunks } from "@/lib/fetchAll";
 import type { QuestionRow } from "@/components/teacher/QuestionBank";
 
 interface Props {
@@ -117,10 +118,24 @@ export default function BulkImport({ classId, onRegistered, onClose, showToast }
     if (good.length === 0) { setErr("등록할 수 있는 문제가 없어요. 형식을 확인해주세요."); return; }
     const supa = supabaseBrowser();
     const payload = good.map((p) => ({ ...p.q!, class_id: classId, source: "대량" }));
-    const { data, error } = await supa.from("questions").insert(payload).select("*");
-    if (error || !data) { setErr(`등록 실패: ${error?.message}`); return; }
-    onRegistered(data as QuestionRow[]);
-    showToast(`${data.length}개 문제를 등록했어요!`);
+    // 수천 개도 끊기지 않게 500개씩 나눠 저장 — 중간에 실패하면 그때까지 저장된 문제는 목록에 남김
+    const saved: QuestionRow[] = [];
+    let fail = "";
+    for (const part of chunks(payload, 500)) {
+      const { data, error } = await supa.from("questions").insert(part).select("*");
+      if (error || !data) { fail = error?.message ?? "알 수 없는 오류"; break; }
+      saved.push(...(data as QuestionRow[]));
+    }
+    if (saved.length) onRegistered(saved);
+    if (fail) {
+      // 저장된 줄은 입력칸에서 빼서, 다시 등록해도 중복되지 않게
+      const done = new Set(good.slice(0, saved.length).map((p) => p.line));
+      setText(text.split("\n").filter((_, i) => !done.has(i + 1)).join("\n"));
+      setErr(`${payload.length}개 중 ${saved.length}개까지 등록하고 멈췄어요: ${fail} — 남은 문제만 입력칸에 남겨 두었어요.`);
+      if (saved.length) showToast(`${saved.length}개 문제를 등록했어요. 나머지는 다시 시도해 주세요.`);
+      return;
+    }
+    showToast(`${saved.length}개 문제를 등록했어요!`);
     onClose();
   }
 

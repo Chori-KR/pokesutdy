@@ -1,6 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent } from "@/lib/api";
 import { seoulToday } from "@/lib/game";
+import { fetchAll } from "@/lib/fetchAll";
+
+type Row = { id: string; body: string; options: string[]; answer_idx: number; difficulty: string; tag: string };
+type Pg = PromiseLike<{ data: unknown[] | null; error: { message?: string } | null }>;
 
 // 배틀 시작 전에 출제 중(active) 문제를 전부 프리로드 (명세 §7: 즉답 UX).
 // 정답 인덱스를 포함해 내려보내는 것은 M1의 의도된 절충 —
@@ -13,17 +17,22 @@ export async function GET(req: NextRequest) {
   const { supa, student } = auth;
 
   // 배틀은 4지선다만(단답형은 문제풀이 탭), 그리고 레이드 전용 문제는 제외한다.
-  const base = () =>
-    supa
-      .from("questions")
-      .select("id, body, options, answer_idx, difficulty, tag")
-      .eq("class_id", student.class_id)
-      .eq("active", true)
-      .neq("type", "short");
+  // 출제 중 문제가 1000개를 넘어도 전부 (Supabase는 한 번에 1000줄까지라 나눠 받음)
+  const base = (raidOnlyCol: boolean) =>
+    fetchAll<Row>((a, b) => {
+      let q = supa
+        .from("questions")
+        .select("id, body, options, answer_idx, difficulty, tag")
+        .eq("class_id", student.class_id)
+        .eq("active", true)
+        .neq("type", "short");
+      if (raidOnlyCol) q = q.eq("raid_only", false);
+      return q.order("id").range(a, b) as unknown as Pg;
+    });
 
-  let { data, error } = await base().eq("raid_only", false);
+  let { data, error } = await base(true);
   // raid_only 컬럼이 아직 없는 DB(0008 미실행)에서도 배틀이 멈추지 않도록 폴백
-  if (error) ({ data } = await base());
+  if (error) ({ data } = await base(false));
   const questions = data ?? [];
 
   // 학생 기록으로 (1) 문제별 최신 결과(가중치) (2) 오늘 배틀에서 이미 나온 문제(PP) 계산.

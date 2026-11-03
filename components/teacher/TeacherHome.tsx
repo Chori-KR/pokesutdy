@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
 import { T } from "@/lib/styles";
 import { supabaseBrowser } from "@/lib/supabase/browser";
+import { fetchAll } from "@/lib/fetchAll";
 import { SEED_QUESTIONS, generateClassCode } from "@/lib/seedQuestions";
 import QuestionBank, { QuestionRow } from "@/components/teacher/QuestionBank";
 import StatsTab from "@/components/teacher/StatsTab";
@@ -62,12 +63,16 @@ export default function TeacherHome({ session }: { session: Session }) {
 
   const loadQuestions = useCallback(async (classId: string) => {
     const supa = supabaseBrowser();
-    const { data } = await supa
-      .from("questions")
-      .select("*")
-      .eq("class_id", classId)
-      .order("created_at", { ascending: false });
-    setQuestions((data as QuestionRow[]) ?? []);
+    // 1000개 넘는 학급도 전부 (Supabase는 한 번에 1000줄까지라 나눠 받음)
+    const { data } = await fetchAll<QuestionRow>((a, b) =>
+      supa
+        .from("questions")
+        .select("*")
+        .eq("class_id", classId)
+        .order("created_at", { ascending: false })
+        .order("id")
+        .range(a, b));
+    setQuestions(data ?? []);
   }, []);
 
   // 교사 화면은 헤더 안 토글을 쓰므로 고정 토글 숨김

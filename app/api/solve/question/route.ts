@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError, getClassSettings } from "@/lib/api";
+import { fetchAll } from "@/lib/fetchAll";
 
 // 문제풀이 출제 (명세 §4.5): 출제 중(active) 문제에서 1개.
 // 정답 인덱스는 절대 내려보내지 않는다 — 포인트(+20P)가 걸려 있어서.
@@ -24,11 +25,15 @@ export async function POST(req: NextRequest) {
   if (solveCount >= solveLimit)
     return jsonError(409, "오늘의 문제풀이를 모두 마쳤어요! 내일 또 만나요.");
 
-  const { data: qs } = await supa
-    .from("questions")
-    .select("id, body, options, difficulty, tag, type")
-    .eq("class_id", student.class_id)
-    .eq("active", true);
+  // 출제 중 문제가 1000개를 넘어도 전부 (나눠 받음)
+  const { data: qs } = await fetchAll<{ id: string; body: string; options: string[]; difficulty: string; tag: string; type: string }>((a, b) =>
+    supa
+      .from("questions")
+      .select("id, body, options, difficulty, tag, type")
+      .eq("class_id", student.class_id)
+      .eq("active", true)
+      .order("id")
+      .range(a, b) as unknown as PromiseLike<{ data: unknown[] | null; error: { message?: string } | null }>);
   if (!qs || qs.length === 0)
     return jsonError(404, "출제 중인 문제가 없어요. 선생님께 알려주세요!");
 

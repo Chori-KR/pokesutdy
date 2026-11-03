@@ -4,6 +4,13 @@
 type Err = { message?: string; code?: string } | null;
 type Page = PromiseLike<{ data: unknown[] | null; error: Err }>;
 
+// .in("id", ids)에 id를 수천 개 넣으면 요청 주소가 너무 길어져 실패하므로 나눠 보낸다.
+export function chunks<T>(arr: T[], size = 200): T[][] {
+  const out: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
+  return out;
+}
+
 export async function fetchAll<T>(page: (from: number, to: number) => Page, size = 1000, max = 50000): Promise<{ data: T[] | null; error: Err }> {
   const out: T[] = [];
   for (let from = 0; from < max; from += size) {

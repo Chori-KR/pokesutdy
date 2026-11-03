@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { T } from "@/lib/styles";
 import { DIFF, Difficulty } from "@/lib/game";
 import { supabaseBrowser } from "@/lib/supabase/browser";
+import { chunks } from "@/lib/fetchAll";
 import AiGenerate from "@/components/teacher/AiGenerate";
 import BulkImport from "@/components/teacher/BulkImport";
 import MathText from "@/components/MathText";
@@ -64,6 +65,9 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
   const [formErr, setFormErr] = useState("");
   const [panel, setPanel] = useState<"ai" | "bulk" | null>(null);
   const [selected, setSelected] = useState<Set<string>>(new Set()); // M7: 체크된 문제 id
+  // 문제가 수천 개여도 화면이 느려지지 않게 PAGE개씩 보여 준다 (검색·태그를 바꾸면 처음부터)
+  const [shown, setShown] = useState(PAGE);
+  useEffect(() => setShown(PAGE), [search, filterTag]);
 
   // 수정/새 문제 폼을 열면 상단 폼으로 자동 스크롤 (열림 순간에만 — 입력 중 재스크롤 방지)
   const formRef = useRef<HTMLDivElement>(null);
@@ -103,7 +107,11 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
     const ids = [...selected];
     if (ids.length === 0) return;
     const supa = supabaseBrowser();
-    const { error } = await supa.from("questions").update({ raid_only }).in("id", ids);
+    let error: { message: string } | null = null;
+    for (const part of chunks(ids)) {
+      ({ error } = await supa.from("questions").update({ raid_only }).in("id", part));
+      if (error) break;
+    }
     if (error) { showToast(/raid_only/.test(error.message) ? RAID_ONLY_HINT : "일괄 변경에 실패했어요."); return; }
     setQuestions(questions.map((x) => (selected.has(x.id) ? { ...x, raid_only } : x)));
     showToast(`선택한 ${ids.length}개를 레이드 전용 ${raid_only ? "지정" : "해제"}했어요.`);
@@ -132,7 +140,11 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
     const ids = [...selected];
     if (ids.length === 0) return;
     const supa = supabaseBrowser();
-    const { error } = await supa.from("questions").update({ active }).in("id", ids);
+    let error: { message: string } | null = null;
+    for (const part of chunks(ids)) {
+      ({ error } = await supa.from("questions").update({ active }).in("id", part));
+      if (error) break;
+    }
     if (error) { showToast("일괄 변경에 실패했어요."); return; }
     setQuestions(questions.map((x) => (selected.has(x.id) ? { ...x, active } : x)));
     showToast(`선택한 ${ids.length}개 문제를 ${active ? "출제" : "숨김"} 처리했어요.`);
@@ -145,7 +157,11 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
     if (ids.length === 0) return;
     if (!window.confirm(`선택한 ${ids.length}개 문제를 삭제할까요? 되돌릴 수 없어요.`)) return;
     const supa = supabaseBrowser();
-    const { error } = await supa.from("questions").delete().in("id", ids);
+    let error: { message: string } | null = null;
+    for (const part of chunks(ids)) {
+      ({ error } = await supa.from("questions").delete().in("id", part));
+      if (error) break;
+    }
     if (error) { showToast("삭제에 실패했어요."); return; }
     setQuestions(questions.filter((x) => !selected.has(x.id)));
     showToast(`선택한 ${ids.length}개 문제를 삭제했어요.`);
@@ -381,7 +397,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
                 setSelected(next);
               }}
             />
-            전체 선택
+            전체 선택 ({visible.length}개)
           </label>
           <span style={{ fontSize: 12, color: selected.size > 0 ? "#3d6fd9" : "#999", fontWeight: 600 }}>
             {selected.size}개 선택됨
@@ -406,7 +422,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
             {questions.length === 0 ? "아직 문제가 없어요. '+ 새 문제'로 첫 문제를 등록해보세요!" : "검색 결과가 없어요."}
           </div>
         )}
-        {visible.map((q) => {
+        {visible.slice(0, shown).map((q) => {
           const wrongRate = q.tries > 0 ? Math.round((q.wrong / q.tries) * 100) : null;
           return (
             <div key={q.id} style={{ ...T.card, opacity: q.active ? 1 : 0.55, border: selected.has(q.id) ? "2px solid #3d6fd9" : T.card.border }}>
@@ -464,10 +480,19 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
             </div>
           );
         })}
+        {visible.length > shown && (
+          <div style={{ display: "flex", gap: 8, justifyContent: "center", alignItems: "center", padding: "6px 0", fontSize: 12, color: "#666" }}>
+            {shown}개 / {visible.length}개 보는 중
+            <button onClick={() => setShown(shown + PAGE)} style={T.secondaryBtn}>{Math.min(PAGE, visible.length - shown)}개 더 보기</button>
+            <button onClick={() => setShown(visible.length)} style={{ ...T.chip, color: "#888" }}>모두 보기</button>
+          </div>
+        )}
       </div>
     </div>
   );
 }
+
+const PAGE = 200;
 
 // 수식(LaTeX) 입력 방법 안내 — 접었다 폈다 하는 도움말 (과목별 그룹)
 const MATH_GROUPS: { title: string; items: { label: string; input: string }[] }[] = [
