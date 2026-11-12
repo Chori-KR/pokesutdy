@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError, getClassSettings, recentResults } from "@/lib/api";
 import { loadQuestionMedia, loadSolvePool } from "@/lib/questionServe";
 import { scopeOf } from "@/lib/libraryShared";
+import { areaGrouping } from "@/lib/areas";
 
 // 문제풀이 출제 (명세 §4.5): 출제 중(active) 문제 + 기본 문제 은행(켠 단원)에서 1개.
 // 학생에게 공부 범위(모둠·개별)가 있으면 그 단원 안에서만.
@@ -19,21 +20,44 @@ function shuffledIdx(n: number): number[] {
   return a;
 }
 
+// 학생이 고를 수 있는 출제 영역 목록 — 교사가 '출제 과목·단원 선택 허용'을 켠 경우에만.
+// 이 학생이 실제로 받을 수 있는 문제(공부 범위 포함)의 태그로 만든다.
+export async function GET(req: NextRequest) {
+  const auth = await requireStudent(req);
+  if (auth instanceof NextResponse) return auth;
+  const { supa, student } = auth;
+  const { allowStudentSubject, lib } = await getClassSettings(supa, student.class_id);
+  if (!allowStudentSubject) return NextResponse.json({ allowed: false, areas: [] });
+  const pool = await loadSolvePool(supa, student.class_id, lib, student.id);
+  const g = areaGrouping(pool.map((q) => q.tag));
+  return NextResponse.json({ allowed: true, label: g.label, areas: g.areas });
+}
+
 export async function POST(req: NextRequest) {
   const auth = await requireStudent(req);
   if (auth instanceof NextResponse) return auth;
   const { supa, student } = auth;
 
-  const { solveLimit, lib } = await getClassSettings(supa, student.class_id);
+  const { solveLimit, lib, allowStudentSubject } = await getClassSettings(supa, student.class_id);
   const solveCount = Number(student.day_state?.solveCount ?? 0);
   if (solveCount >= solveLimit)
     return jsonError(409, "오늘의 문제풀이를 모두 마쳤어요! 내일 또 만나요.");
 
-  const qs = await loadSolvePool(supa, student.class_id, lib, student.id);
-  if (qs.length === 0)
+  const all = await loadSolvePool(supa, student.class_id, lib, student.id);
+  if (all.length === 0)
     return jsonError(404, scopeOf(lib, student.id)
       ? "선생님이 정해 준 공부 범위에 문제가 없어요. 선생님께 알려주세요!"
       : "출제 중인 문제가 없어요. 선생님께 알려주세요!");
+
+  // 학생이 고른 영역(허용된 학급만) — 그 영역 문제 안에서만 출제
+  const body = await req.json().catch(() => null);
+  const area = allowStudentSubject && typeof body?.area === "string" ? body.area : "";
+  let qs = all;
+  if (area) {
+    const g = areaGrouping(all.map((q) => q.tag));
+    qs = all.filter((q) => g.areaOf(q.tag) === area);
+    if (qs.length === 0) return jsonError(404, `'${area}'에 출제 중인 문제가 없어요. 다른 영역을 골라주세요.`);
+  }
 
   // 똑똑한 출제: 이 학생의 기록으로 문제별 최신 결과를 구해 가중치 부여.
   // 최신 400개만 조회해 기록이 쌓여도 느려지지 않게 함(전체 스캔 방지).

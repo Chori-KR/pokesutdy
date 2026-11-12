@@ -183,7 +183,7 @@ export default function StudentHome({ student, setStudent, cls, caught, setCaugh
           showToast={showToast}
         />
       )}
-      {tab === "solve" && <SolveTab student={student} setStudent={setStudent} day={day} setDay={setDay} />}
+      {tab === "solve" && <SolveTab student={student} setStudent={setStudent} day={day} setDay={setDay} allowSubject={cls.settings?.allowStudentSubject === true} />}
       {tab === "explore" && (
         <ExploreTab
           student={student}
