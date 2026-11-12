@@ -161,6 +161,7 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
     moveDiff?: boolean; exploreLimit?: number; solveLimit?: number; battleLimit?: number;
     timerOn?: boolean; timeScale?: number; rareRate?: number; specialRate?: number; legendRate?: number; shinyRate?: number;
     gens?: number[]; // 등장 세대(1~9). 없으면 1세대만 — 기존 학급은 지금과 동일
+    allowStudentSubject?: boolean; // 학생이 배틀 출제 과목을 고를 수 있는지 (기본 false)
     raid?: {
       on?: boolean; pid?: number; shiny?: boolean; round?: number;
       threshold?: number; rewardPts?: number; rewardItem?: string; rewardCount?: number;
@@ -175,6 +176,8 @@ export async function getClassSettings(supa: SupabaseClient, classId: string) {
   return {
     gens,
     moveDiff: s.moveDiff !== false,
+    // 교사 설정 '학생이 출제 과목·단원 선택 허용' — 학생 화면에 전달해야 배틀의 과목 선택칸이 보인다
+    allowStudentSubject: s.allowStudentSubject === true,
     exploreLimit: Math.max(0, Number(s.exploreLimit ?? DEFAULT_EXPLORE_LIMIT)),
     solveLimit: Math.max(0, Number(s.solveLimit ?? DEFAULT_SOLVE_LIMIT)),
     battleLimit: Math.max(0, Number(s.battleLimit ?? DEFAULT_BATTLE_LIMIT)),
