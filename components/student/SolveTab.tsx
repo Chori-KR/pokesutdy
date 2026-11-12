@@ -31,22 +31,29 @@ export default function SolveTab({ student, setStudent, day, setDay, allowSubjec
   // 출제 영역 선택 (교사가 허용한 학급만) — 영역 목록은 서버가 출제 중 문제 태그로 만든다
   const [areas, setAreas] = useState<string[]>([]);
   const [areaLabel, setAreaLabel] = useState("영역");
-  const [area, setArea] = useState("");
+  // area: null = 아직 안 고름, "" = 전체 섞어서, 그 밖 = 그 영역만
+  const [area, setArea] = useState<string | null>(null);
+  const [areasReady, setAreasReady] = useState(!allowSubject);
   useEffect(() => {
-    if (!allowSubject) { setAreas([]); setArea(""); return; }
+    if (!allowSubject) { setAreas([]); setArea(null); setAreasReady(true); return; }
+    setAreasReady(false);
     fetch("/api/solve/question")
       .then((r) => r.json())
       .then((d) => { setAreas(d.allowed ? d.areas ?? [] : []); if (d.label) setAreaLabel(d.label); })
-      .catch(() => setAreas([]));
+      .catch(() => setAreas([]))
+      .finally(() => setAreasReady(true));
   }, [allowSubject]);
-  const areaPicker = allowSubject && areas.length > 1 ? (
+  const mustPick = allowSubject && areas.length > 1; // 영역을 먼저 골라야 문제를 받을 수 있음
+  const needPick = mustPick && area === null;
+  const areaPicker = mustPick ? (
     <div style={{ display: "flex", gap: 8, alignItems: "center", margin: "8px 0", textAlign: "left" }}>
       <span style={{ fontSize: 11, color: "#5b7a99", flexShrink: 0 }}>출제 {areaLabel}</span>
       <select
-        value={area}
+        value={area === null ? "__pick" : area}
         onChange={(e) => setArea(e.target.value)}
-        style={{ ...S.input, marginBottom: 0, flex: 1, padding: "8px 10px", fontSize: 12 }}
+        style={{ ...S.input, marginBottom: 0, flex: 1, padding: "8px 10px", fontSize: 12, borderColor: needPick ? "#4b7bec" : undefined }}
       >
+        {area === null && <option value="__pick" disabled>— {areaLabel}을 먼저 골라주세요 —</option>}
         <option value="">전체 {areaLabel} 섞어서</option>
         {areas.map((a) => (
           <option key={a} value={a}>{a}만 나오게</option>
@@ -58,14 +65,14 @@ export default function SolveTab({ student, setStudent, day, setDay, allowSubjec
   const left = Math.max(0, day.solveLimit - day.solveCount);
 
   async function next() {
-    if (busy) return;
+    if (busy || !areasReady || needPick) return;
     setBusy(true);
     setErr("");
     try {
       const res = await fetch("/api/solve/question", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(area ? { area } : {}),
+        body: JSON.stringify(mustPick && area ? { area } : {}),
       });
       const data = await res.json();
       if (!res.ok) { setErr(data.error ?? "문제를 받지 못했어요."); return; }
@@ -115,8 +122,8 @@ export default function SolveTab({ student, setStudent, day, setDay, allowSubjec
         {err && <div style={{ ...S.warn, textAlign: "left" }}>{err}</div>}
         {left > 0 && areaPicker}
         {left > 0 ? (
-          <button onClick={next} disabled={busy} style={{ ...S.primaryBtn, marginTop: 8 }}>
-            {busy ? "출제 중..." : "문제 받기"}
+          <button onClick={next} disabled={busy || !areasReady || needPick} style={{ ...S.primaryBtn, marginTop: 8, opacity: !areasReady || needPick ? 0.45 : 1 }}>
+            {busy ? "출제 중..." : !areasReady ? "불러오는 중..." : needPick ? `${areaLabel}을 먼저 골라주세요` : "문제 받기"}
           </button>
         ) : (
           <div style={{ fontSize: 12, color: "#5b7a99", padding: 8 }}>
