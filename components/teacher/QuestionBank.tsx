@@ -122,6 +122,37 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
     // 출제(활성) 문제를 위로. 같은 활성 상태 안에서는 기존 순서(최신순) 유지 — stable sort
     .sort((a, b) => Number(b.active) - Number(a.active));
 
+  // 지금 보이는 문제(검색·태그 필터 적용)를 엑셀로 내려받기.
+  // 앞 9칸은 '대량 등록' 양식과 같아서 그대로 다른 학급에 올릴 수도 있다. 문제ID는 수정용(맨 뒤).
+  async function exportExcel() {
+    if (visible.length === 0) { showToast("내려받을 문제가 없어요."); return; }
+    const XLSX = await import("xlsx");
+    const DIFF_KO: Record<string, string> = { easy: "쉬움", medium: "보통", hard: "어려움" };
+    const header = ["유형(객관식/단답형)", "문제", "보기1", "보기2", "보기3", "보기4", "정답(객관식:번호 1~4 / 단답형:정답들 쉼표)", "난이도(쉬움/보통/어려움)", "태그(과목·단원)", "출제", "레이드 전용", "푼 횟수", "오답률(%)", "문제ID(수정 금지)"];
+    const rows = visible.map((q) => {
+      const short = q.type === "short";
+      const o = q.options ?? [];
+      return [
+        short ? "단답형" : "객관식", q.body,
+        short ? "" : o[0] ?? "", short ? "" : o[1] ?? "", short ? "" : o[2] ?? "", short ? "" : o[3] ?? "",
+        short ? o.join(", ") : q.answer_idx + 1,
+        DIFF_KO[q.difficulty] ?? q.difficulty, q.tag,
+        q.active ? "출제 중" : "숨김", q.raid_only ? "레이드 전용" : "",
+        q.tries ?? 0, q.tries ? Math.round((100 * (q.wrong ?? 0)) / q.tries) : "",
+        q.id,
+      ];
+    });
+    const ws = XLSX.utils.aoa_to_sheet([header, ...rows]);
+    ws["!cols"] = [{ wch: 10 }, { wch: 40 }, { wch: 12 }, { wch: 12 }, { wch: 12 }, { wch: 12 }, { wch: 12 }, { wch: 8 }, { wch: 26 }, { wch: 8 }, { wch: 10 }, { wch: 8 }, { wch: 9 }, { wch: 38 }];
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, "문제");
+    const d = new Date();
+    const ymd = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`;
+    const tagPart = filterTag ? `_${filterTag.replace(/[\\/:*?"<>|]/g, "_")}` : "";
+    XLSX.writeFile(wb, `잡으면서배우자_문제은행_${ymd}${tagPart}.xlsx`);
+    showToast(`문제 ${visible.length}개를 엑셀로 내려받았어요.`);
+  }
+
   // 배틀에 실제로 나올 문제 = 출제(ON) + 4지선다 + 레이드전용 아님. 0개면 배틀이 안 돼서 경고.
   // 출제 현황 = 우리 반 문제(출제 중) + 켠 단원의 기본 문제(숨김·레이드 지정은 대략 뺌)
   const libStat = useMemo(() => {
@@ -385,6 +416,7 @@ export default function QuestionBank({ classId, questions, setQuestions, showToa
         <button onClick={() => { setPanel(panel === "ai" ? null : "ai"); setForm(null); }} style={{ ...T.primaryBtn, background: "#7c5cd9" }}>🤖 AI 생성</button>
         <button onClick={() => { setPanel(panel === "bulk" ? null : "bulk"); setForm(null); }} style={{ ...T.primaryBtn, background: "#2e8b57" }}>📥 대량 등록</button>
         <button onClick={() => { setPanel(panel === "json" ? null : "json"); setForm(null); }} style={{ ...T.primaryBtn, background: "#c07a1e" }}>🗂️ JSON 가져오기</button>
+        <button onClick={exportExcel} disabled={visible.length === 0} title="지금 보이는 문제(검색·태그 필터 적용)를 엑셀로" style={{ ...T.secondaryBtn, opacity: visible.length === 0 ? 0.5 : 1 }}>⬇️ 엑셀로 내려받기</button>
       </div>
 
       {panel === "ai" && (
