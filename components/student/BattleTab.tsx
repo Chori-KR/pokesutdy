@@ -108,15 +108,22 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
       .catch(() => setBank([]));
   }, []);
 
-  // M7: 한 배틀은 한 과목 안에서만 출제 — 태그의 "과목·단원"에서 과목 부분으로 묶는다
-  const subjectOf = (tag: string) => (tag.split("·")[0] ?? "").trim() || "미분류";
+  // M7: 한 배틀은 한 과목 안에서만 출제 — 태그의 "과목·단원"에서 과목 부분으로 묶는다.
+  // 출제 중 문제의 과목이 하나뿐이면(예: 전부 "수학·…") 단원 부분으로 묶어 단원을 고르게 한다.
+  const subjectOf = (tag: string) => (String(tag ?? "").split("·")[0] ?? "").trim() || "미분류";
+  const unitOf = (tag: string) => {
+    const parts = String(tag ?? "").split("·").map((x) => x.trim()).filter(Boolean);
+    return parts.length > 1 ? parts.slice(1).join("·") : parts[0] || "미분류";
+  };
+  const byUnit = useMemo(() => new Set((bank ?? []).map((q) => subjectOf(q.tag))).size <= 1, [bank]);
+  const areaOf = (tag: string) => (byUnit ? unitOf(tag) : subjectOf(tag));
   const subjects = useMemo(
-    () => [...new Set((bank ?? []).map((q) => subjectOf(q.tag)))].sort((a, b) => a.localeCompare(b, "ko")),
-    [bank]
+    () => [...new Set((bank ?? []).map((q) => areaOf(q.tag)))].sort((a, b) => a.localeCompare(b, "ko")),
+    [bank, byUnit]
   );
   const activeBank = useMemo(
-    () => (subject ? (bank ?? []).filter((q) => subjectOf(q.tag) === subject) : (bank ?? [])),
-    [bank, subject]
+    () => (subject ? (bank ?? []).filter((q) => areaOf(q.tag) === subject) : (bank ?? [])),
+    [bank, subject, byUnit]
   );
 
   const activeCount = activeBank.length;
@@ -291,7 +298,6 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
         body: JSON.stringify({ hp: MAX_HP }),
       }).catch(() => {});
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase]);
 
   // 타이머 만료: 고른 게 있으면 제출, 없으면 시간초과 오답 (TimerBar가 호출)
@@ -796,13 +802,13 @@ export default function BattleTab({ student, setStudent, moveDiff, timerOn, time
           {/* M7: 출제 과목 선택 — 교사가 허용(allowSubject)한 경우에만 노출 */}
           {allowSubject && subjects.length > 1 && (
             <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 8 }}>
-              <span style={{ fontSize: 11, color: "#5b7a99", flexShrink: 0 }}>출제 과목</span>
+              <span style={{ fontSize: 11, color: "#5b7a99", flexShrink: 0 }}>{byUnit ? "출제 단원" : "출제 과목"}</span>
               <select
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
                 style={{ ...S.input, marginBottom: 0, flex: 1, padding: "8px 10px", fontSize: 12 }}
               >
-                <option value="">전체 과목 섞어서</option>
+                <option value="">{byUnit ? "전체 단원 섞어서" : "전체 과목 섞어서"}</option>
                 {subjects.map((s) => (
                   <option key={s} value={s}>{s}만 나오게</option>
                 ))}
