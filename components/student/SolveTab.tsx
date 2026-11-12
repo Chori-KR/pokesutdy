@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { S } from "@/lib/styles";
 import { DIFF, SOLVE_REWARD } from "@/lib/game";
 import { SFX } from "@/lib/sound";
@@ -12,12 +12,13 @@ interface Props {
   setStudent: (s: StudentData) => void;
   day: DayInfo;
   setDay: (d: DayInfo) => void;
+  allowSubject?: boolean; // 교사 설정: 학생이 출제 영역(과목·단원)을 고를 수 있는지
 }
 
 interface Result { correct: boolean; answer_idx: number; answerText?: string; reward: number; level: number; levelBonus: number }
 
 // 문제풀이 (명세 §4.5): 정답 +20P, 하루 한도까지. 출제·채점은 전부 서버. (단답형 지원)
-export default function SolveTab({ student, setStudent, day, setDay }: Props) {
+export default function SolveTab({ student, setStudent, day, setDay, allowSubject = false }: Props) {
   const [q, setQ] = useState<SolveQuestion | null>(null);
   const [picked, setPicked] = useState<number | null>(null);
   const [sel, setSel] = useState<number | null>(null); // 선택→제출 2단계(제출 전 선택)
@@ -26,6 +27,32 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
   const isShort = q?.type === "short";
+  // 출제 영역 선택 (교사가 허용한 학급만) — 영역 목록은 서버가 출제 중 문제 태그로 만든다
+  const [areas, setAreas] = useState<string[]>([]);
+  const [areaLabel, setAreaLabel] = useState("영역");
+  const [area, setArea] = useState("");
+  useEffect(() => {
+    if (!allowSubject) { setAreas([]); setArea(""); return; }
+    fetch("/api/solve/question")
+      .then((r) => r.json())
+      .then((d) => { setAreas(d.allowed ? d.areas ?? [] : []); if (d.label) setAreaLabel(d.label); })
+      .catch(() => setAreas([]));
+  }, [allowSubject]);
+  const areaPicker = allowSubject && areas.length > 1 ? (
+    <div style={{ display: "flex", gap: 8, alignItems: "center", margin: "8px 0", textAlign: "left" }}>
+      <span style={{ fontSize: 11, color: "#5b7a99", flexShrink: 0 }}>출제 {areaLabel}</span>
+      <select
+        value={area}
+        onChange={(e) => setArea(e.target.value)}
+        style={{ ...S.input, marginBottom: 0, flex: 1, padding: "8px 10px", fontSize: 12 }}
+      >
+        <option value="">전체 {areaLabel} 섞어서</option>
+        {areas.map((a) => (
+          <option key={a} value={a}>{a}만 나오게</option>
+        ))}
+      </select>
+    </div>
+  ) : null;
 
   const left = Math.max(0, day.solveLimit - day.solveCount);
 
@@ -34,7 +61,11 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
     setBusy(true);
     setErr("");
     try {
-      const res = await fetch("/api/solve/question", { method: "POST" });
+      const res = await fetch("/api/solve/question", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(area ? { area } : {}),
+      });
       const data = await res.json();
       if (!res.ok) { setErr(data.error ?? "문제를 받지 못했어요."); return; }
       setQ(data.question);
@@ -81,6 +112,7 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
           정답 1개당 +{SOLVE_REWARD}P · 오늘 {day.solveCount}/{day.solveLimit} 문제
         </div>
         {err && <div style={{ ...S.warn, textAlign: "left" }}>{err}</div>}
+        {left > 0 && areaPicker}
         {left > 0 ? (
           <button onClick={next} disabled={busy} style={{ ...S.primaryBtn, marginTop: 8 }}>
             {busy ? "출제 중..." : "문제 받기"}
@@ -167,6 +199,7 @@ export default function SolveTab({ student, setStudent, day, setDay }: Props) {
               🎉 레벨 업! Lv.{result.level} — 보상 +{result.levelBonus}P
             </div>
           )}
+          {left > 0 && areaPicker}
           {left > 0 ? (
             <button onClick={next} disabled={busy} style={{ ...S.primaryBtn, marginTop: 10, padding: "9px 18px", fontSize: 13 }}>
               다음 문제 ({left}문제 남음)

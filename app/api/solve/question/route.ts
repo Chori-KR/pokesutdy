@@ -1,6 +1,33 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireStudent, jsonError, getClassSettings } from "@/lib/api";
 import { fetchAll } from "@/lib/fetchAll";
+import { areaGrouping } from "@/lib/areas";
+
+type Pg = PromiseLike<{ data: unknown[] | null; error: { message?: string } | null }>;
+type QRow = { id: string; body: string; options: string[]; difficulty: string; tag: string; type: string };
+
+// 출제 중 문제가 1000개를 넘어도 전부 (나눠 받음)
+const loadActive = (supa: Parameters<typeof getClassSettings>[0], classId: string) =>
+  fetchAll<QRow>((a, b) =>
+    supa
+      .from("questions")
+      .select("id, body, options, difficulty, tag, type")
+      .eq("class_id", classId)
+      .eq("active", true)
+      .order("id")
+      .range(a, b) as unknown as Pg);
+
+// 학생이 고를 수 있는 출제 영역 목록 — 교사가 '출제 과목·단원 선택 허용'을 켠 경우에만.
+export async function GET(req: NextRequest) {
+  const auth = await requireStudent(req);
+  if (auth instanceof NextResponse) return auth;
+  const { supa, student } = auth;
+  const { allowStudentSubject } = await getClassSettings(supa, student.class_id);
+  if (!allowStudentSubject) return NextResponse.json({ allowed: false, areas: [] });
+  const { data: qs } = await loadActive(supa, student.class_id);
+  const g = areaGrouping((qs ?? []).map((q) => q.tag));
+  return NextResponse.json({ allowed: true, label: g.label, areas: g.areas });
+}
 
 // 문제풀이 출제 (명세 §4.5): 출제 중(active) 문제에서 1개.
 // 정답 인덱스는 절대 내려보내지 않는다 — 포인트(+20P)가 걸려 있어서.
@@ -20,22 +47,24 @@ export async function POST(req: NextRequest) {
   if (auth instanceof NextResponse) return auth;
   const { supa, student } = auth;
 
-  const { solveLimit } = await getClassSettings(supa, student.class_id);
+  const { solveLimit, allowStudentSubject } = await getClassSettings(supa, student.class_id);
   const solveCount = Number(student.day_state?.solveCount ?? 0);
   if (solveCount >= solveLimit)
     return jsonError(409, "오늘의 문제풀이를 모두 마쳤어요! 내일 또 만나요.");
 
-  // 출제 중 문제가 1000개를 넘어도 전부 (나눠 받음)
-  const { data: qs } = await fetchAll<{ id: string; body: string; options: string[]; difficulty: string; tag: string; type: string }>((a, b) =>
-    supa
-      .from("questions")
-      .select("id, body, options, difficulty, tag, type")
-      .eq("class_id", student.class_id)
-      .eq("active", true)
-      .order("id")
-      .range(a, b) as unknown as PromiseLike<{ data: unknown[] | null; error: { message?: string } | null }>);
-  if (!qs || qs.length === 0)
+  const { data: all } = await loadActive(supa, student.class_id);
+  if (!all || all.length === 0)
     return jsonError(404, "출제 중인 문제가 없어요. 선생님께 알려주세요!");
+
+  // 학생이 고른 영역(허용된 학급만) — 그 영역 문제 안에서만 출제
+  const body = await req.json().catch(() => null);
+  const area = allowStudentSubject && typeof body?.area === "string" ? body.area : "";
+  let qs = all;
+  if (area) {
+    const g = areaGrouping(all.map((q) => q.tag));
+    qs = all.filter((q) => g.areaOf(q.tag) === area);
+    if (qs.length === 0) return jsonError(404, `'${area}'에 출제 중인 문제가 없어요. 다른 영역을 골라주세요.`);
+  }
 
   // 똑똑한 출제: 이 학생의 기록으로 문제별 최신 결과를 구해 가중치 부여.
   // 최신 400개만 조회해 기록이 쌓여도 느려지지 않게 함(전체 스캔 방지).
