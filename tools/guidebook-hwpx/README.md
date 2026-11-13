@@ -5,3 +5,4 @@
   필요: `pip install python-hwpx beautifulsoup4 pillow`. guide.html의 그림은 실행 전에 `gimg/gNN.png`로 풀어 둔다.
 - `guide_shots.mjs` — 새 기능 스크린샷(`shots/`)을 메인 빌드 + 가짜 API로 찍는다.
 - `preview_hwpx.py` — HWPX를 대략적인 A4 HTML로 그려 쪽 배치를 확인한다(한글 프로그램과 줄바꿈은 조금 다름).
+- `build_short.py` — 부록용 **축약판(10쪽 이내)**. 학급명은 '가이드학급', 학생 이름은 흐리게(새 캡처는 CSS blur, 학생·통계 그림은 `g08_blur.png`).

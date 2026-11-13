@@ -15,11 +15,16 @@ const qs = Array.from({ length: 960 }, (_, i) => {
 });
 const U = { id: "11111111-1111-1111-1111-111111111111", email: "teacher@example.com", aud: "authenticated", role: "authenticated", app_metadata: {}, user_metadata: {}, created_at: "2026-01-01T00:00:00Z" };
 const tok = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTExMTExMS0xMTExLTExMTEtMTExMS0xMTExMTExMTExMTEiLCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImV4cCI6NDEwMjQ0NDgwMH0.x";
-const cls = { id: "c1", teacher_id: U.id, name: "특수교육사례발표대회 제출용", class_code: "0213",
+const cls = { id: "c1", teacher_id: U.id, name: "가이드학급", class_code: "0213",
   settings: { moveDiff: true, gens: [1, 2, 9], allowStudentSubject: true, timerOn: true, battleLimit: 2, exploreLimit: 3, solveLimit: 10 } };
 const fix = async (p) => p.evaluate(() => {   // 화면 속 로컬 주소를 실제 사이트 주소로
   const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   for (let n; (n = w.nextNode());) n.nodeValue = n.nodeValue.replace(/http:\/\/localhost:\d+/g, "https://pokesutdy.vercel.app");
+});
+const blurName = async (p) => p.evaluate(() => {   // 학생 이름 흐리게
+  const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT); const hits = [];
+  for (let n; (n = w.nextNode());) if (/학생[A-D]/.test(n.nodeValue)) hits.push(n);
+  for (const n of hits) { const sp = document.createElement("span"); sp.textContent = n.nodeValue; sp.style.filter = "blur(5px)"; n.replaceWith(sp); }
 });
 const b = await chromium.launch();
 
@@ -89,14 +94,14 @@ const b = await chromium.launch();
   });
   await p.goto(B + "/student"); await p.waitForTimeout(2500);
   const sel = p.locator("select").first(); const sb = await sel.boundingBox();
-  await p.screenshot({ path: `${OUT}/s_battle_area.png`, clip: { x: 0, y: 0, width: 760, height: Math.min(1000, sb.y + 110) } });
+  await blurName(p); await p.screenshot({ path: `${OUT}/s_battle_area.png`, clip: { x: 0, y: 0, width: 760, height: Math.min(1000, sb.y + 110) } });
   await p.locator("button", { hasText: /^문제풀이$/ }).first().click(); await p.waitForTimeout(1200);
-  await p.screenshot({ path: `${OUT}/s_solve_pick.png`, clip: { x: 0, y: 0, width: 760, height: 470 } });
+  await blurName(p); await p.screenshot({ path: `${OUT}/s_solve_pick.png`, clip: { x: 0, y: 0, width: 760, height: 470 } });
   await p.locator("select").first().selectOption(AREAS[3]); await p.waitForTimeout(200);
-  await p.screenshot({ path: `${OUT}/s_solve_picked.png`, clip: { x: 0, y: 0, width: 760, height: 470 } });
+  await blurName(p); await p.screenshot({ path: `${OUT}/s_solve_picked.png`, clip: { x: 0, y: 0, width: 760, height: 470 } });
   await p.locator("button", { hasText: "문제 받기" }).click(); await p.waitForTimeout(700);
   await p.locator("button", { hasText: /^1\./ }).click(); await p.locator("button", { hasText: "정답 제출" }).click(); await p.waitForTimeout(800);
-  await p.screenshot({ path: `${OUT}/s_solve_next.png`, clip: { x: 0, y: 0, width: 760, height: 720 } });
+  await blurName(p); await p.screenshot({ path: `${OUT}/s_solve_next.png`, clip: { x: 0, y: 0, width: 760, height: 720 } });
   await ctx.close();
 }
 await b.close();
