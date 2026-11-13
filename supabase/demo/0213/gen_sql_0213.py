@@ -5,7 +5,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 with contextlib.redirect_stdout(io.StringIO()):
     SIM = runpy.run_path(os.path.join(HERE, "sim_0213.py"), run_name="sim")
 students, trades, DEX, AREAS = SIM["students"], SIM["trades"], SIM["DEX"], SIM["AREAS"]
-NICKS = ["정민지", "박준혁", "정민영", "이소미"]
+NICKS = ["정민지", "박준혁", "정민영", "이소미"]          # 시뮬레이션 안의 이름
+DBNAME = {"정민지": "학생A", "박준혁": "학생B", "정민영": "학생C", "이소미": "학생D"}  # 앱 계정 이름
 lit = lambda s: "'" + str(s).replace("'", "''") + "'"
 P = "dec0de13"
 CLS = "(select id from public.classes where class_code = '0213')"
@@ -30,10 +31,10 @@ AREA_SQL = """case
 
 HEAD = f"""-- ================================================================
 -- 시연용 활동 기록 만들기 — 학급 코드 0213 (사전·사후 평가 기반)
---   1번 정민지 · 2번 박준혁 · 3번 정민영 · 4번 이소미 (모두 가명)
+--   학생A · 학생B · 학생C · 학생D (학급 이름: 특수교육사례발표대회 제출용)
 -- 기간 2026-04-01 ~ 2026-10-30
 --
--- 사전 → 사후 (영역 5개 × 20점, 총점):  정민지 0 → 16 · 박준혁 28 → 56 · 정민영 8 → 24 · 이소미 32 → 60
+-- 사전 → 사후 (영역 5개 × 20점, 총점):  학생A 0 → 16 · 학생B 28 → 56 · 학생C 8 → 24 · 학생D 32 → 60
 --   영역 ① 받아올림·내림 없는 두·세 자리 덧셈·뺄셈  ② 받아올림·내림 1번 있는 두 자리 덧셈·뺄셈
 --        ③ 곱셈구구·기초 나눗셈  ④ 올림 없는 (두 자리)×(한 자리)  ⑤ 올림 있는 (두 자리)×(한 자리)
 --   학생마다 그달 공부한 영역의 문제로 풀이 기록을 만들고, 영역별 정답률이 사전 → 사후 수준으로 움직이게 함
@@ -64,8 +65,8 @@ declare cls uuid; n int; g jsonb; miss text; tags text;
 begin
   select id, settings->'gens' into cls, g from public.classes where class_code = '0213';
   if cls is null then raise exception '학급 코드 0213을 찾을 수 없어요.'; end if;
-  select count(*) into n from public.students where class_id = cls and nickname in ('정민지','박준혁','정민영','이소미');
-  if n <> 4 then raise exception '학급 0213에서 학생 4명(정민지·박준혁·정민영·이소미)을 모두 찾지 못했어요 (찾은 수: %).', n; end if;
+  select count(*) into n from public.students where class_id = cls and nickname in ('학생A','학생B','학생C','학생D');
+  if n <> 4 then raise exception '학급 0213에서 학생 4명(학생A·학생B·학생C·학생D)을 모두 찾지 못했어요 (찾은 수: %).', n; end if;
   if g is null or not (g @> '[1,2,9]'::jsonb) then
     raise exception '학급 0213의 등장 세대가 %예요. 이 SQL은 1·2·9세대 포켓몬을 쓰므로, 교사 메뉴 → 시스템 설정에서 1·2·9세대를 켜 주세요.', coalesce(g::text, '[1] (설정 없음)');
   end if;
@@ -92,7 +93,7 @@ select s.id,
                           'game_state', s.game_state, 'created_at', s.created_at),
        coalesce((select jsonb_agg(to_jsonb(c) - 'id' - 'student_id') from public.catches c where c.student_id = s.id), '[]'::jsonb)
 from public.students s
-where s.class_id = {CLS} and s.nickname in ('정민지','박준혁','정민영','이소미')
+where s.class_id = {CLS} and s.nickname in ('학생A','학생B','학생C','학생D')
 on conflict (student_id) do nothing;
 
 -- 2) 이전 0213 시연 기록 되돌리기
@@ -117,7 +118,7 @@ end $$;
 
 -- 4) 풀이 계획 (학생 번호, 시각, 영역, 상황 s/b/r, 기술 난이도 e/m/h, 정답 여부)
 create temp table demo_nick (n int, nick text) on commit drop;
-insert into demo_nick values {", ".join(f"({i + 1},{lit(n)})" for i, n in enumerate(NICKS))};
+insert into demo_nick values {", ".join(f"({i + 1},{lit(DBNAME[n])})" for i, n in enumerate(NICKS))};
 create temp table demo_plan (seq int, n int, at timestamptz, area int, c text, d text, ok boolean) on commit drop;
 """
 
@@ -172,7 +173,7 @@ where s.nickname = v.nick and s.class_id = {CLS};
 
 -- 8) 도감
 delete from public.catches c using public.students s
-where c.student_id = s.id and s.class_id = {CLS} and s.nickname in ('정민지','박준혁','정민영','이소미');
+where c.student_id = s.id and s.class_id = {CLS} and s.nickname in ('학생A','학생B','학생C','학생D');
 insert into public.catches (student_id, pokemon_id, method, caught_at, count, shiny)
 select s.id, v.pid, v.method, v.at::timestamptz, v.cnt, v.shiny
 from (values
@@ -212,15 +213,15 @@ with open(out, "w", encoding="utf-8") as f:
             f"({i + k},{n},'{at.isoformat(timespec='seconds')}',{a},'{c}','{d}',{'true' if ok else 'false'})"
             for k, (n, at, a, c, d, ok) in enumerate(plan[i:i + 1000])) + ";\n")
     srows = ",\n".join(
-        f"  ({lit(st.nick)}, {st.points}, {st.xp}, {st.level}, {lit(json.dumps(st.inv))}, {lit(json.dumps(st.gs, ensure_ascii=False))})"
+        f"  ({lit(DBNAME[st.nick])}, {st.points}, {st.xp}, {st.level}, {lit(json.dumps(st.inv))}, {lit(json.dumps(st.gs, ensure_ascii=False))})"
         for st in students.values())
     crows = ",\n".join(
-        f"  ({lit(st.nick)}, {pid}, {lit(c['method'])}, '{c['at'].isoformat(timespec='seconds')}', {c['count']}, {'true' if c['shiny'] else 'false'})"
+        f"  ({lit(DBNAME[st.nick])}, {pid}, {lit(c['method'])}, '{c['at'].isoformat(timespec='seconds')}', {c['count']}, {'true' if c['shiny'] else 'false'})"
         for st in students.values() for pid, c in sorted(st.catches.items(), key=lambda kv: kv[1]['at']))
     rnd = random.Random(1302)
     codes = rnd.sample(range(100000, 999999), len(trades))
     trows = ",\n".join(
-        f"  ('{codes[i]}', {lit(a)}, {x}, {lit(b)}, {y}, '{at.isoformat(timespec='seconds')}')"
+        f"  ('{codes[i]}', {lit(DBNAME[a])}, {x}, {lit(DBNAME[b])}, {y}, '{at.isoformat(timespec='seconds')}')"
         for i, (at, a, x, b, y) in enumerate(trades))
     f.write(TAIL.replace("__STUDENTS__", srows).replace("__CATCHES__", crows).replace("__TRADES__", trows))
 
